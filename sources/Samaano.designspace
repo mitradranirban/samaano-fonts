@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="weight" minimum="0" maximum="1000" default="1000"/>
+  </axes>
+  <sources>
+    <source filename="Samaano-Thin.ufo" name="master.Samaano.Bold.0" familyname="Samaano" stylename="Thin">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="weight" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Samaano-Bold.ufo" familyname="Samaano" stylename="Bold">
+      <location>
+        <dimension name="weight" xvalue="1000"/>
+      </location>
+    </source>
+  </sources>
+</designspace>

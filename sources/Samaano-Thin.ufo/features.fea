@@ -1,0 +1,10 @@
+
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\exclam \X \x \A \dotlessi \uni0237 \quotedbl \one \space \B ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+
