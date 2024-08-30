@@ -10,89 +10,8 @@ fontbakery version: 0.12.10
 
 
 
-<details><summary>[23] Samaano[wght].ttf</summary>
+<details><summary>[16] Samaano[wght].ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> Check name table for empty records. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>&quot;name&quot; table record with key=(3, 1, 1033, 17) is empty and should be removed.</p>
- [code: empty-record]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>The following glyphs lack their case-swapping counterparts:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Glyph present in the font</th>
-<th align="left">Missing case-swapping counterpart</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">U+0041: LATIN CAPITAL LETTER A</td>
-<td align="left">U+0061: LATIN SMALL LETTER A</td>
-</tr>
-<tr>
-<td align="left">U+0042: LATIN CAPITAL LETTER B</td>
-<td align="left">U+0062: LATIN SMALL LETTER B</td>
-</tr>
-<tr>
-<td align="left">U+0131: LATIN SMALL LETTER DOTLESS I</td>
-<td align="left">U+0049: LATIN CAPITAL LETTER I</td>
-</tr>
-</tbody>
-</table>
- [code: missing-case-counterparts]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 1683, but got 1635 instead</p>
- [code: ascent]
-
-
-
-* 🔥 **FAIL** <p>OS/2.usWinDescent value 400 is too large. It should be less than double the yMin. Current absolute yMin value is 51</p>
- [code: descent]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Name table records must not have trailing spaces. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
     <div>
@@ -103,7 +22,7 @@ fontbakery version: 0.12.10
 
 
 
-* 🔥 **FAIL** <p>Name table record with key = (3, 1, 1033, 4) has trailing spaces that must be removed: 'Samaano '</p>
+* 🔥 **FAIL** <p>Name table record with key = (3, 1, 1033, 10) has trailing spaces that must be removed: 'A Monspace[...]ents only '</p>
  [code: trailing-space]
 
 
@@ -112,7 +31,7 @@ fontbakery version: 0.12.10
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 Metrics match hhea Metrics. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphnames.html#"></a></summary>
     <div>
 
 
@@ -121,8 +40,9 @@ fontbakery version: 0.12.10
 
 
 
-* 🔥 **FAIL** <p>OS/2 sTypoAscender (1638) and hhea ascent (1683) must be equal.</p>
- [code: ascender]
+* 🔥 **FAIL** <p>The following glyph names do not comply with naming conventions: ka-deva</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not.</p>
+ [code: found-invalid-names]
 
 
 
@@ -166,24 +86,6 @@ fontbakery version: 0.12.10
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Check copyright namerecords match license file. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.license.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set.</p>
- [code: missing]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>🔥 <b>FAIL</b> Copyright notices match canonical pattern in fonts <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.copyright.html#"></a></summary>
     <div>
 
@@ -205,44 +107,6 @@ fontbakery version: 0.12.10
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Validate defaults on fvar table match registered fallback names in GFAxisRegistry. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.axisregistry.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>The defaul value wght:1000.0 is not registered as an axis fallback name on the Google Axis Registry.
-You should consider suggesting the addition of this value to the registry or adopted one of the existing fallback names for this axis:
-[name: &quot;Thin&quot;
-value: 100.0
-, name: &quot;ExtraLight&quot;
-value: 200.0
-, name: &quot;Light&quot;
-value: 300.0
-, name: &quot;Regular&quot;
-value: 400.0
-, name: &quot;Medium&quot;
-value: 500.0
-, name: &quot;SemiBold&quot;
-value: 600.0
-, name: &quot;Bold&quot;
-value: 700.0
-, name: &quot;ExtraBold&quot;
-value: 800.0
-, name: &quot;Black&quot;
-value: 900.0
-]</p>
- [code: not-registered]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>🔥 <b>FAIL</b> Check Google Fonts glyph coverage. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
     <div>
 
@@ -253,181 +117,7 @@ value: 900.0
 
 
 * 🔥 **FAIL** <p>Missing required codepoints:</p>
-<pre><code>- 0x0043 (LATIN CAPITAL LETTER C)
-
-
-- 0x0044 (LATIN CAPITAL LETTER D)
-
-
-- 0x0045 (LATIN CAPITAL LETTER E)
-
-
-- 0x0046 (LATIN CAPITAL LETTER F)
-
-
-- 0x0047 (LATIN CAPITAL LETTER G)
-
-
-- 0x0048 (LATIN CAPITAL LETTER H)
-
-
-- 0x0049 (LATIN CAPITAL LETTER I)
-
-
-- 0x004A (LATIN CAPITAL LETTER J)
-
-
-- 0x004B (LATIN CAPITAL LETTER K)
-
-
-- 0x004C (LATIN CAPITAL LETTER L)
-
-
-- 0x004D (LATIN CAPITAL LETTER M)
-
-
-- 0x004E (LATIN CAPITAL LETTER N)
-
-
-- 0x004F (LATIN CAPITAL LETTER O)
-
-
-- 0x0050 (LATIN CAPITAL LETTER P)
-
-
-- 0x0051 (LATIN CAPITAL LETTER Q)
-
-
-- 0x0052 (LATIN CAPITAL LETTER R)
-
-
-- 0x0053 (LATIN CAPITAL LETTER S)
-
-
-- 0x0054 (LATIN CAPITAL LETTER T)
-
-
-- 0x0055 (LATIN CAPITAL LETTER U)
-
-
-- 0x0056 (LATIN CAPITAL LETTER V)
-
-
-- 0x0057 (LATIN CAPITAL LETTER W)
-
-
-- 0x0059 (LATIN CAPITAL LETTER Y)
-
-
-- 0x005A (LATIN CAPITAL LETTER Z)
-
-
-- 0x005B (LEFT SQUARE BRACKET)
-
-
-- 0x005C (REVERSE SOLIDUS)
-
-
-- 0x005D (RIGHT SQUARE BRACKET)
-
-
-- 0x005E (CIRCUMFLEX ACCENT)
-
-
-- 0x005F (LOW LINE)
-
-
-- 0x0060 (GRAVE ACCENT)
-
-
-- 0x0061 (LATIN SMALL LETTER A)
-
-
-- 0x0062 (LATIN SMALL LETTER B)
-
-
-- 0x0063 (LATIN SMALL LETTER C)
-
-
-- 0x0064 (LATIN SMALL LETTER D)
-
-
-- 0x0065 (LATIN SMALL LETTER E)
-
-
-- 0x0066 (LATIN SMALL LETTER F)
-
-
-- 0x0067 (LATIN SMALL LETTER G)
-
-
-- 0x0068 (LATIN SMALL LETTER H)
-
-
-- 0x0069 (LATIN SMALL LETTER I)
-
-
-- 0x006A (LATIN SMALL LETTER J)
-
-
-- 0x006B (LATIN SMALL LETTER K)
-
-
-- 0x006C (LATIN SMALL LETTER L)
-
-
-- 0x006D (LATIN SMALL LETTER M)
-
-
-- 0x006E (LATIN SMALL LETTER N)
-
-
-- 0x006F (LATIN SMALL LETTER O)
-
-
-- 0x0070 (LATIN SMALL LETTER P)
-
-
-- 0x0071 (LATIN SMALL LETTER Q)
-
-
-- 0x0072 (LATIN SMALL LETTER R)
-
-
-- 0x0073 (LATIN SMALL LETTER S)
-
-
-- 0x0074 (LATIN SMALL LETTER T)
-
-
-- 0x0075 (LATIN SMALL LETTER U)
-
-
-- 0x0076 (LATIN SMALL LETTER V)
-
-
-- 0x0077 (LATIN SMALL LETTER W)
-
-
-- 0x0079 (LATIN SMALL LETTER Y)
-
-
-- 0x007A (LATIN SMALL LETTER Z)
-
-
-- 0x007B (LEFT CURLY BRACKET)
-
-
-- 0x007C (VERTICAL LINE)
-
-
-- 0x007D (RIGHT CURLY BRACKET)
-
-
-- 0x007E (TILDE)
-
-
-- 0x00A0 (NO-BREAK SPACE)
+<pre><code>- 0x00A0 (NO-BREAK SPACE)
 
 
 - 0x00A1 (INVERTED EXCLAMATION MARK)
@@ -790,6 +480,9 @@ value: 900.0
 - 0x0130 (LATIN CAPITAL LETTER I WITH DOT ABOVE)
 
 
+- 0x0131 (LATIN SMALL LETTER DOTLESS I)
+
+
 - 0x0136 (LATIN CAPITAL LETTER K WITH CEDILLA)
 
 
@@ -955,6 +648,9 @@ value: 900.0
 - 0x021B (LATIN SMALL LETTER T WITH COMMA BELOW)
 
 
+- 0x0237 (LATIN SMALL LETTER DOTLESS J)
+
+
 - 0x02C6 (MODIFIER LETTER CIRCUMFLEX ACCENT)
 
 
@@ -1118,42 +814,6 @@ value: 900.0
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Check font can render its own name. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>.notdef glyphs were found when attempting to render Samaano</p>
- [code: render-own-name]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.os2.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Best SubFamily name is 'Regular'. Expected OS/2 usWeightClass is 400, got 1000.</p>
- [code: bad-value]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>🔥 <b>FAIL</b> Check font follows the Google Fonts vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
     <div>
 
@@ -1163,7 +823,7 @@ value: 900.0
 
 
 
-* 🔥 **FAIL** <p>The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1734 when it should be at least 2457</p>
+* 🔥 **FAIL** <p>The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2048 when it should be at least 2457</p>
  [code: bad-hhea-range]
 
 
@@ -1200,67 +860,17 @@ value: 900.0
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 1 start point differs in glyph 'X' between location wght=1000 and location wght=0
+<pre><code>- Contour 0 start point differs in glyph 'braceright' between location wght=100 and location wght=900
 
-- Contour 1 in glyph 'X': becomes underweight between wght=1000 and wght=0.
+- Contour 1 start point differs in glyph 'braceright' between location wght=100 and location wght=900
 
-- Contour 1 start point differs in glyph 'B' between location wght=1000 and location wght=0
+- Contour 2 start point differs in glyph 'braceright' between location wght=100 and location wght=900
 
-- Contour 1 in glyph 'B': becomes underweight between wght=1000 and wght=0.
+- Contour 3 start point differs in glyph 'braceright' between location wght=100 and location wght=900
 
-- Contour 4 start point differs in glyph 'B' between location wght=1000 and location wght=0
+- Contour 4 start point differs in glyph 'braceright' between location wght=100 and location wght=900
 
-- Contour 4 in glyph 'B': becomes underweight between wght=1000 and wght=0.
-
-- Contour 0 start point differs in glyph 'A' between location wght=1000 and location wght=0
-
-- Contour 0 in glyph 'A': becomes underweight between wght=1000 and wght=0.
-
-- Contour 1 start point differs in glyph 'A' between location wght=1000 and location wght=0
-
-- Contour 1 in glyph 'A': becomes underweight between wght=1000 and wght=0.
-
-- Contour 2 start point differs in glyph 'A' between location wght=1000 and location wght=0
-
-- Contour 2 in glyph 'A': becomes underweight between wght=1000 and wght=0.
-
-- Contour 3 start point differs in glyph 'A' between location wght=1000 and location wght=0
-
-- Contour 3 in glyph 'A': becomes underweight between wght=1000 and wght=0.
-
-- Contour 0 start point differs in glyph 'exclam' between location wght=1000 and location wght=0
-
-- Contour 1 start point differs in glyph 'exclam' between location wght=1000 and location wght=0
-
-- Contour 1 in glyph 'exclam': becomes underweight between wght=1000 and wght=0.
-
-- Contour 0 start point differs in glyph 'one' between location wght=1000 and location wght=0
-
-- Contour 0 in glyph 'one': becomes underweight between wght=1000 and wght=0.
-
-- Contour 1 start point differs in glyph 'one' between location wght=1000 and location wght=0
-
-- Contour 1 in glyph 'one': becomes underweight between wght=1000 and wght=0.
-
-- Contour 0 start point differs in glyph 'quotedbl' between location wght=1000 and location wght=0
-
-- Contour 0 in glyph 'quotedbl': becomes underweight between wght=1000 and wght=0.
-
-- Contour 1 start point differs in glyph 'quotedbl' between location wght=1000 and location wght=0
-
-- Contour 1 in glyph 'quotedbl': becomes underweight between wght=1000 and wght=0.
-
-- Contour 0 start point differs in glyph '.notdef' between location wght=1000 and location wght=0
-
-- Contour 1 start point differs in glyph '.notdef' between location wght=1000 and location wght=0
-
-- Contour 2 start point differs in glyph '.notdef' between location wght=1000 and location wght=0
-
-- Contour 3 start point differs in glyph '.notdef' between location wght=1000 and location wght=0
-
-- Contour 4 start point differs in glyph '.notdef' between location wght=1000 and location wght=0
-
-- Contour 5 start point differs in glyph '.notdef' between location wght=1000 and location wght=0
+- Contour 5 start point differs in glyph 'braceright' between location wght=100 and location wght=900
 </code></pre>
  [code: interpolation-issues]
 
@@ -1288,7 +898,7 @@ value: 900.0
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Are there any misaligned on-curve points? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/outline.html#"></a></summary>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
     <div>
 
 
@@ -1297,14 +907,111 @@ value: 900.0
 
 
 
-* ⚠️ **WARN** <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
-<pre><code>* .notdef: X=809.0,Y=1640.0 (should be at ascender 1638?)
-
-* A (U+0041): X=1156.0,Y=1640.0 (should be at ascender 1638?)
-
-* A (U+0041): X=32.0,Y=1640.0 (should be at ascender 1638?)
-</code></pre>
- [code: found-misalignments]
+* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
+any subsets defined in the font's metadata file, and will never
+be served. You can solve this by either manually adding additional
+subset declarations to METADATA.pb, or by editing the glyphset
+definitions.</p>
+<ul>
+<li>U+0020 SPACE: try adding one of: kaithi, elbasan, tagalog, thai, soyombo, sogdian, latin, rejang, old-permic, gujarati, cyrillic, lycian, malayalam, toto, nandinagari, ottoman-siyaq-numbers, elymaic, hebrew, nushu, anatolian-hieroglyphs, canadian-aboriginal, manichaean, medefaidrin, tai-tham, linear-a, signwriting, warang-citi, hanunoo, mandaic, old-hungarian, dogra, old-persian, saurashtra, chinese-hongkong, japanese, pahawh-hmong, bassa-vah, tifinagh, nag-mundari, kharoshthi, runic, linear-b, duployan, kana-extended, mende-kikakui, limbu, vithkuqi, sora-sompeng, shavian, balinese, sinhala, gunjala-gondi, tagbanwa, meroitic-cursive, cyrillic-ext, telugu, georgian, chakma, ethiopic, meroitic, kannada, symbols, khojki, hatran, new-tai-lue, syriac, meroitic-hieroglyphs, ahom, coptic, dives-akuru, old-south-arabian, buginese, osage, old-north-arabian, imperial-aramaic, znamenny, kayah-li, takri, deseret, inscriptional-pahlavi, kawi, ogham, lepcha, cham, javanese, caucasian-albanian, lao, newa, devanagari, bhaiksuki, yi, nabataean, psalter-pahlavi, carian, meetei-mayek, sharada, cuneiform, tai-viet, avestan, masaram-gondi, phoenician, khitan-small-script, tirhuta, greek, egyptian-hieroglyphs, indic-siyaq-numbers, cypriot, batak, armenian, tangsa, inscriptional-parthian, greek-ext, korean, brahmi, thaana, gothic, palmyrene, modi, chorasmian, osmanya, siddham, mayan-numerals, miao, wancho, nko, cherokee, myanmar, zanabazar-square, arabic, ugaritic, oriya, buhid, latin-ext, lydian, syloti-nagri, multani, vai, mro, sundanese, old-sogdian, old-uyghur, grantha, cypro-minoan, tibetan, bengali, khudawadi, vietnamese, adlam, marchen, gurmukhi, mongolian, tamil, bamum, chinese-simplified, glagolitic, hanifi-rohingya, tamil-supplement, math, music, makasar, pau-cin-hau, nyiakeng-puachue-hmong, mahajani, braille, yezidi, ol-chiki, chinese-traditional, tai-le, old-turkic, lisu, samaritan, tangut, phags-pa, old-italic</li>
+<li>U+0021 EXCLAMATION MARK: try adding one of: latin, adlam, cham, thaana, mongolian, syriac, gunjala-gondi, math, masaram-gondi</li>
+<li>U+0022 QUOTATION MARK: try adding one of: latin, wancho, adlam, cham, mongolian, math, masaram-gondi</li>
+<li>U+0023 NUMBER SIGN: try adding one of: adlam, math, latin, symbols</li>
+<li>U+0024 DOLLAR SIGN: try adding one of: adlam, math, latin</li>
+<li>U+0025 PERCENT SIGN: try adding one of: latin, adlam, gunjala-gondi, math, masaram-gondi</li>
+<li>U+0026 AMPERSAND: try adding one of: adlam, math, latin</li>
+<li>U+0027 APOSTROPHE: try adding one of: latin, wancho, adlam, cham, warang-citi, gunjala-gondi, math, masaram-gondi</li>
+<li>U+0028 LEFT PARENTHESIS: try adding one of: latin, wancho, adlam, cham, thaana, mongolian, syriac, gunjala-gondi, math, masaram-gondi</li>
+<li>U+0029 RIGHT PARENTHESIS: try adding one of: latin, wancho, adlam, cham, thaana, mongolian, syriac, gunjala-gondi, math, masaram-gondi</li>
+<li>U+002A ASTERISK: try adding one of: latin, adlam, symbols, syriac, gunjala-gondi, math, masaram-gondi</li>
+<li>U+002B PLUS SIGN: try adding one of: latin, adlam, syriac, gunjala-gondi, math, masaram-gondi</li>
+<li>U+002C COMMA: try adding one of: latin, wancho, adlam, cham, thaana, nushu, gunjala-gondi, math, coptic, masaram-gondi</li>
+<li>U+002D HYPHEN-MINUS: try adding one of: kaithi, kharoshthi, sundanese, sora-sompeng, gunjala-gondi, masaram-gondi, latin, adlam, mongolian, syriac, hebrew, nushu, armenian, coptic, kayah-li, math, wancho, cham, lisu</li>
+<li>U+002E FULL STOP: try adding one of: latin, math, wancho, adlam, cham, thaana, syriac, nushu, gunjala-gondi, avestan, coptic, masaram-gondi</li>
+<li>U+002F SOLIDUS: try adding one of: latin, wancho, adlam, cham, syriac, gunjala-gondi, math, masaram-gondi</li>
+<li>U+0030 DIGIT ZERO: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0031 DIGIT ONE: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0032 DIGIT TWO: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0033 DIGIT THREE: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0034 DIGIT FOUR: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0035 DIGIT FIVE: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0036 DIGIT SIX: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0037 DIGIT SEVEN: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0038 DIGIT EIGHT: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0039 DIGIT NINE: try adding one of: nushu, math, latin, symbols</li>
+<li>U+003A COLON: try adding one of: latin, meroitic, adlam, cham, thaana, syriac, gunjala-gondi, math, coptic, masaram-gondi</li>
+<li>U+003B SEMICOLON: try adding one of: latin, adlam, cham, thaana, math, coptic, masaram-gondi</li>
+<li>U+003C LESS-THAN SIGN: try adding one of: latin, adlam, gunjala-gondi, math, masaram-gondi</li>
+<li>U+003D EQUALS SIGN: try adding one of: latin, adlam, syriac, gunjala-gondi, math, masaram-gondi</li>
+<li>U+003E GREATER-THAN SIGN: try adding one of: latin, adlam, gunjala-gondi, math, masaram-gondi</li>
+<li>U+003F QUESTION MARK: try adding one of: latin, adlam, cham, mongolian, balinese, gunjala-gondi, math, masaram-gondi</li>
+<li>U+0040 COMMERCIAL AT: try adding one of: adlam, math, latin</li>
+<li>U+0041 LATIN CAPITAL LETTER A: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0042 LATIN CAPITAL LETTER B: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0043 LATIN CAPITAL LETTER C: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0044 LATIN CAPITAL LETTER D: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0045 LATIN CAPITAL LETTER E: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0046 LATIN CAPITAL LETTER F: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0047 LATIN CAPITAL LETTER G: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0048 LATIN CAPITAL LETTER H: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0049 LATIN CAPITAL LETTER I: try adding one of: nushu, math, latin, symbols</li>
+<li>U+004A LATIN CAPITAL LETTER J: try adding one of: nushu, math, latin, symbols</li>
+<li>U+004B LATIN CAPITAL LETTER K: try adding one of: nushu, math, latin, symbols</li>
+<li>U+004C LATIN CAPITAL LETTER L: try adding one of: nushu, math, latin, symbols</li>
+<li>U+004D LATIN CAPITAL LETTER M: try adding one of: nushu, math, latin, symbols</li>
+<li>U+004E LATIN CAPITAL LETTER N: try adding one of: nushu, math, latin, symbols</li>
+<li>U+004F LATIN CAPITAL LETTER O: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0050 LATIN CAPITAL LETTER P: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0051 LATIN CAPITAL LETTER Q: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0052 LATIN CAPITAL LETTER R: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0053 LATIN CAPITAL LETTER S: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0054 LATIN CAPITAL LETTER T: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0055 LATIN CAPITAL LETTER U: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0056 LATIN CAPITAL LETTER V: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0057 LATIN CAPITAL LETTER W: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0058 LATIN CAPITAL LETTER X: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0059 LATIN CAPITAL LETTER Y: try adding one of: nushu, math, latin, symbols</li>
+<li>U+005A LATIN CAPITAL LETTER Z: try adding one of: nushu, math, latin, symbols</li>
+<li>U+005B LEFT SQUARE BRACKET: try adding one of: latin, wancho, adlam, syriac, math</li>
+<li>U+005C REVERSE SOLIDUS: try adding one of: latin, wancho, adlam, syriac, math</li>
+<li>U+005D RIGHT SQUARE BRACKET: try adding one of: latin, wancho, adlam, syriac, math</li>
+<li>U+005E CIRCUMFLEX ACCENT: try adding one of: adlam, math, latin</li>
+<li>U+005F LOW LINE: try adding one of: adlam, math, latin</li>
+<li>U+0060 GRAVE ACCENT: try adding one of: math, latin</li>
+<li>U+0061 LATIN SMALL LETTER A: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0062 LATIN SMALL LETTER B: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0063 LATIN SMALL LETTER C: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0064 LATIN SMALL LETTER D: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0065 LATIN SMALL LETTER E: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0066 LATIN SMALL LETTER F: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0067 LATIN SMALL LETTER G: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0068 LATIN SMALL LETTER H: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0069 LATIN SMALL LETTER I: try adding one of: nushu, math, latin, symbols</li>
+<li>U+006A LATIN SMALL LETTER J: try adding one of: nushu, math, latin, symbols</li>
+<li>U+006B LATIN SMALL LETTER K: try adding one of: nushu, math, latin, symbols</li>
+<li>U+006C LATIN SMALL LETTER L: try adding one of: nushu, math, latin, symbols</li>
+<li>U+006D LATIN SMALL LETTER M: try adding one of: nushu, math, latin, symbols</li>
+<li>U+006E LATIN SMALL LETTER N: try adding one of: nushu, math, latin, symbols</li>
+<li>U+006F LATIN SMALL LETTER O: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0070 LATIN SMALL LETTER P: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0071 LATIN SMALL LETTER Q: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0072 LATIN SMALL LETTER R: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0073 LATIN SMALL LETTER S: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0074 LATIN SMALL LETTER T: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0075 LATIN SMALL LETTER U: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0076 LATIN SMALL LETTER V: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0077 LATIN SMALL LETTER W: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0078 LATIN SMALL LETTER X: try adding one of: nushu, math, latin, symbols</li>
+<li>U+0079 LATIN SMALL LETTER Y: try adding one of: nushu, math, latin, symbols</li>
+<li>U+007A LATIN SMALL LETTER Z: try adding one of: nushu, math, latin, symbols</li>
+<li>U+007B LEFT CURLY BRACKET: try adding one of: wancho, adlam, math, latin</li>
+<li>U+007C VERTICAL LINE: try adding one of: adlam, math, latin</li>
+<li>U+007D RIGHT CURLY BRACKET: try adding one of: wancho, adlam, math, latin</li>
+<li>U+007E TILDE: try adding one of: math, latin</li>
+<li>U+0915 DEVANAGARI LETTER KA: try adding devanagari</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font:</p>
+ [code: unreachable-subsetting]
 
 
 
@@ -1324,45 +1031,119 @@ value: 900.0
 * ⚠️ **WARN** <p>The following glyphs have a counter-clockwise outer contour:</p>
 <pre><code>* .notdef has a counter-clockwise outer contour
 
-* .notdef has a counter-clockwise outer contour
+* C (U+0043) has a counter-clockwise outer contour
 
-* .notdef has a counter-clockwise outer contour
+* C (U+0043) has a counter-clockwise outer contour
 
-* .notdef has a counter-clockwise outer contour
-
-* .notdef has a counter-clockwise outer contour
-
-* .notdef has a counter-clockwise outer contour
-
-* A (U+0041) has a counter-clockwise outer contour
-
-* A (U+0041) has a counter-clockwise outer contour
-
-* A (U+0041) has a counter-clockwise outer contour
-
-* A (U+0041) has a counter-clockwise outer contour
-
-* B (U+0042) has a counter-clockwise outer contour
-
-* B (U+0042) has a counter-clockwise outer contour
-
-* B (U+0042) has a counter-clockwise outer contour
-
-* B (U+0042) has a counter-clockwise outer contour
-
-* B (U+0042) has a counter-clockwise outer contour
+* C (U+0043) has a counter-clockwise outer contour
 
 * X (U+0058) has a counter-clockwise outer contour
 
-* one (U+0031) has a counter-clockwise outer contour
+* eight (U+0038) has a counter-clockwise outer contour
+
+* eight (U+0038) has a counter-clockwise outer contour
+
+* eight (U+0038) has a counter-clockwise outer contour
+
+* eight (U+0038) has a counter-clockwise outer contour
+
+* eight (U+0038) has a counter-clockwise outer contour
+
+* eight (U+0038) has a counter-clockwise outer contour
+
+* eight (U+0038) has a counter-clockwise outer contour
+
+* five (U+0035) has a counter-clockwise outer contour
+
+* five (U+0035) has a counter-clockwise outer contour
+
+* five (U+0035) has a counter-clockwise outer contour
+
+* five (U+0035) has a counter-clockwise outer contour
+
+* five (U+0035) has a counter-clockwise outer contour
+
+* four (U+0034) has a counter-clockwise outer contour
+
+* four (U+0034) has a counter-clockwise outer contour
+
+* four (U+0034) has a counter-clockwise outer contour
+
+* four (U+0034) has a counter-clockwise outer contour
+
+* nine (U+0039) has a counter-clockwise outer contour
+
+* nine (U+0039) has a counter-clockwise outer contour
+
+* nine (U+0039) has a counter-clockwise outer contour
+
+* nine (U+0039) has a counter-clockwise outer contour
+
+* nine (U+0039) has a counter-clockwise outer contour
+
+* nine (U+0039) has a counter-clockwise outer contour
 
 * one (U+0031) has a counter-clockwise outer contour
 
 * one (U+0031) has a counter-clockwise outer contour
+
+* parenright (U+0029) has a counter-clockwise outer contour
+
+* parenright (U+0029) has a counter-clockwise outer contour
+
+* parenright (U+0029) has a counter-clockwise outer contour
+
+* seven (U+0037) has a counter-clockwise outer contour
+
+* seven (U+0037) has a counter-clockwise outer contour
+
+* seven (U+0037) has a counter-clockwise outer contour
+
+* six (U+0036) has a counter-clockwise outer contour
+
+* six (U+0036) has a counter-clockwise outer contour
+
+* six (U+0036) has a counter-clockwise outer contour
+
+* six (U+0036) has a counter-clockwise outer contour
+
+* six (U+0036) has a counter-clockwise outer contour
+
+* six (U+0036) has a counter-clockwise outer contour
+
+* three (U+0033) has a counter-clockwise outer contour
+
+* three (U+0033) has a counter-clockwise outer contour
+
+* three (U+0033) has a counter-clockwise outer contour
+
+* three (U+0033) has a counter-clockwise outer contour
+
+* three (U+0033) has a counter-clockwise outer contour
+
+* two (U+0032) has a counter-clockwise outer contour
+
+* two (U+0032) has a counter-clockwise outer contour
+
+* two (U+0032) has a counter-clockwise outer contour
+
+* two (U+0032) has a counter-clockwise outer contour
+
+* two (U+0032) has a counter-clockwise outer contour
 
 * x (U+0078) has a counter-clockwise outer contour
 
-* x (U+0078) has a counter-clockwise outer contour
+* zero (U+0030) has a counter-clockwise outer contour
+
+* zero (U+0030) has a counter-clockwise outer contour
+
+* zero (U+0030) has a counter-clockwise outer contour
+
+* zero (U+0030) has a counter-clockwise outer contour
+
+* zero (U+0030) has a counter-clockwise outer contour
+
+* zero (U+0030) has a counter-clockwise outer contour
 </code></pre>
  [code: ccw-outer-contour]
 
@@ -1456,8 +1237,8 @@ value: 900.0
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 16 | 8 | 104 | 8 | 115 | 0 | 
-| 0% | 0% | 6% | 3% | 41% | 3% | 46% | 0% | 
+| 0 | 0 | 9 | 8 | 102 | 8 | 124 | 0 | 
+| 0% | 0% | 4% | 3% | 41% | 3% | 49% | 0% | 
 
 
 
