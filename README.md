@@ -12,15 +12,26 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts.git%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts.git%2Fgh-pages%2Fbadges%2FUniversal.json
 
-Samaano is a way to learn creation of variable font using fontforge and some python script.
-All the glyphs are created using overlaping rectangles so that interpolation by 
+Samaano is a way to learn creation of variable font using Open Source Tools like Fontforge, Fontra and some python script.
  
 
-The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the spaces are equal in this font. Indic fonts are never made monospaced, but I will use my experience with developing MitraMono, the only monospaced Bengali font made way back in 2002.
+The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the spaces are equal in this font. 
+Indic fonts are usually made monospaced, but the designer will use his experience with developing MitraMono, the only monospaced Bengali font made way back in 2002.
 
-As I am a rank novice in creation of Variable font and Fontforge itself does not support creating it, I will be happy is some experience typographer guides me in this. 
 
 ![Sample Image](documentation/image1.png)
+
+Following are the Design specialities of the font
+
+* Fully created using Open Source Software - mainly [Fontra](https://fontra.xyz) and [Fontforge](https://github.com/fontforge/fontforge).
+
+* Monospaced Font
+
+* Tall Design with high X height and 2:1 Height to Width Ratio
+
+* Simple Glyph construction using Rectangular or quadrilateral components only
+
+
 ![Sample Image](documentation/image2.png)
 
 ## About
@@ -32,7 +43,6 @@ Font is currently in alpha stage
 ## License
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at
-https://scripts.sil.org/OFL
+This license is available with a FAQ at [SIL site](https://scripts.sil.org/OFL)
 
  
