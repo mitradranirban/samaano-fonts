@@ -1,0 +1,18 @@
+
+
+@GDEF_Simple = [\A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z \a 
+	\acutecomb \ampersand \asciicircum \asciitilde \asterisk \at \b \backslash \bar 
+	\braceleft \braceright \bracketleft \bracketright \c \colon \comma \d \dollar \e 
+	\eight \equal \exclam \f \five \four \g  \grave \gravecomb \greater \h 
+	\hyphen \i \j \k \l \less \m \n \nine \numbersign \o \one \p \parenleft \parenright 
+	\percent \period \plus \q \question \quotedbl \quotesingle \r \s \semicolon \seven 
+	\six \slash \space \t \three \two \u \underscore \uni0900 \uni0901 \uni0902 
+	\uni0903 \uni0904 \uni0905 \uni0906 \uni0907 \uni0908 \uni0909 \uni090A \uni090B 
+	\uni090C \uni090D \uni090E \uni090F \uni0910 \uni0911 \uni0912 \uni0913 \uni0914 
+	\uni0915 \uni0916 \uni0917\v \w \x \y \z \zero \uni0918 \uni0919 \uni091A \uni091B ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+
