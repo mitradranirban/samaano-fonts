@@ -1,12 +1,15 @@
 
 
 @GDEF_Simple = [\A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z \a 
-	\ampersand \asciicircum \asciitilde \asterisk \at \b \backslash \bar \braceleft 
-	\braceright \bracketleft \bracketright \c \colon \comma \d \dollar \e \eight 
-	\equal \exclam \f \five \four \g \grave \greater \h \hyphen \i \j \k \ka-deva \l \less 
-	\m \n \nine \numbersign \o \one \p \parenleft \parenright \percent \period \plus \q 
-	\question \quotedbl \quotesingle \r \s \semicolon \seven \six \slash \space \t 
-	\three \two \u \v \w \x \y \z \zero \underscore ];
+	\uni0905 \uni0906 \acutecomb \uni0910 \ampersand \asciicircum \asciitilde 
+	\asterisk \at \uni0914 \b \backslash \bar \braceleft \braceright \bracketleft 
+	\bracketright \c \colon \comma \d \dollar \e \uni090F \eight \equal \exclam \f \five 
+	\four \g \grave \gravecomb \greater \h \hyphen \i \uni0907 \uni0908 \j \k \uni0915 \l 
+	\uni090C \less \m \n \nine \numbersign \o \uni0913 \uni0911 \uni0912 \one \p 
+	\parenleft \parenright \percent \period \plus \q \question \quotedbl 
+	\quotesingle \r \uni090B \s \semicolon \seven \six \slash \space \t \three \two \u 
+	\uni0909 \underscore \uni0900 \uni0901 \uni0902 \uni0903 \uni0904 \uni090A \v \w 
+	\x \y \z \zero \uni090D \uni090E ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, , , ;

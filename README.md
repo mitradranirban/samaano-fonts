@@ -16,7 +16,7 @@ Samaano is a way to learn creation of variable font using Open Source Tools like
  
 
 The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the spaces are equal in this font. 
-Indic fonts are usually made monospaced, but the designer will use his experience with developing MitraMono, the only monospaced Bengali font made way back in 2002.
+Indic fonts are usually never made monospaced, but the designer will use his experience with developing MitraMono, the only monospaced Bengali font made way back in 2002.
 
 
 ![Sample Image](documentation/image1.png)
@@ -27,7 +27,10 @@ Following are the Design specialities of the font
 
 * Monospaced Font
 
-* Tall Design with high X height and 2:1 Height to Width Ratio
+* Two Variable axes of Weight and Width
+
+![animation](documentation/Samaano.gif)
+
 
 * Simple Glyph construction using Rectangular or quadrilateral components only
 
@@ -35,7 +38,7 @@ Following are the Design specialities of the font
 ![Sample Image](documentation/image2.png)
 
 ## About
-This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusisast. 
+This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.
  
 ## Changelog
  
