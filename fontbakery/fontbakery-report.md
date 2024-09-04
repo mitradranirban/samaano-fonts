@@ -10,8 +10,97 @@ fontbakery version: 0.12.10
 
 
 
-<details><summary>[16] Samaano[wght].ttf</summary>
+<details><summary>[22] Samaano[wdth,wght].ttf</summary>
 <div>
+<details>
+    <summary>🔥 <b>FAIL</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The &quot;wdth&quot; axis coordinate of the &quot;Regular&quot; instance must be 100. Got 200.0 as a default value instead.</p>
+ [code: wdth-not-100]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.head.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>head version is &quot;0.00200&quot; while name version string (for platform 3, encoding 1) is &quot;Version 0.001&quot;.</p>
+ [code: mismatch]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.name.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The PANOSE numbers are incorrect for a monospaced font.</p>
+ [code: mono-bad-panose]
+
+
+
+* 🔥 **FAIL** <p>On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead.</p>
+ [code: mono-bad-post-isFixedPitch]
+
+
+
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1 instead.
+Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
+ [code: bad-numberOfHMetrics]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to a name ID whose string is equal to the string of either name ID 2 or 17, and its postScriptNameID value is set to a name ID whose string is equal to the string of name ID 6. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>'Black' instance has the same coordinates as the default instance; its subfamily name should be 'UltraExpanded Black'.</p>
+<p>Note: It is alternatively possible that Name ID 17 is incorrect, and should be set to the default instance subfamily name, 'Black', rather than ''UltraExpanded Black''. If the default instance is 'Black', NameID 17 is probably the problem.</p>
+ [code: invalid-default-instance-subfamily-name]
+
+
+
+* 🔥 **FAIL** <p>'Black' instance has the same coordinates as the default instance; its postscript name should be 'Samaano-UltraExpandedBlack', instead of 'Samaano-Black'.</p>
+ [code: invalid-default-instance-postscript-name]
+
+
+
+</div>
+</details>
+
 <details>
     <summary>🔥 <b>FAIL</b> Name table records must not have trailing spaces. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
     <div>
@@ -31,7 +120,7 @@ fontbakery version: 0.12.10
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphnames.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Ensure indic fonts have the Indian Rupee Sign glyph. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
     <div>
 
 
@@ -40,9 +129,8 @@ fontbakery version: 0.12.10
 
 
 
-* 🔥 **FAIL** <p>The following glyph names do not comply with naming conventions: ka-deva</p>
-<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not.</p>
- [code: found-invalid-names]
+* 🔥 **FAIL** <p>Please add a glyph for Indian Rupee Sign (₹) at codepoint U+20B9.</p>
+ [code: missing-rupee]
 
 
 
@@ -86,6 +174,103 @@ fontbakery version: 0.12.10
 </details>
 
 <details>
+    <summary>🔥 <b>FAIL</b> Combined length of family and style must not exceed 32 characters. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black ExtraLight' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 260 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black ExtraLight' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 260 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Light' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 262 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Light' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 262 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Regular' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 264 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Regular' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 264 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Medium' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 266 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Medium' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 266 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black SemiBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 268 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black SemiBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 268 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black ExtraBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 272 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black ExtraBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 272 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Black' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 274 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraExpanded Black Black' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 274 exceeds 32 characters.</p>
+<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
+ [code: instance-too-long]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>🔥 <b>FAIL</b> Copyright notices match canonical pattern in fonts <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.copyright.html#"></a></summary>
     <div>
 
@@ -98,7 +283,7 @@ fontbakery version: 0.12.10
 * 🔥 **FAIL** <p>Name Table entry: Copyright notices should match a pattern similar to:</p>
 <p>&quot;Copyright 2020 The Familyname Project Authors (git url)&quot;</p>
 <p>But instead we have got:</p>
-<p>&quot;Copyright (c) 2024, Samaano Font Authors (<a href="https://github.com/mitradranirban/samaano-fonts">https://github.com/mitradranirban/samaano-fonts</a>)&quot;</p>
+<p>&quot;Copyright 2024, Samaano Font Authors (<a href="https://github.com/mitradranirban/samaano-fonts">https://github.com/mitradranirban/samaano-fonts</a>)&quot;</p>
  [code: bad-notice-format]
 
 
@@ -675,12 +860,6 @@ fontbakery version: 0.12.10
 - 0x02DD (DOUBLE ACUTE ACCENT)
 
 
-- 0x0300 (COMBINING GRAVE ACCENT)
-
-
-- 0x0301 (COMBINING ACUTE ACCENT)
-
-
 - 0x0302 (COMBINING CIRCUMFLEX ACCENT)
 
 
@@ -814,7 +993,7 @@ fontbakery version: 0.12.10
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Check font follows the Google Fonts vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
+    <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
     <div>
 
 
@@ -823,8 +1002,9 @@ fontbakery version: 0.12.10
 
 
 
-* 🔥 **FAIL** <p>The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2048 when it should be at least 2457</p>
- [code: bad-hhea-range]
+* ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
+acutecomb (U+0301), gravecomb (U+0300), uni0900 (U+0900), uni0901 (U+0901) and uni0902 (U+0902)</p>
+ [code: mark-chars]
 
 
 
@@ -860,17 +1040,9 @@ fontbakery version: 0.12.10
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 0 start point differs in glyph 'braceright' between location wght=100 and location wght=900
+<pre><code>- Contour order differs in glyph 'uni090E': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=900,wdth=50, [7, 8, 9, 0, 1, 2, 3, 4, 5, 6] in wght=100,wdth=200.
 
-- Contour 1 start point differs in glyph 'braceright' between location wght=100 and location wght=900
-
-- Contour 2 start point differs in glyph 'braceright' between location wght=100 and location wght=900
-
-- Contour 3 start point differs in glyph 'braceright' between location wght=100 and location wght=900
-
-- Contour 4 start point differs in glyph 'braceright' between location wght=100 and location wght=900
-
-- Contour 5 start point differs in glyph 'braceright' between location wght=100 and location wght=900
+- Contour order differs in glyph 'uni090D': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=900,wdth=50, [7, 8, 9, 0, 1, 2, 3, 4, 5, 6] in wght=100,wdth=200.
 </code></pre>
  [code: interpolation-issues]
 
@@ -913,105 +1085,51 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+0020 SPACE: try adding one of: kaithi, elbasan, tagalog, thai, soyombo, sogdian, latin, rejang, old-permic, gujarati, cyrillic, lycian, malayalam, toto, nandinagari, ottoman-siyaq-numbers, elymaic, hebrew, nushu, anatolian-hieroglyphs, canadian-aboriginal, manichaean, medefaidrin, tai-tham, linear-a, signwriting, warang-citi, hanunoo, mandaic, old-hungarian, dogra, old-persian, saurashtra, chinese-hongkong, japanese, pahawh-hmong, bassa-vah, tifinagh, nag-mundari, kharoshthi, runic, linear-b, duployan, kana-extended, mende-kikakui, limbu, vithkuqi, sora-sompeng, shavian, balinese, sinhala, gunjala-gondi, tagbanwa, meroitic-cursive, cyrillic-ext, telugu, georgian, chakma, ethiopic, meroitic, kannada, symbols, khojki, hatran, new-tai-lue, syriac, meroitic-hieroglyphs, ahom, coptic, dives-akuru, old-south-arabian, buginese, osage, old-north-arabian, imperial-aramaic, znamenny, kayah-li, takri, deseret, inscriptional-pahlavi, kawi, ogham, lepcha, cham, javanese, caucasian-albanian, lao, newa, devanagari, bhaiksuki, yi, nabataean, psalter-pahlavi, carian, meetei-mayek, sharada, cuneiform, tai-viet, avestan, masaram-gondi, phoenician, khitan-small-script, tirhuta, greek, egyptian-hieroglyphs, indic-siyaq-numbers, cypriot, batak, armenian, tangsa, inscriptional-parthian, greek-ext, korean, brahmi, thaana, gothic, palmyrene, modi, chorasmian, osmanya, siddham, mayan-numerals, miao, wancho, nko, cherokee, myanmar, zanabazar-square, arabic, ugaritic, oriya, buhid, latin-ext, lydian, syloti-nagri, multani, vai, mro, sundanese, old-sogdian, old-uyghur, grantha, cypro-minoan, tibetan, bengali, khudawadi, vietnamese, adlam, marchen, gurmukhi, mongolian, tamil, bamum, chinese-simplified, glagolitic, hanifi-rohingya, tamil-supplement, math, music, makasar, pau-cin-hau, nyiakeng-puachue-hmong, mahajani, braille, yezidi, ol-chiki, chinese-traditional, tai-le, old-turkic, lisu, samaritan, tangut, phags-pa, old-italic</li>
-<li>U+0021 EXCLAMATION MARK: try adding one of: latin, adlam, cham, thaana, mongolian, syriac, gunjala-gondi, math, masaram-gondi</li>
-<li>U+0022 QUOTATION MARK: try adding one of: latin, wancho, adlam, cham, mongolian, math, masaram-gondi</li>
-<li>U+0023 NUMBER SIGN: try adding one of: adlam, math, latin, symbols</li>
-<li>U+0024 DOLLAR SIGN: try adding one of: adlam, math, latin</li>
-<li>U+0025 PERCENT SIGN: try adding one of: latin, adlam, gunjala-gondi, math, masaram-gondi</li>
-<li>U+0026 AMPERSAND: try adding one of: adlam, math, latin</li>
-<li>U+0027 APOSTROPHE: try adding one of: latin, wancho, adlam, cham, warang-citi, gunjala-gondi, math, masaram-gondi</li>
-<li>U+0028 LEFT PARENTHESIS: try adding one of: latin, wancho, adlam, cham, thaana, mongolian, syriac, gunjala-gondi, math, masaram-gondi</li>
-<li>U+0029 RIGHT PARENTHESIS: try adding one of: latin, wancho, adlam, cham, thaana, mongolian, syriac, gunjala-gondi, math, masaram-gondi</li>
-<li>U+002A ASTERISK: try adding one of: latin, adlam, symbols, syriac, gunjala-gondi, math, masaram-gondi</li>
-<li>U+002B PLUS SIGN: try adding one of: latin, adlam, syriac, gunjala-gondi, math, masaram-gondi</li>
-<li>U+002C COMMA: try adding one of: latin, wancho, adlam, cham, thaana, nushu, gunjala-gondi, math, coptic, masaram-gondi</li>
-<li>U+002D HYPHEN-MINUS: try adding one of: kaithi, kharoshthi, sundanese, sora-sompeng, gunjala-gondi, masaram-gondi, latin, adlam, mongolian, syriac, hebrew, nushu, armenian, coptic, kayah-li, math, wancho, cham, lisu</li>
-<li>U+002E FULL STOP: try adding one of: latin, math, wancho, adlam, cham, thaana, syriac, nushu, gunjala-gondi, avestan, coptic, masaram-gondi</li>
-<li>U+002F SOLIDUS: try adding one of: latin, wancho, adlam, cham, syriac, gunjala-gondi, math, masaram-gondi</li>
-<li>U+0030 DIGIT ZERO: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0031 DIGIT ONE: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0032 DIGIT TWO: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0033 DIGIT THREE: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0034 DIGIT FOUR: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0035 DIGIT FIVE: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0036 DIGIT SIX: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0037 DIGIT SEVEN: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0038 DIGIT EIGHT: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0039 DIGIT NINE: try adding one of: nushu, math, latin, symbols</li>
-<li>U+003A COLON: try adding one of: latin, meroitic, adlam, cham, thaana, syriac, gunjala-gondi, math, coptic, masaram-gondi</li>
-<li>U+003B SEMICOLON: try adding one of: latin, adlam, cham, thaana, math, coptic, masaram-gondi</li>
-<li>U+003C LESS-THAN SIGN: try adding one of: latin, adlam, gunjala-gondi, math, masaram-gondi</li>
-<li>U+003D EQUALS SIGN: try adding one of: latin, adlam, syriac, gunjala-gondi, math, masaram-gondi</li>
-<li>U+003E GREATER-THAN SIGN: try adding one of: latin, adlam, gunjala-gondi, math, masaram-gondi</li>
-<li>U+003F QUESTION MARK: try adding one of: latin, adlam, cham, mongolian, balinese, gunjala-gondi, math, masaram-gondi</li>
-<li>U+0040 COMMERCIAL AT: try adding one of: adlam, math, latin</li>
-<li>U+0041 LATIN CAPITAL LETTER A: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0042 LATIN CAPITAL LETTER B: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0043 LATIN CAPITAL LETTER C: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0044 LATIN CAPITAL LETTER D: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0045 LATIN CAPITAL LETTER E: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0046 LATIN CAPITAL LETTER F: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0047 LATIN CAPITAL LETTER G: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0048 LATIN CAPITAL LETTER H: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0049 LATIN CAPITAL LETTER I: try adding one of: nushu, math, latin, symbols</li>
-<li>U+004A LATIN CAPITAL LETTER J: try adding one of: nushu, math, latin, symbols</li>
-<li>U+004B LATIN CAPITAL LETTER K: try adding one of: nushu, math, latin, symbols</li>
-<li>U+004C LATIN CAPITAL LETTER L: try adding one of: nushu, math, latin, symbols</li>
-<li>U+004D LATIN CAPITAL LETTER M: try adding one of: nushu, math, latin, symbols</li>
-<li>U+004E LATIN CAPITAL LETTER N: try adding one of: nushu, math, latin, symbols</li>
-<li>U+004F LATIN CAPITAL LETTER O: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0050 LATIN CAPITAL LETTER P: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0051 LATIN CAPITAL LETTER Q: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0052 LATIN CAPITAL LETTER R: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0053 LATIN CAPITAL LETTER S: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0054 LATIN CAPITAL LETTER T: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0055 LATIN CAPITAL LETTER U: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0056 LATIN CAPITAL LETTER V: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0057 LATIN CAPITAL LETTER W: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0058 LATIN CAPITAL LETTER X: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0059 LATIN CAPITAL LETTER Y: try adding one of: nushu, math, latin, symbols</li>
-<li>U+005A LATIN CAPITAL LETTER Z: try adding one of: nushu, math, latin, symbols</li>
-<li>U+005B LEFT SQUARE BRACKET: try adding one of: latin, wancho, adlam, syriac, math</li>
-<li>U+005C REVERSE SOLIDUS: try adding one of: latin, wancho, adlam, syriac, math</li>
-<li>U+005D RIGHT SQUARE BRACKET: try adding one of: latin, wancho, adlam, syriac, math</li>
-<li>U+005E CIRCUMFLEX ACCENT: try adding one of: adlam, math, latin</li>
-<li>U+005F LOW LINE: try adding one of: adlam, math, latin</li>
-<li>U+0060 GRAVE ACCENT: try adding one of: math, latin</li>
-<li>U+0061 LATIN SMALL LETTER A: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0062 LATIN SMALL LETTER B: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0063 LATIN SMALL LETTER C: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0064 LATIN SMALL LETTER D: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0065 LATIN SMALL LETTER E: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0066 LATIN SMALL LETTER F: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0067 LATIN SMALL LETTER G: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0068 LATIN SMALL LETTER H: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0069 LATIN SMALL LETTER I: try adding one of: nushu, math, latin, symbols</li>
-<li>U+006A LATIN SMALL LETTER J: try adding one of: nushu, math, latin, symbols</li>
-<li>U+006B LATIN SMALL LETTER K: try adding one of: nushu, math, latin, symbols</li>
-<li>U+006C LATIN SMALL LETTER L: try adding one of: nushu, math, latin, symbols</li>
-<li>U+006D LATIN SMALL LETTER M: try adding one of: nushu, math, latin, symbols</li>
-<li>U+006E LATIN SMALL LETTER N: try adding one of: nushu, math, latin, symbols</li>
-<li>U+006F LATIN SMALL LETTER O: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0070 LATIN SMALL LETTER P: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0071 LATIN SMALL LETTER Q: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0072 LATIN SMALL LETTER R: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0073 LATIN SMALL LETTER S: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0074 LATIN SMALL LETTER T: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0075 LATIN SMALL LETTER U: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0076 LATIN SMALL LETTER V: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0077 LATIN SMALL LETTER W: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0078 LATIN SMALL LETTER X: try adding one of: nushu, math, latin, symbols</li>
-<li>U+0079 LATIN SMALL LETTER Y: try adding one of: nushu, math, latin, symbols</li>
-<li>U+007A LATIN SMALL LETTER Z: try adding one of: nushu, math, latin, symbols</li>
-<li>U+007B LEFT CURLY BRACKET: try adding one of: wancho, adlam, math, latin</li>
-<li>U+007C VERTICAL LINE: try adding one of: adlam, math, latin</li>
-<li>U+007D RIGHT CURLY BRACKET: try adding one of: wancho, adlam, math, latin</li>
-<li>U+007E TILDE: try adding one of: math, latin</li>
+<li>U+0900 DEVANAGARI SIGN INVERTED CANDRABINDU: try adding devanagari</li>
+<li>U+0901 DEVANAGARI SIGN CANDRABINDU: try adding devanagari</li>
+<li>U+0902 DEVANAGARI SIGN ANUSVARA: try adding devanagari</li>
+<li>U+0903 DEVANAGARI SIGN VISARGA: try adding devanagari</li>
+<li>U+0904 DEVANAGARI LETTER SHORT A: try adding devanagari</li>
+<li>U+0905 DEVANAGARI LETTER A: try adding devanagari</li>
+<li>U+0906 DEVANAGARI LETTER AA: try adding devanagari</li>
+<li>U+0907 DEVANAGARI LETTER I: try adding devanagari</li>
+<li>U+0908 DEVANAGARI LETTER II: try adding devanagari</li>
+<li>U+0909 DEVANAGARI LETTER U: try adding devanagari</li>
+<li>U+090A DEVANAGARI LETTER UU: try adding devanagari</li>
+<li>U+090B DEVANAGARI LETTER VOCALIC R: try adding devanagari</li>
+<li>U+090C DEVANAGARI LETTER VOCALIC L: try adding devanagari</li>
+<li>U+090D DEVANAGARI LETTER CANDRA E: try adding devanagari</li>
+<li>U+090E DEVANAGARI LETTER SHORT E: try adding devanagari</li>
+<li>U+090F DEVANAGARI LETTER E: try adding devanagari</li>
+<li>U+0910 DEVANAGARI LETTER AI: try adding devanagari</li>
+<li>U+0911 DEVANAGARI LETTER CANDRA O: try adding devanagari</li>
+<li>U+0912 DEVANAGARI LETTER SHORT O: try adding devanagari</li>
+<li>U+0913 DEVANAGARI LETTER O: try adding devanagari</li>
+<li>U+0914 DEVANAGARI LETTER AU: try adding devanagari</li>
 <li>U+0915 DEVANAGARI LETTER KA: try adding devanagari</li>
 </ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font:</p>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin-ext</code></p>
  [code: unreachable-subsetting]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: j̀ j́</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: ì í</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Gulay (Latn, 250,478 speakers), Avokaya (Latn, 100,000 speakers), Cicipu (Latn, 44,000 speakers), Igbo (Latn, 27,823,640 speakers), Dutch (Latn, 31,709,104 speakers), Mundani (Latn, 34,000 speakers), Bafut (Latn, 158,146 speakers), Lithuanian (Latn, 2,357,094 speakers), Ebira (Latn, 2,200,000 speakers), Ejagham (Latn, 120,000 speakers), Lugbara (Latn, 2,200,000 speakers), Dan (Latn, 1,099,244 speakers), Yala (Latn, 200,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Sar (Latn, 500,000 speakers), Zapotec (Latn, 490,000 speakers), Koonzime (Latn, 40,000 speakers), South Central Banda (Latn, 244,000 speakers), Ekpeye (Latn, 226,000 speakers), Dii (Latn, 71,000 speakers), Nzakara (Latn, 50,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Kom (Latn, 360,685 speakers), Ngbaka (Latn, 1,020,000 speakers), Aghem (Latn, 38,843 speakers), Vute (Latn, 21,000 speakers), Mfumte (Latn, 79,000 speakers), Ma’di (Latn, 584,000 speakers), Nateni (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers), Belarusian (Cyrl, 10,064,517 speakers), Bete-Bendi (Latn, 100,000 speakers), Makaa (Latn, 221,000 speakers), Mango (Latn, 77,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers).</p>
+ [code: soft-dotted]
 
 
 
@@ -1038,6 +1156,18 @@ definitions.</p>
 * C (U+0043) has a counter-clockwise outer contour
 
 * X (U+0058) has a counter-clockwise outer contour
+
+* braceright (U+007D) has a counter-clockwise outer contour
+
+* braceright (U+007D) has a counter-clockwise outer contour
+
+* braceright (U+007D) has a counter-clockwise outer contour
+
+* braceright (U+007D) has a counter-clockwise outer contour
+
+* braceright (U+007D) has a counter-clockwise outer contour
+
+* braceright (U+007D) has a counter-clockwise outer contour
 
 * eight (U+0038) has a counter-clockwise outer contour
 
@@ -1133,6 +1263,8 @@ definitions.</p>
 
 * x (U+0078) has a counter-clockwise outer contour
 
+* x (U+0078) has a counter-clockwise outer contour
+
 * zero (U+0030) has a counter-clockwise outer contour
 
 * zero (U+0030) has a counter-clockwise outer contour
@@ -1220,7 +1352,7 @@ definitions.</p>
 
 
 
-* 🔥 **FAIL** <p>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/variable/Samaano[wght].ttf'].</p>
+* 🔥 **FAIL** <p>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/variable/Samaano[wdth,wght].ttf'].</p>
  [code: missing-os2-fsselection-bit7]
 
 
@@ -1237,8 +1369,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 9 | 8 | 102 | 8 | 124 | 0 | 
-| 0% | 0% | 4% | 3% | 41% | 3% | 49% | 0% | 
+| 0 | 0 | 13 | 10 | 98 | 8 | 122 | 0 | 
+| 0% | 0% | 5% | 4% | 39% | 3% | 49% | 0% | 
 
 
 
