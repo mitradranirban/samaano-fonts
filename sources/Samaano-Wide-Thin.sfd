@@ -5,7 +5,8 @@ FamilyName: Samaano
 Weight: Thin
 Copyright: Copyright 2024, Samaano Font Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 0.002
+Version: 0.2
+StyleMapFamilyName: Samaano Wide Thin
 ItalicAngle: 0
 UnderlinePosition: -204
 UnderlineWidth: 102
@@ -17,13 +18,14 @@ UFODescent: -410
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "public.default" 0 "glyphs"
+StyleMap: 0x0000
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1725508804
-ModificationTime: 1725514393
-PfmFamily: 49
+CreationTime: 1725521133
+ModificationTime: 1725524551
+PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
 LineGap: 0
@@ -46,9 +48,8 @@ OS2CapHeight: 1554
 OS2XHeight: 1024
 OS2FamilyClass: 1031
 OS2Vendor: 'anir'
-MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "" "" "" "" "" "Version 0.002" "" "" "" "Dr Anirban Mitra" "A Monspace Variable Font Family in Latin and Devanagari created using rectangular components only " "" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
+LangName: 1033 "Copyright 2024, Samaano Font Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.002" "" "" "" "Dr Anirban Mitra" "A Monspace Variable Font Family in Latin and Devanagari created using rectangular components only " "" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -56,8 +57,6 @@ DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
 WinInfo: 2310 10 4
-BeginPrivate: 0
-EndPrivate
 Grid
 -1024 1557 m 0
  3072 1557 l 1024
@@ -70,7 +69,7 @@ Grid
 -1024 1023 m 0
  3072 1023 l 1024
 EndSplineSet
-BeginChars: 65536 129
+BeginChars: 65536 134
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -1629,45 +1628,45 @@ GlifName: eight
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-522 0 m 257
- 522 860 l 257
- 618 860 l 257
- 618 0 l 257
- 522 0 l 257
-522 935 m 257
- 522 1640 l 257
- 624 1640 l 257
- 624 935 l 257
- 522 935 l 257
-634 0 m 257
- 628 105 l 257
- 1388 90 l 257
- 1384 0 l 257
- 634 0 l 257
-654 1520 m 257
- 654 1630 l 257
- 1394 1640 l 257
- 1394 1520 l 257
- 654 1520 l 257
-664 810 m 257
- 664 935 l 257
- 1384 935 l 257
- 1384 810 l 257
- 664 810 l 257
-1418 0 m 257
- 1418 845 l 257
- 1526 845 l 257
- 1526 0 l 257
- 1418 0 l 257
-1434 935 m 257
- 1434 1640 l 257
- 1526 1640 l 257
- 1526 935 l 257
- 1434 935 l 257
+22 0 m 261
+ 22 860 l 261
+ 118 860 l 261
+ 118 0 l 261
+ 22 0 l 261
+22 935 m 261
+ 22 1640 l 261
+ 124 1640 l 261
+ 124 935 l 261
+ 22 935 l 261
+134 0 m 261
+ 128 105 l 261
+ 1888 90 l 257
+ 1884 0 l 257
+ 134 0 l 261
+154 1520 m 261
+ 154 1630 l 261
+ 1894 1640 l 257
+ 1894 1520 l 257
+ 154 1520 l 261
+164 810 m 261
+ 164 935 l 261
+ 1884 935 l 257
+ 1884 810 l 257
+ 164 810 l 261
+1918 0 m 257
+ 1918 845 l 257
+ 2026 845 l 257
+ 2026 0 l 257
+ 1918 0 l 257
+1934 935 m 257
+ 1934 1640 l 257
+ 2026 1640 l 257
+ 2026 935 l 257
+ 1934 935 l 257
 EndSplineSet
 EndChar
 
@@ -1702,20 +1701,20 @@ GlifName: exclam
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-990 276 m 257
- 1057 276 l 257
- 1057 374 l 257
- 990 374 l 257
- 990 276 l 257
-988 611 m 257
- 1060 611 l 257
- 1060 1629 l 257
- 988 1629 l 257
- 988 611 l 257
+990 76 m 261
+ 1057 76 l 261
+ 1057 174 l 261
+ 990 174 l 261
+ 990 76 l 261
+988 411 m 261
+ 1060 411 l 261
+ 1060 1429 l 261
+ 988 1429 l 261
+ 988 411 l 261
 EndSplineSet
 EndChar
 
@@ -1753,35 +1752,35 @@ GlifName: five
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-522 935 m 257
- 522 1640 l 257
- 624 1640 l 257
- 624 935 l 257
- 522 935 l 257
-628 105 m 257
- 1388 90 l 257
- 1384 0 l 257
- 634 0 l 257
- 628 105 l 257
-654 1520 m 257
- 654 1630 l 257
- 1394 1640 l 257
- 1394 1520 l 257
- 654 1520 l 257
-664 810 m 257
- 664 935 l 257
- 1384 935 l 257
- 1384 810 l 257
- 664 810 l 257
-1418 0 m 257
- 1418 845 l 257
- 1526 845 l 257
- 1526 0 l 257
- 1418 0 l 257
+22 935 m 261
+ 22 1640 l 261
+ 124 1640 l 261
+ 124 935 l 261
+ 22 935 l 261
+128 105 m 261
+ 1888 90 l 257
+ 1884 0 l 257
+ 134 0 l 261
+ 128 105 l 261
+154 1520 m 261
+ 154 1630 l 261
+ 1894 1640 l 257
+ 1894 1520 l 257
+ 154 1520 l 261
+164 810 m 261
+ 164 935 l 261
+ 1884 935 l 257
+ 1884 810 l 257
+ 164 810 l 261
+1918 0 m 257
+ 1918 845 l 257
+ 2026 845 l 257
+ 2026 0 l 257
+ 1918 0 l 257
 EndSplineSet
 EndChar
 
@@ -1791,30 +1790,30 @@ GlifName: four
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-522 935 m 257
- 522 1640 l 257
- 624 1640 l 257
- 624 935 l 257
- 522 935 l 257
-664 810 m 257
- 664 935 l 257
- 1384 935 l 257
- 1384 810 l 257
- 664 810 l 257
-1418 0 m 257
- 1418 845 l 257
- 1526 845 l 257
- 1526 0 l 257
- 1418 0 l 257
-1434 935 m 257
- 1434 1640 l 257
- 1526 1640 l 257
- 1526 935 l 257
- 1434 935 l 257
+22 935 m 261
+ 22 1640 l 261
+ 124 1640 l 261
+ 124 935 l 261
+ 22 935 l 261
+164 810 m 261
+ 164 935 l 261
+ 1884 935 l 257
+ 1884 810 l 257
+ 164 810 l 261
+1918 0 m 257
+ 1918 845 l 257
+ 2026 845 l 257
+ 2026 0 l 257
+ 1918 0 l 257
+1934 935 m 257
+ 1934 1640 l 257
+ 2026 1640 l 257
+ 2026 935 l 257
+ 1934 935 l 257
 EndSplineSet
 EndChar
 
@@ -1862,7 +1861,7 @@ GlifName: uni0917
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -1872,19 +1871,19 @@ SplineSet
  172 853 l 257
  102 853 l 257
 102 882 m 257
- 961 882 l 261
- 961 812 l 261
+ 961 882 l 257
+ 961 812 l 257
  102 812 l 257
  102 882 l 257
-891 1556 m 261
- 961 1556 l 261
- 961 812 l 261
- 891 812 l 261
- 891 1556 l 261
+891 1556 m 257
+ 961 1556 l 257
+ 961 812 l 257
+ 891 812 l 257
+ 891 1556 l 257
 2048 1557 m 257
  2048 1496 l 257
- 773 1496 l 261
- 773 1557 l 261
+ 773 1496 l 257
+ 773 1557 l 257
  2048 1557 l 257
 1897 1523 m 257
  1967 1523 l 257
@@ -2223,40 +2222,40 @@ GlifName: nine
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-522 935 m 257
- 522 1640 l 257
- 624 1640 l 257
- 624 935 l 257
- 522 935 l 257
-628 105 m 257
- 1388 90 l 257
- 1384 0 l 257
- 634 0 l 257
- 628 105 l 257
-654 1520 m 257
- 654 1630 l 257
- 1394 1640 l 257
- 1394 1520 l 257
- 654 1520 l 257
-664 810 m 257
- 664 935 l 257
- 1384 935 l 257
- 1384 810 l 257
- 664 810 l 257
-1418 0 m 257
- 1418 845 l 257
- 1526 845 l 257
- 1526 0 l 257
- 1418 0 l 257
-1434 935 m 257
- 1434 1640 l 257
- 1526 1640 l 257
- 1526 935 l 257
- 1434 935 l 257
+22 935 m 261
+ 22 1640 l 261
+ 124 1640 l 261
+ 124 935 l 261
+ 22 935 l 261
+128 105 m 261
+ 1888 90 l 257
+ 1884 0 l 257
+ 134 0 l 261
+ 128 105 l 261
+154 1520 m 261
+ 154 1630 l 261
+ 1894 1640 l 257
+ 1894 1520 l 257
+ 154 1520 l 261
+164 810 m 261
+ 164 935 l 261
+ 1884 935 l 257
+ 1884 810 l 257
+ 164 810 l 261
+1918 0 m 257
+ 1918 845 l 257
+ 2026 845 l 257
+ 2026 0 l 257
+ 1918 0 l 257
+1934 935 m 257
+ 1934 1640 l 257
+ 2026 1640 l 257
+ 2026 935 l 257
+ 1934 935 l 257
 EndSplineSet
 EndChar
 
@@ -2774,25 +2773,25 @@ GlifName: seven
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-575 1520 m 257
- 575 1630 l 257
- 1315 1640 l 257
- 1315 1520 l 257
- 575 1520 l 257
-1362 984 m 257
- 1351 1635 l 257
- 1450 1635 l 257
- 1458 980 l 257
- 1362 984 l 257
-1377 30 m 257
- 1362 933 l 257
- 1451 943 l 257
- 1473 30 l 257
- 1377 30 l 257
+75 1520 m 261
+ 75 1630 l 261
+ 1815 1640 l 257
+ 1815 1520 l 257
+ 75 1520 l 261
+1862 984 m 257
+ 1851 1635 l 257
+ 1950 1635 l 257
+ 1958 980 l 257
+ 1862 984 l 257
+1877 30 m 257
+ 1862 933 l 257
+ 1951 943 l 257
+ 1973 30 l 257
+ 1877 30 l 257
 EndSplineSet
 EndChar
 
@@ -2802,40 +2801,40 @@ GlifName: six
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-522 0 m 257
- 522 860 l 257
- 618 860 l 257
- 618 0 l 257
- 522 0 l 257
-522 935 m 257
- 522 1640 l 257
- 624 1640 l 257
- 624 935 l 257
- 522 935 l 257
-628 105 m 257
- 1388 90 l 257
- 1384 0 l 257
- 634 0 l 257
- 628 105 l 257
-654 1520 m 257
- 654 1630 l 257
- 1394 1640 l 257
- 1394 1520 l 257
- 654 1520 l 257
-664 810 m 257
- 664 935 l 257
- 1384 935 l 257
- 1384 810 l 257
- 664 810 l 257
-1418 0 m 257
- 1418 845 l 257
- 1526 845 l 257
- 1526 0 l 257
- 1418 0 l 257
+22 0 m 261
+ 22 860 l 261
+ 118 860 l 261
+ 118 0 l 261
+ 22 0 l 261
+22 935 m 261
+ 22 1640 l 261
+ 124 1640 l 261
+ 124 935 l 261
+ 22 935 l 261
+128 105 m 261
+ 1888 90 l 257
+ 1884 0 l 257
+ 134 0 l 261
+ 128 105 l 261
+154 1520 m 261
+ 154 1630 l 261
+ 1894 1640 l 257
+ 1894 1520 l 257
+ 154 1520 l 261
+164 810 m 261
+ 164 935 l 261
+ 1884 935 l 257
+ 1884 810 l 257
+ 164 810 l 261
+1918 0 m 257
+ 1918 845 l 257
+ 2026 845 l 257
+ 2026 0 l 257
+ 1918 0 l 257
 EndSplineSet
 EndChar
 
@@ -2903,35 +2902,35 @@ GlifName: three
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-576 105 m 257
- 1336 90 l 257
- 1330 0 l 257
- 580 0 l 257
- 576 105 l 257
-600 1520 m 257
- 600 1630 l 257
- 1340 1640 l 257
- 1340 1520 l 257
- 600 1520 l 257
-610 810 m 257
- 610 935 l 257
- 1330 935 l 257
- 1330 810 l 257
- 610 810 l 257
-1366 0 m 257
- 1366 845 l 257
- 1472 845 l 257
- 1472 0 l 257
- 1366 0 l 257
-1380 935 m 257
- 1380 1640 l 257
- 1472 1640 l 257
- 1472 935 l 257
- 1380 935 l 257
+76 105 m 261
+ 1836 90 l 257
+ 1830 0 l 257
+ 80 0 l 261
+ 76 105 l 261
+100 1520 m 261
+ 100 1630 l 261
+ 1840 1640 l 257
+ 1840 1520 l 257
+ 100 1520 l 261
+110 810 m 261
+ 110 935 l 261
+ 1830 935 l 257
+ 1830 810 l 257
+ 110 810 l 261
+1866 0 m 257
+ 1866 845 l 257
+ 1972 845 l 257
+ 1972 0 l 257
+ 1866 0 l 257
+1880 935 m 257
+ 1880 1640 l 257
+ 1972 1640 l 257
+ 1972 935 l 257
+ 1880 935 l 257
 EndSplineSet
 EndChar
 
@@ -2941,35 +2940,35 @@ GlifName: two
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-522 111 m 257
- 522 795 l 257
- 618 795 l 257
- 618 111 l 257
- 522 111 l 257
-628 105 m 257
- 1388 90 l 257
- 1384 0 l 257
- 634 0 l 257
- 628 105 l 257
-654 1520 m 257
- 654 1630 l 257
- 1394 1640 l 257
- 1394 1520 l 257
- 654 1520 l 257
-664 810 m 257
- 664 935 l 257
- 1384 935 l 257
- 1384 810 l 257
- 664 810 l 257
-1434 935 m 257
- 1434 1640 l 257
- 1526 1640 l 257
- 1526 935 l 257
- 1434 935 l 257
+22 111 m 261
+ 22 795 l 261
+ 118 795 l 261
+ 118 111 l 261
+ 22 111 l 261
+128 105 m 261
+ 1888 90 l 257
+ 1884 0 l 257
+ 134 0 l 261
+ 128 105 l 261
+154 1520 m 261
+ 154 1630 l 261
+ 1894 1640 l 257
+ 1894 1520 l 257
+ 154 1520 l 261
+164 810 m 261
+ 164 935 l 261
+ 1884 935 l 257
+ 1884 810 l 257
+ 164 810 l 261
+1934 935 m 257
+ 1934 1640 l 257
+ 2026 1640 l 257
+ 2026 935 l 257
+ 1934 935 l 257
 EndSplineSet
 EndChar
 
@@ -3500,7 +3499,7 @@ GlifName: uni090B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -3727,7 +3726,7 @@ GlifName: uni090F_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -3775,7 +3774,7 @@ GlifName: uni0910
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -3828,7 +3827,7 @@ GlifName: uni0911
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -3954,7 +3953,7 @@ GlifName: uni0913
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4007,7 +4006,7 @@ GlifName: uni0914
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4046,16 +4045,16 @@ SplineSet
  1992 1 l 257
  1992 1518 l 257
  1931 1518 l 257
-991 1682 m 261
+991 1682 m 257
  1563 1525 l 257
  1627 1540 l 257
- 1032 1731 l 261
- 991 1682 l 261
-1103 1751 m 261
+ 1032 1731 l 257
+ 991 1682 l 257
+1103 1751 m 257
  1637 1542 l 257
  1718 1549 l 257
- 1156 1783 l 261
- 1103 1751 l 261
+ 1156 1783 l 257
+ 1103 1751 l 257
 EndSplineSet
 EndChar
 
@@ -4222,7 +4221,7 @@ GlifName: x
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4306,45 +4305,45 @@ GlifName: zero
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-522 0 m 257
- 522 860 l 257
- 618 860 l 257
- 618 0 l 257
- 522 0 l 257
-522 935 m 257
- 522 1640 l 257
- 624 1640 l 257
- 624 935 l 257
- 522 935 l 257
-628 105 m 257
- 1388 90 l 257
- 1384 0 l 257
- 634 0 l 257
- 628 105 l 257
-654 1520 m 257
- 654 1630 l 257
- 1394 1640 l 257
- 1394 1520 l 257
- 654 1520 l 257
-1418 0 m 257
- 1418 845 l 257
- 1526 845 l 257
- 1526 0 l 257
- 1418 0 l 257
-1434 935 m 257
- 1434 1640 l 257
- 1526 1640 l 257
- 1526 935 l 257
- 1434 935 l 257
-882 1013 m 257
- 882 709 l 257
- 1103 709 l 257
- 1103 1013 l 257
- 882 1013 l 257
+22 0 m 257
+ 22 860 l 257
+ 118 860 l 257
+ 118 0 l 257
+ 22 0 l 257
+22 935 m 257
+ 22 1640 l 257
+ 124 1640 l 257
+ 124 935 l 257
+ 22 935 l 257
+128 105 m 257
+ 1888 90 l 257
+ 1884 0 l 257
+ 134 0 l 257
+ 128 105 l 257
+154 1520 m 257
+ 154 1630 l 257
+ 1894 1640 l 257
+ 1894 1520 l 257
+ 154 1520 l 257
+1918 0 m 257
+ 1918 845 l 257
+ 2026 845 l 257
+ 2026 0 l 257
+ 1918 0 l 257
+1934 935 m 257
+ 1934 1640 l 257
+ 2026 1640 l 257
+ 2026 935 l 257
+ 1934 935 l 257
+382 1013 m 257
+ 382 709 l 257
+ 1603 709 l 257
+ 1603 1013 l 257
+ 382 1013 l 257
 EndSplineSet
 EndChar
 
@@ -4354,7 +4353,7 @@ GlifName: uni0918
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4397,7 +4396,7 @@ GlifName: uni0919
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4406,16 +4405,16 @@ SplineSet
  2048 1494 l 257
  2048 1554 l 257
  -4 1554 l 257
-1161 1543 m 261
- 1161 1026 l 261
- 1221 1026 l 261
- 1221 1543 l 261
- 1161 1543 l 261
-1212 1086 m 261
+1161 1543 m 257
+ 1161 1026 l 257
+ 1221 1026 l 257
+ 1221 1543 l 257
+ 1161 1543 l 257
+1212 1086 m 257
  237 1086 l 257
  237 1026 l 257
- 1212 1026 l 261
- 1212 1086 l 261
+ 1212 1026 l 257
+ 1212 1086 l 257
 225 1083 m 257
  225 629 l 257
  297 629 l 257
@@ -4423,29 +4422,29 @@ SplineSet
  225 1083 l 257
 231 680 m 257
  231 620 l 257
- 1298 620 l 261
- 1298 680 l 261
+ 1298 620 l 257
+ 1298 680 l 257
  231 680 l 257
-1235 680 m 261
- 1235 29 l 261
- 1298 29 l 261
- 1298 680 l 261
- 1235 680 l 261
+1235 680 m 257
+ 1235 29 l 257
+ 1298 29 l 257
+ 1298 680 l 257
+ 1235 680 l 257
 112 61 m 257
  112 0 l 257
- 1299 0 l 261
- 1299 61 l 261
+ 1299 0 l 257
+ 1299 61 l 257
  112 61 l 257
 112 202 m 257
  112 8 l 257
  172 8 l 257
  172 202 l 257
  112 202 l 257
-1283 931 m 261
- 1283 835 l 261
- 1379 835 l 261
- 1379 931 l 261
- 1283 931 l 261
+1283 931 m 257
+ 1283 835 l 257
+ 1379 835 l 257
+ 1379 931 l 257
+ 1283 931 l 257
 EndSplineSet
 EndChar
 
@@ -4455,7 +4454,7 @@ GlifName: uni091A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4471,18 +4470,18 @@ SplineSet
  1803 1553 l 257
 1829 421 m 257
  1829 480 l 257
- 808 480 l 261
- 808 421 l 261
+ 808 480 l 257
+ 808 421 l 257
  1829 421 l 257
-808 837 m 261
- 808 421 l 261
- 867 421 l 261
- 867 837 l 261
- 808 837 l 261
+808 837 m 257
+ 808 421 l 257
+ 867 421 l 257
+ 867 837 l 257
+ 808 837 l 257
 72 852 m 257
  72 791 l 257
- 1009 791 l 261
- 1009 852 l 261
+ 1009 791 l 257
+ 1009 852 l 257
  72 852 l 257
 EndSplineSet
 EndChar
@@ -4493,7 +4492,7 @@ GlifName: uni091B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HWO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4524,19 +4523,19 @@ SplineSet
  135 501 l 257
 191 59 m 257
  191 0 l 257
- 1538 0 l 261
- 1538 59 l 261
+ 1538 0 l 257
+ 1538 59 l 257
  191 59 l 257
-1479 6 m 261
- 1538 6 l 261
- 1538 1515 l 261
- 1479 1515 l 261
- 1479 6 l 261
-1371 869 m 261
- 1371 808 l 261
+1479 6 m 257
+ 1538 6 l 257
+ 1538 1515 l 257
+ 1479 1515 l 257
+ 1479 6 l 257
+1371 869 m 257
+ 1371 808 l 257
  2029 808 l 257
  2029 869 l 257
- 1371 869 l 261
+ 1371 869 l 257
 1970 868 m 257
  1970 471 l 257
  2029 471 l 257
@@ -4547,9 +4546,11 @@ EndChar
 
 StartChar: uni091C
 Encoding: 2332 2332 126
+GlifName: uni091C_
 Width: 2048
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4563,20 +4564,20 @@ SplineSet
  1901 -12 l 257
  1901 1551 l 257
  1840 1551 l 257
-1013 860 m 261
- 1013 801 l 261
+1013 860 m 257
+ 1013 801 l 257
  1861 801 l 257
  1861 860 l 257
- 1013 860 l 261
-1003 860 m 261
- 1003 512 l 261
- 1063 512 l 261
- 1063 860 l 261
- 1003 860 l 261
+ 1013 860 l 257
+1003 860 m 257
+ 1003 512 l 257
+ 1063 512 l 257
+ 1063 860 l 257
+ 1003 860 l 257
 41 567 m 257
  41 508 l 257
- 1063 508 l 261
- 1063 567 l 261
+ 1063 508 l 257
+ 1063 567 l 257
  41 567 l 257
 41 727 m 257
  41 509 l 257
@@ -4588,9 +4589,11 @@ EndChar
 
 StartChar: uni091D
 Encoding: 2333 2333 127
+GlifName: uni091D_
 Width: 2048
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4644,9 +4647,11 @@ EndChar
 
 StartChar: uni091E
 Encoding: 2334 2334 128
+GlifName: uni091E_
 Width: 2048
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4680,6 +4685,206 @@ SplineSet
  1123 260 l 257
  1123 320 l 257
  61 320 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni091F
+Encoding: 2335 2335 129
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+10 1554 m 257
+ 10 1494 l 257
+ 2048 1494 l 261
+ 2048 1554 l 261
+ 10 1554 l 257
+1733 1528 m 261
+ 1733 988 l 261
+ 1793 988 l 261
+ 1793 1528 l 261
+ 1733 1528 l 261
+1793 1023 m 261
+ 120 1023 l 257
+ 120 963 l 257
+ 1793 963 l 261
+ 1793 1023 l 261
+99 1024 m 257
+ 99 5 l 257
+ 159 5 l 257
+ 159 1024 l 257
+ 99 1024 l 257
+99 60 m 257
+ 99 0 l 257
+ 1836 0 l 261
+ 1836 60 l 261
+ 99 60 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni0920
+Encoding: 2336 2336 130
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 1551 m 257
+ 0 1490 l 257
+ 2049 1490 l 257
+ 2049 1551 l 257
+ 0 1551 l 257
+1110 1510 m 261
+ 1110 1021 l 261
+ 1169 1021 l 261
+ 1169 1510 l 261
+ 1110 1510 l 261
+85 1024 m 257
+ 85 963 l 257
+ 1986 963 l 257
+ 1986 1024 l 257
+ 85 1024 l 257
+72 1024 m 257
+ 72 13 l 257
+ 134 13 l 257
+ 134 1024 l 257
+ 72 1024 l 257
+1915 1001 m 257
+ 1915 -2 l 257
+ 1986 -2 l 257
+ 1986 1001 l 257
+ 1915 1001 l 257
+73 58 m 257
+ 73 -3 l 257
+ 1966 -3 l 257
+ 1966 58 l 257
+ 73 58 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni0921
+Encoding: 2337 2337 131
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+2 1554 m 257
+ 2 1494 l 257
+ 2053 1494 l 257
+ 2053 1554 l 257
+ 2 1554 l 257
+896 1546 m 261
+ 896 1015 l 261
+ 956 1015 l 261
+ 956 1546 l 261
+ 896 1546 l 261
+896 1025 m 261
+ 896 965 l 261
+ 1951 965 l 257
+ 1951 1025 l 257
+ 896 1025 l 261
+1917 1025 m 257
+ 1917 5 l 257
+ 1977 5 l 257
+ 1977 1025 l 257
+ 1917 1025 l 257
+62 62 m 257
+ 62 0 l 257
+ 1977 0 l 257
+ 1977 62 l 257
+ 62 62 l 257
+62 331 m 257
+ 62 5 l 257
+ 122 5 l 257
+ 122 331 l 257
+ 62 331 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni0922
+Encoding: 2338 2338 132
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 1549 m 257
+ 0 1488 l 257
+ 2048 1488 l 257
+ 2048 1549 l 257
+ 0 1549 l 257
+1711 1528 m 257
+ 1711 988 l 257
+ 1793 988 l 257
+ 1793 1528 l 257
+ 1711 1528 l 257
+1793 1023 m 257
+ 120 1023 l 257
+ 120 962 l 257
+ 1793 962 l 257
+ 1793 1023 l 257
+99 1024 m 257
+ 99 5 l 257
+ 159 5 l 257
+ 159 1024 l 257
+ 99 1024 l 257
+99 60 m 257
+ 99 0 l 257
+ 1836 0 l 257
+ 1836 60 l 257
+ 99 60 l 257
+1778 544 m 257
+ 1778 -2 l 257
+ 1838 -2 l 257
+ 1838 544 l 257
+ 1778 544 l 257
+1508 547 m 261
+ 1508 487 l 261
+ 1836 487 l 257
+ 1836 547 l 257
+ 1508 547 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni0923
+Encoding: 2339 2339 133
+Width: 2048
+VWidth: 0
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+-1 1548 m 257
+ -1 1488 l 257
+ 2053 1488 l 257
+ 2053 1548 l 257
+ -1 1548 l 257
+1885 1530 m 257
+ 1885 -1 l 257
+ 1945 -1 l 257
+ 1945 1530 l 257
+ 1885 1530 l 257
+109 1543 m 257
+ 109 855 l 257
+ 169 855 l 257
+ 169 1543 l 257
+ 109 1543 l 257
+1117 1528 m 261
+ 1117 844 l 261
+ 1177 844 l 261
+ 1177 1528 l 261
+ 1117 1528 l 261
+109 885 m 257
+ 109 825 l 257
+ 1177 825 l 261
+ 1177 885 l 261
+ 109 885 l 257
 EndSplineSet
 EndChar
 EndChars
