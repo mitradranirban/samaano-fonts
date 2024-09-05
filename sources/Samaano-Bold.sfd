@@ -1,11 +1,11 @@
 SplineFontDB: 3.2
 FontName: Samaano-Bold
-FullName: Samaano Bold
+FullName: Samaano
 FamilyName: Samaano
-Weight: Bold
+Weight: Untracondensed Black
 Copyright: Copyright 2024, Samaano Font Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 0.2
+Version: 0.002
 StyleMapFamilyName: Samaano Bold
 ItalicAngle: 0
 UnderlinePosition: -204
@@ -23,13 +23,14 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1725466336
-ModificationTime: 1725466336
-PfmFamily: 16
-TTFWeight: 700
-TTFWidth: 5
+CreationTime: 1725508804
+ModificationTime: 1725514608
+PfmFamily: 49
+TTFWeight: 900
+TTFWidth: 1
 LineGap: 0
 VLineGap: 0
+Panose: 2 0 8 9 2 2 2 2 4 4
 OS2TypoAscent: 2457
 OS2TypoAOffset: 0
 OS2TypoDescent: -615
@@ -47,8 +48,9 @@ OS2CapHeight: 1548
 OS2XHeight: 1024
 OS2FamilyClass: 1031
 OS2Vendor: 'anir'
+MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "Copyright 2024, Samaano Font Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.001" "" "" "" "Dr Anirban Mitra" "A Monspace Variable Font Family in Latin and Devanagari created using rectangular components only " "" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
+LangName: 1033 "" "" "" "" "" "Version 0.002" "" "" "" "Dr Anirban Mitra" "A Monspace Variable Font Family in Latin and Devanagari created using rectangular components only" "" "https://github.com/mitradranirban" "Copyright 2024, Samaano Font Authors (https://github.com/mitradranirban/samaano-fonts)+AAoA +AAoA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL+AAoACgAA" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
 ."
 Encoding: UnicodeBmp
@@ -56,15 +58,17 @@ UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
-FitToEm: 1
-WinInfo: 130 10 4
+FitToEm: 0
+WinInfo: 2300 10 4
+BeginPrivate: 0
+EndPrivate
 Grid
 -1024 1551.8 m 0
  3072 1551.8 l 1024
 1866 935.2 m 0
  -2230 935.2 l 1024
 EndSplineSet
-BeginChars: 65536 127
+BeginChars: 65536 129
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -1992,7 +1996,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ja-deva
+StartChar: uni091C
 Encoding: 2332 2332 61
 GlifName: ja-deva
 Width: 1024
@@ -2043,8 +2047,74 @@ p4
 ss."
 EndChar
 
+StartChar: uni091D
+Encoding: 2333 2333 62
+GlifName: jha-deva
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-18 1549 m 257
+ -18 1349 l 257
+ 1023 1349 l 257
+ 1023 1549 l 257
+ -18 1549 l 257
+679 1539 m 257
+ 679 -5 l 257
+ 880 -5 l 257
+ 880 1539 l 257
+ 679 1539 l 257
+447 1537 m 257
+ 447 1024 l 257
+ 646 1024 l 257
+ 646 1537 l 257
+ 447 1537 l 257
+125 1223 m 257
+ 125 1024 l 257
+ 646 1024 l 257
+ 646 1223 l 257
+ 125 1223 l 257
+125 1085 m 257
+ 125 651 l 257
+ 325 651 l 257
+ 325 1085 l 257
+ 125 1085 l 257
+125 837 m 257
+ 125 638 l 257
+ 874 638 l 257
+ 874 837 l 257
+ 125 837 l 257
+418 691 m 257
+ 418 7 l 257
+ 618 7 l 257
+ 618 691 l 257
+ 418 691 l 257
+125 203 m 257
+ 125 3 l 257
+ 618 3 l 257
+ 618 203 l 257
+ 125 203 l 257
+125 63 m 257
+ 125 -148 l 257
+ 325 -148 l 257
+ 325 63 l 257
+ 125 63 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Bold/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
 StartChar: k
-Encoding: 107 107 62
+Encoding: 107 107 63
 GlifName: k
 Width: 1024
 VWidth: 0
@@ -2072,7 +2142,7 @@ EndSplineSet
 EndChar
 
 StartChar: l
-Encoding: 108 108 63
+Encoding: 108 108 64
 GlifName: l
 Width: 1024
 VWidth: 0
@@ -2100,7 +2170,7 @@ EndSplineSet
 EndChar
 
 StartChar: less
-Encoding: 60 60 64
+Encoding: 60 60 65
 GlifName: less
 Width: 1024
 VWidth: 0
@@ -2125,7 +2195,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: m
-Encoding: 109 109 65
+Encoding: 109 109 66
 GlifName: m
 Width: 1024
 VWidth: 0
@@ -2158,7 +2228,7 @@ EndSplineSet
 EndChar
 
 StartChar: n
-Encoding: 110 110 66
+Encoding: 110 110 67
 GlifName: n
 Width: 1024
 VWidth: 0
@@ -2186,7 +2256,7 @@ EndSplineSet
 EndChar
 
 StartChar: nine
-Encoding: 57 57 67
+Encoding: 57 57 68
 GlifName: nine
 Width: 1024
 VWidth: 0
@@ -2229,7 +2299,7 @@ EndSplineSet
 EndChar
 
 StartChar: numbersign
-Encoding: 35 35 68
+Encoding: 35 35 69
 GlifName: numbersign
 Width: 1024
 VWidth: 0
@@ -2263,8 +2333,59 @@ PickledDataWithLists: "(dp0
 ."
 EndChar
 
+StartChar: uni091E
+Encoding: 2334 2334 70
+GlifName: nya-deva
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-5 1548 m 257
+ -5 1348 l 257
+ 1029 1348 l 257
+ 1029 1548 l 257
+ -5 1548 l 257
+735 1538 m 257
+ 735 -8 l 257
+ 935 -8 l 257
+ 935 1538 l 257
+ 735 1538 l 257
+465 737 m 257
+ 465 537 l 257
+ 832 537 l 257
+ 832 737 l 257
+ 465 737 l 257
+84 960 m 257
+ 84 760 l 257
+ 442 760 l 257
+ 442 960 l 257
+ 84 960 l 257
+411 960 m 257
+ 411 316 l 257
+ 611 316 l 257
+ 611 960 l 257
+ 411 960 l 257
+61 460 m 257
+ 61 260 l 257
+ 611 260 l 257
+ 611 460 l 257
+ 61 460 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Bold/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
 StartChar: o
-Encoding: 111 111 69
+Encoding: 111 111 71
 GlifName: o
 Width: 1024
 VWidth: 0
@@ -2297,7 +2418,7 @@ EndSplineSet
 EndChar
 
 StartChar: one
-Encoding: 49 49 70
+Encoding: 49 49 72
 GlifName: one
 Width: 1024
 VWidth: 0
@@ -2322,7 +2443,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: p
-Encoding: 112 112 71
+Encoding: 112 112 73
 GlifName: p
 Width: 1024
 VWidth: 0
@@ -2355,7 +2476,7 @@ EndSplineSet
 EndChar
 
 StartChar: parenleft
-Encoding: 40 40 72
+Encoding: 40 40 74
 GlifName: parenleft
 Width: 1024
 VWidth: 0
@@ -2383,7 +2504,7 @@ EndSplineSet
 EndChar
 
 StartChar: parenright
-Encoding: 41 41 73
+Encoding: 41 41 75
 GlifName: parenright
 Width: 1024
 VWidth: 0
@@ -2411,7 +2532,7 @@ EndSplineSet
 EndChar
 
 StartChar: percent
-Encoding: 37 37 74
+Encoding: 37 37 76
 GlifName: percent
 Width: 1024
 VWidth: 0
@@ -2471,7 +2592,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: period
-Encoding: 46 46 75
+Encoding: 46 46 77
 GlifName: period
 Width: 1024
 VWidth: 0
@@ -2491,7 +2612,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: plus
-Encoding: 43 43 76
+Encoding: 43 43 78
 GlifName: plus
 Width: 1024
 VWidth: 0
@@ -2516,7 +2637,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: q
-Encoding: 113 113 77
+Encoding: 113 113 79
 GlifName: q
 Width: 1024
 VWidth: 0
@@ -2554,7 +2675,7 @@ EndSplineSet
 EndChar
 
 StartChar: question
-Encoding: 63 63 78
+Encoding: 63 63 80
 GlifName: question
 Width: 1024
 VWidth: 0
@@ -2594,7 +2715,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: quotedbl
-Encoding: 34 34 79
+Encoding: 34 34 81
 GlifName: quotedbl
 Width: 1024
 VWidth: 0
@@ -2617,7 +2738,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotesingle
-Encoding: 39 39 80
+Encoding: 39 39 82
 GlifName: quotesingle
 Width: 1024
 VWidth: 0
@@ -2637,7 +2758,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: r
-Encoding: 114 114 81
+Encoding: 114 114 83
 GlifName: r
 Width: 1024
 VWidth: 0
@@ -2665,7 +2786,7 @@ EndSplineSet
 EndChar
 
 StartChar: s
-Encoding: 115 115 82
+Encoding: 115 115 84
 GlifName: s
 Width: 1024
 VWidth: 0
@@ -2703,7 +2824,7 @@ EndSplineSet
 EndChar
 
 StartChar: semicolon
-Encoding: 59 59 83
+Encoding: 59 59 85
 GlifName: semicolon
 Width: 1024
 VWidth: 0
@@ -2733,7 +2854,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: seven
-Encoding: 55 55 84
+Encoding: 55 55 86
 GlifName: seven
 Width: 1024
 VWidth: 0
@@ -2761,7 +2882,7 @@ EndSplineSet
 EndChar
 
 StartChar: six
-Encoding: 54 54 85
+Encoding: 54 54 87
 GlifName: six
 Width: 1024
 VWidth: 0
@@ -2804,7 +2925,7 @@ EndSplineSet
 EndChar
 
 StartChar: slash
-Encoding: 47 47 86
+Encoding: 47 47 88
 GlifName: slash
 Width: 1024
 VWidth: 0
@@ -2824,7 +2945,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: space
-Encoding: 32 32 87
+Encoding: 32 32 89
 GlifName: space
 Width: 1024
 VWidth: 0
@@ -2834,7 +2955,7 @@ LayerCount: 2
 EndChar
 
 StartChar: t
-Encoding: 116 116 88
+Encoding: 116 116 90
 GlifName: t
 Width: 1024
 VWidth: 0
@@ -2862,7 +2983,7 @@ EndSplineSet
 EndChar
 
 StartChar: three
-Encoding: 51 51 89
+Encoding: 51 51 91
 GlifName: three
 Width: 1024
 VWidth: 0
@@ -2902,7 +3023,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: two
-Encoding: 50 50 90
+Encoding: 50 50 92
 GlifName: two
 Width: 1024
 VWidth: 0
@@ -2942,7 +3063,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: u
-Encoding: 117 117 91
+Encoding: 117 117 93
 GlifName: u
 Width: 1024
 VWidth: 0
@@ -2970,7 +3091,7 @@ EndSplineSet
 EndChar
 
 StartChar: underscore
-Encoding: 95 95 92
+Encoding: 95 95 94
 GlifName: underscore
 Width: 1019
 VWidth: 0
@@ -2988,7 +3109,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0900
-Encoding: 2304 2304 93
+Encoding: 2304 2304 95
 GlifName: uni0900
 Width: 1024
 VWidth: 0
@@ -3028,7 +3149,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0901
-Encoding: 2305 2305 94
+Encoding: 2305 2305 96
 GlifName: uni0901
 Width: 1024
 VWidth: 0
@@ -3068,7 +3189,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0902
-Encoding: 2306 2306 95
+Encoding: 2306 2306 97
 GlifName: uni0902
 Width: 1024
 VWidth: 0
@@ -3093,7 +3214,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0903
-Encoding: 2307 2307 96
+Encoding: 2307 2307 98
 GlifName: uni0903
 Width: 1024
 VWidth: 0
@@ -3116,7 +3237,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0904
-Encoding: 2308 2308 97
+Encoding: 2308 2308 99
 GlifName: uni0904
 Width: 1024
 VWidth: 0
@@ -3174,7 +3295,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0905
-Encoding: 2309 2309 98
+Encoding: 2309 2309 100
 GlifName: a-deva
 Width: 1024
 VWidth: 0
@@ -3217,7 +3338,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0906
-Encoding: 2310 2310 99
+Encoding: 2310 2310 101
 GlifName: aa-deva
 Width: 1024
 VWidth: 0
@@ -3265,7 +3386,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0907
-Encoding: 2311 2311 100
+Encoding: 2311 2311 102
 GlifName: i-deva
 Width: 1024
 VWidth: 0
@@ -3320,7 +3441,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0908
-Encoding: 2312 2312 101
+Encoding: 2312 2312 103
 GlifName: ii-deva
 Width: 1024
 VWidth: 0
@@ -3380,7 +3501,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0909
-Encoding: 2313 2313 102
+Encoding: 2313 2313 104
 GlifName: u-deva
 Width: 1024
 VWidth: 0
@@ -3425,7 +3546,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni090A
-Encoding: 2314 2314 103
+Encoding: 2314 2314 105
 GlifName: uu-deva
 Width: 1024
 VWidth: 0
@@ -3475,7 +3596,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni090B
-Encoding: 2315 2315 104
+Encoding: 2315 2315 106
 GlifName: rV_ocalic-deva
 Width: 1024
 VWidth: 0
@@ -3530,7 +3651,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni090C
-Encoding: 2316 2316 105
+Encoding: 2316 2316 107
 GlifName: lV_ocalic-deva
 Width: 1024
 VWidth: 0
@@ -3578,7 +3699,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090D
-Encoding: 2317 2317 106
+Encoding: 2317 2317 108
 GlifName: uni090D_
 Width: 1024
 VWidth: 0
@@ -3641,7 +3762,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090E
-Encoding: 2318 2318 107
+Encoding: 2318 2318 109
 GlifName: uni090E_
 Width: 1024
 VWidth: 0
@@ -3704,7 +3825,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090F
-Encoding: 2319 2319 108
+Encoding: 2319 2319 110
 GlifName: e-deva
 Width: 1024
 VWidth: 0
@@ -3754,7 +3875,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0910
-Encoding: 2320 2320 109
+Encoding: 2320 2320 111
 GlifName: ai-deva
 Width: 1024
 VWidth: 0
@@ -3809,7 +3930,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0911
-Encoding: 2321 2321 110
+Encoding: 2321 2321 112
 GlifName: oC_andra-deva
 Width: 1024
 VWidth: 0
@@ -3872,7 +3993,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0912
-Encoding: 2322 2322 111
+Encoding: 2322 2322 113
 GlifName: oS_hort-deva
 Width: 1024
 VWidth: 0
@@ -3937,7 +4058,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0913
-Encoding: 2323 2323 112
+Encoding: 2323 2323 114
 GlifName: o-deva
 Width: 1024
 VWidth: 0
@@ -3990,7 +4111,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0914
-Encoding: 2324 2324 113
+Encoding: 2324 2324 115
 GlifName: au-deva
 Width: 1024
 VWidth: 0
@@ -4048,7 +4169,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0915
-Encoding: 2325 2325 114
+Encoding: 2325 2325 116
 GlifName: ka-deva
 Width: 1024
 VWidth: 0
@@ -4096,7 +4217,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0916
-Encoding: 2326 2326 115
+Encoding: 2326 2326 117
 GlifName: uni0916
 Width: 1024
 VWidth: 0
@@ -4149,7 +4270,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0917
-Encoding: 2327 2327 116
+Encoding: 2327 2327 118
 GlifName: uni0917
 Width: 1024
 VWidth: 0
@@ -4189,7 +4310,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0918
-Encoding: 2328 2328 117
+Encoding: 2328 2328 119
 GlifName: gha-deva
 Width: 1024
 VWidth: 0
@@ -4234,7 +4355,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0919
-Encoding: 2329 2329 118
+Encoding: 2329 2329 120
 GlifName: nga-deva
 Width: 1024
 VWidth: 0
@@ -4294,7 +4415,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091A
-Encoding: 2330 2330 119
+Encoding: 2330 2330 121
 GlifName: ca-deva
 Width: 1024
 VWidth: 0
@@ -4334,7 +4455,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091B
-Encoding: 2331 2331 120
+Encoding: 2331 2331 122
 GlifName: cha-deva
 Width: 1024
 VWidth: 0
@@ -4394,7 +4515,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: v
-Encoding: 118 118 121
+Encoding: 118 118 123
 GlifName: v
 Width: 1024
 VWidth: 0
@@ -4417,7 +4538,7 @@ EndSplineSet
 EndChar
 
 StartChar: w
-Encoding: 119 119 122
+Encoding: 119 119 124
 GlifName: w
 Width: 1024
 VWidth: 0
@@ -4450,7 +4571,7 @@ EndSplineSet
 EndChar
 
 StartChar: x
-Encoding: 120 120 123
+Encoding: 120 120 125
 GlifName: x
 Width: 1024
 VWidth: 0
@@ -4473,7 +4594,7 @@ EndSplineSet
 EndChar
 
 StartChar: y
-Encoding: 121 121 124
+Encoding: 121 121 126
 GlifName: y
 Width: 1024
 VWidth: 0
@@ -4506,7 +4627,7 @@ EndSplineSet
 EndChar
 
 StartChar: z
-Encoding: 122 122 125
+Encoding: 122 122 127
 GlifName: z
 Width: 1024
 VWidth: 0
@@ -4534,7 +4655,7 @@ EndSplineSet
 EndChar
 
 StartChar: zero
-Encoding: 48 48 126
+Encoding: 48 48 128
 GlifName: zero
 Width: 1024
 VWidth: 0
