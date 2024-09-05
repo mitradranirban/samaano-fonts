@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1725521133
-ModificationTime: 1725533431
+ModificationTime: 1725550618
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
@@ -50,12 +50,13 @@ OS2Vendor: 'anir'
 DEI: 91125
 LangName: 1033 "Copyright 2024, Samaano Font Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.002" "" "" "" "Dr Anirban Mitra" "A Monspace Variable Font Family in Latin and Devanagari created using rectangular components only " "" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 Encoding: UnicodeBmp
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 350 10 4
+WinInfo: 250 10 4
 Grid
 -1024 1557 m 0
  3072 1557 l 1024
@@ -997,7 +998,7 @@ Encoding: 769 769 28
 GlifName: acutecomb
 Width: 2048
 VWidth: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: W
 LayerCount: 2
 Fore
@@ -1919,7 +1920,7 @@ Encoding: 768 768 56
 GlifName: gravecomb
 Width: 2048
 VWidth: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: W
 LayerCount: 2
 Fore
@@ -3022,7 +3023,7 @@ Encoding: 2304 2304 93
 GlifName: uni0900
 Width: 2048
 VWidth: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: W
 LayerCount: 2
 Fore
@@ -3060,7 +3061,7 @@ Encoding: 2305 2305 94
 GlifName: uni0901
 Width: 2048
 VWidth: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: W
 LayerCount: 2
 Fore
@@ -3098,7 +3099,7 @@ Encoding: 2306 2306 95
 GlifName: uni0902
 Width: 2048
 VWidth: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: W
 LayerCount: 2
 Fore
@@ -5220,6 +5221,7 @@ StartChar: uni0302
 Encoding: 770 770 164
 Width: 2048
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5230,6 +5232,7 @@ StartChar: tildecomb
 Encoding: 771 771 165
 Width: 2048
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5239,6 +5242,7 @@ EndChar
 StartChar: uni0304
 Encoding: 772 772 166
 Width: 1024
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5254,6 +5258,7 @@ EndChar
 StartChar: uni0306
 Encoding: 774 774 167
 Width: 1024
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5279,6 +5284,7 @@ EndChar
 StartChar: uni0307
 Encoding: 775 775 168
 Width: 1024
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5294,6 +5300,7 @@ EndChar
 StartChar: uni0308
 Encoding: 776 776 169
 Width: 1024
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5314,6 +5321,7 @@ EndChar
 StartChar: uni030A
 Encoding: 778 778 170
 Width: 1024
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5335,6 +5343,7 @@ StartChar: uni030B
 Encoding: 779 779 171
 Width: 2048
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5345,6 +5354,7 @@ StartChar: uni030C
 Encoding: 780 780 172
 Width: 2048
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5355,26 +5365,28 @@ StartChar: uni0326
 Encoding: 806 806 173
 Width: 1024
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-397 -1 m 257
- 397 -230 l 257
- 645 -230 l 257
- 645 -1 l 257
- 397 -1 l 257
-496 -103 m 257
- 378 -384 l 257
- 521 -444 l 257
- 643 -234 l 257
- 496 -103 l 257
+483.799804688 -81.150390625 m 257
+ 483.799804688 -149.849609375 l 257
+ 558.200195312 -149.849609375 l 257
+ 558.200195312 -81.150390625 l 257
+ 483.799804688 -81.150390625 l 257
+511.400390625 -109.037109375 m 257
+ 470.75 -190.712890625 l 257
+ 513.650390625 -208.712890625 l 257
+ 550.25 -145.712890625 l 257
+ 511.400390625 -109.037109375 l 257
 EndSplineSet
 EndChar
 
 StartChar: uni0327
 Encoding: 807 807 174
 Width: 1024
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
@@ -5384,27 +5396,28 @@ SplineSet
  728 -144 l 5
  572 -144 l 5
  572 180 l 5
-578 -288 m 1
- 1024 -288 l 1
- 1024 -408 l 1
- 578 -408 l 1
- 578 -288 l 1
-872 0 m 1
- 1024 0 l 1
- 1024 -372 l 1
- 872 -372 l 1
- 872 0 l 1
-578 0 m 1
- 1024 0 l 1
- 1024 -156 l 1
- 578 -156 l 1
- 578 0 l 1
+578 -288 m 5
+ 1024 -288 l 5
+ 1024 -408 l 5
+ 578 -408 l 5
+ 578 -288 l 5
+872 0 m 5
+ 1024 0 l 5
+ 1024 -372 l 5
+ 872 -372 l 5
+ 872 0 l 5
+578 0 m 5
+ 1024 0 l 5
+ 1024 -156 l 5
+ 578 -156 l 5
+ 578 0 l 5
 EndSplineSet
 EndChar
 
 StartChar: uni0328
 Encoding: 808 808 175
 Width: 1024
+GlyphClass: 4
 Flags: HW
 LayerCount: 2
 Fore
