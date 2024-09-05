@@ -6,7 +6,7 @@
 	\eight \equal \exclam \f \five \four \g \uni0917 \grave \gravecomb \greater \h 
 	\hyphen \i \j \k \l \less \m \n \nine \numbersign \o \one \p \parenleft \parenright 
 	\percent \period \plus \q \question \quotedbl \quotesingle \r \s \semicolon \seven 
-	\six \slash \space \t \three \two \u \underscore \uni0900 \uni0901 \uni0902 
+	\six \slash \space \t \three \two \u \underscore  
 	\uni0903 \uni0904 \uni0905 \uni0906 \uni0907 \uni0908 \uni0909 \uni090A \uni090B 
 	\uni090C \uni090D \uni090E \uni090F \uni0910 \uni0911 \uni0912 \uni0913 \uni0914 
 	\uni0915 \uni0916 \v \w \x \y \z \zero \uni0918 \uni0919 \uni091A \uni091B \uni091C 
@@ -17,10 +17,21 @@
 	\Oacute \Ocircumflex \Otilde \Odieresis \Ugrave \Uacute \Ucircumflex \Udieresis 
 	\Yacute \agrave \aacute \acircumflex \atilde \adieresis \aring \egrave \eacute 
 	\ecircumflex \edieresis \igrave \iacute \icircumflex \idieresis \dotlessi 
-	\uni0237 ];
+	\uni0237 \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \ugrave \uacute 
+	\ucircumflex \udieresis \yacute \ydieresis \Amacron \amacron \Abreve \abreve 
+	\Cacute \cacute \Ccircumflex \ccircumflex \Cdotaccent \cdotaccent \Ccaron 
+	\ccaron \Dcaron \Emacron \emacron \Ebreve \ebreve \Edotaccent \edotaccent 
+	\Ecaron \ecaron \Gcircumflex \gcircumflex \Gbreve \gbreve \Gdotaccent 
+	\gdotaccent \Hcircumflex \hcircumflex \Itilde \itilde \Imacron \imacron \Ibreve 
+	\ibreve \Idotaccent \Jcircumflex \jcircumflex \Lacute \lacute \Nacute \nacute 
+	\Ncaron \ncaron \Omacron \omacron \Obreve \obreve \Ohungarumlaut \ohungarumlaut 
+	\Racute \racute \Rcaron \rcaron \Sacute \sacute \Scircumflex \scircumflex 
+	\Scaron \scaron \Tcaron \Utilde \utilde \Umacron \umacron \Ubreve \ubreve \Uring 
+	\uring \Uhungarumlaut \uhungarumlaut \Wcircumflex \wcircumflex \Ycircumflex 
+	\ycircumflex \Ydieresis \Zacute \zacute \Zdotaccent \zdotaccent \Zcaron \zcaron ];
+@GDEF_Mark = [\uni0900 \uni0901 \uni0902 ];
 
 table GDEF {
-  GlyphClassDef @GDEF_Simple, , , ;
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
 
 } GDEF;
-

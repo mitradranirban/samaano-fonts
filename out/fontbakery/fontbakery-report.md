@@ -926,9 +926,9 @@ acutecomb (U+0301), gravecomb (U+0300), uni0900 (U+0900), uni0901 (U+0901) and u
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour order differs in glyph 'uni090D': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
+<pre><code>- Contour order differs in glyph 'uni090E': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
 
-- Contour order differs in glyph 'uni090E': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
+- Contour order differs in glyph 'uni090D': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
 </code></pre>
  [code: interpolation-issues]
 
@@ -1028,7 +1028,7 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: j̀ j́</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: ì í</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Vute (Latn, 21,000 speakers), Dutch (Latn, 31,709,104 speakers), Dii (Latn, 71,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Zapotec (Latn, 490,000 speakers), Makaa (Latn, 221,000 speakers), Bafut (Latn, 158,146 speakers), Navajo (Latn, 166,319 speakers), Igbo (Latn, 27,823,640 speakers), Nateni (Latn, 100,000 speakers), Ejagham (Latn, 120,000 speakers), Ebira (Latn, 2,200,000 speakers), Nzakara (Latn, 50,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ekpeye (Latn, 226,000 speakers), Fur (Latn, 1,230,163 speakers), Yala (Latn, 200,000 speakers), Ma’di (Latn, 584,000 speakers), Lithuanian (Latn, 2,357,094 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Mfumte (Latn, 79,000 speakers), Basaa (Latn, 332,940 speakers), Ngbaka (Latn, 1,020,000 speakers), South Central Banda (Latn, 244,000 speakers), Avokaya (Latn, 100,000 speakers), Koonzime (Latn, 40,000 speakers), Aghem (Latn, 38,843 speakers), Lugbara (Latn, 2,200,000 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Gulay (Latn, 250,478 speakers), Mango (Latn, 77,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Mundani (Latn, 34,000 speakers), Southern Kisi (Latn, 360,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mfumte (Latn, 79,000 speakers), Avokaya (Latn, 100,000 speakers), Dan (Latn, 1,099,244 speakers), Aghem (Latn, 38,843 speakers), Makaa (Latn, 221,000 speakers), Gulay (Latn, 250,478 speakers), Nzakara (Latn, 50,000 speakers), Ekpeye (Latn, 226,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ma’di (Latn, 584,000 speakers), Bafut (Latn, 158,146 speakers), Zapotec (Latn, 490,000 speakers), Nateni (Latn, 100,000 speakers), Igbo (Latn, 27,823,640 speakers), Dutch (Latn, 31,709,104 speakers), South Central Banda (Latn, 244,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Lugbara (Latn, 2,200,000 speakers), Navajo (Latn, 166,319 speakers), Southern Kisi (Latn, 360,000 speakers), Yala (Latn, 200,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers), Basaa (Latn, 332,940 speakers), Sar (Latn, 500,000 speakers), Vute (Latn, 21,000 speakers), Ejagham (Latn, 120,000 speakers), Kom (Latn, 360,685 speakers), Cicipu (Latn, 44,000 speakers), Lithuanian (Latn, 2,357,094 speakers), Ebira (Latn, 2,200,000 speakers), Koonzime (Latn, 40,000 speakers), Mango (Latn, 77,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Mundani (Latn, 34,000 speakers), Dii (Latn, 71,000 speakers).</p>
  [code: soft-dotted]
 
 
