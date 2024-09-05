@@ -4,16 +4,15 @@ fontbakery version: 0.12.10
 
 
 
+## Experimental checks
+
+These won't break the CI job for now, but will become effective after some time if nobody raises any concern.
 
 
-## Check results
-
-
-
-<details><summary>[23] Samaano[wdth,wght].ttf</summary>
+<details><summary>[1] Samaano[wdth,wght].ttf</summary>
 <div>
 <details>
-    <summary>🔥 <b>FAIL</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Checking that the typoAscender exceeds the yMax of the /Agrave. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
     <div>
 
 
@@ -22,14 +21,25 @@ fontbakery version: 0.12.10
 
 
 
-* 🔥 **FAIL** <p>The &quot;wdth&quot; axis coordinate of the &quot;Regular&quot; instance must be 100. Got 50.0 as a default value instead.</p>
- [code: wdth-not-100]
+* 🔥 **FAIL** <p>OS/2.sTypoAscender value should be greater than 1947, but got 1638 instead</p>
+ [code: typoAscender]
 
 
 
 </div>
 </details>
+</div>
+</details>
 
+
+
+
+## All other checks
+
+
+
+<details><summary>[22] Samaano[wdth,wght].ttf</summary>
+<div>
 <details>
     <summary>🔥 <b>FAIL</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.head.html#"></a></summary>
     <div>
@@ -58,19 +68,8 @@ fontbakery version: 0.12.10
 
 
 
-* 🔥 **FAIL** <p>The PANOSE numbers are incorrect for a monospaced font.</p>
- [code: mono-bad-panose]
-
-
-
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 94 instead.
-Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
- [code: bad-numberOfHMetrics]
-
-
-
-* ⚠️ **WARN** <p>Font is monospaced but 1 glyphs (0.79%) have a different width. You should check the widths of: ['underscore']</p>
- [code: mono-outliers]
+* 🔥 **FAIL** <p>On non-monospaced fonts, the OS/2.panose.bProportion value can be set to any value except 9 (proportion: monospaced) which is the bad value we got in this font.</p>
+ [code: bad-panose]
 
 
 
@@ -78,7 +77,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to a name ID whose string is equal to the string of either name ID 2 or 17, and its postScriptNameID value is set to a name ID whose string is equal to the string of name ID 6. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
     <div>
 
 
@@ -87,14 +86,48 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 
-* 🔥 **FAIL** <p>'Black' instance has the same coordinates as the default instance; its subfamily name should be 'UltraCondensed Black'.</p>
-<p>Note: It is alternatively possible that Name ID 17 is incorrect, and should be set to the default instance subfamily name, 'Black', rather than ''UltraCondensed Black''. If the default instance is 'Black', NameID 17 is probably the problem.</p>
- [code: invalid-default-instance-subfamily-name]
+* 🔥 **FAIL** <p>The following glyphs lack their case-swapping counterparts:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Glyph present in the font</th>
+<th align="left">Missing case-swapping counterpart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">U+010E: LATIN CAPITAL LETTER D WITH CARON</td>
+<td align="left">U+010F: LATIN SMALL LETTER D WITH CARON</td>
+</tr>
+<tr>
+<td align="left">U+0122: LATIN CAPITAL LETTER G WITH CEDILLA</td>
+<td align="left">U+0123: LATIN SMALL LETTER G WITH CEDILLA</td>
+</tr>
+<tr>
+<td align="left">U+0164: LATIN CAPITAL LETTER T WITH CARON</td>
+<td align="left">U+0165: LATIN SMALL LETTER T WITH CARON</td>
+</tr>
+</tbody>
+</table>
+ [code: missing-case-counterparts]
 
 
 
-* 🔥 **FAIL** <p>'Black' instance has the same coordinates as the default instance; its postscript name should be 'Samaano-UltraCondensedBlack', instead of 'Samaano-Black'.</p>
- [code: invalid-default-instance-postscript-name]
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 2476, but got 1800 instead</p>
+ [code: ascent]
 
 
 
@@ -138,25 +171,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphnames.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>The following glyph names do not comply with naming conventions: ja-deva</p>
-<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not.</p>
- [code: found-invalid-names]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>🔥 <b>FAIL</b> Font contains glyphs for whitespace characters? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
     <div>
 
@@ -186,127 +200,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * 🔥 **FAIL** <p>No GF glyphset was found to be supported &gt;80%, so language shaping support couldn't get checked.</p>
  [code: no-glyphset-supported]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Combined length of family and style must not exceed 32 characters. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Thin' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 258 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Thin' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 258 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraLight' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 260 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraLight' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 260 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Light' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 262 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Light' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 262 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Regular' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 264 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Regular' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 264 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Medium' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 266 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Medium' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 266 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black SemiBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 268 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black SemiBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 268 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Bold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 270 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Bold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 270 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 272 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 272 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Black' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 274 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Black' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 274 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
 
 
 
@@ -405,73 +298,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - 0x00BF (INVERTED QUESTION MARK)
 
 
-- 0x00C0 (LATIN CAPITAL LETTER A WITH GRAVE)
-
-
-- 0x00C1 (LATIN CAPITAL LETTER A WITH ACUTE)
-
-
-- 0x00C2 (LATIN CAPITAL LETTER A WITH CIRCUMFLEX)
-
-
-- 0x00C3 (LATIN CAPITAL LETTER A WITH TILDE)
-
-
-- 0x00C4 (LATIN CAPITAL LETTER A WITH DIAERESIS)
-
-
-- 0x00C5 (LATIN CAPITAL LETTER A WITH RING ABOVE)
-
-
 - 0x00C6 (LATIN CAPITAL LETTER AE)
 
 
-- 0x00C7 (LATIN CAPITAL LETTER C WITH CEDILLA)
-
-
-- 0x00C8 (LATIN CAPITAL LETTER E WITH GRAVE)
-
-
-- 0x00C9 (LATIN CAPITAL LETTER E WITH ACUTE)
-
-
-- 0x00CA (LATIN CAPITAL LETTER E WITH CIRCUMFLEX)
-
-
-- 0x00CB (LATIN CAPITAL LETTER E WITH DIAERESIS)
-
-
-- 0x00CC (LATIN CAPITAL LETTER I WITH GRAVE)
-
-
-- 0x00CD (LATIN CAPITAL LETTER I WITH ACUTE)
-
-
-- 0x00CE (LATIN CAPITAL LETTER I WITH CIRCUMFLEX)
-
-
-- 0x00CF (LATIN CAPITAL LETTER I WITH DIAERESIS)
-
-
 - 0x00D0 (LATIN CAPITAL LETTER ETH)
-
-
-- 0x00D1 (LATIN CAPITAL LETTER N WITH TILDE)
-
-
-- 0x00D2 (LATIN CAPITAL LETTER O WITH GRAVE)
-
-
-- 0x00D3 (LATIN CAPITAL LETTER O WITH ACUTE)
-
-
-- 0x00D4 (LATIN CAPITAL LETTER O WITH CIRCUMFLEX)
-
-
-- 0x00D5 (LATIN CAPITAL LETTER O WITH TILDE)
-
-
-- 0x00D6 (LATIN CAPITAL LETTER O WITH DIAERESIS)
 
 
 - 0x00D7 (MULTIPLICATION SIGN)
@@ -480,94 +310,16 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - 0x00D8 (LATIN CAPITAL LETTER O WITH STROKE)
 
 
-- 0x00D9 (LATIN CAPITAL LETTER U WITH GRAVE)
-
-
-- 0x00DA (LATIN CAPITAL LETTER U WITH ACUTE)
-
-
-- 0x00DB (LATIN CAPITAL LETTER U WITH CIRCUMFLEX)
-
-
-- 0x00DC (LATIN CAPITAL LETTER U WITH DIAERESIS)
-
-
-- 0x00DD (LATIN CAPITAL LETTER Y WITH ACUTE)
-
-
 - 0x00DE (LATIN CAPITAL LETTER THORN)
 
 
 - 0x00DF (LATIN SMALL LETTER SHARP S)
 
 
-- 0x00E0 (LATIN SMALL LETTER A WITH GRAVE)
-
-
-- 0x00E1 (LATIN SMALL LETTER A WITH ACUTE)
-
-
-- 0x00E2 (LATIN SMALL LETTER A WITH CIRCUMFLEX)
-
-
-- 0x00E3 (LATIN SMALL LETTER A WITH TILDE)
-
-
-- 0x00E4 (LATIN SMALL LETTER A WITH DIAERESIS)
-
-
-- 0x00E5 (LATIN SMALL LETTER A WITH RING ABOVE)
-
-
 - 0x00E6 (LATIN SMALL LETTER AE)
 
 
-- 0x00E7 (LATIN SMALL LETTER C WITH CEDILLA)
-
-
-- 0x00E8 (LATIN SMALL LETTER E WITH GRAVE)
-
-
-- 0x00E9 (LATIN SMALL LETTER E WITH ACUTE)
-
-
-- 0x00EA (LATIN SMALL LETTER E WITH CIRCUMFLEX)
-
-
-- 0x00EB (LATIN SMALL LETTER E WITH DIAERESIS)
-
-
-- 0x00EC (LATIN SMALL LETTER I WITH GRAVE)
-
-
-- 0x00ED (LATIN SMALL LETTER I WITH ACUTE)
-
-
-- 0x00EE (LATIN SMALL LETTER I WITH CIRCUMFLEX)
-
-
-- 0x00EF (LATIN SMALL LETTER I WITH DIAERESIS)
-
-
 - 0x00F0 (LATIN SMALL LETTER ETH)
-
-
-- 0x00F1 (LATIN SMALL LETTER N WITH TILDE)
-
-
-- 0x00F2 (LATIN SMALL LETTER O WITH GRAVE)
-
-
-- 0x00F3 (LATIN SMALL LETTER O WITH ACUTE)
-
-
-- 0x00F4 (LATIN SMALL LETTER O WITH CIRCUMFLEX)
-
-
-- 0x00F5 (LATIN SMALL LETTER O WITH TILDE)
-
-
-- 0x00F6 (LATIN SMALL LETTER O WITH DIAERESIS)
 
 
 - 0x00F7 (DIVISION SIGN)
@@ -576,64 +328,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - 0x00F8 (LATIN SMALL LETTER O WITH STROKE)
 
 
-- 0x00F9 (LATIN SMALL LETTER U WITH GRAVE)
-
-
-- 0x00FA (LATIN SMALL LETTER U WITH ACUTE)
-
-
-- 0x00FB (LATIN SMALL LETTER U WITH CIRCUMFLEX)
-
-
-- 0x00FC (LATIN SMALL LETTER U WITH DIAERESIS)
-
-
-- 0x00FD (LATIN SMALL LETTER Y WITH ACUTE)
-
-
 - 0x00FE (LATIN SMALL LETTER THORN)
-
-
-- 0x00FF (LATIN SMALL LETTER Y WITH DIAERESIS)
-
-
-- 0x0100 (LATIN CAPITAL LETTER A WITH MACRON)
-
-
-- 0x0101 (LATIN SMALL LETTER A WITH MACRON)
-
-
-- 0x0102 (LATIN CAPITAL LETTER A WITH BREVE)
-
-
-- 0x0103 (LATIN SMALL LETTER A WITH BREVE)
-
-
-- 0x0104 (LATIN CAPITAL LETTER A WITH OGONEK)
-
-
-- 0x0105 (LATIN SMALL LETTER A WITH OGONEK)
-
-
-- 0x0106 (LATIN CAPITAL LETTER C WITH ACUTE)
-
-
-- 0x0107 (LATIN SMALL LETTER C WITH ACUTE)
-
-
-- 0x010A (LATIN CAPITAL LETTER C WITH DOT ABOVE)
-
-
-- 0x010B (LATIN SMALL LETTER C WITH DOT ABOVE)
-
-
-- 0x010C (LATIN CAPITAL LETTER C WITH CARON)
-
-
-- 0x010D (LATIN SMALL LETTER C WITH CARON)
-
-
-- 0x010E (LATIN CAPITAL LETTER D WITH CARON)
 
 
 - 0x010F (LATIN SMALL LETTER D WITH CARON)
@@ -645,45 +340,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - 0x0111 (LATIN SMALL LETTER D WITH STROKE)
 
 
-- 0x0112 (LATIN CAPITAL LETTER E WITH MACRON)
-
-
-- 0x0113 (LATIN SMALL LETTER E WITH MACRON)
-
-
-- 0x0116 (LATIN CAPITAL LETTER E WITH DOT ABOVE)
-
-
-- 0x0117 (LATIN SMALL LETTER E WITH DOT ABOVE)
-
-
-- 0x0118 (LATIN CAPITAL LETTER E WITH OGONEK)
-
-
-- 0x0119 (LATIN SMALL LETTER E WITH OGONEK)
-
-
-- 0x011A (LATIN CAPITAL LETTER E WITH CARON)
-
-
-- 0x011B (LATIN SMALL LETTER E WITH CARON)
-
-
-- 0x011E (LATIN CAPITAL LETTER G WITH BREVE)
-
-
-- 0x011F (LATIN SMALL LETTER G WITH BREVE)
-
-
-- 0x0120 (LATIN CAPITAL LETTER G WITH DOT ABOVE)
-
-
-- 0x0121 (LATIN SMALL LETTER G WITH DOT ABOVE)
-
-
-- 0x0122 (LATIN CAPITAL LETTER G WITH CEDILLA)
-
-
 - 0x0123 (LATIN SMALL LETTER G WITH CEDILLA)
 
 
@@ -691,42 +347,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 - 0x0127 (LATIN SMALL LETTER H WITH STROKE)
-
-
-- 0x012A (LATIN CAPITAL LETTER I WITH MACRON)
-
-
-- 0x012B (LATIN SMALL LETTER I WITH MACRON)
-
-
-- 0x012E (LATIN CAPITAL LETTER I WITH OGONEK)
-
-
-- 0x012F (LATIN SMALL LETTER I WITH OGONEK)
-
-
-- 0x0130 (LATIN CAPITAL LETTER I WITH DOT ABOVE)
-
-
-- 0x0131 (LATIN SMALL LETTER DOTLESS I)
-
-
-- 0x0136 (LATIN CAPITAL LETTER K WITH CEDILLA)
-
-
-- 0x0137 (LATIN SMALL LETTER K WITH CEDILLA)
-
-
-- 0x0139 (LATIN CAPITAL LETTER L WITH ACUTE)
-
-
-- 0x013A (LATIN SMALL LETTER L WITH ACUTE)
-
-
-- 0x013B (LATIN CAPITAL LETTER L WITH CEDILLA)
-
-
-- 0x013C (LATIN SMALL LETTER L WITH CEDILLA)
 
 
 - 0x013D (LATIN CAPITAL LETTER L WITH CARON)
@@ -741,127 +361,13 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - 0x0142 (LATIN SMALL LETTER L WITH STROKE)
 
 
-- 0x0143 (LATIN CAPITAL LETTER N WITH ACUTE)
-
-
-- 0x0144 (LATIN SMALL LETTER N WITH ACUTE)
-
-
-- 0x0145 (LATIN CAPITAL LETTER N WITH CEDILLA)
-
-
-- 0x0146 (LATIN SMALL LETTER N WITH CEDILLA)
-
-
-- 0x0147 (LATIN CAPITAL LETTER N WITH CARON)
-
-
-- 0x0148 (LATIN SMALL LETTER N WITH CARON)
-
-
-- 0x0150 (LATIN CAPITAL LETTER O WITH DOUBLE ACUTE)
-
-
-- 0x0151 (LATIN SMALL LETTER O WITH DOUBLE ACUTE)
-
-
 - 0x0152 (LATIN CAPITAL LIGATURE OE)
 
 
 - 0x0153 (LATIN SMALL LIGATURE OE)
 
 
-- 0x0154 (LATIN CAPITAL LETTER R WITH ACUTE)
-
-
-- 0x0155 (LATIN SMALL LETTER R WITH ACUTE)
-
-
-- 0x0158 (LATIN CAPITAL LETTER R WITH CARON)
-
-
-- 0x0159 (LATIN SMALL LETTER R WITH CARON)
-
-
-- 0x015A (LATIN CAPITAL LETTER S WITH ACUTE)
-
-
-- 0x015B (LATIN SMALL LETTER S WITH ACUTE)
-
-
-- 0x015E (LATIN CAPITAL LETTER S WITH CEDILLA)
-
-
-- 0x015F (LATIN SMALL LETTER S WITH CEDILLA)
-
-
-- 0x0160 (LATIN CAPITAL LETTER S WITH CARON)
-
-
-- 0x0161 (LATIN SMALL LETTER S WITH CARON)
-
-
-- 0x0164 (LATIN CAPITAL LETTER T WITH CARON)
-
-
 - 0x0165 (LATIN SMALL LETTER T WITH CARON)
-
-
-- 0x016A (LATIN CAPITAL LETTER U WITH MACRON)
-
-
-- 0x016B (LATIN SMALL LETTER U WITH MACRON)
-
-
-- 0x016E (LATIN CAPITAL LETTER U WITH RING ABOVE)
-
-
-- 0x016F (LATIN SMALL LETTER U WITH RING ABOVE)
-
-
-- 0x0170 (LATIN CAPITAL LETTER U WITH DOUBLE ACUTE)
-
-
-- 0x0171 (LATIN SMALL LETTER U WITH DOUBLE ACUTE)
-
-
-- 0x0172 (LATIN CAPITAL LETTER U WITH OGONEK)
-
-
-- 0x0173 (LATIN SMALL LETTER U WITH OGONEK)
-
-
-- 0x0174 (LATIN CAPITAL LETTER W WITH CIRCUMFLEX)
-
-
-- 0x0175 (LATIN SMALL LETTER W WITH CIRCUMFLEX)
-
-
-- 0x0176 (LATIN CAPITAL LETTER Y WITH CIRCUMFLEX)
-
-
-- 0x0177 (LATIN SMALL LETTER Y WITH CIRCUMFLEX)
-
-
-- 0x0178 (LATIN CAPITAL LETTER Y WITH DIAERESIS)
-
-
-- 0x0179 (LATIN CAPITAL LETTER Z WITH ACUTE)
-
-
-- 0x017A (LATIN SMALL LETTER Z WITH ACUTE)
-
-
-- 0x017B (LATIN CAPITAL LETTER Z WITH DOT ABOVE)
-
-
-- 0x017C (LATIN SMALL LETTER Z WITH DOT ABOVE)
-
-
-- 0x017D (LATIN CAPITAL LETTER Z WITH CARON)
-
-
-- 0x017E (LATIN SMALL LETTER Z WITH CARON)
 
 
 - 0x0218 (LATIN CAPITAL LETTER S WITH COMMA BELOW)
@@ -874,9 +380,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 - 0x021B (LATIN SMALL LETTER T WITH COMMA BELOW)
-
-
-- 0x0237 (LATIN SMALL LETTER DOTLESS J)
 
 
 - 0x02C6 (MODIFIER LETTER CIRCUMFLEX ACCENT)
@@ -901,42 +404,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 - 0x02DD (DOUBLE ACUTE ACCENT)
-
-
-- 0x0302 (COMBINING CIRCUMFLEX ACCENT)
-
-
-- 0x0303 (COMBINING TILDE)
-
-
-- 0x0304 (COMBINING MACRON)
-
-
-- 0x0306 (COMBINING BREVE)
-
-
-- 0x0307 (COMBINING DOT ABOVE)
-
-
-- 0x0308 (COMBINING DIAERESIS)
-
-
-- 0x030A (COMBINING RING ABOVE)
-
-
-- 0x030B (COMBINING DOUBLE ACUTE ACCENT)
-
-
-- 0x030C (COMBINING CARON)
-
-
-- 0x0326 (COMBINING COMMA BELOW)
-
-
-- 0x0327 (COMBINING CEDILLA)
-
-
-- 0x0328 (COMBINING OGONEK)
 
 
 - 0x1E80 (LATIN CAPITAL LETTER W WITH GRAVE)
@@ -1036,7 +503,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Check font follows the Google Fonts vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
     <div>
 
 
@@ -1045,9 +512,27 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 
-* ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
-acutecomb (U+0301), gravecomb (U+0300), uni0900 (U+0900), uni0901 (U+0901) and uni0902 (U+0902)</p>
- [code: mark-chars]
+* 🔥 **FAIL** <p>The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2048 when it should be at least 2457</p>
+ [code: bad-hhea-range]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check glyphs in mark glyph class are non-spacing. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B), uni030C (U+030C), uni0326 (U+0326), uni0327 (U+0327), uni0328 (U+0328), uni0900 (U+0900), uni0901 (U+0901) and uni0902 (U+0902)</p>
+ [code: spacing-mark-glyphs]
 
 
 
@@ -1083,9 +568,9 @@ acutecomb (U+0301), gravecomb (U+0300), uni0900 (U+0900), uni0901 (U+0901) and u
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour order differs in glyph 'uni090E': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=900,wdth=200, [7, 8, 9, 0, 1, 2, 3, 4, 5, 6] in wght=100,wdth=50.
+<pre><code>- Contour order differs in glyph 'uni090E': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
 
-- Contour order differs in glyph 'uni090D': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=900,wdth=200, [7, 8, 9, 0, 1, 2, 3, 4, 5, 6] in wght=100,wdth=50.
+- Contour order differs in glyph 'uni090D': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
 </code></pre>
  [code: interpolation-issues]
 
@@ -1128,6 +613,15 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, canadian-aboriginal, coptic, math, old-permic, syriac, tifinagh, tai-le</li>
+<li>U+030A COMBINING RING ABOVE: try adding syriac</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
+<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
+<li>U+0327 COMBINING CEDILLA: not included in any glyphset definition</li>
+<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+0900 DEVANAGARI SIGN INVERTED CANDRABINDU: try adding devanagari</li>
 <li>U+0901 DEVANAGARI SIGN CANDRABINDU: try adding devanagari</li>
 <li>U+0902 DEVANAGARI SIGN ANUSVARA: try adding devanagari</li>
@@ -1157,8 +651,15 @@ definitions.</p>
 <li>U+091A DEVANAGARI LETTER CA: try adding devanagari</li>
 <li>U+091B DEVANAGARI LETTER CHA: try adding devanagari</li>
 <li>U+091C DEVANAGARI LETTER JA: try adding devanagari</li>
+<li>U+091D DEVANAGARI LETTER JHA: try adding devanagari</li>
+<li>U+091E DEVANAGARI LETTER NYA: try adding devanagari</li>
+<li>U+091F DEVANAGARI LETTER TTA: try adding devanagari</li>
+<li>U+0920 DEVANAGARI LETTER TTHA: try adding devanagari</li>
+<li>U+0921 DEVANAGARI LETTER DDA: try adding devanagari</li>
+<li>U+0922 DEVANAGARI LETTER DDHA: try adding devanagari</li>
+<li>U+0923 DEVANAGARI LETTER NNA: try adding devanagari</li>
 </ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin-ext</code></p>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code></p>
  [code: unreachable-subsetting]
 
 
@@ -1176,9 +677,10 @@ definitions.</p>
 
 
 
-* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: j̀ j́</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: ì í</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mfumte (Latn, 79,000 speakers), Mundani (Latn, 34,000 speakers), Yala (Latn, 200,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Navajo (Latn, 166,319 speakers), Ekpeye (Latn, 226,000 speakers), Koonzime (Latn, 40,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Kom (Latn, 360,685 speakers), Dii (Latn, 71,000 speakers), South Central Banda (Latn, 244,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Sar (Latn, 500,000 speakers), Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Gulay (Latn, 250,478 speakers), Lugbara (Latn, 2,200,000 speakers), Fur (Latn, 1,230,163 speakers), Zapotec (Latn, 490,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Southern Kisi (Latn, 360,000 speakers), Avokaya (Latn, 100,000 speakers), Bafut (Latn, 158,146 speakers), Nateni (Latn, 100,000 speakers), Vute (Latn, 21,000 speakers), Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers), Makaa (Latn, 221,000 speakers), Mango (Latn, 77,000 speakers), Cicipu (Latn, 44,000 speakers), Dan (Latn, 1,099,244 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Nzakara (Latn, 50,000 speakers), Ebira (Latn, 2,200,000 speakers).</p>
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̇ ǐ i̦̇ i̦̊ i̦̋ ǐ̦ i̧̇ i̧̊ i̧̋ ǐ̧ j̆ j̇ j̊ j̋ ǰ j̦̀ j̦́ j̦̃ j̦̄ j̦̆</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Koonzime (Latn, 40,000 speakers), Bafut (Latn, 158,146 speakers), Zapotec (Latn, 490,000 speakers), Cicipu (Latn, 44,000 speakers), Basaa (Latn, 332,940 speakers), Navajo (Latn, 166,319 speakers), Gulay (Latn, 250,478 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ma’di (Latn, 584,000 speakers), Vute (Latn, 21,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Nateni (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers), Ngbaka (Latn, 1,020,000 speakers), Ejagham (Latn, 120,000 speakers), Yala (Latn, 200,000 speakers), Ekpeye (Latn, 226,000 speakers), Sar (Latn, 500,000 speakers), Lugbara (Latn, 2,200,000 speakers), Mundani (Latn, 34,000 speakers), Dan (Latn, 1,099,244 speakers), Nzakara (Latn, 50,000 speakers), Igbo (Latn, 27,823,640 speakers), Dii (Latn, 71,000 speakers), Makaa (Latn, 221,000 speakers), Mfumte (Latn, 79,000 speakers), Kom (Latn, 360,685 speakers), South Central Banda (Latn, 244,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Mango (Latn, 77,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Aghem (Latn, 38,843 speakers), Avokaya (Latn, 100,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1199,15 +701,181 @@ definitions.</p>
 * ⚠️ **WARN** <p>The following glyphs have a counter-clockwise outer contour:</p>
 <pre><code>* .notdef has a counter-clockwise outer contour
 
-* C (U+0043) has a counter-clockwise outer contour
+* Abreve (U+0102) has a counter-clockwise outer contour
+
+* Abreve (U+0102) has a counter-clockwise outer contour
+
+* Abreve (U+0102) has a counter-clockwise outer contour
+
+* Adieresis (U+00C4) has a counter-clockwise outer contour
+
+* Adieresis (U+00C4) has a counter-clockwise outer contour
+
+* Amacron (U+0100) has a counter-clockwise outer contour
+
+* Aogonek (U+0104) has a counter-clockwise outer contour
+
+* Aogonek (U+0104) has a counter-clockwise outer contour
+
+* Aogonek (U+0104) has a counter-clockwise outer contour
 
 * C (U+0043) has a counter-clockwise outer contour
 
 * C (U+0043) has a counter-clockwise outer contour
+
+* C (U+0043) has a counter-clockwise outer contour
+
+* Cacute (U+0106) has a counter-clockwise outer contour
+
+* Cacute (U+0106) has a counter-clockwise outer contour
+
+* Cacute (U+0106) has a counter-clockwise outer contour
+
+* Ccaron (U+010C) has a counter-clockwise outer contour
+
+* Ccaron (U+010C) has a counter-clockwise outer contour
+
+* Ccaron (U+010C) has a counter-clockwise outer contour
+
+* Ccedilla (U+00C7) has a counter-clockwise outer contour
+
+* Ccedilla (U+00C7) has a counter-clockwise outer contour
+
+* Ccedilla (U+00C7) has a counter-clockwise outer contour
+
+* Ccedilla (U+00C7) has a counter-clockwise outer contour
+
+* Ccedilla (U+00C7) has a counter-clockwise outer contour
+
+* Ccedilla (U+00C7) has a counter-clockwise outer contour
+
+* Ccedilla (U+00C7) has a counter-clockwise outer contour
+
+* Ccircumflex (U+0108) has a counter-clockwise outer contour
+
+* Ccircumflex (U+0108) has a counter-clockwise outer contour
+
+* Ccircumflex (U+0108) has a counter-clockwise outer contour
+
+* Cdotaccent (U+010A) has a counter-clockwise outer contour
+
+* Cdotaccent (U+010A) has a counter-clockwise outer contour
+
+* Cdotaccent (U+010A) has a counter-clockwise outer contour
+
+* Cdotaccent (U+010A) has a counter-clockwise outer contour
+
+* Ebreve (U+0114) has a counter-clockwise outer contour
+
+* Ebreve (U+0114) has a counter-clockwise outer contour
+
+* Ebreve (U+0114) has a counter-clockwise outer contour
+
+* Edieresis (U+00CB) has a counter-clockwise outer contour
+
+* Edieresis (U+00CB) has a counter-clockwise outer contour
+
+* Edotaccent (U+0116) has a counter-clockwise outer contour
+
+* Emacron (U+0112) has a counter-clockwise outer contour
+
+* Eogonek (U+0118) has a counter-clockwise outer contour
+
+* Eogonek (U+0118) has a counter-clockwise outer contour
+
+* Eogonek (U+0118) has a counter-clockwise outer contour
+
+* Gbreve (U+011E) has a counter-clockwise outer contour
+
+* Gbreve (U+011E) has a counter-clockwise outer contour
+
+* Gbreve (U+011E) has a counter-clockwise outer contour
+
+* Gdotaccent (U+0120) has a counter-clockwise outer contour
+
+* Ibreve (U+012C) has a counter-clockwise outer contour
+
+* Ibreve (U+012C) has a counter-clockwise outer contour
+
+* Ibreve (U+012C) has a counter-clockwise outer contour
+
+* Idieresis (U+00CF) has a counter-clockwise outer contour
+
+* Idieresis (U+00CF) has a counter-clockwise outer contour
+
+* Idotaccent (U+0130) has a counter-clockwise outer contour
+
+* Imacron (U+012A) has a counter-clockwise outer contour
+
+* Iogonek (U+012E) has a counter-clockwise outer contour
+
+* Iogonek (U+012E) has a counter-clockwise outer contour
+
+* Iogonek (U+012E) has a counter-clockwise outer contour
+
+* Obreve (U+014E) has a counter-clockwise outer contour
+
+* Obreve (U+014E) has a counter-clockwise outer contour
+
+* Obreve (U+014E) has a counter-clockwise outer contour
+
+* Odieresis (U+00D6) has a counter-clockwise outer contour
+
+* Odieresis (U+00D6) has a counter-clockwise outer contour
+
+* Omacron (U+014C) has a counter-clockwise outer contour
+
+* Scedilla (U+015E) has a counter-clockwise outer contour
+
+* Scedilla (U+015E) has a counter-clockwise outer contour
+
+* Scedilla (U+015E) has a counter-clockwise outer contour
+
+* Scedilla (U+015E) has a counter-clockwise outer contour
+
+* Ubreve (U+016C) has a counter-clockwise outer contour
+
+* Ubreve (U+016C) has a counter-clockwise outer contour
+
+* Ubreve (U+016C) has a counter-clockwise outer contour
+
+* Udieresis (U+00DC) has a counter-clockwise outer contour
+
+* Udieresis (U+00DC) has a counter-clockwise outer contour
+
+* Umacron (U+016A) has a counter-clockwise outer contour
+
+* Uogonek (U+0172) has a counter-clockwise outer contour
+
+* Uogonek (U+0172) has a counter-clockwise outer contour
+
+* Uogonek (U+0172) has a counter-clockwise outer contour
 
 * X (U+0058) has a counter-clockwise outer contour
 
-* braceright (U+007D) has a counter-clockwise outer contour
+* Ydieresis (U+0178) has a counter-clockwise outer contour
+
+* Ydieresis (U+0178) has a counter-clockwise outer contour
+
+* Zdotaccent (U+017B) has a counter-clockwise outer contour
+
+* abreve (U+0103) has a counter-clockwise outer contour
+
+* abreve (U+0103) has a counter-clockwise outer contour
+
+* abreve (U+0103) has a counter-clockwise outer contour
+
+* adieresis (U+00E4) has a counter-clockwise outer contour
+
+* adieresis (U+00E4) has a counter-clockwise outer contour
+
+* amacron (U+0101) has a counter-clockwise outer contour
+
+* aogonek (U+0105) has a counter-clockwise outer contour
+
+* aogonek (U+0105) has a counter-clockwise outer contour
+
+* aogonek (U+0105) has a counter-clockwise outer contour
 
 * braceright (U+007D) has a counter-clockwise outer contour
 
@@ -1219,7 +887,29 @@ definitions.</p>
 
 * braceright (U+007D) has a counter-clockwise outer contour
 
-* eight (U+0038) has a counter-clockwise outer contour
+* braceright (U+007D) has a counter-clockwise outer contour
+
+* ccedilla (U+00E7) has a counter-clockwise outer contour
+
+* ccedilla (U+00E7) has a counter-clockwise outer contour
+
+* ccedilla (U+00E7) has a counter-clockwise outer contour
+
+* ccedilla (U+00E7) has a counter-clockwise outer contour
+
+* cdotaccent (U+010B) has a counter-clockwise outer contour
+
+* ebreve (U+0115) has a counter-clockwise outer contour
+
+* ebreve (U+0115) has a counter-clockwise outer contour
+
+* ebreve (U+0115) has a counter-clockwise outer contour
+
+* edieresis (U+00EB) has a counter-clockwise outer contour
+
+* edieresis (U+00EB) has a counter-clockwise outer contour
+
+* edotaccent (U+0117) has a counter-clockwise outer contour
 
 * eight (U+0038) has a counter-clockwise outer contour
 
@@ -1232,6 +922,16 @@ definitions.</p>
 * eight (U+0038) has a counter-clockwise outer contour
 
 * eight (U+0038) has a counter-clockwise outer contour
+
+* eight (U+0038) has a counter-clockwise outer contour
+
+* emacron (U+0113) has a counter-clockwise outer contour
+
+* eogonek (U+0119) has a counter-clockwise outer contour
+
+* eogonek (U+0119) has a counter-clockwise outer contour
+
+* eogonek (U+0119) has a counter-clockwise outer contour
 
 * five (U+0035) has a counter-clockwise outer contour
 
@@ -1251,7 +951,31 @@ definitions.</p>
 
 * four (U+0034) has a counter-clockwise outer contour
 
-* nine (U+0039) has a counter-clockwise outer contour
+* gbreve (U+011F) has a counter-clockwise outer contour
+
+* gbreve (U+011F) has a counter-clockwise outer contour
+
+* gbreve (U+011F) has a counter-clockwise outer contour
+
+* gdotaccent (U+0121) has a counter-clockwise outer contour
+
+* ibreve (U+012D) has a counter-clockwise outer contour
+
+* ibreve (U+012D) has a counter-clockwise outer contour
+
+* ibreve (U+012D) has a counter-clockwise outer contour
+
+* idieresis (U+00EF) has a counter-clockwise outer contour
+
+* idieresis (U+00EF) has a counter-clockwise outer contour
+
+* imacron (U+012B) has a counter-clockwise outer contour
+
+* iogonek (U+012F) has a counter-clockwise outer contour
+
+* iogonek (U+012F) has a counter-clockwise outer contour
+
+* iogonek (U+012F) has a counter-clockwise outer contour
 
 * nine (U+0039) has a counter-clockwise outer contour
 
@@ -1262,6 +986,20 @@ definitions.</p>
 * nine (U+0039) has a counter-clockwise outer contour
 
 * nine (U+0039) has a counter-clockwise outer contour
+
+* nine (U+0039) has a counter-clockwise outer contour
+
+* obreve (U+014F) has a counter-clockwise outer contour
+
+* obreve (U+014F) has a counter-clockwise outer contour
+
+* obreve (U+014F) has a counter-clockwise outer contour
+
+* odieresis (U+00F6) has a counter-clockwise outer contour
+
+* odieresis (U+00F6) has a counter-clockwise outer contour
+
+* omacron (U+014D) has a counter-clockwise outer contour
 
 * one (U+0031) has a counter-clockwise outer contour
 
@@ -1273,12 +1011,20 @@ definitions.</p>
 
 * parenright (U+0029) has a counter-clockwise outer contour
 
-* seven (U+0037) has a counter-clockwise outer contour
+* scedilla (U+015F) has a counter-clockwise outer contour
+
+* scedilla (U+015F) has a counter-clockwise outer contour
+
+* scedilla (U+015F) has a counter-clockwise outer contour
+
+* scedilla (U+015F) has a counter-clockwise outer contour
 
 * seven (U+0037) has a counter-clockwise outer contour
 
 * seven (U+0037) has a counter-clockwise outer contour
 
+* seven (U+0037) has a counter-clockwise outer contour
+
 * six (U+0036) has a counter-clockwise outer contour
 
 * six (U+0036) has a counter-clockwise outer contour
@@ -1311,7 +1057,61 @@ definitions.</p>
 
 * two (U+0032) has a counter-clockwise outer contour
 
-* uni0917 (U+0917) has a counter-clockwise outer contour
+* ubreve (U+016D) has a counter-clockwise outer contour
+
+* ubreve (U+016D) has a counter-clockwise outer contour
+
+* ubreve (U+016D) has a counter-clockwise outer contour
+
+* udieresis (U+00FC) has a counter-clockwise outer contour
+
+* udieresis (U+00FC) has a counter-clockwise outer contour
+
+* umacron (U+016B) has a counter-clockwise outer contour
+
+* uni0162 (U+0162) has a counter-clockwise outer contour
+
+* uni0162 (U+0162) has a counter-clockwise outer contour
+
+* uni0162 (U+0162) has a counter-clockwise outer contour
+
+* uni0162 (U+0162) has a counter-clockwise outer contour
+
+* uni0163 (U+0163) has a counter-clockwise outer contour
+
+* uni0163 (U+0163) has a counter-clockwise outer contour
+
+* uni0163 (U+0163) has a counter-clockwise outer contour
+
+* uni0163 (U+0163) has a counter-clockwise outer contour
+
+* uni0304 (U+0304) has a counter-clockwise outer contour
+
+* uni0306 (U+0306) has a counter-clockwise outer contour
+
+* uni0306 (U+0306) has a counter-clockwise outer contour
+
+* uni0306 (U+0306) has a counter-clockwise outer contour
+
+* uni0307 (U+0307) has a counter-clockwise outer contour
+
+* uni0308 (U+0308) has a counter-clockwise outer contour
+
+* uni0308 (U+0308) has a counter-clockwise outer contour
+
+* uni0327 (U+0327) has a counter-clockwise outer contour
+
+* uni0327 (U+0327) has a counter-clockwise outer contour
+
+* uni0327 (U+0327) has a counter-clockwise outer contour
+
+* uni0327 (U+0327) has a counter-clockwise outer contour
+
+* uni0328 (U+0328) has a counter-clockwise outer contour
+
+* uni0328 (U+0328) has a counter-clockwise outer contour
+
+* uni0328 (U+0328) has a counter-clockwise outer contour
 
 * uni0917 (U+0917) has a counter-clockwise outer contour
 
@@ -1320,10 +1120,24 @@ definitions.</p>
 * uni0917 (U+0917) has a counter-clockwise outer contour
 
 * uni0917 (U+0917) has a counter-clockwise outer contour
+
+* uni0917 (U+0917) has a counter-clockwise outer contour
+
+* uogonek (U+0173) has a counter-clockwise outer contour
+
+* uogonek (U+0173) has a counter-clockwise outer contour
+
+* uogonek (U+0173) has a counter-clockwise outer contour
 
 * x (U+0078) has a counter-clockwise outer contour
 
 * x (U+0078) has a counter-clockwise outer contour
+
+* ydieresis (U+00FF) has a counter-clockwise outer contour
+
+* ydieresis (U+00FF) has a counter-clockwise outer contour
+
+* zdotaccent (U+017C) has a counter-clockwise outer contour
 
 * zero (U+0030) has a counter-clockwise outer contour
 
@@ -1429,8 +1243,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 14 | 10 | 98 | 8 | 121 | 0 | 
-| 0% | 0% | 6% | 4% | 39% | 3% | 48% | 0% | 
+| 0 | 0 | 14 | 10 | 97 | 8 | 122 | 0 | 
+| 0% | 0% | 6% | 4% | 39% | 3% | 49% | 0% | 
 
 
 
