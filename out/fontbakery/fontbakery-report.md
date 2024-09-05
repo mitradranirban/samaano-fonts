@@ -10,26 +10,8 @@ fontbakery version: 0.12.10
 
 
 
-<details><summary>[23] Samaano[wdth,wght].ttf</summary>
+<details><summary>[21] Samaano[wdth,wght].ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>The &quot;wdth&quot; axis coordinate of the &quot;Regular&quot; instance must be 100. Got 50.0 as a default value instead.</p>
- [code: wdth-not-100]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.head.html#"></a></summary>
     <div>
@@ -58,19 +40,8 @@ fontbakery version: 0.12.10
 
 
 
-* 🔥 **FAIL** <p>The PANOSE numbers are incorrect for a monospaced font.</p>
- [code: mono-bad-panose]
-
-
-
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 96 instead.
-Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
- [code: bad-numberOfHMetrics]
-
-
-
-* ⚠️ **WARN** <p>Font is monospaced but 1 glyphs (0.78%) have a different width. You should check the widths of: ['underscore']</p>
- [code: mono-outliers]
+* 🔥 **FAIL** <p>On non-monospaced fonts, the OS/2.panose.bProportion value can be set to any value except 9 (proportion: monospaced) which is the bad value we got in this font.</p>
+ [code: bad-panose]
 
 
 
@@ -78,7 +49,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to a name ID whose string is equal to the string of either name ID 2 or 17, and its postScriptNameID value is set to a name ID whose string is equal to the string of name ID 6. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.fvar.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
     <div>
 
 
@@ -87,14 +58,8 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 
-* 🔥 **FAIL** <p>'Black' instance has the same coordinates as the default instance; its subfamily name should be 'UltraCondensed Black'.</p>
-<p>Note: It is alternatively possible that Name ID 17 is incorrect, and should be set to the default instance subfamily name, 'Black', rather than ''UltraCondensed Black''. If the default instance is 'Black', NameID 17 is probably the problem.</p>
- [code: invalid-default-instance-subfamily-name]
-
-
-
-* 🔥 **FAIL** <p>'Black' instance has the same coordinates as the default instance; its postscript name should be 'Samaano-UltraCondensedBlack', instead of 'Samaano-Black'.</p>
- [code: invalid-default-instance-postscript-name]
+* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 2132, but got 1800 instead</p>
+ [code: ascent]
 
 
 
@@ -138,25 +103,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphnames.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>The following glyph names do not comply with naming conventions: ja-deva, jha-deva and nya-deva</p>
-<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not.</p>
- [code: found-invalid-names]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>🔥 <b>FAIL</b> Font contains glyphs for whitespace characters? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
     <div>
 
@@ -186,127 +132,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * 🔥 **FAIL** <p>No GF glyphset was found to be supported &gt;80%, so language shaping support couldn't get checked.</p>
  [code: no-glyphset-supported]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Combined length of family and style must not exceed 32 characters. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Thin' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 258 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Thin' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 258 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraLight' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 260 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraLight' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 260 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Light' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 262 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Light' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 262 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Regular' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 264 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Regular' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 264 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Medium' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 266 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Medium' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 266 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black SemiBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 268 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black SemiBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 268 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Bold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 270 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Bold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 270 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 272 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black ExtraBold' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 272 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Black' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 274 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
-
-
-
-* 🔥 **FAIL** <p>Variable font instance name 'Samaano UltraCondensed Black Black' formed by space-separated concatenation of font family name (nameID 1) and instance subfamily nameID 274 exceeds 32 characters.</p>
-<p>This has been found to cause shaping issues for some accented letters in Microsoft Word on Windows 10 and 11.</p>
- [code: instance-too-long]
 
 
 
@@ -1036,6 +861,24 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
+    <summary>🔥 <b>FAIL</b> Check font follows the Google Fonts vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2048 when it should be at least 2457</p>
+ [code: bad-hhea-range]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
     <div>
 
@@ -1083,9 +926,9 @@ acutecomb (U+0301), gravecomb (U+0300), uni0900 (U+0900), uni0901 (U+0901) and u
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour order differs in glyph 'uni090E': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=900,wdth=200, [7, 8, 9, 0, 1, 2, 3, 4, 5, 6] in wght=100,wdth=50.
+<pre><code>- Contour order differs in glyph 'uni090D': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
 
-- Contour order differs in glyph 'uni090D': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=900,wdth=200, [7, 8, 9, 0, 1, 2, 3, 4, 5, 6] in wght=100,wdth=50.
+- Contour order differs in glyph 'uni090E': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in wght=100,wdth=200, [3, 4, 5, 6, 7, 8, 9, 0, 1, 2] in wght=900,wdth=100.
 </code></pre>
  [code: interpolation-issues]
 
@@ -1159,6 +1002,11 @@ definitions.</p>
 <li>U+091C DEVANAGARI LETTER JA: try adding devanagari</li>
 <li>U+091D DEVANAGARI LETTER JHA: try adding devanagari</li>
 <li>U+091E DEVANAGARI LETTER NYA: try adding devanagari</li>
+<li>U+091F DEVANAGARI LETTER TTA: try adding devanagari</li>
+<li>U+0920 DEVANAGARI LETTER TTHA: try adding devanagari</li>
+<li>U+0921 DEVANAGARI LETTER DDA: try adding devanagari</li>
+<li>U+0922 DEVANAGARI LETTER DDHA: try adding devanagari</li>
+<li>U+0923 DEVANAGARI LETTER NNA: try adding devanagari</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin-ext</code></p>
  [code: unreachable-subsetting]
@@ -1180,7 +1028,7 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: j̀ j́</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: ì í</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Koonzime (Latn, 40,000 speakers), Sar (Latn, 500,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nateni (Latn, 100,000 speakers), South Central Banda (Latn, 244,000 speakers), Mango (Latn, 77,000 speakers), Cicipu (Latn, 44,000 speakers), Gulay (Latn, 250,478 speakers), Dutch (Latn, 31,709,104 speakers), Zapotec (Latn, 490,000 speakers), Aghem (Latn, 38,843 speakers), Kom (Latn, 360,685 speakers), Bete-Bendi (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Mfumte (Latn, 79,000 speakers), Igbo (Latn, 27,823,640 speakers), Ngbaka (Latn, 1,020,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Avokaya (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Yala (Latn, 200,000 speakers), Dan (Latn, 1,099,244 speakers), Ekpeye (Latn, 226,000 speakers), Bafut (Latn, 158,146 speakers), Vute (Latn, 21,000 speakers), Navajo (Latn, 166,319 speakers), Makaa (Latn, 221,000 speakers), Basaa (Latn, 332,940 speakers), Dii (Latn, 71,000 speakers), Ma’di (Latn, 584,000 speakers), Nzakara (Latn, 50,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Ejagham (Latn, 120,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Lugbara (Latn, 2,200,000 speakers), Fur (Latn, 1,230,163 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Vute (Latn, 21,000 speakers), Dutch (Latn, 31,709,104 speakers), Dii (Latn, 71,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Zapotec (Latn, 490,000 speakers), Makaa (Latn, 221,000 speakers), Bafut (Latn, 158,146 speakers), Navajo (Latn, 166,319 speakers), Igbo (Latn, 27,823,640 speakers), Nateni (Latn, 100,000 speakers), Ejagham (Latn, 120,000 speakers), Ebira (Latn, 2,200,000 speakers), Nzakara (Latn, 50,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ekpeye (Latn, 226,000 speakers), Fur (Latn, 1,230,163 speakers), Yala (Latn, 200,000 speakers), Ma’di (Latn, 584,000 speakers), Lithuanian (Latn, 2,357,094 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Mfumte (Latn, 79,000 speakers), Basaa (Latn, 332,940 speakers), Ngbaka (Latn, 1,020,000 speakers), South Central Banda (Latn, 244,000 speakers), Avokaya (Latn, 100,000 speakers), Koonzime (Latn, 40,000 speakers), Aghem (Latn, 38,843 speakers), Lugbara (Latn, 2,200,000 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Gulay (Latn, 250,478 speakers), Mango (Latn, 77,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Mundani (Latn, 34,000 speakers), Southern Kisi (Latn, 360,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1431,8 +1279,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 14 | 10 | 98 | 8 | 121 | 0 | 
-| 0% | 0% | 6% | 4% | 39% | 3% | 48% | 0% | 
+| 0 | 0 | 12 | 10 | 98 | 8 | 123 | 0 | 
+| 0% | 0% | 5% | 4% | 39% | 3% | 49% | 0% | 
 
 
 
