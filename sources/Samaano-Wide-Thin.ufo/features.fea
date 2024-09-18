@@ -6,12 +6,6 @@ languagesystem latn dflt;
 # GSUB 
 
 
-lookup dligDiscretionaryLigatureslookup0 {
-  lookupflag 0;
-    sub \f \i  by \uniFB01;
-    sub \f \l  by \uniFB02;
-} dligDiscretionaryLigatureslookup0;
-
 lookup nuktNuktaFormsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0928 \uni093C  by \uni0929;
@@ -27,16 +21,27 @@ lookup nuktNuktaFormsinDevanagarilookup0 {
     sub \uni092F \uni093C  by \uni095F;
 } nuktNuktaFormsinDevanagarilookup0;
 
-feature dlig {
+lookup akhnAkhandinDevanagarilookup0 {
+  lookupflag 0;
+    sub \uni0915 \uni094D \uni0937  by \uni0915_uni094D_uni0937.akhn;
+    sub \uni091C \uni094D \uni091E  by \uni091C_uni094D_uni091E.akhn;
+} akhnAkhandinDevanagarilookup0;
 
- script DFLT;
-     language dflt ;
-      lookup dligDiscretionaryLigatureslookup0;
+lookup rphfRephForminDevanagarilookup0 {
+  lookupflag 0;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.rphf;
+} rphfRephForminDevanagarilookup0;
 
- script latn;
-     language dflt ;
-      lookup dligDiscretionaryLigatureslookup0;
-} dlig;
+lookup blwfBelowBaseFormsinDevanagarilookup0 {
+  lookupflag 0;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.blwf;
+} blwfBelowBaseFormsinDevanagarilookup0;
+
+lookup dligDiscretionaryLigatureslookup0 {
+  lookupflag 0;
+    sub \f \i  by \uniFB01;
+    sub \f \l  by \uniFB02;
+} dligDiscretionaryLigatureslookup0;
 
 feature nukt {
 
@@ -48,6 +53,38 @@ feature nukt {
      language dflt ;
       lookup nuktNuktaFormsinDevanagarilookup0;
 } nukt;
+
+feature akhn {
+
+ script deva;
+     language dflt ;
+      lookup akhnAkhandinDevanagarilookup0;
+} akhn;
+
+feature rphf {
+
+ script deva;
+     language dflt ;
+      lookup rphfRephForminDevanagarilookup0;
+} rphf;
+
+feature blwf {
+
+ script deva;
+     language dflt ;
+      lookup blwfBelowBaseFormsinDevanagarilookup0;
+} blwf;
+
+feature dlig {
+
+ script DFLT;
+     language dflt ;
+      lookup dligDiscretionaryLigatureslookup0;
+
+ script latn;
+     language dflt ;
+      lookup dligDiscretionaryLigatureslookup0;
+} dlig;
 #Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \Aacute \Abreve \Acircumflex \Adieresis \Agrave \Amacron 
@@ -85,28 +122,29 @@ feature nukt {
 	\uacute \ubreve \ucircumflex \udieresis \ugrave \uhungarumlaut \umacron 
 	\underscore \uni00A0 \uni00B2 \uni00B3 \uni00B9 \uni0122 \uni0123 \uni0136 
 	\uni0137 \uni013B \uni013C \uni0145 \uni0146 \uni0156 \uni0157 \uni0162 \uni0163 
-	\uni0192 \uni0218 \uni0219 \uni021A \uni021B \uni0237 \uni0903 \uni0904 \uni0905 
-	\uni0906 \uni0907 \uni0908 \uni0909 \uni090A \uni090B \uni090C \uni090D \uni090E 
-	\uni090F \uni0910 \uni0911 \uni0912 \uni0913 \uni0914 \uni0915 \uni0916 \uni0917 
-	\uni0918 \uni0919 \uni091A \uni091B \uni091C \uni091D \uni091E \uni091F \uni0920 
-	\uni0921 \uni0922 \uni0923 \uni0924 \uni0925 \uni0926 \uni0927 \uni0928 \uni0929 
-	\uni092A \uni092B \uni092C \uni092D \uni092E \uni092F \uni0930 \uni0931 \uni0932 
-	\uni0933 \uni0934 \uni0935 \uni0936 \uni0937 \uni0938 \uni0939 \uni093B \uni093D 
-	\uni093E \uni093F \uni0940 \uni0949 \uni094A \uni094B \uni094C \uni094E \uni094F 
-	\uni0950 \uni0958 \uni0959 \uni095A \uni095B \uni095C \uni095D \uni095E \uni095F 
-	\uni0960 \uni0961 \uni0964 \uni0965 \uni0966 \uni0967 \uni0968 \uni0969 \uni096A 
-	\uni096B \uni096C \uni096D \uni096E \uni096F \uni0970 \uni0971 \uni0972 \uni0973 
-	\uni0974 \uni0975 \uni0976 \uni0977 \uni0978 \uni0979 \uni097A \uni097B \uni097C 
-	\uni097D \uni097E \uni097F \uni1E9E \uni2044 \uni20B9 \uni25CC \uniFB02 \uogonek 
-	\uring \utilde \v \w \wacute \wcircumflex \wdieresis \wgrave \x \y \yacute 
-	\ycircumflex \ydieresis \yen \ygrave \z \zacute \zcaron \zdotaccent \zero 
-	\uni02C9 \uni02CA \uni02CB \uni094D.alt ];
-@GDEF_Ligature = [\uniFB01 ];
+	\uni0192 \uni0218 \uni0219 \uni021A \uni021B \uni0237 \uni02C9 \uni02CA \uni02CB 
+	\uni0903 \uni0904 \uni0905 \uni0906 \uni0907 \uni0908 \uni0909 \uni090A \uni090B 
+	\uni090C \uni090D \uni090E \uni090F \uni0910 \uni0911 \uni0912 \uni0913 \uni0914 
+	\uni0915 \uni0916 \uni0917 \uni0918 \uni0919 \uni091A \uni091B \uni091C \uni091D 
+	\uni091E \uni091F \uni0920 \uni0921 \uni0922 \uni0923 \uni0924 \uni0925 \uni0926 
+	\uni0927 \uni0928 \uni0929 \uni092A \uni092B \uni092C \uni092D \uni092E \uni092F 
+	\uni0930 \uni0931 \uni0932 \uni0933 \uni0934 \uni0935 \uni0936 \uni0937 \uni0938 
+	\uni0939 \uni093B \uni093D \uni093E \uni093F \uni0940 \uni0949 \uni094A \uni094B 
+	\uni094C \uni094D.alt \uni094E \uni094F \uni0950 \uni0958 \uni0959 \uni095A 
+	\uni095B \uni095C \uni095D \uni095E \uni095F \uni0960 \uni0961 \uni0964 \uni0965 
+	\uni0966 \uni0967 \uni0968 \uni0969 \uni096A \uni096B \uni096C \uni096D \uni096E 
+	\uni096F \uni0970 \uni0971 \uni0972 \uni0973 \uni0974 \uni0975 \uni0976 \uni0977 
+	\uni0978 \uni0979 \uni097A \uni097B \uni097C \uni097D \uni097E \uni097F \uni1E9E 
+	\uni2044 \uni20B9 \uni25CC \uniFB02 \uogonek \uring \utilde \v \w \wacute 
+	\wcircumflex \wdieresis \wgrave \x \y \yacute \ycircumflex \ydieresis \yen 
+	\ygrave \z \zacute \zcaron \zdotaccent \zero ];
+@GDEF_Ligature = [\uni0915_uni094D_uni0937.akhn \uni091C_uni094D_uni091E.akhn 
+	\uniFB01 ];
 @GDEF_Mark = [\acutecomb \gravecomb \tildecomb \uni0302 \uni0304 \uni0306 \uni0307 
 	\uni0308 \uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 \uni0900 \uni0901 
-	\uni0902 \uni093A \uni093C \uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 
-	\uni0947 \uni0948 \uni094D \uni0951 \uni0952 \uni0953 \uni0954 \uni0955 \uni0956 
-	\uni0957 \uni0962 \uni0963 ];
+	\uni0902 \uni0930_uni094D.blwf \uni0930_uni094D.rphf \uni093A \uni093C 
+	\uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 \uni0947 \uni0948 \uni094D 
+	\uni0951 \uni0952 \uni0953 \uni0954 \uni0955 \uni0956 \uni0957 \uni0962 \uni0963 ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;

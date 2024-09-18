@@ -5,7 +5,8 @@ FamilyName: Samaano
 Weight: Bold
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 0.500
+Version: 0.600
+StyleMapFamilyName: Samaano Bold
 ItalicAngle: 0
 UnderlinePosition: -204
 UnderlineWidth: 102
@@ -22,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1726556438
-ModificationTime: 1726568065
+CreationTime: 1726645289
+ModificationTime: 1726645374
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -49,21 +50,23 @@ OS2FamilyClass: 1031
 OS2Vendor: 'anir'
 OS2CodePages: 00000093.00000000
 OS2UnicodeRanges: 8000806f.0000204a.00000000.00000000
-Lookup: 4 0 0 "'dlig' Discretionary Ligatures lookup 0" { "'dlig' Discretionary Ligatures lookup 0-1"  } ['dlig' ('DFLT' <'dflt' > 'latn' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "nuktNuktaFormsinDevanagarilookup0" { "nuktNuktaFormsinDevanagarilookup0 subtable"  } ['nukt' ('deva' <'dflt' > 'DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "Single Substitution lookup A" { "Single Substitution lookup A-1"  } []
+Lookup: 4 0 0 "akhnAkhandinDevanagarilookup0" { "akhnAkhandinDevanagarilookup0 subtable"  } ['akhn' ('deva' <'dflt' > ) ]
+Lookup: 4 0 0 "rphfRephForminDevanagarilookup0" { "rphfRephForminDevanagarilookup0 subtable"  } ['rphf' ('deva' <'dflt' > ) ]
+Lookup: 4 0 0 "blwfBelowBaseFormsinDevanagarilookup0" { "blwfBelowBaseFormsinDevanagarilookup0 subtable"  } ['blwf' ('deva' <'dflt' > ) ]
+Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.500" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)+AAoA +AAoA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL+AAoACgAA" "http://scripts.sil.org/OFL"
+LangName: 1033 "" "" "" "" "" "Version 0.600" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)+AAoA +AAoA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL+AAoACgAA" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
 ."
-Encoding: Custom
+Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
-FitToEm: 1
-WinInfo: 455 13 5
+FitToEm: 0
+WinInfo: 65481 13 5
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -76,7 +79,7 @@ Grid
 1866 935.2 m 0
  -2230 935.2 l 1024
 EndSplineSet
-BeginChars: 599 500
+BeginChars: 65541 504
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -147,7 +150,7 @@ sass."
 EndChar
 
 StartChar: A
-Encoding: 1 65 1
+Encoding: 65 65 1
 GlifName: A_
 Width: 1024
 VWidth: 0
@@ -183,7 +186,7 @@ Guideline: "CAPS_HEIFGHT" "" 0 1548 0 0 0
 EndChar
 
 StartChar: AE
-Encoding: 2 198 2
+Encoding: 198 198 2
 GlifName: A_E_
 Width: 1024
 VWidth: 0
@@ -221,7 +224,7 @@ EndSplineSet
 EndChar
 
 StartChar: Aacute
-Encoding: 3 193 3
+Encoding: 193 193 3
 GlifName: A_acute
 Width: 1024
 VWidth: 0
@@ -234,7 +237,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Abreve
-Encoding: 4 258 4
+Encoding: 258 258 4
 GlifName: A_breve
 Width: 1024
 VWidth: 0
@@ -244,7 +247,7 @@ HStem: 1670 72 1815 20
 VStem: 194 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 32.5 190 2
+Refer: 335 774 N 1 0 0 1 32.5 190 2
 Refer: 1 65 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -277,7 +280,7 @@ sass."
 EndChar
 
 StartChar: Acircumflex
-Encoding: 5 194 5
+Encoding: 194 194 5
 GlifName: A_circumflex
 Width: 1024
 VWidth: 0
@@ -285,12 +288,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 64 -307 2
+Refer: 333 770 N 1 0 0 1 64 -307 2
 Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Adieresis
-Encoding: 6 196 6
+Encoding: 196 196 6
 GlifName: A_dieresis
 Width: 1024
 VWidth: 0
@@ -300,7 +303,7 @@ HStem: 1670 101
 VStem: 346 112 588 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -33.5 33 2
+Refer: 337 776 N 1 0 0 1 -33.5 33 2
 Refer: 1 65 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -333,7 +336,7 @@ sass."
 EndChar
 
 StartChar: Agrave
-Encoding: 7 192 7
+Encoding: 192 192 7
 GlifName: A_grave
 Width: 1024
 VWidth: 0
@@ -346,7 +349,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Amacron
-Encoding: 8 256 8
+Encoding: 256 256 8
 GlifName: A_macron
 Width: 1024
 VWidth: 0
@@ -356,7 +359,7 @@ HStem: 1670 78
 VStem: 244 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 17.5 118 2
+Refer: 334 772 N 1 0 0 1 17.5 118 2
 Refer: 1 65 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -384,7 +387,7 @@ sass."
 EndChar
 
 StartChar: Aogonek
-Encoding: 9 260 9
+Encoding: 260 260 9
 GlifName: A_ogonek
 Width: 1024
 VWidth: 0
@@ -394,7 +397,7 @@ HStem: -408 122 -119 121
 VStem: 480 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -1.5 2.2 2
+Refer: 343 808 N 1 0 0 1 -1.5 2.2 2
 Refer: 1 65 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -427,7 +430,7 @@ sass."
 EndChar
 
 StartChar: Aring
-Encoding: 10 197 10
+Encoding: 197 197 10
 GlifName: A_ring
 Width: 1024
 VWidth: 0
@@ -437,7 +440,7 @@ HStem: 1598 309
 VStem: 336 360
 LayerCount: 2
 Fore
-Refer: 335 778 N 1 0 0 1 -26.5 59.7 2
+Refer: 338 778 N 1 0 0 1 -26.5 59.7 2
 Refer: 1 65 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -465,7 +468,7 @@ sass."
 EndChar
 
 StartChar: Atilde
-Encoding: 11 195 11
+Encoding: 195 195 11
 GlifName: A_tilde
 Width: 1024
 VWidth: 0
@@ -478,7 +481,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: B
-Encoding: 12 66 12
+Encoding: 66 66 12
 GlifName: B_
 Width: 1024
 VWidth: 0
@@ -536,7 +539,7 @@ EndSplineSet
 EndChar
 
 StartChar: C
-Encoding: 13 67 13
+Encoding: 67 67 13
 GlifName: C_
 Width: 1024
 VWidth: 0
@@ -594,7 +597,7 @@ sass."
 EndChar
 
 StartChar: Cacute
-Encoding: 14 262 14
+Encoding: 262 262 14
 GlifName: C_acute
 Width: 1024
 VWidth: 0
@@ -637,17 +640,17 @@ sass."
 EndChar
 
 StartChar: Ccaron
-Encoding: 15 268 15
+Encoding: 268 268 15
 GlifName: C_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 3 196 1338 203 1648 272
 VStem: 257 101 452 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 56.5 300 2
+Refer: 340 780 N 1 0 0 1 56.5 300 2
 Refer: 13 67 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -690,7 +693,7 @@ sass."
 EndChar
 
 StartChar: Ccedilla
-Encoding: 16 199 16
+Encoding: 199 199 16
 GlifName: C_cedilla
 Width: 1024
 VWidth: 0
@@ -700,7 +703,7 @@ HStem: -591 120 -555 84 -327 144 3 196 1338 203
 VStem: 257 101 579 155 873 152
 LayerCount: 2
 Fore
-Refer: 339 807 N 1 0 0 1 1 -183.4 2
+Refer: 342 807 N 1 0 0 1 1 -183.4 2
 Refer: 13 67 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -758,7 +761,7 @@ sass."
 EndChar
 
 StartChar: Ccircumflex
-Encoding: 17 264 17
+Encoding: 264 264 17
 GlifName: C_circumflex
 Width: 1024
 VWidth: 0
@@ -768,7 +771,7 @@ HStem: 3 196 1338 203
 VStem: 257 101
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 52.5 -250 2
+Refer: 333 770 N 1 0 0 1 52.5 -250 2
 Refer: 13 67 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -801,7 +804,7 @@ sass."
 EndChar
 
 StartChar: Cdotaccent
-Encoding: 18 266 18
+Encoding: 266 266 18
 GlifName: C_dotaccent
 Width: 1024
 VWidth: 0
@@ -811,7 +814,7 @@ HStem: 3 196 1338 203 1663 101
 VStem: 257 101 528 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -94 26 2
+Refer: 336 775 N 1 0 0 1 -94 26 2
 Refer: 13 67 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -854,7 +857,7 @@ sass."
 EndChar
 
 StartChar: D
-Encoding: 19 68 19
+Encoding: 68 68 19
 GlifName: D_
 Width: 1024
 VWidth: 0
@@ -892,17 +895,17 @@ EndSplineSet
 EndChar
 
 StartChar: Dcaron
-Encoding: 20 270 20
+Encoding: 270 270 20
 GlifName: D_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1621 272
 VStem: 237 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -159 273 2
+Refer: 340 780 N 1 0 0 1 -159 273 2
 Refer: 19 68 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -930,7 +933,7 @@ sass."
 EndChar
 
 StartChar: Dcroat
-Encoding: 21 272 21
+Encoding: 272 272 21
 GlifName: D_croat
 Width: 1024
 VWidth: 0
@@ -973,7 +976,7 @@ EndSplineSet
 EndChar
 
 StartChar: E
-Encoding: 22 69 22
+Encoding: 69 69 22
 GlifName: E_
 Width: 1024
 VWidth: 0
@@ -1006,7 +1009,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eacute
-Encoding: 23 201 23
+Encoding: 201 201 23
 GlifName: E_acute
 Width: 1024
 VWidth: 0
@@ -1019,7 +1022,7 @@ Refer: 22 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ebreve
-Encoding: 24 276 24
+Encoding: 276 276 24
 GlifName: E_breve
 Width: 1024
 VWidth: 0
@@ -1029,7 +1032,7 @@ HStem: 1590 72 1735 20
 VStem: 161 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 0 110 2
+Refer: 335 774 N 1 0 0 1 0 110 2
 Refer: 22 69 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1062,17 +1065,17 @@ sass."
 EndChar
 
 StartChar: Ecaron
-Encoding: 25 282 25
+Encoding: 282 282 25
 GlifName: E_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1635 272
 VStem: 328 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -68.5 287 2
+Refer: 340 780 N 1 0 0 1 -68.5 287 2
 Refer: 22 69 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1100,7 +1103,7 @@ sass."
 EndChar
 
 StartChar: Ecircumflex
-Encoding: 26 202 26
+Encoding: 202 202 26
 GlifName: E_circumflex
 Width: 1024
 VWidth: 0
@@ -1108,12 +1111,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 29.5 -239 2
+Refer: 333 770 N 1 0 0 1 29.5 -239 2
 Refer: 22 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Edieresis
-Encoding: 27 203 27
+Encoding: 203 203 27
 GlifName: E_dieresis
 Width: 1024
 VWidth: 0
@@ -1123,7 +1126,7 @@ HStem: 1642 101
 VStem: 270 112 512 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -110 5 2
+Refer: 337 776 N 1 0 0 1 -110 5 2
 Refer: 22 69 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1156,7 +1159,7 @@ sass."
 EndChar
 
 StartChar: Edotaccent
-Encoding: 28 278 28
+Encoding: 278 278 28
 GlifName: E_dotaccent
 Width: 1024
 VWidth: 0
@@ -1166,7 +1169,7 @@ HStem: 1638 101
 VStem: 439 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -183 1 2
+Refer: 336 775 N 1 0 0 1 -183 1 2
 Refer: 22 69 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1194,7 +1197,7 @@ sass."
 EndChar
 
 StartChar: Egrave
-Encoding: 29 200 29
+Encoding: 200 200 29
 GlifName: E_grave
 Width: 1024
 VWidth: 0
@@ -1207,7 +1210,7 @@ Refer: 22 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Emacron
-Encoding: 30 274 30
+Encoding: 274 274 30
 GlifName: E_macron
 Width: 1024
 VWidth: 0
@@ -1217,7 +1220,7 @@ HStem: 1606 78
 VStem: 191 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 -35 54 2
+Refer: 334 772 N 1 0 0 1 -35 54 2
 Refer: 22 69 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1245,7 +1248,7 @@ sass."
 EndChar
 
 StartChar: Eogonek
-Encoding: 31 280 31
+Encoding: 280 280 31
 GlifName: E_ogonek
 Width: 1024
 VWidth: 0
@@ -1255,7 +1258,7 @@ HStem: -415 122 -126 121
 VStem: 468 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -14 -4.8 2
+Refer: 343 808 N 1 0 0 1 -14 -4.8 2
 Refer: 22 69 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1288,7 +1291,7 @@ sass."
 EndChar
 
 StartChar: Eth
-Encoding: 32 208 32
+Encoding: 208 208 32
 GlifName: E_th
 Width: 1024
 VWidth: 0
@@ -1331,7 +1334,7 @@ EndSplineSet
 EndChar
 
 StartChar: Euro
-Encoding: 33 8364 33
+Encoding: 8364 8364 33
 GlifName: E_uro
 Width: 1024
 VWidth: 0
@@ -1385,7 +1388,7 @@ sass."
 EndChar
 
 StartChar: F
-Encoding: 34 70 34
+Encoding: 70 70 34
 GlifName: F_
 Width: 1024
 VWidth: 0
@@ -1413,7 +1416,7 @@ EndSplineSet
 EndChar
 
 StartChar: G
-Encoding: 35 71 35
+Encoding: 71 71 35
 GlifName: G_
 Width: 1024
 VWidth: 0
@@ -1446,7 +1449,7 @@ EndSplineSet
 EndChar
 
 StartChar: Gbreve
-Encoding: 36 286 36
+Encoding: 286 286 36
 GlifName: G_breve
 Width: 1024
 VWidth: 0
@@ -1456,7 +1459,7 @@ HStem: 1669 72 1814 20
 VStem: 159 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 -2 189 2
+Refer: 335 774 N 1 0 0 1 -2 189 2
 Refer: 35 71 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1489,7 +1492,7 @@ sass."
 EndChar
 
 StartChar: Gcircumflex
-Encoding: 37 284 37
+Encoding: 284 284 37
 GlifName: G_circumflex
 Width: 1024
 VWidth: 0
@@ -1497,12 +1500,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 17.5 -120 2
+Refer: 333 770 N 1 0 0 1 17.5 -120 2
 Refer: 35 71 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Gdotaccent
-Encoding: 38 288 38
+Encoding: 288 288 38
 GlifName: G_dotaccent
 Width: 1024
 VWidth: 0
@@ -1512,7 +1515,7 @@ HStem: 1669 101
 VStem: 433 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -189 32 2
+Refer: 336 775 N 1 0 0 1 -189 32 2
 Refer: 35 71 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1540,7 +1543,7 @@ sass."
 EndChar
 
 StartChar: H
-Encoding: 39 72 39
+Encoding: 72 72 39
 GlifName: H_
 Width: 1024
 VWidth: 0
@@ -1568,7 +1571,7 @@ EndSplineSet
 EndChar
 
 StartChar: Hbar
-Encoding: 40 294 40
+Encoding: 294 294 40
 GlifName: H_bar
 Width: 1024
 VWidth: 0
@@ -1603,7 +1606,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: Hcircumflex
-Encoding: 41 292 41
+Encoding: 292 292 41
 GlifName: H_circumflex
 Width: 1024
 VWidth: 0
@@ -1611,12 +1614,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 15.5 -127 2
+Refer: 333 770 N 1 0 0 1 15.5 -127 2
 Refer: 39 72 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: I
-Encoding: 42 73 42
+Encoding: 73 73 42
 GlifName: I_
 Width: 1024
 VWidth: 0
@@ -1644,7 +1647,7 @@ EndSplineSet
 EndChar
 
 StartChar: Iacute
-Encoding: 43 205 43
+Encoding: 205 205 43
 GlifName: I_acute
 Width: 1024
 VWidth: 0
@@ -1657,7 +1660,7 @@ Refer: 42 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ibreve
-Encoding: 44 300 44
+Encoding: 300 300 44
 GlifName: I_breve
 Width: 1024
 VWidth: 0
@@ -1667,7 +1670,7 @@ HStem: 1662 72 1807 20
 VStem: 164 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 3.5 182 2
+Refer: 335 774 N 1 0 0 1 3.5 182 2
 Refer: 42 73 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1700,7 +1703,7 @@ sass."
 EndChar
 
 StartChar: Icircumflex
-Encoding: 45 206 45
+Encoding: 206 206 45
 GlifName: I_circumflex
 Width: 1024
 VWidth: 0
@@ -1708,12 +1711,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 23 -127 2
+Refer: 333 770 N 1 0 0 1 23 -127 2
 Refer: 42 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Idieresis
-Encoding: 46 207 46
+Encoding: 207 207 46
 GlifName: I_dieresis
 Width: 1024
 VWidth: 0
@@ -1723,7 +1726,7 @@ HStem: 1662 101
 VStem: 318 112 560 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -62.5 25 2
+Refer: 337 776 N 1 0 0 1 -62.5 25 2
 Refer: 42 73 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1756,7 +1759,7 @@ sass."
 EndChar
 
 StartChar: Idotaccent
-Encoding: 47 304 47
+Encoding: 304 304 47
 GlifName: I_dotaccent
 Width: 1024
 VWidth: 0
@@ -1766,7 +1769,7 @@ HStem: 1662 101
 VStem: 438 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -183.5 25 2
+Refer: 336 775 N 1 0 0 1 -183.5 25 2
 Refer: 42 73 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1794,7 +1797,7 @@ sass."
 EndChar
 
 StartChar: Igrave
-Encoding: 48 204 48
+Encoding: 204 204 48
 GlifName: I_grave
 Width: 1024
 VWidth: 0
@@ -1807,7 +1810,7 @@ Refer: 42 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Imacron
-Encoding: 49 298 49
+Encoding: 298 298 49
 GlifName: I_macron
 Width: 1024
 VWidth: 0
@@ -1817,7 +1820,7 @@ HStem: 1662 78
 VStem: 214 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 -11.5 110 2
+Refer: 334 772 N 1 0 0 1 -11.5 110 2
 Refer: 42 73 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1845,7 +1848,7 @@ sass."
 EndChar
 
 StartChar: Iogonek
-Encoding: 50 302 50
+Encoding: 302 302 50
 GlifName: I_ogonek
 Width: 1024
 VWidth: 0
@@ -1855,7 +1858,7 @@ HStem: -390 122 -101 121
 VStem: 231 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -251 20.2 2
+Refer: 343 808 N 1 0 0 1 -251 20.2 2
 Refer: 42 73 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -1888,7 +1891,7 @@ sass."
 EndChar
 
 StartChar: Itilde
-Encoding: 51 296 51
+Encoding: 296 296 51
 GlifName: I_tilde
 Width: 1024
 VWidth: 0
@@ -1901,7 +1904,7 @@ Refer: 42 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: J
-Encoding: 52 74 52
+Encoding: 74 74 52
 GlifName: J_
 Width: 1024
 VWidth: 0
@@ -1929,7 +1932,7 @@ EndSplineSet
 EndChar
 
 StartChar: Jcircumflex
-Encoding: 53 308 53
+Encoding: 308 308 53
 GlifName: J_circumflex
 Width: 1024
 VWidth: 0
@@ -1937,12 +1940,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 328.5 -127 2
+Refer: 333 770 N 1 0 0 1 328.5 -127 2
 Refer: 52 74 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: K
-Encoding: 54 75 54
+Encoding: 75 75 54
 GlifName: K_
 Width: 1024
 VWidth: 0
@@ -1970,7 +1973,7 @@ EndSplineSet
 EndChar
 
 StartChar: L
-Encoding: 55 76 55
+Encoding: 76 76 55
 GlifName: L_
 Width: 1024
 VWidth: 0
@@ -1993,7 +1996,7 @@ EndSplineSet
 EndChar
 
 StartChar: Lacute
-Encoding: 56 313 56
+Encoding: 313 313 56
 GlifName: L_acute
 Width: 1024
 VWidth: 0
@@ -2006,7 +2009,7 @@ Refer: 55 76 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Lcaron
-Encoding: 57 317 57
+Encoding: 317 317 57
 GlifName: L_caron
 Width: 1024
 VWidth: 0
@@ -2036,7 +2039,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: Lslash
-Encoding: 58 321 58
+Encoding: 321 321 58
 GlifName: L_slash
 Width: 1024
 VWidth: 0
@@ -2066,7 +2069,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: M
-Encoding: 59 77 59
+Encoding: 77 77 59
 GlifName: M_
 Width: 1024
 VWidth: 0
@@ -2099,7 +2102,7 @@ EndSplineSet
 EndChar
 
 StartChar: N
-Encoding: 60 78 60
+Encoding: 78 78 60
 GlifName: N_
 Width: 1024
 VWidth: 0
@@ -2127,7 +2130,7 @@ EndSplineSet
 EndChar
 
 StartChar: Nacute
-Encoding: 61 323 61
+Encoding: 323 323 61
 GlifName: N_acute
 Width: 1024
 VWidth: 0
@@ -2140,17 +2143,17 @@ Refer: 60 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ncaron
-Encoding: 62 327 62
+Encoding: 327 327 62
 GlifName: N_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1621 272
 VStem: 376 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -19.5 273 2
+Refer: 340 780 N 1 0 0 1 -19.5 273 2
 Refer: 60 78 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2178,7 +2181,7 @@ sass."
 EndChar
 
 StartChar: Ntilde
-Encoding: 63 209 63
+Encoding: 209 209 63
 GlifName: N_tilde
 Width: 1024
 VWidth: 0
@@ -2191,7 +2194,7 @@ Refer: 60 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: O
-Encoding: 64 79 64
+Encoding: 79 79 64
 GlifName: O_
 Width: 1024
 VWidth: 0
@@ -2224,7 +2227,7 @@ EndSplineSet
 EndChar
 
 StartChar: OE
-Encoding: 65 338 65
+Encoding: 338 338 65
 GlifName: O_E_
 Width: 1024
 VWidth: 0
@@ -2264,7 +2267,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: Oacute
-Encoding: 66 211 66
+Encoding: 211 211 66
 GlifName: O_acute
 Width: 1024
 VWidth: 0
@@ -2277,7 +2280,7 @@ Refer: 64 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Obreve
-Encoding: 67 334 67
+Encoding: 334 334 67
 GlifName: O_breve
 Width: 1024
 VWidth: 0
@@ -2287,7 +2290,7 @@ HStem: 1638 72 1783 20
 VStem: 136 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 -24.5 158 2
+Refer: 335 774 N 1 0 0 1 -24.5 158 2
 Refer: 64 79 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2320,7 +2323,7 @@ sass."
 EndChar
 
 StartChar: Ocircumflex
-Encoding: 68 212 68
+Encoding: 212 212 68
 GlifName: O_circumflex
 Width: 1024
 VWidth: 0
@@ -2328,12 +2331,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 43 -291 2
+Refer: 333 770 N 1 0 0 1 43 -291 2
 Refer: 64 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Odieresis
-Encoding: 69 214 69
+Encoding: 214 214 69
 GlifName: O_dieresis
 Width: 1024
 VWidth: 0
@@ -2343,7 +2346,7 @@ HStem: 1582 101
 VStem: 322 112 564 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -58.5 -55 2
+Refer: 337 776 N 1 0 0 1 -58.5 -55 2
 Refer: 64 79 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2376,7 +2379,7 @@ sass."
 EndChar
 
 StartChar: Ograve
-Encoding: 70 210 70
+Encoding: 210 210 70
 GlifName: O_grave
 Width: 1024
 VWidth: 0
@@ -2389,16 +2392,16 @@ Refer: 64 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ohungarumlaut
-Encoding: 71 336 71
+Encoding: 336 336 71
 GlifName: O_hungarumlaut
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1662 248
 LayerCount: 2
 Fore
-Refer: 336 779 S 1 0 0 1 -12.5 336 2
+Refer: 339 779 N 1 0 0 1 -12.5 336 2
 Refer: 64 79 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2418,7 +2421,7 @@ sass."
 EndChar
 
 StartChar: Omacron
-Encoding: 72 332 72
+Encoding: 332 332 72
 GlifName: O_macron
 Width: 1024
 VWidth: 0
@@ -2428,7 +2431,7 @@ HStem: 1678 78
 VStem: 210 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 -15.5 126 2
+Refer: 334 772 N 1 0 0 1 -15.5 126 2
 Refer: 64 79 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2456,7 +2459,7 @@ sass."
 EndChar
 
 StartChar: Oslash
-Encoding: 73 216 73
+Encoding: 216 216 73
 GlifName: O_slash
 Width: 1024
 VWidth: 0
@@ -2494,7 +2497,7 @@ EndSplineSet
 EndChar
 
 StartChar: Otilde
-Encoding: 74 213 74
+Encoding: 213 213 74
 GlifName: O_tilde
 Width: 1024
 VWidth: 0
@@ -2507,7 +2510,7 @@ Refer: 64 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: P
-Encoding: 75 80 75
+Encoding: 80 80 75
 GlifName: P_
 Width: 1024
 VWidth: 0
@@ -2540,7 +2543,7 @@ EndSplineSet
 EndChar
 
 StartChar: Q
-Encoding: 76 81 76
+Encoding: 81 81 76
 GlifName: Q_
 Width: 1024
 VWidth: 0
@@ -2578,7 +2581,7 @@ EndSplineSet
 EndChar
 
 StartChar: R
-Encoding: 77 82 77
+Encoding: 82 82 77
 GlifName: R_
 Width: 1024
 VWidth: 0
@@ -2616,7 +2619,7 @@ EndSplineSet
 EndChar
 
 StartChar: Racute
-Encoding: 78 340 78
+Encoding: 340 340 78
 GlifName: R_acute
 Width: 1024
 VWidth: 0
@@ -2629,17 +2632,17 @@ Refer: 77 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Rcaron
-Encoding: 79 344 79
+Encoding: 344 344 79
 GlifName: R_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1603 272
 VStem: 309 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -87 255 2
+Refer: 340 780 N 1 0 0 1 -87 255 2
 Refer: 77 82 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2667,7 +2670,7 @@ sass."
 EndChar
 
 StartChar: S
-Encoding: 80 83 80
+Encoding: 83 83 80
 GlifName: S_
 Width: 1024
 VWidth: 0
@@ -2705,7 +2708,7 @@ EndSplineSet
 EndChar
 
 StartChar: Sacute
-Encoding: 81 346 81
+Encoding: 346 346 81
 GlifName: S_acute
 Width: 1024
 VWidth: 0
@@ -2718,17 +2721,17 @@ Refer: 80 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Scaron
-Encoding: 82 352 82
+Encoding: 352 352 82
 GlifName: S_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1677 272
 VStem: 264 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -132.5 329 2
+Refer: 340 780 N 1 0 0 1 -132.5 329 2
 Refer: 80 83 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2756,7 +2759,7 @@ sass."
 EndChar
 
 StartChar: Scedilla
-Encoding: 83 350 83
+Encoding: 350 350 83
 GlifName: S_cedilla
 Width: 1024
 VWidth: 0
@@ -2766,7 +2769,7 @@ HStem: -568 120 -532 84 -304 144
 VStem: 456 155 750 152
 LayerCount: 2
 Fore
-Refer: 339 807 N 1 0 0 1 -122 -160.4 2
+Refer: 342 807 N 1 0 0 1 -122 -160.4 2
 Refer: 80 83 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2809,7 +2812,7 @@ sass."
 EndChar
 
 StartChar: Scircumflex
-Encoding: 84 348 84
+Encoding: 348 348 84
 GlifName: S_circumflex
 Width: 1024
 VWidth: 0
@@ -2817,12 +2820,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 -48.5 -237 2
+Refer: 333 770 N 1 0 0 1 -48.5 -237 2
 Refer: 80 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: T
-Encoding: 85 84 85
+Encoding: 84 84 85
 GlifName: T_
 Width: 1024
 VWidth: 0
@@ -2845,17 +2848,17 @@ EndSplineSet
 EndChar
 
 StartChar: Tcaron
-Encoding: 86 356 86
+Encoding: 356 356 86
 GlifName: T_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1876 272
 VStem: 376 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -19.5 295 2
+Refer: 340 780 N 1 0 0 1 -19.5 295 2
 Refer: 85 84 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -2883,7 +2886,7 @@ sass."
 EndChar
 
 StartChar: Thorn
-Encoding: 87 222 87
+Encoding: 222 222 87
 GlifName: T_horn
 Width: 1024
 VWidth: 0
@@ -2916,7 +2919,7 @@ EndSplineSet
 EndChar
 
 StartChar: U
-Encoding: 88 85 88
+Encoding: 85 85 88
 GlifName: U_
 Width: 1024
 VWidth: 0
@@ -2944,7 +2947,7 @@ EndSplineSet
 EndChar
 
 StartChar: Uacute
-Encoding: 89 218 89
+Encoding: 218 218 89
 GlifName: U_acute
 Width: 1024
 VWidth: 0
@@ -2957,17 +2960,17 @@ Refer: 88 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ubreve
-Encoding: 90 364 90
+Encoding: 364 364 90
 GlifName: U_breve
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1638 72 1783 20
 VStem: 125 660
 LayerCount: 2
 Fore
-Refer: 332 774 S 1 0 0 1 14 158 2
+Refer: 335 774 N 1 0 0 1 14 158 2
 Refer: 88 85 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3000,7 +3003,7 @@ sass."
 EndChar
 
 StartChar: Ucircumflex
-Encoding: 91 219 91
+Encoding: 219 219 91
 GlifName: U_circumflex
 Width: 1024
 VWidth: 0
@@ -3008,12 +3011,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 57.5 -279 2
+Refer: 333 770 N 1 0 0 1 57.5 -279 2
 Refer: 88 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Udieresis
-Encoding: 92 220 92
+Encoding: 220 220 92
 GlifName: U_dieresis
 Width: 1024
 VWidth: 0
@@ -3023,7 +3026,7 @@ HStem: 1594 101
 VStem: 328 112 570 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -52 -43 2
+Refer: 337 776 N 1 0 0 1 -52 -43 2
 Refer: 88 85 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3056,7 +3059,7 @@ sass."
 EndChar
 
 StartChar: Ugrave
-Encoding: 93 217 93
+Encoding: 217 217 93
 GlifName: U_grave
 Width: 1024
 VWidth: 0
@@ -3069,16 +3072,16 @@ Refer: 88 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Uhungarumlaut
-Encoding: 94 368 94
+Encoding: 368 368 94
 GlifName: U_hungarumlaut
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1650 248
 LayerCount: 2
 Fore
-Refer: 336 779 S 1 0 0 1 -3 324 2
+Refer: 339 779 N 1 0 0 1 -3 324 2
 Refer: 88 85 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3098,7 +3101,7 @@ sass."
 EndChar
 
 StartChar: Umacron
-Encoding: 95 362 95
+Encoding: 362 362 95
 GlifName: U_macron
 Width: 1024
 VWidth: 0
@@ -3108,7 +3111,7 @@ HStem: 1654 78
 VStem: 193 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 -33 102 2
+Refer: 334 772 N 1 0 0 1 -33 102 2
 Refer: 88 85 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3136,7 +3139,7 @@ sass."
 EndChar
 
 StartChar: Uogonek
-Encoding: 96 370 96
+Encoding: 370 370 96
 GlifName: U_ogonek
 Width: 1024
 VWidth: 0
@@ -3146,7 +3149,7 @@ HStem: -396 122 -107 121
 VStem: 242 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -240.5 14.2 2
+Refer: 343 808 N 1 0 0 1 -240.5 14.2 2
 Refer: 88 85 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3179,7 +3182,7 @@ sass."
 EndChar
 
 StartChar: Uring
-Encoding: 97 366 97
+Encoding: 366 366 97
 GlifName: U_ring
 Width: 1024
 VWidth: 0
@@ -3189,7 +3192,7 @@ HStem: 1650 309
 VStem: 329 360
 LayerCount: 2
 Fore
-Refer: 335 778 N 1 0 0 1 -33 112 2
+Refer: 338 778 N 1 0 0 1 -33 112 2
 Refer: 88 85 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3217,7 +3220,7 @@ sass."
 EndChar
 
 StartChar: Utilde
-Encoding: 98 360 98
+Encoding: 360 360 98
 GlifName: U_tilde
 Width: 1024
 VWidth: 0
@@ -3230,7 +3233,7 @@ Refer: 88 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: V
-Encoding: 99 86 99
+Encoding: 86 86 99
 GlifName: V_
 Width: 1024
 VWidth: 0
@@ -3274,7 +3277,7 @@ sass."
 EndChar
 
 StartChar: W
-Encoding: 100 87 100
+Encoding: 87 87 100
 GlifName: W_
 Width: 1024
 VWidth: 0
@@ -3307,7 +3310,7 @@ EndSplineSet
 EndChar
 
 StartChar: Wacute
-Encoding: 101 7810 101
+Encoding: 7810 7810 101
 GlifName: W_acute
 Width: 1024
 VWidth: 0
@@ -3320,7 +3323,7 @@ Refer: 100 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Wcircumflex
-Encoding: 102 372 102
+Encoding: 372 372 102
 GlifName: W_circumflex
 Width: 1024
 VWidth: 0
@@ -3328,12 +3331,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 27 -295 2
+Refer: 333 770 N 1 0 0 1 27 -295 2
 Refer: 100 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Wdieresis
-Encoding: 103 7812 103
+Encoding: 7812 7812 103
 GlifName: W_dieresis
 Width: 1024
 VWidth: 0
@@ -3341,12 +3344,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -48.5 39 2
+Refer: 337 776 N 1 0 0 1 -48.5 39 2
 Refer: 100 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Wgrave
-Encoding: 104 7808 104
+Encoding: 7808 7808 104
 GlifName: W_grave
 Width: 1024
 VWidth: 0
@@ -3359,7 +3362,7 @@ Refer: 100 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: X
-Encoding: 105 88 105
+Encoding: 88 88 105
 GlifName: X_
 Width: 1024
 VWidth: 0
@@ -3403,7 +3406,7 @@ sass."
 EndChar
 
 StartChar: Y
-Encoding: 106 89 106
+Encoding: 89 89 106
 GlifName: Y_
 Width: 1024
 VWidth: 0
@@ -3436,7 +3439,7 @@ EndSplineSet
 EndChar
 
 StartChar: Yacute
-Encoding: 107 221 107
+Encoding: 221 221 107
 GlifName: Y_acute
 Width: 1024
 VWidth: 0
@@ -3449,7 +3452,7 @@ Refer: 106 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ycircumflex
-Encoding: 108 374 108
+Encoding: 374 374 108
 GlifName: Y_circumflex
 Width: 1024
 VWidth: 0
@@ -3457,12 +3460,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 31.5 -191 2
+Refer: 333 770 N 1 0 0 1 31.5 -191 2
 Refer: 106 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ydieresis
-Encoding: 109 376 109
+Encoding: 376 376 109
 GlifName: Y_dieresis
 Width: 1024
 VWidth: 0
@@ -3472,7 +3475,7 @@ HStem: 1658 101
 VStem: 308 112 550 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -72 21 2
+Refer: 337 776 N 1 0 0 1 -72 21 2
 Refer: 106 89 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3505,7 +3508,7 @@ sass."
 EndChar
 
 StartChar: Ygrave
-Encoding: 110 7922 110
+Encoding: 7922 7922 110
 GlifName: Y_grave
 Width: 1024
 VWidth: 0
@@ -3518,7 +3521,7 @@ Refer: 106 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Z
-Encoding: 111 90 111
+Encoding: 90 90 111
 GlifName: Z_
 Width: 1024
 VWidth: 0
@@ -3562,7 +3565,7 @@ sass."
 EndChar
 
 StartChar: Zacute
-Encoding: 112 377 112
+Encoding: 377 377 112
 GlifName: Z_acute
 Width: 1024
 VWidth: 0
@@ -3591,17 +3594,17 @@ sass."
 EndChar
 
 StartChar: Zcaron
-Encoding: 113 381 113
+Encoding: 381 381 113
 GlifName: Z_caron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 211 1 1731 272
 VStem: 406 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 9.5 383 2
+Refer: 340 780 N 1 0 0 1 9.5 383 2
 Refer: 111 90 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3634,7 +3637,7 @@ sass."
 EndChar
 
 StartChar: Zdotaccent
-Encoding: 114 379 114
+Encoding: 379 379 114
 GlifName: Z_dotaccent
 Width: 1024
 VWidth: 0
@@ -3644,7 +3647,7 @@ HStem: 211 1 1658 101
 VStem: 479 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -143 21 2
+Refer: 336 775 N 1 0 0 1 -143 21 2
 Refer: 111 90 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3677,7 +3680,7 @@ sass."
 EndChar
 
 StartChar: a
-Encoding: 115 97 115
+Encoding: 97 97 115
 GlifName: a
 Width: 1024
 VWidth: 0
@@ -3715,7 +3718,7 @@ EndSplineSet
 EndChar
 
 StartChar: aacute
-Encoding: 116 225 116
+Encoding: 225 225 116
 GlifName: aacute
 Width: 1024
 VWidth: 0
@@ -3728,7 +3731,7 @@ Refer: 115 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: abreve
-Encoding: 117 259 117
+Encoding: 259 259 117
 GlifName: abreve
 Width: 1024
 VWidth: 0
@@ -3738,7 +3741,7 @@ HStem: 1147 72 1292 20
 VStem: 182 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 20.5 -333 2
+Refer: 335 774 N 1 0 0 1 20.5 -333 2
 Refer: 115 97 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3771,7 +3774,7 @@ sass."
 EndChar
 
 StartChar: acircumflex
-Encoding: 118 226 118
+Encoding: 226 226 118
 GlifName: acircumflex
 Width: 1024
 VWidth: 0
@@ -3779,12 +3782,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 40 -642 2
+Refer: 333 770 N 1 0 0 1 40 -642 2
 Refer: 115 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: acute
-Encoding: 119 180 119
+Encoding: 180 180 119
 GlifName: acute
 Width: 1024
 VWidth: 0
@@ -3802,7 +3805,7 @@ EndSplineSet
 EndChar
 
 StartChar: acutecomb
-Encoding: 120 769 120
+Encoding: 769 769 120
 GlifName: acutecomb
 Width: 1024
 VWidth: 0
@@ -3822,7 +3825,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: adieresis
-Encoding: 121 228 121
+Encoding: 228 228 121
 GlifName: adieresis
 Width: 1024
 VWidth: 0
@@ -3832,7 +3835,7 @@ HStem: 1147 101
 VStem: 334 112 576 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -45.5 -490 2
+Refer: 337 776 N 1 0 0 1 -45.5 -490 2
 Refer: 115 97 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3865,7 +3868,7 @@ sass."
 EndChar
 
 StartChar: ae
-Encoding: 122 230 122
+Encoding: 230 230 122
 GlifName: ae
 Width: 1024
 VWidth: 0
@@ -3908,7 +3911,7 @@ EndSplineSet
 EndChar
 
 StartChar: agrave
-Encoding: 123 224 123
+Encoding: 224 224 123
 GlifName: agrave
 Width: 1024
 VWidth: 0
@@ -3921,7 +3924,7 @@ Refer: 115 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: amacron
-Encoding: 124 257 124
+Encoding: 257 257 124
 GlifName: amacron
 Width: 1024
 VWidth: 0
@@ -3931,7 +3934,7 @@ HStem: 1147 78
 VStem: 232 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 5.5 -405 2
+Refer: 334 772 N 1 0 0 1 5.5 -405 2
 Refer: 115 97 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -3959,7 +3962,7 @@ sass."
 EndChar
 
 StartChar: ampersand
-Encoding: 125 38 125
+Encoding: 38 38 125
 GlifName: ampersand
 Width: 1024
 VWidth: 0
@@ -4004,7 +4007,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: aogonek
-Encoding: 126 261 126
+Encoding: 261 261 126
 GlifName: aogonek
 Width: 1024
 VWidth: 0
@@ -4014,7 +4017,7 @@ HStem: -430 122 -141 121
 VStem: 384 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -97.5 -19.8 2
+Refer: 343 808 N 1 0 0 1 -97.5 -19.8 2
 Refer: 115 97 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -4047,7 +4050,7 @@ sass."
 EndChar
 
 StartChar: aring
-Encoding: 127 229 127
+Encoding: 229 229 127
 GlifName: aring
 Width: 1024
 VWidth: 0
@@ -4057,7 +4060,7 @@ HStem: 1147 309
 VStem: 332 360
 LayerCount: 2
 Fore
-Refer: 335 778 N 1 0 0 1 -30.5 -391 2
+Refer: 338 778 N 1 0 0 1 -30.5 -391 2
 Refer: 115 97 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -4085,7 +4088,7 @@ sass."
 EndChar
 
 StartChar: asciicircum
-Encoding: 128 94 128
+Encoding: 94 94 128
 GlifName: asciicircum
 Width: 1024
 VWidth: 0
@@ -4110,7 +4113,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: asciitilde
-Encoding: 129 126 129
+Encoding: 126 126 129
 GlifName: asciitilde
 Width: 1024
 VWidth: 0
@@ -4138,7 +4141,7 @@ EndSplineSet
 EndChar
 
 StartChar: asterisk
-Encoding: 130 42 130
+Encoding: 42 42 130
 GlifName: asterisk
 Width: 1024
 VWidth: 0
@@ -4168,7 +4171,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: at
-Encoding: 131 64 131
+Encoding: 64 64 131
 GlifName: at
 Width: 1024
 VWidth: 0
@@ -4226,7 +4229,7 @@ EndSplineSet
 EndChar
 
 StartChar: atilde
-Encoding: 132 227 132
+Encoding: 227 227 132
 GlifName: atilde
 Width: 1024
 VWidth: 0
@@ -4239,7 +4242,7 @@ Refer: 115 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: b
-Encoding: 133 98 133
+Encoding: 98 98 133
 GlifName: b
 Width: 1024
 VWidth: 0
@@ -4272,7 +4275,7 @@ EndSplineSet
 EndChar
 
 StartChar: backslash
-Encoding: 134 92 134
+Encoding: 92 92 134
 GlifName: backslash
 Width: 1024
 VWidth: 0
@@ -4292,7 +4295,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: bar
-Encoding: 135 124 135
+Encoding: 124 124 135
 GlifName: bar
 Width: 1024
 VWidth: 0
@@ -4326,7 +4329,7 @@ sass."
 EndChar
 
 StartChar: braceleft
-Encoding: 136 123 136
+Encoding: 123 123 136
 GlifName: braceleft
 Width: 1024
 VWidth: 0
@@ -4369,7 +4372,7 @@ EndSplineSet
 EndChar
 
 StartChar: braceright
-Encoding: 137 125 137
+Encoding: 125 125 137
 GlifName: braceright
 Width: 1024
 VWidth: 0
@@ -4437,7 +4440,7 @@ sass."
 EndChar
 
 StartChar: bracketleft
-Encoding: 138 91 138
+Encoding: 91 91 138
 GlifName: bracketleft
 Width: 1024
 VWidth: 0
@@ -4481,7 +4484,7 @@ sass."
 EndChar
 
 StartChar: bracketright
-Encoding: 139 93 139
+Encoding: 93 93 139
 GlifName: bracketright
 Width: 1024
 VWidth: 0
@@ -4525,7 +4528,7 @@ sass."
 EndChar
 
 StartChar: breve
-Encoding: 140 728 140
+Encoding: 728 728 140
 GlifName: breve
 Width: 1024
 VWidth: 0
@@ -4553,7 +4556,7 @@ EndSplineSet
 EndChar
 
 StartChar: brokenbar
-Encoding: 141 166 141
+Encoding: 166 166 141
 GlifName: brokenbar
 Width: 1024
 VWidth: 0
@@ -4592,7 +4595,7 @@ sass."
 EndChar
 
 StartChar: bullet
-Encoding: 142 8226 142
+Encoding: 8226 8226 142
 GlifName: bullet
 Width: 1024
 VWidth: 0
@@ -4610,7 +4613,7 @@ EndSplineSet
 EndChar
 
 StartChar: c
-Encoding: 143 99 143
+Encoding: 99 99 143
 GlifName: c
 Width: 1024
 VWidth: 0
@@ -4638,7 +4641,7 @@ EndSplineSet
 EndChar
 
 StartChar: cacute
-Encoding: 144 263 144
+Encoding: 263 263 144
 GlifName: cacute
 Width: 1024
 VWidth: 0
@@ -4651,7 +4654,7 @@ Refer: 143 99 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: caron
-Encoding: 145 711 145
+Encoding: 711 711 145
 GlifName: caron
 Width: 1024
 VWidth: 0
@@ -4674,17 +4677,17 @@ EndSplineSet
 EndChar
 
 StartChar: ccaron
-Encoding: 146 269 146
+Encoding: 269 269 146
 GlifName: ccaron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1150 272
 VStem: 364 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -31.5 -198 2
+Refer: 340 780 N 1 0 0 1 -31.5 -198 2
 Refer: 143 99 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -4712,7 +4715,7 @@ sass."
 EndChar
 
 StartChar: ccedilla
-Encoding: 147 231 147
+Encoding: 231 231 147
 GlifName: ccedilla
 Width: 1024
 VWidth: 0
@@ -4722,7 +4725,7 @@ HStem: -593 120 -557 84 -329 144
 VStem: 415 155 709 152
 LayerCount: 2
 Fore
-Refer: 339 807 N 1 0 0 1 -163 -185.4 2
+Refer: 342 807 N 1 0 0 1 -163 -185.4 2
 Refer: 143 99 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -4765,7 +4768,7 @@ sass."
 EndChar
 
 StartChar: ccircumflex
-Encoding: 148 265 148
+Encoding: 265 265 148
 GlifName: ccircumflex
 Width: 1024
 VWidth: 0
@@ -4773,12 +4776,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 8.5 -748 2
+Refer: 333 770 N 1 0 0 1 8.5 -748 2
 Refer: 143 99 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: cdotaccent
-Encoding: 149 267 149
+Encoding: 267 267 149
 GlifName: cdotaccent
 Width: 1024
 VWidth: 0
@@ -4788,7 +4791,7 @@ HStem: 1153 101
 VStem: 472 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -150 -484 2
+Refer: 336 775 N 1 0 0 1 -150 -484 2
 Refer: 143 99 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -4816,7 +4819,7 @@ sass."
 EndChar
 
 StartChar: cedilla
-Encoding: 150 184 150
+Encoding: 184 184 150
 GlifName: cedilla
 Width: 1024
 VWidth: 0
@@ -4889,7 +4892,7 @@ sass."
 EndChar
 
 StartChar: cent
-Encoding: 151 162 151
+Encoding: 162 162 151
 GlifName: cent
 Width: 1024
 VWidth: 0
@@ -4922,7 +4925,7 @@ EndSplineSet
 EndChar
 
 StartChar: circumflex
-Encoding: 152 710 152
+Encoding: 710 710 152
 GlifName: circumflex
 Width: 1024
 VWidth: 0
@@ -4945,7 +4948,7 @@ EndSplineSet
 EndChar
 
 StartChar: colon
-Encoding: 153 58 153
+Encoding: 58 58 153
 GlifName: colon
 Width: 1024
 VWidth: 0
@@ -4970,7 +4973,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: comma
-Encoding: 154 44 154
+Encoding: 44 44 154
 GlifName: comma
 Width: 1024
 VWidth: 0
@@ -4995,7 +4998,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: copyright
-Encoding: 155 169 155
+Encoding: 169 169 155
 GlifName: copyright
 Width: 1024
 VWidth: 0
@@ -5064,7 +5067,7 @@ sass."
 EndChar
 
 StartChar: currency
-Encoding: 156 164 156
+Encoding: 164 164 156
 GlifName: currency
 Width: 1024
 VWidth: 0
@@ -5172,7 +5175,7 @@ sass."
 EndChar
 
 StartChar: d
-Encoding: 157 100 157
+Encoding: 100 100 157
 GlifName: d
 Width: 1024
 VWidth: 0
@@ -5205,7 +5208,7 @@ EndSplineSet
 EndChar
 
 StartChar: dagger
-Encoding: 158 8224 158
+Encoding: 8224 8224 158
 GlifName: dagger
 Width: 1024
 VWidth: 0
@@ -5228,7 +5231,7 @@ EndSplineSet
 EndChar
 
 StartChar: daggerdbl
-Encoding: 159 8225 159
+Encoding: 8225 8225 159
 GlifName: daggerdbl
 Width: 1024
 VWidth: 0
@@ -5256,7 +5259,7 @@ EndSplineSet
 EndChar
 
 StartChar: dcaron
-Encoding: 160 271 160
+Encoding: 271 271 160
 GlifName: dcaron
 Width: 1024
 VWidth: 0
@@ -5296,7 +5299,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: dcroat
-Encoding: 161 273 161
+Encoding: 273 273 161
 GlifName: dcroat
 Width: 1024
 VWidth: 0
@@ -5334,7 +5337,7 @@ EndSplineSet
 EndChar
 
 StartChar: degree
-Encoding: 162 176 162
+Encoding: 176 176 162
 GlifName: degree
 Width: 1024
 VWidth: 0
@@ -5382,7 +5385,7 @@ sass."
 EndChar
 
 StartChar: dieresis
-Encoding: 163 168 163
+Encoding: 168 168 163
 GlifName: dieresis
 Width: 1024
 VWidth: 0
@@ -5405,7 +5408,7 @@ EndSplineSet
 EndChar
 
 StartChar: divide
-Encoding: 164 247 164
+Encoding: 247 247 164
 GlifName: divide
 Width: 1024
 VWidth: 0
@@ -5433,7 +5436,7 @@ EndSplineSet
 EndChar
 
 StartChar: dollar
-Encoding: 165 36 165
+Encoding: 36 36 165
 GlifName: dollar
 Width: 1024
 VWidth: 0
@@ -5478,7 +5481,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: dotaccent
-Encoding: 166 729 166
+Encoding: 729 729 166
 GlifName: dotaccent
 Width: 1024
 VWidth: 0
@@ -5496,7 +5499,7 @@ EndSplineSet
 EndChar
 
 StartChar: dotlessi
-Encoding: 167 305 167
+Encoding: 305 305 167
 GlifName: dotlessi
 Width: 1024
 VWidth: 0
@@ -5524,7 +5527,7 @@ EndSplineSet
 EndChar
 
 StartChar: e
-Encoding: 168 101 168
+Encoding: 101 101 168
 GlifName: e
 Width: 1024
 VWidth: 0
@@ -5562,7 +5565,7 @@ EndSplineSet
 EndChar
 
 StartChar: eacute
-Encoding: 169 233 169
+Encoding: 233 233 169
 GlifName: eacute
 Width: 1024
 VWidth: 0
@@ -5575,7 +5578,7 @@ Refer: 168 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ebreve
-Encoding: 170 277 170
+Encoding: 277 277 170
 GlifName: ebreve
 Width: 1024
 VWidth: 0
@@ -5585,7 +5588,7 @@ HStem: 1146 72 1291 20
 VStem: 182 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 20.5 -334 2
+Refer: 335 774 N 1 0 0 1 20.5 -334 2
 Refer: 168 101 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -5618,17 +5621,17 @@ sass."
 EndChar
 
 StartChar: ecaron
-Encoding: 171 283 171
+Encoding: 283 283 171
 GlifName: ecaron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1127 272
 VStem: 416 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 20 -221 2
+Refer: 340 780 N 1 0 0 1 20 -221 2
 Refer: 168 101 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -5656,7 +5659,7 @@ sass."
 EndChar
 
 StartChar: ecircumflex
-Encoding: 172 234 172
+Encoding: 234 234 172
 GlifName: ecircumflex
 Width: 1024
 VWidth: 0
@@ -5664,12 +5667,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 40 -643 2
+Refer: 333 770 N 1 0 0 1 40 -643 2
 Refer: 168 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: edieresis
-Encoding: 173 235 173
+Encoding: 235 235 173
 GlifName: edieresis
 Width: 1024
 VWidth: 0
@@ -5679,7 +5682,7 @@ HStem: 1146 101
 VStem: 334 112 576 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -45.5 -491 2
+Refer: 337 776 N 1 0 0 1 -45.5 -491 2
 Refer: 168 101 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -5712,7 +5715,7 @@ sass."
 EndChar
 
 StartChar: edotaccent
-Encoding: 174 279 174
+Encoding: 279 279 174
 GlifName: edotaccent
 Width: 1024
 VWidth: 0
@@ -5722,7 +5725,7 @@ HStem: 1146 101
 VStem: 456 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -166.5 -491 2
+Refer: 336 775 N 1 0 0 1 -166.5 -491 2
 Refer: 168 101 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -5750,7 +5753,7 @@ sass."
 EndChar
 
 StartChar: egrave
-Encoding: 175 232 175
+Encoding: 232 232 175
 GlifName: egrave
 Width: 1024
 VWidth: 0
@@ -5763,7 +5766,7 @@ Refer: 168 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: eight
-Encoding: 176 56 176
+Encoding: 56 56 176
 GlifName: eight
 Width: 1024
 VWidth: 0
@@ -5858,7 +5861,7 @@ sass."
 EndChar
 
 StartChar: ellipsis
-Encoding: 177 8230 177
+Encoding: 8230 8230 177
 GlifName: ellipsis
 Width: 1024
 VWidth: 0
@@ -5886,7 +5889,7 @@ EndSplineSet
 EndChar
 
 StartChar: emacron
-Encoding: 178 275 178
+Encoding: 275 275 178
 GlifName: emacron
 Width: 1024
 VWidth: 0
@@ -5896,7 +5899,7 @@ HStem: 1146 78
 VStem: 232 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 5.5 -406 2
+Refer: 334 772 N 1 0 0 1 5.5 -406 2
 Refer: 168 101 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -5924,7 +5927,7 @@ sass."
 EndChar
 
 StartChar: emdash
-Encoding: 179 8212 179
+Encoding: 8212 8212 179
 GlifName: emdash
 Width: 1024
 VWidth: 0
@@ -5942,7 +5945,7 @@ EndSplineSet
 EndChar
 
 StartChar: endash
-Encoding: 180 8211 180
+Encoding: 8211 8211 180
 GlifName: endash
 Width: 1024
 VWidth: 0
@@ -5960,7 +5963,7 @@ EndSplineSet
 EndChar
 
 StartChar: eogonek
-Encoding: 181 281 181
+Encoding: 281 281 181
 GlifName: eogonek
 Width: 1024
 VWidth: 0
@@ -5970,7 +5973,7 @@ HStem: -453 122 -164 121
 VStem: 334 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -148 -42.8 2
+Refer: 343 808 N 1 0 0 1 -148 -42.8 2
 Refer: 168 101 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -6003,7 +6006,7 @@ sass."
 EndChar
 
 StartChar: equal
-Encoding: 182 61 182
+Encoding: 61 61 182
 GlifName: equal
 Width: 1024
 VWidth: 0
@@ -6028,7 +6031,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: eth
-Encoding: 183 240 183
+Encoding: 240 240 183
 GlifName: eth
 Width: 1024
 VWidth: 0
@@ -6066,7 +6069,7 @@ EndSplineSet
 EndChar
 
 StartChar: exclam
-Encoding: 184 33 184
+Encoding: 33 33 184
 GlifName: exclam
 Width: 1024
 VWidth: 0
@@ -6089,7 +6092,7 @@ EndSplineSet
 EndChar
 
 StartChar: exclamdown
-Encoding: 185 161 185
+Encoding: 161 161 185
 GlifName: exclamdown
 Width: 1024
 VWidth: 0
@@ -6112,7 +6115,7 @@ EndSplineSet
 EndChar
 
 StartChar: f
-Encoding: 186 102 186
+Encoding: 102 102 186
 GlifName: f
 Width: 1024
 VWidth: 0
@@ -6140,7 +6143,7 @@ EndSplineSet
 EndChar
 
 StartChar: five
-Encoding: 187 53 187
+Encoding: 53 53 187
 GlifName: five
 Width: 1024
 VWidth: 0
@@ -6221,7 +6224,7 @@ sass."
 EndChar
 
 StartChar: four
-Encoding: 188 52 188
+Encoding: 52 52 188
 GlifName: four
 Width: 1024
 VWidth: 0
@@ -6290,7 +6293,7 @@ sass."
 EndChar
 
 StartChar: g
-Encoding: 189 103 189
+Encoding: 103 103 189
 GlifName: g
 Width: 1024
 VWidth: 0
@@ -6328,7 +6331,7 @@ EndSplineSet
 EndChar
 
 StartChar: gbreve
-Encoding: 190 287 190
+Encoding: 287 287 190
 GlifName: gbreve
 Width: 1024
 VWidth: 0
@@ -6338,7 +6341,7 @@ HStem: 1146 72 1291 20
 VStem: 256 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 95 -334 2
+Refer: 335 774 N 1 0 0 1 95 -334 2
 Refer: 189 103 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -6371,7 +6374,7 @@ sass."
 EndChar
 
 StartChar: gcircumflex
-Encoding: 191 285 191
+Encoding: 285 285 191
 GlifName: gcircumflex
 Width: 1024
 VWidth: 0
@@ -6379,12 +6382,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 114.5 -643 2
+Refer: 333 770 N 1 0 0 1 114.5 -643 2
 Refer: 189 103 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: gdotaccent
-Encoding: 192 289 192
+Encoding: 289 289 192
 GlifName: gdotaccent
 Width: 1024
 VWidth: 0
@@ -6394,7 +6397,7 @@ HStem: 1146 101
 VStem: 530 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -92 -491 2
+Refer: 336 775 N 1 0 0 1 -92 -491 2
 Refer: 189 103 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -6422,7 +6425,7 @@ sass."
 EndChar
 
 StartChar: germandbls
-Encoding: 193 223 193
+Encoding: 223 223 193
 GlifName: germandbls
 Width: 1024
 VWidth: 0
@@ -6472,7 +6475,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: grave
-Encoding: 194 96 194
+Encoding: 96 96 194
 GlifName: grave
 Width: 1024
 VWidth: 0
@@ -6492,7 +6495,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: gravecomb
-Encoding: 195 768 195
+Encoding: 768 768 195
 GlifName: gravecomb
 Width: 1024
 VWidth: 0
@@ -6512,7 +6515,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: greater
-Encoding: 196 62 196
+Encoding: 62 62 196
 GlifName: greater
 Width: 1024
 VWidth: 0
@@ -6537,7 +6540,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: guillemotleft
-Encoding: 197 171 197
+Encoding: 171 171 197
 GlifName: guillemotleft
 Width: 1024
 VWidth: 0
@@ -6570,7 +6573,7 @@ EndSplineSet
 EndChar
 
 StartChar: guillemotright
-Encoding: 198 187 198
+Encoding: 187 187 198
 GlifName: guillemotright
 Width: 1024
 VWidth: 0
@@ -6603,7 +6606,7 @@ EndSplineSet
 EndChar
 
 StartChar: guilsinglleft
-Encoding: 199 8249 199
+Encoding: 8249 8249 199
 GlifName: guilsinglleft
 Width: 1024
 VWidth: 0
@@ -6626,7 +6629,7 @@ EndSplineSet
 EndChar
 
 StartChar: guilsinglright
-Encoding: 200 8250 200
+Encoding: 8250 8250 200
 GlifName: guilsinglright
 Width: 1024
 VWidth: 0
@@ -6649,12 +6652,12 @@ EndSplineSet
 EndChar
 
 StartChar: h
-Encoding: 201 104 201
+Encoding: 104 104 201
 GlifName: h
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: MW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -6675,24 +6678,11 @@ SplineSet
  651 1024 l 257
 EndSplineSet
 PickledDataWithLists: "(dp0
-Vcom.fontlab.hintData
-p1
-(dp2
-Vvhints
-p3
-(lp4
-(dp5
-Vposition
-p6
-I174
-sVwidth
-p7
-I676
-sass."
+."
 EndChar
 
 StartChar: hbar
-Encoding: 202 295 202
+Encoding: 295 295 202
 GlifName: hbar
 Width: 1024
 VWidth: 0
@@ -6725,7 +6715,7 @@ EndSplineSet
 EndChar
 
 StartChar: hcircumflex
-Encoding: 203 293 203
+Encoding: 293 293 203
 GlifName: hcircumflex
 Width: 1024
 VWidth: 0
@@ -6734,7 +6724,7 @@ Flags: W
 VStem: 174 676
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 40.5 -126 2
+Refer: 333 770 N 1 0 0 1 40.5 -126 2
 Refer: 201 104 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -6754,7 +6744,7 @@ sass."
 EndChar
 
 StartChar: hungarumlaut
-Encoding: 204 733 204
+Encoding: 733 733 204
 GlifName: hungarumlaut
 Width: 1024
 VWidth: 0
@@ -6777,7 +6767,7 @@ EndSplineSet
 EndChar
 
 StartChar: hyphen
-Encoding: 205 45 205
+Encoding: 45 45 205
 GlifName: hyphen
 Width: 1024
 VWidth: 0
@@ -6811,7 +6801,7 @@ sass."
 EndChar
 
 StartChar: i
-Encoding: 206 105 206
+Encoding: 105 105 206
 GlifName: i
 Width: 1024
 VWidth: 0
@@ -6844,7 +6834,7 @@ EndSplineSet
 EndChar
 
 StartChar: iacute
-Encoding: 207 237 207
+Encoding: 237 237 207
 GlifName: iacute
 Width: 1024
 VWidth: 0
@@ -6857,7 +6847,7 @@ Refer: 167 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ibreve
-Encoding: 208 301 208
+Encoding: 301 301 208
 GlifName: ibreve
 Width: 1024
 VWidth: 0
@@ -6867,7 +6857,7 @@ HStem: 1146 72 1291 20
 VStem: 72 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 -89 -334 2
+Refer: 335 774 N 1 0 0 1 -89 -334 2
 Refer: 167 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -6900,7 +6890,7 @@ sass."
 EndChar
 
 StartChar: icircumflex
-Encoding: 209 238 209
+Encoding: 238 238 209
 GlifName: icircumflex
 Width: 1024
 VWidth: 0
@@ -6908,12 +6898,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 -69.5 -643 2
+Refer: 333 770 N 1 0 0 1 -69.5 -643 2
 Refer: 167 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: idieresis
-Encoding: 210 239 210
+Encoding: 239 239 210
 GlifName: idieresis
 Width: 1024
 VWidth: 0
@@ -6923,7 +6913,7 @@ HStem: 1146 101
 VStem: 225 112 467 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -155 -491 2
+Refer: 337 776 N 1 0 0 1 -155 -491 2
 Refer: 167 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -6956,7 +6946,7 @@ sass."
 EndChar
 
 StartChar: igrave
-Encoding: 211 236 211
+Encoding: 236 236 211
 GlifName: igrave
 Width: 1024
 VWidth: 0
@@ -6969,7 +6959,7 @@ Refer: 167 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: imacron
-Encoding: 212 299 212
+Encoding: 299 299 212
 GlifName: imacron
 Width: 1024
 VWidth: 0
@@ -6979,7 +6969,7 @@ HStem: 1146 78
 VStem: 122 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 -104 -406 2
+Refer: 334 772 N 1 0 0 1 -104 -406 2
 Refer: 167 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -7007,7 +6997,7 @@ sass."
 EndChar
 
 StartChar: iogonek
-Encoding: 213 303 213
+Encoding: 303 303 213
 GlifName: iogonek
 Width: 1024
 VWidth: 0
@@ -7017,7 +7007,7 @@ HStem: -390 122 -101 121
 VStem: 241 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -241 20.2 2
+Refer: 343 808 N 1 0 0 1 -241 20.2 2
 Refer: 206 105 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -7050,7 +7040,7 @@ sass."
 EndChar
 
 StartChar: itilde
-Encoding: 214 297 214
+Encoding: 297 297 214
 GlifName: itilde
 Width: 1024
 VWidth: 0
@@ -7063,7 +7053,7 @@ Refer: 167 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: j
-Encoding: 215 106 215
+Encoding: 106 106 215
 GlifName: j
 Width: 1024
 VWidth: 0
@@ -7112,16 +7102,16 @@ sass."
 EndChar
 
 StartChar: jcircumflex
-Encoding: 216 309 216
+Encoding: 309 309 216
 GlifName: jcircumflex
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 VStem: 197 629
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 287.5 -683 2
+Refer: 333 770 N 1 0 0 1 287.5 -683 2
 Refer: 329 567 N 1 0 0 1 32 -8 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -7141,7 +7131,7 @@ sass."
 EndChar
 
 StartChar: k
-Encoding: 217 107 217
+Encoding: 107 107 217
 GlifName: k
 Width: 1024
 VWidth: 0
@@ -7169,7 +7159,7 @@ EndSplineSet
 EndChar
 
 StartChar: l
-Encoding: 218 108 218
+Encoding: 108 108 218
 GlifName: l
 Width: 1024
 VWidth: 0
@@ -7213,7 +7203,7 @@ sass."
 EndChar
 
 StartChar: lacute
-Encoding: 219 314 219
+Encoding: 314 314 219
 GlifName: lacute
 Width: 1024
 VWidth: 0
@@ -7242,7 +7232,7 @@ sass."
 EndChar
 
 StartChar: lcaron
-Encoding: 220 318 220
+Encoding: 318 318 220
 GlifName: lcaron
 Width: 1024
 VWidth: 0
@@ -7277,7 +7267,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: less
-Encoding: 221 60 221
+Encoding: 60 60 221
 GlifName: less
 Width: 1024
 VWidth: 0
@@ -7302,7 +7292,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: logicalnot
-Encoding: 222 172 222
+Encoding: 172 172 222
 GlifName: logicalnot
 Width: 1024
 VWidth: 0
@@ -7350,7 +7340,7 @@ sass."
 EndChar
 
 StartChar: lslash
-Encoding: 223 322 223
+Encoding: 322 322 223
 GlifName: lslash
 Width: 1024
 VWidth: 0
@@ -7385,7 +7375,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: m
-Encoding: 224 109 224
+Encoding: 109 109 224
 GlifName: m
 Width: 1024
 VWidth: 0
@@ -7418,7 +7408,7 @@ EndSplineSet
 EndChar
 
 StartChar: macron
-Encoding: 225 175 225
+Encoding: 175 175 225
 GlifName: macron
 Width: 1024
 VWidth: 0
@@ -7461,7 +7451,7 @@ sass."
 EndChar
 
 StartChar: minus
-Encoding: 226 8722 226
+Encoding: 8722 8722 226
 GlifName: minus
 Width: 1024
 VWidth: 0
@@ -7473,7 +7463,7 @@ Refer: 205 45 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: mu
-Encoding: 227 181 227
+Encoding: 181 181 227
 GlifName: mu
 Width: 1024
 VWidth: 0
@@ -7536,7 +7526,7 @@ sass."
 EndChar
 
 StartChar: multiply
-Encoding: 228 215 228
+Encoding: 215 215 228
 GlifName: multiply
 Width: 1024
 VWidth: 0
@@ -7559,7 +7549,7 @@ EndSplineSet
 EndChar
 
 StartChar: n
-Encoding: 229 110 229
+Encoding: 110 110 229
 GlifName: n
 Width: 1024
 VWidth: 0
@@ -7587,7 +7577,7 @@ EndSplineSet
 EndChar
 
 StartChar: nacute
-Encoding: 230 324 230
+Encoding: 324 324 230
 GlifName: nacute
 Width: 1024
 VWidth: 0
@@ -7600,17 +7590,17 @@ Refer: 229 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ncaron
-Encoding: 231 328 231
+Encoding: 328 328 231
 GlifName: ncaron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1098 272
 VStem: 343 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -53 -250 2
+Refer: 340 780 N 1 0 0 1 -53 -250 2
 Refer: 229 110 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -7638,7 +7628,7 @@ sass."
 EndChar
 
 StartChar: nine
-Encoding: 232 57 232
+Encoding: 57 57 232
 GlifName: nine
 Width: 1024
 VWidth: 0
@@ -7721,7 +7711,7 @@ sass."
 EndChar
 
 StartChar: ntilde
-Encoding: 233 241 233
+Encoding: 241 241 233
 GlifName: ntilde
 Width: 1024
 VWidth: 0
@@ -7734,7 +7724,7 @@ Refer: 229 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: numbersign
-Encoding: 234 35 234
+Encoding: 35 35 234
 GlifName: numbersign
 Width: 1024
 VWidth: 0
@@ -7769,7 +7759,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: o
-Encoding: 235 111 235
+Encoding: 111 111 235
 GlifName: o
 Width: 1024
 VWidth: 0
@@ -7802,7 +7792,7 @@ EndSplineSet
 EndChar
 
 StartChar: oacute
-Encoding: 236 243 236
+Encoding: 243 243 236
 GlifName: oacute
 Width: 1024
 VWidth: 0
@@ -7815,7 +7805,7 @@ Refer: 235 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: obreve
-Encoding: 237 335 237
+Encoding: 335 335 237
 GlifName: obreve
 Width: 1024
 VWidth: 0
@@ -7825,7 +7815,7 @@ HStem: 1146 72 1291 20
 VStem: 182 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 21.5 -334 2
+Refer: 335 774 N 1 0 0 1 21.5 -334 2
 Refer: 235 111 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -7858,7 +7848,7 @@ sass."
 EndChar
 
 StartChar: ocircumflex
-Encoding: 238 244 238
+Encoding: 244 244 238
 GlifName: ocircumflex
 Width: 1024
 VWidth: 0
@@ -7866,12 +7856,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 41 -643 2
+Refer: 333 770 N 1 0 0 1 41 -643 2
 Refer: 235 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: odieresis
-Encoding: 239 246 239
+Encoding: 246 246 239
 GlifName: odieresis
 Width: 1024
 VWidth: 0
@@ -7881,7 +7871,7 @@ HStem: 1146 101
 VStem: 336 112 578 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -44.5 -491 2
+Refer: 337 776 N 1 0 0 1 -44.5 -491 2
 Refer: 235 111 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -7914,7 +7904,7 @@ sass."
 EndChar
 
 StartChar: oe
-Encoding: 240 339 240
+Encoding: 339 339 240
 GlifName: oe
 Width: 1024
 VWidth: 0
@@ -7959,7 +7949,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: ogonek
-Encoding: 241 731 241
+Encoding: 731 731 241
 GlifName: ogonek
 Width: 1024
 VWidth: 0
@@ -8030,16 +8020,16 @@ Refer: 235 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ohungarumlaut
-Encoding: 243 337 243
+Encoding: 337 337 243
 GlifName: ohungarumlaut
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1146 248
 LayerCount: 2
 Fore
-Refer: 336 779 N 1 0 0 1 16.5 -188 2
+Refer: 339 779 N 1 0 0 1 16.5 -188 2
 Refer: 235 111 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -8059,7 +8049,7 @@ sass."
 EndChar
 
 StartChar: omacron
-Encoding: 244 333 244
+Encoding: 333 333 244
 GlifName: omacron
 Width: 1024
 VWidth: 0
@@ -8069,7 +8059,7 @@ HStem: 1146 78
 VStem: 232 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 6.5 -406 2
+Refer: 334 772 N 1 0 0 1 6.5 -406 2
 Refer: 235 111 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -8097,7 +8087,7 @@ sass."
 EndChar
 
 StartChar: one
-Encoding: 245 49 245
+Encoding: 49 49 245
 GlifName: one
 Width: 1024
 VWidth: 0
@@ -8136,7 +8126,7 @@ sass."
 EndChar
 
 StartChar: onehalf
-Encoding: 246 189 246
+Encoding: 189 189 246
 GlifName: onehalf
 Width: 1024
 VWidth: 0
@@ -8237,7 +8227,7 @@ sass."
 EndChar
 
 StartChar: onequarter
-Encoding: 247 188 247
+Encoding: 188 188 247
 GlifName: onequarter
 Width: 1024
 VWidth: 0
@@ -8326,7 +8316,7 @@ sass."
 EndChar
 
 StartChar: ordfeminine
-Encoding: 248 170 248
+Encoding: 170 170 248
 GlifName: ordfeminine
 Width: 1024
 VWidth: 0
@@ -8369,7 +8359,7 @@ EndSplineSet
 EndChar
 
 StartChar: ordmasculine
-Encoding: 249 186 249
+Encoding: 186 186 249
 GlifName: ordmasculine
 Width: 1024
 VWidth: 0
@@ -8407,7 +8397,7 @@ EndSplineSet
 EndChar
 
 StartChar: oslash
-Encoding: 250 248 250
+Encoding: 248 248 250
 GlifName: oslash
 Width: 1024
 VWidth: 0
@@ -8445,7 +8435,7 @@ EndSplineSet
 EndChar
 
 StartChar: otilde
-Encoding: 251 245 251
+Encoding: 245 245 251
 GlifName: otilde
 Width: 1024
 VWidth: 0
@@ -8458,7 +8448,7 @@ Refer: 235 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: p
-Encoding: 252 112 252
+Encoding: 112 112 252
 GlifName: p
 Width: 1024
 VWidth: 0
@@ -8491,7 +8481,7 @@ EndSplineSet
 EndChar
 
 StartChar: paragraph
-Encoding: 253 182 253
+Encoding: 182 182 253
 GlifName: paragraph
 Width: 1024
 VWidth: 0
@@ -8529,7 +8519,7 @@ EndSplineSet
 EndChar
 
 StartChar: parenleft
-Encoding: 254 40 254
+Encoding: 40 40 254
 GlifName: parenleft
 Width: 1024
 VWidth: 0
@@ -8573,7 +8563,7 @@ sass."
 EndChar
 
 StartChar: parenright
-Encoding: 255 41 255
+Encoding: 41 41 255
 GlifName: parenright
 Width: 1024
 VWidth: 0
@@ -8631,7 +8621,7 @@ sass."
 EndChar
 
 StartChar: percent
-Encoding: 256 37 256
+Encoding: 37 37 256
 GlifName: percent
 Width: 1024
 VWidth: 0
@@ -8691,7 +8681,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: period
-Encoding: 257 46 257
+Encoding: 46 46 257
 GlifName: period
 Width: 1024
 VWidth: 0
@@ -8734,7 +8724,7 @@ sass."
 EndChar
 
 StartChar: periodcentered
-Encoding: 258 183 258
+Encoding: 183 183 258
 GlifName: periodcentered
 Width: 1024
 VWidth: 0
@@ -8777,7 +8767,7 @@ sass."
 EndChar
 
 StartChar: perthousand
-Encoding: 259 8240 259
+Encoding: 8240 8240 259
 GlifName: perthousand
 Width: 1024
 VWidth: 0
@@ -8855,7 +8845,7 @@ EndSplineSet
 EndChar
 
 StartChar: plus
-Encoding: 260 43 260
+Encoding: 43 43 260
 GlifName: plus
 Width: 1024
 VWidth: 0
@@ -8880,7 +8870,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: plusminus
-Encoding: 261 177 261
+Encoding: 177 177 261
 GlifName: plusminus
 Width: 1024
 VWidth: 0
@@ -8908,7 +8898,7 @@ EndSplineSet
 EndChar
 
 StartChar: q
-Encoding: 262 113 262
+Encoding: 113 113 262
 GlifName: q
 Width: 1024
 VWidth: 0
@@ -8946,7 +8936,7 @@ EndSplineSet
 EndChar
 
 StartChar: question
-Encoding: 263 63 263
+Encoding: 63 63 263
 GlifName: question
 Width: 1024
 VWidth: 0
@@ -9000,7 +8990,7 @@ sass."
 EndChar
 
 StartChar: questiondown
-Encoding: 264 191 264
+Encoding: 191 191 264
 GlifName: questiondown
 Width: 1024
 VWidth: 0
@@ -9054,7 +9044,7 @@ sass."
 EndChar
 
 StartChar: quotedbl
-Encoding: 265 34 265
+Encoding: 34 34 265
 GlifName: quotedbl
 Width: 1024
 VWidth: 0
@@ -9093,7 +9083,7 @@ sass."
 EndChar
 
 StartChar: quotedblbase
-Encoding: 266 8222 266
+Encoding: 8222 8222 266
 GlifName: quotedblbase
 Width: 1024
 VWidth: 0
@@ -9128,7 +9118,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: quotedblleft
-Encoding: 267 8220 267
+Encoding: 8220 8220 267
 GlifName: quotedblleft
 Width: 1024
 VWidth: 0
@@ -9161,7 +9151,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotedblright
-Encoding: 268 8221 268
+Encoding: 8221 8221 268
 GlifName: quotedblright
 Width: 1024
 VWidth: 0
@@ -9194,7 +9184,7 @@ EndSplineSet
 EndChar
 
 StartChar: quoteleft
-Encoding: 269 8216 269
+Encoding: 8216 8216 269
 GlifName: quoteleft
 Width: 1024
 VWidth: 0
@@ -9217,7 +9207,7 @@ EndSplineSet
 EndChar
 
 StartChar: quoteright
-Encoding: 270 8217 270
+Encoding: 8217 8217 270
 GlifName: quoteright
 Width: 1024
 VWidth: 0
@@ -9240,7 +9230,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotesinglbase
-Encoding: 271 8218 271
+Encoding: 8218 8218 271
 GlifName: quotesinglbase
 Width: 1024
 VWidth: 0
@@ -9263,7 +9253,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotesingle
-Encoding: 272 39 272
+Encoding: 39 39 272
 GlifName: quotesingle
 Width: 1024
 VWidth: 0
@@ -9306,7 +9296,7 @@ sass."
 EndChar
 
 StartChar: r
-Encoding: 273 114 273
+Encoding: 114 114 273
 GlifName: r
 Width: 1024
 VWidth: 0
@@ -9334,7 +9324,7 @@ EndSplineSet
 EndChar
 
 StartChar: racute
-Encoding: 274 341 274
+Encoding: 341 341 274
 GlifName: racute
 Width: 1024
 VWidth: 0
@@ -9347,17 +9337,17 @@ Refer: 273 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: rcaron
-Encoding: 275 345 275
+Encoding: 345 345 275
 GlifName: rcaron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1119 272
 VStem: 372 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -24 -229 2
+Refer: 340 780 N 1 0 0 1 -24 -229 2
 Refer: 273 114 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -9385,7 +9375,7 @@ sass."
 EndChar
 
 StartChar: registered
-Encoding: 276 174 276
+Encoding: 174 174 276
 GlifName: registered
 Width: 1024
 VWidth: 0
@@ -9459,7 +9449,7 @@ sass."
 EndChar
 
 StartChar: ring
-Encoding: 277 730 277
+Encoding: 730 730 277
 GlifName: ring
 Width: 1024
 VWidth: 0
@@ -9482,7 +9472,7 @@ EndSplineSet
 EndChar
 
 StartChar: s
-Encoding: 278 115 278
+Encoding: 115 115 278
 GlifName: s
 Width: 1024
 VWidth: 0
@@ -9536,7 +9526,7 @@ sass."
 EndChar
 
 StartChar: sacute
-Encoding: 279 347 279
+Encoding: 347 347 279
 GlifName: sacute
 Width: 1024
 VWidth: 0
@@ -9565,17 +9555,17 @@ sass."
 EndChar
 
 StartChar: scaron
-Encoding: 280 353 280
+Encoding: 353 353 280
 GlifName: scaron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1127 272
 VStem: 186 609 371 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -25 -221 2
+Refer: 340 780 N 1 0 0 1 -25 -221 2
 Refer: 278 115 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -9608,7 +9598,7 @@ sass."
 EndChar
 
 StartChar: scedilla
-Encoding: 281 351 281
+Encoding: 351 351 281
 GlifName: scedilla
 Width: 1024
 VWidth: 0
@@ -9618,7 +9608,7 @@ HStem: -600 120 -564 84 -336 144
 VStem: 186 609 521 155 815 152
 LayerCount: 2
 Fore
-Refer: 339 807 N 1 0 0 1 -57 -192.4 2
+Refer: 342 807 N 1 0 0 1 -57 -192.4 2
 Refer: 278 115 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -9666,7 +9656,7 @@ sass."
 EndChar
 
 StartChar: scircumflex
-Encoding: 282 349 282
+Encoding: 349 349 282
 GlifName: scircumflex
 Width: 1024
 VWidth: 0
@@ -9675,7 +9665,7 @@ Flags: W
 VStem: 186 609
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 19 -643 2
+Refer: 333 770 N 1 0 0 1 19 -643 2
 Refer: 278 115 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -9695,7 +9685,7 @@ sass."
 EndChar
 
 StartChar: section
-Encoding: 283 167 283
+Encoding: 167 167 283
 GlifName: section
 Width: 1024
 VWidth: 0
@@ -9774,7 +9764,7 @@ sass."
 EndChar
 
 StartChar: semicolon
-Encoding: 284 59 284
+Encoding: 59 59 284
 GlifName: semicolon
 Width: 1024
 VWidth: 0
@@ -9804,7 +9794,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: seven
-Encoding: 285 55 285
+Encoding: 55 55 285
 GlifName: seven
 Width: 1024
 VWidth: 0
@@ -9854,7 +9844,7 @@ sass."
 EndChar
 
 StartChar: six
-Encoding: 286 54 286
+Encoding: 54 54 286
 GlifName: six
 Width: 1024
 VWidth: 0
@@ -9937,7 +9927,7 @@ sass."
 EndChar
 
 StartChar: slash
-Encoding: 287 47 287
+Encoding: 47 47 287
 GlifName: slash
 Width: 1024
 VWidth: 0
@@ -9957,7 +9947,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: space
-Encoding: 288 32 288
+Encoding: 32 32 288
 GlifName: space
 Width: 1024
 VWidth: 0
@@ -9970,7 +9960,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: sterling
-Encoding: 289 163 289
+Encoding: 163 163 289
 GlifName: sterling
 Width: 1024
 VWidth: 0
@@ -10003,7 +9993,7 @@ EndSplineSet
 EndChar
 
 StartChar: t
-Encoding: 290 116 290
+Encoding: 116 116 290
 GlifName: t
 Width: 1024
 VWidth: 0
@@ -10047,7 +10037,7 @@ sass."
 EndChar
 
 StartChar: tcaron
-Encoding: 291 357 291
+Encoding: 357 357 291
 GlifName: tcaron
 Width: 1024
 VWidth: 0
@@ -10082,7 +10072,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: thorn
-Encoding: 292 254 292
+Encoding: 254 254 292
 GlifName: thorn
 Width: 1024
 VWidth: 0
@@ -10115,7 +10105,7 @@ EndSplineSet
 EndChar
 
 StartChar: three
-Encoding: 293 51 293
+Encoding: 51 51 293
 GlifName: three
 Width: 1024
 VWidth: 0
@@ -10191,7 +10181,7 @@ sass."
 EndChar
 
 StartChar: threequarters
-Encoding: 294 190 294
+Encoding: 190 190 294
 GlifName: threequarters
 Width: 1024
 VWidth: 0
@@ -10313,7 +10303,7 @@ sass."
 EndChar
 
 StartChar: tilde
-Encoding: 295 732 295
+Encoding: 732 732 295
 GlifName: tilde
 Width: 1024
 VWidth: 0
@@ -10341,7 +10331,7 @@ EndSplineSet
 EndChar
 
 StartChar: tildecomb
-Encoding: 296 771 296
+Encoding: 771 771 296
 GlifName: tildecomb
 Width: 1024
 VWidth: 0
@@ -10369,7 +10359,7 @@ EndSplineSet
 EndChar
 
 StartChar: trademark
-Encoding: 297 8482 297
+Encoding: 8482 8482 297
 GlifName: trademark
 Width: 1024
 VWidth: 0
@@ -10382,7 +10372,7 @@ Refer: 85 84 N 0.5 0 0 0.5 -6.25 386.5 2
 EndChar
 
 StartChar: two
-Encoding: 298 50 298
+Encoding: 50 50 298
 GlifName: two
 Width: 1024
 VWidth: 0
@@ -10463,7 +10453,7 @@ sass."
 EndChar
 
 StartChar: u
-Encoding: 299 117 299
+Encoding: 117 117 299
 GlifName: u
 Width: 1024
 VWidth: 0
@@ -10491,7 +10481,7 @@ EndSplineSet
 EndChar
 
 StartChar: uacute
-Encoding: 300 250 300
+Encoding: 250 250 300
 GlifName: uacute
 Width: 1024
 VWidth: 0
@@ -10504,7 +10494,7 @@ Refer: 299 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ubreve
-Encoding: 301 365 301
+Encoding: 365 365 301
 GlifName: ubreve
 Width: 1024
 VWidth: 0
@@ -10514,7 +10504,7 @@ HStem: 1172 72 1317 20
 VStem: 119 660
 LayerCount: 2
 Fore
-Refer: 332 774 N 1 0 0 1 -42 -308 2
+Refer: 335 774 N 1 0 0 1 -42 -308 2
 Refer: 299 117 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -10547,7 +10537,7 @@ sass."
 EndChar
 
 StartChar: ucircumflex
-Encoding: 302 251 302
+Encoding: 251 251 302
 GlifName: ucircumflex
 Width: 1024
 VWidth: 0
@@ -10555,12 +10545,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 -40.5 -777 2
+Refer: 333 770 N 1 0 0 1 -40.5 -777 2
 Refer: 299 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: udieresis
-Encoding: 303 252 303
+Encoding: 252 252 303
 GlifName: udieresis
 Width: 1024
 VWidth: 0
@@ -10570,7 +10560,7 @@ HStem: 1124 101
 VStem: 274 112 516 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -106 -513 2
+Refer: 337 776 N 1 0 0 1 -106 -513 2
 Refer: 299 117 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -10603,7 +10593,7 @@ sass."
 EndChar
 
 StartChar: ugrave
-Encoding: 304 249 304
+Encoding: 249 249 304
 GlifName: ugrave
 Width: 1024
 VWidth: 0
@@ -10616,16 +10606,16 @@ Refer: 299 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uhungarumlaut
-Encoding: 305 369 305
+Encoding: 369 369 305
 GlifName: uhungarumlaut
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1166 248
 LayerCount: 2
 Fore
-Refer: 336 779 S 1 0 0 1 -47 -160 2
+Refer: 339 779 N 1 0 0 1 -47 -160 2
 Refer: 299 117 N 1 0 0 1 30 6 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -10645,7 +10635,7 @@ sass."
 EndChar
 
 StartChar: umacron
-Encoding: 306 363 306
+Encoding: 363 363 306
 GlifName: umacron
 Width: 1024
 VWidth: 0
@@ -10655,7 +10645,7 @@ HStem: 1122 78
 VStem: 161 560
 LayerCount: 2
 Fore
-Refer: 331 772 N 1 0 0 1 -65 -430 2
+Refer: 334 772 N 1 0 0 1 -65 -430 2
 Refer: 299 117 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -10683,7 +10673,7 @@ sass."
 EndChar
 
 StartChar: underscore
-Encoding: 307 95 307
+Encoding: 95 95 307
 GlifName: underscore
 Width: 1024
 VWidth: 0
@@ -10717,7 +10707,7 @@ sass."
 EndChar
 
 StartChar: uni00A0
-Encoding: 308 160 308
+Encoding: 160 160 308
 GlifName: uni00A_0
 Width: 1024
 VWidth: 0
@@ -10727,7 +10717,7 @@ LayerCount: 2
 EndChar
 
 StartChar: uni00B2
-Encoding: 309 178 309
+Encoding: 178 178 309
 GlifName: uni00B_2
 Width: 1024
 VWidth: 0
@@ -10808,7 +10798,7 @@ sass."
 EndChar
 
 StartChar: uni00B3
-Encoding: 310 179 310
+Encoding: 179 179 310
 GlifName: uni00B_3
 Width: 1024
 VWidth: 0
@@ -10884,7 +10874,7 @@ sass."
 EndChar
 
 StartChar: uni00B9
-Encoding: 311 185 311
+Encoding: 185 185 311
 GlifName: uni00B_9
 Width: 1024
 VWidth: 0
@@ -10923,7 +10913,7 @@ sass."
 EndChar
 
 StartChar: uni0122
-Encoding: 312 290 312
+Encoding: 290 290 312
 GlifName: uni0122
 Width: 1024
 VWidth: 0
@@ -10931,12 +10921,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 -4.5 -121 2
+Refer: 341 806 N 1 0 0 1 -4.5 -121 2
 Refer: 35 71 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0123
-Encoding: 313 291 313
+Encoding: 291 291 313
 GlifName: uni0123
 Width: 1024
 VWidth: 0
@@ -10979,7 +10969,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0136
-Encoding: 314 310 314
+Encoding: 310 310 314
 GlifName: uni0136
 Width: 1024
 VWidth: 0
@@ -10987,12 +10977,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 340 -122 2
+Refer: 341 806 N 1 0 0 1 340 -122 2
 Refer: 54 75 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0137
-Encoding: 315 311 315
+Encoding: 311 311 315
 GlifName: uni0137
 Width: 1024
 VWidth: 0
@@ -11000,12 +10990,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 329.5 -124 2
+Refer: 341 806 N 1 0 0 1 329.5 -124 2
 Refer: 217 107 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni013B
-Encoding: 316 315 316
+Encoding: 315 315 316
 GlifName: uni013B_
 Width: 1024
 VWidth: 0
@@ -11013,12 +11003,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 -38.5 -118 2
+Refer: 341 806 N 1 0 0 1 -38.5 -118 2
 Refer: 55 76 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni013C
-Encoding: 317 316 317
+Encoding: 316 316 317
 GlifName: uni013C_
 Width: 1024
 VWidth: 0
@@ -11027,7 +11017,7 @@ Flags: W
 VStem: 195 634
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 0.5 -112 2
+Refer: 341 806 N 1 0 0 1 0.5 -112 2
 Refer: 218 108 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -11047,7 +11037,7 @@ sass."
 EndChar
 
 StartChar: uni0145
-Encoding: 318 325 318
+Encoding: 325 325 318
 GlifName: uni0145
 Width: 1024
 VWidth: 0
@@ -11055,12 +11045,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 41 -98 2
+Refer: 341 806 N 1 0 0 1 41 -98 2
 Refer: 60 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0146
-Encoding: 319 326 319
+Encoding: 326 326 319
 GlifName: uni0146
 Width: 1024
 VWidth: 0
@@ -11068,12 +11058,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 9 -115 2
+Refer: 341 806 N 1 0 0 1 9 -115 2
 Refer: 229 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0156
-Encoding: 320 342 320
+Encoding: 342 342 320
 GlifName: uni0156
 Width: 1024
 VWidth: 0
@@ -11081,12 +11071,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 44.5 -61 2
+Refer: 341 806 N 1 0 0 1 44.5 -61 2
 Refer: 77 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0157
-Encoding: 321 343 321
+Encoding: 343 343 321
 GlifName: uni0157
 Width: 1024
 VWidth: 0
@@ -11094,12 +11084,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 -31.5 -123 2
+Refer: 341 806 N 1 0 0 1 -31.5 -123 2
 Refer: 273 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0162
-Encoding: 322 354 322
+Encoding: 354 354 322
 GlifName: uni0162
 Width: 1024
 VWidth: 0
@@ -11109,7 +11099,7 @@ HStem: -562 120 -526 84 -298 144
 VStem: 440 155 734 152
 LayerCount: 2
 Fore
-Refer: 339 807 N 1 0 0 1 -138 -154.4 2
+Refer: 342 807 N 1 0 0 1 -138 -154.4 2
 Refer: 85 84 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -11152,7 +11142,7 @@ sass."
 EndChar
 
 StartChar: uni0163
-Encoding: 323 355 323
+Encoding: 355 355 323
 GlifName: uni0163
 Width: 1024
 VWidth: 0
@@ -11162,7 +11152,7 @@ HStem: -568 120 -532 84 -304 144
 VStem: 174 674 542 155 836 152
 LayerCount: 2
 Fore
-Refer: 339 807 N 1 0 0 1 -36.5 -160.4 2
+Refer: 342 807 N 1 0 0 1 -36.5 -160.4 2
 Refer: 290 116 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -11210,7 +11200,7 @@ sass."
 EndChar
 
 StartChar: uni0192
-Encoding: 324 402 324
+Encoding: 402 402 324
 GlifName: uni0192
 Width: 1024
 VWidth: 0
@@ -11243,7 +11233,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0218
-Encoding: 325 536 325
+Encoding: 536 536 325
 GlifName: uni0218
 Width: 1024
 VWidth: 0
@@ -11251,12 +11241,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 16.5 -121 2
+Refer: 341 806 N 1 0 0 1 16.5 -121 2
 Refer: 80 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0219
-Encoding: 326 537 326
+Encoding: 537 537 326
 GlifName: uni0219
 Width: 1024
 VWidth: 0
@@ -11264,12 +11254,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 -22 -121 2
+Refer: 341 806 N 1 0 0 1 -22 -121 2
 Refer: 278 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni021A
-Encoding: 327 538 327
+Encoding: 538 538 327
 GlifName: uni021A_
 Width: 1024
 VWidth: 0
@@ -11277,12 +11267,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 0.5 -115 2
+Refer: 341 806 N 1 0 0 1 0.5 -115 2
 Refer: 85 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni021B
-Encoding: 328 539 328
+Encoding: 539 539 328
 GlifName: uni021B_
 Width: 1024
 VWidth: 0
@@ -11290,12 +11280,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 338 806 N 1 0 0 1 102 -121 2
+Refer: 341 806 N 1 0 0 1 102 -121 2
 Refer: 290 116 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0237
-Encoding: 329 567 329
+Encoding: 567 567 329
 GlifName: uni0237
 Width: 1024
 VWidth: 0
@@ -11338,8 +11328,87 @@ I629
 sass."
 EndChar
 
+StartChar: uni02C9
+Encoding: 713 713 330
+GlifName: uni02C_9
+Width: 1024
+VWidth: 0
+GlyphClass: 2
+Flags: W
+HStem: 1552 78<226 786>
+VStem: 226 560<1552 1630 1552 1630>
+LayerCount: 2
+Fore
+SplineSet
+226 1630 m 257
+ 226 1552 l 257
+ 786 1552 l 257
+ 786 1630 l 257
+ 226 1630 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vcom.fontlab.hintData
+p1
+(dp2
+Vhhints
+p3
+(lp4
+(dp5
+Vposition
+p6
+I1552
+sVwidth
+p7
+I78
+sasVvhints
+p8
+(lp9
+(dp10
+g6
+I226
+sg7
+I560
+sass."
+EndChar
+
+StartChar: uni02CA
+Encoding: 714 714 331
+GlifName: uni02C_A_
+Width: 1024
+VWidth: 0
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+551 2180 m 257
+ 421 1926 l 257
+ 509 1880 l 257
+ 640 2135 l 257
+ 551 2180 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni02CB
+Encoding: 715 715 332
+GlifName: uni02C_B_
+Width: 1024
+VWidth: 0
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+421 2107 m 257
+ 541 1871 l 257
+ 632 1917 l 257
+ 513 2154 l 257
+ 421 2107 l 257
+EndSplineSet
+EndChar
+
 StartChar: uni0302
-Encoding: 330 770 330
+Encoding: 770 770 333
 GlifName: uni0302
 Width: 1024
 VWidth: 0
@@ -11362,7 +11431,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0304
-Encoding: 331 772 331
+Encoding: 772 772 334
 GlifName: uni0304
 Width: 1024
 VWidth: 0
@@ -11405,7 +11474,7 @@ sass."
 EndChar
 
 StartChar: uni0306
-Encoding: 332 774 332
+Encoding: 774 774 335
 GlifName: uni0306
 Width: 1024
 VWidth: 0
@@ -11463,14 +11532,14 @@ sass."
 EndChar
 
 StartChar: uni0307
-Encoding: 333 775 333
+Encoding: 775 775 336
 GlifName: uni0307
 Width: 1024
 VWidth: 0
 GlyphClass: 4
-Flags: HW
-HStem: 1637 101<290 402>
-VStem: 290 112<1637 1738 1637 1738>
+Flags: W
+HStem: 1637 101<456 568>
+VStem: 290 112
 LayerCount: 2
 Fore
 SplineSet
@@ -11499,21 +11568,21 @@ p8
 (lp9
 (dp10
 g6
-I622
+I290
 sg7
 I112
 sass."
 EndChar
 
 StartChar: uni0308
-Encoding: 334 776 334
+Encoding: 776 776 337
 GlifName: uni0308
 Width: 1024
 VWidth: 0
 GlyphClass: 4
-Flags: HW
-HStem: 1637 101<290 402 532 644>
-VStem: 290 112<1637 1738 1637 1738> 532 112<1637 1738 1637 1738>
+Flags: W
+HStem: 1637 101<335 447 577 689>
+VStem: 290 112 532 112
 LayerCount: 2
 Fore
 SplineSet
@@ -11547,19 +11616,19 @@ p8
 (lp9
 (dp10
 g6
-I380
+I290
 sg7
 I112
 sa(dp11
 g6
-I622
+I532
 sg7
 I112
 sass."
 EndChar
 
 StartChar: uni030A
-Encoding: 335 778 335
+Encoding: 778 778 338
 GlifName: uni030A_
 Width: 1024
 VWidth: 0
@@ -11607,7 +11676,7 @@ sass."
 EndChar
 
 StartChar: uni030B
-Encoding: 336 779 336
+Encoding: 779 779 339
 GlifName: uni030B_
 Width: 1024
 VWidth: 0
@@ -11635,7 +11704,7 @@ sass."
 EndChar
 
 StartChar: uni030C
-Encoding: 337 780 337
+Encoding: 780 780 340
 GlifName: uni030C_
 Width: 1024
 VWidth: 0
@@ -11683,7 +11752,7 @@ sass."
 EndChar
 
 StartChar: uni0326
-Encoding: 338 806 338
+Encoding: 806 806 341
 GlifName: uni0326
 Width: 1024
 VWidth: 0
@@ -11706,7 +11775,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0327
-Encoding: 339 807 339
+Encoding: 807 807 342
 GlifName: uni0327
 Width: 1024
 VWidth: 0
@@ -11779,7 +11848,7 @@ sass."
 EndChar
 
 StartChar: uni0328
-Encoding: 340 808 340
+Encoding: 808 808 343
 GlifName: uni0328
 Width: 1024
 VWidth: 0
@@ -11837,7 +11906,7 @@ sass."
 EndChar
 
 StartChar: uni0900
-Encoding: 341 2304 341
+Encoding: 2304 2304 344
 GlifName: uni0900
 Width: 1024
 VWidth: 0
@@ -11877,7 +11946,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0901
-Encoding: 342 2305 342
+Encoding: 2305 2305 345
 GlifName: uni0901
 Width: 1024
 VWidth: 0
@@ -11917,7 +11986,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0902
-Encoding: 343 2306 343
+Encoding: 2306 2306 346
 GlifName: uni0902
 Width: 1024
 VWidth: 0
@@ -11940,7 +12009,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0903
-Encoding: 344 2307 344
+Encoding: 2307 2307 347
 GlifName: uni0903
 Width: 1024
 VWidth: 0
@@ -11979,7 +12048,7 @@ sass."
 EndChar
 
 StartChar: uni0904
-Encoding: 345 2308 345
+Encoding: 2308 2308 348
 GlifName: uni0904
 Width: 1024
 VWidth: 0
@@ -12037,7 +12106,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0905
-Encoding: 346 2309 346
+Encoding: 2309 2309 349
 GlifName: a-deva
 Width: 1024
 VWidth: 0
@@ -12080,7 +12149,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0906
-Encoding: 347 2310 347
+Encoding: 2310 2310 350
 GlifName: aa-deva
 Width: 1024
 VWidth: 0
@@ -12128,7 +12197,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0907
-Encoding: 348 2311 348
+Encoding: 2311 2311 351
 GlifName: i-deva
 Width: 1024
 VWidth: 0
@@ -12197,7 +12266,7 @@ sass."
 EndChar
 
 StartChar: uni0908
-Encoding: 349 2312 349
+Encoding: 2312 2312 352
 GlifName: ii-deva
 Width: 1024
 VWidth: 0
@@ -12271,7 +12340,7 @@ sass."
 EndChar
 
 StartChar: uni0909
-Encoding: 350 2313 350
+Encoding: 2313 2313 353
 GlifName: u-deva
 Width: 1024
 VWidth: 0
@@ -12316,7 +12385,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni090A
-Encoding: 351 2314 351
+Encoding: 2314 2314 354
 GlifName: uu-deva
 Width: 1024
 VWidth: 0
@@ -12366,7 +12435,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni090B
-Encoding: 352 2315 352
+Encoding: 2315 2315 355
 GlifName: rV_ocalic-deva
 Width: 1024
 VWidth: 0
@@ -12419,7 +12488,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090C
-Encoding: 353 2316 353
+Encoding: 2316 2316 356
 GlifName: lV_ocalic-deva
 Width: 1024
 VWidth: 0
@@ -12492,7 +12561,7 @@ sass."
 EndChar
 
 StartChar: uni090D
-Encoding: 354 2317 354
+Encoding: 2317 2317 357
 GlifName: uni090D_
 Width: 1024
 VWidth: 0
@@ -12555,7 +12624,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090E
-Encoding: 355 2318 355
+Encoding: 2318 2318 358
 GlifName: uni090E_
 Width: 1024
 VWidth: 0
@@ -12618,7 +12687,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090F
-Encoding: 356 2319 356
+Encoding: 2319 2319 359
 GlifName: e-deva
 Width: 1024
 VWidth: 0
@@ -12668,7 +12737,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0910
-Encoding: 357 2320 357
+Encoding: 2320 2320 360
 GlifName: ai-deva
 Width: 1024
 VWidth: 0
@@ -12723,7 +12792,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0911
-Encoding: 358 2321 358
+Encoding: 2321 2321 361
 GlifName: oC_andra-deva
 Width: 1024
 VWidth: 0
@@ -12786,7 +12855,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0912
-Encoding: 359 2322 359
+Encoding: 2322 2322 362
 GlifName: oS_hort-deva
 Width: 1024
 VWidth: 0
@@ -12849,7 +12918,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0913
-Encoding: 360 2323 360
+Encoding: 2323 2323 363
 GlifName: o-deva
 Width: 1024
 VWidth: 0
@@ -12902,7 +12971,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0914
-Encoding: 361 2324 361
+Encoding: 2324 2324 364
 GlifName: au-deva
 Width: 1024
 VWidth: 0
@@ -12976,7 +13045,7 @@ sass."
 EndChar
 
 StartChar: uni0915
-Encoding: 362 2325 362
+Encoding: 2325 2325 365
 GlifName: ka-deva
 Width: 1024
 VWidth: 0
@@ -13023,8 +13092,69 @@ SplineSet
 EndSplineSet
 EndChar
 
+StartChar: uni0915_uni094D_uni0937.akhn
+Encoding: 65536 -1 366
+GlifName: uni0915_uni094D__uni0937.akhn
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+665 1550 m 257
+ 665 1351 l 257
+ 1024 1351 l 257
+ 1024 1550 l 257
+ 665 1550 l 257
+722 1511 m 257
+ 722 4 l 257
+ 921 4 l 257
+ 921 1511 l 257
+ 722 1511 l 257
+48 1078 m 257
+ 48 878 l 257
+ 921 878 l 257
+ 921 1078 l 257
+ 48 1078 l 257
+47 1023 m 257
+ 248 1023 l 257
+ 248 1422 l 257
+ 47 1422 l 257
+ 47 1023 l 257
+48 1435 m 257
+ 48 1235 l 257
+ 567 1235 l 257
+ 567 1435 l 257
+ 48 1435 l 257
+368 1422 m 257
+ 368 882 l 257
+ 566 882 l 257
+ 566 1422 l 257
+ 368 1422 l 257
+158 635 m 257
+ 355 635 l 257
+ 565 880 l 257
+ 367 880 l 257
+ 158 635 l 257
+158 635 m 257
+ 158 200 l 257
+ 357 200 l 257
+ 357 635 l 257
+ 158 635 l 257
+158 367 m 257
+ 158 166 l 257
+ 882 166 l 257
+ 882 367 l 257
+ 158 367 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+."
+Ligature2: "akhnAkhandinDevanagarilookup0 subtable" uni0915 uni094D uni0937
+EndChar
+
 StartChar: uni0916
-Encoding: 363 2326 363
+Encoding: 2326 2326 367
 GlifName: uni0916
 Width: 1024
 VWidth: 0
@@ -13077,7 +13207,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0917
-Encoding: 364 2327 364
+Encoding: 2327 2327 368
 GlifName: uni0917
 Width: 1024
 VWidth: 0
@@ -13170,7 +13300,7 @@ sass."
 EndChar
 
 StartChar: uni0918
-Encoding: 365 2328 365
+Encoding: 2328 2328 369
 GlifName: gha-deva
 Width: 1024
 VWidth: 0
@@ -13215,7 +13345,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0919
-Encoding: 366 2329 366
+Encoding: 2329 2329 370
 GlifName: nga-deva
 Width: 1024
 VWidth: 0
@@ -13275,7 +13405,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091A
-Encoding: 367 2330 367
+Encoding: 2330 2330 371
 GlifName: ca-deva
 Width: 1024
 VWidth: 0
@@ -13315,7 +13445,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091B
-Encoding: 368 2331 368
+Encoding: 2331 2331 372
 GlifName: cha-deva
 Width: 1024
 VWidth: 0
@@ -13375,7 +13505,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091C
-Encoding: 369 2332 369
+Encoding: 2332 2332 373
 GlifName: ja-deva
 Width: 1024
 VWidth: 0
@@ -13419,8 +13549,52 @@ PickledDataWithLists: "(dp0
 ."
 EndChar
 
+StartChar: uni091C_uni094D_uni091E.akhn
+Encoding: 65537 -1 374
+GlifName: uni091C__uni094D__uni091E_.akhn
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-34 1551 m 257
+ -34 1350 l 257
+ 1024 1350 l 257
+ 1024 1551 l 257
+ -34 1551 l 257
+678 1551 m 257
+ 678 -12 l 257
+ 877 -12 l 257
+ 877 1551 l 257
+ 678 1551 l 257
+397 860 m 257
+ 397 663 l 257
+ 811 663 l 257
+ 811 860 l 257
+ 397 860 l 257
+351 860 m 257
+ 351 413 l 257
+ 551 413 l 257
+ 551 860 l 257
+ 351 860 l 257
+41 567 m 257
+ 41 367 l 257
+ 551 367 l 257
+ 551 567 l 257
+ 41 567 l 257
+41 368 m 257
+ 189 77 l 257
+ 447 75 l 257
+ 284 368 l 257
+ 41 368 l 257
+EndSplineSet
+Ligature2: "akhnAkhandinDevanagarilookup0 subtable" uni091C uni094D uni091E
+EndChar
+
 StartChar: uni091D
-Encoding: 370 2333 370
+Encoding: 2333 2333 375
 GlifName: jha-deva
 Width: 1024
 VWidth: 0
@@ -13480,7 +13654,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091E
-Encoding: 371 2334 371
+Encoding: 2334 2334 376
 GlifName: nya-deva
 Width: 1024
 VWidth: 0
@@ -13525,7 +13699,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091F
-Encoding: 372 2335 372
+Encoding: 2335 2335 377
 GlifName: tta-deva
 Width: 1024
 VWidth: 0
@@ -13565,7 +13739,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0920
-Encoding: 373 2336 373
+Encoding: 2336 2336 378
 GlifName: ttha-deva
 Width: 1024
 VWidth: 0
@@ -13624,7 +13798,7 @@ sass."
 EndChar
 
 StartChar: uni0921
-Encoding: 374 2337 374
+Encoding: 2337 2337 379
 GlifName: dda-deva
 Width: 1024
 VWidth: 0
@@ -13683,7 +13857,7 @@ sass."
 EndChar
 
 StartChar: uni0922
-Encoding: 375 2338 375
+Encoding: 2338 2338 380
 GlifName: ddha-deva
 Width: 1024
 VWidth: 0
@@ -13733,7 +13907,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0923
-Encoding: 376 2339 376
+Encoding: 2339 2339 381
 GlifName: nna-deva
 Width: 1024
 VWidth: 0
@@ -13773,7 +13947,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0924
-Encoding: 377 2340 377
+Encoding: 2340 2340 382
 GlifName: ta-deva
 Width: 1024
 VWidth: 0
@@ -13808,7 +13982,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0925
-Encoding: 378 2341 378
+Encoding: 2341 2341 383
 GlifName: tha-deva
 Width: 1024
 VWidth: 0
@@ -13858,7 +14032,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0926
-Encoding: 379 2342 379
+Encoding: 2342 2342 384
 GlifName: da-deva
 Width: 1024
 VWidth: 0
@@ -13903,7 +14077,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0927
-Encoding: 380 2343 380
+Encoding: 2343 2343 385
 GlifName: dha-deva
 Width: 1024
 VWidth: 0
@@ -13953,7 +14127,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0928
-Encoding: 381 2344 381
+Encoding: 2344 2344 386
 GlifName: na-deva
 Width: 1024
 VWidth: 0
@@ -13988,7 +14162,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0929
-Encoding: 382 2345 382
+Encoding: 2345 2345 387
 GlifName: uni0929
 Width: 1024
 VWidth: 0
@@ -13996,13 +14170,13 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 N 1 0 0 1 796 -3 2
-Refer: 381 2344 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 796 -3 2
+Refer: 386 2344 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0928 uni093C
 EndChar
 
 StartChar: uni092A
-Encoding: 383 2346 383
+Encoding: 2346 2346 388
 GlifName: pa-deva
 Width: 1024
 VWidth: 0
@@ -14037,7 +14211,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092B
-Encoding: 384 2347 384
+Encoding: 2347 2347 389
 GlifName: pha-deva
 Width: 1024
 VWidth: 0
@@ -14077,7 +14251,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092C
-Encoding: 385 2348 385
+Encoding: 2348 2348 390
 GlifName: ba-deva
 Width: 1024
 VWidth: 0
@@ -14122,7 +14296,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092D
-Encoding: 386 2349 386
+Encoding: 2349 2349 391
 GlifName: bha-deva
 Width: 1024
 VWidth: 0
@@ -14167,7 +14341,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092E
-Encoding: 387 2350 387
+Encoding: 2350 2350 392
 GlifName: ma-deva
 Width: 1024
 VWidth: 0
@@ -14202,7 +14376,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092F
-Encoding: 388 2351 388
+Encoding: 2351 2351 393
 GlifName: ya-deva
 Width: 1024
 VWidth: 0
@@ -14242,7 +14416,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0930
-Encoding: 389 2352 389
+Encoding: 2352 2352 394
 GlifName: ra-deva
 Width: 1024
 VWidth: 0
@@ -14276,8 +14450,75 @@ PickledDataWithLists: "(dp0
 ."
 EndChar
 
+StartChar: uni0930_uni094D.blwf
+Encoding: 65538 -1 395
+GlifName: uni0930_uni094D_.blwf
+Width: 1024
+VWidth: 0
+GlyphClass: 4
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-14 1550 m 257
+ -14 1351 l 257
+ 1026 1351 l 257
+ 1026 1550 l 257
+ -14 1550 l 257
+-971 -210 m 257
+ -747 -584 l 257
+ -465 -590 l 257
+ -849 -41 l 257
+ -971 -210 l 257
+-849 -41 m 257
+ -1256 -605 l 257
+ -1035 -599 l 257
+ -734 -206 l 257
+ -849 -41 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+."
+Ligature2: "blwfBelowBaseFormsinDevanagarilookup0 subtable" uni0930 uni094D
+EndChar
+
+StartChar: uni0930_uni094D.rphf
+Encoding: 65539 -1 396
+GlifName: uni0930_uni094D_.rphf
+Width: 1024
+VWidth: 0
+GlyphClass: 4
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-11 1552 m 257
+ -11 1352 l 257
+ 1028 1352 l 257
+ 1028 1552 l 257
+ -11 1552 l 257
+-520 1552 m 257
+ -318 1551 l 257
+ -318 1871 l 257
+ -516 1874 l 257
+ -520 1552 l 257
+-256 2142 m 257
+ -256 1942 l 257
+ 72 1942 l 257
+ 72 2142 l 257
+ -256 2142 l 257
+-256 2142 m 257
+ -517 1875 l 257
+ -319 1869 l 257
+ -256 1942 l 257
+ -256 2142 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+."
+Ligature2: "rphfRephForminDevanagarilookup0 subtable" uni0930 uni094D
+EndChar
+
 StartChar: uni0931
-Encoding: 390 2353 390
+Encoding: 2353 2353 397
 GlifName: uni0931
 Width: 1024
 VWidth: 0
@@ -14285,13 +14526,13 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 N 1 0 0 1 754 9 2
-Refer: 389 2352 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 754 9 2
+Refer: 394 2352 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0930 uni093C
 EndChar
 
 StartChar: uni0932
-Encoding: 391 2354 391
+Encoding: 2354 2354 398
 GlifName: la-deva
 Width: 1024
 VWidth: 0
@@ -14331,7 +14572,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0933
-Encoding: 392 2355 392
+Encoding: 2355 2355 399
 GlifName: lla-deva
 Width: 1024
 VWidth: 0
@@ -14376,7 +14617,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0934
-Encoding: 393 2356 393
+Encoding: 2356 2356 400
 GlifName: uni0934
 Width: 1024
 VWidth: 0
@@ -14384,13 +14625,13 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 N 1 0 0 1 1024 0 2
-Refer: 392 2355 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 1024 0 2
+Refer: 399 2355 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0933 uni093C
 EndChar
 
 StartChar: uni0935
-Encoding: 394 2357 394
+Encoding: 2357 2357 401
 GlifName: va-deva
 Width: 1024
 VWidth: 0
@@ -14430,7 +14671,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0936
-Encoding: 395 2358 395
+Encoding: 2358 2358 402
 GlifName: uni0936
 Width: 1024
 VWidth: 0
@@ -14480,7 +14721,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0937
-Encoding: 396 2359 396
+Encoding: 2359 2359 403
 GlifName: uni0937
 Width: 1024
 VWidth: 0
@@ -14520,7 +14761,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0938
-Encoding: 397 2360 397
+Encoding: 2360 2360 404
 GlifName: uni0938
 Width: 1024
 VWidth: 0
@@ -14560,7 +14801,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0939
-Encoding: 398 2361 398
+Encoding: 2361 2361 405
 GlifName: uni0939
 Width: 1024
 VWidth: 0
@@ -14615,7 +14856,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni093A
-Encoding: 399 2362 399
+Encoding: 2362 2362 406
 GlifName: uni093A_
 Width: 1024
 VWidth: 0
@@ -14635,7 +14876,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni093B
-Encoding: 400 2363 400
+Encoding: 2363 2363 407
 GlifName: uni093B_
 Width: 1024
 VWidth: 0
@@ -14658,7 +14899,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni093C
-Encoding: 401 2364 401
+Encoding: 2364 2364 408
 GlifName: uni093C_
 Width: 1024
 VWidth: 0
@@ -14701,7 +14942,7 @@ sass."
 EndChar
 
 StartChar: uni093D
-Encoding: 402 2365 402
+Encoding: 2365 2365 409
 GlifName: uni093D_
 Width: 1024
 VWidth: 0
@@ -14736,7 +14977,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni093E
-Encoding: 403 2366 403
+Encoding: 2366 2366 410
 GlifName: uni093E_
 Width: 1024
 VWidth: 0
@@ -14761,7 +15002,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni093F
-Encoding: 404 2367 404
+Encoding: 2367 2367 411
 GlifName: uni093F_
 Width: 1024
 VWidth: 0
@@ -14796,7 +15037,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0940
-Encoding: 405 2368 405
+Encoding: 2368 2368 412
 GlifName: uni0940
 Width: 1024
 VWidth: 0
@@ -14831,7 +15072,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0941
-Encoding: 406 2369 406
+Encoding: 2369 2369 413
 GlifName: uni0941
 Width: 1024
 VWidth: 0
@@ -14871,7 +15112,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0942
-Encoding: 407 2370 407
+Encoding: 2370 2370 414
 GlifName: uni0942
 Width: 1024
 VWidth: 0
@@ -14911,7 +15152,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0943
-Encoding: 408 2371 408
+Encoding: 2371 2371 415
 GlifName: uni0943
 Width: 1024
 VWidth: 0
@@ -14946,7 +15187,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0944
-Encoding: 409 2372 409
+Encoding: 2372 2372 416
 GlifName: uni0944
 Width: 1024
 VWidth: 0
@@ -14986,7 +15227,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0945
-Encoding: 410 2373 410
+Encoding: 2373 2373 417
 GlifName: uni0945
 Width: 1024
 VWidth: 0
@@ -15021,7 +15262,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0946
-Encoding: 411 2374 411
+Encoding: 2374 2374 418
 GlifName: uni0946
 Width: 1024
 VWidth: 0
@@ -15056,7 +15297,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0947
-Encoding: 412 2375 412
+Encoding: 2375 2375 419
 GlifName: uni0947
 Width: 1024
 VWidth: 0
@@ -15081,7 +15322,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0948
-Encoding: 413 2376 413
+Encoding: 2376 2376 420
 GlifName: uni0948
 Width: 1024
 VWidth: 0
@@ -15109,7 +15350,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0949
-Encoding: 414 2377 414
+Encoding: 2377 2377 421
 GlifName: uni0949
 Width: 1024
 VWidth: 0
@@ -15149,7 +15390,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni094A
-Encoding: 415 2378 415
+Encoding: 2378 2378 422
 GlifName: uni094A_
 Width: 1024
 VWidth: 0
@@ -15189,7 +15430,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni094B
-Encoding: 416 2379 416
+Encoding: 2379 2379 423
 GlifName: uni094B_
 Width: 1024
 VWidth: 0
@@ -15217,7 +15458,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094C
-Encoding: 417 2380 417
+Encoding: 2380 2380 424
 GlifName: uni094C_
 Width: 1024
 VWidth: 0
@@ -15250,7 +15491,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094D
-Encoding: 418 2381 418
+Encoding: 2381 2381 425
 GlifName: uni094D_
 Width: 1024
 VWidth: 0
@@ -15259,11 +15500,34 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
--7 1541 m 257
- -7 1339 l 257
- 1025 1339 l 257
- 1025 1541 l 257
- -7 1541 l 257
+-553 -22 m 257
+ -553 -218 l 257
+ -196 -218 l 257
+ -196 -22 l 257
+ -553 -22 l 257
+-337 -183 m 257
+ 133 -588 l 257
+ 277 -425 l 257
+ -194 -21 l 257
+ -337 -183 l 257
+2 1552 m 257
+ 2 1353 l 257
+ 1026 1353 l 257
+ 1026 1552 l 257
+ 2 1552 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni094D.alt
+Encoding: 65540 -1 426
+GlifName: uni094D_.alt
+Width: 1024
+VWidth: 0
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
 -553 -22 m 257
  -553 -218 l 257
  -196 -218 l 257
@@ -15275,13 +15539,10 @@ SplineSet
  -194 -21 l 257
  -337 -183 l 257
 EndSplineSet
-PickledDataWithLists: "(dp0
-."
-Substitution2: "Single Substitution lookup A-1" uni094D.alt
 EndChar
 
 StartChar: uni094E
-Encoding: 419 2382 419
+Encoding: 2382 2382 427
 GlifName: uni094E_
 Width: 1024
 VWidth: 0
@@ -15306,7 +15567,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni094F
-Encoding: 420 2383 420
+Encoding: 2383 2383 428
 GlifName: uni094F_
 Width: 1024
 VWidth: 0
@@ -15361,7 +15622,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0950
-Encoding: 421 2384 421
+Encoding: 2384 2384 429
 GlifName: uni0950
 Width: 1024
 VWidth: 0
@@ -15419,7 +15680,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0951
-Encoding: 422 2385 422
+Encoding: 2385 2385 430
 GlifName: uni0951
 Width: 1024
 VWidth: 0
@@ -15439,7 +15700,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0952
-Encoding: 423 2386 423
+Encoding: 2386 2386 431
 GlifName: uni0952
 Width: 1024
 VWidth: 0
@@ -15459,7 +15720,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0953
-Encoding: 424 2387 424
+Encoding: 2387 2387 432
 GlifName: uni0953
 Width: 1024
 VWidth: 0
@@ -15479,7 +15740,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0954
-Encoding: 425 2388 425
+Encoding: 2388 2388 433
 GlifName: uni0954
 Width: 1024
 VWidth: 0
@@ -15499,7 +15760,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0955
-Encoding: 426 2389 426
+Encoding: 2389 2389 434
 GlifName: uni0955
 Width: 1024
 VWidth: 0
@@ -15539,7 +15800,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0956
-Encoding: 427 2390 427
+Encoding: 2390 2390 435
 GlifName: uni0956
 Width: 1024
 VWidth: 0
@@ -15574,7 +15835,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0957
-Encoding: 428 2391 428
+Encoding: 2391 2391 436
 GlifName: uueM_atra-deva
 Width: 1024
 VWidth: 0
@@ -15624,77 +15885,77 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0958
-Encoding: 429 2392 429
+Encoding: 2392 2392 437
 GlifName: uni0958
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 S 1 0 0 1 824 0 2
-Refer: 362 2325 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 824 0 2
+Refer: 365 2325 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0915 uni093C
 EndChar
 
 StartChar: uni0959
-Encoding: 430 2393 430
+Encoding: 2393 2393 438
 GlifName: uni0959
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 S 1 0 0 1 824 0 2
-Refer: 363 2326 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 824 0 2
+Refer: 367 2326 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0916 uni093C
 EndChar
 
 StartChar: uni095A
-Encoding: 431 2394 431
+Encoding: 2394 2394 439
 GlifName: uni095A_
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 S 1 0 0 1 824 0 2
-Refer: 364 2327 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 824 0 2
+Refer: 368 2327 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0917 uni093C
 EndChar
 
 StartChar: uni095B
-Encoding: 432 2395 432
+Encoding: 2395 2395 440
 GlifName: uni095B_
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 S 1 0 0 1 824 0 2
-Refer: 369 2332 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 824 0 2
+Refer: 373 2332 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni091C uni093C
 EndChar
 
 StartChar: uni095C
-Encoding: 433 2396 433
+Encoding: 2396 2396 441
 GlifName: uni095C_
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 S 1 0 0 1 824 0 2
-Refer: 374 2337 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 824 0 2
+Refer: 379 2337 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0921 uni093C
 EndChar
 
 StartChar: uni095D
-Encoding: 434 2397 434
+Encoding: 2397 2397 442
 GlifName: uni095D_
 Width: 1024
 VWidth: 0
@@ -15702,13 +15963,13 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 N 1 0 0 1 788 -4 2
-Refer: 375 2338 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 788 -4 2
+Refer: 380 2338 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0922 uni093C
 EndChar
 
 StartChar: uni095E
-Encoding: 435 2398 435
+Encoding: 2398 2398 443
 GlifName: uni095E_
 Width: 1024
 VWidth: 0
@@ -15716,27 +15977,27 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 N 1 0 0 1 620 60 2
-Refer: 384 2347 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 620 60 2
+Refer: 389 2347 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni092B uni093C
 EndChar
 
 StartChar: uni095F
-Encoding: 436 2399 436
+Encoding: 2399 2399 444
 GlifName: uni095F_
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 401 2364 S 1 0 0 1 824 0 2
-Refer: 388 2351 N 1 0 0 1 0 0 2
+Refer: 408 2364 N 1 0 0 1 824 0 2
+Refer: 393 2351 N 1 0 0 1 0 0 2
 Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni092F uni093C
 EndChar
 
 StartChar: uni0960
-Encoding: 437 2400 437
+Encoding: 2400 2400 445
 GlifName: uni0960
 Width: 1024
 VWidth: 0
@@ -15794,7 +16055,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0961
-Encoding: 438 2401 438
+Encoding: 2401 2401 446
 GlifName: uni0961
 Width: 1024
 VWidth: 0
@@ -15847,7 +16108,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0962
-Encoding: 439 2402 439
+Encoding: 2402 2402 447
 GlifName: uni0962
 Width: 1024
 VWidth: 0
@@ -15892,7 +16153,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0963
-Encoding: 440 2403 440
+Encoding: 2403 2403 448
 GlifName: uni0963
 Width: 1024
 VWidth: 0
@@ -15942,7 +16203,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0964
-Encoding: 441 2404 441
+Encoding: 2404 2404 449
 GlifName: uni0964
 Width: 1024
 VWidth: 0
@@ -15962,7 +16223,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0965
-Encoding: 442 2405 442
+Encoding: 2405 2405 450
 GlifName: uni0965
 Width: 1024
 VWidth: 0
@@ -15987,7 +16248,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0966
-Encoding: 443 2406 443
+Encoding: 2406 2406 451
 GlifName: uni0966
 Width: 1024
 VWidth: 0
@@ -16022,7 +16283,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0967
-Encoding: 444 2407 444
+Encoding: 2407 2407 452
 GlifName: uni0967
 Width: 1024
 VWidth: 0
@@ -16057,7 +16318,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0968
-Encoding: 445 2408 445
+Encoding: 2408 2408 453
 GlifName: uni0968
 Width: 1024
 VWidth: 0
@@ -16097,7 +16358,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0969
-Encoding: 446 2409 446
+Encoding: 2409 2409 454
 GlifName: uni0969
 Width: 1024
 VWidth: 0
@@ -16137,7 +16398,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096A
-Encoding: 447 2410 447
+Encoding: 2410 2410 455
 GlifName: uni096A_
 Width: 1024
 VWidth: 0
@@ -16187,7 +16448,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096B
-Encoding: 448 2411 448
+Encoding: 2411 2411 456
 GlifName: uni096B_
 Width: 1024
 VWidth: 0
@@ -16222,7 +16483,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096C
-Encoding: 449 2412 449
+Encoding: 2412 2412 457
 GlifName: uni096C_
 Width: 1024
 VWidth: 0
@@ -16262,7 +16523,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096D
-Encoding: 450 2413 450
+Encoding: 2413 2413 458
 GlifName: uni096D_
 Width: 1024
 VWidth: 0
@@ -16302,7 +16563,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096E
-Encoding: 451 2414 451
+Encoding: 2414 2414 459
 GlifName: uni096E_
 Width: 1024
 VWidth: 0
@@ -16327,7 +16588,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096F
-Encoding: 452 2415 452
+Encoding: 2415 2415 460
 GlifName: uni096F_
 Width: 1024
 VWidth: 0
@@ -16367,12 +16628,12 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0970
-Encoding: 453 2416 453
+Encoding: 2416 2416 461
 GlifName: uni0970
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 587 370
 VStem: 1816 398
 LayerCount: 2
@@ -16403,14 +16664,14 @@ p8
 (lp9
 (dp10
 g6
-I1214
+I1816
 sg7
 I398
 sass."
 EndChar
 
 StartChar: uni0971
-Encoding: 454 2417 454
+Encoding: 2417 2417 462
 GlifName: uni0971
 Width: 1024
 VWidth: 0
@@ -16453,7 +16714,7 @@ sass."
 EndChar
 
 StartChar: uni0972
-Encoding: 455 2418 455
+Encoding: 2418 2418 463
 GlifName: uni0972
 Width: 1024
 VWidth: 0
@@ -16511,7 +16772,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0973
-Encoding: 456 2419 456
+Encoding: 2419 2419 464
 GlifName: uni0973
 Width: 1024
 VWidth: 0
@@ -16559,7 +16820,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0974
-Encoding: 457 2420 457
+Encoding: 2420 2420 465
 GlifName: uni0974
 Width: 1024
 VWidth: 0
@@ -16607,7 +16868,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0975
-Encoding: 458 2421 458
+Encoding: 2421 2421 466
 GlifName: uni0975
 Width: 1024
 VWidth: 0
@@ -16680,7 +16941,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0976
-Encoding: 459 2422 459
+Encoding: 2422 2422 467
 GlifName: uni0976
 Width: 1024
 VWidth: 0
@@ -16738,7 +16999,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0977
-Encoding: 460 2423 460
+Encoding: 2423 2423 468
 GlifName: uni0977
 Width: 1024
 VWidth: 0
@@ -16811,7 +17072,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0978
-Encoding: 461 2424 461
+Encoding: 2424 2424 469
 GlifName: uni0978
 Width: 1024
 VWidth: 0
@@ -16844,7 +17105,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0979
-Encoding: 462 2425 462
+Encoding: 2425 2425 470
 GlifName: uni0979
 Width: 1024
 VWidth: 0
@@ -16902,7 +17163,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097A
-Encoding: 463 2426 463
+Encoding: 2426 2426 471
 GlifName: uni097A_
 Width: 1024
 VWidth: 0
@@ -16945,7 +17206,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097B
-Encoding: 464 2427 464
+Encoding: 2427 2427 472
 GlifName: uni097B_
 Width: 1024
 VWidth: 0
@@ -17043,7 +17304,7 @@ sass."
 EndChar
 
 StartChar: uni097C
-Encoding: 465 2428 465
+Encoding: 2428 2428 473
 GlifName: uni097C_
 Width: 1024
 VWidth: 0
@@ -17091,7 +17352,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097D
-Encoding: 466 2429 466
+Encoding: 2429 2429 474
 GlifName: uni097D_
 Width: 1024
 VWidth: 0
@@ -17140,7 +17401,7 @@ sass."
 EndChar
 
 StartChar: uni097E
-Encoding: 467 2430 467
+Encoding: 2430 2430 475
 GlifName: uni097E_
 Width: 1024
 VWidth: 0
@@ -17204,7 +17465,7 @@ sass."
 EndChar
 
 StartChar: uni097F
-Encoding: 468 2431 468
+Encoding: 2431 2431 476
 GlifName: uni097F_
 Width: 1024
 VWidth: 0
@@ -17252,7 +17513,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni1E9E
-Encoding: 469 7838 469
+Encoding: 7838 7838 477
 GlifName: uni1E_9E_
 Width: 1024
 VWidth: 0
@@ -17295,7 +17556,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni2044
-Encoding: 470 8260 470
+Encoding: 8260 8260 478
 GlifName: uni2044
 Width: 1024
 VWidth: 0
@@ -17313,7 +17574,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20B9
-Encoding: 471 8377 471
+Encoding: 8377 8377 479
 GlifName: uni20B_9
 Width: 1024
 VWidth: 0
@@ -17351,7 +17612,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni25CC
-Encoding: 472 9676 472
+Encoding: 9676 9676 480
 GlifName: uni25C_C_
 Width: 1024
 VWidth: 0
@@ -17406,7 +17667,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uniFB01
-Encoding: 473 64257 473
+Encoding: 64257 64257 481
 GlifName: uniF_B_01
 Width: 1011
 VWidth: 0
@@ -17443,12 +17704,12 @@ SplineSet
 EndSplineSet
 PickledDataWithLists: "(dp0
 ."
-Ligature2: "'dlig' Discretionary Ligatures lookup 0-1" f i
-LCarets2: 2 376 32
+LCarets2: 2 32 378
+Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f i
 EndChar
 
 StartChar: uniFB02
-Encoding: 474 64258 474
+Encoding: 64258 64258 482
 GlifName: uniF_B_02
 Width: 1024
 VWidth: 0
@@ -17490,12 +17751,12 @@ SplineSet
 EndSplineSet
 PickledDataWithLists: "(dp0
 ."
-Ligature2: "'dlig' Discretionary Ligatures lookup 0-1" f l
 LCarets2: 2 84 588
+Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
 EndChar
 
 StartChar: uogonek
-Encoding: 475 371 475
+Encoding: 371 371 483
 GlifName: uogonek
 Width: 1024
 VWidth: 0
@@ -17505,7 +17766,7 @@ HStem: -432 122 -143 121
 VStem: 406 118
 LayerCount: 2
 Fore
-Refer: 340 808 N 1 0 0 1 -76.5 -21.8 2
+Refer: 343 808 N 1 0 0 1 -76.5 -21.8 2
 Refer: 299 117 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -17538,7 +17799,7 @@ sass."
 EndChar
 
 StartChar: uring
-Encoding: 476 367 476
+Encoding: 367 367 484
 GlifName: uring
 Width: 1024
 VWidth: 0
@@ -17548,7 +17809,7 @@ HStem: 1124 309
 VStem: 227 360
 LayerCount: 2
 Fore
-Refer: 335 778 N 1 0 0 1 -135 -414 2
+Refer: 338 778 N 1 0 0 1 -135 -414 2
 Refer: 299 117 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -17576,7 +17837,7 @@ sass."
 EndChar
 
 StartChar: utilde
-Encoding: 477 361 477
+Encoding: 361 361 485
 GlifName: utilde
 Width: 1024
 VWidth: 0
@@ -17589,7 +17850,7 @@ Refer: 299 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: v
-Encoding: 478 118 478
+Encoding: 118 118 486
 GlifName: v
 Width: 1024
 VWidth: 0
@@ -17612,7 +17873,7 @@ EndSplineSet
 EndChar
 
 StartChar: w
-Encoding: 479 119 479
+Encoding: 119 119 487
 GlifName: w
 Width: 1024
 VWidth: 0
@@ -17645,7 +17906,7 @@ EndSplineSet
 EndChar
 
 StartChar: wacute
-Encoding: 480 7811 480
+Encoding: 7811 7811 488
 GlifName: wacute
 Width: 1024
 VWidth: 0
@@ -17654,11 +17915,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 120 769 N 1 0 0 1 -3.5 -762 2
-Refer: 479 119 N 1 0 0 1 0 0 2
+Refer: 487 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: wcircumflex
-Encoding: 481 373 481
+Encoding: 373 373 489
 GlifName: wcircumflex
 Width: 1024
 VWidth: 0
@@ -17666,12 +17927,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 32 -747 2
-Refer: 479 119 N 1 0 0 1 0 0 2
+Refer: 333 770 N 1 0 0 1 32 -747 2
+Refer: 487 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: wdieresis
-Encoding: 482 7813 482
+Encoding: 7813 7813 490
 GlifName: wdieresis
 Width: 1024
 VWidth: 0
@@ -17679,12 +17940,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -23 -475 2
-Refer: 479 119 N 1 0 0 1 0.5 -12 2
+Refer: 337 776 N 1 0 0 1 -23 -475 2
+Refer: 487 119 N 1 0 0 1 0.5 -12 2
 EndChar
 
 StartChar: wgrave
-Encoding: 483 7809 483
+Encoding: 7809 7809 491
 GlifName: wgrave
 Width: 1024
 VWidth: 0
@@ -17693,11 +17954,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 195 768 N 1 0 0 1 -19.5 -689 2
-Refer: 479 119 N 1 0 0 1 0 0 2
+Refer: 487 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: x
-Encoding: 484 120 484
+Encoding: 120 120 492
 GlifName: x
 Width: 1024
 VWidth: 0
@@ -17736,7 +17997,7 @@ sass."
 EndChar
 
 StartChar: y
-Encoding: 485 121 485
+Encoding: 121 121 493
 GlifName: y
 Width: 1024
 VWidth: 0
@@ -17769,7 +18030,7 @@ EndSplineSet
 EndChar
 
 StartChar: yacute
-Encoding: 486 253 486
+Encoding: 253 253 494
 GlifName: yacute
 Width: 1024
 VWidth: 0
@@ -17778,11 +18039,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 120 769 N 1 0 0 1 4.5 -734 2
-Refer: 485 121 N 1 0 0 1 0 0 2
+Refer: 493 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ycircumflex
-Encoding: 487 375 487
+Encoding: 375 375 495
 GlifName: ycircumflex
 Width: 1024
 VWidth: 0
@@ -17790,12 +18051,12 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 330 770 N 1 0 0 1 42 -643 2
-Refer: 485 121 N 1 0 0 1 0 0 2
+Refer: 333 770 N 1 0 0 1 42 -643 2
+Refer: 493 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ydieresis
-Encoding: 488 255 488
+Encoding: 255 255 496
 GlifName: ydieresis
 Width: 1024
 VWidth: 0
@@ -17805,8 +18066,8 @@ HStem: 1146 101
 VStem: 336 112 578 112
 LayerCount: 2
 Fore
-Refer: 334 776 N 1 0 0 1 -43.5 -491 2
-Refer: 485 121 N 1 0 0 1 0 0 2
+Refer: 337 776 N 1 0 0 1 -43.5 -491 2
+Refer: 493 121 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
 p1
@@ -17838,7 +18099,7 @@ sass."
 EndChar
 
 StartChar: yen
-Encoding: 489 165 489
+Encoding: 165 165 497
 GlifName: yen
 Width: 1024
 VWidth: 0
@@ -17881,7 +18142,7 @@ EndSplineSet
 EndChar
 
 StartChar: ygrave
-Encoding: 490 7923 490
+Encoding: 7923 7923 498
 GlifName: ygrave
 Width: 1024
 VWidth: 0
@@ -17890,11 +18151,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 195 768 N 1 0 0 1 -27.5 -725 2
-Refer: 485 121 N 1 0 0 1 0 0 2
+Refer: 493 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: z
-Encoding: 491 122 491
+Encoding: 122 122 499
 GlifName: z
 Width: 1024
 VWidth: 0
@@ -17922,7 +18183,7 @@ EndSplineSet
 EndChar
 
 StartChar: zacute
-Encoding: 492 378 492
+Encoding: 378 378 500
 GlifName: zacute
 Width: 1024
 VWidth: 0
@@ -17931,22 +18192,22 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 120 769 N 1 0 0 1 3 -731 2
-Refer: 491 122 N 1 0 0 1 0 0 2
+Refer: 499 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: zcaron
-Encoding: 493 382 493
+Encoding: 382 382 501
 GlifName: zcaron
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: 1138 272
 VStem: 394 271
 LayerCount: 2
 Fore
-Refer: 337 780 S 1 0 0 1 -1.5 -210 2
-Refer: 491 122 N 1 0 0 1 0 0 2
+Refer: 340 780 N 1 0 0 1 -1.5 -210 2
+Refer: 499 122 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
 p1
@@ -17973,7 +18234,7 @@ sass."
 EndChar
 
 StartChar: zdotaccent
-Encoding: 494 380 494
+Encoding: 380 380 502
 GlifName: zdotaccent
 Width: 1024
 VWidth: 0
@@ -17983,8 +18244,8 @@ HStem: 1149 101
 VStem: 456 112
 LayerCount: 2
 Fore
-Refer: 333 775 N 1 0 0 1 -166 -488 2
-Refer: 491 122 N 1 0 0 1 0 0 2
+Refer: 336 775 N 1 0 0 1 -166 -488 2
+Refer: 499 122 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
 p1
@@ -18011,7 +18272,7 @@ sass."
 EndChar
 
 StartChar: zero
-Encoding: 495 48 495
+Encoding: 48 48 503
 GlifName: zero
 Width: 1024
 VWidth: 0
@@ -18086,107 +18347,6 @@ I779
 sg7
 I140
 sass."
-EndChar
-
-StartChar: uni02C9
-Encoding: 496 713 496
-GlifName: uni02C_9
-Width: 1024
-VWidth: 0
-GlyphClass: 2
-Flags: W
-HStem: 1552 78<226 786>
-VStem: 226 560<1552 1630 1552 1630>
-LayerCount: 2
-Fore
-SplineSet
-226 1630 m 257
- 226 1552 l 257
- 786 1552 l 257
- 786 1630 l 257
- 226 1630 l 257
-EndSplineSet
-PickledDataWithLists: "(dp0
-Vcom.fontlab.hintData
-p1
-(dp2
-Vhhints
-p3
-(lp4
-(dp5
-Vposition
-p6
-I1552
-sVwidth
-p7
-I78
-sasVvhints
-p8
-(lp9
-(dp10
-g6
-I226
-sg7
-I560
-sass."
-EndChar
-
-StartChar: uni02CA
-Encoding: 497 714 497
-GlifName: uni02C_A_
-Width: 1024
-VWidth: 0
-GlyphClass: 2
-Flags: W
-LayerCount: 2
-Fore
-SplineSet
-551 2180 m 257
- 421 1926 l 257
- 509 1880 l 257
- 640 2135 l 257
- 551 2180 l 257
-EndSplineSet
-EndChar
-
-StartChar: uni02CB
-Encoding: 498 715 498
-GlifName: uni02C_B_
-Width: 1024
-VWidth: 0
-GlyphClass: 2
-Flags: W
-LayerCount: 2
-Fore
-SplineSet
-421 2107 m 257
- 541 1871 l 257
- 632 1917 l 257
- 513 2154 l 257
- 421 2107 l 257
-EndSplineSet
-EndChar
-
-StartChar: uni094D.alt
-Encoding: 499 -1 499
-GlifName: uni094D_.alt
-Width: 1024
-VWidth: 0
-Flags: W
-LayerCount: 2
-Fore
-SplineSet
--553 -22 m 257
- -553 -218 l 257
- -196 -218 l 257
- -196 -22 l 257
- -553 -22 l 257
--337 -183 m 257
- 133 -588 l 257
- 277 -425 l 257
- -194 -21 l 257
- -337 -183 l 257
-EndSplineSet
 EndChar
 EndChars
 EndSplineFont
