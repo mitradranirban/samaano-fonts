@@ -6,15 +6,6 @@ languagesystem latn dflt;
 # GSUB 
 
 
-lookup halfHalfFormsinDevanagarilookup0 {
-  lookupflag 0;
-    sub \uni0915 \uni094D  by \uni0915_uni094D.half;
-    sub \uni0916 \uni094D  by \uni0916_uni094D.half;
-    sub \uni0917 \uni094D  by \uni0917_uni094D.half;
-    sub \uni0918 \uni094D  by \uni0918_uni094D.half;
-    sub \uni0919 \uni094D  by \uni0919_uni094D.half;
-} halfHalfFormsinDevanagarilookup0;
-
 lookup nuktNuktaFormsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0928 \uni093C  by \uni0929;
@@ -45,6 +36,20 @@ lookup blwfBelowBaseFormsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0930 \uni094D  by \uni0930_uni094D.blwf;
 } blwfBelowBaseFormsinDevanagarilookup0;
+
+lookup halfHalfFormsinDevanagarilookup0 {
+  lookupflag 0;
+    sub \uni0915 \uni094D  by \uni0915_uni094D.half;
+    sub \uni0916 \uni094D  by \uni0916_uni094D.half;
+    sub \uni0917 \uni094D  by \uni0917_uni094D.half;
+    sub \uni0918 \uni094D  by \uni0918_uni094D.half;
+    sub \uni0919 \uni094D  by \uni0919_uni094D.half;
+    sub \uni091A \uni094D  by \uni091A_uni094D.half;
+    sub \uni091B \uni094D  by \uni091B_uni094D.half;
+    sub \uni091C \uni094D  by \uni091C_uni094D.half;
+    sub \uni091D \uni094D  by \uni091D_uni094D.half;
+    sub \uni091E \uni094D  by \uni091E_uni094D.half;
+} halfHalfFormsinDevanagarilookup0;
 
 lookup halnHalantFormsinDevanagarilookup0 {
   lookupflag 0;
@@ -101,13 +106,6 @@ lookup dligDiscretionaryLigatureslookup0 {
     sub \f \l  by \uniFB02;
 } dligDiscretionaryLigatureslookup0;
 
-feature half {
-
- script deva;
-     language dflt ;
-      lookup halfHalfFormsinDevanagarilookup0;
-} half;
-
 feature nukt {
 
  script deva;
@@ -136,6 +134,13 @@ feature blwf {
       lookup blwfBelowBaseFormsinDevanagarilookup0;
 } blwf;
 
+feature half {
+
+ script deva;
+     language dflt ;
+      lookup halfHalfFormsinDevanagarilookup0;
+} half;
+
 feature haln {
 
  script deva;
@@ -153,6 +158,7 @@ feature dlig {
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
 } dlig;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \Aacute \Abreve \Acircumflex \Adieresis \Agrave \Amacron 
 	\Aogonek \Aring \Atilde \B \C \Cacute \Ccaron \Ccedilla \Ccircumflex \Cdotaccent 
@@ -211,19 +217,21 @@ feature dlig {
 @GDEF_Ligature = [\uni0915_uni094D.haln \uni0915_uni094D_uni0937.akhn 
 	\uni0916_uni094D.haln \uni0917_uni094D.half \uni0917_uni094D.haln 
 	\uni0918_uni094D.half \uni0918_uni094D.haln \uni0919_uni094D.half 
-	\uni0919_uni094D.haln \uni091A_uni094D.haln \uni091B_uni094D.haln 
-	\uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091D_uni094D.haln 
-	\uni091E_uni094D.haln \uni091F_uni094D.haln \uni0920_uni094D.haln 
-	\uni0921_uni094D.haln \uni0922_uni094D.haln \uni0923_uni094D.haln 
-	\uni0924_uni094D.haln \uni0925_uni094D.haln \uni0926_uni094D.haln 
-	\uni0927_uni094D.haln \uni0928_uni094D.haln \uni0929_uni094D.haln 
-	\uni092A_uni094D.haln \uni092B_uni094D.haln \uni092C_uni094D.haln 
-	\uni092D_uni094D.haln \uni092E_uni094D.haln \uni092F_uni094D.haln 
-	\uni0931_uni094D.haln \uni0932_uni094D.haln \uni0933_uni094D.haln 
-	\uni0934_uni094D.haln \uni0935_uni094D.haln \uni0937_uni094D.haln 
-	\uni0939_uni094D.haln \uni0958_uni094D.haln \uni0959_uni094D.haln 
-	\uni095B_uni094D.haln \uni095C_uni094D.haln \uni095D_uni094D.haln 
-	\uni095E_uni094D.haln \uni095F_uni094D.haln \uniFB01 \uniFB02 ];
+	\uni0919_uni094D.haln \uni091A_uni094D.half \uni091A_uni094D.haln 
+	\uni091B_uni094D.half \uni091B_uni094D.haln \uni091C_uni094D.half 
+	\uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091D_uni094D.half 
+	\uni091D_uni094D.haln \uni091E_uni094D.half \uni091E_uni094D.haln 
+	\uni091F_uni094D.haln \uni0920_uni094D.haln \uni0921_uni094D.haln 
+	\uni0922_uni094D.haln \uni0923_uni094D.haln \uni0924_uni094D.haln 
+	\uni0925_uni094D.haln \uni0926_uni094D.haln \uni0927_uni094D.haln 
+	\uni0928_uni094D.haln \uni0929_uni094D.haln \uni092A_uni094D.haln 
+	\uni092B_uni094D.haln \uni092C_uni094D.haln \uni092D_uni094D.haln 
+	\uni092E_uni094D.haln \uni092F_uni094D.haln \uni0931_uni094D.haln 
+	\uni0932_uni094D.haln \uni0933_uni094D.haln \uni0934_uni094D.haln 
+	\uni0935_uni094D.haln \uni0937_uni094D.haln \uni0939_uni094D.haln 
+	\uni0958_uni094D.haln \uni0959_uni094D.haln \uni095B_uni094D.haln 
+	\uni095C_uni094D.haln \uni095D_uni094D.haln \uni095E_uni094D.haln 
+	\uni095F_uni094D.haln \uniFB01 \uniFB02 ];
 @GDEF_Mark = [\acutecomb \glyph094D \gravecomb \tildecomb \uni0302 \uni0304 
 	\uni0306 \uni0307 \uni0308 \uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 
 	\uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf \uni0930_uni094D.rphf 

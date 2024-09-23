@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1726849172
-ModificationTime: 1726849688
+ModificationTime: 1727099628
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -51,19 +51,23 @@ Lookup: 4 0 0 "nuktNuktaFormsinDevanagarilookup0" { "nuktNuktaFormsinDevanagaril
 Lookup: 4 0 0 "akhnAkhandinDevanagarilookup0" { "akhnAkhandinDevanagarilookup0 subtable"  } ['akhn' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "rphfRephForminDevanagarilookup0" { "rphfRephForminDevanagarilookup0 subtable"  } ['rphf' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "blwfBelowBaseFormsinDevanagarilookup0" { "blwfBelowBaseFormsinDevanagarilookup0 subtable"  } ['blwf' ('deva' <'dflt' > ) ]
+Lookup: 4 0 0 "halfHalfFormsinDevanagarilookup0" { "halfHalfFormsinDevanagarilookup0 subtable"  } ['half' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "halnHalantFormsinDevanagarilookup0" { "halnHalantFormsinDevanagarilookup0 subtable"  } ['haln' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors  (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.500" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (github.com/mitradranirban/samaano-fonts)+AAoA This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
 ."
-Encoding: UnicodeBmp
+Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 0
 WinInfo: 65533 13 5
+BeginPrivate: 0
+EndPrivate
 Grid
 -1024 1545 m 0
  3072 1545 l 1024
@@ -76,7 +80,7 @@ Grid
 -1024 1023 m 0
  3072 1023 l 1024
 EndSplineSet
-BeginChars: 65593 560
+BeginChars: 65603 565
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -10187,6 +10191,7 @@ SplineSet
  1031 999 l 257
  623 999 l 257
 EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0915 uni094D
 EndChar
 
 StartChar: uni0915_uni094D.haln
@@ -10394,6 +10399,7 @@ SplineSet
  1006 130 l 257
  186.5 130 l 257
 EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0916 uni094D
 EndChar
 
 StartChar: uni0916_uni094D.haln
@@ -10528,6 +10534,7 @@ SplineSet
  967 1496 l 257
  967 1557 l 257
 EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0917 uni094D
 EndChar
 
 StartChar: uni0917_uni094D.haln
@@ -16576,6 +16583,7 @@ SplineSet
  173.5 814 l 257
  173.5 269 l 257
 EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0918 uni094D
 EndChar
 
 StartChar: uni0919_uni094D.half
@@ -16643,6 +16651,212 @@ SplineSet
  870 931 l 257
  774 931 l 257
 EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0919 uni094D
+EndChar
+
+StartChar: uni091A_uni094D.half
+Encoding: 65593 -1 560
+GlifName: uni091A__uni094D_.half
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+1 1556 m 257
+ 1 1497 l 257
+ 1023 1497 l 257
+ 1023 1556 l 257
+ 1 1556 l 257
+1104 421 m 261
+ 1104 480 l 261
+ 297 480 l 257
+ 297 421 l 257
+ 1104 421 l 261
+297 837 m 257
+ 297 421 l 257
+ 356 421 l 257
+ 356 837 l 257
+ 297 837 l 257
+73 852 m 257
+ 73 791 l 257
+ 498 791 l 257
+ 498 852 l 257
+ 73 852 l 257
+EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091A uni094D
+EndChar
+
+StartChar: uni091B_uni094D.half
+Encoding: 65594 -1 561
+GlifName: uni091B__uni094D_.half
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+1 1555 m 257
+ 1 1495 l 257
+ 1023 1495 l 257
+ 1023 1555 l 257
+ 1 1555 l 257
+537 1128 m 257
+ 152 1128 l 257
+ 152 1069 l 257
+ 537 1069 l 257
+ 537 1128 l 257
+143 1128 m 257
+ 143 538 l 257
+ 203 538 l 257
+ 203 1128 l 257
+ 143 1128 l 257
+174 547 m 257
+ 174 487 l 257
+ 537 487 l 257
+ 537 547 l 257
+ 174 547 l 257
+142 501 m 257
+ 142 0 l 257
+ 202 0 l 257
+ 202 501 l 257
+ 142 501 l 257
+198 59 m 257
+ 198 0 l 257
+ 1133 0 l 261
+ 1133 59 l 261
+ 198 59 l 257
+EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091B uni094D
+EndChar
+
+StartChar: uni091C_uni094D.half
+Encoding: 65595 -1 562
+GlifName: uni091C__uni094D_.half
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-17 1551 m 257
+ -17 1492 l 257
+ 1041 1492 l 257
+ 1041 1551 l 257
+ -17 1551 l 257
+518 860 m 257
+ 518 801 l 257
+ 1154 801 l 261
+ 1154 860 l 261
+ 518 860 l 257
+508 860 m 257
+ 508 512 l 257
+ 568 512 l 257
+ 568 860 l 257
+ 508 860 l 257
+58 567 m 257
+ 58 508 l 257
+ 568 508 l 257
+ 568 567 l 257
+ 58 567 l 257
+58 727 m 257
+ 58 509 l 257
+ 118 509 l 257
+ 118 727 l 257
+ 58 727 l 257
+EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091C uni094D
+EndChar
+
+StartChar: uni091D_uni094D.half
+Encoding: 65596 -1 563
+GlifName: uni091D__uni094D_.half
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-8.5 1554 m 257
+ -8.5 1494 l 257
+ 1032.5 1494 l 257
+ 1032.5 1554 l 257
+ -8.5 1554 l 257
+595.5 1537 m 257
+ 595.5 1024 l 257
+ 655.5 1024 l 257
+ 655.5 1537 l 257
+ 595.5 1537 l 257
+134.5 1084 m 257
+ 134.5 1024 l 257
+ 655.5 1024 l 257
+ 655.5 1084 l 257
+ 134.5 1084 l 257
+134.5 1085 m 257
+ 134.5 651 l 257
+ 194.5 651 l 257
+ 194.5 1085 l 257
+ 134.5 1085 l 257
+134.5 698 m 257
+ 134.5 638 l 257
+ 1083.5 638 l 261
+ 1083.5 698 l 261
+ 134.5 698 l 257
+567.5 691 m 257
+ 567.5 7 l 257
+ 627.5 7 l 257
+ 627.5 691 l 257
+ 567.5 691 l 257
+134.5 63 m 257
+ 134.5 3 l 257
+ 627.5 3 l 257
+ 627.5 63 l 257
+ 134.5 63 l 257
+134.5 63 m 257
+ 134.5 -148 l 257
+ 194.5 -148 l 257
+ 194.5 63 l 257
+ 134.5 63 l 257
+EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091D uni094D
+EndChar
+
+StartChar: uni091E_uni094D.half
+Encoding: 65597 -1 564
+GlifName: uni091E__uni094D_.half
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-5 1554 m 257
+ -5 1493 l 257
+ 1029 1493 l 257
+ 1029 1554 l 257
+ -5 1554 l 257
+582 672 m 257
+ 582 612 l 257
+ 1096 612 l 261
+ 1096 672 l 261
+ 582 672 l 257
+84 960 m 257
+ 84 900 l 257
+ 581 900 l 257
+ 581 960 l 257
+ 84 960 l 257
+551 960 m 257
+ 551 316 l 257
+ 611 316 l 257
+ 611 960 l 257
+ 551 960 l 257
+61 320 m 257
+ 61 260 l 257
+ 611 260 l 257
+ 611 320 l 257
+ 61 320 l 257
+EndSplineSet
+Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091E uni094D
 EndChar
 EndChars
 EndSplineFont
