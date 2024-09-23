@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1726842257
-ModificationTime: 1726850528
+ModificationTime: 1727091603
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
@@ -56,13 +56,12 @@ Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigaturesl
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.002" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using rectangular components only" "" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 130 13 5
+WinInfo: 65533 13 5
 Grid
 -1024 1557 m 0
  3072 1557 l 1024
@@ -75,7 +74,7 @@ Grid
 -1024 1023 m 0
  3072 1023 l 1024
 EndSplineSet
-BeginChars: 65588 555
+BeginChars: 65598 560
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -2429,7 +2428,7 @@ GlifName: acircumflex
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 335 770 N 1 0 0 1 79 -828 2
@@ -15573,6 +15572,7 @@ EndChar
 
 StartChar: uni200C
 Encoding: 8204 8204 553
+GlifName: uni200C_
 Width: 1024
 VWidth: 0
 Flags: HW
@@ -15594,6 +15594,7 @@ EndChar
 
 StartChar: uni200D
 Encoding: 8205 8205 554
+GlifName: uni200D_
 Width: 1024
 VWidth: 0
 Flags: HW
@@ -15606,6 +15607,163 @@ SplineSet
  466 -12 l 257
  466 1552 l 257
 EndSplineSet
+EndChar
+
+StartChar: uni0917_uni094D.half
+Encoding: 65588 -1 555
+Width: 2048
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+51 853 m 257
+ 121 853 l 257
+ 121 1044 l 257
+ 51 1044 l 257
+ 51 853 l 257
+51 882 m 257
+ 51 812 l 257
+ 910 812 l 257
+ 910 882 l 257
+ 51 882 l 257
+840 1556 m 257
+ 840 812 l 257
+ 910 812 l 257
+ 910 1556 l 257
+ 840 1556 l 257
+2052 1557 m 257
+ 722 1557 l 257
+ 722 1496 l 257
+ 2052 1496 l 257
+ 2052 1557 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni0918_uni094D.half
+Encoding: 65589 -1 556
+Width: 2048
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+1.5 1554 m 257
+ 1.5 1495 l 257
+ 2046.5 1495 l 257
+ 2046.5 1554 l 257
+ 1.5 1554 l 257
+173.5 1515 m 257
+ 173.5 859 l 257
+ 232.5 859 l 257
+ 232.5 1515 l 257
+ 173.5 1515 l 257
+218.5 867 m 257
+ 218.5 807 l 257
+ 974.5 807 l 257
+ 974.5 867 l 257
+ 218.5 867 l 257
+179.5 328 m 257
+ 179.5 269 l 257
+ 2101.5 269 l 261
+ 2101.5 328 l 261
+ 179.5 328 l 257
+173.5 269 m 257
+ 233.5 269 l 257
+ 233.5 814 l 257
+ 173.5 814 l 257
+ 173.5 269 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni0919_uni094D.half
+Encoding: 65590 -1 557
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-2 1554 m 257
+ -2 1494 l 257
+ 2050 1494 l 257
+ 2050 1554 l 257
+ -2 1554 l 257
+1163 1543 m 257
+ 1163 1026 l 257
+ 1223 1026 l 257
+ 1223 1543 l 257
+ 1163 1543 l 257
+1214 1086 m 257
+ 239 1086 l 257
+ 239 1026 l 257
+ 1214 1026 l 257
+ 1214 1086 l 257
+227 1083 m 257
+ 227 629 l 257
+ 299 629 l 257
+ 299 1083 l 257
+ 227 1083 l 257
+233 680 m 257
+ 233 620 l 257
+ 1300 620 l 257
+ 1300 680 l 257
+ 233 680 l 257
+1237 680 m 257
+ 1237 329 l 257
+ 1300 329 l 257
+ 1300 680 l 257
+ 1237 680 l 257
+114 361 m 257
+ 114 300 l 257
+ 1301 300 l 257
+ 1301 361 l 257
+ 114 361 l 257
+114 502 m 257
+ 114 308 l 257
+ 174 308 l 257
+ 174 502 l 257
+ 114 502 l 257
+1285 931 m 257
+ 1285 835 l 257
+ 1381 835 l 257
+ 1381 931 l 257
+ 1285 931 l 257
+1259 284 m 257
+ 1259 223 l 257
+ 1603 223 l 257
+ 1603 284 l 257
+ 1259 284 l 257
+1574 229 m 257
+ 2065 -118 l 257
+ 2095 -66 l 257
+ 1603 285 l 257
+ 1574 229 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni0915_uni094D_uni0937_uni094D
+Encoding: 65591 -1 558
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 467 -1 S 1 0 0 1 1024 0 2
+Refer: 370 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni091C_uni094D_uni091E_uni094D
+Encoding: 65592 -1 559
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 467 -1 S 1 0 0 1 1024 0 2
+Refer: 386 -1 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
