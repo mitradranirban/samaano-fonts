@@ -37,6 +37,55 @@ lookup blwfBelowBaseFormsinDevanagarilookup0 {
     sub \uni0930 \uni094D  by \uni0930_uni094D.blwf;
 } blwfBelowBaseFormsinDevanagarilookup0;
 
+lookup halnHalantFormsinDevanagarilookup0 {
+  lookupflag 0;
+    sub \uni0915 \uni094D  by \uni0915_uni094D.haln;
+    sub \uni0916 \uni094D  by \uni0916_uni094D.haln;
+    sub \uni0917 \uni094D  by \uni0917_uni094D.haln;
+    sub \uni0918 \uni094D  by \uni0918_uni094D.haln;
+    sub \uni0919 \uni094D  by \uni0919_uni094D.haln;
+    sub \uni091A \uni094D  by \uni091A_uni094D.haln;
+    sub \uni091B \uni094D  by \uni091B_uni094D.haln;
+    sub \uni091C \uni094D  by \uni091C_uni094D.haln;
+    sub \uni091D \uni094D  by \uni091D_uni094D.haln;
+    sub \uni091E \uni094D  by \uni091E_uni094D.haln;
+    sub \uni091F \uni094D  by \uni091F_uni094D.haln;
+    sub \uni0920 \uni094D  by \uni0920_uni094D.haln;
+    sub \uni0921 \uni094D  by \uni0921_uni094D.haln;
+    sub \uni0922 \uni094D  by \uni0922_uni094D.haln;
+    sub \uni0923 \uni094D  by \uni0923_uni094D.haln;
+    sub \uni0924 \uni094D  by \uni0924_uni094D.haln;
+    sub \uni0925 \uni094D  by \uni0925_uni094D.haln;
+    sub \uni0926 \uni094D  by \uni0926_uni094D.haln;
+    sub \uni0927 \uni094D  by \uni0927_uni094D.haln;
+    sub \uni0928 \uni094D  by \uni0928_uni094D.haln;
+    sub \uni0929 \uni094D  by \uni0929_uni094D.haln;
+    sub \uni092A \uni094D  by \uni092A_uni094D.haln;
+    sub \uni092B \uni094D  by \uni092B_uni094D.haln;
+    sub \uni092C \uni094D  by \uni092C_uni094D.haln;
+    sub \uni092D \uni094D  by \uni092D_uni094D.haln;
+    sub \uni092E \uni094D  by \uni092E_uni094D.haln;
+    sub \uni092F \uni094D  by \uni092F_uni094D.haln;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.haln;
+    sub \uni0931 \uni094D  by \uni0931_uni094D.haln;
+    sub \uni0932 \uni094D  by \uni0932_uni094D.haln;
+    sub \uni0933 \uni094D  by \uni0933_uni094D.haln;
+    sub \uni0934 \uni094D  by \uni0934_uni094D.haln;
+    sub \uni0935 \uni094D  by \uni0935_uni094D.haln;
+    sub \uni0936 \uni094D  by \uni0936_uni094D.haln;
+    sub \uni0937 \uni094D  by \uni0937_uni094D.haln;
+    sub \uni0938 \uni094D  by \uni0938_uni094D.haln;
+    sub \uni0939 \uni094D  by \uni0939_uni094D.haln;
+    sub \uni0958 \uni094D  by \uni0958_uni094D.haln;
+    sub \uni0959 \uni094D  by \uni0959_uni094D.haln;
+    sub \uni095A \uni094D  by \uni095A_uni094D.haln;
+    sub \uni095B \uni094D  by \uni095B_uni094D.haln;
+    sub \uni095C \uni094D  by \uni095C_uni094D.haln;
+    sub \uni095D \uni094D  by \uni095D_uni094D.haln;
+    sub \uni095E \uni094D  by \uni095E_uni094D.haln;
+    sub \uni095F \uni094D  by \uni095F_uni094D.haln;
+} halnHalantFormsinDevanagarilookup0;
+
 lookup dligDiscretionaryLigatureslookup0 {
   lookupflag 0;
     sub \f \i  by \uniFB01;
@@ -44,10 +93,6 @@ lookup dligDiscretionaryLigatureslookup0 {
 } dligDiscretionaryLigatureslookup0;
 
 feature nukt {
-
- script DFLT;
-     language dflt ;
-      lookup nuktNuktaFormsinDevanagarilookup0;
 
  script deva;
      language dflt ;
@@ -75,6 +120,13 @@ feature blwf {
       lookup blwfBelowBaseFormsinDevanagarilookup0;
 } blwf;
 
+feature haln {
+
+ script deva;
+     language dflt ;
+      lookup halnHalantFormsinDevanagarilookup0;
+} haln;
+
 feature dlig {
 
  script DFLT;
@@ -85,66 +137,82 @@ feature dlig {
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
 } dlig;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \Aacute \Abreve \Acircumflex \Adieresis \Agrave \Amacron 
 	\Aogonek \Aring \Atilde \B \C \Cacute \Ccaron \Ccedilla \Ccircumflex \Cdotaccent 
 	\D \Dcaron \Dcroat \E \Eacute \Ebreve \Ecaron \Ecircumflex \Edieresis \Edotaccent 
 	\Egrave \Emacron \Eogonek \Eth \Euro \F \G \Gbreve \Gcircumflex \Gdotaccent \H 
 	\Hbar \Hcircumflex \I \Iacute \Ibreve \Icircumflex \Idieresis \Idotaccent 
-	\Igrave \Imacron \Iogonek \Itilde \J \Jcircumflex \K \L \Lacute \Lcaron \Lslash \M 
-	\N \Nacute \Ncaron \Ntilde \O \OE \Oacute \Obreve \Ocircumflex \Odieresis \Ograve 
-	\Ohungarumlaut \Omacron \Oslash \Otilde \P \Q \R \Racute \Rcaron \S \Sacute \Scaron 
-	\Scedilla \Scircumflex \T \Tcaron \Thorn \U \Uacute \Ubreve \Ucircumflex 
-	\Udieresis \Ugrave \Uhungarumlaut \Umacron \Uogonek \Uring \Utilde \V \W \Wacute 
-	\Wcircumflex \Wdieresis \Wgrave \X \Y \Yacute \Ycircumflex \Ydieresis \Ygrave \Z 
-	\Zacute \Zcaron \Zdotaccent \a \aacute \abreve \acircumflex \acute \adieresis \ae 
-	\agrave \amacron \ampersand \aogonek \aring \asciicircum \asciitilde \asterisk 
-	\at \atilde \b \backslash \bar \braceleft \braceright \bracketleft \bracketright 
-	\breve \brokenbar \bullet \c \cacute \caron \ccaron \ccedilla \ccircumflex 
-	\cdotaccent \cedilla \cent \circumflex \colon \comma \copyright \currency \d 
-	\dagger \daggerdbl \dcaron \dcroat \degree \dieresis \divide \dollar \dotaccent 
-	\dotlessi \e \eacute \ebreve \ecaron \ecircumflex \edieresis \edotaccent \egrave 
-	\eight \ellipsis \emacron \emdash \endash \eogonek \equal \eth \exclam 
-	\exclamdown \f \five \four \g \gbreve \gcircumflex \gdotaccent \germandbls \grave 
-	\greater \guillemotleft \guillemotright \guilsinglleft \guilsinglright \h 
-	\hbar \hcircumflex \hungarumlaut \hyphen \i \iacute \ibreve \icircumflex 
-	\idieresis \igrave \imacron \iogonek \itilde \j \jcircumflex \k \l \lacute \lcaron 
-	\less \logicalnot \lslash \m \macron \minus \mu \multiply \n \nacute \ncaron \nine 
-	\ntilde \numbersign \o \oacute \obreve \ocircumflex \odieresis \oe \ogonek 
-	\ograve \ohungarumlaut \omacron \one \onehalf \onequarter \ordfeminine 
-	\ordmasculine \oslash \otilde \p \paragraph \parenleft \parenright \percent 
-	\period \periodcentered \perthousand \plus \plusminus \q \question 
-	\questiondown \quotedbl \quotedblbase \quotedblleft \quotedblright \quoteleft 
-	\quoteright \quotesinglbase \quotesingle \r \racute \rcaron \registered \ring \s 
-	\sacute \scaron \scedilla \scircumflex \section \semicolon \seven \six \slash 
-	\space \sterling \t \tcaron \thorn \three \threequarters \tilde \trademark \two \u 
-	\uacute \ubreve \ucircumflex \udieresis \ugrave \uhungarumlaut \umacron 
-	\underscore \uni00A0 \uni00B2 \uni00B3 \uni00B9 \uni0122 \uni0123 \uni0136 
-	\uni0137 \uni013B \uni013C \uni0145 \uni0146 \uni0156 \uni0157 \uni0162 \uni0163 
-	\uni0192 \uni0218 \uni0219 \uni021A \uni021B \uni0237 \uni02C9 \uni02CA \uni02CB 
-	\uni0903 \uni0904 \uni0905 \uni0906 \uni0907 \uni0908 \uni0909 \uni090A \uni090B 
-	\uni090C \uni090D \uni090E \uni090F \uni0910 \uni0911 \uni0912 \uni0913 \uni0914 
-	\uni0915 \uni0916 \uni0917 \uni0918 \uni0919 \uni091A \uni091B \uni091C \uni091D 
-	\uni091E \uni091F \uni0920 \uni0921 \uni0922 \uni0923 \uni0924 \uni0925 \uni0926 
-	\uni0927 \uni0928 \uni0929 \uni092A \uni092B \uni092C \uni092D \uni092E \uni092F 
-	\uni0930 \uni0931 \uni0932 \uni0933 \uni0934 \uni0935 \uni0936 \uni0937 \uni0938 
-	\uni0939 \uni093B \uni093D \uni093E \uni093F \uni0940 \uni0949 \uni094A \uni094B 
-	\uni094C \uni094D.alt \uni094E \uni094F \uni0950 \uni0958 \uni0959 \uni095A 
-	\uni095B \uni095C \uni095D \uni095E \uni095F \uni0960 \uni0961 \uni0964 \uni0965 
-	\uni0966 \uni0967 \uni0968 \uni0969 \uni096A \uni096B \uni096C \uni096D \uni096E 
-	\uni096F \uni0970 \uni0971 \uni0972 \uni0973 \uni0974 \uni0975 \uni0976 \uni0977 
-	\uni0978 \uni0979 \uni097A \uni097B \uni097C \uni097D \uni097E \uni097F \uni1E9E 
-	\uni2044 \uni20B9 \uni25CC \uniFB02 \uogonek \uring \utilde \v \w \wacute 
-	\wcircumflex \wdieresis \wgrave \x \y \yacute \ycircumflex \ydieresis \yen 
-	\ygrave \z \zacute \zcaron \zdotaccent \zero ];
-@GDEF_Ligature = [\uni0915_uni094D_uni0937.akhn \uni091C_uni094D_uni091E.akhn 
-	\uniFB01 ];
+	\Igrave \Imacron \Iogonek \Itilde \J \Jcircumflex \K \L \Lacute \Lcaron \Ldot 
+	\Lslash \M \N \Nacute \Ncaron \Ntilde \O \OE \Oacute \Obreve \Ocircumflex 
+	\Odieresis \Ograve \Ohungarumlaut \Omacron \Oslash \Otilde \P \Q \R \Racute 
+	\Rcaron \S \Sacute \Scaron \Scedilla \Scircumflex \T \Tcaron \Thorn \U \Uacute 
+	\Ubreve \Ucircumflex \Udieresis \Ugrave \Uhungarumlaut \Umacron \Uogonek \Uring 
+	\Utilde \V \W \Wacute \Wcircumflex \Wdieresis \Wgrave \X \Y \Yacute \Ycircumflex 
+	\Ydieresis \Ygrave \Z \Zacute \Zcaron \Zdotaccent \a \aacute \abreve \acircumflex 
+	\acute \adieresis \ae \agrave \amacron \ampersand \aogonek \aring \asciicircum 
+	\asciitilde \asterisk \at \atilde \b \backslash \bar \braceleft \braceright 
+	\bracketleft \bracketright \breve \brokenbar \bullet \c \cacute \caron \ccaron 
+	\ccedilla \ccircumflex \cdotaccent \cedilla \cent \circumflex \colon \comma 
+	\copyright \currency \d \dagger \daggerdbl \dcaron \dcroat \degree \dieresis 
+	\divide \dollar \dotaccent \dotlessi \e \eacute \ebreve \ecaron \ecircumflex 
+	\edieresis \edotaccent \egrave \eight \ellipsis \emacron \emdash \endash 
+	\eogonek \equal \eth \exclam \exclamdown \f \five \four \g \gbreve \gcircumflex 
+	\gdotaccent \germandbls \grave \greater \guillemotleft \guillemotright 
+	\guilsinglleft \guilsinglright \h \hbar \hcircumflex \hungarumlaut \hyphen \i 
+	\iacute \ibreve \icircumflex \idieresis \igrave \imacron \iogonek \itilde \j 
+	\jcircumflex \k \l \lacute \lcaron \ldot \less \logicalnot \lslash \m \macron 
+	\minus \mu \multiply \n \nacute \ncaron \nine \ntilde \numbersign \o \oacute 
+	\obreve \ocircumflex \odieresis \oe \ogonek \ograve \ohungarumlaut \omacron \one 
+	\onehalf \onequarter \ordfeminine \ordmasculine \oslash \otilde \p \paragraph 
+	\parenleft \parenright \percent \period \periodcentered \perthousand \plus 
+	\plusminus \q \question \questiondown \quotedbl \quotedblbase \quotedblleft 
+	\quotedblright \quoteleft \quoteright \quotesinglbase \quotesingle \r \racute 
+	\rcaron \registered \ring \s \sacute \scaron \scedilla \scircumflex \section 
+	\semicolon \seven \six \slash \space \sterling \t \tcaron \thorn \three 
+	\threequarters \tilde \trademark \two \u \uacute \ubreve \ucircumflex \udieresis 
+	\ugrave \uhungarumlaut \umacron \underscore \uni00A0 \uni00B2 \uni00B3 \uni00B9 
+	\uni0122 \uni0123 \uni0136 \uni0137 \uni013B \uni013C \uni0145 \uni0146 \uni0156 
+	\uni0157 \uni0162 \uni0163 \uni0192 \uni0218 \uni0219 \uni021A \uni021B \uni0237 
+	\uni02C9 \uni02CA \uni02CB \uni0903 \uni0904 \uni0905 \uni0906 \uni0907 \uni0908 
+	\uni0909 \uni090A \uni090B \uni090C \uni090D \uni090E \uni090F \uni0910 \uni0911 
+	\uni0912 \uni0913 \uni0914 \uni0915 \uni0915_uni094D.half 
+	\uni0915_uni094D_uni0937_uni094D \uni0916 \uni0916_uni094D.half \uni0917 
+	\uni0918 \uni0919 \uni091A \uni091B \uni091C \uni091C_uni094D_uni091E_uni094D 
+	\uni091D \uni091E \uni091F \uni0920 \uni0921 \uni0922 \uni0923 \uni0924 \uni0925 
+	\uni0926 \uni0927 \uni0928 \uni0929 \uni092A \uni092B \uni092C \uni092D \uni092E 
+	\uni092F \uni0930 \uni0930_uni094D.haln \uni0931 \uni0932 \uni0933 \uni0934 
+	\uni0935 \uni0936 \uni0936_uni094D.haln \uni0937 \uni0938 \uni0939 
+	\uni0938_uni094D.haln \uni093B \uni093D \uni093E \uni093F \uni0940 \uni0949 
+	\uni094A \uni094B \uni094C \uni094E \uni094F \uni0950 \uni0958 \uni0959 \uni095A 
+	\uni095B \uni095A_uni094D.haln \uni095C \uni095D \uni095E \uni095F \uni0960 
+	\uni0961 \uni0964 \uni0965 \uni0966 \uni0967 \uni0968 \uni0969 \uni096A \uni096B 
+	\uni096C \uni096D \uni096E \uni096F \uni0970 \uni0971 \uni0972 \uni0973 \uni0974 
+	\uni0975 \uni0976 \uni0977 \uni0978 \uni0979 \uni097A \uni097B \uni097C \uni097D 
+	\uni097E \uni097F \uni1E9E \uni200C \uni200D \uni2044 \uni20B9 \uni25CC \uogonek 
+	\uring \utilde \v \w \wacute \wcircumflex \wdieresis \wgrave \x \y \yacute 
+	\ycircumflex \ydieresis \yen \ygrave \z \zacute \zcaron \zdotaccent \zero ];
+@GDEF_Ligature = [\uni0915_uni094D.haln \uni0915_uni094D_uni0937.akhn 
+	\uni0916_uni094D.haln \uni0917_uni094D.haln \uni0918_uni094D.haln 
+	\uni0919_uni094D.haln \uni091A_uni094D.haln \uni091B_uni094D.haln 
+	\uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091D_uni094D.haln 
+	\uni091E_uni094D.haln \uni091F_uni094D.haln \uni0920_uni094D.haln 
+	\uni0921_uni094D.haln \uni0922_uni094D.haln \uni0923_uni094D.haln 
+	\uni0924_uni094D.haln \uni0925_uni094D.haln \uni0926_uni094D.haln 
+	\uni0927_uni094D.haln \uni0928_uni094D.haln \uni0929_uni094D.haln 
+	\uni092A_uni094D.haln \uni092B_uni094D.haln \uni092C_uni094D.haln 
+	\uni092D_uni094D.haln \uni092E_uni094D.haln \uni092F_uni094D.haln 
+	\uni0931_uni094D.haln \uni0932_uni094D.haln \uni0933_uni094D.haln 
+	\uni0934_uni094D.haln \uni0935_uni094D.haln \uni0937_uni094D.haln 
+	\uni0939_uni094D.haln \uni0958_uni094D.haln \uni0959_uni094D.haln 
+	\uni095B_uni094D.haln \uni095C_uni094D.haln \uni095D_uni094D.haln 
+	\uni095E_uni094D.haln \uni095F_uni094D.haln \uniFB01 \uniFB02 ];
 @GDEF_Mark = [\acutecomb \gravecomb \tildecomb \uni0302 \uni0304 \uni0306 \uni0307 
 	\uni0308 \uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 \uni0900 \uni0901 
 	\uni0902 \uni0930_uni094D.blwf \uni0930_uni094D.rphf \uni093A \uni093C 
 	\uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 \uni0947 \uni0948 \uni094D 
-	\uni0951 \uni0952 \uni0953 \uni0954 \uni0955 \uni0956 \uni0957 \uni0962 \uni0963 ];
+	\glyph094D \uni0951 \uni0952 \uni0953 \uni0954 \uni0955 \uni0956 \uni0957 
+	\uni0962 \uni0963 ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
