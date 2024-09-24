@@ -3,16 +3,17 @@
  
 [![][Fontbakery]](https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html)
 [![][Universal]](https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html)
-[![][GF Profile]](https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html)
-[![][Shaping]](https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html)
+[![][Font File]](https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html)
+[![][Repository]](https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html)
+[![][OpenType]](https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html)
 
 [Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2Foverall.json
-[GF Profile]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FGlyphsetChecks.json
-[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FOutlineChecks.json
-[Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FUniversalProfileChecks.json
+[Font File]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FFontFileChecks.json
+[Repository]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FRepositoryChecks.json
+[OpenType]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FOpenTypeSpecificationChecks.json
 
-Samaano is a way to learn creation of variable font using Open Source Tools like Fontforge, Fontra and some python script.
+Samaano is an attempt to learn creation of variable font using Open Source Tools like Fontforge, Fontra and some python script.
  
 
 The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the spaces are equal in this font.
