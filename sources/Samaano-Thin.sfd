@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1727105338
-ModificationTime: 1727188193
+ModificationTime: 1727258515
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -58,13 +58,13 @@ DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors  (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.500" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (github.com/mitradranirban/samaano-fonts)+AAoA This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
 ."
-Encoding: UnicodeBmp
+Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65546 13 5
+WinInfo: 65559 13 5
 Grid
 -1024 1545 m 0
  3072 1545 l 1024
@@ -77,7 +77,7 @@ Grid
 -1024 1023 m 0
  3072 1023 l 1024
 EndSplineSet
-BeginChars: 65618 576
+BeginChars: 65618 583
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -11874,6 +11874,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+72 61 m 5
+ 72 0 l 5
+ 308 0 l 5
+ 308 61 l 5
+ 72 61 l 5
+72 320 m 5
+ 72 0 l 5
+ 140 0 l 5
+ 140 320 l 5
+ 72 320 l 5
 562 1551 m 257
  562 1492 l 257
  1007 1492 l 257
@@ -11895,8 +11905,8 @@ SplineSet
  316 1552 l 257
  43 1552 l 257
 270 1551 m 257
- 270 273 l 257
- 330 273 l 257
+ 270 1 l 257
+ 330 1 l 257
  330 1551 l 257
  270 1551 l 257
 76 333 m 257
@@ -11933,6 +11943,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+72 61 m 1
+ 72 0 l 1
+ 308 0 l 1
+ 308 61 l 1
+ 72 61 l 1
+72 320 m 1
+ 72 0 l 1
+ 140 0 l 1
+ 140 320 l 1
+ 72 320 l 1
 -0.5 1548 m 257
  -0.5 1488 l 257
  1024.5 1488 l 257
@@ -11944,8 +11964,8 @@ SplineSet
  948.5 1543 l 257
  889.5 1543 l 257
 287.5 1538 m 257
- 287.5 302 l 257
- 346.5 302 l 257
+ 287.5 0 l 257
+ 346.5 0 l 257
  346.5 1538 l 257
  287.5 1538 l 257
 93.5 333 m 257
@@ -17126,10 +17146,15 @@ StartChar: uni0925_uni094D.half
 Encoding: 65604 -1 571
 Width: 1024
 VWidth: 0
-Flags: HW
+Flags: HWO
 LayerCount: 2
 Fore
 SplineSet
+692 1545 m 1
+ 692 1493 l 1
+ 1024 1493 l 1
+ 1024 1545 l 1
+ 692 1545 l 1
 114 1550 m 257
  114 1490 l 257
  559 1490 l 257
@@ -17299,6 +17324,244 @@ SplineSet
  780 -146 l 261
  780 -32 l 261
  637 -32 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni092A_uni094D.half
+Encoding: 65609 -1 576
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-7.5 1552 m 257
+ -7.5 1491 l 257
+ 1031.5 1491 l 257
+ 1031.5 1552 l 257
+ -7.5 1552 l 257
+294.5 1551 m 261
+ 294.5 965 l 261
+ 354.5 965 l 261
+ 354.5 1551 l 261
+ 294.5 1551 l 261
+294.5 1025 m 261
+ 294.5 966 l 261
+ 1057.5 966 l 261
+ 1057.5 1025 l 261
+ 294.5 1025 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni092B_uni094D.half
+Encoding: 65610 -1 577
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-3 1551 m 257
+ -3 1491 l 257
+ 1027 1491 l 257
+ 1027 1551 l 257
+ -3 1551 l 257
+649 1539 m 257
+ 649 2 l 257
+ 709 2 l 257
+ 709 1539 l 257
+ 649 1539 l 257
+90 1551 m 257
+ 90 965 l 257
+ 150 965 l 257
+ 150 1551 l 257
+ 90 1551 l 257
+90 1024 m 257
+ 90 964 l 257
+ 1067 964 l 261
+ 1067 1024 l 261
+ 90 1024 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni092C_uni094D.half
+Encoding: 65611 -1 578
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-2 1550 m 257
+ -2 1491 l 257
+ 1026 1491 l 257
+ 1026 1550 l 257
+ -2 1550 l 257
+325 1021 m 261
+ 325 232 l 261
+ 385 232 l 261
+ 385 1021 l 261
+ 325 1021 l 261
+326 264 m 261
+ 326 204 l 261
+ 1061 204 l 261
+ 1061 264 l 261
+ 326 264 l 261
+350 926 m 261
+ 976 259 l 261
+ 1064 262 l 261
+ 388 968 l 261
+ 350 926 l 261
+324 1025 m 261
+ 324 964 l 261
+ 862 964 l 261
+ 862 1025 l 261
+ 324 1025 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni092D_uni094D.half
+Encoding: 65612 -1 579
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+72 61 m 1
+ 72 0 l 1
+ 308 0 l 1
+ 308 61 l 1
+ 72 61 l 1
+72 320 m 1
+ 72 0 l 1
+ 140 0 l 1
+ 140 320 l 1
+ 72 320 l 1
+562 1551 m 257
+ 562 1492 l 257
+ 1007 1492 l 257
+ 1007 1551 l 257
+ 562 1551 l 257
+17 1552 m 257
+ 17 1099 l 257
+ 77 1099 l 257
+ 77 1552 l 257
+ 17 1552 l 257
+43 1552 m 257
+ 43 1491 l 257
+ 316 1491 l 257
+ 316 1552 l 257
+ 43 1552 l 257
+270 1551 m 257
+ 270 1 l 257
+ 330 1 l 257
+ 330 1551 l 257
+ 270 1551 l 257
+76 333 m 257
+ 76 273 l 257
+ 1053 273 l 261
+ 1053 333 l 261
+ 76 333 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni092E_uni094D.half
+Encoding: 65613 -1 580
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+72 61 m 1
+ 72 0 l 1
+ 308 0 l 1
+ 308 61 l 1
+ 72 61 l 1
+72 320 m 1
+ 72 0 l 1
+ 140 0 l 1
+ 140 320 l 1
+ 72 320 l 1
+-0.5 1548 m 257
+ -0.5 1488 l 257
+ 1024.5 1488 l 257
+ 1024.5 1548 l 257
+ -0.5 1548 l 257
+287.5 1538 m 257
+ 287.5 0 l 257
+ 346.5 0 l 257
+ 346.5 1538 l 257
+ 287.5 1538 l 257
+93.5 333 m 257
+ 93.5 273 l 257
+ 1070.5 273 l 261
+ 1070.5 333 l 261
+ 93.5 333 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni092F_uni094D.half
+Encoding: 65614 -1 581
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-8.5 1550 m 257
+ -8.5 1489 l 257
+ 1032.5 1489 l 257
+ 1032.5 1550 l 257
+ -8.5 1550 l 257
+334.5 1490 m 261
+ 526.5 847 l 261
+ 584.5 846 l 261
+ 387.5 1542 l 261
+ 334.5 1490 l 261
+526.5 847 m 261
+ 337.5 472 l 261
+ 397.5 450 l 261
+ 584.5 846 l 261
+ 526.5 847 l 261
+368.5 524 m 261
+ 337.5 472 l 261
+ 1040.5 199 l 261
+ 1063.5 256 l 261
+ 368.5 524 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni0930_uni094D.half
+Encoding: 65615 -1 582
+Width: 1024
+VWidth: 0
+Flags: HW
+HStem: 790 12<727.5 787.5 354.5 787.5>
+LayerCount: 2
+Fore
+SplineSet
+1.5 1552 m 257
+ 1.5 1492 l 257
+ 1022.5 1492 l 257
+ 1022.5 1552 l 257
+ 1.5 1552 l 257
+1024 956 m 257
+ 787.5 802 l 257
+ 787.5 742 l 257
+ 1042 869 l 257
+ 1024 956 l 257
+787.5 802 m 257
+ 354.5 802 l 257
+ 361 747 l 257
+ 787.5 742 l 257
+ 787.5 802 l 257
+135 878 m 257
+ 361 747 l 257
+ 354.5 802 l 257
+ 182 912 l 257
+ 135 878 l 257
 EndSplineSet
 EndChar
 EndChars

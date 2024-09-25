@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1726848420
-ModificationTime: 1727191424
+ModificationTime: 1727251251
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -62,13 +62,13 @@ DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.600" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)+AAoA +AAoA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL+AAoACgAA" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
 ."
-Encoding: UnicodeBmp
+Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 65546 13 5
+WinInfo: 65559 13 5
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -81,7 +81,7 @@ Grid
 1866 935.2 m 0
  -2230 935.2 l 1024
 EndSplineSet
-BeginChars: 65613 576
+BeginChars: 65623 583
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -15035,10 +15035,20 @@ GlifName: bha-deva
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+0 169 m 5
+ 0 0 l 5
+ 462 0 l 5
+ 462 169 l 5
+ 0 169 l 5
+0 473 m 5
+ 0 0 l 5
+ 186 0 l 5
+ 186 473 l 5
+ 0 473 l 5
 586 1548 m 257
  586 1348 l 257
  1031 1348 l 257
@@ -15060,8 +15070,8 @@ SplineSet
  359 1538 l 257
  67 1538 l 257
 294 1538 m 257
- 294 273 l 257
- 493 273 l 257
+ 294 5 l 257
+ 493 5 l 257
  493 1538 l 257
  294 1538 l 257
 100 473 m 257
@@ -15080,7 +15090,7 @@ GlifName: uni092D__uni094D_.haln
 Width: 1024
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 195 -1 N 1 0 0 1 1000 0 2
@@ -15094,10 +15104,20 @@ GlifName: ma-deva
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+0 169 m 1
+ 0 0 l 1
+ 462 0 l 1
+ 462 169 l 1
+ 0 169 l 1
+0 473 m 1
+ 0 0 l 1
+ 186 0 l 1
+ 186 473 l 1
+ 0 473 l 1
 6 1548 m 257
  6 1348 l 257
  1031 1348 l 257
@@ -15109,8 +15129,8 @@ SplineSet
  955 1543 l 257
  756 1543 l 257
 294 1538 m 257
- 294 302 l 257
- 493 302 l 257
+ 294 3 l 257
+ 493 3 l 257
  493 1538 l 257
  294 1538 l 257
 100 473 m 257
@@ -15129,7 +15149,7 @@ GlifName: uni092E__uni094D_.haln
 Width: 1024
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 195 -1 N 1 0 0 1 1000 0 2
@@ -19952,6 +19972,7 @@ EndChar
 
 StartChar: uni091F_uni094D.half
 Encoding: 65598 -1 565
+GlifName: uni091F__uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20000,6 +20021,7 @@ EndChar
 
 StartChar: uni0920_uni094D.half
 Encoding: 65599 -1 566
+GlifName: uni0920_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20053,6 +20075,7 @@ EndChar
 
 StartChar: uni0921_uni094D.half
 Encoding: 65600 -1 567
+GlifName: uni0921_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20106,6 +20129,7 @@ EndChar
 
 StartChar: uni0922_uni094D.half
 Encoding: 65601 -1 568
+GlifName: uni0922_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20164,6 +20188,7 @@ EndChar
 
 StartChar: uni0923_uni094D.half
 Encoding: 65602 -1 569
+GlifName: uni0923_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20198,6 +20223,7 @@ EndChar
 
 StartChar: uni0924_uni094D.half
 Encoding: 65603 -1 570
+GlifName: uni0924_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20226,6 +20252,7 @@ EndChar
 
 StartChar: uni0925_uni094D.half
 Encoding: 65604 -1 571
+GlifName: uni0925_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20269,6 +20296,7 @@ EndChar
 
 StartChar: uni0926_uni094D.half
 Encoding: 65605 -1 572
+GlifName: uni0926_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20321,6 +20349,7 @@ EndChar
 
 StartChar: uni0927_uni094D.half
 Encoding: 65606 -1 573
+GlifName: uni0927_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20358,6 +20387,7 @@ EndChar
 
 StartChar: uni0928_uni094D.half
 Encoding: 65607 -1 574
+GlifName: uni0928_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20385,6 +20415,7 @@ EndChar
 
 StartChar: uni0929_uni094D.half
 Encoding: 65608 -1 575
+GlifName: uni0929_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
@@ -20412,6 +20443,257 @@ SplineSet
  820.5 -304 l 261
  818.5 -57 l 261
  553.5 -57 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni092A_uni094D.half
+Encoding: 65609 -1 576
+GlifName: uni092A__uni094D_.half
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-30 1549 m 257
+ -30 1349 l 257
+ 1031 1349 l 257
+ 1031 1549 l 257
+ -30 1549 l 257
+94 1551 m 257
+ 94 837 l 257
+ 295 837 l 257
+ 295 1551 l 257
+ 94 1551 l 257
+94 1025 m 257
+ 94 825 l 257
+ 1057 825 l 261
+ 1057 1025 l 261
+ 94 1025 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni092B_uni094D.half
+Encoding: 65610 -1 577
+GlifName: uni092B__uni094D_.half
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-30 1549 m 257
+ -30 1349 l 257
+ 1031 1349 l 257
+ 1031 1549 l 257
+ -30 1549 l 257
+513 1539 m 257
+ 513 2 l 257
+ 713 2 l 257
+ 713 1539 l 257
+ 513 1539 l 257
+94 1551 m 257
+ 94 837 l 257
+ 295 837 l 257
+ 295 1551 l 257
+ 94 1551 l 257
+94 1024 m 257
+ 94 824 l 257
+ 1071 824 l 261
+ 1071 1024 l 261
+ 94 1024 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni092C_uni094D.half
+Encoding: 65611 -1 578
+GlifName: uni092C__uni094D_.half
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-1 1550 m 257
+ -1 1351 l 257
+ 1027 1351 l 257
+ 1027 1550 l 257
+ -1 1550 l 257
+326 1021 m 261
+ 326 232 l 261
+ 526 232 l 261
+ 526 1021 l 261
+ 326 1021 l 261
+327 404 m 261
+ 327 204 l 261
+ 1062 204 l 261
+ 1062 404 l 261
+ 327 404 l 261
+351 926 m 261
+ 781 224 l 261
+ 951 328 l 261
+ 521 1030 l 261
+ 351 926 l 261
+325 1037 m 261
+ 325 820 l 261
+ 863 820 l 261
+ 863 1037 l 261
+ 325 1037 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni092D_uni094D.half
+Encoding: 65612 -1 579
+GlifName: uni092D__uni094D_.half
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 169 m 1
+ 0 0 l 1
+ 462 0 l 1
+ 462 169 l 1
+ 0 169 l 1
+0 473 m 1
+ 0 0 l 1
+ 186 0 l 1
+ 186 473 l 1
+ 0 473 l 1
+586 1548 m 257
+ 586 1348 l 257
+ 1031 1348 l 257
+ 1031 1548 l 257
+ 586 1548 l 257
+41 1532 m 257
+ 41 1079 l 257
+ 241 1079 l 257
+ 241 1532 l 257
+ 41 1532 l 257
+67 1538 m 257
+ 67 1338 l 257
+ 359 1338 l 257
+ 359 1538 l 257
+ 67 1538 l 257
+294 1538 m 257
+ 294 5 l 257
+ 493 5 l 257
+ 493 1538 l 257
+ 294 1538 l 257
+100 473 m 257
+ 100 273 l 257
+ 1027 273 l 261
+ 1027 473 l 261
+ 100 473 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni092E_uni094D.half
+Encoding: 65613 -1 580
+GlifName: uni092E__uni094D_.half
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 169 m 1
+ 0 0 l 1
+ 462 0 l 1
+ 462 169 l 1
+ 0 169 l 1
+0 473 m 1
+ 0 0 l 1
+ 186 0 l 1
+ 186 473 l 1
+ 0 473 l 1
+6 1548 m 257
+ 6 1348 l 257
+ 1031 1348 l 257
+ 1031 1548 l 257
+ 6 1548 l 257
+294 1538 m 257
+ 294 3 l 257
+ 493 3 l 257
+ 493 1538 l 257
+ 294 1538 l 257
+100 473 m 257
+ 100 273 l 257
+ 1027 273 l 261
+ 1027 473 l 261
+ 100 473 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni092F_uni094D.half
+Encoding: 65614 -1 581
+GlifName: uni092F__uni094D_.half
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-18 1550 m 257
+ -18 1351 l 257
+ 1023 1351 l 257
+ 1023 1550 l 257
+ -18 1550 l 257
+375 1484 m 261
+ 568 847 l 261
+ 778 846 l 261
+ 569 1536 l 261
+ 375 1484 l 261
+568 847 m 261
+ 377 472 l 261
+ 540 405 l 261
+ 778 846 l 261
+ 568 847 l 261
+463 640 m 261
+ 378 472 l 261
+ 991 199 l 261
+ 1068 372 l 261
+ 463 640 l 261
+EndSplineSet
+EndChar
+
+StartChar: uni0930_uni094D.half
+Encoding: 65615 -1 582
+GlifName: uni0930_uni094D_.half
+Width: 1024
+VWidth: 0
+GlyphClass: 3
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+-1 1549 m 257
+ -1 1350 l 257
+ 1020 1350 l 257
+ 1020 1549 l 257
+ -1 1549 l 257
+1024 935.200195312 m 257
+ 696 802 l 257
+ 696 603 l 257
+ 1024 778 l 257
+ 1024 935.200195312 l 257
+696 802 m 257
+ 352 802 l 257
+ 346 604 l 257
+ 696 603 l 257
+ 696 802 l 257
+50 935.200195312 m 257
+ 346 604 l 257
+ 352 802 l 257
+ 246 935.200195312 l 257
+ 50 935.200195312 l 257
 EndSplineSet
 EndChar
 EndChars
