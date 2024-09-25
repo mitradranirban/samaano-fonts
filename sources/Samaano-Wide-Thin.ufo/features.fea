@@ -44,30 +44,16 @@ lookup halfHalfFormsinDevanagarilookup0 {
     sub \uni0917 \uni094D  by \uni0917_uni094D.half;
     sub \uni0918 \uni094D  by \uni0918_uni094D.half;
     sub \uni0919 \uni094D  by \uni0919_uni094D.half;
-    sub \uni091F \uni094D  by \uni091F_uni094D.half;
-    sub \uni0920 \uni094D  by \uni0920_uni094D.half;
-    sub \uni0921 \uni094D  by \uni0921_uni094D.half;
-    sub \uni0922 \uni094D  by \uni0922_uni094D.half;
-    sub \uni0923 \uni094D  by \uni0923_uni094D.half;
-    sub \uni0924 \uni094D  by \uni0924_uni094D.half;
-    sub \uni0925 \uni094D  by \uni0925_uni094D.half;
-    sub \uni0926 \uni094D  by \uni0926_uni094D.half;
-    sub \uni0927 \uni094D  by \uni0927_uni094D.half;
-    sub \uni0928 \uni094D  by \uni0928_uni094D.half;
-    sub \uni0929 \uni094D  by \uni0929_uni094D.half;
-    sub \uni092A \uni094D  by \uni092A_uni094D.half;
-    sub \uni092B \uni094D  by \uni092A_uni094D.half;
-    sub \uni092C \uni094D  by \uni092C_uni094D.half;
-    sub \uni092D\uni094D  by \uni092D_uni094D.half;
-    sub \uni092E \uni094D  by \uni092E_uni094D.half;
-    sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni091A \uni094D  by \uni091A_uni094D.half;
+    sub \uni091B \uni094D  by \uni091B_uni094D.half;
+    sub \uni091C \uni094D  by \uni091C_uni094D.half;
+    sub \uni091D \uni094D  by \uni091D_uni094D.half;
+    sub \uni091E \uni094D  by \uni091E_uni094D.half;
 } halfHalfFormsinDevanagarilookup0;
 
 lookup halnHalantFormsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0915 \uni094D  by \uni0915_uni094D.haln;
-    sub \uni0915_uni094D_uni0937.akhn \uni094D  by \uni0915_uni094D_uni0937_uni094D;
     sub \uni0916 \uni094D  by \uni0916_uni094D.haln;
     sub \uni0917 \uni094D  by \uni0917_uni094D.haln;
     sub \uni0918 \uni094D  by \uni0918_uni094D.haln;
@@ -75,7 +61,6 @@ lookup halnHalantFormsinDevanagarilookup0 {
     sub \uni091A \uni094D  by \uni091A_uni094D.haln;
     sub \uni091B \uni094D  by \uni091B_uni094D.haln;
     sub \uni091C \uni094D  by \uni091C_uni094D.haln;
-    sub \uni091C_uni094D_uni091E.akhn \uni094D  by \uni091C_uni094D_uni091E_uni094D;
     sub \uni091D \uni094D  by \uni091D_uni094D.haln;
     sub \uni091E \uni094D  by \uni091E_uni094D.haln;
     sub \uni091F \uni094D  by \uni091F_uni094D.haln;
@@ -121,20 +106,6 @@ lookup dligDiscretionaryLigatureslookup0 {
     sub \f \l  by \uniFB02;
 } dligDiscretionaryLigatureslookup0;
 
-lookup sub_ligature_halfdeva_0 {
-  lookupflag 0;
-    sub \uni0915 \uni094D  by \uni0915_uni094D.half;
-    sub \uni0916 \uni094D  by \uni0916_uni094D.half;
-    sub \uni0917 \uni094D  by \uni0917_uni094D.half;
-    sub \uni0918 \uni094D  by \uni0918_uni094D.half;
-    sub \uni0919 \uni094D  by \uni0919_uni094D.half;
-    sub \uni091A \uni094D  by \uni091A_uni094D.half;
-    sub \uni091B \uni094D  by \uni091B_uni094D.half;
-    sub \uni091C \uni094D  by \uni091C_uni094D.half;
-    sub \uni091D \uni094D  by \uni091D_uni094D.half;
-    sub \uni091E \uni094D  by \uni091E_uni094D.half;
-} sub_ligature_halfdeva_0;
-
 feature nukt {
 
  script deva;
@@ -168,7 +139,6 @@ feature half {
  script deva;
      language dflt ;
       lookup halfHalfFormsinDevanagarilookup0;
-      lookup sub_ligature_halfdeva_0;
 } half;
 
 feature haln {
@@ -228,25 +198,31 @@ feature dlig {
 	\uni0157 \uni0162 \uni0163 \uni0192 \uni0218 \uni0219 \uni021A \uni021B \uni0237 
 	\uni02C9 \uni02CA \uni02CB \uni0903 \uni0904 \uni0905 \uni0906 \uni0907 \uni0908 
 	\uni0909 \uni090A \uni090B \uni090C \uni090D \uni090E \uni090F \uni0910 \uni0911 
-	\uni0912 \uni0913 \uni0914 \uni0915 \uni0915_uni094D.half 
-	\uni0915_uni094D_uni0937_uni094D \uni0916 \uni0916_uni094D.half \uni0917 
-	\uni0918 \uni0919 \uni091A \uni091B \uni091C \uni091C_uni094D_uni091E_uni094D 
+	\uni0912 \uni0913 \uni0914 \uni0915 \uni0915_uni094D.half \uni0916 
+	\uni0916_uni094D.half \uni0917 \uni0918 \uni0919 \uni091A \uni091B \uni091C 
 	\uni091D \uni091E \uni091F \uni0920 \uni0921 \uni0922 \uni0923 \uni0924 \uni0925 
 	\uni0926 \uni0927 \uni0928 \uni0929 \uni092A \uni092B \uni092C \uni092D \uni092E 
 	\uni092F \uni0930 \uni0930_uni094D.haln \uni0931 \uni0932 \uni0933 \uni0934 
 	\uni0935 \uni0936 \uni0936_uni094D.haln \uni0937 \uni0938 
 	\uni0938_uni094D.haln \uni0939 \uni093B \uni093D \uni093E \uni093F \uni0940 
-	\uni0949 \uni094A \uni094B \uni094C \uni094E \uni094F \uni0950 \uni0958 \uni0959 
-	\uni095A \uni095A_uni094D.haln \uni095B \uni095C \uni095D \uni095E \uni095F 
-	\uni0960 \uni0961 \uni0964 \uni0965 \uni0966 \uni0967 \uni0968 \uni0969 \uni096A 
-	\uni096B \uni096C \uni096D \uni096E \uni096F \uni0970 \uni0971 \uni0972 \uni0973 
-	\uni0974 \uni0975 \uni0976 \uni0977 \uni0978 \uni0979 \uni097A \uni097B \uni097C 
-	\uni097D \uni097E \uni097F \uni1E9E \uni200C \uni200D \uni2044 \uni20B9 \uni25CC 
+	\uni0949 \uni094A \uni094B \uni094C \glyph094D \uni094E \uni094F \uni0950 
+	\uni0958 \uni0959 \uni095A \uni095A_uni094D.haln \uni095B \uni095C \uni095D 
+	\uni095E \uni095F \uni0960 \uni0961 \uni0964 \uni0965 \uni0966 \uni0967 \uni0968 
+	\uni0969 \uni096A \uni096B \uni096C \uni096D \uni096E \uni096F \uni0970 \uni0971 
+	\uni0972 \uni0973 \uni0974 \uni0975 \uni0976 \uni0977 \uni0978 \uni0979 \uni097A 
+	\uni097B \uni097C \uni097D \uni097E \uni097F \uni1E9E \uni2044 \uni20B9 \uni25CC 
 	\uogonek \uring \utilde \v \w \wacute \wcircumflex \wdieresis \wgrave \x \y \yacute 
-	\ycircumflex \ydieresis \yen \ygrave \z \zacute \zcaron \zdotaccent \zero ];
+	\ycircumflex \ydieresis \yen \ygrave \z \zacute \zcaron \zdotaccent \zero 
+	\uni200C \uni200D \uni0915_uni094D_uni0937_uni094D 
+	\uni091C_uni094D_uni091E_uni094D \quotereversed \uni091F_uni094D.half 
+	\uni0920_uni094D.half \uni0921_uni094D.half \uni0922_uni094D.half 
+	\uni0923_uni094D.half \uni0924_uni094D.half \uni0925_uni094D.half 
+	\uni0926_uni094D.half \uni0927_uni094D.half \uni0928_uni094D.half 
+	\uni0929_uni094D.half \uni092A_uni094D.half \uni092B_uni094D.half 
+	\uni092C_uni094D.half \uni092D_uni094D.half \uni092E_uni094D.half 
+	\uni092F_uni094D.half \uni0930_uni094D.half ];
 @GDEF_Ligature = [\uni0915_uni094D.haln \uni0915_uni094D_uni0937.akhn 
-	\uni0916_uni094D.haln \uni0917_uni094D.half \uni0917_uni094D.haln 
-	\uni0918_uni094D.half \uni0918_uni094D.haln \uni0919_uni094D.half 
+	\uni0916_uni094D.haln \uni0917_uni094D.haln \uni0918_uni094D.haln 
 	\uni0919_uni094D.haln \uni091A_uni094D.haln \uni091B_uni094D.haln 
 	\uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091D_uni094D.haln 
 	\uni091E_uni094D.haln \uni091F_uni094D.haln \uni0920_uni094D.haln 
@@ -260,20 +236,14 @@ feature dlig {
 	\uni0939_uni094D.haln \uni0958_uni094D.haln \uni0959_uni094D.haln 
 	\uni095B_uni094D.haln \uni095C_uni094D.haln \uni095D_uni094D.haln 
 	\uni095E_uni094D.haln \uni095F_uni094D.haln \uniFB01 \uniFB02 
+	\uni0917_uni094D.half \uni0918_uni094D.half \uni0919_uni094D.half 
 	\uni091A_uni094D.half \uni091B_uni094D.half \uni091C_uni094D.half 
-	\uni091D_uni094D.half \uni091E_uni094D.half \uni091F_uni094D.half 
-	\uni0920_uni094D.half \uni0921_uni094D.half \uni0922_uni094D.half 
-	\uni0923_uni094D.half \uni0924_uni094D.half \uni0925_uni094D.half 
-	\uni0926_uni094D.half \uni0927_uni094D.half \uni0928_uni094D.half 
-	\uni0929_uni094D.half \uni092A_uni094D.half \uni092B_uni094D.half 
-	\uni092C_uni094D.half \uni092D_uni094D.half \uni092E_uni094D.half 
-	\uni092F_uni094D.half \uni0930_uni094D.half ];
-@GDEF_Mark = [\acutecomb \glyph094D \gravecomb \tildecomb \uni0302 \uni0304 
-	\uni0306 \uni0307 \uni0308 \uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 
-	\uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf \uni0930_uni094D.rphf 
-	\uni093A \uni093C \uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 \uni0947 
-	\uni0948 \uni094D \uni0951 \uni0952 \uni0953 \uni0954 \uni0955 \uni0956 \uni0957 
-	\uni0962 \uni0963 ];
+	\uni091D_uni094D.half \uni091E_uni094D.half ];
+@GDEF_Mark = [\acutecomb \gravecomb \tildecomb \uni0302 \uni0304 \uni0306 \uni0307 
+	\uni0308 \uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 \uni0900 \uni0901 
+	\uni0902 \uni0930_uni094D.blwf \uni0930_uni094D.rphf \uni093A \uni093C 
+	\uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 \uni0947 \uni0948 \uni094D 
+	\uni0951 \uni0952 \uni0953 \uni0954 \uni0955 \uni0956 \uni0957 \uni0962 \uni0963 ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
