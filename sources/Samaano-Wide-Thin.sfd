@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1726842257
-ModificationTime: 1727263803
+ModificationTime: 1727335871
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
@@ -57,13 +57,13 @@ Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigaturesl
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.002" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using rectangular components only" "" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
-Encoding: Custom
+Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65572 13 5
+WinInfo: 65559 13 5
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -78,7 +78,7 @@ Grid
 -1024 1023 m 0
  3072 1023 l 1024
 EndSplineSet
-BeginChars: 65628 592
+BeginChars: 65624 610
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -6119,8 +6119,8 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 298 771 N 1 0 0 1 700.5 -696 2
-Refer: 237 111 N 1 0 0 1 -164.5 0 2
+Refer: 298 771 S 1 0 0 1 105.5 -696 2
+Refer: 237 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: p
@@ -6866,11 +6866,11 @@ SplineSet
  1902.5 961 l 257
  1902.5 1022 l 257
  145.5 1022 l 257
-360.5 989 m 257
- 360.5 -2 l 257
- 419.5 -2 l 257
- 419.5 989 l 257
- 360.5 989 l 257
+872.5 989 m 261
+ 872.5 -2 l 261
+ 931.5 -2 l 261
+ 931.5 989 l 261
+ 872.5 989 l 261
 1842.5 976 m 257
  1842.5 650 l 257
  1902.5 650 l 257
@@ -16713,7 +16713,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65616
+StartChar: uni0932_uni094D.half
 Encoding: 65616 -1 584
 Width: 2048
 VWidth: 0
@@ -16726,30 +16726,25 @@ SplineSet
  2053.5 1490 l 257
  2053.5 1550 l 257
  -5.5 1550 l 257
-1928.5 1544 m 257
- 1868.5 1544 l 257
- 1868.5 2 l 257
- 1928.5 2 l 257
- 1928.5 1544 l 257
-37.5 750 m 257
- 37.5 195 l 257
- 97.5 195 l 257
- 97.5 750 l 257
- 37.5 750 l 257
-37.5 782 m 257
- 37.5 722 l 257
- 1897.5 722 l 257
- 1897.5 782 l 257
- 37.5 782 l 257
-953.5 753 m 257
- 953.5 374 l 257
- 1013.5 374 l 257
- 1013.5 753 l 257
- 953.5 753 l 257
+237.5 750 m 261
+ 237.5 195 l 261
+ 297.5 195 l 261
+ 297.5 750 l 261
+ 237.5 750 l 261
+237.5 782 m 261
+ 237.5 722 l 261
+ 2097.5 722 l 261
+ 2097.5 782 l 261
+ 237.5 782 l 261
+1153.5 753 m 261
+ 1153.5 374 l 261
+ 1213.5 374 l 261
+ 1213.5 753 l 261
+ 1153.5 753 l 261
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65617
+StartChar: uni0933_uni094D.half
 Encoding: 65617 -1 585
 Width: 2048
 VWidth: 0
@@ -16762,11 +16757,11 @@ SplineSet
  2053.5 1492 l 257
  2053.5 1553 l 257
  -5.5 1553 l 257
-1928.5 1544 m 257
- 1868.5 1544 l 257
+1928.5 782 m 261
+ 1868.5 782 l 261
  1868.5 194 l 257
  1928.5 194 l 257
- 1928.5 1544 l 257
+ 1928.5 782 l 261
 37.5 760 m 257
  37.5 194 l 257
  97.5 194 l 257
@@ -16790,7 +16785,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65618
+StartChar: uni0934_uni094D.half
 Encoding: 65618 -1 586
 Width: 2048
 VWidth: 0
@@ -16803,11 +16798,11 @@ SplineSet
  2059 1492 l 257
  2059 1553 l 257
  0 1553 l 257
-1934 1544 m 257
- 1874 1544 l 257
+1934 785 m 261
+ 1874 785 l 261
  1874 194 l 257
  1934 194 l 257
- 1934 1544 l 257
+ 1934 785 l 261
 43 760 m 257
  43 194 l 257
  103 194 l 257
@@ -16836,7 +16831,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65619
+StartChar: uni0935_uni094D.half
 Encoding: 65619 -1 587
 Width: 2048
 VWidth: 0
@@ -16849,30 +16844,25 @@ SplineSet
  2048.5 1490 l 257
  2048.5 1550 l 257
  -0.5 1550 l 257
-1823.5 1519 m 257
- 1823.5 -25 l 257
- 1883.5 -25 l 257
- 1883.5 1519 l 257
- 1823.5 1519 l 257
-76.5 1021 m 257
- 76.5 232 l 257
- 136.5 232 l 257
- 136.5 1021 l 257
- 76.5 1021 l 257
-77.5 264 m 257
- 77.5 204 l 257
- 1833.5 204 l 257
- 1833.5 264 l 257
- 77.5 264 l 257
-75.5 1026 m 257
- 75.5 965 l 257
- 1125.5 965 l 257
- 1125.5 1026 l 257
- 75.5 1026 l 257
+376.5 1021 m 261
+ 376.5 232 l 261
+ 436.5 232 l 261
+ 436.5 1021 l 261
+ 376.5 1021 l 261
+377.5 264 m 261
+ 377.5 204 l 261
+ 2133.5 204 l 261
+ 2133.5 264 l 261
+ 377.5 264 l 261
+375.5 1026 m 261
+ 375.5 965 l 261
+ 1425.5 965 l 261
+ 1425.5 1026 l 261
+ 375.5 1026 l 261
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65620
+StartChar: uni0936_uni094D.half
 Encoding: 65620 -1 588
 Width: 2048
 VWidth: 0
@@ -16880,45 +16870,35 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-1221 1554 m 257
- 1221 1494 l 257
- 1998 1494 l 257
- 1998 1554 l 257
- 1221 1554 l 257
-1887 1520 m 257
- 1887 -4 l 257
- 1949 -4 l 257
- 1949 1520 l 257
- 1887 1520 l 257
-50 1543 m 257
- 50 1224 l 257
- 110 1224 l 257
- 110 1543 l 257
- 50 1543 l 257
-50 1554 m 257
- 50 1494 l 257
- 1033 1494 l 257
- 1033 1554 l 257
- 50 1554 l 257
-1009 1554 m 257
- 1009 963 l 257
- 1069 963 l 257
- 1069 1554 l 257
- 1009 1554 l 257
-113 1023 m 257
- 113 963 l 257
- 1060 963 l 257
- 1060 1023 l 257
- 113 1023 l 257
-113 963 m 257
- 942 8 l 257
- 999 28 l 257
- 191 963 l 257
- 113 963 l 257
+350 1543 m 261
+ 350 1224 l 261
+ 410 1224 l 261
+ 410 1543 l 261
+ 350 1543 l 261
+350 1554 m 261
+ 350 1494 l 261
+ 1333 1494 l 261
+ 1333 1554 l 261
+ 350 1554 l 261
+1309 1554 m 261
+ 1309 963 l 261
+ 1369 963 l 261
+ 1369 1554 l 261
+ 1309 1554 l 261
+413 1023 m 261
+ 413 963 l 261
+ 1360 963 l 261
+ 1360 1023 l 261
+ 413 1023 l 261
+413 963 m 261
+ 1242 8 l 261
+ 1299 28 l 261
+ 491 963 l 261
+ 413 963 l 261
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65621
+StartChar: uni0937_uni094D.half
 Encoding: 65621 -1 589
 Width: 2048
 VWidth: 0
@@ -16931,30 +16911,25 @@ SplineSet
  2052 1491 l 257
  2052 1552 l 257
  -4 1552 l 257
-1851 1539 m 257
- 1851 2 l 257
- 1912 2 l 257
- 1912 1539 l 257
- 1851 1539 l 257
-98 1551 m 257
- 98 965 l 257
- 158 965 l 257
- 158 1551 l 257
- 98 1551 l 257
-98 1025 m 257
- 98 966 l 257
- 1878 966 l 257
- 1878 1025 l 257
- 98 1025 l 257
-98 1529 m 257
- 1766 973 l 257
- 1913 971 l 257
- 329 1522 l 257
- 98 1529 l 257
+398 1551 m 261
+ 398 965 l 261
+ 458 965 l 261
+ 458 1551 l 261
+ 398 1551 l 261
+398 1025 m 261
+ 398 966 l 261
+ 2178 966 l 261
+ 2178 1025 l 261
+ 398 1025 l 261
+398 1529 m 261
+ 2066 973 l 261
+ 2213 971 l 261
+ 629 1522 l 261
+ 398 1529 l 261
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65622
+StartChar: uni0938_uni094D.half
 Encoding: 65622 -1 590
 Width: 2048
 VWidth: 0
@@ -16967,34 +16942,29 @@ SplineSet
  2049 1491 l 257
  2049 1550 l 257
  -1 1550 l 257
-1876 1544 m 257
- 1876 2 l 257
- 1935 2 l 257
- 1935 1544 l 257
- 1876 1544 l 257
-157 1509 m 257
- 157 719 l 257
- 218 719 l 257
- 218 1509 l 257
- 157 1509 l 257
-157 720 m 257
- 157 659 l 257
- 1883 659 l 257
- 1883 720 l 257
- 157 720 l 257
-157 659 m 257
- 630 -3 l 257
- 697 -1 l 257
- 221 659 l 257
- 157 659 l 257
+409 1509 m 261
+ 409 719 l 261
+ 470 719 l 261
+ 470 1509 l 261
+ 409 1509 l 261
+409 720 m 261
+ 409 659 l 261
+ 2135 659 l 261
+ 2135 720 l 261
+ 409 720 l 261
+409 659 m 261
+ 882 -3 l 261
+ 949 -1 l 261
+ 473 659 l 261
+ 409 659 l 261
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65623
+StartChar: uni0939_uni094D.half
 Encoding: 65623 -1 591
 Width: 2048
 VWidth: 0
-Flags: HW
+Flags: HWO
 LayerCount: 2
 Fore
 SplineSet
@@ -17018,15 +16988,10 @@ SplineSet
  935.5 784 l 257
  934.5 1188 l 257
  853.5 1188 l 257
-1541.5 789 m 257
- 1541.5 577 l 257
- 1601.5 577 l 257
- 1601.5 789 l 257
- 1541.5 789 l 257
 141.5 840 m 257
  141.5 779 l 257
- 1601.5 781 l 257
- 1601.5 841 l 257
+ 2129.5 781 l 261
+ 2129.5 841 l 261
  141.5 840 l 257
 141.5 793 m 257
  141.5 215 l 257
@@ -17039,6 +17004,202 @@ SplineSet
  754.5 53 l 257
  201.5 216 l 257
 EndSplineSet
+EndChar
+
+StartChar: dotbelowcomb
+Encoding: 803 803 592
+Width: 2048
+VWidth: -450
+Flags: HW
+HStem: -451 247<891.5 1156.5>
+VStem: 892 265
+LayerCount: 2
+Fore
+SplineSet
+984 -290 m 257
+ 984 -365 l 257
+ 1064 -365 l 257
+ 1064 -290 l 257
+ 984 -290 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni0331
+Encoding: 817 817 593
+Width: 2048
+VWidth: -1800
+Flags: HW
+HStem: -248 78<744 1304>
+VStem: 744 560<-248 -170 -248 -170>
+LayerCount: 2
+Fore
+SplineSet
+744 -204 m 257
+ 744 -248 l 257
+ 1304 -248 l 257
+ 1304 -204 l 257
+ 744 -204 l 257
+EndSplineSet
+EndChar
+
+StartChar: uni1E0D
+Encoding: 7693 7693 594
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 592 803 S 1 0 0 1 118 164 2
+Refer: 158 100 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E35
+Encoding: 7733 7733 595
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 593 817 N 1 0 0 1 6 82 2
+Refer: 218 107 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E37
+Encoding: 7735 7735 596
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 592 803 N 1 0 0 1 0 169 2
+Refer: 219 108 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E39
+Encoding: 7737 7737 597
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 336 772 N 1 0 0 1 -357 123 2
+Refer: 596 7735 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E3B
+Encoding: 7739 7739 598
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 593 817 N 1 0 0 1 0 83 2
+Refer: 219 108 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E43
+Encoding: 7747 7747 599
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 592 803 N 1 0 0 1 36.5 166 2
+Refer: 226 109 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E45
+Encoding: 7749 7749 600
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 338 775 N 1 0 0 1 0 -488 2
+Refer: 231 110 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E47
+Encoding: 7751 7751 601
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 592 803 S 1 0 0 1 208 166 2
+Refer: 231 110 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E49
+Encoding: 7753 7753 602
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 593 817 S 1 0 0 1 208 80 2
+Refer: 231 110 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E4D
+Encoding: 7757 7757 603
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 121 769 N 1 0 0 1 73 688 2
+Refer: 253 245 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E5B
+Encoding: 7771 7771 604
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 592 803 N 1 0 0 1 -122 166 2
+Refer: 275 114 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E5D
+Encoding: 7773 7773 605
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 336 772 N 1 0 0 1 0 -403 2
+Refer: 604 7771 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E5F
+Encoding: 7775 7775 606
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 593 817 N 1 0 0 1 -122 80 2
+Refer: 275 114 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E6D
+Encoding: 7789 7789 607
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 592 803 N 1 0 0 1 409.5 168 2
+Refer: 292 116 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E63
+Encoding: 7779 7779 608
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 592 803 N 1 0 0 1 -1.5 168 2
+Refer: 280 115 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni1E8F
+Encoding: 7823 7823 609
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 338 775 N 1 0 0 1 0 -488 2
+Refer: 542 121 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont

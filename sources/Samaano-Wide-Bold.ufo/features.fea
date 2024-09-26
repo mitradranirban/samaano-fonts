@@ -56,12 +56,20 @@ lookup halfHalfFormsinDevanagarilookup0 {
     sub \uni0928 \uni094D  by \uni0928_uni094D.half;
     sub \uni0929 \uni094D  by \uni0929_uni094D.half;
     sub \uni092A \uni094D  by \uni092A_uni094D.half;
-    sub \uni092B \uni094D  by \uni092A_uni094D.half;
+    sub \uni092B \uni094D  by \uni092B_uni094D.half;
     sub \uni092C \uni094D  by \uni092C_uni094D.half;
-    sub \uni092D\uni094D  by \uni092D_uni094D.half;
+    sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
     sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0932 \uni094D  by \uni0932_uni094D.half;
+    sub \uni0933 \uni094D  by \uni0933_uni094D.half;
+    sub \uni0934 \uni094D  by \uni0934_uni094D.half;
+    sub \uni0935 \uni094D  by \uni0935_uni094D.half;
+    sub \uni0936 \uni094D  by \uni0936_uni094D.half;
+    sub \uni0937 \uni094D  by \uni0937_uni094D.half;
+    sub \uni0938 \uni094D  by \uni0938_uni094D.half;
+    sub \uni0939 \uni094D  by \uni0939_uni094D.half;
 } halfHalfFormsinDevanagarilookup0;
 
 lookup halnHalantFormsinDevanagarilookup0 {
@@ -243,7 +251,10 @@ feature dlig {
 	\uni0974 \uni0975 \uni0976 \uni0977 \uni0978 \uni0979 \uni097A \uni097B \uni097C 
 	\uni097D \uni097E \uni097F \uni1E9E \uni200C \uni200D \uni2044 \uni20B9 \uni25CC 
 	\uogonek \uring \utilde \v \w \wacute \wcircumflex \wdieresis \wgrave \x \y \yacute 
-	\ycircumflex \ydieresis \yen \ygrave \z \zacute \zcaron \zdotaccent \zero ];
+	\ycircumflex \ydieresis \yen \ygrave \z \zacute \zcaron \zdotaccent \zero 
+	\uni1E0D \dotbelowcomb \uni0331 \uni1E35 \uni1E37 \uni1E39 \uni1E4D \uni1E5B 
+	\uni1E5D \uni1E6D \uni1E8F \uni1E3B \uni1E45 \uni1E47 \uni1E49 \uni1E5F \uni1E43 
+	\uni1E63 ];
 @GDEF_Ligature = [\uni0915_uni094D.haln \uni0915_uni094D_uni0937.akhn 
 	\uni0916_uni094D.haln \uni0917_uni094D.half \uni0917_uni094D.haln 
 	\uni0918_uni094D.half \uni0918_uni094D.haln \uni0919_uni094D.half 
@@ -267,7 +278,10 @@ feature dlig {
 	\uni0926_uni094D.half \uni0927_uni094D.half \uni0928_uni094D.half 
 	\uni0929_uni094D.half \uni092A_uni094D.half \uni092B_uni094D.half 
 	\uni092C_uni094D.half \uni092D_uni094D.half \uni092E_uni094D.half 
-	\uni092F_uni094D.half \uni0930_uni094D.half ];
+	\uni092F_uni094D.half \uni0930_uni094D.half \uni0932_uni094D.half 
+	\uni0933_uni094D.half \uni0934_uni094D.half \uni0935_uni094D.half 
+	\uni0936_uni094D.half \uni0937_uni094D.half \uni0938_uni094D.half 
+	\uni0939_uni094D.half ];
 @GDEF_Mark = [\acutecomb \glyph094D \gravecomb \tildecomb \uni0302 \uni0304 
 	\uni0306 \uni0307 \uni0308 \uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 
 	\uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf \uni0930_uni094D.rphf 
@@ -278,7 +292,7 @@ feature dlig {
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
 
-  LigatureCaretByPos \uniFB01 32 378;
-  LigatureCaretByPos \uniFB02 84 588;
+  LigatureCaretByPos \uniFB01 32;
+  LigatureCaretByPos \uniFB02 84;
 } GDEF;
 
