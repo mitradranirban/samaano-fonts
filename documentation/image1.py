@@ -21,12 +21,12 @@ FONT_LICENSE = "OFL v1.1"
 AUXILIARY_FONT = "Helvetica"
 AUXILIARY_FONT_SIZE = 48
 
-BIG_TEXT = "Akअक1"
+BIG_TEXT = "Aअ1१"
 BIG_TEXT_FONT_SIZE = 730
 BIG_TEXT_SIDE_MARGIN = MARGIN * 1
 BIG_TEXT_BOTTOM_MARGIN = MARGIN * 2
 
-GRID_VIEW = False # Toggle this for a grid overlay
+GRID_VIEW = True # Toggle this for a grid overlay
 
 # Handel the "--output" flag
 # For example: $ python3 documentation/image1.py --output documentation/image1.png

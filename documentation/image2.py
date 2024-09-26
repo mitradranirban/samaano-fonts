@@ -21,11 +21,11 @@ FONT_LICENSE = "OFL v1.1"
 AUXILIARY_FONT = "Helvetica"
 AUXILIARY_FONT_SIZE = 48
 
-LINE_ONE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-LINE_TWO = "abcdefghijklmnopqrstuvwxyz "
-LINE_THREE = "1234567890,.;:!@#$%^&"
-LINE_FOUR = "अइउएऐऔकचटतपरसक्ष"
-BIG_TEXT_FONT_SIZE = 160
+LINE_ONE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+LINE_TWO = "abcdefghijklmnopqrstuvwxyz"
+LINE_THREE = "अआइईउऊऋएऐओऔकखगघङचछजझञ"
+LINE_FOUR = "टठडढणतथदधनऩपफबभमयरलळशषसहक्षज्ञ"
+BIG_TEXT_FONT_SIZE = 120
 BIG_TEXT_SIDE_MARGIN = MARGIN * 1
 BIG_TEXT_BOTTOM_MARGIN = MARGIN * 5.45
 
