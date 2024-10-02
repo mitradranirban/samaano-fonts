@@ -6,7 +6,6 @@ languagesystem latn dflt;
 # GSUB 
 
 
-
 lookup nuktNuktaFormsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0928 \uni093C  by \uni0929;
@@ -192,11 +191,11 @@ lookup abvsAboveBaseSubstitutionsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0940 \uni0902  by \uni0940_uni0902.abvs;
     sub \uni0945 \uni0902  by \uni0945_uni0902.abvs;
-    sub \uni0906 \uni0902  by \uni0946_uni0902.abvs;
+    sub \uni0946 \uni0902  by \uni0946_uni0902.abvs;
     sub \uni0947 \uni0902  by \uni0947_uni0902.abvs;
     sub \uni0948 \uni0902  by \uni0948_uni0902.abvs;
     sub \uni0949 \uni0902  by \uni0949_uni0902.abvs;
-    sub \uni090A \uni0902  by \uni094A_uni0902.abvs;
+    sub \uni094A \uni0902  by \uni094A_uni0902.abvs;
     sub \uni094B \uni0902  by \uni094B_uni0902.abvs;
     sub \uni094C \uni0902  by \uni094C_uni0902.abvs;
 } abvsAboveBaseSubstitutionsinDevanagarilookup0;
@@ -206,8 +205,6 @@ lookup dligDiscretionaryLigatureslookup0 {
     sub \f \i  by \uniFB01;
     sub \f \l  by \uniFB02;
 } dligDiscretionaryLigatureslookup0;
-
-
 
 feature nukt {
 
@@ -257,6 +254,7 @@ feature vatu {
      language dflt ;
       lookup vatuVattuVariantsinDevanagarilookup0;
 } vatu;
+
 feature abvs {
 
  script deva;
@@ -274,7 +272,6 @@ feature dlig {
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
 } dlig;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \Aacute \Abreve \Acircumflex \Adieresis \Agrave \Amacron 
 	\Aogonek \Aring \Atilde \B \C \Cacute \Ccaron \Ccedilla \Ccircumflex \Cdotaccent 
