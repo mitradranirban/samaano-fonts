@@ -6,7 +6,6 @@ Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors  (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
 Version: 0.500
-StyleMapFamilyName: Samaano Thin
 ItalicAngle: 0
 UnderlinePosition: -204
 UnderlineWidth: 102
@@ -23,8 +22,8 @@ FSType: 256
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1727698731
-ModificationTime: 1727698731
+CreationTime: 1727792646
+ModificationTime: 1727852639
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -48,25 +47,26 @@ OS2CapHeight: 1548
 OS2XHeight: 1024
 OS2FamilyClass: 1031
 OS2Vendor: 'anir'
-Lookup: 4 0 0 "vatuVattuVariantsinDevanagarilookup0" { "vatuVattuVariantsinDevanagarilookup0 subtable"  } ['vatu' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "nuktNuktaFormsinDevanagarilookup0" { "nuktNuktaFormsinDevanagarilookup0 subtable"  } ['nukt' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "akhnAkhandinDevanagarilookup0" { "akhnAkhandinDevanagarilookup0 subtable"  } ['akhn' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "rphfRephForminDevanagarilookup0" { "rphfRephForminDevanagarilookup0 subtable"  } ['rphf' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "blwfBelowBaseFormsinDevanagarilookup0" { "blwfBelowBaseFormsinDevanagarilookup0 subtable"  } ['blwf' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "halfHalfFormsinDevanagarilookup0" { "halfHalfFormsinDevanagarilookup0 subtable"  } ['half' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "halnHalantFormsinDevanagarilookup0" { "halnHalantFormsinDevanagarilookup0 subtable"  } ['haln' ('deva' <'dflt' > ) ]
+Lookup: 4 0 0 "vatuVattuVariantsinDevanagarilookup0" { "vatuVattuVariantsinDevanagarilookup0 subtable"  } ['vatu' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors  (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.500" "" "" "" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (github.com/mitradranirban/samaano-fonts)+AAoA This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
 ."
-Encoding: UnicodeBmp
+Encoding: UnicodeFull
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 65624 13 5
+WinInfo: 351 13 5
 Grid
 -1024 1545 m 0
  3072 1545 l 1024
@@ -79,7 +79,7 @@ Grid
 -1024 1023 m 0
  3072 1023 l 1024
 EndSplineSet
-BeginChars: 65680 683
+BeginChars: 1114273 698
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -4591,7 +4591,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: glyph094D
-Encoding: 65536 -1 196
+Encoding: 1114112 -1 196
 GlifName: uni094D_.alt
 Width: 1024
 VWidth: 0
@@ -10203,7 +10203,7 @@ sass."
 EndChar
 
 StartChar: uni0915_uni0930_uni094D.vatu
-Encoding: 65537 -1 371
+Encoding: 1114113 -1 371
 GlifName: uni0915_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -10258,7 +10258,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0915 uni0930_uni09
 EndChar
 
 StartChar: uni0915_uni094D.half
-Encoding: 65538 -1 372
+Encoding: 1114114 -1 372
 GlifName: uni0915_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -10302,7 +10302,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0915 uni094D
 EndChar
 
 StartChar: uni0915_uni094D.haln
-Encoding: 65539 -1 373
+Encoding: 1114115 -1 373
 GlifName: uni0915_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -10316,7 +10316,7 @@ Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0915 uni094D
 EndChar
 
 StartChar: uni0915_uni094D_uni0937.akhn
-Encoding: 65540 -1 374
+Encoding: 1114116 -1 374
 GlifName: uni0915_uni094D__uni0937.akhn
 Width: 1024
 VWidth: 0
@@ -10377,7 +10377,7 @@ Ligature2: "akhnAkhandinDevanagarilookup0 subtable" uni0915 uni094D uni0937
 EndChar
 
 StartChar: uni0915_uni094D_uni0937.half
-Encoding: 65541 -1 375
+Encoding: 1114117 -1 375
 GlifName: uni0915_uni094D__uni0937.half
 Width: 1024
 VWidth: 0
@@ -10431,7 +10431,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0915_uni094D_uni0937.a
 EndChar
 
 StartChar: uni0915_uni094D_uni0937_uni094D
-Encoding: 65542 -1 376
+Encoding: 1114118 -1 376
 GlifName: uni0915_uni094D__uni0937_uni094D_
 Width: 1024
 VWidth: 0
@@ -10516,7 +10516,7 @@ sass."
 EndChar
 
 StartChar: uni0916_uni0930_uni094D.vatu
-Encoding: 65543 -1 378
+Encoding: 1114119 -1 378
 GlifName: uni0916_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -10591,7 +10591,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0916 uni0930_uni09
 EndChar
 
 StartChar: uni0916_uni094D.half
-Encoding: 65544 -1 379
+Encoding: 1114120 -1 379
 GlifName: uni0916_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -10640,7 +10640,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0916 uni094D
 EndChar
 
 StartChar: uni0916_uni094D.haln
-Encoding: 65545 -1 380
+Encoding: 1114121 -1 380
 GlifName: uni0916_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -10742,7 +10742,7 @@ sass."
 EndChar
 
 StartChar: uni0917_uni0930_uni094D.vatu
-Encoding: 65546 -1 382
+Encoding: 1114122 -1 382
 GlifName: uni0917_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -10836,7 +10836,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0916 uni0930_uni09
 EndChar
 
 StartChar: uni0917_uni094D.half
-Encoding: 65547 -1 383
+Encoding: 1114123 -1 383
 GlifName: uni0917_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -10870,7 +10870,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0917 uni094D
 EndChar
 
 StartChar: uni0917_uni094D.haln
-Encoding: 65548 -1 384
+Encoding: 1114124 -1 384
 GlifName: N_ameM_e.508
 Width: 1024
 VWidth: 0
@@ -10929,7 +10929,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0918_uni0930_uni094D.vatu
-Encoding: 65549 -1 386
+Encoding: 1114125 -1 386
 GlifName: uni0918_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -10978,7 +10978,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0918 uni0930_uni09
 EndChar
 
 StartChar: uni0918_uni094D.half
-Encoding: 65550 -1 387
+Encoding: 1114126 -1 387
 GlifName: uni0918_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -11017,7 +11017,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0918 uni094D
 EndChar
 
 StartChar: uni0918_uni094D.haln
-Encoding: 65551 -1 388
+Encoding: 1114127 -1 388
 GlifName: uni0917_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -11091,7 +11091,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0919_uni0930_uni094D.vatu
-Encoding: 65552 -1 390
+Encoding: 1114128 -1 390
 GlifName: uni0919_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -11160,7 +11160,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0919 uni0930_uni09
 EndChar
 
 StartChar: uni0919_uni094D.half
-Encoding: 65553 -1 391
+Encoding: 1114129 -1 391
 GlifName: N_ameM_e.65593
 Width: 1024
 VWidth: 0
@@ -11229,7 +11229,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0919 uni094D
 EndChar
 
 StartChar: uni0919_uni094D.haln
-Encoding: 65554 -1 392
+Encoding: 1114130 -1 392
 GlifName: uni0918_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -11283,7 +11283,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091A_uni0930_uni094D.vatu
-Encoding: 65555 -1 394
+Encoding: 1114131 -1 394
 GlifName: uni091A__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -11327,7 +11327,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni091A uni0930_uni09
 EndChar
 
 StartChar: uni091A_uni094D.half
-Encoding: 65556 -1 395
+Encoding: 1114132 -1 395
 GlifName: uni091A__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -11361,7 +11361,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091A uni094D
 EndChar
 
 StartChar: uni091A_uni094D.haln
-Encoding: 65557 -1 396
+Encoding: 1114133 -1 396
 GlifName: uni0919_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -11435,7 +11435,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091B_uni0930_uni094D.vatu
-Encoding: 65558 -1 398
+Encoding: 1114134 -1 398
 GlifName: uni091B__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -11499,7 +11499,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni091B uni0930_uni09
 EndChar
 
 StartChar: uni091B_uni094D.half
-Encoding: 65559 -1 399
+Encoding: 1114135 -1 399
 GlifName: uni091B__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -11543,7 +11543,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091B uni094D
 EndChar
 
 StartChar: uni091B_uni094D.haln
-Encoding: 65560 -1 400
+Encoding: 1114136 -1 400
 GlifName: uni091A__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -11602,7 +11602,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091C_uni0930_uni094D.vatu
-Encoding: 65561 -1 402
+Encoding: 1114137 -1 402
 GlifName: uni091C__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -11651,7 +11651,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni091C uni0930_uni09
 EndChar
 
 StartChar: uni091C_uni094D.half
-Encoding: 65562 -1 403
+Encoding: 1114138 -1 403
 GlifName: uni091C__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -11690,7 +11690,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091C uni094D
 EndChar
 
 StartChar: uni091C_uni094D.haln
-Encoding: 65563 -1 404
+Encoding: 1114139 -1 404
 GlifName: uni091B__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -11704,7 +11704,7 @@ Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091C uni094D
 EndChar
 
 StartChar: uni091C_uni094D_uni091E.akhn
-Encoding: 65564 -1 405
+Encoding: 1114140 -1 405
 GlifName: uni091C__uni094D__uni091E_.akhn
 Width: 1024
 VWidth: 0
@@ -11750,7 +11750,7 @@ Ligature2: "akhnAkhandinDevanagarilookup0 subtable" uni091C uni094D uni091E
 EndChar
 
 StartChar: uni091C_uni094D_uni091E.half
-Encoding: 65565 -1 406
+Encoding: 1114141 -1 406
 GlifName: uni091C__uni094D__uni091E_.half
 Width: 1024
 VWidth: 0
@@ -11789,7 +11789,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091C_uni094D_uni091E.a
 EndChar
 
 StartChar: uni091C_uni094D_uni091E_uni094D
-Encoding: 65566 -1 407
+Encoding: 1114142 -1 407
 GlifName: uni091C__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -11863,7 +11863,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091D_uni0930_uni094D.vatu
-Encoding: 65567 -1 409
+Encoding: 1114143 -1 409
 GlifName: uni091D__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -11923,10 +11923,11 @@ SplineSet
  194.5 63 l 257
  134.5 63 l 257
 EndSplineSet
+Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni091D uni0930_uni094D.blwf
 EndChar
 
 StartChar: uni091D_uni094D.half
-Encoding: 65568 -1 410
+Encoding: 1114144 -1 410
 GlifName: uni091D__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -11980,7 +11981,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091D uni094D
 EndChar
 
 StartChar: uni091D_uni094D.haln
-Encoding: 65569 -1 411
+Encoding: 1114145 -1 411
 GlifName: uni091D__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -12039,7 +12040,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091E_uni0930_uni094D.vatu
-Encoding: 65570 -1 413
+Encoding: 1114146 -1 413
 GlifName: uni091E__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -12088,7 +12089,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni091E uni0930_uni09
 EndChar
 
 StartChar: uni091E_uni094D.half
-Encoding: 65571 -1 414
+Encoding: 1114147 -1 414
 GlifName: uni091E__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -12127,7 +12128,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091E uni094D
 EndChar
 
 StartChar: uni091E_uni094D.haln
-Encoding: 65572 -1 415
+Encoding: 1114148 -1 415
 GlifName: uni091E__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -12181,7 +12182,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni091F_uni0930_uni094D.vatu
-Encoding: 65573 -1 417
+Encoding: 1114149 -1 417
 GlifName: uni091F__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -12230,7 +12231,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni091F uni0930_uni09
 EndChar
 
 StartChar: uni091F_uni094D.half
-Encoding: 65574 -1 418
+Encoding: 1114150 -1 418
 GlifName: uni091F__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -12279,7 +12280,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni091F uni094D
 EndChar
 
 StartChar: uni091F_uni094D.haln
-Encoding: 65575 -1 419
+Encoding: 1114151 -1 419
 GlifName: uni091F__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -12338,7 +12339,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0920_uni0930_uni094D.vatu
-Encoding: 65576 -1 421
+Encoding: 1114152 -1 421
 GlifName: uni0920_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -12392,7 +12393,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0920 uni0930_uni09
 EndChar
 
 StartChar: uni0920_uni094D.half
-Encoding: 65577 -1 422
+Encoding: 1114153 -1 422
 GlifName: uni0920_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -12446,7 +12447,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0920 uni094D
 EndChar
 
 StartChar: uni0920_uni094D.haln
-Encoding: 65578 -1 423
+Encoding: 1114154 -1 423
 GlifName: uni0920_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -12505,7 +12506,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0921_uni0930_uni094D.vatu
-Encoding: 65579 -1 425
+Encoding: 1114155 -1 425
 GlifName: uni0921_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -12559,7 +12560,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0921 uni0930_uni09
 EndChar
 
 StartChar: uni0921_uni094D.half
-Encoding: 65580 -1 426
+Encoding: 1114156 -1 426
 GlifName: uni0921_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -12613,7 +12614,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0921 uni094D
 EndChar
 
 StartChar: uni0921_uni094D.haln
-Encoding: 65581 -1 427
+Encoding: 1114157 -1 427
 GlifName: uni0921_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -12677,7 +12678,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0922_uni0930_uni094D.vatu
-Encoding: 65582 -1 429
+Encoding: 1114158 -1 429
 GlifName: uni0922_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -12736,7 +12737,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0922 uni0930_uni09
 EndChar
 
 StartChar: uni0922_uni094D.half
-Encoding: 65583 -1 430
+Encoding: 1114159 -1 430
 GlifName: uni0922_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -12795,7 +12796,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0922 uni094D
 EndChar
 
 StartChar: uni0922_uni094D.haln
-Encoding: 65584 -1 431
+Encoding: 1114160 -1 431
 GlifName: uni0922_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -12849,7 +12850,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0923_uni0930_uni094D.vatu
-Encoding: 65585 -1 433
+Encoding: 1114161 -1 433
 GlifName: uni0923_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -12893,7 +12894,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0923 uni0930_uni09
 EndChar
 
 StartChar: uni0923_uni094D.half
-Encoding: 65586 -1 434
+Encoding: 1114162 -1 434
 GlifName: uni0923_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -12927,7 +12928,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0923 uni094D
 EndChar
 
 StartChar: uni0923_uni094D.haln
-Encoding: 65587 -1 435
+Encoding: 1114163 -1 435
 GlifName: uni0923_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -12974,7 +12975,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0924_uni0930_uni094D.vatu
-Encoding: 65588 -1 437
+Encoding: 1114164 -1 437
 GlifName: uni0924_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13008,7 +13009,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0924 uni0930_uni09
 EndChar
 
 StartChar: uni0924_uni094D.half
-Encoding: 65589 -1 438
+Encoding: 1114165 -1 438
 GlifName: uni0924_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -13037,7 +13038,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0924 uni094D
 EndChar
 
 StartChar: uni0924_uni094D.haln
-Encoding: 65590 -1 439
+Encoding: 1114166 -1 439
 GlifName: uni0924_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -13050,8 +13051,54 @@ Refer: 436 2340 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0924 uni094D
 EndChar
 
+StartChar: uni0924_uni094D_uni0924.pres
+Encoding: 1114167 -1 440
+GlifName: uni0924_uni094D__uni0924.pres
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-30 1554 m 257
+ -30 1493 l 257
+ 1020 1493 l 257
+ 1020 1554 l 257
+ -30 1554 l 257
+769 1511 m 257
+ 769 1 l 257
+ 829 1 l 257
+ 829 1511 l 257
+ 769 1511 l 257
+784 788 m 257
+ 105 788 l 257
+ 105 728 l 257
+ 784 728 l 257
+ 784 788 l 257
+105 728 m 257
+ 250 -16 l 257
+ 311 22 l 257
+ 165 766 l 257
+ 105 728 l 257
+798 1038 m 257
+ 76 1038 l 257
+ 76 978 l 257
+ 798 978 l 257
+ 798 1038 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Thin/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
 StartChar: uni0925
-Encoding: 2341 2341 440
+Encoding: 2341 2341 441
 GlifName: uni0925
 Width: 1024
 VWidth: 0
@@ -13099,7 +13146,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0925_uni0930_uni094D.vatu
-Encoding: 65591 -1 441
+Encoding: 1114168 -1 442
 GlifName: uni0925_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13153,7 +13200,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0925 uni0930_uni09
 EndChar
 
 StartChar: uni0925_uni094D.half
-Encoding: 65592 -1 442
+Encoding: 1114169 -1 443
 GlifName: uni0925_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -13197,7 +13244,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0925 uni094D
 EndChar
 
 StartChar: uni0925_uni094D.haln
-Encoding: 65593 -1 443
+Encoding: 1114170 -1 444
 GlifName: uni0925_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -13206,12 +13253,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 440 2341 N 1 0 0 1 0 0 2
+Refer: 441 2341 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0925 uni094D
 EndChar
 
 StartChar: uni0926
-Encoding: 2342 2342 444
+Encoding: 2342 2342 445
 GlifName: uni0926
 Width: 1024
 VWidth: 0
@@ -13254,7 +13301,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0926_uni0930_uni094D.vatu
-Encoding: 65594 -1 445
+Encoding: 1114171 -1 446
 GlifName: uni0926_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13303,7 +13350,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0926 uni0930_uni09
 EndChar
 
 StartChar: uni0926_uni094D.half
-Encoding: 65595 -1 446
+Encoding: 1114172 -1 447
 GlifName: uni0926_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -13357,7 +13404,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0926 uni094D
 EndChar
 
 StartChar: uni0926_uni094D.haln
-Encoding: 65596 -1 447
+Encoding: 1114173 -1 448
 GlifName: uni0926_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -13366,12 +13413,266 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 444 2342 N 1 0 0 1 0 0 2
+Refer: 445 2342 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0926 uni094D
 EndChar
 
+StartChar: uni0926_uni094D_uni0926.pres
+Encoding: 1114174 -1 449
+GlifName: uni0926_uni094D__uni0926.pres
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+7 1550 m 257
+ 7 1489 l 257
+ 1022 1489 l 257
+ 1022 1550 l 257
+ 7 1550 l 257
+625 1509 m 257
+ 625 1164 l 257
+ 684 1164 l 257
+ 684 1509 l 257
+ 625 1509 l 257
+683 1197 m 257
+ 197 1197 l 257
+ 197 1137 l 257
+ 683 1137 l 257
+ 683 1197 l 257
+198 1173 m 257
+ 198 736 l 257
+ 257 736 l 257
+ 257 1173 l 257
+ 198 1173 l 257
+196 205 m 257
+ 196 146 l 257
+ 809 146 l 257
+ 809 205 l 257
+ 196 205 l 257
+754 406 m 257
+ 754 -7 l 257
+ 813 -7 l 257
+ 813 406 l 257
+ 754 406 l 257
+683 749 m 257
+ 247 749 l 257
+ 247 688 l 257
+ 683 688 l 257
+ 683 749 l 257
+198 701 m 257
+ 198 178 l 257
+ 257 178 l 257
+ 257 701 l 257
+ 198 701 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Thin/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
+StartChar: uni0926_uni094D_uni0927.pres
+Encoding: 1114175 -1 450
+GlifName: uni0926_uni094D__uni0927.pres
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-2 1550 m 257
+ -2 1462 l 257
+ 1028 1462 l 257
+ 1028 1550 l 257
+ -2 1550 l 257
+772 1509 m 257
+ 772 983 l 257
+ 831 983 l 257
+ 831 1509 l 257
+ 772 1509 l 257
+830 1020 m 257
+ 381 1020 l 257
+ 381 959 l 257
+ 830 959 l 257
+ 830 1020 l 257
+381 996 m 257
+ 381 164 l 257
+ 440 164 l 257
+ 440 996 l 257
+ 381 996 l 257
+901 406 m 257
+ 901 -7 l 257
+ 960 -7 l 257
+ 960 406 l 257
+ 901 406 l 257
+-4 978 m 257
+ -4 918 l 257
+ 302 918 l 257
+ 302 978 l 257
+ -4 978 l 257
+-4 950 m 257
+ -4 718 l 257
+ 59 718 l 257
+ 59 950 l 257
+ -4 950 l 257
+-5 719 m 257
+ -5 659 l 257
+ 394 659 l 257
+ 394 719 l 257
+ -5 719 l 257
+30 674 m 257
+ 30 180 l 257
+ 90 180 l 257
+ 90 674 l 257
+ 30 674 l 257
+29 198 m 257
+ 29 139 l 257
+ 917 139 l 257
+ 917 198 l 257
+ 29 198 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Thin/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
+StartChar: uni0926_uni094D_uni092F.pres
+Encoding: 1114177 -1 451
+GlifName: uni0926_uni094D__uni092F_.pres
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+942 1531 m 257
+ 942 0 l 257
+ 1002 0 l 257
+ 1002 1531 l 257
+ 942 1531 l 257
+674 288 m 257
+ 674 229 l 257
+ 953 107 l 257
+ 952 173 l 257
+ 674 288 l 257
+-5 1550 m 257
+ -5 1489 l 257
+ 1037 1489 l 257
+ 1037 1550 l 257
+ -5 1550 l 257
+625 1509 m 257
+ 625 986 l 257
+ 684 986 l 257
+ 684 1509 l 257
+ 625 1509 l 257
+674 288 m 257
+ 57 288 l 257
+ 57 229 l 257
+ 674 229 l 257
+ 674 288 l 257
+57 996 m 257
+ 57 273 l 257
+ 116 273 l 257
+ 116 996 l 257
+ 57 996 l 257
+684 1020 m 257
+ 56 1020 l 257
+ 56 960 l 257
+ 684 960 l 257
+ 684 1020 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Thin/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
+StartChar: uni0926_uni094D_uni0935.pres
+Encoding: 1114178 -1 452
+GlifName: uni0926_uni094D__uni0935.pres
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+7 1549 m 257
+ 7 1490 l 257
+ 1022 1490 l 257
+ 1022 1549 l 257
+ 7 1549 l 257
+623 1509 m 257
+ 623 1197 l 257
+ 684 1197 l 257
+ 684 1509 l 257
+ 623 1509 l 257
+683 1241 m 257
+ 61 1241 l 257
+ 61 1182 l 257
+ 683 1182 l 257
+ 683 1241 l 257
+57 1243 m 257
+ 57 659 l 257
+ 117 659 l 257
+ 117 1243 l 257
+ 57 1243 l 257
+57 684 m 257
+ 57 625 l 257
+ 809 625 l 257
+ 809 684 l 257
+ 57 684 l 257
+753 846 m 257
+ 753 -7 l 257
+ 813 -7 l 257
+ 813 846 l 257
+ 753 846 l 257
+76 478 m 257
+ 76 102 l 257
+ 136 102 l 257
+ 136 478 l 257
+ 76 478 l 257
+77 134 m 257
+ 77 74 l 257
+ 812 74 l 257
+ 812 134 l 257
+ 77 134 l 257
+76 514 m 257
+ 76 455 l 257
+ 512 455 l 257
+ 512 514 l 257
+ 76 514 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Thin/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
 StartChar: uni0927
-Encoding: 2343 2343 448
+Encoding: 2343 2343 453
 GlifName: uni0927
 Width: 1024
 VWidth: 0
@@ -13419,7 +13720,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0927_uni0930_uni094D.vatu
-Encoding: 65597 -1 449
+Encoding: 1114179 -1 454
 GlifName: uni0927_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13473,7 +13774,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0927 uni0930_uni09
 EndChar
 
 StartChar: uni0927_uni094D.half
-Encoding: 65598 -1 450
+Encoding: 1114180 -1 455
 GlifName: uni0927_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -13512,7 +13813,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0927 uni094D
 EndChar
 
 StartChar: uni0927_uni094D.haln
-Encoding: 65599 -1 451
+Encoding: 1114181 -1 456
 GlifName: uni0927_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -13521,12 +13822,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 448 2343 N 1 0 0 1 0 0 2
+Refer: 453 2343 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0927 uni094D
 EndChar
 
 StartChar: uni0928
-Encoding: 2344 2344 452
+Encoding: 2344 2344 457
 GlifName: uni0928
 Width: 1024
 VWidth: 0
@@ -13559,7 +13860,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0928_uni0930_uni094D.vatu
-Encoding: 65600 -1 453
+Encoding: 1114182 -1 458
 GlifName: uni0928_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13598,7 +13899,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0928 uni0930_uni09
 EndChar
 
 StartChar: uni0928_uni094D.half
-Encoding: 65601 -1 454
+Encoding: 1114183 -1 459
 GlifName: uni0928_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -13627,7 +13928,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0928 uni094D
 EndChar
 
 StartChar: uni0928_uni094D.haln
-Encoding: 65602 -1 455
+Encoding: 1114184 -1 460
 GlifName: uni0928_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -13636,12 +13937,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 452 2344 N 1 0 0 1 0 0 2
+Refer: 457 2344 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0928 uni094D
 EndChar
 
 StartChar: uni0929
-Encoding: 2345 2345 456
+Encoding: 2345 2345 461
 GlifName: uni0929
 Width: 1024
 VWidth: 0
@@ -13705,7 +14006,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0928 uni093C
 EndChar
 
 StartChar: uni0929_uni0930_uni094D.vatu
-Encoding: 65603 -1 457
+Encoding: 1114185 -1 462
 GlifName: uni0929_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13749,7 +14050,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0929 uni0930_uni09
 EndChar
 
 StartChar: uni0929_uni094D.half
-Encoding: 65604 -1 458
+Encoding: 1114186 -1 463
 GlifName: uni0929_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -13783,7 +14084,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0929 uni094D
 EndChar
 
 StartChar: uni0929_uni094D.haln
-Encoding: 65605 -1 459
+Encoding: 1114187 -1 464
 GlifName: uni0929_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -13792,12 +14093,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 930 0 2
-Refer: 456 2345 N 1 0 0 1 0 0 2
+Refer: 461 2345 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0929 uni094D
 EndChar
 
 StartChar: uni092A
-Encoding: 2346 2346 460
+Encoding: 2346 2346 465
 GlifName: pa-deva
 Width: 1024
 VWidth: 0
@@ -13832,7 +14133,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092A_uni0930_uni094D.vatu
-Encoding: 65606 -1 461
+Encoding: 1114188 -1 466
 GlifName: uni092A__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13871,7 +14172,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni092A uni0930_uni09
 EndChar
 
 StartChar: uni092A_uni094D.half
-Encoding: 65607 -1 462
+Encoding: 1114189 -1 467
 GlifName: uni092A__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -13900,7 +14201,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni092A uni094D
 EndChar
 
 StartChar: uni092A_uni094D.haln
-Encoding: 65608 -1 463
+Encoding: 1114190 -1 468
 GlifName: uni092A__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -13909,12 +14210,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 460 2346 N 1 0 0 1 0 0 2
+Refer: 465 2346 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092A uni094D
 EndChar
 
 StartChar: uni092B
-Encoding: 2347 2347 464
+Encoding: 2347 2347 469
 GlifName: pha-deva
 Width: 1024
 VWidth: 0
@@ -13954,7 +14255,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092B_uni0930_uni094D.vatu
-Encoding: 65609 -1 465
+Encoding: 1114191 -1 470
 GlifName: uni092B__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -13998,7 +14299,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni092B uni0930_uni09
 EndChar
 
 StartChar: uni092B_uni094D.half
-Encoding: 65610 -1 466
+Encoding: 1114192 -1 471
 GlifName: uni092B__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -14032,7 +14333,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni092B uni094D
 EndChar
 
 StartChar: uni092B_uni094D.haln
-Encoding: 65611 -1 467
+Encoding: 1114193 -1 472
 GlifName: uni092B__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -14041,12 +14342,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 464 2347 N 1 0 0 1 0 0 2
+Refer: 469 2347 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092B uni094D
 EndChar
 
 StartChar: uni092C
-Encoding: 2348 2348 468
+Encoding: 2348 2348 473
 GlifName: ba-deva
 Width: 1024
 VWidth: 0
@@ -14091,7 +14392,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092C_uni0930_uni094D.vatu
-Encoding: 65612 -1 469
+Encoding: 1114194 -1 474
 GlifName: uni092C__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -14140,7 +14441,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni092C uni0930_uni09
 EndChar
 
 StartChar: uni092C_uni094D.half
-Encoding: 65613 -1 470
+Encoding: 1114195 -1 475
 GlifName: uni092C__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -14179,7 +14480,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni092C uni094D
 EndChar
 
 StartChar: uni092C_uni094D.haln
-Encoding: 65614 -1 471
+Encoding: 1114196 -1 476
 GlifName: uni092C__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -14188,12 +14489,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 468 2348 N 1 0 0 1 0 0 2
+Refer: 473 2348 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092C uni094D
 EndChar
 
 StartChar: uni092D
-Encoding: 2349 2349 472
+Encoding: 2349 2349 477
 GlifName: bha-deva
 Width: 1024
 VWidth: 0
@@ -14248,7 +14549,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092D_uni0930_uni094D.vatu
-Encoding: 65615 -1 473
+Encoding: 1114197 -1 478
 GlifName: uni092D__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -14307,7 +14608,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni092D uni0930_uni09
 EndChar
 
 StartChar: uni092D_uni094D.half
-Encoding: 65616 -1 474
+Encoding: 1114198 -1 479
 GlifName: uni092D__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -14356,7 +14657,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni092D uni094D
 EndChar
 
 StartChar: uni092D_uni094D.haln
-Encoding: 65617 -1 475
+Encoding: 1114199 -1 480
 GlifName: uni092D__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -14365,12 +14666,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 472 2349 N 1 0 0 1 0 0 2
+Refer: 477 2349 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092D uni094D
 EndChar
 
 StartChar: uni092E
-Encoding: 2350 2350 476
+Encoding: 2350 2350 481
 GlifName: ma-deva
 Width: 1024
 VWidth: 0
@@ -14415,7 +14716,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092E_uni0930_uni094D.vatu
-Encoding: 65618 -1 477
+Encoding: 1114200 -1 482
 GlifName: uni092E__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -14464,7 +14765,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni092E uni0930_uni09
 EndChar
 
 StartChar: uni092E_uni094D.half
-Encoding: 65619 -1 478
+Encoding: 1114201 -1 483
 GlifName: uni092E__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -14503,7 +14804,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni092E uni094D
 EndChar
 
 StartChar: uni092E_uni094D.haln
-Encoding: 65620 -1 479
+Encoding: 1114202 -1 484
 GlifName: uni092E__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -14512,12 +14813,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 476 2350 N 1 0 0 1 0 0 2
+Refer: 481 2350 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092E uni094D
 EndChar
 
 StartChar: uni092F
-Encoding: 2351 2351 480
+Encoding: 2351 2351 485
 GlifName: ya-deva
 Width: 1024
 VWidth: 0
@@ -14557,7 +14858,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni092F_uni0930_uni094D.vatu
-Encoding: 65621 -1 481
+Encoding: 1114203 -1 486
 GlifName: uni092F__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -14601,7 +14902,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni092F uni0930_uni09
 EndChar
 
 StartChar: uni092F_uni094D.half
-Encoding: 65622 -1 482
+Encoding: 1114204 -1 487
 GlifName: uni092F__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -14635,7 +14936,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni092F uni094D
 EndChar
 
 StartChar: uni092F_uni094D.haln
-Encoding: 65623 -1 483
+Encoding: 1114205 -1 488
 GlifName: uni092F__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -14644,12 +14945,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 480 2351 N 1 0 0 1 0 0 2
+Refer: 485 2351 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092F uni094D
 EndChar
 
 StartChar: uni0930
-Encoding: 2352 2352 484
+Encoding: 2352 2352 489
 GlifName: ra-deva
 Width: 1024
 VWidth: 0
@@ -14698,7 +14999,7 @@ sass."
 EndChar
 
 StartChar: uni0930_uni0930_uni094D.vatu
-Encoding: 65624 -1 485
+Encoding: 1114206 -1 490
 GlifName: uni0930_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -14737,7 +15038,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0930 uni0930_uni09
 EndChar
 
 StartChar: uni0930_uni094D.blwf
-Encoding: 65625 -1 486
+Encoding: 1114207 -1 491
 GlifName: uni0930_uni094D_.blwf
 Width: 1024
 VWidth: 0
@@ -14768,7 +15069,7 @@ Ligature2: "blwfBelowBaseFormsinDevanagarilookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.half
-Encoding: 65626 -1 487
+Encoding: 1114208 -1 492
 GlifName: uni0930_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -14818,7 +15119,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
-Encoding: 65627 -1 488
+Encoding: 1114209 -1 493
 GlifName: uni0930_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -14827,12 +15128,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 484 2352 N 1 0 0 1 0 0 2
+Refer: 489 2352 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.rphf
-Encoding: 65628 -1 489
+Encoding: 1114210 -1 494
 GlifName: uni0930_uni094D_.rphf
 Width: 1024
 VWidth: 0
@@ -14868,10 +15169,11 @@ Ligature2: "rphfRephForminDevanagarilookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.vatu
-Encoding: 65629 -1 490
+Encoding: 1114211 -1 495
 GlifName: uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -14885,7 +15187,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0931
-Encoding: 2353 2353 491
+Encoding: 2353 2353 496
 GlifName: uni0931
 Width: 1024
 VWidth: 0
@@ -14954,7 +15256,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0930 uni093C
 EndChar
 
 StartChar: uni0931_uni0930_uni094D.vatu
-Encoding: 65630 -1 492
+Encoding: 1114212 -1 497
 GlifName: uni0931_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -14994,10 +15296,11 @@ SplineSet
  678 -64 l 257
  535 -64 l 257
 EndSplineSet
+Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0931 uni0930_uni094D.blwf
 EndChar
 
 StartChar: uni0931_uni094D.haln
-Encoding: 65631 -1 493
+Encoding: 1114213 -1 498
 GlifName: uni0931_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -15006,12 +15309,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 979 0 2
-Refer: 491 2353 N 1 0 0 1 0 0 2
+Refer: 496 2353 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0931 uni094D
 EndChar
 
 StartChar: uni0932
-Encoding: 2354 2354 494
+Encoding: 2354 2354 499
 GlifName: la-deva
 Width: 1024
 VWidth: 0
@@ -15051,7 +15354,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0932_uni0930_uni094D.vatu
-Encoding: 65632 -1 495
+Encoding: 1114214 -1 500
 GlifName: uni0932_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -15095,7 +15398,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0932 uni0930_uni09
 EndChar
 
 StartChar: uni0932_uni094D.half
-Encoding: 65633 -1 496
+Encoding: 1114215 -1 501
 GlifName: uni0932_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -15129,7 +15432,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0932 uni094D
 EndChar
 
 StartChar: uni0932_uni094D.haln
-Encoding: 65634 -1 497
+Encoding: 1114216 -1 502
 GlifName: uni0932_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -15138,12 +15441,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 494 2354 N 1 0 0 1 0 0 2
+Refer: 499 2354 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0932 uni094D
 EndChar
 
 StartChar: uni0933
-Encoding: 2355 2355 498
+Encoding: 2355 2355 503
 GlifName: lla-deva
 Width: 1024
 VWidth: 0
@@ -15188,7 +15491,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0933_uni0930_uni094D.vatu
-Encoding: 65635 -1 499
+Encoding: 1114217 -1 504
 GlifName: uni0933_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -15237,7 +15540,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0933 uni0930_uni09
 EndChar
 
 StartChar: uni0933_uni094D.half
-Encoding: 65636 -1 500
+Encoding: 1114218 -1 505
 GlifName: uni0933_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -15281,7 +15584,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0933 uni094D
 EndChar
 
 StartChar: uni0933_uni094D.haln
-Encoding: 65637 -1 501
+Encoding: 1114219 -1 506
 GlifName: uni0933_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -15290,12 +15593,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 498 2355 N 1 0 0 1 0 0 2
+Refer: 503 2355 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0933 uni094D
 EndChar
 
 StartChar: uni0934
-Encoding: 2356 2356 502
+Encoding: 2356 2356 507
 GlifName: uni0934
 Width: 1024
 VWidth: 0
@@ -15369,7 +15672,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0933 uni093C
 EndChar
 
 StartChar: uni0934_uni0930_uni094D.vatu
-Encoding: 65638 -1 503
+Encoding: 1114220 -1 508
 GlifName: uni0934_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -15423,7 +15726,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0934 uni0930_uni09
 EndChar
 
 StartChar: uni0934_uni094D.half
-Encoding: 65639 -1 504
+Encoding: 1114221 -1 509
 GlifName: uni0934_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -15497,7 +15800,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0934 uni094D
 EndChar
 
 StartChar: uni0934_uni094D.haln
-Encoding: 65640 -1 505
+Encoding: 1114222 -1 510
 GlifName: uni0934_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -15506,12 +15809,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 502 2356 N 1 0 0 1 0 0 2
+Refer: 507 2356 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0934 uni094D
 EndChar
 
 StartChar: uni0935
-Encoding: 2357 2357 506
+Encoding: 2357 2357 511
 GlifName: va-deva
 Width: 1024
 VWidth: 0
@@ -15551,7 +15854,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0935_uni0930_uni094D.vatu
-Encoding: 65641 -1 507
+Encoding: 1114223 -1 512
 GlifName: uni0935_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -15595,7 +15898,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0935 uni0930_uni09
 EndChar
 
 StartChar: uni0935_uni094D.half
-Encoding: 65642 -1 508
+Encoding: 1114224 -1 513
 GlifName: uni0935_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -15629,7 +15932,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0935 uni094D
 EndChar
 
 StartChar: uni0935_uni094D.haln
-Encoding: 65643 -1 509
+Encoding: 1114225 -1 514
 GlifName: uni0935_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -15638,12 +15941,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 506 2357 N 1 0 0 1 0 0 2
+Refer: 511 2357 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0935 uni094D
 EndChar
 
 StartChar: uni0936
-Encoding: 2358 2358 510
+Encoding: 2358 2358 515
 GlifName: uni0936
 Width: 1024
 VWidth: 0
@@ -15693,7 +15996,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0936_uni0930_uni094D.vatu
-Encoding: 65644 -1 511
+Encoding: 1114226 -1 516
 GlifName: uni0936_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -15747,7 +16050,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0936 uni0930_uni09
 EndChar
 
 StartChar: uni0936_uni094D.half
-Encoding: 65645 -1 512
+Encoding: 1114227 -1 517
 GlifName: uni0936_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -15786,7 +16089,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0936 uni094D
 EndChar
 
 StartChar: uni0936_uni094D.haln
-Encoding: 65646 -1 513
+Encoding: 1114228 -1 518
 GlifName: uni0936_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -15795,12 +16098,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 510 2358 N 1 0 0 1 0 0 2
+Refer: 515 2358 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0936 uni094D
 EndChar
 
 StartChar: uni0937
-Encoding: 2359 2359 514
+Encoding: 2359 2359 519
 GlifName: uni0937
 Width: 1024
 VWidth: 0
@@ -15838,7 +16141,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0937_uni0930_uni094D.vatu
-Encoding: 65647 -1 515
+Encoding: 1114229 -1 520
 GlifName: uni0937_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -15882,7 +16185,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0937 uni0930_uni09
 EndChar
 
 StartChar: uni0937_uni094D.half
-Encoding: 65648 -1 516
+Encoding: 1114230 -1 521
 GlifName: uni0937_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -15916,7 +16219,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0937 uni094D
 EndChar
 
 StartChar: uni0937_uni094D.haln
-Encoding: 65649 -1 517
+Encoding: 1114231 -1 522
 GlifName: uni0937_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -15925,12 +16228,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 514 2359 N 1 0 0 1 0 0 2
+Refer: 519 2359 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0937 uni094D
 EndChar
 
 StartChar: uni0938
-Encoding: 2360 2360 518
+Encoding: 2360 2360 523
 GlifName: uni0938
 Width: 1024
 VWidth: 0
@@ -15970,7 +16273,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0938_uni0930_uni094D.vatu
-Encoding: 65650 -1 519
+Encoding: 1114232 -1 524
 GlifName: uni0938_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -16014,7 +16317,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0938 uni0930_uni09
 EndChar
 
 StartChar: uni0938_uni094D.half
-Encoding: 65651 -1 520
+Encoding: 1114233 -1 525
 GlifName: uni0938_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -16048,7 +16351,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0938 uni094D
 EndChar
 
 StartChar: uni0938_uni094D.haln
-Encoding: 65652 -1 521
+Encoding: 1114234 -1 526
 GlifName: uni0938_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -16057,12 +16360,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 518 2360 N 1 0 0 1 0 0 2
+Refer: 523 2360 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0938 uni094D
 EndChar
 
 StartChar: uni0939
-Encoding: 2361 2361 522
+Encoding: 2361 2361 527
 GlifName: uni0939
 Width: 1024
 VWidth: 0
@@ -16117,7 +16420,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0939_uni0930_uni094D.vatu
-Encoding: 65653 -1 523
+Encoding: 1114235 -1 528
 GlifName: uni0939_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -16176,7 +16479,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0939 uni0930_uni09
 EndChar
 
 StartChar: uni0939_uni094D.half
-Encoding: 65654 -1 524
+Encoding: 1114236 -1 529
 GlifName: uni0939_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -16225,7 +16528,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0939 uni094D
 EndChar
 
 StartChar: uni0939_uni094D.haln
-Encoding: 65655 -1 525
+Encoding: 1114237 -1 530
 GlifName: uni0939_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -16234,12 +16537,93 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 522 2361 N 1 0 0 1 0 0 2
+Refer: 527 2361 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0939 uni094D
 EndChar
 
+StartChar: uni0939_uni094D_uni092E.pres
+Encoding: 1114238 -1 531
+GlifName: uni0939_uni094D__uni092E_.pres
+Width: 1024
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+-6 1549 m 257
+ -6 1490 l 257
+ 1025 1490 l 257
+ 1025 1549 l 257
+ -6 1549 l 257
+593 1511 m 257
+ 593 1174 l 257
+ 653 1174 l 257
+ 652 1510 l 257
+ 593 1511 l 257
+655 1196 m 257
+ 339 1196 l 257
+ 339 1137 l 257
+ 655 1137 l 257
+ 655 1196 l 257
+339 1195 m 257
+ 341 785 l 257
+ 402 785 l 257
+ 400 1195 l 257
+ 339 1195 l 257
+638 789 m 257
+ 638 29 l 257
+ 699 29 l 257
+ 699 789 l 257
+ 638 789 l 257
+109 840 m 257
+ 109 782 l 257
+ 699 783 l 257
+ 699 841 l 257
+ 109 840 l 257
+109 793 m 257
+ 109 304 l 257
+ 170 316 l 257
+ 169 793 l 257
+ 109 793 l 257
+521 60 m 257
+ 521 0 l 257
+ 699 0 l 257
+ 699 60 l 257
+ 521 60 l 257
+521 297 m 257
+ 521 36 l 257
+ 583 36 l 257
+ 583 297 l 257
+ 521 297 l 257
+894 1543 m 257
+ 894 0 l 257
+ 955 0 l 257
+ 955 1543 l 257
+ 894 1543 l 257
+530 297 m 257
+ 530 238 l 257
+ 917 238 l 257
+ 917 297 l 257
+ 530 297 l 257
+170 316 m 257
+ 109 304 l 257
+ 277 1 l 257
+ 356 -3 l 257
+ 170 316 l 257
+EndSplineSet
+PickledDataWithLists: "(dp0
+Vxyz.fontra.layer-names
+p1
+(dp2
+VSamaano-Thin/public.default
+p3
+Vdefault
+p4
+ss."
+EndChar
+
 StartChar: uni093A
-Encoding: 2362 2362 526
+Encoding: 2362 2362 532
 GlifName: uni093A_
 Width: 1024
 VWidth: 0
@@ -16259,7 +16643,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni093B
-Encoding: 2363 2363 527
+Encoding: 2363 2363 533
 GlifName: uni093B_
 Width: 1024
 VWidth: 0
@@ -16282,7 +16666,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni093C
-Encoding: 2364 2364 528
+Encoding: 2364 2364 534
 GlifName: uni093C_
 Width: 1024
 VWidth: 0
@@ -16325,7 +16709,7 @@ sass."
 EndChar
 
 StartChar: uni093D
-Encoding: 2365 2365 529
+Encoding: 2365 2365 535
 GlifName: uni093D_
 Width: 1024
 VWidth: 0
@@ -16360,7 +16744,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni093E
-Encoding: 2366 2366 530
+Encoding: 2366 2366 536
 GlifName: uni093E_
 Width: 1024
 VWidth: 0
@@ -16385,7 +16769,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni093F
-Encoding: 2367 2367 531
+Encoding: 2367 2367 537
 GlifName: uni093F_
 Width: 1024
 VWidth: 0
@@ -16420,7 +16804,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0940
-Encoding: 2368 2368 532
+Encoding: 2368 2368 538
 GlifName: uni0940
 Width: 1024
 VWidth: 0
@@ -16455,7 +16839,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0941
-Encoding: 2369 2369 533
+Encoding: 2369 2369 539
 GlifName: uni0941
 Width: 1024
 VWidth: 0
@@ -16495,7 +16879,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0942
-Encoding: 2370 2370 534
+Encoding: 2370 2370 540
 GlifName: uni0942
 Width: 1024
 VWidth: 0
@@ -16535,7 +16919,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0943
-Encoding: 2371 2371 535
+Encoding: 2371 2371 541
 GlifName: uni0943
 Width: 1024
 VWidth: 0
@@ -16570,7 +16954,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0944
-Encoding: 2372 2372 536
+Encoding: 2372 2372 542
 GlifName: uni0944
 Width: 1024
 VWidth: 0
@@ -16610,7 +16994,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0945
-Encoding: 2373 2373 537
+Encoding: 2373 2373 543
 GlifName: uni0945
 Width: 1024
 VWidth: 0
@@ -16643,7 +17027,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0946
-Encoding: 2374 2374 538
+Encoding: 2374 2374 544
 GlifName: uni0946
 Width: 1024
 VWidth: 0
@@ -16676,7 +17060,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0947
-Encoding: 2375 2375 539
+Encoding: 2375 2375 545
 GlifName: uni0947
 Width: 1024
 VWidth: 0
@@ -16699,7 +17083,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0948
-Encoding: 2376 2376 540
+Encoding: 2376 2376 546
 GlifName: uni0948
 Width: 1024
 VWidth: 0
@@ -16729,7 +17113,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0949
-Encoding: 2377 2377 541
+Encoding: 2377 2377 547
 GlifName: uni0949
 Width: 1024
 VWidth: 0
@@ -16767,7 +17151,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094A
-Encoding: 2378 2378 542
+Encoding: 2378 2378 548
 GlifName: uni094A_
 Width: 1024
 VWidth: 0
@@ -16805,7 +17189,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094B
-Encoding: 2379 2379 543
+Encoding: 2379 2379 549
 GlifName: uni094B_
 Width: 1024
 VWidth: 0
@@ -16833,7 +17217,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094C
-Encoding: 2380 2380 544
+Encoding: 2380 2380 550
 GlifName: uni094C_
 Width: 1024
 VWidth: 0
@@ -16868,7 +17252,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni094D
-Encoding: 2381 2381 545
+Encoding: 2381 2381 551
 GlifName: uni094D_
 Width: 1024
 VWidth: 0
@@ -16896,7 +17280,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094E
-Encoding: 2382 2382 546
+Encoding: 2382 2382 552
 GlifName: uni094E_
 Width: 1024
 VWidth: 0
@@ -16921,7 +17305,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni094F
-Encoding: 2383 2383 547
+Encoding: 2383 2383 553
 GlifName: uni094F_
 Width: 1024
 VWidth: 0
@@ -16974,7 +17358,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0950
-Encoding: 2384 2384 548
+Encoding: 2384 2384 554
 GlifName: uni0950
 Width: 1024
 VWidth: 0
@@ -17034,7 +17418,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0951
-Encoding: 2385 2385 549
+Encoding: 2385 2385 555
 GlifName: uni0951
 Width: 1024
 VWidth: 0
@@ -17054,7 +17438,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0952
-Encoding: 2386 2386 550
+Encoding: 2386 2386 556
 GlifName: uni0952
 Width: 1024
 VWidth: 0
@@ -17074,7 +17458,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0953
-Encoding: 2387 2387 551
+Encoding: 2387 2387 557
 GlifName: uni0953
 Width: 1024
 VWidth: 0
@@ -17094,7 +17478,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0954
-Encoding: 2388 2388 552
+Encoding: 2388 2388 558
 GlifName: uni0954
 Width: 1024
 VWidth: 0
@@ -17114,7 +17498,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0955
-Encoding: 2389 2389 553
+Encoding: 2389 2389 559
 GlifName: uni0955
 Width: 1024
 VWidth: 0
@@ -17152,7 +17536,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0956
-Encoding: 2390 2390 554
+Encoding: 2390 2390 560
 GlifName: uni0956
 Width: 1024
 VWidth: 0
@@ -17185,7 +17569,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0957
-Encoding: 2391 2391 555
+Encoding: 2391 2391 561
 GlifName: uni0957
 Width: 1024
 VWidth: 0
@@ -17233,7 +17617,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0958
-Encoding: 2392 2392 556
+Encoding: 2392 2392 562
 GlifName: uni0958
 Width: 1024
 VWidth: 0
@@ -17317,7 +17701,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0915 uni093C
 EndChar
 
 StartChar: uni0958_uni0930_uni094D.vatu
-Encoding: 65656 -1 557
+Encoding: 1114239 -1 563
 GlifName: uni0958_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -17392,7 +17776,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0958 uni0930_uni09
 EndChar
 
 StartChar: uni0958_uni094D.half
-Encoding: 65657 -1 558
+Encoding: 1114240 -1 564
 GlifName: uni0958_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -17471,7 +17855,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0958 uni094D
 EndChar
 
 StartChar: uni0958_uni094D.haln
-Encoding: 65658 -1 559
+Encoding: 1114241 -1 565
 GlifName: uni0958_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -17480,12 +17864,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 556 2392 N 1 0 0 1 0 0 2
+Refer: 562 2392 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0958 uni094D
 EndChar
 
 StartChar: uni0959
-Encoding: 2393 2393 560
+Encoding: 2393 2393 566
 GlifName: uni0959
 Width: 1024
 VWidth: 0
@@ -17574,7 +17958,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0916 uni093C
 EndChar
 
 StartChar: uni0959_uni0930_uni094D.vatu
-Encoding: 65659 -1 561
+Encoding: 1114242 -1 567
 GlifName: uni0959_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -17654,7 +18038,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0959 uni0930_uni09
 EndChar
 
 StartChar: uni0959_uni094D.half
-Encoding: 65660 -1 562
+Encoding: 1114243 -1 568
 GlifName: uni0959_uni094D_.half
 Width: 1024
 VWidth: 0
@@ -17738,7 +18122,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0959 uni094D
 EndChar
 
 StartChar: uni0959_uni094D.haln
-Encoding: 65661 -1 563
+Encoding: 1114244 -1 569
 GlifName: uni0959_uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -17747,12 +18131,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 560 2393 N 1 0 0 1 0 0 2
+Refer: 566 2393 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0959 uni094D
 EndChar
 
 StartChar: uni095A
-Encoding: 2394 2394 564
+Encoding: 2394 2394 570
 GlifName: uni095A_
 Width: 1024
 VWidth: 0
@@ -17856,7 +18240,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0917 uni093C
 EndChar
 
 StartChar: uni095A_uni0930_uni094D.vatu
-Encoding: 65662 -1 565
+Encoding: 1114245 -1 571
 GlifName: uni095A__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -17955,7 +18339,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095A uni0930_uni09
 EndChar
 
 StartChar: uni095A_uni094D.half
-Encoding: 65663 -1 566
+Encoding: 1114246 -1 572
 GlifName: uni095A__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -18054,7 +18438,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095A uni094D
 EndChar
 
 StartChar: uni095A_uni094D.haln
-Encoding: 65664 -1 567
+Encoding: 1114247 -1 573
 GlifName: uni095A__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -18063,12 +18447,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 564 2394 N 1 0 0 1 0 0 2
+Refer: 570 2394 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095A uni094D
 EndChar
 
 StartChar: uni095B
-Encoding: 2395 2395 568
+Encoding: 2395 2395 574
 GlifName: uni095B_
 Width: 1024
 VWidth: 0
@@ -18117,7 +18501,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni091C uni093C
 EndChar
 
 StartChar: uni095B_uni0930_uni094D.vatu
-Encoding: 65665 -1 569
+Encoding: 1114248 -1 575
 GlifName: uni095B__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -18171,7 +18555,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095B uni0930_uni09
 EndChar
 
 StartChar: uni095B_uni094D.half
-Encoding: 65666 -1 570
+Encoding: 1114249 -1 576
 GlifName: uni095B__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -18215,7 +18599,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095B uni094D
 EndChar
 
 StartChar: uni095B_uni094D.haln
-Encoding: 65667 -1 571
+Encoding: 1114250 -1 577
 GlifName: uni095B__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -18224,12 +18608,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 568 2395 N 1 0 0 1 0 0 2
+Refer: 574 2395 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095B uni094D
 EndChar
 
 StartChar: uni095C
-Encoding: 2396 2396 572
+Encoding: 2396 2396 578
 GlifName: uni095C_
 Width: 1024
 VWidth: 0
@@ -18278,7 +18662,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0921 uni093C
 EndChar
 
 StartChar: uni095C_uni0930_uni094D.vatu
-Encoding: 65668 -1 573
+Encoding: 1114251 -1 579
 GlifName: uni095C__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -18337,7 +18721,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095C uni0930_uni09
 EndChar
 
 StartChar: uni095C_uni094D.half
-Encoding: 65669 -1 574
+Encoding: 1114252 -1 580
 GlifName: uni095C__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -18396,7 +18780,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095C uni094D
 EndChar
 
 StartChar: uni095C_uni094D.haln
-Encoding: 65670 -1 575
+Encoding: 1114253 -1 581
 GlifName: uni095C__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -18405,12 +18789,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 572 2396 N 1 0 0 1 0 0 2
+Refer: 578 2396 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095C uni094D
 EndChar
 
 StartChar: uni095D
-Encoding: 2397 2397 576
+Encoding: 2397 2397 582
 GlifName: uni095D_
 Width: 1024
 VWidth: 0
@@ -18464,7 +18848,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0922 uni093C
 EndChar
 
 StartChar: uni095D_uni0930_uni094D.vatu
-Encoding: 65671 -1 577
+Encoding: 1114254 -1 583
 GlifName: uni095D__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -18528,7 +18912,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095D uni0930_uni09
 EndChar
 
 StartChar: uni095D_uni094D.half
-Encoding: 65672 -1 578
+Encoding: 1114255 -1 584
 GlifName: uni095D__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -18592,7 +18976,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095D uni094D
 EndChar
 
 StartChar: uni095D_uni094D.haln
-Encoding: 65673 -1 579
+Encoding: 1114256 -1 585
 GlifName: uni095D__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -18601,12 +18985,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 576 2397 N 1 0 0 1 0 0 2
+Refer: 582 2397 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095D uni094D
 EndChar
 
 StartChar: uni095E
-Encoding: 2398 2398 580
+Encoding: 2398 2398 586
 GlifName: uni095E_
 Width: 1024
 VWidth: 0
@@ -18650,7 +19034,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni092B uni093C
 EndChar
 
 StartChar: uni095E_uni0930_uni094D.vatu
-Encoding: 65674 -1 581
+Encoding: 1114257 -1 587
 GlifName: uni095E__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -18699,7 +19083,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095E uni0930_uni09
 EndChar
 
 StartChar: uni095E_uni094D.half
-Encoding: 65675 -1 582
+Encoding: 1114258 -1 588
 GlifName: uni095E__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -18738,7 +19122,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095E uni094D
 EndChar
 
 StartChar: uni095E_uni094D.haln
-Encoding: 65676 -1 583
+Encoding: 1114259 -1 589
 GlifName: uni095E__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -18747,12 +19131,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 580 2398 N 1 0 0 1 0 0 2
+Refer: 586 2398 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095E uni094D
 EndChar
 
 StartChar: uni095F
-Encoding: 2399 2399 584
+Encoding: 2399 2399 590
 GlifName: uni095F_
 Width: 1024
 VWidth: 0
@@ -18796,7 +19180,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni092F uni093C
 EndChar
 
 StartChar: uni095F_uni0930_uni094D.vatu
-Encoding: 65677 -1 585
+Encoding: 1114260 -1 591
 GlifName: uni095F__uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
@@ -18845,7 +19229,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095F uni0930_uni09
 EndChar
 
 StartChar: uni095F_uni094D.half
-Encoding: 65678 -1 586
+Encoding: 1114261 -1 592
 GlifName: uni095F__uni094D_.half
 Width: 1024
 VWidth: 0
@@ -18899,7 +19283,7 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095F uni094D
 EndChar
 
 StartChar: uni095F_uni094D.haln
-Encoding: 65679 -1 587
+Encoding: 1114262 -1 593
 GlifName: uni095F__uni094D_.haln
 Width: 1024
 VWidth: 0
@@ -18908,12 +19292,12 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 196 -1 N 1 0 0 1 900 0 2
-Refer: 584 2399 N 1 0 0 1 0 0 2
+Refer: 590 2399 N 1 0 0 1 0 0 2
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095F uni094D
 EndChar
 
 StartChar: uni0960
-Encoding: 2400 2400 588
+Encoding: 2400 2400 594
 GlifName: uni0960
 Width: 1024
 VWidth: 0
@@ -18971,7 +19355,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0961
-Encoding: 2401 2401 589
+Encoding: 2401 2401 595
 GlifName: uni0961
 Width: 1024
 VWidth: 0
@@ -19024,7 +19408,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0962
-Encoding: 2402 2402 590
+Encoding: 2402 2402 596
 GlifName: uni0962
 Width: 1024
 VWidth: 0
@@ -19067,7 +19451,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0963
-Encoding: 2403 2403 591
+Encoding: 2403 2403 597
 GlifName: uni0963
 Width: 1024
 VWidth: 0
@@ -19115,7 +19499,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0964
-Encoding: 2404 2404 592
+Encoding: 2404 2404 598
 GlifName: uni0964
 Width: 1024
 VWidth: 0
@@ -19135,7 +19519,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0965
-Encoding: 2405 2405 593
+Encoding: 2405 2405 599
 GlifName: uni0965
 Width: 1024
 VWidth: 0
@@ -19160,7 +19544,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0966
-Encoding: 2406 2406 594
+Encoding: 2406 2406 600
 GlifName: uni0966
 Width: 1024
 VWidth: 0
@@ -19195,7 +19579,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0967
-Encoding: 2407 2407 595
+Encoding: 2407 2407 601
 GlifName: uni0967
 Width: 1024
 VWidth: 0
@@ -19230,7 +19614,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0968
-Encoding: 2408 2408 596
+Encoding: 2408 2408 602
 GlifName: uni0968
 Width: 1024
 VWidth: 0
@@ -19270,7 +19654,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0969
-Encoding: 2409 2409 597
+Encoding: 2409 2409 603
 GlifName: uni0969
 Width: 1024
 VWidth: 0
@@ -19310,7 +19694,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096A
-Encoding: 2410 2410 598
+Encoding: 2410 2410 604
 GlifName: uni096A_
 Width: 1024
 VWidth: 0
@@ -19360,7 +19744,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096B
-Encoding: 2411 2411 599
+Encoding: 2411 2411 605
 GlifName: uni096B_
 Width: 1024
 VWidth: 0
@@ -19395,7 +19779,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096C
-Encoding: 2412 2412 600
+Encoding: 2412 2412 606
 GlifName: uni096C_
 Width: 1024
 VWidth: 0
@@ -19435,7 +19819,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096D
-Encoding: 2413 2413 601
+Encoding: 2413 2413 607
 GlifName: uni096D_
 Width: 1024
 VWidth: 0
@@ -19475,32 +19859,37 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni096E
-Encoding: 2414 2414 602
+Encoding: 2414 2414 608
 GlifName: uni096E_
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-119 106 m 257
- 119 45 l 257
- 907 45 l 257
- 907 106 l 257
- 119 106 l 257
-636 1153 m 257
- 119 108 l 257
- 173 80 l 257
- 690 1125 l 257
- 636 1153 l 257
+118.5 45.5 m 261
+ 179.5 45.5 l 261
+ 179.5 593.5 l 261
+ 118.5 593.5 l 261
+ 118.5 45.5 l 261
+119 106 m 261
+ 119 45 l 261
+ 907 45 l 261
+ 907 106 l 261
+ 119 106 l 261
+636 1393 m 261
+ 119 590 l 261
+ 173 562 l 261
+ 690 1365 l 261
+ 636 1393 l 261
 EndSplineSet
 PickledDataWithLists: "(dp0
 ."
 EndChar
 
 StartChar: uni096F
-Encoding: 2415 2415 603
+Encoding: 2415 2415 609
 GlifName: uni096F_
 Width: 1024
 VWidth: 0
@@ -19540,7 +19929,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0970
-Encoding: 2416 2416 604
+Encoding: 2416 2416 610
 GlifName: uni0970
 Width: 1024
 VWidth: 0
@@ -19583,7 +19972,7 @@ sass."
 EndChar
 
 StartChar: uni0971
-Encoding: 2417 2417 605
+Encoding: 2417 2417 611
 GlifName: uni0971
 Width: 1024
 VWidth: 0
@@ -19626,7 +20015,7 @@ sass."
 EndChar
 
 StartChar: uni0972
-Encoding: 2418 2418 606
+Encoding: 2418 2418 612
 GlifName: uni0972
 Width: 1024
 VWidth: 0
@@ -19684,7 +20073,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0973
-Encoding: 2419 2419 607
+Encoding: 2419 2419 613
 GlifName: uni0973
 Width: 1024
 VWidth: 0
@@ -19732,7 +20121,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0974
-Encoding: 2420 2420 608
+Encoding: 2420 2420 614
 GlifName: uni0974
 Width: 1024
 VWidth: 0
@@ -19782,7 +20171,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0975
-Encoding: 2421 2421 609
+Encoding: 2421 2421 615
 GlifName: uni0975
 Width: 1024
 VWidth: 0
@@ -19857,7 +20246,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0976
-Encoding: 2422 2422 610
+Encoding: 2422 2422 616
 GlifName: uni0976
 Width: 1024
 VWidth: 0
@@ -19917,7 +20306,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0977
-Encoding: 2423 2423 611
+Encoding: 2423 2423 617
 GlifName: uni0977
 Width: 1024
 VWidth: 0
@@ -19990,7 +20379,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0978
-Encoding: 2424 2424 612
+Encoding: 2424 2424 618
 GlifName: uni0978
 Width: 1024
 VWidth: 0
@@ -20025,7 +20414,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni0979
-Encoding: 2425 2425 613
+Encoding: 2425 2425 619
 GlifName: uni0979
 Width: 1024
 VWidth: 0
@@ -20083,7 +20472,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097A
-Encoding: 2426 2426 614
+Encoding: 2426 2426 620
 GlifName: uni097A_
 Width: 1024
 VWidth: 0
@@ -20126,7 +20515,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097B
-Encoding: 2427 2427 615
+Encoding: 2427 2427 621
 GlifName: uni097B_
 Width: 1024
 VWidth: 0
@@ -20219,7 +20608,7 @@ sass."
 EndChar
 
 StartChar: uni097C
-Encoding: 2428 2428 616
+Encoding: 2428 2428 622
 GlifName: uni097C_
 Width: 1024
 VWidth: 0
@@ -20267,7 +20656,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097D
-Encoding: 2429 2429 617
+Encoding: 2429 2429 623
 GlifName: uni097D_
 Width: 1024
 VWidth: 0
@@ -20302,7 +20691,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni097E
-Encoding: 2430 2430 618
+Encoding: 2430 2430 624
 GlifName: uni097E_
 Width: 1024
 VWidth: 0
@@ -20352,7 +20741,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni097F
-Encoding: 2431 2431 619
+Encoding: 2431 2431 625
 GlifName: uni097F_
 Width: 1024
 VWidth: 0
@@ -20400,7 +20789,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni1E0C
-Encoding: 7692 7692 620
+Encoding: 7692 7692 626
 GlifName: uni1E_0C_
 Width: 1024
 VWidth: 0
@@ -20413,7 +20802,7 @@ Refer: 19 68 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E0D
-Encoding: 7693 7693 621
+Encoding: 7693 7693 627
 GlifName: uni1E_0D_
 Width: 1024
 VWidth: 0
@@ -20426,7 +20815,7 @@ Refer: 158 100 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E34
-Encoding: 7732 7732 622
+Encoding: 7732 7732 628
 GlifName: uni1E_34
 Width: 1024
 VWidth: 0
@@ -20439,7 +20828,7 @@ Refer: 54 75 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E35
-Encoding: 7733 7733 623
+Encoding: 7733 7733 629
 GlifName: uni1E_35
 Width: 1024
 VWidth: 0
@@ -20452,7 +20841,7 @@ Refer: 220 107 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E36
-Encoding: 7734 7734 624
+Encoding: 7734 7734 630
 GlifName: uni1E_36
 Width: 1024
 VWidth: 0
@@ -20490,7 +20879,7 @@ sass."
 EndChar
 
 StartChar: uni1E37
-Encoding: 7735 7735 625
+Encoding: 7735 7735 631
 GlifName: uni1E_37
 Width: 1024
 VWidth: 0
@@ -20503,7 +20892,7 @@ Refer: 221 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E38
-Encoding: 7736 7736 626
+Encoding: 7736 7736 632
 GlifName: uni1E_38
 Width: 1024
 VWidth: 0
@@ -20512,11 +20901,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 338 772 N 1 0 0 1 -296 90 2
-Refer: 624 7734 N 1 0 0 1 0 0 2
+Refer: 630 7734 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E39
-Encoding: 7737 7737 627
+Encoding: 7737 7737 633
 GlifName: uni1E_39
 Width: 1024
 VWidth: 0
@@ -20525,11 +20914,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 338 772 N 1 0 0 1 -113 123 2
-Refer: 625 7735 N 1 0 0 1 0 0 2
+Refer: 631 7735 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E3A
-Encoding: 7738 7738 628
+Encoding: 7738 7738 634
 GlifName: uni1E_3A_
 Width: 1024
 VWidth: 0
@@ -20542,7 +20931,7 @@ Refer: 55 76 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E3B
-Encoding: 7739 7739 629
+Encoding: 7739 7739 635
 GlifName: uni1E_3B_
 Width: 1024
 VWidth: 0
@@ -20555,7 +20944,7 @@ Refer: 221 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E42
-Encoding: 7746 7746 630
+Encoding: 7746 7746 636
 GlifName: uni1E_42
 Width: 1024
 VWidth: 0
@@ -20568,7 +20957,7 @@ Refer: 60 77 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E43
-Encoding: 7747 7747 631
+Encoding: 7747 7747 637
 GlifName: uni1E_43
 Width: 1024
 VWidth: 0
@@ -20581,7 +20970,7 @@ Refer: 228 109 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E44
-Encoding: 7748 7748 632
+Encoding: 7748 7748 638
 GlifName: uni1E_44
 Width: 1024
 VWidth: 0
@@ -20594,7 +20983,7 @@ Refer: 61 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E45
-Encoding: 7749 7749 633
+Encoding: 7749 7749 639
 GlifName: uni1E_45
 Width: 1024
 VWidth: 0
@@ -20607,7 +20996,7 @@ Refer: 233 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E46
-Encoding: 7750 7750 634
+Encoding: 7750 7750 640
 GlifName: uni1E_46
 Width: 1024
 VWidth: 0
@@ -20620,7 +21009,7 @@ Refer: 61 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E47
-Encoding: 7751 7751 635
+Encoding: 7751 7751 641
 GlifName: uni1E_47
 Width: 1024
 VWidth: 0
@@ -20633,7 +21022,7 @@ Refer: 233 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E48
-Encoding: 7752 7752 636
+Encoding: 7752 7752 642
 GlifName: uni1E_48
 Width: 1024
 VWidth: 0
@@ -20646,7 +21035,7 @@ Refer: 61 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E49
-Encoding: 7753 7753 637
+Encoding: 7753 7753 643
 GlifName: uni1E_49
 Width: 1024
 VWidth: 0
@@ -20659,7 +21048,7 @@ Refer: 233 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E4C
-Encoding: 7756 7756 638
+Encoding: 7756 7756 644
 GlifName: uni1E_4C_
 Width: 1024
 VWidth: 0
@@ -20672,7 +21061,7 @@ Refer: 75 213 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E4D
-Encoding: 7757 7757 639
+Encoding: 7757 7757 645
 GlifName: uni1E_4D_
 Width: 1024
 VWidth: 0
@@ -20685,7 +21074,7 @@ Refer: 255 245 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E58
-Encoding: 7768 7768 640
+Encoding: 7768 7768 646
 GlifName: uni1E_58
 Width: 1024
 VWidth: 0
@@ -20698,7 +21087,7 @@ Refer: 78 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E59
-Encoding: 7769 7769 641
+Encoding: 7769 7769 647
 GlifName: uni1E_59
 Width: 1024
 VWidth: 0
@@ -20711,7 +21100,7 @@ Refer: 277 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5A
-Encoding: 7770 7770 642
+Encoding: 7770 7770 648
 GlifName: uni1E_5A_
 Width: 1024
 VWidth: 0
@@ -20724,7 +21113,7 @@ Refer: 78 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5B
-Encoding: 7771 7771 643
+Encoding: 7771 7771 649
 GlifName: uni1E_5B_
 Width: 1024
 VWidth: 0
@@ -20737,7 +21126,7 @@ Refer: 277 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5C
-Encoding: 7772 7772 644
+Encoding: 7772 7772 650
 GlifName: uni1E_5C_
 Width: 1024
 VWidth: 0
@@ -20746,11 +21135,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 338 772 N 1 0 0 1 11.5 124 2
-Refer: 642 7770 N 1 0 0 1 0 0 2
+Refer: 648 7770 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5D
-Encoding: 7773 7773 645
+Encoding: 7773 7773 651
 GlifName: uni1E_5D_
 Width: 1024
 VWidth: 0
@@ -20759,11 +21148,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 338 772 N 1 0 0 1 0 -403 2
-Refer: 643 7771 N 1 0 0 1 0 0 2
+Refer: 649 7771 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5E
-Encoding: 7774 7774 646
+Encoding: 7774 7774 652
 GlifName: uni1E_5E_
 Width: 1024
 VWidth: 0
@@ -20776,7 +21165,7 @@ Refer: 78 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5F
-Encoding: 7775 7775 647
+Encoding: 7775 7775 653
 GlifName: uni1E_5F_
 Width: 1024
 VWidth: 0
@@ -20789,7 +21178,7 @@ Refer: 277 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E62
-Encoding: 7778 7778 648
+Encoding: 7778 7778 654
 GlifName: uni1E_62
 Width: 1024
 VWidth: 0
@@ -20802,7 +21191,7 @@ Refer: 81 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E63
-Encoding: 7779 7779 649
+Encoding: 7779 7779 655
 GlifName: uni1E_63
 Width: 1024
 VWidth: 0
@@ -20815,7 +21204,7 @@ Refer: 282 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E6C
-Encoding: 7788 7788 650
+Encoding: 7788 7788 656
 GlifName: uni1E_6C_
 Width: 1024
 VWidth: 0
@@ -20828,7 +21217,7 @@ Refer: 86 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E6D
-Encoding: 7789 7789 651
+Encoding: 7789 7789 657
 GlifName: uni1E_6D_
 Width: 1024
 VWidth: 0
@@ -20841,7 +21230,7 @@ Refer: 294 116 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E8E
-Encoding: 7822 7822 652
+Encoding: 7822 7822 658
 GlifName: uni1E_8E_
 Width: 1024
 VWidth: 0
@@ -20854,7 +21243,7 @@ Refer: 107 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E8F
-Encoding: 7823 7823 653
+Encoding: 7823 7823 659
 GlifName: uni1E_8F_
 Width: 1024
 VWidth: 0
@@ -20863,11 +21252,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 340 775 N 1 0 0 1 0 -488 2
-Refer: 672 121 N 1 0 0 1 0 0 2
+Refer: 678 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E9E
-Encoding: 7838 7838 654
+Encoding: 7838 7838 660
 GlifName: uni1E_9E_
 Width: 1024
 VWidth: 0
@@ -20912,7 +21301,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni200C
-Encoding: 8204 8204 655
+Encoding: 8204 8204 661
 GlifName: uni200C_
 Width: 1024
 VWidth: 0
@@ -20937,7 +21326,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni200D
-Encoding: 8205 8205 656
+Encoding: 8205 8205 662
 GlifName: uni200D_
 Width: 1024
 VWidth: 0
@@ -20955,7 +21344,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni2044
-Encoding: 8260 8260 657
+Encoding: 8260 8260 663
 GlifName: uni2044
 Width: 1024
 VWidth: 0
@@ -20975,7 +21364,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uni20B9
-Encoding: 8377 8377 658
+Encoding: 8377 8377 664
 GlifName: uni20B_9
 Width: 1024
 VWidth: 0
@@ -21013,7 +21402,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni25CC
-Encoding: 9676 9676 659
+Encoding: 9676 9676 665
 GlifName: uni25C_C_
 Width: 1024
 VWidth: 0
@@ -21068,7 +21457,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: uniFB01
-Encoding: 64257 64257 660
+Encoding: 64257 64257 666
 GlifName: uniF_B_01
 Width: 1024
 VWidth: 0
@@ -21108,7 +21497,7 @@ Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f i
 EndChar
 
 StartChar: uniFB02
-Encoding: 64258 64258 661
+Encoding: 64258 64258 667
 GlifName: uniF_B_02
 Width: 1024
 VWidth: 0
@@ -21155,7 +21544,7 @@ Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
 EndChar
 
 StartChar: uogonek
-Encoding: 371 371 662
+Encoding: 371 371 668
 GlifName: uogonek
 Width: 1024
 VWidth: 0
@@ -21168,7 +21557,7 @@ Refer: 303 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uring
-Encoding: 367 367 663
+Encoding: 367 367 669
 GlifName: uring
 Width: 1024
 VWidth: 0
@@ -21181,7 +21570,7 @@ Refer: 303 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: utilde
-Encoding: 361 361 664
+Encoding: 361 361 670
 GlifName: utilde
 Width: 1024
 VWidth: 0
@@ -21194,7 +21583,7 @@ Refer: 303 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: v
-Encoding: 118 118 665
+Encoding: 118 118 671
 GlifName: v
 Width: 1024
 VWidth: 0
@@ -21217,7 +21606,7 @@ EndSplineSet
 EndChar
 
 StartChar: w
-Encoding: 119 119 666
+Encoding: 119 119 672
 GlifName: w
 Width: 1024
 VWidth: 0
@@ -21250,7 +21639,7 @@ EndSplineSet
 EndChar
 
 StartChar: wacute
-Encoding: 7811 7811 667
+Encoding: 7811 7811 673
 GlifName: wacute
 Width: 1024
 VWidth: 0
@@ -21259,11 +21648,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 121 769 N 1 0 0 1 40.5 284 2
-Refer: 666 119 N 1 0 0 1 0 0 2
+Refer: 672 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: wcircumflex
-Encoding: 373 373 668
+Encoding: 373 373 674
 GlifName: wcircumflex
 Width: 1024
 VWidth: 0
@@ -21272,11 +21661,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 337 770 N 1 0 0 1 79.5 -826.5 2
-Refer: 666 119 N 1 0 0 1 0 0 2
+Refer: 672 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: wdieresis
-Encoding: 7813 7813 669
+Encoding: 7813 7813 675
 GlifName: wdieresis
 Width: 1024
 VWidth: 0
@@ -21285,11 +21674,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 341 776 N 1 0 0 1 3.5 -527 2
-Refer: 666 119 N 1 0 0 1 0 0 2
+Refer: 672 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: wgrave
-Encoding: 7809 7809 670
+Encoding: 7809 7809 676
 GlifName: wgrave
 Width: 1024
 VWidth: 0
@@ -21298,11 +21687,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 198 768 N 1 0 0 1 -37 341 2
-Refer: 666 119 N 1 0 0 1 0 0 2
+Refer: 672 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: x
-Encoding: 120 120 671
+Encoding: 120 120 677
 GlifName: x
 Width: 1024
 VWidth: 0
@@ -21327,7 +21716,7 @@ PickledDataWithLists: "(dp0
 EndChar
 
 StartChar: y
-Encoding: 121 121 672
+Encoding: 121 121 678
 GlifName: y
 Width: 1024
 VWidth: 0
@@ -21360,7 +21749,7 @@ EndSplineSet
 EndChar
 
 StartChar: yacute
-Encoding: 253 253 673
+Encoding: 253 253 679
 GlifName: yacute
 Width: 1024
 VWidth: 0
@@ -21369,11 +21758,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 121 769 N 1 0 0 1 13 419 2
-Refer: 672 121 N 1 0 0 1 0 0 2
+Refer: 678 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ycircumflex
-Encoding: 375 375 674
+Encoding: 375 375 680
 GlifName: ycircumflex
 Width: 1024
 VWidth: 0
@@ -21382,11 +21771,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 337 770 N 1 0 0 1 0 -827.5 2
-Refer: 672 121 N 1 0 0 1 0 0 2
+Refer: 678 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ydieresis
-Encoding: 255 255 675
+Encoding: 255 255 681
 GlifName: ydieresis
 Width: 1024
 VWidth: 0
@@ -21395,11 +21784,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 341 776 N 1 0 0 1 0 -488 2
-Refer: 672 121 N 1 0 0 1 0 0 2
+Refer: 678 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: yen
-Encoding: 165 165 676
+Encoding: 165 165 682
 GlifName: yen
 Width: 1024
 VWidth: 0
@@ -21442,7 +21831,7 @@ EndSplineSet
 EndChar
 
 StartChar: ygrave
-Encoding: 7923 7923 677
+Encoding: 7923 7923 683
 GlifName: ygrave
 Width: 1024
 VWidth: 0
@@ -21451,11 +21840,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 198 768 N 1 0 0 1 -32.5 476 2
-Refer: 672 121 N 1 0 0 1 0 0 2
+Refer: 678 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: z
-Encoding: 122 122 678
+Encoding: 122 122 684
 GlifName: z
 Width: 1024
 VWidth: 0
@@ -21483,7 +21872,7 @@ EndSplineSet
 EndChar
 
 StartChar: zacute
-Encoding: 378 378 679
+Encoding: 378 378 685
 GlifName: zacute
 Width: 1024
 VWidth: 0
@@ -21492,11 +21881,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 121 769 N 1 0 0 1 13 419 2
-Refer: 678 122 N 1 0 0 1 0 0 2
+Refer: 684 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: zcaron
-Encoding: 382 382 680
+Encoding: 382 382 686
 GlifName: zcaron
 Width: 1024
 VWidth: 0
@@ -21505,11 +21894,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 344 780 N 1 0 0 1 -21 -136 2
-Refer: 678 122 N 1 0 0 1 0 0 2
+Refer: 684 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: zdotaccent
-Encoding: 380 380 681
+Encoding: 380 380 687
 GlifName: zdotaccent
 Width: 1024
 VWidth: 0
@@ -21518,11 +21907,11 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 340 775 N 1 0 0 1 0 -488 2
-Refer: 678 122 N 1 0 0 1 0 0 2
+Refer: 684 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: zero
-Encoding: 48 48 682
+Encoding: 48 48 688
 GlifName: zero
 Width: 1024
 VWidth: 0
@@ -21549,6 +21938,105 @@ SplineSet
 EndSplineSet
 PickledDataWithLists: "(dp0
 ."
+EndChar
+
+StartChar: uni0940_uni0902.abvs
+Encoding: 1114263 -1 689
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 N 1 0 0 1 314 0 2
+Refer: 538 2368 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni0945_uni0902.abvs
+Encoding: 1114264 -1 690
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 143 0 2
+Refer: 543 2373 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni0946_uni0902.abvs
+Encoding: 1114265 -1 691
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 0 0 2
+Refer: 544 2374 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni0947_uni0902.abvs
+Encoding: 1114266 -1 692
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 0 0 2
+Refer: 545 2375 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni0948_uni0902.abvs
+Encoding: 1114267 -1 693
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 182 0 2
+Refer: 546 2376 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni0949_uni0902.abvs
+Encoding: 1114268 -1 694
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 0 297 2
+Refer: 547 2377 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni094A_uni0902.abvs
+Encoding: 1114269 -1 695
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 255 0 2
+Refer: 548 2378 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni094B_uni0902.abvs
+Encoding: 1114270 -1 696
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 158 0 2
+Refer: 549 2379 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni094C_uni0902.abvs
+Encoding: 1114271 -1 697
+Width: 1024
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 340 775 S 1 0 0 1 211 0 2
+Refer: 550 2380 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont

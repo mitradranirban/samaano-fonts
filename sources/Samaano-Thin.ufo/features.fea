@@ -6,6 +6,7 @@ languagesystem latn dflt;
 # GSUB 
 
 
+
 lookup nuktNuktaFormsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0928 \uni093C  by \uni0929;
@@ -141,9 +142,8 @@ lookup halnHalantFormsinDevanagarilookup0 {
 lookup vatuVattuVariantsinDevanagarilookup0 {
   lookupflag 0;
     sub \uni0915 \uni0930_uni094D.blwf  by \uni0915_uni0930_uni094D.vatu;
-    sub \uni0915 \uni0930_uni094D.blwf  by \uni0915_uni0930_uni094D.vatu;
     sub \uni0916 \uni0930_uni094D.blwf  by \uni0916_uni0930_uni094D.vatu;
-    sub \uni0916 \uni0930_uni094D.blwf  by \uni0917_uni0930_uni094D.vatu;
+    sub \uni0917 \uni0930_uni094D.blwf  by \uni0917_uni0930_uni094D.vatu;
     sub \uni0918 \uni0930_uni094D.blwf  by \uni0918_uni0930_uni094D.vatu;
     sub \uni0919 \uni0930_uni094D.blwf  by \uni0919_uni0930_uni094D.vatu;
     sub \uni091A \uni0930_uni094D.blwf  by \uni091A_uni0930_uni094D.vatu;
@@ -188,11 +188,26 @@ lookup vatuVattuVariantsinDevanagarilookup0 {
     sub \uni095F \uni0930_uni094D.blwf  by \uni095F_uni0930_uni094D.vatu;
 } vatuVattuVariantsinDevanagarilookup0;
 
+lookup abvsAboveBaseSubstitutionsinDevanagarilookup0 {
+  lookupflag 0;
+    sub \uni0940 \uni0902  by \uni0940_uni0902.abvs;
+    sub \uni0945 \uni0902  by \uni0945_uni0902.abvs;
+    sub \uni0906 \uni0902  by \uni0946_uni0902.abvs;
+    sub \uni0947 \uni0902  by \uni0947_uni0902.abvs;
+    sub \uni0948 \uni0902  by \uni0948_uni0902.abvs;
+    sub \uni0949 \uni0902  by \uni0949_uni0902.abvs;
+    sub \uni090A \uni0902  by \uni094A_uni0902.abvs;
+    sub \uni094B \uni0902  by \uni094B_uni0902.abvs;
+    sub \uni094C \uni0902  by \uni094C_uni0902.abvs;
+} abvsAboveBaseSubstitutionsinDevanagarilookup0;
+
 lookup dligDiscretionaryLigatureslookup0 {
   lookupflag 0;
     sub \f \i  by \uniFB01;
     sub \f \l  by \uniFB02;
 } dligDiscretionaryLigatureslookup0;
+
+
 
 feature nukt {
 
@@ -242,6 +257,12 @@ feature vatu {
      language dflt ;
       lookup vatuVattuVariantsinDevanagarilookup0;
 } vatu;
+feature abvs {
+
+ script deva;
+     language dflt ;
+      lookup abvsAboveBaseSubstitutionsinDevanagarilookup0;
+} abvs;
 
 feature dlig {
 
@@ -316,8 +337,8 @@ feature dlig {
 	\uni0930_uni094D.vatu \uni091A_uni0930_uni094D.vatu 
 	\uni091C_uni0930_uni094D.vatu \uni0922_uni0930_uni094D.vatu 
 	\uni0923_uni0930_uni094D.vatu \uni0938_uni0930_uni094D.vatu 
-	\uni0939_uni0930_uni094D.vatu \uni095C_uni0930_uni094D.vatu 
-	\uni095D_uni0930_uni094D.vatu \uni095F_uni0930_uni094D.vatu ];
+	\uni0939_uni0930_uni094D.vatu \uni095E_uni0930_uni094D.vatu 
+	\uni095F_uni0930_uni094D.vatu ];
 @GDEF_Ligature = [\uni0915_uni094D.haln \uni0915_uni094D_uni0937.akhn 
 	\uni0916_uni094D.haln \uni0917_uni094D.half \uni0917_uni094D.haln 
 	\uni0918_uni094D.half \uni0918_uni094D.haln \uni0919_uni094D.half 
@@ -365,7 +386,14 @@ feature dlig {
 	\uni0935_uni0930_uni094D.vatu \uni0936_uni0930_uni094D.vatu 
 	\uni0937_uni0930_uni094D.vatu \uni0958_uni0930_uni094D.vatu 
 	\uni0959_uni0930_uni094D.vatu \uni095A_uni0930_uni094D.vatu 
-	\uni095B_uni0930_uni094D.vatu \uni095E_uni0930_uni094D.vatu ];
+	\uni095B_uni0930_uni094D.vatu \uni095C_uni0930_uni094D.vatu 
+	\uni095D_uni0930_uni094D.vatu \uni0924_uni094D_uni0924.pres 
+	\uni0926_uni094D_uni0926.pres \uni0926_uni094D_uni0927.pres 
+	\uni0926_uni094D_uni092F.pres \uni0926_uni094D_uni0935.pres 
+	\uni0939_uni094D_uni092E.pres \uni0940_uni0902.abvs \uni0945_uni0902.abvs 
+	\uni0946_uni0902.abvs \uni0947_uni0902.abvs \uni0948_uni0902.abvs 
+	\uni0949_uni0902.abvs \uni094A_uni0902.abvs \uni094B_uni0902.abvs 
+	\uni094C_uni0902.abvs ];
 @GDEF_Mark = [\acutecomb \glyph094D \gravecomb \tildecomb \uni0302 \uni0304 
 	\uni0306 \uni0307 \uni0308 \uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 
 	\uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf \uni0930_uni094D.rphf 
