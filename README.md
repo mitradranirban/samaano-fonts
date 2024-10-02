@@ -37,6 +37,12 @@ Following are the specialities of the font
 
 
 ![Sample Image](documentation/image2.png)
+![Sample Image](documentation/image3.png)
+![Sample Image](documentation/image4.png)
+![Sample Image](documentation/image5.png)
+
+
+
 
 ## About
 This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.
