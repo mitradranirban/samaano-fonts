@@ -6,7 +6,6 @@ Weight: Bold
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
 Version: 0.900
-StyleMapFamilyName: Samaano
 ItalicAngle: 0
 UnderlinePosition: -204
 UnderlineWidth: 102
@@ -24,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1727886399
-ModificationTime: 1727887084
+ModificationTime: 1727890065
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -58,7 +57,9 @@ Lookup: 4 0 0 "halfHalfFormsinDevanagarilookup0" { "halfHalfFormsinDevanagariloo
 Lookup: 4 0 0 "halnHalantFormsinDevanagarilookup0" { "halnHalantFormsinDevanagarilookup0 subtable"  } ['haln' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "vatuVattuVariantsinDevanagarilookup0" { "vatuVattuVariantsinDevanagarilookup0 subtable"  } ['vatu' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "abvsAboveBaseSubstitutionsinDevanagarilookup0" { "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable"  } ['abvs' ('deva' <'dflt' > ) ]
+Lookup: 4 0 0 "presPreBaseSubstitutions in Devanagari lookup 0" { "'pres' Pre Base Substitutions in Devanagari lookup 0-1"  } ['pres' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 0.900" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)+AAoA +AAoA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL+AAoACgAA" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
@@ -70,6 +71,8 @@ DisplaySize: -96
 AntiAlias: 1
 FitToEm: 0
 WinInfo: 169 13 5
+BeginPrivate: 0
+EndPrivate
 Grid
 -1024 -612 m 0
  3072 -612 l 1024
@@ -24577,6 +24580,7 @@ SplineSet
  695 838 l 257
  695 1038 l 257
 EndSplineSet
+Ligature2: "'pres' Pre Base Substitutions in Devanagari lookup 0-1" uni0924_uni094D.half uni0924
 EndChar
 
 StartChar: uni0926_uni094D_uni0926.pres
@@ -24630,6 +24634,7 @@ SplineSet
  257 651 l 257
  57 651 l 257
 EndSplineSet
+Ligature2: "'pres' Pre Base Substitutions in Devanagari lookup 0-1" uni0926_uni094D.half uni0926
 EndChar
 
 StartChar: uni0926_uni094D_uni0927.pres
@@ -24693,6 +24698,7 @@ SplineSet
  847 339 l 257
  29 339 l 257
 EndSplineSet
+Ligature2: "'pres' Pre Base Substitutions in Devanagari lookup 0-1" uni0926_uni094D.half uni0927
 EndChar
 
 StartChar: uni0926_uni094D_uni092F.pres
@@ -24741,6 +24747,7 @@ SplineSet
  684 821 l 257
  684 1020 l 257
 EndSplineSet
+Ligature2: "'pres' Pre Base Substitutions in Devanagari lookup 0-1" uni0926_uni094D.half uni092F
 EndChar
 
 StartChar: uni0926_uni094D_uni0935.pres
@@ -24799,6 +24806,7 @@ SplineSet
  511 553 l 257
  75 553 l 257
 EndSplineSet
+Ligature2: "'pres' Pre Base Substitutions in Devanagari lookup 0-1" uni0926_uni094D.half uni0935
 EndChar
 
 StartChar: uni0939_uni094D_uni092E.pres
@@ -24888,6 +24896,7 @@ sVwidth
 p7
 I8
 sass."
+Ligature2: "'pres' Pre Base Substitutions in Devanagari lookup 0-1" uni0939_uni094D.half uni092E
 EndChar
 
 StartChar: uni0940_uni0902.abvs

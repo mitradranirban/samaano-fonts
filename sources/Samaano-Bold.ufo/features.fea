@@ -200,6 +200,16 @@ lookup abvsAboveBaseSubstitutionsinDevanagarilookup0 {
     sub \uni094C \uni0902  by \uni094C_uni0902.abvs;
 } abvsAboveBaseSubstitutionsinDevanagarilookup0;
 
+lookup presPreBaseSubstitutionsinDevanagarilookup0 {
+  lookupflag 0;
+    sub \uni0924_uni094D.half \uni0924  by \uni0924_uni094D_uni0924.pres;
+    sub \uni0926_uni094D.half \uni0926  by \uni0926_uni094D_uni0926.pres;
+    sub \uni0926_uni094D.half \uni0927  by \uni0926_uni094D_uni0927.pres;
+    sub \uni0926_uni094D.half \uni092F  by \uni0926_uni094D_uni092F.pres;
+    sub \uni0926_uni094D.half \uni0935  by \uni0926_uni094D_uni0935.pres;
+    sub \uni0939_uni094D.half \uni092E  by \uni0939_uni094D_uni092E.pres;
+} presPreBaseSubstitutionsinDevanagarilookup0;
+
 lookup dligDiscretionaryLigatureslookup0 {
   lookupflag 0;
     sub \f \i  by \uniFB01;
@@ -262,6 +272,13 @@ feature abvs {
       lookup abvsAboveBaseSubstitutionsinDevanagarilookup0;
 } abvs;
 
+feature pres {
+
+ script deva;
+     language dflt ;
+      lookup presPreBaseSubstitutionsinDevanagarilookup0;
+} pres;
+
 feature dlig {
 
  script DFLT;
@@ -272,6 +289,7 @@ feature dlig {
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
 } dlig;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \Aacute \Abreve \Acircumflex \Adieresis \Agrave \Amacron 
 	\Aogonek \Aring \Atilde \B \C \Cacute \Ccaron \Ccedilla \Ccircumflex \Cdotaccent 
