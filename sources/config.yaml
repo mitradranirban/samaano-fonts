@@ -8,10 +8,6 @@
 # directory.
 sources:
   - Samaano.designspace
-  - Samaano-Bold.ufo
-  - Samaano-Thin.ufo
-  - Samaano-Wide-Bold.ufo
-  - Samaano-Wide-Thin.ufo
 
 # You don't have to supply the family name, but builds are slightly
 # faster if you do.
@@ -23,17 +19,17 @@ familyName: "Samaano"
 
 outputDir: ../fonts
 vfDir: $outputDir/variable
-ttDir: $outputDir/ttf
-otDir: $outputDir/otf
+#ttDir: $outputDir/ttf
+#otDir: $outputDir/otf
 #woffDir: $outputDir/webfonts
 
 # The following entries, which are either "true" or "false"
 # determine which targets to build. We turn off OTFs for this demo.
 
 buildVariable: true
-buildStatic: true
-buildTTF: true
-buildOTF: true
+buildStatic: false
+buildTTF: false
+buildOTF: false
 # buildSmallCap: false
 
 # The next flags control autohinting.
