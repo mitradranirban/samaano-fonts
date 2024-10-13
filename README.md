@@ -49,7 +49,9 @@ This font is created by Dr Anirban Mitra, an amateure Typographer and Free Softw
  
 ## Changelog
  
-Font is currently in alpha stage 
+04 October 2024 - Version 1.000 beta1 - First Beta Release
+
+
 ## License
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
