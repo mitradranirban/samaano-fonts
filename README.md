@@ -48,7 +48,9 @@ Following are the specialities of the font
 This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.
  
 ## Changelog
- * Version 1.000beta - First Released for Beta testing on 07th October 2024 
+ 
+04 October 2024 - Version 1.000 beta1 - First Beta Release
+
 
 ## License
 
