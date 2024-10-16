@@ -48,8 +48,8 @@ Following are the specialities of the font
 This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.
  
 ## Changelog
- 
-Font is currently in alpha stage 
+ * Version 1.000beta - First Released for Beta testing on 07th October 2024 
+
 ## License
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
