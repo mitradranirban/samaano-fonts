@@ -3,30 +3,63 @@
   <axes>
     <axis tag="wght" name="weight" minimum="100" maximum="700" default="700"/>
     <axis tag="wdth" name="width" minimum="100" maximum="200" default="100"/>
+    <axis tag="slnt" name="slant" minimum="0" maximum="20" default="0"/>
   </axes>
   <sources>
     <source filename="Samaano-Thin.ufo" name="fontra000-bf2ac95c" familyname="Samaano" stylename="Thin">
       <location>
         <dimension name="weight" xvalue="100"/>
         <dimension name="width" xvalue="100"/>
+        <dimension name="slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Samaano-Thin-Slanted.ufo" name="3e3fa7ac" familyname="Samaano" stylename="Samaano-Thin-Slanted">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="width" xvalue="100"/>
+        <dimension name="slant" xvalue="20"/>
       </location>
     </source>
     <source filename="Samaano-Wide-Thin.ufo" name="2dcf3366" familyname="Samaano" stylename="Wide-Thin">
       <location>
         <dimension name="weight" xvalue="100"/>
         <dimension name="width" xvalue="200"/>
+        <dimension name="slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Samaano-Wide-Thin-Slanted.ufo" name="5b081a74" familyname="Samaano" stylename="Samaano-Wide-Thin-Slanted">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="width" xvalue="200"/>
+        <dimension name="slant" xvalue="20"/>
       </location>
     </source>
     <source filename="Samaano-Bold.ufo" name="fontra001-564a84af" familyname="Samaano" stylename="Bold">
       <location>
         <dimension name="weight" xvalue="700"/>
         <dimension name="width" xvalue="100"/>
+        <dimension name="slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Samaano-Bold-Slanted.ufo" name="c6390a17" familyname="Samaano" stylename="Samaano-Bold-Slanted">
+      <location>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="width" xvalue="100"/>
+        <dimension name="slant" xvalue="20"/>
       </location>
     </source>
     <source filename="Samaano-Wide-Bold.ufo" name="c0884920" familyname="Samaano" stylename="Wide-Bold">
       <location>
         <dimension name="weight" xvalue="700"/>
         <dimension name="width" xvalue="200"/>
+        <dimension name="slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Samaano-Wide-Bold-Slanted.ufo" name="682f74bd" familyname="Samaano" stylename="Samaano-Wide-Bold-Slanted">
+      <location>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="width" xvalue="200"/>
+        <dimension name="slant" xvalue="20"/>
       </location>
     </source>
   </sources>
