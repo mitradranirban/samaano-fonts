@@ -5,7 +5,7 @@ FamilyName: Samaano
 Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 1.1
+Version: 1.101
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1729163604
-ModificationTime: 1729226155
+ModificationTime: 1729262138
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
@@ -47,8 +47,6 @@ OS2CapHeight: 1548
 OS2XHeight: 1023
 OS2FamilyClass: 1031
 OS2Vendor: 'anir'
-Lookup: 6 16 0 "ccmp_soft_dotted" { "ccmp_soft_dotted subtable"  } ['ccmp' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
-Lookup: 1 16 0 "Single Substitution lookup 1" { "Single Substitution lookup 1 subtable"  } []
 Lookup: 4 0 0 "nuktNuktaFormsinDevanagarilookup0" { "nuktNuktaFormsinDevanagarilookup0 subtable"  } ['nukt' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 4 0 0 "akhnAkhandinDevanagarilookup0" { "akhnAkhandinDevanagarilookup0 subtable"  } ['akhn' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 4 0 0 "rphfRephForminDevanagarilookup0" { "rphfRephForminDevanagarilookup0 subtable"  } ['rphf' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
@@ -61,16 +59,11 @@ Lookup: 4 0 0 "abvsAboveBaseSubstitutionsinDevanagarilookup0" { "abvsAboveBaseSu
 Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinDevanagarilookup12" { "blwsBelowBaseSubstitutionsinDevanagarilookup12 subtable"  } ['blws' ('deva' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 0 0 "'abvm' Above Base Mark in Devanagari2 lookup 1" { "'abvm' Above Base Mark in Devanagari2 lookup 1-1"  } ['abvm' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
+Lookup: 260 0 0 "'blwm' Below Base Mark in Devanagari2 lookup 2" { "'blwm' Below Base Mark in Devanagari2 lookup 2-1"  } ['blwm' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-ChainSub2: coverage "ccmp_soft_dotted subtable" 0 0 0 1
- 1 0 1
-  Coverage: 3 i j
-  FCoverage: 75 acutecomb tildecomb uni0302 uni0304 uni0306 uni0308 uni030A uni030B uni030C
- 1
-  SeqLookup: 0 "Single Substitution lookup 1"
-EndFPST
-LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 1.000" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)+AAoA +AAoA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL+AAoACgAA" "http://scripts.sil.org/OFL"
+LangName: 1033 "" "" "" "" "" "Version 1.101" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family in Latin and Devanagari created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)+AAoA +AAoA-This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is available with a FAQ at: http://scripts.sil.org/OFL+AAoACgAA" "http://scripts.sil.org/OFL"
 PickledDataWithLists: "(dp0
 Vpublic.glyphOrder
 p1
@@ -4360,8 +4353,8 @@ UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
-FitToEm: 0
-WinInfo: 754 13 5
+FitToEm: 1
+WinInfo: 2340 13 5
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -4372,8 +4365,8 @@ Grid
 -2048 1023 m 0
  2048 1023 l 1024
 EndSplineSet
-AnchorClass2: "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
-BeginChars: 65711 726
+AnchorClass2: "blwm" "'blwm' Below Base Mark in Devanagari2 lookup 2-1" "abvm" "'abvm' Above Base Mark in Devanagari2 lookup 1-1" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable" "base"""  "top""" 
+BeginChars: 65711 718
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -4415,6 +4408,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 857 -59 basechar 0
+AnchorPoint: "top" 533 1641 basechar 0
 AnchorPoint: "base" 1829 -7 basechar 0
 AnchorPoint: "top" 533 1641 basechar 0
 LayerCount: 2
@@ -4664,6 +4659,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "top" 470 1637 basechar 0
+AnchorPoint: "top" 470 1637 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4757,6 +4753,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 294 1641 basechar 0
 AnchorPoint: "top" 294 1641 basechar 0
 LayerCount: 2
 Fore
@@ -4852,6 +4849,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 784 -54 basechar 0
+AnchorPoint: "top" 470 1641 basechar 0
 AnchorPoint: "top" 470 1641 basechar 0
 LayerCount: 2
 Fore
@@ -5146,6 +5145,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 540 -42 basechar 0
+AnchorPoint: "top" 502 1649 basechar 0
 AnchorPoint: "top" 502 1649 basechar 0
 LayerCount: 2
 Fore
@@ -5219,6 +5220,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 744 -30 basechar 0
+AnchorPoint: "top" 496 1638 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5293,6 +5296,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 736 -26 basechar 0
+AnchorPoint: "top" 470 1641 basechar 0
 AnchorPoint: "top" 470 1641 basechar 0
 LayerCount: 2
 Fore
@@ -5453,6 +5458,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "top" 798 1649 basechar 0
+AnchorPoint: "top" 798 1649 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5494,6 +5500,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 524 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5522,6 +5529,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 140 1650 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5627,6 +5635,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 532 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5660,6 +5669,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 820 -14 basechar 0
+AnchorPoint: "top" 488 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5727,6 +5738,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 832 -34 basechar 0
+AnchorPoint: "top" 456 1646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5940,6 +5953,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 448 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6011,6 +6025,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 480 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6075,6 +6090,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 528 -58 basechar 0
+AnchorPoint: "top" 508 1650 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6165,6 +6182,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 492 -54 basechar 0
+AnchorPoint: "top" 516 1638 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6234,6 +6253,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 812 -66 basechar 0
+AnchorPoint: "top" 508 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6392,6 +6413,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 564 -54 basechar 0
+AnchorPoint: "top" 496 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6415,6 +6438,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 508 1646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6523,6 +6547,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 508 -70 basechar 0
+AnchorPoint: "top" 524 1638 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6608,6 +6634,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 560 -46 basechar 0
+AnchorPoint: "top" 496 1646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6675,6 +6703,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 752 -62 basechar 0
+AnchorPoint: "top" 500 1134 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -6770,6 +6800,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 Flags: HW
+AnchorPoint: "top" 466 1888 mark 0
 AnchorPoint: "top" 466 1888 mark 0
 LayerCount: 2
 Fore
@@ -7090,6 +7121,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 220 1646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7370,6 +7402,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 492 1162 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7722,6 +7755,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 824 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8017,6 +8051,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 AnchorPoint: "base" 498 -187 mark 0
+AnchorPoint: "base" 498 -187 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8035,6 +8070,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 1182 -9 basechar 0
+AnchorPoint: "top" 999 1200 basechar 0
 AnchorPoint: "base" 1182 -9 basechar 0
 AnchorPoint: "top" 999 1200 basechar 0
 LayerCount: 2
@@ -8065,6 +8102,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 792 -18 basechar 0
+AnchorPoint: "top" 512 1166 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8697,6 +8736,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: HW
 AnchorPoint: "top" 592 1881 mark 0
+AnchorPoint: "top" 592 1881 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8850,6 +8890,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 800 -54 basechar 0
+AnchorPoint: "top" 248 1646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8965,6 +9007,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 788 -38 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8989,7 +9032,6 @@ SplineSet
  1411.34179688 1023 l 257
  563.341796875 1023 l 257
 EndSplineSet
-Substitution2: "Single Substitution lookup 1 subtable" dotlessi
 EndChar
 
 StartChar: iacute
@@ -9140,7 +9182,6 @@ SplineSet
  2287.12792969 1201 l 257
  2227.12792969 1201 l 257
 EndSplineSet
-Substitution2: "Single Substitution lookup 1 subtable" uni0237
 EndChar
 
 StartChar: jcircumflex
@@ -9163,6 +9204,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 220 1638 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9191,6 +9233,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 520 1654 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9357,6 +9400,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 508 1110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9471,6 +9515,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 492 1158 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9599,6 +9644,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 536 -38 basechar 0
+AnchorPoint: "top" 504 1158 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10029,6 +10076,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 268 1322 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10702,6 +10750,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 500 -70 basechar 0
+AnchorPoint: "top" 504 1174 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10837,6 +10887,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 512 -66 basechar 0
+AnchorPoint: "top" 472 1134 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11127,6 +11179,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 500 -82 basechar 0
+AnchorPoint: "top" 500 1642 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11318,6 +11372,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: HW
 AnchorPoint: "top" 492 1855 mark 0
+AnchorPoint: "top" 492 1855 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11385,6 +11440,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 724 -50 basechar 0
+AnchorPoint: "top" 440 1146 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11879,6 +11936,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "top" 720 1182 basechar 0
+AnchorPoint: "top" 720 1182 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11997,6 +12055,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 Flags: HW
+AnchorPoint: "top" 506 1427 mark 0
 AnchorPoint: "top" 471 1881 mark 0
 LayerCount: 2
 Fore
@@ -12021,6 +12080,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 Flags: HW
+AnchorPoint: "top" 488 1532 mark 0
 AnchorPoint: "top" 488 1532 mark 0
 LayerCount: 2
 Fore
@@ -12059,6 +12119,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: HW
 AnchorPoint: "top" 496 1440 mark 0
+AnchorPoint: "top" 496 1440 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12088,6 +12149,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: HW
 AnchorPoint: "top" 508 1542 mark 0
+AnchorPoint: "top" 508 1542 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12106,6 +12168,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 Flags: HW
+AnchorPoint: "top" 516 1592 mark 0
 AnchorPoint: "top" 516 1592 mark 0
 LayerCount: 2
 Fore
@@ -12131,6 +12194,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: HW
 AnchorPoint: "top" 541 1536 mark 0
+AnchorPoint: "top" 541 1536 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12155,6 +12219,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: HW
 AnchorPoint: "top" 493 1280 mark 0
+AnchorPoint: "top" 493 1280 mark 0
 LayerCount: 2
 Fore
 Refer: 273 34 N 1 0 0.36397 1 0 0 2
@@ -12167,6 +12232,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 Flags: HW
+AnchorPoint: "top" 504 1315 mark 0
 AnchorPoint: "top" 504 1315 mark 0
 LayerCount: 2
 Fore
@@ -12191,6 +12257,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 AnchorPoint: "base" 534 -5 mark 0
+AnchorPoint: "base" 534 -5 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12213,6 +12280,7 @@ GlifName: uni0327
 Width: 0
 VWidth: 0
 GlyphClass: 2
+AnchorPoint: "base" 654 191 mark 0
 AnchorPoint: "base" 654 191 mark 0
 LayerCount: 2
 Fore
@@ -12247,6 +12315,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 AnchorPoint: "base" 990 23 mark 0
+AnchorPoint: "base" 990 23 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12276,6 +12345,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "base" 510 -163 mark 0
+AnchorPoint: "base" 510 -163 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12290,18 +12360,14 @@ EndChar
 StartChar: uni0900
 Encoding: 2304 2304 357
 GlifName: uni0900
-Width: 2048
+Width: 0
 VWidth: 0
-GlyphClass: 2
-Flags: W
+GlyphClass: 4
+Flags: HW
+AnchorPoint: "abvm" 1625 1632 mark 0
 LayerCount: 2
 Fore
 SplineSet
-555.154296875 1550 m 257
- 532.587890625 1488 l 257
- 2584.58789062 1488 l 257
- 2607.15429688 1550 l 257
- 555.154296875 1550 l 257
 955.98046875 2121 m 257
  777.999023438 1632 l 257
  836.999023438 1632 l 257
@@ -12328,18 +12394,14 @@ EndChar
 StartChar: uni0901
 Encoding: 2305 2305 358
 GlifName: uni0901
-Width: 2048
+Width: 0
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
+AnchorPoint: "abvm" 1590 1556 mark 0
 LayerCount: 2
 Fore
 SplineSet
-564.154296875 1550 m 257
- 541.587890625 1488 l 257
- 2591.58789062 1488 l 257
- 2614.15429688 1550 l 257
- 564.154296875 1550 l 257
 909.073242188 2124 m 257
  732.546875 1639 l 257
  792.546875 1639 l 257
@@ -12366,10 +12428,11 @@ EndChar
 StartChar: uni0902
 Encoding: 2306 2306 359
 GlifName: uni0902
-Width: 2048
+Width: 0
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
+AnchorPoint: "abvm" 1105 1561 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12378,11 +12441,6 @@ SplineSet
  1170.09179688 1635 l 257
  1213.76757812 1755 l 257
  1093.76757812 1755 l 257
-560.061523438 1547 m 257
- 538.223632812 1487 l 257
- 2593.22363281 1487 l 257
- 2615.06152344 1547 l 257
- 560.061523438 1547 l 257
 EndSplineSet
 EndChar
 
@@ -13477,11 +13535,56 @@ GlifName: uni0915_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 900 0 2
-Refer: 378 2325 N 1 0 0.36397 1 0 0 2
+SplineSet
+1130.49121094 1553 m 257
+ 1069.34375 1469 l 257
+ 3117.34375 1469 l 257
+ 3178.49121094 1553 l 257
+ 1130.49121094 1553 l 257
+2215.01367188 1518 m 257
+ 1147.125 51 l 257
+ 1201.125 51 l 257
+ 2269.01367188 1518 l 257
+ 2215.01367188 1518 l 257
+959.16796875 1069 m 257
+ 916.219726562 1010 l 257
+ 1757.21972656 1010 l 257
+ 1800.16796875 1069 l 257
+ 959.16796875 1069 l 257
+947.439453125 1068 m 257
+ 609.67578125 604 l 257
+ 669.67578125 604 l 257
+ 1007.43945312 1068 l 257
+ 947.439453125 1068 l 257
+676.359375 675 m 257
+ 625.404296875 605 l 257
+ 1597.40429688 605 l 257
+ 1648.359375 675 l 257
+ 676.359375 675 l 257
+1862.21289062 999 m 257
+ 1820.71972656 942 l 257
+ 2597.71972656 942 l 257
+ 2639.21289062 999 l 257
+ 1862.21289062 999 l 257
+2589.94042969 1000 m 257
+ 2429.06542969 779 l 257
+ 2487.06542969 779 l 257
+ 2647.94042969 1000 l 257
+ 2589.94042969 1000 l 257
+1123.35351562 -16 m 257
+ 1078.94921875 -77 l 257
+ 1422.94921875 -77 l 257
+ 1467.35351562 -16 l 257
+ 1123.35351562 -16 l 257
+1398.31640625 -71 m 257
+ 1636.72070312 -418 l 257
+ 1704.57421875 -366 l 257
+ 1468.08007812 -15 l 257
+ 1398.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0915 uni094D
 EndChar
 
@@ -13604,11 +13707,66 @@ GlifName: uni0915_uni094D__uni0937_uni094D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 382 -1 N 1 0 0.36397 1 0 0 2
+SplineSet
+2817.30761719 1550 m 257
+ 2774.359375 1491 l 257
+ 3133.359375 1491 l 257
+ 3176.30761719 1550 l 257
+ 2817.30761719 1550 l 257
+2985.91796875 1511 m 257
+ 1888.91210938 4 l 257
+ 1947.91210938 4 l 257
+ 3044.91796875 1511 l 257
+ 2985.91796875 1511 l 257
+910.719726562 1078 m 257
+ 867.04296875 1018 l 257
+ 2686.04296875 1018 l 257
+ 2729.71972656 1078 l 257
+ 910.719726562 1078 l 257
+870.68359375 1023 m 257
+ 930.68359375 1023 l 257
+ 1221.13085938 1422 l 257
+ 1161.13085938 1422 l 257
+ 870.68359375 1023 l 257
+1171.59375 1435 m 257
+ 1127.18945312 1374 l 257
+ 2079.18945312 1374 l 257
+ 2123.59375 1435 l 257
+ 1171.59375 1435 l 257
+2053.13085938 1422 m 257
+ 1767.77832031 1030 l 257
+ 1827.77832031 1030 l 257
+ 2113.13085938 1422 l 257
+ 2053.13085938 1422 l 257
+628.9765625 647 m 257
+ 688.9765625 647 l 257
+ 1825.32226562 1028 l 257
+ 1767.32226562 1028 l 257
+ 628.9765625 647 l 257
+628.9765625 647 m 257
+ 303.587890625 200 l 257
+ 363.587890625 200 l 257
+ 688.9765625 647 l 257
+ 628.9765625 647 l 257
+322.513671875 226 m 257
+ 278.837890625 166 l 257
+ 2026.83789062 166 l 257
+ 2070.51367188 226 l 257
+ 322.513671875 226 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0915_uni094D_uni0937.akhn uni094D
 EndChar
 
@@ -13779,11 +13937,61 @@ GlifName: uni0916_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 900 0 2
-Refer: 385 2326 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.67480469 1556 m 257
+ 1084.99804688 1496 l 257
+ 3140.99804688 1496 l 257
+ 3184.67480469 1556 l 257
+ 1128.67480469 1556 l 257
+2961.1015625 1514 m 257
+ 1859 0 l 257
+ 1920 0 l 257
+ 3022.1015625 1514 l 257
+ 2961.1015625 1514 l 257
+1745.65332031 979 m 257
+ 1701.9765625 919 l 257
+ 2129.9765625 919 l 257
+ 2173.65332031 979 l 257
+ 1745.65332031 979 l 257
+1715.65332031 979 m 257
+ 1304.3671875 414 l 257
+ 1365.3671875 414 l 257
+ 1776.65332031 979 l 257
+ 1715.65332031 979 l 257
+1315.28710938 429 m 257
+ 1270.8828125 368 l 257
+ 2142.8828125 368 l 257
+ 2187.28710938 429 l 257
+ 1315.28710938 429 l 257
+1556.18945312 1510 m 257
+ 544.353515625 120 l 257
+ 605.353515625 120 l 257
+ 1617.18945312 1510 l 257
+ 1556.18945312 1510 l 257
+532.75 714 m 257
+ 489.072265625 654 l 257
+ 993.072265625 654 l 257
+ 1036.75 714 l 257
+ 532.75 714 l 257
+551.6328125 130 m 257
+ 507.955078125 70 l 257
+ 1907.95507812 70 l 257
+ 1951.6328125 130 l 257
+ 551.6328125 130 l 257
+1123.35351562 -16 m 257
+ 1078.94921875 -77 l 257
+ 1422.94921875 -77 l 257
+ 1467.35351562 -16 l 257
+ 1123.35351562 -16 l 257
+1398.31640625 -71 m 257
+ 1636.72070312 -418 l 257
+ 1704.57421875 -366 l 257
+ 1468.08007812 -15 l 257
+ 1398.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0916 uni094D
 EndChar
 
@@ -13909,11 +14117,46 @@ GlifName: uni0917_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1300 0 2
-Refer: 389 2327 N 1 0 0.36397 1 0 0 2
+SplineSet
+671.93359375 853 m 257
+ 741.93359375 853 l 257
+ 880.969726562 1044 l 257
+ 810.969726562 1044 l 257
+ 671.93359375 853 l 257
+693.04296875 882 m 257
+ 642.087890625 812 l 257
+ 1501.08789062 812 l 257
+ 1552.04296875 882 l 257
+ 693.04296875 882 l 257
+1972.67480469 1556 m 257
+ 1431.08789062 812 l 257
+ 1501.08789062 812 l 257
+ 2042.67480469 1556 l 257
+ 1972.67480469 1556 l 257
+3130.40234375 1557 m 257
+ 1855.40234375 1557 l 257
+ 1810.99804688 1496 l 257
+ 3085.99804688 1496 l 257
+ 3130.40234375 1557 l 257
+2954.65332031 1523 m 257
+ 1846 0 l 257
+ 1916 0 l 257
+ 3024.65332031 1523 l 257
+ 2954.65332031 1523 l 257
+1523.35351562 -16 m 257
+ 1478.94921875 -77 l 257
+ 1822.94921875 -77 l 257
+ 1867.35351562 -16 l 257
+ 1523.35351562 -16 l 257
+1798.31640625 -71 m 257
+ 2036.72070312 -418 l 257
+ 2104.57421875 -366 l 257
+ 1868.08007812 -15 l 257
+ 1798.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0917 uni094D
 EndChar
 
@@ -14054,11 +14297,51 @@ GlifName: uni0918_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 393 2328 N 1 0 0.36397 1 0 0 2
+SplineSet
+1130.49121094 1553 m 257
+ 1088.27050781 1495 l 257
+ 3134.27050781 1495 l 257
+ 3176.49121094 1553 l 257
+ 1130.49121094 1553 l 257
+2973.92480469 1522 m 257
+ 1875.46289062 13 l 257
+ 1935.46289062 13 l 257
+ 3033.92480469 1522 l 257
+ 2973.92480469 1522 l 257
+1276.82910156 1515 m 257
+ 799.30078125 859 l 257
+ 857.30078125 859 l 257
+ 1334.82910156 1515 l 257
+ 1276.82910156 1515 l 257
+849.124023438 867 m 257
+ 805.447265625 807 l 257
+ 1561.44726562 807 l 257
+ 1605.12402344 867 l 257
+ 849.124023438 867 l 257
+418.763671875 328 m 257
+ 375.81640625 269 l 257
+ 2097.81640625 269 l 257
+ 2140.76367188 328 l 257
+ 418.763671875 328 l 257
+369.81640625 269 m 257
+ 429.81640625 269 l 257
+ 826.54296875 814 l 257
+ 766.54296875 814 l 257
+ 369.81640625 269 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0918 uni094D
 EndChar
 
@@ -14264,11 +14547,66 @@ GlifName: uni0919_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 397 2329 N 1 0 0.36397 1 0 0 2
+SplineSet
+1130.49121094 1553 m 257
+ 1087.54296875 1494 l 257
+ 3137.54296875 1494 l 257
+ 3180.49121094 1553 l 257
+ 1130.49121094 1553 l 257
+2286.21191406 1543 m 257
+ 1909.8671875 1026 l 257
+ 1969.8671875 1026 l 257
+ 2346.21191406 1543 l 257
+ 2286.21191406 1543 l 257
+2004.54296875 1086 m 257
+ 1029.54296875 1086 l 257
+ 985.8671875 1026 l 257
+ 1960.8671875 1026 l 257
+ 2004.54296875 1086 l 257
+1015.359375 1083 m 257
+ 684.875 629 l 257
+ 756.875 629 l 257
+ 1087.359375 1083 l 257
+ 1015.359375 1083 l 257
+728 680 m 257
+ 684.322265625 620 l 257
+ 1751.32226562 620 l 257
+ 1795 680 l 257
+ 728 680 l 257
+1732 680 m 257
+ 1258.109375 29 l 257
+ 1321.109375 29 l 257
+ 1795 680 l 257
+ 1732 680 l 257
+158.404296875 61 m 257
+ 114 0 l 257
+ 1301 0 l 257
+ 1345.40429688 61 l 257
+ 158.404296875 61 l 257
+261.043945312 202 m 257
+ 119.82421875 8 l 257
+ 179.82421875 8 l 257
+ 321.043945312 202 l 257
+ 261.043945312 202 l 257
+1962.71289062 931 m 257
+ 1892.83007812 835 l 257
+ 1988.83007812 835 l 257
+ 2058.71289062 931 l 257
+ 1962.71289062 931 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0919 uni094D
 EndChar
 
@@ -14394,11 +14732,46 @@ GlifName: uni091A__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 401 2330 N 1 0 0.36397 1 0 0 2
+SplineSet
+1132.67480469 1556 m 257
+ 1089.7265625 1497 l 257
+ 3137.7265625 1497 l 257
+ 3180.67480469 1556 l 257
+ 1132.67480469 1556 l 257
+2933.49121094 1553 m 257
+ 1803 0 l 257
+ 1862 0 l 257
+ 2992.49121094 1553 l 257
+ 2933.49121094 1553 l 257
+2135.46289062 421 m 257
+ 2178.41210938 480 l 257
+ 1157.41210938 480 l 257
+ 1114.46289062 421 l 257
+ 2135.46289062 421 l 257
+1417.28613281 837 m 257
+ 1114.46289062 421 l 257
+ 1173.46289062 421 l 257
+ 1476.28613281 837 l 257
+ 1417.28613281 837 l 257
+692.205078125 852 m 257
+ 647.80078125 791 l 257
+ 1584.80078125 791 l 257
+ 1629.20507812 852 l 257
+ 692.205078125 852 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091A uni094D
 EndChar
 
@@ -14574,11 +14947,66 @@ GlifName: uni091B__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 974.64 10 2
-Refer: 405 2331 N 1 0 0.36397 1 0 0 2
+SplineSet
+1127.49121094 1553 m 257
+ 1085.27050781 1495 l 257
+ 3139.27050781 1495 l 257
+ 3181.49121094 1553 l 257
+ 1127.49121094 1553 l 257
+1554.1171875 1128 m 257
+ 969.1171875 1128 l 257
+ 926.16796875 1069 l 257
+ 1511.16796875 1069 l 257
+ 1554.1171875 1128 l 257
+960.1171875 1128 m 257
+ 530.631835938 538 l 257
+ 590.631835938 538 l 257
+ 1020.1171875 1128 l 257
+ 960.1171875 1128 l 257
+568.18359375 547 m 257
+ 524.506835938 487 l 257
+ 1087.50683594 487 l 257
+ 1131.18359375 547 l 257
+ 568.18359375 547 l 257
+502.697265625 501 m 257
+ 138 0 l 257
+ 198 0 l 257
+ 562.697265625 501 l 257
+ 502.697265625 501 l 257
+236.94921875 59 m 257
+ 194 0 l 257
+ 1541 0 l 257
+ 1583.94921875 59 l 257
+ 236.94921875 59 l 257
+1486.3671875 6 m 257
+ 1545.3671875 6 l 257
+ 2643.82910156 1515 l 257
+ 2584.82910156 1515 l 257
+ 1486.3671875 6 l 257
+2006.58007812 869 m 257
+ 1962.17578125 808 l 257
+ 2620.17578125 808 l 257
+ 2664.58007812 869 l 257
+ 2006.58007812 869 l 257
+2604.8515625 868 m 257
+ 2315.859375 471 l 257
+ 2374.859375 471 l 257
+ 2663.8515625 868 l 257
+ 2604.8515625 868 l 257
+1197.99316406 -6 m 257
+ 1153.58886719 -67 l 257
+ 1497.58886719 -67 l 257
+ 1541.99316406 -6 l 257
+ 1197.99316406 -6 l 257
+1472.95605469 -61 m 257
+ 1711.36132812 -408 l 257
+ 1779.21386719 -356 l 257
+ 1542.72070312 -5 l 257
+ 1472.95605469 -61 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091B uni094D
 EndChar
 
@@ -14719,11 +15147,51 @@ GlifName: uni091C__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 409 2332 N 1 0 0.36397 1 0 0 2
+SplineSet
+1111.30761719 1550 m 257
+ 1069.08691406 1492 l 257
+ 3151.08691406 1492 l 257
+ 3193.30761719 1550 l 257
+ 1111.30761719 1550 l 257
+2985.30761719 1550 m 257
+ 1848.265625 -12 l 257
+ 1909.265625 -12 l 257
+ 3046.30761719 1550 l 257
+ 2985.30761719 1550 l 257
+1656.02929688 860 m 257
+ 1613.08007812 801 l 257
+ 2461.08007812 801 l 257
+ 2504.02929688 860 l 257
+ 1656.02929688 860 l 257
+1646.02929688 860 m 257
+ 1392.70507812 512 l 257
+ 1452.70507812 512 l 257
+ 1706.02929688 860 l 257
+ 1646.02929688 860 l 257
+470.7421875 567 m 257
+ 427.79296875 508 l 257
+ 1449.79296875 508 l 257
+ 1492.7421875 567 l 257
+ 470.7421875 567 l 257
+587.212890625 727 m 257
+ 428.521484375 509 l 257
+ 488.521484375 509 l 257
+ 647.212890625 727 l 257
+ 587.212890625 727 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091C uni094D
 EndChar
 
@@ -14816,11 +15284,51 @@ GlifName: uni091C__uni094D__uni091E__uni094D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 413 -1 N 1 0 0.36397 1 0 0 2
+SplineSet
+1115.30761719 1550 m 257
+ 1070.17480469 1488 l 257
+ 3131.17480469 1488 l 257
+ 3176.30761719 1550 l 257
+ 1115.30761719 1550 l 257
+2969.30761719 1550 m 257
+ 1832.265625 -12 l 257
+ 1892.265625 -12 l 257
+ 3029.30761719 1550 l 257
+ 2969.30761719 1550 l 257
+1535.02929688 860 m 257
+ 1491.3515625 800 l 257
+ 2443.3515625 800 l 257
+ 2487.02929688 860 l 257
+ 1535.02929688 860 l 257
+1489.02929688 860 m 257
+ 1163.63867188 413 l 257
+ 1222.63867188 413 l 257
+ 1548.02929688 860 l 257
+ 1489.02929688 860 l 257
+352.55859375 428 m 257
+ 308.154296875 367 l 257
+ 1189.15429688 367 l 257
+ 1233.55859375 428 l 257
+ 352.55859375 428 l 257
+308.8828125 368 m 257
+ 555.595703125 75 l 257
+ 644.595703125 75 l 257
+ 382.8828125 368 l 257
+ 308.8828125 368 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091C_uni094D_uni091E.akhn uni094D
 EndChar
 
@@ -15006,11 +15514,66 @@ GlifName: uni091D__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 416 2333 N 1 0 0.36397 1 0 0 2
+SplineSet
+1122.49121094 1553 m 257
+ 1079.54296875 1494 l 257
+ 3143.54296875 1494 l 257
+ 3186.49121094 1553 l 257
+ 1122.49121094 1553 l 257
+2982.49121094 1553 m 257
+ 1848.359375 -5 l 257
+ 1910.359375 -5 l 257
+ 3044.49121094 1553 l 257
+ 2982.49121094 1553 l 257
+2226.84375 1537 m 257
+ 1852.68359375 1023 l 257
+ 1912.68359375 1023 l 257
+ 2286.84375 1537 l 257
+ 2226.84375 1537 l 257
+923.087890625 1084 m 257
+ 878.68359375 1023 l 257
+ 1912.68359375 1023 l 257
+ 1957.08789062 1084 l 257
+ 923.087890625 1084 l 257
+923.814453125 1085 m 257
+ 607.888671875 651 l 257
+ 667.888671875 651 l 257
+ 983.814453125 1085 l 257
+ 923.814453125 1085 l 257
+642.1015625 698 m 257
+ 598.42578125 638 l 257
+ 2372.42578125 638 l 257
+ 2416.1015625 698 l 257
+ 642.1015625 698 l 257
+1583.00683594 691 m 257
+ 1085.09570312 7 l 257
+ 1145.09570312 7 l 257
+ 1643.00683594 691 l 257
+ 1583.00683594 691 l 257
+179.859375 63 m 257
+ 136.18359375 3 l 257
+ 1142.18359375 3 l 257
+ 1185.859375 63 l 257
+ 179.859375 63 l 257
+179.859375 63 m 257
+ 26.265625 -148 l 257
+ 86.265625 -148 l 257
+ 239.859375 63 l 257
+ 179.859375 63 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091D uni094D
 EndChar
 
@@ -15151,11 +15714,51 @@ GlifName: uni091E__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 420 2334 N 1 0 0.36397 1 0 0 2
+SplineSet
+1125.49121094 1553 m 257
+ 1081.81445312 1493 l 257
+ 3139.81445312 1493 l 257
+ 3183.49121094 1553 l 257
+ 1125.49121094 1553 l 257
+3018.57226562 1538 m 257
+ 1893.17578125 -8 l 257
+ 1953.17578125 -8 l 257
+ 3078.57226562 1538 l 257
+ 3018.57226562 1538 l 257
+1583.17578125 672 m 257
+ 1539.5 612 l 257
+ 2365.5 612 l 257
+ 2409.17578125 672 l 257
+ 1583.17578125 672 l 257
+782.822265625 960 m 257
+ 739.146484375 900 l 257
+ 1748.14648438 900 l 257
+ 1791.82226562 960 l 257
+ 782.822265625 960 l 257
+1761.82226562 960 m 257
+ 1293.02929688 316 l 257
+ 1353.02929688 316 l 257
+ 1821.82226562 960 l 257
+ 1761.82226562 960 l 257
+293.94140625 320 m 257
+ 250.263671875 260 l 257
+ 1312.26367188 260 l 257
+ 1355.94140625 320 l 257
+ 293.94140625 320 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091E uni094D
 EndChar
 
@@ -15252,11 +15855,46 @@ GlifName: uni091F__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 424 2335 N 1 0 0.36397 1 0 0 2
+SplineSet
+1135.49121094 1553 m 257
+ 1092.54296875 1494 l 257
+ 3130.54296875 1494 l 257
+ 3173.49121094 1553 l 257
+ 1135.49121094 1553 l 257
+2840.29296875 1528 m 257
+ 2447.20507812 988 l 257
+ 2507.20507812 988 l 257
+ 2900.29296875 1528 l 257
+ 2840.29296875 1528 l 257
+2532.68359375 1023 m 257
+ 859.68359375 1023 l 257
+ 816.005859375 963 l 257
+ 2489.00585938 963 l 257
+ 2532.68359375 1023 l 257
+838.68359375 1023 m 257
+ 97.640625 5 l 257
+ 157.640625 5 l 257
+ 898.68359375 1023 l 257
+ 838.68359375 1023 l 257
+137.67578125 60 m 257
+ 94 0 l 257
+ 1831 0 l 257
+ 1874.67578125 60 l 257
+ 137.67578125 60 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni091F uni094D
 EndChar
 
@@ -15363,11 +16001,51 @@ GlifName: uni0920_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 427 2336 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1084.63085938 1490 l 257
+ 3132.63085938 1490 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2209.18945312 1510 m 257
+ 1854.68359375 1023 l 257
+ 1912.68359375 1023 l 257
+ 2267.18945312 1510 l 257
+ 2209.18945312 1510 l 257
+828.68359375 1023 m 257
+ 785.005859375 963 l 257
+ 2687.00585938 963 l 257
+ 2730.68359375 1023 l 257
+ 828.68359375 1023 l 257
+816.68359375 1023 m 257
+ 81.462890625 13 l 257
+ 143.462890625 13 l 257
+ 878.68359375 1023 l 257
+ 816.68359375 1023 l 257
+2642.66796875 1001 m 257
+ 1914 0 l 257
+ 1986 0 l 257
+ 2714.66796875 1001 l 257
+ 2642.66796875 1001 l 257
+114.220703125 58 m 257
+ 69.81640625 -3 l 257
+ 1963.81640625 -3 l 257
+ 2008.22070312 58 l 257
+ 114.220703125 58 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0920 uni094D
 EndChar
 
@@ -15494,11 +16172,61 @@ GlifName: uni0921_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 430 2337 N 1 0 0.36397 1 0 0 2
+SplineSet
+1126.8515625 1548 m 257
+ 1083.17480469 1488 l 257
+ 3131.17480469 1488 l 257
+ 3174.8515625 1548 l 257
+ 1126.8515625 1548 l 257
+1178.18261719 1091 m 257
+ 805.4765625 579 l 257
+ 865.4765625 579 l 257
+ 1238.18261719 1091 l 257
+ 1178.18261719 1091 l 257
+818.580078125 597 m 257
+ 775.631835938 538 l 257
+ 2132.63183594 538 l 257
+ 2175.58007812 597 l 257
+ 818.580078125 597 l 257
+2084.27929688 554 m 257
+ 1684.640625 5 l 257
+ 1744.640625 5 l 257
+ 2144.27929688 554 l 257
+ 2084.27929688 554 l 257
+105.67578125 60 m 257
+ 62 0 l 257
+ 1741 0 l 257
+ 1784.67578125 60 l 257
+ 105.67578125 60 l 257
+302.948242188 331 m 257
+ 65.640625 5 l 257
+ 126.640625 5 l 257
+ 363.948242188 331 l 257
+ 302.948242188 331 l 257
+1209.484375 1134 m 257
+ 1165.80761719 1074 l 257
+ 2522.80761719 1074 l 257
+ 2566.484375 1134 l 257
+ 1209.484375 1134 l 257
+2773.09375 1503 m 257
+ 2478.27832031 1098 l 257
+ 2540.27832031 1098 l 257
+ 2835.09375 1503 l 257
+ 2773.09375 1503 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0921 uni094D
 EndChar
 
@@ -15615,11 +16343,56 @@ GlifName: uni0922_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 433 2338 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1083.17480469 1488 l 257
+ 3131.17480469 1488 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2823.29296875 1528 m 257
+ 2430.20507812 988 l 257
+ 2512.20507812 988 l 257
+ 2905.29296875 1528 l 257
+ 2823.29296875 1528 l 257
+2537.68359375 1023 m 257
+ 864.68359375 1023 l 257
+ 820.278320312 962 l 257
+ 2493.27832031 962 l 257
+ 2537.68359375 1023 l 257
+843.68359375 1023 m 257
+ 102.640625 5 l 257
+ 162.640625 5 l 257
+ 903.68359375 1023 l 257
+ 843.68359375 1023 l 257
+142.67578125 60 m 257
+ 99 0 l 257
+ 1836 0 l 257
+ 1879.67578125 60 l 257
+ 142.67578125 60 l 257
+2174 544 m 257
+ 1778 0 l 257
+ 1838 0 l 257
+ 2234 544 l 257
+ 2174 544 l 257
+1906.18359375 547 m 257
+ 1862.50683594 487 l 257
+ 2190.50683594 487 l 257
+ 2234.18359375 547 l 257
+ 1906.18359375 547 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0922 uni094D
 EndChar
 
@@ -15745,11 +16518,46 @@ GlifName: uni0923_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 436 2339 N 1 0 0.36397 1 0 0 2
+SplineSet
+1125.30761719 1550 m 257
+ 1080.17480469 1488 l 257
+ 3134.17480469 1488 l 257
+ 3179.30761719 1550 l 257
+ 1125.30761719 1550 l 257
+2996.74804688 1530 m 257
+ 1883 0 l 257
+ 1943 0 l 257
+ 3056.74804688 1530 l 257
+ 2996.74804688 1530 l 257
+1230.21191406 1543 m 257
+ 729.388671875 855 l 257
+ 789.388671875 855 l 257
+ 1290.21191406 1543 l 257
+ 1230.21191406 1543 l 257
+2227.29296875 1528 m 257
+ 1729.38085938 844 l 257
+ 1789.38085938 844 l 257
+ 2287.29296875 1528 l 257
+ 2227.29296875 1528 l 257
+751.2265625 885 m 257
+ 707.55078125 825 l 257
+ 1775.55078125 825 l 257
+ 1819.2265625 885 l 257
+ 751.2265625 885 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0923 uni094D
 EndChar
 
@@ -15855,11 +16663,41 @@ GlifName: uni0924_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 440 2340 N 1 0 0.36397 1 0 0 2
+SplineSet
+1118.40234375 1557 m 257
+ 1074.7265625 1497 l 257
+ 3152.7265625 1497 l 257
+ 3196.40234375 1557 l 257
+ 1118.40234375 1557 l 257
+2929.66015625 1534 m 257
+ 1813 0 l 257
+ 1872 0 l 257
+ 2988.66015625 1534 l 257
+ 2929.66015625 1534 l 257
+2400.6171875 788 m 257
+ 693.6171875 788 l 257
+ 649.940429688 728 l 257
+ 2356.94042969 728 l 257
+ 2400.6171875 788 l 257
+677.6015625 766 m 257
+ 138.92578125 26 l 257
+ 198.92578125 26 l 257
+ 737.6015625 766 l 257
+ 677.6015625 766 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0924 uni094D
 EndChar
 
@@ -16054,11 +16892,56 @@ GlifName: uni0925_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 445 2341 N 1 0 0.36397 1 0 0 2
+SplineSet
+2775.30761719 1550 m 257
+ 2733.08691406 1492 l 257
+ 3117.08691406 1492 l 257
+ 3159.30761719 1550 l 257
+ 2775.30761719 1550 l 257
+3044.75585938 1541 m 257
+ 1909.89648438 -18 l 257
+ 1968.89648438 -18 l 257
+ 3103.75585938 1541 l 257
+ 3044.75585938 1541 l 257
+1145.30761719 1550 m 257
+ 1101.63085938 1490 l 257
+ 2058.63085938 1490 l 257
+ 2102.30761719 1550 l 257
+ 1145.30761719 1550 l 257
+2007.09375 1503 m 257
+ 1630.74902344 986 l 257
+ 1690.74902344 986 l 257
+ 2067.09375 1503 l 257
+ 2007.09375 1503 l 257
+1715.04296875 1018 m 257
+ 762.04296875 1018 l 257
+ 717.638671875 957 l 257
+ 1670.63867188 957 l 257
+ 1715.04296875 1018 l 257
+736.565429688 983 m 257
+ 117.087890625 132 l 257
+ 176.087890625 132 l 257
+ 795.565429688 983 l 257
+ 736.565429688 983 l 257
+160.037109375 191 m 257
+ 117.087890625 132 l 257
+ 2078.08789062 132 l 257
+ 2121.03710938 191 l 257
+ 160.037109375 191 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0925 uni094D
 EndChar
 
@@ -16214,11 +17097,51 @@ GlifName: uni0926_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 449 2342 N 1 0 0.36397 1 0 0 2
+SplineSet
+1134.49121094 1553 m 257
+ 1090.81445312 1493 l 257
+ 3130.81445312 1493 l 257
+ 3174.49121094 1553 l 257
+ 1134.49121094 1553 l 257
+2236.82910156 1515 m 257
+ 1837.19042969 966 l 257
+ 1895.19042969 966 l 257
+ 2294.82910156 1515 l 257
+ 2236.82910156 1515 l 257
+1936.68359375 1023 m 257
+ 802.68359375 1023 l 257
+ 759.005859375 963 l 257
+ 1893.00585938 963 l 257
+ 1936.68359375 1023 l 257
+793.947265625 1011 m 257
+ 289.484375 318 l 257
+ 347.484375 318 l 257
+ 851.947265625 1011 l 257
+ 793.947265625 1011 l 257
+309.8671875 346 m 257
+ 265.462890625 285 l 257
+ 1529.46289062 285 l 257
+ 1573.8671875 346 l 257
+ 309.8671875 346 l 257
+1498.58007812 325 m 257
+ 1256.90429688 -7 l 257
+ 1316.90429688 -7 l 257
+ 1558.58007812 325 l 257
+ 1498.58007812 325 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0926 uni094D
 EndChar
 
@@ -16595,11 +17518,56 @@ GlifName: uni0927_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 457 2343 N 1 0 0.36397 1 0 0 2
+SplineSet
+2821.49121094 1553 m 257
+ 2777.81445312 1493 l 257
+ 3078.81445312 1493 l 257
+ 3122.49121094 1553 l 257
+ 2821.49121094 1553 l 257
+2980.64550781 1512 m 257
+ 1875.6328125 -6 l 257
+ 1934.6328125 -6 l 257
+ 3039.64550781 1512 l 257
+ 2980.64550781 1512 l 257
+1187.49121094 1553 m 257
+ 1143.08691406 1492 l 257
+ 2047.08691406 1492 l 257
+ 2091.49121094 1553 l 257
+ 1187.49121094 1553 l 257
+1149.63867188 1501 m 257
+ 671.380859375 844 l 257
+ 732.380859375 844 l 257
+ 1210.63867188 1501 l 257
+ 1149.63867188 1501 l 257
+698.04296875 882 m 257
+ 655.094726562 823 l 257
+ 1566.09472656 823 l 257
+ 1609.04296875 882 l 257
+ 698.04296875 882 l 257
+694.190429688 830 m 257
+ 208.654296875 163 l 257
+ 268.654296875 163 l 257
+ 754.190429688 830 l 257
+ 694.190429688 830 l 257
+225.396484375 186 m 257
+ 181.720703125 126 l 257
+ 1990.72070312 126 l 257
+ 2034.39648438 186 l 257
+ 225.396484375 186 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0927 uni094D
 EndChar
 
@@ -16710,11 +17678,41 @@ GlifName: uni0928_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 461 2344 N 1 0 0.36397 1 0 0 2
+SplineSet
+1131.30761719 1550 m 257
+ 1089.81445312 1493 l 257
+ 3131.81445312 1493 l 257
+ 3173.30761719 1550 l 257
+ 1131.30761719 1550 l 257
+2996.30761719 1550 m 257
+ 1870.18359375 3 l 257
+ 1931.18359375 3 l 257
+ 3057.30761719 1550 l 257
+ 2996.30761719 1550 l 257
+639.587890625 744 m 257
+ 595.18359375 683 l 257
+ 2396.18359375 683 l 257
+ 2440.58789062 744 l 257
+ 639.587890625 744 l 257
+638.404296875 741 m 257
+ 430.94140625 456 l 257
+ 490.94140625 456 l 257
+ 698.404296875 741 l 257
+ 638.404296875 741 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0928 uni094D
 EndChar
 
@@ -16841,11 +17839,46 @@ GlifName: uni0929_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 465 2345 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1086.81445312 1493 l 257
+ 3128.81445312 1493 l 257
+ 3170.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2993.30761719 1550 m 257
+ 1867.18359375 3 l 257
+ 1928.18359375 3 l 257
+ 3054.30761719 1550 l 257
+ 2993.30761719 1550 l 257
+636.587890625 744 m 257
+ 592.18359375 683 l 257
+ 2393.18359375 683 l 257
+ 2437.58789062 744 l 257
+ 636.587890625 744 l 257
+635.404296875 741 m 257
+ 427.94140625 456 l 257
+ 487.94140625 456 l 257
+ 695.404296875 741 l 257
+ 635.404296875 741 l 257
+986.146484375 -52 m 257
+ 903.162109375 -166 l 257
+ 1047.16210938 -166 l 257
+ 1130.14648438 -52 l 257
+ 986.146484375 -52 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0929 uni094D
 EndChar
 
@@ -16956,11 +17989,41 @@ GlifName: uni092A__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 469 2346 N 1 0 0.36397 1 0 0 2
+SplineSet
+1124.30761719 1550 m 257
+ 1081.359375 1491 l 257
+ 3137.359375 1491 l 257
+ 3180.30761719 1550 l 257
+ 1124.30761719 1550 l 257
+2971.29980469 1539 m 257
+ 1851 0 l 257
+ 1912 0 l 257
+ 3032.29980469 1539 l 257
+ 2971.29980469 1539 l 257
+1226.30761719 1550 m 257
+ 800.462890625 965 l 257
+ 860.462890625 965 l 257
+ 1286.30761719 1550 l 257
+ 1226.30761719 1550 l 257
+842.68359375 1023 m 257
+ 801.190429688 966 l 257
+ 2581.19042969 966 l 257
+ 2622.68359375 1023 l 257
+ 842.68359375 1023 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092A uni094D
 EndChar
 
@@ -17086,11 +18149,46 @@ GlifName: uni092B__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 473 2347 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1085.359375 1491 l 257
+ 3133.359375 1491 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2572.29980469 1539 m 257
+ 1452 0 l 257
+ 1512 0 l 257
+ 2632.29980469 1539 l 257
+ 2572.29980469 1539 l 257
+1222.30761719 1550 m 257
+ 796.462890625 965 l 257
+ 856.462890625 965 l 257
+ 1282.30761719 1550 l 257
+ 1222.30761719 1550 l 257
+838.68359375 1023 m 257
+ 795.734375 964 l 257
+ 2689.734375 964 l 257
+ 2732.68359375 1023 l 257
+ 838.68359375 1023 l 257
+2680.68359375 1023 m 257
+ 2435.3671875 686 l 257
+ 2495.3671875 686 l 257
+ 2740.68359375 1023 l 257
+ 2680.68359375 1023 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092B uni094D
 EndChar
 
@@ -17231,11 +18329,51 @@ GlifName: uni092C__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 477 2348 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1085.359375 1491 l 257
+ 3133.359375 1491 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2930.46875 1520 m 257
+ 1805.80078125 -25 l 257
+ 1865.80078125 -25 l 257
+ 2990.46875 1520 l 257
+ 2930.46875 1520 l 257
+820.68359375 1023 m 257
+ 244.8828125 232 l 257
+ 304.8828125 232 l 257
+ 880.68359375 1023 l 257
+ 820.68359375 1023 l 257
+270.17578125 264 m 257
+ 226.5 204 l 257
+ 1982.5 204 l 257
+ 2026.17578125 264 l 257
+ 270.17578125 264 l 257
+776.072265625 926 m 257
+ 1938.72070312 262 l 257
+ 2026.72070312 262 l 257
+ 844.646484375 968 l 257
+ 776.072265625 926 l 257
+820.68359375 1023 m 257
+ 777.734375 964 l 257
+ 1827.734375 964 l 257
+ 1870.68359375 1023 l 257
+ 820.68359375 1023 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092C uni094D
 EndChar
 
@@ -17406,11 +18544,61 @@ GlifName: uni092D__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 481 2349 N 1 0 0.36397 1 0 0 2
+SplineSet
+116.404296875 61 m 257
+ 72 0 l 257
+ 576 0 l 257
+ 620.404296875 61 l 257
+ 116.404296875 61 l 257
+304.94140625 320 m 257
+ 72 0 l 257
+ 140 0 l 257
+ 372.94140625 320 l 257
+ 304.94140625 320 l 257
+2710.30761719 1550 m 257
+ 2668.08691406 1492 l 257
+ 3114.08691406 1492 l 257
+ 3156.30761719 1550 l 257
+ 2710.30761719 1550 l 257
+3015.21191406 1543 m 257
+ 1892 0 l 257
+ 1952 0 l 257
+ 3075.21191406 1543 l 257
+ 3015.21191406 1543 l 257
+1148.30761719 1550 m 257
+ 820.005859375 1099 l 257
+ 880.005859375 1099 l 257
+ 1208.30761719 1550 l 257
+ 1148.30761719 1550 l 257
+1174.30761719 1550 m 257
+ 1131.359375 1491 l 257
+ 1705.359375 1491 l 257
+ 1748.30761719 1550 l 257
+ 1174.30761719 1550 l 257
+1702.30761719 1550 m 257
+ 574 0 l 257
+ 634 0 l 257
+ 1762.30761719 1550 l 257
+ 1702.30761719 1550 l 257
+322.404296875 333 m 257
+ 278.728515625 273 l 257
+ 2122.72851562 273 l 257
+ 2166.40429688 333 l 257
+ 322.404296875 333 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092D uni094D
 EndChar
 
@@ -17551,11 +18739,51 @@ GlifName: uni092E__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 485 2350 N 1 0 0.36397 1 0 0 2
+SplineSet
+116.404296875 61 m 257
+ 72 0 l 257
+ 626 0 l 257
+ 670.404296875 61 l 257
+ 116.404296875 61 l 257
+304.94140625 320 m 257
+ 72 0 l 257
+ 140 0 l 257
+ 372.94140625 320 l 257
+ 304.94140625 320 l 257
+1131.30761719 1550 m 257
+ 1086.17480469 1488 l 257
+ 3128.17480469 1488 l 257
+ 3173.30761719 1550 l 257
+ 1131.30761719 1550 l 257
+3033.21191406 1543 m 257
+ 1910 0 l 257
+ 1969 0 l 257
+ 3092.21191406 1543 l 257
+ 3033.21191406 1543 l 257
+1710.57226562 1538 m 257
+ 591 0 l 257
+ 650 0 l 257
+ 1769.57226562 1538 l 257
+ 1710.57226562 1538 l 257
+339.404296875 333 m 257
+ 295.728515625 273 l 257
+ 2139.72851562 273 l 257
+ 2183.40429688 333 l 257
+ 339.404296875 333 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092E uni094D
 EndChar
 
@@ -17681,11 +18909,46 @@ GlifName: uni092F__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 489 2351 N 1 0 0.36397 1 0 0 2
+SplineSet
+1119.30761719 1550 m 257
+ 1074.90332031 1489 l 257
+ 3140.90332031 1489 l 257
+ 3185.30761719 1550 l 257
+ 1119.30761719 1550 l 257
+2977.4765625 1531 m 257
+ 1863 0 l 257
+ 1923 0 l 257
+ 3037.4765625 1531 l 257
+ 2977.4765625 1531 l 257
+1218.63085938 1490 m 257
+ 1241.83789062 846 l 257
+ 1299.83789062 846 l 257
+ 1309.484375 1542 l 257
+ 1218.63085938 1490 l 257
+1241.83789062 846 m 257
+ 480.587890625 472 l 257
+ 533.30859375 462 l 257
+ 1299.83789062 846 l 257
+ 1241.83789062 846 l 257
+587.44140625 524 m 257
+ 480.587890625 472 l 257
+ 2009.859375 199 l 257
+ 2074.35351562 256 l 257
+ 587.44140625 524 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni092F uni094D
 EndChar
 
@@ -17962,11 +19225,41 @@ GlifName: uni0930_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 493 2352 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1086.08691406 1492 l 257
+ 3134.08691406 1492 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2359.02832031 1540 m 257
+ 1813.07226562 790 l 257
+ 1873.07226562 790 l 257
+ 2419.02832031 1540 l 257
+ 2359.02832031 1540 l 257
+1881.80859375 802 m 257
+ 935.80859375 802 l 257
+ 892.130859375 742 l 257
+ 1838.13085938 742 l 257
+ 1881.80859375 802 l 257
+892.130859375 742 m 257
+ 1356 0 l 257
+ 1428 0 l 257
+ 969.80859375 802 l 257
+ 892.130859375 742 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0930 uni094D
 EndChar
 
@@ -18111,11 +19404,46 @@ GlifName: uni0931_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 503 2353 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1086.08691406 1492 l 257
+ 3135.08691406 1492 l 257
+ 3177.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2359.02832031 1540 m 257
+ 1813.07226562 790 l 257
+ 1873.07226562 790 l 257
+ 2419.02832031 1540 l 257
+ 2359.02832031 1540 l 257
+1881.80859375 802 m 257
+ 936.80859375 802 l 257
+ 893.130859375 742 l 257
+ 1838.13085938 742 l 257
+ 1881.80859375 802 l 257
+893.130859375 742 m 257
+ 1357 0 l 257
+ 1429 0 l 257
+ 970.80859375 802 l 257
+ 893.130859375 742 l 257
+718.765625 -80 m 257
+ 635.779296875 -194 l 257
+ 778.779296875 -194 l 257
+ 861.765625 -80 l 257
+ 718.765625 -80 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0931 uni094D
 EndChar
 
@@ -18241,11 +19569,46 @@ GlifName: uni0932_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 506 2354 N 1 0 0.36397 1 0 0 2
+SplineSet
+1122.30761719 1550 m 257
+ 1078.63085938 1490 l 257
+ 3138.63085938 1490 l 257
+ 3182.30761719 1550 l 257
+ 1122.30761719 1550 l 257
+3051.93945312 1544 m 257
+ 2991.93945312 1544 l 257
+ 1868 0 l 257
+ 1928 0 l 257
+ 3051.93945312 1544 l 257
+583.955078125 750 m 257
+ 179.94921875 195 l 257
+ 239.94921875 195 l 257
+ 643.955078125 750 l 257
+ 583.955078125 750 l 257
+607.25 782 m 257
+ 563.572265625 722 l 257
+ 2423.57226562 722 l 257
+ 2467.25 782 l 257
+ 607.25 782 l 257
+1502.13867188 753 m 257
+ 1226.25 374 l 257
+ 1286.25 374 l 257
+ 1562.13867188 753 l 257
+ 1502.13867188 753 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0932 uni094D
 EndChar
 
@@ -18396,11 +19759,51 @@ GlifName: uni0933_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 510 2355 N 1 0 0.36397 1 0 0 2
+SplineSet
+1124.49121094 1553 m 257
+ 1080.08691406 1492 l 257
+ 3140.08691406 1492 l 257
+ 3184.49121094 1553 l 257
+ 1124.49121094 1553 l 257
+3051.93945312 1544 m 257
+ 2991.93945312 1544 l 257
+ 2009.22070312 194 l 257
+ 2069.22070312 194 l 257
+ 3051.93945312 1544 l 257
+591.234375 760 m 257
+ 179.220703125 194 l 257
+ 239.220703125 194 l 257
+ 651.234375 760 l 257
+ 591.234375 760 l 257
+607.25 782 m 257
+ 563.572265625 722 l 257
+ 2431.57226562 722 l 257
+ 2475.25 782 l 257
+ 607.25 782 l 257
+1502.13867188 753 m 257
+ 1109.77929688 214 l 257
+ 1169.77929688 214 l 257
+ 1562.13867188 753 l 257
+ 1502.13867188 753 l 257
+222.712890625 251 m 257
+ 179.037109375 191 l 257
+ 2067.03710938 191 l 257
+ 2110.71289062 251 l 257
+ 222.712890625 251 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0933 uni094D
 EndChar
 
@@ -18567,11 +19970,56 @@ GlifName: uni0934_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 514 2356 N 1 0 0.36397 1 0 0 2
+SplineSet
+1130.49121094 1553 m 257
+ 1086.08691406 1492 l 257
+ 3145.08691406 1492 l 257
+ 3189.49121094 1553 l 257
+ 1130.49121094 1553 l 257
+3057.93945312 1544 m 257
+ 2997.93945312 1544 l 257
+ 2015.22070312 194 l 257
+ 2075.22070312 194 l 257
+ 3057.93945312 1544 l 257
+596.234375 760 m 257
+ 184.220703125 194 l 257
+ 244.220703125 194 l 257
+ 656.234375 760 l 257
+ 596.234375 760 l 257
+612.25 782 m 257
+ 568.572265625 722 l 257
+ 2437.57226562 722 l 257
+ 2481.25 782 l 257
+ 612.25 782 l 257
+1507.13867188 753 m 257
+ 1114.77929688 214 l 257
+ 1174.77929688 214 l 257
+ 1567.13867188 753 l 257
+ 1507.13867188 753 l 257
+227.712890625 251 m 257
+ 184.037109375 191 l 257
+ 2073.03710938 191 l 257
+ 2116.71289062 251 l 257
+ 227.712890625 251 l 257
+1030.80859375 -14 m 257
+ 947.82421875 -128 l 257
+ 1090.82421875 -128 l 257
+ 1173.80859375 -14 l 257
+ 1030.80859375 -14 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0934 uni094D
 EndChar
 
@@ -18697,11 +20145,46 @@ GlifName: uni0935_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 518 2357 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1084.63085938 1490 l 257
+ 3132.63085938 1490 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2929.74121094 1519 m 257
+ 1805.80078125 -25 l 257
+ 1865.80078125 -25 l 257
+ 2989.74121094 1519 l 257
+ 2929.74121094 1519 l 257
+820.68359375 1023 m 257
+ 244.8828125 232 l 257
+ 304.8828125 232 l 257
+ 880.68359375 1023 l 257
+ 820.68359375 1023 l 257
+270.17578125 264 m 257
+ 226.5 204 l 257
+ 1982.5 204 l 257
+ 2026.17578125 264 l 257
+ 270.17578125 264 l 257
+822.8671875 1026 m 257
+ 778.462890625 965 l 257
+ 1828.46289062 965 l 257
+ 1872.8671875 1026 l 257
+ 822.8671875 1026 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0935 uni094D
 EndChar
 
@@ -18852,11 +20335,56 @@ GlifName: uni0936_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 522 2358 N 1 0 0.36397 1 0 0 2
+SplineSet
+2351.49121094 1553 m 257
+ 2308.54296875 1494 l 257
+ 3085.54296875 1494 l 257
+ 3128.49121094 1553 l 257
+ 2351.49121094 1553 l 257
+2993.46875 1520 m 257
+ 1884.08789062 -4 l 257
+ 1946.08789062 -4 l 257
+ 3055.46875 1520 l 257
+ 2993.46875 1520 l 257
+1173.21191406 1543 m 257
+ 940.999023438 1224 l 257
+ 1000.99902344 1224 l 257
+ 1233.21191406 1543 l 257
+ 1173.21191406 1543 l 257
+1180.49121094 1553 m 257
+ 1137.54296875 1494 l 257
+ 2120.54296875 1494 l 257
+ 2163.49121094 1553 l 257
+ 1180.49121094 1553 l 257
+2139.49121094 1553 m 257
+ 1710.00585938 963 l 257
+ 1770.00585938 963 l 257
+ 2199.49121094 1553 l 257
+ 2139.49121094 1553 l 257
+857.68359375 1023 m 257
+ 814.005859375 963 l 257
+ 1761.00585938 963 l 257
+ 1804.68359375 1023 l 257
+ 857.68359375 1023 l 257
+814.005859375 963 m 257
+ 947.82421875 8 l 257
+ 1019.3828125 28 l 257
+ 892.005859375 963 l 257
+ 814.005859375 963 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0936 uni094D
 EndChar
 
@@ -18982,11 +20510,46 @@ GlifName: uni0937_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 526 2359 N 1 0 0.36397 1 0 0 2
+SplineSet
+1124.30761719 1550 m 257
+ 1081.359375 1491 l 257
+ 3137.359375 1491 l 257
+ 3180.30761719 1550 l 257
+ 1124.30761719 1550 l 257
+2971.29980469 1539 m 257
+ 1851 0 l 257
+ 1912 0 l 257
+ 3032.29980469 1539 l 257
+ 2971.29980469 1539 l 257
+1226.30761719 1550 m 257
+ 800.462890625 965 l 257
+ 860.462890625 965 l 257
+ 1286.30761719 1550 l 257
+ 1226.30761719 1550 l 257
+842.68359375 1023 m 257
+ 801.190429688 966 l 257
+ 2581.19042969 966 l 257
+ 2622.68359375 1023 l 257
+ 842.68359375 1023 l 257
+1205.92480469 1522 m 257
+ 2472.83007812 971 l 257
+ 2619.83007812 971 l 257
+ 1436.92480469 1522 l 257
+ 1205.92480469 1522 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0937 uni094D
 EndChar
 
@@ -19112,11 +20675,46 @@ GlifName: uni0938_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 530 2360 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1085.359375 1491 l 257
+ 3134.359375 1491 l 257
+ 3177.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2999.93945312 1544 m 257
+ 1876 0 l 257
+ 1935 0 l 257
+ 3058.93945312 1544 l 257
+ 2999.93945312 1544 l 257
+1255.46191406 1509 m 257
+ 680.388671875 719 l 257
+ 741.388671875 719 l 257
+ 1316.46191406 1509 l 257
+ 1255.46191406 1509 l 257
+681.1171875 720 m 257
+ 636.712890625 659 l 257
+ 2362.71289062 659 l 257
+ 2407.1171875 720 l 257
+ 681.1171875 720 l 257
+636.712890625 659 m 257
+ 630 0 l 257
+ 697 0 l 257
+ 700.712890625 659 l 257
+ 636.712890625 659 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0938 uni094D
 EndChar
 
@@ -19346,11 +20944,61 @@ GlifName: uni0939_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 534 2361 N 1 0 0.36397 1 0 0 2
+SplineSet
+1126.49121094 1553 m 257
+ 1083.54296875 1494 l 257
+ 3139.54296875 1494 l 257
+ 3182.49121094 1553 l 257
+ 1126.49121094 1553 l 257
+2400.1015625 1514 m 257
+ 2152.6015625 1174 l 257
+ 2212.6015625 1174 l 257
+ 2460.1015625 1514 l 257
+ 2400.1015625 1514 l 257
+2240.6171875 1196 m 257
+ 1728.6171875 1196 l 257
+ 1684.21191406 1135 l 257
+ 2196.21191406 1135 l 257
+ 2240.6171875 1196 l 257
+1718.79296875 1188 m 257
+ 1424.70507812 784 l 257
+ 1504.70507812 784 l 257
+ 1798.79296875 1188 l 257
+ 1718.79296875 1188 l 257
+2116.34472656 789 m 257
+ 1962.02148438 577 l 257
+ 2022.02148438 577 l 257
+ 2176.34472656 789 l 257
+ 2116.34472656 789 l 257
+754.197265625 841 m 257
+ 710.521484375 781 l 257
+ 2170.52148438 781 l 257
+ 2214.19726562 841 l 257
+ 754.197265625 841 l 257
+719.255859375 793 m 257
+ 298.5078125 215 l 257
+ 358.5078125 215 l 257
+ 779.255859375 793 l 257
+ 719.255859375 793 l 257
+359.234375 216 m 257
+ 297.234375 216 l 257
+ 726.912109375 4 l 257
+ 792.580078125 53 l 257
+ 359.234375 216 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0939 uni094D
 EndChar
 
@@ -19549,11 +21197,36 @@ GlifName: uni093E__uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 544 2366 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 562.544 -4 2
+SplineSet
+1810.8515625 1546 m 257
+ 1870.8515625 1546 l 257
+ 2103.06445312 1865 l 257
+ 2043.06445312 1865 l 257
+ 1810.8515625 1546 l 257
+2263.87988281 1998 m 257
+ 2220.20410156 1938 l 257
+ 2548.20410156 1938 l 257
+ 2591.87988281 1998 l 257
+ 2263.87988281 1998 l 257
+2263.87988281 1998 m 257
+ 2043.06445312 1865 l 257
+ 2103.06445312 1865 l 257
+ 2220.20410156 1938 l 257
+ 2263.87988281 1998 l 257
+1125.30761719 1550 m 257
+ 1082.359375 1491 l 257
+ 3136.359375 1491 l 257
+ 3179.30761719 1550 l 257
+ 1125.30761719 1550 l 257
+2093.1015625 1514 m 257
+ 991 0 l 257
+ 1050 0 l 257
+ 2152.1015625 1514 l 257
+ 2093.1015625 1514 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni093E uni0930_uni094D.rphf
 EndChar
 
@@ -19632,8 +21305,33 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 314 0 2
-Refer: 547 2368 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1083.90332031 1489 l 257
+ 3131.90332031 1489 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2434.06445312 1867 m 257
+ 1083.734375 12 l 257
+ 1143.734375 12 l 257
+ 2494.06445312 1867 l 257
+ 2434.06445312 1867 l 257
+2464.94726562 1827 m 257
+ 2514.44726562 1895 l 257
+ 785.447265625 1895 l 257
+ 735.947265625 1827 l 257
+ 2464.94726562 1827 l 257
+774.447265625 1895 m 257
+ 532.770507812 1563 l 257
+ 592.770507812 1563 l 257
+ 834.447265625 1895 l 257
+ 774.447265625 1895 l 257
+2547.16015625 1738 m 257
+ 2473.63867188 1637 l 257
+ 2585.63867188 1637 l 257
+ 2659.16015625 1738 l 257
+ 2547.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0940 uni0902
 EndChar
 
@@ -19643,29 +21341,60 @@ GlifName: uni0940_uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 547 2368 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 1197.18 -5 2
+SplineSet
+2445.48828125 1545 m 257
+ 2505.48828125 1545 l 257
+ 2737.70019531 1864 l 257
+ 2677.70019531 1864 l 257
+ 2445.48828125 1545 l 257
+2898.515625 1997 m 257
+ 2854.83984375 1937 l 257
+ 3182.83984375 1937 l 257
+ 3226.515625 1997 l 257
+ 2898.515625 1997 l 257
+2898.515625 1997 m 257
+ 2677.70019531 1864 l 257
+ 2737.70019531 1864 l 257
+ 2854.83984375 1937 l 257
+ 2898.515625 1997 l 257
+1128.30761719 1550 m 257
+ 1083.90332031 1489 l 257
+ 3131.90332031 1489 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2434.06445312 1867 m 257
+ 1083.734375 12 l 257
+ 1143.734375 12 l 257
+ 2494.06445312 1867 l 257
+ 2434.06445312 1867 l 257
+2464.94726562 1827 m 257
+ 2514.44726562 1895 l 257
+ 785.447265625 1895 l 257
+ 735.947265625 1827 l 257
+ 2464.94726562 1827 l 257
+774.447265625 1895 m 257
+ 532.770507812 1563 l 257
+ 592.770507812 1563 l 257
+ 834.447265625 1895 l 257
+ 774.447265625 1895 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0940 uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni0941
 Encoding: 2369 2369 550
 GlifName: uni0941
-Width: 2048
+Width: 0
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
+AnchorPoint: "blwm" -344 -9 mark 0
 LayerCount: 2
 Fore
 SplineSet
-565.24609375 1553 m 257
- 543.407226562 1493 l 257
- 2591.40722656 1493 l 257
- 2613.24609375 1553 l 257
- 565.24609375 1553 l 257
 -458.37109375 -23 m 257
  -480.209960938 -83 l 257
  -50.2099609375 -83 l 257
@@ -19689,49 +21418,17 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0941_uni0902.abvs
-Encoding: 65665 -1 551
-GlifName: uni0941_uni0902.abvs
-Width: 2048
+StartChar: uni0942
+Encoding: 2370 2370 551
+GlifName: uni0942
+Width: 0
 VWidth: 0
 GlyphClass: 2
 Flags: HW
-LayerCount: 2
-Fore
-Refer: 348 775 N 1 0 0.36397 1 0 0 2
-Refer: 550 2369 N 1 0 0.36397 1 0 0 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0941 uni0902
-EndChar
-
-StartChar: uni0941_uni0930_uni094D.abvs
-Encoding: 65666 -1 552
-GlifName: uni0941_uni0930_uni094D_.abvs
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: W
-LayerCount: 2
-Fore
-Refer: 550 2369 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 266.544 -4 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0941 uni0930_uni094D.rphf
-EndChar
-
-StartChar: uni0942
-Encoding: 2370 2370 553
-GlifName: uni0942
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: W
+AnchorPoint: "blwm" -1208 43 mark 0
 LayerCount: 2
 Fore
 SplineSet
-547.4296875 1559 m 257
- 525.591796875 1499 l 257
- 2593.59179688 1499 l 257
- 2615.4296875 1559 l 257
- 547.4296875 1559 l 257
 -1212.45898438 -287 m 257
  -1190.25683594 -226 l 257
  -1372.25683594 -226 l 257
@@ -19755,49 +21452,17 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0942_uni0902.abvs
-Encoding: 65667 -1 554
-GlifName: uni0942_uni0902.abvs
-Width: 2048
+StartChar: uni0943
+Encoding: 2371 2371 552
+GlifName: uni0943
+Width: 0
 VWidth: 0
 GlyphClass: 2
 Flags: HW
-LayerCount: 2
-Fore
-Refer: 348 775 N 1 0 0.36397 1 0 0 2
-Refer: 553 2370 N 1 0 0.36397 1 0 0 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0942 uni0902
-EndChar
-
-StartChar: uni0942_uni0930_uni094D.abvs
-Encoding: 65668 -1 555
-GlifName: uni0942_uni0930_uni094D_.abvs
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: W
-LayerCount: 2
-Fore
-Refer: 553 2370 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 364 0 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0942 uni0930_uni094D.rphf
-EndChar
-
-StartChar: uni0943
-Encoding: 2371 2371 556
-GlifName: uni0943
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: W
+AnchorPoint: "blwm" -340 70 mark 0
 LayerCount: 2
 Fore
 SplineSet
-564.154296875 1550 m 257
- 542.315429688 1490 l 257
- 2590.31542969 1490 l 257
- 2612.15429688 1550 l 257
- 564.154296875 1550 l 257
 -291.724609375 9 m 257
  -1125.40820312 -133 l 257
  -1119.42675781 -188 l 257
@@ -19816,49 +21481,17 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0943_uni0902.abvs
-Encoding: 65669 -1 557
-GlifName: uni0943_uni0902.abvs
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: HW
-LayerCount: 2
-Fore
-Refer: 348 775 N 1 0 0.36397 1 0 0 2
-Refer: 556 2371 N 1 0 0.36397 1 0 0 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0943 uni0902
-EndChar
-
-StartChar: uni0943_uni0930_uni094D.abvs
-Encoding: 65670 -1 558
-GlifName: uni0943_uni0930_uni094D_.abvs
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: W
-LayerCount: 2
-Fore
-Refer: 556 2371 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 461.088 -8 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0943 uni0930_uni094D.rphf
-EndChar
-
 StartChar: uni0944
-Encoding: 2372 2372 559
+Encoding: 2372 2372 553
 GlifName: uni0944
-Width: 2048
+Width: 0
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HWO
+AnchorPoint: "blwm" -326 13 mark 0
 LayerCount: 2
 Fore
 SplineSet
-511.24609375 1553 m 257
- 489.771484375 1494 l 257
- 2591.77148438 1494 l 257
- 2613.24609375 1553 l 257
- 511.24609375 1553 l 257
 -258.547851562 -7 m 257
  -1052.94433594 -107 l 257
  -1058.0546875 -165 l 257
@@ -19882,36 +21515,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0944_uni0902.abvs
-Encoding: 65671 -1 560
-GlifName: uni0944_uni0902.abvs
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: HW
-LayerCount: 2
-Fore
-Refer: 348 775 N 1 0 0.36397 1 0 0 2
-Refer: 559 2372 N 1 0 0.36397 1 0 0 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0944 uni0902
-EndChar
-
-StartChar: uni0944_uni0930_uni094D.abvs
-Encoding: 65672 -1 561
-GlifName: uni0944_uni0930_uni094D_.abvs
-Width: 2048
-VWidth: 0
-GlyphClass: 2
-Flags: W
-LayerCount: 2
-Fore
-Refer: 559 2372 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 462.544 -4 2
-Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0944 uni0930_uni094D.rphf
-EndChar
-
 StartChar: uni0945
-Encoding: 2373 2373 562
+Encoding: 2373 2373 554
 GlifName: uni0945
 Width: 2048
 VWidth: 0
@@ -19944,7 +21549,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0945_uni0902.abvs
-Encoding: 65673 -1 563
+Encoding: 65673 -1 555
 GlifName: uni0945_uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -19952,27 +21557,87 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 143 0 2
-Refer: 562 2373 N 1 0 0.36397 1 0 0 2
+SplineSet
+1125.49121094 1553 m 257
+ 1081.81445312 1493 l 257
+ 3136.81445312 1493 l 257
+ 3180.49121094 1553 l 257
+ 1125.49121094 1553 l 257
+453.225585938 2109 m 257
+ 100.174804688 1624 l 257
+ 159.174804688 1624 l 257
+ 512.225585938 2109 l 257
+ 453.225585938 2109 l 257
+192.03515625 1687 m 257
+ 147.630859375 1626 l 257
+ 875.630859375 1626 l 257
+ 920.03515625 1687 l 257
+ 192.03515625 1687 l 257
+1197.04980469 2117 m 257
+ 839.630859375 1626 l 257
+ 899.630859375 1626 l 257
+ 1257.04980469 2117 l 257
+ 1197.04980469 2117 l 257
+2376.16015625 1738 m 257
+ 2302.63867188 1637 l 257
+ 2414.63867188 1637 l 257
+ 2488.16015625 1738 l 257
+ 2376.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0945 uni0902
 EndChar
 
 StartChar: uni0945_uni0930_uni094D.abvs
-Encoding: 65674 -1 564
+Encoding: 65674 -1 556
 GlifName: uni0945_uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 562 2373 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 544 0 2
+SplineSet
+1792.30761719 1550 m 257
+ 1852.30761719 1550 l 257
+ 2084.52050781 1869 l 257
+ 2024.52050781 1869 l 257
+ 1792.30761719 1550 l 257
+2245.3359375 2002 m 257
+ 2201.66015625 1942 l 257
+ 2529.66015625 1942 l 257
+ 2573.3359375 2002 l 257
+ 2245.3359375 2002 l 257
+2245.3359375 2002 m 257
+ 2024.52050781 1869 l 257
+ 2084.52050781 1869 l 257
+ 2201.66015625 1942 l 257
+ 2245.3359375 2002 l 257
+1125.49121094 1553 m 257
+ 1081.81445312 1493 l 257
+ 3136.81445312 1493 l 257
+ 3180.49121094 1553 l 257
+ 1125.49121094 1553 l 257
+453.225585938 2109 m 257
+ 100.174804688 1624 l 257
+ 159.174804688 1624 l 257
+ 512.225585938 2109 l 257
+ 453.225585938 2109 l 257
+192.03515625 1687 m 257
+ 147.630859375 1626 l 257
+ 875.630859375 1626 l 257
+ 920.03515625 1687 l 257
+ 192.03515625 1687 l 257
+1197.04980469 2117 m 257
+ 839.630859375 1626 l 257
+ 899.630859375 1626 l 257
+ 1257.04980469 2117 l 257
+ 1197.04980469 2117 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0945 uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni0946
-Encoding: 2374 2374 565
+Encoding: 2374 2374 557
 GlifName: uni0946
 Width: 2048
 VWidth: 0
@@ -20005,7 +21670,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0946_uni0902.abvs
-Encoding: 65675 -1 566
+Encoding: 65675 -1 558
 GlifName: uni0946_uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -20013,27 +21678,87 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 0 0 2
-Refer: 565 2374 N 1 0 0.36397 1 0 0 2
+SplineSet
+1058.49121094 1553 m 257
+ 1014.81445312 1493 l 257
+ 3134.81445312 1493 l 257
+ 3178.49121094 1553 l 257
+ 1058.49121094 1553 l 257
+687.012695312 2062 m 257
+ 513.03515625 1823 l 257
+ 575.03515625 1823 l 257
+ 749.012695312 2062 l 257
+ 687.012695312 2062 l 257
+544.336914062 1866 m 257
+ 502.84375 1809 l 257
+ 1484.84375 1809 l 257
+ 1526.33691406 1866 l 257
+ 544.336914062 1866 l 257
+1464.51269531 1858 m 257
+ 1233.02832031 1540 l 257
+ 1293.02832031 1540 l 257
+ 1524.51269531 1858 l 257
+ 1464.51269531 1858 l 257
+2233.16015625 1738 m 257
+ 2159.63867188 1637 l 257
+ 2271.63867188 1637 l 257
+ 2345.16015625 1738 l 257
+ 2233.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0946 uni0902
 EndChar
 
 StartChar: uni0946_uni0930_uni094D.abvs
-Encoding: 65676 -1 567
+Encoding: 65676 -1 559
 GlifName: uni0946_uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 565 2374 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 465.088 -8 2
+SplineSet
+1713.39550781 1542 m 257
+ 1773.39550781 1542 l 257
+ 2005.60839844 1861 l 257
+ 1945.60839844 1861 l 257
+ 1713.39550781 1542 l 257
+2166.42382812 1994 m 257
+ 2122.74804688 1934 l 257
+ 2450.74804688 1934 l 257
+ 2494.42382812 1994 l 257
+ 2166.42382812 1994 l 257
+2166.42382812 1994 m 257
+ 1945.60839844 1861 l 257
+ 2005.60839844 1861 l 257
+ 2122.74804688 1934 l 257
+ 2166.42382812 1994 l 257
+1058.49121094 1553 m 257
+ 1014.81445312 1493 l 257
+ 3134.81445312 1493 l 257
+ 3178.49121094 1553 l 257
+ 1058.49121094 1553 l 257
+687.012695312 2062 m 257
+ 513.03515625 1823 l 257
+ 575.03515625 1823 l 257
+ 749.012695312 2062 l 257
+ 687.012695312 2062 l 257
+544.336914062 1866 m 257
+ 502.84375 1809 l 257
+ 1484.84375 1809 l 257
+ 1526.33691406 1866 l 257
+ 544.336914062 1866 l 257
+1464.51269531 1858 m 257
+ 1233.02832031 1540 l 257
+ 1293.02832031 1540 l 257
+ 1524.51269531 1858 l 257
+ 1464.51269531 1858 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0946 uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni0947
-Encoding: 2375 2375 568
+Encoding: 2375 2375 560
 GlifName: uni0947
 Width: 2048
 VWidth: 0
@@ -20056,7 +21781,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0947_uni0902.abvs
-Encoding: 65677 -1 569
+Encoding: 65677 -1 561
 GlifName: uni0947_uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -20064,27 +21789,67 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 0 0 2
-Refer: 568 2375 N 1 0 0.36397 1 0 0 2
+SplineSet
+1040.49121094 1553 m 257
+ 996.814453125 1493 l 257
+ 3135.81445312 1493 l 257
+ 3179.49121094 1553 l 257
+ 1040.49121094 1553 l 257
+731.21875 1962 m 257
+ 1126.12304688 1547 l 257
+ 1231.12304688 1547 l 257
+ 843.424804688 1998 l 257
+ 731.21875 1962 l 257
+2233.16015625 1738 m 257
+ 2159.63867188 1637 l 257
+ 2271.63867188 1637 l 257
+ 2345.16015625 1738 l 257
+ 2233.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0947 uni0902
 EndChar
 
 StartChar: uni0947_uni0930_uni094D.abvs
-Encoding: 65678 -1 570
+Encoding: 65678 -1 562
 GlifName: uni0947_uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 568 2375 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 441.088 -8 2
+SplineSet
+1689.39550781 1542 m 257
+ 1749.39550781 1542 l 257
+ 1981.60839844 1861 l 257
+ 1921.60839844 1861 l 257
+ 1689.39550781 1542 l 257
+2142.42382812 1994 m 257
+ 2098.74804688 1934 l 257
+ 2426.74804688 1934 l 257
+ 2470.42382812 1994 l 257
+ 2142.42382812 1994 l 257
+2142.42382812 1994 m 257
+ 1921.60839844 1861 l 257
+ 1981.60839844 1861 l 257
+ 2098.74804688 1934 l 257
+ 2142.42382812 1994 l 257
+1040.49121094 1553 m 257
+ 996.814453125 1493 l 257
+ 3135.81445312 1493 l 257
+ 3179.49121094 1553 l 257
+ 1040.49121094 1553 l 257
+731.21875 1962 m 257
+ 1126.12304688 1547 l 257
+ 1231.12304688 1547 l 257
+ 843.424804688 1998 l 257
+ 731.21875 1962 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0947 uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni0948
-Encoding: 2376 2376 571
+Encoding: 2376 2376 563
 GlifName: uni0948
 Width: 2048
 VWidth: 0
@@ -20112,7 +21877,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0948_uni0902.abvs
-Encoding: 65679 -1 572
+Encoding: 65679 -1 564
 GlifName: uni0948_uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -20120,27 +21885,77 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 182 0 2
-Refer: 571 2376 N 1 0 0.36397 1 0 0 2
+SplineSet
+1130.49121094 1553 m 257
+ 1087.54296875 1494 l 257
+ 3135.54296875 1494 l 257
+ 3178.49121094 1553 l 257
+ 1130.49121094 1553 l 257
+479.181640625 1771 m 257
+ 1159.93945312 1544 l 257
+ 1295.93945312 1544 l 257
+ 621.064453125 1867 l 257
+ 479.181640625 1771 l 257
+1121.32910156 1991 m 257
+ 1329.92480469 1522 l 257
+ 1424.12304688 1547 l 257
+ 1219.71875 2030 l 257
+ 1121.32910156 1991 l 257
+2415.16015625 1738 m 257
+ 2341.63867188 1637 l 257
+ 2453.63867188 1637 l 257
+ 2527.16015625 1738 l 257
+ 2415.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0948 uni0902
 EndChar
 
 StartChar: uni0948_uni0930_uni094D.abvs
-Encoding: 65680 -1 573
+Encoding: 65680 -1 565
 GlifName: uni0948_uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 571 2376 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 553.456 4 2
+SplineSet
+1801.76367188 1554 m 257
+ 1861.76367188 1554 l 257
+ 2093.9765625 1873 l 257
+ 2033.9765625 1873 l 257
+ 1801.76367188 1554 l 257
+2254.79199219 2006 m 257
+ 2211.11621094 1946 l 257
+ 2539.11621094 1946 l 257
+ 2582.79199219 2006 l 257
+ 2254.79199219 2006 l 257
+2254.79199219 2006 m 257
+ 2033.9765625 1873 l 257
+ 2093.9765625 1873 l 257
+ 2211.11621094 1946 l 257
+ 2254.79199219 2006 l 257
+1130.49121094 1553 m 257
+ 1087.54296875 1494 l 257
+ 3135.54296875 1494 l 257
+ 3178.49121094 1553 l 257
+ 1130.49121094 1553 l 257
+479.181640625 1771 m 257
+ 1159.93945312 1544 l 257
+ 1295.93945312 1544 l 257
+ 621.064453125 1867 l 257
+ 479.181640625 1771 l 257
+1121.32910156 1991 m 257
+ 1329.92480469 1522 l 257
+ 1424.12304688 1547 l 257
+ 1219.71875 2030 l 257
+ 1121.32910156 1991 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0948 uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni0949
-Encoding: 2377 2377 574
+Encoding: 2377 2377 566
 GlifName: uni0949
 Width: 2048
 VWidth: 0
@@ -20178,7 +21993,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0949_uni0902.abvs
-Encoding: 65681 -1 575
+Encoding: 65681 -1 567
 GlifName: uni0949_uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -20186,27 +22001,97 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 108.099 297 2
-Refer: 574 2377 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1082.44726562 1487 l 257
+ 3130.44726562 1487 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2082.82226562 1504 m 257
+ 988 0 l 257
+ 1048 0 l 257
+ 2142.82226562 1504 l 257
+ 2082.82226562 1504 l 257
+1765.75585938 2085 m 257
+ 1441.09375 1639 l 257
+ 1501.09375 1639 l 257
+ 1825.75585938 2085 l 257
+ 1765.75585938 2085 l 257
+1492.2265625 1701 m 257
+ 1448.54980469 1641 l 257
+ 2986.54980469 1641 l 257
+ 3030.2265625 1701 l 257
+ 1492.2265625 1701 l 257
+3238.29980469 2083 m 257
+ 2916.54980469 1641 l 257
+ 2986.54980469 1641 l 257
+ 3308.29980469 2083 l 257
+ 3238.29980469 2083 l 257
+2341.25878906 2035 m 257
+ 2267.73730469 1934 l 257
+ 2379.73730469 1934 l 257
+ 2453.25878906 2035 l 257
+ 2341.25878906 2035 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0949 uni0902
 EndChar
 
 StartChar: uni0949_uni0930_uni094D.abvs
-Encoding: 65682 -1 576
+Encoding: 65682 -1 568
 GlifName: uni0949_uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 574 2377 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 1768 11 2
+SplineSet
+3016.30761719 1561 m 257
+ 3076.30761719 1561 l 257
+ 3308.52050781 1880 l 257
+ 3248.52050781 1880 l 257
+ 3016.30761719 1561 l 257
+3469.3359375 2013 m 257
+ 3425.66015625 1953 l 257
+ 3753.66015625 1953 l 257
+ 3797.3359375 2013 l 257
+ 3469.3359375 2013 l 257
+3469.3359375 2013 m 257
+ 3248.52050781 1880 l 257
+ 3308.52050781 1880 l 257
+ 3425.66015625 1953 l 257
+ 3469.3359375 2013 l 257
+1128.30761719 1550 m 257
+ 1082.44726562 1487 l 257
+ 3130.44726562 1487 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2082.82226562 1504 m 257
+ 988 0 l 257
+ 1048 0 l 257
+ 2142.82226562 1504 l 257
+ 2082.82226562 1504 l 257
+1765.75585938 2085 m 257
+ 1441.09375 1639 l 257
+ 1501.09375 1639 l 257
+ 1825.75585938 2085 l 257
+ 1765.75585938 2085 l 257
+1492.2265625 1701 m 257
+ 1448.54980469 1641 l 257
+ 2986.54980469 1641 l 257
+ 3030.2265625 1701 l 257
+ 1492.2265625 1701 l 257
+3238.29980469 2083 m 257
+ 2916.54980469 1641 l 257
+ 2986.54980469 1641 l 257
+ 3308.29980469 2083 l 257
+ 3238.29980469 2083 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni0949 uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni094A
-Encoding: 2378 2378 577
+Encoding: 2378 2378 569
 GlifName: uni094A_
 Width: 2048
 VWidth: 0
@@ -20244,7 +22129,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094A_uni0902.abvs
-Encoding: 65683 -1 578
+Encoding: 65683 -1 570
 GlifName: uni094A__uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -20252,27 +22137,97 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 255 0 2
-Refer: 577 2378 N 1 0 0.36397 1 0 0 2
+SplineSet
+1051.49121094 1553 m 257
+ 1009.99804688 1496 l 257
+ 3136.99804688 1496 l 257
+ 3178.49121094 1553 l 257
+ 1051.49121094 1553 l 257
+2110.01367188 1518 m 257
+ 1005 0 l 257
+ 1066 0 l 257
+ 2171.01367188 1518 l 257
+ 2110.01367188 1518 l 257
+773.012695312 2062 m 257
+ 599.03515625 1823 l 257
+ 660.03515625 1823 l 257
+ 834.012695312 2062 l 257
+ 773.012695312 2062 l 257
+629.336914062 1866 m 257
+ 587.84375 1809 l 257
+ 2369.84375 1809 l 257
+ 2411.33691406 1866 l 257
+ 629.336914062 1866 l 257
+2349.15234375 1863 m 257
+ 2117.66796875 1545 l 257
+ 2177.66796875 1545 l 257
+ 2409.15234375 1863 l 257
+ 2349.15234375 1863 l 257
+2488.16015625 1738 m 257
+ 2414.63867188 1637 l 257
+ 2526.63867188 1637 l 257
+ 2600.16015625 1738 l 257
+ 2488.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni094A uni0902
 EndChar
 
 StartChar: uni094A_uni0930_uni094D.abvs
-Encoding: 65684 -1 579
+Encoding: 65684 -1 571
 GlifName: uni094A__uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 577 2378 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 1256.18 6 2
+SplineSet
+2504.48828125 1556 m 257
+ 2564.48828125 1556 l 257
+ 2796.70019531 1875 l 257
+ 2736.70019531 1875 l 257
+ 2504.48828125 1556 l 257
+2957.515625 2008 m 257
+ 2913.83984375 1948 l 257
+ 3241.83984375 1948 l 257
+ 3285.515625 2008 l 257
+ 2957.515625 2008 l 257
+2957.515625 2008 m 257
+ 2736.70019531 1875 l 257
+ 2796.70019531 1875 l 257
+ 2913.83984375 1948 l 257
+ 2957.515625 2008 l 257
+1051.49121094 1553 m 257
+ 1009.99804688 1496 l 257
+ 3136.99804688 1496 l 257
+ 3178.49121094 1553 l 257
+ 1051.49121094 1553 l 257
+2110.01367188 1518 m 257
+ 1005 0 l 257
+ 1066 0 l 257
+ 2171.01367188 1518 l 257
+ 2110.01367188 1518 l 257
+773.012695312 2062 m 257
+ 599.03515625 1823 l 257
+ 660.03515625 1823 l 257
+ 834.012695312 2062 l 257
+ 773.012695312 2062 l 257
+629.336914062 1866 m 257
+ 587.84375 1809 l 257
+ 2369.84375 1809 l 257
+ 2411.33691406 1866 l 257
+ 629.336914062 1866 l 257
+2349.15234375 1863 m 257
+ 2117.66796875 1545 l 257
+ 2177.66796875 1545 l 257
+ 2409.15234375 1863 l 257
+ 2349.15234375 1863 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni094A uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni094B
-Encoding: 2379 2379 580
+Encoding: 2379 2379 572
 GlifName: uni094B_
 Width: 2048
 VWidth: 0
@@ -20300,7 +22255,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094B_uni0902.abvs
-Encoding: 65685 -1 581
+Encoding: 65685 -1 573
 GlifName: uni094B__uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -20308,27 +22263,77 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 158 0 2
-Refer: 580 2379 N 1 0 0.36397 1 0 0 2
+SplineSet
+1100.30761719 1550 m 257
+ 1055.17480469 1488 l 257
+ 3132.17480469 1488 l 257
+ 3177.30761719 1550 l 257
+ 1100.30761719 1550 l 257
+2108.46191406 1509 m 257
+ 1013.640625 5 l 257
+ 1073.640625 5 l 257
+ 2168.46191406 1509 l 257
+ 2108.46191406 1509 l 257
+1436.4609375 2053 m 257
+ 2046.64550781 1512 l 257
+ 2120.30761719 1550 l 257
+ 1510.85058594 2092 l 257
+ 1436.4609375 2053 l 257
+2391.16015625 1738 m 257
+ 2317.63867188 1637 l 257
+ 2429.63867188 1637 l 257
+ 2503.16015625 1738 l 257
+ 2391.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni094B uni0902
 EndChar
 
 StartChar: uni094B_uni0930_uni094D.abvs
-Encoding: 65686 -1 582
+Encoding: 65686 -1 574
 GlifName: uni094B__uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 580 2379 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 1253.36 1 2
+SplineSet
+2501.66796875 1551 m 257
+ 2561.66796875 1551 l 257
+ 2793.88085938 1870 l 257
+ 2733.88085938 1870 l 257
+ 2501.66796875 1551 l 257
+2954.69628906 2003 m 257
+ 2911.01953125 1943 l 257
+ 3239.01953125 1943 l 257
+ 3282.69628906 2003 l 257
+ 2954.69628906 2003 l 257
+2954.69628906 2003 m 257
+ 2733.88085938 1870 l 257
+ 2793.88085938 1870 l 257
+ 2911.01953125 1943 l 257
+ 2954.69628906 2003 l 257
+1100.30761719 1550 m 257
+ 1055.17480469 1488 l 257
+ 3132.17480469 1488 l 257
+ 3177.30761719 1550 l 257
+ 1100.30761719 1550 l 257
+2108.46191406 1509 m 257
+ 1013.640625 5 l 257
+ 1073.640625 5 l 257
+ 2168.46191406 1509 l 257
+ 2108.46191406 1509 l 257
+1436.4609375 2053 m 257
+ 2046.64550781 1512 l 257
+ 2120.30761719 1550 l 257
+ 1510.85058594 2092 l 257
+ 1436.4609375 2053 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni094B uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni094C
-Encoding: 2380 2380 583
+Encoding: 2380 2380 575
 GlifName: uni094C_
 Width: 2048
 VWidth: 0
@@ -20361,7 +22366,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094C_uni0902.abvs
-Encoding: 65687 -1 584
+Encoding: 65687 -1 576
 GlifName: uni094C__uni0902.abvs
 Width: 2048
 VWidth: 0
@@ -20369,32 +22374,93 @@ GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 348 775 N 1 0 0.36397 1 211 0 2
-Refer: 583 2380 N 1 0 0.36397 1 0 0 2
+SplineSet
+1071.49121094 1553 m 257
+ 1028.54296875 1494 l 257
+ 3136.54296875 1494 l 257
+ 3179.49121094 1553 l 257
+ 1071.49121094 1553 l 257
+2105.09375 1503 m 257
+ 1011 0 l 257
+ 1072 0 l 257
+ 2166.09375 1503 l 257
+ 2105.09375 1503 l 257
+1125.67480469 1828 m 257
+ 1995.66796875 1545 l 257
+ 2088.66796875 1545 l 257
+ 1226.04980469 1845 l 257
+ 1125.67480469 1828 l 257
+1565.62304688 1887 m 257
+ 2121.75585938 1541 l 257
+ 2197.75585938 1541 l 257
+ 1652.63769531 1909 l 257
+ 1565.62304688 1887 l 257
+2444.16015625 1738 m 257
+ 2370.63867188 1637 l 257
+ 2482.63867188 1637 l 257
+ 2556.16015625 1738 l 257
+ 2444.16015625 1738 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni094C uni0902
 EndChar
 
 StartChar: uni094C_uni0930_uni094D.abvs
-Encoding: 65688 -1 585
+Encoding: 65688 -1 577
 GlifName: uni094C__uni0930_uni094D_.abvs
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 583 2380 N 1 0 0.36397 1 0 0 2
-Refer: 497 -1 N 1 0 0.36397 1 1320.37 12 2
+SplineSet
+2568.67773438 1562 m 257
+ 2628.67773438 1562 l 257
+ 2860.890625 1881 l 257
+ 2800.890625 1881 l 257
+ 2568.67773438 1562 l 257
+3021.70605469 2014 m 257
+ 2978.03027344 1954 l 257
+ 3306.03027344 1954 l 257
+ 3349.70605469 2014 l 257
+ 3021.70605469 2014 l 257
+3021.70605469 2014 m 257
+ 2800.890625 1881 l 257
+ 2860.890625 1881 l 257
+ 2978.03027344 1954 l 257
+ 3021.70605469 2014 l 257
+1071.49121094 1553 m 257
+ 1028.54296875 1494 l 257
+ 3136.54296875 1494 l 257
+ 3179.49121094 1553 l 257
+ 1071.49121094 1553 l 257
+2105.09375 1503 m 257
+ 1011 0 l 257
+ 1072 0 l 257
+ 2166.09375 1503 l 257
+ 2105.09375 1503 l 257
+1125.67480469 1828 m 257
+ 1995.66796875 1545 l 257
+ 2088.66796875 1545 l 257
+ 1226.04980469 1845 l 257
+ 1125.67480469 1828 l 257
+1565.62304688 1887 m 257
+ 2121.75585938 1541 l 257
+ 2197.75585938 1541 l 257
+ 1652.63769531 1909 l 257
+ 1565.62304688 1887 l 257
+EndSplineSet
 Ligature2: "abvsAboveBaseSubstitutionsinDevanagarilookup0 subtable" uni094C uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni094D
-Encoding: 2381 2381 586
+Encoding: 2381 2381 578
 GlifName: uni094D_
-Width: 2048
+Width: 0
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
+AnchorPoint: "blwm" -360 2 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20408,16 +22474,11 @@ SplineSet
  425.787109375 -366 l 257
  61.5400390625 -15 l 257
  12.158203125 -71 l 257
-545.154296875 1550 m 257
- 522.952148438 1489 l 257
- 2590.95214844 1489 l 257
- 2613.15429688 1550 l 257
- 545.154296875 1550 l 257
 EndSplineSet
 EndChar
 
 StartChar: uni094E
-Encoding: 2382 2382 587
+Encoding: 2382 2382 579
 GlifName: uni094E_
 Width: 2048
 VWidth: 0
@@ -20440,7 +22501,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094F
-Encoding: 2383 2383 588
+Encoding: 2383 2383 580
 GlifName: uni094F_
 Width: 2048
 VWidth: 0
@@ -20493,7 +22554,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0950
-Encoding: 2384 2384 589
+Encoding: 2384 2384 581
 GlifName: uni0950
 Width: 2048
 VWidth: 0
@@ -20551,7 +22612,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0951
-Encoding: 2385 2385 590
+Encoding: 2385 2385 582
 GlifName: uni0951
 Width: 2048
 VWidth: 0
@@ -20569,12 +22630,13 @@ EndSplineSet
 EndChar
 
 StartChar: uni0952
-Encoding: 2386 2386 591
+Encoding: 2386 2386 583
 GlifName: uni0952
 Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm" -454 -14 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20587,7 +22649,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0953
-Encoding: 2387 2387 592
+Encoding: 2387 2387 584
 GlifName: uni0953
 Width: 2048
 VWidth: 0
@@ -20605,7 +22667,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0954
-Encoding: 2388 2388 593
+Encoding: 2388 2388 585
 GlifName: uni0954
 Width: 2048
 VWidth: 0
@@ -20623,7 +22685,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0955
-Encoding: 2389 2389 594
+Encoding: 2389 2389 586
 GlifName: uni0955
 Width: 2048
 VWidth: 0
@@ -20661,7 +22723,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0956
-Encoding: 2390 2390 595
+Encoding: 2390 2390 587
 GlifName: uni0956
 Width: 2048
 VWidth: 0
@@ -20694,7 +22756,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0957
-Encoding: 2391 2391 596
+Encoding: 2391 2391 588
 GlifName: uni0957
 Width: 2048
 VWidth: 0
@@ -20742,7 +22804,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0958
-Encoding: 2392 2392 597
+Encoding: 2392 2392 589
 GlifName: uni0958
 Width: 2048
 VWidth: 0
@@ -20796,7 +22858,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0915 uni093C
 EndChar
 
 StartChar: uni0958_uni0930_uni094D.vatu
-Encoding: 65689 -1 598
+Encoding: 65689 -1 590
 GlifName: uni0958_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -20855,7 +22917,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0958 uni0930_uni09
 EndChar
 
 StartChar: uni0958_uni094D.half
-Encoding: 65690 -1 599
+Encoding: 65690 -1 591
 GlifName: uni0958_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -20904,21 +22966,71 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0958 uni094D
 EndChar
 
 StartChar: uni0958_uni094D.haln
-Encoding: 65691 -1 600
+Encoding: 65691 -1 592
 GlifName: uni0958_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 597 2392 N 1 0 0.36397 1 0 0 2
+SplineSet
+1283.49121094 1553 m 257
+ 1222.34375 1469 l 257
+ 3270.34375 1469 l 257
+ 3331.49121094 1553 l 257
+ 1283.49121094 1553 l 257
+2368.01367188 1518 m 257
+ 1300.125 51 l 257
+ 1354.125 51 l 257
+ 2422.01367188 1518 l 257
+ 2368.01367188 1518 l 257
+1112.16796875 1069 m 257
+ 1069.21972656 1010 l 257
+ 1756.21972656 1010 l 257
+ 1799.16796875 1069 l 257
+ 1112.16796875 1069 l 257
+1100.43945312 1068 m 257
+ 762.67578125 604 l 257
+ 822.67578125 604 l 257
+ 1160.43945312 1068 l 257
+ 1100.43945312 1068 l 257
+829.359375 675 m 257
+ 778.404296875 605 l 257
+ 1750.40429688 605 l 257
+ 1801.359375 675 l 257
+ 829.359375 675 l 257
+2015.21289062 999 m 257
+ 1973.71972656 942 l 257
+ 2750.71972656 942 l 257
+ 2792.21289062 999 l 257
+ 2015.21289062 999 l 257
+2742.94042969 1000 m 257
+ 2582.06542969 779 l 257
+ 2640.06542969 779 l 257
+ 2800.94042969 1000 l 257
+ 2742.94042969 1000 l 257
+797.6328125 -6 m 257
+ 714.646484375 -120 l 257
+ 856.646484375 -120 l 257
+ 939.6328125 -6 l 257
+ 797.6328125 -6 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0958 uni094D
 EndChar
 
 StartChar: uni0959
-Encoding: 2393 2393 601
+Encoding: 2393 2393 593
 GlifName: uni0959
 Width: 2048
 VWidth: 0
@@ -20977,7 +23089,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0916 uni093C
 EndChar
 
 StartChar: uni0959_uni0930_uni094D.vatu
-Encoding: 65692 -1 602
+Encoding: 65692 -1 594
 GlifName: uni0959_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21041,7 +23153,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni0959 uni0930_uni09
 EndChar
 
 StartChar: uni0959_uni094D.half
-Encoding: 65693 -1 603
+Encoding: 65693 -1 595
 GlifName: uni0959_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -21095,21 +23207,76 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni0959 uni094D
 EndChar
 
 StartChar: uni0959_uni094D.haln
-Encoding: 65694 -1 604
+Encoding: 65694 -1 596
 GlifName: uni0959_uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 601 2393 N 1 0 0.36397 1 0 0 2
+SplineSet
+1132.67480469 1556 m 257
+ 1088.99804688 1496 l 257
+ 3144.99804688 1496 l 257
+ 3188.67480469 1556 l 257
+ 1132.67480469 1556 l 257
+2965.1015625 1514 m 257
+ 1863 0 l 257
+ 1924 0 l 257
+ 3026.1015625 1514 l 257
+ 2965.1015625 1514 l 257
+1749.65332031 979 m 257
+ 1705.9765625 919 l 257
+ 2133.9765625 919 l 257
+ 2177.65332031 979 l 257
+ 1749.65332031 979 l 257
+1719.65332031 979 m 257
+ 1308.3671875 414 l 257
+ 1369.3671875 414 l 257
+ 1780.65332031 979 l 257
+ 1719.65332031 979 l 257
+1319.28710938 429 m 257
+ 1274.8828125 368 l 257
+ 2146.8828125 368 l 257
+ 2191.28710938 429 l 257
+ 1319.28710938 429 l 257
+1560.18945312 1510 m 257
+ 548.353515625 120 l 257
+ 609.353515625 120 l 257
+ 1621.18945312 1510 l 257
+ 1560.18945312 1510 l 257
+536.75 714 m 257
+ 493.072265625 654 l 257
+ 997.072265625 654 l 257
+ 1040.75 714 l 257
+ 536.75 714 l 257
+555.6328125 130 m 257
+ 511.955078125 70 l 257
+ 1911.95507812 70 l 257
+ 1955.6328125 130 l 257
+ 555.6328125 130 l 257
+905.765625 -80 m 257
+ 822.779296875 -194 l 257
+ 966.779296875 -194 l 257
+ 1049.765625 -80 l 257
+ 905.765625 -80 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni0959 uni094D
 EndChar
 
 StartChar: uni095A
-Encoding: 2394 2394 605
+Encoding: 2394 2394 597
 GlifName: uni095A_
 Width: 2048
 VWidth: 0
@@ -21153,7 +23320,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0917 uni093C
 EndChar
 
 StartChar: uni095A_uni0930_uni094D.vatu
-Encoding: 65695 -1 606
+Encoding: 65695 -1 598
 GlifName: uni095A__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21202,7 +23369,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095A uni0930_uni09
 EndChar
 
 StartChar: uni095A_uni094D.half
-Encoding: 65696 -1 607
+Encoding: 65696 -1 599
 GlifName: uni095A__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -21241,21 +23408,61 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095A uni094D
 EndChar
 
 StartChar: uni095A_uni094D.haln
-Encoding: 65697 -1 608
+Encoding: 65697 -1 600
 GlifName: uni095A__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 605 2394 N 1 0 0.36397 1 0 0 2
+SplineSet
+679.93359375 853 m 257
+ 749.93359375 853 l 257
+ 888.969726562 1044 l 257
+ 818.969726562 1044 l 257
+ 679.93359375 853 l 257
+701.04296875 882 m 257
+ 650.087890625 812 l 257
+ 1509.08789062 812 l 257
+ 1560.04296875 882 l 257
+ 701.04296875 882 l 257
+1980.67480469 1556 m 257
+ 1439.08789062 812 l 257
+ 1509.08789062 812 l 257
+ 2050.67480469 1556 l 257
+ 1980.67480469 1556 l 257
+3138.40234375 1557 m 257
+ 1863.40234375 1557 l 257
+ 1818.99804688 1496 l 257
+ 3093.99804688 1496 l 257
+ 3138.40234375 1557 l 257
+2962.65332031 1523 m 257
+ 1854 0 l 257
+ 1924 0 l 257
+ 3032.65332031 1523 l 257
+ 2962.65332031 1523 l 257
+952.734375 12 m 257
+ 869.75 -102 l 257
+ 1013.75 -102 l 257
+ 1096.734375 12 l 257
+ 952.734375 12 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095A uni094D
 EndChar
 
 StartChar: uni095B
-Encoding: 2395 2395 609
+Encoding: 2395 2395 601
 GlifName: uni095B_
 Width: 2048
 VWidth: 0
@@ -21304,7 +23511,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni091C uni093C
 EndChar
 
 StartChar: uni095B_uni0930_uni094D.vatu
-Encoding: 65698 -1 610
+Encoding: 65698 -1 602
 GlifName: uni095B__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21358,7 +23565,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095B uni0930_uni09
 EndChar
 
 StartChar: uni095B_uni094D.half
-Encoding: 65699 -1 611
+Encoding: 65699 -1 603
 GlifName: uni095B__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -21402,21 +23609,66 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095B uni094D
 EndChar
 
 StartChar: uni095B_uni094D.haln
-Encoding: 65700 -1 612
+Encoding: 65700 -1 604
 GlifName: uni095B__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 609 2395 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1086.08691406 1492 l 257
+ 3168.08691406 1492 l 257
+ 3210.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+3002.30761719 1550 m 257
+ 1865.265625 -12 l 257
+ 1926.265625 -12 l 257
+ 3063.30761719 1550 l 257
+ 3002.30761719 1550 l 257
+1673.02929688 860 m 257
+ 1630.08007812 801 l 257
+ 2478.08007812 801 l 257
+ 2521.02929688 860 l 257
+ 1673.02929688 860 l 257
+1663.02929688 860 m 257
+ 1409.70507812 512 l 257
+ 1469.70507812 512 l 257
+ 1723.02929688 860 l 257
+ 1663.02929688 860 l 257
+487.7421875 567 m 257
+ 444.79296875 508 l 257
+ 1466.79296875 508 l 257
+ 1509.7421875 567 l 257
+ 487.7421875 567 l 257
+604.212890625 727 m 257
+ 445.521484375 509 l 257
+ 505.521484375 509 l 257
+ 664.212890625 727 l 257
+ 604.212890625 727 l 257
+907.235351562 -56 m 257
+ 824.25 -170 l 257
+ 966.25 -170 l 257
+ 1049.23535156 -56 l 257
+ 907.235351562 -56 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095B uni094D
 EndChar
 
 StartChar: uni095C
-Encoding: 2396 2396 613
+Encoding: 2396 2396 605
 GlifName: uni095C_
 Width: 2048
 VWidth: 0
@@ -21475,7 +23727,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0921 uni093C
 EndChar
 
 StartChar: uni095C_uni0930_uni094D.vatu
-Encoding: 65701 -1 614
+Encoding: 65701 -1 606
 GlifName: uni095C__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21544,21 +23796,76 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095C uni0930_uni09
 EndChar
 
 StartChar: uni095C_uni094D.haln
-Encoding: 65702 -1 615
+Encoding: 65702 -1 607
 GlifName: uni095C__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 613 2396 N 1 0 0.36397 1 0 0 2
+SplineSet
+1126.8515625 1548 m 257
+ 1083.17480469 1488 l 257
+ 3131.17480469 1488 l 257
+ 3174.8515625 1548 l 257
+ 1126.8515625 1548 l 257
+1178.18261719 1091 m 257
+ 805.4765625 579 l 257
+ 865.4765625 579 l 257
+ 1238.18261719 1091 l 257
+ 1178.18261719 1091 l 257
+818.580078125 597 m 257
+ 775.631835938 538 l 257
+ 2132.63183594 538 l 257
+ 2175.58007812 597 l 257
+ 818.580078125 597 l 257
+2084.27929688 554 m 257
+ 1684.640625 5 l 257
+ 1744.640625 5 l 257
+ 2144.27929688 554 l 257
+ 2084.27929688 554 l 257
+105.67578125 60 m 257
+ 62 0 l 257
+ 1741 0 l 257
+ 1784.67578125 60 l 257
+ 105.67578125 60 l 257
+302.948242188 331 m 257
+ 65.640625 5 l 257
+ 126.640625 5 l 257
+ 363.948242188 331 l 257
+ 302.948242188 331 l 257
+1209.484375 1134 m 257
+ 1165.80761719 1074 l 257
+ 2522.80761719 1074 l 257
+ 2566.484375 1134 l 257
+ 1209.484375 1134 l 257
+2773.09375 1503 m 257
+ 2478.27832031 1098 l 257
+ 2540.27832031 1098 l 257
+ 2835.09375 1503 l 257
+ 2773.09375 1503 l 257
+893.765625 -80 m 257
+ 810.779296875 -194 l 257
+ 954.779296875 -194 l 257
+ 1037.765625 -80 l 257
+ 893.765625 -80 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095C uni094D
 EndChar
 
 StartChar: uni095D
-Encoding: 2397 2397 616
+Encoding: 2397 2397 608
 GlifName: uni095D_
 Width: 2048
 VWidth: 0
@@ -21612,7 +23919,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni0922 uni093C
 EndChar
 
 StartChar: uni095D_uni0930_uni094D.vatu
-Encoding: 65703 -1 617
+Encoding: 65703 -1 609
 GlifName: uni095D__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21676,21 +23983,71 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095D uni0930_uni09
 EndChar
 
 StartChar: uni095D_uni094D.haln
-Encoding: 65704 -1 618
+Encoding: 65704 -1 610
 GlifName: uni095D__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 616 2397 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1083.17480469 1488 l 257
+ 3131.17480469 1488 l 257
+ 3176.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2823.29296875 1528 m 257
+ 2430.20507812 988 l 257
+ 2512.20507812 988 l 257
+ 2905.29296875 1528 l 257
+ 2823.29296875 1528 l 257
+2537.68359375 1023 m 257
+ 864.68359375 1023 l 257
+ 820.278320312 962 l 257
+ 2493.27832031 962 l 257
+ 2537.68359375 1023 l 257
+843.68359375 1023 m 257
+ 102.640625 5 l 257
+ 162.640625 5 l 257
+ 903.68359375 1023 l 257
+ 843.68359375 1023 l 257
+142.67578125 60 m 257
+ 99 0 l 257
+ 1836 0 l 257
+ 1879.67578125 60 l 257
+ 142.67578125 60 l 257
+2174 544 m 257
+ 1778 0 l 257
+ 1838 0 l 257
+ 2234 544 l 257
+ 2174 544 l 257
+1906.18359375 547 m 257
+ 1862.50683594 487 l 257
+ 2190.50683594 487 l 257
+ 2234.18359375 547 l 257
+ 1906.18359375 547 l 257
+927.353515625 -152 m 257
+ 844.3671875 -266 l 257
+ 988.3671875 -266 l 257
+ 1071.35351562 -152 l 257
+ 927.353515625 -152 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095D uni094D
 EndChar
 
 StartChar: uni095E
-Encoding: 2398 2398 619
+Encoding: 2398 2398 611
 GlifName: uni095E_
 Width: 2048
 VWidth: 0
@@ -21734,7 +24091,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni092B uni093C
 EndChar
 
 StartChar: uni095E_uni0930_uni094D.vatu
-Encoding: 65705 -1 620
+Encoding: 65705 -1 612
 GlifName: uni095E__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21783,7 +24140,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095E uni0930_uni09
 EndChar
 
 StartChar: uni095E_uni094D.half
-Encoding: 65706 -1 621
+Encoding: 65706 -1 613
 GlifName: uni095E__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -21822,21 +24179,61 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095E uni094D
 EndChar
 
 StartChar: uni095E_uni094D.haln
-Encoding: 65707 -1 622
+Encoding: 65707 -1 614
 GlifName: uni095E__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 619 2398 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1085.359375 1491 l 257
+ 3132.359375 1491 l 257
+ 3175.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2572.29980469 1539 m 257
+ 1452 0 l 257
+ 1512 0 l 257
+ 2632.29980469 1539 l 257
+ 2572.29980469 1539 l 257
+1221.30761719 1550 m 257
+ 795.462890625 965 l 257
+ 855.462890625 965 l 257
+ 1281.30761719 1550 l 257
+ 1221.30761719 1550 l 257
+837.68359375 1023 m 257
+ 794.734375 964 l 257
+ 2688.734375 964 l 257
+ 2731.68359375 1023 l 257
+ 837.68359375 1023 l 257
+2680.68359375 1023 m 257
+ 2435.3671875 686 l 257
+ 2495.3671875 686 l 257
+ 2740.68359375 1023 l 257
+ 2680.68359375 1023 l 257
+970.3671875 6 m 257
+ 887.3828125 -108 l 257
+ 1030.3828125 -108 l 257
+ 1113.3671875 6 l 257
+ 970.3671875 6 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095E uni094D
 EndChar
 
 StartChar: uni095F
-Encoding: 2399 2399 623
+Encoding: 2399 2399 615
 GlifName: uni095F_
 Width: 2048
 VWidth: 0
@@ -21880,7 +24277,7 @@ Ligature2: "nuktNuktaFormsinDevanagarilookup0 subtable" uni092F uni093C
 EndChar
 
 StartChar: uni095F_uni0930_uni094D.vatu
-Encoding: 65708 -1 624
+Encoding: 65708 -1 616
 GlifName: uni095F__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21929,7 +24326,7 @@ Ligature2: "vatuVattuVariantsinDevanagarilookup0 subtable" uni095F uni0930_uni09
 EndChar
 
 StartChar: uni095F_uni094D.half
-Encoding: 65709 -1 625
+Encoding: 65709 -1 617
 GlifName: uni095F__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -21983,21 +24380,61 @@ Ligature2: "halfHalfFormsinDevanagarilookup0 subtable" uni095F uni094D
 EndChar
 
 StartChar: uni095F_uni094D.haln
-Encoding: 65710 -1 626
+Encoding: 65710 -1 618
 GlifName: uni095F__uni094D_.haln
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 199 -1 N 1 0 0.36397 1 1024 0 2
-Refer: 623 2399 N 1 0 0.36397 1 0 0 2
+SplineSet
+1128.30761719 1550 m 257
+ 1083.90332031 1489 l 257
+ 3149.90332031 1489 l 257
+ 3194.30761719 1550 l 257
+ 1128.30761719 1550 l 257
+2986.4765625 1531 m 257
+ 1872 0 l 257
+ 1932 0 l 257
+ 3046.4765625 1531 l 257
+ 2986.4765625 1531 l 257
+1227.63085938 1490 m 257
+ 1250.83789062 846 l 257
+ 1308.83789062 846 l 257
+ 1318.484375 1542 l 257
+ 1227.63085938 1490 l 257
+1250.83789062 846 m 257
+ 489.587890625 472 l 257
+ 542.30859375 462 l 257
+ 1308.83789062 846 l 257
+ 1250.83789062 846 l 257
+596.44140625 524 m 257
+ 489.587890625 472 l 257
+ 2018.859375 199 l 257
+ 2083.35351562 256 l 257
+ 596.44140625 524 l 257
+1025.80859375 -14 m 257
+ 942.82421875 -128 l 257
+ 1084.82421875 -128 l 257
+ 1167.80859375 -14 l 257
+ 1025.80859375 -14 l 257
+1247.35351562 -16 m 257
+ 1202.94921875 -77 l 257
+ 1546.94921875 -77 l 257
+ 1591.35351562 -16 l 257
+ 1247.35351562 -16 l 257
+1522.31640625 -71 m 257
+ 1760.72070312 -418 l 257
+ 1828.57421875 -366 l 257
+ 1592.08007812 -15 l 257
+ 1522.31640625 -71 l 257
+EndSplineSet
 Ligature2: "halnHalantFormsinDevanagarilookup0 subtable" uni095F uni094D
 EndChar
 
 StartChar: uni0960
-Encoding: 2400 2400 627
+Encoding: 2400 2400 619
 GlifName: uni0960
 Width: 2048
 VWidth: 0
@@ -22055,7 +24492,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0961
-Encoding: 2401 2401 628
+Encoding: 2401 2401 620
 GlifName: uni0961
 Width: 2048
 VWidth: 0
@@ -22108,7 +24545,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0962
-Encoding: 2402 2402 629
+Encoding: 2402 2402 621
 GlifName: uni0962
 Width: 2048
 VWidth: 0
@@ -22151,7 +24588,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0963
-Encoding: 2403 2403 630
+Encoding: 2403 2403 622
 GlifName: uni0963
 Width: 2048
 VWidth: 0
@@ -22199,7 +24636,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0964
-Encoding: 2404 2404 631
+Encoding: 2404 2404 623
 GlifName: uni0964
 Width: 2048
 VWidth: 0
@@ -22217,7 +24654,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0965
-Encoding: 2405 2405 632
+Encoding: 2405 2405 624
 GlifName: uni0965
 Width: 2048
 VWidth: 0
@@ -22240,7 +24677,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0966
-Encoding: 2406 2406 633
+Encoding: 2406 2406 625
 GlifName: uni0966
 Width: 2048
 VWidth: 0
@@ -22273,7 +24710,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0967
-Encoding: 2407 2407 634
+Encoding: 2407 2407 626
 GlifName: uni0967
 Width: 2048
 VWidth: 0
@@ -22306,7 +24743,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0968
-Encoding: 2408 2408 635
+Encoding: 2408 2408 627
 GlifName: uni0968
 Width: 2048
 VWidth: 0
@@ -22344,7 +24781,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0969
-Encoding: 2409 2409 636
+Encoding: 2409 2409 628
 GlifName: uni0969
 Width: 2048
 VWidth: 0
@@ -22382,7 +24819,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096A
-Encoding: 2410 2410 637
+Encoding: 2410 2410 629
 GlifName: uni096A_
 Width: 2048
 VWidth: 0
@@ -22430,7 +24867,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096B
-Encoding: 2411 2411 638
+Encoding: 2411 2411 630
 GlifName: uni096B_
 Width: 2048
 VWidth: 0
@@ -22463,7 +24900,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096C
-Encoding: 2412 2412 639
+Encoding: 2412 2412 631
 GlifName: uni096C_
 Width: 2048
 VWidth: 0
@@ -22501,7 +24938,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096D
-Encoding: 2413 2413 640
+Encoding: 2413 2413 632
 GlifName: uni096D_
 Width: 2048
 VWidth: 0
@@ -22539,7 +24976,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096E
-Encoding: 2414 2414 641
+Encoding: 2414 2414 633
 GlifName: uni096E_
 Width: 2048
 VWidth: 0
@@ -22567,7 +25004,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096F
-Encoding: 2415 2415 642
+Encoding: 2415 2415 634
 GlifName: uni096F_
 Width: 2048
 VWidth: 0
@@ -22605,7 +25042,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0970
-Encoding: 2416 2416 643
+Encoding: 2416 2416 635
 GlifName: uni0970
 Width: 2048
 VWidth: 0
@@ -22623,7 +25060,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0971
-Encoding: 2417 2417 644
+Encoding: 2417 2417 636
 GlifName: uni0971
 Width: 2048
 VWidth: 0
@@ -22641,7 +25078,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0972
-Encoding: 2418 2418 645
+Encoding: 2418 2418 637
 GlifName: uni0972
 Width: 2048
 VWidth: 0
@@ -22699,7 +25136,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0973
-Encoding: 2419 2419 646
+Encoding: 2419 2419 638
 GlifName: uni0973
 Width: 2048
 VWidth: 0
@@ -22747,7 +25184,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0974
-Encoding: 2420 2420 647
+Encoding: 2420 2420 639
 GlifName: uni0974
 Width: 2048
 VWidth: 0
@@ -22795,7 +25232,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0975
-Encoding: 2421 2421 648
+Encoding: 2421 2421 640
 GlifName: uni0975
 Width: 2048
 VWidth: 0
@@ -22868,7 +25305,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0976
-Encoding: 2422 2422 649
+Encoding: 2422 2422 641
 GlifName: uni0976
 Width: 2048
 VWidth: 0
@@ -22926,7 +25363,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0977
-Encoding: 2423 2423 650
+Encoding: 2423 2423 642
 GlifName: uni0977
 Width: 2048
 VWidth: 0
@@ -22999,7 +25436,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0978
-Encoding: 2424 2424 651
+Encoding: 2424 2424 643
 GlifName: uni0978
 Width: 2048
 VWidth: 0
@@ -23032,7 +25469,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0979
-Encoding: 2425 2425 652
+Encoding: 2425 2425 644
 GlifName: uni0979
 Width: 2048
 VWidth: 0
@@ -23090,7 +25527,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097A
-Encoding: 2426 2426 653
+Encoding: 2426 2426 645
 GlifName: uni097A_
 Width: 2048
 VWidth: 0
@@ -23133,7 +25570,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097B
-Encoding: 2427 2427 654
+Encoding: 2427 2427 646
 GlifName: uni097B_
 Width: 2048
 VWidth: 0
@@ -23176,7 +25613,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097C
-Encoding: 2428 2428 655
+Encoding: 2428 2428 647
 GlifName: uni097C_
 Width: 2048
 VWidth: 0
@@ -23224,7 +25661,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097D
-Encoding: 2429 2429 656
+Encoding: 2429 2429 648
 GlifName: uni097D_
 Width: 2048
 VWidth: 0
@@ -23257,7 +25694,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097E
-Encoding: 2430 2430 657
+Encoding: 2430 2430 649
 GlifName: uni097E_
 Width: 2048
 VWidth: 0
@@ -23305,7 +25742,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097F
-Encoding: 2431 2431 658
+Encoding: 2431 2431 650
 GlifName: uni097F_
 Width: 2048
 VWidth: 0
@@ -23353,7 +25790,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni1E0C
-Encoding: 7692 7692 659
+Encoding: 7692 7692 651
 GlifName: uni1E_0C_
 Width: 2048
 VWidth: 0
@@ -23366,7 +25803,7 @@ Refer: 19 68 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E0D
-Encoding: 7693 7693 660
+Encoding: 7693 7693 652
 GlifName: uni1E_0D_
 Width: 2048
 VWidth: 0
@@ -23379,7 +25816,7 @@ Refer: 160 100 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E34
-Encoding: 7732 7732 661
+Encoding: 7732 7732 653
 GlifName: uni1E_34
 Width: 2048
 VWidth: 0
@@ -23392,7 +25829,7 @@ Refer: 56 75 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E35
-Encoding: 7733 7733 662
+Encoding: 7733 7733 654
 GlifName: uni1E_35
 Width: 2048
 VWidth: 0
@@ -23405,7 +25842,7 @@ Refer: 224 107 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E36
-Encoding: 7734 7734 663
+Encoding: 7734 7734 655
 GlifName: uni1E_36
 Width: 2048
 VWidth: 0
@@ -23418,7 +25855,7 @@ Refer: 57 76 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E37
-Encoding: 7735 7735 664
+Encoding: 7735 7735 656
 GlifName: uni1E_37
 Width: 2048
 VWidth: 0
@@ -23431,7 +25868,7 @@ Refer: 225 108 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E38
-Encoding: 7736 7736 665
+Encoding: 7736 7736 657
 GlifName: uni1E_38
 Width: 2048
 VWidth: 0
@@ -23440,11 +25877,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 345 772 N 1 0 0.36397 1 -744.868 124 2
-Refer: 663 7734 N 1 0 0.36397 1 0 0 2
+Refer: 655 7734 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E39
-Encoding: 7737 7737 666
+Encoding: 7737 7737 658
 GlifName: uni1E_39
 Width: 2048
 VWidth: 0
@@ -23453,11 +25890,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 345 772 N 1 0 0.36397 1 -30.2317 123 2
-Refer: 664 7735 N 1 0 0.36397 1 0 0 2
+Refer: 656 7735 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E3A
-Encoding: 7738 7738 667
+Encoding: 7738 7738 659
 GlifName: uni1E_3A_
 Width: 2048
 VWidth: 0
@@ -23470,7 +25907,7 @@ Refer: 57 76 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E3B
-Encoding: 7739 7739 668
+Encoding: 7739 7739 660
 GlifName: uni1E_3B_
 Width: 2048
 VWidth: 0
@@ -23483,7 +25920,7 @@ Refer: 225 108 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E42
-Encoding: 7746 7746 669
+Encoding: 7746 7746 661
 GlifName: uni1E_42
 Width: 2048
 VWidth: 0
@@ -23496,7 +25933,7 @@ Refer: 62 77 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E43
-Encoding: 7747 7747 670
+Encoding: 7747 7747 662
 GlifName: uni1E_43
 Width: 2048
 VWidth: 0
@@ -23509,7 +25946,7 @@ Refer: 232 109 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E44
-Encoding: 7748 7748 671
+Encoding: 7748 7748 663
 GlifName: uni1E_44
 Width: 2048
 VWidth: 0
@@ -23522,7 +25959,7 @@ Refer: 63 78 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E45
-Encoding: 7749 7749 672
+Encoding: 7749 7749 664
 GlifName: uni1E_45
 Width: 2048
 VWidth: 0
@@ -23535,7 +25972,7 @@ Refer: 237 110 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E46
-Encoding: 7750 7750 673
+Encoding: 7750 7750 665
 GlifName: uni1E_46
 Width: 2048
 VWidth: 0
@@ -23548,7 +25985,7 @@ Refer: 63 78 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E47
-Encoding: 7751 7751 674
+Encoding: 7751 7751 666
 GlifName: uni1E_47
 Width: 2048
 VWidth: 0
@@ -23561,7 +25998,7 @@ Refer: 237 110 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E48
-Encoding: 7752 7752 675
+Encoding: 7752 7752 667
 GlifName: uni1E_48
 Width: 2048
 VWidth: 0
@@ -23574,7 +26011,7 @@ Refer: 63 78 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E49
-Encoding: 7753 7753 676
+Encoding: 7753 7753 668
 GlifName: uni1E_49
 Width: 2048
 VWidth: 0
@@ -23587,7 +26024,7 @@ Refer: 237 110 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E4C
-Encoding: 7756 7756 677
+Encoding: 7756 7756 669
 GlifName: uni1E_4C_
 Width: 2048
 VWidth: 0
@@ -23600,7 +26037,7 @@ Refer: 77 213 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E4D
-Encoding: 7757 7757 678
+Encoding: 7757 7757 670
 GlifName: uni1E_4D_
 Width: 2048
 VWidth: 0
@@ -23613,7 +26050,7 @@ Refer: 259 245 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E58
-Encoding: 7768 7768 679
+Encoding: 7768 7768 671
 GlifName: uni1E_58
 Width: 2048
 VWidth: 0
@@ -23626,7 +26063,7 @@ Refer: 80 82 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E59
-Encoding: 7769 7769 680
+Encoding: 7769 7769 672
 GlifName: uni1E_59
 Width: 2048
 VWidth: 0
@@ -23639,7 +26076,7 @@ Refer: 281 114 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E5A
-Encoding: 7770 7770 681
+Encoding: 7770 7770 673
 GlifName: uni1E_5A_
 Width: 2048
 VWidth: 0
@@ -23652,7 +26089,7 @@ Refer: 80 82 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E5B
-Encoding: 7771 7771 682
+Encoding: 7771 7771 674
 GlifName: uni1E_5B_
 Width: 2048
 VWidth: 0
@@ -23665,7 +26102,7 @@ Refer: 281 114 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E5C
-Encoding: 7772 7772 683
+Encoding: 7772 7772 675
 GlifName: uni1E_5C_
 Width: 2048
 VWidth: 0
@@ -23674,11 +26111,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 345 772 N 1 0 0.36397 1 57.1323 124 2
-Refer: 681 7770 N 1 0 0.36397 1 0 0 2
+Refer: 673 7770 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E5D
-Encoding: 7773 7773 684
+Encoding: 7773 7773 676
 GlifName: uni1E_5D_
 Width: 2048
 VWidth: 0
@@ -23687,11 +26124,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 345 772 N 1 0 0.36397 1 -146.68 -403 2
-Refer: 682 7771 N 1 0 0.36397 1 0 0 2
+Refer: 674 7771 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E5E
-Encoding: 7774 7774 685
+Encoding: 7774 7774 677
 GlifName: uni1E_5E_
 Width: 2048
 VWidth: 0
@@ -23704,7 +26141,7 @@ Refer: 80 82 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E5F
-Encoding: 7775 7775 686
+Encoding: 7775 7775 678
 GlifName: uni1E_5F_
 Width: 2048
 VWidth: 0
@@ -23717,7 +26154,7 @@ Refer: 281 114 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E62
-Encoding: 7778 7778 687
+Encoding: 7778 7778 679
 GlifName: uni1E_62
 Width: 2048
 VWidth: 0
@@ -23730,7 +26167,7 @@ Refer: 83 83 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E63
-Encoding: 7779 7779 688
+Encoding: 7779 7779 680
 GlifName: uni1E_63
 Width: 2048
 VWidth: 0
@@ -23743,7 +26180,7 @@ Refer: 286 115 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E6C
-Encoding: 7788 7788 689
+Encoding: 7788 7788 681
 GlifName: uni1E_6C_
 Width: 2048
 VWidth: 0
@@ -23756,7 +26193,7 @@ Refer: 88 84 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E6D
-Encoding: 7789 7789 690
+Encoding: 7789 7789 682
 GlifName: uni1E_6D_
 Width: 2048
 VWidth: 0
@@ -23769,7 +26206,7 @@ Refer: 298 116 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E8E
-Encoding: 7822 7822 691
+Encoding: 7822 7822 683
 GlifName: uni1E_8E_
 Width: 2048
 VWidth: 0
@@ -23782,7 +26219,7 @@ Refer: 109 89 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E8F
-Encoding: 7823 7823 692
+Encoding: 7823 7823 684
 GlifName: uni1E_8F_
 Width: 2048
 VWidth: 0
@@ -23791,11 +26228,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 348 775 N 1 0 0.36397 1 -177.617 -488 2
-Refer: 711 121 N 1 0 0.36397 1 0 0 2
+Refer: 703 121 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uni1E9E
-Encoding: 7838 7838 693
+Encoding: 7838 7838 685
 GlifName: uni1E_9E_
 Width: 2048
 VWidth: 0
@@ -23838,7 +26275,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni200C
-Encoding: 8204 8204 694
+Encoding: 8204 8204 686
 GlifName: uni200C_
 Width: 2048
 VWidth: 0
@@ -23861,7 +26298,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni200D
-Encoding: 8205 8205 695
+Encoding: 8205 8205 687
 GlifName: uni200D_
 Width: 2048
 VWidth: 0
@@ -23879,7 +26316,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni2044
-Encoding: 8260 8260 696
+Encoding: 8260 8260 688
 GlifName: uni2044
 Width: 2048
 VWidth: 0
@@ -23897,7 +26334,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20B9
-Encoding: 8377 8377 697
+Encoding: 8377 8377 689
 GlifName: uni20B_9
 Width: 2048
 VWidth: 0
@@ -23935,12 +26372,14 @@ EndSplineSet
 EndChar
 
 StartChar: uni25CC
-Encoding: 9676 9676 698
+Encoding: 9676 9676 690
 GlifName: uni25C_C_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 548 70 basechar 0
+AnchorPoint: "top" 506 1246 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -23988,7 +26427,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFB01
-Encoding: 64257 64257 699
+Encoding: 64257 64257 691
 GlifName: uniF_B_01
 Width: 2048
 VWidth: 0
@@ -24027,7 +26466,7 @@ Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f i
 EndChar
 
 StartChar: uniFB02
-Encoding: 64258 64258 700
+Encoding: 64258 64258 692
 GlifName: uniF_B_02
 Width: 2048
 VWidth: 0
@@ -24071,7 +26510,7 @@ Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
 EndChar
 
 StartChar: uogonek
-Encoding: 371 371 701
+Encoding: 371 371 693
 GlifName: uogonek
 Width: 2048
 VWidth: 0
@@ -24084,7 +26523,7 @@ Refer: 307 117 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: uring
-Encoding: 367 367 702
+Encoding: 367 367 694
 GlifName: uring
 Width: 2048
 VWidth: 0
@@ -24097,7 +26536,7 @@ Refer: 307 117 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: utilde
-Encoding: 361 361 703
+Encoding: 361 361 695
 GlifName: utilde
 Width: 2048
 VWidth: 0
@@ -24110,12 +26549,13 @@ Refer: 307 117 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: v
-Encoding: 118 118 704
+Encoding: 118 118 696
 GlifName: v
 Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 532 1122 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -24133,12 +26573,13 @@ EndSplineSet
 EndChar
 
 StartChar: w
-Encoding: 119 119 705
+Encoding: 119 119 697
 GlifName: w
 Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 516 1134 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -24166,7 +26607,7 @@ EndSplineSet
 EndChar
 
 StartChar: wacute
-Encoding: 7811 7811 706
+Encoding: 7811 7811 698
 GlifName: wacute
 Width: 2048
 VWidth: 0
@@ -24175,11 +26616,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 123 769 N 1 0 0.36397 1 176.838 332 2
-Refer: 705 119 N 1 0 0.36397 1 0 0 2
+Refer: 697 119 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: wcircumflex
-Encoding: 373 373 707
+Encoding: 373 373 699
 GlifName: wcircumflex
 Width: 2048
 VWidth: 0
@@ -24188,11 +26629,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 344 770 N 1 0 0.36397 1 -340.867 -964 2
-Refer: 705 119 N 1 0 0.36397 1 0 0 2
+Refer: 697 119 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: wdieresis
-Encoding: 7813 7813 708
+Encoding: 7813 7813 700
 GlifName: wdieresis
 Width: 2048
 VWidth: 0
@@ -24201,11 +26642,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 349 776 N 1 0 0.36397 1 -144.548 -551 2
-Refer: 705 119 N 1 0 0.36397 1 0 0 2
+Refer: 697 119 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: wgrave
-Encoding: 7809 7809 709
+Encoding: 7809 7809 701
 GlifName: wgrave
 Width: 2048
 VWidth: 0
@@ -24214,11 +26655,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 201 768 N 1 0 0.36397 1 203.864 409 2
-Refer: 705 119 N 1 0 0.36397 1 0 0 2
+Refer: 697 119 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: x
-Encoding: 120 120 710
+Encoding: 120 120 702
 GlifName: x
 Width: 2048
 VWidth: 0
@@ -24241,12 +26682,14 @@ EndSplineSet
 EndChar
 
 StartChar: y
-Encoding: 121 121 711
+Encoding: 121 121 703
 GlifName: y
 Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 556 -464 basechar 0
+AnchorPoint: "top" 528 1142 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -24274,7 +26717,7 @@ EndSplineSet
 EndChar
 
 StartChar: yacute
-Encoding: 253 253 712
+Encoding: 253 253 704
 GlifName: yacute
 Width: 2048
 VWidth: 0
@@ -24283,11 +26726,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 123 769 N 1 0 0.36397 1 232.504 419 2
-Refer: 711 121 N 1 0 0.36397 1 0 0 2
+Refer: 703 121 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: ycircumflex
-Encoding: 375 375 713
+Encoding: 375 375 705
 GlifName: ycircumflex
 Width: 2048
 VWidth: 0
@@ -24296,11 +26739,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 344 770 N 1 0 0.36397 1 -180.584 -661 2
-Refer: 711 121 N 1 0 0.36397 1 0 0 2
+Refer: 703 121 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: ydieresis
-Encoding: 255 255 714
+Encoding: 255 255 706
 GlifName: ydieresis
 Width: 2048
 VWidth: 0
@@ -24309,11 +26752,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 349 776 N 1 0 0.36397 1 -112.088 -536 2
-Refer: 711 121 N 1 0 0.36397 1 0 0 2
+Refer: 703 121 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: yen
-Encoding: 165 165 715
+Encoding: 165 165 707
 GlifName: yen
 Width: 2048
 VWidth: 0
@@ -24356,7 +26799,7 @@ EndSplineSet
 EndChar
 
 StartChar: ygrave
-Encoding: 7923 7923 716
+Encoding: 7923 7923 708
 GlifName: ygrave
 Width: 2048
 VWidth: 0
@@ -24365,16 +26808,18 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 201 768 N 1 0 0.36397 1 141.25 476 2
-Refer: 711 121 N 1 0 0.36397 1 0 0 2
+Refer: 703 121 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: z
-Encoding: 122 122 717
+Encoding: 122 122 709
 GlifName: z
 Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "base" 460 -60 basechar 0
+AnchorPoint: "top" 504 1124 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -24397,7 +26842,7 @@ EndSplineSet
 EndChar
 
 StartChar: zacute
-Encoding: 378 378 718
+Encoding: 378 378 710
 GlifName: zacute
 Width: 2048
 VWidth: 0
@@ -24406,11 +26851,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 123 769 N 1 0 0.36397 1 212.136 407 2
-Refer: 717 122 N 1 0 0.36397 1 0 0 2
+Refer: 709 122 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: zcaron
-Encoding: 382 382 719
+Encoding: 382 382 711
 GlifName: zcaron
 Width: 2048
 VWidth: 0
@@ -24419,11 +26864,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 352 780 N 1 0 0.36397 1 31.5773 -177 2
-Refer: 717 122 N 1 0 0.36397 1 0 0 2
+Refer: 709 122 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: zdotaccent
-Encoding: 380 380 720
+Encoding: 380 380 712
 GlifName: zdotaccent
 Width: 2048
 VWidth: 0
@@ -24432,11 +26877,11 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 348 775 N 1 0 0.36397 1 -113.441 -504 2
-Refer: 717 122 N 1 0 0.36397 1 0 0 2
+Refer: 709 122 N 1 0 0.36397 1 0 0 2
 EndChar
 
 StartChar: zero
-Encoding: 48 48 721
+Encoding: 48 48 713
 GlifName: zero
 Width: 2048
 VWidth: 0
@@ -24464,7 +26909,7 @@ EndSplineSet
 EndChar
 
 StartChar: hookabovecomb
-Encoding: 777 777 722
+Encoding: 777 777 714
 Width: 0
 VWidth: 0
 Flags: HW
@@ -24495,7 +26940,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni01C4
-Encoding: 452 452 723
+Encoding: 452 452 715
 Width: 2048
 Flags: HW
 LayerCount: 2
@@ -24505,22 +26950,22 @@ Refer: 19 68 N 0.5 0 0 1 -284.577 0 2
 EndChar
 
 StartChar: uni01C5
-Encoding: 453 453 724
+Encoding: 453 453 716
 Width: 2048
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 719 382 N 0.5 0 0 1 835.329 0 2
+Refer: 711 382 N 0.5 0 0 1 835.329 0 2
 Refer: 19 68 N 0.5 0 0 1 -188.671 0 2
 EndChar
 
 StartChar: uni01C6
-Encoding: 454 454 725
+Encoding: 454 454 717
 Width: 2048
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 719 382 N 0.5 0 0 1 816.329 0 2
+Refer: 711 382 N 0.5 0 0 1 816.329 0 2
 Refer: 160 100 N 0.5 0 0 1 -207.671 0 2
 EndChar
 EndChars

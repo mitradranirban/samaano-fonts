@@ -1,13 +1,4 @@
-lookup ccmp_soft_dotted {
-sub
-[i j]' lookup SingleSubstitutionlookup1
-[acutecomb tildecomb uni0302 uni0304 uni0306 uni0308 uni030A uni030B uni030C]
-;
-} ccmp_soft_dotted;
-lookup SingleSubstitutionlookup1 {
-    sub i by dotlessi;
-    sub j by uni0237;
-} SingleSubstitutionlookup1;
+@CombiningTopAccents = [acutecomb oe tildecomb uni0302 uni0304 uni0306 uni0308 uni030A uni030B uni030C];
 lookup nuktNuktaFormsinDevanagarilookup0 {
     sub uni0928 uni093C by uni0929;
     sub uni0930 uni093C by uni0931;
@@ -182,14 +173,6 @@ lookup abvsAboveBaseSubstitutionsinDevanagarilookup0 {
     sub uni093E uni0930_uni094D.rphf by uni093E_uni0930_uni094D.abvs;
     sub uni0940 uni0902 by uni0940_uni0902.abvs;
     sub uni0940 uni0930_uni094D.rphf by uni0940_uni0930_uni094D.abvs;
-    sub uni0941 uni0902 by uni0941_uni0902.abvs;
-    sub uni0941 uni0930_uni094D.rphf by uni0941_uni0930_uni094D.abvs;
-    sub uni0942 uni0902 by uni0942_uni0902.abvs;
-    sub uni0942 uni0930_uni094D.rphf by uni0942_uni0930_uni094D.abvs;
-    sub uni0943 uni0902 by uni0943_uni0902.abvs;
-    sub uni0943 uni0930_uni094D.rphf by uni0943_uni0930_uni094D.abvs;
-    sub uni0944 uni0902 by uni0944_uni0902.abvs;
-    sub uni0944 uni0930_uni094D.rphf by uni0944_uni0930_uni094D.abvs;
     sub uni0945 uni0902 by uni0945_uni0902.abvs;
     sub uni0945 uni0930_uni094D.rphf by uni0945_uni0930_uni094D.abvs;
     sub uni0946 uni0902 by uni0946_uni0902.abvs;
@@ -216,14 +199,6 @@ lookup dligDiscretionaryLigatureslookup0 {
     sub f i by uniFB01;
     sub f l by uniFB02;
 } dligDiscretionaryLigatureslookup0;
-feature ccmp {
- script DFLT;
-     language dflt ;
-      lookup ccmp_soft_dotted;
- script latn;
-     language dflt ;
-      lookup ccmp_soft_dotted;
-} ccmp;
 feature nukt {
  script DFLT;
      language dflt ;
@@ -311,15 +286,11 @@ feature dlig {
  script latn;
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
-} dlig;lookup markMarkPositioninglookup0 {
-  markClass dotbelowcomb <anchor 498 -187> @base;
-  markClass uni0326 <anchor 534 -5> @base;
-  markClass uni0327 <anchor 654 191> @base;
-  markClass uni0328 <anchor 990 23> @base;
-  markClass uni0331 <anchor 510 -163> @base;
+} dlig;@CombiningTopAccents = [acutecomb oe tildecomb uni0302 uni0304 uni0306 uni0308 uni030A uni030B uni030C];
+lookup markMarkPositioninglookup0 {
   markClass gravecomb <anchor 592 1881> @top;
   markClass acutecomb <anchor 466 1888> @top;
-  markClass uni0302 <anchor 471 1881> @top;
+  markClass uni0302 <anchor 506 1427> @top;
   markClass tildecomb <anchor 492 1855> @top;
   markClass uni0304 <anchor 488 1532> @top;
   markClass uni0306 <anchor 496 1440> @top;
@@ -328,18 +299,99 @@ feature dlig {
   markClass uni030A <anchor 541 1536> @top;
   markClass uni030B <anchor 493 1280> @top;
   markClass uni030C <anchor 504 1315> @top;
-  pos base A <anchor 1829 -7> mark @base;
-  pos base dotlessi <anchor 1182 -9> mark @base;
+  markClass dotbelowcomb <anchor 498 -187> @base;
+  markClass uni0326 <anchor 534 -5> @base;
+  markClass uni0327 <anchor 654 191> @base;
+  markClass uni0328 <anchor 990 23> @base;
+  markClass uni0331 <anchor 510 -163> @base;
   pos base A <anchor 533 1641> mark @top;
   pos base C <anchor 470 1637> mark @top;
   pos base D <anchor 294 1641> mark @top;
   pos base E <anchor 470 1641> mark @top;
   pos base G <anchor 502 1649> mark @top;
+  pos base H <anchor 496 1638> mark @top;
   pos base I <anchor 470 1641> mark @top;
   pos base J <anchor 798 1649> mark @top;
+  pos base K <anchor 524 1642> mark @top;
+  pos base L <anchor 140 1650> mark @top;
+  pos base M <anchor 532 1642> mark @top;
+  pos base N <anchor 488 1642> mark @top;
+  pos base O <anchor 456 1646> mark @top;
+  pos base P <anchor 448 1642> mark @top;
+  pos base R <anchor 480 1642> mark @top;
+  pos base S <anchor 508 1650> mark @top;
+  pos base T <anchor 516 1638> mark @top;
+  pos base U <anchor 508 1642> mark @top;
+  pos base V <anchor 496 1642> mark @top;
+  pos base W <anchor 508 1646> mark @top;
+  pos base Y <anchor 524 1638> mark @top;
+  pos base Z <anchor 496 1646> mark @top;
+  pos base a <anchor 500 1134> mark @top;
+  pos base b <anchor 220 1646> mark @top;
+  pos base c <anchor 492 1162> mark @top;
+  pos base d <anchor 824 1642> mark @top;
+  pos base e <anchor 512 1166> mark @top;
+  pos base h <anchor 248 1646> mark @top;
+  pos base k <anchor 220 1638> mark @top;
+  pos base l <anchor 520 1654> mark @top;
+  pos base m <anchor 508 1110> mark @top;
+  pos base n <anchor 492 1158> mark @top;
+  pos base o <anchor 504 1158> mark @top;
+  pos base p <anchor 268 1322> mark @top;
+  pos base r <anchor 504 1174> mark @top;
+  pos base s <anchor 472 1134> mark @top;
+  pos base t <anchor 500 1642> mark @top;
+  pos base u <anchor 440 1146> mark @top;
+  pos base v <anchor 532 1122> mark @top;
+  pos base w <anchor 516 1134> mark @top;
+  pos base y <anchor 528 1142> mark @top;
+  pos base z <anchor 504 1124> mark @top;
   pos base dotlessi <anchor 999 1200> mark @top;
   pos base uni0237 <anchor 720 1182> mark @top;
+  pos base uni25CC <anchor 506 1246> mark @top;
+  pos base A <anchor 857 -59> mark @base;
+  pos base E <anchor 784 -54> mark @base;
+  pos base G <anchor 540 -42> mark @base;
+  pos base H <anchor 744 -30> mark @base;
+  pos base I <anchor 736 -26> mark @base;
+  pos base N <anchor 820 -14> mark @base;
+  pos base O <anchor 832 -34> mark @base;
+  pos base S <anchor 528 -58> mark @base;
+  pos base T <anchor 492 -54> mark @base;
+  pos base U <anchor 812 -66> mark @base;
+  pos base V <anchor 564 -54> mark @base;
+  pos base Y <anchor 508 -70> mark @base;
+  pos base Z <anchor 560 -46> mark @base;
+  pos base a <anchor 752 -62> mark @base;
+  pos base e <anchor 792 -18> mark @base;
+  pos base h <anchor 800 -54> mark @base;
+  pos base i <anchor 788 -38> mark @base;
+  pos base o <anchor 536 -38> mark @base;
+  pos base r <anchor 500 -70> mark @base;
+  pos base s <anchor 512 -66> mark @base;
+  pos base t <anchor 500 -82> mark @base;
+  pos base u <anchor 724 -50> mark @base;
+  pos base y <anchor 556 -464> mark @base;
+  pos base z <anchor 460 -60> mark @base;
+  pos base dotlessi <anchor 1182 -9> mark @base;
+  pos base uni25CC <anchor 548 70> mark @base;
 } markMarkPositioninglookup0;
+lookup abvmAboveBaseMarkinDevanagari2lookup1 {
+  markClass uni0900 <anchor 520 1622> @abvm;
+  markClass uni0901 <anchor 540 1617> @abvm;
+  markClass uni0902 <anchor 135 1592> @abvm;
+  markClass uni0951 <anchor -300 1691> @abvm;
+  markClass uni0953 <anchor -157 1295> @abvm;
+  markClass uni0954 <anchor -311 1295> @abvm;
+} abvmAboveBaseMarkinDevanagari2lookup1;
+lookup blwmBelowBaseMarkinDevanagari2lookup2 {
+  markClass uni0941 <anchor -344 -9> @blwm;
+  markClass uni0942 <anchor -104 13> @blwm;
+  markClass uni0943 <anchor -156 3> @blwm;
+  markClass uni0944 <anchor -326 13> @blwm;
+  markClass uni094D <anchor -360 2> @blwm;
+  markClass uni0952 <anchor -454 -14> @blwm;
+} blwmBelowBaseMarkinDevanagari2lookup2;
 feature mark {
  script DFLT;
      language dflt ;
@@ -347,9 +399,25 @@ feature mark {
  script latn;
      language dflt ;
       lookup markMarkPositioninglookup0;
-} mark;@GDEF_base = [A AE Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde B C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Dcaron Dcroat E Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eng Eogonek Eth Euro F G Gbreve Gcircumflex Gdotaccent H Hbar Hcircumflex I IJ Iacute Ibreve Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jcircumflex K L Lacute Lcaron Ldot Lslash M N Nacute Ncaron Ntilde O OE Oacute Obreve Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde P Q R Racute Rcaron S Sacute Scaron Scedilla Scircumflex T Tcaron Thorn U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent a aacute abreve acircumflex acute acutecomb adieresis ae agrave amacron ampersand aogonek aring asciicircum asciitilde asterisk at atilde b backslash bar braceleft braceright bracketleft bracketright breve brokenbar bullet c cacute caron ccaron ccedilla ccircumflex cdotaccent cedilla cent circumflex colon comma copyright currency d dagger daggerdbl dcaron dcroat degree dieresis divide dollar dotaccent dotbelowcomb dotlessi e eacute ebreve ecaron ecircumflex edieresis edotaccent egrave eight ellipsis emacron emdash endash eng eogonek equal eth exclam exclamdown f five four g gbreve gcircumflex gdotaccent germandbls glyph094D grave gravecomb greater guillemotleft guillemotright guilsinglleft guilsinglright h hbar hcircumflex hookabovecomb hungarumlaut hyphen i iacute ibreve icircumflex idieresis igrave ij imacron iogonek itilde j jcircumflex k l lacute lcaron ldot less logicalnot lslash m macron minus mu multiply n nacute ncaron nine ntilde numbersign o oacute obreve ocircumflex odieresis oe ogonek ograve ohungarumlaut omacron one onehalf onequarter ordfeminine ordmasculine oslash otilde p paragraph parenleft parenright percent period periodcentered perthousand plus plusminus q question questiondown quotedbl quotedblbase quotedblleft quotedblright quoteleft quoteright quotesinglbase quotesingle r racute rcaron registered ring s sacute scaron scedilla scircumflex section semicolon seven six slash space sterling t tcaron thorn three threequarters tilde tildecomb trademark two u uacute ubreve ucircumflex udieresis ugrave uhungarumlaut umacron underscore uni00A0 uni00B2 uni00B3 uni00B9 uni0122 uni0123 uni0136 uni0137 uni013B uni013C uni0145 uni0146 uni0156 uni0157 uni0162 uni0163 uni0192 uni01C4 uni01C5 uni01C6 uni0218 uni0219 uni021A uni021B uni0237 uni02B9 uni02BA uni02BC uni02C9 uni02CA uni02CB uni0302 uni0304 uni0305 uni0306 uni0307 uni0308 uni030A uni030B uni030C uni0326 uni0327 uni0328 uni0331 uni0900 uni0901 uni0902 uni0903 uni0904 uni0905 uni0906 uni0907 uni0908 uni0909 uni090A uni090B uni090C uni090D uni090E uni090F uni0910 uni0911 uni0912 uni0913 uni0914 uni0915 uni0915_uni0930_uni094D.vatu uni0915_uni094D.half uni0915_uni094D.haln uni0915_uni094D_uni0937.akhn uni0915_uni094D_uni0937.half uni0915_uni094D_uni0937_uni094D uni0916 uni0916_uni0930_uni094D.vatu uni0916_uni094D.half uni0916_uni094D.haln uni0917 uni0917_uni0930_uni094D.vatu uni0917_uni094D.half uni0917_uni094D.haln uni0918 uni0918_uni0930_uni094D.vatu uni0918_uni094D.half uni0918_uni094D.haln uni0919 uni0919_uni0930_uni094D.vatu uni0919_uni094D.half uni0919_uni094D.haln uni091A uni091A_uni0930_uni094D.vatu uni091A_uni094D.half uni091A_uni094D.haln uni091B uni091B_uni0930_uni094D.vatu uni091B_uni094D.half uni091B_uni094D.haln uni091C uni091C_uni0930_uni094D.vatu uni091C_uni094D.half uni091C_uni094D.haln uni091C_uni094D_uni091E.akhn uni091C_uni094D_uni091E.half uni091C_uni094D_uni091E_uni094D uni091D uni091D_uni0930_uni094D.vatu uni091D_uni094D.half uni091D_uni094D.haln uni091E uni091E_uni0930_uni094D.vatu uni091E_uni094D.half uni091E_uni094D.haln uni091F uni091F_uni0930_uni094D.vatu uni091F_uni094D.haln uni0920 uni0920_uni0930_uni094D.vatu uni0920_uni094D.haln uni0921 uni0921_uni0930_uni094D.vatu uni0921_uni094D.haln uni0922 uni0922_uni0930_uni094D.vatu uni0922_uni094D.haln uni0923 uni0923_uni0930_uni094D.vatu uni0923_uni094D.half uni0923_uni094D.haln uni0924 uni0924_uni0930_uni094D.vatu uni0924_uni094D.half uni0924_uni094D.haln uni0924_uni094D_uni0924.pres uni0925 uni0925_uni0930_uni094D.vatu uni0925_uni094D.half uni0925_uni094D.haln uni0926 uni0926_uni0930_uni094D.vatu uni0926_uni094D.half uni0926_uni094D.haln uni0926_uni094D_uni0926.pres uni0926_uni094D_uni0927.pres uni0926_uni094D_uni092F.pres uni0926_uni094D_uni0935.pres uni0927 uni0927_uni0930_uni094D.vatu uni0927_uni094D.half uni0927_uni094D.haln uni0928 uni0928_uni0930_uni094D.vatu uni0928_uni094D.half uni0928_uni094D.haln uni0929 uni0929_uni0930_uni094D.vatu uni0929_uni094D.half uni0929_uni094D.haln uni092A uni092A_uni0930_uni094D.vatu uni092A_uni094D.half uni092A_uni094D.haln uni092B uni092B_uni0930_uni094D.vatu uni092B_uni094D.half uni092B_uni094D.haln uni092C uni092C_uni0930_uni094D.vatu uni092C_uni094D.half uni092C_uni094D.haln uni092D uni092D_uni0930_uni094D.vatu uni092D_uni094D.half uni092D_uni094D.haln uni092E uni092E_uni0930_uni094D.vatu uni092E_uni094D.half uni092E_uni094D.haln uni092F uni092F_uni0930_uni094D.vatu uni092F_uni094D.half uni092F_uni094D.haln uni0930 uni0930_uni0930_uni094D.vatu uni0930_uni0941.blws uni0930_uni0942.blws uni0930_uni094D.abvs uni0930_uni094D.blwf uni0930_uni094D.half uni0930_uni094D.haln uni0930_uni094D.rphf uni0930_uni094D.vatu uni0931 uni0931_uni0930_uni094D.vatu uni0931_uni094D.haln uni0932 uni0932_uni0930_uni094D.vatu uni0932_uni094D.half uni0932_uni094D.haln uni0933 uni0933_uni0930_uni094D.vatu uni0933_uni094D.half uni0933_uni094D.haln uni0934 uni0934_uni0930_uni094D.vatu uni0934_uni094D.half uni0934_uni094D.haln uni0935 uni0935_uni0930_uni094D.vatu uni0935_uni094D.half uni0935_uni094D.haln uni0936 uni0936_uni0930_uni094D.vatu uni0936_uni094D.half uni0936_uni094D.haln uni0937 uni0937_uni0930_uni094D.vatu uni0937_uni094D.half uni0937_uni094D.haln uni0938 uni0938_uni0930_uni094D.vatu uni0938_uni094D.half uni0938_uni094D.haln uni0939 uni0939_uni0930_uni094D.vatu uni0939_uni0943.blws uni0939_uni094D.half uni0939_uni094D.haln uni0939_uni094D_uni092E.pres uni093A uni093B uni093C uni093D uni093E uni093E_uni0930_uni094D.abvs uni093F uni0940 uni0940_uni0902.abvs uni0940_uni0930_uni094D.abvs uni0941 uni0941_uni0902.abvs uni0941_uni0930_uni094D.abvs uni0942 uni0942_uni0902.abvs uni0942_uni0930_uni094D.abvs uni0943 uni0943_uni0902.abvs uni0943_uni0930_uni094D.abvs uni0944 uni0944_uni0902.abvs uni0944_uni0930_uni094D.abvs uni0945 uni0945_uni0902.abvs uni0945_uni0930_uni094D.abvs uni0946 uni0946_uni0902.abvs uni0946_uni0930_uni094D.abvs uni0947 uni0947_uni0902.abvs uni0947_uni0930_uni094D.abvs uni0948 uni0948_uni0902.abvs uni0948_uni0930_uni094D.abvs uni0949 uni0949_uni0902.abvs uni0949_uni0930_uni094D.abvs uni094A uni094A_uni0902.abvs uni094A_uni0930_uni094D.abvs uni094B uni094B_uni0902.abvs uni094B_uni0930_uni094D.abvs uni094C uni094C_uni0902.abvs uni094C_uni0930_uni094D.abvs uni094D uni094E uni094F uni0950 uni0951 uni0952 uni0953 uni0954 uni0955 uni0956 uni0957 uni0958 uni0958_uni0930_uni094D.vatu uni0958_uni094D.half uni0958_uni094D.haln uni0959 uni0959_uni0930_uni094D.vatu uni0959_uni094D.half uni0959_uni094D.haln uni095A uni095A_uni0930_uni094D.vatu uni095A_uni094D.half uni095A_uni094D.haln uni095B uni095B_uni0930_uni094D.vatu uni095B_uni094D.half uni095B_uni094D.haln uni095C uni095C_uni0930_uni094D.vatu uni095C_uni094D.haln uni095D uni095D_uni0930_uni094D.vatu uni095D_uni094D.haln uni095E uni095E_uni0930_uni094D.vatu uni095E_uni094D.half uni095E_uni094D.haln uni095F uni095F_uni0930_uni094D.vatu uni095F_uni094D.half uni095F_uni094D.haln uni0960 uni0961 uni0962 uni0963 uni0964 uni0965 uni0966 uni0967 uni0968 uni0969 uni096A uni096B uni096C uni096D uni096E uni096F uni0970 uni0971 uni0972 uni0973 uni0974 uni0975 uni0976 uni0977 uni0978 uni0979 uni097A uni097B uni097C uni097D uni097E uni097F uni1E0C uni1E0D uni1E34 uni1E35 uni1E36 uni1E37 uni1E38 uni1E39 uni1E3A uni1E3B uni1E42 uni1E43 uni1E44 uni1E45 uni1E46 uni1E47 uni1E48 uni1E49 uni1E4C uni1E4D uni1E58 uni1E59 uni1E5A uni1E5B uni1E5C uni1E5D uni1E5E uni1E5F uni1E62 uni1E63 uni1E6C uni1E6D uni1E8E uni1E8F uni1E9E uni200C uni200D uni2044 uni20B9 uni25CC uniFB01 uniFB02 uogonek uring utilde v w wacute wcircumflex wdieresis wgrave x y yacute ycircumflex ydieresis yen ygrave z zacute zcaron zdotaccent zero];
-@GDEF_mark = [];
-@GDEF_ligature = [];
+} mark;
+feature abvm {
+ script DFLT;
+     language dflt ;
+      lookup abvmAboveBaseMarkinDevanagari2lookup1;
+ script dev2;
+     language dflt ;
+      lookup abvmAboveBaseMarkinDevanagari2lookup1;
+} abvm;
+feature blwm {
+ script DFLT;
+     language dflt ;
+      lookup blwmBelowBaseMarkinDevanagari2lookup2;
+ script dev2;
+     language dflt ;
+      lookup blwmBelowBaseMarkinDevanagari2lookup2;
+} blwm;@GDEF_base = [A AE Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde B C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Dcaron Dcroat E Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eng Eogonek Eth Euro F G Gbreve Gcircumflex Gdotaccent H Hbar Hcircumflex I IJ Iacute Ibreve Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jcircumflex K L Lacute Lcaron Ldot Lslash M N Nacute Ncaron Ntilde O OE Oacute Obreve Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde P Q R Racute Rcaron S Sacute Scaron Scedilla Scircumflex T Tcaron Thorn U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent a aacute abreve acircumflex acute adieresis ae agrave amacron ampersand aogonek aring asciicircum asciitilde asterisk at atilde b backslash bar braceleft braceright bracketleft bracketright breve brokenbar bullet c cacute caron ccaron ccedilla ccircumflex cdotaccent cedilla cent circumflex colon comma copyright currency d dagger daggerdbl dcaron dcroat degree dieresis divide dollar dotaccent dotlessi e eacute ebreve ecaron ecircumflex edieresis edotaccent egrave eight ellipsis emacron emdash endash eng eogonek equal eth exclam exclamdown f five four g gbreve gcircumflex gdotaccent germandbls grave greater guillemotleft guillemotright guilsinglleft guilsinglright h hbar hcircumflex hookabovecomb hungarumlaut hyphen i iacute ibreve icircumflex idieresis igrave ij imacron iogonek itilde j jcircumflex k l lacute lcaron ldot less logicalnot lslash m macron minus mu multiply n nacute ncaron nine ntilde numbersign o oacute obreve ocircumflex odieresis oe ogonek ograve ohungarumlaut omacron one onehalf onequarter ordfeminine ordmasculine oslash otilde p paragraph parenleft parenright percent period periodcentered perthousand plus plusminus q question questiondown quotedbl quotedblbase quotedblleft quotedblright quoteleft quoteright quotesinglbase quotesingle r racute rcaron registered ring s sacute scaron scedilla scircumflex section semicolon seven six slash space sterling t tcaron thorn three threequarters tilde trademark two u uacute ubreve ucircumflex udieresis ugrave uhungarumlaut umacron underscore uni00A0 uni00B2 uni00B3 uni00B9 uni0122 uni0123 uni0136 uni0137 uni013B uni013C uni0145 uni0146 uni0156 uni0157 uni0162 uni0163 uni0192 uni01C4 uni01C5 uni01C6 uni0218 uni0219 uni021A uni021B uni0237 uni02B9 uni02BA uni02BC uni02C9 uni02CA uni02CB uni0305 uni0903 uni0904 uni0905 uni0906 uni0907 uni0908 uni0909 uni090A uni090B uni090C uni090D uni090E uni090F uni0910 uni0911 uni0912 uni0913 uni0914 uni0915 uni0915_uni094D.half uni0915_uni094D_uni0937_uni094D uni0916 uni0916_uni094D.half uni0917 uni0918 uni0919 uni091A uni091A_uni0930_uni094D.vatu uni091B uni091C uni091C_uni0930_uni094D.vatu uni091C_uni094D_uni091E_uni094D uni091D uni091E uni091F uni0920 uni0921 uni0922 uni0922_uni0930_uni094D.vatu uni0923 uni0923_uni0930_uni094D.vatu uni0924 uni0925 uni0926 uni0927 uni0928 uni0929 uni092A uni092B uni092C uni092D uni092E uni092F uni0930 uni0930_uni094D.abvs uni0930_uni094D.haln uni0930_uni094D.vatu uni0931 uni0932 uni0933 uni0934 uni0935 uni0936 uni0936_uni094D.haln uni0937 uni0938 uni0938_uni0930_uni094D.vatu uni0938_uni094D.haln uni0939 uni0939_uni0930_uni094D.vatu uni093B uni093D uni093E uni093F uni0940 uni0940_uni0930_uni094D.abvs uni0945_uni0930_uni094D.abvs uni0946_uni0930_uni094D.abvs uni0947_uni0930_uni094D.abvs uni0948_uni0930_uni094D.abvs uni0949 uni0949_uni0930_uni094D.abvs uni094A uni094A_uni0930_uni094D.abvs uni094B uni094B_uni0930_uni094D.abvs uni094C uni094C_uni0930_uni094D.abvs uni094E uni094F uni0950 uni0958 uni0959 uni095A uni095A_uni094D.haln uni095B uni095C uni095D uni095E uni095E_uni0930_uni094D.vatu uni095F uni095F_uni0930_uni094D.vatu uni0960 uni0961 uni0964 uni0965 uni0966 uni0967 uni0968 uni0969 uni096A uni096B uni096C uni096D uni096E uni096F uni0970 uni0971 uni0972 uni0973 uni0974 uni0975 uni0976 uni0977 uni0978 uni0979 uni097A uni097B uni097C uni097D uni097E uni097F uni1E0C uni1E0D uni1E34 uni1E35 uni1E36 uni1E37 uni1E38 uni1E39 uni1E3A uni1E3B uni1E42 uni1E43 uni1E44 uni1E45 uni1E46 uni1E47 uni1E48 uni1E49 uni1E4C uni1E4D uni1E58 uni1E59 uni1E5A uni1E5B uni1E5C uni1E5D uni1E5E uni1E5F uni1E62 uni1E63 uni1E6C uni1E6D uni1E8E uni1E8F uni1E9E uni200C uni200D uni2044 uni20B9 uni25CC uogonek uring utilde v w wacute wcircumflex wdieresis wgrave x y yacute ycircumflex ydieresis yen ygrave z zacute zcaron zdotaccent zero];
+@GDEF_mark = [acutecomb dotbelowcomb glyph094D gravecomb tildecomb uni0302 uni0304 uni0306 uni0307 uni0308 uni030A uni030B uni030C uni0326 uni0327 uni0328 uni0331 uni0900 uni0901 uni0902 uni0930_uni094D.blwf uni0930_uni094D.rphf uni093A uni093C uni0941 uni0942 uni0943 uni0944 uni0945 uni0946 uni0947 uni0948 uni094D uni0951 uni0952 uni0953 uni0954 uni0955 uni0956 uni0957 uni0962 uni0963];
+@GDEF_ligature = [uni0915_uni0930_uni094D.vatu uni0915_uni094D.haln uni0915_uni094D_uni0937.akhn uni0915_uni094D_uni0937.half uni0916_uni0930_uni094D.vatu uni0916_uni094D.haln uni0917_uni0930_uni094D.vatu uni0917_uni094D.half uni0917_uni094D.haln uni0918_uni0930_uni094D.vatu uni0918_uni094D.half uni0918_uni094D.haln uni0919_uni0930_uni094D.vatu uni0919_uni094D.half uni0919_uni094D.haln uni091A_uni094D.half uni091A_uni094D.haln uni091B_uni0930_uni094D.vatu uni091B_uni094D.half uni091B_uni094D.haln uni091C_uni094D.half uni091C_uni094D.haln uni091C_uni094D_uni091E.akhn uni091C_uni094D_uni091E.half uni091D_uni0930_uni094D.vatu uni091D_uni094D.half uni091D_uni094D.haln uni091E_uni0930_uni094D.vatu uni091E_uni094D.half uni091E_uni094D.haln uni091F_uni0930_uni094D.vatu uni091F_uni094D.haln uni0920_uni0930_uni094D.vatu uni0920_uni094D.haln uni0921_uni0930_uni094D.vatu uni0921_uni094D.haln uni0922_uni094D.haln uni0923_uni094D.half uni0923_uni094D.haln uni0924_uni0930_uni094D.vatu uni0924_uni094D.half uni0924_uni094D.haln uni0924_uni094D_uni0924.pres uni0925_uni0930_uni094D.vatu uni0925_uni094D.half uni0925_uni094D.haln uni0926_uni0930_uni094D.vatu uni0926_uni094D.half uni0926_uni094D.haln uni0926_uni094D_uni0926.pres uni0926_uni094D_uni0927.pres uni0926_uni094D_uni092F.pres uni0926_uni094D_uni0935.pres uni0927_uni0930_uni094D.vatu uni0927_uni094D.half uni0927_uni094D.haln uni0928_uni0930_uni094D.vatu uni0928_uni094D.half uni0928_uni094D.haln uni0929_uni0930_uni094D.vatu uni0929_uni094D.half uni0929_uni094D.haln uni092A_uni0930_uni094D.vatu uni092A_uni094D.half uni092A_uni094D.haln uni092B_uni0930_uni094D.vatu uni092B_uni094D.half uni092B_uni094D.haln uni092C_uni0930_uni094D.vatu uni092C_uni094D.half uni092C_uni094D.haln uni092D_uni0930_uni094D.vatu uni092D_uni094D.half uni092D_uni094D.haln uni092E_uni0930_uni094D.vatu uni092E_uni094D.half uni092E_uni094D.haln uni092F_uni0930_uni094D.vatu uni092F_uni094D.half uni092F_uni094D.haln uni0930_uni0930_uni094D.vatu uni0930_uni0941.blws uni0930_uni0942.blws uni0930_uni094D.half uni0931_uni0930_uni094D.vatu uni0931_uni094D.haln uni0932_uni0930_uni094D.vatu uni0932_uni094D.half uni0932_uni094D.haln uni0933_uni0930_uni094D.vatu uni0933_uni094D.half uni0933_uni094D.haln uni0934_uni0930_uni094D.vatu uni0934_uni094D.half uni0934_uni094D.haln uni0935_uni0930_uni094D.vatu uni0935_uni094D.half uni0935_uni094D.haln uni0936_uni0930_uni094D.vatu uni0936_uni094D.half uni0937_uni0930_uni094D.vatu uni0937_uni094D.half uni0937_uni094D.haln uni0938_uni094D.half uni0939_uni0943.blws uni0939_uni094D.half uni0939_uni094D.haln uni0939_uni094D_uni092E.pres uni093E_uni0930_uni094D.abvs uni0940_uni0902.abvs uni0945_uni0902.abvs uni0946_uni0902.abvs uni0947_uni0902.abvs uni0948_uni0902.abvs uni0949_uni0902.abvs uni094A_uni0902.abvs uni094B_uni0902.abvs uni094C_uni0902.abvs uni0958_uni0930_uni094D.vatu uni0958_uni094D.half uni0958_uni094D.haln uni0959_uni0930_uni094D.vatu uni0959_uni094D.half uni0959_uni094D.haln uni095A_uni0930_uni094D.vatu uni095A_uni094D.half uni095B_uni0930_uni094D.vatu uni095B_uni094D.half uni095B_uni094D.haln uni095C_uni0930_uni094D.vatu uni095C_uni094D.haln uni095D_uni0930_uni094D.vatu uni095D_uni094D.haln uni095E_uni094D.half uni095E_uni094D.haln uni095F_uni094D.half uni095F_uni094D.haln uniFB01 uniFB02];
 @GDEF_component = [];
 
             table GDEF {
@@ -357,4 +425,6 @@ feature mark {
                           @GDEF_ligature,
                           @GDEF_mark,
                           @GDEF_component;
+  LigatureCaretByPos uniFB01 32;
+  LigatureCaretByPos uniFB02 84;
 } GDEF;
