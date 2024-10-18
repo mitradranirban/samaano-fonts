@@ -1,9 +1,4 @@
 @CombiningTopAccents = [acutecomb oe tildecomb uni0302 uni0304 uni0306 uni0308 uni030A uni030B uni030C];
-lookup ccmp_soft_dotted {
-  lookupflag UseMarkFilteringSet @CombiningTopAccents;
-sub [i j]' @CombiningTopAccents by [dotlessi uni0237];
-} ccmp_soft_dotted;
-
 lookup nuktNuktaFormsinDevanagarilookup0 {
     sub uni0928 uni093C by uni0929;
     sub uni0930 uni093C by uni0931;
@@ -53,8 +48,8 @@ lookup halfHalfFormsinDevanagarilookup0 {
     sub uni092D uni094D by uni092D_uni094D.half;
     sub uni092E uni094D by uni092E_uni094D.half;
     sub uni092F uni094D by uni092F_uni094D.half;
-    sub uni0930 uni094D by uni0930_uni094D.half;
     sub uni0931 uni094D by uni0930_uni094D.half;
+    sub uni0930 uni094D by uni0930_uni094D.half;
     sub uni0932 uni094D by uni0932_uni094D.half;
     sub uni0933 uni094D by uni0933_uni094D.half;
     sub uni0934 uni094D by uni0934_uni094D.half;
@@ -212,14 +207,6 @@ lookup dligDiscretionaryLigatureslookup0 {
     sub f i by uniFB01;
     sub f l by uniFB02;
 } dligDiscretionaryLigatureslookup0;
-feature ccmp {
- script DFLT;
-     language dflt ;
-      lookup ccmp_soft_dotted;
- script latn;
-     language dflt ;
-      lookup ccmp_soft_dotted;
-} ccmp;
 feature nukt {
  script DFLT;
      language dflt ;
@@ -311,7 +298,7 @@ feature dlig {
 lookup markMarkPositioninglookup0 {
   markClass gravecomb <anchor 592 1881> @top;
   markClass acutecomb <anchor 466 1888> @top;
-  markClass uni0302 <anchor 471 1881> @top;
+  markClass uni0302 <anchor 506 1427> @top;
   markClass tildecomb <anchor 492 1855> @top;
   markClass uni0304 <anchor 488 1532> @top;
   markClass uni0306 <anchor 496 1440> @top;
@@ -330,12 +317,72 @@ lookup markMarkPositioninglookup0 {
   pos base D <anchor 294 1641> mark @top;
   pos base E <anchor 470 1641> mark @top;
   pos base G <anchor 502 1649> mark @top;
+  pos base H <anchor 496 1638> mark @top;
   pos base I <anchor 470 1641> mark @top;
   pos base J <anchor 798 1649> mark @top;
+  pos base K <anchor 524 1642> mark @top;
+  pos base L <anchor 140 1650> mark @top;
+  pos base M <anchor 532 1642> mark @top;
+  pos base N <anchor 488 1642> mark @top;
+  pos base O <anchor 456 1646> mark @top;
+  pos base P <anchor 448 1642> mark @top;
+  pos base R <anchor 480 1642> mark @top;
+  pos base S <anchor 508 1650> mark @top;
+  pos base T <anchor 516 1638> mark @top;
+  pos base U <anchor 508 1642> mark @top;
+  pos base V <anchor 496 1642> mark @top;
+  pos base W <anchor 508 1646> mark @top;
+  pos base Y <anchor 524 1638> mark @top;
+  pos base Z <anchor 496 1646> mark @top;
+  pos base a <anchor 500 1134> mark @top;
+  pos base b <anchor 220 1646> mark @top;
+  pos base c <anchor 492 1162> mark @top;
+  pos base d <anchor 824 1642> mark @top;
+  pos base e <anchor 512 1166> mark @top;
+  pos base h <anchor 248 1646> mark @top;
+  pos base k <anchor 220 1638> mark @top;
+  pos base l <anchor 520 1654> mark @top;
+  pos base m <anchor 508 1110> mark @top;
+  pos base n <anchor 492 1158> mark @top;
+  pos base o <anchor 504 1158> mark @top;
+  pos base p <anchor 268 1322> mark @top;
+  pos base r <anchor 504 1174> mark @top;
+  pos base s <anchor 472 1134> mark @top;
+  pos base t <anchor 500 1642> mark @top;
+  pos base u <anchor 440 1146> mark @top;
+  pos base v <anchor 532 1122> mark @top;
+  pos base w <anchor 516 1134> mark @top;
+  pos base y <anchor 528 1142> mark @top;
+  pos base z <anchor 504 1124> mark @top;
   pos base dotlessi <anchor 999 1200> mark @top;
   pos base uni0237 <anchor 720 1182> mark @top;
-  pos base A <anchor 1829 -7> mark @base;
+  pos base uni25CC <anchor 506 1246> mark @top;
+  pos base A <anchor 857 -59> mark @base;
+  pos base E <anchor 784 -54> mark @base;
+  pos base G <anchor 540 -42> mark @base;
+  pos base H <anchor 744 -30> mark @base;
+  pos base I <anchor 736 -26> mark @base;
+  pos base N <anchor 820 -14> mark @base;
+  pos base O <anchor 832 -34> mark @base;
+  pos base S <anchor 528 -58> mark @base;
+  pos base T <anchor 492 -54> mark @base;
+  pos base U <anchor 812 -66> mark @base;
+  pos base V <anchor 564 -54> mark @base;
+  pos base Y <anchor 508 -70> mark @base;
+  pos base Z <anchor 560 -46> mark @base;
+  pos base a <anchor 752 -62> mark @base;
+  pos base e <anchor 792 -18> mark @base;
+  pos base h <anchor 800 -54> mark @base;
+  pos base i <anchor 788 -38> mark @base;
+  pos base o <anchor 536 -38> mark @base;
+  pos base r <anchor 500 -70> mark @base;
+  pos base s <anchor 512 -66> mark @base;
+  pos base t <anchor 500 -82> mark @base;
+  pos base u <anchor 724 -50> mark @base;
+  pos base y <anchor 556 -464> mark @base;
+  pos base z <anchor 460 -60> mark @base;
   pos base dotlessi <anchor 1182 -9> mark @base;
+  pos base uni25CC <anchor 548 70> mark @base;
 } markMarkPositioninglookup0;
 feature mark {
  script DFLT;

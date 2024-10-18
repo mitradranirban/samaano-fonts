@@ -8,6 +8,14 @@
 # directory.
 sources:
   - Samaano.designspace
+  - Samaano-Bold.ufo
+  - Samaano-Thin.ufo
+  - Samaano-Wide-Bold.ufo
+  - Samaano-Wide-Thin.ufo
+  - Samaano-Bold-Slanted.ufo
+  - Samaano-Thin-Slanted.ufo
+  - Samaano-Wide-Bold-Slanted.ufo
+  - Samaano-Wide-Thin-Slanted.ufo  
 
 # You don't have to supply the family name, but builds are slightly
 # faster if you do.
@@ -56,4 +64,34 @@ includeSourceFixes: true
 # extraStaticFontmakeArgs: ""
 # glyphData: GlyphData.xml
 
- 
+#stat:
+#Samaano[wght,wdth,slnt].ttf
+#  - name: Weight
+#    tag: wght
+#    values:
+#    - name: Thin
+#      value: 100
+#      linkedValue: 700
+#      flags: 2
+#    - name: Bold
+#      value: 700
+#  - name: Width
+#    tag: wdth
+#    values:
+#    - name: Medium
+#      value: 100
+#      linkedValue: 100
+#      flags: 2
+#    - name: UltraExpanded
+#      value: 200
+#  - name: Slant
+#    tag: slnt
+#    values: 
+#    - name: Regular
+#      value: 0
+#      linkedValue: 0
+#      flags: 2
+#    - name: Slanted
+#      value: 20
+      
+    
