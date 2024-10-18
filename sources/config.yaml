@@ -19,17 +19,17 @@ familyName: "Samaano"
 
 outputDir: ../fonts
 vfDir: $outputDir/variable
-#ttDir: $outputDir/ttf
-#otDir: $outputDir/otf
-#woffDir: $outputDir/webfonts
+ttDir: $outputDir/ttf
+otDir: $outputDir/otf
+woffDir: $outputDir/webfonts
 
 # The following entries, which are either "true" or "false"
 # determine which targets to build. We turn off OTFs for this demo.
 
 buildVariable: true
-buildStatic: false
-buildTTF: false
-buildOTF: false
+buildStatic: true
+buildTTF: true
+buildOTF: true
 # buildSmallCap: false
 
 # The next flags control autohinting.
@@ -56,21 +56,4 @@ includeSourceFixes: true
 # extraStaticFontmakeArgs: ""
 # glyphData: GlyphData.xml
 
-# This control how STAT tables are generated. The STAT table is
-# specified here as a list of axis names, tags and values. You
-# can either map a list to each output VF, or provide a single
-# list which is used for all VFs. Note that the build will fail
-# if you specify a dictionary which does not contain an entry
-# for each VF file built.
-# stat:
-#  Samaano[weight].ttf:
-#  - name: Weight
-#    tag: wght
-#    values:
-#    - name: Thin
-#      value: 0
-#      linkedValue: 1000
-#      flags: 2
-#    - name: Bold
-#      value: 1000
-   
+ 

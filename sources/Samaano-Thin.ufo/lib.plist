@@ -319,52 +319,9 @@
       <string>Zcaron</string>
       <string>zcaron</string>
       <string>uni0192</string>
-      <string>Ohorn</string>
-      <string>ohorn</string>
-      <string>Uhorn</string>
-      <string>uhorn</string>
       <string>uni01C4</string>
       <string>uni01C5</string>
       <string>uni01C6</string>
-      <string>uni01CD</string>
-      <string>uni01CE</string>
-      <string>uni01CF</string>
-      <string>uni01D0</string>
-      <string>uni01D1</string>
-      <string>uni01D2</string>
-      <string>uni01D3</string>
-      <string>uni01D4</string>
-      <string>uni01D5</string>
-      <string>uni01D6</string>
-      <string>uni01D7</string>
-      <string>uni01D8</string>
-      <string>uni01D9</string>
-      <string>uni01DA</string>
-      <string>uni01DB</string>
-      <string>uni01DC</string>
-      <string>uni01DE</string>
-      <string>uni01DF</string>
-      <string>uni01E2</string>
-      <string>uni01E3</string>
-      <string>Gcaron</string>
-      <string>gcaron</string>
-      <string>uni01E8</string>
-      <string>uni01E9</string>
-      <string>uni01EA</string>
-      <string>uni01EB</string>
-      <string>uni01EC</string>
-      <string>uni01ED</string>
-      <string>uni01F0</string>
-      <string>uni01F4</string>
-      <string>uni01F5</string>
-      <string>uni01F8</string>
-      <string>uni01F9</string>
-      <string>Aringacute</string>
-      <string>aringacute</string>
-      <string>AEacute</string>
-      <string>aeacute</string>
-      <string>Oslashacute</string>
-      <string>oslashacute</string>
       <string>uni0218</string>
       <string>uni0219</string>
       <string>uni021A</string>
@@ -389,9 +346,11 @@
       <string>uni0302</string>
       <string>tildecomb</string>
       <string>uni0304</string>
+      <string>uni0305</string>
       <string>uni0306</string>
       <string>uni0307</string>
       <string>uni0308</string>
+      <string>hookabovecomb</string>
       <string>uni030A</string>
       <string>uni030B</string>
       <string>uni030C</string>
@@ -778,8 +737,6 @@
       <string>base</string>
       <key>AE</key>
       <string>base</string>
-      <key>AEacute</key>
-      <string>base</string>
       <key>Aacute</key>
       <string>base</string>
       <key>Abreve</key>
@@ -795,8 +752,6 @@
       <key>Aogonek</key>
       <string>base</string>
       <key>Aring</key>
-      <string>base</string>
-      <key>Aringacute</key>
       <string>base</string>
       <key>Atilde</key>
       <string>base</string>
@@ -851,8 +806,6 @@
       <key>G</key>
       <string>base</string>
       <key>Gbreve</key>
-      <string>base</string>
-      <key>Gcaron</key>
       <string>base</string>
       <key>Gcircumflex</key>
       <string>base</string>
@@ -926,15 +879,11 @@
       <string>base</string>
       <key>Ograve</key>
       <string>base</string>
-      <key>Ohorn</key>
-      <string>base</string>
       <key>Ohungarumlaut</key>
       <string>base</string>
       <key>Omacron</key>
       <string>base</string>
       <key>Oslash</key>
-      <string>base</string>
-      <key>Oslashacute</key>
       <string>base</string>
       <key>Otilde</key>
       <string>base</string>
@@ -975,8 +924,6 @@
       <key>Udieresis</key>
       <string>base</string>
       <key>Ugrave</key>
-      <string>base</string>
-      <key>Uhorn</key>
       <string>base</string>
       <key>Uhungarumlaut</key>
       <string>base</string>
@@ -1036,8 +983,6 @@
       <string>base</string>
       <key>ae</key>
       <string>base</string>
-      <key>aeacute</key>
-      <string>base</string>
       <key>agrave</key>
       <string>base</string>
       <key>amacron</key>
@@ -1047,8 +992,6 @@
       <key>aogonek</key>
       <string>base</string>
       <key>aring</key>
-      <string>base</string>
-      <key>aringacute</key>
       <string>base</string>
       <key>asciicircum</key>
       <string>base</string>
@@ -1180,8 +1123,6 @@
       <string>base</string>
       <key>gbreve</key>
       <string>base</string>
-      <key>gcaron</key>
-      <string>base</string>
       <key>gcircumflex</key>
       <string>base</string>
       <key>gdotaccent</key>
@@ -1209,6 +1150,8 @@
       <key>hbar</key>
       <string>base</string>
       <key>hcircumflex</key>
+      <string>base</string>
+      <key>hookabovecomb</key>
       <string>base</string>
       <key>hungarumlaut</key>
       <string>base</string>
@@ -1292,8 +1235,6 @@
       <string>base</string>
       <key>ograve</key>
       <string>base</string>
-      <key>ohorn</key>
-      <string>base</string>
       <key>ohungarumlaut</key>
       <string>base</string>
       <key>omacron</key>
@@ -1309,8 +1250,6 @@
       <key>ordmasculine</key>
       <string>base</string>
       <key>oslash</key>
-      <string>base</string>
-      <key>oslashacute</key>
       <string>base</string>
       <key>otilde</key>
       <string>base</string>
@@ -1420,8 +1359,6 @@
       <string>base</string>
       <key>ugrave</key>
       <string>base</string>
-      <key>uhorn</key>
-      <string>base</string>
       <key>uhungarumlaut</key>
       <string>base</string>
       <key>umacron</key>
@@ -1468,68 +1405,6 @@
       <string>base</string>
       <key>uni01C6</key>
       <string>base</string>
-      <key>uni01CD</key>
-      <string>base</string>
-      <key>uni01CE</key>
-      <string>base</string>
-      <key>uni01CF</key>
-      <string>base</string>
-      <key>uni01D0</key>
-      <string>base</string>
-      <key>uni01D1</key>
-      <string>base</string>
-      <key>uni01D2</key>
-      <string>base</string>
-      <key>uni01D3</key>
-      <string>base</string>
-      <key>uni01D4</key>
-      <string>base</string>
-      <key>uni01D5</key>
-      <string>base</string>
-      <key>uni01D6</key>
-      <string>base</string>
-      <key>uni01D7</key>
-      <string>base</string>
-      <key>uni01D8</key>
-      <string>base</string>
-      <key>uni01D9</key>
-      <string>base</string>
-      <key>uni01DA</key>
-      <string>base</string>
-      <key>uni01DB</key>
-      <string>base</string>
-      <key>uni01DC</key>
-      <string>base</string>
-      <key>uni01DE</key>
-      <string>base</string>
-      <key>uni01DF</key>
-      <string>base</string>
-      <key>uni01E2</key>
-      <string>base</string>
-      <key>uni01E3</key>
-      <string>base</string>
-      <key>uni01E8</key>
-      <string>base</string>
-      <key>uni01E9</key>
-      <string>base</string>
-      <key>uni01EA</key>
-      <string>base</string>
-      <key>uni01EB</key>
-      <string>base</string>
-      <key>uni01EC</key>
-      <string>base</string>
-      <key>uni01ED</key>
-      <string>base</string>
-      <key>uni01F0</key>
-      <string>base</string>
-      <key>uni01F4</key>
-      <string>base</string>
-      <key>uni01F5</key>
-      <string>base</string>
-      <key>uni01F8</key>
-      <string>base</string>
-      <key>uni01F9</key>
-      <string>base</string>
       <key>uni0218</key>
       <string>base</string>
       <key>uni0219</key>
@@ -1555,6 +1430,8 @@
       <key>uni0302</key>
       <string>base</string>
       <key>uni0304</key>
+      <string>base</string>
+      <key>uni0305</key>
       <string>base</string>
       <key>uni0306</key>
       <string>base</string>
@@ -2306,19 +2183,6 @@
       <string>base</string>
       <key>zero</key>
       <string>base</string>
-    </dict>
-    <key>xyz.fontra.lineMetricsHorizontalLayout.zones</key>
-    <dict>
-      <key>ascender</key>
-      <integer>33</integer>
-      <key>baseline</key>
-      <integer>-33</integer>
-      <key>capHeight</key>
-      <integer>33</integer>
-      <key>descender</key>
-      <integer>-33</integer>
-      <key>xHeight</key>
-      <integer>33</integer>
     </dict>
   </dict>
 </plist>
