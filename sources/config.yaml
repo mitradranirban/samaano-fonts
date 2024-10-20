@@ -1,11 +1,4 @@
-# The configuration for the builder is in YAML format. You can use
-# https://www.yamllint.com/ to make sure that your configuration
-# file is correctly formatted.
-
-# First we need to define the source files to build. Please list
-# all sources in the same family. These are expected to be in the
-# sources/ directory, so all paths should be relative to that
-# directory.
+---
 sources:
   - Samaano.designspace
   - Samaano-Bold.ufo
@@ -15,83 +8,101 @@ sources:
   - Samaano-Bold-Slanted.ufo
   - Samaano-Thin-Slanted.ufo
   - Samaano-Wide-Bold-Slanted.ufo
-  - Samaano-Wide-Thin-Slanted.ufo  
-
-# You don't have to supply the family name, but builds are slightly
-# faster if you do.
-familyName: "Samaano"
-
-# Next you can supply alternative paths for where you want the
-# binaries to live. But we'd recommend you stick to the defaults
-# especially if you are planning to upload your font to Google Fonts.
-
+  - Samaano-Wide-Thin-Slanted.ufo
+familyName: Samaano
 outputDir: ../fonts
 vfDir: $outputDir/variable
 ttDir: $outputDir/ttf
 otDir: $outputDir/otf
 woffDir: $outputDir/webfonts
-
-# The following entries, which are either "true" or "false"
-# determine which targets to build. We turn off OTFs for this demo.
-
 buildVariable: true
 buildStatic: true
 buildTTF: true
 buildOTF: true
-# buildSmallCap: false
-
-# The next flags control autohinting.
 autohintTTF: true
-# autohintOTF: false
-# ttfaUseScript: false  # Set this to true if your font is not Latin
-
-# The "fix" operation can optionally fix some problems which
-# are better dealt with in the font sources. Set this to true if you
-# want gftools-fix to automatically fix source problems.
 includeSourceFixes: true
+axisOrder:
+  - wdth
+  - wght
+stat:
+  "Samaano[wdth,wght].ttf":
+    - name: Width
+      tag: wdth
+      values:
+        - name: Normal
+          value: 100
+          flags: 2
+        - name: SemiExpanded
+          value: 112.5
+        - name: Expanded
+          value: 125
+        - name: ExtraExpanded
+          value: 150
+        - name: UltraExpanded
+          value: 200
+    - name: Weight
+      tag: wght
+      values:
+        - name: Thin
+          value: 100
+        - name: ExtraLight
+          value: 200
+        - name: Light
+          value: 300
+        - name: Regular
+          value: 400
+          linkedValue: 700
+          flags: 2
+        - name: Medium
+          value: 500
+        - name: SemiBold
+          value: 600
+        - name: Bold
+          value: 700
+    - name: Italic
+      tag: ital
+      values: 
+      - name: Roman
+        value: 0
+        linkedValue: 1
+        flags: 2
+  "Samaano-Italic[wdth,wght].ttf":
+    - name: Width
+      tag: wdth
+      values:
+        - name: Normal
+          value: 100
+          flags: 2
+        - name: SemiExpanded
+          value: 112.5
+        - name: Expanded
+          value: 125
+        - name: ExtraExpanded
+          value: 150
+        - name: UltraExpanded
+          value: 200
+    - name: Weight
+      tag: wght
+      values:
+        - name: Thin
+          value: 100
+        - name: ExtraLight
+          value: 200
+        - name: Light
+          value: 300
+        - name: Regular
+          value: 400
+          linkedValue: 700
+          flags: 2
+        - name: Medium
+          value: 500
+        - name: SemiBold
+          value: 600
+        - name: Bold
+          value: 700
+    - name: Italic
+      tag: ital
+      values:
+        - name: Italic
+          value: 1
 
-# These options give fine-grained control over how fontmake builds
-# the fonts.
-# flattenComponents: true
-# decomposeTransformedComponents: true
-# checkCompatibility: true
-# overlaps: booleanOperations
-# expandFeaturesToInstances: false
-# reverseOutlineDirection: true
-# removeOutlineOverlaps: true
-# extraFontmakeArgs: ""
-#extraVariableFontmakeArgs: "production-names"
-# extraStaticFontmakeArgs: ""
-# glyphData: GlyphData.xml
-
-#stat:
-#Samaano[wght,wdth,slnt].ttf
-#  - name: Weight
-#    tag: wght
-#    values:
-#    - name: Thin
-#      value: 100
-#      linkedValue: 700
-#      flags: 2
-#    - name: Bold
-#      value: 700
-#  - name: Width
-#    tag: wdth
-#    values:
-#    - name: Medium
-#      value: 100
-#      linkedValue: 100
-#      flags: 2
-#    - name: UltraExpanded
-#      value: 200
-#  - name: Slant
-#    tag: slnt
-#    values: 
-#    - name: Regular
-#      value: 0
-#      linkedValue: 0
-#      flags: 2
-#    - name: Slanted
-#      value: 20
-      
-    
