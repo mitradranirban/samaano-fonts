@@ -40,8 +40,8 @@ Following are the specialities of the font
 ![Sample Image](documentation/image3.png)
 ![Sample Image](documentation/image4.png)
 ![Sample Image](documentation/image5.png)
-
-
+![Sample Image](documentation/image6.png)
+![Sample Image](documentation/image7.png)
 
 
 ## About
