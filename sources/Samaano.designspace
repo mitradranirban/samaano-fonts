@@ -1,9 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="5.0">
   <axes>
-    <axis tag="wght" name="weight" minimum="100" maximum="700" default="700"/>
-    <axis tag="wdth" name="width" minimum="100" maximum="200" default="100"/>
-    <axis tag="slnt" name="slant" minimum="-20" maximum="0" default="0"/>
+    <axis tag="wght" name="weight" minimum="100" maximum="700" default="700">
+      <labels>
+        <label uservalue="100" name="Thin"/>
+        <label uservalue="200" name="ExtraLight"/>
+        <label uservalue="300" name="Light"/>
+        <label uservalue="400" name="Regular" elidable="true" linkeduservalue="700"/>
+        <label uservalue="500" name="Medium"/>
+        <label uservalue="600" name="SemiBold"/>
+        <label uservalue="700" name="Bold"/>
+      </labels>
+    </axis>
+    <axis tag="wdth" name="width" minimum="100" maximum="200" default="100">
+      <labels>
+        <label uservalue="100" name="Normal" elidable="true"/>
+        <label uservalue="112.5" name="SemiExpanded"/>
+        <label uservalue="125" name="Expanded"/>
+        <label uservalue="150" name="ExtraExpanded"/>
+        <label uservalue="200" name="UltraExpanded"/>
+      </labels>
+    </axis>
+    <axis tag="slnt" name="slant" minimum="-20" maximum="0" default="0">
+      <labels>
+        <label uservalue="-20" name="Oblique"/>
+        <label uservalue="0" name="Default" elidable="true"/>
+      </labels>
+    </axis>
   </axes>
   <sources>
     <source filename="Samaano-Thin.ufo" name="fontra000-bf2ac95c" familyname="Samaano" stylename="Thin">

@@ -13,7 +13,7 @@
 [Repository]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FRepositoryChecks.json
 [OpenType]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FOpenTypeSpecificationChecks.json
 
-Samaano is an attempt to learn creation of variable font using Open Source Tools like Fontforge, Fontra and some python script.
+Samaano is an attempt to create a variable font using only Open Source Tools like Fontforge, Fontra and some shell script.
  
 
 The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the spaces are equal in this font.
@@ -28,13 +28,14 @@ Following are the specialities of the font
 
 * Monospaced Font
 
-* Two Variable axes of Weight and Width
+* Three Variable axes of Weight, Width, and Slant
 
-![animation](documentation/Samaano2.gif)
+![animation](documentation/SamaanoV2.gif)
 
 
 * Simple Glyph construction using Rectangular or quadrilateral components only
 
+* Extensive coverage of many Latin Based Languages including East European Languages, Vietnamese and Devanagari.
 
 ![Sample Image](documentation/image2.png)
 ![Sample Image](documentation/image3.png)
@@ -49,7 +50,13 @@ This font is created by Dr Anirban Mitra, an amateure Typographer and Free Softw
  
 ## Changelog
  
-04 October 2024 - Version 1.000 beta1 - First Beta Release
+10 October 2024 - Version 1.000 - First Release
+
+Version 2 - Under Progress 
+
+  * Added additional axis of Slant
+
+  * Added support for East European Latin based Languages and Vietnamese 
 
 
 ## License
