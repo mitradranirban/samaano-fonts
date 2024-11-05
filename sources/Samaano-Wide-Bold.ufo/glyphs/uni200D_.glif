@@ -1,12 +1,29 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni200D" format="2">
+  <advance width="0"/>
   <unicode hex="200D"/>
   <outline>
     <contour>
-      <point x="-32.0" y="1548.0" type="line"/>
-      <point x="-32.0" y="-12.0" type="line"/>
-      <point x="32.0" y="-12.0" type="line"/>
-      <point x="32.0" y="1548.0" type="line"/>
+      <point x="-32" y="1548" type="line"/>
+      <point x="-32" y="-12" type="line"/>
+      <point x="32" y="-12" type="line"/>
+      <point x="32" y="1548" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>-32</integer>
+            <key>width</key>
+            <integer>64</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

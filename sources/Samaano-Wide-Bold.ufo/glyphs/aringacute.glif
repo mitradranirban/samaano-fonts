@@ -1,9 +1,34 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="aringacute" format="2">
   <advance width="2048"/>
   <unicode hex="01FB"/>
   <outline>
+    <component base="acutecomb" xOffset="1003" yOffset="735"/>
     <component base="aring"/>
-    <component base="acutecomb" xOffset="523.0" yOffset="887.0"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>1135</integer>
+            <key>width</key>
+            <integer>310</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>1345</integer>
+            <key>width</key>
+            <integer>360</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

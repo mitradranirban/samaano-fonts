@@ -1,13 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dotaccent" format="2">
-  <advance height="1023" width="2048"/>
+  <advance width="2048"/>
   <unicode hex="02D9"/>
   <outline>
     <contour>
-      <point x="912.0" y="1347.0" type="line"/>
-      <point x="912.0" y="1145.0" type="line"/>
-      <point x="1136.0" y="1145.0" type="line"/>
-      <point x="1136.0" y="1347.0" type="line"/>
+      <point x="912" y="1347" type="line"/>
+      <point x="912" y="1145" type="line"/>
+      <point x="1136" y="1145" type="line"/>
+      <point x="1136" y="1347" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>1145</integer>
+            <key>width</key>
+            <integer>202</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>912</integer>
+            <key>width</key>
+            <integer>224</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
 </glyph>
