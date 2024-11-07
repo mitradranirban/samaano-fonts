@@ -25,7 +25,7 @@ LINE_ONE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
 LINE_TWO = "abcdefghijklmnopqrstuvwxyz"
 LINE_THREE = "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढण"
 LINE_FOUR = "तथदधनऩपफबभमयरलळशषसहक्षज्ञर्र्रह्मौं"
-BIG_TEXT_FONT_SIZE = 72
+BIG_TEXT_FONT_SIZE = 120
 BIG_TEXT_SIDE_MARGIN = MARGIN * 1
 BIG_TEXT_BOTTOM_MARGIN = MARGIN * 5.45
 
