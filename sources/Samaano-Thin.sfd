@@ -6,7 +6,6 @@ Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
 Version: 1.512
-StyleMapFamilyName: Samaano Thin
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -23,8 +22,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1730959882
-ModificationTime: 1730959882
+CreationTime: 1730995900
+ModificationTime: 1731001718
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -57,11 +56,13 @@ Lookup: 4 0 0 "blwfBelowBaseFormsinDevanagari2lookup0" { "blwfBelowBaseFormsinDe
 Lookup: 4 0 0 "halfHalfFormsinDevanagari2lookup0" { "halfHalfFormsinDevanagari2lookup0 subtable"  } ['half' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "halnHalantFormsinDevanagari2lookup0" { "halnHalantFormsinDevanagari2lookup0 subtable"  } ['haln' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "presPreBaseSubstitutionsinDevanagari2lookup0" { "presPreBaseSubstitutionsinDevanagari2lookup0 subtable"  } ['pres' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'abvs' Above Base Substitutions in Devanagari2 lookup 0" { "'abvs' Above Base Substitutions in Devanagari2 lookup 0-1"  } ['abvs' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinDevanagari2lookup12" { "blwsBelowBaseSubstitutionsinDevanagari2lookup12 subtable"  } ['blws' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 1.512" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
@@ -72,7 +73,9 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 10 4
+WinInfo: 900 10 4
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 1545 m 0
  2048 1545 l 1024
@@ -82,7 +85,7 @@ Grid
  2048 1024 l 1024
 EndSplineSet
 AnchorClass2: "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
-BeginChars: 930 930
+BeginChars: 931 931
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -3587,11 +3590,11 @@ SplineSet
  580 7 l 257
  580 164 l 257
  444 164 l 257
-444 553 m 257
- 444 396 l 257
- 580 396 l 257
- 580 553 l 257
- 444 553 l 257
+462 1035 m 257
+ 462 878 l 257
+ 598 878 l 257
+ 598 1035 l 257
+ 462 1035 l 257
 EndSplineSet
 EndChar
 
@@ -7536,11 +7539,11 @@ SplineSet
  536 -148 l 257
  578 26 l 257
  528 135 l 257
-444 503 m 257
- 444 346 l 257
- 580 346 l 257
- 580 503 l 257
- 444 503 l 257
+450 997 m 257
+ 450 840 l 257
+ 586 840 l 257
+ 586 997 l 257
+ 450 997 l 257
 EndSplineSet
 EndChar
 
@@ -12258,6 +12261,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 762 1594 basechar 0
+AnchorPoint: "blwm_deva" 840 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12581,6 +12585,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 762 1594 basechar 0
+AnchorPoint: "blwm_deva" 871 -52 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12827,6 +12832,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 834 1600 basechar 0
+AnchorPoint: "blwm_deva" 932 -105 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13013,6 +13019,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 660 1582 basechar 0
+AnchorPoint: "blwm_deva" 513 -65 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13150,6 +13157,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 552 1594 basechar 0
+AnchorPoint: "blwm_deva" 513 -71 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13302,6 +13310,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 864 1606 basechar 0
+AnchorPoint: "blwm_deva" 520 -85 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -25220,7 +25229,6 @@ AnchorPoint: "blwm_deva" 742 67 basechar 0
 AnchorPoint: "top" 506 1246 basechar 0
 AnchorPoint: "base" 548 70 basechar 0
 AnchorPoint: "abvm_deva" 697 1317 basechar 0
-AnchorPoint: "blwm_deva" 742 67 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -26060,11 +26068,11 @@ GlifName: uni022D_
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 HStem: 1219 50
 LayerCount: 2
 Fore
-Refer: 410 772 N 1 0 0 1 549 337 2
+Refer: 410 772 N 1 0 0 1 525 523 2
 Refer: 278 245 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
@@ -26503,6 +26511,20 @@ Fore
 Refer: 419 785 N 1 0 0 1 719 289 2
 Refer: 401 567 N 1 0 0 1 0 0 2
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0311
+EndChar
+
+StartChar: uni0930_uni094D_uni0902.abvs
+Encoding: 930 -1 930
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_deva" -112 1511 mark 0
+LayerCount: 2
+Fore
+Refer: 427 2306 S 1 0 0 1 212 5 2
+Refer: 568 -1 N 1 0 0 1 10 0 2
+Ligature2: "'abvs' Above Base Substitutions in Devanagari2 lookup 0-1" uni0930_uni094D.rphf uni0902
+LCarets2: 1 0
 EndChar
 EndChars
 EndSplineFont

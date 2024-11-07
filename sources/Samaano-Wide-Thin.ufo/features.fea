@@ -215,6 +215,11 @@ lookup presPreBaseSubstitutionsinDevanagari2lookup0 {
     sub \uni0939_uni094D.half \uni092E  by \uni0939_uni094D_uni092E.pres;
 } presPreBaseSubstitutionsinDevanagari2lookup0;
 
+lookup abvsAboveBaseSubstitutionsinDevanagari2lookup0 {
+  lookupflag 0;
+    sub \uni0930_uni094D.rphf \uni0902  by \uni0930_uni094D_uni0902.abvs;
+} abvsAboveBaseSubstitutionsinDevanagari2lookup0;
+
 lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12 {
   lookupflag 0;
     sub \uni0930 \uni0941  by \uni0930_uni0941.blws;
@@ -326,6 +331,17 @@ feature pres {
      language dflt ;
       lookup presPreBaseSubstitutionsinDevanagari2lookup0;
 } pres;
+
+feature abvs {
+
+ script DFLT;
+     language dflt ;
+      lookup abvsAboveBaseSubstitutionsinDevanagari2lookup0;
+
+ script dev2;
+     language dflt ;
+      lookup abvsAboveBaseSubstitutionsinDevanagari2lookup0;
+} abvs;
 
 feature blws {
 
@@ -527,6 +543,7 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   markClass [\uni0901 ] <anchor 0 1618> @abvm_deva;
   markClass [\uni0902 ] <anchor -301 1607> @abvm_deva;
   markClass [\uni0930_uni094D.rphf ] <anchor -198 1546> @abvm_deva;
+  markClass [\uni0930_uni094D_uni0902.abvs ] <anchor -220 1511> @abvm_deva;
   pos base [\uni0904 ] <anchor 636 1972> mark @abvm_deva;
   pos base [\uni0905 ] <anchor 852 1618> mark @abvm_deva;
   pos base [\uni0906 ] <anchor 762 1606> mark @abvm_deva;
@@ -583,20 +600,30 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   pos base [\uni0946 ] <anchor 438 1630> mark @abvm_deva;
   pos base [\uni0947 ] <anchor 606 1612> mark @abvm_deva;
   pos base [\uni0948 ] <anchor 786 1594> mark @abvm_deva;
-  pos base [\uni25CC ] <anchor 702 1304> mark @abvm_deva;
+  pos base [\uni25CC ] <anchor 697 1317> mark @abvm_deva;
 } abvmAboveBaseMarkinDevanagari2lookup1;
 
 lookup blwmBelowBaseMarkinDevanagari2lookup2 {
   lookupflag 0;
-  markClass [\uni093C ] <anchor 270 4> @blwm_deva;
+  markClass [\uni093C ] <anchor 303 0> @blwm_deva;
   markClass [\uni0941 ] <anchor -360 28> @blwm_deva;
-  markClass [\uni0942 ] <anchor -192 10> @blwm_deva;
+  markClass [\uni0942 ] <anchor -233 59> @blwm_deva;
   markClass [\uni0943 ] <anchor -42 46> @blwm_deva;
   markClass [\uni0944 ] <anchor -144 28> @blwm_deva;
   markClass [\uni094D ] <anchor -432 22> @blwm_deva;
   pos base [\uni0915 ] <anchor 616 -25> mark @blwm_deva;
   pos base [\uni0916 ] <anchor 803 -39> mark @blwm_deva;
   pos base [\uni0917 ] <anchor 853 -50> mark @blwm_deva;
+  pos base [\uni0918 ] <anchor 835 -77> mark @blwm_deva;
+  pos base [\uni0919 ] <anchor 688 -89> mark @blwm_deva;
+  pos base [\uni091A ] <anchor 767 -122> mark @blwm_deva;
+  pos base [\uni091B ] <anchor 647 -32> mark @blwm_deva;
+  pos base [\uni091C ] <anchor 767 -134> mark @blwm_deva;
+  pos base [\uni091D ] <anchor 806 -45> mark @blwm_deva;
+  pos base [\uni091E ] <anchor 846 -45> mark @blwm_deva;
+  pos base [\uni091F ] <anchor 520 -45> mark @blwm_deva;
+  pos base [\uni0920 ] <anchor 520 -65> mark @blwm_deva;
+  pos base [\uni0921 ] <anchor 500 -98> mark @blwm_deva;
   pos base [\uni25CC ] <anchor 742 67> mark @blwm_deva;
 } blwmBelowBaseMarkinDevanagari2lookup2;
 
@@ -632,7 +659,6 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
 	\Amacron \Aogonek \Aring \Aringacute \Atilde \B \C \Cacute \Ccaron \Ccedilla 
@@ -776,7 +802,8 @@ feature blwm {
 	\uni030F \uni0311 \uni0312 \uni031B \uni0324 \uni0326 \uni0327 \uni0328 \uni032E 
 	\uni0331 \uni0335 \uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf 
 	\uni0930_uni094D.rphf \uni093A \uni093C \uni0941 \uni0942 \uni0943 \uni0944 
-	\uni094D \uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 ];
+	\uni094D \uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 
+	\uni0930_uni094D_uni0902.abvs ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
