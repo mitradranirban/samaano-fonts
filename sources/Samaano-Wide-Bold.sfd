@@ -23,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1730882550
-ModificationTime: 1730882550
+CreationTime: 1730905929
+ModificationTime: 1730911699
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 9
@@ -52,8 +52,8 @@ Lookup: 4 0 1 "ligaStandardLigaturesinLatinlookup0" { "ligaStandardLigaturesinLa
 Lookup: 4 0 0 "nuktNuktaFormsinDevanagari2lookup0" { "nuktNuktaFormsinDevanagari2lookup0 subtable"  } ['nukt' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "akhnAkhandinDevanagari2lookup0" { "akhnAkhandinDevanagari2lookup0 subtable"  } ['akhn' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "rphfRephForminDevanagari2lookup0" { "rphfRephForminDevanagari2lookup0 subtable"  } ['rphf' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
-Lookup: 4 0 0 "blwfBelowBaseFormsinDevanagari2lookup0" { "blwfBelowBaseFormsinDevanagari2lookup0 subtable"  } ['blwf' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "rkrfRakarVariantsinDevanagari2lookup0" { "rkrfRakarVariantsinDevanagari2lookup0 subtable"  } ['rkrf' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "blwfBelowBaseFormsinDevanagari2lookup0" { "blwfBelowBaseFormsinDevanagari2lookup0 subtable"  } ['blwf' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "halfHalfFormsinDevanagari2lookup0" { "halfHalfFormsinDevanagari2lookup0 subtable"  } ['half' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "halnHalantFormsinDevanagari2lookup0" { "halnHalantFormsinDevanagari2lookup0 subtable"  } ['haln' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "presPreBaseSubstitutionsinDevanagari2lookup0" { "presPreBaseSubstitutionsinDevanagari2lookup0 subtable"  } ['pres' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
@@ -61,6 +61,8 @@ Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinDevanagari2lookup12" { "blwsBelowBase
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 0 0 "'blwm' Below Base Mark in Devanagari2 lookup 2" { "blwmBelowBaseMarkinDevanagari2lookup 2-1"  } ['blwm' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 1.512" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
@@ -72,14 +74,16 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 10 4
+WinInfo: 760 10 4
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 1548 m 0
  2048 1548 l 1024
 -2048 1024 m 0
  2048 1024 l 1024
 EndSplineSet
-AnchorClass2: "blwm_deva"""  "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
+AnchorClass2: "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup 2-1" "blwm_deva"""  "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
 BeginChars: 65700 931
 
 StartChar: .notdef
@@ -6207,11 +6211,11 @@ GlifName: jcircumflex
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 409 770 N 1 0 0 1 716 421 2
-Refer: 401 567 N 1 0 0 1 0 0 2
+Refer: 409 770 N 1 0 0 1 1718 358 2
+Refer: 401 567 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: k
@@ -10243,7 +10247,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "top" 720 1182 basechar 0
+AnchorPoint: "top" 1722 1119 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10936,6 +10940,7 @@ GlifName: uni0900
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 42 1648 mark 0
 LayerCount: 2
 Fore
@@ -10969,6 +10974,7 @@ GlifName: uni0901
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 0 1618 mark 0
 LayerCount: 2
 Fore
@@ -11002,6 +11008,7 @@ GlifName: uni0902
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 HStem: 1639 200<93 293>
 VStem: 93 200<1639 1839 1639 1839>
 AnchorPoint: "abvm_deva" -318 1636 mark 0
@@ -12002,6 +12009,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm_deva" 1201 -27 basechar 0
 AnchorPoint: "abvm_deva" 1199 1603 basechar 0
 AnchorPoint: "blwm_deva" 1171 -29 basechar 0
 LayerCount: 2
@@ -12096,7 +12104,7 @@ SplineSet
  1274 335 l 257
  52 0 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0915 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0915 uni094D uni0930
 EndChar
 
 StartChar: uni0915_uni094D.half
@@ -12391,6 +12399,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm_deva" 1802 14 basechar 0
 AnchorPoint: "abvm_deva" 1783 1635 basechar 0
 AnchorPoint: "blwm_deva" 1812 -64 basechar 0
 LayerCount: 2
@@ -12495,7 +12504,7 @@ SplineSet
  1857 570 l 257
  317 570 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0916 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0916 uni094D uni0930
 EndChar
 
 StartChar: uni0916_uni094D.half
@@ -12618,6 +12627,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm_deva" 1802 -14 basechar 0
 AnchorPoint: "abvm_deva" 1783 1635 basechar 0
 AnchorPoint: "blwm_deva" 1801 -68 basechar 0
 LayerCount: 2
@@ -12692,7 +12702,7 @@ SplineSet
  1916 1523 l 257
  1717 1523 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0917 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0917 uni094D uni0930
 EndChar
 
 StartChar: uni0917_uni094D.half
@@ -12868,7 +12878,7 @@ SplineSet
  172 964 l 257
  172 469 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0918 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0918 uni094D uni0930
 EndChar
 
 StartChar: uni0918_uni094D.half
@@ -13089,7 +13099,7 @@ SplineSet
  1510 1171 l 257
  1353 1171 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0919 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0919 uni094D uni0930
 EndChar
 
 StartChar: uni0919_uni094D.half
@@ -13310,7 +13320,7 @@ SplineSet
  1080 1191 l 257
  72 1191 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091A uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091A uni094D uni0930
 EndChar
 
 StartChar: uni091A_uni094D.half
@@ -13516,7 +13526,7 @@ SplineSet
  2032 965 l 257
  1831 965 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091B uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091B uni094D uni0930
 EndChar
 
 StartChar: uni091B_uni094D.half
@@ -13722,7 +13732,7 @@ SplineSet
  258 855 l 257
  58 855 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091C uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091C uni094D uni0930
 EndChar
 
 StartChar: uni091C_uni094D.half
@@ -14075,7 +14085,7 @@ SplineSet
  334 63 l 257
  134 63 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091D uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091D uni094D uni0930
 EndChar
 
 StartChar: uni091D_uni094D.half
@@ -14291,7 +14301,7 @@ SplineSet
  1126 482 l 257
  64 482 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091E uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091E uni094D uni0930
 EndChar
 
 StartChar: uni091E_uni094D.half
@@ -14472,7 +14482,7 @@ SplineSet
  1840 501 l 257
  85 501 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091F uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091F uni094D uni0930
 EndChar
 
 StartChar: uni091F_uni094D.haln
@@ -14619,7 +14629,7 @@ SplineSet
  1965 498 l 257
  73 498 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0920 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0920 uni094D uni0930
 EndChar
 
 StartChar: uni0920_uni094D.haln
@@ -14791,7 +14801,7 @@ SplineSet
  1445 1391 l 257
  1246 1391 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0921 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0921 uni094D uni0930
 EndChar
 
 StartChar: uni0921_uni094D.haln
@@ -14963,7 +14973,7 @@ SplineSet
  1836 847 l 257
  1584 847 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0922 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0922 uni094D uni0930
 EndChar
 
 StartChar: uni0922_uni094D.haln
@@ -15105,7 +15115,7 @@ SplineSet
  1166 1023 l 257
  110 1023 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0923 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0923 uni094D uni0930
 EndChar
 
 StartChar: uni0923_uni094D.half
@@ -15256,7 +15266,7 @@ SplineSet
  1663 175 l 257
  1763 348 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0924 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0924 uni094D uni0930
 EndChar
 
 StartChar: uni0924_uni094D.half
@@ -15471,7 +15481,7 @@ SplineSet
  1982 531 l 257
  21 531 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0925 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0925 uni094D uni0930
 EndChar
 
 StartChar: uni0925_uni094D.half
@@ -15667,7 +15677,7 @@ SplineSet
  1322 606 l 257
  1122 606 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0926 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0926 uni094D uni0930
 EndChar
 
 StartChar: uni0926_uni094D.half
@@ -16104,7 +16114,7 @@ SplineSet
  1806 526 l 257
  90 526 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0927 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0927 uni094D uni0930
 EndChar
 
 StartChar: uni0927_uni094D.half
@@ -16275,7 +16285,7 @@ SplineSet
  300 741 l 257
  99 741 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0928 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0928 uni094D uni0930
 EndChar
 
 StartChar: uni0928_uni094D.half
@@ -16432,7 +16442,7 @@ SplineSet
  1348 -58 l 257
  1084 -58 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0929 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0929 uni094D uni0930
 EndChar
 
 StartChar: uni0929_uni094D.half
@@ -16588,7 +16598,7 @@ SplineSet
  1889 1023 l 257
  109 1023 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092A uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092A uni094D uni0930
 EndChar
 
 StartChar: uni092A_uni094D.half
@@ -16744,7 +16754,7 @@ SplineSet
  2012 1023 l 257
  1813 1023 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092B uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092B uni094D uni0930
 EndChar
 
 StartChar: uni092B_uni094D.half
@@ -16920,7 +16930,7 @@ SplineSet
  1126 1237 l 257
  76 1237 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092C uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092C uni094D uni0930
 EndChar
 
 StartChar: uni092C_uni094D.half
@@ -17126,7 +17136,7 @@ SplineSet
  1924 673 l 257
  80 673 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092D uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092D uni094D uni0930
 EndChar
 
 StartChar: uni092D_uni094D.half
@@ -17332,7 +17342,7 @@ SplineSet
  1941 723 l 257
  97 723 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092E uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092E uni094D uni0930
 EndChar
 
 StartChar: uni092E_uni094D.half
@@ -17508,7 +17518,7 @@ SplineSet
  1929 358 l 257
  343 626 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092F uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092F uni094D uni0930
 EndChar
 
 StartChar: uni092F_uni094D.half
@@ -17664,7 +17674,7 @@ SplineSet
  524 694 l 257
  352 603 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0930 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0930 uni094D uni0930
 EndChar
 
 StartChar: uni0930_uni0941.blws
@@ -17879,6 +17889,7 @@ GlifName: uni0930_uni094D_.rphf
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" -198 1546 mark 0
 LayerCount: 2
 Fore
@@ -17983,7 +17994,7 @@ SplineSet
  1268 -118 l 257
  1002 -118 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0931 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0931 uni094D uni0930
 EndChar
 
 StartChar: uni0931_uni094D.haln
@@ -18115,7 +18126,7 @@ SplineSet
  1092 689 l 257
  892 689 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0932 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0932 uni094D uni0930
 EndChar
 
 StartChar: uni0932_uni094D.half
@@ -18296,7 +18307,7 @@ SplineSet
  1928 391 l 257
  40 391 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0933 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0933 uni094D uni0930
 EndChar
 
 StartChar: uni0933_uni094D.half
@@ -18503,7 +18514,7 @@ SplineSet
  336 95 l 257
  70 95 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0934 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0934 uni094D uni0930
 EndChar
 
 StartChar: uni0934_uni094D.half
@@ -18694,7 +18705,7 @@ SplineSet
  614 1237 l 257
  76 1237 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0935 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0935 uni094D uni0930
 EndChar
 
 StartChar: uni0935_uni094D.half
@@ -18880,7 +18891,7 @@ SplineSet
  236 1365 l 257
  115 1235 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0936 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0936 uni094D uni0930
 EndChar
 
 StartChar: uni0936_uni094D.half
@@ -19061,7 +19072,7 @@ SplineSet
  630 1352 l 257
  98 1352 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0937 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0937 uni094D uni0930
 EndChar
 
 StartChar: uni0937_uni094D.half
@@ -19227,7 +19238,7 @@ SplineSet
  348 742 l 257
  158 658 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0938 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0938 uni094D uni0930
 EndChar
 
 StartChar: uni0938_uni094D.half
@@ -19423,7 +19434,7 @@ SplineSet
  1110 0 l 257
  340 215 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0939 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0939 uni094D uni0930
 EndChar
 
 StartChar: uni0939_uni0943.blws
@@ -19744,8 +19755,10 @@ GlifName: uni093C_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 HStem: -481 247<-1033 -767>
 VStem: -1033 266<-481 -234 -481 -234>
+AnchorPoint: "blwm_deva" -180 -98 mark 0
 AnchorPoint: "blwm_deva" 270 4 mark 0
 LayerCount: 2
 Fore
@@ -19910,6 +19923,8 @@ GlifName: uni0941
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
+AnchorPoint: "blwm_deva" -360 28 mark 0
 AnchorPoint: "blwm_deva" -360 28 mark 0
 LayerCount: 2
 Fore
@@ -19943,6 +19958,8 @@ GlifName: uni0942
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
+AnchorPoint: "blwm_deva" -778 -55 mark 0
 AnchorPoint: "blwm_deva" -192 10 mark 0
 LayerCount: 2
 Fore
@@ -19976,6 +19993,8 @@ GlifName: uni0943
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
+AnchorPoint: "blwm_deva" -42 46 mark 0
 AnchorPoint: "blwm_deva" -42 46 mark 0
 LayerCount: 2
 Fore
@@ -20004,6 +20023,8 @@ GlifName: uni0944
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
+AnchorPoint: "blwm_deva" -144 28 mark 0
 AnchorPoint: "blwm_deva" -144 28 mark 0
 LayerCount: 2
 Fore
@@ -20295,6 +20316,8 @@ GlifName: uni094D_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
+AnchorPoint: "blwm_deva" -432 22 mark 0
 AnchorPoint: "blwm_deva" -432 22 mark 0
 LayerCount: 2
 Fore
@@ -20737,7 +20760,7 @@ SplineSet
  1950 879 l 257
  1751 879 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0958 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0958 uni094D uni0930
 EndChar
 
 StartChar: uni0958_uni094D.half
@@ -20973,7 +20996,7 @@ SplineSet
  1857 570 l 257
  317 570 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0959 uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0959 uni094D uni0930
 EndChar
 
 StartChar: uni0959_uni094D.half
@@ -21189,7 +21212,7 @@ SplineSet
  1916 1523 l 257
  1717 1523 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095A uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095A uni094D uni0930
 EndChar
 
 StartChar: uni095A_uni094D.half
@@ -21385,7 +21408,7 @@ SplineSet
  258 855 l 257
  58 855 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095B uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095B uni094D uni0930
 EndChar
 
 StartChar: uni095B_uni094D.half
@@ -21616,7 +21639,7 @@ SplineSet
  1445 1391 l 257
  1246 1391 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095C uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095C uni094D uni0930
 EndChar
 
 StartChar: uni095C_uni094D.haln
@@ -21803,7 +21826,7 @@ SplineSet
  1836 847 l 257
  1584 847 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095D uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095D uni094D uni0930
 EndChar
 
 StartChar: uni095D_uni094D.haln
@@ -21960,7 +21983,7 @@ SplineSet
  2012 1023 l 257
  1813 1023 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095E uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095E uni094D uni0930
 EndChar
 
 StartChar: uni095E_uni094D.half
@@ -22146,7 +22169,7 @@ SplineSet
  1929 358 l 257
  343 626 l 257
 EndSplineSet
-Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095F uni0930_uni094D.blwf
+Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095F uni094D uni0930
 EndChar
 
 StartChar: uni095F_uni094D.half
@@ -27481,6 +27504,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm_deva" 742 67 basechar 0
 AnchorPoint: "top" 1020 1279 basechar 0
 AnchorPoint: "base" 1062 103 basechar 0
 AnchorPoint: "abvm_deva" 1265 1301 basechar 0
@@ -28040,11 +28064,11 @@ GlifName: zacute
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 128 769 N 1 0 0 1 507 330 2
-Refer: 848 122 N 1 0 0 1 0 0 2
+Refer: 128 769 N 1 0 0 1 1029 309 2
+Refer: 848 122 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: zcaron
@@ -28053,11 +28077,11 @@ GlifName: zcaron
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 417 780 N 1 0 0 1 505 373 2
-Refer: 848 122 N 1 0 0 1 0 0 2
+Refer: 417 780 N 1 0 0 1 1027 352 2
+Refer: 848 122 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: zdotaccent
@@ -28066,13 +28090,13 @@ GlifName: zdotaccent
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 HStem: 1223 202
 VStem: 1420 224
 LayerCount: 2
 Fore
-Refer: 413 775 N 1 0 0 1 503 347 2
-Refer: 848 122 N 1 0 0 1 0 0 2
+Refer: 413 775 N 1 0 0 1 1025 326 2
+Refer: 848 122 N 1 0 0 1 0 0 3
 PickledDataWithLists: "(dp0
 Vcom.fontlab.hintData
 p1
@@ -28258,6 +28282,7 @@ GlifName: uni0312
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -12 771 mark 0
 LayerCount: 2
 Fore
@@ -29475,11 +29500,11 @@ GlifName: jacute
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 401 567 N 1 0 0 1 0 0 2
-Refer: 128 769 N 1 0 0 1 763 482 2
+Refer: 128 769 N 1 0 0 1 1725 325 2
+Refer: 401 567 N 1 0 0 1 0 0 3
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j acutecomb
 EndChar
 
@@ -29600,12 +29625,12 @@ GlifName: uni1E_C_B__uni0301
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 HStem: -335 247
 VStem: 892 264
 LayerCount: 2
 Fore
-Refer: 128 769 N 1 0 0 1 -3 408 2
+Refer: 128 769 S 1 0 0 1 951 282 2
 Refer: 177 803 N 1 0 0 1 1024 116 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
@@ -29680,12 +29705,12 @@ GlifName: uni1E_C_B__uni0303
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 HStem: -335 247
 VStem: 892 264
 LayerCount: 2
 Fore
-Refer: 315 771 N 1 0 0 1 996 -741 2
+Refer: 315 771 S 1 0 0 1 1038 321 2
 Refer: 177 803 N 1 0 0 1 1024 116 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
@@ -29720,12 +29745,12 @@ GlifName: uni1E_C_B__uni0304
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 HStem: -335 247 1125 82
 VStem: 691 560 892 264
 LayerCount: 2
 Fore
-Refer: 410 772 N 1 0 0 1 971 -423 2
+Refer: 410 772 S 1 0 0 1 953 297 2
 Refer: 177 803 N 1 0 0 1 1024 116 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
@@ -29810,12 +29835,12 @@ GlifName: uni012F__uni0301
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 HStem: -400 406
 VStem: 1352 542
 LayerCount: 2
 Fore
-Refer: 128 769 N 1 0 0 1 9 384 2
+Refer: 128 769 S 1 0 0 1 999 306 2
 Refer: 423 808 N 1 0 0 1 1623 6 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
@@ -29850,12 +29875,12 @@ GlifName: uni012F__uni0302
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 HStem: -409 406
 VStem: 1358 542
 LayerCount: 2
 Fore
-Refer: 409 770 N 1 0 0 1 1050 -801 2
+Refer: 409 770 S 1 0 0 1 1014 273 2
 Refer: 423 808 N 1 0 0 1 1629 -3 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
@@ -29890,12 +29915,12 @@ GlifName: uni012F__uni0303
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 HStem: -403 406
 VStem: 1499 542
 LayerCount: 2
 Fore
-Refer: 315 771 N 1 0 0 1 1020 -756 2
+Refer: 315 771 S 1 0 0 1 1104 360 2
 Refer: 423 808 N 1 0 0 1 1770 3 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
@@ -29930,12 +29955,12 @@ GlifName: uni012F__uni0304
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 HStem: -403 406 1098 82
 VStem: 704 560 1500 542
 LayerCount: 2
 Fore
-Refer: 410 772 N 1 0 0 1 984 -450 2
+Refer: 410 772 S 1 0 0 1 960 318 2
 Refer: 423 808 N 1 0 0 1 1771 3 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp0
@@ -29980,10 +30005,10 @@ GlifName: uni012F__uni030C_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 417 780 N 1 0 0 1 1028 -292 2
+Refer: 417 780 S 1 0 0 1 1058 302 2
 Refer: 423 808 N 1 0 0 1 1771 3 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek uni030C
@@ -29995,10 +30020,10 @@ GlifName: i_uni030A_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 415 778 N 1 0 0 1 975 -434 2
+Refer: 415 778 S 1 0 0 1 993 304 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030A
 EndChar
@@ -30009,10 +30034,10 @@ GlifName: i_uni030B_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 416 779 N 1 0 0 1 1039 -255 2
+Refer: 416 779 S 1 0 0 1 1015 309 2
 Refer: 178 305 N 1 0 0 1 0 0 2
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030B
 EndChar
@@ -30037,10 +30062,10 @@ GlifName: j_uni0303
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 315 771 N 1 0 0 1 1691 -752 2
+Refer: 315 771 S 1 0 0 1 1718 265 2
 Refer: 401 567 N 1 0 0 1 0 0 2
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j tildecomb
 EndChar
@@ -30051,10 +30076,10 @@ GlifName: j_uni0304
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 410 772 N 1 0 0 0.953656 1723 -364.46 2
+Refer: 410 772 S 1 0 0 0.953656 1690 307.54 2
 Refer: 401 567 N 1 0 0 1 0 0 2
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0304
 EndChar
@@ -30079,11 +30104,12 @@ GlifName: j_uni0311
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 419 785 N 1 0 0 1 1724 -428 2
+Refer: 419 785 S 1 0 0 1 1739 298 2
 Refer: 401 567 N 1 0 0 1 0 0 2
+LCarets2: 1 0
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0311
 EndChar
 EndChars

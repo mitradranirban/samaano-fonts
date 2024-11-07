@@ -8,5 +8,3 @@ sfd2ufo Samaano-Wide-Bold-Slanted.sfd Samaano-Wide-Bold-Slanted.ufo
 sfd2ufo Samaano-Wide-Thin-Slanted.sfd Samaano-Wide-Thin-Slanted.ufo
 sfd2ufo Samaano-Thin-Slanted.sfd Samaano-Thin-Slanted.ufo 
 
-           
-
