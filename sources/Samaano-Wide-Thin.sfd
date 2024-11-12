@@ -5,7 +5,7 @@ FamilyName: Samaano
 Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 1.512
+Version: 1.700
 StyleMapFamilyName: Samaano
 ItalicAngle: 0
 UnderlinePosition: 0
@@ -23,8 +23,8 @@ FSType: 256
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1730999799
-ModificationTime: 1731000107
+CreationTime: 1731431989
+ModificationTime: 1731431989
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
@@ -57,15 +57,14 @@ Lookup: 4 0 0 "blwfBelowBaseFormsinDevanagari2lookup0" { "blwfBelowBaseFormsinDe
 Lookup: 4 0 0 "halfHalfFormsinDevanagari2lookup0" { "halfHalfFormsinDevanagari2lookup0 subtable"  } ['half' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "halnHalantFormsinDevanagari2lookup0" { "halnHalantFormsinDevanagari2lookup0 subtable"  } ['haln' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "presPreBaseSubstitutionsinDevanagari2lookup0" { "presPreBaseSubstitutionsinDevanagari2lookup0 subtable"  } ['pres' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
-Lookup: 4 0 0 "'abvs' Above Base Substitutions in Devanagari2 lookup 0" { "'abvs' Above Base Substitutions in Devanagari2 lookup 0-1"  } ['abvs' ('DFLT' <'dflt' > 'dev2' <'dflt' > ) ]
+Lookup: 4 0 0 "abvsAboveBaseSubstitutionsinDevanagari2lookup0" { "abvsAboveBaseSubstitutionsinDevanagari2lookup0 subtable"  } ['abvs' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinDevanagari2lookup12" { "blwsBelowBaseSubstitutionsinDevanagari2lookup12 subtable"  } ['blws' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
-MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 1.512" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
+LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 1.700" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
 ."
 Encoding: Custom
@@ -74,9 +73,7 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 900 10 4
-BeginPrivate: 0
-EndPrivate
+WinInfo: 0 8 2
 Grid
 -2048 1557 m 0
  2048 1557 l 1024
@@ -1053,8 +1050,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 43 73 N 0.5 0 0 1 -2.5 0 2
-Refer: 54 74 N 0.5 0 0 1 1021.5 0 2
+Refer: 43 73 N 0.5 0 0 1 -2 0 2
+Refer: 54 74 N 0.5 0 0 1 1022 0 2
 EndChar
 
 StartChar: Iacute
@@ -4894,8 +4891,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 212 105 N 0.5 0 0 1 14.25 0 2
-Refer: 222 106 N 0.5 0 0 1 1038.25 0 2
+Refer: 212 105 N 0.5 0 0 1 14 0 2
+Refer: 222 106 N 0.5 0 0 1 1038 0 2
 EndChar
 
 StartChar: imacron
@@ -7442,16 +7439,16 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-1038.75 887.5 m 257
- 1068.75 887.5 l 257
- 1068.75 1662.5 l 257
- 1038.75 1662.5 l 257
- 1038.75 887.5 l 257
-1038.75 1662.5 m 257
- 979.25 1600.5 l 257
- 1004.75 1586.5 l 257
- 1068.75 1662.5 l 257
- 1038.75 1662.5 l 257
+1039 888 m 257
+ 1069 888 l 257
+ 1069 1662 l 257
+ 1039 1662 l 257
+ 1039 888 l 257
+1039 1662 m 257
+ 979 1600 l 257
+ 1005 1586 l 257
+ 1069 1662 l 257
+ 1039 1662 l 257
 EndSplineSet
 EndChar
 
@@ -7640,8 +7637,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 19 68 N 0.5 0 0 1 -2.5 0 2
-Refer: 116 381 N 0.5 0 0 1 1021.5 0 2
+Refer: 19 68 N 0.5 0 0 0.996399 -2 0 2
+Refer: 116 381 N 0.5 0 0 1 1022 0 2
 EndChar
 
 StartChar: uni01C5
@@ -7653,8 +7650,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 19 68 N 0.5 0 0 1 -2.5 0 2
-Refer: 692 382 N 0.5 0 0 1 1021.5 0 2
+Refer: 19 68 N 0.5 0 0 0.995919 -2 1 2
+Refer: 692 382 N 0.5 0 0 1 1022 0 2
 EndChar
 
 StartChar: uni01C6
@@ -7666,8 +7663,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 160 100 N 0.5 0 0 1 -21.5 0 2
-Refer: 692 382 N 0.5 0 0 1 1002.5 0 2
+Refer: 160 100 N 0.5 0 0 1 -22 0 2
+Refer: 692 382 N 0.5 0 0 1 1002 0 2
 EndChar
 
 StartChar: uni0218
@@ -9253,6 +9250,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1148 1619 basechar 0
+AnchorPoint: "blwm_deva" 1116 -40 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9307,6 +9306,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1181 1633 basechar 0
+AnchorPoint: "blwm_deva" 1149 -26 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9351,6 +9352,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1148 1553 basechar 0
+AnchorPoint: "blwm_deva" 1116 -106 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9410,6 +9413,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1923 1547 basechar 0
+AnchorPoint: "blwm_deva" 1891 -112 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9469,6 +9474,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1881 1585 basechar 0
+AnchorPoint: "blwm_deva" 1849 -74 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9523,6 +9530,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1933 1599 basechar 0
+AnchorPoint: "blwm_deva" 1901 -60 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9647,6 +9656,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1852 1606 basechar 0
+AnchorPoint: "blwm_deva" 1820 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9706,6 +9717,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1926 1581 basechar 0
+AnchorPoint: "blwm_deva" 1877 -46 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9755,6 +9768,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1965 1519 basechar 0
+AnchorPoint: "blwm_deva" 1916 -108 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9859,6 +9874,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9903,6 +9920,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9937,6 +9956,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10031,6 +10052,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10080,6 +10103,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10119,6 +10144,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10233,6 +10260,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1367 1598 basechar 0
+AnchorPoint: "blwm_deva" 1335 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10302,6 +10331,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1367 1598 basechar 0
+AnchorPoint: "blwm_deva" 1335 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10371,6 +10402,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1367 1598 basechar 0
+AnchorPoint: "blwm_deva" 1335 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10480,6 +10513,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10524,6 +10559,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10558,6 +10595,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10667,6 +10706,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1617 1598 basechar 0
+AnchorPoint: "blwm_deva" 1585 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10731,6 +10772,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1617 1598 basechar 0
+AnchorPoint: "blwm_deva" 1585 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10775,6 +10818,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1617 1598 basechar 0
+AnchorPoint: "blwm_deva" 1585 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10889,6 +10934,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10938,6 +10985,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10977,6 +11026,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11031,6 +11082,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11075,6 +11128,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11114,6 +11169,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11228,6 +11285,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11292,6 +11351,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11346,6 +11407,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11460,6 +11523,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11509,6 +11574,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11548,6 +11615,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11642,6 +11711,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11691,6 +11762,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11785,6 +11858,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1117 1598 basechar 0
+AnchorPoint: "blwm_deva" 1085 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11839,6 +11914,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1367 1598 basechar 0
+AnchorPoint: "blwm_deva" 1335 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11948,6 +12025,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12012,6 +12091,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12077,6 +12158,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1003 -56 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12125,6 +12207,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12184,6 +12268,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12244,6 +12330,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1905 -52 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12282,6 +12369,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12326,6 +12415,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1867 1598 basechar 0
+AnchorPoint: "blwm_deva" 1835 -61 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12360,6 +12451,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1920 1650 basechar 0
+AnchorPoint: "blwm_deva" 1865 -157 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12410,6 +12503,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12443,6 +12537,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1887 1683 basechar 0
+AnchorPoint: "blwm_deva" 1832 -124 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12477,6 +12573,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12506,6 +12604,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12550,6 +12650,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12590,6 +12692,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12638,6 +12741,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12692,6 +12797,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12736,6 +12843,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12796,6 +12905,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12839,6 +12949,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1277 1527 basechar 0
+AnchorPoint: "blwm_deva" 1270 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12888,6 +13000,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1204 1622 basechar 0
+AnchorPoint: "blwm_deva" 1197 -18 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12942,6 +13056,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1292 1571 basechar 0
+AnchorPoint: "blwm_deva" 1285 -69 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12996,6 +13112,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1540 1571 basechar 0
+AnchorPoint: "blwm_deva" 1533 -69 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13050,6 +13168,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1613 1571 basechar 0
+AnchorPoint: "blwm_deva" 1606 -69 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13114,6 +13234,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13163,6 +13285,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1372 1578 basechar 0
+AnchorPoint: "blwm_deva" 1365 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13223,6 +13347,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13271,6 +13396,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13325,6 +13452,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13364,6 +13493,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13424,6 +13555,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13457,6 +13589,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13496,6 +13630,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13525,6 +13661,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13570,6 +13708,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13609,6 +13748,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13653,6 +13794,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13687,6 +13830,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13737,6 +13882,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13770,6 +13916,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13809,6 +13957,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1737 1571 basechar 0
+AnchorPoint: "blwm_deva" 1730 -69 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13838,6 +13988,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13883,6 +14035,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13921,6 +14074,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1467 1556 basechar 0
+AnchorPoint: "blwm_deva" 1460 -84 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13965,6 +14120,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1496 1629 basechar 0
+AnchorPoint: "blwm_deva" 1489 -11 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13999,6 +14156,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1496 1593 basechar 0
+AnchorPoint: "blwm_deva" 1489 -47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14049,6 +14208,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14092,6 +14252,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14141,6 +14303,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14180,6 +14344,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14235,6 +14401,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1935 -84 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14288,6 +14455,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14347,6 +14516,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14396,6 +14567,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14461,6 +14634,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14504,6 +14678,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14553,6 +14729,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14592,6 +14770,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14647,6 +14827,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14685,6 +14866,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14729,6 +14912,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14763,6 +14948,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14813,6 +15000,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14846,6 +15034,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1248 1600 basechar 0
+AnchorPoint: "blwm_deva" 1241 -40 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14885,6 +15075,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 956 1593 basechar 0
+AnchorPoint: "blwm_deva" 949 -47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14934,6 +15126,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1044 1585 basechar 0
+AnchorPoint: "blwm_deva" 1037 -55 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14987,20 +15181,20 @@ GlifName: uni0930_uni094D_.blwf
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
+AnchorPoint: "blwm_deva" 29 -105 mark 0
 LayerCount: 2
 Fore
 SplineSet
--17.5 -171 m 257
- 165.5 -510 l 257
- 233.5 -510 l 257
- 26.5 -104 l 257
- -17.5 -171 l 257
-26.5 -104 m 257
- -233.5 -497 l 257
- -165.5 -497 l 257
- 56.5 -163 l 257
- 26.5 -104 l 257
+-18 -171 m 257
+ 166 -510 l 257
+ 234 -510 l 257
+ 26 -104 l 257
+ -18 -171 l 257
+26 -104 m 257
+ -234 -497 l 257
+ -166 -497 l 257
+ 56 -163 l 257
+ 26 -104 l 257
 EndSplineSet
 Ligature2: "blwfBelowBaseFormsinDevanagari2lookup0 subtable" uni094D uni0930
 EndChar
@@ -15012,6 +15206,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1591 1593 basechar 0
+AnchorPoint: "blwm_deva" 1584 -47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15036,8 +15232,8 @@ SplineSet
  734 980 l 257
  700 920 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -15047,6 +15243,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1299 1527 basechar 0
+AnchorPoint: "blwm_deva" 1292 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15090,7 +15288,6 @@ GlifName: uni0930_uni094D_.rphf
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 AnchorPoint: "abvm_deva" -198 1546 mark 0
 LayerCount: 2
 Fore
@@ -15122,6 +15319,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15161,6 +15359,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1270 1578 basechar 0
+AnchorPoint: "blwm_deva" 1263 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15205,6 +15405,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1307 1578 basechar 0
+AnchorPoint: "blwm_deva" 1300 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15255,6 +15457,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15293,6 +15496,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15337,6 +15542,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15371,6 +15578,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15421,6 +15630,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15464,6 +15674,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15518,6 +15730,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15562,6 +15776,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15617,6 +15833,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15666,6 +15883,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15725,6 +15944,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15774,6 +15995,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15834,6 +16057,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15872,6 +16096,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15916,6 +16142,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15950,6 +16178,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16000,6 +16230,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16048,6 +16279,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16102,6 +16335,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1307 1607 basechar 0
+AnchorPoint: "blwm_deva" 1300 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16141,6 +16376,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16201,6 +16438,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16239,6 +16477,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16283,6 +16523,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16317,6 +16559,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16367,6 +16611,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 1834 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16405,6 +16650,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16449,6 +16696,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16483,6 +16732,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16533,6 +16784,7 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_deva" 1620 1584 basechar 0
+AnchorPoint: "blwm_deva" 767 -69 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16586,6 +16838,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1328 1578 basechar 0
+AnchorPoint: "blwm_deva" 1321 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16645,6 +16899,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1161 1593 basechar 0
+AnchorPoint: "blwm_deva" 1154 -47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16704,6 +16960,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1365 1556 basechar 0
+AnchorPoint: "blwm_deva" 1358 -84 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16753,6 +17011,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1343 1549 basechar 0
+AnchorPoint: "blwm_deva" 1336 -91 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16817,6 +17077,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16931,6 +17193,7 @@ GlifName: uni093C_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" 7 -126 mark 0
 LayerCount: 2
 Fore
@@ -16983,6 +17246,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1999 1595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17072,6 +17336,7 @@ GlifName: uni0941
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" 138 45 mark 0
 LayerCount: 2
 Fore
@@ -17105,6 +17370,7 @@ GlifName: uni0942
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -144 28 mark 0
 LayerCount: 2
 Fore
@@ -17138,6 +17404,7 @@ GlifName: uni0943
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -144 28 mark 0
 LayerCount: 2
 Fore
@@ -17166,6 +17433,7 @@ GlifName: uni0944
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -144 28 mark 0
 LayerCount: 2
 Fore
@@ -17397,6 +17665,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1654 1608 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17425,6 +17694,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1654 1608 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17457,6 +17727,7 @@ GlifName: uni094D_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -279 54 mark 0
 LayerCount: 2
 Fore
@@ -17504,6 +17775,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1654 1608 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17614,7 +17886,7 @@ GlifName: uni0951
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
+AnchorPoint: "abvm_deva" 18 1073 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17632,7 +17904,7 @@ GlifName: uni0952
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
+AnchorPoint: "blwm_deva" 741 413 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17650,7 +17922,6 @@ GlifName: uni0953
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -17668,7 +17939,6 @@ GlifName: uni0954
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -17687,6 +17957,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1654 1608 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17724,7 +17995,7 @@ GlifName: uni0956
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
+AnchorPoint: "blwm_deva" -38 98 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17752,7 +18023,7 @@ GlifName: uni0957
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
+AnchorPoint: "blwm_deva" 8 90 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17796,6 +18067,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm_deva" 1318 -44 basechar 0
+AnchorPoint: "abvm_deva" 1475 1533 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17850,6 +18123,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1154 1593 basechar 0
+AnchorPoint: "blwm_deva" 1147 -47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17869,8 +18144,8 @@ SplineSet
  2048 1553 l 257
  0 1553 l 257
 1110 1518 m 257
- 1110 51 l 257
- 1164 51 l 257
+ 1110 -2 l 257
+ 1164 -2 l 257
  1164 1518 l 257
  1110 1518 l 257
 181 1069 m 257
@@ -17909,6 +18184,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1144 1583 basechar 0
+AnchorPoint: "blwm_deva" 1137 -57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17918,8 +18195,8 @@ SplineSet
  2048 1553 l 257
  0 1553 l 257
 1110 1518 m 257
- 1110 51 l 257
- 1164 51 l 257
+ 1110 1 l 257
+ 1164 1 l 257
  1164 1518 l 257
  1110 1518 l 257
 181 1069 m 257
@@ -17958,6 +18235,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1324 1583 basechar 0
+AnchorPoint: "blwm_deva" 1317 -57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18022,6 +18301,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1923 1604 basechar 0
+AnchorPoint: "blwm_deva" 1891 -55 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18081,6 +18362,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18145,6 +18428,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18199,6 +18484,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18268,6 +18555,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1900 1600 basechar 0
+AnchorPoint: "blwm_deva" 1868 -59 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18312,6 +18601,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18361,6 +18652,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18400,6 +18693,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18454,6 +18749,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1949 1595 basechar 0
+AnchorPoint: "blwm_deva" 1917 -64 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18503,6 +18800,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18557,6 +18856,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18601,6 +18902,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1905 1578 basechar 0
+AnchorPoint: "blwm_deva" 1898 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18660,6 +18963,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1723 1608 basechar 0
+AnchorPoint: "blwm_deva" 1691 -51 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18719,6 +19024,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1354 1578 basechar 0
+AnchorPoint: "blwm_deva" 1347 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18788,6 +19095,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1354 1578 basechar 0
+AnchorPoint: "blwm_deva" 1347 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18857,6 +19166,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1724 1613 basechar 0
+AnchorPoint: "blwm_deva" 1818 -103 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18911,6 +19222,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1354 1578 basechar 0
+AnchorPoint: "blwm_deva" 1347 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18975,6 +19288,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1414 1588 basechar 0
+AnchorPoint: "blwm_deva" 1407 -52 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19039,6 +19354,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1400 1650 basechar 0
+AnchorPoint: "blwm_deva" 1485 -56 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19083,6 +19400,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1470 1608 basechar 0
+AnchorPoint: "blwm_deva" 1463 -32 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19132,6 +19451,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1490 1578 basechar 0
+AnchorPoint: "blwm_deva" 1483 -62 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19171,6 +19492,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1530 1558 basechar 0
+AnchorPoint: "blwm_deva" 1523 -82 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19199,11 +19522,11 @@ SplineSet
  1996 686 l 257
  1996 1023 l 257
  1936 1023 l 257
-966 6 m 257
- 966 -108 l 257
- 1109 -108 l 257
- 1109 6 l 257
- 966 6 l 257
+936 291 m 257
+ 936 177 l 257
+ 1079 177 l 257
+ 1079 291 l 257
+ 936 291 l 257
 1259 -16 m 257
  1259 -77 l 257
  1603 -77 l 257
@@ -19225,6 +19548,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1937 1560 basechar 0
+AnchorPoint: "blwm_deva" 1905 -99 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19269,14 +19594,16 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1940 1633 basechar 0
+AnchorPoint: "blwm_deva" 1933 -7 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-590 381 m 257
- 590 267 l 257
- 733 267 l 257
- 733 381 l 257
- 590 381 l 257
+350 301 m 257
+ 350 187 l 257
+ 493 187 l 257
+ 493 301 l 257
+ 350 301 l 257
 126 0 m 257
  383 0 l 257
  1881 267 l 257
@@ -19318,6 +19645,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1940 1633 basechar 0
+AnchorPoint: "blwm_deva" 1933 -7 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19372,6 +19701,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 3
 Flags: W
+AnchorPoint: "abvm_deva" 1940 1633 basechar 0
+AnchorPoint: "blwm_deva" 1933 -7 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19536,7 +19867,7 @@ GlifName: uni0962
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
+AnchorPoint: "blwm_deva" -30 132 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19574,7 +19905,7 @@ GlifName: uni0963
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
+AnchorPoint: "blwm_deva" -30 132 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20418,6 +20749,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1355 1555 basechar 0
+AnchorPoint: "blwm_deva" 1323 -104 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20451,6 +20784,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1922 1578 basechar 0
+AnchorPoint: "blwm_deva" 1890 -81 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20509,6 +20844,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1824 1560 basechar 0
+AnchorPoint: "blwm_deva" 1792 -99 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20552,6 +20889,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1838 1593 basechar 0
+AnchorPoint: "blwm_deva" 1876 -71 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20595,6 +20934,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1908 1578 basechar 0
+AnchorPoint: "blwm_deva" 1876 -81 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20676,6 +21017,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1360 1643 basechar 0
+AnchorPoint: "blwm_deva" 1056 -213 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20724,6 +21067,8 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1857 1549 basechar 0
+AnchorPoint: "blwm_deva" 1825 -138 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -21285,21 +21630,21 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-83.792 1333.84 m 257
- 160.16 1410.21 l 257
- -83.792 1654.16 l 257
- -160.16 1577.79 l 257
- 83.792 1333.84 l 257
--160.16 1410.21 m 257
- -83.792 1333.84 l 257
- 160.16 1577.79 l 257
- 83.792 1654.16 l 257
- -160.16 1410.21 l 257
--62.5 1515 m 257
- -62.5 -5 l 257
- 27.5 -5 l 257
- 27.5 1515 l 257
- -62.5 1515 l 257
+84 1334 m 257
+ 160 1410 l 257
+ -84 1654 l 257
+ -160 1578 l 257
+ 84 1334 l 257
+-160 1410 m 257
+ -84 1334 l 257
+ 160 1578 l 257
+ 84 1654 l 257
+ -160 1410 l 257
+-62 1515 m 257
+ -62 -5 l 257
+ 28 -5 l 257
+ 28 1515 l 257
+ -62 1515 l 257
 EndSplineSet
 EndChar
 
@@ -21932,16 +22277,16 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-700.5 652 m 257
- 700.5 569 l 257
- 1347.5 1498 l 257
- 1347.5 1565 l 257
- 700.5 652 l 257
-700.5 652 m 257
- 700.5 569 l 257
- 1338.5 -424 l 257
- 1338.5 -347 l 257
- 700.5 652 l 257
+700 652 m 257
+ 700 569 l 257
+ 1348 1498 l 257
+ 1348 1565 l 257
+ 700 652 l 257
+700 652 m 257
+ 700 569 l 257
+ 1338 -424 l 257
+ 1338 -347 l 257
+ 700 652 l 257
 EndSplineSet
 EndChar
 
@@ -21955,16 +22300,16 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-1421.5 632 m 257
- 626.5 1538 l 257
- 626.5 1477 l 257
- 1421.5 569 l 257
- 1421.5 632 l 257
-1421.5 632 m 257
- 639.5 -363 l 257
- 639.5 -427 l 257
- 1421.5 569 l 257
- 1421.5 632 l 257
+1422 632 m 257
+ 626 1538 l 257
+ 626 1477 l 257
+ 1422 569 l 257
+ 1422 632 l 257
+1422 632 m 257
+ 640 -363 l 257
+ 640 -427 l 257
+ 1422 569 l 257
+ 1422 632 l 257
 EndSplineSet
 EndChar
 
@@ -21997,16 +22342,16 @@ SplineSet
  1913 -30 l 257
  1914 0 l 257
  116 0 l 257
-219.111 712 m 257
- 215.111 664 l 257
- 1863.11 967 l 257
- 1863.11 1012 l 257
- 219.111 712 l 257
-219.111 711 m 257
- 215.111 655 l 257
- 1859.11 209 l 257
- 1859.11 253 l 257
- 219.111 711 l 257
+219 712 m 257
+ 215 664 l 257
+ 1863 967 l 257
+ 1863 1012 l 257
+ 219 712 l 257
+219 711 m 257
+ 215 655 l 257
+ 1859 209 l 257
+ 1859 253 l 257
+ 219 711 l 257
 EndSplineSet
 EndChar
 
@@ -22020,21 +22365,21 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-291.707 -5 m 257
- 291.707 -41 l 257
- 1921.71 -41 l 257
- 1921.71 -5 l 257
- 291.707 -5 l 257
-1925.71 712 m 257
- 281.707 1012 l 257
- 281.707 967 l 257
- 1929.71 664 l 257
- 1925.71 712 l 257
-1925.71 711 m 257
- 285.707 253 l 257
- 285.707 209 l 257
- 1929.71 655 l 257
- 1925.71 711 l 257
+292 -5 m 257
+ 292 -41 l 257
+ 1922 -41 l 257
+ 1922 -5 l 257
+ 292 -5 l 257
+1926 712 m 257
+ 282 1012 l 257
+ 282 967 l 257
+ 1930 664 l 257
+ 1926 712 l 257
+1926 711 m 257
+ 286 253 l 257
+ 286 209 l 257
+ 1930 655 l 257
+ 1926 711 l 257
 EndSplineSet
 EndChar
 
@@ -22118,8 +22463,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 63 78 N 0.5 0 0 1 203.75 0 2
-Refer: 257 186 N 0.5 0 0 1 1027.25 377 2
+Refer: 63 78 N 0.5 0 0 0.997716 204 0 2
+Refer: 257 186 N 0.5 0 0 1 1027 377 2
 EndChar
 
 StartChar: colonmonetary
@@ -22170,26 +22515,26 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-585.5 565 m 257
- 585.5 531 l 257
- 919.5 531 l 257
- 919.5 565 l 257
- 585.5 565 l 257
-726.5 1548 m 257
- 726.5 0 l 257
- 764.5 0 l 257
- 764.5 1548 l 257
- 726.5 1548 l 257
-760.5 1548 m 257
- 760.5 1501 l 257
- 1462.5 1501 l 257
- 1462.5 1548 l 257
- 760.5 1548 l 257
-741.5 828 m 257
- 741.5 791 l 257
- 1365.5 791 l 257
- 1365.5 828 l 257
- 741.5 828 l 257
+586 565 m 257
+ 586 531 l 257
+ 920 531 l 257
+ 920 565 l 257
+ 586 565 l 257
+726 1548 m 257
+ 726 0 l 257
+ 764 0 l 257
+ 764 1548 l 257
+ 726 1548 l 257
+760 1548 m 257
+ 760 1501 l 257
+ 1462 1501 l 257
+ 1462 1548 l 257
+ 760 1548 l 257
+742 828 m 257
+ 742 791 l 257
+ 1366 791 l 257
+ 1366 828 l 257
+ 742 828 l 257
 EndSplineSet
 EndChar
 
@@ -22279,66 +22624,66 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-667.686 1548 m 257
- 667.686 1 l 257
- 717.916 2 l 257
- 717.916 1548 l 257
- 667.686 1548 l 257
-696.886 1548 m 257
- 696.886 1494 l 257
- 939.371 1494 l 257
- 939.371 1548 l 257
- 696.886 1548 l 257
-891.836 1548 m 257
- 891.836 881 l 257
- 946.764 881 l 257
- 946.764 1548 l 257
- 891.836 1548 l 257
-690.972 934 m 257
- 690.972 868 l 257
- 944.916 868 l 257
- 944.916 934 l 257
- 690.972 934 l 257
-1043.21 1526.46 m 257
- 1043.21 -0.200195 l 257
- 1090.2 -0.200195 l 257
- 1090.2 1526.46 l 257
- 1043.21 1526.46 l 257
-1045.84 67.7979 m 257
- 1045.85 -0.200195 l 257
- 1174.87 -0.200195 l 257
- 1174.87 67.7979 l 257
- 1045.84 67.7979 l 257
-965.324 977.374 m 257
- 965.324 915.374 l 257
- 1187.74 915.374 l 257
- 1187.74 977.374 l 257
- 965.324 977.374 l 257
-1225.78 609.2 m 257
- 1225.78 563.462 l 257
- 1380.31 563.462 l 257
- 1380.31 609.2 l 257
- 1225.78 609.2 l 257
-1225.78 609.2 m 257
- 1225.78 437.673 l 257
- 1276.53 437.673 l 257
- 1276.53 609.2 l 257
- 1225.78 609.2 l 257
-1226.04 60.9287 m 257
- 1226.04 -2.2002 l 257
- 1379.55 -2.2002 l 257
- 1379.55 60.9287 l 257
- 1226.04 60.9287 l 257
-1328.55 172.913 m 257
- 1328.55 4.97168 l 257
- 1379.3 4.97168 l 257
- 1379.3 172.913 l 257
- 1328.55 172.913 l 257
-1226.04 437.673 m 257
- 1328.55 172.913 l 257
- 1379.3 172.913 l 257
- 1276.79 437.673 l 257
- 1226.04 437.673 l 257
+668 1548 m 257
+ 668 0 l 257
+ 718 0 l 257
+ 718 1548 l 257
+ 668 1548 l 257
+697 1548 m 257
+ 697 1494 l 257
+ 939 1494 l 257
+ 939 1548 l 257
+ 697 1548 l 257
+892 1548 m 257
+ 892 881 l 257
+ 947 881 l 257
+ 947 1548 l 257
+ 892 1548 l 257
+691 934 m 257
+ 691 868 l 257
+ 945 868 l 257
+ 945 934 l 257
+ 691 934 l 257
+1043 1526 m 257
+ 1043 0 l 257
+ 1090 0 l 257
+ 1090 1526 l 257
+ 1043 1526 l 257
+1043 68 m 257
+ 1043 0 l 257
+ 1175 0 l 257
+ 1175 68 l 257
+ 1043 68 l 257
+965 977 m 257
+ 965 915 l 257
+ 1188 915 l 257
+ 1188 977 l 257
+ 965 977 l 257
+1226 609 m 257
+ 1226 563 l 257
+ 1380 563 l 257
+ 1380 609 l 257
+ 1226 609 l 257
+1226 609 m 257
+ 1226 438 l 257
+ 1277 438 l 257
+ 1277 609 l 257
+ 1226 609 l 257
+1226 61 m 257
+ 1226 -2 l 257
+ 1380 -2 l 257
+ 1380 61 l 257
+ 1226 61 l 257
+1329 173 m 257
+ 1329 5 l 257
+ 1379 5 l 257
+ 1379 173 l 257
+ 1329 173 l 257
+1226 438 m 257
+ 1329 173 l 257
+ 1379 173 l 257
+ 1277 438 l 257
+ 1226 438 l 257
 EndSplineSet
 EndChar
 
@@ -22352,31 +22697,31 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-619.5 1548 m 257
- 619.5 0 l 257
- 683.5 0 l 257
- 682.5 1541 l 257
- 619.5 1548 l 257
-1376.5 1540 m 257
- 1371.5 -6 l 257
- 1436.5 2 l 257
- 1437.5 1548 l 257
- 1376.5 1540 l 257
-1016.5 1023 m 257
- 1017.5 0 l 257
- 1086.5 0 l 257
- 1085.5 1023 l 257
- 1016.5 1023 l 257
-621.5 66 m 257
- 618.5 0 l 257
- 1437.5 0 l 257
- 1440.5 66 l 257
- 621.5 66 l 257
-564.5 641 m 257
- 569.5 571 l 257
- 1483.5 571 l 257
- 1478.5 641 l 257
- 564.5 641 l 257
+620 1548 m 257
+ 620 0 l 257
+ 684 0 l 257
+ 682 1541 l 257
+ 620 1548 l 257
+1376 1540 m 257
+ 1372 -6 l 257
+ 1436 2 l 257
+ 1438 1548 l 257
+ 1376 1540 l 257
+1016 1023 m 257
+ 1018 0 l 257
+ 1086 0 l 257
+ 1086 1023 l 257
+ 1016 1023 l 257
+622 66 m 257
+ 618 0 l 257
+ 1438 0 l 257
+ 1440 66 l 257
+ 622 66 l 257
+564 641 m 257
+ 570 571 l 257
+ 1484 571 l 257
+ 1478 641 l 257
+ 564 641 l 257
 EndSplineSet
 EndChar
 
@@ -22390,36 +22735,36 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-686.5 18 m 257
- 686.5 -56 l 257
- 1303.5 -56 l 257
- 1303.5 18 l 257
- 686.5 18 l 257
-1277.5 1527 m 257
- 1277.5 98 l 257
- 1351.5 98 l 257
- 1351.5 1527 l 257
- 1277.5 1527 l 257
-656.5 1023 m 257
- 656.5 949 l 257
- 1340.5 949 l 257
- 1340.5 1023 l 257
- 656.5 1023 l 257
-590.5 1023 m 257
- 590.5 98 l 257
- 663.5 98 l 257
- 663.5 1023 l 257
- 590.5 1023 l 257
-656.5 174 m 257
- 656.5 98 l 257
- 1303.5 98 l 257
- 1303.5 174 l 257
- 656.5 174 l 257
-1162.5 1403 m 257
- 1162.5 1324 l 257
- 1457.5 1324 l 257
- 1457.5 1403 l 257
- 1162.5 1403 l 257
+686 18 m 257
+ 686 -56 l 257
+ 1304 -56 l 257
+ 1304 18 l 257
+ 686 18 l 257
+1278 1527 m 257
+ 1278 98 l 257
+ 1352 98 l 257
+ 1352 1527 l 257
+ 1278 1527 l 257
+656 1023 m 257
+ 656 949 l 257
+ 1340 949 l 257
+ 1340 1023 l 257
+ 656 1023 l 257
+590 1023 m 257
+ 590 98 l 257
+ 664 98 l 257
+ 664 1023 l 257
+ 590 1023 l 257
+656 174 m 257
+ 656 98 l 257
+ 1304 98 l 257
+ 1304 174 l 257
+ 656 174 l 257
+1162 1403 m 257
+ 1162 1324 l 257
+ 1458 1324 l 257
+ 1458 1403 l 257
+ 1162 1403 l 257
 EndSplineSet
 EndChar
 
@@ -22466,36 +22811,36 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-525.5 1136 m 257
- 525.5 1095 l 257
- 1522.5 1095 l 257
- 1522.5 1136 l 257
- 525.5 1136 l 257
-526.5 1300 m 257
- 526.5 1253 l 257
- 1522.5 1253 l 257
- 1522.5 1300 l 257
- 526.5 1300 l 257
-630.5 1548 m 257
- 630.5 9 l 257
- 713.5 8 l 257
- 713.5 1547 l 257
- 630.5 1548 l 257
-709.5 1548 m 257
- 709.5 1457 l 257
- 1365.5 1457 l 257
- 1365.5 1548 l 257
- 709.5 1548 l 257
-1318.5 1548 m 257
- 1318.5 881 l 257
- 1385.5 881 l 257
- 1385.5 1548 l 257
- 1318.5 1548 l 257
-693.5 952 m 257
- 693.5 868 l 257
- 1380.5 868 l 257
- 1380.5 952 l 257
- 693.5 952 l 257
+526 1136 m 257
+ 526 1095 l 257
+ 1522 1095 l 257
+ 1522 1136 l 257
+ 526 1136 l 257
+526 1300 m 257
+ 526 1253 l 257
+ 1522 1253 l 257
+ 1522 1300 l 257
+ 526 1300 l 257
+630 1548 m 257
+ 630 9 l 257
+ 714 8 l 257
+ 714 1547 l 257
+ 630 1548 l 257
+710 1548 m 257
+ 710 1457 l 257
+ 1366 1457 l 257
+ 1366 1548 l 257
+ 710 1548 l 257
+1318 1548 m 257
+ 1318 881 l 257
+ 1386 881 l 257
+ 1386 1548 l 257
+ 1318 1548 l 257
+694 952 m 257
+ 694 868 l 257
+ 1380 868 l 257
+ 1380 952 l 257
+ 694 952 l 257
 EndSplineSet
 EndChar
 
@@ -22580,26 +22925,26 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-552.5 770 m 257
- 552.5 707 l 257
- 1278.5 998 l 257
- 1278.5 1061 l 257
- 552.5 770 l 257
-552.5 1064 m 257
- 552.5 1003 l 257
- 1278.5 1294 l 257
- 1278.5 1355 l 257
- 552.5 1064 l 257
-835.5 1542 m 257
- 835.5 0 l 257
- 917.5 0 l 257
- 917.5 1542 l 257
- 835.5 1542 l 257
-911.5 87 m 257
- 911.5 0 l 257
- 1495.5 291 l 257
- 1495.5 378 l 257
- 911.5 87 l 257
+552 770 m 257
+ 552 707 l 257
+ 1278 998 l 257
+ 1278 1061 l 257
+ 552 770 l 257
+552 1064 m 257
+ 552 1003 l 257
+ 1278 1294 l 257
+ 1278 1355 l 257
+ 552 1064 l 257
+836 1542 m 257
+ 836 0 l 257
+ 918 0 l 257
+ 918 1542 l 257
+ 836 1542 l 257
+912 87 m 257
+ 912 0 l 257
+ 1496 291 l 257
+ 1496 378 l 257
+ 912 87 l 257
 EndSplineSet
 EndChar
 
@@ -22761,7 +23106,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 694 48 N 0.25 0 0 0.25 768.125 987.25 2
+Refer: 694 48 N 0.25 0 0 0.25 768 987 2
 EndChar
 
 StartChar: uni2071
@@ -22773,7 +23118,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 212 105 N 0.25 0 0 0.25 768 915.625 2
+Refer: 212 105 N 0.25 0 0 0.25 768 916 2
 EndChar
 
 StartChar: uni2074
@@ -22785,7 +23130,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 193 52 N 0.25 0 0 0.25 768.5 983.125 2
+Refer: 193 52 N 0.25 0 0 0.25 768 983 2
 EndChar
 
 StartChar: uni2075
@@ -22797,7 +23142,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 192 53 N 0.25 0 0 0.25 765.25 980.5 2
+Refer: 192 53 N 0.25 0 0 0.25 765 980 2
 EndChar
 
 StartChar: uni2076
@@ -22809,7 +23154,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 294 54 N 0.25 0 0 0.25 767.75 980.5 2
+Refer: 294 54 N 0.25 0 0 0.25 768 980 2
 EndChar
 
 StartChar: uni2077
@@ -22821,7 +23166,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 293 55 N 0.25 0 0 0.25 768.375 983.875 2
+Refer: 293 55 N 0.25 0 0 0.25 768 984 2
 EndChar
 
 StartChar: uni2078
@@ -22833,7 +23178,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 180 56 N 0.25 0 0 0.25 767.875 980.5 2
+Refer: 180 56 N 0.25 0 0 0.25 768 980 2
 EndChar
 
 StartChar: uni2079
@@ -22845,7 +23190,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 240 57 N 0.25 0 0 0.25 766.75 982.75 2
+Refer: 240 57 N 0.25 0 0 0.25 767 983 2
 EndChar
 
 StartChar: uni207A
@@ -22857,7 +23202,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 268 43 N 0.25 0 0 0.25 768 919.75 2
+Refer: 268 43 N 0.25 0 0 0.25 768 920 2
 EndChar
 
 StartChar: uni207B
@@ -22893,7 +23238,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 262 40 N 0.25 0 0 0.25 768 862.75 2
+Refer: 262 40 N 0.25 0 0 0.25 768 863 2
 EndChar
 
 StartChar: uni207E
@@ -22905,7 +23250,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 263 41 N 0.25 0 0 0.25 768 858.625 2
+Refer: 263 41 N 0.25 0 0 0.25 768 859 2
 EndChar
 
 StartChar: uni207F
@@ -22917,7 +23262,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 237 110 N 0.25 0 0 0.25 768 783.625 2
+Refer: 237 110 N 0.25 0 0 0.25 768 784 2
 EndChar
 
 StartChar: uni2080
@@ -22929,7 +23274,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 694 48 N 0.25 0 0 0.25 768.125 -12.75 2
+Refer: 694 48 N 0.25 0 0 0.25 768 -13 2
 EndChar
 
 StartChar: uni2081
@@ -22941,7 +23286,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 253 49 N 0.25 0 0 0.25 768 -19.5 2
+Refer: 253 49 N 0.25 0 0 0.25 768 -20 2
 EndChar
 
 StartChar: uni2082
@@ -22953,7 +23298,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 306 50 N 0.25 0 0 0.25 767.625 -19.5 2
+Refer: 306 50 N 0.25 0 0 0.25 768 -20 2
 EndChar
 
 StartChar: uni2083
@@ -22965,7 +23310,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 301 51 N 0.25 0 0 0.25 768.25 -20.625 2
+Refer: 301 51 N 0.25 0 0 0.25 768 -21 2
 EndChar
 
 StartChar: uni2084
@@ -22977,7 +23322,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 193 52 N 0.25 0 0 0.25 768.5 -16.875 2
+Refer: 193 52 N 0.25 0 0 0.25 768 -17 2
 EndChar
 
 StartChar: uni2085
@@ -22989,7 +23334,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 192 53 N 0.25 0 0 0.25 765.25 -19.5 2
+Refer: 192 53 N 0.25 0 0 0.25 765 -20 2
 EndChar
 
 StartChar: uni2086
@@ -23001,7 +23346,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 294 54 N 0.25 0 0 0.25 767.75 -19.5 2
+Refer: 294 54 N 0.25 0 0 0.25 768 -20 2
 EndChar
 
 StartChar: uni2087
@@ -23013,7 +23358,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 293 55 N 0.25 0 0 0.25 768.375 -16.125 2
+Refer: 293 55 N 0.25 0 0 0.25 768 -16 2
 EndChar
 
 StartChar: uni2088
@@ -23025,7 +23370,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 180 56 N 0.25 0 0 0.25 767.875 -19.5 2
+Refer: 180 56 N 0.25 0 0 0.25 768 -20 2
 EndChar
 
 StartChar: uni2089
@@ -23037,7 +23382,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 240 57 N 0.25 0 0 0.25 766.75 -17.25 2
+Refer: 240 57 N 0.25 0 0 0.25 767 -17 2
 EndChar
 
 StartChar: uni208A
@@ -23049,7 +23394,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 268 43 N 0.25 0 0 0.25 768 -80.25 2
+Refer: 268 43 N 0.25 0 0 0.25 768 -80 2
 EndChar
 
 StartChar: uni208B
@@ -23085,7 +23430,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 262 40 N 0.25 0 0 0.25 768 97.625 2
+Refer: 262 40 N 0.25 0 0 0.25 768 98 2
 EndChar
 
 StartChar: uni208E
@@ -23097,7 +23442,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 263 41 N 0.25 0 0 0.25 768 97.25 2
+Refer: 263 41 N 0.25 0 0 0.25 768 97 2
 EndChar
 
 StartChar: uni2052
@@ -23110,16 +23455,16 @@ Flags: W
 LayerCount: 2
 Fore
 SplineSet
-1768 178.25 m 257
- 1768 54.75 l 257
- 1900 54.75 l 257
- 1900 178.25 l 257
- 1768 178.25 l 257
-222 1384.25 m 257
- 222 1260.75 l 257
- 354 1260.75 l 257
- 354 1384.25 l 257
- 222 1384.25 l 257
+1768 178 m 257
+ 1768 55 l 257
+ 1900 55 l 257
+ 1900 178 l 257
+ 1768 178 l 257
+222 1384 m 257
+ 222 1261 l 257
+ 354 1261 l 257
+ 354 1384 l 257
+ 222 1384 l 257
 1727 1483 m 257
  133 6 l 257
  187 -67 l 257
@@ -23484,8 +23829,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 19 68 N 0.5 0 0 1 0.5 0 2
-Refer: 114 90 N 0.5 0 0 1 968.5 -4 2
+Refer: 19 68 N 0.5 0 0 1 0 0 2
+Refer: 114 90 N 0.5 0 0 1 968 -4 2
 EndChar
 
 StartChar: uni01F2
@@ -23497,8 +23842,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 19 68 N 0.5 0 0 1 0.5 0 2
-Refer: 690 122 N 0.5 0 0 1 1012.5 0 2
+Refer: 19 68 N 0.5 0 0 1 0 0 2
+Refer: 690 122 N 0.5 0 0 1 1012 0 2
 EndChar
 
 StartChar: uni01F3
@@ -23510,8 +23855,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 160 100 N 0.5 0 0 1 -8.5 0 2
-Refer: 690 122 N 0.5 0 0 1 1003.5 0 2
+Refer: 160 100 N 0.5 0 0 1 -8 0 2
+Refer: 690 122 N 0.5 0 0 1 1004 0 2
 EndChar
 
 StartChar: uni01EA
@@ -23588,8 +23933,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 57 76 N 0.5 0 0 1 16.5 0 2
-Refer: 222 106 N 0.5 0 0 1 1028.5 0 2
+Refer: 57 76 N 0.5 0 0 1 16 0 2
+Refer: 222 106 N 0.5 0 0 1 1028 0 2
 EndChar
 
 StartChar: uni01C9
@@ -23601,8 +23946,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 225 108 N 0.5 0 0 1 0.75 0 2
-Refer: 222 106 N 0.5 0 0 1 1012.75 0 2
+Refer: 225 108 N 0.5 0 0 1 1 0 2
+Refer: 222 106 N 0.5 0 0 1 1013 0 2
 EndChar
 
 StartChar: uni01CA
@@ -23614,8 +23959,8 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 63 78 N 0.5 0 0 1 6.5 0 2
-Refer: 54 74 N 0.5 0 0 1 1018.5 0 2
+Refer: 63 78 N 0.5 0 0 1 6 0 2
+Refer: 54 74 N 0.5 0 0 1 1018 0 2
 EndChar
 
 StartChar: uni01CB
@@ -23791,7 +24136,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 769 N 1 0 0 1 956.5 1300 2
+Refer: 123 769 N 1 0 0 1 956 1300 2
 Refer: 5 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23804,7 +24149,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 769 N 1 0 0 1 963.5 797 2
+Refer: 123 769 N 1 0 0 1 964 797 2
 Refer: 121 226 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23817,7 +24162,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 768 N 1 0 0 1 1050.5 1259 2
+Refer: 200 768 N 1 0 0 1 1050 1259 2
 Refer: 5 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23830,7 +24175,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 768 N 1 0 0 1 1057.5 756 2
+Refer: 200 768 N 1 0 0 1 1058 756 2
 Refer: 121 226 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23843,7 +24188,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 209 777 N 1 0 0 1 1009.5 1272 2
+Refer: 209 777 N 1 0 0 1 1010 1272 2
 Refer: 5 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23856,7 +24201,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 209 777 N 1 0 0 1 1016.5 769 2
+Refer: 209 777 N 1 0 0 1 1016 769 2
 Refer: 121 226 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23869,7 +24214,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 304 771 N 1 0 0 1 1040.5 1330 2
+Refer: 304 771 N 1 0 0 1 1040 1330 2
 Refer: 5 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23882,7 +24227,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 304 771 N 1 0 0 1 1047.5 827 2
+Refer: 304 771 N 1 0 0 1 1048 827 2
 Refer: 121 226 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23895,7 +24240,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 346 770 N 1 0 0 1 1015.5 890 2
+Refer: 346 770 N 1 0 0 1 1016 890 2
 Refer: 791 7840 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23986,7 +24331,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 209 777 N 1 0 0 1 1351 649 2
+Refer: 209 777 N 1 0 0 1 1511 256 2
 Refer: 120 259 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24025,7 +24370,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 349 774 N 1 0 0 1 1031.5 847 2
+Refer: 349 774 N 1 0 0 1 1032 847 2
 Refer: 791 7840 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24129,7 +24474,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 769 N 1 0 0 1 933.5 1292 2
+Refer: 123 769 N 1 0 0 1 934 1292 2
 Refer: 26 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24142,7 +24487,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 769 N 1 0 0 1 975.5 813 2
+Refer: 123 769 N 1 0 0 1 976 813 2
 Refer: 176 234 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24155,7 +24500,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 768 N 1 0 0 1 1027.5 1251 2
+Refer: 200 768 N 1 0 0 1 1028 1251 2
 Refer: 26 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24168,7 +24513,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 768 N 1 0 0 1 1069.5 772 2
+Refer: 200 768 N 1 0 0 1 1070 772 2
 Refer: 176 234 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24181,7 +24526,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 209 777 N 1 0 0 1 986.5 1264 2
+Refer: 209 777 N 1 0 0 1 986 1264 2
 Refer: 26 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24194,7 +24539,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 209 777 N 1 0 0 1 1028.5 785 2
+Refer: 209 777 N 1 0 0 1 1028 785 2
 Refer: 176 234 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24207,7 +24552,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 304 771 N 1 0 0 1 1017.5 1322 2
+Refer: 304 771 N 1 0 0 1 1018 1322 2
 Refer: 26 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24220,7 +24565,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 304 771 N 1 0 0 1 1059.5 843 2
+Refer: 304 771 N 1 0 0 1 1060 843 2
 Refer: 176 234 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24363,7 +24708,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 769 N 1 0 0 1 991.5 1289 2
+Refer: 123 769 N 1 0 0 1 992 1289 2
 Refer: 71 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24376,7 +24721,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 769 N 1 0 0 1 971.5 773 2
+Refer: 123 769 N 1 0 0 1 972 773 2
 Refer: 246 244 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24389,7 +24734,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 768 N 1 0 0 1 1085.5 1248 2
+Refer: 200 768 N 1 0 0 1 1086 1248 2
 Refer: 71 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24402,7 +24747,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 200 768 N 1 0 0 1 1065.5 732 2
+Refer: 200 768 N 1 0 0 1 1066 732 2
 Refer: 246 244 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24415,7 +24760,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 209 777 N 1 0 0 1 1044.5 1261 2
+Refer: 209 777 N 1 0 0 1 1044 1261 2
 Refer: 71 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24428,7 +24773,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 209 777 N 1 0 0 1 1024.5 745 2
+Refer: 209 777 N 1 0 0 1 1024 745 2
 Refer: 246 244 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24441,7 +24786,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 304 771 N 1 0 0 1 1075.5 1319 2
+Refer: 304 771 N 1 0 0 1 1076 1319 2
 Refer: 71 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24454,7 +24799,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-Refer: 304 771 N 1 0 0 1 1055.5 803 2
+Refer: 304 771 N 1 0 0 1 1063 681 2
 Refer: 246 244 N 1 0 0 1 0 0 2
 EndChar
 
@@ -25158,20 +25503,20 @@ Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: W
-AnchorPoint: "base" -3.25 -234.25 mark 0
+AnchorPoint: "base" -3 -234 mark 0
 LayerCount: 2
 Fore
 SplineSet
-82.75 -254.75 m 257
- 82.75 -378.25 l 257
- 214.75 -378.25 l 257
- 214.75 -254.75 l 257
- 82.75 -254.75 l 257
--211.75 -264.75 m 257
- -211.75 -388.25 l 257
- -79.75 -388.25 l 257
- -79.75 -264.75 l 257
- -211.75 -264.75 l 257
+83 -255 m 257
+ 83 -378 l 257
+ 215 -378 l 257
+ 215 -255 l 257
+ 83 -255 l 257
+-212 -265 m 257
+ -212 -388 l 257
+ -80 -388 l 257
+ -80 -265 l 257
+ -212 -265 l 257
 EndSplineSet
 EndChar
 
@@ -25918,7 +26263,7 @@ GlyphClass: 3
 Flags: W
 LayerCount: 2
 Fore
-Refer: 347 772 N 1 0 0 0.953656 1775 298.54 2
+Refer: 347 772 N 1 0 0 0.953656 1775 299 2
 Refer: 339 567 N 1 0 0 1 0 0 2
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0304
 EndChar
@@ -25953,16 +26298,16 @@ EndChar
 
 StartChar: uni0930_uni094D_uni0902.abvs
 Encoding: 930 -1 930
+GlifName: uni0930_uni094D__uni0902.abvs
 Width: 0
 VWidth: 0
-Flags: HW
+GlyphClass: 4
 AnchorPoint: "abvm_deva" -112 1511 mark 0
 LayerCount: 2
 Fore
-Refer: 361 2306 S 1 0 0 1 212 5 2
+Refer: 361 2306 N 1 0 0 1 212 5 2
 Refer: 502 -1 N 1 0 0 1 10 0 2
-Ligature2: "'abvs' Above Base Substitutions in Devanagari2 lookup 0-1" uni0930_uni094D.rphf uni0902
-LCarets2: 1 0
+Ligature2: "abvsAboveBaseSubstitutionsinDevanagari2lookup0 subtable" uni0930_uni094D.rphf uni0902
 EndChar
 EndChars
 EndSplineFont
