@@ -62,6 +62,6 @@ Version 2 - Under Progress
 ## License
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at [SIL site](https://scripts.sil.org/OFL)
+This license is available with a FAQ at [OpenFontLicense site](https://openfontlicense.org/)
 
  
