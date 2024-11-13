@@ -52,11 +52,18 @@ This font is created by Dr Anirban Mitra, an amateure Typographer and Free Softw
  
 10 October 2024 - Version 1.000 - First Release
 
-Version 2 - Under Progress 
-
+13 November 2024 - Version 2.000
   * Added additional axis of Slant
 
-  * Added support for East European Latin based Languages and Vietnamese 
+  * Added support for East European Latin based Languages Indic Translitteration and Vietnamese
+
+  * Update Devanagari Open  Type Tables to version 2 with addition of GPOS features
+
+Road Map for Version 3 
+
+   * Addition of Greek, Cyrillic, Math and Tamil
+
+
 
 
 ## License
