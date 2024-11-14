@@ -13,6 +13,34 @@ fontbakery version: 0.12.10
 <details><summary>[13] Samaano[slnt,wdth,wght].ttf</summary>
 <div>
 <details>
+    <summary>💥 <b>ERROR</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>Failed to access: <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a>.
+This check relies on the external service <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a> via the internet. While the service cannot be reached or does not respond this check is broken.</p>
+<pre><code>	You can exclude this check with the command line option:
+	-x com.google.fonts/check/fontdata_namecheck
+
+	Or you can wait until the service is available again.
+	If the problem persists please report this issue at: https://github.com/fonttools/fontbakery/issues
+
+	Original error message:
+	&lt;class 'requests.exceptions.ConnectionError'&gt;
+</code></pre>
+ [code: namecheck-service]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>🔥 <b>FAIL</b> Validate STAT particle names and values match the fallback names in GFAxisRegistry. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.axisregistry.html#"></a></summary>
     <div>
 
@@ -40,9 +68,14 @@ fontbakery version: 0.12.10
 
 
 
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 863 instead.
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 895 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
  [code: bad-numberOfHMetrics]
+
+
+
+* ⚠️ **WARN** <p>Font is monospaced but 29 glyphs (3.11%) have a different width. You should check the widths of: ['uni2070', 'uni2071', 'uni2074', 'uni2075', 'uni2076', 'uni2077', 'uni2078', 'uni2079', 'uni207A', 'uni207B', 'uni207C', 'uni207D', 'uni207E', 'uni207F', 'uni2080', 'uni2081', 'uni2082', 'uni2083', 'uni2084', 'uni2085', 'uni2086', 'uni2087', 'uni2088', 'uni2089', 'uni208A', 'uni208B', 'uni208C', 'uni208D', 'uni208E']</p>
+ [code: mono-outliers]
 
 
 
@@ -114,11 +147,13 @@ uni0945 (U+0945), uni0946 (U+0946), uni0947 (U+0947), uni0948 (U+0948) and uni09
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 3 in glyph 'Dcroat': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
+<pre><code>- Contour 7 in glyph 'uni20BF': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
 
-- Contour 7 in glyph 'uni20BF': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
+- Contour order differs in glyph 'uniFB01': [0, 1, 2, 3, 4] in wght=700,wdth=100,slnt=0, [0, 1, 4, 2, 3] in wght=700,wdth=100,slnt=-20.
 
 - Contour 3 in glyph 'Eth': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
+
+- Contour 3 in glyph 'Dcroat': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
 </code></pre>
  [code: interpolation-issues]
 
@@ -164,23 +199,24 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, elbasan, glagolitic, coptic, math</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, duployan, malayalam, tai-le, coptic, tifinagh, syriac, todhri, canadian-aboriginal, math</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, math, cherokee, coptic</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: glagolitic, coptic, math, elbasan, gothic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, syriac, coptic, tai-le, duployan, math, todhri, canadian-aboriginal, malayalam, hebrew, old-permic</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
-<li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
+<li>U+0310 COMBINING CANDRABINDU: try adding one of: math, sunuwar</li>
+<li>U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, cherokee, syriac</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: cherokee, thai, tifinagh, syriac, caucasian-albanian, gothic, sunuwar</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: cherokee, tifinagh, syriac, thai, caucasian-albanian, gothic, sunuwar</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
@@ -243,9 +279,10 @@ definitions.</p>
 
 
 
-* ⚠️ **WARN** <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ ǐ i̒ i̛̅ i̛̇ i̛̊ i̛̋ ǐ̛ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ ǐ̤ i̤̒ i̦̅ i̦̇ i̦̊ i̦̋</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Koonzime (Latn, 40,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Igbo (Latn, 27,823,640 speakers), Zapotec (Latn, 490,000 speakers), Ma’di (Latn, 584,000 speakers), Dan (Latn, 1,099,244 speakers), Southern Kisi (Latn, 360,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Yala (Latn, 200,000 speakers), Nateni (Latn, 100,000 speakers), Makaa (Latn, 221,000 speakers), Sar (Latn, 500,000 speakers), Lugbara (Latn, 2,200,000 speakers), Mfumte (Latn, 79,000 speakers), Ekpeye (Latn, 226,000 speakers), Aghem (Latn, 38,843 speakers), Ebira (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Mundani (Latn, 34,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nzakara (Latn, 50,000 speakers), Ejagham (Latn, 120,000 speakers), South Central Banda (Latn, 244,000 speakers), Bafut (Latn, 158,146 speakers), Kom (Latn, 360,685 speakers), Dii (Latn, 71,000 speakers), Cicipu (Latn, 44,000 speakers), Avokaya (Latn, 100,000 speakers), Mango (Latn, 77,000 speakers), Vute (Latn, 21,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Gulay (Latn, 250,478 speakers), Bete-Bendi (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers).</p>
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ ǐ i̒ i̛̅ i̛̇ i̛̊ i̛̋ ǐ̛ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ ǐ̤ i̤̐ i̤̒ i̦̅ i̦̇</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Zapotec (Latn, 490,000 speakers), Ejagham (Latn, 120,000 speakers), Avokaya (Latn, 100,000 speakers), South Central Banda (Latn, 244,000 speakers), Aghem (Latn, 38,843 speakers), Lugbara (Latn, 2,200,000 speakers), Kom (Latn, 360,685 speakers), Ebira (Latn, 2,200,000 speakers), Southern Kisi (Latn, 360,000 speakers), Dan (Latn, 1,099,244 speakers), Sar (Latn, 500,000 speakers), Dii (Latn, 71,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Vute (Latn, 21,000 speakers), Yala (Latn, 200,000 speakers), Igbo (Latn, 27,823,640 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Mundani (Latn, 34,000 speakers), Fur (Latn, 1,230,163 speakers), Makaa (Latn, 221,000 speakers), Mfumte (Latn, 79,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mango (Latn, 77,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Bafut (Latn, 158,146 speakers), Nateni (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Nzakara (Latn, 50,000 speakers), Koonzime (Latn, 40,000 speakers), Ekpeye (Latn, 226,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Basaa (Latn, 332,940 speakers), Cicipu (Latn, 44,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -264,21 +301,29 @@ definitions.</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
-<pre><code>* peseta (U+20A7): X=596.0,Y=1550.0 (should be at cap-height 1548?)
+<pre><code>* peseta (U+20A7): X=220.0,Y=1549.0 (should be at cap-height 1548?)
 
-* peseta (U+20A7): X=662.0,Y=1550.0 (should be at cap-height 1548?)
+* peseta (U+20A7): X=291.0,Y=1549.0 (should be at cap-height 1548?)
 
-* peseta (U+20A7): X=662.0,Y=1.0 (should be at baseline 0?)
+* peseta (U+20A7): X=250.0,Y=1549.0 (should be at cap-height 1548?)
 
-* peseta (U+20A7): X=596.0,Y=1.0 (should be at baseline 0?)
+* peseta (U+20A7): X=492.0,Y=1549.0 (should be at cap-height 1548?)
 
-* peseta (U+20A7): X=728.0,Y=1.0 (should be at baseline 0?)
+* peseta (U+20A7): X=426.0,Y=1549.0 (should be at cap-height 1548?)
 
-* peseta (U+20A7): X=599.0,Y=1.0 (should be at baseline 0?)
+* peseta (U+20A7): X=499.0,Y=1549.0 (should be at cap-height 1548?)
 
-* uni0930_uni094D.blwf: X=-160.0,Y=-614.0 (should be at descender -615?)
+* uni1EE8 (U+1EE8): X=225.0,Y=-1.0 (should be at baseline 0?)
 
-* uni0930_uni094D.blwf: X=-381.0,Y=-614.0 (should be at descender -615?)
+* uni1EE8 (U+1EE8): X=25.0,Y=-1.0 (should be at baseline 0?)
+
+* uni1EE8 (U+1EE8): X=735.0,Y=-1.0 (should be at baseline 0?)
+
+* uni1EE8 (U+1EE8): X=536.0,Y=-1.0 (should be at baseline 0?)
+
+* uni1EE8 (U+1EE8): X=692.0,Y=-1.0 (should be at baseline 0?)
+
+* uni1EE8 (U+1EE8): X=72.0,Y=-1.0 (should be at baseline 0?)
 
 * uni2116 (U+2116): X=501.0,Y=1549.0 (should be at cap-height 1548?)
 
@@ -291,6 +336,14 @@ definitions.</p>
 * uni2116 (U+2116): X=532.0,Y=1549.0 (should be at cap-height 1548?)
 
 * uni2116 (U+2116): X=882.0,Y=1549.0 (should be at cap-height 1548?)
+
+* uniFB02 (U+FB02): X=240.0,Y=1547.0 (should be at cap-height 1548?)
+
+* uniFB02 (U+FB02): X=440.0,Y=1547.0 (should be at cap-height 1548?)
+
+* uniFB02 (U+FB02): X=241.0,Y=1547.0 (should be at cap-height 1548?)
+
+* uniFB02 (U+FB02): X=668.0,Y=1547.0 (should be at cap-height 1548?)
 </code></pre>
  [code: found-misalignments]
 
@@ -355,24 +408,6 @@ definitions.</p>
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.meta.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>This font file does not have a 'meta' table.</p>
- [code: lacks-meta-table]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Checking OS/2 achVendID. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.os2.html#"></a></summary>
     <div>
 
@@ -399,8 +434,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 1 | 12 | 91 | 8 | 139 | 0 | 
-| 0% | 0% | 0% | 5% | 36% | 3% | 55% | 0% | 
+| 1 | 0 | 1 | 11 | 91 | 9 | 138 | 0 | 
+| 0% | 0% | 0% | 4% | 36% | 4% | 55% | 0% | 
 
 
 
