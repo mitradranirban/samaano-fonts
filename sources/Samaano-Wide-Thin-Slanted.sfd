@@ -5,7 +5,8 @@ FamilyName: Samaano
 Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 2.000
+Version: 2.0
+StyleMapFamilyName: Samaano
 ItalicAngle: -20
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -22,8 +23,8 @@ FSType: 256
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1731478605
-ModificationTime: 1731495768
+CreationTime: 1731569306
+ModificationTime: 1731571836
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
@@ -62,9 +63,8 @@ Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigaturesl
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
-MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "" "" "" "" "" "Version 2.000" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
+LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.000" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
 Vpublic.openTypeMeta
 p1
@@ -88,10 +88,8 @@ UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
-FitToEm: 1
-WinInfo: 150 10 4
-BeginPrivate: 0
-EndPrivate
+FitToEm: 0
+WinInfo: 730 10 4
 Grid
 -2048 1557 m 0
  2048 1557 l 1024
@@ -2849,7 +2847,7 @@ GlifName: aringacute
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 128 769 N 1 0 0 1 1774 593 2
@@ -4063,7 +4061,7 @@ GlifName: dotlessi
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 AnchorPoint: "top" 1460 1172 basechar 0
 AnchorPoint: "base" 1070 -17 basechar 0
 LayerCount: 2
@@ -4364,7 +4362,7 @@ GlifName: eogonek
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 451 808 N 1 0 0 1 747 8 2
@@ -5112,7 +5110,7 @@ GlifName: i_uni030A_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: 1104 309
 LayerCount: 2
 Fore
@@ -5142,7 +5140,7 @@ GlifName: i_uni030B_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 441 779 N 1 0 0 1 1423 321 2
@@ -5156,11 +5154,11 @@ GlifName: iacute
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 128 769 N 1 0 0 1 1459 396 2
-Refer: 181 305 N 1 0 0 1 0 0 3
+Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ibreve
@@ -5169,7 +5167,7 @@ GlifName: ibreve
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 437 774 N 1 0 0 1 1473 507 2
@@ -5182,11 +5180,11 @@ GlifName: icircumflex
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 434 770 N 1 0 0 1 1465 391 2
-Refer: 181 305 N 1 0 0 1 0 0 3
+Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: idieresis
@@ -5195,11 +5193,11 @@ GlifName: idieresis
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 439 776 N 1 0 0 1 876 -389 2
-Refer: 181 305 N 1 0 0 1 0 0 3
+Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: igrave
@@ -5208,11 +5206,11 @@ GlifName: igrave
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 211 768 N 1 0 0 1 1443 377 2
-Refer: 181 305 N 1 0 0 1 0 0 3
+Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ij
@@ -5234,7 +5232,7 @@ GlifName: imacron
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 435 772 N 1 0 0 1 1474 527 2
@@ -5260,7 +5258,7 @@ GlifName: itilde
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 333 771 N 1 0 0 1 1469 522 2
@@ -6020,11 +6018,11 @@ GlifName: oacute
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 128 769 N 1 0 0 1 1399 310 2
-Refer: 268 111 N 1 0 0 1 0 0 3
+Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: obreve
@@ -6046,11 +6044,11 @@ GlifName: ocircumflex
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 434 770 N 1 0 0 1 1405 305 2
-Refer: 268 111 N 1 0 0 1 0 0 3
+Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: odieresis
@@ -6059,11 +6057,11 @@ GlifName: odieresis
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 439 776 N 1 0 0 1 816 -475 2
-Refer: 268 111 N 1 0 0 1 0 0 3
+Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: oe
@@ -6145,11 +6143,11 @@ GlifName: ograve
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 211 768 N 1 0 0 1 1383 291 2
-Refer: 268 111 N 1 0 0 1 0 0 3
+Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ohorn
@@ -6436,11 +6434,11 @@ GlifName: otilde
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 333 771 N 1 0 0 1 1393 313 2
-Refer: 268 111 N 1 0 0 1 0 0 3
+Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: p
@@ -6750,25 +6748,25 @@ GlifName: peseta
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-1231 1548 m 257
+1231 1550 m 257
  671 0 l 257
  721 0 l 257
- 1281 1548 l 257
- 1231 1548 l 257
-1260 1548 m 257
+ 1281 1550 l 257
+ 1231 1550 l 257
+1260 1550 m 257
  1241 1494 l 257
  1483 1494 l 257
- 1503 1548 l 257
- 1260 1548 l 257
-1455 1548 m 257
+ 1503 1550 l 257
+ 1260 1550 l 257
+1455 1550 m 257
  1212 881 l 257
  1267 881 l 257
- 1510 1548 l 257
- 1455 1548 l 257
+ 1510 1550 l 257
+ 1455 1550 l 257
 1031 934 m 257
  1007 868 l 257
  1261 868 l 257
@@ -6800,8 +6798,8 @@ SplineSet
  1498 609 l 257
  1448 609 l 257
 1248 61 m 257
- 1225 -2 l 257
- 1379 -2 l 257
+ 1225 0 l 257
+ 1379 0 l 257
  1402 61 l 257
  1248 61 l 257
 1391 173 m 257
@@ -8166,7 +8164,7 @@ GlifName: uni012F__uni0300
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -397 406
 VStem: 1352 542
 LayerCount: 2
@@ -8206,7 +8204,7 @@ GlifName: uni012F__uni0301
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -400 406
 VStem: 1352 542
 LayerCount: 2
@@ -8246,7 +8244,7 @@ GlifName: uni012F__uni0302
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -409 406
 VStem: 1358 542
 LayerCount: 2
@@ -8286,7 +8284,7 @@ GlifName: uni012F__uni0303
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -403 406
 VStem: 1499 542
 LayerCount: 2
@@ -8326,7 +8324,7 @@ GlifName: uni012F__uni0304
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -403 406 1098 82
 VStem: 704 560 1500 542
 LayerCount: 2
@@ -8376,7 +8374,7 @@ GlifName: uni012F__uni030C_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 442 780 N 1 0 0 1 1455 285 2
@@ -8945,7 +8943,7 @@ GlifName: uni0209
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 443 783 N 1 0 0 1 1494 517 2
@@ -8971,7 +8969,7 @@ GlifName: uni020B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 445 785 N 1 0 0 1 1477 512 2
@@ -9205,7 +9203,7 @@ GlifName: uni022B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 435 772 N 1 0 0 1 1559 591 2
@@ -9231,7 +9229,7 @@ GlifName: uni022D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 435 772 N 1 0 0 1 1493 573 2
@@ -9724,6 +9722,8 @@ Encoding: 784 784 444
 GlifName: uni0310
 Width: 0
 VWidth: 0
+GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 360 1626 mark 0
 LayerCount: 2
 Fore
@@ -9991,6 +9991,7 @@ GlifName: uni0900
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 42 1648 mark 0
 LayerCount: 2
 Fore
@@ -10024,6 +10025,7 @@ GlifName: uni0901
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 0 1618 mark 0
 LayerCount: 2
 Fore
@@ -17014,6 +17016,7 @@ GlifName: uni0930_uni094D_.blwf
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -7 -99 mark 0
 LayerCount: 2
 Fore
@@ -17065,8 +17068,8 @@ SplineSet
  1091 980 l 257
  1035 920 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -17121,6 +17124,7 @@ GlifName: uni0930_uni094D_.rphf
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" -198 1546 mark 0
 LayerCount: 2
 Fore
@@ -17150,6 +17154,7 @@ GlifName: uni0930_uni094D__uni0902.abvs
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" -220 1511 mark 0
 LayerCount: 2
 Fore
@@ -18990,7 +18995,6 @@ SplineSet
  555 -3 l 257
  285 316 l 257
 EndSplineSet
-LCarets2: 1 0
 Ligature2: "presPreBaseSubstitutionsinDevanagari2lookup0 subtable" uni0939_uni094D.half uni092E
 EndChar
 
@@ -19750,6 +19754,7 @@ GlifName: uni0951
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 501 1050 mark 0
 LayerCount: 2
 Fore
@@ -19768,6 +19773,7 @@ GlifName: uni0952
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" 749 491 mark 0
 LayerCount: 2
 Fore
@@ -19786,6 +19792,7 @@ GlifName: uni0953
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -19803,6 +19810,7 @@ GlifName: uni0954
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -19859,6 +19867,7 @@ GlifName: uni0956
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -31 67 mark 0
 LayerCount: 2
 Fore
@@ -19887,6 +19896,7 @@ GlifName: uni0957
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" 8 75 mark 0
 LayerCount: 2
 Fore
@@ -23271,7 +23281,7 @@ GlifName: uni1E_4D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 128 769 N 1 0 0 1 1407 375 2
@@ -23587,10 +23597,10 @@ GlifName: uni1E_A_4
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 128 769 S 1 0 0 1 2012 1009 2
+Refer: 128 769 N 1 0 0 1 2012 1009 2
 Refer: 6 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23600,10 +23610,10 @@ GlifName: uni1E_A_5
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 128 769 S 1 0 0 1 1727 613 2
+Refer: 128 769 N 1 0 0 1 1727 613 2
 Refer: 126 226 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23613,10 +23623,10 @@ GlifName: uni1E_A_6
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 2001 1026 2
+Refer: 211 768 N 1 0 0 1 2001 1026 2
 Refer: 6 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23626,10 +23636,10 @@ GlifName: uni1E_A_7
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 1792 558 2
+Refer: 211 768 N 1 0 0 1 1792 558 2
 Refer: 126 226 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23639,10 +23649,10 @@ GlifName: uni1E_A_8
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 1981 924 2
+Refer: 221 777 N 1 0 0 1 1981 924 2
 Refer: 6 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23652,10 +23662,10 @@ GlifName: uni1E_A_9
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 1745 468 2
+Refer: 221 777 N 1 0 0 1 1745 468 2
 Refer: 126 226 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23665,10 +23675,10 @@ GlifName: uni1E_A_A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 333 771 S 1 0 0 1 1935 1187 2
+Refer: 333 771 N 1 0 0 1 1935 1187 2
 Refer: 6 194 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23678,7 +23688,7 @@ GlifName: uni1E_A_B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 333 771 N 1 0 0 1 1655 735 2
@@ -23717,10 +23727,10 @@ GlifName: uni1E_A_E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 128 769 S 1 0 0 1 2060 943 2
+Refer: 128 769 N 1 0 0 1 2060 943 2
 Refer: 5 258 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23730,10 +23740,10 @@ GlifName: uni1E_A_F_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 128 769 S 1 0 0 1 1857 399 2
+Refer: 128 769 N 1 0 0 1 1857 399 2
 Refer: 125 259 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23743,10 +23753,10 @@ GlifName: uni1E_B_0
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 2121 880 2
+Refer: 211 768 N 1 0 0 1 2121 880 2
 Refer: 5 258 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23756,10 +23766,10 @@ GlifName: uni1E_B_1
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 1916 375 2
+Refer: 211 768 N 1 0 0 1 1916 375 2
 Refer: 125 259 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23769,10 +23779,10 @@ GlifName: uni1E_B_2
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 2085 864 2
+Refer: 221 777 N 1 0 0 1 2085 864 2
 Refer: 5 258 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23925,10 +23935,10 @@ GlifName: uni1E_B_E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 128 769 S 1 0 0 1 1836 997 2
+Refer: 128 769 N 1 0 0 1 1836 997 2
 Refer: 28 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23938,7 +23948,7 @@ GlifName: uni1E_B_F_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 128 769 N 1 0 0 1 1759 569 2
@@ -23951,10 +23961,10 @@ GlifName: uni1E_C_0
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 1949 1034 2
+Refer: 211 768 N 1 0 0 1 1949 1034 2
 Refer: 28 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23964,10 +23974,10 @@ GlifName: uni1E_C_1
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 1848 583 2
+Refer: 211 768 N 1 0 0 1 1848 583 2
 Refer: 186 234 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23977,10 +23987,10 @@ GlifName: uni1E_C_2
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 1842 892 2
+Refer: 221 777 N 1 0 0 1 1842 892 2
 Refer: 28 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -23990,10 +24000,10 @@ GlifName: uni1E_C_3
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 1794 424 2
+Refer: 221 777 N 1 0 0 1 1794 424 2
 Refer: 186 234 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24003,10 +24013,10 @@ GlifName: uni1E_C_4
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 333 771 S 1 0 0 1 1769 1159 2
+Refer: 333 771 N 1 0 0 1 1769 1159 2
 Refer: 28 202 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24016,10 +24026,10 @@ GlifName: uni1E_C_5
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 333 771 S 1 0 0 1 1711 743 2
+Refer: 333 771 N 1 0 0 1 1711 743 2
 Refer: 186 234 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24055,10 +24065,10 @@ GlifName: uni1E_C_8
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 1695 832 2
+Refer: 221 777 N 1 0 0 1 1695 832 2
 Refer: 45 73 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24068,7 +24078,7 @@ GlifName: uni1E_C_9
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 221 777 N 1 0 0 1 1451 329 2
@@ -24107,7 +24117,7 @@ GlifName: uni1E_C_B__uni0300
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -341 247
 VStem: 887 264
 LayerCount: 2
@@ -24147,7 +24157,7 @@ GlifName: uni1E_C_B__uni0301
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 HStem: -335 247
 VStem: 892 264
 LayerCount: 2
@@ -24187,7 +24197,7 @@ GlifName: uni1E_C_B__uni0302
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -335 247
 VStem: 892 264
 LayerCount: 2
@@ -24227,7 +24237,7 @@ GlifName: uni1E_C_B__uni0303
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -335 247
 VStem: 892 264
 LayerCount: 2
@@ -24267,7 +24277,7 @@ GlifName: uni1E_C_B__uni0304
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 HStem: -335 247 1125 82
 VStem: 691 560 892 264
 LayerCount: 2
@@ -24343,7 +24353,7 @@ GlifName: uni1E_C_E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 221 777 N 1 0 0 1 1575 856 2
@@ -24369,10 +24379,10 @@ GlifName: uni1E_D_0
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 128 769 S 1 0 0 1 1862 1106 2
+Refer: 128 769 N 1 0 0 1 1862 1106 2
 Refer: 73 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24382,10 +24392,10 @@ GlifName: uni1E_D_1
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 128 769 S 1 0 0 1 1554 433 2
+Refer: 128 769 N 1 0 0 1 1554 433 2
 Refer: 271 244 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24395,10 +24405,10 @@ GlifName: uni1E_D_2
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 1935 1087 2
+Refer: 211 768 N 1 0 0 1 1935 1087 2
 Refer: 73 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24408,10 +24418,10 @@ GlifName: uni1E_D_3
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 211 768 S 1 0 0 1 1611 414 2
+Refer: 211 768 N 1 0 0 1 1611 414 2
 Refer: 271 244 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24421,10 +24431,10 @@ GlifName: uni1E_D_4
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 1910 1017 2
+Refer: 221 777 N 1 0 0 1 1910 1017 2
 Refer: 73 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24434,10 +24444,10 @@ GlifName: uni1E_D_5
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 221 777 S 1 0 0 1 1536 336 2
+Refer: 221 777 N 1 0 0 1 1536 336 2
 Refer: 271 244 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24447,10 +24457,10 @@ GlifName: uni1E_D_6
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 333 771 S 1 0 0 1 1842 1268 2
+Refer: 333 771 N 1 0 0 1 1842 1268 2
 Refer: 73 212 N 1 0 0 1 0 0 2
 EndChar
 
@@ -24460,7 +24470,7 @@ GlifName: uni1E_D_7
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 333 771 N 1 0 0 1 1484 628 2
@@ -24917,15 +24927,15 @@ GlifName: uni200D_
 Width: 0
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-531.893554688 1550 m 257
- -36.1064453125 -12 l 257
- 27.8935546875 -12 l 257
- 595.893554688 1550 l 257
- 531.893554688 1550 l 257
+531.894 1550 m 257
+ -36.1064 -12 l 257
+ 27.8936 -12 l 257
+ 595.894 1550 l 257
+ 531.894 1550 l 257
 EndSplineSet
 EndChar
 
@@ -24981,7 +24991,7 @@ GlifName: uni2070
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 931 48 N 0.375 0 0 0.375 963.438 889.125 2
@@ -24993,7 +25003,7 @@ GlifName: uni2071
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 224 105 N 0.375 0 0 0.375 971.625 835.25 2
@@ -25005,7 +25015,7 @@ GlifName: uni2074
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 203 52 N 0.375 0 0 0.375 945.688 885.688 2
@@ -25017,7 +25027,7 @@ GlifName: uni2075
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 202 53 N 0.375 0 0 0.375 957.375 883.125 2
@@ -25029,7 +25039,7 @@ GlifName: uni2076
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 323 54 N 0.375 0 0 0.375 961.562 882.875 2
@@ -25041,7 +25051,7 @@ GlifName: uni2077
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 322 55 N 0.375 0 0 0.375 928.75 886.688 2
@@ -25053,7 +25063,7 @@ GlifName: uni2078
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 190 56 N 0.375 0 0 0.375 961.688 883.312 2
@@ -25065,7 +25075,7 @@ GlifName: uni2079
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 264 57 N 0.375 0 0 0.375 958.688 885.938 2
@@ -25077,7 +25087,7 @@ GlifName: uni207A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 296 43 N 0.375 0 0 0.375 941.125 833.375 2
@@ -25089,7 +25099,7 @@ GlifName: uni207B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 257 8722 N 0.375 0 0 0.375 842.276 835 2
@@ -25101,7 +25111,7 @@ GlifName: uni207C_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 197 61 N 0.375 0 0 0.375 929 794.375 2
@@ -25113,7 +25123,7 @@ GlifName: uni207D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 289 40 N 0.375 0 0 0.375 912.812 780.062 2
@@ -25125,7 +25135,7 @@ GlifName: uni207E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 290 41 N 0.375 0 0 0.375 936.688 776.125 2
@@ -25137,7 +25147,7 @@ GlifName: uni207F_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 261 110 N 0.375 0 0 0.375 879.75 719.812 2
@@ -25149,7 +25159,7 @@ GlifName: uni2080
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 931 48 N 0.375 0 0 0.375 599.438 -110.875 2
@@ -25161,7 +25171,7 @@ GlifName: uni2081
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 279 49 N 0.375 0 0 0.375 590.25 -116.875 2
@@ -25173,7 +25183,7 @@ GlifName: uni2082
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 335 50 N 0.375 0 0 0.375 597.25 -116.5 2
@@ -25185,7 +25195,7 @@ GlifName: uni2083
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 330 51 N 0.375 0 0 0.375 597.5 -117.375 2
@@ -25197,7 +25207,7 @@ GlifName: uni2084
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 203 52 N 0.375 0 0 0.375 581.688 -114.312 2
@@ -25209,7 +25219,7 @@ GlifName: uni2085
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 202 53 N 0.375 0 0 0.375 593.375 -116.875 2
@@ -25221,7 +25231,7 @@ GlifName: uni2086
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 323 54 N 0.375 0 0 0.375 597.562 -117.125 2
@@ -25233,7 +25243,7 @@ GlifName: uni2087
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 322 55 N 0.375 0 0 0.375 565.75 -113.312 2
@@ -25245,7 +25255,7 @@ GlifName: uni2088
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 190 56 N 0.375 0 0 0.375 597.688 -116.688 2
@@ -25257,7 +25267,7 @@ GlifName: uni2089
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 264 57 N 0.375 0 0 0.375 594.688 -114.062 2
@@ -25269,7 +25279,7 @@ GlifName: uni208A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 296 43 N 0.375 0 0 0.375 577.125 -166.625 2
@@ -25281,7 +25291,7 @@ GlifName: uni208B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 257 8722 N 0.375 0 0 0.375 478.276 -165 2
@@ -25293,7 +25303,7 @@ GlifName: uni208C_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 197 61 N 0.375 0 0 0.375 565 -205.625 2
@@ -25305,7 +25315,7 @@ GlifName: uni208D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 289 40 N 0.375 0 0 0.375 634.812 15.0625 2
@@ -25317,7 +25327,7 @@ GlifName: uni208E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 290 41 N 0.375 0 0 0.375 658.688 14.125 2
@@ -25888,13 +25898,13 @@ GlifName: uniF_B_01
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
 1169 1631 m 257
- 716 0 l 261
- 776 0 l 261
+ 716 0 l 257
+ 776 0 l 257
  1229 1631 l 257
  1169 1631 l 257
 1170 1631 m 257
@@ -25928,19 +25938,19 @@ GlifName: uniF_B_02
 Width: 2048
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
 1124 1550 m 257
- 588 3 l 261
- 648 3 l 261
+ 588 3 l 257
+ 648 3 l 257
  1184 1550 l 257
  1124 1550 l 257
 1125 1550 m 257
  1104 1490 l 257
- 2014 1490 l 257
- 2035 1550 l 257
+ 2216 1490 l 257
+ 2237 1550 l 257
  1125 1550 l 257
 198 989 m 257
  176 929 l 257
@@ -25957,11 +25967,6 @@ SplineSet
  1742 57 l 257
  2286 1553 l 257
  2226 1553 l 257
-2000 1553 m 257
- 1979 1494 l 257
- 2214 1494 l 257
- 2235 1553 l 257
- 2000 1553 l 257
 EndSplineSet
 LCarets2: 1 84
 Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l

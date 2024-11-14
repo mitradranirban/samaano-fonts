@@ -10,8 +10,36 @@ fontbakery version: 0.12.10
 
 
 
-<details><summary>[12] Samaano[slnt,wdth,wght].ttf</summary>
+<details><summary>[13] Samaano[slnt,wdth,wght].ttf</summary>
 <div>
+<details>
+    <summary>💥 <b>ERROR</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>Failed to access: <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a>.
+This check relies on the external service <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a> via the internet. While the service cannot be reached or does not respond this check is broken.</p>
+<pre><code>	You can exclude this check with the command line option:
+	-x com.google.fonts/check/fontdata_namecheck
+
+	Or you can wait until the service is available again.
+	If the problem persists please report this issue at: https://github.com/fonttools/fontbakery/issues
+
+	Original error message:
+	&lt;class 'requests.exceptions.ConnectionError'&gt;
+</code></pre>
+ [code: namecheck-service]
+
+
+
+</div>
+</details>
+
 <details>
     <summary>🔥 <b>FAIL</b> Validate STAT particle names and values match the fallback names in GFAxisRegistry. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.axisregistry.html#"></a></summary>
     <div>
@@ -46,7 +74,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 
-* ⚠️ **WARN** <p>Font is monospaced but 29 glyphs (3.11%) have a different width. You should check the widths of: ['uni2070', 'uni2071', 'uni2074', 'uni2075', 'uni2076', 'uni2077', 'uni2078', 'uni2079', 'uni207A', 'uni207B', 'uni207C', 'uni207D', 'uni207E', 'uni207F', 'uni2080', 'uni2081', 'uni2082', 'uni2083', 'uni2084', 'uni2085', 'uni2086', 'uni2087', 'uni2088', 'uni2089', 'uni208A', 'uni208B', 'uni208C', 'uni208D', 'uni208E']</p>
+* ⚠️ **WARN** <p>Font is monospaced but 27 glyphs (2.90%) have a different width. You should check the widths of: ['uni2074', 'uni2075', 'uni2076', 'uni2077', 'uni2078', 'uni2079', 'uni207A', 'uni207B', 'uni207C', 'uni207D', 'uni207E', 'uni207F', 'uni2080', 'uni2081', 'uni2082', 'uni2083', 'uni2084', 'uni2085', 'uni2086', 'uni2087', 'uni2088', 'uni2089', 'uni208A', 'uni208B', 'uni208C', 'uni208D', 'uni208E']</p>
  [code: mono-outliers]
 
 
@@ -121,11 +149,9 @@ uni0945 (U+0945), uni0946 (U+0946), uni0947 (U+0947), uni0948 (U+0948) and uni09
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
 <pre><code>- Contour 3 in glyph 'Dcroat': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
 
-- Contour order differs in glyph 'uniFB01': [0, 1, 2, 3, 4] in wght=700,wdth=100,slnt=0, [0, 1, 4, 2, 3] in wght=700,wdth=100,slnt=-20.
+- Contour 7 in glyph 'uni20BF': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
 
 - Contour 3 in glyph 'Eth': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
-
-- Contour 7 in glyph 'uni20BF': becomes underweight between wght=100,wdth=100,slnt=0 and wght=700,wdth=200,slnt=-20.
 </code></pre>
  [code: interpolation-issues]
 
@@ -171,10 +197,10 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, coptic, tifinagh, math</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: glagolitic, coptic, elbasan, gothic, math</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, coptic, math, tifinagh</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: elbasan, gothic, coptic, glagolitic, math</li>
 <li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: duployan, tifinagh, tai-le, old-permic, todhri, hebrew, malayalam, syriac, canadian-aboriginal, coptic, math</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, coptic, malayalam, hebrew, duployan, math, tai-le, tifinagh, todhri, canadian-aboriginal, old-permic</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
@@ -183,12 +209,12 @@ definitions.</p>
 <li>U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: cherokee, syriac, duployan</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: sunuwar, tifinagh, cherokee, syriac, caucasian-albanian, thai, gothic</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: syriac, gothic, caucasian-albanian, tifinagh, cherokee, thai, sunuwar</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
@@ -253,8 +279,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ ǐ i̒ i̛̅ i̛̇ i̛̊ i̛̋ ǐ̛ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ ǐ̤ i̤̐ i̤̒ i̦̅ i̦̇</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mfumte (Latn, 79,000 speakers), Yala (Latn, 200,000 speakers), Mundani (Latn, 34,000 speakers), Vute (Latn, 21,000 speakers), Gulay (Latn, 250,478 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Fur (Latn, 1,230,163 speakers), Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Sar (Latn, 500,000 speakers), South Central Banda (Latn, 244,000 speakers), Nateni (Latn, 100,000 speakers), Bafut (Latn, 158,146 speakers), Cicipu (Latn, 44,000 speakers), Ma’di (Latn, 584,000 speakers), Koonzime (Latn, 40,000 speakers), Aghem (Latn, 38,843 speakers), Ekpeye (Latn, 226,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Igbo (Latn, 27,823,640 speakers), Makaa (Latn, 221,000 speakers), Nzakara (Latn, 50,000 speakers), Ebira (Latn, 2,200,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Southern Kisi (Latn, 360,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Dan (Latn, 1,099,244 speakers), Kom (Latn, 360,685 speakers), Mango (Latn, 77,000 speakers), Avokaya (Latn, 100,000 speakers), Dii (Latn, 71,000 speakers), Ejagham (Latn, 120,000 speakers), Zapotec (Latn, 490,000 speakers), Lugbara (Latn, 2,200,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Ukrainian (Cyrl, 29,273,587 speakers), Zapotec (Latn, 490,000 speakers), Southern Kisi (Latn, 360,000 speakers), Mundani (Latn, 34,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Mango (Latn, 77,000 speakers), Ejagham (Latn, 120,000 speakers), Kom (Latn, 360,685 speakers), Cicipu (Latn, 44,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Yala (Latn, 200,000 speakers), Gulay (Latn, 250,478 speakers), Vute (Latn, 21,000 speakers), Lugbara (Latn, 2,200,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ma’di (Latn, 584,000 speakers), Navajo (Latn, 166,319 speakers), Bete-Bendi (Latn, 100,000 speakers), Nateni (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Igbo (Latn, 27,823,640 speakers), Nzakara (Latn, 50,000 speakers), Mfumte (Latn, 79,000 speakers), Sar (Latn, 500,000 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Makaa (Latn, 221,000 speakers), Bafut (Latn, 158,146 speakers), Avokaya (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), South Central Banda (Latn, 244,000 speakers), Ekpeye (Latn, 226,000 speakers), Koonzime (Latn, 40,000 speakers), Dii (Latn, 71,000 speakers), Dan (Latn, 1,099,244 speakers), Fur (Latn, 1,230,163 speakers).</p>
  [code: soft-dotted]
 
 
@@ -273,31 +299,7 @@ definitions.</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
-<pre><code>* peseta (U+20A7): X=220.0,Y=1549.0 (should be at cap-height 1548?)
-
-* peseta (U+20A7): X=291.0,Y=1549.0 (should be at cap-height 1548?)
-
-* peseta (U+20A7): X=250.0,Y=1549.0 (should be at cap-height 1548?)
-
-* peseta (U+20A7): X=492.0,Y=1549.0 (should be at cap-height 1548?)
-
-* peseta (U+20A7): X=426.0,Y=1549.0 (should be at cap-height 1548?)
-
-* peseta (U+20A7): X=499.0,Y=1549.0 (should be at cap-height 1548?)
-
-* uni1EE8 (U+1EE8): X=225.0,Y=-1.0 (should be at baseline 0?)
-
-* uni1EE8 (U+1EE8): X=25.0,Y=-1.0 (should be at baseline 0?)
-
-* uni1EE8 (U+1EE8): X=735.0,Y=-1.0 (should be at baseline 0?)
-
-* uni1EE8 (U+1EE8): X=536.0,Y=-1.0 (should be at baseline 0?)
-
-* uni1EE8 (U+1EE8): X=692.0,Y=-1.0 (should be at baseline 0?)
-
-* uni1EE8 (U+1EE8): X=72.0,Y=-1.0 (should be at baseline 0?)
-
-* uni2116 (U+2116): X=501.0,Y=1549.0 (should be at cap-height 1548?)
+<pre><code>* uni2116 (U+2116): X=501.0,Y=1549.0 (should be at cap-height 1548?)
 
 * uni2116 (U+2116): X=601.0,Y=1549.0 (should be at cap-height 1548?)
 
@@ -406,7 +408,7 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 1 | 11 | 91 | 9 | 139 | 0 | 
+| 1 | 0 | 1 | 11 | 91 | 9 | 138 | 0 | 
 | 0% | 0% | 0% | 4% | 36% | 4% | 55% | 0% | 
 
 
