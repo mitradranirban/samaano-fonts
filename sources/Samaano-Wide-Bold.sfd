@@ -6,7 +6,6 @@ Weight: Wide-Bold
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
 Version: 2.0
-StyleMapFamilyName: Samaano
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -23,9 +22,9 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1731569306
-ModificationTime: 1731571778
-PfmFamily: 16
+CreationTime: 1731687892
+ModificationTime: 1731943551
+PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 9
 LineGap: 0
@@ -36,9 +35,9 @@ OS2TypoAOffset: 0
 OS2TypoDescent: -615
 OS2TypoDOffset: 0
 OS2TypoLinegap: 0
-OS2WinAscent: 2468
+OS2WinAscent: 3225
 OS2WinAOffset: 0
-OS2WinDescent: 872
+OS2WinDescent: 978
 OS2WinDOffset: 0
 HheadAscent: 2457
 HheadAOffset: 0
@@ -63,8 +62,9 @@ Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigaturesl
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 1.700" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
+LangName: 1033 "" "" "" "" "" "Version 2.000" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
 Vpublic.openTypeMeta
 p1
@@ -82,14 +82,15 @@ p8
 aVDeva
 p9
 ass."
-Encoding: UnicodeBmp
-Compacted: 1
+Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 730 10 4
+WinInfo: 0 8 2
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 1548 m 0
  2048 1548 l 1024
@@ -97,7 +98,7 @@ Grid
  2048 1024 l 1024
 EndSplineSet
 AnchorClass2: "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
-BeginChars: 65700 932
+BeginChars: 932 932
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -133,7 +134,7 @@ EndSplineSet
 EndChar
 
 StartChar: A
-Encoding: 65 65 1
+Encoding: 1 65 1
 GlifName: A_
 Width: 2048
 VWidth: 0
@@ -168,7 +169,7 @@ EndSplineSet
 EndChar
 
 StartChar: AE
-Encoding: 198 198 2
+Encoding: 2 198 2
 GlifName: A_E_
 Width: 2048
 VWidth: 0
@@ -206,7 +207,7 @@ EndSplineSet
 EndChar
 
 StartChar: AEacute
-Encoding: 508 508 3
+Encoding: 3 508 3
 GlifName: A_E_acute
 Width: 2048
 VWidth: 0
@@ -219,7 +220,7 @@ Refer: 2 198 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Aacute
-Encoding: 193 193 4
+Encoding: 4 193 4
 GlifName: A_acute
 Width: 2048
 VWidth: 0
@@ -232,7 +233,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Abreve
-Encoding: 258 258 5
+Encoding: 5 258 5
 GlifName: A_breve
 Width: 2048
 VWidth: 0
@@ -261,7 +262,7 @@ sass."
 EndChar
 
 StartChar: Acircumflex
-Encoding: 194 194 6
+Encoding: 6 194 6
 GlifName: A_circumflex
 Width: 2048
 VWidth: 0
@@ -274,7 +275,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Adieresis
-Encoding: 196 196 7
+Encoding: 7 196 7
 GlifName: A_dieresis
 Width: 2048
 VWidth: 0
@@ -303,7 +304,7 @@ sass."
 EndChar
 
 StartChar: Agrave
-Encoding: 192 192 8
+Encoding: 8 192 8
 GlifName: A_grave
 Width: 2048
 VWidth: 0
@@ -316,7 +317,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Amacron
-Encoding: 256 256 9
+Encoding: 9 256 9
 GlifName: A_macron
 Width: 2048
 VWidth: 0
@@ -354,7 +355,7 @@ sass."
 EndChar
 
 StartChar: Aogonek
-Encoding: 260 260 10
+Encoding: 10 260 10
 GlifName: A_ogonek
 Width: 2048
 VWidth: 0
@@ -392,7 +393,7 @@ sass."
 EndChar
 
 StartChar: Aring
-Encoding: 197 197 11
+Encoding: 11 197 11
 GlifName: A_ring
 Width: 2048
 VWidth: 0
@@ -430,7 +431,7 @@ sass."
 EndChar
 
 StartChar: Aringacute
-Encoding: 506 506 12
+Encoding: 12 506 12
 GlifName: A_ringacute
 Width: 2048
 VWidth: 0
@@ -468,7 +469,7 @@ sass."
 EndChar
 
 StartChar: Atilde
-Encoding: 195 195 13
+Encoding: 13 195 13
 GlifName: A_tilde
 Width: 2048
 VWidth: 0
@@ -481,7 +482,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: B
-Encoding: 66 66 14
+Encoding: 14 66 14
 GlifName: B_
 Width: 2048
 VWidth: 0
@@ -541,7 +542,7 @@ EndSplineSet
 EndChar
 
 StartChar: C
-Encoding: 67 67 15
+Encoding: 15 67 15
 GlifName: C_
 Width: 2048
 VWidth: 0
@@ -571,7 +572,7 @@ EndSplineSet
 EndChar
 
 StartChar: Cacute
-Encoding: 262 262 16
+Encoding: 16 262 16
 GlifName: C_acute
 Width: 2048
 VWidth: 0
@@ -584,7 +585,7 @@ Refer: 15 67 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ccaron
-Encoding: 268 268 17
+Encoding: 17 268 17
 GlifName: C_caron
 Width: 2048
 VWidth: 0
@@ -597,7 +598,7 @@ Refer: 15 67 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ccedilla
-Encoding: 199 199 18
+Encoding: 18 199 18
 GlifName: C_cedilla
 Width: 2048
 VWidth: 0
@@ -610,7 +611,7 @@ Refer: 15 67 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ccircumflex
-Encoding: 264 264 19
+Encoding: 19 264 19
 GlifName: C_circumflex
 Width: 2048
 VWidth: 0
@@ -623,7 +624,7 @@ Refer: 15 67 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Cdotaccent
-Encoding: 266 266 20
+Encoding: 20 266 20
 GlifName: C_dotaccent
 Width: 2048
 VWidth: 0
@@ -661,7 +662,7 @@ sass."
 EndChar
 
 StartChar: D
-Encoding: 68 68 21
+Encoding: 21 68 21
 GlifName: D_
 Width: 2048
 VWidth: 0
@@ -701,7 +702,7 @@ EndSplineSet
 EndChar
 
 StartChar: Dcaron
-Encoding: 270 270 22
+Encoding: 22 270 22
 GlifName: D_caron
 Width: 2048
 VWidth: 0
@@ -714,7 +715,7 @@ Refer: 21 68 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Dcroat
-Encoding: 272 272 23
+Encoding: 23 272 23
 GlifName: D_croat
 Width: 2048
 VWidth: 0
@@ -759,7 +760,7 @@ EndSplineSet
 EndChar
 
 StartChar: E
-Encoding: 69 69 24
+Encoding: 24 69 24
 GlifName: E_
 Width: 2048
 VWidth: 0
@@ -794,7 +795,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eacute
-Encoding: 201 201 25
+Encoding: 25 201 25
 GlifName: E_acute
 Width: 2048
 VWidth: 0
@@ -807,7 +808,7 @@ Refer: 24 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ebreve
-Encoding: 276 276 26
+Encoding: 26 276 26
 GlifName: E_breve
 Width: 2048
 VWidth: 0
@@ -836,7 +837,7 @@ sass."
 EndChar
 
 StartChar: Ecaron
-Encoding: 282 282 27
+Encoding: 27 282 27
 GlifName: E_caron
 Width: 2048
 VWidth: 0
@@ -849,7 +850,7 @@ Refer: 24 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ecircumflex
-Encoding: 202 202 28
+Encoding: 28 202 28
 GlifName: E_circumflex
 Width: 2048
 VWidth: 0
@@ -862,7 +863,7 @@ Refer: 24 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Edieresis
-Encoding: 203 203 29
+Encoding: 29 203 29
 GlifName: E_dieresis
 Width: 2048
 VWidth: 0
@@ -891,7 +892,7 @@ sass."
 EndChar
 
 StartChar: Edotaccent
-Encoding: 278 278 30
+Encoding: 30 278 30
 GlifName: E_dotaccent
 Width: 2048
 VWidth: 0
@@ -929,7 +930,7 @@ sass."
 EndChar
 
 StartChar: Egrave
-Encoding: 200 200 31
+Encoding: 31 200 31
 GlifName: E_grave
 Width: 2048
 VWidth: 0
@@ -942,7 +943,7 @@ Refer: 24 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Emacron
-Encoding: 274 274 32
+Encoding: 32 274 32
 GlifName: E_macron
 Width: 2048
 VWidth: 0
@@ -980,7 +981,7 @@ sass."
 EndChar
 
 StartChar: Eng
-Encoding: 330 330 33
+Encoding: 33 330 33
 GlifName: E_ng
 Width: 2048
 VWidth: 0
@@ -1015,7 +1016,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eogonek
-Encoding: 280 280 34
+Encoding: 34 280 34
 GlifName: E_ogonek
 Width: 2048
 VWidth: 0
@@ -1053,7 +1054,7 @@ sass."
 EndChar
 
 StartChar: Eth
-Encoding: 208 208 35
+Encoding: 35 208 35
 GlifName: E_th
 Width: 2048
 VWidth: 0
@@ -1098,7 +1099,7 @@ EndSplineSet
 EndChar
 
 StartChar: Euro
-Encoding: 8364 8364 36
+Encoding: 36 8364 36
 GlifName: E_uro
 Width: 2048
 VWidth: 0
@@ -1136,7 +1137,7 @@ EndSplineSet
 EndChar
 
 StartChar: F
-Encoding: 70 70 37
+Encoding: 37 70 37
 GlifName: F_
 Width: 2048
 VWidth: 0
@@ -1166,7 +1167,7 @@ EndSplineSet
 EndChar
 
 StartChar: G
-Encoding: 71 71 38
+Encoding: 38 71 38
 GlifName: G_
 Width: 2048
 VWidth: 0
@@ -1201,7 +1202,7 @@ EndSplineSet
 EndChar
 
 StartChar: Gbreve
-Encoding: 286 286 39
+Encoding: 39 286 39
 GlifName: G_breve
 Width: 2048
 VWidth: 0
@@ -1230,7 +1231,7 @@ sass."
 EndChar
 
 StartChar: Gcircumflex
-Encoding: 284 284 40
+Encoding: 40 284 40
 GlifName: G_circumflex
 Width: 2048
 VWidth: 0
@@ -1243,7 +1244,7 @@ Refer: 38 71 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Gdotaccent
-Encoding: 288 288 41
+Encoding: 41 288 41
 GlifName: G_dotaccent
 Width: 2048
 VWidth: 0
@@ -1281,7 +1282,7 @@ sass."
 EndChar
 
 StartChar: H
-Encoding: 72 72 42
+Encoding: 42 72 42
 GlifName: H_
 Width: 2048
 VWidth: 0
@@ -1311,7 +1312,7 @@ EndSplineSet
 EndChar
 
 StartChar: Hbar
-Encoding: 294 294 43
+Encoding: 43 294 43
 GlifName: H_bar
 Width: 2048
 VWidth: 0
@@ -1344,7 +1345,7 @@ EndSplineSet
 EndChar
 
 StartChar: Hcircumflex
-Encoding: 292 292 44
+Encoding: 44 292 44
 GlifName: H_circumflex
 Width: 2048
 VWidth: 0
@@ -1357,7 +1358,7 @@ Refer: 42 72 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: I
-Encoding: 73 73 45
+Encoding: 45 73 45
 GlifName: I_
 Width: 2048
 VWidth: 0
@@ -1387,7 +1388,7 @@ EndSplineSet
 EndChar
 
 StartChar: IJ
-Encoding: 306 306 46
+Encoding: 46 306 46
 GlifName: I_J_
 Width: 2048
 VWidth: 0
@@ -1400,7 +1401,7 @@ Refer: 56 74 N 0.5 0 0 1 1027 0 2
 EndChar
 
 StartChar: Iacute
-Encoding: 205 205 47
+Encoding: 47 205 47
 GlifName: I_acute
 Width: 2048
 VWidth: 0
@@ -1413,7 +1414,7 @@ Refer: 45 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ibreve
-Encoding: 300 300 48
+Encoding: 48 300 48
 GlifName: I_breve
 Width: 2048
 VWidth: 0
@@ -1442,7 +1443,7 @@ sass."
 EndChar
 
 StartChar: Icircumflex
-Encoding: 206 206 49
+Encoding: 49 206 49
 GlifName: I_circumflex
 Width: 2048
 VWidth: 0
@@ -1455,7 +1456,7 @@ Refer: 45 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Idieresis
-Encoding: 207 207 50
+Encoding: 50 207 50
 GlifName: I_dieresis
 Width: 2048
 VWidth: 0
@@ -1484,7 +1485,7 @@ sass."
 EndChar
 
 StartChar: Idotaccent
-Encoding: 304 304 51
+Encoding: 51 304 51
 GlifName: I_dotaccent
 Width: 2048
 VWidth: 0
@@ -1522,7 +1523,7 @@ sass."
 EndChar
 
 StartChar: Igrave
-Encoding: 204 204 52
+Encoding: 52 204 52
 GlifName: I_grave
 Width: 2048
 VWidth: 0
@@ -1535,7 +1536,7 @@ Refer: 45 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Imacron
-Encoding: 298 298 53
+Encoding: 53 298 53
 GlifName: I_macron
 Width: 2048
 VWidth: 0
@@ -1573,7 +1574,7 @@ sass."
 EndChar
 
 StartChar: Iogonek
-Encoding: 302 302 54
+Encoding: 54 302 54
 GlifName: I_ogonek
 Width: 2048
 VWidth: 0
@@ -1611,7 +1612,7 @@ sass."
 EndChar
 
 StartChar: Itilde
-Encoding: 296 296 55
+Encoding: 55 296 55
 GlifName: I_tilde
 Width: 2048
 VWidth: 0
@@ -1624,7 +1625,7 @@ Refer: 45 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: J
-Encoding: 74 74 56
+Encoding: 56 74 56
 GlifName: J_
 Width: 2048
 VWidth: 0
@@ -1654,7 +1655,7 @@ EndSplineSet
 EndChar
 
 StartChar: Jcircumflex
-Encoding: 308 308 57
+Encoding: 57 308 57
 GlifName: J_circumflex
 Width: 2048
 VWidth: 0
@@ -1667,7 +1668,7 @@ Refer: 56 74 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: K
-Encoding: 75 75 58
+Encoding: 58 75 58
 GlifName: K_
 Width: 2048
 VWidth: 0
@@ -1697,7 +1698,7 @@ EndSplineSet
 EndChar
 
 StartChar: L
-Encoding: 76 76 59
+Encoding: 59 76 59
 GlifName: L_
 Width: 2048
 VWidth: 0
@@ -1722,7 +1723,7 @@ EndSplineSet
 EndChar
 
 StartChar: Lacute
-Encoding: 313 313 60
+Encoding: 60 313 60
 GlifName: L_acute
 Width: 2048
 VWidth: 0
@@ -1735,7 +1736,7 @@ Refer: 59 76 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Lcaron
-Encoding: 317 317 61
+Encoding: 61 317 61
 GlifName: L_caron
 Width: 2048
 VWidth: 0
@@ -1763,7 +1764,7 @@ EndSplineSet
 EndChar
 
 StartChar: Ldot
-Encoding: 319 319 62
+Encoding: 62 319 62
 GlifName: L_dot
 Width: 2048
 VWidth: 0
@@ -1776,7 +1777,7 @@ Refer: 59 76 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Lslash
-Encoding: 321 321 63
+Encoding: 63 321 63
 GlifName: L_slash
 Width: 2048
 VWidth: 0
@@ -1804,7 +1805,7 @@ EndSplineSet
 EndChar
 
 StartChar: M
-Encoding: 77 77 64
+Encoding: 64 77 64
 GlifName: M_
 Width: 2048
 VWidth: 0
@@ -1839,7 +1840,7 @@ EndSplineSet
 EndChar
 
 StartChar: N
-Encoding: 78 78 65
+Encoding: 65 78 65
 GlifName: N_
 Width: 2048
 VWidth: 0
@@ -1869,7 +1870,7 @@ EndSplineSet
 EndChar
 
 StartChar: Nacute
-Encoding: 323 323 66
+Encoding: 66 323 66
 GlifName: N_acute
 Width: 2048
 VWidth: 0
@@ -1882,7 +1883,7 @@ Refer: 65 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ncaron
-Encoding: 327 327 67
+Encoding: 67 327 67
 GlifName: N_caron
 Width: 2048
 VWidth: 0
@@ -1895,7 +1896,7 @@ Refer: 65 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ntilde
-Encoding: 209 209 68
+Encoding: 68 209 68
 GlifName: N_tilde
 Width: 2048
 VWidth: 0
@@ -1908,7 +1909,7 @@ Refer: 65 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: O
-Encoding: 79 79 69
+Encoding: 69 79 69
 GlifName: O_
 Width: 2048
 VWidth: 0
@@ -1943,7 +1944,7 @@ EndSplineSet
 EndChar
 
 StartChar: OE
-Encoding: 338 338 70
+Encoding: 70 338 70
 GlifName: O_E_
 Width: 2048
 VWidth: 0
@@ -1983,7 +1984,7 @@ EndSplineSet
 EndChar
 
 StartChar: Oacute
-Encoding: 211 211 71
+Encoding: 71 211 71
 GlifName: O_acute
 Width: 2048
 VWidth: 0
@@ -1996,7 +1997,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Obreve
-Encoding: 334 334 72
+Encoding: 72 334 72
 GlifName: O_breve
 Width: 2048
 VWidth: 0
@@ -2025,7 +2026,7 @@ sass."
 EndChar
 
 StartChar: Ocircumflex
-Encoding: 212 212 73
+Encoding: 73 212 73
 GlifName: O_circumflex
 Width: 2048
 VWidth: 0
@@ -2038,7 +2039,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Odieresis
-Encoding: 214 214 74
+Encoding: 74 214 74
 GlifName: O_dieresis
 Width: 2048
 VWidth: 0
@@ -2067,7 +2068,7 @@ sass."
 EndChar
 
 StartChar: Ograve
-Encoding: 210 210 75
+Encoding: 75 210 75
 GlifName: O_grave
 Width: 2048
 VWidth: 0
@@ -2080,7 +2081,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ohorn
-Encoding: 416 416 76
+Encoding: 76 416 76
 GlifName: O_horn
 Width: 2048
 VWidth: 0
@@ -2095,7 +2096,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ohungarumlaut
-Encoding: 336 336 77
+Encoding: 77 336 77
 GlifName: O_hungarumlaut
 Width: 2048
 VWidth: 0
@@ -2108,7 +2109,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Omacron
-Encoding: 332 332 78
+Encoding: 78 332 78
 GlifName: O_macron
 Width: 2048
 VWidth: 0
@@ -2146,7 +2147,7 @@ sass."
 EndChar
 
 StartChar: Oslash
-Encoding: 216 216 79
+Encoding: 79 216 79
 GlifName: O_slash
 Width: 2048
 VWidth: 0
@@ -2186,7 +2187,7 @@ EndSplineSet
 EndChar
 
 StartChar: Oslashacute
-Encoding: 510 510 80
+Encoding: 80 510 80
 GlifName: O_slashacute
 Width: 2048
 VWidth: 0
@@ -2199,7 +2200,7 @@ Refer: 79 216 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Otilde
-Encoding: 213 213 81
+Encoding: 81 213 81
 GlifName: O_tilde
 Width: 2048
 VWidth: 0
@@ -2212,7 +2213,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: P
-Encoding: 80 80 82
+Encoding: 82 80 82
 GlifName: P_
 Width: 2048
 VWidth: 0
@@ -2247,7 +2248,7 @@ EndSplineSet
 EndChar
 
 StartChar: Q
-Encoding: 81 81 83
+Encoding: 83 81 83
 GlifName: Q_
 Width: 2048
 VWidth: 0
@@ -2287,7 +2288,7 @@ EndSplineSet
 EndChar
 
 StartChar: R
-Encoding: 82 82 84
+Encoding: 84 82 84
 GlifName: R_
 Width: 2048
 VWidth: 0
@@ -2327,7 +2328,7 @@ EndSplineSet
 EndChar
 
 StartChar: Racute
-Encoding: 340 340 85
+Encoding: 85 340 85
 GlifName: R_acute
 Width: 2048
 VWidth: 0
@@ -2340,7 +2341,7 @@ Refer: 84 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Rcaron
-Encoding: 344 344 86
+Encoding: 86 344 86
 GlifName: R_caron
 Width: 2048
 VWidth: 0
@@ -2353,7 +2354,7 @@ Refer: 84 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: S
-Encoding: 83 83 87
+Encoding: 87 83 87
 GlifName: S_
 Width: 2048
 VWidth: 0
@@ -2393,7 +2394,7 @@ EndSplineSet
 EndChar
 
 StartChar: Sacute
-Encoding: 346 346 88
+Encoding: 88 346 88
 GlifName: S_acute
 Width: 2048
 VWidth: 0
@@ -2406,7 +2407,7 @@ Refer: 87 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Scaron
-Encoding: 352 352 89
+Encoding: 89 352 89
 GlifName: S_caron
 Width: 2048
 VWidth: 0
@@ -2419,7 +2420,7 @@ Refer: 87 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Scedilla
-Encoding: 350 350 90
+Encoding: 90 350 90
 GlifName: S_cedilla
 Width: 2048
 VWidth: 0
@@ -2432,7 +2433,7 @@ Refer: 87 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Scircumflex
-Encoding: 348 348 91
+Encoding: 91 348 91
 GlifName: S_circumflex
 Width: 2048
 VWidth: 0
@@ -2445,7 +2446,7 @@ Refer: 87 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: T
-Encoding: 84 84 92
+Encoding: 92 84 92
 GlifName: T_
 Width: 2048
 VWidth: 0
@@ -2470,7 +2471,7 @@ EndSplineSet
 EndChar
 
 StartChar: Tcaron
-Encoding: 356 356 93
+Encoding: 93 356 93
 GlifName: T_caron
 Width: 2048
 VWidth: 0
@@ -2483,7 +2484,7 @@ Refer: 92 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Thorn
-Encoding: 222 222 94
+Encoding: 94 222 94
 GlifName: T_horn
 Width: 2048
 VWidth: 0
@@ -2516,7 +2517,7 @@ EndSplineSet
 EndChar
 
 StartChar: U
-Encoding: 85 85 95
+Encoding: 95 85 95
 GlifName: U_
 Width: 2048
 VWidth: 0
@@ -2546,7 +2547,7 @@ EndSplineSet
 EndChar
 
 StartChar: Uacute
-Encoding: 218 218 96
+Encoding: 96 218 96
 GlifName: U_acute
 Width: 2048
 VWidth: 0
@@ -2559,7 +2560,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ubreve
-Encoding: 364 364 97
+Encoding: 97 364 97
 GlifName: U_breve
 Width: 2048
 VWidth: 0
@@ -2588,7 +2589,7 @@ sass."
 EndChar
 
 StartChar: Ucircumflex
-Encoding: 219 219 98
+Encoding: 98 219 98
 GlifName: U_circumflex
 Width: 2048
 VWidth: 0
@@ -2601,7 +2602,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Udieresis
-Encoding: 220 220 99
+Encoding: 99 220 99
 GlifName: U_dieresis
 Width: 2048
 VWidth: 0
@@ -2630,7 +2631,7 @@ sass."
 EndChar
 
 StartChar: Ugrave
-Encoding: 217 217 100
+Encoding: 100 217 100
 GlifName: U_grave
 Width: 2048
 VWidth: 0
@@ -2643,7 +2644,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Uhorn
-Encoding: 431 431 101
+Encoding: 101 431 101
 GlifName: U_horn
 Width: 2048
 VWidth: 0
@@ -2658,7 +2659,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Uhungarumlaut
-Encoding: 368 368 102
+Encoding: 102 368 102
 GlifName: U_hungarumlaut
 Width: 2048
 VWidth: 0
@@ -2671,7 +2672,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Umacron
-Encoding: 362 362 103
+Encoding: 103 362 103
 GlifName: U_macron
 Width: 2048
 VWidth: 0
@@ -2709,7 +2710,7 @@ sass."
 EndChar
 
 StartChar: Uogonek
-Encoding: 370 370 104
+Encoding: 104 370 104
 GlifName: U_ogonek
 Width: 2048
 VWidth: 0
@@ -2747,7 +2748,7 @@ sass."
 EndChar
 
 StartChar: Uring
-Encoding: 366 366 105
+Encoding: 105 366 105
 GlifName: U_ring
 Width: 2048
 VWidth: 0
@@ -2785,7 +2786,7 @@ sass."
 EndChar
 
 StartChar: Utilde
-Encoding: 360 360 106
+Encoding: 106 360 106
 GlifName: U_tilde
 Width: 2048
 VWidth: 0
@@ -2798,7 +2799,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: V
-Encoding: 86 86 107
+Encoding: 107 86 107
 GlifName: V_
 Width: 2048
 VWidth: 0
@@ -2823,7 +2824,7 @@ EndSplineSet
 EndChar
 
 StartChar: W
-Encoding: 87 87 108
+Encoding: 108 87 108
 GlifName: W_
 Width: 2048
 VWidth: 0
@@ -2858,7 +2859,7 @@ EndSplineSet
 EndChar
 
 StartChar: Wacute
-Encoding: 7810 7810 109
+Encoding: 109 7810 109
 GlifName: W_acute
 Width: 2048
 VWidth: 0
@@ -2871,7 +2872,7 @@ Refer: 108 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Wcircumflex
-Encoding: 372 372 110
+Encoding: 110 372 110
 GlifName: W_circumflex
 Width: 2048
 VWidth: 0
@@ -2884,7 +2885,7 @@ Refer: 108 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Wdieresis
-Encoding: 7812 7812 111
+Encoding: 111 7812 111
 GlifName: W_dieresis
 Width: 2048
 VWidth: 0
@@ -2913,7 +2914,7 @@ sass."
 EndChar
 
 StartChar: Wgrave
-Encoding: 7808 7808 112
+Encoding: 112 7808 112
 GlifName: W_grave
 Width: 2048
 VWidth: 0
@@ -2926,7 +2927,7 @@ Refer: 108 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: X
-Encoding: 88 88 113
+Encoding: 113 88 113
 GlifName: X_
 Width: 2048
 VWidth: 0
@@ -2951,7 +2952,7 @@ EndSplineSet
 EndChar
 
 StartChar: Y
-Encoding: 89 89 114
+Encoding: 114 89 114
 GlifName: Y_
 Width: 2048
 VWidth: 0
@@ -2986,7 +2987,7 @@ EndSplineSet
 EndChar
 
 StartChar: Yacute
-Encoding: 221 221 115
+Encoding: 115 221 115
 GlifName: Y_acute
 Width: 2048
 VWidth: 0
@@ -2999,7 +3000,7 @@ Refer: 114 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ycircumflex
-Encoding: 374 374 116
+Encoding: 116 374 116
 GlifName: Y_circumflex
 Width: 2048
 VWidth: 0
@@ -3012,7 +3013,7 @@ Refer: 114 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Ydieresis
-Encoding: 376 376 117
+Encoding: 117 376 117
 GlifName: Y_dieresis
 Width: 2048
 VWidth: 0
@@ -3041,7 +3042,7 @@ sass."
 EndChar
 
 StartChar: Ygrave
-Encoding: 7922 7922 118
+Encoding: 118 7922 118
 GlifName: Y_grave
 Width: 2048
 VWidth: 0
@@ -3054,7 +3055,7 @@ Refer: 114 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Z
-Encoding: 90 90 119
+Encoding: 119 90 119
 GlifName: Z_
 Width: 2048
 VWidth: 0
@@ -3084,7 +3085,7 @@ EndSplineSet
 EndChar
 
 StartChar: Zacute
-Encoding: 377 377 120
+Encoding: 120 377 120
 GlifName: Z_acute
 Width: 2048
 VWidth: 0
@@ -3097,7 +3098,7 @@ Refer: 119 90 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Zcaron
-Encoding: 381 381 121
+Encoding: 121 381 121
 GlifName: Z_caron
 Width: 2048
 VWidth: 0
@@ -3110,7 +3111,7 @@ Refer: 119 90 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Zdotaccent
-Encoding: 379 379 122
+Encoding: 122 379 122
 GlifName: Z_dotaccent
 Width: 2048
 VWidth: 0
@@ -3148,7 +3149,7 @@ sass."
 EndChar
 
 StartChar: a
-Encoding: 97 97 123
+Encoding: 123 97 123
 GlifName: a
 Width: 2048
 VWidth: 0
@@ -3188,7 +3189,7 @@ EndSplineSet
 EndChar
 
 StartChar: aacute
-Encoding: 225 225 124
+Encoding: 124 225 124
 GlifName: aacute
 Width: 2048
 VWidth: 0
@@ -3201,7 +3202,7 @@ Refer: 123 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: abreve
-Encoding: 259 259 125
+Encoding: 125 259 125
 GlifName: abreve
 Width: 2048
 VWidth: 0
@@ -3230,7 +3231,7 @@ sass."
 EndChar
 
 StartChar: acircumflex
-Encoding: 226 226 126
+Encoding: 126 226 126
 GlifName: acircumflex
 Width: 2048
 VWidth: 0
@@ -3243,7 +3244,7 @@ Refer: 123 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: acute
-Encoding: 180 180 127
+Encoding: 127 180 127
 GlifName: acute
 Width: 2048
 VWidth: 0
@@ -3261,7 +3262,7 @@ EndSplineSet
 EndChar
 
 StartChar: acutecomb
-Encoding: 769 769 128
+Encoding: 128 769 128
 GlifName: acutecomb
 Width: 0
 VWidth: 0
@@ -3280,7 +3281,7 @@ EndSplineSet
 EndChar
 
 StartChar: adieresis
-Encoding: 228 228 129
+Encoding: 129 228 129
 GlifName: adieresis
 Width: 2048
 VWidth: 0
@@ -3309,7 +3310,7 @@ sass."
 EndChar
 
 StartChar: ae
-Encoding: 230 230 130
+Encoding: 130 230 130
 GlifName: ae
 Width: 2048
 VWidth: 0
@@ -3354,7 +3355,7 @@ EndSplineSet
 EndChar
 
 StartChar: aeacute
-Encoding: 509 509 131
+Encoding: 131 509 131
 GlifName: aeacute
 Width: 2048
 VWidth: 0
@@ -3367,7 +3368,7 @@ Refer: 130 230 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: agrave
-Encoding: 224 224 132
+Encoding: 132 224 132
 GlifName: agrave
 Width: 2048
 VWidth: 0
@@ -3380,7 +3381,7 @@ Refer: 123 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: amacron
-Encoding: 257 257 133
+Encoding: 133 257 133
 GlifName: amacron
 Width: 2048
 VWidth: 0
@@ -3418,7 +3419,7 @@ sass."
 EndChar
 
 StartChar: ampersand
-Encoding: 38 38 134
+Encoding: 134 38 134
 GlifName: ampersand
 Width: 2048
 VWidth: 0
@@ -3461,7 +3462,7 @@ EndSplineSet
 EndChar
 
 StartChar: aogonek
-Encoding: 261 261 135
+Encoding: 135 261 135
 GlifName: aogonek
 Width: 2048
 VWidth: 0
@@ -3499,7 +3500,7 @@ sass."
 EndChar
 
 StartChar: approxequal
-Encoding: 8776 8776 136
+Encoding: 136 8776 136
 GlifName: approxequal
 Width: 2048
 VWidth: 0
@@ -3542,7 +3543,7 @@ EndSplineSet
 EndChar
 
 StartChar: aring
-Encoding: 229 229 137
+Encoding: 137 229 137
 GlifName: aring
 Width: 2048
 VWidth: 0
@@ -3580,7 +3581,7 @@ sass."
 EndChar
 
 StartChar: aringacute
-Encoding: 507 507 138
+Encoding: 138 507 138
 GlifName: aringacute
 Width: 2048
 VWidth: 0
@@ -3618,7 +3619,7 @@ sass."
 EndChar
 
 StartChar: asciicircum
-Encoding: 94 94 139
+Encoding: 139 94 139
 GlifName: asciicircum
 Width: 2048
 VWidth: 0
@@ -3641,7 +3642,7 @@ EndSplineSet
 EndChar
 
 StartChar: asciitilde
-Encoding: 126 126 140
+Encoding: 140 126 140
 GlifName: asciitilde
 Width: 2048
 VWidth: 0
@@ -3669,7 +3670,7 @@ EndSplineSet
 EndChar
 
 StartChar: asterisk
-Encoding: 42 42 141
+Encoding: 141 42 141
 GlifName: asterisk
 Width: 2048
 VWidth: 0
@@ -3697,7 +3698,7 @@ EndSplineSet
 EndChar
 
 StartChar: at
-Encoding: 64 64 142
+Encoding: 142 64 142
 GlifName: at
 Width: 2048
 VWidth: 0
@@ -3755,7 +3756,7 @@ EndSplineSet
 EndChar
 
 StartChar: atilde
-Encoding: 227 227 143
+Encoding: 143 227 143
 GlifName: atilde
 Width: 2048
 VWidth: 0
@@ -3768,7 +3769,7 @@ Refer: 123 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: b
-Encoding: 98 98 144
+Encoding: 144 98 144
 GlifName: b
 Width: 2048
 VWidth: 0
@@ -3803,7 +3804,7 @@ EndSplineSet
 EndChar
 
 StartChar: backslash
-Encoding: 92 92 145
+Encoding: 145 92 145
 GlifName: backslash
 Width: 2048
 VWidth: 0
@@ -3821,7 +3822,7 @@ EndSplineSet
 EndChar
 
 StartChar: bar
-Encoding: 124 124 146
+Encoding: 146 124 146
 GlifName: bar
 Width: 2048
 VWidth: 0
@@ -3839,7 +3840,7 @@ EndSplineSet
 EndChar
 
 StartChar: braceleft
-Encoding: 123 123 147
+Encoding: 147 123 147
 GlifName: braceleft
 Width: 2048
 VWidth: 0
@@ -3882,7 +3883,7 @@ EndSplineSet
 EndChar
 
 StartChar: braceright
-Encoding: 125 125 148
+Encoding: 148 125 148
 GlifName: braceright
 Width: 2048
 VWidth: 0
@@ -3925,7 +3926,7 @@ EndSplineSet
 EndChar
 
 StartChar: bracketleft
-Encoding: 91 91 149
+Encoding: 149 91 149
 GlifName: bracketleft
 Width: 2048
 VWidth: 0
@@ -3953,7 +3954,7 @@ EndSplineSet
 EndChar
 
 StartChar: bracketright
-Encoding: 93 93 150
+Encoding: 150 93 150
 GlifName: bracketright
 Width: 2048
 VWidth: 0
@@ -3981,7 +3982,7 @@ EndSplineSet
 EndChar
 
 StartChar: breve
-Encoding: 728 728 151
+Encoding: 151 728 151
 GlifName: breve
 Width: 2048
 VWidth: 0
@@ -4025,7 +4026,7 @@ sass."
 EndChar
 
 StartChar: brokenbar
-Encoding: 166 166 152
+Encoding: 152 166 152
 GlifName: brokenbar
 Width: 2048
 VWidth: 0
@@ -4048,7 +4049,7 @@ EndSplineSet
 EndChar
 
 StartChar: bullet
-Encoding: 8226 8226 153
+Encoding: 153 8226 153
 GlifName: bullet
 Width: 2048
 VWidth: 0
@@ -4066,7 +4067,7 @@ EndSplineSet
 EndChar
 
 StartChar: c
-Encoding: 99 99 154
+Encoding: 154 99 154
 GlifName: c
 Width: 2048
 VWidth: 0
@@ -4096,7 +4097,7 @@ EndSplineSet
 EndChar
 
 StartChar: cacute
-Encoding: 263 263 155
+Encoding: 155 263 155
 GlifName: cacute
 Width: 2048
 VWidth: 0
@@ -4109,7 +4110,7 @@ Refer: 154 99 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: caron
-Encoding: 711 711 156
+Encoding: 156 711 156
 GlifName: caron
 Width: 2048
 VWidth: 0
@@ -4132,7 +4133,7 @@ EndSplineSet
 EndChar
 
 StartChar: ccaron
-Encoding: 269 269 157
+Encoding: 157 269 157
 GlifName: ccaron
 Width: 2048
 VWidth: 0
@@ -4145,7 +4146,7 @@ Refer: 154 99 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ccedilla
-Encoding: 231 231 158
+Encoding: 158 231 158
 GlifName: ccedilla
 Width: 2048
 VWidth: 0
@@ -4158,7 +4159,7 @@ Refer: 154 99 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ccircumflex
-Encoding: 265 265 159
+Encoding: 159 265 159
 GlifName: ccircumflex
 Width: 2048
 VWidth: 0
@@ -4171,7 +4172,7 @@ Refer: 154 99 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: cdotaccent
-Encoding: 267 267 160
+Encoding: 160 267 160
 GlifName: cdotaccent
 Width: 2048
 VWidth: 0
@@ -4209,7 +4210,7 @@ sass."
 EndChar
 
 StartChar: cedilla
-Encoding: 184 184 161
+Encoding: 161 184 161
 GlifName: cedilla
 Width: 2048
 VWidth: 0
@@ -4275,7 +4276,7 @@ EndSplineSet
 EndChar
 
 StartChar: circumflex
-Encoding: 710 710 163
+Encoding: 163 710 163
 GlifName: circumflex
 Width: 2048
 VWidth: 0
@@ -4298,7 +4299,7 @@ EndSplineSet
 EndChar
 
 StartChar: colon
-Encoding: 58 58 164
+Encoding: 164 58 164
 GlifName: colon
 Width: 2048
 VWidth: 0
@@ -4321,7 +4322,7 @@ EndSplineSet
 EndChar
 
 StartChar: colonmonetary
-Encoding: 8353 8353 165
+Encoding: 165 8353 165
 GlifName: colonmonetary
 Width: 2048
 VWidth: 0
@@ -4359,7 +4360,7 @@ EndSplineSet
 EndChar
 
 StartChar: comma
-Encoding: 44 44 166
+Encoding: 166 44 166
 GlifName: comma
 Width: 2048
 VWidth: 0
@@ -4382,7 +4383,7 @@ EndSplineSet
 EndChar
 
 StartChar: copyright
-Encoding: 169 169 167
+Encoding: 167 169 167
 GlifName: copyright
 Width: 2048
 VWidth: 0
@@ -4430,7 +4431,7 @@ EndSplineSet
 EndChar
 
 StartChar: currency
-Encoding: 164 164 168
+Encoding: 168 164 168
 GlifName: currency
 Width: 2048
 VWidth: 0
@@ -4483,7 +4484,7 @@ EndSplineSet
 EndChar
 
 StartChar: d
-Encoding: 100 100 169
+Encoding: 169 100 169
 GlifName: d
 Width: 2048
 VWidth: 0
@@ -4518,7 +4519,7 @@ EndSplineSet
 EndChar
 
 StartChar: dagger
-Encoding: 8224 8224 170
+Encoding: 170 8224 170
 GlifName: dagger
 Width: 2048
 VWidth: 0
@@ -4541,7 +4542,7 @@ EndSplineSet
 EndChar
 
 StartChar: daggerdbl
-Encoding: 8225 8225 171
+Encoding: 171 8225 171
 GlifName: daggerdbl
 Width: 2048
 VWidth: 0
@@ -4569,7 +4570,7 @@ EndSplineSet
 EndChar
 
 StartChar: dcaron
-Encoding: 271 271 172
+Encoding: 172 271 172
 GlifName: dcaron
 Width: 2048
 VWidth: 0
@@ -4607,7 +4608,7 @@ EndSplineSet
 EndChar
 
 StartChar: dcroat
-Encoding: 273 273 173
+Encoding: 173 273 173
 GlifName: dcroat
 Width: 2048
 VWidth: 0
@@ -4647,7 +4648,7 @@ EndSplineSet
 EndChar
 
 StartChar: degree
-Encoding: 176 176 174
+Encoding: 174 176 174
 GlifName: degree
 Width: 2048
 VWidth: 0
@@ -4670,7 +4671,7 @@ EndSplineSet
 EndChar
 
 StartChar: dieresis
-Encoding: 168 168 175
+Encoding: 175 168 175
 GlifName: dieresis
 Width: 2048
 VWidth: 0
@@ -4709,7 +4710,7 @@ sass."
 EndChar
 
 StartChar: divide
-Encoding: 247 247 176
+Encoding: 176 247 176
 GlifName: divide
 Width: 2048
 VWidth: 0
@@ -4737,7 +4738,7 @@ EndSplineSet
 EndChar
 
 StartChar: dollar
-Encoding: 36 36 177
+Encoding: 177 36 177
 GlifName: dollar
 Width: 2048
 VWidth: 0
@@ -4780,7 +4781,7 @@ EndSplineSet
 EndChar
 
 StartChar: dong
-Encoding: 8363 8363 178
+Encoding: 178 8363 178
 GlifName: dong
 Width: 2048
 VWidth: 0
@@ -4823,7 +4824,7 @@ EndSplineSet
 EndChar
 
 StartChar: dotaccent
-Encoding: 729 729 179
+Encoding: 179 729 179
 GlifName: dotaccent
 Width: 2048
 VWidth: 0
@@ -4866,7 +4867,7 @@ sass."
 EndChar
 
 StartChar: dotbelowcomb
-Encoding: 803 803 180
+Encoding: 180 803 180
 GlifName: dotbelowcomb
 Width: 0
 VWidth: 0
@@ -4910,7 +4911,7 @@ sass."
 EndChar
 
 StartChar: dotlessi
-Encoding: 305 305 181
+Encoding: 181 305 181
 GlifName: dotlessi
 Width: 2048
 VWidth: 0
@@ -4940,7 +4941,7 @@ EndSplineSet
 EndChar
 
 StartChar: e
-Encoding: 101 101 182
+Encoding: 182 101 182
 GlifName: e
 Width: 2048
 VWidth: 0
@@ -4980,7 +4981,7 @@ EndSplineSet
 EndChar
 
 StartChar: eacute
-Encoding: 233 233 183
+Encoding: 183 233 183
 GlifName: eacute
 Width: 2048
 VWidth: 0
@@ -4993,7 +4994,7 @@ Refer: 182 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ebreve
-Encoding: 277 277 184
+Encoding: 184 277 184
 GlifName: ebreve
 Width: 2048
 VWidth: 0
@@ -5022,7 +5023,7 @@ sass."
 EndChar
 
 StartChar: ecaron
-Encoding: 283 283 185
+Encoding: 185 283 185
 GlifName: ecaron
 Width: 2048
 VWidth: 0
@@ -5035,7 +5036,7 @@ Refer: 182 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ecircumflex
-Encoding: 234 234 186
+Encoding: 186 234 186
 GlifName: ecircumflex
 Width: 2048
 VWidth: 0
@@ -5048,7 +5049,7 @@ Refer: 182 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: edieresis
-Encoding: 235 235 187
+Encoding: 187 235 187
 GlifName: edieresis
 Width: 2048
 VWidth: 0
@@ -5077,7 +5078,7 @@ sass."
 EndChar
 
 StartChar: edotaccent
-Encoding: 279 279 188
+Encoding: 188 279 188
 GlifName: edotaccent
 Width: 2048
 VWidth: 0
@@ -5115,7 +5116,7 @@ sass."
 EndChar
 
 StartChar: egrave
-Encoding: 232 232 189
+Encoding: 189 232 189
 GlifName: egrave
 Width: 2048
 VWidth: 0
@@ -5128,7 +5129,7 @@ Refer: 182 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: eight
-Encoding: 56 56 190
+Encoding: 190 56 190
 GlifName: eight
 Width: 2048
 VWidth: 0
@@ -5156,7 +5157,7 @@ EndSplineSet
 EndChar
 
 StartChar: ellipsis
-Encoding: 8230 8230 191
+Encoding: 191 8230 191
 GlifName: ellipsis
 Width: 2048
 VWidth: 0
@@ -5184,7 +5185,7 @@ EndSplineSet
 EndChar
 
 StartChar: emacron
-Encoding: 275 275 192
+Encoding: 192 275 192
 GlifName: emacron
 Width: 2048
 VWidth: 0
@@ -5222,7 +5223,7 @@ sass."
 EndChar
 
 StartChar: emdash
-Encoding: 8212 8212 193
+Encoding: 193 8212 193
 GlifName: emdash
 Width: 2048
 VWidth: 0
@@ -5240,7 +5241,7 @@ EndSplineSet
 EndChar
 
 StartChar: endash
-Encoding: 8211 8211 194
+Encoding: 194 8211 194
 GlifName: endash
 Width: 2048
 VWidth: 0
@@ -5258,7 +5259,7 @@ EndSplineSet
 EndChar
 
 StartChar: eng
-Encoding: 331 331 195
+Encoding: 195 331 195
 GlifName: eng
 Width: 2048
 VWidth: 0
@@ -5293,7 +5294,7 @@ EndSplineSet
 EndChar
 
 StartChar: eogonek
-Encoding: 281 281 196
+Encoding: 196 281 196
 GlifName: eogonek
 Width: 2048
 VWidth: 0
@@ -5331,7 +5332,7 @@ sass."
 EndChar
 
 StartChar: equal
-Encoding: 61 61 197
+Encoding: 197 61 197
 GlifName: equal
 Width: 2048
 VWidth: 0
@@ -5354,7 +5355,7 @@ EndSplineSet
 EndChar
 
 StartChar: eth
-Encoding: 240 240 198
+Encoding: 198 240 198
 GlifName: eth
 Width: 2048
 VWidth: 0
@@ -5394,7 +5395,7 @@ EndSplineSet
 EndChar
 
 StartChar: exclam
-Encoding: 33 33 199
+Encoding: 199 33 199
 GlifName: exclam
 Width: 2048
 VWidth: 0
@@ -5417,7 +5418,7 @@ EndSplineSet
 EndChar
 
 StartChar: exclamdown
-Encoding: 161 161 200
+Encoding: 200 161 200
 GlifName: exclamdown
 Width: 2048
 VWidth: 0
@@ -5440,7 +5441,7 @@ EndSplineSet
 EndChar
 
 StartChar: f
-Encoding: 102 102 201
+Encoding: 201 102 201
 GlifName: f
 Width: 2048
 VWidth: 0
@@ -5470,7 +5471,7 @@ EndSplineSet
 EndChar
 
 StartChar: five
-Encoding: 53 53 202
+Encoding: 202 53 202
 GlifName: five
 Width: 2048
 VWidth: 0
@@ -5496,7 +5497,7 @@ EndSplineSet
 EndChar
 
 StartChar: four
-Encoding: 52 52 203
+Encoding: 203 52 203
 GlifName: four
 Width: 2048
 VWidth: 0
@@ -5520,7 +5521,7 @@ EndSplineSet
 EndChar
 
 StartChar: franc
-Encoding: 8355 8355 204
+Encoding: 204 8355 204
 GlifName: franc
 Width: 2048
 VWidth: 0
@@ -5553,7 +5554,7 @@ EndSplineSet
 EndChar
 
 StartChar: g
-Encoding: 103 103 205
+Encoding: 205 103 205
 GlifName: g
 Width: 2048
 VWidth: 0
@@ -5593,7 +5594,7 @@ EndSplineSet
 EndChar
 
 StartChar: gbreve
-Encoding: 287 287 206
+Encoding: 206 287 206
 GlifName: gbreve
 Width: 2048
 VWidth: 0
@@ -5622,7 +5623,7 @@ sass."
 EndChar
 
 StartChar: gcircumflex
-Encoding: 285 285 207
+Encoding: 207 285 207
 GlifName: gcircumflex
 Width: 2048
 VWidth: 0
@@ -5635,7 +5636,7 @@ Refer: 205 103 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: gdotaccent
-Encoding: 289 289 208
+Encoding: 208 289 208
 GlifName: gdotaccent
 Width: 2048
 VWidth: 0
@@ -5673,7 +5674,7 @@ sass."
 EndChar
 
 StartChar: germandbls
-Encoding: 223 223 209
+Encoding: 209 223 209
 GlifName: germandbls
 Width: 2048
 VWidth: 0
@@ -5721,7 +5722,7 @@ EndSplineSet
 EndChar
 
 StartChar: grave
-Encoding: 96 96 210
+Encoding: 210 96 210
 GlifName: grave
 Width: 2048
 VWidth: 0
@@ -5739,7 +5740,7 @@ EndSplineSet
 EndChar
 
 StartChar: gravecomb
-Encoding: 768 768 211
+Encoding: 211 768 211
 GlifName: gravecomb
 Width: 0
 VWidth: 0
@@ -5758,7 +5759,7 @@ EndSplineSet
 EndChar
 
 StartChar: greater
-Encoding: 62 62 212
+Encoding: 212 62 212
 GlifName: greater
 Width: 2048
 VWidth: 0
@@ -5781,7 +5782,7 @@ EndSplineSet
 EndChar
 
 StartChar: greaterequal
-Encoding: 8805 8805 213
+Encoding: 213 8805 213
 GlifName: greaterequal
 Width: 2048
 VWidth: 0
@@ -5825,7 +5826,7 @@ sass."
 EndChar
 
 StartChar: guillemotleft
-Encoding: 171 171 214
+Encoding: 214 171 214
 GlifName: guillemotleft
 Width: 2048
 VWidth: 0
@@ -5858,7 +5859,7 @@ EndSplineSet
 EndChar
 
 StartChar: guillemotright
-Encoding: 187 187 215
+Encoding: 215 187 215
 GlifName: guillemotright
 Width: 2048
 VWidth: 0
@@ -5891,7 +5892,7 @@ EndSplineSet
 EndChar
 
 StartChar: guilsinglleft
-Encoding: 8249 8249 216
+Encoding: 216 8249 216
 GlifName: guilsinglleft
 Width: 2048
 VWidth: 0
@@ -5914,7 +5915,7 @@ EndSplineSet
 EndChar
 
 StartChar: guilsinglright
-Encoding: 8250 8250 217
+Encoding: 217 8250 217
 GlifName: guilsinglright
 Width: 2048
 VWidth: 0
@@ -5937,7 +5938,7 @@ EndSplineSet
 EndChar
 
 StartChar: h
-Encoding: 104 104 218
+Encoding: 218 104 218
 GlifName: h
 Width: 2048
 VWidth: 0
@@ -5967,7 +5968,7 @@ EndSplineSet
 EndChar
 
 StartChar: hbar
-Encoding: 295 295 219
+Encoding: 219 295 219
 GlifName: hbar
 Width: 2048
 VWidth: 0
@@ -6000,7 +6001,7 @@ EndSplineSet
 EndChar
 
 StartChar: hcircumflex
-Encoding: 293 293 220
+Encoding: 220 293 220
 GlifName: hcircumflex
 Width: 2048
 VWidth: 0
@@ -6013,7 +6014,7 @@ Refer: 218 104 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: hookabovecomb
-Encoding: 777 777 221
+Encoding: 221 777 221
 GlifName: hookabovecomb
 Width: 0
 VWidth: 0
@@ -6072,7 +6073,7 @@ sass."
 EndChar
 
 StartChar: hungarumlaut
-Encoding: 733 733 222
+Encoding: 222 733 222
 GlifName: hungarumlaut
 Width: 2048
 VWidth: 0
@@ -6111,7 +6112,7 @@ sass."
 EndChar
 
 StartChar: hyphen
-Encoding: 45 45 223
+Encoding: 223 45 223
 GlifName: hyphen
 Width: 2048
 VWidth: 0
@@ -6129,7 +6130,7 @@ EndSplineSet
 EndChar
 
 StartChar: i
-Encoding: 105 105 224
+Encoding: 224 105 224
 GlifName: i
 Width: 2048
 VWidth: 0
@@ -6164,7 +6165,7 @@ EndSplineSet
 EndChar
 
 StartChar: i_uni030A
-Encoding: 65536 -1 225
+Encoding: 225 -1 225
 GlifName: i_uni030A_
 Width: 2048
 VWidth: 0
@@ -6178,7 +6179,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030A
 EndChar
 
 StartChar: i_uni030B
-Encoding: 65537 -1 226
+Encoding: 226 -1 226
 GlifName: i_uni030B_
 Width: 2048
 VWidth: 0
@@ -6192,7 +6193,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030B
 EndChar
 
 StartChar: iacute
-Encoding: 237 237 227
+Encoding: 227 237 227
 GlifName: iacute
 Width: 2048
 VWidth: 0
@@ -6205,7 +6206,7 @@ Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ibreve
-Encoding: 301 301 228
+Encoding: 228 301 228
 GlifName: ibreve
 Width: 2048
 VWidth: 0
@@ -6234,7 +6235,7 @@ sass."
 EndChar
 
 StartChar: icircumflex
-Encoding: 238 238 229
+Encoding: 229 238 229
 GlifName: icircumflex
 Width: 2048
 VWidth: 0
@@ -6247,7 +6248,7 @@ Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: idieresis
-Encoding: 239 239 230
+Encoding: 230 239 230
 GlifName: idieresis
 Width: 2048
 VWidth: 0
@@ -6276,7 +6277,7 @@ sass."
 EndChar
 
 StartChar: igrave
-Encoding: 236 236 231
+Encoding: 231 236 231
 GlifName: igrave
 Width: 2048
 VWidth: 0
@@ -6289,7 +6290,7 @@ Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ij
-Encoding: 307 307 232
+Encoding: 232 307 232
 GlifName: ij
 Width: 2048
 VWidth: 0
@@ -6302,7 +6303,7 @@ Refer: 236 106 N 0.5 0 0 1 1034 0 2
 EndChar
 
 StartChar: imacron
-Encoding: 299 299 233
+Encoding: 233 299 233
 GlifName: imacron
 Width: 2048
 VWidth: 0
@@ -6340,7 +6341,7 @@ sass."
 EndChar
 
 StartChar: iogonek
-Encoding: 303 303 234
+Encoding: 234 303 234
 GlifName: iogonek
 Width: 2048
 VWidth: 0
@@ -6378,7 +6379,7 @@ sass."
 EndChar
 
 StartChar: itilde
-Encoding: 297 297 235
+Encoding: 235 297 235
 GlifName: itilde
 Width: 2048
 VWidth: 0
@@ -6391,7 +6392,7 @@ Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: j
-Encoding: 106 106 236
+Encoding: 236 106 236
 GlifName: j
 Width: 2048
 VWidth: 0
@@ -6426,7 +6427,7 @@ EndSplineSet
 EndChar
 
 StartChar: j_gravecomb
-Encoding: 65538 -1 237
+Encoding: 237 -1 237
 GlifName: j_gravecomb
 Width: 2048
 VWidth: 0
@@ -6440,7 +6441,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j gravecomb
 EndChar
 
 StartChar: j_uni0303
-Encoding: 65539 -1 238
+Encoding: 238 -1 238
 GlifName: j_uni0303
 Width: 2048
 VWidth: 0
@@ -6454,7 +6455,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j tildecomb
 EndChar
 
 StartChar: j_uni0304
-Encoding: 65540 -1 239
+Encoding: 239 -1 239
 GlifName: j_uni0304
 Width: 2048
 VWidth: 0
@@ -6468,7 +6469,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0304
 EndChar
 
 StartChar: j_uni0308
-Encoding: 65541 -1 240
+Encoding: 240 -1 240
 GlifName: j_uni0308
 Width: 2048
 VWidth: 0
@@ -6482,7 +6483,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0308
 EndChar
 
 StartChar: j_uni0311
-Encoding: 65542 -1 241
+Encoding: 241 -1 241
 GlifName: j_uni0311
 Width: 2048
 VWidth: 0
@@ -6496,7 +6497,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0311
 EndChar
 
 StartChar: jacute
-Encoding: 57596 57596 242
+Encoding: 242 57596 242
 GlifName: jacute
 Width: 2048
 VWidth: 0
@@ -6510,7 +6511,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j acutecomb
 EndChar
 
 StartChar: jcircumflex
-Encoding: 309 309 243
+Encoding: 243 309 243
 GlifName: jcircumflex
 Width: 2048
 VWidth: 0
@@ -6523,7 +6524,7 @@ Refer: 426 567 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: k
-Encoding: 107 107 244
+Encoding: 244 107 244
 GlifName: k
 Width: 2048
 VWidth: 0
@@ -6553,7 +6554,7 @@ EndSplineSet
 EndChar
 
 StartChar: kgreenlandic
-Encoding: 312 312 245
+Encoding: 245 312 245
 GlifName: kgreenlandic
 Width: 2048
 VWidth: 0
@@ -6583,7 +6584,7 @@ EndSplineSet
 EndChar
 
 StartChar: l
-Encoding: 108 108 246
+Encoding: 246 108 246
 GlifName: l
 Width: 2048
 VWidth: 0
@@ -6613,7 +6614,7 @@ EndSplineSet
 EndChar
 
 StartChar: lacute
-Encoding: 314 314 247
+Encoding: 247 314 247
 GlifName: lacute
 Width: 2048
 VWidth: 0
@@ -6626,7 +6627,7 @@ Refer: 246 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: lcaron
-Encoding: 318 318 248
+Encoding: 248 318 248
 GlifName: lcaron
 Width: 2048
 VWidth: 0
@@ -6659,7 +6660,7 @@ EndSplineSet
 EndChar
 
 StartChar: ldot
-Encoding: 320 320 249
+Encoding: 249 320 249
 GlifName: ldot
 Width: 2048
 VWidth: 0
@@ -6672,7 +6673,7 @@ Refer: 246 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: less
-Encoding: 60 60 250
+Encoding: 250 60 250
 GlifName: less
 Width: 2048
 VWidth: 0
@@ -6695,7 +6696,7 @@ EndSplineSet
 EndChar
 
 StartChar: lessequal
-Encoding: 8804 8804 251
+Encoding: 251 8804 251
 GlifName: lessequal
 Width: 2048
 VWidth: 0
@@ -6739,7 +6740,7 @@ sass."
 EndChar
 
 StartChar: lira
-Encoding: 8356 8356 252
+Encoding: 252 8356 252
 GlifName: lira
 Width: 2048
 VWidth: 0
@@ -6777,7 +6778,7 @@ EndSplineSet
 EndChar
 
 StartChar: logicalnot
-Encoding: 172 172 253
+Encoding: 253 172 253
 GlifName: logicalnot
 Width: 2048
 VWidth: 0
@@ -6800,7 +6801,7 @@ EndSplineSet
 EndChar
 
 StartChar: lslash
-Encoding: 322 322 254
+Encoding: 254 322 254
 GlifName: lslash
 Width: 2048
 VWidth: 0
@@ -6833,7 +6834,7 @@ EndSplineSet
 EndChar
 
 StartChar: m
-Encoding: 109 109 255
+Encoding: 255 109 255
 GlifName: m
 Width: 2048
 VWidth: 0
@@ -6868,7 +6869,7 @@ EndSplineSet
 EndChar
 
 StartChar: macron
-Encoding: 175 175 256
+Encoding: 256 175 256
 GlifName: macron
 Width: 2048
 VWidth: 0
@@ -6911,7 +6912,7 @@ sass."
 EndChar
 
 StartChar: minus
-Encoding: 8722 8722 257
+Encoding: 257 8722 257
 GlifName: minus
 Width: 2048
 VWidth: 0
@@ -6923,7 +6924,7 @@ Refer: 223 45 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: minute
-Encoding: 8242 8242 258
+Encoding: 258 8242 258
 GlifName: minute
 Width: 2048
 VWidth: 0
@@ -6935,7 +6936,7 @@ Refer: 308 39 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: mu
-Encoding: 181 181 259
+Encoding: 259 181 259
 GlifName: mu
 Width: 2048
 VWidth: 0
@@ -6963,7 +6964,7 @@ EndSplineSet
 EndChar
 
 StartChar: multiply
-Encoding: 215 215 260
+Encoding: 260 215 260
 GlifName: multiply
 Width: 2048
 VWidth: 0
@@ -6986,7 +6987,7 @@ EndSplineSet
 EndChar
 
 StartChar: n
-Encoding: 110 110 261
+Encoding: 261 110 261
 GlifName: n
 Width: 2048
 VWidth: 0
@@ -7016,7 +7017,7 @@ EndSplineSet
 EndChar
 
 StartChar: nacute
-Encoding: 324 324 262
+Encoding: 262 324 262
 GlifName: nacute
 Width: 2048
 VWidth: 0
@@ -7029,7 +7030,7 @@ Refer: 261 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ncaron
-Encoding: 328 328 263
+Encoding: 263 328 263
 GlifName: ncaron
 Width: 2048
 VWidth: 0
@@ -7042,7 +7043,7 @@ Refer: 261 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: nine
-Encoding: 57 57 264
+Encoding: 264 57 264
 GlifName: nine
 Width: 2048
 VWidth: 0
@@ -7070,7 +7071,7 @@ EndSplineSet
 EndChar
 
 StartChar: notequal
-Encoding: 8800 8800 265
+Encoding: 265 8800 265
 GlifName: notequal
 Width: 2048
 VWidth: 0
@@ -7098,7 +7099,7 @@ EndSplineSet
 EndChar
 
 StartChar: ntilde
-Encoding: 241 241 266
+Encoding: 266 241 266
 GlifName: ntilde
 Width: 2048
 VWidth: 0
@@ -7111,7 +7112,7 @@ Refer: 261 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: numbersign
-Encoding: 35 35 267
+Encoding: 267 35 267
 GlifName: numbersign
 Width: 2048
 VWidth: 0
@@ -7144,7 +7145,7 @@ EndSplineSet
 EndChar
 
 StartChar: o
-Encoding: 111 111 268
+Encoding: 268 111 268
 GlifName: o
 Width: 2048
 VWidth: 0
@@ -7179,7 +7180,7 @@ EndSplineSet
 EndChar
 
 StartChar: oacute
-Encoding: 243 243 269
+Encoding: 269 243 269
 GlifName: oacute
 Width: 2048
 VWidth: 0
@@ -7192,7 +7193,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: obreve
-Encoding: 335 335 270
+Encoding: 270 335 270
 GlifName: obreve
 Width: 2048
 VWidth: 0
@@ -7221,7 +7222,7 @@ sass."
 EndChar
 
 StartChar: ocircumflex
-Encoding: 244 244 271
+Encoding: 271 244 271
 GlifName: ocircumflex
 Width: 2048
 VWidth: 0
@@ -7234,7 +7235,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: odieresis
-Encoding: 246 246 272
+Encoding: 272 246 272
 GlifName: odieresis
 Width: 2048
 VWidth: 0
@@ -7263,7 +7264,7 @@ sass."
 EndChar
 
 StartChar: oe
-Encoding: 339 339 273
+Encoding: 273 339 273
 GlifName: oe
 Width: 2048
 VWidth: 0
@@ -7308,7 +7309,7 @@ EndSplineSet
 EndChar
 
 StartChar: ogonek
-Encoding: 731 731 274
+Encoding: 274 731 274
 GlifName: ogonek
 Width: 2048
 VWidth: 0
@@ -7361,7 +7362,7 @@ sass."
 EndChar
 
 StartChar: ograve
-Encoding: 242 242 275
+Encoding: 275 242 275
 GlifName: ograve
 Width: 2048
 VWidth: 0
@@ -7374,7 +7375,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ohorn
-Encoding: 417 417 276
+Encoding: 276 417 276
 GlifName: ohorn
 Width: 2048
 VWidth: 0
@@ -7389,7 +7390,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ohungarumlaut
-Encoding: 337 337 277
+Encoding: 277 337 277
 GlifName: ohungarumlaut
 Width: 2048
 VWidth: 0
@@ -7402,7 +7403,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: omacron
-Encoding: 333 333 278
+Encoding: 278 333 278
 GlifName: omacron
 Width: 2048
 VWidth: 0
@@ -7440,7 +7441,7 @@ sass."
 EndChar
 
 StartChar: one
-Encoding: 49 49 279
+Encoding: 279 49 279
 GlifName: one
 Width: 2048
 VWidth: 0
@@ -7463,7 +7464,7 @@ EndSplineSet
 EndChar
 
 StartChar: onehalf
-Encoding: 189 189 280
+Encoding: 280 189 280
 GlifName: onehalf
 Width: 2048
 VWidth: 0
@@ -7504,7 +7505,7 @@ EndSplineSet
 EndChar
 
 StartChar: onequarter
-Encoding: 188 188 281
+Encoding: 281 188 281
 GlifName: onequarter
 Width: 2048
 VWidth: 0
@@ -7543,7 +7544,7 @@ EndSplineSet
 EndChar
 
 StartChar: ordfeminine
-Encoding: 170 170 282
+Encoding: 282 170 282
 GlifName: ordfeminine
 Width: 2048
 VWidth: 0
@@ -7586,7 +7587,7 @@ EndSplineSet
 EndChar
 
 StartChar: ordmasculine
-Encoding: 186 186 283
+Encoding: 283 186 283
 GlifName: ordmasculine
 Width: 2048
 VWidth: 0
@@ -7624,7 +7625,7 @@ EndSplineSet
 EndChar
 
 StartChar: oslash
-Encoding: 248 248 284
+Encoding: 284 248 284
 GlifName: oslash
 Width: 2048
 VWidth: 0
@@ -7664,7 +7665,7 @@ EndSplineSet
 EndChar
 
 StartChar: oslashacute
-Encoding: 511 511 285
+Encoding: 285 511 285
 GlifName: oslashacute
 Width: 2048
 VWidth: 0
@@ -7677,7 +7678,7 @@ Refer: 284 248 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: otilde
-Encoding: 245 245 286
+Encoding: 286 245 286
 GlifName: otilde
 Width: 2048
 VWidth: 0
@@ -7690,7 +7691,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: p
-Encoding: 112 112 287
+Encoding: 287 112 287
 GlifName: p
 Width: 2048
 VWidth: 0
@@ -7725,7 +7726,7 @@ EndSplineSet
 EndChar
 
 StartChar: paragraph
-Encoding: 182 182 288
+Encoding: 288 182 288
 GlifName: paragraph
 Width: 2048
 VWidth: 0
@@ -7763,7 +7764,7 @@ EndSplineSet
 EndChar
 
 StartChar: parenleft
-Encoding: 40 40 289
+Encoding: 289 40 289
 GlifName: parenleft
 Width: 2048
 VWidth: 0
@@ -7791,7 +7792,7 @@ EndSplineSet
 EndChar
 
 StartChar: parenright
-Encoding: 41 41 290
+Encoding: 290 41 290
 GlifName: parenright
 Width: 2048
 VWidth: 0
@@ -7819,7 +7820,7 @@ EndSplineSet
 EndChar
 
 StartChar: percent
-Encoding: 37 37 291
+Encoding: 291 37 291
 GlifName: percent
 Width: 2048
 VWidth: 0
@@ -7877,7 +7878,7 @@ EndSplineSet
 EndChar
 
 StartChar: period
-Encoding: 46 46 292
+Encoding: 292 46 292
 GlifName: period
 Width: 2048
 VWidth: 0
@@ -7895,7 +7896,7 @@ EndSplineSet
 EndChar
 
 StartChar: periodcentered
-Encoding: 183 183 293
+Encoding: 293 183 293
 GlifName: periodcentered
 Width: 2048
 VWidth: 0
@@ -7913,7 +7914,7 @@ EndSplineSet
 EndChar
 
 StartChar: perthousand
-Encoding: 8240 8240 294
+Encoding: 294 8240 294
 GlifName: perthousand
 Width: 2048
 VWidth: 0
@@ -7991,12 +7992,12 @@ EndSplineSet
 EndChar
 
 StartChar: peseta
-Encoding: 8359 8359 295
+Encoding: 295 8359 295
 GlifName: peseta
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HWO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -8064,7 +8065,7 @@ EndSplineSet
 EndChar
 
 StartChar: plus
-Encoding: 43 43 296
+Encoding: 296 43 296
 GlifName: plus
 Width: 2048
 VWidth: 0
@@ -8087,7 +8088,7 @@ EndSplineSet
 EndChar
 
 StartChar: plusminus
-Encoding: 177 177 297
+Encoding: 297 177 297
 GlifName: plusminus
 Width: 2048
 VWidth: 0
@@ -8115,7 +8116,7 @@ EndSplineSet
 EndChar
 
 StartChar: q
-Encoding: 113 113 298
+Encoding: 298 113 298
 GlifName: q
 Width: 2048
 VWidth: 0
@@ -8155,7 +8156,7 @@ EndSplineSet
 EndChar
 
 StartChar: question
-Encoding: 63 63 299
+Encoding: 299 63 299
 GlifName: question
 Width: 2048
 VWidth: 0
@@ -8193,7 +8194,7 @@ EndSplineSet
 EndChar
 
 StartChar: questiondown
-Encoding: 191 191 300
+Encoding: 300 191 300
 GlifName: questiondown
 Width: 2048
 VWidth: 0
@@ -8231,7 +8232,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotedbl
-Encoding: 34 34 301
+Encoding: 301 34 301
 GlifName: quotedbl
 Width: 2048
 VWidth: 0
@@ -8254,7 +8255,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotedblbase
-Encoding: 8222 8222 302
+Encoding: 302 8222 302
 GlifName: quotedblbase
 Width: 2048
 VWidth: 0
@@ -8287,7 +8288,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotedblleft
-Encoding: 8220 8220 303
+Encoding: 303 8220 303
 GlifName: quotedblleft
 Width: 2048
 VWidth: 0
@@ -8320,7 +8321,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotedblright
-Encoding: 8221 8221 304
+Encoding: 304 8221 304
 GlifName: quotedblright
 Width: 2048
 VWidth: 0
@@ -8353,7 +8354,7 @@ EndSplineSet
 EndChar
 
 StartChar: quoteleft
-Encoding: 8216 8216 305
+Encoding: 305 8216 305
 GlifName: quoteleft
 Width: 2048
 VWidth: 0
@@ -8376,7 +8377,7 @@ EndSplineSet
 EndChar
 
 StartChar: quoteright
-Encoding: 8217 8217 306
+Encoding: 306 8217 306
 GlifName: quoteright
 Width: 2048
 VWidth: 0
@@ -8399,7 +8400,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotesinglbase
-Encoding: 8218 8218 307
+Encoding: 307 8218 307
 GlifName: quotesinglbase
 Width: 2048
 VWidth: 0
@@ -8422,7 +8423,7 @@ EndSplineSet
 EndChar
 
 StartChar: quotesingle
-Encoding: 39 39 308
+Encoding: 308 39 308
 GlifName: quotesingle
 Width: 2048
 VWidth: 0
@@ -8440,7 +8441,7 @@ EndSplineSet
 EndChar
 
 StartChar: r
-Encoding: 114 114 309
+Encoding: 309 114 309
 GlifName: r
 Width: 2048
 VWidth: 0
@@ -8470,7 +8471,7 @@ EndSplineSet
 EndChar
 
 StartChar: racute
-Encoding: 341 341 310
+Encoding: 310 341 310
 GlifName: racute
 Width: 2048
 VWidth: 0
@@ -8483,7 +8484,7 @@ Refer: 309 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: rcaron
-Encoding: 345 345 311
+Encoding: 311 345 311
 GlifName: rcaron
 Width: 2048
 VWidth: 0
@@ -8496,7 +8497,7 @@ Refer: 309 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: registered
-Encoding: 174 174 312
+Encoding: 312 174 312
 GlifName: registered
 Width: 2048
 VWidth: 0
@@ -8570,7 +8571,7 @@ sass."
 EndChar
 
 StartChar: ring
-Encoding: 730 730 313
+Encoding: 313 730 313
 GlifName: ring
 Width: 2048
 VWidth: 0
@@ -8618,7 +8619,7 @@ sass."
 EndChar
 
 StartChar: s
-Encoding: 115 115 314
+Encoding: 314 115 314
 GlifName: s
 Width: 2048
 VWidth: 0
@@ -8658,7 +8659,7 @@ EndSplineSet
 EndChar
 
 StartChar: sacute
-Encoding: 347 347 315
+Encoding: 315 347 315
 GlifName: sacute
 Width: 2048
 VWidth: 0
@@ -8671,7 +8672,7 @@ Refer: 314 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: scaron
-Encoding: 353 353 316
+Encoding: 316 353 316
 GlifName: scaron
 Width: 2048
 VWidth: 0
@@ -8684,7 +8685,7 @@ Refer: 314 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: scedilla
-Encoding: 351 351 317
+Encoding: 317 351 317
 GlifName: scedilla
 Width: 2048
 VWidth: 0
@@ -8697,7 +8698,7 @@ Refer: 314 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: scircumflex
-Encoding: 349 349 318
+Encoding: 318 349 318
 GlifName: scircumflex
 Width: 2048
 VWidth: 0
@@ -8710,7 +8711,7 @@ Refer: 314 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: second
-Encoding: 8243 8243 319
+Encoding: 319 8243 319
 GlifName: second
 Width: 2048
 VWidth: 0
@@ -8723,7 +8724,7 @@ Refer: 258 8242 N 1 0 0 1 -112 0 2
 EndChar
 
 StartChar: section
-Encoding: 167 167 320
+Encoding: 320 167 320
 GlifName: section
 Width: 2048
 VWidth: 0
@@ -8786,7 +8787,7 @@ EndSplineSet
 EndChar
 
 StartChar: semicolon
-Encoding: 59 59 321
+Encoding: 321 59 321
 GlifName: semicolon
 Width: 2048
 VWidth: 0
@@ -8814,7 +8815,7 @@ EndSplineSet
 EndChar
 
 StartChar: seven
-Encoding: 55 55 322
+Encoding: 322 55 322
 GlifName: seven
 Width: 2048
 VWidth: 0
@@ -8834,7 +8835,7 @@ EndSplineSet
 EndChar
 
 StartChar: six
-Encoding: 54 54 323
+Encoding: 323 54 323
 GlifName: six
 Width: 2048
 VWidth: 0
@@ -8862,7 +8863,7 @@ EndSplineSet
 EndChar
 
 StartChar: slash
-Encoding: 47 47 324
+Encoding: 324 47 324
 GlifName: slash
 Width: 2048
 VWidth: 0
@@ -8880,7 +8881,7 @@ EndSplineSet
 EndChar
 
 StartChar: space
-Encoding: 32 32 325
+Encoding: 325 32 325
 GlifName: space
 Width: 2048
 VWidth: 0
@@ -8890,7 +8891,7 @@ LayerCount: 2
 EndChar
 
 StartChar: sterling
-Encoding: 163 163 326
+Encoding: 326 163 326
 GlifName: sterling
 Width: 2048
 VWidth: 0
@@ -8923,7 +8924,7 @@ EndSplineSet
 EndChar
 
 StartChar: t
-Encoding: 116 116 327
+Encoding: 327 116 327
 GlifName: t
 Width: 2048
 VWidth: 0
@@ -8953,7 +8954,7 @@ EndSplineSet
 EndChar
 
 StartChar: tcaron
-Encoding: 357 357 328
+Encoding: 328 357 328
 GlifName: tcaron
 Width: 2048
 VWidth: 0
@@ -8986,7 +8987,7 @@ EndSplineSet
 EndChar
 
 StartChar: thorn
-Encoding: 254 254 329
+Encoding: 329 254 329
 GlifName: thorn
 Width: 2048
 VWidth: 0
@@ -9019,7 +9020,7 @@ EndSplineSet
 EndChar
 
 StartChar: three
-Encoding: 51 51 330
+Encoding: 330 51 330
 GlifName: three
 Width: 2048
 VWidth: 0
@@ -9045,7 +9046,7 @@ EndSplineSet
 EndChar
 
 StartChar: threequarters
-Encoding: 190 190 331
+Encoding: 331 190 331
 GlifName: threequarters
 Width: 2048
 VWidth: 0
@@ -9087,7 +9088,7 @@ EndSplineSet
 EndChar
 
 StartChar: tilde
-Encoding: 732 732 332
+Encoding: 332 732 332
 GlifName: tilde
 Width: 2048
 VWidth: 0
@@ -9115,7 +9116,7 @@ EndSplineSet
 EndChar
 
 StartChar: tildecomb
-Encoding: 771 771 333
+Encoding: 333 771 333
 GlifName: tildecomb
 Width: 0
 VWidth: 0
@@ -9144,7 +9145,7 @@ EndSplineSet
 EndChar
 
 StartChar: trademark
-Encoding: 8482 8482 334
+Encoding: 334 8482 334
 GlifName: trademark
 Width: 2048
 VWidth: 0
@@ -9157,7 +9158,7 @@ Refer: 64 77 N 0.5 0 0 0.5 959 578 2
 EndChar
 
 StartChar: two
-Encoding: 50 50 335
+Encoding: 335 50 335
 GlifName: two
 Width: 2048
 VWidth: 0
@@ -9183,7 +9184,7 @@ EndSplineSet
 EndChar
 
 StartChar: u
-Encoding: 117 117 336
+Encoding: 336 117 336
 GlifName: u
 Width: 2048
 VWidth: 0
@@ -9213,7 +9214,7 @@ EndSplineSet
 EndChar
 
 StartChar: uacute
-Encoding: 250 250 337
+Encoding: 337 250 337
 GlifName: uacute
 Width: 2048
 VWidth: 0
@@ -9226,7 +9227,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ubreve
-Encoding: 365 365 338
+Encoding: 338 365 338
 GlifName: ubreve
 Width: 2048
 VWidth: 0
@@ -9255,7 +9256,7 @@ sass."
 EndChar
 
 StartChar: ucircumflex
-Encoding: 251 251 339
+Encoding: 339 251 339
 GlifName: ucircumflex
 Width: 2048
 VWidth: 0
@@ -9268,7 +9269,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: udieresis
-Encoding: 252 252 340
+Encoding: 340 252 340
 GlifName: udieresis
 Width: 2048
 VWidth: 0
@@ -9297,7 +9298,7 @@ sass."
 EndChar
 
 StartChar: ugrave
-Encoding: 249 249 341
+Encoding: 341 249 341
 GlifName: ugrave
 Width: 2048
 VWidth: 0
@@ -9310,7 +9311,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uhorn
-Encoding: 432 432 342
+Encoding: 342 432 342
 GlifName: uhorn
 Width: 2048
 VWidth: 0
@@ -9325,7 +9326,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uhungarumlaut
-Encoding: 369 369 343
+Encoding: 343 369 343
 GlifName: uhungarumlaut
 Width: 2048
 VWidth: 0
@@ -9338,7 +9339,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: umacron
-Encoding: 363 363 344
+Encoding: 344 363 344
 GlifName: umacron
 Width: 2048
 VWidth: 0
@@ -9376,7 +9377,7 @@ sass."
 EndChar
 
 StartChar: underscore
-Encoding: 95 95 345
+Encoding: 345 95 345
 GlifName: underscore
 Width: 2048
 VWidth: 0
@@ -9394,7 +9395,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni00A0
-Encoding: 160 160 346
+Encoding: 346 160 346
 GlifName: uni00A_0
 Width: 2048
 VWidth: 0
@@ -9404,7 +9405,7 @@ LayerCount: 2
 EndChar
 
 StartChar: uni00B2
-Encoding: 178 178 347
+Encoding: 347 178 347
 GlifName: uni00B_2
 Width: 2048
 VWidth: 0
@@ -9430,7 +9431,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni00B3
-Encoding: 179 179 348
+Encoding: 348 179 348
 GlifName: uni00B_3
 Width: 2048
 VWidth: 0
@@ -9456,7 +9457,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni00B9
-Encoding: 185 185 349
+Encoding: 349 185 349
 GlifName: uni00B_9
 Width: 2048
 VWidth: 0
@@ -9479,7 +9480,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0122
-Encoding: 290 290 350
+Encoding: 350 290 350
 GlifName: uni0122
 Width: 2048
 VWidth: 0
@@ -9492,7 +9493,7 @@ Refer: 38 71 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0123
-Encoding: 291 291 351
+Encoding: 351 291 351
 GlifName: uni0123
 Width: 2048
 VWidth: 0
@@ -9505,7 +9506,7 @@ Refer: 205 103 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni012F_uni0300
-Encoding: 65543 -1 352
+Encoding: 352 -1 352
 GlifName: uni012F__uni0300
 Width: 2048
 VWidth: 0
@@ -9545,7 +9546,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek gravecomb
 EndChar
 
 StartChar: uni012F_uni0301
-Encoding: 65544 -1 353
+Encoding: 353 -1 353
 GlifName: uni012F__uni0301
 Width: 2048
 VWidth: 0
@@ -9585,7 +9586,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek acutecomb
 EndChar
 
 StartChar: uni012F_uni0302
-Encoding: 65545 -1 354
+Encoding: 354 -1 354
 GlifName: uni012F__uni0302
 Width: 2048
 VWidth: 0
@@ -9625,7 +9626,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek uni0302
 EndChar
 
 StartChar: uni012F_uni0303
-Encoding: 65546 -1 355
+Encoding: 355 -1 355
 GlifName: uni012F__uni0303
 Width: 2048
 VWidth: 0
@@ -9665,7 +9666,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek tildecomb
 EndChar
 
 StartChar: uni012F_uni0304
-Encoding: 65547 -1 356
+Encoding: 356 -1 356
 GlifName: uni012F__uni0304
 Width: 2048
 VWidth: 0
@@ -9715,7 +9716,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek uni0304
 EndChar
 
 StartChar: uni012F_uni030C
-Encoding: 65548 -1 357
+Encoding: 357 -1 357
 GlifName: uni012F__uni030C_
 Width: 2048
 VWidth: 0
@@ -9730,7 +9731,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek uni030C
 EndChar
 
 StartChar: uni0136
-Encoding: 310 310 358
+Encoding: 358 310 358
 GlifName: uni0136
 Width: 2048
 VWidth: 0
@@ -9743,7 +9744,7 @@ Refer: 58 75 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0137
-Encoding: 311 311 359
+Encoding: 359 311 359
 GlifName: uni0137
 Width: 2048
 VWidth: 0
@@ -9756,7 +9757,7 @@ Refer: 244 107 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni013B
-Encoding: 315 315 360
+Encoding: 360 315 360
 GlifName: uni013B_
 Width: 2048
 VWidth: 0
@@ -9769,7 +9770,7 @@ Refer: 59 76 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni013C
-Encoding: 316 316 361
+Encoding: 361 316 361
 GlifName: uni013C_
 Width: 2048
 VWidth: 0
@@ -9782,7 +9783,7 @@ Refer: 246 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0145
-Encoding: 325 325 362
+Encoding: 362 325 362
 GlifName: uni0145
 Width: 2048
 VWidth: 0
@@ -9795,7 +9796,7 @@ Refer: 65 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0146
-Encoding: 326 326 363
+Encoding: 363 326 363
 GlifName: uni0146
 Width: 2048
 VWidth: 0
@@ -9808,7 +9809,7 @@ Refer: 261 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0156
-Encoding: 342 342 364
+Encoding: 364 342 364
 GlifName: uni0156
 Width: 2048
 VWidth: 0
@@ -9821,7 +9822,7 @@ Refer: 84 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0157
-Encoding: 343 343 365
+Encoding: 365 343 365
 GlifName: uni0157
 Width: 2048
 VWidth: 0
@@ -9834,7 +9835,7 @@ Refer: 309 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0162
-Encoding: 354 354 366
+Encoding: 366 354 366
 GlifName: uni0162
 Width: 2048
 VWidth: 0
@@ -9847,7 +9848,7 @@ Refer: 92 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0163
-Encoding: 355 355 367
+Encoding: 367 355 367
 GlifName: uni0163
 Width: 2048
 VWidth: 0
@@ -9860,7 +9861,7 @@ Refer: 327 116 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni018F
-Encoding: 399 399 368
+Encoding: 368 399 368
 GlifName: uni018F_
 Width: 2048
 VWidth: 0
@@ -9900,7 +9901,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0192
-Encoding: 402 402 369
+Encoding: 369 402 369
 GlifName: uni0192
 Width: 2048
 VWidth: 0
@@ -9933,7 +9934,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni01C4
-Encoding: 452 452 370
+Encoding: 370 452 370
 GlifName: uni01C_4
 Width: 2048
 VWidth: 0
@@ -9946,7 +9947,7 @@ Refer: 121 381 N 0.5 0 0 1 1021 0 2
 EndChar
 
 StartChar: uni01C5
-Encoding: 453 453 371
+Encoding: 371 453 371
 GlifName: uni01C_5
 Width: 2048
 VWidth: 0
@@ -9959,7 +9960,7 @@ Refer: 929 382 N 0.5 0 0 1 1022 0 2
 EndChar
 
 StartChar: uni01C6
-Encoding: 454 454 372
+Encoding: 372 454 372
 GlifName: uni01C_6
 Width: 2048
 VWidth: 0
@@ -9972,7 +9973,7 @@ Refer: 929 382 N 0.5 0 0 1 1016 0 2
 EndChar
 
 StartChar: uni01C7
-Encoding: 455 455 373
+Encoding: 373 455 373
 GlifName: uni01C_7
 Width: 2048
 VWidth: 0
@@ -9985,7 +9986,7 @@ Refer: 56 74 N 0.5 0 0 1 1026 0 2
 EndChar
 
 StartChar: uni01C8
-Encoding: 456 456 374
+Encoding: 374 456 374
 GlifName: uni01C_8
 Width: 2048
 VWidth: 0
@@ -9998,7 +9999,7 @@ Refer: 236 106 N 0.5 0 0 1 1040 0 2
 EndChar
 
 StartChar: uni01C9
-Encoding: 457 457 375
+Encoding: 375 457 375
 GlifName: uni01C_9
 Width: 2048
 VWidth: 0
@@ -10011,7 +10012,7 @@ Refer: 236 106 N 0.5 0 0 1 1021 0 2
 EndChar
 
 StartChar: uni01CA
-Encoding: 458 458 376
+Encoding: 376 458 376
 GlifName: uni01C_A_
 Width: 2048
 VWidth: 0
@@ -10024,7 +10025,7 @@ Refer: 56 74 N 0.5 0 0 1 1024 0 2
 EndChar
 
 StartChar: uni01CB
-Encoding: 459 459 377
+Encoding: 377 459 377
 GlifName: uni01C_B_
 Width: 2048
 VWidth: 0
@@ -10037,7 +10038,7 @@ Refer: 236 106 N 0.5 0 0 1 1039 0 2
 EndChar
 
 StartChar: uni01CC
-Encoding: 460 460 378
+Encoding: 378 460 378
 GlifName: uni01C_C_
 Width: 2048
 VWidth: 0
@@ -10050,7 +10051,7 @@ Refer: 236 106 N 0.5 0 0 1 783 0 2
 EndChar
 
 StartChar: uni01CD
-Encoding: 461 461 379
+Encoding: 379 461 379
 GlifName: uni01C_D_
 Width: 2048
 VWidth: 0
@@ -10063,7 +10064,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01CE
-Encoding: 462 462 380
+Encoding: 380 462 380
 GlifName: uni01C_E_
 Width: 2048
 VWidth: 0
@@ -10076,7 +10077,7 @@ Refer: 123 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01EA
-Encoding: 490 490 381
+Encoding: 381 490 381
 GlifName: uni01E_A_
 Width: 2048
 VWidth: 0
@@ -10114,7 +10115,7 @@ sass."
 EndChar
 
 StartChar: uni01EB
-Encoding: 491 491 382
+Encoding: 382 491 382
 GlifName: uni01E_B_
 Width: 2048
 VWidth: 0
@@ -10152,7 +10153,7 @@ sass."
 EndChar
 
 StartChar: uni01F1
-Encoding: 497 497 383
+Encoding: 383 497 383
 GlifName: uni01F_1
 Width: 2048
 VWidth: 0
@@ -10165,7 +10166,7 @@ Refer: 119 90 N 0.5 0 0 1 1021 0 2
 EndChar
 
 StartChar: uni01F2
-Encoding: 498 498 384
+Encoding: 384 498 384
 GlifName: uni01F_2
 Width: 2048
 VWidth: 0
@@ -10178,7 +10179,7 @@ Refer: 927 122 N 0.5 0 0 1 1022 0 2
 EndChar
 
 StartChar: uni01F3
-Encoding: 499 499 385
+Encoding: 385 499 385
 GlifName: uni01F_3
 Width: 2048
 VWidth: 0
@@ -10191,7 +10192,7 @@ Refer: 927 122 N 0.5 0 0 1 1016 0 2
 EndChar
 
 StartChar: uni01F4
-Encoding: 500 500 386
+Encoding: 386 500 386
 GlifName: uni01F_4
 Width: 2048
 VWidth: 0
@@ -10204,7 +10205,7 @@ Refer: 38 71 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01F5
-Encoding: 501 501 387
+Encoding: 387 501 387
 GlifName: uni01F_5
 Width: 2048
 VWidth: 0
@@ -10217,7 +10218,7 @@ Refer: 205 103 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0200
-Encoding: 512 512 388
+Encoding: 388 512 388
 GlifName: uni0200
 Width: 2048
 VWidth: 0
@@ -10230,7 +10231,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0201
-Encoding: 513 513 389
+Encoding: 389 513 389
 GlifName: uni0201
 Width: 2048
 VWidth: 0
@@ -10243,7 +10244,7 @@ Refer: 123 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0202
-Encoding: 514 514 390
+Encoding: 390 514 390
 GlifName: uni0202
 Width: 2048
 VWidth: 0
@@ -10256,7 +10257,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0203
-Encoding: 515 515 391
+Encoding: 391 515 391
 GlifName: uni0203
 Width: 2048
 VWidth: 0
@@ -10269,7 +10270,7 @@ Refer: 123 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0204
-Encoding: 516 516 392
+Encoding: 392 516 392
 GlifName: uni0204
 Width: 2048
 VWidth: 0
@@ -10282,7 +10283,7 @@ Refer: 24 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0205
-Encoding: 517 517 393
+Encoding: 393 517 393
 GlifName: uni0205
 Width: 2048
 VWidth: 0
@@ -10295,7 +10296,7 @@ Refer: 182 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0206
-Encoding: 518 518 394
+Encoding: 394 518 394
 GlifName: uni0206
 Width: 2048
 VWidth: 0
@@ -10308,7 +10309,7 @@ Refer: 24 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0207
-Encoding: 519 519 395
+Encoding: 395 519 395
 GlifName: uni0207
 Width: 2048
 VWidth: 0
@@ -10321,7 +10322,7 @@ Refer: 182 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0208
-Encoding: 520 520 396
+Encoding: 396 520 396
 GlifName: uni0208
 Width: 2048
 VWidth: 0
@@ -10334,7 +10335,7 @@ Refer: 45 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0209
-Encoding: 521 521 397
+Encoding: 397 521 397
 GlifName: uni0209
 Width: 2048
 VWidth: 0
@@ -10347,7 +10348,7 @@ Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni020A
-Encoding: 522 522 398
+Encoding: 398 522 398
 GlifName: uni020A_
 Width: 2048
 VWidth: 0
@@ -10360,7 +10361,7 @@ Refer: 45 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni020B
-Encoding: 523 523 399
+Encoding: 399 523 399
 GlifName: uni020B_
 Width: 2048
 VWidth: 0
@@ -10373,7 +10374,7 @@ Refer: 181 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni020C
-Encoding: 524 524 400
+Encoding: 400 524 400
 GlifName: uni020C_
 Width: 2048
 VWidth: 0
@@ -10386,7 +10387,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni020D
-Encoding: 525 525 401
+Encoding: 401 525 401
 GlifName: uni020D_
 Width: 2048
 VWidth: 0
@@ -10399,7 +10400,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni020E
-Encoding: 526 526 402
+Encoding: 402 526 402
 GlifName: uni020E_
 Width: 2048
 VWidth: 0
@@ -10412,7 +10413,7 @@ Refer: 69 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni020F
-Encoding: 527 527 403
+Encoding: 403 527 403
 GlifName: uni020F_
 Width: 2048
 VWidth: 0
@@ -10425,7 +10426,7 @@ Refer: 268 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0210
-Encoding: 528 528 404
+Encoding: 404 528 404
 GlifName: uni0210
 Width: 2048
 VWidth: 0
@@ -10438,7 +10439,7 @@ Refer: 84 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0211
-Encoding: 529 529 405
+Encoding: 405 529 405
 GlifName: uni0211
 Width: 2048
 VWidth: 0
@@ -10451,7 +10452,7 @@ Refer: 309 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0212
-Encoding: 530 530 406
+Encoding: 406 530 406
 GlifName: uni0212
 Width: 2048
 VWidth: 0
@@ -10464,7 +10465,7 @@ Refer: 84 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0213
-Encoding: 531 531 407
+Encoding: 407 531 407
 GlifName: uni0213
 Width: 2048
 VWidth: 0
@@ -10477,7 +10478,7 @@ Refer: 309 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0214
-Encoding: 532 532 408
+Encoding: 408 532 408
 GlifName: uni0214
 Width: 2048
 VWidth: 0
@@ -10490,7 +10491,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0215
-Encoding: 533 533 409
+Encoding: 409 533 409
 GlifName: uni0215
 Width: 2048
 VWidth: 0
@@ -10503,7 +10504,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0216
-Encoding: 534 534 410
+Encoding: 410 534 410
 GlifName: uni0216
 Width: 2048
 VWidth: 0
@@ -10516,7 +10517,7 @@ Refer: 95 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0217
-Encoding: 535 535 411
+Encoding: 411 535 411
 GlifName: uni0217
 Width: 2048
 VWidth: 0
@@ -10529,7 +10530,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0218
-Encoding: 536 536 412
+Encoding: 412 536 412
 GlifName: uni0218
 Width: 2048
 VWidth: 0
@@ -10542,7 +10543,7 @@ Refer: 87 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0219
-Encoding: 537 537 413
+Encoding: 413 537 413
 GlifName: uni0219
 Width: 2048
 VWidth: 0
@@ -10555,7 +10556,7 @@ Refer: 314 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni021A
-Encoding: 538 538 414
+Encoding: 414 538 414
 GlifName: uni021A_
 Width: 2048
 VWidth: 0
@@ -10568,7 +10569,7 @@ Refer: 92 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni021B
-Encoding: 539 539 415
+Encoding: 415 539 415
 GlifName: uni021B_
 Width: 2048
 VWidth: 0
@@ -10581,7 +10582,7 @@ Refer: 327 116 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni022A
-Encoding: 554 554 416
+Encoding: 416 554 416
 GlifName: uni022A_
 Width: 2048
 VWidth: 0
@@ -10624,7 +10625,7 @@ sass."
 EndChar
 
 StartChar: uni022B
-Encoding: 555 555 417
+Encoding: 417 555 417
 GlifName: uni022B_
 Width: 2048
 VWidth: 0
@@ -10667,7 +10668,7 @@ sass."
 EndChar
 
 StartChar: uni022C
-Encoding: 556 556 418
+Encoding: 418 556 418
 GlifName: uni022C_
 Width: 2048
 VWidth: 0
@@ -10705,7 +10706,7 @@ sass."
 EndChar
 
 StartChar: uni022D
-Encoding: 557 557 419
+Encoding: 419 557 419
 GlifName: uni022D_
 Width: 2048
 VWidth: 0
@@ -10743,7 +10744,7 @@ sass."
 EndChar
 
 StartChar: uni022E
-Encoding: 558 558 420
+Encoding: 420 558 420
 GlifName: uni022E_
 Width: 2048
 VWidth: 0
@@ -10781,7 +10782,7 @@ sass."
 EndChar
 
 StartChar: uni022F
-Encoding: 559 559 421
+Encoding: 421 559 421
 GlifName: uni022F_
 Width: 2048
 VWidth: 0
@@ -10819,7 +10820,7 @@ sass."
 EndChar
 
 StartChar: uni0230
-Encoding: 560 560 422
+Encoding: 422 560 422
 GlifName: uni0230
 Width: 2048
 VWidth: 0
@@ -10867,7 +10868,7 @@ sass."
 EndChar
 
 StartChar: uni0231
-Encoding: 561 561 423
+Encoding: 423 561 423
 GlifName: uni0231
 Width: 2048
 VWidth: 0
@@ -10915,7 +10916,7 @@ sass."
 EndChar
 
 StartChar: uni0232
-Encoding: 562 562 424
+Encoding: 424 562 424
 GlifName: uni0232
 Width: 2048
 VWidth: 0
@@ -10953,7 +10954,7 @@ sass."
 EndChar
 
 StartChar: uni0233
-Encoding: 563 563 425
+Encoding: 425 563 425
 GlifName: uni0233
 Width: 2048
 VWidth: 0
@@ -10991,7 +10992,7 @@ sass."
 EndChar
 
 StartChar: uni0237
-Encoding: 567 567 426
+Encoding: 426 567 426
 GlifName: uni0237
 Width: 2048
 VWidth: 0
@@ -11020,7 +11021,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0259
-Encoding: 601 601 427
+Encoding: 427 601 427
 GlifName: uni0259
 Width: 2048
 VWidth: 0
@@ -11058,7 +11059,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni02B9
-Encoding: 697 697 428
+Encoding: 428 697 428
 GlifName: uni02B_9
 Width: 2048
 VWidth: 0
@@ -11070,7 +11071,7 @@ Refer: 308 39 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni02BA
-Encoding: 698 698 429
+Encoding: 429 698 429
 GlifName: uni02B_A_
 Width: 2048
 VWidth: 0
@@ -11082,7 +11083,7 @@ Refer: 301 34 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni02BC
-Encoding: 700 700 430
+Encoding: 430 700 430
 GlifName: uni02B_C_
 Width: 2048
 VWidth: 0
@@ -11094,7 +11095,7 @@ Refer: 308 39 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni02C9
-Encoding: 713 713 431
+Encoding: 431 713 431
 GlifName: uni02C_9
 Width: 2048
 VWidth: 0
@@ -11112,7 +11113,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni02CA
-Encoding: 714 714 432
+Encoding: 432 714 432
 GlifName: uni02C_A_
 Width: 2048
 VWidth: 0
@@ -11130,7 +11131,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni02CB
-Encoding: 715 715 433
+Encoding: 433 715 433
 GlifName: uni02C_B_
 Width: 2048
 VWidth: 0
@@ -11148,7 +11149,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0302
-Encoding: 770 770 434
+Encoding: 434 770 434
 GlifName: uni0302
 Width: 0
 VWidth: 0
@@ -11172,7 +11173,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0304
-Encoding: 772 772 435
+Encoding: 435 772 435
 GlifName: uni0304
 Width: 0
 VWidth: 0
@@ -11216,7 +11217,7 @@ sass."
 EndChar
 
 StartChar: uni0305
-Encoding: 773 773 436
+Encoding: 436 773 436
 GlifName: uni0305
 Width: 0
 VWidth: 0
@@ -11251,7 +11252,7 @@ sass."
 EndChar
 
 StartChar: uni0306
-Encoding: 774 774 437
+Encoding: 437 774 437
 GlifName: uni0306
 Width: 0
 VWidth: 0
@@ -11296,7 +11297,7 @@ sass."
 EndChar
 
 StartChar: uni0307
-Encoding: 775 775 438
+Encoding: 438 775 438
 GlifName: uni0307
 Width: 0
 VWidth: 0
@@ -11340,7 +11341,7 @@ sass."
 EndChar
 
 StartChar: uni0308
-Encoding: 776 776 439
+Encoding: 439 776 439
 GlifName: uni0308
 Width: 0
 VWidth: 0
@@ -11380,7 +11381,7 @@ sass."
 EndChar
 
 StartChar: uni030A
-Encoding: 778 778 440
+Encoding: 440 778 440
 GlifName: uni030A_
 Width: 0
 VWidth: 0
@@ -11429,7 +11430,7 @@ sass."
 EndChar
 
 StartChar: uni030B
-Encoding: 779 779 441
+Encoding: 441 779 441
 GlifName: uni030B_
 Width: 0
 VWidth: 0
@@ -11453,7 +11454,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni030C
-Encoding: 780 780 442
+Encoding: 442 780 442
 GlifName: uni030C_
 Width: 0
 VWidth: 0
@@ -11477,7 +11478,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni030F
-Encoding: 783 783 443
+Encoding: 443 783 443
 GlifName: uni030F_
 Width: 0
 VWidth: 0
@@ -11501,7 +11502,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0310
-Encoding: 784 784 444
+Encoding: 444 784 444
 GlifName: uni0310
 Width: 0
 VWidth: 0
@@ -11514,7 +11515,7 @@ Refer: 456 2305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0311
-Encoding: 785 785 445
+Encoding: 445 785 445
 GlifName: uni0311
 Width: 0
 VWidth: 0
@@ -11543,7 +11544,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0312
-Encoding: 786 786 446
+Encoding: 446 786 446
 GlifName: uni0312
 Width: 0
 VWidth: 0
@@ -11567,7 +11568,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni031B
-Encoding: 795 795 447
+Encoding: 447 795 447
 GlifName: uni031B_
 Width: 0
 VWidth: 0
@@ -11591,7 +11592,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0324
-Encoding: 804 804 448
+Encoding: 448 804 448
 GlifName: uni0324
 Width: 0
 VWidth: 0
@@ -11615,7 +11616,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0326
-Encoding: 806 806 449
+Encoding: 449 806 449
 GlifName: uni0326
 Width: 0
 VWidth: 0
@@ -11639,7 +11640,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0327
-Encoding: 807 807 450
+Encoding: 450 807 450
 GlifName: uni0327
 Width: 0
 VWidth: 0
@@ -11673,7 +11674,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0328
-Encoding: 808 808 451
+Encoding: 451 808 451
 GlifName: uni0328
 Width: 0
 VWidth: 0
@@ -11727,7 +11728,7 @@ sass."
 EndChar
 
 StartChar: uni032E
-Encoding: 814 814 452
+Encoding: 452 814 452
 GlifName: uni032E_
 Width: 0
 VWidth: 0
@@ -11772,7 +11773,7 @@ sass."
 EndChar
 
 StartChar: uni0331
-Encoding: 817 817 453
+Encoding: 453 817 453
 GlifName: uni0331
 Width: 0
 VWidth: 0
@@ -11791,7 +11792,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0335
-Encoding: 821 821 454
+Encoding: 454 821 454
 GlifName: uni0335
 Width: 0
 VWidth: 0
@@ -11835,12 +11836,11 @@ sass."
 EndChar
 
 StartChar: uni0900
-Encoding: 2304 2304 455
+Encoding: 455 2304 455
 GlifName: uni0900
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 AnchorPoint: "abvm_deva" 42 1648 mark 0
 LayerCount: 2
 Fore
@@ -11869,12 +11869,11 @@ EndSplineSet
 EndChar
 
 StartChar: uni0901
-Encoding: 2305 2305 456
+Encoding: 456 2305 456
 GlifName: uni0901
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 AnchorPoint: "abvm_deva" 0 1618 mark 0
 LayerCount: 2
 Fore
@@ -11903,15 +11902,14 @@ EndSplineSet
 EndChar
 
 StartChar: uni0902
-Encoding: 2306 2306 457
+Encoding: 457 2306 457
 GlifName: uni0902
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 HStem: 1639 200<93 293>
 VStem: 93 200<1639 1839 1639 1839>
-AnchorPoint: "abvm_deva" -318 1636 mark 0
+AnchorPoint: "abvm_deva" -11 1615 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11947,7 +11945,7 @@ sass."
 EndChar
 
 StartChar: uni0903
-Encoding: 2307 2307 458
+Encoding: 458 2307 458
 GlifName: uni0903
 Width: 2048
 VWidth: 0
@@ -11970,7 +11968,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0904
-Encoding: 2308 2308 459
+Encoding: 459 2308 459
 GlifName: uni0904
 Width: 2048
 VWidth: 0
@@ -12029,7 +12027,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0905
-Encoding: 2309 2309 460
+Encoding: 460 2309 460
 GlifName: uni0905
 Width: 2048
 VWidth: 0
@@ -12073,7 +12071,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0906
-Encoding: 2310 2310 461
+Encoding: 461 2310 461
 GlifName: uni0906
 Width: 2048
 VWidth: 0
@@ -12122,7 +12120,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0907
-Encoding: 2311 2311 462
+Encoding: 462 2311 462
 GlifName: uni0907
 Width: 2048
 VWidth: 0
@@ -12176,7 +12174,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0908
-Encoding: 2312 2312 463
+Encoding: 463 2312 463
 GlifName: uni0908
 Width: 2048
 VWidth: 0
@@ -12235,7 +12233,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0909
-Encoding: 2313 2313 464
+Encoding: 464 2313 464
 GlifName: uni0909
 Width: 2048
 VWidth: 0
@@ -12279,7 +12277,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090A
-Encoding: 2314 2314 465
+Encoding: 465 2314 465
 GlifName: uni090A_
 Width: 2048
 VWidth: 0
@@ -12328,7 +12326,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090B
-Encoding: 2315 2315 466
+Encoding: 466 2315 466
 GlifName: uni090B_
 Width: 2048
 VWidth: 0
@@ -12382,7 +12380,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090C
-Encoding: 2316 2316 467
+Encoding: 467 2316 467
 GlifName: uni090C_
 Width: 2048
 VWidth: 0
@@ -12431,7 +12429,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090D
-Encoding: 2317 2317 468
+Encoding: 468 2317 468
 GlifName: uni090D_
 Width: 2048
 VWidth: 0
@@ -12495,7 +12493,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090E
-Encoding: 2318 2318 469
+Encoding: 469 2318 469
 GlifName: uni090E_
 Width: 2048
 VWidth: 0
@@ -12559,7 +12557,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni090F
-Encoding: 2319 2319 470
+Encoding: 470 2319 470
 GlifName: uni090F_
 Width: 2048
 VWidth: 0
@@ -12608,7 +12606,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0910
-Encoding: 2320 2320 471
+Encoding: 471 2320 471
 GlifName: uni0910
 Width: 2048
 VWidth: 0
@@ -12662,7 +12660,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0911
-Encoding: 2321 2321 472
+Encoding: 472 2321 472
 GlifName: uni0911
 Width: 2048
 VWidth: 0
@@ -12726,7 +12724,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0912
-Encoding: 2322 2322 473
+Encoding: 473 2322 473
 GlifName: uni0912
 Width: 2048
 VWidth: 0
@@ -12790,7 +12788,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0913
-Encoding: 2323 2323 474
+Encoding: 474 2323 474
 GlifName: uni0913
 Width: 2048
 VWidth: 0
@@ -12844,7 +12842,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0914
-Encoding: 2324 2324 475
+Encoding: 475 2324 475
 GlifName: uni0914
 Width: 2048
 VWidth: 0
@@ -12903,7 +12901,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0915
-Encoding: 2325 2325 476
+Encoding: 476 2325 476
 GlifName: uni0915
 Width: 2048
 VWidth: 0
@@ -12953,7 +12951,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0915_uni0930_uni094D.vatu
-Encoding: 65549 -1 477
+Encoding: 477 -1 477
 GlifName: uni0915_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -13009,7 +13007,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0915 uni094D uni0
 EndChar
 
 StartChar: uni0915_uni094D.half
-Encoding: 65550 -1 478
+Encoding: 478 -1 478
 GlifName: uni0915_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -13055,7 +13053,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0915 uni094D
 EndChar
 
 StartChar: uni0915_uni094D.haln
-Encoding: 65551 -1 479
+Encoding: 479 -1 479
 GlifName: uni0915_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -13116,7 +13114,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0915 uni094D
 EndChar
 
 StartChar: uni0915_uni094D_uni0937.akhn
-Encoding: 65552 -1 480
+Encoding: 480 -1 480
 GlifName: uni0915_uni094D__uni0937.akhn
 Width: 2048
 VWidth: 0
@@ -13177,7 +13175,7 @@ Ligature2: "akhnAkhandinDevanagari2lookup0 subtable" uni0915 uni094D uni0937
 EndChar
 
 StartChar: uni0915_uni094D_uni0937.half
-Encoding: 65553 -1 481
+Encoding: 481 -1 481
 GlifName: uni0915_uni094D__uni0937.half
 Width: 2048
 VWidth: 0
@@ -13233,7 +13231,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0915_uni094D_uni0937.
 EndChar
 
 StartChar: uni0915_uni094D_uni0937_uni094D
-Encoding: 65554 -1 482
+Encoding: 482 -1 482
 GlifName: uni0915_uni094D__uni0937_uni094D_
 Width: 2048
 VWidth: 0
@@ -13304,7 +13302,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0915_uni094D_uni093
 EndChar
 
 StartChar: uni0916
-Encoding: 2326 2326 483
+Encoding: 483 2326 483
 GlifName: uni0916
 Width: 2048
 VWidth: 0
@@ -13359,7 +13357,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0916_uni0930_uni094D.vatu
-Encoding: 65555 -1 484
+Encoding: 484 -1 484
 GlifName: uni0916_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -13420,7 +13418,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0916 uni094D uni0
 EndChar
 
 StartChar: uni0916_uni094D.half
-Encoding: 65556 -1 485
+Encoding: 485 -1 485
 GlifName: uni0916_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -13471,7 +13469,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0916 uni094D
 EndChar
 
 StartChar: uni0916_uni094D.haln
-Encoding: 65557 -1 486
+Encoding: 486 -1 486
 GlifName: uni0916_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -13537,7 +13535,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0916 uni094D
 EndChar
 
 StartChar: uni0917
-Encoding: 2327 2327 487
+Encoding: 487 2327 487
 GlifName: uni0917
 Width: 2048
 VWidth: 0
@@ -13577,7 +13575,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0917_uni0930_uni094D.vatu
-Encoding: 65558 -1 488
+Encoding: 488 -1 488
 GlifName: uni0917_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -13623,7 +13621,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0917 uni094D uni0
 EndChar
 
 StartChar: uni0917_uni094D.half
-Encoding: 65559 -1 489
+Encoding: 489 -1 489
 GlifName: uni0917_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -13659,7 +13657,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0917 uni094D
 EndChar
 
 StartChar: uni0917_uni094D.haln
-Encoding: 65560 -1 490
+Encoding: 490 -1 490
 GlifName: uni0917_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -13710,7 +13708,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0917 uni094D
 EndChar
 
 StartChar: uni0918
-Encoding: 2328 2328 491
+Encoding: 491 2328 491
 GlifName: uni0918
 Width: 2048
 VWidth: 0
@@ -13755,7 +13753,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0918_uni0930_uni094D.vatu
-Encoding: 65561 -1 492
+Encoding: 492 -1 492
 GlifName: uni0918_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -13806,7 +13804,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0918 uni094D uni0
 EndChar
 
 StartChar: uni0918_uni094D.half
-Encoding: 65562 -1 493
+Encoding: 493 -1 493
 GlifName: uni0918_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -13847,7 +13845,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0918 uni094D
 EndChar
 
 StartChar: uni0918_uni094D.haln
-Encoding: 65563 -1 494
+Encoding: 494 -1 494
 GlifName: uni0918_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -13903,7 +13901,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0918 uni094D
 EndChar
 
 StartChar: uni0919
-Encoding: 2329 2329 495
+Encoding: 495 2329 495
 GlifName: uni0919
 Width: 2048
 VWidth: 0
@@ -13963,7 +13961,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0919_uni0930_uni094D.vatu
-Encoding: 65564 -1 496
+Encoding: 496 -1 496
 GlifName: uni0919_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -14034,7 +14032,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0919 uni094D uni0
 EndChar
 
 StartChar: uni0919_uni094D.half
-Encoding: 65565 -1 497
+Encoding: 497 -1 497
 GlifName: uni0919_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -14105,7 +14103,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0919 uni094D
 EndChar
 
 StartChar: uni0919_uni094D.haln
-Encoding: 65566 -1 498
+Encoding: 498 -1 498
 GlifName: uni0919_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -14176,7 +14174,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0919 uni094D
 EndChar
 
 StartChar: uni091A
-Encoding: 2330 2330 499
+Encoding: 499 2330 499
 GlifName: uni091A_
 Width: 2048
 VWidth: 0
@@ -14216,7 +14214,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni091A_uni0930_uni094D.vatu
-Encoding: 65567 -1 500
+Encoding: 500 -1 500
 GlifName: uni091A__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -14262,7 +14260,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091A uni094D uni0
 EndChar
 
 StartChar: uni091A_uni094D.half
-Encoding: 65568 -1 501
+Encoding: 501 -1 501
 GlifName: uni091A__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -14298,7 +14296,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni091A uni094D
 EndChar
 
 StartChar: uni091A_uni094D.haln
-Encoding: 65569 -1 502
+Encoding: 502 -1 502
 GlifName: uni091A__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -14349,7 +14347,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni091A uni094D
 EndChar
 
 StartChar: uni091B
-Encoding: 2331 2331 503
+Encoding: 503 2331 503
 GlifName: uni091B_
 Width: 2048
 VWidth: 0
@@ -14409,7 +14407,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni091B_uni0930_uni094D.vatu
-Encoding: 65570 -1 504
+Encoding: 504 -1 504
 GlifName: uni091B__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -14475,7 +14473,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091B uni094D uni0
 EndChar
 
 StartChar: uni091B_uni094D.half
-Encoding: 65571 -1 505
+Encoding: 505 -1 505
 GlifName: uni091B__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -14521,7 +14519,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni091B uni094D
 EndChar
 
 StartChar: uni091B_uni094D.haln
-Encoding: 65572 -1 506
+Encoding: 506 -1 506
 GlifName: uni091B__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -14592,7 +14590,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni091B uni094D
 EndChar
 
 StartChar: uni091C
-Encoding: 2332 2332 507
+Encoding: 507 2332 507
 GlifName: uni091C_
 Width: 2048
 VWidth: 0
@@ -14637,7 +14635,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni091C_uni0930_uni094D.vatu
-Encoding: 65573 -1 508
+Encoding: 508 -1 508
 GlifName: uni091C__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -14688,7 +14686,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091C uni094D uni0
 EndChar
 
 StartChar: uni091C_uni094D.half
-Encoding: 65574 -1 509
+Encoding: 509 -1 509
 GlifName: uni091C__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -14729,7 +14727,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni091C uni094D
 EndChar
 
 StartChar: uni091C_uni094D.haln
-Encoding: 65575 -1 510
+Encoding: 510 -1 510
 GlifName: uni091C__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -14785,7 +14783,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni091C uni094D
 EndChar
 
 StartChar: uni091C_uni094D_uni091E.akhn
-Encoding: 65576 -1 511
+Encoding: 511 -1 511
 GlifName: uni091C__uni094D__uni091E_.akhn
 Width: 2048
 VWidth: 0
@@ -14831,7 +14829,7 @@ Ligature2: "akhnAkhandinDevanagari2lookup0 subtable" uni091C uni094D uni091E
 EndChar
 
 StartChar: uni091C_uni094D_uni091E.half
-Encoding: 65577 -1 512
+Encoding: 512 -1 512
 GlifName: uni091C__uni094D__uni091E_.half
 Width: 2048
 VWidth: 0
@@ -14872,7 +14870,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni091C_uni094D_uni091E.
 EndChar
 
 StartChar: uni091C_uni094D_uni091E_uni094D
-Encoding: 65578 -1 513
+Encoding: 513 -1 513
 GlifName: uni091C__uni094D__uni091E__uni094D_
 Width: 2048
 VWidth: 0
@@ -14928,7 +14926,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni091C_uni094D_uni091
 EndChar
 
 StartChar: uni091D
-Encoding: 2333 2333 514
+Encoding: 514 2333 514
 GlifName: uni091D_
 Width: 2048
 VWidth: 0
@@ -14988,7 +14986,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni091D_uni0930_uni094D.vatu
-Encoding: 65579 -1 515
+Encoding: 515 -1 515
 GlifName: uni091D__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -15054,7 +15052,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091D uni094D uni0
 EndChar
 
 StartChar: uni091D_uni094D.half
-Encoding: 65580 -1 516
+Encoding: 516 -1 516
 GlifName: uni091D__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -15110,7 +15108,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni091D uni094D
 EndChar
 
 StartChar: uni091D_uni094D.haln
-Encoding: 65581 -1 517
+Encoding: 517 -1 517
 GlifName: uni091D__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -15181,7 +15179,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni091D uni094D
 EndChar
 
 StartChar: uni091E
-Encoding: 2334 2334 518
+Encoding: 518 2334 518
 GlifName: uni091E_
 Width: 2048
 VWidth: 0
@@ -15226,7 +15224,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni091E_uni0930_uni094D.vatu
-Encoding: 65582 -1 519
+Encoding: 519 -1 519
 GlifName: uni091E__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -15277,7 +15275,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091E uni094D uni0
 EndChar
 
 StartChar: uni091E_uni094D.half
-Encoding: 65583 -1 520
+Encoding: 520 -1 520
 GlifName: uni091E__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -15318,7 +15316,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni091E uni094D
 EndChar
 
 StartChar: uni091E_uni094D.haln
-Encoding: 65584 -1 521
+Encoding: 521 -1 521
 GlifName: uni091E__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -15374,7 +15372,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni091E uni094D
 EndChar
 
 StartChar: uni091F
-Encoding: 2335 2335 522
+Encoding: 522 2335 522
 GlifName: uni091F_
 Width: 2048
 VWidth: 0
@@ -15414,7 +15412,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni091F_uni0930_uni094D.vatu
-Encoding: 65585 -1 523
+Encoding: 523 -1 523
 GlifName: uni091F__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -15465,7 +15463,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni091F uni094D uni0
 EndChar
 
 StartChar: uni091F_uni094D.haln
-Encoding: 65586 -1 524
+Encoding: 524 -1 524
 GlifName: uni091F__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -15516,7 +15514,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni091F uni094D
 EndChar
 
 StartChar: uni0920
-Encoding: 2336 2336 525
+Encoding: 525 2336 525
 GlifName: uni0920
 Width: 2048
 VWidth: 0
@@ -15561,7 +15559,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0920_uni0930_uni094D.vatu
-Encoding: 65587 -1 526
+Encoding: 526 -1 526
 GlifName: uni0920_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -15617,7 +15615,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0920 uni094D uni0
 EndChar
 
 StartChar: uni0920_uni094D.haln
-Encoding: 65588 -1 527
+Encoding: 527 -1 527
 GlifName: uni0920_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -15673,7 +15671,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0920 uni094D
 EndChar
 
 StartChar: uni0921
-Encoding: 2337 2337 528
+Encoding: 528 2337 528
 GlifName: uni0921
 Width: 2048
 VWidth: 0
@@ -15728,7 +15726,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0921_uni0930_uni094D.vatu
-Encoding: 65589 -1 529
+Encoding: 529 -1 529
 GlifName: uni0921_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -15794,7 +15792,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0921 uni094D uni0
 EndChar
 
 StartChar: uni0921_uni094D.haln
-Encoding: 65590 -1 530
+Encoding: 530 -1 530
 GlifName: uni0921_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -15860,7 +15858,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0921 uni094D
 EndChar
 
 StartChar: uni0922
-Encoding: 2338 2338 531
+Encoding: 531 2338 531
 GlifName: uni0922
 Width: 2048
 VWidth: 0
@@ -15910,7 +15908,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0922_uni0930_uni094D.vatu
-Encoding: 65591 -1 532
+Encoding: 532 -1 532
 GlifName: uni0922_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -15971,7 +15969,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0922 uni094D uni0
 EndChar
 
 StartChar: uni0922_uni094D.haln
-Encoding: 65592 -1 533
+Encoding: 533 -1 533
 GlifName: uni0922_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -16032,7 +16030,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0922 uni094D
 EndChar
 
 StartChar: uni0923
-Encoding: 2339 2339 534
+Encoding: 534 2339 534
 GlifName: uni0923
 Width: 2048
 VWidth: 0
@@ -16072,7 +16070,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0923_uni0930_uni094D.vatu
-Encoding: 65593 -1 535
+Encoding: 535 -1 535
 GlifName: uni0923_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -16118,7 +16116,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0923 uni094D uni0
 EndChar
 
 StartChar: uni0923_uni094D.half
-Encoding: 65594 -1 536
+Encoding: 536 -1 536
 GlifName: uni0923_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -16154,7 +16152,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0923 uni094D
 EndChar
 
 StartChar: uni0923_uni094D.haln
-Encoding: 65595 -1 537
+Encoding: 537 -1 537
 GlifName: uni0923_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -16205,7 +16203,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0923 uni094D
 EndChar
 
 StartChar: uni0924
-Encoding: 2340 2340 538
+Encoding: 538 2340 538
 GlifName: uni0924
 Width: 2048
 VWidth: 0
@@ -16240,7 +16238,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0924_uni0930_uni094D.vatu
-Encoding: 65596 -1 539
+Encoding: 539 -1 539
 GlifName: uni0924_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -16276,7 +16274,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0924 uni094D uni0
 EndChar
 
 StartChar: uni0924_uni094D.half
-Encoding: 65597 -1 540
+Encoding: 540 -1 540
 GlifName: uni0924_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -16307,7 +16305,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0924 uni094D
 EndChar
 
 StartChar: uni0924_uni094D.haln
-Encoding: 65598 -1 541
+Encoding: 541 -1 541
 GlifName: uni0924_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -16353,7 +16351,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0924 uni094D
 EndChar
 
 StartChar: uni0924_uni094D_uni0924.pres
-Encoding: 65599 -1 542
+Encoding: 542 -1 542
 GlifName: uni0924_uni094D__uni0924.pres
 Width: 2048
 VWidth: 0
@@ -16394,7 +16392,7 @@ Ligature2: "presPreBaseSubstitutionsinDevanagari2lookup0 subtable" uni0924_uni09
 EndChar
 
 StartChar: uni0925
-Encoding: 2341 2341 543
+Encoding: 543 2341 543
 GlifName: uni0925
 Width: 2048
 VWidth: 0
@@ -16444,7 +16442,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0925_uni0930_uni094D.vatu
-Encoding: 65600 -1 544
+Encoding: 544 -1 544
 GlifName: uni0925_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -16500,7 +16498,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0925 uni094D uni0
 EndChar
 
 StartChar: uni0925_uni094D.half
-Encoding: 65601 -1 545
+Encoding: 545 -1 545
 GlifName: uni0925_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -16546,7 +16544,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0925 uni094D
 EndChar
 
 StartChar: uni0925_uni094D.haln
-Encoding: 65602 -1 546
+Encoding: 546 -1 546
 GlifName: uni0925_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -16607,7 +16605,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0925 uni094D
 EndChar
 
 StartChar: uni0926
-Encoding: 2342 2342 547
+Encoding: 547 2342 547
 GlifName: uni0926
 Width: 2048
 VWidth: 0
@@ -16652,7 +16650,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0926_uni0930_uni094D.vatu
-Encoding: 65603 -1 548
+Encoding: 548 -1 548
 GlifName: uni0926_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -16703,7 +16701,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0926 uni094D uni0
 EndChar
 
 StartChar: uni0926_uni094D.half
-Encoding: 65604 -1 549
+Encoding: 549 -1 549
 GlifName: uni0926_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -16759,7 +16757,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0926 uni094D
 EndChar
 
 StartChar: uni0926_uni094D.haln
-Encoding: 65605 -1 550
+Encoding: 550 -1 550
 GlifName: uni0926_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -16815,7 +16813,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0926 uni094D
 EndChar
 
 StartChar: uni0926_uni094D_uni0926.pres
-Encoding: 65606 -1 551
+Encoding: 551 -1 551
 GlifName: uni0926_uni094D__uni0926.pres
 Width: 2048
 VWidth: 0
@@ -16871,7 +16869,7 @@ Ligature2: "presPreBaseSubstitutionsinDevanagari2lookup0 subtable" uni0926_uni09
 EndChar
 
 StartChar: uni0926_uni094D_uni0927.pres
-Encoding: 65607 -1 552
+Encoding: 552 -1 552
 GlifName: uni0926_uni094D__uni0927.pres
 Width: 2048
 VWidth: 0
@@ -16937,7 +16935,7 @@ Ligature2: "presPreBaseSubstitutionsinDevanagari2lookup0 subtable" uni0926_uni09
 EndChar
 
 StartChar: uni0926_uni094D_uni092F.pres
-Encoding: 65608 -1 553
+Encoding: 553 -1 553
 GlifName: uni0926_uni094D__uni092F_.pres
 Width: 2048
 VWidth: 0
@@ -16988,7 +16986,7 @@ Ligature2: "presPreBaseSubstitutionsinDevanagari2lookup0 subtable" uni0926_uni09
 EndChar
 
 StartChar: uni0926_uni094D_uni0935.pres
-Encoding: 65609 -1 554
+Encoding: 554 -1 554
 GlifName: uni0926_uni094D__uni0935.pres
 Width: 2048
 VWidth: 0
@@ -17049,7 +17047,7 @@ Ligature2: "presPreBaseSubstitutionsinDevanagari2lookup0 subtable" uni0926_uni09
 EndChar
 
 StartChar: uni0927
-Encoding: 2343 2343 555
+Encoding: 555 2343 555
 GlifName: uni0927
 Width: 2048
 VWidth: 0
@@ -17099,7 +17097,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0927_uni0930_uni094D.vatu
-Encoding: 65610 -1 556
+Encoding: 556 -1 556
 GlifName: uni0927_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -17155,7 +17153,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0927 uni094D uni0
 EndChar
 
 StartChar: uni0927_uni094D.half
-Encoding: 65611 -1 557
+Encoding: 557 -1 557
 GlifName: uni0927_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -17196,7 +17194,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0927 uni094D
 EndChar
 
 StartChar: uni0927_uni094D.haln
-Encoding: 65612 -1 558
+Encoding: 558 -1 558
 GlifName: uni0927_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -17257,7 +17255,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0927 uni094D
 EndChar
 
 StartChar: uni0928
-Encoding: 2344 2344 559
+Encoding: 559 2344 559
 GlifName: uni0928
 Width: 2048
 VWidth: 0
@@ -17292,7 +17290,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0928_uni0930_uni094D.vatu
-Encoding: 65613 -1 560
+Encoding: 560 -1 560
 GlifName: uni0928_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -17333,7 +17331,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0928 uni094D uni0
 EndChar
 
 StartChar: uni0928_uni094D.half
-Encoding: 65614 -1 561
+Encoding: 561 -1 561
 GlifName: uni0928_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -17364,7 +17362,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0928 uni094D
 EndChar
 
 StartChar: uni0928_uni094D.haln
-Encoding: 65615 -1 562
+Encoding: 562 -1 562
 GlifName: uni0928_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -17410,7 +17408,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0928 uni094D
 EndChar
 
 StartChar: uni0929
-Encoding: 2345 2345 563
+Encoding: 563 2345 563
 GlifName: uni0929
 Width: 2048
 VWidth: 0
@@ -17451,7 +17449,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0928 uni093C
 EndChar
 
 StartChar: uni0929_uni0930_uni094D.vatu
-Encoding: 65616 -1 564
+Encoding: 564 -1 564
 GlifName: uni0929_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -17497,7 +17495,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0929 uni094D uni0
 EndChar
 
 StartChar: uni0929_uni094D.half
-Encoding: 65617 -1 565
+Encoding: 565 -1 565
 GlifName: uni0929_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -17533,7 +17531,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0929 uni094D
 EndChar
 
 StartChar: uni0929_uni094D.haln
-Encoding: 65618 -1 566
+Encoding: 566 -1 566
 GlifName: uni0929_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -17584,7 +17582,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0929 uni094D
 EndChar
 
 StartChar: uni092A
-Encoding: 2346 2346 567
+Encoding: 567 2346 567
 GlifName: uni092A_
 Width: 2048
 VWidth: 0
@@ -17619,7 +17617,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni092A_uni0930_uni094D.vatu
-Encoding: 65619 -1 568
+Encoding: 568 -1 568
 GlifName: uni092A__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -17660,7 +17658,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092A uni094D uni0
 EndChar
 
 StartChar: uni092A_uni094D.half
-Encoding: 65620 -1 569
+Encoding: 569 -1 569
 GlifName: uni092A__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -17691,7 +17689,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni092A uni094D
 EndChar
 
 StartChar: uni092A_uni094D.haln
-Encoding: 65621 -1 570
+Encoding: 570 -1 570
 GlifName: uni092A__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -17737,7 +17735,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni092A uni094D
 EndChar
 
 StartChar: uni092B
-Encoding: 2347 2347 571
+Encoding: 571 2347 571
 GlifName: uni092B_
 Width: 2048
 VWidth: 0
@@ -17777,7 +17775,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni092B_uni0930_uni094D.vatu
-Encoding: 65622 -1 572
+Encoding: 572 -1 572
 GlifName: uni092B__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -17823,7 +17821,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092B uni094D uni0
 EndChar
 
 StartChar: uni092B_uni094D.half
-Encoding: 65623 -1 573
+Encoding: 573 -1 573
 GlifName: uni092B__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -17859,7 +17857,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni092B uni094D
 EndChar
 
 StartChar: uni092B_uni094D.haln
-Encoding: 65624 -1 574
+Encoding: 574 -1 574
 GlifName: uni092B__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -17910,7 +17908,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni092B uni094D
 EndChar
 
 StartChar: uni092C
-Encoding: 2348 2348 575
+Encoding: 575 2348 575
 GlifName: uni092C_
 Width: 2048
 VWidth: 0
@@ -17955,7 +17953,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni092C_uni0930_uni094D.vatu
-Encoding: 65625 -1 576
+Encoding: 576 -1 576
 GlifName: uni092C__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -18006,7 +18004,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092C uni094D uni0
 EndChar
 
 StartChar: uni092C_uni094D.half
-Encoding: 65626 -1 577
+Encoding: 577 -1 577
 GlifName: uni092C__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -18047,7 +18045,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni092C uni094D
 EndChar
 
 StartChar: uni092C_uni094D.haln
-Encoding: 65627 -1 578
+Encoding: 578 -1 578
 GlifName: uni092C__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -18103,7 +18101,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni092C uni094D
 EndChar
 
 StartChar: uni092D
-Encoding: 2349 2349 579
+Encoding: 579 2349 579
 GlifName: uni092D_
 Width: 2048
 VWidth: 0
@@ -18158,7 +18156,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni092D_uni0930_uni094D.vatu
-Encoding: 65628 -1 580
+Encoding: 580 -1 580
 GlifName: uni092D__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -18219,7 +18217,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092D uni094D uni0
 EndChar
 
 StartChar: uni092D_uni094D.half
-Encoding: 65629 -1 581
+Encoding: 581 -1 581
 GlifName: uni092D__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -18270,7 +18268,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni092D uni094D
 EndChar
 
 StartChar: uni092D_uni094D.haln
-Encoding: 65630 -1 582
+Encoding: 582 -1 582
 GlifName: uni092D__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -18336,7 +18334,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni092D uni094D
 EndChar
 
 StartChar: uni092E
-Encoding: 2350 2350 583
+Encoding: 583 2350 583
 GlifName: uni092E_
 Width: 2048
 VWidth: 0
@@ -18381,7 +18379,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni092E_uni0930_uni094D.vatu
-Encoding: 65631 -1 584
+Encoding: 584 -1 584
 GlifName: uni092E__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -18432,7 +18430,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092E uni094D uni0
 EndChar
 
 StartChar: uni092E_uni094D.half
-Encoding: 65632 -1 585
+Encoding: 585 -1 585
 GlifName: uni092E__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -18473,7 +18471,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni092E uni094D
 EndChar
 
 StartChar: uni092E_uni094D.haln
-Encoding: 65633 -1 586
+Encoding: 586 -1 586
 GlifName: uni092E__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -18529,7 +18527,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni092E uni094D
 EndChar
 
 StartChar: uni092F
-Encoding: 2351 2351 587
+Encoding: 587 2351 587
 GlifName: uni092F_
 Width: 2048
 VWidth: 0
@@ -18569,7 +18567,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni092F_uni0930_uni094D.vatu
-Encoding: 65634 -1 588
+Encoding: 588 -1 588
 GlifName: uni092F__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -18615,7 +18613,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni092F uni094D uni0
 EndChar
 
 StartChar: uni092F_uni094D.half
-Encoding: 65635 -1 589
+Encoding: 589 -1 589
 GlifName: uni092F__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -18651,7 +18649,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni092F uni094D
 EndChar
 
 StartChar: uni092F_uni094D.haln
-Encoding: 65636 -1 590
+Encoding: 590 -1 590
 GlifName: uni092F__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -18702,7 +18700,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni092F uni094D
 EndChar
 
 StartChar: uni0930
-Encoding: 2352 2352 591
+Encoding: 591 2352 591
 GlifName: uni0930
 Width: 2048
 VWidth: 0
@@ -18737,7 +18735,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0930_uni0930_uni094D.vatu
-Encoding: 65637 -1 592
+Encoding: 592 -1 592
 GlifName: uni0930_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -18778,7 +18776,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0930 uni094D uni0
 EndChar
 
 StartChar: uni0930_uni0941.blws
-Encoding: 65638 -1 593
+Encoding: 593 -1 593
 GlifName: uni0930_uni0941.blws
 Width: 2048
 VWidth: 0
@@ -18829,7 +18827,7 @@ Ligature2: "blwsBelowBaseSubstitutionsinDevanagari2lookup12 subtable" uni0930 un
 EndChar
 
 StartChar: uni0930_uni0942.blws
-Encoding: 65639 -1 594
+Encoding: 594 -1 594
 GlifName: uni0930_uni0942.blws
 Width: 2048
 VWidth: 0
@@ -18885,7 +18883,7 @@ Ligature2: "blwsBelowBaseSubstitutionsinDevanagari2lookup12 subtable" uni0930 un
 EndChar
 
 StartChar: uni0930_uni094D.blwf
-Encoding: 65640 -1 595
+Encoding: 595 -1 595
 GlifName: uni0930_uni094D_.blwf
 Width: 0
 VWidth: 0
@@ -18910,7 +18908,7 @@ Ligature2: "blwfBelowBaseFormsinDevanagari2lookup0 subtable" uni094D uni0930
 EndChar
 
 StartChar: uni0930_uni094D.half
-Encoding: 65641 -1 596
+Encoding: 596 -1 596
 GlifName: uni0930_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -18942,12 +18940,12 @@ SplineSet
  295 1189 l 257
  250 1023 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
-Encoding: 65642 -1 597
+Encoding: 597 -1 597
 GlifName: uni0930_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -18993,43 +18991,41 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.rphf
-Encoding: 65643 -1 598
+Encoding: 598 -1 598
 GlifName: uni0930_uni094D_.rphf
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
-AnchorPoint: "abvm_deva" -198 1546 mark 0
+AnchorPoint: "abvm_deva" -1 1546 mark 0
 LayerCount: 2
 Fore
 SplineSet
--294 1548 m 257
- -96 1548 l 257
- -96 1871 l 257
- -294 1871 l 257
- -294 1548 l 257
--34 2142 m 257
- -34 1942 l 257
- 294 1942 l 257
- 294 2142 l 257
- -34 2142 l 257
--34 2142 m 257
- -294 1869 l 257
- -96 1869 l 257
- -34 1942 l 257
- -34 2142 l 257
+-102 1549 m 257
+ 96 1549 l 257
+ 96 1872 l 257
+ -102 1872 l 257
+ -102 1549 l 257
+158 2143 m 257
+ 158 1943 l 257
+ 486 1943 l 257
+ 486 2143 l 257
+ 158 2143 l 257
+158 2143 m 257
+ -102 1870 l 257
+ 96 1870 l 257
+ 158 1943 l 257
+ 158 2143 l 257
 EndSplineSet
 Ligature2: "rphfRephForminDevanagari2lookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D_uni0902.abvs
-Encoding: 65644 -1 599
+Encoding: 599 -1 599
 GlifName: uni0930_uni094D__uni0902.abvs
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
-AnchorPoint: "abvm_deva" -112 1511 mark 0
+AnchorPoint: "abvm_deva" -8 1529 mark 0
 LayerCount: 2
 Fore
 Refer: 457 2306 N 1 0 0 1 212 5 2
@@ -19038,7 +19034,7 @@ Ligature2: "abvsAboveBaseSubstitutionsinDevanagari2lookup0 subtable" uni0930_uni
 EndChar
 
 StartChar: uni0931
-Encoding: 2353 2353 600
+Encoding: 600 2353 600
 GlifName: uni0931
 Width: 2048
 VWidth: 0
@@ -19079,7 +19075,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0930 uni093C
 EndChar
 
 StartChar: uni0931_uni0930_uni094D.vatu
-Encoding: 65645 -1 601
+Encoding: 601 -1 601
 GlifName: uni0931_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -19125,7 +19121,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0931 uni094D uni0
 EndChar
 
 StartChar: uni0931_uni094D.haln
-Encoding: 65646 -1 602
+Encoding: 602 -1 602
 GlifName: uni0931_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -19176,7 +19172,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 EndChar
 
 StartChar: uni0932
-Encoding: 2354 2354 603
+Encoding: 603 2354 603
 GlifName: uni0932
 Width: 2048
 VWidth: 0
@@ -19216,7 +19212,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0932_uni0930_uni094D.vatu
-Encoding: 65647 -1 604
+Encoding: 604 -1 604
 GlifName: uni0932_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -19262,7 +19258,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0932 uni094D uni0
 EndChar
 
 StartChar: uni0932_uni094D.half
-Encoding: 65648 -1 605
+Encoding: 605 -1 605
 GlifName: uni0932_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -19298,7 +19294,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0932 uni094D
 EndChar
 
 StartChar: uni0932_uni094D.haln
-Encoding: 65649 -1 606
+Encoding: 606 -1 606
 GlifName: uni0932_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -19349,7 +19345,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0932 uni094D
 EndChar
 
 StartChar: uni0933
-Encoding: 2355 2355 607
+Encoding: 607 2355 607
 GlifName: uni0933
 Width: 2048
 VWidth: 0
@@ -19394,7 +19390,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0933_uni0930_uni094D.vatu
-Encoding: 65650 -1 608
+Encoding: 608 -1 608
 GlifName: uni0933_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -19450,7 +19446,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0933 uni094D uni0
 EndChar
 
 StartChar: uni0933_uni094D.half
-Encoding: 65651 -1 609
+Encoding: 609 -1 609
 GlifName: uni0933_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -19496,7 +19492,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0933 uni094D
 EndChar
 
 StartChar: uni0933_uni094D.haln
-Encoding: 65652 -1 610
+Encoding: 610 -1 610
 GlifName: uni0933_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -19552,7 +19548,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0933 uni094D
 EndChar
 
 StartChar: uni0934
-Encoding: 2356 2356 611
+Encoding: 611 2356 611
 GlifName: uni0934
 Width: 2048
 VWidth: 0
@@ -19603,7 +19599,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0933 uni093C
 EndChar
 
 StartChar: uni0934_uni0930_uni094D.vatu
-Encoding: 65653 -1 612
+Encoding: 612 -1 612
 GlifName: uni0934_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -19664,7 +19660,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0934 uni094D uni0
 EndChar
 
 StartChar: uni0934_uni094D.half
-Encoding: 65654 -1 613
+Encoding: 613 -1 613
 GlifName: uni0934_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -19715,7 +19711,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0934 uni094D
 EndChar
 
 StartChar: uni0934_uni094D.haln
-Encoding: 65655 -1 614
+Encoding: 614 -1 614
 GlifName: uni0934_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -19776,7 +19772,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0934 uni094D
 EndChar
 
 StartChar: uni0935
-Encoding: 2357 2357 615
+Encoding: 615 2357 615
 GlifName: uni0935
 Width: 2048
 VWidth: 0
@@ -19816,7 +19812,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0935_uni0930_uni094D.vatu
-Encoding: 65656 -1 616
+Encoding: 616 -1 616
 GlifName: uni0935_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -19862,7 +19858,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0935 uni094D uni0
 EndChar
 
 StartChar: uni0935_uni094D.half
-Encoding: 65657 -1 617
+Encoding: 617 -1 617
 GlifName: uni0935_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -19898,7 +19894,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0935 uni094D
 EndChar
 
 StartChar: uni0935_uni094D.haln
-Encoding: 65658 -1 618
+Encoding: 618 -1 618
 GlifName: uni0935_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -19949,7 +19945,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0935 uni094D
 EndChar
 
 StartChar: uni0936
-Encoding: 2358 2358 619
+Encoding: 619 2358 619
 GlifName: uni0936
 Width: 2048
 VWidth: 0
@@ -19999,7 +19995,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0936_uni0930_uni094D.vatu
-Encoding: 65659 -1 620
+Encoding: 620 -1 620
 GlifName: uni0936_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -20055,7 +20051,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0936 uni094D uni0
 EndChar
 
 StartChar: uni0936_uni094D.half
-Encoding: 65660 -1 621
+Encoding: 621 -1 621
 GlifName: uni0936_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -20096,7 +20092,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0936 uni094D
 EndChar
 
 StartChar: uni0936_uni094D.haln
-Encoding: 65661 -1 622
+Encoding: 622 -1 622
 GlifName: uni0936_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -20157,7 +20153,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0936 uni094D
 EndChar
 
 StartChar: uni0937
-Encoding: 2359 2359 623
+Encoding: 623 2359 623
 GlifName: uni0937
 Width: 2048
 VWidth: 0
@@ -20197,7 +20193,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0937_uni0930_uni094D.vatu
-Encoding: 65662 -1 624
+Encoding: 624 -1 624
 GlifName: uni0937_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -20243,7 +20239,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0937 uni094D uni0
 EndChar
 
 StartChar: uni0937_uni094D.half
-Encoding: 65663 -1 625
+Encoding: 625 -1 625
 GlifName: uni0937_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -20279,7 +20275,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0937 uni094D
 EndChar
 
 StartChar: uni0937_uni094D.haln
-Encoding: 65664 -1 626
+Encoding: 626 -1 626
 GlifName: uni0937_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -20330,7 +20326,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0937 uni094D
 EndChar
 
 StartChar: uni0938
-Encoding: 2360 2360 627
+Encoding: 627 2360 627
 GlifName: uni0938
 Width: 2048
 VWidth: 0
@@ -20370,7 +20366,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0938_uni0930_uni094D.vatu
-Encoding: 65665 -1 628
+Encoding: 628 -1 628
 GlifName: uni0938_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -20416,7 +20412,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0938 uni094D uni0
 EndChar
 
 StartChar: uni0938_uni094D.half
-Encoding: 65666 -1 629
+Encoding: 629 -1 629
 GlifName: uni0938_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -20452,7 +20448,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0938 uni094D
 EndChar
 
 StartChar: uni0938_uni094D.haln
-Encoding: 65667 -1 630
+Encoding: 630 -1 630
 GlifName: uni0938_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -20503,7 +20499,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0938 uni094D
 EndChar
 
 StartChar: uni0939
-Encoding: 2361 2361 631
+Encoding: 631 2361 631
 GlifName: uni0939
 Width: 2048
 VWidth: 0
@@ -20558,7 +20554,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0939_uni0930_uni094D.vatu
-Encoding: 65668 -1 632
+Encoding: 632 -1 632
 GlifName: uni0939_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -20619,7 +20615,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0939 uni094D uni0
 EndChar
 
 StartChar: uni0939_uni0943.blws
-Encoding: 65669 -1 633
+Encoding: 633 -1 633
 GlifName: uni0939_uni0943.blws
 Width: 2048
 VWidth: 0
@@ -20680,7 +20676,7 @@ Ligature2: "blwsBelowBaseSubstitutionsinDevanagari2lookup12 subtable" uni0939 un
 EndChar
 
 StartChar: uni0939_uni094D.half
-Encoding: 65670 -1 634
+Encoding: 634 -1 634
 GlifName: uni0939_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -20731,7 +20727,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0939 uni094D
 EndChar
 
 StartChar: uni0939_uni094D.haln
-Encoding: 65671 -1 635
+Encoding: 635 -1 635
 GlifName: uni0939_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -20797,7 +20793,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0939 uni094D
 EndChar
 
 StartChar: uni0939_uni094D_uni092E.pres
-Encoding: 65672 -1 636
+Encoding: 636 -1 636
 GlifName: uni0939_uni094D__uni092E_.pres
 Width: 2048
 VWidth: 0
@@ -20873,7 +20869,7 @@ Ligature2: "presPreBaseSubstitutionsinDevanagari2lookup0 subtable" uni0939_uni09
 EndChar
 
 StartChar: uni093A
-Encoding: 2362 2362 637
+Encoding: 637 2362 637
 GlifName: uni093A_
 Width: 0
 VWidth: 0
@@ -20916,7 +20912,7 @@ sass."
 EndChar
 
 StartChar: uni093B
-Encoding: 2363 2363 638
+Encoding: 638 2363 638
 GlifName: uni093B_
 Width: 2048
 VWidth: 0
@@ -20939,12 +20935,11 @@ EndSplineSet
 EndChar
 
 StartChar: uni093C
-Encoding: 2364 2364 639
+Encoding: 639 2364 639
 GlifName: uni093C_
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 HStem: -481 247
 VStem: -1033 266
 AnchorPoint: "blwm_deva" 270 4 mark 0
@@ -20983,7 +20978,7 @@ sass."
 EndChar
 
 StartChar: uni093D
-Encoding: 2365 2365 640
+Encoding: 640 2365 640
 GlifName: uni093D_
 Width: 2048
 VWidth: 0
@@ -21016,7 +21011,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni093E
-Encoding: 2366 2366 641
+Encoding: 641 2366 641
 GlifName: uni093E_
 Width: 2048
 VWidth: 0
@@ -21040,7 +21035,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni093F
-Encoding: 2367 2367 642
+Encoding: 642 2367 642
 GlifName: uni093F_
 Width: 2048
 VWidth: 0
@@ -21073,7 +21068,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0940
-Encoding: 2368 2368 643
+Encoding: 643 2368 643
 GlifName: uni0940
 Width: 2048
 VWidth: 0
@@ -21107,12 +21102,11 @@ EndSplineSet
 EndChar
 
 StartChar: uni0941
-Encoding: 2369 2369 644
+Encoding: 644 2369 644
 GlifName: uni0941
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 AnchorPoint: "blwm_deva" -13 31 mark 0
 LayerCount: 2
 Fore
@@ -21141,12 +21135,11 @@ EndSplineSet
 EndChar
 
 StartChar: uni0942
-Encoding: 2370 2370 645
+Encoding: 645 2370 645
 GlifName: uni0942
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 AnchorPoint: "blwm_deva" -996 74 mark 0
 LayerCount: 2
 Fore
@@ -21175,7 +21168,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0943
-Encoding: 2371 2371 646
+Encoding: 646 2371 646
 GlifName: uni0943
 Width: 0
 VWidth: 0
@@ -21204,7 +21197,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0944
-Encoding: 2372 2372 647
+Encoding: 647 2372 647
 GlifName: uni0944
 Width: 0
 VWidth: 0
@@ -21238,7 +21231,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0945
-Encoding: 2373 2373 648
+Encoding: 648 2373 648
 GlifName: uni0945
 Width: 2048
 VWidth: 0
@@ -21272,7 +21265,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0946
-Encoding: 2374 2374 649
+Encoding: 649 2374 649
 GlifName: uni0946
 Width: 2048
 VWidth: 0
@@ -21306,7 +21299,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0947
-Encoding: 2375 2375 650
+Encoding: 650 2375 650
 GlifName: uni0947
 Width: 2048
 VWidth: 0
@@ -21330,7 +21323,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0948
-Encoding: 2376 2376 651
+Encoding: 651 2376 651
 GlifName: uni0948
 Width: 2048
 VWidth: 0
@@ -21359,7 +21352,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0949
-Encoding: 2377 2377 652
+Encoding: 652 2377 652
 GlifName: uni0949
 Width: 2048
 VWidth: 0
@@ -21397,12 +21390,13 @@ EndSplineSet
 EndChar
 
 StartChar: uni094A
-Encoding: 2378 2378 653
+Encoding: 653 2378 653
 GlifName: uni094A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_deva" 1710 1557 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -21435,7 +21429,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094B
-Encoding: 2379 2379 654
+Encoding: 654 2379 654
 GlifName: uni094B_
 Width: 2048
 VWidth: 0
@@ -21464,7 +21458,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094C
-Encoding: 2380 2380 655
+Encoding: 655 2380 655
 GlifName: uni094C_
 Width: 2048
 VWidth: 0
@@ -21498,7 +21492,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094D
-Encoding: 2381 2381 656
+Encoding: 656 2381 656
 GlifName: uni094D_
 Width: 0
 VWidth: 0
@@ -21522,7 +21516,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094E
-Encoding: 2382 2382 657
+Encoding: 657 2382 657
 GlifName: uni094E_
 Width: 2048
 VWidth: 0
@@ -21545,7 +21539,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni094F
-Encoding: 2383 2383 658
+Encoding: 658 2383 658
 GlifName: uni094F_
 Width: 2048
 VWidth: 0
@@ -21599,7 +21593,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0950
-Encoding: 2384 2384 659
+Encoding: 659 2384 659
 GlifName: uni0950
 Width: 2048
 VWidth: 0
@@ -21657,7 +21651,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0951
-Encoding: 2385 2385 660
+Encoding: 660 2385 660
 GlifName: uni0951
 Width: 0
 VWidth: 0
@@ -21676,7 +21670,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0952
-Encoding: 2386 2386 661
+Encoding: 661 2386 661
 GlifName: uni0952
 Width: 0
 VWidth: 0
@@ -21695,7 +21689,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0953
-Encoding: 2387 2387 662
+Encoding: 662 2387 662
 GlifName: uni0953
 Width: 0
 VWidth: 0
@@ -21713,7 +21707,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0954
-Encoding: 2388 2388 663
+Encoding: 663 2388 663
 GlifName: uni0954
 Width: 0
 VWidth: 0
@@ -21731,7 +21725,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0955
-Encoding: 2389 2389 664
+Encoding: 664 2389 664
 GlifName: uni0955
 Width: 2048
 VWidth: 0
@@ -21770,7 +21764,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0956
-Encoding: 2390 2390 665
+Encoding: 665 2390 665
 GlifName: uni0956
 Width: 0
 VWidth: 0
@@ -21799,7 +21793,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0957
-Encoding: 2391 2391 666
+Encoding: 666 2391 666
 GlifName: uni0957
 Width: 0
 VWidth: 0
@@ -21843,7 +21837,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0958
-Encoding: 2392 2392 667
+Encoding: 667 2392 667
 GlifName: uni0958
 Width: 2048
 VWidth: 0
@@ -21899,7 +21893,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0915 uni093C
 EndChar
 
 StartChar: uni0958_uni0930_uni094D.vatu
-Encoding: 65673 -1 668
+Encoding: 668 -1 668
 GlifName: uni0958_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -21960,7 +21954,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0958 uni094D uni0
 EndChar
 
 StartChar: uni0958_uni094D.half
-Encoding: 65674 -1 669
+Encoding: 669 -1 669
 GlifName: uni0958_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -22011,7 +22005,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0958 uni094D
 EndChar
 
 StartChar: uni0958_uni094D.haln
-Encoding: 65675 -1 670
+Encoding: 670 -1 670
 GlifName: uni0958_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -22077,7 +22071,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0958 uni094D
 EndChar
 
 StartChar: uni0959
-Encoding: 2393 2393 671
+Encoding: 671 2393 671
 GlifName: uni0959
 Width: 2048
 VWidth: 0
@@ -22138,7 +22132,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0916 uni093C
 EndChar
 
 StartChar: uni0959_uni0930_uni094D.vatu
-Encoding: 65676 -1 672
+Encoding: 672 -1 672
 GlifName: uni0959_uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -22204,7 +22198,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0959 uni094D uni0
 EndChar
 
 StartChar: uni0959_uni094D.half
-Encoding: 65677 -1 673
+Encoding: 673 -1 673
 GlifName: uni0959_uni094D_.half
 Width: 2048
 VWidth: 0
@@ -22260,7 +22254,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0959 uni094D
 EndChar
 
 StartChar: uni0959_uni094D.haln
-Encoding: 65678 -1 674
+Encoding: 674 -1 674
 GlifName: uni0959_uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -22331,7 +22325,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni0959 uni094D
 EndChar
 
 StartChar: uni095A
-Encoding: 2394 2394 675
+Encoding: 675 2394 675
 GlifName: uni095A_
 Width: 2048
 VWidth: 0
@@ -22377,7 +22371,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0917 uni093C
 EndChar
 
 StartChar: uni095A_uni0930_uni094D.vatu
-Encoding: 65679 -1 676
+Encoding: 676 -1 676
 GlifName: uni095A__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -22428,7 +22422,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095A uni094D uni0
 EndChar
 
 StartChar: uni095A_uni094D.half
-Encoding: 65680 -1 677
+Encoding: 677 -1 677
 GlifName: uni095A__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -22469,7 +22463,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni095A uni094D
 EndChar
 
 StartChar: uni095A_uni094D.haln
-Encoding: 65681 -1 678
+Encoding: 678 -1 678
 GlifName: uni095A__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -22525,7 +22519,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni095A uni094D
 EndChar
 
 StartChar: uni095B
-Encoding: 2395 2395 679
+Encoding: 679 2395 679
 GlifName: uni095B_
 Width: 2048
 VWidth: 0
@@ -22576,7 +22570,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni091C uni093C
 EndChar
 
 StartChar: uni095B_uni0930_uni094D.vatu
-Encoding: 65682 -1 680
+Encoding: 680 -1 680
 GlifName: uni095B__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -22632,7 +22626,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095B uni094D uni0
 EndChar
 
 StartChar: uni095B_uni094D.half
-Encoding: 65683 -1 681
+Encoding: 681 -1 681
 GlifName: uni095B__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -22678,7 +22672,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni095B uni094D
 EndChar
 
 StartChar: uni095B_uni094D.haln
-Encoding: 65684 -1 682
+Encoding: 682 -1 682
 GlifName: uni095B__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -22739,7 +22733,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni095B uni094D
 EndChar
 
 StartChar: uni095C
-Encoding: 2396 2396 683
+Encoding: 683 2396 683
 GlifName: uni095C_
 Width: 2048
 VWidth: 0
@@ -22800,7 +22794,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0921 uni093C
 EndChar
 
 StartChar: uni095C_uni0930_uni094D.vatu
-Encoding: 65685 -1 684
+Encoding: 684 -1 684
 GlifName: uni095C__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -22871,7 +22865,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095C uni094D uni0
 EndChar
 
 StartChar: uni095C_uni094D.haln
-Encoding: 65686 -1 685
+Encoding: 685 -1 685
 GlifName: uni095C__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -22942,7 +22936,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni095C uni094D
 EndChar
 
 StartChar: uni095D
-Encoding: 2397 2397 686
+Encoding: 686 2397 686
 GlifName: uni095D_
 Width: 2048
 VWidth: 0
@@ -22998,7 +22992,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni0922 uni093C
 EndChar
 
 StartChar: uni095D_uni0930_uni094D.vatu
-Encoding: 65687 -1 687
+Encoding: 687 -1 687
 GlifName: uni095D__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -23064,7 +23058,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095D uni094D uni0
 EndChar
 
 StartChar: uni095D_uni094D.haln
-Encoding: 65688 -1 688
+Encoding: 688 -1 688
 GlifName: uni095D__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -23130,7 +23124,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni095D uni094D
 EndChar
 
 StartChar: uni095E
-Encoding: 2398 2398 689
+Encoding: 689 2398 689
 GlifName: uni095E_
 Width: 2048
 VWidth: 0
@@ -23176,7 +23170,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni092B uni093C
 EndChar
 
 StartChar: uni095E_uni0930_uni094D.vatu
-Encoding: 65689 -1 690
+Encoding: 690 -1 690
 GlifName: uni095E__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -23227,7 +23221,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095E uni094D uni0
 EndChar
 
 StartChar: uni095E_uni094D.half
-Encoding: 65690 -1 691
+Encoding: 691 -1 691
 GlifName: uni095E__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -23268,7 +23262,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni095E uni094D
 EndChar
 
 StartChar: uni095E_uni094D.haln
-Encoding: 65691 -1 692
+Encoding: 692 -1 692
 GlifName: uni095E__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -23324,7 +23318,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni095E uni094D
 EndChar
 
 StartChar: uni095F
-Encoding: 2399 2399 693
+Encoding: 693 2399 693
 GlifName: uni095F_
 Width: 2048
 VWidth: 0
@@ -23370,7 +23364,7 @@ Ligature2: "nuktNuktaFormsinDevanagari2lookup0 subtable" uni092F uni093C
 EndChar
 
 StartChar: uni095F_uni0930_uni094D.vatu
-Encoding: 65692 -1 694
+Encoding: 694 -1 694
 GlifName: uni095F__uni0930_uni094D_.vatu
 Width: 2048
 VWidth: 0
@@ -23421,7 +23415,7 @@ Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni095F uni094D uni0
 EndChar
 
 StartChar: uni095F_uni094D.half
-Encoding: 65693 -1 695
+Encoding: 695 -1 695
 GlifName: uni095F__uni094D_.half
 Width: 2048
 VWidth: 0
@@ -23477,7 +23471,7 @@ Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni095F uni094D
 EndChar
 
 StartChar: uni095F_uni094D.haln
-Encoding: 65694 -1 696
+Encoding: 696 -1 696
 GlifName: uni095F__uni094D_.haln
 Width: 2048
 VWidth: 0
@@ -23533,7 +23527,7 @@ Ligature2: "halnHalantFormsinDevanagari2lookup0 subtable" uni095F uni094D
 EndChar
 
 StartChar: uni0960
-Encoding: 2400 2400 697
+Encoding: 697 2400 697
 GlifName: uni0960
 Width: 2048
 VWidth: 0
@@ -23591,7 +23585,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0961
-Encoding: 2401 2401 698
+Encoding: 698 2401 698
 GlifName: uni0961
 Width: 2048
 VWidth: 0
@@ -23644,7 +23638,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0962
-Encoding: 2402 2402 699
+Encoding: 699 2402 699
 GlifName: uni0962
 Width: 0
 VWidth: 0
@@ -23683,7 +23677,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0963
-Encoding: 2403 2403 700
+Encoding: 700 2403 700
 GlifName: uni0963
 Width: 0
 VWidth: 0
@@ -23727,7 +23721,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0964
-Encoding: 2404 2404 701
+Encoding: 701 2404 701
 GlifName: uni0964
 Width: 2048
 VWidth: 0
@@ -23745,7 +23739,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0965
-Encoding: 2405 2405 702
+Encoding: 702 2405 702
 GlifName: uni0965
 Width: 2048
 VWidth: 0
@@ -23768,7 +23762,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0966
-Encoding: 2406 2406 703
+Encoding: 703 2406 703
 GlifName: uni0966
 Width: 2048
 VWidth: 0
@@ -23801,7 +23795,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0967
-Encoding: 2407 2407 704
+Encoding: 704 2407 704
 GlifName: uni0967
 Width: 2048
 VWidth: 0
@@ -23834,7 +23828,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0968
-Encoding: 2408 2408 705
+Encoding: 705 2408 705
 GlifName: uni0968
 Width: 2048
 VWidth: 0
@@ -23872,7 +23866,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0969
-Encoding: 2409 2409 706
+Encoding: 706 2409 706
 GlifName: uni0969
 Width: 2048
 VWidth: 0
@@ -23910,7 +23904,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096A
-Encoding: 2410 2410 707
+Encoding: 707 2410 707
 GlifName: uni096A_
 Width: 2048
 VWidth: 0
@@ -23958,7 +23952,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096B
-Encoding: 2411 2411 708
+Encoding: 708 2411 708
 GlifName: uni096B_
 Width: 2048
 VWidth: 0
@@ -23991,7 +23985,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096C
-Encoding: 2412 2412 709
+Encoding: 709 2412 709
 GlifName: uni096C_
 Width: 2048
 VWidth: 0
@@ -24029,7 +24023,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096D
-Encoding: 2413 2413 710
+Encoding: 710 2413 710
 GlifName: uni096D_
 Width: 2048
 VWidth: 0
@@ -24067,7 +24061,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096E
-Encoding: 2414 2414 711
+Encoding: 711 2414 711
 GlifName: uni096E_
 Width: 2048
 VWidth: 0
@@ -24095,7 +24089,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni096F
-Encoding: 2415 2415 712
+Encoding: 712 2415 712
 GlifName: uni096F_
 Width: 2048
 VWidth: 0
@@ -24133,7 +24127,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0970
-Encoding: 2416 2416 713
+Encoding: 713 2416 713
 GlifName: uni0970
 Width: 2048
 VWidth: 0
@@ -24151,7 +24145,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0971
-Encoding: 2417 2417 714
+Encoding: 714 2417 714
 GlifName: uni0971
 Width: 2048
 VWidth: 0
@@ -24169,7 +24163,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0972
-Encoding: 2418 2418 715
+Encoding: 715 2418 715
 GlifName: uni0972
 Width: 2048
 VWidth: 0
@@ -24227,7 +24221,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0973
-Encoding: 2419 2419 716
+Encoding: 716 2419 716
 GlifName: uni0973
 Width: 2048
 VWidth: 0
@@ -24275,7 +24269,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0974
-Encoding: 2420 2420 717
+Encoding: 717 2420 717
 GlifName: uni0974
 Width: 2048
 VWidth: 0
@@ -24323,7 +24317,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0975
-Encoding: 2421 2421 718
+Encoding: 718 2421 718
 GlifName: uni0975
 Width: 2048
 VWidth: 0
@@ -24396,7 +24390,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0976
-Encoding: 2422 2422 719
+Encoding: 719 2422 719
 GlifName: uni0976
 Width: 2048
 VWidth: 0
@@ -24454,7 +24448,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0977
-Encoding: 2423 2423 720
+Encoding: 720 2423 720
 GlifName: uni0977
 Width: 2048
 VWidth: 0
@@ -24527,7 +24521,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0978
-Encoding: 2424 2424 721
+Encoding: 721 2424 721
 GlifName: uni0978
 Width: 2048
 VWidth: 0
@@ -24562,7 +24556,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0979
-Encoding: 2425 2425 722
+Encoding: 722 2425 722
 GlifName: uni0979
 Width: 2048
 VWidth: 0
@@ -24622,7 +24616,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097A
-Encoding: 2426 2426 723
+Encoding: 723 2426 723
 GlifName: uni097A_
 Width: 2048
 VWidth: 0
@@ -24667,7 +24661,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097B
-Encoding: 2427 2427 724
+Encoding: 724 2427 724
 GlifName: uni097B_
 Width: 2048
 VWidth: 0
@@ -24712,7 +24706,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097C
-Encoding: 2428 2428 725
+Encoding: 725 2428 725
 GlifName: uni097C_
 Width: 2048
 VWidth: 0
@@ -24762,7 +24756,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097D
-Encoding: 2429 2429 726
+Encoding: 726 2429 726
 GlifName: uni097D_
 Width: 2048
 VWidth: 0
@@ -24795,7 +24789,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097E
-Encoding: 2430 2430 727
+Encoding: 727 2430 727
 GlifName: uni097E_
 Width: 2048
 VWidth: 0
@@ -24845,7 +24839,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni097F
-Encoding: 2431 2431 728
+Encoding: 728 2431 728
 GlifName: uni097F_
 Width: 2048
 VWidth: 0
@@ -24895,7 +24889,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni1E0C
-Encoding: 7692 7692 729
+Encoding: 729 7692 729
 GlifName: uni1E_0C_
 Width: 2048
 VWidth: 0
@@ -24933,7 +24927,7 @@ sass."
 EndChar
 
 StartChar: uni1E0D
-Encoding: 7693 7693 730
+Encoding: 730 7693 730
 GlifName: uni1E_0D_
 Width: 2048
 VWidth: 0
@@ -24971,7 +24965,7 @@ sass."
 EndChar
 
 StartChar: uni1E24
-Encoding: 7716 7716 731
+Encoding: 731 7716 731
 GlifName: uni1E_24
 Width: 2048
 VWidth: 0
@@ -25009,7 +25003,7 @@ sass."
 EndChar
 
 StartChar: uni1E25
-Encoding: 7717 7717 732
+Encoding: 732 7717 732
 GlifName: uni1E_25
 Width: 2048
 VWidth: 0
@@ -25047,7 +25041,7 @@ sass."
 EndChar
 
 StartChar: uni1E34
-Encoding: 7732 7732 733
+Encoding: 733 7732 733
 GlifName: uni1E_34
 Width: 2048
 VWidth: 0
@@ -25060,7 +25054,7 @@ Refer: 58 75 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E35
-Encoding: 7733 7733 734
+Encoding: 734 7733 734
 GlifName: uni1E_35
 Width: 2048
 VWidth: 0
@@ -25073,7 +25067,7 @@ Refer: 244 107 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E36
-Encoding: 7734 7734 735
+Encoding: 735 7734 735
 GlifName: uni1E_36
 Width: 2048
 VWidth: 0
@@ -25111,7 +25105,7 @@ sass."
 EndChar
 
 StartChar: uni1E37
-Encoding: 7735 7735 736
+Encoding: 736 7735 736
 GlifName: uni1E_37
 Width: 2048
 VWidth: 0
@@ -25149,7 +25143,7 @@ sass."
 EndChar
 
 StartChar: uni1E38
-Encoding: 7736 7736 737
+Encoding: 737 7736 737
 GlifName: uni1E_38
 Width: 2048
 VWidth: 0
@@ -25197,7 +25191,7 @@ sass."
 EndChar
 
 StartChar: uni1E39
-Encoding: 7737 7737 738
+Encoding: 738 7737 738
 GlifName: uni1E_39
 Width: 2048
 VWidth: 0
@@ -25245,7 +25239,7 @@ sass."
 EndChar
 
 StartChar: uni1E3A
-Encoding: 7738 7738 739
+Encoding: 739 7738 739
 GlifName: uni1E_3A_
 Width: 2048
 VWidth: 0
@@ -25258,7 +25252,7 @@ Refer: 59 76 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E3B
-Encoding: 7739 7739 740
+Encoding: 740 7739 740
 GlifName: uni1E_3B_
 Width: 2048
 VWidth: 0
@@ -25271,7 +25265,7 @@ Refer: 246 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E42
-Encoding: 7746 7746 741
+Encoding: 741 7746 741
 GlifName: uni1E_42
 Width: 2048
 VWidth: 0
@@ -25309,7 +25303,7 @@ sass."
 EndChar
 
 StartChar: uni1E43
-Encoding: 7747 7747 742
+Encoding: 742 7747 742
 GlifName: uni1E_43
 Width: 2048
 VWidth: 0
@@ -25347,7 +25341,7 @@ sass."
 EndChar
 
 StartChar: uni1E44
-Encoding: 7748 7748 743
+Encoding: 743 7748 743
 GlifName: uni1E_44
 Width: 2048
 VWidth: 0
@@ -25385,7 +25379,7 @@ sass."
 EndChar
 
 StartChar: uni1E45
-Encoding: 7749 7749 744
+Encoding: 744 7749 744
 GlifName: uni1E_45
 Width: 2048
 VWidth: 0
@@ -25423,7 +25417,7 @@ sass."
 EndChar
 
 StartChar: uni1E46
-Encoding: 7750 7750 745
+Encoding: 745 7750 745
 GlifName: uni1E_46
 Width: 2048
 VWidth: 0
@@ -25461,7 +25455,7 @@ sass."
 EndChar
 
 StartChar: uni1E47
-Encoding: 7751 7751 746
+Encoding: 746 7751 746
 GlifName: uni1E_47
 Width: 2048
 VWidth: 0
@@ -25499,7 +25493,7 @@ sass."
 EndChar
 
 StartChar: uni1E48
-Encoding: 7752 7752 747
+Encoding: 747 7752 747
 GlifName: uni1E_48
 Width: 2048
 VWidth: 0
@@ -25512,7 +25506,7 @@ Refer: 65 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E49
-Encoding: 7753 7753 748
+Encoding: 748 7753 748
 GlifName: uni1E_49
 Width: 2048
 VWidth: 0
@@ -25525,7 +25519,7 @@ Refer: 261 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E4C
-Encoding: 7756 7756 749
+Encoding: 749 7756 749
 GlifName: uni1E_4C_
 Width: 2048
 VWidth: 0
@@ -25538,7 +25532,7 @@ Refer: 81 213 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E4D
-Encoding: 7757 7757 750
+Encoding: 750 7757 750
 GlifName: uni1E_4D_
 Width: 2048
 VWidth: 0
@@ -25551,7 +25545,7 @@ Refer: 286 245 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E58
-Encoding: 7768 7768 751
+Encoding: 751 7768 751
 GlifName: uni1E_58
 Width: 2048
 VWidth: 0
@@ -25589,7 +25583,7 @@ sass."
 EndChar
 
 StartChar: uni1E59
-Encoding: 7769 7769 752
+Encoding: 752 7769 752
 GlifName: uni1E_59
 Width: 2048
 VWidth: 0
@@ -25627,7 +25621,7 @@ sass."
 EndChar
 
 StartChar: uni1E5A
-Encoding: 7770 7770 753
+Encoding: 753 7770 753
 GlifName: uni1E_5A_
 Width: 2048
 VWidth: 0
@@ -25665,7 +25659,7 @@ sass."
 EndChar
 
 StartChar: uni1E5B
-Encoding: 7771 7771 754
+Encoding: 754 7771 754
 GlifName: uni1E_5B_
 Width: 2048
 VWidth: 0
@@ -25703,7 +25697,7 @@ sass."
 EndChar
 
 StartChar: uni1E5C
-Encoding: 7772 7772 755
+Encoding: 755 7772 755
 GlifName: uni1E_5C_
 Width: 2048
 VWidth: 0
@@ -25751,7 +25745,7 @@ sass."
 EndChar
 
 StartChar: uni1E5D
-Encoding: 7773 7773 756
+Encoding: 756 7773 756
 GlifName: uni1E_5D_
 Width: 2048
 VWidth: 0
@@ -25799,7 +25793,7 @@ sass."
 EndChar
 
 StartChar: uni1E5E
-Encoding: 7774 7774 757
+Encoding: 757 7774 757
 GlifName: uni1E_5E_
 Width: 2048
 VWidth: 0
@@ -25812,7 +25806,7 @@ Refer: 84 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5F
-Encoding: 7775 7775 758
+Encoding: 758 7775 758
 GlifName: uni1E_5F_
 Width: 2048
 VWidth: 0
@@ -25825,7 +25819,7 @@ Refer: 309 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E62
-Encoding: 7778 7778 759
+Encoding: 759 7778 759
 GlifName: uni1E_62
 Width: 2048
 VWidth: 0
@@ -25863,7 +25857,7 @@ sass."
 EndChar
 
 StartChar: uni1E63
-Encoding: 7779 7779 760
+Encoding: 760 7779 760
 GlifName: uni1E_63
 Width: 2048
 VWidth: 0
@@ -25901,7 +25895,7 @@ sass."
 EndChar
 
 StartChar: uni1E6C
-Encoding: 7788 7788 761
+Encoding: 761 7788 761
 GlifName: uni1E_6C_
 Width: 2048
 VWidth: 0
@@ -25939,7 +25933,7 @@ sass."
 EndChar
 
 StartChar: uni1E6D
-Encoding: 7789 7789 762
+Encoding: 762 7789 762
 GlifName: uni1E_6D_
 Width: 2048
 VWidth: 0
@@ -25977,7 +25971,7 @@ sass."
 EndChar
 
 StartChar: uni1E8E
-Encoding: 7822 7822 763
+Encoding: 763 7822 763
 GlifName: uni1E_8E_
 Width: 2048
 VWidth: 0
@@ -26015,7 +26009,7 @@ sass."
 EndChar
 
 StartChar: uni1E8F
-Encoding: 7823 7823 764
+Encoding: 764 7823 764
 GlifName: uni1E_8F_
 Width: 2048
 VWidth: 0
@@ -26053,7 +26047,7 @@ sass."
 EndChar
 
 StartChar: uni1E92
-Encoding: 7826 7826 765
+Encoding: 765 7826 765
 GlifName: uni1E_92
 Width: 2048
 VWidth: 0
@@ -26091,7 +26085,7 @@ sass."
 EndChar
 
 StartChar: uni1E93
-Encoding: 7827 7827 766
+Encoding: 766 7827 766
 GlifName: uni1E_93
 Width: 2048
 VWidth: 0
@@ -26129,7 +26123,7 @@ sass."
 EndChar
 
 StartChar: uni1E9E
-Encoding: 7838 7838 767
+Encoding: 767 7838 767
 GlifName: uni1E_9E_
 Width: 2048
 VWidth: 0
@@ -26172,7 +26166,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni1EA0
-Encoding: 7840 7840 768
+Encoding: 768 7840 768
 GlifName: uni1E_A_0
 Width: 2048
 VWidth: 0
@@ -26210,7 +26204,7 @@ sass."
 EndChar
 
 StartChar: uni1EA1
-Encoding: 7841 7841 769
+Encoding: 769 7841 769
 GlifName: uni1E_A_1
 Width: 2048
 VWidth: 0
@@ -26248,7 +26242,7 @@ sass."
 EndChar
 
 StartChar: uni1EA2
-Encoding: 7842 7842 770
+Encoding: 770 7842 770
 GlifName: uni1E_A_2
 Width: 2048
 VWidth: 0
@@ -26286,7 +26280,7 @@ sass."
 EndChar
 
 StartChar: uni1EA3
-Encoding: 7843 7843 771
+Encoding: 771 7843 771
 GlifName: uni1E_A_3
 Width: 2048
 VWidth: 0
@@ -26324,7 +26318,7 @@ sass."
 EndChar
 
 StartChar: uni1EA4
-Encoding: 7844 7844 772
+Encoding: 772 7844 772
 GlifName: uni1E_A_4
 Width: 2048
 VWidth: 0
@@ -26337,7 +26331,7 @@ Refer: 6 194 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EA5
-Encoding: 7845 7845 773
+Encoding: 773 7845 773
 GlifName: uni1E_A_5
 Width: 2048
 VWidth: 0
@@ -26350,7 +26344,7 @@ Refer: 126 226 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EA6
-Encoding: 7846 7846 774
+Encoding: 774 7846 774
 GlifName: uni1E_A_6
 Width: 2048
 VWidth: 0
@@ -26363,7 +26357,7 @@ Refer: 6 194 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EA7
-Encoding: 7847 7847 775
+Encoding: 775 7847 775
 GlifName: uni1E_A_7
 Width: 2048
 VWidth: 0
@@ -26376,7 +26370,7 @@ Refer: 126 226 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EA8
-Encoding: 7848 7848 776
+Encoding: 776 7848 776
 GlifName: uni1E_A_8
 Width: 2048
 VWidth: 0
@@ -26414,7 +26408,7 @@ sass."
 EndChar
 
 StartChar: uni1EA9
-Encoding: 7849 7849 777
+Encoding: 777 7849 777
 GlifName: uni1E_A_9
 Width: 2048
 VWidth: 0
@@ -26452,7 +26446,7 @@ sass."
 EndChar
 
 StartChar: uni1EAA
-Encoding: 7850 7850 778
+Encoding: 778 7850 778
 GlifName: uni1E_A_A_
 Width: 2048
 VWidth: 0
@@ -26465,7 +26459,7 @@ Refer: 6 194 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EAB
-Encoding: 7851 7851 779
+Encoding: 779 7851 779
 GlifName: uni1E_A_B_
 Width: 2048
 VWidth: 0
@@ -26478,7 +26472,7 @@ Refer: 126 226 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EAC
-Encoding: 7852 7852 780
+Encoding: 780 7852 780
 GlifName: uni1E_A_C_
 Width: 2048
 VWidth: 0
@@ -26516,7 +26510,7 @@ sass."
 EndChar
 
 StartChar: uni1EAD
-Encoding: 7853 7853 781
+Encoding: 781 7853 781
 GlifName: uni1E_A_D_
 Width: 2048
 VWidth: 0
@@ -26554,7 +26548,7 @@ sass."
 EndChar
 
 StartChar: uni1EAE
-Encoding: 7854 7854 782
+Encoding: 782 7854 782
 GlifName: uni1E_A_E_
 Width: 2048
 VWidth: 0
@@ -26583,7 +26577,7 @@ sass."
 EndChar
 
 StartChar: uni1EAF
-Encoding: 7855 7855 783
+Encoding: 783 7855 783
 GlifName: uni1E_A_F_
 Width: 2048
 VWidth: 0
@@ -26612,7 +26606,7 @@ sass."
 EndChar
 
 StartChar: uni1EB0
-Encoding: 7856 7856 784
+Encoding: 784 7856 784
 GlifName: uni1E_B_0
 Width: 2048
 VWidth: 0
@@ -26641,7 +26635,7 @@ sass."
 EndChar
 
 StartChar: uni1EB1
-Encoding: 7857 7857 785
+Encoding: 785 7857 785
 GlifName: uni1E_B_1
 Width: 2048
 VWidth: 0
@@ -26670,7 +26664,7 @@ sass."
 EndChar
 
 StartChar: uni1EB2
-Encoding: 7858 7858 786
+Encoding: 786 7858 786
 GlifName: uni1E_B_2
 Width: 2048
 VWidth: 0
@@ -26713,7 +26707,7 @@ sass."
 EndChar
 
 StartChar: uni1EB3
-Encoding: 7859 7859 787
+Encoding: 787 7859 787
 GlifName: uni1E_B_3
 Width: 2048
 VWidth: 0
@@ -26756,7 +26750,7 @@ sass."
 EndChar
 
 StartChar: uni1EB4
-Encoding: 7860 7860 788
+Encoding: 788 7860 788
 GlifName: uni1E_B_4
 Width: 2048
 VWidth: 0
@@ -26785,7 +26779,7 @@ sass."
 EndChar
 
 StartChar: uni1EB5
-Encoding: 7861 7861 789
+Encoding: 789 7861 789
 GlifName: uni1E_B_5
 Width: 2048
 VWidth: 0
@@ -26814,7 +26808,7 @@ sass."
 EndChar
 
 StartChar: uni1EB6
-Encoding: 7862 7862 790
+Encoding: 790 7862 790
 GlifName: uni1E_B_6
 Width: 2048
 VWidth: 0
@@ -26857,7 +26851,7 @@ sass."
 EndChar
 
 StartChar: uni1EB7
-Encoding: 7863 7863 791
+Encoding: 791 7863 791
 GlifName: uni1E_B_7
 Width: 2048
 VWidth: 0
@@ -26900,7 +26894,7 @@ sass."
 EndChar
 
 StartChar: uni1EB8
-Encoding: 7864 7864 792
+Encoding: 792 7864 792
 GlifName: uni1E_B_8
 Width: 2048
 VWidth: 0
@@ -26938,7 +26932,7 @@ sass."
 EndChar
 
 StartChar: uni1EB9
-Encoding: 7865 7865 793
+Encoding: 793 7865 793
 GlifName: uni1E_B_9
 Width: 2048
 VWidth: 0
@@ -26976,7 +26970,7 @@ sass."
 EndChar
 
 StartChar: uni1EBA
-Encoding: 7866 7866 794
+Encoding: 794 7866 794
 GlifName: uni1E_B_A_
 Width: 2048
 VWidth: 0
@@ -27014,7 +27008,7 @@ sass."
 EndChar
 
 StartChar: uni1EBB
-Encoding: 7867 7867 795
+Encoding: 795 7867 795
 GlifName: uni1E_B_B_
 Width: 2048
 VWidth: 0
@@ -27052,7 +27046,7 @@ sass."
 EndChar
 
 StartChar: uni1EBC
-Encoding: 7868 7868 796
+Encoding: 796 7868 796
 GlifName: uni1E_B_C_
 Width: 2048
 VWidth: 0
@@ -27065,7 +27059,7 @@ Refer: 24 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EBD
-Encoding: 7869 7869 797
+Encoding: 797 7869 797
 GlifName: uni1E_B_D_
 Width: 2048
 VWidth: 0
@@ -27078,7 +27072,7 @@ Refer: 182 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EBE
-Encoding: 7870 7870 798
+Encoding: 798 7870 798
 GlifName: uni1E_B_E_
 Width: 2048
 VWidth: 0
@@ -27091,7 +27085,7 @@ Refer: 28 202 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EBF
-Encoding: 7871 7871 799
+Encoding: 799 7871 799
 GlifName: uni1E_B_F_
 Width: 2048
 VWidth: 0
@@ -27104,7 +27098,7 @@ Refer: 186 234 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EC0
-Encoding: 7872 7872 800
+Encoding: 800 7872 800
 GlifName: uni1E_C_0
 Width: 2048
 VWidth: 0
@@ -27117,7 +27111,7 @@ Refer: 28 202 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EC1
-Encoding: 7873 7873 801
+Encoding: 801 7873 801
 GlifName: uni1E_C_1
 Width: 2048
 VWidth: 0
@@ -27130,7 +27124,7 @@ Refer: 186 234 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EC2
-Encoding: 7874 7874 802
+Encoding: 802 7874 802
 GlifName: uni1E_C_2
 Width: 2048
 VWidth: 0
@@ -27168,7 +27162,7 @@ sass."
 EndChar
 
 StartChar: uni1EC3
-Encoding: 7875 7875 803
+Encoding: 803 7875 803
 GlifName: uni1E_C_3
 Width: 2048
 VWidth: 0
@@ -27206,7 +27200,7 @@ sass."
 EndChar
 
 StartChar: uni1EC4
-Encoding: 7876 7876 804
+Encoding: 804 7876 804
 GlifName: uni1E_C_4
 Width: 2048
 VWidth: 0
@@ -27219,7 +27213,7 @@ Refer: 28 202 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EC5
-Encoding: 7877 7877 805
+Encoding: 805 7877 805
 GlifName: uni1E_C_5
 Width: 2048
 VWidth: 0
@@ -27232,7 +27226,7 @@ Refer: 186 234 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EC6
-Encoding: 7878 7878 806
+Encoding: 806 7878 806
 GlifName: uni1E_C_6
 Width: 2048
 VWidth: 0
@@ -27270,7 +27264,7 @@ sass."
 EndChar
 
 StartChar: uni1EC7
-Encoding: 7879 7879 807
+Encoding: 807 7879 807
 GlifName: uni1E_C_7
 Width: 2048
 VWidth: 0
@@ -27308,7 +27302,7 @@ sass."
 EndChar
 
 StartChar: uni1EC8
-Encoding: 7880 7880 808
+Encoding: 808 7880 808
 GlifName: uni1E_C_8
 Width: 2048
 VWidth: 0
@@ -27346,7 +27340,7 @@ sass."
 EndChar
 
 StartChar: uni1EC9
-Encoding: 7881 7881 809
+Encoding: 809 7881 809
 GlifName: uni1E_C_9
 Width: 2048
 VWidth: 0
@@ -27384,7 +27378,7 @@ sass."
 EndChar
 
 StartChar: uni1ECA
-Encoding: 7882 7882 810
+Encoding: 810 7882 810
 GlifName: uni1E_C_A_
 Width: 2048
 VWidth: 0
@@ -27422,7 +27416,7 @@ sass."
 EndChar
 
 StartChar: uni1ECB
-Encoding: 7883 7883 811
+Encoding: 811 7883 811
 GlifName: uni1E_C_B_
 Width: 2048
 VWidth: 0
@@ -27460,7 +27454,7 @@ sass."
 EndChar
 
 StartChar: uni1ECB_uni0300
-Encoding: 65695 -1 812
+Encoding: 812 -1 812
 GlifName: uni1E_C_B__uni0300
 Width: 2048
 VWidth: 0
@@ -27500,7 +27494,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB gravecomb
 EndChar
 
 StartChar: uni1ECB_uni0301
-Encoding: 65696 -1 813
+Encoding: 813 -1 813
 GlifName: uni1E_C_B__uni0301
 Width: 2048
 VWidth: 0
@@ -27540,7 +27534,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB acutecomb
 EndChar
 
 StartChar: uni1ECB_uni0302
-Encoding: 65697 -1 814
+Encoding: 814 -1 814
 GlifName: uni1E_C_B__uni0302
 Width: 2048
 VWidth: 0
@@ -27580,7 +27574,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB uni0302
 EndChar
 
 StartChar: uni1ECB_uni0303
-Encoding: 65698 -1 815
+Encoding: 815 -1 815
 GlifName: uni1E_C_B__uni0303
 Width: 2048
 VWidth: 0
@@ -27620,7 +27614,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB tildecomb
 EndChar
 
 StartChar: uni1ECB_uni0304
-Encoding: 65699 -1 816
+Encoding: 816 -1 816
 GlifName: uni1E_C_B__uni0304
 Width: 2048
 VWidth: 0
@@ -27670,7 +27664,7 @@ Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB uni0304
 EndChar
 
 StartChar: uni1ECC
-Encoding: 7884 7884 817
+Encoding: 817 7884 817
 GlifName: uni1E_C_C_
 Width: 2048
 VWidth: 0
@@ -27708,7 +27702,7 @@ sass."
 EndChar
 
 StartChar: uni1ECD
-Encoding: 7885 7885 818
+Encoding: 818 7885 818
 GlifName: uni1E_C_D_
 Width: 2048
 VWidth: 0
@@ -27746,7 +27740,7 @@ sass."
 EndChar
 
 StartChar: uni1ECE
-Encoding: 7886 7886 819
+Encoding: 819 7886 819
 GlifName: uni1E_C_E_
 Width: 2048
 VWidth: 0
@@ -27784,7 +27778,7 @@ sass."
 EndChar
 
 StartChar: uni1ECF
-Encoding: 7887 7887 820
+Encoding: 820 7887 820
 GlifName: uni1E_C_F_
 Width: 2048
 VWidth: 0
@@ -27822,7 +27816,7 @@ sass."
 EndChar
 
 StartChar: uni1ED0
-Encoding: 7888 7888 821
+Encoding: 821 7888 821
 GlifName: uni1E_D_0
 Width: 2048
 VWidth: 0
@@ -27835,7 +27829,7 @@ Refer: 73 212 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1ED1
-Encoding: 7889 7889 822
+Encoding: 822 7889 822
 GlifName: uni1E_D_1
 Width: 2048
 VWidth: 0
@@ -27848,7 +27842,7 @@ Refer: 271 244 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1ED2
-Encoding: 7890 7890 823
+Encoding: 823 7890 823
 GlifName: uni1E_D_2
 Width: 2048
 VWidth: 0
@@ -27861,7 +27855,7 @@ Refer: 73 212 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1ED3
-Encoding: 7891 7891 824
+Encoding: 824 7891 824
 GlifName: uni1E_D_3
 Width: 2048
 VWidth: 0
@@ -27874,7 +27868,7 @@ Refer: 271 244 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1ED4
-Encoding: 7892 7892 825
+Encoding: 825 7892 825
 GlifName: uni1E_D_4
 Width: 2048
 VWidth: 0
@@ -27912,7 +27906,7 @@ sass."
 EndChar
 
 StartChar: uni1ED5
-Encoding: 7893 7893 826
+Encoding: 826 7893 826
 GlifName: uni1E_D_5
 Width: 2048
 VWidth: 0
@@ -27950,7 +27944,7 @@ sass."
 EndChar
 
 StartChar: uni1ED6
-Encoding: 7894 7894 827
+Encoding: 827 7894 827
 GlifName: uni1E_D_6
 Width: 2048
 VWidth: 0
@@ -27963,7 +27957,7 @@ Refer: 73 212 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1ED7
-Encoding: 7895 7895 828
+Encoding: 828 7895 828
 GlifName: uni1E_D_7
 Width: 2048
 VWidth: 0
@@ -27976,7 +27970,7 @@ Refer: 271 244 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1ED8
-Encoding: 7896 7896 829
+Encoding: 829 7896 829
 GlifName: uni1E_D_8
 Width: 2048
 VWidth: 0
@@ -28014,7 +28008,7 @@ sass."
 EndChar
 
 StartChar: uni1ED9
-Encoding: 7897 7897 830
+Encoding: 830 7897 830
 GlifName: uni1E_D_9
 Width: 2048
 VWidth: 0
@@ -28052,7 +28046,7 @@ sass."
 EndChar
 
 StartChar: uni1EDA
-Encoding: 7898 7898 831
+Encoding: 831 7898 831
 GlifName: uni1E_D_A_
 Width: 2048
 VWidth: 0
@@ -28065,7 +28059,7 @@ Refer: 76 416 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EDB
-Encoding: 7899 7899 832
+Encoding: 832 7899 832
 GlifName: uni1E_D_B_
 Width: 2048
 VWidth: 0
@@ -28078,7 +28072,7 @@ Refer: 276 417 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EDC
-Encoding: 7900 7900 833
+Encoding: 833 7900 833
 GlifName: uni1E_D_C_
 Width: 2048
 VWidth: 0
@@ -28091,7 +28085,7 @@ Refer: 76 416 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EDD
-Encoding: 7901 7901 834
+Encoding: 834 7901 834
 GlifName: uni1E_D_D_
 Width: 2048
 VWidth: 0
@@ -28104,7 +28098,7 @@ Refer: 276 417 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EDE
-Encoding: 7902 7902 835
+Encoding: 835 7902 835
 GlifName: uni1E_D_E_
 Width: 2048
 VWidth: 0
@@ -28142,7 +28136,7 @@ sass."
 EndChar
 
 StartChar: uni1EDF
-Encoding: 7903 7903 836
+Encoding: 836 7903 836
 GlifName: uni1E_D_F_
 Width: 2048
 VWidth: 0
@@ -28180,7 +28174,7 @@ sass."
 EndChar
 
 StartChar: uni1EE0
-Encoding: 7904 7904 837
+Encoding: 837 7904 837
 GlifName: uni1E_E_0
 Width: 2048
 VWidth: 0
@@ -28193,7 +28187,7 @@ Refer: 76 416 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EE1
-Encoding: 7905 7905 838
+Encoding: 838 7905 838
 GlifName: uni1E_E_1
 Width: 2048
 VWidth: 0
@@ -28206,7 +28200,7 @@ Refer: 276 417 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EE2
-Encoding: 7906 7906 839
+Encoding: 839 7906 839
 GlifName: uni1E_E_2
 Width: 2048
 VWidth: 0
@@ -28244,7 +28238,7 @@ sass."
 EndChar
 
 StartChar: uni1EE3
-Encoding: 7907 7907 840
+Encoding: 840 7907 840
 GlifName: uni1E_E_3
 Width: 2048
 VWidth: 0
@@ -28282,7 +28276,7 @@ sass."
 EndChar
 
 StartChar: uni1EE4
-Encoding: 7908 7908 841
+Encoding: 841 7908 841
 GlifName: uni1E_E_4
 Width: 2048
 VWidth: 0
@@ -28320,7 +28314,7 @@ sass."
 EndChar
 
 StartChar: uni1EE5
-Encoding: 7909 7909 842
+Encoding: 842 7909 842
 GlifName: uni1E_E_5
 Width: 2048
 VWidth: 0
@@ -28358,7 +28352,7 @@ sass."
 EndChar
 
 StartChar: uni1EE6
-Encoding: 7910 7910 843
+Encoding: 843 7910 843
 GlifName: uni1E_E_6
 Width: 2048
 VWidth: 0
@@ -28396,7 +28390,7 @@ sass."
 EndChar
 
 StartChar: uni1EE7
-Encoding: 7911 7911 844
+Encoding: 844 7911 844
 GlifName: uni1E_E_7
 Width: 2048
 VWidth: 0
@@ -28434,7 +28428,7 @@ sass."
 EndChar
 
 StartChar: uni1EE8
-Encoding: 7912 7912 845
+Encoding: 845 7912 845
 GlifName: uni1E_E_8
 Width: 2048
 VWidth: 0
@@ -28447,7 +28441,7 @@ Refer: 101 431 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EE9
-Encoding: 7913 7913 846
+Encoding: 846 7913 846
 GlifName: uni1E_E_9
 Width: 2048
 VWidth: 0
@@ -28460,7 +28454,7 @@ Refer: 342 432 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EEA
-Encoding: 7914 7914 847
+Encoding: 847 7914 847
 GlifName: uni1E_E_A_
 Width: 2048
 VWidth: 0
@@ -28473,7 +28467,7 @@ Refer: 101 431 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EEB
-Encoding: 7915 7915 848
+Encoding: 848 7915 848
 GlifName: uni1E_E_B_
 Width: 2048
 VWidth: 0
@@ -28486,7 +28480,7 @@ Refer: 342 432 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EEC
-Encoding: 7916 7916 849
+Encoding: 849 7916 849
 GlifName: uni1E_E_C_
 Width: 2048
 VWidth: 0
@@ -28524,7 +28518,7 @@ sass."
 EndChar
 
 StartChar: uni1EED
-Encoding: 7917 7917 850
+Encoding: 850 7917 850
 GlifName: uni1E_E_D_
 Width: 2048
 VWidth: 0
@@ -28562,7 +28556,7 @@ sass."
 EndChar
 
 StartChar: uni1EEE
-Encoding: 7918 7918 851
+Encoding: 851 7918 851
 GlifName: uni1E_E_E_
 Width: 2048
 VWidth: 0
@@ -28575,7 +28569,7 @@ Refer: 101 431 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EEF
-Encoding: 7919 7919 852
+Encoding: 852 7919 852
 GlifName: uni1E_E_F_
 Width: 2048
 VWidth: 0
@@ -28588,7 +28582,7 @@ Refer: 342 432 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EF0
-Encoding: 7920 7920 853
+Encoding: 853 7920 853
 GlifName: uni1E_F_0
 Width: 2048
 VWidth: 0
@@ -28626,7 +28620,7 @@ sass."
 EndChar
 
 StartChar: uni1EF1
-Encoding: 7921 7921 854
+Encoding: 854 7921 854
 GlifName: uni1E_F_1
 Width: 2048
 VWidth: 0
@@ -28664,7 +28658,7 @@ sass."
 EndChar
 
 StartChar: uni1EF4
-Encoding: 7924 7924 855
+Encoding: 855 7924 855
 GlifName: uni1E_F_4
 Width: 2048
 VWidth: 0
@@ -28702,7 +28696,7 @@ sass."
 EndChar
 
 StartChar: uni1EF5
-Encoding: 7925 7925 856
+Encoding: 856 7925 856
 GlifName: uni1E_F_5
 Width: 2048
 VWidth: 0
@@ -28740,7 +28734,7 @@ sass."
 EndChar
 
 StartChar: uni1EF6
-Encoding: 7926 7926 857
+Encoding: 857 7926 857
 GlifName: uni1E_F_6
 Width: 2048
 VWidth: 0
@@ -28778,7 +28772,7 @@ sass."
 EndChar
 
 StartChar: uni1EF7
-Encoding: 7927 7927 858
+Encoding: 858 7927 858
 GlifName: uni1E_F_7
 Width: 2048
 VWidth: 0
@@ -28816,7 +28810,7 @@ sass."
 EndChar
 
 StartChar: uni1EF8
-Encoding: 7928 7928 859
+Encoding: 859 7928 859
 GlifName: uni1E_F_8
 Width: 2048
 VWidth: 0
@@ -28829,7 +28823,7 @@ Refer: 114 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1EF9
-Encoding: 7929 7929 860
+Encoding: 860 7929 860
 GlifName: uni1E_F_9
 Width: 2048
 VWidth: 0
@@ -28842,7 +28836,7 @@ Refer: 921 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni200C
-Encoding: 8204 8204 861
+Encoding: 861 8204 861
 GlifName: uni200C_
 Width: 0
 VWidth: 0
@@ -28870,7 +28864,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni200D
-Encoding: 8205 8205 862
+Encoding: 862 8205 862
 GlifName: uni200D_
 Width: 0
 VWidth: 0
@@ -28904,7 +28898,7 @@ sass."
 EndChar
 
 StartChar: uni2044
-Encoding: 8260 8260 863
+Encoding: 863 8260 863
 GlifName: uni2044
 Width: 2048
 VWidth: 0
@@ -28922,7 +28916,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni2052
-Encoding: 8274 8274 864
+Encoding: 864 8274 864
 GlifName: uni2052
 Width: 2048
 VWidth: 0
@@ -28950,7 +28944,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni2070
-Encoding: 8304 8304 865
+Encoding: 865 8304 865
 GlifName: uni2070
 Width: 2048
 VWidth: 0
@@ -28962,7 +28956,7 @@ Refer: 931 48 N 0.375 0 0 0.375 640.062 889.125 2
 EndChar
 
 StartChar: uni2071
-Encoding: 8305 8305 866
+Encoding: 866 8305 866
 GlifName: uni2071
 Width: 2048
 VWidth: 0
@@ -28974,7 +28968,7 @@ Refer: 224 105 N 0.375 0 0 0.375 640 832.312 2
 EndChar
 
 StartChar: uni2074
-Encoding: 8308 8308 867
+Encoding: 867 8308 867
 GlifName: uni2074
 Width: 2048
 VWidth: 0
@@ -28986,7 +28980,7 @@ Refer: 203 52 N 0.375 0 0 0.375 640.25 885.812 2
 EndChar
 
 StartChar: uni2075
-Encoding: 8309 8309 868
+Encoding: 868 8309 868
 GlifName: uni2075
 Width: 2048
 VWidth: 0
@@ -28998,7 +28992,7 @@ Refer: 202 53 N 0.375 0 0 0.375 635.625 883.25 2
 EndChar
 
 StartChar: uni2076
-Encoding: 8310 8310 869
+Encoding: 869 8310 869
 GlifName: uni2076
 Width: 2048
 VWidth: 0
@@ -29010,7 +29004,7 @@ Refer: 323 54 N 0.375 0 0 0.375 639.875 883.25 2
 EndChar
 
 StartChar: uni2077
-Encoding: 8311 8311 870
+Encoding: 870 8311 870
 GlifName: uni2077
 Width: 2048
 VWidth: 0
@@ -29022,7 +29016,7 @@ Refer: 322 55 N 0.375 0 0 0.375 640.188 886.688 2
 EndChar
 
 StartChar: uni2078
-Encoding: 8312 8312 871
+Encoding: 871 8312 871
 GlifName: uni2078
 Width: 2048
 VWidth: 0
@@ -29034,7 +29028,7 @@ Refer: 190 56 N 0.375 0 0 0.375 639.938 883.25 2
 EndChar
 
 StartChar: uni2079
-Encoding: 8313 8313 872
+Encoding: 872 8313 872
 GlifName: uni2079
 Width: 2048
 VWidth: 0
@@ -29046,7 +29040,7 @@ Refer: 264 57 N 0.375 0 0 0.375 638.375 885.875 2
 EndChar
 
 StartChar: uni207A
-Encoding: 8314 8314 873
+Encoding: 873 8314 873
 GlifName: uni207A_
 Width: 2048
 VWidth: 0
@@ -29058,7 +29052,7 @@ Refer: 296 43 N 0.375 0 0 0.375 640 833.375 2
 EndChar
 
 StartChar: uni207B
-Encoding: 8315 8315 874
+Encoding: 874 8315 874
 GlifName: uni207B_
 Width: 2048
 VWidth: 0
@@ -29070,7 +29064,7 @@ Refer: 257 8722 N 0.375 0 0 0.375 640 840 2
 EndChar
 
 StartChar: uni207C
-Encoding: 8316 8316 875
+Encoding: 875 8316 875
 GlifName: uni207C_
 Width: 2048
 VWidth: 0
@@ -29082,7 +29076,7 @@ Refer: 197 61 N 0.375 0 0 0.375 640 795 2
 EndChar
 
 StartChar: uni207D
-Encoding: 8317 8317 876
+Encoding: 876 8317 876
 GlifName: uni207D_
 Width: 2048
 VWidth: 0
@@ -29094,7 +29088,7 @@ Refer: 289 40 N 0.375 0 0 0.375 640 785.875 2
 EndChar
 
 StartChar: uni207E
-Encoding: 8318 8318 877
+Encoding: 877 8318 877
 GlifName: uni207E_
 Width: 2048
 VWidth: 0
@@ -29106,7 +29100,7 @@ Refer: 290 41 N 0.375 0 0 0.375 640 782.562 2
 EndChar
 
 StartChar: uni207F
-Encoding: 8319 8319 878
+Encoding: 878 8319 878
 GlifName: uni207F_
 Width: 2048
 VWidth: 0
@@ -29118,7 +29112,7 @@ Refer: 261 110 N 0.375 0 0 0.375 640 720.062 2
 EndChar
 
 StartChar: uni2080
-Encoding: 8320 8320 879
+Encoding: 879 8320 879
 GlifName: uni2080
 Width: 2048
 VWidth: 0
@@ -29130,7 +29124,7 @@ Refer: 931 48 N 0.375 0 0 0.375 640.062 -110.875 2
 EndChar
 
 StartChar: uni2081
-Encoding: 8321 8321 880
+Encoding: 880 8321 880
 GlifName: uni2081
 Width: 2048
 VWidth: 0
@@ -29142,7 +29136,7 @@ Refer: 279 49 N 0.375 0 0 0.375 640 -116.75 2
 EndChar
 
 StartChar: uni2082
-Encoding: 8322 8322 881
+Encoding: 881 8322 881
 GlifName: uni2082
 Width: 2048
 VWidth: 0
@@ -29154,7 +29148,7 @@ Refer: 335 50 N 0.375 0 0 0.375 639.812 -116.75 2
 EndChar
 
 StartChar: uni2083
-Encoding: 8323 8323 882
+Encoding: 882 8323 882
 GlifName: uni2083
 Width: 2048
 VWidth: 0
@@ -29166,7 +29160,7 @@ Refer: 330 51 N 0.375 0 0 0.375 640.125 -117.562 2
 EndChar
 
 StartChar: uni2084
-Encoding: 8324 8324 883
+Encoding: 883 8324 883
 GlifName: uni2084
 Width: 2048
 VWidth: 0
@@ -29178,7 +29172,7 @@ Refer: 203 52 N 0.375 0 0 0.375 640.25 -114.188 2
 EndChar
 
 StartChar: uni2085
-Encoding: 8325 8325 884
+Encoding: 884 8325 884
 GlifName: uni2085
 Width: 2048
 VWidth: 0
@@ -29190,7 +29184,7 @@ Refer: 202 53 N 0.375 0 0 0.375 635.625 -116.75 2
 EndChar
 
 StartChar: uni2086
-Encoding: 8326 8326 885
+Encoding: 885 8326 885
 GlifName: uni2086
 Width: 2048
 VWidth: 0
@@ -29202,7 +29196,7 @@ Refer: 323 54 N 0.375 0 0 0.375 639.875 -116.75 2
 EndChar
 
 StartChar: uni2087
-Encoding: 8327 8327 886
+Encoding: 886 8327 886
 GlifName: uni2087
 Width: 2048
 VWidth: 0
@@ -29214,7 +29208,7 @@ Refer: 322 55 N 0.375 0 0 0.375 640.188 -113.312 2
 EndChar
 
 StartChar: uni2088
-Encoding: 8328 8328 887
+Encoding: 887 8328 887
 GlifName: uni2088
 Width: 2048
 VWidth: 0
@@ -29226,7 +29220,7 @@ Refer: 190 56 N 0.375 0 0 0.375 639.938 -116.75 2
 EndChar
 
 StartChar: uni2089
-Encoding: 8329 8329 888
+Encoding: 888 8329 888
 GlifName: uni2089
 Width: 2048
 VWidth: 0
@@ -29238,7 +29232,7 @@ Refer: 264 57 N 0.375 0 0 0.375 638.375 -114.125 2
 EndChar
 
 StartChar: uni208A
-Encoding: 8330 8330 889
+Encoding: 889 8330 889
 GlifName: uni208A_
 Width: 2048
 VWidth: 0
@@ -29250,7 +29244,7 @@ Refer: 296 43 N 0.375 0 0 0.375 640 -166.625 2
 EndChar
 
 StartChar: uni208B
-Encoding: 8331 8331 890
+Encoding: 890 8331 890
 GlifName: uni208B_
 Width: 2048
 VWidth: 0
@@ -29262,7 +29256,7 @@ Refer: 257 8722 N 0.375 0 0 0.375 640 -160 2
 EndChar
 
 StartChar: uni208C
-Encoding: 8332 8332 891
+Encoding: 891 8332 891
 GlifName: uni208C_
 Width: 2048
 VWidth: 0
@@ -29274,7 +29268,7 @@ Refer: 197 61 N 0.375 0 0 0.375 640 -205 2
 EndChar
 
 StartChar: uni208D
-Encoding: 8333 8333 892
+Encoding: 892 8333 892
 GlifName: uni208D_
 Width: 2048
 VWidth: 0
@@ -29286,7 +29280,7 @@ Refer: 289 40 N 0.375 0 0 0.375 640 -214.125 2
 EndChar
 
 StartChar: uni208E
-Encoding: 8334 8334 893
+Encoding: 893 8334 893
 GlifName: uni208E_
 Width: 2048
 VWidth: 0
@@ -29298,7 +29292,7 @@ Refer: 290 41 N 0.375 0 0 0.375 640 -217.438 2
 EndChar
 
 StartChar: uni20A6
-Encoding: 8358 8358 894
+Encoding: 894 8358 894
 GlifName: uni20A_6
 Width: 2048
 VWidth: 0
@@ -29336,7 +29330,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20A9
-Encoding: 8361 8361 895
+Encoding: 895 8361 895
 GlifName: uni20A_9
 Width: 2048
 VWidth: 0
@@ -29374,7 +29368,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20AD
-Encoding: 8365 8365 896
+Encoding: 896 8365 896
 GlifName: uni20A_D_
 Width: 2048
 VWidth: 0
@@ -29407,7 +29401,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20B1
-Encoding: 8369 8369 897
+Encoding: 897 8369 897
 GlifName: uni20B_1
 Width: 2048
 VWidth: 0
@@ -29450,7 +29444,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20B2
-Encoding: 8370 8370 898
+Encoding: 898 8370 898
 GlifName: uni20B_2
 Width: 2048
 VWidth: 0
@@ -29488,7 +29482,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20B5
-Encoding: 8373 8373 899
+Encoding: 899 8373 899
 GlifName: uni20B_5
 Width: 2048
 VWidth: 0
@@ -29521,7 +29515,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20B9
-Encoding: 8377 8377 900
+Encoding: 900 8377 900
 GlifName: uni20B_9
 Width: 2048
 VWidth: 0
@@ -29575,7 +29569,7 @@ sass."
 EndChar
 
 StartChar: uni20BA
-Encoding: 8378 8378 901
+Encoding: 901 8378 901
 GlifName: uni20B_A_
 Width: 2048
 VWidth: 0
@@ -29624,7 +29618,7 @@ sass."
 EndChar
 
 StartChar: uni20BC
-Encoding: 8380 8380 902
+Encoding: 902 8380 902
 GlifName: uni20B_C_
 Width: 2048
 VWidth: 0
@@ -29657,7 +29651,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20BD
-Encoding: 8381 8381 903
+Encoding: 903 8381 903
 GlifName: uni20B_D_
 Width: 2048
 VWidth: 0
@@ -29695,7 +29689,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni20BF
-Encoding: 8383 8383 904
+Encoding: 904 8383 904
 GlifName: uni20B_F_
 Width: 2048
 VWidth: 0
@@ -29773,7 +29767,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni2116
-Encoding: 8470 8470 905
+Encoding: 905 8470 905
 GlifName: uni2116
 Width: 2048
 VWidth: 0
@@ -29786,7 +29780,7 @@ Refer: 283 186 N 0.5 0 0 1 985 301 2
 EndChar
 
 StartChar: uni25CC
-Encoding: 9676 9676 906
+Encoding: 906 9676 906
 GlifName: uni25C_C_
 Width: 2048
 VWidth: 0
@@ -29843,7 +29837,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni27E8
-Encoding: 10216 10216 907
+Encoding: 907 10216 907
 GlifName: uni27E_8
 Width: 2048
 VWidth: 0
@@ -29866,7 +29860,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni27E9
-Encoding: 10217 10217 908
+Encoding: 908 10217 908
 GlifName: uni27E_9
 Width: 2048
 VWidth: 0
@@ -29889,7 +29883,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFB01
-Encoding: 64257 64257 909
+Encoding: 909 64257 909
 GlifName: uniF_B_01
 Width: 2048
 VWidth: 0
@@ -29929,7 +29923,7 @@ Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f i
 EndChar
 
 StartChar: uniFB02
-Encoding: 64258 64258 910
+Encoding: 910 64258 910
 GlifName: uniF_B_02
 Width: 2048
 VWidth: 0
@@ -29969,7 +29963,7 @@ Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
 EndChar
 
 StartChar: uogonek
-Encoding: 371 371 911
+Encoding: 911 371 911
 GlifName: uogonek
 Width: 2048
 VWidth: 0
@@ -30007,7 +30001,7 @@ sass."
 EndChar
 
 StartChar: uring
-Encoding: 367 367 912
+Encoding: 912 367 912
 GlifName: uring
 Width: 2048
 VWidth: 0
@@ -30045,7 +30039,7 @@ sass."
 EndChar
 
 StartChar: utilde
-Encoding: 361 361 913
+Encoding: 913 361 913
 GlifName: utilde
 Width: 2048
 VWidth: 0
@@ -30058,7 +30052,7 @@ Refer: 336 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: v
-Encoding: 118 118 914
+Encoding: 914 118 914
 GlifName: v
 Width: 2048
 VWidth: 0
@@ -30083,7 +30077,7 @@ EndSplineSet
 EndChar
 
 StartChar: w
-Encoding: 119 119 915
+Encoding: 915 119 915
 GlifName: w
 Width: 2048
 VWidth: 0
@@ -30118,7 +30112,7 @@ EndSplineSet
 EndChar
 
 StartChar: wacute
-Encoding: 7811 7811 916
+Encoding: 916 7811 916
 GlifName: wacute
 Width: 2048
 VWidth: 0
@@ -30131,7 +30125,7 @@ Refer: 915 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: wcircumflex
-Encoding: 373 373 917
+Encoding: 917 373 917
 GlifName: wcircumflex
 Width: 2048
 VWidth: 0
@@ -30144,7 +30138,7 @@ Refer: 915 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: wdieresis
-Encoding: 7813 7813 918
+Encoding: 918 7813 918
 GlifName: wdieresis
 Width: 2048
 VWidth: 0
@@ -30173,7 +30167,7 @@ sass."
 EndChar
 
 StartChar: wgrave
-Encoding: 7809 7809 919
+Encoding: 919 7809 919
 GlifName: wgrave
 Width: 2048
 VWidth: 0
@@ -30186,7 +30180,7 @@ Refer: 915 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: x
-Encoding: 120 120 920
+Encoding: 920 120 920
 GlifName: x
 Width: 2048
 VWidth: 0
@@ -30211,7 +30205,7 @@ EndSplineSet
 EndChar
 
 StartChar: y
-Encoding: 121 121 921
+Encoding: 921 121 921
 GlifName: y
 Width: 2048
 VWidth: 0
@@ -30246,7 +30240,7 @@ EndSplineSet
 EndChar
 
 StartChar: yacute
-Encoding: 253 253 922
+Encoding: 922 253 922
 GlifName: yacute
 Width: 2048
 VWidth: 0
@@ -30259,7 +30253,7 @@ Refer: 921 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ycircumflex
-Encoding: 375 375 923
+Encoding: 923 375 923
 GlifName: ycircumflex
 Width: 2048
 VWidth: 0
@@ -30272,7 +30266,7 @@ Refer: 921 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: ydieresis
-Encoding: 255 255 924
+Encoding: 924 255 924
 GlifName: ydieresis
 Width: 2048
 VWidth: 0
@@ -30301,7 +30295,7 @@ sass."
 EndChar
 
 StartChar: yen
-Encoding: 165 165 925
+Encoding: 925 165 925
 GlifName: yen
 Width: 2048
 VWidth: 0
@@ -30344,7 +30338,7 @@ EndSplineSet
 EndChar
 
 StartChar: ygrave
-Encoding: 7923 7923 926
+Encoding: 926 7923 926
 GlifName: ygrave
 Width: 2048
 VWidth: 0
@@ -30357,7 +30351,7 @@ Refer: 921 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: z
-Encoding: 122 122 927
+Encoding: 927 122 927
 GlifName: z
 Width: 2048
 VWidth: 0
@@ -30387,7 +30381,7 @@ EndSplineSet
 EndChar
 
 StartChar: zacute
-Encoding: 378 378 928
+Encoding: 928 378 928
 GlifName: zacute
 Width: 2048
 VWidth: 0
@@ -30400,7 +30394,7 @@ Refer: 927 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: zcaron
-Encoding: 382 382 929
+Encoding: 929 382 929
 GlifName: zcaron
 Width: 2048
 VWidth: 0
@@ -30413,7 +30407,7 @@ Refer: 927 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: zdotaccent
-Encoding: 380 380 930
+Encoding: 930 380 930
 GlifName: zdotaccent
 Width: 2048
 VWidth: 0
@@ -30451,7 +30445,7 @@ sass."
 EndChar
 
 StartChar: zero
-Encoding: 48 48 931
+Encoding: 931 48 931
 GlifName: zero
 Width: 2048
 VWidth: 0

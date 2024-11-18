@@ -136,8 +136,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0931 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -544,9 +544,9 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   lookupflag 0;
   markClass [\uni0900 ] <anchor 42 1648> @abvm_deva;
   markClass [\uni0901 ] <anchor 0 1618> @abvm_deva;
-  markClass [\uni0902 ] <anchor -318 1636> @abvm_deva;
-  markClass [\uni0930_uni094D.rphf ] <anchor -198 1546> @abvm_deva;
-  markClass [\uni0930_uni094D_uni0902.abvs ] <anchor -112 1511> @abvm_deva;
+  markClass [\uni0902 ] <anchor -11 1615> @abvm_deva;
+  markClass [\uni0930_uni094D.rphf ] <anchor -1 1546> @abvm_deva;
+  markClass [\uni0930_uni094D_uni0902.abvs ] <anchor -8 1529> @abvm_deva;
   markClass [\uni0951 ] <anchor 34 1027> @abvm_deva;
   pos base [\uni0904 ] <anchor 636 1972> mark @abvm_deva;
   pos base [\uni0905 ] <anchor 1637 1598> mark @abvm_deva;
@@ -645,6 +645,7 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   pos base [\uni0946 ] <anchor 438 1630> mark @abvm_deva;
   pos base [\uni0947 ] <anchor 606 1612> mark @abvm_deva;
   pos base [\uni0948 ] <anchor 786 1594> mark @abvm_deva;
+  pos base [\uni094A ] <anchor 1710 1557> mark @abvm_deva;
   pos base [\uni094B \uni094C \uni094F ] <anchor 1654 1608> mark @abvm_deva;
   pos base [\uni0955 ] <anchor 630 1608> mark @abvm_deva;
   pos base [\uni0958 ] <anchor 1223 1579> mark @abvm_deva;
@@ -792,6 +793,7 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
 	\Amacron \Aogonek \Aring \Aringacute \Atilde \B \C \Cacute \Ccaron \Ccedilla 

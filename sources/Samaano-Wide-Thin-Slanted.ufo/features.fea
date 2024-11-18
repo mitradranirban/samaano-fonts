@@ -136,8 +136,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0931 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -546,8 +546,8 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   markClass [\uni0900 ] <anchor 42 1648> @abvm_deva;
   markClass [\uni0901 ] <anchor 0 1618> @abvm_deva;
   markClass [\uni0902 ] <anchor -301 1607> @abvm_deva;
-  markClass [\uni0930_uni094D.rphf ] <anchor -198 1546> @abvm_deva;
-  markClass [\uni0930_uni094D_uni0902.abvs ] <anchor -220 1511> @abvm_deva;
+  markClass [\uni0930_uni094D.rphf ] <anchor -3 1591> @abvm_deva;
+  markClass [\uni0930_uni094D_uni0902.abvs ] <anchor -18 1572> @abvm_deva;
   markClass [\uni0951 ] <anchor 501 1050> @abvm_deva;
   pos base [\uni0904 ] <anchor 1878 1914> mark @abvm_deva;
   pos base [\uni0905 ] <anchor 2198 1589> mark @abvm_deva;
@@ -611,6 +611,7 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   pos base [\uni0945 ] <anchor 1599 1611> mark @abvm_deva;
   pos base [\uni0946 \uni0947 ] <anchor 786 1594> mark @abvm_deva;
   pos base [\uni0948 ] <anchor 1085 1588> mark @abvm_deva;
+  pos base [\uni094A ] <anchor 2082 1552> mark @abvm_deva;
   pos base [\uni094B ] <anchor 2080 1579> mark @abvm_deva;
   pos base [\uni094C ] <anchor 1943 1576> mark @abvm_deva;
   pos base [\uni094F ] <anchor 2009 1579> mark @abvm_deva;
