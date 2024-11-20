@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1731687891
-ModificationTime: 1732118406
+ModificationTime: 1732120915
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -87,8 +87,8 @@ UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
-FitToEm: 0
-WinInfo: 410 10 4
+FitToEm: 1
+WinInfo: 680 10 4
 Grid
 -2048 -612 m 0
  2048 -612 l 1024
@@ -7038,30 +7038,30 @@ GlifName: quotedblleft
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-458 1842 m 257
- 458 2071 l 257
- 210 2071 l 257
- 210 1842 l 257
- 458 1842 l 257
-360 1944 m 257
- 478 2225 l 257
- 334 2285 l 257
- 212 2075 l 257
- 360 1944 l 257
-794 1842 m 257
- 794 2071 l 257
- 546 2071 l 257
- 546 1842 l 257
- 794 1842 l 257
-696 1944 m 257
- 814 2225 l 257
- 670 2285 l 257
- 548 2075 l 257
- 696 1944 l 257
+458 1194 m 257
+ 458 1423 l 257
+ 210 1423 l 257
+ 210 1194 l 257
+ 458 1194 l 257
+360 1296 m 257
+ 478 1577 l 257
+ 334 1637 l 257
+ 212 1427 l 257
+ 360 1296 l 257
+794 1194 m 257
+ 794 1423 l 257
+ 546 1423 l 257
+ 546 1194 l 257
+ 794 1194 l 257
+696 1296 m 257
+ 814 1577 l 257
+ 670 1637 l 257
+ 548 1427 l 257
+ 696 1296 l 257
 EndSplineSet
 EndChar
 
@@ -7071,30 +7071,30 @@ GlifName: quotedblright
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-556 2285 m 257
- 556 2056 l 257
- 804 2056 l 257
- 804 2285 l 257
- 556 2285 l 257
-656 2183 m 257
- 538 1902 l 257
- 680 1842 l 257
- 802 2052 l 257
- 656 2183 l 257
-238 2285 m 257
- 238 2056 l 257
- 486 2056 l 257
- 486 2285 l 257
- 238 2285 l 257
-338 2183 m 257
- 220 1902 l 257
- 362 1842 l 257
- 484 2052 l 257
- 338 2183 l 257
+556 1645 m 257
+ 556 1416 l 257
+ 804 1416 l 257
+ 804 1645 l 257
+ 556 1645 l 257
+656 1543 m 257
+ 538 1262 l 257
+ 680 1202 l 257
+ 802 1412 l 257
+ 656 1543 l 257
+238 1645 m 257
+ 238 1416 l 257
+ 486 1416 l 257
+ 486 1645 l 257
+ 238 1645 l 257
+338 1543 m 257
+ 220 1262 l 257
+ 362 1202 l 257
+ 484 1412 l 257
+ 338 1543 l 257
 EndSplineSet
 EndChar
 
@@ -7104,20 +7104,20 @@ GlifName: quoteleft
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-626 1842 m 257
- 626 2071 l 257
- 378 2071 l 257
- 378 1842 l 257
- 626 1842 l 257
-528 1944 m 257
- 646 2225 l 257
- 502 2285 l 257
- 380 2075 l 257
- 528 1944 l 257
+626 1210 m 261
+ 626 1439 l 261
+ 378 1439 l 261
+ 378 1210 l 261
+ 626 1210 l 261
+528 1312 m 261
+ 646 1593 l 261
+ 502 1653 l 261
+ 380 1443 l 261
+ 528 1312 l 261
 EndSplineSet
 EndChar
 
@@ -7127,20 +7127,20 @@ GlifName: quoteright
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-398 2285 m 257
- 398 2056 l 257
- 646 2056 l 257
- 646 2285 l 257
- 398 2285 l 257
-496 2183 m 257
- 378 1902 l 257
- 522 1842 l 257
- 644 2052 l 257
- 496 2183 l 257
+398 1641 m 261
+ 398 1412 l 261
+ 646 1412 l 261
+ 646 1641 l 261
+ 398 1641 l 261
+496 1539 m 261
+ 378 1258 l 261
+ 522 1198 l 261
+ 644 1408 l 261
+ 496 1539 l 261
 EndSplineSet
 EndChar
 
@@ -9740,7 +9740,7 @@ GlifName: uni0328
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: HWO
+Flags: HW
 AnchorPoint: "base" -270 -122 mark 0
 LayerCount: 2
 Fore
