@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1731687892
-ModificationTime: 1731943551
+ModificationTime: 1732102780
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 9
@@ -88,7 +88,7 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 8 2
+WinInfo: 300 10 4
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -2425,10 +2425,10 @@ GlifName: S_cedilla
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 450 807 N 1 0 0 1 2490 -157 2
+Refer: 450 807 S 1 0 0 1 1285 -182 2
 Refer: 87 83 N 1 0 0 1 0 0 2
 EndChar
 
@@ -8690,11 +8690,11 @@ GlifName: scedilla
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 450 807 N 1 0 0 1 2491 -166 2
-Refer: 314 115 N 1 0 0 1 0 0 2
+Refer: 450 807 N 1 0 0 1 1171 -64 2
+Refer: 314 115 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: scircumflex
@@ -11645,8 +11645,8 @@ GlifName: uni0327
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
-AnchorPoint: "base" -1470 90 mark 0
+Flags: WO
+AnchorPoint: "base" -150 -12 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28949,10 +28949,10 @@ GlifName: uni2070
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 931 48 N 0.375 0 0 0.375 640.062 889.125 2
+Refer: 931 48 N 0.5625 0 0 0.5625 448 742 2
 EndChar
 
 StartChar: uni2071
@@ -28961,10 +28961,10 @@ GlifName: uni2071
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 224 105 N 0.375 0 0 0.375 640 832.312 2
+Refer: 224 105 N 0.5625 0 0 0.5625 448 707 2
 EndChar
 
 StartChar: uni2074
@@ -28973,10 +28973,10 @@ GlifName: uni2074
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 203 52 N 0.375 0 0 0.375 640.25 885.812 2
+Refer: 203 52 N 0.5625 0 0 0.5625 449 740 2
 EndChar
 
 StartChar: uni2075
@@ -28985,10 +28985,10 @@ GlifName: uni2075
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 202 53 N 0.375 0 0 0.375 635.625 883.25 2
+Refer: 202 53 N 0.5625 0 0 0.5625 442 738 2
 EndChar
 
 StartChar: uni2076
@@ -28997,10 +28997,10 @@ GlifName: uni2076
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 323 54 N 0.375 0 0 0.375 639.875 883.25 2
+Refer: 323 54 N 0.5625 0 0 0.5625 448 738 2
 EndChar
 
 StartChar: uni2077
@@ -29009,10 +29009,10 @@ GlifName: uni2077
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 322 55 N 0.375 0 0 0.375 640.188 886.688 2
+Refer: 322 55 N 0.5625 0 0 0.5625 448 741 2
 EndChar
 
 StartChar: uni2078
@@ -29021,10 +29021,10 @@ GlifName: uni2078
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 190 56 N 0.375 0 0 0.375 639.938 883.25 2
+Refer: 190 56 N 0.5625 0 0 0.5625 448 738 2
 EndChar
 
 StartChar: uni2079
@@ -29033,10 +29033,10 @@ GlifName: uni2079
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 264 57 N 0.375 0 0 0.375 638.375 885.875 2
+Refer: 264 57 N 0.5625 0 0 0.5625 445 740 2
 EndChar
 
 StartChar: uni207A
@@ -29045,10 +29045,10 @@ GlifName: uni207A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 296 43 N 0.375 0 0 0.375 640 833.375 2
+Refer: 296 43 N 0.5625 0 0 0.5625 448 703 2
 EndChar
 
 StartChar: uni207B
@@ -29057,10 +29057,10 @@ GlifName: uni207B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 257 8722 N 0.375 0 0 0.375 640 840 2
+Refer: 257 8722 N 0.5625 0 0 0.5625 448 708 2
 EndChar
 
 StartChar: uni207C
@@ -29069,10 +29069,10 @@ GlifName: uni207C_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 197 61 N 0.375 0 0 0.375 640 795 2
+Refer: 197 61 N 0.5625 0 0 0.5625 448 676 2
 EndChar
 
 StartChar: uni207D
@@ -29081,10 +29081,10 @@ GlifName: uni207D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 289 40 N 0.375 0 0 0.375 640 785.875 2
+Refer: 289 40 N 0.5625 0 0 0.5625 448 670 2
 EndChar
 
 StartChar: uni207E
@@ -29093,10 +29093,10 @@ GlifName: uni207E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 290 41 N 0.375 0 0 0.375 640 782.562 2
+Refer: 290 41 N 0.5625 0 0 0.5625 448 668 2
 EndChar
 
 StartChar: uni207F
@@ -29105,10 +29105,10 @@ GlifName: uni207F_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 261 110 N 0.375 0 0 0.375 640 720.062 2
+Refer: 261 110 N 0.5625 0 0 0.5625 448 624 2
 EndChar
 
 StartChar: uni2080
@@ -29117,10 +29117,10 @@ GlifName: uni2080
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 931 48 N 0.375 0 0 0.375 640.062 -110.875 2
+Refer: 931 48 N 0.5625 0 0 0.5625 448 -258 2
 EndChar
 
 StartChar: uni2081
@@ -29129,10 +29129,10 @@ GlifName: uni2081
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 279 49 N 0.375 0 0 0.375 640 -116.75 2
+Refer: 279 49 N 0.5625 0 0 0.5625 448 -262 2
 EndChar
 
 StartChar: uni2082
@@ -29141,10 +29141,10 @@ GlifName: uni2082
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 335 50 N 0.375 0 0 0.375 639.812 -116.75 2
+Refer: 335 50 N 0.5625 0 0 0.5625 448 -262 2
 EndChar
 
 StartChar: uni2083
@@ -29153,10 +29153,10 @@ GlifName: uni2083
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 330 51 N 0.375 0 0 0.375 640.125 -117.562 2
+Refer: 330 51 N 0.5625 0 0 0.5625 448 -262 2
 EndChar
 
 StartChar: uni2084
@@ -29165,10 +29165,10 @@ GlifName: uni2084
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 203 52 N 0.375 0 0 0.375 640.25 -114.188 2
+Refer: 203 52 N 0.5625 0 0 0.5625 449 -260 2
 EndChar
 
 StartChar: uni2085
@@ -29177,10 +29177,10 @@ GlifName: uni2085
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 202 53 N 0.375 0 0 0.375 635.625 -116.75 2
+Refer: 202 53 N 0.5625 0 0 0.5625 442 -262 2
 EndChar
 
 StartChar: uni2086
@@ -29189,10 +29189,10 @@ GlifName: uni2086
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 323 54 N 0.375 0 0 0.375 639.875 -116.75 2
+Refer: 323 54 N 0.5625 0 0 0.5625 448 -262 2
 EndChar
 
 StartChar: uni2087
@@ -29201,10 +29201,10 @@ GlifName: uni2087
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 322 55 N 0.375 0 0 0.375 640.188 -113.312 2
+Refer: 322 55 N 0.5625 0 0 0.5625 448 -259 2
 EndChar
 
 StartChar: uni2088
@@ -29213,10 +29213,10 @@ GlifName: uni2088
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 190 56 N 0.375 0 0 0.375 639.938 -116.75 2
+Refer: 190 56 N 0.5625 0 0 0.5625 448 -262 2
 EndChar
 
 StartChar: uni2089
@@ -29225,10 +29225,10 @@ GlifName: uni2089
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 264 57 N 0.375 0 0 0.375 638.375 -114.125 2
+Refer: 264 57 N 0.5625 0 0 0.5625 445 -260 2
 EndChar
 
 StartChar: uni208A
@@ -29237,10 +29237,10 @@ GlifName: uni208A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 296 43 N 0.375 0 0 0.375 640 -166.625 2
+Refer: 296 43 N 0.5625 0 0 0.5625 448 -297 2
 EndChar
 
 StartChar: uni208B
@@ -29249,10 +29249,10 @@ GlifName: uni208B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 257 8722 N 0.375 0 0 0.375 640 -160 2
+Refer: 257 8722 N 0.5625 0 0 0.5625 448 -292 2
 EndChar
 
 StartChar: uni208C
@@ -29261,10 +29261,10 @@ GlifName: uni208C_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 197 61 N 0.375 0 0 0.375 640 -205 2
+Refer: 197 61 N 0.5625 0 0 0.5625 448 -324 2
 EndChar
 
 StartChar: uni208D
@@ -29273,10 +29273,10 @@ GlifName: uni208D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 289 40 N 0.375 0 0 0.375 640 -214.125 2
+Refer: 289 40 N 0.5625 0 0 0.5625 448 -330 2
 EndChar
 
 StartChar: uni208E
@@ -29285,10 +29285,10 @@ GlifName: uni208E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
-Refer: 290 41 N 0.375 0 0 0.375 640 -217.438 2
+Refer: 290 41 N 0.5625 0 0 0.5625 448 -332 2
 EndChar
 
 StartChar: uni20A6
