@@ -23,7 +23,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1731687892
-ModificationTime: 1732099203
+ModificationTime: 1732443386
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 9
@@ -47,6 +47,8 @@ OS2CapHeight: 1548
 OS2XHeight: 1023
 OS2FamilyClass: 1031
 OS2Vendor: 'anir'
+Lookup: 1 0 0 "'locl' Localized Forms in Latin lookup 9" { "'locl' Localized Forms in Latin lookup 9 subtable"  } ['locl' ('latn' <'ROM ' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms in Latin lookup 10" { "'locl' Localized Forms in Latin lookup 10 subtable"  } ['locl' ('latn' <'MOL ' > ) ]
 Lookup: 4 0 1 "ligaStandardLigaturesinLatinlookup0" { "ligaStandardLigaturesinLatinlookup0 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "nuktNuktaFormsinDevanagari2lookup0" { "nuktNuktaFormsinDevanagari2lookup0 subtable"  } ['nukt' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "akhnAkhandinDevanagari2lookup0" { "akhnAkhandinDevanagari2lookup0 subtable"  } ['akhn' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
@@ -59,9 +61,12 @@ Lookup: 4 0 0 "presPreBaseSubstitutionsinDevanagari2lookup0" { "presPreBaseSubst
 Lookup: 4 0 0 "abvsAboveBaseSubstitutionsinDevanagari2lookup0" { "abvsAboveBaseSubstitutionsinDevanagari2lookup0 subtable"  } ['abvs' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinDevanagari2lookup12" { "blwsBelowBaseSubstitutionsinDevanagari2lookup12 subtable"  } ['blws' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'sups' Superscript in Latin lookup 16" { "'sups' Superscript in Latin lookup 16 subtable" ("superior") } ['sups' ('DFLT' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
+Lookup: 4 0 0 "'ordn' Ordinals in Latin lookup 20" { "'ordn' Ordinals in Latin lookup 20 subtable"  } ['ordn' ('DFLT' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.000" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
@@ -87,7 +92,9 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 800 10 4
+WinInfo: 210 10 4
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 1557 m 0
  2662 1557 l 1024
@@ -1960,6 +1967,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 713 -164 2
 Refer: 87 83 N 1 0 0 1 0 0 2
+Substitution2: "'locl' Localized Forms in Latin lookup 9 subtable" uni0218
+Substitution2: "'locl' Localized Forms in Latin lookup 10 subtable" uni0218
 EndChar
 
 StartChar: Scircumflex
@@ -4240,6 +4249,7 @@ SplineSet
  2474 1489 l 257
  2281 959 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni2078
 EndChar
 
 StartChar: ellipsis
@@ -4530,6 +4540,7 @@ SplineSet
  387 899 l 257
  2268 899 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni2075
 EndChar
 
 StartChar: four
@@ -4554,6 +4565,7 @@ SplineSet
  655 1550 l 257
  368 761 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni2074
 EndChar
 
 StartChar: franc
@@ -5108,6 +5120,7 @@ GlifName: i_uni030A_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 HStem: 1104 309
 LayerCount: 2
@@ -5130,6 +5143,7 @@ p7
 I309
 sass."
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030A
+LCarets2: 1 0
 EndChar
 
 StartChar: i_uni030B
@@ -5138,12 +5152,15 @@ GlifName: i_uni030B_
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 LayerCount: 2
 Fore
 Refer: 441 779 N 1 0 0 1 1423 321 2
 Refer: 181 305 N 1 0 0 1 0 0 2
-Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030B
+LCarets2: 1 0
+LCarets2: 1 0
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030A
 EndChar
 
 StartChar: iacute
@@ -5304,12 +5321,14 @@ GlifName: j_gravecomb
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 LayerCount: 2
 Fore
 Refer: 211 768 N 1 0 0 1 2189 363 2
 Refer: 426 567 N 1 0 0 1 0 0 2
-Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j gravecomb
+LCarets2: 1 0
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030B
 EndChar
 
 StartChar: j_uni0303
@@ -5318,12 +5337,14 @@ GlifName: j_uni0303
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 LayerCount: 2
 Fore
 Refer: 333 771 N 1 0 0 1 2214 354 2
 Refer: 426 567 N 1 0 0 1 0 0 2
-Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j tildecomb
+LCarets2: 1 0
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j gravecomb
 EndChar
 
 StartChar: j_uni0304
@@ -5332,12 +5353,14 @@ GlifName: j_uni0304
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 LayerCount: 2
 Fore
 Refer: 435 772 N 1 0 0 0.953656 2227 329 2
 Refer: 426 567 N 1 0 0 1 0 0 2
-Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0304
+LCarets2: 1 0
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j tildecomb
 EndChar
 
 StartChar: j_uni0308
@@ -5346,12 +5369,14 @@ GlifName: j_uni0308
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 LayerCount: 2
 Fore
 Refer: 439 776 N 1 0 0 1 1613 -477 2
 Refer: 426 567 N 1 0 0 1 0 0 2
-Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0308
+LCarets2: 1 0
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0304
 EndChar
 
 StartChar: j_uni0311
@@ -5360,12 +5385,14 @@ GlifName: j_uni0311
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 LayerCount: 2
 Fore
 Refer: 445 785 N 1 0 0 1 2198 311 2
 Refer: 426 567 N 1 0 0 1 0 0 2
-Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0311
+LCarets2: 1 0
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0308
 EndChar
 
 StartChar: jacute
@@ -5374,12 +5401,14 @@ GlifName: jacute
 Width: 2048
 VWidth: 0
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: W
 LayerCount: 2
 Fore
 Refer: 426 567 N 1 0 0 1 0 0 2
 Refer: 128 769 N 1 0 0 1 816 333 2
-Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j acutecomb
+LCarets2: 1 0
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0311
 EndChar
 
 StartChar: jcircumflex
@@ -5899,6 +5928,7 @@ SplineSet
  2486 1495 l 257
  2240 818 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni2079
 EndChar
 
 StartChar: notequal
@@ -6210,6 +6240,7 @@ SplineSet
  1678 1550 l 257
  1618 1550 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni00B9
 EndChar
 
 StartChar: onehalf
@@ -7403,6 +7434,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 707 -152 2
 Refer: 314 115 N 1 0 0 1 0 0 2
+Substitution2: "'locl' Localized Forms in Latin lookup 9 subtable" uni0219
+Substitution2: "'locl' Localized Forms in Latin lookup 10 subtable" uni0219
 EndChar
 
 StartChar: scircumflex
@@ -7540,6 +7573,7 @@ SplineSet
  621 1557 l 257
  598 1495 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni2077
 EndChar
 
 StartChar: six
@@ -7568,6 +7602,7 @@ SplineSet
  385 759 l 257
  2218 759 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni2076
 EndChar
 
 StartChar: slash
@@ -7751,6 +7786,7 @@ SplineSet
  391 796 l 257
  369 736 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni00B3
 EndChar
 
 StartChar: threequarters
@@ -7889,6 +7925,7 @@ SplineSet
  671 1544 l 257
  649 1484 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni00B2
 EndChar
 
 StartChar: u
@@ -8496,6 +8533,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 231 -121 2
 Refer: 92 84 N 1 0 0 1 0 0 2
+Substitution2: "'locl' Localized Forms in Latin lookup 9 subtable" uni021A
+Substitution2: "'locl' Localized Forms in Latin lookup 10 subtable" uni021A
 EndChar
 
 StartChar: uni0163
@@ -8509,6 +8548,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 128 -168 2
 Refer: 327 116 N 1 0 0 1 0 0 2
+Substitution2: "'locl' Localized Forms in Latin lookup 9 subtable" uni021B
+Substitution2: "'locl' Localized Forms in Latin lookup 10 subtable" uni021B
 EndChar
 
 StartChar: uni018F
@@ -25778,6 +25819,7 @@ LayerCount: 2
 Fore
 Refer: 65 78 N 0.500036 0 0 0.996753 365.996 0 2
 Refer: 283 186 N 0.5 0 0 1 1238 317 2
+Ligature2: "'ordn' Ordinals in Latin lookup 20 subtable" N o period
 EndChar
 
 StartChar: uni25CC
@@ -26364,6 +26406,7 @@ SplineSet
  2521 1559 l 257
  660 1559 l 257
 EndSplineSet
+Substitution2: "'sups' Superscript in Latin lookup 16 subtable" uni2070
 EndChar
 EndChars
 EndSplineFont

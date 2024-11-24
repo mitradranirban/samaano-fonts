@@ -1,4 +1,4 @@
-#Mark attachment classes (defined in GDEF, used in lookupflags)
+#GDEF 
 
 @GDEF_Simple = [\A \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
 	\Amacron \Aogonek \Aring \Aringacute \Atilde \B \C \Cacute \Ccaron \Ccedilla 
@@ -139,16 +139,32 @@
 	\uniFB02 ];
 @GDEF_Mark = [\acutecomb \dotbelowcomb \gravecomb \hookabovecomb \tildecomb 
 	\uni0302 \uni0304 \uni0305 \uni0306 \uni0307 \uni0308 \uni030A \uni030B \uni030C 
-	\uni030F \uni0311 \uni0312 \uni031B \uni0324 \uni0326 \uni0327 \uni0328 \uni032E 
-	\uni0331 \uni0335 \uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf 
-	\uni0930_uni094D.rphf \uni093A \uni093C \uni0941 \uni0942 \uni0943 \uni0944 
-	\uni094D \uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 
-	\uni0930_uni094D_uni0902.abvs ];
+	\uni030F \uni0310 \uni0311 \uni0312 \uni031B \uni0324 \uni0326 \uni0327 \uni0328 
+	\uni032E \uni0331 \uni0335 \uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf 
+	\uni0930_uni094D.rphf \uni0930_uni094D_uni0902.abvs \uni093A \uni093C 
+	\uni0941 \uni0942 \uni0943 \uni0944 \uni094D \uni0951 \uni0952 \uni0953 \uni0954 
+	\uni0956 \uni0957 \uni0962 \uni0963 ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
 
   LigatureCaretByPos \uniFB01 32;
-  LigatureCaretByPos \uniFB02 84;
+  LigatureCaretByPos \uniFB02 34;
+  LigatureCaretByPos \uni1ECB_uni0304 32;
+  LigatureCaretByPos \uni1ECB_uni0303 24;
+  LigatureCaretByPos \uni1ECB_uni0302 32;
+  LigatureCaretByPos \uni1ECB_uni0300 34;
+  LigatureCaretByPos \i_uni030A 32;
+  LigatureCaretByPos \i_uni030B 34;
+  LigatureCaretByPos \j_gravecomb  32;
+  LigatureCaretByPos \j_uni0303 34;
+  LigatureCaretByPos \uni012F_uni0300 34;
+  LigatureCaretByPos \uni012F_uni0301 34;
+  LigatureCaretByPos \uni012F_uni0302 34;
+  LigatureCaretByPos \uni012F_uni0303 34;
+  LigatureCaretByPos \uni012F_uni0304 34;
+  LigatureCaretByPos \uni012F_uni030C 34;
+  LigatureCaretByPos \jacute  32;
+  LigatureCaretByPos \j_uni0304 34;
 } GDEF;
-	
+

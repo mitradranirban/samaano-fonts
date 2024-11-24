@@ -1,13 +1,30 @@
 languagesystem DFLT dflt;
 languagesystem dev2 dflt;
+languagesystem latn AZE ;
+languagesystem latn CAT ;
+languagesystem latn CRT ;
 languagesystem latn dflt;
+languagesystem latn KAZ ;
+languagesystem latn MOL ;
+languagesystem latn ROM ;
+languagesystem latn TAT ;
+languagesystem latn TRK ;
 
 
 # GSUB 
 
 
+lookup loclLocalizedFormsinLatinlookup9 {
+  lookupflag 0;
+    sub \Scedilla by \uni0218 ;
+    sub \scedilla by \uni0219 ;
+    sub \uni0162 by \uni021A ;
+    sub \uni0163 by \uni021B ;
+} loclLocalizedFormsinLatinlookup9;
+
 lookup ligaStandardLigaturesinLatinlookup0 {
   lookupflag 0;
+    sub \L \periodcentered  by \Ldot;
     sub \i \uni030A  by \i_uni030A;
     sub \i \uni030B  by \i_uni030B;
     sub \j \gravecomb  by \j_gravecomb;
@@ -16,6 +33,7 @@ lookup ligaStandardLigaturesinLatinlookup0 {
     sub \j \uni0308  by \j_uni0308;
     sub \j \uni0311  by \j_uni0311;
     sub \j \acutecomb  by \jacute;
+    sub \L \periodcentered  by \ldot;
     sub \iogonek \gravecomb  by \uni012F_uni0300;
     sub \iogonek \acutecomb  by \uni012F_uni0301;
     sub \iogonek \uni0302  by \uni012F_uni0302;
@@ -233,6 +251,42 @@ lookup dligDiscretionaryLigatureslookup0 {
     sub \f \l  by \uniFB02;
 } dligDiscretionaryLigatureslookup0;
 
+lookup loclLocalizedFormsinLatinlookup10 {
+  lookupflag 0;
+    sub \Scedilla by \uni0218 ;
+    sub \scedilla by \uni0219 ;
+    sub \uni0162 by \uni021A ;
+    sub \uni0163 by \uni021B ;
+} loclLocalizedFormsinLatinlookup10;
+
+lookup supsSuperscriptinLatinlookup16 {
+  lookupflag 0;
+    sub \eight by \uni2078 ;
+    sub \five by \uni2075 ;
+    sub \four by \uni2074 ;
+    sub \nine by \uni2079 ;
+    sub \one by \uni00B9 ;
+    sub \seven by \uni2077 ;
+    sub \six by \uni2076 ;
+    sub \three by \uni00B3 ;
+    sub \two by \uni00B2 ;
+    sub \zero by \uni2070 ;
+} supsSuperscriptinLatinlookup16;
+
+lookup ordnOrdinalsinLatinlookup20 {
+  lookupflag 0;
+    sub \N \o \period  by \uni2116;
+} ordnOrdinalsinLatinlookup20;
+
+feature locl {
+
+ script latn;
+     language MOL  exclude_dflt;
+      lookup loclLocalizedFormsinLatinlookup10;
+     language ROM  exclude_dflt;
+      lookup loclLocalizedFormsinLatinlookup9;
+} locl;
+
 feature liga {
 
  script DFLT;
@@ -365,3 +419,56 @@ feature dlig {
       lookup dligDiscretionaryLigatureslookup0;
 } dlig;
 
+feature sups {
+
+ script DFLT;
+     language dflt ;
+      lookup supsSuperscriptinLatinlookup16;
+
+ script latn;
+     language dflt ;
+      lookup supsSuperscriptinLatinlookup16;
+     language AZE  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+     language CAT  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+     language CRT  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+     language KAZ  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+     language MOL  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+     language ROM  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+     language TAT  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+     language TRK  exclude_dflt;
+      lookup supsSuperscriptinLatinlookup16;
+} sups;
+
+feature ordn {
+
+ script DFLT;
+     language dflt ;
+      lookup ordnOrdinalsinLatinlookup20;
+
+ script latn;
+     language dflt ;
+      lookup ordnOrdinalsinLatinlookup20;
+     language AZE  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+     language CAT  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+     language CRT  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+     language KAZ  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+     language MOL  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+     language ROM  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+     language TAT  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+     language TRK  exclude_dflt;
+      lookup ordnOrdinalsinLatinlookup20;
+} ordn;
