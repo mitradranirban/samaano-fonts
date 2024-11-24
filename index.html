@@ -2,28 +2,56 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<style type="text/css">
-td, th { border: 1px solid #c3c3c3; padding: 0 3px 0 3px; }
-table { border-collapse: collapse; }
-img { max-width: 50%; }
-</style>
 <meta name="generator" content="ReText 7.2.3">
-<title>Samaano Monospace Variable Latin and Devanagari Font</title>
+<title>Samaano Monospace Variable Font</title>
 <style type="text/css">
+    @font-face{
+    src: url("Samaano%5Bslnt%2Cwdth%2Cwght%5D.woff2")format('woff2-variations');
+    font-family: "Samaano";
+    font-weight: 100 700;
+    font-stretch: 100% 200%;
+    font-style: oblique -20 0;
+}
+
+@keyframes ani 5s infinite {
+0% {font-variation-settings: "wght" 100, "wdth" 100 "slnt" 0; }
+12% {font-variation-settings: "wght" 100, "wdth" 100 "slnt" -20; }
+25% {font-variation-settings: "wght" 100, "wdth" 200 "slnt" -20; }
+37% {font-variation-settings: "wght" 100, "wdth" 200 "slnt" 0; }
+50% {font-variation-settings: "wght" 700, "wdth" 200 "slnt" 0; }
+62% {font-variation-settings: "wght" 700, "wdth" 200 "slnt" -20; }
+75% {font-variation-settings: "wght" 700, "wdth" 100 "slnt" -20; }
+87% {font-variation-settings: "wght" 700, "wdth" 100 "slnt" 0; }
+100% {font-variation-settings: "wght" 100, "wdth" 100 "slnt" 0; }
+}
+.var {
+animation: ani 5s infinite alternate;
+}
+.var {
+    font-family: "Samaano", "Serif";
+    font-weight: 700.0;
+    font-stretch: 100.0%;
+    font-style: normal;
+    font-size: 50px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
 </style>
 </head>
 <body>
-<h1>Samaano Monospace Variable Latin and Devanagari Font</h1>
+<h1>Samaano Monospace Variable Multilingual Font</h1>
 <p><a href="https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html"><img alt="overall" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2Foverall.json"></a>
 <a href="https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html"><img alt="universal" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FUniversalProfileChecks.json"></a>
 <a href="https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html"><img alt="OTSpec" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FOpenTypeSpecificationChecks.json"></a>
 <a href="https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html"><img alt="FontFile" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FFontFileChecks.json"></a></p>
 <a href="https://mitradranirban.github.io/samaano-fonts/fontbakery/fontbakery-report.html"><img alt="Repository" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmitradranirban%2Fsamaano-fonts%2Fgh-pages%2Fbadges%2FRepositoryChecks.json"></a></p>
-
+<p style="var">Samaano </p>
 <p>Samaano is a way to learn creation of variable font using Open Source Tools like Fontforge, Fontra and some python script.</p>
 <p>The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the spaces are equal in this font. 
 Indic fonts are usually never made monospaced, but the designer will use his experience with developing MitraMono, the only monospaced Bengali font made way back in 2002.</p>
-<p><img alt="Samaano Sample Image" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image1.png"></p>
+<p><img alt="Samaano Sample Image" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image1.png" class= "responsive"></p>
 <p>Following are the Design specialities of the font</p>
 <ul>
 <li>
@@ -36,13 +64,13 @@ Indic fonts are usually never made monospaced, but the designer will use his exp
 <p>Three Variable axes of Weight, Width and Slant</p>
 </li>
 </ul>
-<p><img alt="Sanaano Animation" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/SamaanoV2.gif"></p>
+<p><img alt="Samaano Animation" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/SamaanoV2.gif" class= "responsive"></p>
 <ul>
 <li>Simple Glyph construction using Rectangular or quadrilateral components only</li>
 </ul>
-<p><img alt="Samaano Image" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image2.png"></p>
-<p><img alt="Samaano Image2" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image4.png"></p>
-<p><img alt="Samaano Image2" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image6.png"></p>
+<p><img alt="Samaano Image" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image2.png" class= "responsive"></p>
+<p><img alt="Samaano Image2" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image4.png" class= "responsive"></p>
+<p><img alt="Samaano Image2" src="https://raw.githubusercontent.com/mitradranirban/samaano-fonts/main/documentation/image6.png" class= "responsive"></p>
 <h2>About</h2>
 <p>This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.</p>
 	<h2>Samano Variable Font testing pages</h2>
