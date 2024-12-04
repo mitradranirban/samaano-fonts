@@ -5,7 +5,7 @@ FamilyName: Samaano
 Weight: BoldSlanted
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: " fonts.atipra.in"
-Version: 2.0
+Version: 2.010
 ItalicAngle: -20
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -22,8 +22,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1731687892
-ModificationTime: 1731950217
+CreationTime: 1733242943
+ModificationTime: 1733286854
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 9
@@ -47,6 +47,8 @@ OS2CapHeight: 1548
 OS2XHeight: 1023
 OS2FamilyClass: 1031
 OS2Vendor: 'anir'
+Lookup: 1 0 0 "loclLocalizedFormsinLatinlookup9" { "loclLocalizedFormsinLatinlookup9 subtable"  } ['locl' ('latn' <'ROM ' > ) ]
+Lookup: 1 0 0 "loclLocalizedFormsinLatinlookup10" { "loclLocalizedFormsinLatinlookup10 subtable"  } ['locl' ('latn' <'MOL ' > ) ]
 Lookup: 4 0 1 "ligaStandardLigaturesinLatinlookup0" { "ligaStandardLigaturesinLatinlookup0 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "nuktNuktaFormsinDevanagari2lookup0" { "nuktNuktaFormsinDevanagari2lookup0 subtable"  } ['nukt' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "akhnAkhandinDevanagari2lookup0" { "akhnAkhandinDevanagari2lookup0 subtable"  } ['akhn' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
@@ -59,35 +61,25 @@ Lookup: 4 0 0 "presPreBaseSubstitutionsinDevanagari2lookup0" { "presPreBaseSubst
 Lookup: 4 0 0 "abvsAboveBaseSubstitutionsinDevanagari2lookup0" { "abvsAboveBaseSubstitutionsinDevanagari2lookup0 subtable"  } ['abvs' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinDevanagari2lookup12" { "blwsBelowBaseSubstitutionsinDevanagari2lookup12 subtable"  } ['blws' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "dligDiscretionaryLigatureslookup0" { "dligDiscretionaryLigatureslookup0 subtable"  } ['dlig' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "supsSuperscriptinLatinlookup16" { "supsSuperscriptinLatinlookup16 subtable" ("superior") } ['sups' ('latn' <'dflt' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'ROM ' 'TAT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "ordnOrdinalsinLatinlookup20" { "ordnOrdinalsinLatinlookup20 subtable"  } ['ordn' ('latn' <'dflt' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'ROM ' 'TAT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.000" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
+LangName: 1033 "" "" "" "" "" "Version 2.010" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
-Vpublic.openTypeMeta
-p1
-(dp2
-Vdlng
-p3
-(lp4
-VLatn
-p5
-asVslng
-p6
-(lp7
-VLatn
-p8
-aVDeva
-p9
-ass."
+."
 Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 860 10 4
+WinInfo: 630 10 4
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 1548 m 0
  2048 1548 l 1024
@@ -1359,6 +1351,7 @@ LayerCount: 2
 Fore
 Refer: 293 183 N 1 0 0 1 -94 -252 2
 Refer: 59 76 N 1 0 0 1 0 0 2
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" L periodcentered
 EndChar
 
 StartChar: Lslash
@@ -1958,6 +1951,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 1466 -157 2
 Refer: 87 83 N 1 0 0 1 0 0 2
+Substitution2: "loclLocalizedFormsinLatinlookup10 subtable" uni0218
+Substitution2: "loclLocalizedFormsinLatinlookup9 subtable" uni0218
 EndChar
 
 StartChar: Scircumflex
@@ -4222,6 +4217,7 @@ SplineSet
  2283 1350 l 257
  2141 959 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2078
 EndChar
 
 StartChar: ellipsis
@@ -4512,6 +4508,7 @@ SplineSet
  336 759 l 257
  2072 759 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2075
 EndChar
 
 StartChar: four
@@ -4536,6 +4533,7 @@ SplineSet
  654 1548 l 257
  368 761 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2074
 EndChar
 
 StartChar: franc
@@ -5508,6 +5506,7 @@ LayerCount: 2
 Fore
 Refer: 293 183 N 1 0 0 1 570 -126 2
 Refer: 246 108 N 1 0 0 1 0 0 2
+Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" L periodcentered
 EndChar
 
 StartChar: less
@@ -5865,6 +5864,7 @@ SplineSet
  2295 1354 l 257
  2151 959 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2079
 EndChar
 
 StartChar: notequal
@@ -6176,6 +6176,7 @@ SplineSet
  1703 1449 l 257
  1589 1548 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni00B9
 EndChar
 
 StartChar: onehalf
@@ -7369,6 +7370,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 1467 -166 2
 Refer: 314 115 N 1 0 0 1 0 0 2
+Substitution2: "loclLocalizedFormsinLatinlookup10 subtable" uni0219
+Substitution2: "loclLocalizedFormsinLatinlookup9 subtable" uni0219
 EndChar
 
 StartChar: scircumflex
@@ -7506,6 +7509,7 @@ SplineSet
  621 1557 l 257
  547 1355 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2077
 EndChar
 
 StartChar: six
@@ -7534,6 +7538,7 @@ SplineSet
  526 759 l 257
  2072 759 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2076
 EndChar
 
 StartChar: slash
@@ -7717,6 +7722,7 @@ SplineSet
  442 936 l 257
  369 736 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni00B3
 EndChar
 
 StartChar: threequarters
@@ -7855,6 +7861,7 @@ SplineSet
  672 1548 l 257
  598 1344 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni00B2
 EndChar
 
 StartChar: u
@@ -8462,6 +8469,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 1459 -210 2
 Refer: 92 84 N 1 0 0 1 0 0 2
+Substitution2: "loclLocalizedFormsinLatinlookup10 subtable" uni021A
+Substitution2: "loclLocalizedFormsinLatinlookup9 subtable" uni021A
 EndChar
 
 StartChar: uni0163
@@ -8475,6 +8484,8 @@ LayerCount: 2
 Fore
 Refer: 450 807 N 1 0 0 1 1466 -182 2
 Refer: 327 116 N 1 0 0 1 0 0 2
+Substitution2: "loclLocalizedFormsinLatinlookup10 subtable" uni021B
+Substitution2: "loclLocalizedFormsinLatinlookup9 subtable" uni021B
 EndChar
 
 StartChar: uni018F
@@ -9843,7 +9854,6 @@ GlifName: uni0328
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 AnchorPoint: "base" -167 0 mark 0
 LayerCount: 2
 Fore
@@ -9939,6 +9949,7 @@ GlifName: uni0900
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 285 1596 mark 0
 LayerCount: 2
 Fore
@@ -9972,6 +9983,7 @@ GlifName: uni0901
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 242 1596 mark 0
 LayerCount: 2
 Fore
@@ -10005,6 +10017,7 @@ GlifName: uni0902
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 505 1570 mark 0
 LayerCount: 2
 Fore
@@ -17013,8 +17026,8 @@ SplineSet
  728 1189 l 257
  622 1023 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -17069,6 +17082,7 @@ GlifName: uni0930_uni094D_.rphf
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 1 1522 mark 0
 LayerCount: 2
 Fore
@@ -17098,6 +17112,7 @@ GlifName: uni0930_uni094D__uni0902.abvs
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 1 1476 mark 0
 LayerCount: 2
 Fore
@@ -18988,6 +19003,7 @@ GlifName: uni093C_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" 270 4 mark 0
 LayerCount: 2
 Fore
@@ -19130,6 +19146,7 @@ GlifName: uni0941
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -125 28 mark 0
 LayerCount: 2
 Fore
@@ -19163,6 +19180,7 @@ GlifName: uni0942
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "blwm_deva" -980 55 mark 0
 LayerCount: 2
 Fore
@@ -19256,121 +19274,116 @@ EndChar
 StartChar: uni0945
 Encoding: 648 2373 648
 GlifName: uni0945
-Width: 2048
+Width: 0
 VWidth: 0
-GlyphClass: 2
-Flags: W
-AnchorPoint: "abvm_deva" 666 1840 basechar 0
+GlyphClass: 4
+HStem: 1639 493
+AnchorPoint: "abvm_deva" 572 1557 mark 0
 LayerCount: 2
 Fore
 SplineSet
-553 1553 m 257
- 481 1354 l 257
- 2541 1354 l 257
- 2613 1553 l 257
- 553 1553 l 257
--164 2124 m 257
- -340 1639 l 257
- -138 1639 l 257
- 38 2124 l 257
- -164 2124 l 257
--78 1841 m 257
- -151 1641 l 257
- 843 1641 l 257
- 916 1841 l 257
- -78 1841 l 257
-986 2132 m 257
- 807 1641 l 257
- 1007 1641 l 257
- 1186 2132 l 257
- 986 2132 l 257
+99.5293 2124 m 257
+ -76.4707 1639 l 257
+ 125.529 1639 l 257
+ 301.529 2124 l 257
+ 99.5293 2124 l 257
+185.529 1841 m 257
+ 112.529 1641 l 257
+ 1106.53 1641 l 257
+ 1179.53 1841 l 257
+ 185.529 1841 l 257
+1249.53 2132 m 257
+ 1070.53 1641 l 257
+ 1270.53 1641 l 257
+ 1449.53 2132 l 257
+ 1249.53 2132 l 257
 EndSplineSet
+PickledDataWithLists: "(dp0
+Vcom.fontlab.hintData
+p1
+(dp2
+Vhhints
+p3
+(lp4
+(dp5
+Vposition
+p6
+I1639
+sVwidth
+p7
+I493
+sass."
 EndChar
 
 StartChar: uni0946
 Encoding: 649 2374 649
 GlifName: uni0946
-Width: 2048
+Width: 0
 VWidth: 0
-GlyphClass: 2
-Flags: W
-AnchorPoint: "abvm_deva" 438 1630 basechar 0
+GlyphClass: 4
+Flags: H
+AnchorPoint: "abvm_deva" 133 1502 mark 0
 LayerCount: 2
 Fore
 SplineSet
-519 1548 m 257
- 447 1350 l 257
- 2539 1350 l 257
- 2611 1548 l 257
- 519 1548 l 257
--311 2123 m 257
- -420 1823 l 257
- -220 1823 l 257
- -111 2123 l 257
- -311 2123 l 257
--372 1963 m 257
- -444 1763 l 257
- 840 1763 l 257
- 912 1963 l 257
- -372 1963 l 257
-676 1858 m 257
- 559 1537 l 257
- 757 1537 l 257
- 874 1858 l 257
- 676 1858 l 257
+-840 2123 m 257
+ -949 1823 l 257
+ -749 1823 l 257
+ -640 2123 l 257
+ -840 2123 l 257
+-901 1963 m 257
+ -973 1763 l 257
+ 311 1763 l 257
+ 383 1963 l 257
+ -901 1963 l 257
+147 1858 m 257
+ 30 1537 l 257
+ 228 1537 l 257
+ 345 1858 l 257
+ 147 1858 l 257
 EndSplineSet
 EndChar
 
 StartChar: uni0947
 Encoding: 650 2375 650
 GlifName: uni0947
-Width: 2048
+Width: 0
 VWidth: 0
-GlyphClass: 2
-Flags: W
-AnchorPoint: "abvm_deva" 606 1612 basechar 0
+GlyphClass: 4
+Flags: H
+AnchorPoint: "abvm_deva" 81 1540 mark 0
 LayerCount: 2
 Fore
 SplineSet
-568 1548 m 257
- 496 1350 l 257
- 2539 1350 l 257
- 2611 1548 l 257
- 568 1548 l 257
-7 1919 m 257
- 608 1447 l 257
- 805 1555 l 257
- 235 2044 l 257
- 7 1919 l 257
+-673 2020 m 257
+ -72 1548 l 257
+ 245 1541 l 257
+ -445 2145 l 257
+ -673 2020 l 257
 EndSplineSet
 EndChar
 
 StartChar: uni0948
 Encoding: 651 2376 651
 GlifName: uni0948
-Width: 2048
+Width: 0
 VWidth: 0
-GlyphClass: 2
-Flags: W
-AnchorPoint: "abvm_deva" 786 1594 basechar 0
+GlyphClass: 4
+Flags: H
+AnchorPoint: "abvm_deva" -2 1568 mark 0
 LayerCount: 2
 Fore
 SplineSet
-541 1548 m 257
- 467 1343 l 257
- 2537 1343 l 257
- 2611 1548 l 257
- 541 1548 l 257
--175 1750 m 257
- 631 1548 l 257
- 923 1548 l 257
- 17 1903 l 257
- -175 1750 l 257
-887 1949 m 257
- 794 1522 l 257
- 1015 1548 l 257
- 1098 1988 l 257
- 887 1949 l 257
+-1030 1774 m 257
+ -224 1572 l 257
+ 68 1572 l 257
+ -838 1927 l 257
+ -1030 1774 l 257
+32 1973 m 257
+ -74 1569 l 257
+ 160 1572 l 257
+ 243 2012 l 257
+ 32 1973 l 257
 EndSplineSet
 EndChar
 
@@ -24900,7 +24913,7 @@ GlifName: uni2070
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 931 48 N 0.5625 0 0 0.5625 718.359 742 2
@@ -24912,7 +24925,7 @@ GlifName: uni2071
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 224 105 N 0.5625 0 0 0.5625 705.244 707 2
@@ -24924,7 +24937,7 @@ GlifName: uni2074
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 203 52 N 0.5625 0 0 0.5625 718.092 740 2
@@ -24936,7 +24949,7 @@ GlifName: uni2075
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 202 53 N 0.5625 0 0 0.5625 710.917 738 2
@@ -24948,7 +24961,7 @@ GlifName: uni2076
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 323 54 N 0.5625 0 0 0.5625 716.39 738 2
@@ -24960,7 +24973,7 @@ GlifName: uni2077
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 322 55 N 0.5625 0 0 0.5625 718.565 741 2
@@ -24972,7 +24985,7 @@ GlifName: uni2078
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 190 56 N 0.5625 0 0 0.5625 716.619 738 2
@@ -24984,7 +24997,7 @@ GlifName: uni2079
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 264 57 N 0.5625 0 0 0.5625 715.04 740 2
@@ -24996,7 +25009,7 @@ GlifName: uni207A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 296 43 N 0.5625 0 0 0.5625 703.574 703 2
@@ -25008,7 +25021,7 @@ GlifName: uni207B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 257 8722 N 0.5625 0 0 0.5625 561.764 708 2
@@ -25020,7 +25033,7 @@ GlifName: uni207C_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 197 61 N 0.5625 0 0 0.5625 694.074 676 2
@@ -25032,7 +25045,7 @@ GlifName: uni207D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 289 40 N 0.5625 0 0 0.5625 692.151 670 2
@@ -25044,7 +25057,7 @@ GlifName: uni207E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 290 41 N 0.5625 0 0 0.5625 691.204 668 2
@@ -25056,7 +25069,7 @@ GlifName: uni207F_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 261 110 N 0.5625 0 0 0.5625 675.208 624 2
@@ -25068,7 +25081,7 @@ GlifName: uni2080
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 931 48 N 0.5625 0 0 0.5625 354.39 -258 2
@@ -25080,7 +25093,7 @@ GlifName: uni2081
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 279 49 N 0.5625 0 0 0.5625 352.879 -262 2
@@ -25092,7 +25105,7 @@ GlifName: uni2082
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 335 50 N 0.5625 0 0 0.5625 351.583 -262 2
@@ -25104,7 +25117,7 @@ GlifName: uni2083
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 330 51 N 0.5625 0 0 0.5625 353.604 -262 2
@@ -25116,7 +25129,7 @@ GlifName: uni2084
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 203 52 N 0.5625 0 0 0.5625 354.121 -260 2
@@ -25128,7 +25141,7 @@ GlifName: uni2085
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 202 53 N 0.5625 0 0 0.5625 346.946 -262 2
@@ -25140,7 +25153,7 @@ GlifName: uni2086
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 323 54 N 0.5625 0 0 0.5625 352.419 -262 2
@@ -25152,7 +25165,7 @@ GlifName: uni2087
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 322 55 N 0.5625 0 0 0.5625 354.595 -259 2
@@ -25164,7 +25177,7 @@ GlifName: uni2088
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 190 56 N 0.5625 0 0 0.5625 352.649 -262 2
@@ -25176,7 +25189,7 @@ GlifName: uni2089
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 264 57 N 0.5625 0 0 0.5625 351.07 -260 2
@@ -25188,7 +25201,7 @@ GlifName: uni208A_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 296 43 N 0.5625 0 0 0.5625 339.604 -297 2
@@ -25200,7 +25213,7 @@ GlifName: uni208B_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 257 8722 N 0.5625 0 0 0.5625 197.794 -292 2
@@ -25212,7 +25225,7 @@ GlifName: uni208C_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 197 61 N 0.5625 0 0 0.5625 330.104 -324 2
@@ -25224,7 +25237,7 @@ GlifName: uni208D_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 289 40 N 0.5625 0 0 0.5625 328.181 -330 2
@@ -25236,7 +25249,7 @@ GlifName: uni208E_
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 290 41 N 0.5625 0 0 0.5625 327.234 -332 2
@@ -25696,6 +25709,7 @@ LayerCount: 2
 Fore
 Refer: 65 78 N 0.5 0 0 1 -14 0 2
 Refer: 283 186 N 0.5 0 0 1 1109 329 2
+Ligature2: "ordnOrdinalsinLatinlookup20 subtable" N o period
 EndChar
 
 StartChar: uni25CC
@@ -25837,8 +25851,8 @@ SplineSet
  1925 1023 l 257
  414 1023 l 257
 EndSplineSet
-LCarets2: 1 32
 Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f i
+LCarets2: 1 32
 EndChar
 
 StartChar: uniFB02
@@ -25877,8 +25891,8 @@ SplineSet
  2425 1553 l 257
  2226 1553 l 257
 EndSplineSet
-LCarets2: 1 84
 Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
+LCarets2: 1 84
 EndChar
 
 StartChar: uogonek
@@ -26282,6 +26296,7 @@ SplineSet
  2521 1559 l 257
  660 1559 l 257
 EndSplineSet
+Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2070
 EndChar
 EndChars
 EndSplineFont

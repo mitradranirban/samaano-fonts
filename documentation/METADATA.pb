@@ -23,7 +23,7 @@ source {
     dest_file: "Samaano[slnt,wdth,wght].ttf"
   }
   files {
-    source_file: "article/ARTICLE.en_us.html"
+    source_file: "documentation/ARTICLE.en_us.html"
     dest_file: "ARTICLE.en_us.html"
   }
   

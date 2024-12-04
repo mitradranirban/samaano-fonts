@@ -36,13 +36,16 @@ Following are the specialities of the font
 * Simple Glyph construction using Rectangular or quadrilateral components only
 
 * Extensive coverage of many Latin Based Languages including East European Languages, Vietnamese and Devanagari.
+now Samaano support 364 Latin based and 16 Devanagari Based languages.
 
-![Sample Image](documentation/image2.png)
-![Sample Image](documentation/image3.png)
-![Sample Image](documentation/image4.png)
-![Sample Image](documentation/image5.png)
-![Sample Image](documentation/image6.png)
-![Sample Image](documentation/image7.png)
+![shaperglot](documentation/samaano-shaperglot.png)
+
+![Sample Image2](documentation/image2.png)
+![Sample Image3](documentation/image3.png)
+![Sample Image4](documentation/image4.png)
+![Sample Image5](documentation/image5.png)
+![Sample Image6](documentation/image6.png)
+![Sample Image7](documentation/image7.png)
 
 
 ## About
