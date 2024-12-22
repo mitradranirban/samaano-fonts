@@ -5,7 +5,8 @@ FamilyName: Samaano
 Weight: Bold
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 2.010
+Version: 2.10
+StyleMapFamilyName: Samaano Bold
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -22,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1733242942
-ModificationTime: 1733244549
+CreationTime: 1734854574
+ModificationTime: 1734854574
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -66,20 +67,17 @@ Lookup: 4 0 0 "ordnOrdinalsinLatinlookup20" { "ordnOrdinalsinLatinlookup20 subta
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
-MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "" "" "" "" "" "Version 2.010" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org" "" "Samaano" "Bold"
+LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.010" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org" "" "Samaano" "Bold"
 PickledDataWithLists: "(dp0
 ."
 Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -128
+DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 530 10 4
-BeginPrivate: 0
-EndPrivate
+WinInfo: 0 8 2
 Grid
 -2048 -612 m 0
  2048 -612 l 1024
@@ -5122,6 +5120,7 @@ LayerCount: 2
 Fore
 Refer: 440 778 N 1 0 0 1 516 306 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 32
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030A
 EndChar
 
@@ -5136,6 +5135,7 @@ LayerCount: 2
 Fore
 Refer: 441 779 N 1 0 0 1 486 273 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" i uni030B
 EndChar
 
@@ -5302,6 +5302,7 @@ LayerCount: 2
 Fore
 Refer: 211 768 N 1 0 0 1 746 170 2
 Refer: 426 567 N 1 0 0 1 0 0 2
+LCarets2: 1 32
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j gravecomb
 EndChar
 
@@ -5316,6 +5317,7 @@ LayerCount: 2
 Fore
 Refer: 333 771 N 1 0 0 1 732 187 2
 Refer: 426 567 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j tildecomb
 EndChar
 
@@ -5330,6 +5332,7 @@ LayerCount: 2
 Fore
 Refer: 435 772 N 1 0 0 0.953656 773 193 2
 Refer: 426 567 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j uni0304
 EndChar
 
@@ -5372,6 +5375,7 @@ LayerCount: 2
 Fore
 Refer: 426 567 N 1 0 0 1 0 0 2
 Refer: 128 769 N 1 0 0 1 763 482 2
+LCarets2: 1 32
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" j acutecomb
 EndChar
 
@@ -8066,21 +8070,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-SplineSet
-225 1455 m 257
- 573 1455 l 257
- 573 1259 l 257
- 229 1259 l 257
- 229 851 l 257
- 678 851 l 257
- 678 940 l 257
- 345 940 l 257
- 345 1168 l 257
- 687 1168 l 257
- 687 1548 l 257
- 225 1548 l 257
- 225 1455 l 257
-EndSplineSet
+Refer: 335 50 N 0.6 0 0 0.6 205.4 509.6 2
 EndChar
 
 StartChar: uni00B3
@@ -8092,21 +8082,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-SplineSet
-193 1215 m 257
- 645 1215 l 257
- 645 990 l 257
- 164 990 l 257
- 164 908 l 257
- 785 908 l 257
- 785 1553 l 257
- 185 1553 l 257
- 185 1471 l 257
- 644 1471 l 257
- 644 1298 l 257
- 193 1298 l 257
- 193 1215 l 257
-EndSplineSet
+Refer: 330 51 N 0.6 0 0 0.6 204.4 509 2
 EndChar
 
 StartChar: uni00B9
@@ -8118,18 +8094,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-SplineSet
-511 887 m 257
- 610 887 l 257
- 610 1661 l 257
- 511 1661 l 257
- 511 887 l 257
-513 1661 m 257
- 414 1513 l 257
- 489 1463 l 257
- 588 1612 l 257
- 513 1661 l 257
-EndSplineSet
+Refer: 279 49 N 0.6 0 0 0.6 165.8 509.6 2
 EndChar
 
 StartChar: uni0122
@@ -8170,6 +8135,7 @@ Fore
 Refer: 211 768 N 1 0 0 1 483 210 2
 Refer: 451 808 N 1 0 0 1 747 3 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek gravecomb
 EndChar
 
@@ -8185,6 +8151,7 @@ Fore
 Refer: 128 769 N 1 0 0 1 429 291 2
 Refer: 451 808 N 1 0 0 1 747 3 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek acutecomb
 EndChar
 
@@ -8200,6 +8167,7 @@ Fore
 Refer: 434 770 N 1 0 0 1 498 297 2
 Refer: 451 808 N 1 0 0 1 747 3 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek uni0302
 EndChar
 
@@ -8215,6 +8183,7 @@ Fore
 Refer: 333 771 N 1 0 0 1 507 264 2
 Refer: 451 808 N 1 0 0 1 747 3 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek tildecomb
 EndChar
 
@@ -8230,6 +8199,7 @@ Fore
 Refer: 435 772 N 1 0 0 1 513 228 2
 Refer: 451 808 N 1 0 0 1 747 3 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek uni0304
 EndChar
 
@@ -8245,6 +8215,7 @@ Fore
 Refer: 442 780 N 1 0 0 1 524 273 2
 Refer: 451 808 N 1 0 0 1 747 3 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" iogonek uni030C
 EndChar
 
@@ -9750,6 +9721,7 @@ GlifName: uni0328
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" -270 -122 mark 0
 LayerCount: 2
 Fore
@@ -14379,7 +14351,7 @@ GlifName: uni0925
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 AnchorPoint: "abvm_deva" 884 1551 basechar 0
 AnchorPoint: "blwm_deva" 883 -63 basechar 0
 LayerCount: 2
@@ -14429,7 +14401,7 @@ GlifName: uni0925_uni0930_uni094D_.vatu
 Width: 1024
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 AnchorPoint: "abvm_deva" 864 1628 basechar 0
 AnchorPoint: "blwm_deva" 804 -119 basechar 0
 LayerCount: 2
@@ -14450,11 +14422,11 @@ SplineSet
  981 -18 l 257
  981 1537 l 257
  782 1537 l 257
-98 1548 m 261
- 98 1350 l 261
+98 1548 m 257
+ 98 1350 l 257
  479 1350 l 257
  479 1548 l 257
- 98 1548 l 261
+ 98 1548 l 257
 278 1413 m 257
  278 927 l 257
  478 927 l 257
@@ -14476,7 +14448,6 @@ SplineSet
  981 442 l 257
  38 442 l 257
 EndSplineSet
-LCarets2: 2 0 0
 Ligature2: "rkrfRakarVariantsinDevanagari2lookup0 subtable" uni0925 uni094D uni0930
 EndChar
 
@@ -14486,7 +14457,7 @@ GlifName: uni0925_uni094D_.half
 Width: 1024
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 AnchorPoint: "abvm_deva" 864 1628 basechar 0
 AnchorPoint: "blwm_deva" 804 -119 basechar 0
 LayerCount: 2
@@ -14497,11 +14468,11 @@ SplineSet
  1030 1350 l 257
  1030 1548 l 257
  646 1548 l 257
-104 1548 m 261
- 104 1350 l 261
+104 1548 m 257
+ 104 1350 l 257
  479 1350 l 257
  479 1548 l 257
- 104 1548 l 261
+ 104 1548 l 257
 278 1413 m 257
  278 927 l 257
  478 927 l 257
@@ -14532,7 +14503,7 @@ GlifName: uni0925_uni094D_.haln
 Width: 1024
 VWidth: 0
 GlyphClass: 3
-Flags: HW
+Flags: W
 AnchorPoint: "abvm_deva" 864 1628 basechar 0
 AnchorPoint: "blwm_deva" 804 -119 basechar 0
 LayerCount: 2
@@ -14548,11 +14519,11 @@ SplineSet
  941 -18 l 257
  959 1537 l 257
  760 1537 l 257
-108 1548 m 261
- 105 1348 l 261
+108 1548 m 257
+ 105 1348 l 257
  454 1348 l 257
  457 1548 l 257
- 108 1548 l 261
+ 108 1548 l 257
 254 1413 m 257
  249 927 l 257
  449 927 l 257
@@ -14593,7 +14564,7 @@ GlifName: uni0926
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: WO
+Flags: W
 AnchorPoint: "abvm_deva" 585 1550 basechar 0
 AnchorPoint: "blwm_deva" 883 -63 basechar 0
 LayerCount: 2
@@ -16923,8 +16894,8 @@ SplineSet
  246 935 l 257
  50 935 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -19240,6 +19211,7 @@ GlifName: uni0945
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 VStem: -333 13<1641 1841 1641 1641>
 AnchorPoint: "abvm_deva" -68 1597 mark 0
 LayerCount: 2
@@ -19284,7 +19256,7 @@ GlifName: uni0946
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: H
+Flags: W
 AnchorPoint: "abvm_deva" 118 1551.8 mark 0
 LayerCount: 2
 Fore
@@ -19313,7 +19285,7 @@ GlifName: uni0947
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: H
+Flags: W
 AnchorPoint: "abvm_deva" 128 1545 mark 0
 LayerCount: 2
 Fore
@@ -19332,7 +19304,7 @@ GlifName: uni0948
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: H
+Flags: W
 AnchorPoint: "abvm_deva" -5 1590 mark 0
 LayerCount: 2
 Fore
@@ -24065,6 +24037,7 @@ Fore
 Refer: 211 768 N 1 0 0 1 516 216 2
 Refer: 180 803 N 1 0 0 1 512 116 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 34
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB gravecomb
 EndChar
 
@@ -24095,6 +24068,7 @@ Fore
 Refer: 434 770 N 1 0 0 1 510 258 2
 Refer: 180 803 N 1 0 0 1 512 116 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 32
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB uni0302
 EndChar
 
@@ -24110,6 +24084,7 @@ Fore
 Refer: 333 771 N 1 0 0 1 531 288 2
 Refer: 180 803 N 1 0 0 1 512 116 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 24
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB tildecomb
 EndChar
 
@@ -24125,6 +24100,7 @@ Fore
 Refer: 435 772 N 1 0 0 1 459 276 2
 Refer: 180 803 N 1 0 0 1 512 116 2
 Refer: 181 305 N 1 0 0 1 0 0 2
+LCarets2: 1 32
 Ligature2: "ligaStandardLigaturesinLatinlookup0 subtable" uni1ECB uni0304
 EndChar
 
@@ -25792,7 +25768,7 @@ SplineSet
  836 1553 l 257
  637 1553 l 257
 EndSplineSet
-LCarets2: 1 84
+LCarets2: 1 34
 Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
 EndChar
 

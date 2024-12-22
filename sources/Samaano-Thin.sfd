@@ -5,7 +5,8 @@ FamilyName: Samaano
 Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 2.010
+Version: 2.10
+StyleMapFamilyName: Samaano Thin
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -22,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1733242943
-ModificationTime: 1733287101
+CreationTime: 1734854574
+ModificationTime: 1734854574
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -66,20 +67,17 @@ Lookup: 4 0 0 "ordnOrdinalsinLatinlookup20" { "ordnOrdinalsinLatinlookup20 subta
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
-MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "" "" "" "" "" "Version 2.010" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
+LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.010" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
 ."
 Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -128
+DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 620 10 4
-BeginPrivate: 0
-EndPrivate
+WinInfo: 0 8 2
 Grid
 -2048 1545 m 0
  2048 1545 l 1024
@@ -8247,21 +8245,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-SplineSet
-371 1522 m 257
- 724 1522 l 257
- 724 1307 l 257
- 374 1307 l 257
- 374 969 l 257
- 746 969 l 257
- 746 991 l 257
- 403 991 l 257
- 403 1285 l 257
- 753 1285 l 257
- 753 1544 l 257
- 371 1544 l 257
- 371 1522 l 257
-EndSplineSet
+Refer: 335 50 N 0.6 0 0 0.6 202.4 508.8 2
 EndChar
 
 StartChar: uni00B3
@@ -8273,21 +8257,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-SplineSet
-248 1246 m 257
- 705 1246 l 257
- 705 989 l 257
- 223 989 l 257
- 229 967 l 257
- 739 967 l 257
- 739 1550 l 257
- 240 1550 l 257
- 240 1529 l 257
- 703 1529 l 257
- 703 1268 l 257
- 248 1268 l 257
- 248 1246 l 257
-EndSplineSet
+Refer: 330 51 N 0.6 0 0 0.6 204.4 508.4 2
 EndChar
 
 StartChar: uni00B9
@@ -8299,18 +8269,7 @@ GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
-SplineSet
-536 888 m 257
- 566 888 l 257
- 566 1662 l 257
- 536 1662 l 257
- 536 888 l 257
-536 1662 m 257
- 477 1600 l 257
- 502 1586 l 257
- 566 1662 l 257
- 536 1662 l 257
-EndSplineSet
+Refer: 279 49 N 0.6 0 0 0.6 208.6 510 2
 EndChar
 
 StartChar: uni0122
@@ -10027,6 +9986,7 @@ GlifName: uni0328
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" -167 0 mark 0
 LayerCount: 2
 Fore
@@ -17240,8 +17200,8 @@ SplineSet
  182 912 l 257
  135 878 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -19541,6 +19501,7 @@ GlifName: uni0945
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "abvm_deva" 0 1538 mark 0
 LayerCount: 2
 Fore
@@ -19569,7 +19530,7 @@ GlifName: uni0946
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: H
+Flags: W
 AnchorPoint: "abvm_deva" 217 1493 mark 0
 LayerCount: 2
 Fore
@@ -19598,7 +19559,7 @@ GlifName: uni0947
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: H
+Flags: W
 AnchorPoint: "abvm_deva" 127 1534 mark 0
 LayerCount: 2
 Fore
@@ -19617,7 +19578,7 @@ GlifName: uni0948
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: H
+Flags: W
 AnchorPoint: "abvm_deva" -50 1572 mark 0
 LayerCount: 2
 Fore
@@ -26434,8 +26395,8 @@ SplineSet
  760 1148 l 257
  80 1148 l 257
 EndSplineSet
-Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f i
 LCarets2: 1 32
+Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f i
 EndChar
 
 StartChar: uniFB02
@@ -26474,8 +26435,8 @@ SplineSet
  697 1553 l 257
  637 1553 l 257
 EndSplineSet
-Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
 LCarets2: 1 84
+Ligature2: "dligDiscretionaryLigatureslookup0 subtable" f l
 EndChar
 
 StartChar: uogonek
