@@ -162,8 +162,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -485,7 +485,7 @@ lookup markMarkPositioninglookup0 {
   markClass [\uni0328 ] <anchor -270 -122> @base;
   markClass [\uni032E ] <anchor -8 -4> @base;
   markClass [\uni0331 \uni0335 ] <anchor 4 -163> @base;
-  markClass [\acutecomb ] <anchor -1 785> @top;
+  markClass [\acutecomb \tonos ] <anchor -1 785> @top;
   markClass [\gravecomb ] <anchor 25 842> @top;
   markClass [\hookabovecomb ] <anchor -6 774> @top;
   markClass [\tildecomb ] <anchor -6 778> @top;
@@ -565,7 +565,7 @@ lookup markMarkPositioninglookup0 {
 	<anchor 486 -32> mark @base;
   pos base [\Y ] <anchor 524 1638> mark @top
 	<anchor 508 -70> mark @base;
-  pos base [\Z ] <anchor 496 1646> mark @top
+  pos base [\Z \Xi ] <anchor 496 1646> mark @top
 	<anchor 560 -46> mark @base;
   pos base [\a ] <anchor 500 1134> mark @top
 	<anchor 524 -74> mark @base;
@@ -644,6 +644,8 @@ lookup markMarkPositioninglookup0 {
 	<anchor 556 -464> mark @base;
   pos base [\z ] <anchor 504 1124> mark @top
 	<anchor 460 -60> mark @base;
+  pos base [\Lambda ] <anchor 527 -94> mark @top
+	<anchor 459 1602> mark @base;
 } markMarkPositioninglookup0;
 
 lookup abvmAboveBaseMarkinDevanagari2lookup1 {
@@ -852,7 +854,6 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
 	\Amacron \Aogonek \Aring \Aringacute \Atilde \B \C \Cacute \Ccaron \Ccedilla 
@@ -939,7 +940,11 @@ feature blwm {
 	\uni20AD \uni20B1 \uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF 
 	\uni2116 \uni25CC \uni27E8 \uni27E9 \uogonek \uring \utilde \v \w \wacute 
 	\wcircumflex \wdieresis \wgrave \x \y \yacute \ycircumflex \ydieresis \yen 
-	\ygrave \z \zacute \zcaron \zdotaccent \zero ];
+	\ygrave \z \zacute \zcaron \zdotaccent \zero \Alpha \Beta \Epsilon \Zeta \Eta \Iota 
+	\Kappa \Mu \Nu \Omicron \Rho \Tau \Upsilon \Chi \Iotadieresis \Upsilondieresis 
+	\Gamma \Lambda \uni0394 \Psi \anoteleia \Theta \Xi \Alphatonos \Epsilontonos 
+	\Etatonos \Iotatonos \Omicrontonos \Upsilontonos \dieresistonos \Pi \Sigma \Phi 
+	\uni03A9 \Omegatonos ];
 @GDEF_Ligature = [\i_uni030A \i_uni030B \j_gravecomb \j_uni0303 \j_uni0304 
 	\j_uni0308 \j_uni0311 \jacute \uni012F_uni0300 \uni012F_uni0301 
 	\uni012F_uni0302 \uni012F_uni0303 \uni012F_uni0304 \uni012F_uni030C 
@@ -997,7 +1002,7 @@ feature blwm {
 	\uni032E \uni0331 \uni0335 \uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf 
 	\uni0930_uni094D.rphf \uni0930_uni094D_uni0902.abvs \uni093A \uni093C 
 	\uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 \uni0947 \uni0948 \uni094D 
-	\uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 ];
+	\uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 \tonos ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
