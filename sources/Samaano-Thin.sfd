@@ -6,7 +6,6 @@ Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
 Version: 2.10
-StyleMapFamilyName: Samaano Thin
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -23,8 +22,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1735037193
-ModificationTime: 1735037686
+CreationTime: 1736177559
+ModificationTime: 1736178418
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -75,7 +74,7 @@ Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
-AntiAlias: 1
+AntiAlias: 0
 FitToEm: 0
 WinInfo: 900 10 4
 Grid
@@ -278,10 +277,11 @@ Encoding: 913 913 9
 GlifName: A_lpha
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 1 65 N 1 0 0 1 0 0 3
+Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Alphatonos
@@ -289,11 +289,12 @@ Encoding: 902 902 10
 GlifName: A_lphatonos
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 336 900 S 1 0 0 1 4.75 514 2
-Refer: 9 913 N 1 0 0 1 127.25 0 3
+Refer: 336 900 N 1 0 0 1 4.75 514 2
+Refer: 9 913 N 1 0 0 1 127.25 0 2
 EndChar
 
 StartChar: Amacron
@@ -8060,6 +8061,7 @@ Encoding: 900 900 336
 GlifName: tonos
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "top" -1 785 mark 0
 LayerCount: 2
@@ -8067,8 +8069,8 @@ Fore
 SplineSet
 100 1077 m 257
  -30 823 l 257
- 58 777 l 257
- 189 1032 l 257
+ 7 792 l 261
+ 138 1047 l 261
  100 1077 l 257
 EndSplineSet
 EndChar
@@ -9710,21 +9712,20 @@ GlifName: uni0308
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 AnchorPoint: "top" 4 1592 mark 0
 LayerCount: 2
 Fore
 SplineSet
--177 1738 m 257
- -177 1637 l 257
- -65 1637 l 257
- -65 1738 l 257
- -177 1738 l 257
-65 1738 m 257
- 65 1637 l 257
- 177 1637 l 257
- 177 1738 l 257
- 65 1738 l 257
+-106 1718 m 257
+ -106 1657 l 257
+ -39 1657 l 257
+ -39 1718 l 257
+ -106 1718 l 257
+39 1718 m 257
+ 39 1657 l 257
+ 106 1657 l 257
+ 106 1718 l 257
+ 39 1718 l 257
 EndSplineSet
 EndChar
 
@@ -17241,8 +17242,8 @@ SplineSet
  182 912 l 257
  135 878 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -26902,8 +26903,10 @@ EndChar
 
 StartChar: dieresistonos
 Encoding: 901 901 935
+GlifName: dieresistonos
 Width: 0
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -26920,374 +26923,420 @@ SplineSet
  35.5 1020 l 257
 54.5 1383 m 257
  -75.5 1129 l 257
- 12.5 1083 l 257
- 143.5 1338 l 257
+ -32.5 1083 l 261
+ 98.5 1338 l 261
  54.5 1383 l 257
 EndSplineSet
 EndChar
 
 StartChar: anoteleia
 Encoding: 903 903 936
+GlifName: anoteleia
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 295 183 N 1 0 0 1 0 0 3
+Refer: 295 183 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Epsilontonos
 Encoding: 904 904 937
+GlifName: E_psilontonos
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 336 900 N 1 0 0 1 441.5 898 2
-Refer: 946 917 N 1 0 0 1 0 0 3
+Refer: 946 917 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Etatonos
 Encoding: 905 905 938
+GlifName: E_tatonos
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 336 900 N 1 0 0 1 441.5 898 2
-Refer: 948 919 N 1 0 0 1 0 0 3
+Refer: 948 919 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Iotatonos
 Encoding: 906 906 939
+GlifName: I_otatonos
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 336 900 N 1 0 0 1 441.5 898 2
-Refer: 950 921 N 1 0 0 1 0 0 3
+Refer: 950 921 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Omicrontonos
 Encoding: 908 908 940
+GlifName: O_microntonos
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 336 900 N 1 0 0 1 441.5 898 2
-Refer: 956 927 N 1 0 0 1 0 0 3
+Refer: 956 927 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Upsilontonos
 Encoding: 910 910 941
+GlifName: U_psilontonos
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 336 900 N 1 0 0 1 441.5 898 2
-Refer: 961 933 N 1 0 0 1 0 0 3
+Refer: 961 933 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Omegatonos
 Encoding: 911 911 942
+GlifName: O_megatonos
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 336 900 S 1 0 0 1 -164.5 486 2
-Refer: 965 937 N 1 0 0 1 0 0 3
+Refer: 336 900 N 1 0 0 1 -164.5 486 2
+Refer: 965 937 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Beta
 Encoding: 914 914 943
+GlifName: B_eta
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 16 66 N 1 0 0 1 0 0 3
+Refer: 16 66 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Gamma
 Encoding: 915 915 944
+GlifName: G_amma
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
 125 1548 m 257
- 125 1348 l 257
- 899 1348 l 257
+ 125 1488 l 257
+ 899 1488 l 257
  899 1548 l 257
  125 1548 l 257
-129 1436 m 257
+129 1519 m 257
  129 6 l 257
- 329 6 l 257
- 329 1436 l 257
- 129 1436 l 257
+ 189 6 l 257
+ 189 1519 l 257
+ 129 1519 l 257
 EndSplineSet
 EndChar
 
 StartChar: uni0394
 Encoding: 916 916 945
+GlifName: uni0394
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-125 197 m 257
- 125 -3 l 257
- 899 -3 l 257
- 899 197 l 257
- 125 197 l 257
+125 57 m 257
+ 125 0 l 257
+ 899 0 l 257
+ 899 57 l 257
+ 125 57 l 257
 917 0 m 257
- 657 1548 l 257
- 436 1548 l 257
- 716 0 l 257
+ 578 1548 l 257
+ 506 1548 l 257
+ 865 0 l 257
  917 0 l 257
-307 0 m 257
- 532 1548 l 257
- 309 1548 l 257
+155 0 m 257
+ 511 1548 l 257
+ 440 1548 l 257
  106 0 l 257
- 307 0 l 257
+ 155 0 l 257
 EndSplineSet
 EndChar
 
 StartChar: Epsilon
 Encoding: 917 917 946
+GlifName: E_psilon
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 26 69 N 1 0 0 1 0 0 3
+Refer: 26 69 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Zeta
 Encoding: 918 918 947
+GlifName: Z_eta
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 121 90 N 1 0 0 1 0 0 3
+Refer: 121 90 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Eta
 Encoding: 919 919 948
+GlifName: E_ta
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 44 72 N 1 0 0 1 0 0 3
+Refer: 44 72 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Theta
 Encoding: 920 920 949
+GlifName: T_heta
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-382 953 m 257
- 382 753 l 257
- 670 753 l 257
- 670 953 l 257
- 382 953 l 257
+382 883 m 257
+ 382 823 l 257
+ 670 823 l 257
+ 670 883 l 257
+ 382 883 l 257
 110 1537 m 257
  110 0 l 257
- 311 0 l 257
- 311 1537 l 257
+ 170 0 l 257
+ 170 1537 l 257
  110 1537 l 257
-707 1537 m 257
- 707 0 l 257
+850 1537 m 257
+ 850 0 l 257
  910 0 l 257
  910 1537 l 257
- 707 1537 l 257
-174 1537 m 257
- 174 1337 l 257
- 817 1337 l 257
- 817 1537 l 257
- 174 1537 l 257
-150 204 m 257
+ 850 1537 l 257
+150 1537 m 257
+ 150 1477 l 257
+ 875 1477 l 257
+ 875 1537 l 257
+ 150 1537 l 257
+150 60 m 257
  150 0 l 257
- 823 0 l 257
- 823 204 l 257
- 150 204 l 257
+ 889 0 l 257
+ 889 60 l 257
+ 150 60 l 257
 EndSplineSet
 EndChar
 
 StartChar: Iota
 Encoding: 921 921 950
+GlifName: I_ota
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 47 73 N 1 0 0 1 0 0 3
+Refer: 47 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Kappa
 Encoding: 922 922 951
+GlifName: K_appa
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 60 75 N 1 0 0 1 0 0 3
+Refer: 60 75 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Lambda
 Encoding: 923 923 952
+GlifName: L_ambda
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "top" 527 -94 basechar 0
-AnchorPoint: "base" 459 1602 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-917 0 m 257
- 657 1548 l 257
- 436 1548 l 257
- 716 0 l 257
- 917 0 l 257
+793 0 m 257
+ 533 1548 l 257
+ 460 1548 l 257
+ 740 0 l 257
+ 793 0 l 257
 307 0 m 257
  532 1548 l 257
- 309 1548 l 257
- 106 0 l 257
+ 461 1548 l 257
+ 258 0 l 257
  307 0 l 257
 EndSplineSet
 EndChar
 
 StartChar: Mu
 Encoding: 924 924 953
+GlifName: M_u
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 66 77 N 1 0 0 1 0 0 3
+Refer: 66 77 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Nu
 Encoding: 925 925 954
+GlifName: N_u
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 67 78 N 1 0 0 1 0 0 3
+Refer: 67 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Xi
 Encoding: 926 926 955
+GlifName: X_i
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 AnchorPoint: "top" 496 1646 basechar 0
 AnchorPoint: "base" 560 -46 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 151 948 m 257
- 151 736 l 257
- 871 736 l 257
+ 151 888 l 257
+ 871 888 l 257
  871 948 l 257
  151 948 l 257
 97 1548 m 257
- 97 1336 l 257
- 931 1336 l 257
+ 97 1487 l 257
+ 931 1487 l 257
  931 1548 l 257
  97 1548 l 257
-98 212 m 257
+98 60 m 257
  98 0 l 257
  926 0 l 257
- 926 212 l 257
- 98 212 l 257
+ 926 60 l 257
+ 98 60 l 257
 EndSplineSet
 EndChar
 
 StartChar: Omicron
 Encoding: 927 927 956
+GlifName: O_micron
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 71 79 N 1 0 0 1 0 0 3
+Refer: 71 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Pi
 Encoding: 928 928 957
+GlifName: P_i
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
 110 1537 m 257
  110 0 l 257
- 311 0 l 257
- 311 1537 l 257
+ 170 0 l 257
+ 170 1537 l 257
  110 1537 l 257
-707 1537 m 257
- 707 0 l 257
+849 1535 m 257
+ 849 -2 l 257
  910 0 l 257
  910 1537 l 257
- 707 1537 l 257
-174 1537 m 257
- 174 1337 l 257
- 817 1337 l 257
- 817 1537 l 257
- 174 1537 l 257
+ 849 1535 l 257
+110 1537 m 257
+ 110 1477 l 257
+ 909 1477 l 257
+ 909 1537 l 257
+ 110 1537 l 257
 EndSplineSet
 EndChar
 
 StartChar: Rho
 Encoding: 929 929 958
+GlifName: R_ho
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 84 80 N 1 0 0 1 0 0 3
+Refer: 84 80 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Sigma
 Encoding: 931 931 959
+GlifName: S_igma
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
 704 928 m 257
- 110 210 l 257
+ 110 64 l 257
  110 -14 l 257
- 704 725 l 257
+ 704 844 l 257
  704 928 l 257
 706 921 m 257
  128 1539 l 257
- 129 1338 l 257
- 706 722 l 257
+ 129 1478 l 257
+ 706 841 l 257
  706 921 l 257
-850 1337 m 257
+850 1477 m 257
  850 1537 l 257
  128 1537 l 257
- 128 1337 l 257
- 850 1337 l 257
+ 128 1477 l 257
+ 850 1477 l 257
 788 0 m 257
- 788 206 l 257
- 125 206 l 257
+ 788 60 l 257
+ 125 60 l 257
  125 0 l 257
  788 0 l 257
 EndSplineSet
@@ -27295,152 +27344,164 @@ EndChar
 
 StartChar: Tau
 Encoding: 932 932 960
+GlifName: T_au
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 94 84 N 1 0 0 1 0 0 3
+Refer: 94 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Upsilon
 Encoding: 933 933 961
+GlifName: U_psilon
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 116 89 N 1 0 0 1 0 0 3
+Refer: 116 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Phi
 Encoding: 934 934 962
+GlifName: P_hi
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-424 1541 m 257
- 424 13 l 257
- 623 13 l 257
- 623 1541 l 257
- 424 1541 l 257
-110 1420 m 257
- 110 118 l 257
- 311 118 l 257
- 311 1420 l 257
- 110 1420 l 257
-707 1420 m 257
- 707 118 l 257
- 910 118 l 257
- 910 1420 l 257
- 707 1420 l 257
-174 1420 m 257
- 174 1220 l 257
- 817 1220 l 257
- 817 1420 l 257
- 174 1420 l 257
-150 322 m 257
- 150 118 l 257
- 823 118 l 257
- 823 322 l 257
- 150 322 l 257
+494 1541 m 257
+ 494 13 l 257
+ 554 13 l 257
+ 554 1541 l 257
+ 494 1541 l 257
+110 1373 m 257
+ 110 163 l 257
+ 171 163 l 257
+ 171 1373 l 257
+ 110 1373 l 257
+850 1373 m 257
+ 850 163 l 257
+ 910 163 l 257
+ 910 1373 l 257
+ 850 1373 l 257
+146 1373 m 257
+ 146 1313 l 257
+ 882 1313 l 257
+ 882 1373 l 257
+ 146 1373 l 257
+150 223 m 257
+ 150 163 l 257
+ 870 163 l 257
+ 870 223 l 257
+ 150 223 l 257
 EndSplineSet
 EndChar
 
 StartChar: Chi
 Encoding: 935 935 963
+GlifName: C_hi
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 115 88 N 1 0 0 1 0 0 3
+Refer: 115 88 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Psi
 Encoding: 936 936 964
+GlifName: P_si
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-411 1266 m 257
- 411 0 l 257
- 613 0 l 257
- 613 1266 l 257
- 411 1266 l 257
+483 1266 m 257
+ 483 0 l 257
+ 543 0 l 257
+ 543 1266 l 257
+ 483 1266 l 257
 160 1548 m 257
  160 806 l 257
- 360 806 l 257
- 360 1548 l 257
+ 220 806 l 257
+ 220 1548 l 257
  160 1548 l 257
-665 1548 m 257
- 665 806 l 257
+804 1546 m 257
+ 804 804 l 257
  864 806 l 257
  864 1548 l 257
- 665 1548 l 257
-228 970 m 257
- 228 806 l 257
- 774 806 l 257
- 774 970 l 257
- 228 970 l 257
+ 804 1546 l 257
+176 866 m 257
+ 176 806 l 257
+ 850 806 l 257
+ 850 866 l 257
+ 176 866 l 257
 EndSplineSet
 EndChar
 
 StartChar: uni03A9
 Encoding: 937 937 965
+GlifName: uni03A_9
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-558 489 m 257
- 558 180 l 257
- 762 180 l 257
- 762 489 l 257
- 558 489 l 257
-269 489 m 257
- 269 180 l 257
- 469 180 l 257
- 469 489 l 257
- 269 489 l 257
-558 213 m 257
+558 557 m 257
+ 558 59 l 257
+ 618 59 l 257
+ 618 557 l 257
+ 558 557 l 257
+409 557 m 257
+ 409 59 l 257
+ 469 59 l 257
+ 469 557 l 257
+ 409 557 l 257
+558 69 m 257
  558 9 l 257
  915 9 l 257
- 915 213 l 257
- 558 213 l 257
-112 213 m 257
+ 915 69 l 257
+ 558 69 l 257
+112 69 m 257
  112 9 l 257
  469 9 l 257
- 469 213 l 257
- 112 213 l 257
-558 611 m 257
- 558 407 l 257
- 915 407 l 257
- 915 611 l 257
- 558 611 l 257
+ 469 69 l 257
+ 112 69 l 257
+558 617 m 257
+ 558 555 l 257
+ 915 555 l 257
+ 915 617 l 257
+ 558 617 l 257
 110 1537 m 257
  110 566 l 257
- 311 566 l 257
- 311 1537 l 257
+ 170 566 l 257
+ 170 1537 l 257
  110 1537 l 257
-707 1537 m 257
- 707 566 l 257
+850 1537 m 257
+ 850 566 l 257
  910 566 l 257
  910 1537 l 257
- 707 1537 l 257
-174 1537 m 257
- 174 1337 l 257
- 817 1337 l 257
- 817 1537 l 257
- 174 1537 l 257
+ 850 1537 l 257
+160 1537 m 257
+ 160 1477 l 257
+ 872 1477 l 257
+ 872 1537 l 257
+ 160 1537 l 257
 112 611 m 257
- 112 407 l 257
- 469 407 l 257
+ 112 555 l 257
+ 469 555 l 257
  469 611 l 257
  112 611 l 257
 EndSplineSet
@@ -27448,24 +27509,28 @@ EndChar
 
 StartChar: Iotadieresis
 Encoding: 938 938 966
+GlifName: I_otadieresis
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 442 776 N 1 0 0 1 504.5 38 2
-Refer: 950 921 N 1 0 0 1 0 0 3
+Refer: 950 921 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Upsilondieresis
 Encoding: 939 939 967
+GlifName: U_psilondieresis
 Width: 1024
 VWidth: 0
-Flags: HW
+GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
-Refer: 442 776 N 1 0 0 1 201.5 38 2
-Refer: 961 933 N 1 0 0 1 0 0 3
+Refer: 442 776 N 1 0 0 1 510 -25 2
+Refer: 961 933 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont

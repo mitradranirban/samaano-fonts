@@ -162,8 +162,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0931 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -504,6 +504,7 @@ lookup markMarkPositioninglookup0 {
   markClass [\uni0311 ] <anchor -8 776> @top;
   markClass [\uni0312 ] <anchor -9 768> @top;
   markClass [\uni031B ] <anchor 0 778> @top;
+  markClass [\tonos ] <anchor -1 785> @top;
   pos base [\A ] <anchor 1601 1626> mark @top
 	<anchor 1020 -11> mark @base;
   pos base [\B ] <anchor 1376 1585> mark @top
@@ -943,7 +944,6 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
 	\Amacron \Aogonek \Aring \Aringacute \Atilde \B \C \Cacute \Ccaron \Ccedilla 
@@ -1030,7 +1030,11 @@ feature blwm {
 	\uni20AD \uni20B1 \uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF 
 	\uni2116 \uni25CC \uni27E8 \uni27E9 \uogonek \uring \utilde \v \w \wacute 
 	\wcircumflex \wdieresis \wgrave \x \y \yacute \ycircumflex \ydieresis \yen 
-	\ygrave \z \zacute \zcaron \zdotaccent \zero ];
+	\ygrave \z \zacute \zcaron \zdotaccent \zero \dieresistonos \Alphatonos 
+	\anoteleia \Epsilontonos \Etatonos \Iotatonos \uni038B \Omicrontonos \uni038D 
+	\Upsilontonos \Omegatonos \Alpha \Beta \Gamma \uni0394 \Epsilon \Zeta \Eta \Theta 
+	\Iota \Kappa \Lambda \Mu \Nu \Xi \Omicron \Pi \Rho \uni03A2 \Sigma \Tau \Upsilon \Phi 
+	\Chi \Psi \uni03A9 \Iotadieresis \Upsilondieresis ];
 @GDEF_Ligature = [\i_uni030A \i_uni030B \j_gravecomb \j_uni0303 \j_uni0304 
 	\j_uni0308 \j_uni0311 \jacute \uni012F_uni0300 \uni012F_uni0301 
 	\uni012F_uni0302 \uni012F_uni0303 \uni012F_uni0304 \uni012F_uni030C 
@@ -1088,10 +1092,11 @@ feature blwm {
 	\uni032E \uni0331 \uni0335 \uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf 
 	\uni0930_uni094D.rphf \uni0930_uni094D_uni0902.abvs \uni093A \uni093C 
 	\uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 \uni0947 \uni0948 \uni094D 
-	\uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 ];
+	\uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 \tonos ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
+
   LigatureCaretByPos \i_uni030A 32;
   LigatureCaretByPos \i_uni030B 34;
   LigatureCaretByPos \j_gravecomb 32;

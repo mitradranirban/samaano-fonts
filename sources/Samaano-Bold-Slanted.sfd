@@ -23,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1735037192
-ModificationTime: 1735042056
+CreationTime: 1736177556
+ModificationTime: 1736179328
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -75,7 +75,7 @@ Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
-AntiAlias: 1
+AntiAlias: 0
 FitToEm: 0
 WinInfo: 900 10 4
 Grid
@@ -26122,42 +26122,27 @@ Encoding: 900 900 932
 Width: 0
 VWidth: 0
 Flags: HW
-AnchorPoint: "top" -80.5 785 mark 0
+AnchorPoint: "top" -1 785 mark 0
 LayerCount: 2
 Fore
 SplineSet
-20.5 1077 m 257
- -109.5 823 l 257
- -21.5 777 l 257
- 109.5 1032 l 257
- 20.5 1077 l 257
+100 1077 m 257
+ -30 823 l 257
+ 58 777 l 257
+ 189 1032 l 257
+ 100 1077 l 257
 EndSplineSet
 EndChar
 
 StartChar: dieresistonos
 Encoding: 901 901 933
-Width: 0
+Width: 1024
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-SplineSet
-197.5078125 1030 m 257
- 161.5078125 929 l 257
- 273.5078125 929 l 257
- 309.5078125 1030 l 257
- 197.5078125 1030 l 257
-439.5078125 1030 m 257
- 403.5078125 929 l 257
- 515.509765625 929 l 257
- 551.509765625 1030 l 257
- 439.5078125 1030 l 257
-479.76953125 1403 m 257
- 349.76953125 1149 l 257
- 437.76953125 1103 l 257
- 568.76953125 1358 l 257
- 479.76953125 1403 l 257
-EndSplineSet
+Refer: 932 900 N 1 0 0 1 825.77 152 2
+Refer: 175 168 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Alphatonos
@@ -26167,8 +26152,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 932 900 S 1 0 0 1 549.546 564 2
-Refer: 942 913 N 1 0 0 1 0 0 3
+Refer: 932 900 S 1 0 0 1 570.825 614.8 2
+Refer: 942 913 N 1 0 0 1 95.7788 0 3
 EndChar
 
 StartChar: anoteleia
@@ -26188,8 +26173,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 932 900 S 1 0 0 1 544.546 604.8 2
-Refer: 946 917 N 1 0 0 1 0 0 3
+Refer: 932 900 S 1 0 0 1 563.012 594 2
+Refer: 946 917 N 1 0 0 1 87.9658 0 3
 EndChar
 
 StartChar: Etatonos
@@ -26199,8 +26184,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 932 900 S 1 0 0 1 549.546 594.8 2
-Refer: 948 919 N 1 0 0 1 0 0 3
+Refer: 932 900 S 1 0 0 1 579.522 579 2
+Refer: 948 919 N 1 0 0 1 74.4761 0 3
 EndChar
 
 StartChar: Iotatonos
@@ -26210,8 +26195,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 932 900 S 1 0 0 1 574.546 579 2
-Refer: 950 921 N 1 0 0 1 0 0 3
+Refer: 932 900 S 1 0 0 1 596.24 574 2
+Refer: 950 921 N 1 0 0 1 76.1938 0 3
 EndChar
 
 StartChar: Omicrontonos
@@ -26221,8 +26206,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 932 900 S 1 0 0 1 554.546 564 2
-Refer: 956 927 N 1 0 0 1 0 0 3
+Refer: 932 900 S 1 0 0 1 559.882 559 2
+Refer: 956 927 N 1 0 0 1 84.8364 0 3
 EndChar
 
 StartChar: Upsilontonos
@@ -26232,8 +26217,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 932 900 S 1 0 0 1 554.546 629.8 2
-Refer: 961 933 N 1 0 0 1 0 0 3
+Refer: 932 900 S 1 0 0 1 595.109 579 2
+Refer: 961 933 N 1 0 0 1 105.063 0 3
 EndChar
 
 StartChar: Omegatonos
@@ -26243,8 +26228,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 932 900 S 1 0 0 1 541.546 566 2
-Refer: 965 937 N 1 0 0 1 0 0 3
+Refer: 932 900 S 1 0 0 1 566.497 602.8 2
+Refer: 965 937 N 1 0 0 1 91.4512 0 3
 EndChar
 
 StartChar: Alpha

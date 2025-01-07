@@ -23,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1735037192
-ModificationTime: 1735040849
+CreationTime: 1736177557
+ModificationTime: 1736180034
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -75,9 +75,9 @@ Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
-AntiAlias: 1
+AntiAlias: 0
 FitToEm: 0
-WinInfo: 890 10 4
+WinInfo: 900 10 4
 Grid
 -2048 -612 m 0
  2048 -612 l 1024
@@ -89,7 +89,7 @@ Grid
  2048 1018 l 1024
 EndSplineSet
 AnchorClass2: "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
-BeginChars: 65700 969
+BeginChars: 65700 968
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -26408,9 +26408,7 @@ GlifName: L_ambda
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
-AnchorPoint: "top" 527 -94 basechar 0
-AnchorPoint: "base" 459 1602 basechar 0
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
@@ -26550,9 +26548,7 @@ GlifName: X_i
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: W
-AnchorPoint: "top" 496 1646 basechar 0
-AnchorPoint: "base" 560 -46 basechar 0
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
@@ -26580,16 +26576,15 @@ GlifName: tonos
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: HW
-AnchorPoint: "top" -80.5 785 mark 0
+AnchorPoint: "top" -1 785 mark 0
 LayerCount: 2
 Fore
 SplineSet
-20.5 1077 m 257
- -109.5 823 l 257
- -21.5 777 l 257
- 109.5 1032 l 257
- 20.5 1077 l 257
+100 1077 m 257
+ -30 823 l 257
+ 58 777 l 257
+ 189 1032 l 257
+ 100 1077 l 257
 EndSplineSet
 PickledDataWithLists: "(dp0
 Vxyz.fontra.layer-names
@@ -26703,29 +26698,14 @@ EndChar
 StartChar: dieresistonos
 Encoding: 901 901 962
 GlifName: dieresistonos
-Width: 0
+Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-SplineSet
--177 1030 m 257
- -177 929 l 257
- -65 929 l 257
- -65 1030 l 257
- -177 1030 l 257
-65 1030 m 257
- 65 929 l 257
- 177 929 l 257
- 177 1030 l 257
- 65 1030 l 257
-44.5 1421 m 257
- -85.5 1167 l 257
- 2.5 1121 l 257
- 133.5 1376 l 257
- 44.5 1421 l 257
-EndSplineSet
+Refer: 955 900 N 1 0 0 1 466.5 344 2
+Refer: 175 168 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Pi
@@ -26896,22 +26876,6 @@ LayerCount: 2
 Fore
 Refer: 955 900 N 1 0 0 1 19.25 504 2
 Refer: 966 937 N 1 0 0 1 119.75 0 2
-EndChar
-
-StartChar: anoteleia
-Encoding: 903 903 968
-Width: 1024
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-379 1146 m 257
- 379 899 l 257
- 644 899 l 257
- 644 1146 l 257
- 379 1146 l 257
-EndSplineSet
 EndChar
 EndChars
 EndSplineFont

@@ -162,8 +162,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -643,8 +643,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 556 -464> mark @base;
   pos base [\z ] <anchor 504 1124> mark @top
 	<anchor 460 -60> mark @base;
-  pos base [\Lambda ] <anchor 527 -94> mark @top
-	<anchor 459 1602> mark @base;
 } markMarkPositioninglookup0;
 
 lookup abvmAboveBaseMarkinDevanagari2lookup1 {
@@ -1009,7 +1007,23 @@ feature blwm {
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
 
+  LigatureCaretByPos \i_uni030A 32;
+  LigatureCaretByPos \i_uni030B 34;
+  LigatureCaretByPos \j_gravecomb 32;
+  LigatureCaretByPos \j_uni0303 34;
+  LigatureCaretByPos \j_uni0304 34;
+  LigatureCaretByPos \jacute 32;
+  LigatureCaretByPos \uni012F_uni0300 34;
+  LigatureCaretByPos \uni012F_uni0301 34;
+  LigatureCaretByPos \uni012F_uni0302 34;
+  LigatureCaretByPos \uni012F_uni0303 34;
+  LigatureCaretByPos \uni012F_uni0304 34;
+  LigatureCaretByPos \uni012F_uni030C 34;
+  LigatureCaretByPos \uni1ECB_uni0300 34;
+  LigatureCaretByPos \uni1ECB_uni0302 32;
+  LigatureCaretByPos \uni1ECB_uni0303 24;
+  LigatureCaretByPos \uni1ECB_uni0304 32;
   LigatureCaretByPos \uniFB01 32;
-  LigatureCaretByPos \uniFB02 84;
+  LigatureCaretByPos \uniFB02 34;
 } GDEF;
 

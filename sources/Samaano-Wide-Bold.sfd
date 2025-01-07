@@ -23,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1735037193
-ModificationTime: 1735041704
+CreationTime: 1736177560
+ModificationTime: 1736179913
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 9
@@ -75,7 +75,7 @@ Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
-AntiAlias: 1
+AntiAlias: 0
 FitToEm: 0
 WinInfo: 900 10 4
 Grid
@@ -85,7 +85,7 @@ Grid
  2048 1024 l 1024
 EndSplineSet
 AnchorClass2: "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
-BeginChars: 65700 966
+BeginChars: 65700 968
 
 StartChar: .notdef
 Encoding: 0 0 0
@@ -311,8 +311,8 @@ VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 947 900 S 1 0 0 1 121.75 553 2
-Refer: 933 913 N 1 0 0 1 110.75 0 3
+Refer: 933 900 S 1 0 0 1 33.25 541 2
+Refer: 936 913 N 1 0 0 1 119.75 0 3
 EndChar
 
 StartChar: Amacron
@@ -30473,8 +30473,46 @@ EndSplineSet
 Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2070
 EndChar
 
+StartChar: tonos
+Encoding: 900 900 933
+Width: 0
+VWidth: 0
+Flags: HW
+AnchorPoint: "top" -1 785 mark 0
+LayerCount: 2
+Fore
+SplineSet
+100 1077 m 257
+ -30 823 l 257
+ 58 777 l 257
+ 189 1032 l 257
+ 100 1077 l 257
+EndSplineSet
+EndChar
+
+StartChar: dieresistonos
+Encoding: 901 901 934
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 933 900 N 1 0 0 1 944.5 -655 2
+Refer: 176 168 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: anoteleia
+Encoding: 903 903 935
+Width: 2048
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 294 183 N 1 0 0 1 0 0 3
+EndChar
+
 StartChar: Alpha
-Encoding: 913 913 933
+Encoding: 913 913 936
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30483,7 +30521,7 @@ Refer: 1 65 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Beta
-Encoding: 914 914 934
+Encoding: 914 914 937
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30492,7 +30530,7 @@ Refer: 15 66 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Epsilon
-Encoding: 917 917 935
+Encoding: 917 917 938
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30501,7 +30539,7 @@ Refer: 25 69 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Zeta
-Encoding: 918 918 936
+Encoding: 918 918 939
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30510,7 +30548,7 @@ Refer: 120 90 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Eta
-Encoding: 919 919 937
+Encoding: 919 919 940
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30519,7 +30557,7 @@ Refer: 43 72 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Iota
-Encoding: 921 921 938
+Encoding: 921 921 941
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30528,7 +30566,7 @@ Refer: 46 73 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Kappa
-Encoding: 922 922 939
+Encoding: 922 922 942
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30537,7 +30575,7 @@ Refer: 59 75 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Mu
-Encoding: 924 924 940
+Encoding: 924 924 943
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30546,7 +30584,7 @@ Refer: 65 77 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Nu
-Encoding: 925 925 941
+Encoding: 925 925 944
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30555,7 +30593,7 @@ Refer: 66 78 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Omicron
-Encoding: 927 927 942
+Encoding: 927 927 945
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30564,7 +30602,7 @@ Refer: 70 79 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Rho
-Encoding: 929 929 943
+Encoding: 929 929 946
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30573,7 +30611,7 @@ Refer: 83 80 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Tau
-Encoding: 932 932 944
+Encoding: 932 932 947
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30582,7 +30620,7 @@ Refer: 93 84 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Upsilon
-Encoding: 933 933 945
+Encoding: 933 933 948
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30591,7 +30629,7 @@ Refer: 115 89 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: Chi
-Encoding: 935 935 946
+Encoding: 935 935 949
 Width: 2048
 Flags: H
 LayerCount: 2
@@ -30599,67 +30637,78 @@ Fore
 Refer: 114 88 N 1 0 0 1 0 0 3
 EndChar
 
-StartChar: tonos
-Encoding: 900 900 947
-Width: 0
-VWidth: 0
-Flags: HW
-AnchorPoint: "top" -80.5 785 mark 0
-LayerCount: 2
-Fore
-SplineSet
-20.5 1077 m 257
- -109.5 823 l 257
- -21.5 777 l 257
- 109.5 1032 l 257
- 20.5 1077 l 257
-EndSplineSet
-EndChar
-
-StartChar: dieresistonos
-Encoding: 901 901 948
-Width: 0
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
--177 1030 m 257
- -177 929 l 257
- -65 929 l 257
- -65 1030 l 257
- -177 1030 l 257
-65 1030 m 257
- 65 929 l 257
- 177 929 l 257
- 177 1030 l 257
- 65 1030 l 257
-44.5 1421 m 257
- -85.5 1167 l 257
- 2.5 1121 l 257
- 133.5 1376 l 257
- 44.5 1421 l 257
-EndSplineSet
-EndChar
-
-StartChar: anoteleia
-Encoding: 903 903 949
+StartChar: Iotadieresis
+Encoding: 938 938 950
 Width: 2048
-VWidth: 0
-Flags: HW
+Flags: H
 LayerCount: 2
 Fore
-SplineSet
-379 1146 m 257
- 379 899 l 257
- 644 899 l 257
- 644 1146 l 257
- 379 1146 l 257
-EndSplineSet
+Refer: 440 776 N 1 0 0 1 1016.5 185 2
+Refer: 941 921 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Upsilondieresis
+Encoding: 939 939 951
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 440 776 N 1 0 0 1 1024 196 2
+Refer: 948 933 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Epsilontonos
+Encoding: 904 904 952
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 933 900 S 1 0 0 1 37.25 554 2
+Refer: 938 917 N 1 0 0 1 112.75 0 3
+EndChar
+
+StartChar: Etatonos
+Encoding: 905 905 953
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 933 900 S 1 0 0 1 48.25 554 2
+Refer: 940 919 N 1 0 0 1 107.75 0 3
+EndChar
+
+StartChar: Iotatonos
+Encoding: 906 906 954
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 933 900 S 1 0 0 1 53.5 562 2
+Refer: 941 921 N 1 0 0 1 100.5 0 3
+EndChar
+
+StartChar: Omicrontonos
+Encoding: 908 908 955
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 933 900 S 1 0 0 1 65.75 554 2
+Refer: 945 927 N 1 0 0 1 113.25 0 3
+EndChar
+
+StartChar: Upsilontonos
+Encoding: 910 910 956
+Width: 2048
+Flags: H
+LayerCount: 2
+Fore
+Refer: 933 900 S 1 0 0 1 28.25 565 2
+Refer: 948 933 N 1 0 0 1 111.75 0 3
 EndChar
 
 StartChar: Gamma
-Encoding: 915 915 950
+Encoding: 915 915 957
 Width: 2048
 VWidth: 0
 Flags: HW
@@ -30680,18 +30729,18 @@ EndSplineSet
 EndChar
 
 StartChar: uni0394
-Encoding: 916 916 951
+Encoding: 916 916 958
 Width: 2048
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-214 197 m 257
- 214 -3 l 257
- 1828 -3 l 261
- 1828 197 l 261
- 214 197 l 257
+228 197 m 261
+ 125 -3 l 257
+ 1923 -3 l 257
+ 1818 197 l 257
+ 228 197 l 261
 1941 0 m 257
  1169 1548 l 257
  948 1548 l 257
@@ -30700,13 +30749,13 @@ SplineSet
 307 0 m 257
  1044 1548 l 257
  821 1548 l 257
- 108 0 l 257
+ 106 0 l 257
  307 0 l 257
 EndSplineSet
 EndChar
 
 StartChar: Theta
-Encoding: 920 920 952
+Encoding: 920 920 959
 Width: 2048
 VWidth: 0
 Flags: HW
@@ -30742,7 +30791,7 @@ EndSplineSet
 EndChar
 
 StartChar: Lambda
-Encoding: 923 923 953
+Encoding: 923 923 960
 Width: 2048
 VWidth: 0
 Flags: HW
@@ -30763,33 +30812,33 @@ EndSplineSet
 EndChar
 
 StartChar: Xi
-Encoding: 926 926 954
+Encoding: 926 926 961
 Width: 2048
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-253 948 m 257
- 253 736 l 257
- 1793 736 l 257
- 1793 948 l 257
- 253 948 l 257
+151 948 m 257
+ 151 736 l 257
+ 1895 736 l 261
+ 1895 948 l 261
+ 151 948 l 257
 97 1548 m 257
  97 1336 l 257
- 1955 1336 l 257
- 1955 1548 l 257
+ 1955 1336 l 261
+ 1955 1548 l 261
  97 1548 l 257
 98 212 m 257
  98 0 l 257
- 1950 0 l 257
- 1950 212 l 257
+ 1950 0 l 261
+ 1950 212 l 261
  98 212 l 257
 EndSplineSet
 EndChar
 
 StartChar: Pi
-Encoding: 928 928 955
+Encoding: 928 928 962
 Width: 2048
 VWidth: 0
 Flags: HW
@@ -30815,38 +30864,38 @@ EndSplineSet
 EndChar
 
 StartChar: Sigma
-Encoding: 931 931 956
+Encoding: 931 931 963
 Width: 2048
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-1216 928 m 257
- 125 210 l 257
- 125 -2 l 257
- 1216 725 l 257
- 1216 928 l 257
-1218 921 m 257
+1216 928 m 261
+ 110 210 l 257
+ 110 -14 l 257
+ 1216 725 l 261
+ 1216 928 l 261
+1218 921 m 261
  128 1539 l 257
  129 1338 l 257
- 1218 722 l 257
- 1218 921 l 257
+ 1218 722 l 261
+ 1218 921 l 261
 1874 1337 m 257
  1874 1537 l 257
  128 1537 l 257
  128 1337 l 257
  1874 1337 l 257
-1874 0 m 261
- 1874 206 l 261
+1812 0 m 257
+ 1812 206 l 257
  125 206 l 257
  125 0 l 257
- 1874 0 l 261
+ 1812 0 l 257
 EndSplineSet
 EndChar
 
 StartChar: Phi
-Encoding: 934 934 957
+Encoding: 934 934 964
 Width: 2048
 VWidth: 0
 Flags: HW
@@ -30882,7 +30931,7 @@ EndSplineSet
 EndChar
 
 StartChar: Psi
-Encoding: 936 936 958
+Encoding: 936 936 965
 Width: 2048
 VWidth: 0
 Flags: HW
@@ -30913,38 +30962,38 @@ EndSplineSet
 EndChar
 
 StartChar: uni03A9
-Encoding: 937 937 959
+Encoding: 937 937 966
 Width: 2048
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-1377 489 m 257
- 1377 180 l 257
- 1581 180 l 257
- 1581 489 l 257
- 1377 489 l 257
-474 489 m 257
- 474 180 l 257
- 674 180 l 257
- 674 489 l 257
- 474 489 l 257
-1377 213 m 257
- 1377 9 l 257
+1326 489 m 257
+ 1326 180 l 257
+ 1530 180 l 257
+ 1530 489 l 257
+ 1326 489 l 257
+525 489 m 261
+ 525 180 l 261
+ 725 180 l 261
+ 725 489 l 261
+ 525 489 l 261
+1326 213 m 257
+ 1326 9 l 257
  1939 9 l 257
  1939 213 l 257
- 1377 213 l 257
+ 1326 213 l 257
 112 213 m 257
  112 9 l 257
- 674 9 l 257
- 674 213 l 257
+ 725 9 l 261
+ 725 213 l 261
  112 213 l 257
-1377 611 m 257
- 1377 407 l 257
+1326 611 m 257
+ 1326 407 l 257
  1939 407 l 257
  1939 611 l 257
- 1377 611 l 257
+ 1326 611 l 257
 110 1537 m 257
  110 566 l 257
  311 566 l 257
@@ -30962,70 +31011,20 @@ SplineSet
  174 1537 l 257
 112 611 m 257
  112 407 l 257
- 674 407 l 257
- 674 611 l 257
+ 725 407 l 261
+ 725 611 l 261
  112 611 l 257
 EndSplineSet
 EndChar
 
-StartChar: Epsilontonos
-Encoding: 904 904 960
-Width: 2048
-Flags: H
-LayerCount: 2
-Fore
-Refer: 947 900 S 1 0 0 1 119.75 574 2
-Refer: 935 917 N 1 0 0 1 109.75 0 3
-EndChar
-
-StartChar: Etatonos
-Encoding: 905 905 961
-Width: 2048
-Flags: H
-LayerCount: 2
-Fore
-Refer: 947 900 S 1 0 0 1 127.75 554 2
-Refer: 937 919 N 1 0 0 1 107.75 0 3
-EndChar
-
-StartChar: Iotatonos
-Encoding: 906 906 962
-Width: 2048
-Flags: H
-LayerCount: 2
-Fore
-Refer: 947 900 S 1 0 0 1 139 562 2
-Refer: 938 921 N 1 0 0 1 94.5 0 3
-EndChar
-
-StartChar: Omicrontonos
-Encoding: 908 908 963
-Width: 2048
-Flags: H
-LayerCount: 2
-Fore
-Refer: 947 900 S 1 0 0 1 149.25 558 2
-Refer: 942 927 N 1 0 0 1 109.25 0 3
-EndChar
-
-StartChar: Upsilontonos
-Encoding: 910 910 964
-Width: 2048
-Flags: H
-LayerCount: 2
-Fore
-Refer: 947 900 S 1 0 0 1 0 565 2
-Refer: 945 933 N 1 0 0 1 0 0 3
-EndChar
-
 StartChar: Omegatonos
-Encoding: 911 911 965
+Encoding: 911 911 967
 Width: 2048
 Flags: HO
 LayerCount: 2
 Fore
-Refer: 947 900 S 1 0 0 1 109.25 550 2
-Refer: 959 937 N 1 0 0 1 109.25 0 3
+Refer: 933 900 S 1 0 0 1 30.75 562 2
+Refer: 966 937 N 1 0 0 1 108.25 0 3
 EndChar
 EndChars
 EndSplineFont
