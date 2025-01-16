@@ -277,7 +277,7 @@ These won't break the CI job for now, but will become effective after some time 
 
 * ℹ️ **INFO** <p>None of the fonts lack a STAT table.</p>
 <pre><code>And these are the most common STAT axis orderings:
-('wght-wdth-slnt', 1)
+('slnt-wdth-wght', 1)
 ('wdth-wght', 1)
 </code></pre>
  [code: summary]
@@ -580,6 +580,277 @@ These won't break the CI job for now, but will become effective after some time 
 <details><summary>[227] Samaano-Italic[wdth,wght].ttf</summary>
 <div>
 <details>
+    <summary>💥 <b>ERROR</b> Check METADATA.pb includes production subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>HTTPConnectionPool(host='fonts.google.com', port=80): Max retries exceeded with url: /metadata/fonts (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPConnection object at 0x734e899141f0&gt;: Failed to resolve 'fonts.google.com' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: error]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>💥 <b>ERROR</b> Check font follows the Google Fonts CJK vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>HTTPConnectionPool(host='fonts.google.com', port=80): Max retries exceeded with url: /metadata/fonts (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPConnection object at 0x734e84a0c5e0&gt;: Failed to resolve 'fonts.google.com' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: error]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>💥 <b>ERROR</b> Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>HTTPConnectionPool(host='fonts.google.com', port=80): Max retries exceeded with url: /metadata/fonts (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPConnection object at 0x734e84a0dc60&gt;: Failed to resolve 'fonts.google.com' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: error]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>💥 <b>ERROR</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>Failed to access: <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a>.
+This check relies on the external service <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a> via the internet. While the service cannot be reached or does not respond this check is broken.</p>
+<pre><code>	You can exclude this check with the command line option:
+	-x com.google.fonts/check/fontdata_namecheck
+
+	Or you can wait until the service is available again.
+	If the problem persists please report this issue at: https://github.com/fonttools/fontbakery/issues
+
+	Original error message:
+	&lt;class 'requests.exceptions.ConnectionError'&gt;
+</code></pre>
+ [code: namecheck-service]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.head.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>head version is &quot;2.10899&quot; while name version string (for platform 3, encoding 1) is &quot;Version 2.010&quot;.</p>
+ [code: mismatch]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The following glyphs lack their case-swapping counterparts:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Glyph present in the font</th>
+<th align="left">Missing case-swapping counterpart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">U+0386: GREEK CAPITAL LETTER ALPHA WITH TONOS</td>
+<td align="left">U+03AC: GREEK SMALL LETTER ALPHA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+0388: GREEK CAPITAL LETTER EPSILON WITH TONOS</td>
+<td align="left">U+03AD: GREEK SMALL LETTER EPSILON WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+0389: GREEK CAPITAL LETTER ETA WITH TONOS</td>
+<td align="left">U+03AE: GREEK SMALL LETTER ETA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038A: GREEK CAPITAL LETTER IOTA WITH TONOS</td>
+<td align="left">U+03AF: GREEK SMALL LETTER IOTA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038C: GREEK CAPITAL LETTER OMICRON WITH TONOS</td>
+<td align="left">U+03CC: GREEK SMALL LETTER OMICRON WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038E: GREEK CAPITAL LETTER UPSILON WITH TONOS</td>
+<td align="left">U+03CD: GREEK SMALL LETTER UPSILON WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038F: GREEK CAPITAL LETTER OMEGA WITH TONOS</td>
+<td align="left">U+03CE: GREEK SMALL LETTER OMEGA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+0391: GREEK CAPITAL LETTER ALPHA</td>
+<td align="left">U+03B1: GREEK SMALL LETTER ALPHA</td>
+</tr>
+<tr>
+<td align="left">U+0392: GREEK CAPITAL LETTER BETA</td>
+<td align="left">U+03B2: GREEK SMALL LETTER BETA</td>
+</tr>
+<tr>
+<td align="left">U+0393: GREEK CAPITAL LETTER GAMMA</td>
+<td align="left">U+03B3: GREEK SMALL LETTER GAMMA</td>
+</tr>
+<tr>
+<td align="left">U+0395: GREEK CAPITAL LETTER EPSILON</td>
+<td align="left">U+03B5: GREEK SMALL LETTER EPSILON</td>
+</tr>
+<tr>
+<td align="left">U+0396: GREEK CAPITAL LETTER ZETA</td>
+<td align="left">U+03B6: GREEK SMALL LETTER ZETA</td>
+</tr>
+<tr>
+<td align="left">U+0397: GREEK CAPITAL LETTER ETA</td>
+<td align="left">U+03B7: GREEK SMALL LETTER ETA</td>
+</tr>
+<tr>
+<td align="left">U+0398: GREEK CAPITAL LETTER THETA</td>
+<td align="left">U+03B8: GREEK SMALL LETTER THETA</td>
+</tr>
+<tr>
+<td align="left">U+0399: GREEK CAPITAL LETTER IOTA</td>
+<td align="left">U+03B9: GREEK SMALL LETTER IOTA</td>
+</tr>
+<tr>
+<td align="left">U+039A: GREEK CAPITAL LETTER KAPPA</td>
+<td align="left">U+03BA: GREEK SMALL LETTER KAPPA</td>
+</tr>
+<tr>
+<td align="left">U+039B: GREEK CAPITAL LETTER LAMDA</td>
+<td align="left">U+03BB: GREEK SMALL LETTER LAMDA</td>
+</tr>
+<tr>
+<td align="left">U+039C: GREEK CAPITAL LETTER MU</td>
+<td align="left">U+03BC: GREEK SMALL LETTER MU</td>
+</tr>
+<tr>
+<td align="left">U+039D: GREEK CAPITAL LETTER NU</td>
+<td align="left">U+03BD: GREEK SMALL LETTER NU</td>
+</tr>
+<tr>
+<td align="left">U+039E: GREEK CAPITAL LETTER XI</td>
+<td align="left">U+03BE: GREEK SMALL LETTER XI</td>
+</tr>
+<tr>
+<td align="left">U+039F: GREEK CAPITAL LETTER OMICRON</td>
+<td align="left">U+03BF: GREEK SMALL LETTER OMICRON</td>
+</tr>
+<tr>
+<td align="left">U+03A0: GREEK CAPITAL LETTER PI</td>
+<td align="left">U+03C0: GREEK SMALL LETTER PI</td>
+</tr>
+<tr>
+<td align="left">U+03A1: GREEK CAPITAL LETTER RHO</td>
+<td align="left">U+03C1: GREEK SMALL LETTER RHO</td>
+</tr>
+<tr>
+<td align="left">U+03A3: GREEK CAPITAL LETTER SIGMA</td>
+<td align="left">U+03C3: GREEK SMALL LETTER SIGMA</td>
+</tr>
+<tr>
+<td align="left">U+03A4: GREEK CAPITAL LETTER TAU</td>
+<td align="left">U+03C4: GREEK SMALL LETTER TAU</td>
+</tr>
+<tr>
+<td align="left">U+03A5: GREEK CAPITAL LETTER UPSILON</td>
+<td align="left">U+03C5: GREEK SMALL LETTER UPSILON</td>
+</tr>
+<tr>
+<td align="left">U+03A6: GREEK CAPITAL LETTER PHI</td>
+<td align="left">U+03C6: GREEK SMALL LETTER PHI</td>
+</tr>
+<tr>
+<td align="left">U+03A7: GREEK CAPITAL LETTER CHI</td>
+<td align="left">U+03C7: GREEK SMALL LETTER CHI</td>
+</tr>
+<tr>
+<td align="left">U+03A8: GREEK CAPITAL LETTER PSI</td>
+<td align="left">U+03C8: GREEK SMALL LETTER PSI</td>
+</tr>
+<tr>
+<td align="left">U+03AA: GREEK CAPITAL LETTER IOTA WITH DIALYTIKA</td>
+<td align="left">U+03CA: GREEK SMALL LETTER IOTA WITH DIALYTIKA</td>
+</tr>
+<tr>
+<td align="left">U+03AB: GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA</td>
+<td align="left">U+03CB: GREEK SMALL LETTER UPSILON WITH DIALYTIKA</td>
+</tr>
+</tbody>
+</table>
+ [code: missing-case-counterparts]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.fontbakery.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Request to PyPI.org failed with this message:
+HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /pypi/fontbakery/json (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPSConnection object at 0x734e8ac365c0&gt;: Failed to resolve 'pypi.org' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: connection-error]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>🔥 <b>FAIL</b> Validate STAT particle names and values match the fallback names in GFAxisRegistry. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.axisregistry.html#"></a></summary>
     <div>
 
@@ -607,7 +878,7 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 863 instead.
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 899 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
  [code: bad-numberOfHMetrics]
 
@@ -629,6 +900,25 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 * ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
 uni0955 (U+0955)</p>
  [code: mark-chars]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check GDEF mark glyph class doesn't have characters that are not marks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+0384</p>
+ [code: non-mark-chars]
 
 
 
@@ -707,14 +997,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: glagolitic, math, coptic, elbasan, gothic</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: math, elbasan, glagolitic, coptic, gothic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, math, hebrew, duployan, todhri, canadian-aboriginal, syriac, old-permic, coptic, malayalam, tai-le</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, duployan, coptic, canadian-aboriginal, malayalam, tifinagh, hebrew, tai-le, syriac, old-permic, todhri</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
@@ -722,13 +1012,49 @@ definitions.</p>
 <li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: cherokee, duployan, syriac</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: cherokee, caucasian-albanian, tifinagh, sunuwar, syriac, thai, gothic</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: cherokee, sunuwar, thai, tifinagh, caucasian-albanian, syriac, gothic</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
+<li>U+0384 GREEK TONOS: try adding greek</li>
+<li>U+0385 GREEK DIALYTIKA TONOS: try adding greek</li>
+<li>U+0386 GREEK CAPITAL LETTER ALPHA WITH TONOS: try adding greek</li>
+<li>U+0387 GREEK ANO TELEIA: try adding greek</li>
+<li>U+0388 GREEK CAPITAL LETTER EPSILON WITH TONOS: try adding greek</li>
+<li>U+0389 GREEK CAPITAL LETTER ETA WITH TONOS: try adding greek</li>
+<li>U+038A GREEK CAPITAL LETTER IOTA WITH TONOS: try adding greek</li>
+<li>U+038C GREEK CAPITAL LETTER OMICRON WITH TONOS: try adding greek</li>
+<li>U+038E GREEK CAPITAL LETTER UPSILON WITH TONOS: try adding greek</li>
+<li>U+038F GREEK CAPITAL LETTER OMEGA WITH TONOS: try adding greek</li>
+<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: greek, math, elbasan</li>
+<li>U+0392 GREEK CAPITAL LETTER BETA: try adding one of: greek, math, elbasan</li>
+<li>U+0393 GREEK CAPITAL LETTER GAMMA: try adding one of: greek, math, elbasan</li>
+<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: greek, math, elbasan</li>
+<li>U+0395 GREEK CAPITAL LETTER EPSILON: try adding one of: greek, math, elbasan</li>
+<li>U+0396 GREEK CAPITAL LETTER ZETA: try adding one of: greek, math, elbasan</li>
+<li>U+0397 GREEK CAPITAL LETTER ETA: try adding one of: greek, math, elbasan</li>
+<li>U+0398 GREEK CAPITAL LETTER THETA: try adding one of: greek, math, elbasan</li>
+<li>U+0399 GREEK CAPITAL LETTER IOTA: try adding one of: greek, math, elbasan</li>
+<li>U+039A GREEK CAPITAL LETTER KAPPA: try adding one of: greek, math, elbasan</li>
+<li>U+039B GREEK CAPITAL LETTER LAMDA: try adding one of: greek, math, elbasan</li>
+<li>U+039C GREEK CAPITAL LETTER MU: try adding one of: greek, math, elbasan</li>
+<li>U+039D GREEK CAPITAL LETTER NU: try adding one of: greek, math, elbasan</li>
+<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: greek, math, elbasan</li>
+<li>U+039F GREEK CAPITAL LETTER OMICRON: try adding one of: greek, math, elbasan</li>
+<li>U+03A0 GREEK CAPITAL LETTER PI: try adding one of: greek, math, elbasan</li>
+<li>U+03A1 GREEK CAPITAL LETTER RHO: try adding one of: greek, math, elbasan</li>
+<li>U+03A3 GREEK CAPITAL LETTER SIGMA: try adding one of: greek, math, elbasan</li>
+<li>U+03A4 GREEK CAPITAL LETTER TAU: try adding one of: greek, math, elbasan</li>
+<li>U+03A5 GREEK CAPITAL LETTER UPSILON: try adding one of: greek, math, elbasan</li>
+<li>U+03A6 GREEK CAPITAL LETTER PHI: try adding one of: greek, math, elbasan</li>
+<li>U+03A7 GREEK CAPITAL LETTER CHI: try adding one of: greek, math, elbasan</li>
+<li>U+03A8 GREEK CAPITAL LETTER PSI: try adding one of: greek, math, elbasan</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: greek, math, elbasan</li>
+<li>U+03AA GREEK CAPITAL LETTER IOTA WITH DIALYTIKA: try adding greek</li>
+<li>U+03AB GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA: try adding greek</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+2052 COMMERCIAL MINUS SIGN: not included in any glyphset definition</li>
@@ -792,8 +1118,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ ǐ i̒ i̛̅ i̛̇ i̛̊ i̛̋ ǐ̛ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ ǐ̤ i̤̐ i̤̒ i̦̅ i̦̇</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Dii (Latn, 71,000 speakers), Koonzime (Latn, 40,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mfumte (Latn, 79,000 speakers), Ebira (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), South Central Banda (Latn, 244,000 speakers), Sar (Latn, 500,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Mango (Latn, 77,000 speakers), Bafut (Latn, 158,146 speakers), Cicipu (Latn, 44,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Zapotec (Latn, 490,000 speakers), Lugbara (Latn, 2,200,000 speakers), Yala (Latn, 200,000 speakers), Avokaya (Latn, 100,000 speakers), Navajo (Latn, 166,319 speakers), Makaa (Latn, 221,000 speakers), Ejagham (Latn, 120,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Dan (Latn, 1,099,244 speakers), Ngbaka (Latn, 1,020,000 speakers), Gulay (Latn, 250,478 speakers), Aghem (Latn, 38,843 speakers), Kom (Latn, 360,685 speakers), Southern Kisi (Latn, 360,000 speakers), Vute (Latn, 21,000 speakers), Ma’di (Latn, 584,000 speakers), Nzakara (Latn, 50,000 speakers), Fur (Latn, 1,230,163 speakers), Igbo (Latn, 27,823,640 speakers), Ekpeye (Latn, 226,000 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Southern Kisi (Latn, 360,000 speakers), Nzakara (Latn, 50,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Dan (Latn, 1,099,244 speakers), Basaa (Latn, 332,940 speakers), Dii (Latn, 71,000 speakers), Vute (Latn, 21,000 speakers), Makaa (Latn, 221,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), South Central Banda (Latn, 244,000 speakers), Mango (Latn, 77,000 speakers), Mfumte (Latn, 79,000 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Koonzime (Latn, 40,000 speakers), Gulay (Latn, 250,478 speakers), Sar (Latn, 500,000 speakers), Yala (Latn, 200,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Bafut (Latn, 158,146 speakers), Ebira (Latn, 2,200,000 speakers), Fur (Latn, 1,230,163 speakers), Bete-Bendi (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Igbo (Latn, 27,823,640 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Kom (Latn, 360,685 speakers), Cicipu (Latn, 44,000 speakers), Avokaya (Latn, 100,000 speakers), Ekpeye (Latn, 226,000 speakers), Ejagham (Latn, 120,000 speakers), Zapotec (Latn, 490,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -820,10 +1146,6 @@ definitions.</p>
 
 * Ccedilla (U+00C7): X=153.0,Y=-2.0 (should be at baseline 0?)
 
-* uni0162 (U+0162): X=615.0,Y=2.0 (should be at baseline 0?)
-
-* uni0162 (U+0162): X=415.0,Y=2.0 (should be at baseline 0?)
-
 * uni0163 (U+0163): X=433.0,Y=-2.0 (should be at baseline 0?)
 
 * uni0163 (U+0163): X=589.0,Y=-2.0 (should be at baseline 0?)
@@ -848,14 +1170,6 @@ definitions.</p>
 
 * uni01C5 (U+01C5): X=367.0,Y=-1.0 (should be at baseline 0?)
 
-* uni01EA (U+01EA): X=480.0,Y=-1.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=598.0,Y=-1.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=480.0,Y=-1.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=1022.0,Y=-1.0 (should be at baseline 0?)
-
 * uni0930_uni094D.blwf: X=-384.0,Y=-614.0 (should be at descender -615?)
 
 * uni0930_uni094D.blwf: X=-605.0,Y=-614.0 (should be at descender -615?)
@@ -869,6 +1183,29 @@ definitions.</p>
 * uniFB02 (U+FB02): X=948.0,Y=1547.0 (should be at cap-height 1548?)
 </code></pre>
  [code: found-misalignments]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gdef.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This font lacks caret positioning values for these ligature glyphs:
+- Ldot
+- j_uni0308
+- j_uni0311
+- ldot
+- uni1ECB_uni0301</p>
+ [code: incomplete-caret-pos-data]
 
 
 
@@ -1043,11 +1380,11 @@ flag = 0x0F
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">195.2kb</td>
+<td align="right">199.8kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">195.2kb</td>
+<td align="right">199.9kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -1288,24 +1625,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.head.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Font has correct post table version? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.post.html#"></a></summary>
     <div>
 
@@ -1397,24 +1716,6 @@ flag = 0x0F
 
 <details>
     <summary>✅ <b>PASS</b> Check glyphs in mark glyph class are non-spacing. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Check GDEF mark glyph class doesn't have characters that are not marks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
     <div>
 
 
@@ -1915,24 +2216,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>Looks good!</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
     <div>
 
@@ -1943,24 +2226,6 @@ flag = 0x0F
 
 
 * ✅ **PASS** <p>OS/2 usWinAscent &amp; usWinDescent values look good!</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.fontbakery.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>FontBakery is up-to-date.</p>
  
 
 
@@ -2797,24 +3062,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>Font familyname seems to be unique.</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Check font names are correct <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
     <div>
 
@@ -2924,24 +3171,6 @@ flag = 0x0F
 
 <details>
     <summary>✅ <b>PASS</b> Check Google Fonts glyph coverage. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gdef.html#"></a></summary>
     <div>
 
 
@@ -3968,24 +4197,6 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 </details>
 
 <details>
-    <summary>⏩ <b>SKIP</b> Check METADATA.pb includes production subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⏩ **SKIP** <p>Unfulfilled Conditions: family_metadata, listed_on_gfonts_api</p>
- [code: unfulfilled-conditions]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⏩ <b>SKIP</b> Check METADATA.pb file only contains a single CJK subset. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
     <div>
 
@@ -4760,42 +4971,6 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 </details>
 
 <details>
-    <summary>⏩ <b>SKIP</b> Check font follows the Google Fonts CJK vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⏩ **SKIP** <p>Unfulfilled Conditions: is_cjk_font</p>
- [code: unfulfilled-conditions]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⏩ <b>SKIP</b> Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⏩ **SKIP** <p>Unfulfilled Conditions: is_cjk_font, regular_remote_style</p>
- [code: unfulfilled-conditions]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⏩ <b>SKIP</b> Font has ttfautohint params? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.hinting.html#"></a></summary>
     <div>
 
@@ -4890,6 +5065,249 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 <details><summary>[227] Samaano[wdth,wght].ttf</summary>
 <div>
 <details>
+    <summary>💥 <b>ERROR</b> Check METADATA.pb includes production subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>HTTPConnectionPool(host='fonts.google.com', port=80): Max retries exceeded with url: /metadata/fonts (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPConnection object at 0x734e89914370&gt;: Failed to resolve 'fonts.google.com' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: error]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>💥 <b>ERROR</b> Check font follows the Google Fonts CJK vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>HTTPConnectionPool(host='fonts.google.com', port=80): Max retries exceeded with url: /metadata/fonts (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPConnection object at 0x734e84a0d120&gt;: Failed to resolve 'fonts.google.com' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: error]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>💥 <b>ERROR</b> Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 💥 **ERROR** <p>HTTPConnectionPool(host='fonts.google.com', port=80): Max retries exceeded with url: /metadata/fonts (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPConnection object at 0x734e84a0e7a0&gt;: Failed to resolve 'fonts.google.com' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: error]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.head.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>head version is &quot;2.10899&quot; while name version string (for platform 3, encoding 1) is &quot;Version 2.010&quot;.</p>
+ [code: mismatch]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The following glyphs lack their case-swapping counterparts:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Glyph present in the font</th>
+<th align="left">Missing case-swapping counterpart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">U+0386: GREEK CAPITAL LETTER ALPHA WITH TONOS</td>
+<td align="left">U+03AC: GREEK SMALL LETTER ALPHA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+0388: GREEK CAPITAL LETTER EPSILON WITH TONOS</td>
+<td align="left">U+03AD: GREEK SMALL LETTER EPSILON WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+0389: GREEK CAPITAL LETTER ETA WITH TONOS</td>
+<td align="left">U+03AE: GREEK SMALL LETTER ETA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038A: GREEK CAPITAL LETTER IOTA WITH TONOS</td>
+<td align="left">U+03AF: GREEK SMALL LETTER IOTA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038C: GREEK CAPITAL LETTER OMICRON WITH TONOS</td>
+<td align="left">U+03CC: GREEK SMALL LETTER OMICRON WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038E: GREEK CAPITAL LETTER UPSILON WITH TONOS</td>
+<td align="left">U+03CD: GREEK SMALL LETTER UPSILON WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+038F: GREEK CAPITAL LETTER OMEGA WITH TONOS</td>
+<td align="left">U+03CE: GREEK SMALL LETTER OMEGA WITH TONOS</td>
+</tr>
+<tr>
+<td align="left">U+0391: GREEK CAPITAL LETTER ALPHA</td>
+<td align="left">U+03B1: GREEK SMALL LETTER ALPHA</td>
+</tr>
+<tr>
+<td align="left">U+0392: GREEK CAPITAL LETTER BETA</td>
+<td align="left">U+03B2: GREEK SMALL LETTER BETA</td>
+</tr>
+<tr>
+<td align="left">U+0393: GREEK CAPITAL LETTER GAMMA</td>
+<td align="left">U+03B3: GREEK SMALL LETTER GAMMA</td>
+</tr>
+<tr>
+<td align="left">U+0395: GREEK CAPITAL LETTER EPSILON</td>
+<td align="left">U+03B5: GREEK SMALL LETTER EPSILON</td>
+</tr>
+<tr>
+<td align="left">U+0396: GREEK CAPITAL LETTER ZETA</td>
+<td align="left">U+03B6: GREEK SMALL LETTER ZETA</td>
+</tr>
+<tr>
+<td align="left">U+0397: GREEK CAPITAL LETTER ETA</td>
+<td align="left">U+03B7: GREEK SMALL LETTER ETA</td>
+</tr>
+<tr>
+<td align="left">U+0398: GREEK CAPITAL LETTER THETA</td>
+<td align="left">U+03B8: GREEK SMALL LETTER THETA</td>
+</tr>
+<tr>
+<td align="left">U+0399: GREEK CAPITAL LETTER IOTA</td>
+<td align="left">U+03B9: GREEK SMALL LETTER IOTA</td>
+</tr>
+<tr>
+<td align="left">U+039A: GREEK CAPITAL LETTER KAPPA</td>
+<td align="left">U+03BA: GREEK SMALL LETTER KAPPA</td>
+</tr>
+<tr>
+<td align="left">U+039B: GREEK CAPITAL LETTER LAMDA</td>
+<td align="left">U+03BB: GREEK SMALL LETTER LAMDA</td>
+</tr>
+<tr>
+<td align="left">U+039C: GREEK CAPITAL LETTER MU</td>
+<td align="left">U+03BC: GREEK SMALL LETTER MU</td>
+</tr>
+<tr>
+<td align="left">U+039D: GREEK CAPITAL LETTER NU</td>
+<td align="left">U+03BD: GREEK SMALL LETTER NU</td>
+</tr>
+<tr>
+<td align="left">U+039E: GREEK CAPITAL LETTER XI</td>
+<td align="left">U+03BE: GREEK SMALL LETTER XI</td>
+</tr>
+<tr>
+<td align="left">U+039F: GREEK CAPITAL LETTER OMICRON</td>
+<td align="left">U+03BF: GREEK SMALL LETTER OMICRON</td>
+</tr>
+<tr>
+<td align="left">U+03A0: GREEK CAPITAL LETTER PI</td>
+<td align="left">U+03C0: GREEK SMALL LETTER PI</td>
+</tr>
+<tr>
+<td align="left">U+03A1: GREEK CAPITAL LETTER RHO</td>
+<td align="left">U+03C1: GREEK SMALL LETTER RHO</td>
+</tr>
+<tr>
+<td align="left">U+03A3: GREEK CAPITAL LETTER SIGMA</td>
+<td align="left">U+03C3: GREEK SMALL LETTER SIGMA</td>
+</tr>
+<tr>
+<td align="left">U+03A4: GREEK CAPITAL LETTER TAU</td>
+<td align="left">U+03C4: GREEK SMALL LETTER TAU</td>
+</tr>
+<tr>
+<td align="left">U+03A5: GREEK CAPITAL LETTER UPSILON</td>
+<td align="left">U+03C5: GREEK SMALL LETTER UPSILON</td>
+</tr>
+<tr>
+<td align="left">U+03A6: GREEK CAPITAL LETTER PHI</td>
+<td align="left">U+03C6: GREEK SMALL LETTER PHI</td>
+</tr>
+<tr>
+<td align="left">U+03A7: GREEK CAPITAL LETTER CHI</td>
+<td align="left">U+03C7: GREEK SMALL LETTER CHI</td>
+</tr>
+<tr>
+<td align="left">U+03A8: GREEK CAPITAL LETTER PSI</td>
+<td align="left">U+03C8: GREEK SMALL LETTER PSI</td>
+</tr>
+<tr>
+<td align="left">U+03AA: GREEK CAPITAL LETTER IOTA WITH DIALYTIKA</td>
+<td align="left">U+03CA: GREEK SMALL LETTER IOTA WITH DIALYTIKA</td>
+</tr>
+<tr>
+<td align="left">U+03AB: GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA</td>
+<td align="left">U+03CB: GREEK SMALL LETTER UPSILON WITH DIALYTIKA</td>
+</tr>
+</tbody>
+</table>
+ [code: missing-case-counterparts]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.fontbakery.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Request to PyPI.org failed with this message:
+HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /pypi/fontbakery/json (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPSConnection object at 0x734e8ac371f0&gt;: Failed to resolve 'pypi.org' ([Errno -2] Name or service not known)&quot;))</p>
+ [code: connection-error]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.name.html#"></a></summary>
     <div>
 
@@ -4899,7 +5317,7 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 
 
 
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 864 instead.
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 900 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
  [code: bad-numberOfHMetrics]
 
@@ -4921,6 +5339,25 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 * ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
 uni0955 (U+0955)</p>
  [code: mark-chars]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check GDEF mark glyph class doesn't have characters that are not marks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+0384</p>
+ [code: non-mark-chars]
 
 
 
@@ -4999,14 +5436,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: glagolitic, math, coptic, elbasan, gothic</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: math, elbasan, glagolitic, coptic, gothic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, math, hebrew, duployan, todhri, canadian-aboriginal, syriac, old-permic, coptic, malayalam, tai-le</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, duployan, coptic, canadian-aboriginal, malayalam, tifinagh, hebrew, tai-le, syriac, old-permic, todhri</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
@@ -5014,13 +5451,49 @@ definitions.</p>
 <li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: cherokee, duployan, syriac</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: cherokee, caucasian-albanian, tifinagh, sunuwar, syriac, thai, gothic</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: cherokee, sunuwar, thai, tifinagh, caucasian-albanian, syriac, gothic</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
+<li>U+0384 GREEK TONOS: try adding greek</li>
+<li>U+0385 GREEK DIALYTIKA TONOS: try adding greek</li>
+<li>U+0386 GREEK CAPITAL LETTER ALPHA WITH TONOS: try adding greek</li>
+<li>U+0387 GREEK ANO TELEIA: try adding greek</li>
+<li>U+0388 GREEK CAPITAL LETTER EPSILON WITH TONOS: try adding greek</li>
+<li>U+0389 GREEK CAPITAL LETTER ETA WITH TONOS: try adding greek</li>
+<li>U+038A GREEK CAPITAL LETTER IOTA WITH TONOS: try adding greek</li>
+<li>U+038C GREEK CAPITAL LETTER OMICRON WITH TONOS: try adding greek</li>
+<li>U+038E GREEK CAPITAL LETTER UPSILON WITH TONOS: try adding greek</li>
+<li>U+038F GREEK CAPITAL LETTER OMEGA WITH TONOS: try adding greek</li>
+<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: greek, math, elbasan</li>
+<li>U+0392 GREEK CAPITAL LETTER BETA: try adding one of: greek, math, elbasan</li>
+<li>U+0393 GREEK CAPITAL LETTER GAMMA: try adding one of: greek, math, elbasan</li>
+<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: greek, math, elbasan</li>
+<li>U+0395 GREEK CAPITAL LETTER EPSILON: try adding one of: greek, math, elbasan</li>
+<li>U+0396 GREEK CAPITAL LETTER ZETA: try adding one of: greek, math, elbasan</li>
+<li>U+0397 GREEK CAPITAL LETTER ETA: try adding one of: greek, math, elbasan</li>
+<li>U+0398 GREEK CAPITAL LETTER THETA: try adding one of: greek, math, elbasan</li>
+<li>U+0399 GREEK CAPITAL LETTER IOTA: try adding one of: greek, math, elbasan</li>
+<li>U+039A GREEK CAPITAL LETTER KAPPA: try adding one of: greek, math, elbasan</li>
+<li>U+039B GREEK CAPITAL LETTER LAMDA: try adding one of: greek, math, elbasan</li>
+<li>U+039C GREEK CAPITAL LETTER MU: try adding one of: greek, math, elbasan</li>
+<li>U+039D GREEK CAPITAL LETTER NU: try adding one of: greek, math, elbasan</li>
+<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: greek, math, elbasan</li>
+<li>U+039F GREEK CAPITAL LETTER OMICRON: try adding one of: greek, math, elbasan</li>
+<li>U+03A0 GREEK CAPITAL LETTER PI: try adding one of: greek, math, elbasan</li>
+<li>U+03A1 GREEK CAPITAL LETTER RHO: try adding one of: greek, math, elbasan</li>
+<li>U+03A3 GREEK CAPITAL LETTER SIGMA: try adding one of: greek, math, elbasan</li>
+<li>U+03A4 GREEK CAPITAL LETTER TAU: try adding one of: greek, math, elbasan</li>
+<li>U+03A5 GREEK CAPITAL LETTER UPSILON: try adding one of: greek, math, elbasan</li>
+<li>U+03A6 GREEK CAPITAL LETTER PHI: try adding one of: greek, math, elbasan</li>
+<li>U+03A7 GREEK CAPITAL LETTER CHI: try adding one of: greek, math, elbasan</li>
+<li>U+03A8 GREEK CAPITAL LETTER PSI: try adding one of: greek, math, elbasan</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: greek, math, elbasan</li>
+<li>U+03AA GREEK CAPITAL LETTER IOTA WITH DIALYTIKA: try adding greek</li>
+<li>U+03AB GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA: try adding greek</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+2052 COMMERCIAL MINUS SIGN: not included in any glyphset definition</li>
@@ -5084,8 +5557,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ ǐ i̒ i̛̅ i̛̇ i̛̊ i̛̋ ǐ̛ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ ǐ̤ i̤̐ i̤̒ i̦̅ i̦̇</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Dii (Latn, 71,000 speakers), Koonzime (Latn, 40,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mfumte (Latn, 79,000 speakers), Ebira (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), South Central Banda (Latn, 244,000 speakers), Sar (Latn, 500,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Mango (Latn, 77,000 speakers), Bafut (Latn, 158,146 speakers), Cicipu (Latn, 44,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Zapotec (Latn, 490,000 speakers), Lugbara (Latn, 2,200,000 speakers), Yala (Latn, 200,000 speakers), Avokaya (Latn, 100,000 speakers), Navajo (Latn, 166,319 speakers), Makaa (Latn, 221,000 speakers), Ejagham (Latn, 120,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Dan (Latn, 1,099,244 speakers), Ngbaka (Latn, 1,020,000 speakers), Gulay (Latn, 250,478 speakers), Aghem (Latn, 38,843 speakers), Kom (Latn, 360,685 speakers), Southern Kisi (Latn, 360,000 speakers), Vute (Latn, 21,000 speakers), Ma’di (Latn, 584,000 speakers), Nzakara (Latn, 50,000 speakers), Fur (Latn, 1,230,163 speakers), Igbo (Latn, 27,823,640 speakers), Ekpeye (Latn, 226,000 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Southern Kisi (Latn, 360,000 speakers), Nzakara (Latn, 50,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Dan (Latn, 1,099,244 speakers), Basaa (Latn, 332,940 speakers), Dii (Latn, 71,000 speakers), Vute (Latn, 21,000 speakers), Makaa (Latn, 221,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), South Central Banda (Latn, 244,000 speakers), Mango (Latn, 77,000 speakers), Mfumte (Latn, 79,000 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Koonzime (Latn, 40,000 speakers), Gulay (Latn, 250,478 speakers), Sar (Latn, 500,000 speakers), Yala (Latn, 200,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Bafut (Latn, 158,146 speakers), Ebira (Latn, 2,200,000 speakers), Fur (Latn, 1,230,163 speakers), Bete-Bendi (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Igbo (Latn, 27,823,640 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Kom (Latn, 360,685 speakers), Cicipu (Latn, 44,000 speakers), Avokaya (Latn, 100,000 speakers), Ekpeye (Latn, 226,000 speakers), Ejagham (Latn, 120,000 speakers), Zapotec (Latn, 490,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -5146,6 +5619,18 @@ definitions.</p>
 
 * uni0947 (U+0947): X=66.0,Y=1550.0 (should be at cap-height 1548?)
 
+* uni2116 (U+2116): X=501.0,Y=1549.0 (should be at cap-height 1548?)
+
+* uni2116 (U+2116): X=601.0,Y=1549.0 (should be at cap-height 1548?)
+
+* uni2116 (U+2116): X=810.0,Y=1549.0 (should be at cap-height 1548?)
+
+* uni2116 (U+2116): X=910.0,Y=1549.0 (should be at cap-height 1548?)
+
+* uni2116 (U+2116): X=532.0,Y=1549.0 (should be at cap-height 1548?)
+
+* uni2116 (U+2116): X=882.0,Y=1549.0 (should be at cap-height 1548?)
+
 * uniFB02 (U+FB02): X=240.0,Y=1547.0 (should be at cap-height 1548?)
 
 * uniFB02 (U+FB02): X=440.0,Y=1547.0 (should be at cap-height 1548?)
@@ -5155,6 +5640,29 @@ definitions.</p>
 * uniFB02 (U+FB02): X=668.0,Y=1547.0 (should be at cap-height 1548?)
 </code></pre>
  [code: found-misalignments]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gdef.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This font lacks caret positioning values for these ligature glyphs:
+- Ldot
+- j_uni0308
+- j_uni0311
+- ldot
+- uni1ECB_uni0301</p>
+ [code: incomplete-caret-pos-data]
 
 
 
@@ -5329,11 +5837,11 @@ flag = 0x0F
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">177.8kb</td>
+<td align="right">182.1kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">177.8kb</td>
+<td align="right">182.2kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -5574,24 +6082,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.head.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Font has correct post table version? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.post.html#"></a></summary>
     <div>
 
@@ -5683,24 +6173,6 @@ flag = 0x0F
 
 <details>
     <summary>✅ <b>PASS</b> Check glyphs in mark glyph class are non-spacing. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Check GDEF mark glyph class doesn't have characters that are not marks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
     <div>
 
 
@@ -6183,24 +6655,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.glyphset.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>Looks good!</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
     <div>
 
@@ -6211,24 +6665,6 @@ flag = 0x0F
 
 
 * ✅ **PASS** <p>OS/2 usWinAscent &amp; usWinDescent values look good!</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.fontbakery.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>FontBakery is up-to-date.</p>
  
 
 
@@ -7192,24 +7628,6 @@ flag = 0x0F
 
 <details>
     <summary>✅ <b>PASS</b> Check Google Fonts glyph coverage. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.gdef.html#"></a></summary>
     <div>
 
 
@@ -8272,24 +8690,6 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 </details>
 
 <details>
-    <summary>⏩ <b>SKIP</b> Check METADATA.pb includes production subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⏩ **SKIP** <p>Unfulfilled Conditions: family_metadata, listed_on_gfonts_api</p>
- [code: unfulfilled-conditions]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⏩ <b>SKIP</b> Check METADATA.pb file only contains a single CJK subset. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.metadata.html#"></a></summary>
     <div>
 
@@ -9064,42 +9464,6 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 </details>
 
 <details>
-    <summary>⏩ <b>SKIP</b> Check font follows the Google Fonts CJK vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⏩ **SKIP** <p>Unfulfilled Conditions: is_cjk_font</p>
- [code: unfulfilled-conditions]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⏩ <b>SKIP</b> Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⏩ **SKIP** <p>Unfulfilled Conditions: is_cjk_font, regular_remote_style</p>
- [code: unfulfilled-conditions]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⏩ <b>SKIP</b> Font has ttfautohint params? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.hinting.html#"></a></summary>
     <div>
 
@@ -9198,8 +9562,8 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 2 | 18 | 183 | 17 | 264 | 0 | 
-| 0% | 0% | 0% | 4% | 38% | 4% | 55% | 0% | 
+| 7 | 0 | 8 | 22 | 177 | 17 | 253 | 0 | 
+| 1% | 0% | 2% | 5% | 37% | 4% | 52% | 0% | 
 
 
 

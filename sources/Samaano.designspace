@@ -23,14 +23,21 @@
         <label uservalue="100" name="Thin"/>
         <label uservalue="200" name="ExtraLight"/>
         <label uservalue="300" name="Light"/>
-        <label uservalue="400" name="Regular" elidable="true" linkeduservalue="700"/>
+        <label uservalue="400" name="Regular" />
         <label uservalue="500" name="Medium"/>
         <label uservalue="600" name="SemiBold"/>
-        <label uservalue="700" name="Bold"/>
+        <label uservalue="700" name="Bold" elidable="true" linkeduservalue="700"/>
       </labels>
     </axis>
   </axes>
   <sources>
+    <source filename="Samaano-Bold.ufo" familyname="Samaano" stylename="Bold">
+      <location>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="width" xvalue="100"/>
+        <dimension name="slant" xvalue="0"/>
+      </location>
+    </source>
     <source filename="Samaano-Thin.ufo" familyname="Samaano" stylename="Thin">
       <location>
         <dimension name="weight" xvalue="100"/>
@@ -59,13 +66,7 @@
         <dimension name="slant" xvalue="-20"/>
       </location>
     </source>
-    <source filename="Samaano-Bold.ufo" familyname="Samaano" stylename="Bold">
-      <location>
-        <dimension name="weight" xvalue="700"/>
-        <dimension name="width" xvalue="100"/>
-        <dimension name="slant" xvalue="0"/>
-      </location>
-    </source>
+    
     <source filename="Samaano-Bold-Slanted.ufo" familyname="Samaano" stylename="Samaano-Bold-Slanted">
       <location>
         <dimension name="weight" xvalue="700"/>

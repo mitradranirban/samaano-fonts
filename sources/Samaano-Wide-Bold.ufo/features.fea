@@ -41,7 +41,7 @@ lookup ligaStandardLigaturesinLatinlookup0 {
     sub \j \uni0308  by \j_uni0308;
     sub \j \uni0311  by \j_uni0311;
     sub \j \acutecomb  by \jacute;
-    sub \L \periodcentered  by \ldot;
+    sub \l \periodcentered  by \ldot;
     sub \iogonek \gravecomb  by \uni012F_uni0300;
     sub \iogonek \acutecomb  by \uni012F_uni0301;
     sub \iogonek \uni0302  by \uni012F_uni0302;
@@ -162,8 +162,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -904,8 +904,8 @@ feature blwm {
 } blwm;
 
 @GDEF_Simple = [\A \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
-	\Alphatonos \Amacron \Aogonek \Aring \Aringacute \Atilde \B \C \Cacute \Ccaron 
-	\Ccedilla \Ccircumflex \Cdotaccent \D \Dcaron \Dcroat \E \Eacute \Ebreve \Ecaron 
+	\Amacron \Aogonek \Aring \Aringacute \Atilde \B \C \Cacute \Ccaron \Ccedilla 
+	\Ccircumflex \Cdotaccent \D \Dcaron \Dcroat \E \Eacute \Ebreve \Ecaron 
 	\Ecircumflex \Edieresis \Edotaccent \Egrave \Emacron \Eng \Eogonek \Eth \Euro \F 
 	\G \Gbreve \Gcircumflex \Gdotaccent \H \Hbar \Hcircumflex \I \IJ \Iacute \Ibreve 
 	\Icircumflex \Idieresis \Idotaccent \Igrave \Imacron \Iogonek \Itilde \J 
@@ -988,11 +988,11 @@ feature blwm {
 	\uni20AD \uni20B1 \uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF 
 	\uni2116 \uni25CC \uni27E8 \uni27E9 \uogonek \uring \utilde \v \w \wacute 
 	\wcircumflex \wdieresis \wgrave \x \y \yacute \ycircumflex \ydieresis \yen 
-	\ygrave \z \zacute \zcaron \zdotaccent \zero \dieresistonos \anoteleia \Alpha 
-	\Beta \Epsilon \Zeta \Eta \Iota \Kappa \Mu \Nu \Omicron \Rho \Tau \Upsilon \Chi 
-	\Iotadieresis \Upsilondieresis \Epsilontonos \Etatonos \Iotatonos 
-	\Omicrontonos \Upsilontonos \Gamma \uni0394 \Theta \Lambda \Xi \Pi \Sigma \Phi 
-	\Psi \uni03A9 \Omegatonos ];
+	\ygrave \z \zacute \zcaron \zdotaccent \zero \Alpha \Beta \Epsilon \Zeta \Eta \Iota 
+	\Kappa \Mu \Nu \Omicron \Rho \Tau \Upsilon \Chi \Iotadieresis \Upsilondieresis 
+	\Gamma \Lambda \uni0394 \Psi \anoteleia \Theta \Xi \Alphatonos \Epsilontonos 
+	\Etatonos \Iotatonos \Omicrontonos \Upsilontonos \dieresistonos \Pi \Sigma \Phi 
+	\uni03A9 \Omegatonos ];
 @GDEF_Ligature = [\i_uni030A \i_uni030B \j_gravecomb \j_uni0303 \j_uni0304 
 	\j_uni0308 \j_uni0311 \jacute \uni012F_uni0300 \uni012F_uni0301 
 	\uni012F_uni0302 \uni012F_uni0303 \uni012F_uni0304 \uni012F_uni030C 
