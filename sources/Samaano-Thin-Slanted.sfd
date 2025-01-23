@@ -5,7 +5,8 @@ FamilyName: Samaano
 Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 2.10
+Version: 2.109
+StyleMapFamilyName: Samaano Thin Slanted
 ItalicAngle: -20
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -22,8 +23,8 @@ FSType: 256
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1737043125
-ModificationTime: 1737044052
+CreationTime: 1737131368
+ModificationTime: 1737131368
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -70,14 +71,29 @@ Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDe
 DEI: 91125
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.010" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
-."
+Vpublic.openTypeMeta
+p1
+(dp2
+Vdlng
+p3
+(lp4
+VLatn
+p5
+asVslng
+p6
+(lp7
+VLatn
+p8
+aVDeva
+p9
+ass."
 Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 0
 FitToEm: 0
-WinInfo: 930 10 4
+WinInfo: 0 8 2
 Grid
 -2048 1545 m 0
  2048 1545 l 1024
@@ -10058,8 +10074,8 @@ LayerCount: 2
 Fore
 SplineSet
 804 0 m 257
- 833 80 l 257
- 294 80 l 257
+ 833 60 l 257
+ 294 60 l 257
  265 0 l 257
  804 0 l 257
 854 0 m 257
@@ -10067,16 +10083,16 @@ SplineSet
  1340 1543 l 257
  778 0 l 257
  854 0 l 257
-1318 1465 m 257
+1318 1483 m 257
  1347 1543 l 257
  732 1543 l 257
- 703 1465 l 257
- 1318 1465 l 257
-1076 801 m 257
+ 703 1483 l 257
+ 1318 1483 l 257
+1076 808 m 257
  1100 868 l 257
  446 868 l 257
- 422 801 l 257
- 1076 801 l 257
+ 422 808 l 257
+ 1076 808 l 257
 355 30 m 257
  500 869 l 257
  423 869 l 257
@@ -11409,30 +11425,30 @@ LayerCount: 2
 Fore
 SplineSet
 804 0 m 257
- 843 107 l 257
- 303 174 l 257
+ 829 67 l 257
+ 289 134 l 257
  264 67 l 257
  804 0 l 257
-854 0 m 257
- 1226 1023 l 257
+813 0 m 257
+ 1185 1023 l 257
  1125 1023 l 257
  753 0 l 257
- 854 0 l 257
-1085 914 m 257
+ 813 0 l 257
+1085 963 m 257
  1124 1023 l 257
  542 1023 l 257
- 503 914 l 257
- 1085 914 l 257
-964 494 m 257
+ 503 963 l 257
+ 1085 963 l 257
+964 517 m 257
  994 577 l 257
  404 577 l 257
- 374 494 l 257
- 964 494 l 257
-353 97 m 257
- 457 578 l 257
+ 374 517 l 257
+ 964 517 l 257
+337 97 m 257
+ 441 578 l 257
  381 578 l 257
  277 97 l 257
- 353 97 l 257
+ 337 97 l 257
 EndSplineSet
 EndChar
 
@@ -19411,8 +19427,8 @@ SplineSet
  514 912 l 257
  455 878 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -19497,7 +19513,6 @@ GlifName: uni0930_uni094D__uni0902.abvs
 Width: 0
 VWidth: 0
 GlyphClass: 4
-Flags: W
 HStem: 1585 120
 AnchorPoint: "abvm_deva" 30 1489 mark 0
 LayerCount: 2
@@ -30978,7 +30993,7 @@ GlifName: L_ambda
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -31062,6 +31077,7 @@ GlifName: anoteleia
 Width: 0
 VWidth: 0
 GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 293 183 N 1 0 0 1 -505 -213 2
@@ -31111,7 +31127,7 @@ GlifName: X_i
 Width: 1024
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -31139,6 +31155,7 @@ GlifName: tonos
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 264 733 mark 0
 LayerCount: 2
 Fore
@@ -31235,6 +31252,7 @@ GlifName: dieresistonos
 Width: 0
 VWidth: 0
 GlyphClass: 2
+Flags: W
 LayerCount: 2
 Fore
 Refer: 955 900 N 1 0 0 1 -321 624 2

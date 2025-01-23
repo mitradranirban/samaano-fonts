@@ -9,9 +9,10 @@ vfDir: $outputDir/variable
 #otDir: $outputDir/otf
 woffDir: $outputDir/webfonts
 buildVariable: true
-#buildStatic: true
-#buildTTF: true
-#buildOTF: true
+buildStatic: true
+buildTTF: true
+buildOTF: true
+buildSmallCap: true
 autohintTTF: true
 includeSourceFixes: true
 splitItalic: true
