@@ -67,6 +67,30 @@ These won't break the CI job for now, but will become effective after some time 
 <details><summary>[218] Samaano-Italic[wdth,wght].ttf</summary>
 <div>
 <details>
+    <summary>🔥 <b>FAIL</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.html#opentype-monospace">opentype/monospace</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead.</p>
+ [code: mono-bad-post-isFixedPitch]
+
+
+
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1063 instead.
+Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
+ [code: bad-numberOfHMetrics]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>🔥 <b>FAIL</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#case-mapping">case_mapping</a></summary>
     <div>
 
@@ -86,132 +110,219 @@ These won't break the CI job for now, but will become effective after some time 
 </thead>
 <tbody>
 <tr>
-<td align="left">U+0386: GREEK CAPITAL LETTER ALPHA WITH TONOS</td>
-<td align="left">U+03AC: GREEK SMALL LETTER ALPHA WITH TONOS</td>
+<td align="left">U+0181: LATIN CAPITAL LETTER B WITH HOOK</td>
+<td align="left">U+0253: LATIN SMALL LETTER B WITH HOOK</td>
 </tr>
 <tr>
-<td align="left">U+0388: GREEK CAPITAL LETTER EPSILON WITH TONOS</td>
-<td align="left">U+03AD: GREEK SMALL LETTER EPSILON WITH TONOS</td>
+<td align="left">U+0186: LATIN CAPITAL LETTER OPEN O</td>
+<td align="left">U+0254: LATIN SMALL LETTER OPEN O</td>
 </tr>
 <tr>
-<td align="left">U+0389: GREEK CAPITAL LETTER ETA WITH TONOS</td>
-<td align="left">U+03AE: GREEK SMALL LETTER ETA WITH TONOS</td>
+<td align="left">U+0187: LATIN CAPITAL LETTER C WITH HOOK</td>
+<td align="left">U+0188: LATIN SMALL LETTER C WITH HOOK</td>
 </tr>
 <tr>
-<td align="left">U+038A: GREEK CAPITAL LETTER IOTA WITH TONOS</td>
-<td align="left">U+03AF: GREEK SMALL LETTER IOTA WITH TONOS</td>
+<td align="left">U+018A: LATIN CAPITAL LETTER D WITH HOOK</td>
+<td align="left">U+0257: LATIN SMALL LETTER D WITH HOOK</td>
 </tr>
 <tr>
-<td align="left">U+038C: GREEK CAPITAL LETTER OMICRON WITH TONOS</td>
-<td align="left">U+03CC: GREEK SMALL LETTER OMICRON WITH TONOS</td>
-</tr>
-<tr>
-<td align="left">U+038E: GREEK CAPITAL LETTER UPSILON WITH TONOS</td>
-<td align="left">U+03CD: GREEK SMALL LETTER UPSILON WITH TONOS</td>
-</tr>
-<tr>
-<td align="left">U+038F: GREEK CAPITAL LETTER OMEGA WITH TONOS</td>
-<td align="left">U+03CE: GREEK SMALL LETTER OMEGA WITH TONOS</td>
-</tr>
-<tr>
-<td align="left">U+0391: GREEK CAPITAL LETTER ALPHA</td>
-<td align="left">U+03B1: GREEK SMALL LETTER ALPHA</td>
-</tr>
-<tr>
-<td align="left">U+0392: GREEK CAPITAL LETTER BETA</td>
-<td align="left">U+03B2: GREEK SMALL LETTER BETA</td>
-</tr>
-<tr>
-<td align="left">U+0393: GREEK CAPITAL LETTER GAMMA</td>
-<td align="left">U+03B3: GREEK SMALL LETTER GAMMA</td>
-</tr>
-<tr>
-<td align="left">U+0395: GREEK CAPITAL LETTER EPSILON</td>
-<td align="left">U+03B5: GREEK SMALL LETTER EPSILON</td>
-</tr>
-<tr>
-<td align="left">U+0396: GREEK CAPITAL LETTER ZETA</td>
-<td align="left">U+03B6: GREEK SMALL LETTER ZETA</td>
-</tr>
-<tr>
-<td align="left">U+0397: GREEK CAPITAL LETTER ETA</td>
-<td align="left">U+03B7: GREEK SMALL LETTER ETA</td>
-</tr>
-<tr>
-<td align="left">U+0398: GREEK CAPITAL LETTER THETA</td>
-<td align="left">U+03B8: GREEK SMALL LETTER THETA</td>
-</tr>
-<tr>
-<td align="left">U+0399: GREEK CAPITAL LETTER IOTA</td>
-<td align="left">U+03B9: GREEK SMALL LETTER IOTA</td>
-</tr>
-<tr>
-<td align="left">U+039A: GREEK CAPITAL LETTER KAPPA</td>
-<td align="left">U+03BA: GREEK SMALL LETTER KAPPA</td>
-</tr>
-<tr>
-<td align="left">U+039B: GREEK CAPITAL LETTER LAMDA</td>
-<td align="left">U+03BB: GREEK SMALL LETTER LAMDA</td>
-</tr>
-<tr>
-<td align="left">U+039C: GREEK CAPITAL LETTER MU</td>
-<td align="left">U+03BC: GREEK SMALL LETTER MU</td>
-</tr>
-<tr>
-<td align="left">U+039D: GREEK CAPITAL LETTER NU</td>
-<td align="left">U+03BD: GREEK SMALL LETTER NU</td>
-</tr>
-<tr>
-<td align="left">U+039E: GREEK CAPITAL LETTER XI</td>
-<td align="left">U+03BE: GREEK SMALL LETTER XI</td>
-</tr>
-<tr>
-<td align="left">U+039F: GREEK CAPITAL LETTER OMICRON</td>
-<td align="left">U+03BF: GREEK SMALL LETTER OMICRON</td>
-</tr>
-<tr>
-<td align="left">U+03A0: GREEK CAPITAL LETTER PI</td>
-<td align="left">U+03C0: GREEK SMALL LETTER PI</td>
-</tr>
-<tr>
-<td align="left">U+03A1: GREEK CAPITAL LETTER RHO</td>
-<td align="left">U+03C1: GREEK SMALL LETTER RHO</td>
-</tr>
-<tr>
-<td align="left">U+03A3: GREEK CAPITAL LETTER SIGMA</td>
-<td align="left">U+03C3: GREEK SMALL LETTER SIGMA</td>
-</tr>
-<tr>
-<td align="left">U+03A4: GREEK CAPITAL LETTER TAU</td>
-<td align="left">U+03C4: GREEK SMALL LETTER TAU</td>
-</tr>
-<tr>
-<td align="left">U+03A5: GREEK CAPITAL LETTER UPSILON</td>
-<td align="left">U+03C5: GREEK SMALL LETTER UPSILON</td>
-</tr>
-<tr>
-<td align="left">U+03A6: GREEK CAPITAL LETTER PHI</td>
-<td align="left">U+03C6: GREEK SMALL LETTER PHI</td>
-</tr>
-<tr>
-<td align="left">U+03A7: GREEK CAPITAL LETTER CHI</td>
-<td align="left">U+03C7: GREEK SMALL LETTER CHI</td>
-</tr>
-<tr>
-<td align="left">U+03A8: GREEK CAPITAL LETTER PSI</td>
-<td align="left">U+03C8: GREEK SMALL LETTER PSI</td>
-</tr>
-<tr>
-<td align="left">U+03AA: GREEK CAPITAL LETTER IOTA WITH DIALYTIKA</td>
-<td align="left">U+03CA: GREEK SMALL LETTER IOTA WITH DIALYTIKA</td>
-</tr>
-<tr>
-<td align="left">U+03AB: GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA</td>
-<td align="left">U+03CB: GREEK SMALL LETTER UPSILON WITH DIALYTIKA</td>
+<td align="left">U+01B7: LATIN CAPITAL LETTER EZH</td>
+<td align="left">U+0292: LATIN SMALL LETTER EZH</td>
 </tr>
 </tbody>
 </table>
  [code: missing-case-counterparts]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#fontbakery-version">fontbakery_version</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Current FontBakery version is 0.13.1, while a newer 0.13.2 is already available. Please upgrade it with 'pip install -U fontbakery'</p>
+ [code: outdated-fontbakery]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Check correctness of STAT table strings <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#STAT-strings">STAT_strings</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The following AxisValue entries on the STAT table should not contain &quot;Italic&quot;:
+['nameID 2: Bold Italic']</p>
+ [code: bad-italic]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#valid-glyphnames">valid_glyphnames</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The following glyph names do not comply with naming conventions: lowernumeral-greek and numeral-greek</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not.</p>
+ [code: found-invalid-names]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-glyphsets-shape-languages">googlefonts/glyphsets/shape_languages</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>GF_Phonetics_SinoExt glyphset:</p>
+<table>
+<thead>
+<tr>
+<th align="left">FAIL messages</th>
+<th align="left">Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Some base glyphs were missing: Ɛ, Ɲ, ɔ, ɛ, ɲ</td>
+<td align="left">bm_Latn (Bambara) and dyu_Latn (Dyula)</td>
+</tr>
+<tr>
+<td align="left">Some base glyphs were missing: Ɛ, ɔ, ɛ</td>
+<td align="left">fat_Latn (Fanti) and tw_akuapem_Latn (Akuapem Twi)</td>
+</tr>
+<tr>
+<td align="left">Some base glyphs were missing: Ƴ, ƴ, ɓ, ɗ</td>
+<td align="left">ff_Latn (Fulah)</td>
+</tr>
+<tr>
+<td align="left">Some base glyphs were missing: Ƙ, ƙ, Ƴ, ƴ, ɓ, ɗ</td>
+<td align="left">ha_Latn (Hausa)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1ECA</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1ECA</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1ECD</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1ECC</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1ECD</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1ECC</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EE5</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EE4</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EE5</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EE4</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EB9</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EB8</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EB8</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EB9</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+</tbody>
+</table>
+ [code: failed-language-shaping]
+
+
+
+* ⚠️ **WARN** <p>GF_Phonetics_SinoExt glyphset:</p>
+<table>
+<thead>
+<tr>
+<th align="left">WARN messages</th>
+<th align="left">Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: ἀ, ἁ, ἂ, ἃ, ἄ, ἅ, ἆ, ἇ, ἐ, ἑ, ἒ, ἓ, ἔ, ἕ, ἠ, ἡ, ἢ, ἣ, ἤ, ἥ, ἦ, ἧ, ἰ, ἱ, ἲ, ἳ, ἴ, ἵ, ἶ, ἷ, ὂ, ὃ, ὄ, ὐ, ὑ, ὒ, ὓ, ὔ, ὕ, ὖ, ὗ, ὢ, ὣ, ὤ, ὥ, ὦ, ὧ, ᾶ, ῆ, ῖ, ῗ, ῦ, ῧ, ῶ</td>
+<td align="left">el_Grek (Greek)</td>
+</tr>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: ſ</td>
+<td align="left">de_Latn (German) and fr_Latn (French)</td>
+</tr>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: Ǥ, ǥ, ǯ, ʒ</td>
+<td align="left">fi_Latn (Finnish)</td>
+</tr>
+<tr>
+<td align="left">No variant glyphs were found for Eng</td>
+<td align="left">bm_Latn (Bambara), dyu_Latn (Dyula), ig_Latn (Igbo) and lg_Latn (Ganda)</td>
+</tr>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: Ɛ, Ɵ, ɛ, ɵ</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+</tbody>
+</table>
+ [code: warning-language-shaping]
 
 
 
@@ -229,6 +340,11 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 * 🔥 **FAIL** <p>On the font variation axis 'slnt', the name 'Oblique' is not among the expected ones (Default) according to the Google Fonts Axis Registry.</p>
+ [code: invalid-name]
+
+
+
+* 🔥 **FAIL** <p>On the font variation axis 'wght', the name 'Bold Italic' is not among the expected ones (Thin, ExtraLight, Light, Regular, Medium, SemiBold, Bold, ExtraBold, Black) according to the Google Fonts Axis Registry.</p>
  [code: invalid-name]
 
 
@@ -275,25 +391,6 @@ U+0384</p>
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.html#opentype-monospace">opentype/monospace</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 899 instead.
-Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
- [code: bad-numberOfHMetrics]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Check accent of Lcaron, dcaron, lcaron, tcaron <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#alt-caron">alt_caron</a></summary>
     <div>
 
@@ -325,6 +422,24 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * ⚠️ **WARN** <p>tcaron is decomposed and therefore could not be checked. Please check manually.</p>
  [code: decomposed-outline]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#gpos-kerning-info">gpos_kerning_info</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>GPOS table lacks kerning information.</p>
+ [code: lacks-kern-info]
 
 
 
@@ -399,13 +514,25 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * B (U+0042): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
+* Bdotbelow (U+1E04): L&lt;&lt;788.0,1023.0&gt;--&lt;714.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bdotbelow (U+1E04): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
 * Beta (U+0392): L&lt;&lt;788.0,1023.0&gt;--&lt;714.0,820.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Beta (U+0392): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
+* Bhook (U+0181): L&lt;&lt;788.0,1023.0&gt;--&lt;714.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bhook (U+0181): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
 * Ebreve (U+0114): L&lt;&lt;1289.0,1718.0&gt;--&lt;1264.0,1650.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Ebreve (U+0114): L&lt;&lt;965.0,1718.0&gt;--&lt;940.0,1650.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Ecedillabreve (U+1E1C): L&lt;&lt;1289.0,1718.0&gt;--&lt;1264.0,1650.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Ecedillabreve (U+1E1C): L&lt;&lt;965.0,1718.0&gt;--&lt;940.0,1650.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Euro (U+20AC): L&lt;&lt;447.0,179.0&gt;--&lt;637.0,179.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -511,6 +638,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * ebreve (U+0115): L&lt;&lt;787.0,1229.0&gt;--&lt;762.0,1161.0&gt;&gt; has the same coordinates as a previous segment.
 
+* ecedillabreve (U+1E1D): L&lt;&lt;1111.0,1229.0&gt;--&lt;1086.0,1161.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ecedillabreve (U+1E1D): L&lt;&lt;787.0,1229.0&gt;--&lt;762.0,1161.0&gt;&gt; has the same coordinates as a previous segment.
+
 * gbreve (U+011F): L&lt;&lt;1064.0,1207.0&gt;--&lt;1039.0,1139.0&gt;&gt; has the same coordinates as a previous segment.
 
 * gbreve (U+011F): L&lt;&lt;740.0,1207.0&gt;--&lt;715.0,1139.0&gt;&gt; has the same coordinates as a previous segment.
@@ -615,6 +746,8 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * uni01CB (U+01CB): L&lt;&lt;670.0,0.0&gt;--&lt;569.0,0.0&gt;&gt; has the same coordinates as a previous segment.
 
+* uni01F8 (U+01F8): L&lt;&lt;928.0,0.0&gt;--&lt;725.0,0.0&gt;&gt; has the same coordinates as a previous segment.
+
 * uni0202 (U+0202): L&lt;&lt;834.0,1686.0&gt;--&lt;858.0,1754.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni0202 (U+0202): L&lt;&lt;1158.0,1686.0&gt;--&lt;1182.0,1754.0&gt;&gt; has the same coordinates as a previous segment.
@@ -717,6 +850,22 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * uni097A (U+097A): L&lt;&lt;626.0,846.0&gt;--&lt;836.0,846.0&gt;&gt; has the same coordinates as a previous segment.
 
+* uni1E02 (U+1E02): L&lt;&lt;788.0,1023.0&gt;--&lt;714.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E02 (U+1E02): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E06 (U+1E06): L&lt;&lt;788.0,1023.0&gt;--&lt;714.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E06 (U+1E06): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2A (U+1E2A): L&lt;&lt;638.0,-203.0&gt;--&lt;613.0,-271.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2A (U+1E2A): L&lt;&lt;314.0,-203.0&gt;--&lt;289.0,-271.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2B (U+1E2B): L&lt;&lt;654.0,-215.0&gt;--&lt;629.0,-283.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2B (U+1E2B): L&lt;&lt;330.0,-215.0&gt;--&lt;305.0,-283.0&gt;&gt; has the same coordinates as a previous segment.
+
 * uni1E44 (U+1E44): L&lt;&lt;928.0,0.0&gt;--&lt;725.0,0.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E46 (U+1E46): L&lt;&lt;928.0,0.0&gt;--&lt;725.0,0.0&gt;&gt; has the same coordinates as a previous segment.
@@ -731,11 +880,59 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * uni1E4D (U+1E4D): L&lt;&lt;1020.0,1177.0&gt;--&lt;1056.0,1276.0&gt;&gt; has the same coordinates as a previous segment.
 
+* uni1E4E (U+1E4E): L&lt;&lt;298.0,1837.0&gt;--&lt;262.0,1738.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E4E (U+1E4E): L&lt;&lt;590.0,1677.0&gt;--&lt;626.0,1776.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E4F (U+1E4F): L&lt;&lt;346.0,1349.0&gt;--&lt;310.0,1250.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E4F (U+1E4F): L&lt;&lt;638.0,1189.0&gt;--&lt;674.0,1288.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E60 (U+1E60): L&lt;&lt;500.0,1028.0&gt;--&lt;702.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E60 (U+1E60): L&lt;&lt;1027.0,355.0&gt;--&lt;826.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E61 (U+1E61): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
 * uni1E62 (U+1E62): L&lt;&lt;500.0,1028.0&gt;--&lt;702.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E62 (U+1E62): L&lt;&lt;1027.0,355.0&gt;--&lt;826.0,355.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E63 (U+1E63): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E64 (U+1E64): L&lt;&lt;500.0,1028.0&gt;--&lt;702.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E64 (U+1E64): L&lt;&lt;1027.0,355.0&gt;--&lt;826.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E65 (U+1E65): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E66 (U+1E66): L&lt;&lt;500.0,1028.0&gt;--&lt;702.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E66 (U+1E66): L&lt;&lt;1027.0,355.0&gt;--&lt;826.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E67 (U+1E67): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E68 (U+1E68): L&lt;&lt;500.0,1028.0&gt;--&lt;702.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E68 (U+1E68): L&lt;&lt;1027.0,355.0&gt;--&lt;826.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E69 (U+1E69): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E78 (U+1E78): L&lt;&lt;350.0,1833.0&gt;--&lt;314.0,1734.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E78 (U+1E78): L&lt;&lt;642.0,1673.0&gt;--&lt;678.0,1772.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E79 (U+1E79): L&lt;&lt;282.0,1337.0&gt;--&lt;246.0,1238.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E79 (U+1E79): L&lt;&lt;574.0,1177.0&gt;--&lt;610.0,1276.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7C (U+1E7C): L&lt;&lt;338.0,1833.0&gt;--&lt;302.0,1734.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7C (U+1E7C): L&lt;&lt;630.0,1673.0&gt;--&lt;666.0,1772.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7D (U+1E7D): L&lt;&lt;374.0,1313.0&gt;--&lt;338.0,1214.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7D (U+1E7D): L&lt;&lt;666.0,1153.0&gt;--&lt;702.0,1252.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EAA (U+1EAA): L&lt;&lt;1090.0,2216.0&gt;--&lt;1054.0,2117.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -879,6 +1076,30 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
+    <summary>⚠️ <b>WARN</b> Check font contains no unreachable glyphs <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#unreachable-glyphs">unreachable_glyphs</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<pre><code>- L_periodcentered.loclCAT
+
+- idotaccent
+
+- l_periodcentered.loclCAT
+</code></pre>
+ [code: unreachable-glyphs]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-article-images">googlefonts/article/images</a></summary>
     <div>
 
@@ -912,64 +1133,28 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, cherokee, tifinagh</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: coptic, math, glagolitic, elbasan, gothic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, canadian-aboriginal, hebrew, old-permic, math, tifinagh, syriac, tai-le, malayalam, todhri, duployan</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, math, cherokee</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, glagolitic, math, elbasan, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, math, canadian-aboriginal, todhri, duployan, coptic, malayalam, hebrew, tai-le, old-permic</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
-<li>U+0310 COMBINING CANDRABINDU: try adding one of: math, sunuwar</li>
+<li>U+0310 COMBINING CANDRABINDU: try adding one of: sunuwar, math</li>
 <li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, syriac, cherokee</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: caucasian-albanian, thai, cherokee, sunuwar, tifinagh, syriac, gothic</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: gothic, syriac, tifinagh, cherokee, thai, sunuwar, caucasian-albanian</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
-<li>U+0384 GREEK TONOS: try adding greek</li>
-<li>U+0385 GREEK DIALYTIKA TONOS: try adding greek</li>
-<li>U+0386 GREEK CAPITAL LETTER ALPHA WITH TONOS: try adding greek</li>
-<li>U+0387 GREEK ANO TELEIA: try adding greek</li>
-<li>U+0388 GREEK CAPITAL LETTER EPSILON WITH TONOS: try adding greek</li>
-<li>U+0389 GREEK CAPITAL LETTER ETA WITH TONOS: try adding greek</li>
-<li>U+038A GREEK CAPITAL LETTER IOTA WITH TONOS: try adding greek</li>
-<li>U+038C GREEK CAPITAL LETTER OMICRON WITH TONOS: try adding greek</li>
-<li>U+038E GREEK CAPITAL LETTER UPSILON WITH TONOS: try adding greek</li>
-<li>U+038F GREEK CAPITAL LETTER OMEGA WITH TONOS: try adding greek</li>
-<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: math, greek, elbasan</li>
-<li>U+0392 GREEK CAPITAL LETTER BETA: try adding one of: math, greek, elbasan</li>
-<li>U+0393 GREEK CAPITAL LETTER GAMMA: try adding one of: math, greek, elbasan</li>
-<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: math, greek, elbasan</li>
-<li>U+0395 GREEK CAPITAL LETTER EPSILON: try adding one of: math, greek, elbasan</li>
-<li>U+0396 GREEK CAPITAL LETTER ZETA: try adding one of: math, greek, elbasan</li>
-<li>U+0397 GREEK CAPITAL LETTER ETA: try adding one of: math, greek, elbasan</li>
-<li>U+0398 GREEK CAPITAL LETTER THETA: try adding one of: math, greek, elbasan</li>
-<li>U+0399 GREEK CAPITAL LETTER IOTA: try adding one of: math, greek, elbasan</li>
-<li>U+039A GREEK CAPITAL LETTER KAPPA: try adding one of: math, greek, elbasan</li>
-<li>U+039B GREEK CAPITAL LETTER LAMDA: try adding one of: math, greek, elbasan</li>
-<li>U+039C GREEK CAPITAL LETTER MU: try adding one of: math, greek, elbasan</li>
-<li>U+039D GREEK CAPITAL LETTER NU: try adding one of: math, greek, elbasan</li>
-<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: math, greek, elbasan</li>
-<li>U+039F GREEK CAPITAL LETTER OMICRON: try adding one of: math, greek, elbasan</li>
-<li>U+03A0 GREEK CAPITAL LETTER PI: try adding one of: math, greek, elbasan</li>
-<li>U+03A1 GREEK CAPITAL LETTER RHO: try adding one of: math, greek, elbasan</li>
-<li>U+03A3 GREEK CAPITAL LETTER SIGMA: try adding one of: math, greek, elbasan</li>
-<li>U+03A4 GREEK CAPITAL LETTER TAU: try adding one of: math, greek, elbasan</li>
-<li>U+03A5 GREEK CAPITAL LETTER UPSILON: try adding one of: math, greek, elbasan</li>
-<li>U+03A6 GREEK CAPITAL LETTER PHI: try adding one of: math, greek, elbasan</li>
-<li>U+03A7 GREEK CAPITAL LETTER CHI: try adding one of: math, greek, elbasan</li>
-<li>U+03A8 GREEK CAPITAL LETTER PSI: try adding one of: math, greek, elbasan</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, greek, elbasan</li>
-<li>U+03AA GREEK CAPITAL LETTER IOTA WITH DIALYTIKA: try adding greek</li>
-<li>U+03AB GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA: try adding greek</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+2052 COMMERCIAL MINUS SIGN: not included in any glyphset definition</li>
@@ -1013,48 +1198,8 @@ definitions.</p>
 <li>U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition</li>
 <li>U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition</li>
 </ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>devanagari</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>devanagari</code>, <code>greek</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
  [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-glyphsets-shape-languages">googlefonts/glyphsets/shape_languages</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>GF_Phonetics_SinoExt glyphset:</p>
-<table>
-<thead>
-<tr>
-<th align="left">WARN messages</th>
-<th align="left">Languages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Some auxiliary glyphs were missing: ſ</td>
-<td align="left">de_Latn (German) and fr_Latn (French)</td>
-</tr>
-<tr>
-<td align="left">Some auxiliary glyphs were missing: Ŧ, ŧ, Ʒ, Ǥ, ǥ, Ǯ, ǯ, ʒ</td>
-<td align="left">fi_Latn (Finnish)</td>
-</tr>
-<tr>
-<td align="left">Some auxiliary glyphs were missing: Ŧ, ŧ</td>
-<td align="left">nb_Latn (Norwegian Bokmål)</td>
-</tr>
-</tbody>
-</table>
- [code: warning-language-shaping]
 
 
 
@@ -1072,9 +1217,9 @@ definitions.</p>
 
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ ǐ i̒ i̛̅ i̛̇ i̛̊ i̛̋ ǐ̛ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ ǐ̤ i̤̐ i̤̒ i̦̅ i̦̇</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i̛̅ i̛̇ i̛̊ i̛̋ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ i̤̐ i̤̒ i̦̅ i̦̇ i̦̊ i̦̋ i̦̐</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Han (Latn, 6 speakers), Northern Tutchone (Latn, 85 speakers), Bete-Bendi (Latn, 100,000 speakers), Ikwere (Latn, 717,000 speakers), Heiltsuk (Latn, 300 speakers), Kom (Latn, 360,685 speakers), Ekpeye (Latn, 226,000 speakers), Avokaya (Latn, 100,000 speakers), Sar (Latn, 500,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Gulay (Latn, 250,478 speakers), Koonzime (Latn, 40,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Yala (Latn, 200,000 speakers), Nzakara (Latn, 50,000 speakers), Navajo (Latn, 166,319 speakers), Zapotec (Latn, 490,000 speakers), South Central Banda (Latn, 244,000 speakers), Longto (Latn, 5,000 speakers), Ejagham (Latn, 120,000 speakers), Western Krahn (Latn, 97,800 speakers), Fur (Latn, 1,230,163 speakers), Keliko (Latn, 63,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Aghem (Latn, 38,843 speakers), Bafut (Latn, 158,146 speakers), Makaa (Latn, 221,000 speakers), Cicipu (Latn, 44,000 speakers), Kaska (Latn, 125 speakers), Igbo (Latn, 27,823,640 speakers), Ebira (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers), Abua (Latn, 25,000 speakers), Mango (Latn, 77,000 speakers), Mfumte (Latn, 79,000 speakers), Southern Kisi (Latn, 360,000 speakers), Southern Tutchone (Latn, 65 speakers), Dii (Latn, 71,000 speakers), Vute (Latn, 21,000 speakers), Lugbara (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Mundani (Latn, 34,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Dan (Latn, 1,099,244 speakers), Teke-Ebo (Latn, 260,000 speakers), Nateni (Latn, 100,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Longto (Latn, 5,000 speakers), Sar (Latn, 500,000 speakers), Vute (Latn, 21,000 speakers), Ebira (Latn, 2,200,000 speakers), Cicipu (Latn, 44,000 speakers), Southern Tutchone (Latn, 65 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nzakara (Latn, 50,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Koonzime (Latn, 40,000 speakers), Western Krahn (Latn, 97,800 speakers), Avokaya (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Han (Latn, 6 speakers), Ma’di (Latn, 584,000 speakers), Kaska (Latn, 125 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Lugbara (Latn, 2,200,000 speakers), South Central Banda (Latn, 244,000 speakers), Zapotec (Latn, 490,000 speakers), Kom (Latn, 360,685 speakers), Navajo (Latn, 166,319 speakers), Yala (Latn, 200,000 speakers), Abua (Latn, 25,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dan (Latn, 1,099,244 speakers), Teke-Ebo (Latn, 260,000 speakers), Dii (Latn, 71,000 speakers), Igbo (Latn, 27,823,640 speakers), Bafut (Latn, 158,146 speakers), Northern Tutchone (Latn, 85 speakers), Fur (Latn, 1,230,163 speakers), Heiltsuk (Latn, 300 speakers), Mango (Latn, 77,000 speakers), Keliko (Latn, 63,000 speakers), Aghem (Latn, 38,843 speakers), Makaa (Latn, 221,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ejagham (Latn, 120,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Ekpeye (Latn, 226,000 speakers), Ikwere (Latn, 717,000 speakers), Mfumte (Latn, 79,000 speakers), Bete-Bendi (Latn, 100,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1101,11 +1246,49 @@ definitions.</p>
 
 * Ccedilla (U+00C7): X=153.0,Y=-2.0 (should be at baseline 0?)
 
-* uni0163 (U+0163): X=433.0,Y=-2.0 (should be at baseline 0?)
+* Chook (U+0187): X=622.0,Y=1550.0 (should be at cap-height 1548?)
 
-* uni0163 (U+0163): X=589.0,Y=-2.0 (should be at baseline 0?)
+* Chook (U+0187): X=822.0,Y=1550.0 (should be at cap-height 1548?)
 
-* uni0163 (U+0163): X=433.0,Y=-2.0 (should be at baseline 0?)
+* Chook (U+0187): X=622.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=721.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=1504.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=721.0,Y=1550.0 (should be at cap-height 1548?)
+
+* beta (U+03B2): X=472.0,Y=1547.0 (should be at cap-height 1548?)
+
+* beta (U+03B2): X=472.0,Y=1547.0 (should be at cap-height 1548?)
+
+* beta (U+03B2): X=732.0,Y=2.0 (should be at baseline 0?)
+
+* beta (U+03B2): X=532.0,Y=2.0 (should be at baseline 0?)
+
+* beta (U+03B2): X=732.0,Y=2.0 (should be at baseline 0?)
+
+* beta (U+03B2): X=201.0,Y=2.0 (should be at baseline 0?)
+
+* epsilon (U+03B5): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* epsilon (U+03B5): X=97.0,Y=2.0 (should be at baseline 0?)
+
+* epsilontonos (U+03AD): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* epsilontonos (U+03AD): X=97.0,Y=2.0 (should be at baseline 0?)
+
+* iotadieresistonos (U+0390): X=805.0,Y=2.0 (should be at baseline 0?)
+
+* kaiSymbol (U+03D7): X=970.0,Y=-2.0 (should be at baseline 0?)
+
+* omega (U+03C9): X=153.0,Y=2.0 (should be at baseline 0?)
+
+* omega (U+03C9): X=972.0,Y=2.0 (should be at baseline 0?)
+
+* omegatonos (U+03CE): X=153.0,Y=2.0 (should be at baseline 0?)
+
+* omegatonos (U+03CE): X=972.0,Y=2.0 (should be at baseline 0?)
 
 * uni01C5 (U+01C5): X=563.0,Y=1547.0 (should be at cap-height 1548?)
 
@@ -1133,9 +1316,39 @@ definitions.</p>
 
 * uni01C5 (U+01C5): X=367.0,Y=-1.0 (should be at baseline 0?)
 
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=602.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=1026.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=595.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=1019.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
 * uni0930_uni094D.blwf: X=-384.0,Y=-614.0 (should be at descender -615?)
 
 * uni0930_uni094D.blwf: X=-605.0,Y=-614.0 (should be at descender -615?)
+
+* uni1E09 (U+1E09): X=634.0,Y=2.0 (should be at baseline 0?)
+
+* uni1E09 (U+1E09): X=790.0,Y=2.0 (should be at baseline 0?)
+
+* uni1E09 (U+1E09): X=634.0,Y=2.0 (should be at baseline 0?)
 
 * uniFB02 (U+FB02): X=520.0,Y=1547.0 (should be at cap-height 1548?)
 
@@ -1150,6 +1363,46 @@ definitions.</p>
 * uniFB02 (U+FB02): X=521.0,Y=1547.0 (should be at cap-height 1548?)
 </code></pre>
  [code: found-misalignments]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check the direction of the outermost contour in each glyph <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#outline-direction">outline_direction</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following glyphs have a counter-clockwise outer contour:</p>
+<pre><code>* lambda (U+03BB) has a counter-clockwise outer contour
+
+* lambda (U+03BB) has a counter-clockwise outer contour
+</code></pre>
+ [code: ccw-outer-contour]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-meta-script-lang-tags">googlefonts/meta/script_lang_tags</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This font file does not have a 'meta' table.</p>
+ [code: lacks-meta-table]
 
 
 
@@ -1195,11 +1448,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">199.9kb</td>
+<td align="right">213.3kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">199.9kb</td>
+<td align="right">213.3kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -1287,29 +1540,6 @@ flag = 0x0F
 - Use gridfitting with ClearType symmetric smoothing
 - Use smoothing along multiple axes with ClearType®</p>
  [code: ranges]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>ℹ️ <b>INFO</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-meta-script-lang-tags">googlefonts/meta/script_lang_tags</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ℹ️ **INFO** <p>Latn</p>
- [code: dlng-tag]
-
-
-
-* ℹ️ **INFO** <p>Latn,Deva</p>
- [code: slng-tag]
 
 
 
@@ -2096,24 +2326,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#fontbakery-version">fontbakery_version</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>FontBakery is up-to-date.</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#fontdata-namecheck">fontdata_namecheck</a></summary>
     <div>
 
@@ -2161,24 +2373,6 @@ flag = 0x0F
 
 * ✅ **PASS** <p>Font has no GPOS7 lookups</p>
  
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#gpos-kerning-info">gpos_kerning_info</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
 
 
 
@@ -2510,24 +2704,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Check correctness of STAT table strings <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#STAT-strings">STAT_strings</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Ensure Stylistic Sets have description. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#stylisticset-description">stylisticset_description</a></summary>
     <div>
 
@@ -2636,24 +2812,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Check font contains no unreachable glyphs <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#unreachable-glyphs">unreachable_glyphs</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>Font did not contain any unreachable glyphs</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Are there unwanted Apple tables? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#unwanted-aat-tables">unwanted_aat_tables</a></summary>
     <div>
 
@@ -2682,24 +2840,6 @@ flag = 0x0F
 
 
 * ✅ **PASS** <p>There are no unwanted tables.</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#valid-glyphnames">valid_glyphnames</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>Glyph names are all valid.</p>
  
 
 
@@ -3043,24 +3183,6 @@ flag = 0x0F
 
 * ✅ **PASS** <p>All marks were anchored to dotted circle</p>
  
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Check the direction of the outermost contour in each glyph <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#outline-direction">outline_direction</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
 
 
 
@@ -4891,6 +5013,30 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 <details><summary>[218] Samaano[wdth,wght].ttf</summary>
 <div>
 <details>
+    <summary>🔥 <b>FAIL</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.html#opentype-monospace">opentype/monospace</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead.</p>
+ [code: mono-bad-post-isFixedPitch]
+
+
+
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1064 instead.
+Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
+ [code: bad-numberOfHMetrics]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>🔥 <b>FAIL</b> Ensure the font supports case swapping for all its glyphs. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#case-mapping">case_mapping</a></summary>
     <div>
 
@@ -4910,132 +5056,200 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 </thead>
 <tbody>
 <tr>
-<td align="left">U+0386: GREEK CAPITAL LETTER ALPHA WITH TONOS</td>
-<td align="left">U+03AC: GREEK SMALL LETTER ALPHA WITH TONOS</td>
+<td align="left">U+0181: LATIN CAPITAL LETTER B WITH HOOK</td>
+<td align="left">U+0253: LATIN SMALL LETTER B WITH HOOK</td>
 </tr>
 <tr>
-<td align="left">U+0388: GREEK CAPITAL LETTER EPSILON WITH TONOS</td>
-<td align="left">U+03AD: GREEK SMALL LETTER EPSILON WITH TONOS</td>
+<td align="left">U+0186: LATIN CAPITAL LETTER OPEN O</td>
+<td align="left">U+0254: LATIN SMALL LETTER OPEN O</td>
 </tr>
 <tr>
-<td align="left">U+0389: GREEK CAPITAL LETTER ETA WITH TONOS</td>
-<td align="left">U+03AE: GREEK SMALL LETTER ETA WITH TONOS</td>
+<td align="left">U+0187: LATIN CAPITAL LETTER C WITH HOOK</td>
+<td align="left">U+0188: LATIN SMALL LETTER C WITH HOOK</td>
 </tr>
 <tr>
-<td align="left">U+038A: GREEK CAPITAL LETTER IOTA WITH TONOS</td>
-<td align="left">U+03AF: GREEK SMALL LETTER IOTA WITH TONOS</td>
+<td align="left">U+018A: LATIN CAPITAL LETTER D WITH HOOK</td>
+<td align="left">U+0257: LATIN SMALL LETTER D WITH HOOK</td>
 </tr>
 <tr>
-<td align="left">U+038C: GREEK CAPITAL LETTER OMICRON WITH TONOS</td>
-<td align="left">U+03CC: GREEK SMALL LETTER OMICRON WITH TONOS</td>
-</tr>
-<tr>
-<td align="left">U+038E: GREEK CAPITAL LETTER UPSILON WITH TONOS</td>
-<td align="left">U+03CD: GREEK SMALL LETTER UPSILON WITH TONOS</td>
-</tr>
-<tr>
-<td align="left">U+038F: GREEK CAPITAL LETTER OMEGA WITH TONOS</td>
-<td align="left">U+03CE: GREEK SMALL LETTER OMEGA WITH TONOS</td>
-</tr>
-<tr>
-<td align="left">U+0391: GREEK CAPITAL LETTER ALPHA</td>
-<td align="left">U+03B1: GREEK SMALL LETTER ALPHA</td>
-</tr>
-<tr>
-<td align="left">U+0392: GREEK CAPITAL LETTER BETA</td>
-<td align="left">U+03B2: GREEK SMALL LETTER BETA</td>
-</tr>
-<tr>
-<td align="left">U+0393: GREEK CAPITAL LETTER GAMMA</td>
-<td align="left">U+03B3: GREEK SMALL LETTER GAMMA</td>
-</tr>
-<tr>
-<td align="left">U+0395: GREEK CAPITAL LETTER EPSILON</td>
-<td align="left">U+03B5: GREEK SMALL LETTER EPSILON</td>
-</tr>
-<tr>
-<td align="left">U+0396: GREEK CAPITAL LETTER ZETA</td>
-<td align="left">U+03B6: GREEK SMALL LETTER ZETA</td>
-</tr>
-<tr>
-<td align="left">U+0397: GREEK CAPITAL LETTER ETA</td>
-<td align="left">U+03B7: GREEK SMALL LETTER ETA</td>
-</tr>
-<tr>
-<td align="left">U+0398: GREEK CAPITAL LETTER THETA</td>
-<td align="left">U+03B8: GREEK SMALL LETTER THETA</td>
-</tr>
-<tr>
-<td align="left">U+0399: GREEK CAPITAL LETTER IOTA</td>
-<td align="left">U+03B9: GREEK SMALL LETTER IOTA</td>
-</tr>
-<tr>
-<td align="left">U+039A: GREEK CAPITAL LETTER KAPPA</td>
-<td align="left">U+03BA: GREEK SMALL LETTER KAPPA</td>
-</tr>
-<tr>
-<td align="left">U+039B: GREEK CAPITAL LETTER LAMDA</td>
-<td align="left">U+03BB: GREEK SMALL LETTER LAMDA</td>
-</tr>
-<tr>
-<td align="left">U+039C: GREEK CAPITAL LETTER MU</td>
-<td align="left">U+03BC: GREEK SMALL LETTER MU</td>
-</tr>
-<tr>
-<td align="left">U+039D: GREEK CAPITAL LETTER NU</td>
-<td align="left">U+03BD: GREEK SMALL LETTER NU</td>
-</tr>
-<tr>
-<td align="left">U+039E: GREEK CAPITAL LETTER XI</td>
-<td align="left">U+03BE: GREEK SMALL LETTER XI</td>
-</tr>
-<tr>
-<td align="left">U+039F: GREEK CAPITAL LETTER OMICRON</td>
-<td align="left">U+03BF: GREEK SMALL LETTER OMICRON</td>
-</tr>
-<tr>
-<td align="left">U+03A0: GREEK CAPITAL LETTER PI</td>
-<td align="left">U+03C0: GREEK SMALL LETTER PI</td>
-</tr>
-<tr>
-<td align="left">U+03A1: GREEK CAPITAL LETTER RHO</td>
-<td align="left">U+03C1: GREEK SMALL LETTER RHO</td>
-</tr>
-<tr>
-<td align="left">U+03A3: GREEK CAPITAL LETTER SIGMA</td>
-<td align="left">U+03C3: GREEK SMALL LETTER SIGMA</td>
-</tr>
-<tr>
-<td align="left">U+03A4: GREEK CAPITAL LETTER TAU</td>
-<td align="left">U+03C4: GREEK SMALL LETTER TAU</td>
-</tr>
-<tr>
-<td align="left">U+03A5: GREEK CAPITAL LETTER UPSILON</td>
-<td align="left">U+03C5: GREEK SMALL LETTER UPSILON</td>
-</tr>
-<tr>
-<td align="left">U+03A6: GREEK CAPITAL LETTER PHI</td>
-<td align="left">U+03C6: GREEK SMALL LETTER PHI</td>
-</tr>
-<tr>
-<td align="left">U+03A7: GREEK CAPITAL LETTER CHI</td>
-<td align="left">U+03C7: GREEK SMALL LETTER CHI</td>
-</tr>
-<tr>
-<td align="left">U+03A8: GREEK CAPITAL LETTER PSI</td>
-<td align="left">U+03C8: GREEK SMALL LETTER PSI</td>
-</tr>
-<tr>
-<td align="left">U+03AA: GREEK CAPITAL LETTER IOTA WITH DIALYTIKA</td>
-<td align="left">U+03CA: GREEK SMALL LETTER IOTA WITH DIALYTIKA</td>
-</tr>
-<tr>
-<td align="left">U+03AB: GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA</td>
-<td align="left">U+03CB: GREEK SMALL LETTER UPSILON WITH DIALYTIKA</td>
+<td align="left">U+01B7: LATIN CAPITAL LETTER EZH</td>
+<td align="left">U+0292: LATIN SMALL LETTER EZH</td>
 </tr>
 </tbody>
 </table>
  [code: missing-case-counterparts]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#fontbakery-version">fontbakery_version</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Current FontBakery version is 0.13.1, while a newer 0.13.2 is already available. Please upgrade it with 'pip install -U fontbakery'</p>
+ [code: outdated-fontbakery]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#valid-glyphnames">valid_glyphnames</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The following glyph names do not comply with naming conventions: lowernumeral-greek and numeral-greek</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not.</p>
+ [code: found-invalid-names]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-glyphsets-shape-languages">googlefonts/glyphsets/shape_languages</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>GF_Phonetics_SinoExt glyphset:</p>
+<table>
+<thead>
+<tr>
+<th align="left">FAIL messages</th>
+<th align="left">Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Some base glyphs were missing: Ɛ, Ɲ, ɔ, ɛ, ɲ</td>
+<td align="left">bm_Latn (Bambara) and dyu_Latn (Dyula)</td>
+</tr>
+<tr>
+<td align="left">Some base glyphs were missing: Ɛ, ɔ, ɛ</td>
+<td align="left">fat_Latn (Fanti) and tw_akuapem_Latn (Akuapem Twi)</td>
+</tr>
+<tr>
+<td align="left">Some base glyphs were missing: Ƴ, ƴ, ɓ, ɗ</td>
+<td align="left">ff_Latn (Fulah)</td>
+</tr>
+<tr>
+<td align="left">Some base glyphs were missing: Ƙ, ƙ, Ƴ, ƴ, ɓ, ɗ</td>
+<td align="left">ha_Latn (Hausa)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1ECA</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1ECA</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1ECD</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1ECC</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1ECD</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1ECC</td>
+<td align="left">ig_Latn (Igbo) and yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EE5</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EE4</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EE5</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EE4</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EB9</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EB8</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EB8</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach acutecomb to uni1EB9</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+</tbody>
+</table>
+ [code: failed-language-shaping]
+
+
+
+* ⚠️ **WARN** <p>GF_Phonetics_SinoExt glyphset:</p>
+<table>
+<thead>
+<tr>
+<th align="left">WARN messages</th>
+<th align="left">Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: ἀ, ἁ, ἂ, ἃ, ἄ, ἅ, ἆ, ἇ, ἐ, ἑ, ἒ, ἓ, ἔ, ἕ, ἠ, ἡ, ἢ, ἣ, ἤ, ἥ, ἦ, ἧ, ἰ, ἱ, ἲ, ἳ, ἴ, ἵ, ἶ, ἷ, ὂ, ὃ, ὄ, ὐ, ὑ, ὒ, ὓ, ὔ, ὕ, ὖ, ὗ, ὢ, ὣ, ὤ, ὥ, ὦ, ὧ, ᾶ, ῆ, ῖ, ῗ, ῦ, ῧ, ῶ</td>
+<td align="left">el_Grek (Greek)</td>
+</tr>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: ſ</td>
+<td align="left">de_Latn (German) and fr_Latn (French)</td>
+</tr>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: Ǥ, ǥ, ǯ, ʒ</td>
+<td align="left">fi_Latn (Finnish)</td>
+</tr>
+<tr>
+<td align="left">No variant glyphs were found for Eng</td>
+<td align="left">bm_Latn (Bambara), dyu_Latn (Dyula), ig_Latn (Igbo) and lg_Latn (Ganda)</td>
+</tr>
+<tr>
+<td align="left">Some auxiliary glyphs were missing: Ɛ, Ɵ, ɛ, ɵ</td>
+<td align="left">ig_Latn (Igbo)</td>
+</tr>
+</tbody>
+</table>
+ [code: warning-language-shaping]
 
 
 
@@ -5081,25 +5295,6 @@ U+0384</p>
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.html#opentype-monospace">opentype/monospace</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 900 instead.
-Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
- [code: bad-numberOfHMetrics]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Check accent of Lcaron, dcaron, lcaron, tcaron <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#alt-caron">alt_caron</a></summary>
     <div>
 
@@ -5131,6 +5326,24 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * ⚠️ **WARN** <p>tcaron is decomposed and therefore could not be checked. Please check manually.</p>
  [code: decomposed-outline]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#gpos-kerning-info">gpos_kerning_info</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>GPOS table lacks kerning information.</p>
+ [code: lacks-kern-info]
 
 
 
@@ -5207,15 +5420,31 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * B (U+0042): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
 
+* Bdotbelow (U+1E04): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bdotbelow (U+1E04): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bdotbelow (U+1E04): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
+
 * Beta (U+0392): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Beta (U+0392): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Beta (U+0392): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
 
+* Bhook (U+0181): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bhook (U+0181): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bhook (U+0181): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
+
 * Ebreve (U+0114): L&lt;&lt;655.0,1724.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Ebreve (U+0114): L&lt;&lt;331.0,1724.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Ecedillabreve (U+1E1C): L&lt;&lt;655.0,1724.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Ecedillabreve (U+1E1C): L&lt;&lt;331.0,1724.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Euro (U+20AC): L&lt;&lt;324.0,179.0&gt;--&lt;514.0,179.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5310,6 +5539,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 * ebreve (U+0115): L&lt;&lt;697.0,1249.0&gt;--&lt;697.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
 
 * ebreve (U+0115): L&lt;&lt;373.0,1249.0&gt;--&lt;373.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ecedillabreve (U+1E1D): L&lt;&lt;697.0,1249.0&gt;--&lt;697.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ecedillabreve (U+1E1D): L&lt;&lt;373.0,1249.0&gt;--&lt;373.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
 
 * gbreve (U+011F): L&lt;&lt;763.0,1259.0&gt;--&lt;763.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5507,6 +5740,26 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * uni097A (U+097A): L&lt;&lt;318.0,846.0&gt;--&lt;528.0,846.0&gt;&gt; has the same coordinates as a previous segment.
 
+* uni1E02 (U+1E02): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E02 (U+1E02): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E02 (U+1E02): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E06 (U+1E06): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E06 (U+1E06): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E06 (U+1E06): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2A (U+1E2A): L&lt;&lt;701.0,-203.0&gt;--&lt;701.0,-271.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2A (U+1E2A): L&lt;&lt;377.0,-203.0&gt;--&lt;377.0,-271.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2B (U+1E2B): L&lt;&lt;717.0,-215.0&gt;--&lt;717.0,-283.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E2B (U+1E2B): L&lt;&lt;393.0,-215.0&gt;--&lt;393.0,-283.0&gt;&gt; has the same coordinates as a previous segment.
+
 * uni1E4C (U+1E4C): L&lt;&lt;268.0,1862.0&gt;--&lt;268.0,1763.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E4C (U+1E4C): L&lt;&lt;618.0,1702.0&gt;--&lt;618.0,1801.0&gt;&gt; has the same coordinates as a previous segment.
@@ -5515,11 +5768,59 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * uni1E4D (U+1E4D): L&lt;&lt;666.0,1214.0&gt;--&lt;666.0,1313.0&gt;&gt; has the same coordinates as a previous segment.
 
+* uni1E4E (U+1E4E): L&lt;&lt;268.0,1862.0&gt;--&lt;268.0,1763.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E4E (U+1E4E): L&lt;&lt;618.0,1702.0&gt;--&lt;618.0,1801.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E4F (U+1E4F): L&lt;&lt;316.0,1374.0&gt;--&lt;316.0,1275.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E4F (U+1E4F): L&lt;&lt;666.0,1214.0&gt;--&lt;666.0,1313.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E60 (U+1E60): L&lt;&lt;146.0,1028.0&gt;--&lt;348.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E60 (U+1E60): L&lt;&lt;918.0,355.0&gt;--&lt;717.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E61 (U+1E61): L&lt;&lt;791.0,293.0&gt;--&lt;591.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
 * uni1E62 (U+1E62): L&lt;&lt;146.0,1028.0&gt;--&lt;348.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E62 (U+1E62): L&lt;&lt;918.0,355.0&gt;--&lt;717.0,355.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E63 (U+1E63): L&lt;&lt;791.0,293.0&gt;--&lt;591.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E64 (U+1E64): L&lt;&lt;146.0,1028.0&gt;--&lt;348.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E64 (U+1E64): L&lt;&lt;918.0,355.0&gt;--&lt;717.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E65 (U+1E65): L&lt;&lt;791.0,293.0&gt;--&lt;591.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E66 (U+1E66): L&lt;&lt;146.0,1028.0&gt;--&lt;348.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E66 (U+1E66): L&lt;&lt;918.0,355.0&gt;--&lt;717.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E67 (U+1E67): L&lt;&lt;791.0,293.0&gt;--&lt;591.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E68 (U+1E68): L&lt;&lt;146.0,1028.0&gt;--&lt;348.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E68 (U+1E68): L&lt;&lt;918.0,355.0&gt;--&lt;717.0,355.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E69 (U+1E69): L&lt;&lt;791.0,293.0&gt;--&lt;591.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E78 (U+1E78): L&lt;&lt;320.0,1858.0&gt;--&lt;320.0,1759.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E78 (U+1E78): L&lt;&lt;670.0,1698.0&gt;--&lt;670.0,1797.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E79 (U+1E79): L&lt;&lt;252.0,1362.0&gt;--&lt;252.0,1263.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E79 (U+1E79): L&lt;&lt;602.0,1202.0&gt;--&lt;602.0,1301.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7C (U+1E7C): L&lt;&lt;308.0,1858.0&gt;--&lt;308.0,1759.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7C (U+1E7C): L&lt;&lt;658.0,1698.0&gt;--&lt;658.0,1797.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7D (U+1E7D): L&lt;&lt;344.0,1338.0&gt;--&lt;344.0,1239.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1E7D (U+1E7D): L&lt;&lt;694.0,1178.0&gt;--&lt;694.0,1277.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EAA (U+1EAA): L&lt;&lt;399.0,2109.0&gt;--&lt;399.0,2010.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5661,6 +5962,30 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
+    <summary>⚠️ <b>WARN</b> Check font contains no unreachable glyphs <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#unreachable-glyphs">unreachable_glyphs</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<pre><code>- L_periodcentered.loclCAT
+
+- idotaccent
+
+- l_periodcentered.loclCAT
+</code></pre>
+ [code: unreachable-glyphs]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-article-images">googlefonts/article/images</a></summary>
     <div>
 
@@ -5694,64 +6019,28 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, cherokee, tifinagh</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: coptic, math, glagolitic, elbasan, gothic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, canadian-aboriginal, hebrew, old-permic, math, tifinagh, syriac, tai-le, malayalam, todhri, duployan</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, math, cherokee</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, glagolitic, math, elbasan, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, math, canadian-aboriginal, todhri, duployan, coptic, malayalam, hebrew, tai-le, old-permic</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
-<li>U+0310 COMBINING CANDRABINDU: try adding one of: math, sunuwar</li>
+<li>U+0310 COMBINING CANDRABINDU: try adding one of: sunuwar, math</li>
 <li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, syriac, cherokee</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: caucasian-albanian, thai, cherokee, sunuwar, tifinagh, syriac, gothic</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: gothic, syriac, tifinagh, cherokee, thai, sunuwar, caucasian-albanian</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
-<li>U+0384 GREEK TONOS: try adding greek</li>
-<li>U+0385 GREEK DIALYTIKA TONOS: try adding greek</li>
-<li>U+0386 GREEK CAPITAL LETTER ALPHA WITH TONOS: try adding greek</li>
-<li>U+0387 GREEK ANO TELEIA: try adding greek</li>
-<li>U+0388 GREEK CAPITAL LETTER EPSILON WITH TONOS: try adding greek</li>
-<li>U+0389 GREEK CAPITAL LETTER ETA WITH TONOS: try adding greek</li>
-<li>U+038A GREEK CAPITAL LETTER IOTA WITH TONOS: try adding greek</li>
-<li>U+038C GREEK CAPITAL LETTER OMICRON WITH TONOS: try adding greek</li>
-<li>U+038E GREEK CAPITAL LETTER UPSILON WITH TONOS: try adding greek</li>
-<li>U+038F GREEK CAPITAL LETTER OMEGA WITH TONOS: try adding greek</li>
-<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: math, greek, elbasan</li>
-<li>U+0392 GREEK CAPITAL LETTER BETA: try adding one of: math, greek, elbasan</li>
-<li>U+0393 GREEK CAPITAL LETTER GAMMA: try adding one of: math, greek, elbasan</li>
-<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: math, greek, elbasan</li>
-<li>U+0395 GREEK CAPITAL LETTER EPSILON: try adding one of: math, greek, elbasan</li>
-<li>U+0396 GREEK CAPITAL LETTER ZETA: try adding one of: math, greek, elbasan</li>
-<li>U+0397 GREEK CAPITAL LETTER ETA: try adding one of: math, greek, elbasan</li>
-<li>U+0398 GREEK CAPITAL LETTER THETA: try adding one of: math, greek, elbasan</li>
-<li>U+0399 GREEK CAPITAL LETTER IOTA: try adding one of: math, greek, elbasan</li>
-<li>U+039A GREEK CAPITAL LETTER KAPPA: try adding one of: math, greek, elbasan</li>
-<li>U+039B GREEK CAPITAL LETTER LAMDA: try adding one of: math, greek, elbasan</li>
-<li>U+039C GREEK CAPITAL LETTER MU: try adding one of: math, greek, elbasan</li>
-<li>U+039D GREEK CAPITAL LETTER NU: try adding one of: math, greek, elbasan</li>
-<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: math, greek, elbasan</li>
-<li>U+039F GREEK CAPITAL LETTER OMICRON: try adding one of: math, greek, elbasan</li>
-<li>U+03A0 GREEK CAPITAL LETTER PI: try adding one of: math, greek, elbasan</li>
-<li>U+03A1 GREEK CAPITAL LETTER RHO: try adding one of: math, greek, elbasan</li>
-<li>U+03A3 GREEK CAPITAL LETTER SIGMA: try adding one of: math, greek, elbasan</li>
-<li>U+03A4 GREEK CAPITAL LETTER TAU: try adding one of: math, greek, elbasan</li>
-<li>U+03A5 GREEK CAPITAL LETTER UPSILON: try adding one of: math, greek, elbasan</li>
-<li>U+03A6 GREEK CAPITAL LETTER PHI: try adding one of: math, greek, elbasan</li>
-<li>U+03A7 GREEK CAPITAL LETTER CHI: try adding one of: math, greek, elbasan</li>
-<li>U+03A8 GREEK CAPITAL LETTER PSI: try adding one of: math, greek, elbasan</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, greek, elbasan</li>
-<li>U+03AA GREEK CAPITAL LETTER IOTA WITH DIALYTIKA: try adding greek</li>
-<li>U+03AB GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA: try adding greek</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+2052 COMMERCIAL MINUS SIGN: not included in any glyphset definition</li>
@@ -5795,48 +6084,8 @@ definitions.</p>
 <li>U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition</li>
 <li>U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition</li>
 </ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>devanagari</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>devanagari</code>, <code>greek</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
  [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-glyphsets-shape-languages">googlefonts/glyphsets/shape_languages</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>GF_Phonetics_SinoExt glyphset:</p>
-<table>
-<thead>
-<tr>
-<th align="left">WARN messages</th>
-<th align="left">Languages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Some auxiliary glyphs were missing: ſ</td>
-<td align="left">de_Latn (German) and fr_Latn (French)</td>
-</tr>
-<tr>
-<td align="left">Some auxiliary glyphs were missing: Ŧ, ŧ, Ʒ, Ǥ, ǥ, Ǯ, ǯ, ʒ</td>
-<td align="left">fi_Latn (Finnish)</td>
-</tr>
-<tr>
-<td align="left">Some auxiliary glyphs were missing: Ŧ, ŧ</td>
-<td align="left">nb_Latn (Norwegian Bokmål)</td>
-</tr>
-</tbody>
-</table>
- [code: warning-language-shaping]
 
 
 
@@ -5854,9 +6103,9 @@ definitions.</p>
 
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ ǐ i̒ i̛̅ i̛̇ i̛̊ i̛̋ ǐ̛ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ ǐ̤ i̤̐ i̤̒ i̦̅ i̦̇</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i̛̅ i̛̇ i̛̊ i̛̋ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ i̤̐ i̤̒ i̦̅ i̦̇ i̦̊ i̦̋ i̦̐</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Han (Latn, 6 speakers), Northern Tutchone (Latn, 85 speakers), Bete-Bendi (Latn, 100,000 speakers), Ikwere (Latn, 717,000 speakers), Heiltsuk (Latn, 300 speakers), Kom (Latn, 360,685 speakers), Ekpeye (Latn, 226,000 speakers), Avokaya (Latn, 100,000 speakers), Sar (Latn, 500,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Gulay (Latn, 250,478 speakers), Koonzime (Latn, 40,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Yala (Latn, 200,000 speakers), Nzakara (Latn, 50,000 speakers), Navajo (Latn, 166,319 speakers), Zapotec (Latn, 490,000 speakers), South Central Banda (Latn, 244,000 speakers), Longto (Latn, 5,000 speakers), Ejagham (Latn, 120,000 speakers), Western Krahn (Latn, 97,800 speakers), Fur (Latn, 1,230,163 speakers), Keliko (Latn, 63,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Aghem (Latn, 38,843 speakers), Bafut (Latn, 158,146 speakers), Makaa (Latn, 221,000 speakers), Cicipu (Latn, 44,000 speakers), Kaska (Latn, 125 speakers), Igbo (Latn, 27,823,640 speakers), Ebira (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers), Abua (Latn, 25,000 speakers), Mango (Latn, 77,000 speakers), Mfumte (Latn, 79,000 speakers), Southern Kisi (Latn, 360,000 speakers), Southern Tutchone (Latn, 65 speakers), Dii (Latn, 71,000 speakers), Vute (Latn, 21,000 speakers), Lugbara (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Mundani (Latn, 34,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Dan (Latn, 1,099,244 speakers), Teke-Ebo (Latn, 260,000 speakers), Nateni (Latn, 100,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Longto (Latn, 5,000 speakers), Sar (Latn, 500,000 speakers), Vute (Latn, 21,000 speakers), Ebira (Latn, 2,200,000 speakers), Cicipu (Latn, 44,000 speakers), Southern Tutchone (Latn, 65 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nzakara (Latn, 50,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Koonzime (Latn, 40,000 speakers), Western Krahn (Latn, 97,800 speakers), Avokaya (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Han (Latn, 6 speakers), Ma’di (Latn, 584,000 speakers), Kaska (Latn, 125 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Lugbara (Latn, 2,200,000 speakers), South Central Banda (Latn, 244,000 speakers), Zapotec (Latn, 490,000 speakers), Kom (Latn, 360,685 speakers), Navajo (Latn, 166,319 speakers), Yala (Latn, 200,000 speakers), Abua (Latn, 25,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dan (Latn, 1,099,244 speakers), Teke-Ebo (Latn, 260,000 speakers), Dii (Latn, 71,000 speakers), Igbo (Latn, 27,823,640 speakers), Bafut (Latn, 158,146 speakers), Northern Tutchone (Latn, 85 speakers), Fur (Latn, 1,230,163 speakers), Heiltsuk (Latn, 300 speakers), Mango (Latn, 77,000 speakers), Keliko (Latn, 63,000 speakers), Aghem (Latn, 38,843 speakers), Makaa (Latn, 221,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ejagham (Latn, 120,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Ekpeye (Latn, 226,000 speakers), Ikwere (Latn, 717,000 speakers), Mfumte (Latn, 79,000 speakers), Bete-Bendi (Latn, 100,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -5875,7 +6124,19 @@ definitions.</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
-<pre><code>* Eogonek (U+0118): X=477.0,Y=-1.0 (should be at baseline 0?)
+<pre><code>* Chook (U+0187): X=62.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=262.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=62.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=161.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=944.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Chook (U+0187): X=161.0,Y=1550.0 (should be at cap-height 1548?)
+
+* Eogonek (U+0118): X=477.0,Y=-1.0 (should be at baseline 0?)
 
 * Eogonek (U+0118): X=595.0,Y=-1.0 (should be at baseline 0?)
 
@@ -5887,11 +6148,37 @@ definitions.</p>
 
 * Eogonek (U+0118): X=477.0,Y=-1.0 (should be at baseline 0?)
 
+* beta (U+03B2): X=107.0,Y=1547.0 (should be at cap-height 1548?)
+
+* beta (U+03B2): X=107.0,Y=1547.0 (should be at cap-height 1548?)
+
+* beta (U+03B2): X=930.0,Y=2.0 (should be at baseline 0?)
+
+* beta (U+03B2): X=730.0,Y=2.0 (should be at baseline 0?)
+
+* beta (U+03B2): X=930.0,Y=2.0 (should be at baseline 0?)
+
+* beta (U+03B2): X=399.0,Y=2.0 (should be at baseline 0?)
+
 * ccedilla (U+00E7): X=568.0,Y=2.0 (should be at baseline 0?)
 
 * ccedilla (U+00E7): X=724.0,Y=2.0 (should be at baseline 0?)
 
 * ccedilla (U+00E7): X=568.0,Y=2.0 (should be at baseline 0?)
+
+* delta (U+03B4): X=331.0,Y=1549.0 (should be at cap-height 1548?)
+
+* delta (U+03B4): X=863.0,Y=1549.0 (should be at cap-height 1548?)
+
+* delta (U+03B4): X=331.0,Y=1549.0 (should be at cap-height 1548?)
+
+* epsilon (U+03B5): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* epsilon (U+03B5): X=96.0,Y=2.0 (should be at baseline 0?)
+
+* epsilontonos (U+03AD): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* epsilontonos (U+03AD): X=96.0,Y=2.0 (should be at baseline 0?)
 
 * iogonek (U+012F): X=482.0,Y=2.0 (should be at baseline 0?)
 
@@ -5905,11 +6192,17 @@ definitions.</p>
 
 * iogonek (U+012F): X=482.0,Y=2.0 (should be at baseline 0?)
 
-* uni0162 (U+0162): X=447.0,Y=1.0 (should be at baseline 0?)
+* iotadieresistonos (U+0390): X=805.0,Y=2.0 (should be at baseline 0?)
 
-* uni0162 (U+0162): X=603.0,Y=1.0 (should be at baseline 0?)
+* kaiSymbol (U+03D7): X=845.0,Y=-2.0 (should be at baseline 0?)
 
-* uni0162 (U+0162): X=447.0,Y=1.0 (should be at baseline 0?)
+* omega (U+03C9): X=102.0,Y=2.0 (should be at baseline 0?)
+
+* omega (U+03C9): X=921.0,Y=2.0 (should be at baseline 0?)
+
+* omegatonos (U+03CE): X=102.0,Y=2.0 (should be at baseline 0?)
+
+* omegatonos (U+03CE): X=921.0,Y=2.0 (should be at baseline 0?)
 
 * uni01EA (U+01EA): X=484.0,Y=2.0 (should be at baseline 0?)
 
@@ -5935,7 +6228,37 @@ definitions.</p>
 
 * uni01EB (U+01EB): X=477.0,Y=1.0 (should be at baseline 0?)
 
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=602.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=1026.0,Y=2.0 (should be at baseline 0?)
+
+* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=595.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=1019.0,Y=1.0 (should be at baseline 0?)
+
+* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
+
 * uni0947 (U+0947): X=66.0,Y=1550.0 (should be at cap-height 1548?)
+
+* uni1E09 (U+1E09): X=568.0,Y=2.0 (should be at baseline 0?)
+
+* uni1E09 (U+1E09): X=724.0,Y=2.0 (should be at baseline 0?)
+
+* uni1E09 (U+1E09): X=568.0,Y=2.0 (should be at baseline 0?)
 
 * uni2116 (U+2116): X=501.0,Y=1549.0 (should be at cap-height 1548?)
 
@@ -5968,6 +6291,46 @@ definitions.</p>
 * uniFB02 (U+FB02): X=241.0,Y=1547.0 (should be at cap-height 1548?)
 </code></pre>
  [code: found-misalignments]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check the direction of the outermost contour in each glyph <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#outline-direction">outline_direction</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following glyphs have a counter-clockwise outer contour:</p>
+<pre><code>* lambda (U+03BB) has a counter-clockwise outer contour
+
+* lambda (U+03BB) has a counter-clockwise outer contour
+</code></pre>
+ [code: ccw-outer-contour]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-meta-script-lang-tags">googlefonts/meta/script_lang_tags</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This font file does not have a 'meta' table.</p>
+ [code: lacks-meta-table]
 
 
 
@@ -6013,11 +6376,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">182.2kb</td>
+<td align="right">195.0kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">182.2kb</td>
+<td align="right">195.0kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -6105,29 +6468,6 @@ flag = 0x0F
 - Use gridfitting with ClearType symmetric smoothing
 - Use smoothing along multiple axes with ClearType®</p>
  [code: ranges]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>ℹ️ <b>INFO</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-meta-script-lang-tags">googlefonts/meta/script_lang_tags</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ℹ️ **INFO** <p>Latn</p>
- [code: dlng-tag]
-
-
-
-* ℹ️ **INFO** <p>Latn,Deva</p>
- [code: slng-tag]
 
 
 
@@ -6914,24 +7254,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Do we have the latest version of FontBakery installed? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#fontbakery-version">fontbakery_version</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>FontBakery is up-to-date.</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#fontdata-namecheck">fontdata_namecheck</a></summary>
     <div>
 
@@ -6979,24 +7301,6 @@ flag = 0x0F
 
 * ✅ **PASS** <p>Font has no GPOS7 lookups</p>
  
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#gpos-kerning-info">gpos_kerning_info</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
 
 
 
@@ -7436,24 +7740,6 @@ flag = 0x0F
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> Check font contains no unreachable glyphs <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#unreachable-glyphs">unreachable_glyphs</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>Font did not contain any unreachable glyphs</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
     <summary>✅ <b>PASS</b> Are there unwanted Apple tables? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#unwanted-aat-tables">unwanted_aat_tables</a></summary>
     <div>
 
@@ -7482,24 +7768,6 @@ flag = 0x0F
 
 
 * ✅ **PASS** <p>There are no unwanted tables.</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Glyph names are all valid? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#valid-glyphnames">valid_glyphnames</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>Glyph names are all valid.</p>
  
 
 
@@ -7843,24 +8111,6 @@ flag = 0x0F
 
 * ✅ **PASS** <p>All marks were anchored to dotted circle</p>
  
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Check the direction of the outermost contour in each glyph <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#outline-direction">outline_direction</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
 
 
 
@@ -9760,6 +10010,24 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 </details>
 
 <details>
+    <summary>🔥 <b>FAIL</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-use-typo-metrics">googlefonts/use_typo_metrics</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/variable/Samaano[wdth,wght].ttf'].</p>
+ [code: missing-os2-fsselection-bit7]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>ℹ️ <b>INFO</b> Check axis ordering on the STAT table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-STAT-axis-order">googlefonts/STAT/axis_order</a></summary>
     <div>
 
@@ -9998,24 +10266,6 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 </details>
 
 <details>
-    <summary>✅ <b>PASS</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-use-typo-metrics">googlefonts/use_typo_metrics</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>All looks good!</p>
- [code: ok]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⏩ <b>SKIP</b> Fonts have equal codepoint coverage <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-family-equal-codepoint-coverage">googlefonts/family/equal_codepoint_coverage</a></summary>
     <div>
 
@@ -10060,8 +10310,8 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 6 | 24 | 169 | 15 | 241 | 0 | 
-| 0% | 0% | 1% | 5% | 37% | 3% | 53% | 0% | 
+| 0 | 0 | 16 | 28 | 169 | 13 | 229 | 0 | 
+| 0% | 0% | 4% | 6% | 37% | 3% | 50% | 0% | 
 
 
 

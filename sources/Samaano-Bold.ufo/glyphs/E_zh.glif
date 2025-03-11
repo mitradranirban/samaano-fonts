@@ -3,6 +3,36 @@
   <advance width="1024"/>
   <unicode hex="01B7"/>
   <outline>
+    <contour>
+      <point x="860" y="0" type="line"/>
+      <point x="860" y="197" type="line"/>
+      <point x="164" y="197" type="line"/>
+      <point x="164" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="858" y="39" type="line"/>
+      <point x="862" y="889" type="line"/>
+      <point x="660" y="889" type="line"/>
+      <point x="656" y="39" type="line"/>
+    </contour>
+    <contour>
+      <point x="756" y="688" type="line"/>
+      <point x="756" y="889" type="line"/>
+      <point x="174" y="889" type="line"/>
+      <point x="174" y="688" type="line"/>
+    </contour>
+    <contour>
+      <point x="121" y="1544" type="line"/>
+      <point x="121" y="1347" type="line"/>
+      <point x="949" y="1347" type="line"/>
+      <point x="949" y="1544" type="line"/>
+    </contour>
+    <contour>
+      <point x="657" y="1347" type="line"/>
+      <point x="169" y="889" type="line"/>
+      <point x="475" y="889" type="line"/>
+      <point x="949" y="1347" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
@@ -10,11 +40,19 @@
       <dict>
         <key>Samaano-Bold/public.default</key>
         <string>default</string>
+        <key>Samaano-Thin/public.default</key>
+        <string>weight=100</string>
+        <key>Samaano-Wide-Bold/public.default</key>
+        <string>width=200</string>
       </dict>
       <key>xyz.fontra.source-names</key>
       <dict>
         <key>Bold</key>
         <string>default</string>
+        <key>Thin</key>
+        <string>weight=100</string>
+        <key>Wide-Bold</key>
+        <string>width=200</string>
       </dict>
     </dict>
   </lib>
