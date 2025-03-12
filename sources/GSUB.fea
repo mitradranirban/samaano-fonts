@@ -30,6 +30,10 @@ lookup loclLocalizedFormsinLatinlookup10 {
     sub \uni0163 by \uni021B ;
 } loclLocalizedFormsinLatinlookup10;
 
+ language CAT;
+sub l' periodcentered' l by l_periodcentered.loclCAT;
+sub L' periodcentered' L by L_periodcentered.loclCAT;
+
 lookup ligaStandardLigaturesinLatinlookup0 {
   lookupflag 0;
     sub \L \periodcentered  by \Ldot;
