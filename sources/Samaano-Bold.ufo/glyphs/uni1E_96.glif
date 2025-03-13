@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni1E96" format="2">
   <advance width="1024"/>
   <unicode hex="1E96"/>
@@ -6,4 +6,42 @@
     <component base="uni0331" xOffset="508" yOffset="117"/>
     <component base="h"/>
   </outline>
+  <lib>
+    <dict>
+      <key>xyz.fontra.layer-names</key>
+      <dict>
+        <key>Samaano-Bold-Slanted/public.default</key>
+        <string>slant=-20</string>
+        <key>Samaano-Thin-Slanted/public.default</key>
+        <string>slant=-20,weight=100</string>
+        <key>Samaano-Thin/public.default</key>
+        <string>weight=100</string>
+        <key>Samaano-Wide-Bold-Slanted/public.default</key>
+        <string>slant=-20,width=200</string>
+        <key>Samaano-Wide-Bold/public.default</key>
+        <string>width=200</string>
+        <key>Samaano-Wide-Thin-Slanted/public.default</key>
+        <string>slant=-20,width=200,weight=100</string>
+        <key>Samaano-Wide-Thin/public.default</key>
+        <string>width=200,weight=100</string>
+      </dict>
+      <key>xyz.fontra.source-names</key>
+      <dict>
+        <key>Samaano-Bold-Slanted</key>
+        <string>slant=-20</string>
+        <key>Samaano-Thin-Slanted</key>
+        <string>slant=-20,weight=100</string>
+        <key>Samaano-Wide-Bold-Slanted</key>
+        <string>slant=-20,width=200</string>
+        <key>Samaano-Wide-Thin-Slanted</key>
+        <string>slant=-20,width=200,weight=100</string>
+        <key>Thin</key>
+        <string>weight=100</string>
+        <key>Wide-Bold</key>
+        <string>width=200</string>
+        <key>Wide-Thin</key>
+        <string>width=200,weight=100</string>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

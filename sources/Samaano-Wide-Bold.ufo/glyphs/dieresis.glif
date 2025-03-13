@@ -1,20 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dieresis" format="2">
   <advance width="2048"/>
   <unicode hex="00A8"/>
   <outline>
-    <contour>
-      <point x="758" y="273" type="line"/>
-      <point x="758" y="122" type="line"/>
-      <point x="926" y="122" type="line"/>
-      <point x="926" y="273" type="line"/>
-    </contour>
-    <contour>
-      <point x="1122" y="273" type="line"/>
-      <point x="1122" y="122" type="line"/>
-      <point x="1290" y="122" type="line"/>
-      <point x="1290" y="273" type="line"/>
-    </contour>
+    <component base="period" xOffset="-256"/>
+    <component base="period" xOffset="256"/>
   </outline>
   <lib>
     <dict>
