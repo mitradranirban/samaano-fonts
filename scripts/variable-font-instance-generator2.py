@@ -7,11 +7,11 @@ def generate_static_instances(font_path, output_dir):
     # Load the variable font
     font = TTFont(font_path)
     
-    # Get the axes data (e.g., weight, width, etc.)
+    
+    # Extract the named instances# Get the axes data (e.g., weight, width, etc.)
     axes = font['fvar'].axes
     axis_names = [axis.axisTag for axis in axes]
     
-    # Extract the named instances
     named_instances = font['fvar'].instances
     
     # Create a list of the combinations of the named instances for each axis
@@ -43,8 +43,8 @@ def generate_static_instances(font_path, output_dir):
 
     print(f"Generated {i+1} static instances.")
 
-if _name_ == "_main_":
-    font_path = "path_to_your_variable_font.ttf"  # Specify the path to your variable font
-    output_dir = "output_static_fonts"  # Specify the output directory
+if __name__ == "_main_":
+    font_path = "/home/artim/devel/samaano-fontsSamanoo-VF.ttf"  # Specify the path to your variable font
+    output_dir = "output"  # Specify the output directory
     
     generate_static_instances(font_path, output_dir)

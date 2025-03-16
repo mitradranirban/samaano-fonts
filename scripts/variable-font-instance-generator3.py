@@ -64,5 +64,5 @@ def create_named_instances(font_path, output_dir="instances"):
     font.close()
 
 if __name__ == "__main__":
-    font_path = Samaano-VF.ttf
+    font_path = "Samaano-VF.ttf"
     create_named_instances(font_path)
