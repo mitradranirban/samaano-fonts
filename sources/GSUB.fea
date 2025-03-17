@@ -30,10 +30,6 @@ lookup loclLocalizedFormsinLatinlookup10 {
     sub \uni0163 by \uni021B ;
 } loclLocalizedFormsinLatinlookup10;
 
- language CAT;
-sub l' periodcentered' l by l_periodcentered.loclCAT;
-sub L' periodcentered' L by L_periodcentered.loclCAT;
-
 lookup ligaStandardLigaturesinLatinlookup0 {
   lookupflag 0;
     sub \L \periodcentered  by \Ldot;
@@ -45,7 +41,7 @@ lookup ligaStandardLigaturesinLatinlookup0 {
     sub \j \uni0308  by \j_uni0308;
     sub \j \uni0311  by \j_uni0311;
     sub \j \acutecomb  by \jacute;
-    sub \L \periodcentered  by \ldot;
+    sub \l \periodcentered  by \ldot;
     sub \iogonek \gravecomb  by \uni012F_uni0300;
     sub \iogonek \acutecomb  by \uni012F_uni0301;
     sub \iogonek \uni0302  by \uni012F_uni0302;
@@ -166,8 +162,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
