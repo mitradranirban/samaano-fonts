@@ -30,23 +30,18 @@ Following are the specialities of the font
 
 * Three Variable axes of Weight, Width, and Slant
 
-![animation](documentation/SamaanoV2.gif)
+![animation](documentation/SamaanoV2.3.gif)
 
 
 * Simple Glyph construction using Rectangular or quadrilateral components only
 
 * Extensive coverage of many Latin Based Languages including East European Languages, Vietnamese and Devanagari.
-now Samaano support 364 Latin based and 16 Devanagari Based languages.
+now Samaano support 534 Latin based,16 Devanagari Based languages and Monotonic Greek.
 
 ![shaperglot](documentation/samaano-shaperglot.png)
 
 ![Sample Image2](documentation/image2.png)
-![Sample Image3](documentation/image3.png)
-![Sample Image4](documentation/image4.png)
-![Sample Image5](documentation/image5.png)
-![Sample Image6](documentation/image6.png)
-![Sample Image7](documentation/image7.png)
-
+ 
 
 ## About
 This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.
@@ -62,9 +57,14 @@ This font is created by Dr Anirban Mitra, an amateure Typographer and Free Softw
 
   * Update Devanagari Open  Type Tables to version 2 with addition of GPOS features
 
+20th March 2025 - Version 2.300
+  * Added Monotonic Greek
+  * Extended Latin to include panNigerian and 
+
 Road Map for Version 3 
 
-   * Addition of Greek, Cyrillic, Math and Tamil
+* Addition of Tamil, Math,  and Cyrillic
+* Further extension of Lating to include most African languages 
 
 
 
