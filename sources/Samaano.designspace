@@ -1,15 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="5.0">
   <axes>
-    <axis tag="wght" name="weight" minimum="100" maximum="700" default="700">
+    <axis tag="slnt" name="slant" minimum="-20" maximum="0" default="0">
       <labels>
-        <label uservalue="100" name="Thin"/>
-        <label uservalue="200" name="ExtraLight"/>
-        <label uservalue="300" name="Light"/>
-        <label uservalue="400" name="Regular" elidable="true" linkeduservalue="700"/>
-        <label uservalue="500" name="Medium"/>
-        <label uservalue="600" name="SemiBold"/>
-        <label uservalue="700" name="Bold"/>
+        <label uservalue="-20" name="Oblique"/>
+        <label uservalue="0" name="Default" elidable="true"/>
       </labels>
     </axis>
     <axis tag="wdth" name="width" minimum="100" maximum="200" default="100">
@@ -21,69 +16,97 @@
         <label uservalue="200" name="UltraExpanded"/>
       </labels>
     </axis>
-    <axis tag="slnt" name="slant" minimum="-20" maximum="0" default="0">
+    <axis tag="wght" name="weight" minimum="100" maximum="700" default="700">
       <labels>
-        <label uservalue="-20" name="Oblique"/>
-        <label uservalue="0" name="Default" elidable="true"/>
+        <label uservalue="100" name="Thin"/>
+        <label uservalue="200" name="ExtraLight"/>
+        <label uservalue="300" name="Light"/>
+        <label uservalue="400" name="Regular"/>
+        <label uservalue="500" name="Medium"/>
+        <label uservalue="600" name="SemiBold"/>
+        <label uservalue="700" name="Bold" elidable="true" linkeduservalue="700"/>
       </labels>
     </axis>
   </axes>
   <sources>
-    <source filename="Samaano-Thin.ufo" name="fontra000-bf2ac95c" familyname="Samaano" stylename="Thin">
+    <source filename="Samaano-Bold.ufo" name="::fontra000-5a051a9e" familyname="Samaano" stylename="Bold">
       <location>
-        <dimension name="weight" xvalue="100"/>
-        <dimension name="width" xvalue="100"/>
         <dimension name="slant" xvalue="0"/>
-      </location>
-    </source>
-    <source filename="Samaano-Thin-Slanted.ufo" name="3e3fa7ac" familyname="Samaano" stylename="Samaano-Thin-Slanted">
-      <location>
-        <dimension name="weight" xvalue="100"/>
         <dimension name="width" xvalue="100"/>
-        <dimension name="slant" xvalue="-20"/>
-      </location>
-    </source>
-    <source filename="Samaano-Wide-Thin.ufo" name="2dcf3366" familyname="Samaano" stylename="Wide-Thin">
-      <location>
-        <dimension name="weight" xvalue="100"/>
-        <dimension name="width" xvalue="200"/>
-        <dimension name="slant" xvalue="0"/>
-      </location>
-    </source>
-    <source filename="Samaano-Wide-Thin-Slanted.ufo" name="5b081a74" familyname="Samaano" stylename="Samaano-Wide-Thin-Slanted">
-      <location>
-        <dimension name="weight" xvalue="100"/>
-        <dimension name="width" xvalue="200"/>
-        <dimension name="slant" xvalue="-20"/>
-      </location>
-    </source>
-    <source filename="Samaano-Bold.ufo" name="fontra001-564a84af" familyname="Samaano" stylename="Bold">
-      <location>
         <dimension name="weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="Samaano-Thin.ufo" name="::fontra001-ef515ff5" familyname="Samaano" stylename="Thin">
+      <location>
+        <dimension name="slant" xvalue="0"/>
         <dimension name="width" xvalue="100"/>
-        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="100"/>
       </location>
     </source>
-    <source filename="Samaano-Bold-Slanted.ufo" name="c6390a17" familyname="Samaano" stylename="Samaano-Bold-Slanted">
+    <source filename="Samaano-Thin-Slanted.ufo" name="::fontra002-008f02c3" familyname="Samaano" stylename="Samaano-Thin-Slanted">
       <location>
-        <dimension name="weight" xvalue="700"/>
+        <dimension name="slant" xvalue="-20"/>
         <dimension name="width" xvalue="100"/>
-        <dimension name="slant" xvalue="-20"/>
+        <dimension name="weight" xvalue="100"/>
       </location>
     </source>
-    <source filename="Samaano-Wide-Bold.ufo" name="c0884920" familyname="Samaano" stylename="Wide-Bold">
+    <source filename="Samaano-Wide-Thin.ufo" name="::fontra003-fa81a623" familyname="Samaano" stylename="Wide-Thin">
       <location>
-        <dimension name="weight" xvalue="700"/>
-        <dimension name="width" xvalue="200"/>
         <dimension name="slant" xvalue="0"/>
+        <dimension name="width" xvalue="200"/>
+        <dimension name="weight" xvalue="100"/>
       </location>
     </source>
-    <source filename="Samaano-Wide-Bold-Slanted.ufo" name="682f74bd" familyname="Samaano" stylename="Samaano-Wide-Bold-Slanted">
+    <source filename="Samaano-Wide-Thin-Slanted.ufo" name="::fontra004-32ab594b" familyname="Samaano" stylename="Samaano-Wide-Thin-Slanted">
       <location>
-        <dimension name="weight" xvalue="700"/>
-        <dimension name="width" xvalue="200"/>
         <dimension name="slant" xvalue="-20"/>
+        <dimension name="width" xvalue="200"/>
+        <dimension name="weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Samaano-Bold-Slanted.ufo" name="::fontra005-fb8afc81" familyname="Samaano" stylename="Samaano-Bold-Slanted">
+      <location>
+        <dimension name="slant" xvalue="-20"/>
+        <dimension name="width" xvalue="100"/>
+        <dimension name="weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="Samaano-Wide-Bold.ufo" name="::fontra006-aef67ae5" familyname="Samaano" stylename="Wide-Bold">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="width" xvalue="200"/>
+        <dimension name="weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="Samaano-Wide-Bold-Slanted.ufo" name="::fontra007-2c4570eb" familyname="Samaano" stylename="Samaano-Wide-Bold-Slanted">
+      <location>
+        <dimension name="slant" xvalue="-20"/>
+        <dimension name="width" xvalue="200"/>
+        <dimension name="weight" xvalue="700"/>
       </location>
     </source>
   </sources>
+  <lib>
+    <dict>
+      <key>fontra.projectGlyphSets</key>
+      <array>
+        <dict>
+          <key>dataFormat</key>
+          <string>glyph-names</string>
+          <key>name</key>
+          <string>Koeberlin Latin S</string>
+          <key>url</key>
+          <string>https://cdn.jsdelivr.net/gh/koeberlin/Latin-Character-Sets/CharacterSets/Glyphs/LatinS_glyphs.txt</string>
+        </dict>
+        <dict>
+          <key>dataFormat</key>
+          <string>glyph-names</string>
+          <key>name</key>
+          <string>Koeberlin Latin M</string>
+          <key>url</key>
+          <string>https://cdn.jsdelivr.net/gh/koeberlin/Latin-Character-Sets/CharacterSets/Glyphs/LatinM_glyphs.txt</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </designspace>
