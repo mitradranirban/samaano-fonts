@@ -5,7 +5,7 @@ FamilyName: Samaano
 Weight: Thin
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
-Version: 2.109
+Version: 2.300
 StyleMapFamilyName: Samaano Thin
 ItalicAngle: 0
 UnderlinePosition: 0
@@ -23,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1742203620
-ModificationTime: 1742203620
+CreationTime: 1742231965
+ModificationTime: 1742231965
 PfmFamily: 16
 TTFWeight: 100
 TTFWidth: 5
@@ -50,6 +50,9 @@ OS2FamilyClass: 1031
 OS2Vendor: 'anir'
 Lookup: 1 0 0 "loclLocalizedFormsinLatinlookup9" { "loclLocalizedFormsinLatinlookup9 subtable"  } ['locl' ('latn' <'ROM ' > ) ]
 Lookup: 1 0 0 "loclLocalizedFormsinLatinlookup10" { "loclLocalizedFormsinLatinlookup10 subtable"  } ['locl' ('latn' <'MOL ' > ) ]
+Lookup: 6 0 0 "loclLocalizedFormsinLatinlookup11" { "loclLocalizedFormsinLatinlookup11 contextual 0"  "loclLocalizedFormsinLatinlookup11 contextual 1"  } ['locl' ('latn' <'CAT ' > ) ]
+Lookup: 4 0 0 "Ligature Substitution lookup 3" { "Ligature Substitution lookup 3 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 4" { "Ligature Substitution lookup 4 subtable"  } []
 Lookup: 4 0 1 "ligaStandardLigaturesinLatinlookup0" { "ligaStandardLigaturesinLatinlookup0 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "nuktNuktaFormsinDevanagari2lookup0" { "nuktNuktaFormsinDevanagari2lookup0 subtable"  } ['nukt' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "akhnAkhandinDevanagari2lookup0" { "akhnAkhandinDevanagari2lookup0 subtable"  } ['akhn' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
@@ -68,7 +71,21 @@ Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subta
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 DEI: 91125
-LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.010" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
+ChainSub2: glyph "loclLocalizedFormsinLatinlookup11 contextual 1" 0 0 0 1
+ String: 16 L periodcentered
+ BString: 0 
+ FString: 1 L
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 4"
+EndFPST
+ChainSub2: glyph "loclLocalizedFormsinLatinlookup11 contextual 0" 0 0 0 1
+ String: 16 l periodcentered
+ BString: 0 
+ FString: 1 l
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 3"
+EndFPST
+LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.300" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org"
 PickledDataWithLists: "(dp0
 ."
 Encoding: Custom
@@ -1827,6 +1844,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 95 319 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 4 subtable" L periodcentered
 EndChar
 
 StartChar: Lacute
@@ -3633,6 +3651,7 @@ GlifName: acutecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -1 785 mark 0
 LayerCount: 2
 Fore
@@ -3749,8 +3768,6 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "base" 522 -40 basechar 0
-AnchorPoint: "top" 492 1162 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4435,6 +4452,7 @@ GlifName: brevecomb_acutecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 0 1004 mark 0
 LayerCount: 2
 Fore
@@ -4448,6 +4466,7 @@ GlifName: brevecomb_gravecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 0 1004 mark 0
 LayerCount: 2
 Fore
@@ -4461,6 +4480,7 @@ GlifName: brevecomb_hookabovecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -13 955 mark 0
 LayerCount: 2
 Fore
@@ -4474,6 +4494,7 @@ GlifName: brevecomb_tildecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 9 637 mark 0
 LayerCount: 2
 Fore
@@ -4527,6 +4548,7 @@ Encoding: 223 8729 223
 GlifName: bulletoperator
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -4798,6 +4820,7 @@ GlifName: circumflexcomb_acutecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 5 924 mark 0
 LayerCount: 2
 Fore
@@ -4811,6 +4834,7 @@ GlifName: circumflexcomb_gravecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -4 906 mark 0
 LayerCount: 2
 Fore
@@ -4824,6 +4848,7 @@ GlifName: circumflexcomb_hookabovecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -4 946 mark 0
 LayerCount: 2
 Fore
@@ -4837,6 +4862,7 @@ GlifName: circumflexcomb_tildecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 4 1000 mark 0
 LayerCount: 2
 Fore
@@ -4950,6 +4976,7 @@ GlifName: commaaboverightcomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -283 1018 mark 0
 LayerCount: 2
 Fore
@@ -5287,8 +5314,6 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "top" 323 1629 basechar 0
-AnchorPoint: "base" 533 -178 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5392,6 +5417,7 @@ Encoding: 259 8725 259
 GlifName: divisionslash
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -5530,6 +5556,7 @@ GlifName: dotbelowcomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" 1 -276 mark 0
 LayerCount: 2
 Fore
@@ -5578,6 +5605,7 @@ GlifName: doublemacronbelowcomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" 6 -108 mark 0
 LayerCount: 2
 Fore
@@ -6564,6 +6592,7 @@ GlifName: gravecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 7 776 mark 0
 LayerCount: 2
 Fore
@@ -6860,6 +6889,7 @@ GlifName: hookabovecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -6 774 mark 0
 LayerCount: 2
 Fore
@@ -6894,8 +6924,6 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "base" 536 -58 basechar 0
-AnchorPoint: "top" 556 1650 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7152,6 +7180,7 @@ Encoding: 336 8710 336
 GlifName: increment
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -7613,6 +7642,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 363 320 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 3 subtable" l periodcentered
 EndChar
 
 StartChar: lacute
@@ -7858,6 +7888,7 @@ Encoding: 369 8467 369
 GlifName: literS_ign
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -7913,6 +7944,7 @@ Encoding: 371 383 371
 GlifName: longs
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -10096,6 +10128,7 @@ GlifName: ringbelowcomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" 13 1197 mark 0
 LayerCount: 2
 Fore
@@ -10942,6 +10975,7 @@ GlifName: tildecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 HStem: 1539 50
 AnchorPoint: "top" -6 778 mark 0
 LayerCount: 2
@@ -12872,6 +12906,7 @@ GlifName: uni0302
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 6 778 mark 0
 LayerCount: 2
 Fore
@@ -12895,6 +12930,7 @@ GlifName: uni0304
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -1 773 mark 0
 LayerCount: 2
 Fore
@@ -12913,6 +12949,7 @@ GlifName: uni0305
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 18 1480 mark 0
 LayerCount: 2
 Fore
@@ -12931,6 +12968,7 @@ GlifName: uni0306
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 0 766 mark 0
 LayerCount: 2
 Fore
@@ -12959,6 +12997,7 @@ GlifName: uni0307
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 2 772 mark 0
 LayerCount: 2
 Fore
@@ -12977,6 +13016,7 @@ GlifName: uni0308
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 4 1592 mark 0
 LayerCount: 2
 Fore
@@ -13000,6 +13040,7 @@ GlifName: uni030A_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -4 777 mark 0
 LayerCount: 2
 Fore
@@ -13023,6 +13064,7 @@ GlifName: uni030B_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 0 744 mark 0
 LayerCount: 2
 Fore
@@ -13046,6 +13088,7 @@ GlifName: uni030C_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 1 760 mark 0
 LayerCount: 2
 Fore
@@ -13069,6 +13112,7 @@ GlifName: uni030F_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -5 773 mark 0
 LayerCount: 2
 Fore
@@ -13092,6 +13136,7 @@ GlifName: uni0310
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" -34 1620 mark 0
 LayerCount: 2
 Fore
@@ -13104,6 +13149,7 @@ GlifName: uni0311
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 2 780 mark 0
 LayerCount: 2
 Fore
@@ -13132,6 +13178,7 @@ GlifName: uni0312
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 HStem: 1594 443
 VStem: -58 137
 AnchorPoint: "top" -7 778 mark 0
@@ -13180,6 +13227,7 @@ GlifName: uni031B_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 3 781 mark 0
 LayerCount: 2
 Fore
@@ -13203,6 +13251,7 @@ GlifName: uni0324
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" -8 -147 mark 0
 LayerCount: 2
 Fore
@@ -13226,6 +13275,7 @@ GlifName: uni0326
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" 3 58 mark 0
 LayerCount: 2
 Fore
@@ -13249,6 +13299,7 @@ GlifName: uni0327
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" -190 66 mark 0
 LayerCount: 2
 Fore
@@ -13282,6 +13333,7 @@ GlifName: uni0328
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" -4 70 mark 0
 LayerCount: 2
 Fore
@@ -13310,6 +13362,7 @@ GlifName: uni032E_
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 VStem: -298 660<-173 -91 -173 -76>
 AnchorPoint: "base" -8 -4 mark 0
 LayerCount: 2
@@ -13354,6 +13407,7 @@ GlifName: uni0331
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "base" 4 -163 mark 0
 LayerCount: 2
 Fore
@@ -13372,6 +13426,7 @@ GlifName: uni0335
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 HStem: 935 78<-575 -15>
 VStem: -575 560<935 1013 935 1013>
 AnchorPoint: "base" 4 -163 mark 0
@@ -20590,8 +20645,8 @@ SplineSet
  182 912 l 257
  135 878 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -26613,8 +26668,6 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "base" 250 -67 basechar 0
-AnchorPoint: "top" 262 1657 basechar 0
 LayerCount: 2
 Fore
 Refer: 17 66 N 1 0 0 1 0 0 2
@@ -28610,6 +28663,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 482 1651 basechar 0
 LayerCount: 2
 Fore
 Refer: 263 803 N 1 0 0 1 544 185 2
@@ -28623,6 +28677,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 514 1135 basechar 0
 LayerCount: 2
 Fore
 Refer: 263 803 N 1 0 0 1 490 185 2
@@ -28908,9 +28963,10 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 482 1651 basechar 0
 LayerCount: 2
 Fore
-Refer: 263 803 N 1 0 0 1 734 255 2
+Refer: 263 803 N 1 0 0 1 522 227 2
 Refer: 69 73 N 1 0 0 1 0 0 2
 EndChar
 
@@ -29029,6 +29085,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 482 1651 basechar 0
 LayerCount: 2
 Fore
 Refer: 263 803 N 1 0 0 1 551 247 2
@@ -29042,6 +29099,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 522 1127 basechar 0
 LayerCount: 2
 Fore
 Refer: 263 803 N 1 0 0 1 534 243 2
@@ -29619,6 +29677,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 482 1651 basechar 0
 LayerCount: 2
 Fore
 Refer: 263 803 N 1 0 0 1 506 211 2
@@ -29632,6 +29691,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "top" 490 1099 basechar 0
 LayerCount: 2
 Fore
 Refer: 263 803 N 1 0 0 1 554 -183 2
@@ -31135,6 +31195,7 @@ GlifName: verticallineabovecomb
 Width: 0
 VWidth: 0
 GlyphClass: 4
+Flags: W
 AnchorPoint: "top" 0 964 mark 0
 LayerCount: 2
 Fore
@@ -31152,6 +31213,7 @@ Encoding: 1187 716 1187
 GlifName: verticallinelowmod
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -31169,6 +31231,7 @@ Encoding: 1188 712 1188
 GlifName: verticallinemod
 Width: 1024
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
