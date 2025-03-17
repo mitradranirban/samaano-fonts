@@ -81,7 +81,7 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1063 instead.
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1190 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
  [code: bad-numberOfHMetrics]
 
@@ -110,24 +110,8 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </thead>
 <tbody>
 <tr>
-<td align="left">U+0181: LATIN CAPITAL LETTER B WITH HOOK</td>
-<td align="left">U+0253: LATIN SMALL LETTER B WITH HOOK</td>
-</tr>
-<tr>
-<td align="left">U+0186: LATIN CAPITAL LETTER OPEN O</td>
-<td align="left">U+0254: LATIN SMALL LETTER OPEN O</td>
-</tr>
-<tr>
-<td align="left">U+0187: LATIN CAPITAL LETTER C WITH HOOK</td>
-<td align="left">U+0188: LATIN SMALL LETTER C WITH HOOK</td>
-</tr>
-<tr>
-<td align="left">U+018A: LATIN CAPITAL LETTER D WITH HOOK</td>
-<td align="left">U+0257: LATIN SMALL LETTER D WITH HOOK</td>
-</tr>
-<tr>
-<td align="left">U+01B7: LATIN CAPITAL LETTER EZH</td>
-<td align="left">U+0292: LATIN SMALL LETTER EZH</td>
+<td align="left">U+01DD: LATIN SMALL LETTER TURNED E</td>
+<td align="left">U+018E: LATIN CAPITAL LETTER REVERSED E</td>
 </tr>
 </tbody>
 </table>
@@ -214,22 +198,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </thead>
 <tbody>
 <tr>
-<td align="left">Some base glyphs were missing: Ɛ, Ɲ, ɔ, ɛ, ɲ</td>
-<td align="left">bm_Latn (Bambara) and dyu_Latn (Dyula)</td>
-</tr>
-<tr>
-<td align="left">Some base glyphs were missing: Ɛ, ɔ, ɛ</td>
-<td align="left">fat_Latn (Fanti) and tw_akuapem_Latn (Akuapem Twi)</td>
-</tr>
-<tr>
-<td align="left">Some base glyphs were missing: Ƴ, ƴ, ɓ, ɗ</td>
-<td align="left">ff_Latn (Fulah)</td>
-</tr>
-<tr>
-<td align="left">Some base glyphs were missing: Ƙ, ƙ, Ƴ, ƴ, ɓ, ɗ</td>
-<td align="left">ha_Latn (Hausa)</td>
-</tr>
-<tr>
 <td align="left">Shaper didn't attach acutecomb to uni1ECA</td>
 <td align="left">ig_Latn (Igbo)</td>
 </tr>
@@ -270,15 +238,15 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <td align="left">ig_Latn (Igbo)</td>
 </tr>
 <tr>
-<td align="left">Shaper didn't attach gravecomb to uni1EB9</td>
-<td align="left">yo_Latn (Yoruba)</td>
-</tr>
-<tr>
 <td align="left">Shaper didn't attach gravecomb to uni1EB8</td>
 <td align="left">yo_Latn (Yoruba)</td>
 </tr>
 <tr>
 <td align="left">Shaper didn't attach acutecomb to uni1EB8</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EB9</td>
 <td align="left">yo_Latn (Yoruba)</td>
 </tr>
 <tr>
@@ -309,15 +277,11 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <td align="left">de_Latn (German) and fr_Latn (French)</td>
 </tr>
 <tr>
-<td align="left">Some auxiliary glyphs were missing: Ǥ, ǥ, ǯ, ʒ</td>
-<td align="left">fi_Latn (Finnish)</td>
-</tr>
-<tr>
 <td align="left">No variant glyphs were found for Eng</td>
 <td align="left">bm_Latn (Bambara), dyu_Latn (Dyula), ig_Latn (Igbo) and lg_Latn (Ganda)</td>
 </tr>
 <tr>
-<td align="left">Some auxiliary glyphs were missing: Ɛ, Ɵ, ɛ, ɵ</td>
+<td align="left">Some auxiliary glyphs were missing: Ɵ, ɵ</td>
 <td align="left">ig_Latn (Igbo)</td>
 </tr>
 </tbody>
@@ -447,6 +411,30 @@ U+0384</p>
 </details>
 
 <details>
+    <summary>⚠️ <b>WARN</b> Detect any interpolation issues in the font. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#interpolation-issues">interpolation_issues</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
+<pre><code>- Contour 4 start point differs in glyph 'hryvnia' between location wdth=100,wght=700 and location wdth=200,wght=700
+
+- Contour 5 start point differs in glyph 'hryvnia' between location wdth=100,wght=700 and location wdth=200,wght=700
+
+- Contour 6 start point differs in glyph 'hryvnia' between location wdth=100,wght=700 and location wdth=200,wght=700
+</code></pre>
+ [code: interpolation-issues]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#ligature-carets">ligature_carets</a></summary>
     <div>
 
@@ -526,6 +514,10 @@ U+0384</p>
 
 * Bhook (U+0181): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
+* Blinebelow: L&lt;&lt;788.0,1023.0&gt;--&lt;714.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Blinebelow: L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
 * Ebreve (U+0114): L&lt;&lt;1289.0,1718.0&gt;--&lt;1264.0,1650.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Ebreve (U+0114): L&lt;&lt;965.0,1718.0&gt;--&lt;940.0,1650.0&gt;&gt; has the same coordinates as a previous segment.
@@ -553,6 +545,8 @@ U+0384</p>
 * Nacute (U+0143): L&lt;&lt;928.0,0.0&gt;--&lt;725.0,0.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Ncaron (U+0147): L&lt;&lt;928.0,0.0&gt;--&lt;725.0,0.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Nhookleft (U+019D): L&lt;&lt;928.0,0.0&gt;--&lt;725.0,0.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Ntilde (U+00D1): L&lt;&lt;948.0,1827.0&gt;--&lt;912.0,1728.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -602,21 +596,25 @@ U+0384</p>
 
 * abreve (U+0103): L&lt;&lt;715.0,1217.0&gt;--&lt;690.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;533.0,559.0&gt;--&lt;497.0,460.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;533.0,559.0&gt;--&lt;497.0,395.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;825.0,399.0&gt;--&lt;861.0,498.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;825.0,334.0&gt;--&lt;861.0,498.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;627.0,815.0&gt;--&lt;591.0,716.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;627.0,898.0&gt;--&lt;591.0,716.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;918.0,655.0&gt;--&lt;954.0,754.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;918.0,655.0&gt;--&lt;954.0,837.0&gt;&gt; has the same coordinates as a previous segment.
 
-* asciitilde (U+007E): L&lt;&lt;384.0,815.0&gt;--&lt;348.0,716.0&gt;&gt; has the same coordinates as a previous segment.
+* asciitilde (U+007E): L&lt;&lt;384.0,815.0&gt;--&lt;348.0,656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* asciitilde (U+007E): L&lt;&lt;676.0,655.0&gt;--&lt;712.0,754.0&gt;&gt; has the same coordinates as a previous segment.
+* asciitilde (U+007E): L&lt;&lt;676.0,595.0&gt;--&lt;712.0,754.0&gt;&gt; has the same coordinates as a previous segment.
 
 * atilde (U+00E3): L&lt;&lt;691.0,1354.0&gt;--&lt;655.0,1255.0&gt;&gt; has the same coordinates as a previous segment.
 
 * atilde (U+00E3): L&lt;&lt;983.0,1194.0&gt;--&lt;1019.0,1293.0&gt;&gt; has the same coordinates as a previous segment.
+
+* baht (U+0E3F): L&lt;&lt;788.0,1023.0&gt;--&lt;714.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* baht (U+0E3F): L&lt;&lt;704.0,766.0&gt;--&lt;631.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
 * braceleft (U+007B): L&lt;&lt;817.0,838.0&gt;--&lt;963.0,838.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -629,6 +627,30 @@ U+0384</p>
 * breve (U+02D8): L&lt;&lt;1240.0,1548.0&gt;--&lt;1216.0,1480.0&gt;&gt; has the same coordinates as a previous segment.
 
 * breve (U+02D8): L&lt;&lt;916.0,1548.0&gt;--&lt;892.0,1480.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_acutecomb: L&lt;&lt;192.0,1209.0&gt;--&lt;167.0,1141.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_acutecomb: L&lt;&lt;-132.0,1209.0&gt;--&lt;-157.0,1141.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_gravecomb: L&lt;&lt;192.0,1209.0&gt;--&lt;167.0,1141.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_gravecomb: L&lt;&lt;-132.0,1209.0&gt;--&lt;-157.0,1141.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_hookabovecomb: L&lt;&lt;174.0,1136.0&gt;--&lt;149.0,1068.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_hookabovecomb: L&lt;&lt;-150.0,1136.0&gt;--&lt;-175.0,1068.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;183.0,899.0&gt;--&lt;158.0,831.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;-141.0,899.0&gt;--&lt;-166.0,831.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;-124.0,1216.0&gt;--&lt;-160.0,1117.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;168.0,1056.0&gt;--&lt;204.0,1155.0&gt;&gt; has the same coordinates as a previous segment.
+
+* circumflexcomb_tildecomb: L&lt;&lt;-128.0,1184.0&gt;--&lt;-164.0,1085.0&gt;&gt; has the same coordinates as a previous segment.
+
+* circumflexcomb_tildecomb: L&lt;&lt;164.0,1024.0&gt;--&lt;200.0,1123.0&gt;&gt; has the same coordinates as a previous segment.
 
 * dollar (U+0024): L&lt;&lt;293.0,1028.0&gt;--&lt;498.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -661,6 +683,10 @@ U+0384</p>
 * guilsinglleft (U+2039): L&lt;&lt;22.0,569.0&gt;--&lt;98.0,777.0&gt;&gt; has the same coordinates as a previous segment.
 
 * guilsinglright (U+203A): L&lt;&lt;1041.0,777.0&gt;--&lt;967.0,568.0&gt;&gt; has the same coordinates as a previous segment.
+
+* hryvnia (U+20B4): L&lt;&lt;1292.0,1028.0&gt;--&lt;1090.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* hryvnia (U+20B4): L&lt;&lt;275.0,355.0&gt;--&lt;476.0,355.0&gt;&gt; has the same coordinates as a previous segment.
 
 * ibreve (U+012D): L&lt;&lt;1120.0,1264.0&gt;--&lt;1095.0,1196.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -704,6 +730,18 @@ U+0384</p>
 
 * peseta (U+20A7): L&lt;&lt;995.0,173.0&gt;--&lt;944.0,173.0&gt;&gt; has the same coordinates as a previous segment.
 
+* ringhalfleft (U+02BF): L&lt;&lt;503.0,1199.0&gt;--&lt;435.0,1223.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ringhalfleft (U+02BF): L&lt;&lt;503.0,1523.0&gt;--&lt;435.0,1547.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ringhalfright (U+02BE): L&lt;&lt;541.0,1495.0&gt;--&lt;609.0,1471.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ringhalfright (U+02BE): L&lt;&lt;541.0,1171.0&gt;--&lt;609.0,1147.0&gt;&gt; has the same coordinates as a previous segment.
+
+* rupee (U+20A8): L&lt;&lt;695.0,736.0&gt;--&lt;795.0,736.0&gt;&gt; has the same coordinates as a previous segment.
+
+* rupee (U+20A8): L&lt;&lt;916.0,293.0&gt;--&lt;816.0,293.0&gt;&gt; has the same coordinates as a previous segment.
+
 * s (U+0073): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
 
 * sacute (U+015B): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
@@ -721,6 +759,10 @@ U+0384</p>
 * section (U+00A7): L&lt;&lt;571.0,1237.0&gt;--&lt;773.0,1237.0&gt;&gt; has the same coordinates as a previous segment.
 
 * section (U+00A7): L&lt;&lt;1054.0,442.0&gt;--&lt;853.0,442.0&gt;&gt; has the same coordinates as a previous segment.
+
+* sheqel (U+20AA): L&lt;&lt;1084.0,1278.0&gt;--&lt;1231.0,1277.0&gt;&gt; has the same coordinates as a previous segment.
+
+* sheqel (U+20AA): L&lt;&lt;560.0,264.0&gt;--&lt;412.0,265.0&gt;&gt; has the same coordinates as a previous segment.
 
 * tilde (U+02DC): L&lt;&lt;410.0,1607.0&gt;--&lt;381.0,1528.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -880,13 +922,13 @@ U+0384</p>
 
 * uni1E4D (U+1E4D): L&lt;&lt;1020.0,1177.0&gt;--&lt;1056.0,1276.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4E (U+1E4E): L&lt;&lt;298.0,1837.0&gt;--&lt;262.0,1738.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4E (U+1E4E): L&lt;&lt;984.0,1840.0&gt;--&lt;948.0,1741.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4E (U+1E4E): L&lt;&lt;590.0,1677.0&gt;--&lt;626.0,1776.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4E (U+1E4E): L&lt;&lt;1276.0,1680.0&gt;--&lt;1312.0,1779.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4F (U+1E4F): L&lt;&lt;346.0,1349.0&gt;--&lt;310.0,1250.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4F (U+1E4F): L&lt;&lt;728.0,1337.0&gt;--&lt;692.0,1238.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4F (U+1E4F): L&lt;&lt;638.0,1189.0&gt;--&lt;674.0,1288.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4F (U+1E4F): L&lt;&lt;1020.0,1177.0&gt;--&lt;1056.0,1276.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E60 (U+1E60): L&lt;&lt;500.0,1028.0&gt;--&lt;702.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -918,21 +960,21 @@ U+0384</p>
 
 * uni1E69 (U+1E69): L&lt;&lt;919.0,293.0&gt;--&lt;719.0,293.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E78 (U+1E78): L&lt;&lt;350.0,1833.0&gt;--&lt;314.0,1734.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E78 (U+1E78): L&lt;&lt;905.0,1852.0&gt;--&lt;869.0,1753.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E78 (U+1E78): L&lt;&lt;642.0,1673.0&gt;--&lt;678.0,1772.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E78 (U+1E78): L&lt;&lt;1197.0,1692.0&gt;--&lt;1233.0,1791.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E79 (U+1E79): L&lt;&lt;282.0,1337.0&gt;--&lt;246.0,1238.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E79 (U+1E79): L&lt;&lt;678.0,1332.0&gt;--&lt;642.0,1233.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E79 (U+1E79): L&lt;&lt;574.0,1177.0&gt;--&lt;610.0,1276.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E79 (U+1E79): L&lt;&lt;970.0,1172.0&gt;--&lt;1006.0,1271.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E7C (U+1E7C): L&lt;&lt;338.0,1833.0&gt;--&lt;302.0,1734.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E7C (U+1E7C): L&lt;&lt;972.0,1803.0&gt;--&lt;936.0,1704.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E7C (U+1E7C): L&lt;&lt;630.0,1673.0&gt;--&lt;666.0,1772.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E7C (U+1E7C): L&lt;&lt;1264.0,1643.0&gt;--&lt;1300.0,1742.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E7D (U+1E7D): L&lt;&lt;374.0,1313.0&gt;--&lt;338.0,1214.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E7D (U+1E7D): L&lt;&lt;758.0,1290.0&gt;--&lt;722.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E7D (U+1E7D): L&lt;&lt;666.0,1153.0&gt;--&lt;702.0,1252.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E7D (U+1E7D): L&lt;&lt;1050.0,1130.0&gt;--&lt;1086.0,1229.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EAA (U+1EAA): L&lt;&lt;1090.0,2216.0&gt;--&lt;1054.0,2117.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1086,7 +1128,31 @@ U+0384</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- L_periodcentered.loclCAT
+<pre><code>- Blinebelow
+
+- Dlinebelow
+
+- Ereversed
+
+- Klinebelow
+
+- L_periodcentered.loclCAT
+
+- brevecomb_acutecomb
+
+- brevecomb_gravecomb
+
+- brevecomb_hookabovecomb
+
+- brevecomb_tildecomb
+
+- circumflexcomb_acutecomb
+
+- circumflexcomb_gravecomb
+
+- circumflexcomb_hookabovecomb
+
+- circumflexcomb_tildecomb
 
 - idotaccent
 
@@ -1136,25 +1202,31 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, math, cherokee</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, glagolitic, math, elbasan, coptic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, math, canadian-aboriginal, todhri, duployan, coptic, malayalam, hebrew, tai-le, old-permic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: elbasan, gothic, glagolitic, math, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: todhri, syriac, old-permic, hebrew, math, malayalam, canadian-aboriginal, duployan, tai-le, coptic, tifinagh</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
+<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+030D COMBINING VERTICAL LINE ABOVE: try adding sunuwar</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
 <li>U+0310 COMBINING CANDRABINDU: try adding one of: sunuwar, math</li>
-<li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
+<li>U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
+<li>U+0315 COMBINING COMMA ABOVE RIGHT: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, syriac, cherokee</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, cherokee, syriac</li>
+<li>U+0325 COMBINING RING BELOW: try adding syriac</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: gothic, syriac, tifinagh, cherokee, thai, sunuwar, caucasian-albanian</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: syriac, gothic, caucasian-albanian, cherokee, sunuwar, thai, tifinagh</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
+<li>U+035F COMBINING DOUBLE MACRON BELOW: not included in any glyphset definition</li>
+<li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
+<li>U+2016 DOUBLE VERTICAL LINE: try adding math</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+2052 COMMERCIAL MINUS SIGN: not included in any glyphset definition</li>
@@ -1187,7 +1259,21 @@ definitions.</p>
 <li>U+208C SUBSCRIPT EQUALS SIGN: try adding math</li>
 <li>U+208D SUBSCRIPT LEFT PARENTHESIS: try adding math</li>
 <li>U+208E SUBSCRIPT RIGHT PARENTHESIS: try adding math</li>
-<li>U+2116 NUMERO SIGN: try adding cyrillic</li>
+<li>U+2126 OHM SIGN: try adding math</li>
+<li>U+2153 VULGAR FRACTION ONE THIRD: try adding symbols</li>
+<li>U+2154 VULGAR FRACTION TWO THIRDS: try adding symbols</li>
+<li>U+2190 LEFTWARDS ARROW: try adding one of: symbols, math</li>
+<li>U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
+<li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2198 SOUTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2206 INCREMENT: try adding math</li>
+<li>U+220F N-ARY PRODUCT: try adding math</li>
+<li>U+2211 N-ARY SUMMATION: try adding math</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: yi, symbols, math, tai-tham</li>
 <li>U+2248 ALMOST EQUAL TO: try adding math</li>
 <li>U+2260 NOT EQUAL TO: try adding math</li>
 <li>U+2264 LESS-THAN OR EQUAL TO: try adding math</li>
@@ -1198,7 +1284,7 @@ definitions.</p>
 <li>U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition</li>
 <li>U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition</li>
 </ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>devanagari</code>, <code>greek</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>cyrillic-ext</code>, <code>devanagari</code>, <code>greek</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
  [code: unreachable-subsetting]
 
 
@@ -1216,10 +1302,10 @@ definitions.</p>
 
 
 
-* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i̛̅ i̛̇ i̛̊ i̛̋ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ i̤̐ i̤̒ i̦̅ i̦̇ i̦̊ i̦̋ i̦̐</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Longto (Latn, 5,000 speakers), Sar (Latn, 500,000 speakers), Vute (Latn, 21,000 speakers), Ebira (Latn, 2,200,000 speakers), Cicipu (Latn, 44,000 speakers), Southern Tutchone (Latn, 65 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nzakara (Latn, 50,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Koonzime (Latn, 40,000 speakers), Western Krahn (Latn, 97,800 speakers), Avokaya (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Han (Latn, 6 speakers), Ma’di (Latn, 584,000 speakers), Kaska (Latn, 125 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Lugbara (Latn, 2,200,000 speakers), South Central Banda (Latn, 244,000 speakers), Zapotec (Latn, 490,000 speakers), Kom (Latn, 360,685 speakers), Navajo (Latn, 166,319 speakers), Yala (Latn, 200,000 speakers), Abua (Latn, 25,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dan (Latn, 1,099,244 speakers), Teke-Ebo (Latn, 260,000 speakers), Dii (Latn, 71,000 speakers), Igbo (Latn, 27,823,640 speakers), Bafut (Latn, 158,146 speakers), Northern Tutchone (Latn, 85 speakers), Fur (Latn, 1,230,163 speakers), Heiltsuk (Latn, 300 speakers), Mango (Latn, 77,000 speakers), Keliko (Latn, 63,000 speakers), Aghem (Latn, 38,843 speakers), Makaa (Latn, 221,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ejagham (Latn, 120,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Ekpeye (Latn, 226,000 speakers), Ikwere (Latn, 717,000 speakers), Mfumte (Latn, 79,000 speakers), Bete-Bendi (Latn, 100,000 speakers).</p>
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̍ i̐ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̏ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i̛̅ i̛̇ i̛̊ i̛̋ i̛̍ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ i̤̍ i̤̐ i̤̒ i̥̅ i̥̇ i̥̊</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mundani (Latn, 34,000 speakers), Keliko (Latn, 63,000 speakers), Igbo (Latn, 27,823,640 speakers), Koonzime (Latn, 40,000 speakers), Abua (Latn, 25,000 speakers), Han (Latn, 6 speakers), Dii (Latn, 71,000 speakers), Basaa (Latn, 332,940 speakers), Dan (Latn, 1,099,244 speakers), Vute (Latn, 21,000 speakers), Yala (Latn, 200,000 speakers), Kom (Latn, 360,685 speakers), Gulay (Latn, 250,478 speakers), Kaska (Latn, 125 speakers), Ekpeye (Latn, 226,000 speakers), Ebira (Latn, 2,200,000 speakers), Longto (Latn, 5,000 speakers), Teke-Ebo (Latn, 260,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Heiltsuk (Latn, 300 speakers), Sar (Latn, 500,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Bafut (Latn, 158,146 speakers), Cicipu (Latn, 44,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Ikwere (Latn, 717,000 speakers), Northern Tutchone (Latn, 85 speakers), Mfumte (Latn, 79,000 speakers), Southern Tutchone (Latn, 65 speakers), Aghem (Latn, 38,843 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Western Krahn (Latn, 97,800 speakers), Makaa (Latn, 221,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Avokaya (Latn, 100,000 speakers), South Central Banda (Latn, 244,000 speakers), Mango (Latn, 77,000 speakers), Navajo (Latn, 166,319 speakers), Ejagham (Latn, 120,000 speakers), Southern Kisi (Latn, 360,000 speakers), Nateni (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers), Nzakara (Latn, 50,000 speakers), Zapotec (Latn, 490,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1258,6 +1344,10 @@ definitions.</p>
 
 * Chook (U+0187): X=721.0,Y=1550.0 (should be at cap-height 1548?)
 
+* Eopen (U+0190): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* Eopen (U+0190): X=97.0,Y=2.0 (should be at baseline 0?)
+
 * beta (U+03B2): X=472.0,Y=1547.0 (should be at cap-height 1548?)
 
 * beta (U+03B2): X=472.0,Y=1547.0 (should be at cap-height 1548?)
@@ -1269,6 +1359,14 @@ definitions.</p>
 * beta (U+03B2): X=732.0,Y=2.0 (should be at baseline 0?)
 
 * beta (U+03B2): X=201.0,Y=2.0 (should be at baseline 0?)
+
+* dblverticalbar (U+2016): X=307.0,Y=-1.0 (should be at baseline 0?)
+
+* dblverticalbar (U+2016): X=104.0,Y=-1.0 (should be at baseline 0?)
+
+* eopen (U+025B): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* eopen (U+025B): X=97.0,Y=2.0 (should be at baseline 0?)
 
 * epsilon (U+03B5): X=296.0,Y=1.0 (should be at baseline 0?)
 
@@ -1282,6 +1380,14 @@ definitions.</p>
 
 * kaiSymbol (U+03D7): X=970.0,Y=-2.0 (should be at baseline 0?)
 
+* kappa (U+03BA): X=307.0,Y=1.0 (should be at baseline 0?)
+
+* kappa (U+03BA): X=107.0,Y=1.0 (should be at baseline 0?)
+
+* literSign (U+2113): X=835.0,Y=1549.0 (should be at cap-height 1548?)
+
+* literSign (U+2113): X=835.0,Y=1549.0 (should be at cap-height 1548?)
+
 * omega (U+03C9): X=153.0,Y=2.0 (should be at baseline 0?)
 
 * omega (U+03C9): X=972.0,Y=2.0 (should be at baseline 0?)
@@ -1289,6 +1395,10 @@ definitions.</p>
 * omegatonos (U+03CE): X=153.0,Y=2.0 (should be at baseline 0?)
 
 * omegatonos (U+03CE): X=972.0,Y=2.0 (should be at baseline 0?)
+
+* ringhalfleft (U+02BF): X=435.0,Y=1547.0 (should be at cap-height 1548?)
+
+* ringhalfleft (U+02BF): X=435.0,Y=1547.0 (should be at cap-height 1548?)
 
 * uni01C5 (U+01C5): X=563.0,Y=1547.0 (should be at cap-height 1548?)
 
@@ -1316,39 +1426,17 @@ definitions.</p>
 
 * uni01C5 (U+01C5): X=367.0,Y=-1.0 (should be at baseline 0?)
 
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=602.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=1026.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=595.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=1019.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
-
 * uni0930_uni094D.blwf: X=-384.0,Y=-614.0 (should be at descender -615?)
 
 * uni0930_uni094D.blwf: X=-605.0,Y=-614.0 (should be at descender -615?)
 
-* uni1E09 (U+1E09): X=634.0,Y=2.0 (should be at baseline 0?)
+* uni1E08 (U+1E08): X=268.0,Y=-2.0 (should be at baseline 0?)
 
-* uni1E09 (U+1E09): X=790.0,Y=2.0 (should be at baseline 0?)
+* uni1E08 (U+1E08): X=68.0,Y=-2.0 (should be at baseline 0?)
 
-* uni1E09 (U+1E09): X=634.0,Y=2.0 (should be at baseline 0?)
+* uni1E08 (U+1E08): X=948.0,Y=-2.0 (should be at baseline 0?)
+
+* uni1E08 (U+1E08): X=153.0,Y=-2.0 (should be at baseline 0?)
 
 * uniFB02 (U+FB02): X=520.0,Y=1547.0 (should be at cap-height 1548?)
 
@@ -1380,7 +1468,11 @@ definitions.</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs have a counter-clockwise outer contour:</p>
-<pre><code>* lambda (U+03BB) has a counter-clockwise outer contour
+<pre><code>* hryvnia (U+20B4) has a counter-clockwise outer contour
+
+* hryvnia (U+20B4) has a counter-clockwise outer contour
+
+* lambda (U+03BB) has a counter-clockwise outer contour
 
 * lambda (U+03BB) has a counter-clockwise outer contour
 </code></pre>
@@ -1448,11 +1540,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">213.3kb</td>
+<td align="right">232.2kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">213.3kb</td>
+<td align="right">232.3kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -2372,24 +2464,6 @@ flag = 0x0F
 
 
 * ✅ **PASS** <p>Font has no GPOS7 lookups</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Detect any interpolation issues in the font. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#interpolation-issues">interpolation_issues</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>No interpolation issues found</p>
  
 
 
@@ -5027,7 +5101,7 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 
 
 
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1064 instead.
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1190 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
  [code: bad-numberOfHMetrics]
 
@@ -5056,24 +5130,8 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </thead>
 <tbody>
 <tr>
-<td align="left">U+0181: LATIN CAPITAL LETTER B WITH HOOK</td>
-<td align="left">U+0253: LATIN SMALL LETTER B WITH HOOK</td>
-</tr>
-<tr>
-<td align="left">U+0186: LATIN CAPITAL LETTER OPEN O</td>
-<td align="left">U+0254: LATIN SMALL LETTER OPEN O</td>
-</tr>
-<tr>
-<td align="left">U+0187: LATIN CAPITAL LETTER C WITH HOOK</td>
-<td align="left">U+0188: LATIN SMALL LETTER C WITH HOOK</td>
-</tr>
-<tr>
-<td align="left">U+018A: LATIN CAPITAL LETTER D WITH HOOK</td>
-<td align="left">U+0257: LATIN SMALL LETTER D WITH HOOK</td>
-</tr>
-<tr>
-<td align="left">U+01B7: LATIN CAPITAL LETTER EZH</td>
-<td align="left">U+0292: LATIN SMALL LETTER EZH</td>
+<td align="left">U+01DD: LATIN SMALL LETTER TURNED E</td>
+<td align="left">U+018E: LATIN CAPITAL LETTER REVERSED E</td>
 </tr>
 </tbody>
 </table>
@@ -5141,22 +5199,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </thead>
 <tbody>
 <tr>
-<td align="left">Some base glyphs were missing: Ɛ, Ɲ, ɔ, ɛ, ɲ</td>
-<td align="left">bm_Latn (Bambara) and dyu_Latn (Dyula)</td>
-</tr>
-<tr>
-<td align="left">Some base glyphs were missing: Ɛ, ɔ, ɛ</td>
-<td align="left">fat_Latn (Fanti) and tw_akuapem_Latn (Akuapem Twi)</td>
-</tr>
-<tr>
-<td align="left">Some base glyphs were missing: Ƴ, ƴ, ɓ, ɗ</td>
-<td align="left">ff_Latn (Fulah)</td>
-</tr>
-<tr>
-<td align="left">Some base glyphs were missing: Ƙ, ƙ, Ƴ, ƴ, ɓ, ɗ</td>
-<td align="left">ha_Latn (Hausa)</td>
-</tr>
-<tr>
 <td align="left">Shaper didn't attach acutecomb to uni1ECA</td>
 <td align="left">ig_Latn (Igbo)</td>
 </tr>
@@ -5197,15 +5239,15 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <td align="left">ig_Latn (Igbo)</td>
 </tr>
 <tr>
-<td align="left">Shaper didn't attach gravecomb to uni1EB9</td>
-<td align="left">yo_Latn (Yoruba)</td>
-</tr>
-<tr>
 <td align="left">Shaper didn't attach gravecomb to uni1EB8</td>
 <td align="left">yo_Latn (Yoruba)</td>
 </tr>
 <tr>
 <td align="left">Shaper didn't attach acutecomb to uni1EB8</td>
+<td align="left">yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni1EB9</td>
 <td align="left">yo_Latn (Yoruba)</td>
 </tr>
 <tr>
@@ -5236,15 +5278,11 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <td align="left">de_Latn (German) and fr_Latn (French)</td>
 </tr>
 <tr>
-<td align="left">Some auxiliary glyphs were missing: Ǥ, ǥ, ǯ, ʒ</td>
-<td align="left">fi_Latn (Finnish)</td>
-</tr>
-<tr>
 <td align="left">No variant glyphs were found for Eng</td>
 <td align="left">bm_Latn (Bambara), dyu_Latn (Dyula), ig_Latn (Igbo) and lg_Latn (Ganda)</td>
 </tr>
 <tr>
-<td align="left">Some auxiliary glyphs were missing: Ɛ, Ɵ, ɛ, ɵ</td>
+<td align="left">Some auxiliary glyphs were missing: Ɵ, ɵ</td>
 <td align="left">ig_Latn (Igbo)</td>
 </tr>
 </tbody>
@@ -5351,6 +5389,28 @@ U+0384</p>
 </details>
 
 <details>
+    <summary>⚠️ <b>WARN</b> Detect any interpolation issues in the font. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#interpolation-issues">interpolation_issues</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
+<pre><code>- Contour 0 in glyph 'Uhorn': becomes underweight between wdth=100,wght=100 and wdth=200,wght=100.
+
+- Contour 1 in glyph 'Uhorn': becomes underweight between wdth=100,wght=100 and wdth=200,wght=100.
+</code></pre>
+ [code: interpolation-issues]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Are there caret positions declared for every ligature? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#ligature-carets">ligature_carets</a></summary>
     <div>
 
@@ -5406,9 +5466,9 @@ U+0384</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs have overlapping path segments:</p>
-<pre><code>* Abreve (U+0102): L&lt;&lt;710.0,1724.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+<pre><code>* Abreve (U+0102): L&lt;&lt;710.0,1769.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Abreve (U+0102): L&lt;&lt;386.0,1724.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* Abreve (U+0102): L&lt;&lt;386.0,1769.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Atilde (U+00C3): L&lt;&lt;337.0,1857.0&gt;--&lt;337.0,1758.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5438,23 +5498,29 @@ U+0384</p>
 
 * Bhook (U+0181): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ebreve (U+0114): L&lt;&lt;655.0,1724.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* Blinebelow: L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ebreve (U+0114): L&lt;&lt;331.0,1724.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* Blinebelow: L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ecedillabreve (U+1E1C): L&lt;&lt;655.0,1724.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* Blinebelow: L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ecedillabreve (U+1E1C): L&lt;&lt;331.0,1724.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* Ebreve (U+0114): L&lt;&lt;655.0,1769.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Ebreve (U+0114): L&lt;&lt;331.0,1769.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Ecedillabreve (U+1E1C): L&lt;&lt;655.0,1769.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Ecedillabreve (U+1E1C): L&lt;&lt;331.0,1769.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Euro (U+20AC): L&lt;&lt;324.0,179.0&gt;--&lt;514.0,179.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Gbreve (U+011E): L&lt;&lt;687.0,1732.0&gt;--&lt;687.0,1664.0&gt;&gt; has the same coordinates as a previous segment.
+* Gbreve (U+011E): L&lt;&lt;687.0,1777.0&gt;--&lt;687.0,1664.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Gbreve (U+011E): L&lt;&lt;363.0,1732.0&gt;--&lt;363.0,1664.0&gt;&gt; has the same coordinates as a previous segment.
+* Gbreve (U+011E): L&lt;&lt;363.0,1777.0&gt;--&lt;363.0,1664.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ibreve (U+012C): L&lt;&lt;655.0,1724.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* Ibreve (U+012C): L&lt;&lt;655.0,1769.0&gt;--&lt;655.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ibreve (U+012C): L&lt;&lt;331.0,1724.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* Ibreve (U+012C): L&lt;&lt;331.0,1769.0&gt;--&lt;331.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Itilde (U+0128): L&lt;&lt;282.0,1857.0&gt;--&lt;282.0,1758.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5464,13 +5530,13 @@ U+0384</p>
 
 * Ntilde (U+00D1): L&lt;&lt;650.0,1698.0&gt;--&lt;650.0,1797.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Obreve (U+014E): L&lt;&lt;641.0,1729.0&gt;--&lt;641.0,1661.0&gt;&gt; has the same coordinates as a previous segment.
+* Obreve (U+014E): L&lt;&lt;641.0,1774.0&gt;--&lt;641.0,1661.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Obreve (U+014E): L&lt;&lt;317.0,1729.0&gt;--&lt;317.0,1661.0&gt;&gt; has the same coordinates as a previous segment.
+* Obreve (U+014E): L&lt;&lt;317.0,1774.0&gt;--&lt;317.0,1661.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Otilde (U+00D5): L&lt;&lt;268.0,1862.0&gt;--&lt;268.0,1763.0&gt;&gt; has the same coordinates as a previous segment.
+* Otilde (U+00D5): L&lt;&lt;366.0,1846.0&gt;--&lt;366.0,1747.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Otilde (U+00D5): L&lt;&lt;618.0,1702.0&gt;--&lt;618.0,1801.0&gt;&gt; has the same coordinates as a previous segment.
+* Otilde (U+00D5): L&lt;&lt;716.0,1686.0&gt;--&lt;716.0,1785.0&gt;&gt; has the same coordinates as a previous segment.
 
 * S (U+0053): L&lt;&lt;146.0,1028.0&gt;--&lt;348.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5492,33 +5558,39 @@ U+0384</p>
 
 * Scircumflex (U+015C): L&lt;&lt;918.0,355.0&gt;--&lt;717.0,355.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ubreve (U+016C): L&lt;&lt;693.0,1725.0&gt;--&lt;693.0,1657.0&gt;&gt; has the same coordinates as a previous segment.
+* Ubreve (U+016C): L&lt;&lt;693.0,1770.0&gt;--&lt;693.0,1657.0&gt;&gt; has the same coordinates as a previous segment.
 
-* Ubreve (U+016C): L&lt;&lt;369.0,1725.0&gt;--&lt;369.0,1657.0&gt;&gt; has the same coordinates as a previous segment.
+* Ubreve (U+016C): L&lt;&lt;369.0,1770.0&gt;--&lt;369.0,1657.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Utilde (U+0168): L&lt;&lt;320.0,1858.0&gt;--&lt;320.0,1759.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Utilde (U+0168): L&lt;&lt;670.0,1698.0&gt;--&lt;670.0,1797.0&gt;&gt; has the same coordinates as a previous segment.
 
-* abreve (U+0103): L&lt;&lt;685.0,1217.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* abreve (U+0103): L&lt;&lt;685.0,1262.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* abreve (U+0103): L&lt;&lt;361.0,1217.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* abreve (U+0103): L&lt;&lt;361.0,1262.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;330.0,559.0&gt;--&lt;330.0,460.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;330.0,559.0&gt;--&lt;330.0,395.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;680.0,399.0&gt;--&lt;680.0,498.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;680.0,334.0&gt;--&lt;680.0,498.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;330.0,815.0&gt;--&lt;330.0,716.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;330.0,898.0&gt;--&lt;330.0,716.0&gt;&gt; has the same coordinates as a previous segment.
 
-* approxequal (U+2248): L&lt;&lt;680.0,655.0&gt;--&lt;680.0,754.0&gt;&gt; has the same coordinates as a previous segment.
+* approxequal (U+2248): L&lt;&lt;680.0,655.0&gt;--&lt;680.0,837.0&gt;&gt; has the same coordinates as a previous segment.
 
-* asciitilde (U+007E): L&lt;&lt;330.0,815.0&gt;--&lt;330.0,716.0&gt;&gt; has the same coordinates as a previous segment.
+* asciitilde (U+007E): L&lt;&lt;330.0,815.0&gt;--&lt;330.0,663.0&gt;&gt; has the same coordinates as a previous segment.
 
-* asciitilde (U+007E): L&lt;&lt;680.0,655.0&gt;--&lt;680.0,754.0&gt;&gt; has the same coordinates as a previous segment.
+* asciitilde (U+007E): L&lt;&lt;680.0,602.0&gt;--&lt;680.0,754.0&gt;&gt; has the same coordinates as a previous segment.
 
 * atilde (U+00E3): L&lt;&lt;312.0,1350.0&gt;--&lt;312.0,1251.0&gt;&gt; has the same coordinates as a previous segment.
 
 * atilde (U+00E3): L&lt;&lt;662.0,1190.0&gt;--&lt;662.0,1289.0&gt;&gt; has the same coordinates as a previous segment.
+
+* baht (U+0E3F): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* baht (U+0E3F): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* baht (U+0E3F): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
 
 * braceleft (U+007B): L&lt;&lt;421.0,838.0&gt;--&lt;567.0,838.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5532,21 +5604,45 @@ U+0384</p>
 
 * breve (U+02D8): L&lt;&lt;332.0,1548.0&gt;--&lt;332.0,1480.0&gt;&gt; has the same coordinates as a previous segment.
 
+* brevecomb_acutecomb: L&lt;&lt;191.0,1214.0&gt;--&lt;191.0,1101.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_acutecomb: L&lt;&lt;-133.0,1214.0&gt;--&lt;-133.0,1101.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_gravecomb: L&lt;&lt;191.0,1214.0&gt;--&lt;191.0,1101.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_gravecomb: L&lt;&lt;-133.0,1214.0&gt;--&lt;-133.0,1101.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_hookabovecomb: L&lt;&lt;173.0,1141.0&gt;--&lt;173.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_hookabovecomb: L&lt;&lt;-151.0,1141.0&gt;--&lt;-151.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;182.0,904.0&gt;--&lt;182.0,791.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;-142.0,904.0&gt;--&lt;-142.0,791.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;-154.0,1241.0&gt;--&lt;-154.0,1142.0&gt;&gt; has the same coordinates as a previous segment.
+
+* brevecomb_tildecomb: L&lt;&lt;196.0,1081.0&gt;--&lt;196.0,1180.0&gt;&gt; has the same coordinates as a previous segment.
+
+* circumflexcomb_tildecomb: L&lt;&lt;-158.0,1209.0&gt;--&lt;-158.0,1110.0&gt;&gt; has the same coordinates as a previous segment.
+
+* circumflexcomb_tildecomb: L&lt;&lt;192.0,1049.0&gt;--&lt;192.0,1148.0&gt;&gt; has the same coordinates as a previous segment.
+
 * dollar (U+0024): L&lt;&lt;126.0,1028.0&gt;--&lt;331.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
 
 * dollar (U+0024): L&lt;&lt;898.0,355.0&gt;--&lt;692.0,355.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ebreve (U+0115): L&lt;&lt;697.0,1249.0&gt;--&lt;697.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
+* ebreve (U+0115): L&lt;&lt;697.0,1294.0&gt;--&lt;697.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ebreve (U+0115): L&lt;&lt;373.0,1249.0&gt;--&lt;373.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
+* ebreve (U+0115): L&lt;&lt;373.0,1294.0&gt;--&lt;373.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ecedillabreve (U+1E1D): L&lt;&lt;697.0,1249.0&gt;--&lt;697.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
+* ecedillabreve (U+1E1D): L&lt;&lt;697.0,1294.0&gt;--&lt;697.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ecedillabreve (U+1E1D): L&lt;&lt;373.0,1249.0&gt;--&lt;373.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
+* ecedillabreve (U+1E1D): L&lt;&lt;373.0,1294.0&gt;--&lt;373.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
 
-* gbreve (U+011F): L&lt;&lt;763.0,1259.0&gt;--&lt;763.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
+* gbreve (U+011F): L&lt;&lt;763.0,1304.0&gt;--&lt;763.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
 
-* gbreve (U+011F): L&lt;&lt;439.0,1259.0&gt;--&lt;439.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
+* gbreve (U+011F): L&lt;&lt;439.0,1304.0&gt;--&lt;439.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
 
 * greater (U+003E): L&lt;&lt;922.0,777.0&gt;--&lt;924.0,568.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5564,9 +5660,13 @@ U+0384</p>
 
 * guilsinglright (U+203A): L&lt;&lt;922.0,777.0&gt;--&lt;924.0,568.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ibreve (U+012D): L&lt;&lt;677.0,1274.0&gt;--&lt;677.0,1206.0&gt;&gt; has the same coordinates as a previous segment.
+* hryvnia (U+20B4): L&lt;&lt;347.0,355.0&gt;--&lt;146.0,355.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ibreve (U+012D): L&lt;&lt;353.0,1274.0&gt;--&lt;353.0,1206.0&gt;&gt; has the same coordinates as a previous segment.
+* hryvnia (U+20B4): L&lt;&lt;716.0,1028.0&gt;--&lt;918.0,1028.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ibreve (U+012D): L&lt;&lt;677.0,1319.0&gt;--&lt;677.0,1206.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ibreve (U+012D): L&lt;&lt;353.0,1319.0&gt;--&lt;353.0,1206.0&gt;&gt; has the same coordinates as a previous segment.
 
 * itilde (U+0129): L&lt;&lt;304.0,1407.0&gt;--&lt;304.0,1308.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5588,9 +5688,9 @@ U+0384</p>
 
 * ntilde (U+00F1): L&lt;&lt;654.0,1214.0&gt;--&lt;654.0,1313.0&gt;&gt; has the same coordinates as a previous segment.
 
-* obreve (U+014F): L&lt;&lt;689.0,1241.0&gt;--&lt;689.0,1173.0&gt;&gt; has the same coordinates as a previous segment.
+* obreve (U+014F): L&lt;&lt;689.0,1286.0&gt;--&lt;689.0,1173.0&gt;&gt; has the same coordinates as a previous segment.
 
-* obreve (U+014F): L&lt;&lt;365.0,1241.0&gt;--&lt;365.0,1173.0&gt;&gt; has the same coordinates as a previous segment.
+* obreve (U+014F): L&lt;&lt;365.0,1286.0&gt;--&lt;365.0,1173.0&gt;&gt; has the same coordinates as a previous segment.
 
 * otilde (U+00F5): L&lt;&lt;316.0,1374.0&gt;--&lt;316.0,1275.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5603,6 +5703,16 @@ U+0384</p>
 * parenright (U+0029): L&lt;&lt;488.0,179.0&gt;--&lt;678.0,179.0&gt;&gt; has the same coordinates as a previous segment.
 
 * peseta (U+20A7): L&lt;&lt;932.0,173.0&gt;--&lt;881.0,173.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ringhalfleft (U+02BF): L&lt;&lt;472.0,1200.0&gt;--&lt;404.0,1200.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ringhalfleft (U+02BF): L&lt;&lt;472.0,1524.0&gt;--&lt;404.0,1524.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ringhalfright (U+02BE): L&lt;&lt;523.0,1530.0&gt;--&lt;591.0,1530.0&gt;&gt; has the same coordinates as a previous segment.
+
+* ringhalfright (U+02BE): L&lt;&lt;523.0,1206.0&gt;--&lt;591.0,1206.0&gt;&gt; has the same coordinates as a previous segment.
+
+* rupee (U+20A8): L&lt;&lt;853.0,293.0&gt;--&lt;753.0,293.0&gt;&gt; has the same coordinates as a previous segment.
 
 * s (U+0073): L&lt;&lt;791.0,293.0&gt;--&lt;591.0,293.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5622,6 +5732,10 @@ U+0384</p>
 
 * section (U+00A7): L&lt;&lt;918.0,442.0&gt;--&lt;717.0,442.0&gt;&gt; has the same coordinates as a previous segment.
 
+* sheqel (U+20AA): L&lt;&lt;620.0,1278.0&gt;--&lt;768.0,1277.0&gt;&gt; has the same coordinates as a previous segment.
+
+* sheqel (U+20AA): L&lt;&lt;465.0,264.0&gt;--&lt;317.0,265.0&gt;&gt; has the same coordinates as a previous segment.
+
 * tilde (U+02DC): L&lt;&lt;359.0,1607.0&gt;--&lt;359.0,1528.0&gt;&gt; has the same coordinates as a previous segment.
 
 * tilde (U+02DC): L&lt;&lt;639.0,1479.0&gt;--&lt;639.0,1558.0&gt;&gt; has the same coordinates as a previous segment.
@@ -5630,9 +5744,9 @@ U+0384</p>
 
 * tildecomb (U+0303): L&lt;&lt;156.0,834.0&gt;--&lt;156.0,933.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ubreve (U+016D): L&lt;&lt;625.0,1229.0&gt;--&lt;625.0,1161.0&gt;&gt; has the same coordinates as a previous segment.
+* ubreve (U+016D): L&lt;&lt;625.0,1274.0&gt;--&lt;625.0,1161.0&gt;&gt; has the same coordinates as a previous segment.
 
-* ubreve (U+016D): L&lt;&lt;301.0,1229.0&gt;--&lt;301.0,1161.0&gt;&gt; has the same coordinates as a previous segment.
+* ubreve (U+016D): L&lt;&lt;301.0,1274.0&gt;--&lt;301.0,1161.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni012F_uni0303: L&lt;&lt;313.0,1258.0&gt;--&lt;313.0,1159.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5692,17 +5806,17 @@ U+0384</p>
 
 * uni0219 (U+0219): L&lt;&lt;791.0,293.0&gt;--&lt;591.0,293.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni022C (U+022C): L&lt;&lt;268.0,1862.0&gt;--&lt;268.0,1763.0&gt;&gt; has the same coordinates as a previous segment.
+* uni022C (U+022C): L&lt;&lt;366.0,1846.0&gt;--&lt;366.0,1747.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni022C (U+022C): L&lt;&lt;618.0,1702.0&gt;--&lt;618.0,1801.0&gt;&gt; has the same coordinates as a previous segment.
+* uni022C (U+022C): L&lt;&lt;716.0,1686.0&gt;--&lt;716.0,1785.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni022D (U+022D): L&lt;&lt;316.0,1374.0&gt;--&lt;316.0,1275.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni022D (U+022D): L&lt;&lt;666.0,1214.0&gt;--&lt;666.0,1313.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni0306 (U+0306): L&lt;&lt;182.0,859.0&gt;--&lt;182.0,791.0&gt;&gt; has the same coordinates as a previous segment.
+* uni0306 (U+0306): L&lt;&lt;182.0,904.0&gt;--&lt;182.0,791.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni0306 (U+0306): L&lt;&lt;-142.0,859.0&gt;--&lt;-142.0,791.0&gt;&gt; has the same coordinates as a previous segment.
+* uni0306 (U+0306): L&lt;&lt;-142.0,904.0&gt;--&lt;-142.0,791.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni0311 (U+0311): L&lt;&lt;-193.0,834.0&gt;--&lt;-193.0,902.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5760,17 +5874,17 @@ U+0384</p>
 
 * uni1E2B (U+1E2B): L&lt;&lt;393.0,-215.0&gt;--&lt;393.0,-283.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4C (U+1E4C): L&lt;&lt;268.0,1862.0&gt;--&lt;268.0,1763.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4C (U+1E4C): L&lt;&lt;366.0,1846.0&gt;--&lt;366.0,1747.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4C (U+1E4C): L&lt;&lt;618.0,1702.0&gt;--&lt;618.0,1801.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4C (U+1E4C): L&lt;&lt;716.0,1686.0&gt;--&lt;716.0,1785.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E4D (U+1E4D): L&lt;&lt;316.0,1374.0&gt;--&lt;316.0,1275.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E4D (U+1E4D): L&lt;&lt;666.0,1214.0&gt;--&lt;666.0,1313.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4E (U+1E4E): L&lt;&lt;268.0,1862.0&gt;--&lt;268.0,1763.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4E (U+1E4E): L&lt;&lt;366.0,1846.0&gt;--&lt;366.0,1747.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E4E (U+1E4E): L&lt;&lt;618.0,1702.0&gt;--&lt;618.0,1801.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E4E (U+1E4E): L&lt;&lt;716.0,1686.0&gt;--&lt;716.0,1785.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E4F (U+1E4F): L&lt;&lt;316.0,1374.0&gt;--&lt;316.0,1275.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5814,9 +5928,9 @@ U+0384</p>
 
 * uni1E79 (U+1E79): L&lt;&lt;602.0,1202.0&gt;--&lt;602.0,1301.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E7C (U+1E7C): L&lt;&lt;308.0,1858.0&gt;--&lt;308.0,1759.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E7C (U+1E7C): L&lt;&lt;373.0,1828.0&gt;--&lt;373.0,1729.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1E7C (U+1E7C): L&lt;&lt;658.0,1698.0&gt;--&lt;658.0,1797.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1E7C (U+1E7C): L&lt;&lt;723.0,1668.0&gt;--&lt;723.0,1767.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E7D (U+1E7D): L&lt;&lt;344.0,1338.0&gt;--&lt;344.0,1239.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5830,53 +5944,53 @@ U+0384</p>
 
 * uni1EAB (U+1EAB): L&lt;&lt;723.0,1417.0&gt;--&lt;723.0,1516.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAE (U+1EAE): L&lt;&lt;710.0,1724.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAE (U+1EAE): L&lt;&lt;710.0,1769.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAE (U+1EAE): L&lt;&lt;386.0,1724.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAE (U+1EAE): L&lt;&lt;386.0,1769.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAF (U+1EAF): L&lt;&lt;685.0,1217.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAF (U+1EAF): L&lt;&lt;685.0,1262.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAF (U+1EAF): L&lt;&lt;361.0,1217.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAF (U+1EAF): L&lt;&lt;361.0,1262.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB0 (U+1EB0): L&lt;&lt;710.0,1724.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB0 (U+1EB0): L&lt;&lt;710.0,1769.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB0 (U+1EB0): L&lt;&lt;386.0,1724.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB0 (U+1EB0): L&lt;&lt;386.0,1769.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB1 (U+1EB1): L&lt;&lt;685.0,1217.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB1 (U+1EB1): L&lt;&lt;685.0,1262.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB1 (U+1EB1): L&lt;&lt;361.0,1217.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB1 (U+1EB1): L&lt;&lt;361.0,1262.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB2 (U+1EB2): L&lt;&lt;710.0,1724.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB2 (U+1EB2): L&lt;&lt;710.0,1769.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB2 (U+1EB2): L&lt;&lt;386.0,1724.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB2 (U+1EB2): L&lt;&lt;386.0,1769.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB3 (U+1EB3): L&lt;&lt;685.0,1217.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB3 (U+1EB3): L&lt;&lt;685.0,1262.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB3 (U+1EB3): L&lt;&lt;361.0,1217.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB3 (U+1EB3): L&lt;&lt;361.0,1262.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EB4 (U+1EB4): L&lt;&lt;428.0,2077.0&gt;--&lt;428.0,1978.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EB4 (U+1EB4): L&lt;&lt;778.0,1917.0&gt;--&lt;778.0,2016.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB4 (U+1EB4): L&lt;&lt;710.0,1724.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB4 (U+1EB4): L&lt;&lt;710.0,1769.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB4 (U+1EB4): L&lt;&lt;386.0,1724.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB4 (U+1EB4): L&lt;&lt;386.0,1769.0&gt;--&lt;386.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EB5 (U+1EB5): L&lt;&lt;399.0,1521.0&gt;--&lt;399.0,1422.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EB5 (U+1EB5): L&lt;&lt;749.0,1361.0&gt;--&lt;749.0,1460.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB5 (U+1EB5): L&lt;&lt;685.0,1217.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB5 (U+1EB5): L&lt;&lt;685.0,1262.0&gt;--&lt;685.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB5 (U+1EB5): L&lt;&lt;361.0,1217.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB5 (U+1EB5): L&lt;&lt;361.0,1262.0&gt;--&lt;361.0,1149.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB6 (U+1EB6): L&lt;&lt;688.0,1738.0&gt;--&lt;688.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB6 (U+1EB6): L&lt;&lt;688.0,1783.0&gt;--&lt;688.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB6 (U+1EB6): L&lt;&lt;364.0,1738.0&gt;--&lt;364.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB6 (U+1EB6): L&lt;&lt;364.0,1783.0&gt;--&lt;364.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB7 (U+1EB7): L&lt;&lt;676.0,1213.0&gt;--&lt;676.0,1145.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB7 (U+1EB7): L&lt;&lt;676.0,1258.0&gt;--&lt;676.0,1145.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EB7 (U+1EB7): L&lt;&lt;352.0,1213.0&gt;--&lt;352.0,1145.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EB7 (U+1EB7): L&lt;&lt;352.0,1258.0&gt;--&lt;352.0,1145.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EBC (U+1EBC): L&lt;&lt;282.0,1857.0&gt;--&lt;282.0,1758.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -5972,7 +6086,31 @@ U+0384</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- L_periodcentered.loclCAT
+<pre><code>- Blinebelow
+
+- Dlinebelow
+
+- Ereversed
+
+- Klinebelow
+
+- L_periodcentered.loclCAT
+
+- brevecomb_acutecomb
+
+- brevecomb_gravecomb
+
+- brevecomb_hookabovecomb
+
+- brevecomb_tildecomb
+
+- circumflexcomb_acutecomb
+
+- circumflexcomb_gravecomb
+
+- circumflexcomb_hookabovecomb
+
+- circumflexcomb_tildecomb
 
 - idotaccent
 
@@ -6022,25 +6160,31 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, math, cherokee</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, glagolitic, math, elbasan, coptic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, math, canadian-aboriginal, todhri, duployan, coptic, malayalam, hebrew, tai-le, old-permic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: elbasan, gothic, glagolitic, math, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: todhri, syriac, old-permic, hebrew, math, malayalam, canadian-aboriginal, duployan, tai-le, coptic, tifinagh</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
+<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+030D COMBINING VERTICAL LINE ABOVE: try adding sunuwar</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
 <li>U+0310 COMBINING CANDRABINDU: try adding one of: sunuwar, math</li>
-<li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
+<li>U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
+<li>U+0315 COMBINING COMMA ABOVE RIGHT: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, syriac, cherokee</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, cherokee, syriac</li>
+<li>U+0325 COMBINING RING BELOW: try adding syriac</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: gothic, syriac, tifinagh, cherokee, thai, sunuwar, caucasian-albanian</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: syriac, gothic, caucasian-albanian, cherokee, sunuwar, thai, tifinagh</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
+<li>U+035F COMBINING DOUBLE MACRON BELOW: not included in any glyphset definition</li>
+<li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
+<li>U+2016 DOUBLE VERTICAL LINE: try adding math</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+2052 COMMERCIAL MINUS SIGN: not included in any glyphset definition</li>
@@ -6073,7 +6217,21 @@ definitions.</p>
 <li>U+208C SUBSCRIPT EQUALS SIGN: try adding math</li>
 <li>U+208D SUBSCRIPT LEFT PARENTHESIS: try adding math</li>
 <li>U+208E SUBSCRIPT RIGHT PARENTHESIS: try adding math</li>
-<li>U+2116 NUMERO SIGN: try adding cyrillic</li>
+<li>U+2126 OHM SIGN: try adding math</li>
+<li>U+2153 VULGAR FRACTION ONE THIRD: try adding symbols</li>
+<li>U+2154 VULGAR FRACTION TWO THIRDS: try adding symbols</li>
+<li>U+2190 LEFTWARDS ARROW: try adding one of: symbols, math</li>
+<li>U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
+<li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2198 SOUTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2206 INCREMENT: try adding math</li>
+<li>U+220F N-ARY PRODUCT: try adding math</li>
+<li>U+2211 N-ARY SUMMATION: try adding math</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: yi, symbols, math, tai-tham</li>
 <li>U+2248 ALMOST EQUAL TO: try adding math</li>
 <li>U+2260 NOT EQUAL TO: try adding math</li>
 <li>U+2264 LESS-THAN OR EQUAL TO: try adding math</li>
@@ -6084,7 +6242,7 @@ definitions.</p>
 <li>U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition</li>
 <li>U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition</li>
 </ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>devanagari</code>, <code>greek</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>cyrillic-ext</code>, <code>devanagari</code>, <code>greek</code>, <code>latin</code>, <code>latin-ext</code>, <code>vietnamese</code></p>
  [code: unreachable-subsetting]
 
 
@@ -6102,10 +6260,10 @@ definitions.</p>
 
 
 
-* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̐</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i̛̅ i̛̇ i̛̊ i̛̋ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ i̤̐ i̤̒ i̦̅ i̦̇ i̦̊ i̦̋ i̦̐</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Longto (Latn, 5,000 speakers), Sar (Latn, 500,000 speakers), Vute (Latn, 21,000 speakers), Ebira (Latn, 2,200,000 speakers), Cicipu (Latn, 44,000 speakers), Southern Tutchone (Latn, 65 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nzakara (Latn, 50,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Koonzime (Latn, 40,000 speakers), Western Krahn (Latn, 97,800 speakers), Avokaya (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Han (Latn, 6 speakers), Ma’di (Latn, 584,000 speakers), Kaska (Latn, 125 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Lugbara (Latn, 2,200,000 speakers), South Central Banda (Latn, 244,000 speakers), Zapotec (Latn, 490,000 speakers), Kom (Latn, 360,685 speakers), Navajo (Latn, 166,319 speakers), Yala (Latn, 200,000 speakers), Abua (Latn, 25,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dan (Latn, 1,099,244 speakers), Teke-Ebo (Latn, 260,000 speakers), Dii (Latn, 71,000 speakers), Igbo (Latn, 27,823,640 speakers), Bafut (Latn, 158,146 speakers), Northern Tutchone (Latn, 85 speakers), Fur (Latn, 1,230,163 speakers), Heiltsuk (Latn, 300 speakers), Mango (Latn, 77,000 speakers), Keliko (Latn, 63,000 speakers), Aghem (Latn, 38,843 speakers), Makaa (Latn, 221,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ejagham (Latn, 120,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Ekpeye (Latn, 226,000 speakers), Ikwere (Latn, 717,000 speakers), Mfumte (Latn, 79,000 speakers), Bete-Bendi (Latn, 100,000 speakers).</p>
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̍ i̐ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̏ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i̛̅ i̛̇ i̛̊ i̛̋ i̛̍ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ i̤̍ i̤̐ i̤̒ i̥̅ i̥̇ i̥̊</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mundani (Latn, 34,000 speakers), Keliko (Latn, 63,000 speakers), Igbo (Latn, 27,823,640 speakers), Koonzime (Latn, 40,000 speakers), Abua (Latn, 25,000 speakers), Han (Latn, 6 speakers), Dii (Latn, 71,000 speakers), Basaa (Latn, 332,940 speakers), Dan (Latn, 1,099,244 speakers), Vute (Latn, 21,000 speakers), Yala (Latn, 200,000 speakers), Kom (Latn, 360,685 speakers), Gulay (Latn, 250,478 speakers), Kaska (Latn, 125 speakers), Ekpeye (Latn, 226,000 speakers), Ebira (Latn, 2,200,000 speakers), Longto (Latn, 5,000 speakers), Teke-Ebo (Latn, 260,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Heiltsuk (Latn, 300 speakers), Sar (Latn, 500,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Bafut (Latn, 158,146 speakers), Cicipu (Latn, 44,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Ikwere (Latn, 717,000 speakers), Northern Tutchone (Latn, 85 speakers), Mfumte (Latn, 79,000 speakers), Southern Tutchone (Latn, 65 speakers), Aghem (Latn, 38,843 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Western Krahn (Latn, 97,800 speakers), Makaa (Latn, 221,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Avokaya (Latn, 100,000 speakers), South Central Banda (Latn, 244,000 speakers), Mango (Latn, 77,000 speakers), Navajo (Latn, 166,319 speakers), Ejagham (Latn, 120,000 speakers), Southern Kisi (Latn, 360,000 speakers), Nateni (Latn, 100,000 speakers), Fur (Latn, 1,230,163 speakers), Nzakara (Latn, 50,000 speakers), Zapotec (Latn, 490,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -6148,6 +6306,10 @@ definitions.</p>
 
 * Eogonek (U+0118): X=477.0,Y=-1.0 (should be at baseline 0?)
 
+* Eopen (U+0190): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* Eopen (U+0190): X=96.0,Y=2.0 (should be at baseline 0?)
+
 * beta (U+03B2): X=107.0,Y=1547.0 (should be at cap-height 1548?)
 
 * beta (U+03B2): X=107.0,Y=1547.0 (should be at cap-height 1548?)
@@ -6166,11 +6328,19 @@ definitions.</p>
 
 * ccedilla (U+00E7): X=568.0,Y=2.0 (should be at baseline 0?)
 
+* dblverticalbar (U+2016): X=454.0,Y=-1.0 (should be at baseline 0?)
+
+* dblverticalbar (U+2016): X=251.0,Y=-1.0 (should be at baseline 0?)
+
 * delta (U+03B4): X=331.0,Y=1549.0 (should be at cap-height 1548?)
 
 * delta (U+03B4): X=863.0,Y=1549.0 (should be at cap-height 1548?)
 
 * delta (U+03B4): X=331.0,Y=1549.0 (should be at cap-height 1548?)
+
+* eopen (U+025B): X=296.0,Y=1.0 (should be at baseline 0?)
+
+* eopen (U+025B): X=96.0,Y=2.0 (should be at baseline 0?)
 
 * epsilon (U+03B5): X=296.0,Y=1.0 (should be at baseline 0?)
 
@@ -6196,6 +6366,10 @@ definitions.</p>
 
 * kaiSymbol (U+03D7): X=845.0,Y=-2.0 (should be at baseline 0?)
 
+* literSign (U+2113): X=555.0,Y=1549.0 (should be at cap-height 1548?)
+
+* literSign (U+2113): X=555.0,Y=1549.0 (should be at cap-height 1548?)
+
 * omega (U+03C9): X=102.0,Y=2.0 (should be at baseline 0?)
 
 * omega (U+03C9): X=921.0,Y=2.0 (should be at baseline 0?)
@@ -6203,54 +6377,6 @@ definitions.</p>
 * omegatonos (U+03CE): X=102.0,Y=2.0 (should be at baseline 0?)
 
 * omegatonos (U+03CE): X=921.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=602.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=1026.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EA (U+01EA): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EB (U+01EB): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01EB (U+01EB): X=595.0,Y=1.0 (should be at baseline 0?)
-
-* uni01EB (U+01EB): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01EB (U+01EB): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01EB (U+01EB): X=1019.0,Y=1.0 (should be at baseline 0?)
-
-* uni01EB (U+01EB): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=602.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=1026.0,Y=2.0 (should be at baseline 0?)
-
-* uni01EC (U+01EC): X=484.0,Y=2.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=595.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=1019.0,Y=1.0 (should be at baseline 0?)
-
-* uni01ED (U+01ED): X=477.0,Y=1.0 (should be at baseline 0?)
 
 * uni0947 (U+0947): X=66.0,Y=1550.0 (should be at cap-height 1548?)
 
@@ -6376,11 +6502,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">195.0kb</td>
+<td align="right">211.0kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">195.0kb</td>
+<td align="right">211.1kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -7300,24 +7426,6 @@ flag = 0x0F
 
 
 * ✅ **PASS** <p>Font has no GPOS7 lookups</p>
- 
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>✅ <b>PASS</b> Detect any interpolation issues in the font. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#interpolation-issues">interpolation_issues</a></summary>
-    <div>
-
-
-
-
-
-
-
-* ✅ **PASS** <p>No interpolation issues found</p>
  
 
 
@@ -10310,8 +10418,8 @@ You'll also need to use the <code>--configuration</code> flag when invoking font
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 16 | 28 | 169 | 13 | 229 | 0 | 
-| 0% | 0% | 4% | 6% | 37% | 3% | 50% | 0% | 
+| 0 | 0 | 16 | 30 | 169 | 13 | 227 | 0 | 
+| 0% | 0% | 4% | 7% | 37% | 3% | 50% | 0% | 
 
 
 
