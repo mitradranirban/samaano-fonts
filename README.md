@@ -59,7 +59,7 @@ This font is created by Dr Anirban Mitra, an amateure Typographer and Free Softw
 
 20th March 2025 - Version 2.300
   * Added Monotonic Greek
-  * Extended Latin to include panNigerian and 
+  * Extended Latin to include panNigerian and Pinyin and DIN91379 
 
 Road Map for Version 3 
 
