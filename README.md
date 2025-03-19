@@ -30,41 +30,42 @@ Following are the specialities of the font
 
 * Three Variable axes of Weight, Width, and Slant
 
-![animation](documentation/SamaanoV2.3.gif)
+![animation](documentation/samaano.gif)
 
 
 * Simple Glyph construction using Rectangular or quadrilateral components only
-
-* Extensive coverage of many Latin Based Languages including East European Languages, Vietnamese and Devanagari.
-now Samaano support 534 Latin based,16 Devanagari Based languages and Monotonic Greek.
+![Sample Image2](documentation/image2.png)
+ 
+* Extensive coverage of many Latin Based Languages including Nigerian Languages, Vietnamese along with Monotonic Greek and Devanagari.Now, as per Shaperglot, Samaano supports 537 Latin based,16 Devanagari Based languages and Monotonic Greek.
 
 ![shaperglot](documentation/samaano-shaperglot.png)
 
-![Sample Image2](documentation/image2.png)
- 
+
 
 ## About
 This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.
  
 ## Changelog
  
-10 October 2024 - Version 1.000 - First Release
+####10 October 2024 - Version 1.000 
+ * First Release
 
-13 November 2024 - Version 2.000
+####13 November 2024 - Version 2.000
   * Added additional axis of Slant
 
-  * Added support for East European Latin based Languages Indic Translitteration and Vietnamese
+  * Added support for East European Latin based Languages, Indic Translitteration and Vietnamese
 
   * Update Devanagari Open  Type Tables to version 2 with addition of GPOS features
 
-20th March 2025 - Version 2.300
+####20 March 2025 - Version 2.301
   * Added Monotonic Greek
-  * Extended Latin to include panNigerian and Pinyin and DIN91379 
+  * Extended Latin to include panNigerian, Pinyin and DIN91379.
+  * Addition of Arrows, Geometric shapes and Mathametical Operators
 
-Road Map for Version 3 
+####Road Map for Version 3
 
 * Addition of Tamil, Math,  and Cyrillic
-* Further extension of Lating to include most African languages 
+* Further extension of Latin to support most African languages.
 
 
 

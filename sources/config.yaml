@@ -23,6 +23,9 @@ buildOTF: true
 buildSmallCap: true
 autohintTTF: true
 includeSourceFixes: false
+flattenComponents: true
+decomposeTransformedComponents: true
+checkCompatibility: true
 splitItalic: false
 axisOrder:
   - slnt
