@@ -160,7 +160,7 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 * ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
-uni0955 (U+0955)</p>
+uni0955 (U+0955) and uni0B82 (U+0B82)</p>
  [code: mark-chars]
 
 
@@ -178,7 +178,7 @@ uni0955 (U+0955)</p>
 
 
 
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1217 instead.
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1220 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
  [code: bad-numberOfHMetrics]
 
@@ -236,33 +236,33 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 1 in glyph 'uni0312': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+<pre><code>- Contour 4 in glyph 'Nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour 4 in glyph 'Chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 7 in glyph 'uni20BF': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
 
-- Contour 4 in glyph 'khook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 4 in glyph 'nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour order differs in glyph 'blinebelow': [0, 1, 2, 3, 4] in slnt=0,wdth=200,wght=100, [4, 1, 2, 3, 0] in slnt=-20,wdth=200,wght=100.
 
 - Contour 5 in glyph 'dhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour 3 in glyph 'Dcroat': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+- Contour 5 in glyph 'bhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'Chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 3 in glyph 'Eth': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+
+- Contour 4 in glyph 'khook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 1 in glyph 'uni0312': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 5 in glyph 'yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 5 in glyph 'Yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour order differs in glyph 'blinebelow': [0, 1, 2, 3, 4] in slnt=0,wdth=200,wght=100, [4, 1, 2, 3, 0] in slnt=-20,wdth=200,wght=100.
-
-- Contour 3 in glyph 'Eth': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
-
-- Contour 7 in glyph 'uni20BF': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
-
-- Contour 4 in glyph 'Nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'bhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 4 in glyph 'chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 3 in glyph 'Dcroat': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
 </code></pre>
  [code: interpolation-issues]
 
@@ -1007,29 +1007,32 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, cherokee, math</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: glagolitic, elbasan, coptic, math, gothic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, tifinagh, cherokee</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, glagolitic, coptic, math, elbasan</li>
 <li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, syriac, coptic, hebrew, duployan, tai-le, todhri, old-permic, math, canadian-aboriginal</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, syriac, tifinagh, todhri, duployan, canadian-aboriginal, coptic, hebrew, old-permic, math, tai-le</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+030D COMBINING VERTICAL LINE ABOVE: try adding sunuwar</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
 <li>U+0310 COMBINING CANDRABINDU: try adding one of: math, sunuwar</li>
-<li>U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic</li>
+<li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+0315 COMBINING COMMA ABOVE RIGHT: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, duployan, cherokee</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
 <li>U+0325 COMBINING RING BELOW: try adding syriac</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: tifinagh, cherokee, sunuwar, syriac, thai, caucasian-albanian, gothic</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: gothic, syriac, tifinagh, caucasian-albanian, cherokee, thai, sunuwar</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
 <li>U+035F COMBINING DOUBLE MACRON BELOW: not included in any glyphset definition</li>
+<li>U+0B82 TAMIL SIGN ANUSVARA: try adding tamil</li>
+<li>U+0B83 TAMIL SIGN VISARGA: try adding tamil</li>
+<li>U+0B85 TAMIL LETTER A: try adding tamil</li>
 <li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
 <li>U+2016 DOUBLE VERTICAL LINE: try adding math</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
@@ -1068,20 +1071,20 @@ definitions.</p>
 <li>U+212E ESTIMATED SYMBOL: try adding math</li>
 <li>U+2153 VULGAR FRACTION ONE THIRD: try adding symbols</li>
 <li>U+2154 VULGAR FRACTION TWO THIRDS: try adding symbols</li>
-<li>U+2190 LEFTWARDS ARROW: try adding one of: symbols, math</li>
-<li>U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math</li>
-<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
-<li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
-<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
-<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
-<li>U+2198 SOUTH EAST ARROW: try adding one of: symbols, math</li>
-<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2190 LEFTWARDS ARROW: try adding one of: math, symbols</li>
+<li>U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: math, symbols</li>
+<li>U+2195 UP DOWN ARROW: try adding one of: math, symbols</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: math, symbols</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: math, symbols</li>
+<li>U+2198 SOUTH EAST ARROW: try adding one of: math, symbols</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: math, symbols</li>
 <li>U+2202 PARTIAL DIFFERENTIAL: try adding math</li>
 <li>U+2205 EMPTY SET: try adding math</li>
 <li>U+2206 INCREMENT: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: symbols, tai-tham, math, yi</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: math, yi, tai-tham, symbols</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+222B INTEGRAL: try adding math</li>
@@ -1095,24 +1098,24 @@ definitions.</p>
 <li>U+25AA BLACK SMALL SQUARE: try adding symbols</li>
 <li>U+25AB WHITE SMALL SQUARE: try adding symbols</li>
 <li>U+25B2 BLACK UP-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25B4 BLACK UP-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25B5 WHITE UP-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25B6 BLACK RIGHT-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25B8 BLACK RIGHT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25B9 WHITE RIGHT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25BC BLACK DOWN-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25BE BLACK DOWN-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25BF WHITE DOWN-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C0 BLACK LEFT-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25C2 BLACK LEFT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C3 WHITE LEFT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C6 BLACK DIAMOND: try adding symbols</li>
 <li>U+25C7 WHITE DIAMOND: try adding symbols</li>
-<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
+<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
 <li>U+25CF BLACK CIRCLE: try adding symbols</li>
 <li>U+25E6 WHITE BULLET: try adding symbols</li>
@@ -1142,8 +1145,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̍ i̐ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̏ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i̛̅ i̛̇ i̛̊ i̛̋ i̛̍ i̛̐ i̛̒ i̤̅ i̤̇ i̤̊ i̤̋ i̤̍ i̤̐ i̤̒ i̥̅ i̥̇ i̥̊</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Teke-Ebo (Latn, 260,000 speakers), South Central Banda (Latn, 244,000 speakers), Koonzime (Latn, 40,000 speakers), Keliko (Latn, 63,000 speakers), Abua (Latn, 25,000 speakers), Nateni (Latn, 100,000 speakers), Dan (Latn, 1,099,244 speakers), Gulay (Latn, 250,478 speakers), Zapotec (Latn, 490,000 speakers), Aghem (Latn, 38,843 speakers), Cicipu (Latn, 44,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ebira (Latn, 2,200,000 speakers), Heiltsuk (Latn, 300 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Navajo (Latn, 166,319 speakers), Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Makaa (Latn, 221,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ngbaka (Latn, 1,020,000 speakers), Vute (Latn, 21,000 speakers), Fur (Latn, 1,230,163 speakers), Mango (Latn, 77,000 speakers), Ikwere (Latn, 717,000 speakers), Ma’di (Latn, 584,000 speakers), Kaska (Latn, 125 speakers), Mundani (Latn, 34,000 speakers), Northern Tutchone (Latn, 85 speakers), Igbo (Latn, 27,823,640 speakers), Ejagham (Latn, 120,000 speakers), Southern Kisi (Latn, 360,000 speakers), Basaa (Latn, 332,940 speakers), Avokaya (Latn, 100,000 speakers), Western Krahn (Latn, 97,800 speakers), Sar (Latn, 500,000 speakers), Lugbara (Latn, 2,200,000 speakers), Dii (Latn, 71,000 speakers), Ekpeye (Latn, 226,000 speakers), Yala (Latn, 200,000 speakers), Bafut (Latn, 158,146 speakers), Kom (Latn, 360,685 speakers), Han (Latn, 6 speakers), Bete-Bendi (Latn, 100,000 speakers), Longto (Latn, 5,000 speakers), Southern Tutchone (Latn, 65 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Northern Tutchone (Latn, 85 speakers), Koonzime (Latn, 40,000 speakers), Heiltsuk (Latn, 300 speakers), Ma’di (Latn, 584,000 speakers), Basaa (Latn, 332,940 speakers), Sar (Latn, 500,000 speakers), Ebira (Latn, 2,200,000 speakers), Bafut (Latn, 158,146 speakers), Cicipu (Latn, 44,000 speakers), Mango (Latn, 77,000 speakers), Ikwere (Latn, 717,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Lugbara (Latn, 2,200,000 speakers), Dan (Latn, 1,099,244 speakers), Mundani (Latn, 34,000 speakers), Teke-Ebo (Latn, 260,000 speakers), Vute (Latn, 21,000 speakers), Ejagham (Latn, 120,000 speakers), Bete-Bendi (Latn, 100,000 speakers), South Central Banda (Latn, 244,000 speakers), Kaska (Latn, 125 speakers), Southern Kisi (Latn, 360,000 speakers), Avokaya (Latn, 100,000 speakers), Dii (Latn, 71,000 speakers), Makaa (Latn, 221,000 speakers), Abua (Latn, 25,000 speakers), Zapotec (Latn, 490,000 speakers), Ekpeye (Latn, 226,000 speakers), Nateni (Latn, 100,000 speakers), Navajo (Latn, 166,319 speakers), Fur (Latn, 1,230,163 speakers), Western Krahn (Latn, 97,800 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Gulay (Latn, 250,478 speakers), Han (Latn, 6 speakers), Kom (Latn, 360,685 speakers), Yala (Latn, 200,000 speakers), Southern Tutchone (Latn, 65 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers), Nzakara (Latn, 50,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Keliko (Latn, 63,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Mfumte (Latn, 79,000 speakers), Longto (Latn, 5,000 speakers), Igbo (Latn, 27,823,640 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1266,6 +1269,36 @@ definitions.</p>
 
 * uni0947 (U+0947): X=66.0,Y=1550.0 (should be at cap-height 1548?)
 
+* uni0B85 (U+0B85): X=773.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=973.0,Y=1549.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=973.0,Y=1.0 (should be at baseline 0?)
+
+* uni0B85 (U+0B85): X=773.0,Y=-2.0 (should be at baseline 0?)
+
+* uni0B85 (U+0B85): X=773.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=153.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=358.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=153.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=157.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=588.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=157.0,Y=1546.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=467.0,Y=1547.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=467.0,Y=1547.0 (should be at cap-height 1548?)
+
+* uni0B85 (U+0B85): X=672.0,Y=1.0 (should be at baseline 0?)
+
+* uni0B85 (U+0B85): X=27.0,Y=-1.0 (should be at baseline 0?)
+
 * uni1E09 (U+1E09): X=568.0,Y=2.0 (should be at baseline 0?)
 
 * uni1E09 (U+1E09): X=724.0,Y=2.0 (should be at baseline 0?)
@@ -1370,11 +1403,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">327.3kb</td>
+<td align="right">328.5kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">327.3kb</td>
+<td align="right">328.6kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
