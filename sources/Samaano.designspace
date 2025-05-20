@@ -8,6 +8,9 @@
       </labels>
     </axis>
     <axis tag="wdth" name="width" minimum="100" maximum="200" default="100">
+      <map input="100" output="100"/>
+      <map input="125" output="130"/>
+      <map input="200" output="200"/>
       <labels>
         <label uservalue="100" name="Normal" elidable="true"/>
         <label uservalue="112.5" name="SemiExpanded"/>
@@ -17,6 +20,13 @@
       </labels>
     </axis>
     <axis tag="wght" name="weight" minimum="100" maximum="700" default="700">
+      <map input="100" output="100"/>
+      <map input="200" output="180"/>
+      <map input="300" output="320"/>
+      <map input="400" output="400"/>
+      <map input="500" output="490"/>
+      <map input="600" output="610"/>
+      <map input="700" output="700"/>
       <labels>
         <label uservalue="100" name="Thin"/>
         <label uservalue="200" name="ExtraLight"/>
@@ -86,5 +96,4 @@
       </location>
     </source>
   </sources>
-  
 </designspace>
