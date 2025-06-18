@@ -9,9 +9,16 @@ languagesystem latn MOL ;
 languagesystem latn ROM ;
 languagesystem latn TAT ;
 languagesystem latn TRK ;
+languagesystem tml2 dflt;
 
 
 # GSUB 
+
+
+lookup akhnAkhandinTamil2lookup0 {
+  lookupflag 0;
+    sub \uni0B95 \uni0BCD \uni0BB7  by \uni0B95_uni0BB7.akhn;
+} akhnAkhandinTamil2lookup0;
 
 
 lookup loclLocalizedFormsinLatinlookup9 {
@@ -29,6 +36,12 @@ lookup loclLocalizedFormsinLatinlookup10 {
     sub \uni0162 by \uni021A ;
     sub \uni0163 by \uni021B ;
 } loclLocalizedFormsinLatinlookup10;
+
+lookup loclLocalizedFormsinLatinlookup11 {
+  lookupflag 0;
+    sub  \l' \periodcentered' \l   by \l_periodcentered.loclCAT ;
+    sub  \L' \periodcentered' \L   by \L_periodcentered.loclCAT ;
+} loclLocalizedFormsinLatinlookup11;
 
 lookup ligaStandardLigaturesinLatinlookup0 {
   lookupflag 0;
@@ -281,6 +294,8 @@ lookup ordnOrdinalsinLatinlookup20 {
 feature locl {
 
  script latn;
+     language CAT  exclude_dflt;
+      lookup loclLocalizedFormsinLatinlookup11;
      language MOL  exclude_dflt;
       lookup loclLocalizedFormsinLatinlookup10;
      language ROM  exclude_dflt;

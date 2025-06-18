@@ -9,9 +9,16 @@ languagesystem latn MOL ;
 languagesystem latn ROM ;
 languagesystem latn TAT ;
 languagesystem latn TRK ;
+languagesystem tml2 dflt;
 
 
 # GSUB 
+
+
+lookup akhnAkhandinTamil2lookup0 {
+  lookupflag 0;
+    sub \uni0B95 \uni0BCD \uni0BB7  by \uni0B95_uni0BB7.akhn;
+} akhnAkhandinTamil2lookup0;
 
 
 lookup loclLocalizedFormsinLatinlookup9 {
