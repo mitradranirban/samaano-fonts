@@ -291,6 +291,8 @@ lookup ordnOrdinalsinLatinlookup20 {
     sub \N \o \period  by \uni2116;
 } ordnOrdinalsinLatinlookup20;
 
+
+
 feature locl {
 
  script latn;
@@ -422,6 +424,12 @@ feature blws {
      language dflt ;
       lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12;
 } blws;
+
+feature akhn {
+ script tam2;
+    language dflt;
+      lookup  akhnAkhandinTamil2lookup0;
+ } akhn;
 
 feature dlig {
 
