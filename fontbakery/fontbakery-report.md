@@ -102,7 +102,7 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1397 instead.
+* ⚠️ **WARN** <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1403 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
  [code: bad-numberOfHMetrics]
 
@@ -293,47 +293,23 @@ acutemacroncomb (U+1DC7), gravemacroncomb (U+1DC5), macronacutecomb (U+1DC4), ma
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 4 in glyph 'chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour order differs in glyph 'Gamma-latin': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'Yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 4 in glyph 'nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 4 in glyph 'khook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+<pre><code>- Contour 5 in glyph 'Ghook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 6 in glyph 'ghook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 5 in glyph 'Whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour order differs in glyph 'blinebelow': [0, 1, 2, 3, 4] in slnt=0,wdth=200,wght=100, [4, 1, 2, 3, 0] in slnt=-20,wdth=200,wght=100.
 
 - Contour 4 start point differs in glyph 'uni0BAF' between location slnt=-20,wdth=200,wght=700 and location slnt=-20,wdth=100,wght=100
 
 - Contour 4 start point differs in glyph 'uni0BAF' between location slnt=-20,wdth=100,wght=100 and location slnt=0,wdth=200,wght=100
 
-- Contour 5 in glyph 'yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 4 in glyph 'nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour 1 in glyph 'uni0312': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'Whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'phook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 5 in glyph 'Yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 5 in glyph 'dhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 3 in glyph 'Dcroat': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
-
-- Contour order differs in glyph 'gamma-latin': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
-
-- Contour 4 in glyph 'Nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 4 in glyph 'Chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour order differs in glyph 'Ramshorn': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
-
-- Contour 3 in glyph 'Eth': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
-
-- Contour 4 in glyph 'Fhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 3 in glyph 'thook': becomes underweight between slnt=0,wdth=100,wght=700 and slnt=-20,wdth=100,wght=700.
 
@@ -351,19 +327,43 @@ acutemacroncomb (U+1DC7), gravemacroncomb (U+1DC5), macronacutecomb (U+1DC4), ma
 
 - Contour 4 in glyph 'thook': becomes underweight between slnt=0,wdth=200,wght=100 and slnt=-20,wdth=200,wght=100.
 
-- Contour order differs in glyph 'blinebelow': [0, 1, 2, 3, 4] in slnt=0,wdth=200,wght=100, [4, 1, 2, 3, 0] in slnt=-20,wdth=200,wght=100.
+- Contour 4 in glyph 'chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 4 in glyph 'hhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour 5 in glyph 'bhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 4 in glyph 'Nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 3 in glyph 'Dcroat': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+
+- Contour 4 in glyph 'khook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 3 in glyph 'Eth': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+
+- Contour order differs in glyph 'Gamma-latin': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
+
+- Contour 5 in glyph 'phook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour order differs in glyph 'ramshorn': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
 
 - Contour 1 start point differs in glyph 'ramshorn' between location slnt=-20,wdth=100,wght=100 and location slnt=0,wdth=200,wght=100
 
+- Contour 5 in glyph 'yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 5 in glyph 'whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'Chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'Fhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour order differs in glyph 'gamma-latin': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
+
+- Contour 5 in glyph 'bhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 1 in glyph 'uni0312': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
 - Contour 7 in glyph 'uni20BF': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
 
-- Contour 5 in glyph 'Ghook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour order differs in glyph 'Ramshorn': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
 </code></pre>
  [code: interpolation-issues]
 
@@ -866,6 +866,14 @@ acutemacroncomb (U+1DC7), gravemacroncomb (U+1DC5), macronacutecomb (U+1DC4), ma
 
 * uni0BF4 (U+0BF4): L&lt;&lt;931.0,1532.0&gt;--&lt;931.0,1628.0&gt;&gt; has the same coordinates as a previous segment.
 
+* uni0BF5 (U+0BF5): L&lt;&lt;360.0,676.0&gt;--&lt;457.0,678.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni0BF7 (U+0BF7): L&lt;&lt;856.0,213.0&gt;--&lt;916.0,212.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni0BF9 (U+0BF9): L&lt;&lt;625.0,1510.0&gt;--&lt;725.0,1509.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni0BFA (U+0BFA): L&lt;&lt;817.0,1451.0&gt;--&lt;897.0,1450.0&gt;&gt; has the same coordinates as a previous segment.
+
 * uni1E02 (U+1E02): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1E02 (U+1E02): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
@@ -1158,21 +1166,21 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, glagolitic, elbasan, math, coptic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: elbasan, coptic, gothic, glagolitic, math</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: old-permic, hebrew, tai-le, math, tifinagh, duployan, malayalam, todhri, coptic, syriac, canadian-aboriginal</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: todhri, coptic, duployan, tifinagh, canadian-aboriginal, math, old-permic, tai-le, malayalam, hebrew, syriac</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+030D COMBINING VERTICAL LINE ABOVE: try adding sunuwar</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
 <li>U+0310 COMBINING CANDRABINDU: try adding one of: math, sunuwar</li>
-<li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
+<li>U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+0315 COMBINING COMMA ABOVE RIGHT: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: cherokee, duployan, syriac</li>
 <li>U+0325 COMBINING RING BELOW: try adding syriac</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
@@ -1181,7 +1189,7 @@ definitions.</p>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
 <li>U+032F COMBINING INVERTED BREVE BELOW: try adding math</li>
 <li>U+0330 COMBINING TILDE BELOW: try adding one of: math, cherokee, syriac</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: gothic, cherokee, thai, tifinagh, caucasian-albanian, sunuwar, syriac</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: caucasian-albanian, cherokee, thai, gothic, tifinagh, sunuwar, syriac</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
 <li>U+035F COMBINING DOUBLE MACRON BELOW: not included in any glyphset definition</li>
 <li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
@@ -1242,7 +1250,7 @@ definitions.</p>
 <li>U+2206 INCREMENT: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: math, yi, tai-tham, symbols</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: yi, math, symbols, tai-tham</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+222B INTEGRAL: try adding math</li>
@@ -1421,11 +1429,11 @@ Please visit <a href="http://namecheck.fontdata.com/?q=Samaano">http://namecheck
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">360.8kb</td>
+<td align="right">364.8kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">360.8kb</td>
+<td align="right">364.8kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
