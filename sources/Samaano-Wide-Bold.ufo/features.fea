@@ -9,16 +9,10 @@ languagesystem latn MOL ;
 languagesystem latn ROM ;
 languagesystem latn TAT ;
 languagesystem latn TRK ;
-languagesystem tml2 dflt;
+languagesystem tam2 dflt;
 
 
 # GSUB 
-
-
-lookup akhnAkhandinTamil2lookup0 {
-  lookupflag 0;
-    sub \uni0B95 \uni0BCD \uni0BB7  by \uni0B95_uni0BB7.akhn;
-} akhnAkhandinTamil2lookup0;
 
 
 lookup loclLocalizedFormsinLatinlookup9 {
@@ -266,6 +260,18 @@ lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12 {
     sub \uni0939 \uni0943  by \uni0939_uni0943.blws;
 } blwsBelowBaseSubstitutionsinDevanagari2lookup12;
 
+lookup akhnAkhandinTamil2lookup30 {
+  lookupflag 0;
+    sub \uni0B95 \uni0BCD \uni0BB7  by \uni0B95_uni0BB7.akhn;
+} akhnAkhandinTamil2lookup30;
+
+lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
+    lookupflag 0;
+    sub \uni0B95 \uni0BC1 by \uni0B95_uni0BC1;
+    sub \uni0B95 \uni0BC1 by \uni0B95_uni0BC1;
+} blwsBelowBaseSubstitutionsinTamil2lookup31;
+
+
 lookup dligDiscretionaryLigatureslookup0 {
   lookupflag 0;
     sub \f \i  by \uniFB01;
@@ -428,8 +434,15 @@ feature blws {
 feature akhn {
  script tam2;
     language dflt;
-      lookup  akhnAkhandinTamil2lookup0;
+      lookup  akhnAkhandinTamil2lookup30;
  } akhn;
+
+ feature blws{
+ 
+   script tam2;
+     language dflt;
+       lookup blwsBelowBaseSubstitutionsinTamil2lookup31;
+ }blws;
 
 feature dlig {
 
@@ -451,23 +464,7 @@ feature sups {
  script latn;
      language dflt ;
       lookup supsSuperscriptinLatinlookup16;
-     language AZE  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language CAT  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language CRT  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language KAZ  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language MOL  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language ROM  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language TAT  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language TRK  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-} sups;
+   } sups;
 
 feature ordn {
 
@@ -478,23 +475,7 @@ feature ordn {
  script latn;
      language dflt ;
       lookup ordnOrdinalsinLatinlookup20;
-     language AZE  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language CAT  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language CRT  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language KAZ  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language MOL  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language ROM  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language TAT  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language TRK  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-} ordn;
+    } ordn;
 
 # GPOS 
 
