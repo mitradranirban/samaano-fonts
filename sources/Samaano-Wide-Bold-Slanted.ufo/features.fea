@@ -13,7 +13,7 @@ languagesystem tml2 dflt;
 
 
 # GSUB 
-
+# Latin Lookups 
 
 lookup loclLocalizedFormsinLatinlookup9 {
   lookupflag 0;
@@ -86,6 +86,7 @@ lookup ordnOrdinalsinLatinlookup20 {
 } ordnOrdinalsinLatinlookup20;
 
 # Devanagari Lookups 
+
 lookup nuktNuktaFormsinDevanagari2lookup0 {
   lookupflag 0;
     sub \uni0928 \uni093C  by \uni0929;
@@ -295,7 +296,17 @@ lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
     lookupflag 0;
     sub \uni0B95 \uni0BC1 by \uni0B95_uni0BC1;
     sub \uni0B95 \uni0BC2 by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC1 by \uni0B95_uni0BC1;
+    sub \uni0B99 \uni0BC2 by \uni0B95_uni0BC2;
+    sub \uni0B9F \uni0BC1 by \uni0B9F_uni0BC1;
+    sub \uni0B9F \uni0BC2 by \uni0B9F_uni0BC2;
 } blwsBelowBaseSubstitutionsinTamil2lookup31;
+
+lookup pstsPostBaseSubstitutioninTamil2lookup32 {
+     lookupflag 0;
+     sub \uni0B9F \uni0BBF by \uni0B9F_uni0BBF;
+     sub \uni0B9F \uni0BC0 by \uni0B9F_uni0BC0;
+} pstsPostBaseSubstitutioninTamil2lookup32;
 
 
 
@@ -482,6 +493,12 @@ feature akhn {
      language dflt;
        lookup blwsBelowBaseSubstitutionsinTamil2lookup31;
  }blws;
+
+ feature psts{
+    script tml2;
+     language dflt;
+       lookup pstsPostBaseSubstitutioninTamil2lookup32;
+ }psts;
 
 
 
