@@ -18,6 +18,7 @@ otDir: $outputDir/otf
 woffDir: $outputDir/webfonts
 buildVariable: true
 buildStatic: true
+extraFontmakeArgs: "--production-names"
 buildTTF: true
 buildOTF: true
 buildSmallCap: true
