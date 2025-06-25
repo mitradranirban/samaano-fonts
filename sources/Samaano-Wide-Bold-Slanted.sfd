@@ -6,7 +6,6 @@ Weight: BoldSlanted
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: " fonts.atipra.in"
 Version: 2.400
-StyleMapFamilyName: Samaano Wide Bold Slanted
 ItalicAngle: -20
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -21,13 +20,13 @@ Layer: 1 0 "public.default" 0 "glyphs"
 StyleMap: 0x0021
 FSType: 0
 OS2Version: 0
-OS2_WeightWidthSlopeOnly: 0
-OS2_UseTypoMetrics: 0
+OS2_WeightWidthSlopeOnly: 1
+OS2_UseTypoMetrics: 1
 CreationTime: 1750841229
-ModificationTime: 1750841229
-PfmFamily: 16
+ModificationTime: 1750864715
+PfmFamily: 49
 TTFWeight: 700
-TTFWidth: 5
+TTFWidth: 9
 LineGap: 0
 VLineGap: 0
 Panose: 2 7 8 9 2 2 5 2 4 4
@@ -73,6 +72,7 @@ Lookup: 4 0 0 "pstsPostBaseSubstitutioninTamil2lookup32" { "pstsPostBaseSubstitu
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: glyph "loclLocalizedFormsinLatinlookup11 contextual 1" 0 0 0 1
  String: 16 L periodcentered
@@ -98,6 +98,8 @@ DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
 WinInfo: 0 10 4
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 1548 m 0
  2048 1548 l 1024

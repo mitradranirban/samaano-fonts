@@ -1,24 +1,5 @@
-languagesystem DFLT dflt;
-languagesystem dev2 dflt;
-languagesystem latn AZE ;
-languagesystem latn CAT ;
-languagesystem latn CRT ;
-languagesystem latn dflt;
-languagesystem latn KAZ ;
-languagesystem latn MOL ;
-languagesystem latn ROM ;
-languagesystem latn TAT ;
-languagesystem latn TRK ;
-languagesystem tml2 dflt;
-
 
 # GSUB 
-
-
-lookup akhnAkhandinTamil2lookup0 {
-  lookupflag 0;
-    sub \uni0B95 \uni0BCD \uni0BB7  by \uni0B95_uni0BB7.akhn;
-} akhnAkhandinTamil2lookup0;
 
 
 lookup loclLocalizedFormsinLatinlookup9 {
@@ -45,7 +26,6 @@ lookup loclLocalizedFormsinLatinlookup11 {
 
 lookup ligaStandardLigaturesinLatinlookup0 {
   lookupflag 0;
-    sub \L \periodcentered  by \Ldot;
     sub \i \uni030A  by \i_uni030A;
     sub \i \uni030B  by \i_uni030B;
     sub \j \gravecomb  by \j_gravecomb;
@@ -54,7 +34,6 @@ lookup ligaStandardLigaturesinLatinlookup0 {
     sub \j \uni0308  by \j_uni0308;
     sub \j \uni0311  by \j_uni0311;
     sub \j \acutecomb  by \jacute;
-    sub \l \periodcentered  by \ldot;
     sub \iogonek \gravecomb  by \uni012F_uni0300;
     sub \iogonek \acutecomb  by \uni012F_uni0301;
     sub \iogonek \uni0302  by \uni012F_uni0302;
@@ -67,6 +46,31 @@ lookup ligaStandardLigaturesinLatinlookup0 {
     sub \uni1ECB \tildecomb  by \uni1ECB_uni0303;
     sub \uni1ECB \uni0304  by \uni1ECB_uni0304;
 } ligaStandardLigaturesinLatinlookup0;
+
+lookup dligDiscretionaryLigatureslookup0 {
+  lookupflag 0;
+    sub \f \i  by \uniFB01;
+    sub \f \l  by \uniFB02;
+} dligDiscretionaryLigatureslookup0;
+
+lookup supsSuperscriptinLatinlookup16 {
+  lookupflag 0;
+    sub \eight by \uni2078 ;
+    sub \five by \uni2075 ;
+    sub \four by \uni2074 ;
+    sub \nine by \uni2079 ;
+    sub \one by \uni00B9 ;
+    sub \seven by \uni2077 ;
+    sub \six by \uni2076 ;
+    sub \three by \uni00B3 ;
+    sub \two by \uni00B2 ;
+    sub \zero by \uni2070 ;
+} supsSuperscriptinLatinlookup16;
+
+lookup ordnOrdinalsinLatinlookup20 {
+  lookupflag 0;
+    sub \N \o \period  by \uni2116;
+} ordnOrdinalsinLatinlookup20;
 
 lookup nuktNuktaFormsinDevanagari2lookup0 {
   lookupflag 0;
@@ -175,8 +179,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0931 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -266,30 +270,26 @@ lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12 {
     sub \uni0939 \uni0943  by \uni0939_uni0943.blws;
 } blwsBelowBaseSubstitutionsinDevanagari2lookup12;
 
-lookup dligDiscretionaryLigatureslookup0 {
+lookup akhnAkhandinTamil2lookup30 {
   lookupflag 0;
-    sub \f \i  by \uniFB01;
-    sub \f \l  by \uniFB02;
-} dligDiscretionaryLigatureslookup0;
+    sub \uni0B95 \uni0BCD \uni0BB7  by \uni0B95_uni0BB7.akhn;
+} akhnAkhandinTamil2lookup30;
 
-lookup supsSuperscriptinLatinlookup16 {
+lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
   lookupflag 0;
-    sub \eight by \uni2078 ;
-    sub \five by \uni2075 ;
-    sub \four by \uni2074 ;
-    sub \nine by \uni2079 ;
-    sub \one by \uni00B9 ;
-    sub \seven by \uni2077 ;
-    sub \six by \uni2076 ;
-    sub \three by \uni00B3 ;
-    sub \two by \uni00B2 ;
-    sub \zero by \uni2070 ;
-} supsSuperscriptinLatinlookup16;
+    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
+    sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
+    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
+    sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
+} blwsBelowBaseSubstitutionsinTamil2lookup31;
 
-lookup ordnOrdinalsinLatinlookup20 {
+lookup pstsPostBaseSubstitutioninTamil2lookup32 {
   lookupflag 0;
-    sub \N \o \period  by \uni2116;
-} ordnOrdinalsinLatinlookup20;
+    sub \uni0B9F \uni0BBF  by \uni0B9F_uni0BBF;
+    sub \uni0B9F \uni0BC0  by \uni0B9F_uni0BC0;
+} pstsPostBaseSubstitutioninTamil2lookup32;
 
 feature locl {
 
@@ -313,6 +313,39 @@ feature liga {
       lookup ligaStandardLigaturesinLatinlookup0;
 } liga;
 
+feature dlig {
+
+ script DFLT;
+     language dflt ;
+      lookup dligDiscretionaryLigatureslookup0;
+
+ script latn;
+     language dflt ;
+      lookup dligDiscretionaryLigatureslookup0;
+} dlig;
+
+feature sups {
+
+ script DFLT;
+     language dflt ;
+      lookup supsSuperscriptinLatinlookup16;
+
+ script latn;
+     language dflt ;
+      lookup supsSuperscriptinLatinlookup16;
+} sups;
+
+feature ordn {
+
+ script DFLT;
+     language dflt ;
+      lookup ordnOrdinalsinLatinlookup20;
+
+ script latn;
+     language dflt ;
+      lookup ordnOrdinalsinLatinlookup20;
+} ordn;
+
 feature nukt {
 
  script DFLT;
@@ -333,6 +366,10 @@ feature akhn {
  script dev2;
      language dflt ;
       lookup akhnAkhandinDevanagari2lookup0;
+
+ script tml2;
+     language dflt ;
+      lookup akhnAkhandinTamil2lookup30;
 } akhn;
 
 feature rphf {
@@ -421,69 +458,15 @@ feature blws {
  script dev2;
      language dflt ;
       lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12;
+
+ script tml2;
+     language dflt ;
+      lookup blwsBelowBaseSubstitutionsinTamil2lookup31;
 } blws;
 
-feature dlig {
+feature psts {
 
- script DFLT;
+ script tml2;
      language dflt ;
-      lookup dligDiscretionaryLigatureslookup0;
-
- script latn;
-     language dflt ;
-      lookup dligDiscretionaryLigatureslookup0;
-} dlig;
-
-feature sups {
-
- script DFLT;
-     language dflt ;
-      lookup supsSuperscriptinLatinlookup16;
-
- script latn;
-     language dflt ;
-      lookup supsSuperscriptinLatinlookup16;
-     language AZE  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language CAT  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language CRT  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language KAZ  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language MOL  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language ROM  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language TAT  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-     language TRK  exclude_dflt;
-      lookup supsSuperscriptinLatinlookup16;
-} sups;
-
-feature ordn {
-
- script DFLT;
-     language dflt ;
-      lookup ordnOrdinalsinLatinlookup20;
-
- script latn;
-     language dflt ;
-      lookup ordnOrdinalsinLatinlookup20;
-     language AZE  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language CAT  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language CRT  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language KAZ  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language MOL  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language ROM  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language TAT  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-     language TRK  exclude_dflt;
-      lookup ordnOrdinalsinLatinlookup20;
-} ordn;
+      lookup pstsPostBaseSubstitutioninTamil2lookup32;
+} psts;
