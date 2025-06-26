@@ -277,12 +277,15 @@ lookup akhnAkhandinTamil2lookup30 {
 
 lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
   lookupflag 0;
-    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
-    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
     sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
     sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
+    sub \uni0BA3 \uni0BC1  by \uni0BA3_uni0BC1;
+    sub \uni0BA3 \uni0BC2  by \uni0BA3_uni0BC2;
+    sub \uni0BA4 \uni0BC1  by \uni0BA4_uni0BC1;
 } blwsBelowBaseSubstitutionsinTamil2lookup31;
 
 lookup pstsPostBaseSubstitutioninTamil2lookup32 {
@@ -290,6 +293,14 @@ lookup pstsPostBaseSubstitutioninTamil2lookup32 {
     sub \uni0B9F \uni0BBF  by \uni0B9F_uni0BBF;
     sub \uni0B9F \uni0BC0  by \uni0B9F_uni0BC0;
 } pstsPostBaseSubstitutioninTamil2lookup32;
+
+lookup dligDiscretionaryLigaturesinTamil2lookup33 {
+  lookupflag 0;
+    sub \uni0BA3 \uni0BBE  by \uni0BA3_uni0BBE;
+    sub \uni0BC8 \uni0BA3  by \uni0BA3_uni0BC8;
+} dligDiscretionaryLigaturesinTamil2lookup33;
+
+
 
 feature locl {
 
@@ -322,6 +333,10 @@ feature dlig {
  script latn;
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
+
+ script tml2;
+     language dflt ;
+      lookup dligDiscretionaryLigaturesinTamil2lookup33;
 } dlig;
 
 feature sups {
