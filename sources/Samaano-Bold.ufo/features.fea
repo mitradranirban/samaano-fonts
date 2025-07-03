@@ -302,12 +302,6 @@ lookup pstsPostBaseSubstitutioninTamil2lookup32 {
     sub \uni0B9F \uni0BC0  by \uni0B9F_uni0BC0;
 } pstsPostBaseSubstitutioninTamil2lookup32;
 
-lookup dligDiscretionaryLigaturesinTamil2lookup33 {
-  lookupflag 0;
-    sub \uni0BA3 \uni0BBE  by \uni0BA3_uni0BBE;
-    sub \uni0BC8 \uni0BA3  by \uni0BA3_uni0BC8;
-} dligDiscretionaryLigaturesinTamil2lookup33;
-
 feature locl {
 
  script latn;
@@ -340,9 +334,6 @@ feature dlig {
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
 
- script tml2;
-     language dflt ;
-      lookup dligDiscretionaryLigaturesinTamil2lookup33;
 } dlig;
 
 feature sups {
@@ -1196,8 +1187,8 @@ feature blwm {
 	\uni095D_uni0930_uni094D.vatu \uni095D_uni094D.haln \uni095E_uni094D.half 
 	\uni095E_uni094D.haln \uni095F_uni094D.half \uni095F_uni094D.haln 
 	\uni0B95_uni0BB7.akhn \uni0B95_uni0BC1 \uni0B95_uni0BC2 \uni0B9F_uni0BBF 
-	\uni0B9F_uni0BC0 \uni0B9F_uni0BC1 \uni0B9F_uni0BC2 \uni0BA3_uni0BBE 
-	\uni0BA3_uni0BC1 \uni0BA3_uni0BC2 \uni0BA3_uni0BC8 \uni0BA4_uni0BC1 
+	\uni0B9F_uni0BC0 \uni0B9F_uni0BC1 \uni0B9F_uni0BC2  
+	\uni0BA3_uni0BC1 \uni0BA3_uni0BC2  \uni0BA4_uni0BC1 
 	\uni1ECB_uni0300 \uni1ECB_uni0302 \uni1ECB_uni0303 \uni1ECB_uni0304 \uniFB01 
 	\uniFB02 ];
 @GDEF_Mark = [\acutecomb \acutemacroncomb \brevecomb_acutecomb 
