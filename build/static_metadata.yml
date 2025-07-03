@@ -1,0 +1,933 @@
+units_per_em: 2048
+all_source_axes:
+- name: slant
+  tag: slnt
+  min:
+    coord: -20.0
+    space: null
+  default:
+    coord: 0.0
+    space: null
+  max:
+    coord: 0.0
+    space: null
+  hidden: false
+  converter:
+    default_idx: 1
+    user_to_design:
+      from:
+      - -20.0
+      - 0.0
+      to:
+      - -20.0
+      - 0.0
+    design_to_user:
+      from:
+      - -20.0
+      - 0.0
+      to:
+      - -20.0
+      - 0.0
+    design_to_normalized:
+      from:
+      - -20.0
+      - 0.0
+      to:
+      - -1.0
+      - 0.0
+    normalized_to_design:
+      from:
+      - -1.0
+      - 0.0
+      to:
+      - -20.0
+      - 0.0
+- name: width
+  tag: wdth
+  min:
+    coord: 100.0
+    space: null
+  default:
+    coord: 100.0
+    space: null
+  max:
+    coord: 200.0
+    space: null
+  hidden: false
+  converter:
+    default_idx: 0
+    user_to_design:
+      from:
+      - 100.0
+      - 125.0
+      - 200.0
+      to:
+      - 100.0
+      - 130.0
+      - 200.0
+    design_to_user:
+      from:
+      - 100.0
+      - 130.0
+      - 200.0
+      to:
+      - 100.0
+      - 125.0
+      - 200.0
+    design_to_normalized:
+      from:
+      - 100.0
+      - 200.0
+      to:
+      - 0.0
+      - 1.0
+    normalized_to_design:
+      from:
+      - 0.0
+      - 1.0
+      to:
+      - 100.0
+      - 200.0
+- name: weight
+  tag: wght
+  min:
+    coord: 100.0
+    space: null
+  default:
+    coord: 700.0
+    space: null
+  max:
+    coord: 700.0
+    space: null
+  hidden: false
+  converter:
+    default_idx: 6
+    user_to_design:
+      from:
+      - 100.0
+      - 200.0
+      - 300.0
+      - 400.0
+      - 500.0
+      - 600.0
+      - 700.0
+      to:
+      - 100.0
+      - 180.0
+      - 320.0
+      - 400.0
+      - 490.0
+      - 610.0
+      - 700.0
+    design_to_user:
+      from:
+      - 100.0
+      - 180.0
+      - 320.0
+      - 400.0
+      - 490.0
+      - 610.0
+      - 700.0
+      to:
+      - 100.0
+      - 200.0
+      - 300.0
+      - 400.0
+      - 500.0
+      - 600.0
+      - 700.0
+    design_to_normalized:
+      from:
+      - 100.0
+      - 700.0
+      to:
+      - -1.0
+      - 0.0
+    normalized_to_design:
+      from:
+      - -1.0
+      - 0.0
+      to:
+      - 100.0
+      - 700.0
+axes:
+- name: slant
+  tag: slnt
+  min:
+    coord: -20.0
+    space: null
+  default:
+    coord: 0.0
+    space: null
+  max:
+    coord: 0.0
+    space: null
+  hidden: false
+  converter:
+    default_idx: 1
+    user_to_design:
+      from:
+      - -20.0
+      - 0.0
+      to:
+      - -20.0
+      - 0.0
+    design_to_user:
+      from:
+      - -20.0
+      - 0.0
+      to:
+      - -20.0
+      - 0.0
+    design_to_normalized:
+      from:
+      - -20.0
+      - 0.0
+      to:
+      - -1.0
+      - 0.0
+    normalized_to_design:
+      from:
+      - -1.0
+      - 0.0
+      to:
+      - -20.0
+      - 0.0
+- name: width
+  tag: wdth
+  min:
+    coord: 100.0
+    space: null
+  default:
+    coord: 100.0
+    space: null
+  max:
+    coord: 200.0
+    space: null
+  hidden: false
+  converter:
+    default_idx: 0
+    user_to_design:
+      from:
+      - 100.0
+      - 125.0
+      - 200.0
+      to:
+      - 100.0
+      - 130.0
+      - 200.0
+    design_to_user:
+      from:
+      - 100.0
+      - 130.0
+      - 200.0
+      to:
+      - 100.0
+      - 125.0
+      - 200.0
+    design_to_normalized:
+      from:
+      - 100.0
+      - 200.0
+      to:
+      - 0.0
+      - 1.0
+    normalized_to_design:
+      from:
+      - 0.0
+      - 1.0
+      to:
+      - 100.0
+      - 200.0
+- name: weight
+  tag: wght
+  min:
+    coord: 100.0
+    space: null
+  default:
+    coord: 700.0
+    space: null
+  max:
+    coord: 700.0
+    space: null
+  hidden: false
+  converter:
+    default_idx: 6
+    user_to_design:
+      from:
+      - 100.0
+      - 200.0
+      - 300.0
+      - 400.0
+      - 500.0
+      - 600.0
+      - 700.0
+      to:
+      - 100.0
+      - 180.0
+      - 320.0
+      - 400.0
+      - 490.0
+      - 610.0
+      - 700.0
+    design_to_user:
+      from:
+      - 100.0
+      - 180.0
+      - 320.0
+      - 400.0
+      - 490.0
+      - 610.0
+      - 700.0
+      to:
+      - 100.0
+      - 200.0
+      - 300.0
+      - 400.0
+      - 500.0
+      - 600.0
+      - 700.0
+    design_to_normalized:
+      from:
+      - 100.0
+      - 700.0
+      to:
+      - -1.0
+      - 0.0
+    normalized_to_design:
+      from:
+      - -1.0
+      - 0.0
+      to:
+      - 100.0
+      - 700.0
+named_instances: []
+variation_model:
+  default:
+  - - slnt
+    - 0.0
+  - - wdth
+    - 0.0
+  - - wght
+    - 0.0
+  axes:
+  - name: slant
+    tag: slnt
+    min:
+      coord: -20.0
+      space: null
+    default:
+      coord: 0.0
+      space: null
+    max:
+      coord: 0.0
+      space: null
+    hidden: false
+    converter:
+      default_idx: 1
+      user_to_design:
+        from:
+        - -20.0
+        - 0.0
+        to:
+        - -20.0
+        - 0.0
+      design_to_user:
+        from:
+        - -20.0
+        - 0.0
+        to:
+        - -20.0
+        - 0.0
+      design_to_normalized:
+        from:
+        - -20.0
+        - 0.0
+        to:
+        - -1.0
+        - 0.0
+      normalized_to_design:
+        from:
+        - -1.0
+        - 0.0
+        to:
+        - -20.0
+        - 0.0
+  - name: width
+    tag: wdth
+    min:
+      coord: 100.0
+      space: null
+    default:
+      coord: 100.0
+      space: null
+    max:
+      coord: 200.0
+      space: null
+    hidden: false
+    converter:
+      default_idx: 0
+      user_to_design:
+        from:
+        - 100.0
+        - 125.0
+        - 200.0
+        to:
+        - 100.0
+        - 130.0
+        - 200.0
+      design_to_user:
+        from:
+        - 100.0
+        - 130.0
+        - 200.0
+        to:
+        - 100.0
+        - 125.0
+        - 200.0
+      design_to_normalized:
+        from:
+        - 100.0
+        - 200.0
+        to:
+        - 0.0
+        - 1.0
+      normalized_to_design:
+        from:
+        - 0.0
+        - 1.0
+        to:
+        - 100.0
+        - 200.0
+  - name: weight
+    tag: wght
+    min:
+      coord: 100.0
+      space: null
+    default:
+      coord: 700.0
+      space: null
+    max:
+      coord: 700.0
+      space: null
+    hidden: false
+    converter:
+      default_idx: 6
+      user_to_design:
+        from:
+        - 100.0
+        - 200.0
+        - 300.0
+        - 400.0
+        - 500.0
+        - 600.0
+        - 700.0
+        to:
+        - 100.0
+        - 180.0
+        - 320.0
+        - 400.0
+        - 490.0
+        - 610.0
+        - 700.0
+      design_to_user:
+        from:
+        - 100.0
+        - 180.0
+        - 320.0
+        - 400.0
+        - 490.0
+        - 610.0
+        - 700.0
+        to:
+        - 100.0
+        - 200.0
+        - 300.0
+        - 400.0
+        - 500.0
+        - 600.0
+        - 700.0
+      design_to_normalized:
+        from:
+        - 100.0
+        - 700.0
+        to:
+        - -1.0
+        - 0.0
+      normalized_to_design:
+        from:
+        - -1.0
+        - 0.0
+        to:
+        - 100.0
+        - 700.0
+  axis_tags:
+  - slnt
+  - wdth
+  - wght
+  locations:
+  - - - slnt
+      - 0.0
+    - - wdth
+      - 0.0
+    - - wght
+      - 0.0
+  - - - slnt
+      - -1.0
+    - - wdth
+      - 0.0
+    - - wght
+      - 0.0
+  - - - slnt
+      - 0.0
+    - - wdth
+      - 1.0
+    - - wght
+      - 0.0
+  - - - slnt
+      - 0.0
+    - - wdth
+      - 0.0
+    - - wght
+      - -1.0
+  - - - slnt
+      - -1.0
+    - - wdth
+      - 1.0
+    - - wght
+      - 0.0
+  - - - slnt
+      - -1.0
+    - - wdth
+      - 0.0
+    - - wght
+      - -1.0
+  - - - slnt
+      - 0.0
+    - - wdth
+      - 1.0
+    - - wght
+      - -1.0
+  - - - slnt
+      - -1.0
+    - - wdth
+      - 1.0
+    - - wght
+      - -1.0
+  influence:
+  - axis_tents:
+      slnt:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wght:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes: []
+  - axis_tents:
+      slnt:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wght:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes:
+    - slnt
+  - axis_tents:
+      slnt:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 1.0
+          space: null
+        max:
+          coord: 1.0
+          space: null
+      wght:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes:
+    - wdth
+  - axis_tents:
+      slnt:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wght:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes:
+    - wght
+  - axis_tents:
+      slnt:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 1.0
+          space: null
+        max:
+          coord: 1.0
+          space: null
+      wght:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes:
+    - slnt
+    - wdth
+  - axis_tents:
+      slnt:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wght:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes:
+    - slnt
+    - wght
+  - axis_tents:
+      slnt:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 0.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 1.0
+          space: null
+        max:
+          coord: 1.0
+          space: null
+      wght:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes:
+    - wdth
+    - wght
+  - axis_tents:
+      slnt:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+      wdth:
+        min:
+          coord: 0.0
+          space: null
+        peak:
+          coord: 1.0
+          space: null
+        max:
+          coord: 1.0
+          space: null
+      wght:
+        min:
+          coord: -1.0
+          space: null
+        peak:
+          coord: -1.0
+          space: null
+        max:
+          coord: 0.0
+          space: null
+    active_axes:
+    - slnt
+    - wdth
+    - wght
+  delta_weights:
+  - []
+  - - - 0
+      - 1.0
+  - - - 0
+      - 1.0
+  - - - 0
+      - 1.0
+  - - - 0
+      - 1.0
+    - - 1
+      - 1.0
+    - - 2
+      - 1.0
+  - - - 0
+      - 1.0
+    - - 1
+      - 1.0
+    - - 3
+      - 1.0
+  - - - 0
+      - 1.0
+    - - 2
+      - 1.0
+    - - 3
+      - 1.0
+  - - - 0
+      - 1.0
+    - - 1
+      - 1.0
+    - - 2
+      - 1.0
+    - - 3
+      - 1.0
+    - - 4
+      - 1.0
+    - - 5
+      - 1.0
+    - - 6
+      - 1.0
+default_location:
+- - slnt
+  - 0.0
+- - wdth
+  - 0.0
+- - wght
+  - 0.0
+names:
+  ? name_id: 8
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Dr Anirban Mitra
+  ? name_id: 1
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Samaano
+  ? name_id: 10
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : A Monospace Variable Font Family created using mostly rectangular components
+  ? name_id: 13
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org'
+  ? name_id: 256
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : slant
+  ? name_id: 12
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : https://github.com/mitradranirban
+  ? name_id: 9
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Dr Anirban Mitra
+  ? name_id: 2
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Bold
+  ? name_id: 0
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Copyright 2024-25 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
+  ? name_id: 257
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : width
+  ? name_id: 11
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : https://fonts.atipra.in
+  ? name_id: 258
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : weight
+  ? name_id: 4
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Samaano Bold
+  ? name_id: 6
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Samaano-Bold
+  ? name_id: 14
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : https://openfontlicense.org
+  ? name_id: 5
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : Version 2.400
+  ? name_id: 3
+    platform_id: 3
+    encoding_id: 1
+    lang_id: 1033
+  : 2.400;anir;Samaano-Bold
+postscript_names: {}
+italic_angle: 0.0
+misc:
+  fs_type: 4
+  selection_flags:
+    bits: 32
+  vendor_id: anir
+  version_major: 2
+  version_minor: 400
+  head_flags: 3
+  lowest_rec_ppm: 6
+  created: 2025-06-29T06:58:21Z
+gdef_categories:
+  categories: {}
+  prefer_gdef_categories_in_fea: true
