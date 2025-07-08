@@ -16,15 +16,15 @@ import argparse
 
 # Constants, these are the main "settings" for the image
 WIDTH, HEIGHT, MARGIN, FRAMES = 2048, 1024, 128, 1
-FONT_PATH = "fonts/variable/Samaano[wdth,wght].ttf"
+FONT_PATH = "fonts/variable/Samaano[slnt,wdth,wght].ttf"
 FONT_LICENSE = "OFL v1.1"
 AUXILIARY_FONT = "Helvetica"
 AUXILIARY_FONT_SIZE = 48
 
-LINE_ONE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
-LINE_TWO = "abcdefghijklmnopqrstuvwxyz"
-LINE_THREE = "अआइईउऊऋएऐओऔकखगघङचछजझञटठडढण"
-LINE_FOUR = "तथदधनऩपफबभमयरलळशषसहक्षज्ञर्र्रह्मौं"
+LINE_ONE = "Everyone has the right "
+LINE_TWO = "Όλοι οι άνθρωποι γεννιούνται"
+LINE_THREE = "सभी को पूर्णतः समान रूप से हक़ है"
+LINE_FOUR = "அவர்களது உரிமைகள், கடப்பாடுகள்"
 BIG_TEXT_FONT_SIZE = 120
 BIG_TEXT_SIDE_MARGIN = MARGIN * 1
 BIG_TEXT_BOTTOM_MARGIN = MARGIN * 5.45
