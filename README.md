@@ -38,7 +38,8 @@ Following are the specialities of the font
 
 Now, as per Shaperglot, Samaano supports ~~537~~  Latin based,16 Devanagari Based languages.  Monotonic and Polytonic Greek
 
-![shaperglot](documentation/samaano-shaperglot.png)
+[![][shaperglot]](documentation/samaano-shaperglot.png)
+[shaperglot]: documentation/samaano-shaperglot.csv
 
 
 
