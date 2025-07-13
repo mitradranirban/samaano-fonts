@@ -285,10 +285,11 @@ lookup akhnAkhandinTamil2lookup30 {
 
 lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
   lookupflag 0;
-    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
+   
     sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
-    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
     sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
     sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
     sub \uni0BA3 \uni0BC1  by \uni0BA3_uni0BC1;
@@ -306,10 +307,11 @@ lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
     sub \uni0BAF \uni0BC2  by \uni0BAF_uni0BC2;
     sub \uni0BB0 \uni0BC1  by \uni0BB0_uni0BC1;
     sub \uni0BB0 \uni0BC2  by \uni0BB0_uni0BC2;
-    sub \uni0BB0 \uni0BC2  by \uni0BB1_uni0BC1;
+    sub \uni0BB1 \uni0BC2  by \uni0BB1_uni0BC1;
     sub \uni0BB1 \uni0BC2  by \uni0BB1_uni0BC2;
     sub \uni0BB2 \uni0BC1  by \uni0BB2_uni0BC1;
     sub \uni0BB2 \uni0BC2  by \uni0BB2_uni0BC2;
+    sub \uni0BB3 \uni0BC1  by \uni0BB3_uni0BC1;
     sub \uni0BB3 \uni0BC1  by \uni0BB3_uni0BC1;
     sub \uni0BB4 \uni0BC1  by \uni0BB4_uni0BC1;
     sub \uni0BB4 \uni0BC2  by \uni0BB4_uni0BC2;
@@ -1181,7 +1183,7 @@ feature blwm {
 	\verticallinelowmod \verticallinemod \vhook \vturned \w \wacute \wcircumflex 
 	\wdieresis \wgrave \whiteBullet \whiteCircle \whiteDiamond \whiteSmallSquare 
 	\whiteSquare \whook \wmod \x \xi \y \yacute \ycircumflex \ydieresis \yen \ygrave 
-	\yhook \ypogegrammeni \z \zacute \zcaron \zdotaccent \zero \zeta \uni0B9D ];
+	\yhook \ypogegrammeni \z \zacute \zcaron \zdotaccent \zero \zeta ];
 @GDEF_Ligature = [\i_uni030A \i_uni030B \j_gravecomb \j_uni0303 \j_uni0304 
 	\j_uni0308 \j_uni0311 \jacute \uni012F_uni0300 \uni012F_uni0301 
 	\uni012F_uni0302 \uni012F_uni0303 \uni012F_uni0304 \uni012F_uni030C 
