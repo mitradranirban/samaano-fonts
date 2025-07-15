@@ -1,3 +1,4 @@
+
 # GSUB 
 
 
@@ -178,8 +179,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0931 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -276,15 +277,36 @@ lookup akhnAkhandinTamil2lookup30 {
 
 lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
   lookupflag 0;
-    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
+   
     sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
-    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
     sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
     sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
     sub \uni0BA3 \uni0BC1  by \uni0BA3_uni0BC1;
     sub \uni0BA3 \uni0BC2  by \uni0BA3_uni0BC2;
     sub \uni0BA4 \uni0BC1  by \uni0BA4_uni0BC1;
+    sub \uni0BA4 \uni0BC2  by \uni0BA4_uni0BC2;
+    sub \uni0BA8 \uni0BC1  by \uni0BA8_uni0BC1;
+    sub \uni0BA8 \uni0BC2  by \uni0BA8_uni0BC2;
+    sub \uni0BA9 \uni0BC2  by \uni0BA9_uni0BC2;
+    sub \uni0BAA \uni0BC1  by \uni0BAA_uni0BC1;
+    sub \uni0BAA \uni0BC2  by \uni0BAA_uni0BC2;
+    sub \uni0BAE \uni0BC1  by \uni0BAE_uni0BC1;
+    sub \uni0BAE \uni0BC2  by \uni0BAE_uni0BC2;
+    sub \uni0BAF \uni0BC1  by \uni0BAF_uni0BC1;
+    sub \uni0BAF \uni0BC2  by \uni0BAF_uni0BC2;
+    sub \uni0BB0 \uni0BC1  by \uni0BB0_uni0BC1;
+    sub \uni0BB0 \uni0BC2  by \uni0BB0_uni0BC2;
+    sub \uni0BB1 \uni0BC1  by \uni0BB1_uni0BC1;
+    sub \uni0BB1 \uni0BC2  by \uni0BB1_uni0BC2;
+    sub \uni0BB2 \uni0BC1  by \uni0BB2_uni0BC1;
+    sub \uni0BB2 \uni0BC2  by \uni0BB2_uni0BC2;
+    sub \uni0BB3 \uni0BC1  by \uni0BB3_uni0BC1;
+    sub \uni0BB3 \uni0BC2  by \uni0BB3_uni0BC2;
+    sub \uni0BB4 \uni0BC1  by \uni0BB4_uni0BC1;
+    sub \uni0BB4 \uni0BC2  by \uni0BB4_uni0BC2;
 } blwsBelowBaseSubstitutionsinTamil2lookup31;
 
 lookup pstsPostBaseSubstitutioninTamil2lookup32 {
@@ -324,7 +346,6 @@ feature dlig {
  script latn;
      language dflt ;
       lookup dligDiscretionaryLigatureslookup0;
-
 } dlig;
 
 feature sups {
@@ -454,10 +475,6 @@ feature abvs {
 
 feature blws {
 
- script DFLT;
-     language dflt ;
-      lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12;
-
  script dev2;
      language dflt ;
       lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12;
@@ -473,4 +490,3 @@ feature psts {
      language dflt ;
       lookup pstsPostBaseSubstitutioninTamil2lookup32;
 } psts;
-
