@@ -6,6 +6,7 @@ Weight: BoldSlanted
 Copyright: Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: " fonts.atipra.in"
 Version: 2.400
+StyleMapFamilyName: Samaano Wide Bold Slanted
 ItalicAngle: -20
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -22,8 +23,8 @@ FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1752574954
-ModificationTime: 1752580408
+CreationTime: 1752596026
+ModificationTime: 1752596026
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 9
@@ -73,7 +74,6 @@ Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subta
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinTamil2lookup33" { "abvmAboveBaseMarkinTamil2lookup33 subtable"  } ['abvm' ('tml2' <'dflt' > ) ]
-MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: glyph "loclLocalizedFormsinLatinlookup11 contextual 1" 0 0 0 1
  String: 16 L periodcentered
@@ -91,34 +91,14 @@ ChainSub2: glyph "loclLocalizedFormsinLatinlookup11 contextual 0" 0 0 0 1
 EndFPST
 LangName: 1033 "Copyright 2024 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)" "" "" "" "" "Version 2.400" "" "" "Dr Anirban Mitra" "Dr Anirban Mitra" "A Monospace Variable Font Family created using mostly rectangular components" "https://fonts.atipra.in" "https://github.com/mitradranirban" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org" "https://openfontlicense.org" "" "Samaano"
 PickledDataWithLists: "(dp0
-Vxyz.fontra.lineMetricsHorizontalLayout.zones
-p1
-(dp2
-Vascender
-p3
-I33
-sVbaseline
-p4
-I-33
-sVcapHeight
-p5
-I33
-sVdescender
-p6
-I-33
-sVxHeight
-p7
-I33
-ss."
+."
 Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 1090 10 4
-BeginPrivate: 0
-EndPrivate
+WinInfo: 0 10 4
 Grid
 -2048 1548 m 0
  2048 1548 l 1024
@@ -131,7 +111,7 @@ NamedP: "Guideline 3"
 NamedP: "Guideline 4"
  2748.45725353 1924.49048737 l 1024
 EndSplineSet
-AnchorClass2: "abvm_taml" "abvmAboveBaseMarkinTamil2lookup33 subtable" "abvm_taml"""  "abvm_ta"""  "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
+AnchorClass2: "abvm_taml" "abvmAboveBaseMarkinTamil2lookup33 subtable" "abvm_ta"""  "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
 BeginChars: 1728 1728
 
 StartChar: .notdef
@@ -3051,6 +3031,7 @@ Encoding: 149 43877 149
 GlifName: O_megasmall
 Width: 2048
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 Fore
@@ -4810,7 +4791,7 @@ GlifName: ae
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 AnchorPoint: "base" 1023 -93 basechar 0
 AnchorPoint: "top" 1459 1109 basechar 0
 LayerCount: 2
@@ -4855,7 +4836,7 @@ GlifName: aeacute
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 236 769 N 1 0 0 1 1475 315 2
@@ -11679,9 +11660,9 @@ GlifName: oslash
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
-AnchorPoint: "base" 1023 -93 basechar 0
+Flags: W
 AnchorPoint: "top" 1480 1110 basechar 0
+AnchorPoint: "base" 1020 -131 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11719,7 +11700,7 @@ GlifName: oslashacute
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 236 769 N 1 0 0 1 1496 316 2
@@ -15429,7 +15410,7 @@ GlifName: uni01E_3
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 790 772 N 1 0 0 1 1416 300 2
@@ -23958,8 +23939,8 @@ SplineSet
  728 1189 l 257
  622 1023 l 257
 EndSplineSet
-Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0931 uni094D
+Ligature2: "halfHalfFormsinDevanagari2lookup0 subtable" uni0930 uni094D
 EndChar
 
 StartChar: uni0930_uni094D.haln
@@ -30771,7 +30752,7 @@ GlifName: uni0B_95
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HWO
+Flags: W
 AnchorPoint: "abvm_taml" 1529 1201 basechar 0
 LayerCount: 2
 Fore
@@ -30964,8 +30945,8 @@ SplineSet
  841 1312 l 257
  641 1312 l 257
 EndSplineSet
-Ligature2: "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable" uni0B99 uni0BC1
 Ligature2: "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable" uni0B95 uni0BC1
+Ligature2: "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable" uni0B99 uni0BC1
 EndChar
 
 StartChar: uni0B95_uni0BC2
@@ -31039,8 +31020,8 @@ SplineSet
  2062 287 l 257
  1933 288 l 257
 EndSplineSet
-Ligature2: "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable" uni0B99 uni0BC2
 Ligature2: "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable" uni0B95 uni0BC2
+Ligature2: "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable" uni0B99 uni0BC2
 EndChar
 
 StartChar: uni0B99
@@ -31051,7 +31032,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1857 1201 basechar 0
-AnchorPoint: "abvm_taml" 2369 1202 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -31192,7 +31172,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1543 1147 basechar 0
-AnchorPoint: "abvm_taml" 1561 1202 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -31318,7 +31297,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1543 1215 basechar 0
-AnchorPoint: "abvm_taml" 2336 1230 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -31387,56 +31365,55 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "abvm_taml" 2075 1174 basechar 0
-AnchorPoint: "abvm_taml" 2262 1248 basechar 0
+AnchorPoint: "abvm_taml" 2259 1190 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-550 1123 m 257
- 41 -275 l 257
- 241 -275 l 257
- 750 1123 l 257
- 550 1123 l 257
-88 -146 m 257
- 15 -346 l 257
- 2022 -346 l 257
- 2095 -146 l 257
- 88 -146 l 257
-1862 1194 m 257
- 1430 1 l 257
- 1630 1 l 257
- 2062 1194 l 257
- 1862 1194 l 257
-1389 1223 m 257
- 1316 1023 l 257
- 2479 1023 l 257
- 2552 1223 l 257
- 1389 1223 l 257
-1333 1223 m 257
- 888 0 l 257
- 1088 0 l 257
- 1533 1223 l 257
- 1333 1223 l 257
-1151 187 m 257
- 1083 1 l 257
- 1396 1 l 257
- 1464 187 l 257
- 1151 187 l 257
-1854 797 m 257
- 1781 597 l 257
- 2370 597 l 257
- 2443 797 l 257
- 1854 797 l 257
-2216 722 m 257
- 1827 -346 l 257
- 2027 -346 l 257
- 2416 722 l 257
- 2216 722 l 257
-1135 126 m 257
- 1426 126 l 257
- 1399 52 l 257
- 1108 52 l 257
- 1135 126 l 257
+423 1123 m 257
+ -86 -275 l 257
+ 114 -275 l 257
+ 623 1123 l 257
+ 423 1123 l 257
+-39 -146 m 257
+ -112 -346 l 257
+ 1895 -346 l 257
+ 1968 -146 l 257
+ -39 -146 l 257
+1735 1194 m 257
+ 1303 1 l 257
+ 1503 1 l 257
+ 1935 1194 l 257
+ 1735 1194 l 257
+1262 1223 m 257
+ 1189 1023 l 257
+ 2352 1023 l 257
+ 2425 1223 l 257
+ 1262 1223 l 257
+1206 1223 m 257
+ 761 0 l 257
+ 961 0 l 257
+ 1406 1223 l 257
+ 1206 1223 l 257
+1024 187 m 257
+ 956 1 l 257
+ 1269 1 l 257
+ 1337 187 l 257
+ 1024 187 l 257
+1727 797 m 257
+ 1654 597 l 257
+ 2243 597 l 257
+ 2316 797 l 257
+ 1727 797 l 257
+2089 722 m 257
+ 1700 -346 l 257
+ 1900 -346 l 257
+ 2289 722 l 257
+ 2089 722 l 257
+1008 126 m 257
+ 1299 126 l 257
+ 1272 52 l 257
+ 981 52 l 257
+ 1008 126 l 257
 EndSplineSet
 EndChar
 
@@ -31593,8 +31570,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "abvm_taml" 1324 1079 basechar 0
-AnchorPoint: "abvm_taml" 1022 1182 basechar 0
+AnchorPoint: "abvm_taml" 1027 1097 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -31775,7 +31751,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2048 1201 basechar 0
-AnchorPoint: "abvm_taml" 2123 1228 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -31973,7 +31948,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1543 1133 basechar 0
-AnchorPoint: "abvm_taml" 1543 1203 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32181,7 +32155,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1707 1215 basechar 0
-AnchorPoint: "abvm_taml" 1670 1228 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32359,7 +32332,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1679 1188 basechar 0
-AnchorPoint: "abvm_taml" 1769 1222 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32541,7 +32513,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1857 1010 basechar 0
-AnchorPoint: "abvm_taml" 2284 1207 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32582,6 +32553,7 @@ Encoding: 1135 -1 1135
 GlifName: uni0B_A_A__uni0B_C_2
 Width: 2048
 VWidth: 0
+GlyphClass: 3
 Flags: W
 LayerCount: 2
 Fore
@@ -32598,7 +32570,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2021 1188 basechar 0
-AnchorPoint: "abvm_taml" 1953 1229 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32746,7 +32717,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2034 1120 basechar 0
-AnchorPoint: "abvm_taml" 2383 1199 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32819,7 +32789,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2021 1188 basechar 0
-AnchorPoint: "abvm_taml" 2074 1227 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32974,7 +32943,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2116 1133 basechar 0
-AnchorPoint: "abvm_taml" 2483 1236 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33080,6 +33048,7 @@ Encoding: 1148 -1 1148
 GlifName: uni0B_B_1_uni0B_C_2
 Width: 2048
 VWidth: 0
+GlyphClass: 3
 Flags: W
 LayerCount: 2
 Fore
@@ -33151,7 +33120,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2007 1147 basechar 0
-AnchorPoint: "abvm_taml" 2363 1203 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33198,6 +33166,7 @@ Encoding: 1150 -1 1150
 GlifName: uni0B_B_2_uni0B_C_1
 Width: 2048
 VWidth: 0
+GlyphClass: 3
 Flags: W
 LayerCount: 2
 Fore
@@ -33266,6 +33235,7 @@ Encoding: 1151 -1 1151
 GlifName: uni0B_B_2_uni0B_C_2
 Width: 2048
 VWidth: 0
+GlyphClass: 3
 Flags: W
 LayerCount: 2
 Fore
@@ -33347,7 +33317,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1966 1215 basechar 0
-AnchorPoint: "abvm_taml" 2346 1236 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33545,7 +33514,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2144 1188 basechar 0
-AnchorPoint: "abvm_taml" 2328 1232 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33738,7 +33706,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2075 1161 basechar 0
-AnchorPoint: "abvm_taml" 2379 1218 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33793,7 +33760,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2075 1215 basechar 0
-AnchorPoint: "abvm_taml" 2336 1244 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33843,7 +33809,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 1925 1201 basechar 0
-AnchorPoint: "abvm_taml" 2225 1244 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33903,7 +33868,6 @@ VWidth: 0
 GlyphClass: 2
 Flags: W
 AnchorPoint: "abvm_taml" 2185 1147 basechar 0
-AnchorPoint: "abvm_taml" 2403 1240 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33962,8 +33926,7 @@ Width: 2048
 VWidth: 0
 GlyphClass: 2
 Flags: W
-AnchorPoint: "abvm_taml" 2280 1065 basechar 0
-AnchorPoint: "abvm_taml" 2520 1210 basechar 0
+AnchorPoint: "abvm_taml" 2374 1136 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -34102,8 +34065,6 @@ GlifName: uni0B_C_0
 Width: 0
 VWidth: 0
 GlyphClass: 2
-Flags: W
-AnchorPoint: "abvm_taml" -1 1017 mark 0
 AnchorPoint: "abvm_taml" -1 1017 mark 0
 LayerCount: 2
 Fore
@@ -34598,7 +34559,6 @@ Width: 0
 VWidth: 0
 GlyphClass: 2
 AnchorPoint: "abvm_taml" 1 1015 mark 0
-AnchorPoint: "abvm_taml" 11 1012 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -34665,7 +34625,7 @@ GlifName: uni0B_E_7
 Width: 2048
 VWidth: 0
 GlyphClass: 2
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 1102 2965 N 1 0 0 1 0 0 2
