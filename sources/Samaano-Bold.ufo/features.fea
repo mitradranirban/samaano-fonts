@@ -288,8 +288,8 @@ lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
    
     sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
-    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
-    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
+    sub \uni0B99 \uni0BC2  by \uni0B99_uni0BC2;
+    sub \uni0B99 \uni0BC1  by \uni0B99_uni0BC1;
     sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
     sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
     sub \uni0BA3 \uni0BC1  by \uni0BA3_uni0BC1;
@@ -482,6 +482,10 @@ feature abvs {
 } abvs;
 
 feature blws {
+
+ script DFLT;
+     language dflt ;
+      lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12;
 
  script dev2;
      language dflt ;
@@ -977,6 +981,7 @@ feature abvm {
  script DFLT;
      language dflt ;
       lookup abvmAboveBaseMarkinDevanagari2lookup1;
+      lookup abvmAboveBaseMarkinTamil2lookup33;
 
  script dev2;
      language dflt ;
