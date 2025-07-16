@@ -19,14 +19,14 @@ build: build.stamp
 venv: venv/touchfile
 
 customize: venv
-	. venv/bin/activate; python3 scripts/customize.py
+	. venv/bin/activate; python3.12 scripts/customize.py
 
 build.stamp: venv sources/config.yaml $(SOURCES)
 	rm -rf fonts
 	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)  && touch build.stamp
 
 venv/touchfile: requirements.txt
-	test -d venv || python3 -m venv venv
+	test -d venv || python3.12 -m venv venv
 	. venv/bin/activate; pip install -Ur requirements.txt
 	touch venv/touchfile
 
