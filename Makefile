@@ -27,7 +27,7 @@ build.stamp: venv sources/config.yaml $(SOURCES)
 
 venv/touchfile: requirements.txt
          
-	rm -rf venv || python3.12 -m venv venv
+	test -d venv || python3.12 -m venv venv
 	. venv/bin/activate; pip install -Ur requirements.txt
 	touch venv/touchfile
 
