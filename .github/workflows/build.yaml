@@ -8,17 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python 3.12
+    - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
-        python-version: "3.12"
-    - name: Create venv with correct Python version
-      run: python3.12 -m venv venv
-
-    - name: Verify Python version in venv
-      run: |
-        source venv/bin/activate
-        python --version
+        python-version: "3.11"
     - name: Setup fontspector
       uses: fonttools/setup-fontspector@main
       env:
