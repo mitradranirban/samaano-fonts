@@ -10,14 +10,6 @@ languagesystem tml2 dflt;
 # GSUB 
 
 
-lookup loclLocalizedFormsinLatinlookup9 {
-  lookupflag 0;
-    sub \Scedilla by \uni0218 ;
-    sub \scedilla by \uni0219 ;
-    sub \uni0162 by \uni021A ;
-    sub \uni0163 by \uni021B ;
-} loclLocalizedFormsinLatinlookup9;
-
 lookup loclLocalizedFormsinLatinlookup10 {
   lookupflag 0;
     sub \Scedilla by \uni0218 ;
@@ -32,28 +24,11 @@ lookup loclLocalizedFormsinLatinlookup11 {
     sub  \L' \periodcentered' \L   by \L_periodcentered.loclCAT ;
 } loclLocalizedFormsinLatinlookup11;
 
-lookup ligaStandardLigaturesinLatinlookup0 {
-  lookupflag 0;
-    sub \i \uni030A  by \i_uni030A;
-    sub \i \uni030B  by \i_uni030B;
-    sub \j \gravecomb  by \j_gravecomb;
-    sub \j \tildecomb  by \j_uni0303;
-    sub \j \uni0304  by \j_uni0304;
-    sub \j \uni0308  by \j_uni0308;
-    sub \j \uni0311  by \j_uni0311;
-    sub \j \acutecomb  by \jacute;
-    sub \iogonek \gravecomb  by \uni012F_uni0300;
-    sub \iogonek \acutecomb  by \uni012F_uni0301;
-    sub \iogonek \uni0302  by \uni012F_uni0302;
-    sub \iogonek \tildecomb  by \uni012F_uni0303;
-    sub \iogonek \uni0304  by \uni012F_uni0304;
-    sub \iogonek \uni030C  by \uni012F_uni030C;
-    sub \uni1ECB \gravecomb  by \uni1ECB_uni0300;
-    sub \uni1ECB \acutecomb  by \uni1ECB_uni0301;
-    sub \uni1ECB \uni0302  by \uni1ECB_uni0302;
-    sub \uni1ECB \tildecomb  by \uni1ECB_uni0303;
-    sub \uni1ECB \uni0304  by \uni1ECB_uni0304;
-} ligaStandardLigaturesinLatinlookup0;
+lookup ccmp_soft_dotted {
+    @CombiningTopAccents = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030F verticallineabovecomb uni0310 uni0311 uni0312 uni031B];
+    lookupflag UseMarkFilteringSet @CombiningTopAccents;
+    sub [i j uni1ECB iogonek itildebelow istroke jstroke]' @CombiningTopAccents by [idotless uni0237 idotbelow.dotless iogonek_dotless itildebelowdotless istrokedotless jstrokedotless];
+} ccmp_soft_dotted;
 
 lookup dligDiscretionaryLigatureslookup0 {
   lookupflag 0;
@@ -285,10 +260,11 @@ lookup akhnAkhandinTamil2lookup30 {
 
 lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
   lookupflag 0;
+   
     sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
-    sub \uni0B99 \uni0BC1  by \uni0B99_uni0BC1;
-    sub \uni0B99 \uni0BC2  by \uni0B99_uni0BC2;
+    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
     sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
     sub \uni0BA3 \uni0BC1  by \uni0BA3_uni0BC1;
@@ -330,19 +306,19 @@ feature locl {
      language MOL  exclude_dflt;
       lookup loclLocalizedFormsinLatinlookup10;
      language ROM  exclude_dflt;
-      lookup loclLocalizedFormsinLatinlookup9;
+      lookup loclLocalizedFormsinLatinlookup10;
 } locl;
 
-feature liga {
+feature ccmp {
 
  script DFLT;
      language dflt ;
-      lookup ligaStandardLigaturesinLatinlookup0;
+      lookup ccmp_soft_dotted;
 
  script latn;
      language dflt ;
-      lookup ligaStandardLigaturesinLatinlookup0;
-} liga;
+      lookup ccmp_soft_dotted;
+} ccmp;
 
 feature dlig {
 
@@ -482,10 +458,6 @@ feature abvs {
 
 feature blws {
 
- script DFLT;
-     language dflt ;
-      lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12;
-
  script dev2;
      language dflt ;
       lookup blwsBelowBaseSubstitutionsinDevanagari2lookup12;
@@ -501,7 +473,6 @@ feature psts {
      language dflt ;
       lookup pstsPostBaseSubstitutioninTamil2lookup32;
 } psts;
-
 # GPOS 
 
 
