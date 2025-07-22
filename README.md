@@ -63,27 +63,27 @@ Following are some numbers associated with the of the typeface
  
 ## Changelog
  
-####10 October 2024 - Version 1.000
+#### 10 October 2024 - Version 1.000
  * First Release
 
-####13 November 2024 - Version 2.000
+#### 13 November 2024 - Version 2.000
   * Added additional axis of Slant
 
   * Added support for East European Latin based Languages, Indic Translitteration and Vietnamese
 
   * Update Devanagari Open  Type Tables to version 2 with addition of GPOS features
 
-####20 March 2025 - Version 2.301
+#### 20 March 2025 - Version 2.301
   * Added Monotonic Greek
   * Extended Latin to include panNigerian, Pinyin and DIN91379.
   * Addition of Arrows, Geometric shapes and Mathametical Operators
   *
-#### ???? 2025 - Version 2.400
+#### July 2025 - Version 2.400
   * Extension of Latin to include most African languages.
   * Extension of Greek to include Polytonic variant.
   * Addition of Tamil.
 
-####Road Map for Version 3
+#### Road Map for Version 3
 
 * Addition of Cyrillic
 * Further extension of Latin to support most Latin Based languages.
