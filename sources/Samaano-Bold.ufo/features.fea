@@ -1,3 +1,8 @@
+# GDEF Mark Attachment Sets
+@CombiningTopAccents=[\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0305 \uni0306 \uni0307 
+	\uni0308 \hookabovecomb \uni030A \uni030B \uni030C 
+	\verticallineabovecomb \uni030F \uni0310 \uni0311 \uni0312 \uni031B ];
+
 languagesystem DFLT dflt;
 languagesystem dev2 dflt;
 languagesystem latn CAT ;
@@ -5,6 +10,7 @@ languagesystem latn dflt;
 languagesystem latn MOL ;
 languagesystem latn ROM ;
 languagesystem tml2 dflt;
+
 
 # GSUB 
 
@@ -19,14 +25,16 @@ lookup loclLocalizedFormsinLatinlookup10 {
 
 lookup loclLocalizedFormsinLatinlookup11 {
   lookupflag 0;
-    sub  \l' \periodcentered' \l   by \l_periodcentered.loclCAT ;
-    sub  \L' \periodcentered' \L   by \L_periodcentered.loclCAT ;
+    sub \l' \periodcentered' \l   by \l_periodcentered.loclCAT ;
+    sub  \L' \periodcentered' \L   by L_periodcentered.loclCAT ;
 } loclLocalizedFormsinLatinlookup11;
 
 lookup ccmp_soft_dotted {
-    @CombiningTopAccents = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C verticallineabovecomb uni030F uni0310 uni0311 uni0312 uni031B];
-    lookupflag UseMarkFilteringSet @CombiningTopAccents;
-    sub [i j uni1ECB iogonek itildebelow istroke jstroke]' @CombiningTopAccents by [idotless uni0237 idotbelow.dotless iogonek_dotless itildebelowdotless istrokedotless jstrokedotless];
+  lookupflag UseMarkFilteringSet @CombiningTopAccents;
+    sub [\i \j \uni1ECB \iogonek \itildebelow \istroke \jstroke ]' [\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0305 \uni0306 \uni0307 
+	\uni0308 \hookabovecomb \uni030A \uni030B \uni030C 
+	\verticallineabovecomb \uni030F \uni0310 \uni0311 \uni0312 \uni031B ]  by [\dotlessi \uni0237 \idotbelow.dotless 
+	\iogonek_dotless \itildebelowdotless \istrokedotless \jstrokedotless ];
 } ccmp_soft_dotted;
 
 lookup dligDiscretionaryLigatureslookup0 {
@@ -161,8 +169,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -259,11 +267,10 @@ lookup akhnAkhandinTamil2lookup30 {
 
 lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
   lookupflag 0;
-   
-    sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
-    sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
-    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
     sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
+    sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
+    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
     sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
     sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
     sub \uni0BA3 \uni0BC1  by \uni0BA3_uni0BC1;
@@ -472,6 +479,7 @@ feature psts {
      language dflt ;
       lookup pstsPostBaseSubstitutioninTamil2lookup32;
 } psts;
+
 # GPOS 
 
 
@@ -481,7 +489,7 @@ lookup markMarkPositioninglookup0 {
   markClass [\circumflexbelowcomb ] <anchor 1 432> @base;
   markClass [\dotbelowcomb ] <anchor -14 -187> @base;
   markClass [\doublemacronbelowcomb ] <anchor 6 -108> @base;
-  markClass [\ringbelowcomb ] <anchor 13 1197> @base;
+  markClass [\ringbelowcomb ] <anchor 1 -22> @base;
   markClass [\tildebelowcomb ] <anchor 0 268> @base;
   markClass [\uni0324 ] <anchor -8 -147> @base;
   markClass [\uni0326 ] <anchor 22 -5> @base;
@@ -609,9 +617,8 @@ lookup markMarkPositioninglookup0 {
   pos base [\Omacron ] <anchor 504 -101> mark @base;
   pos base [\Oslash ] <anchor 510 1666> mark @top
 	<anchor 498 -122> mark @base;
-  pos base [] <anchor 542 -56> mark @base
-	<anchor 450 1904> mark @top
-	<anchor 564 -114> mark @base;
+  pos base [\Otilde ] <anchor 450 1904> mark @top 
+  	<anchor 542 -56> mark @base;
   pos base [\P ] <anchor 226 -35> mark @base
 	<anchor 448 1642> mark @top;
   pos base [\Phook ] <anchor 367 -35> mark @base
@@ -654,8 +661,7 @@ lookup markMarkPositioninglookup0 {
   pos base [\a ] <anchor 500 1134> mark @top
 	<anchor 524 -74> mark @base;
   pos base [\aacute \acircumflex \agrave \aring \eacute \ecircumflex \edieresis \egrave \iacute \icircumflex \idieresis \igrave \ntilde \oacute \ocircumflex \odieresis \ograve \uacute \ucircumflex \udieresis \ugrave ] <anchor 512 -93> mark @base;
-  pos base [] <anchor 512 -93> mark @base
-	<anchor 479 1404> mark @top
+  pos base [\adieresis ] <anchor 479 1404> mark @top
 	<anchor 524 -74> mark @base;
   pos base [\ae ] <anchor 519 -103> mark @base
 	<anchor 534 1156> mark @top;
@@ -716,7 +722,7 @@ lookup markMarkPositioninglookup0 {
 	<anchor 508 1110> mark @top;
   pos base [\n ] <anchor 530 -64> mark @base
 	<anchor 492 1158> mark @top;
-  pos base [\o \oslash ] <anchor 450 1110> mark @top
+  pos base [\o ] <anchor 450 1110> mark @top
 	<anchor 482 -86> mark @base;
   pos base [\obarred ] <anchor 546 1158> mark @top
 	<anchor 536 -38> mark @base;
@@ -725,8 +731,9 @@ lookup markMarkPositioninglookup0 {
   pos base [\ohorn ] <anchor 488 1168> mark @top
 	<anchor 492 -92> mark @base;
   pos base [\omacron ] <anchor 500 -117> mark @base;
-  pos base [] <anchor 512 -93> mark @base
-	<anchor 498 1410> mark @top
+  pos base [\oslash ] <anchor 450 1110> mark @top
+	<anchor 482 -86> mark @base;
+  pos base [\otilde ] <anchor 498 1410> mark @top
 	<anchor 482 -86> mark @base;
   pos base [\p ] <anchor 270 -468> mark @base
 	<anchor 268 1322> mark @top;
@@ -1073,13 +1080,14 @@ feature blwm {
 	\gstroke \guillemotleft \guillemotright \guilsinglleft \guilsinglright \h 
 	\hbar \hcaron \hcedilla \hcircumflex \hhook \hlinebelow \horizontalbar \hryvnia 
 	\hturned \hungarumlaut \hyphen \hyphentwo \i \iacute \ibreve \icapitalsmall 
-	\icircumflex \idieresis \idotaccent \igrave \ij \imacron \increment \infinity 
-	\integral \iogonek \iota \iota_latin \iotadialytikaoxia \iotadieresis 
-	\iotadieresistonos \iotatonos \istroke \istrokedotless \istrokemod \itilde 
-	\itildebelow \itildebelowdotless \j \jcaron \jcircumflex \jcrossedtail 
-	\jstroke \k \kaiSymbol \kappa \kgreenlandic \khook \klinebelow \koronis \l 
-	\l_periodcentered.loclCAT \lacute \lambda \lari \lcaron \lcircumflexbelow 
-	\ldot \leftArrow \leftBlackSmallTriangle \leftBlackTriangle \leftRightArrow 
+	\icircumflex \idieresis \idotaccent \idotbelow.dotless \igrave \ij \imacron 
+	\increment \infinity \integral \iogonek \iogonek_dotless \iota \iota_latin 
+	\iotadialytikaoxia \iotadieresis \iotadieresistonos \iotatonos \istroke 
+	\istrokedotless \istrokemod \itilde \itildebelow \itildebelowdotless \j 
+	\jcaron \jcircumflex \jcrossedtail \jstroke \jstrokedotless \k \kaiSymbol 
+	\kappa \kgreenlandic \khook \klinebelow \koronis \l \l_periodcentered.loclCAT 
+	\lacute \lambda \lari \lcaron \lcircumflexbelow \ldot \leftArrow 
+	\leftBlackSmallTriangle \leftBlackTriangle \leftRightArrow 
 	\leftWhiteSmallTriangle \leftWhiteTriangle \less \lessequal \lira \literSign 
 	\llinebelow \logicalnot \longs \lowernumeral_greek \lozenge \lslash \m \macron 
 	\midlinehorizontalellipsis \minus \minusmod \minute \mturned \mu \multiply \n 
@@ -1283,6 +1291,7 @@ feature blwm {
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
+
 
 } GDEF;
 

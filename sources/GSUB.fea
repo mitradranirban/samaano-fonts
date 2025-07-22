@@ -18,7 +18,7 @@ lookup loclLocalizedFormsinLatinlookup11 {
 lookup ccmp_soft_dotted {
     @CombiningTopAccents = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030F verticallineabovecomb uni0310 uni0311 uni0312 uni031B];
     lookupflag UseMarkFilteringSet @CombiningTopAccents;
-    sub [i j uni1ECB iogonek itildebelow istroke jstroke]' @CombiningTopAccents by [idotless uni0237 idotbelow.dotless iogonek_dotless itildebelowdotless istrokedotless jstrokedotless];
+    sub [i j uni1ECB iogonek itildebelow istroke jstroke]' @CombiningTopAccents by [dotlessi uni0237 idotbelow.dotless iogonek_dotless itildebelowdotless istrokedotless jstrokedotless];
 } ccmp_soft_dotted;
 
 lookup dligDiscretionaryLigatureslookup0 {
