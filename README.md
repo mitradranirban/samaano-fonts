@@ -44,7 +44,22 @@ Now, as per Shaperglot, Samaano supports ~~537~~  Latin based,16 Devanagari Base
 
 
 ## About
+
 This font is created by Dr Anirban Mitra, an amateure Typographer and Free Software Enthusiast.
+Following are some numbers associated with the of the typeface
+
+*   0 - Zero Curves - Simple Glyph construction using Rectangular or quadrilateral components only
+*   1 - Monospaced Typeface
+*   3 - Three Variable axes of Weight, Width and Slant
+*   ~3~ 4 - ~Three~ Four supported Scripts- Latin Extended, Devanagari, Greek and Tamil
+*   9 - Font files, 8 Masters and 1 Variable
+*   ~13~ 15 - supported glyphsets - ~4~ 6 by Adobe (Greek 1, Greek 2, Latin 1,Latin 2, Latin 3, Latin 4), 7 by Google fonts (Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African), and 2 by Koeberlin (Latin S and M)
+*   14 - named instances in stat table, 2 along slant axis, 5 along width, and 7 along weight.
+*   70 - possible combinations of named instances
+*   100 - Hundred percent created using Open Source Software - mainly [Fontra](https://fontra.xyz) and [Fontforge](https://github.com/fontforge/fontforge).
+*   ~554~ 792 - Languages supported as per Shaperglot, 773 Latin based, 16 Devanagari Based, 2 Greek based and Tamil
+*   ~1044~ 1517 - unicode codepoints covered
+*   ~9982~ 13960 - glyphs drawn - considering all masters
  
 ## Changelog
  
@@ -62,10 +77,11 @@ This font is created by Dr Anirban Mitra, an amateure Typographer and Free Softw
   * Added Monotonic Greek
   * Extended Latin to include panNigerian, Pinyin and DIN91379.
   * Addition of Arrows, Geometric shapes and Mathametical Operators
+  *
 #### ???? 2025 - Version 2.400
   * Extension of Latin to include most African languages.
   * Extension of Greek to include Polytonic variant.
-  *  Addition of Tamil.
+  * Addition of Tamil.
 
 ####Road Map for Version 3
 
