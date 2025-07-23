@@ -1,0 +1,2602 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fontspector</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css">
+    <link rel="stylesheet" href="fontspector.css" type="text/css">
+    <script src="cmark-gfm.js"></script>
+    <!-- Style rules which live here are those which need to be included
+     in the downloaded report -->
+    <style>
+      .flex-scroll {
+        overflow-y: auto;
+        height: calc(100vh - 50px);
+        flex-wrap: nowrap !important;
+      }
+
+      .navbar-brand {
+        align-items: center;
+        display: flex;
+      }
+
+      #v-pills-tab {
+        overflow-y: scroll;
+      }
+
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+
+      #v-pills-tab {
+        gap: 5px;
+      }
+
+      .header-PASS::before {
+        content: "✅ Passing checks";
+        display: block;
+      }
+      .header-SKIP::before {
+        content: "⏩ Skipped checks";
+        display: block;
+      }
+      .header-WARN::before {
+        content: "⚠️ Warnings";
+        display: block;
+      }
+      .header-INFO::before {
+        content: "ℹ️ Information";
+        display: block;
+      }
+      .header-FAIL::before {
+        content: "🔥 Failing checks";
+        display: block;
+      }
+      .header-ERROR::before {
+        content: "💥 Errors";
+        display: block;
+      }
+      .bg-PASS {
+        background-color: #8df0a8 !important;
+      }
+
+      .bg-SKIP {
+        background-color: #acb0ad !important;
+      }
+
+      .bg-WARN {
+        background-color: #e0cf9b !important;
+      }
+
+      .bg-FAIL {
+        background-color: #e0999b !important;
+      }
+
+      .bg-ERROR {
+        background-color: #050505 !important;
+        color: #888888 !important;
+      }
+
+      .bg-INFO {
+        background-color: #bdbcf7 !important;
+      }
+
+      #badges {
+        font-size: 30px;
+      }
+      .leftarrow {
+        display: none;
+      }
+      #startModal {
+        overflow: scroll !important;
+      }
+      .tab-content {
+        padding-bottom: 50px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="modal" tabindex="-1" id="startModal" style="display: none;">
+      <div class="modal-dialog bg-gradient">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="align-self-center mx-auto rounded pt-0 pl-3 pr-3 bg-white shadow-lg">
+                  <img src="Fontspector.svg" class="mx-auto d-block img-fluid">
+                  <form class="dropzone dz-clickable dz-started" id="dropzone">
+                    <div class="dz-message">Drop your fonts here.</div>
+                    <div class="previews"></div>
+                  <div class="dz-preview dz-file-preview">  <div class="dz-image"><img data-dz-thumbnail=""></div>  <div class="dz-details">    <div class="dz-size"><span data-dz-size=""><strong>0.5</strong> MB</span></div>    <div class="dz-filename"><span data-dz-name="">Samaano[slnt,wdth,wght].ttf</span></div>  </div>  <div class="dz-progress">    <span class="dz-upload" data-dz-uploadprogress=""></span>  </div>  <div class="dz-error-message"><span data-dz-errormessage=""></span></div>  <div class="dz-success-mark">    <svg width="54" height="54" viewBox="0 0 54 54" fill="white" xmlns="http://www.w3.org/2000/svg">      <path d="M10.2071 29.7929L14.2929 25.7071C14.6834 25.3166 15.3166 25.3166 15.7071 25.7071L21.2929 31.2929C21.6834 31.6834 22.3166 31.6834 22.7071 31.2929L38.2929 15.7071C38.6834 15.3166 39.3166 15.3166 39.7071 15.7071L43.7929 19.7929C44.1834 20.1834 44.1834 20.8166 43.7929 21.2071L22.7071 42.2929C22.3166 42.6834 21.6834 42.6834 21.2929 42.2929L10.2071 31.2071C9.81658 30.8166 9.81658 30.1834 10.2071 29.7929Z"></path>    </svg>  </div>  <div class="dz-error-mark">    <svg width="54" height="54" viewBox="0 0 54 54" fill="white" xmlns="http://www.w3.org/2000/svg">      <path d="M26.2929 20.2929L19.2071 13.2071C18.8166 12.8166 18.1834 12.8166 17.7929 13.2071L13.2071 17.7929C12.8166 18.1834 12.8166 18.8166 13.2071 19.2071L20.2929 26.2929C20.6834 26.6834 20.6834 27.3166 20.2929 27.7071L13.2071 34.7929C12.8166 35.1834 12.8166 35.8166 13.2071 36.2071L17.7929 40.7929C18.1834 41.1834 18.8166 41.1834 19.2071 40.7929L26.2929 33.7071C26.6834 33.3166 27.3166 33.3166 27.7071 33.7071L34.7929 40.7929C35.1834 41.1834 35.8166 41.1834 36.2071 40.7929L40.7929 36.2071C41.1834 35.8166 41.1834 35.1834 40.7929 34.7929L33.7071 27.7071C33.3166 27.3166 33.3166 26.6834 33.7071 26.2929L40.7929 19.2071C41.1834 18.8166 41.1834 18.1834 40.7929 17.7929L36.2071 13.2071C35.8166 12.8166 35.1834 12.8166 34.7929 13.2071L27.7071 20.2929C27.3166 20.6834 26.6834 20.6834 26.2929 20.2929Z"></path>    </svg>  </div></div></form>
+                  <div class="check-profile pt-3 pl-3 pr-3">
+                    <div class="row">
+                      <div class="col">
+                        <h6>Log levels</h6>
+                        <select class="custom-select" id="loglevels">
+                          <option value="PASS">PASS</option>
+                          <option value="INFO" selected="">INFO</option>
+                          <option value="WARN">WARN</option>
+                          <option value="FAIL">FAIL</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input id="full-lists" class="form-check-input" type="checkbox" value="">
+                          <label class="form-check-label" for="full-lists">Display full lists?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="check-profile pt-3 pl-3 pr-3" id="profiles">
+                    <h6>Check profile</h6>
+                    <div class="row">
+                      <div id="col0" class="col"><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-opentype">
+        <label class="form-check-label" for="profile-opentype">
+           OpenType (standards compliance)
+        </label>
+    </div><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-googlefonts">
+        <label class="form-check-label" for="profile-googlefonts">
+           Google Fonts
+        </label>
+    </div><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-adobefonts">
+        <label class="form-check-label" for="profile-adobefonts">
+           Adobe Fonts
+        </label>
+    </div><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-fontwerk">
+        <label class="form-check-label" for="profile-fontwerk">
+           Fontwerk
+        </label>
+    </div></div>
+                      <div id="col1" class="col"><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-universal" checked="">
+        <label class="form-check-label" for="profile-universal">
+           Universal (community best practices)
+        </label>
+    </div><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-iso15008">
+        <label class="form-check-label" for="profile-iso15008">
+           ISO 15008 (in-car accessibility)
+        </label>
+    </div><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-fontbureau">
+        <label class="form-check-label" for="profile-fontbureau">
+           Font Bureau
+        </label>
+    </div><div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="profile-microsoft">
+        <label class="form-check-label" for="profile-microsoft">
+           Microsoft
+        </label>
+    </div></div>
+                    </div>
+                    <div class="mx-auto" style="width: 200px">
+                      <button class="btn mt-3" style="width: 200px;" id="test">
+                        Inspect!
+                      </button>
+                    </div>
+                    <div class="mx-auto mt-2 mb-0 text-muted">
+                      <p>
+                        <small>No files are uploaded; fonts stay on your browser.
+                          Always runs the latest Fontspector release, as if
+                          you'd just run "cargo install fontspector."</small>
+                      </p>
+                    </div>
+                    <div class="mx-auto mt-2 mb-0" style="" id="listcheckscontainer">
+                      <p>
+                        <a class="btn btn-outline-primary float-right" href="https://github.com/fonttools/fontspector/issues/new/choose">Report an issue</a>
+                        <button id="listchecksbtn" class="btn btn-outline-primary">
+                          List all checks
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" tabindex="-1" id="errorModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container h-100">
+              <div class="row h-100 justify-content-between">
+                <div class="align-self-center mx-auto">
+                  <h2>An error occurred</h2>
+                  <div class="alert alert-danger" role="alert">
+                    <pre id="errorText"></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="listchecks" style="display: none">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="leftarrow text-secondary" href="#">&lt;</a>
+          All the Fontspector Checks!
+        </div>
+      </nav>
+      <div class="container">
+        <div id="checks"></div>
+      </div>
+    </div>
+    <div id="normalresults">
+      <nav class="navbar navbar-light bg-light">
+        <a class="leftarrow text-secondary" href="#">&lt;</a>
+        <a class="navbar-brand d-block" href="#">
+          <img src="lens.svg" width="60" height="60" class="d-inline-block align-top" alt="">
+          <div class="d-inline-block align-middle">
+            Fontspector Check Report <br>
+            for <span id="font-name">Samaano</span>
+          </div>
+        </a>
+        <div id="badges">
+          <span class="ml-4 mr-4" data-toggle="tooltip" title="" data-original-title="Error">💥 <span id="ERROR-count">0</span></span>
+          <span class="ml-4 mr-4" data-toggle="tooltip" title="" data-original-title="Fail">🔥 <span id="FAIL-count">21</span></span>
+          <span class="ml-4 mr-4" data-toggle="tooltip" title="" data-original-title="Warn">⚠️ <span id="WARN-count">62</span></span>
+          <span class="ml-4 mr-4" data-toggle="tooltip" title="" data-original-title="Skip">⏩ <span id="SKIP-count">0</span></span>
+          <span class="ml-4 mr-4" data-toggle="tooltip" title="" data-original-title="Info">ℹ️ <span id="INFO-count">22</span></span>
+          <span class="ml-4 mr-4" data-toggle="tooltip" title="" data-original-title="Pass">✅ <span id="PASS-count">0</span></span>
+        </div>
+        <div id="progress-wrapper">
+          <div class="progress mt-3" id="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+        </div>
+        <div id="download">
+          <a class="btn btn-primary" onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="fontspector-report.html">Download</a>
+        </div>
+      </nav>
+      <p class="fs-6 bg-light pl-4 text-muted">
+        Fontspector version <span id="fb-version">0.1.0</span>
+      </p>
+      <div class="container row pt-2">
+        <div class="col-5">
+          <div class="nav flex-column nav-pills flex-scroll" id="v-pills-tab" role="tablist" aria-orientation="vertical"><button class="nav-link disabled header-FAIL" data-sortorder="a">
+          </button><button class="nav-link bg-FAIL active" id="v-pills-0-tab" data-toggle="pill" data-target="#v-pills-0" data-sortorder="aa" type="button" role="tab" data-checkid="family/win_ascent_and_descent" aria-controls="v-pills-0" aria-selected="true">Checking OS/2 usWinAscent &amp; usWinDescent</button><button class="nav-link bg-FAIL" id="v-pills-6-tab" data-toggle="pill" data-target="#v-pills-6" data-sortorder="aa" type="button" role="tab" data-checkid="googlefonts/font_copyright" aria-controls="v-pills-6">Copyright notices match canonical pattern in fonts</button><button class="nav-link bg-FAIL" id="v-pills-18-tab" data-toggle="pill" data-target="#v-pills-18" data-sortorder="aa" type="button" role="tab" data-checkid="whitespace_ink" aria-controls="v-pills-18">Whitespace glyphs have ink?</button><button class="nav-link bg-FAIL" id="v-pills-19-tab" data-toggle="pill" data-target="#v-pills-19" data-sortorder="aa" type="button" role="tab" data-checkid="googlefonts/glyphsets/shape_languages" aria-controls="v-pills-19">Shapes languages in all GF glyphsets.</button><button class="nav-link bg-FAIL" id="v-pills-28-tab" data-toggle="pill" data-target="#v-pills-28" data-sortorder="aa" type="button" role="tab" data-checkid="googlefonts/STAT/axisregistry" aria-controls="v-pills-28">
+    Validate STAT particle names and values match the fallback names in GFAxisRegistry.
+    </button><button class="nav-link disabled header-WARN" data-sortorder="b">
+          </button><button class="nav-link bg-WARN" id="v-pills-2-tab" data-toggle="pill" data-target="#v-pills-2" data-sortorder="bb" type="button" role="tab" data-checkid="googlefonts/metadata/unreachable_subsetting" aria-controls="v-pills-2">Check for codepoints not covered by METADATA subsets.</button><button class="nav-link bg-WARN" id="v-pills-8-tab" data-toggle="pill" data-target="#v-pills-8" data-sortorder="bb" type="button" role="tab" data-checkid="opentype/GDEF_mark_chars" aria-controls="v-pills-8">Check mark characters are in GDEF mark glyph class.</button><button class="nav-link bg-WARN" id="v-pills-9-tab" data-toggle="pill" data-target="#v-pills-9" data-sortorder="bb" type="button" role="tab" data-checkid="opentype/monospace" aria-controls="v-pills-9">Checking correctness of monospaced metadata.</button><button class="nav-link bg-WARN" id="v-pills-10-tab" data-toggle="pill" data-target="#v-pills-10" data-sortorder="bb" type="button" role="tab" data-checkid="alt_caron" aria-controls="v-pills-10">Check accent of Lcaron, dcaron, lcaron, tcaron</button><button class="nav-link bg-WARN" id="v-pills-11-tab" data-toggle="pill" data-target="#v-pills-11" data-sortorder="bb" type="button" role="tab" data-checkid="contour_count" aria-controls="v-pills-11">Check if each glyph has the recommended amount of contours.</button><button class="nav-link bg-WARN" id="v-pills-13-tab" data-toggle="pill" data-target="#v-pills-13" data-sortorder="bb" type="button" role="tab" data-checkid="interpolation_issues" aria-controls="v-pills-13">Detect any interpolation issues in the font.</button><button class="nav-link bg-WARN" id="v-pills-14-tab" data-toggle="pill" data-target="#v-pills-14" data-sortorder="bb" type="button" role="tab" data-checkid="ligature_carets" aria-controls="v-pills-14">Are there caret positions declared for every ligature?</button><button class="nav-link bg-WARN" id="v-pills-16-tab" data-toggle="pill" data-target="#v-pills-16" data-sortorder="bb" type="button" role="tab" data-checkid="soft_hyphen" aria-controls="v-pills-16">Does the font contain a soft hyphen?</button><button class="nav-link bg-WARN" id="v-pills-17-tab" data-toggle="pill" data-target="#v-pills-17" data-sortorder="bb" type="button" role="tab" data-checkid="unreachable_glyphs" aria-controls="v-pills-17">Check font contains no unreachable glyphs</button><button class="nav-link bg-WARN" id="v-pills-20-tab" data-toggle="pill" data-target="#v-pills-20" data-sortorder="bb" type="button" role="tab" data-checkid="googlefonts/separator_glyphs" aria-controls="v-pills-20">Font has correct separator glyphs?</button><button class="nav-link bg-WARN" id="v-pills-21-tab" data-toggle="pill" data-target="#v-pills-21" data-sortorder="bb" type="button" role="tab" data-checkid="soft_dotted" aria-controls="v-pills-21">Ensure soft_dotted characters lose their dot when combined with marks that
+replace the dot.</button><button class="nav-link bg-WARN" id="v-pills-22-tab" data-toggle="pill" data-target="#v-pills-22" data-sortorder="bb" type="button" role="tab" data-checkid="outline_direction" aria-controls="v-pills-22">Check the direction of the outermost contour in each glyph</button><button class="nav-link bg-WARN" id="v-pills-23-tab" data-toggle="pill" data-target="#v-pills-23" data-sortorder="bb" type="button" role="tab" data-checkid="overlapping_path_segments" aria-controls="v-pills-23">Check there are no overlapping path segments</button><button class="nav-link bg-WARN" id="v-pills-24-tab" data-toggle="pill" data-target="#v-pills-24" data-sortorder="bb" type="button" role="tab" data-checkid="googlefonts/fvar_instances" aria-controls="v-pills-24">Check variable font instances</button><button class="nav-link disabled header-INFO" data-sortorder="c">
+          </button><button class="nav-link bg-INFO" id="v-pills-4-tab" data-toggle="pill" data-target="#v-pills-4" data-sortorder="cc" type="button" role="tab" data-checkid="googlefonts/description/has_article" aria-controls="v-pills-4">Check for presence of an ARTICLE.en_us.html file</button><button class="nav-link bg-INFO" id="v-pills-7-tab" data-toggle="pill" data-target="#v-pills-7" data-sortorder="cc" type="button" role="tab" data-checkid="googlefonts/STAT/axis_order" aria-controls="v-pills-7">Check axis ordering on the STAT table.</button><button class="nav-link bg-INFO" id="v-pills-12-tab" data-toggle="pill" data-target="#v-pills-12" data-sortorder="cc" type="button" role="tab" data-checkid="hinting_impact" aria-controls="v-pills-12">Show hinting filesize impact.</button><button class="nav-link bg-INFO" id="v-pills-15-tab" data-toggle="pill" data-target="#v-pills-15" data-sortorder="cc" type="button" role="tab" data-checkid="required_tables" aria-controls="v-pills-15">Font contains all required tables?</button><button class="nav-link bg-INFO" id="v-pills-25-tab" data-toggle="pill" data-target="#v-pills-25" data-sortorder="cc" type="button" role="tab" data-checkid="googlefonts/gasp" aria-controls="v-pills-25">Is the Grid-fitting and Scan-conversion Procedure ('gasp') table
+set to optimize rendering?</button><button class="nav-link bg-INFO" id="v-pills-26-tab" data-toggle="pill" data-target="#v-pills-26" data-sortorder="cc" type="button" role="tab" data-checkid="googlefonts/meta/script_lang_tags" aria-controls="v-pills-26">Ensure fonts have ScriptLangTags declared on the 'meta' table.</button><button class="nav-link bg-INFO" id="v-pills-27-tab" data-toggle="pill" data-target="#v-pills-27" data-sortorder="cc" type="button" role="tab" data-checkid="googlefonts/old_ttfautohint" aria-controls="v-pills-27">Font has old ttfautohint applied?</button></div>
+        </div>
+        <div class="col-7">
+          <div class="tab-content" id="v-pills-tabContent"><div class="tab-pane fade active show" data-sortorder="aa" id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0-tab" data-checkid="family/win_ascent_and_descent">
+          <h4>Checking OS/2 usWinAscent &amp; usWinDescent</h4>
+          <p class="text-muted">family/win_ascent_and_descent</p>
+          <div class="rationale">
+          <p>A font's winAscent and winDescent values should be greater than or equal to the head table's yMax, abs(yMin) values. If they are less than these values, clipping can occur on Windows platforms (<a href="https://github.com/RedHatBrand/Overpass/issues/33">https://github.com/RedHatBrand/Overpass/issues/33</a>).</p>
+<p>If the font includes tall/deep writing systems such as Arabic or Devanagari, the winAscent and winDescent can be greater than the yMax and absolute yMin values to accommodate vowel marks.</p>
+<p>When the 'win' Metrics are significantly greater than the UPM, the linespacing can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2 'typo' values instead. This means the font developer can control the linespacing with the 'typo' values, whilst avoiding clipping by setting the 'win' values to values greater than the yMax and absolute yMin.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>A collection</b>
+            <ul data-filename="A collection">
+            <li>
+      <span class="bg-FAIL font-weight-bold">
+        FAIL
+      </span>:
+      <div><p>OS/2.usWinDescent value should be equal or greater than 1039, but got 1034 instead.</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="aa" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab" data-checkid="googlefonts/font_copyright">
+          <h4>Copyright notices match canonical pattern in fonts</h4>
+          <p class="text-muted">googlefonts/font_copyright</p>
+          <div class="rationale">
+          <p>This check aims at ensuring a uniform and legally accurate copyright statement on the name table entries and METADATA.pb files of font files across the Google Fonts library.</p>
+<p>We also check that the copyright field in METADATA.pb matches the contents of the name table nameID 0 (Copyright), and that the copyright notice within the METADATA.pb file is not too long; if it is more than 500 characters, this may be an indication that either a full license or the font's description has been included in this field by mistake.</p>
+<p>The expected pattern for the copyright string adheres to the following rules:</p>
+<ul>
+<li>
+<p>It must say "Copyright" followed by a 4 digit year (optionally followed by   a hyphen and another 4 digit year)</p>
+</li>
+<li>
+<p>Additional years or year ranges are also valid.</p>
+</li>
+<li>
+<p>An optional comma can be placed here.</p>
+</li>
+<li>
+<p>Then it must say "The <familyname> Project Authors" and, within parentheses,   a URL for a git repository must be provided. But we have an exception   for the fonts from the Noto project, that simply have   "google llc. all rights reserved" here.</familyname></p>
+</li>
+<li>
+<p>The check is case insensitive and does not validate whether the familyname   is correct, even though we'd obviously expect it to be.</p>
+</li>
+</ul>
+<p>Here is an example of a valid copyright string:</p>
+<p>"Copyright 2017 The Archivo Black Project Authors  (<a href="https://github.com/Omnibus-Type/ArchivoBlack">https://github.com/Omnibus-Type/ArchivoBlack</a>)"</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>A collection</b>
+            <ul data-filename="A collection">
+            <li>
+      <span class="bg-FAIL font-weight-bold">
+        FAIL
+      </span>:
+      <div><p>Samaano[slnt,wdth,wght].ttf: Name Table entry: Copyright notices should match a pattern similar to:</p>
+<p>"Copyright 2020 The Familyname Project Authors (git url)"</p>
+<p>But instead we have got:</p>
+<p>"copyright 2024-25 the samaano project authors (<a href="https://github.com/mitradranirban/samaano-fonts">https://github.com/mitradranirban/samaano-fonts</a>)"</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="aa" id="v-pills-18" role="tabpanel" aria-labelledby="v-pills-18-tab" data-checkid="whitespace_ink">
+          <h4>Whitespace glyphs have ink?</h4>
+          <p class="text-muted">whitespace_ink</p>
+          <div class="rationale">
+          <p>This check ensures that certain whitespace glyphs are empty. Certain text layout engines will assume that these glyphs are empty, and will not draw them; if they were in fact not designed to be empty, the result will be text layout that is not as expected.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-FAIL font-weight-bold">
+        FAIL
+      </span>:
+      <div><p>The following glyphs have ink; they should be replaced by an empty glyph:</p>
+<ul>
+<li>uni200D</li>
+<li>uni200C</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="aa" id="v-pills-19" role="tabpanel" aria-labelledby="v-pills-19-tab" data-checkid="googlefonts/glyphsets/shape_languages">
+          <h4>Shapes languages in all GF glyphsets.</h4>
+          <p class="text-muted">googlefonts/glyphsets/shape_languages</p>
+          <div class="rationale">
+          <p>This check uses a heuristic to determine which GF glyphsets a font supports. Then it checks the font for correct shaping behaviour for all languages in those glyphsets.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-FAIL font-weight-bold">
+        FAIL
+      </span>:
+      <div><p>Failed language shaping:</p>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* vut_Latn (Vute)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to ecedilla when shaping the text 'ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Ecedilla when shaping the text 'Ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to ecedilla when shaping the text 'ȩ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Ecedilla when shaping the text 'Ȩ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to ecedilla when shaping the text 'ȩ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to Ecedilla when shaping the text 'Ȩ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni0259 when shaping the text 'ə̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni0259 when shaping the text 'ə̧́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni0259 when shaping the text 'ə̧̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni0259 when shaping the text 'ə̧̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istroke when shaping the text 'ɨ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istrokedotless when shaping the text 'ɨ̧́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istrokedotless when shaping the text 'ɨ̧̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istrokedotless when shaping the text 'ɨ̧̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* mnf_Latn (Mundani)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01CE when shaping the text 'ǎ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01CD when shaping the text 'Ǎ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to ecedilla when shaping the text 'ȩ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Ecedilla when shaping the text 'Ȩ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to ecedilla when shaping the text 'ȩ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to Ecedilla when shaping the text 'Ȩ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030C to ecedilla when shaping the text 'ȩ̌'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030C to Ecedilla when shaping the text 'Ȩ̌'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istroke when shaping the text 'ɨ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istrokedotless when shaping the text 'ɨ̧̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istrokedotless when shaping the text 'ɨ̧̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to istrokedotless when shaping the text 'ɨ̧̌'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to Istroke when shaping the text 'Ɨ̧̌'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01D2 when shaping the text 'ǒ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01D1 when shaping the text 'Ǒ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01D4 when shaping the text 'ǔ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01D3 when shaping the text 'Ǔ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* pnz_Latn (Pana, Central African Republic)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to ecedilla when shaping the text 'ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Ecedilla when shaping the text 'Ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to ecedilla when shaping the text 'ȩ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to Ecedilla when shaping the text 'Ȩ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* ikw_Latn (Ikwere)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to idotbelow.dotless when shaping the text 'ị̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to idotbelow.dotless when shaping the text 'ị́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to idotbelow.dotless when shaping the text 'ị̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0304 to idotbelow.dotless when shaping the text 'ị̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* sba_Latn (Ngambay)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to uni0259 when shaping the text 'ə̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* avu_Latn (Avokaya)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to idotbelow.dotless when shaping the text 'ị́'</td>
+<td>* mhi_Latn (Ma’di)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to idotbelow.dotless when shaping the text 'ị̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to idotbelow.dotless when shaping the text 'ị̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* dur_Latn (Dii)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to ecedilla when shaping the text 'ȩ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Ecedilla when shaping the text 'Ȩ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to ecedilla when shaping the text 'ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Ecedilla when shaping the text 'Ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni0259 when shaping the text 'ə̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni0259 when shaping the text 'ə̧̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni0259 when shaping the text 'ə̧́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* kzr_Latn (Karang)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to ecedilla when shaping the text 'ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Ecedilla when shaping the text 'Ȩ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* ijs_Latn (Ijo, Southeast)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to idotbelow.dotless when shaping the text 'ị́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* dnj_Latn (Dan)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030F to vturned when shaping the text 'ʌ̏'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030F to Vturned when shaping the text 'Ʌ̏'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to vturned when shaping the text 'ʌ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Vturned when shaping the text 'Ʌ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0304 to vturned when shaping the text 'ʌ̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0304 to Vturned when shaping the text 'Ʌ̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to vturned when shaping the text 'ʌ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Vturned when shaping the text 'Ʌ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030B to vturned when shaping the text 'ʌ̋'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030B to Vturned when shaping the text 'Ʌ̋'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to vturned when shaping the text 'ʌ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to Vturned when shaping the text 'Ʌ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030F to mturned when shaping the text 'ɯ̏'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to mturned when shaping the text 'ɯ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0304 to mturned when shaping the text 'ɯ̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to mturned when shaping the text 'ɯ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030B to mturned when shaping the text 'ɯ̋'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to mturned when shaping the text 'ɯ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* kbo_Latn (Keliko)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to idotbelow.dotless when shaping the text 'ị́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to idotbelow.dotless when shaping the text 'ị̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* mge_Latn (Mango)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to uni0259 when shaping the text 'ə̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to uni0259 when shaping the text 'ə̰̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to uni0259 when shaping the text 'ə̰́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* bax_Latn (Bamun (Latin))</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to udieresis when shaping the text 'ü̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to Udieresis when shaping the text 'Ü̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* gov_Latn (Goo)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to vturned when shaping the text 'ʌ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Vturned when shaping the text 'Ʌ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to vturned when shaping the text 'ʌ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to Vturned when shaping the text 'Ʌ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to vturned when shaping the text 'ʌ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Vturned when shaping the text 'Ʌ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* ekp_Latn (Ekpeye)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to idotbelow.dotless when shaping the text 'ị̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to idotbelow.dotless when shaping the text 'ị̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0304 to idotbelow.dotless when shaping the text 'ị̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* kdj_Latn (Karamojong)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0331 to istroke when shaping the text 'ɨ̱'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0331 to Istroke when shaping the text 'Ɨ̱'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0331 to ubar when shaping the text 'ʉ̱'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0331 to Ubar when shaping the text 'Ʉ̱'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* bvi_Latn (Belanda Viri, Latin)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to edieresis when shaping the text 'ë́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Edieresis when shaping the text 'Ë́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to edieresis when shaping the text 'ë̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Edieresis when shaping the text 'Ë̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to idieresis when shaping the text 'ï̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Idieresis when shaping the text 'Ï̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to odieresis when shaping the text 'ö́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Odieresis when shaping the text 'Ö́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to odieresis when shaping the text 'ö̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Odieresis when shaping the text 'Ö̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to udieresis when shaping the text 'ü̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Udieresis when shaping the text 'Ü̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* fvr_Latn (Fur)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0331 to uni01CE when shaping the text 'ǎ̱'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0331 to uni01CD when shaping the text 'Ǎ̱'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* kzc_Latn (Bondoukou Kulango)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to omega_latin when shaping the text 'ꞷ̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Omega_latin when shaping the text 'Ꞷ̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* igb_Latn (Ebira)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to idotbelow.dotless when shaping the text 'ị́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to idotbelow.dotless when shaping the text 'ị̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to idotbelow.dotless when shaping the text 'ị̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0304 to idotbelow.dotless when shaping the text 'ị̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory orthography codepoints:</td>
+<td>* mcp_Latn (Makaa)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01D2 when shaping the text 'ǒ̧'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0327 to uni01D1 when shaping the text 'Ǒ̧'</td>
+<td></td>
+</tr></tbody></table>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Warning language shaping:</p>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* abn_Latn (Abua)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to idotbelow.dotless when shaping the text 'ị́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0304 to idotbelow.dotless when shaping the text 'ị̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* mge_Latn (Mango)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to uni0259 when shaping the text 'ə̰̄'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* gkp_Latn (Kpelle, Guinea)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to aogonek when shaping the text 'ą́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0328 to uni0259 when shaping the text 'ə̨'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0328 to uni0259 when shaping the text 'ə̨́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to iogonek_dotless when shaping the text 'į́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to idotbelow.dotless when shaping the text 'ị́'</td>
+<td>* ig_Latn (Igbo)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to idotbelow.dotless when shaping the text 'ị̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0329 to uni01D2 when shaping the text 'ǒ̩'</td>
+<td>* yo_Latn (Yoruba)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0329 to uni01D1 when shaping the text 'Ǒ̩'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* eto_Latn (Eton, Cameroon)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to nhookleft when shaping the text 'ɲ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Nhookleft when shaping the text 'Ɲ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to nhookleft when shaping the text 'ɲ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Nhookleft when shaping the text 'Ɲ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* kib_Latn (Koalib)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Aturned when shaping the text 'Ɐ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Aturned when shaping the text 'Ɐ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0302 to Aturned when shaping the text 'Ɐ̂'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* sba_Latn (Ngambay)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to eturned when shaping the text 'ǝ̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to Ereversed when shaping the text 'Ǝ̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* lt_Latn (Lithuanian)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Edotaccent when shaping the text 'Ė́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Edotaccent when shaping the text 'Ė̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Idotaccent when shaping the text 'İ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Idotaccent when shaping the text 'İ́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Idotaccent when shaping the text 'İ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach gravecomb to Idotaccent when shaping the text 'İ̀'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Idotaccent when shaping the text 'İ̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Idotaccent when shaping the text 'İ̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to Umacron when shaping the text 'Ū́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to Umacron when shaping the text 'Ū̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to aogonek when shaping the text 'ą́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to aogonek when shaping the text 'ą̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to edotaccent when shaping the text 'ė́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to edotaccent when shaping the text 'ė̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to iogonek_dotless when shaping the text 'į́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0307 to iogonek_dotless when shaping the text 'į̇́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to uni0307 when shaping the text 'į̇́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to iogonek_dotless when shaping the text 'į̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni0307 to iogonek_dotless when shaping the text 'į̇̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to uni0307 when shaping the text 'į̇̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach acutecomb to umacron when shaping the text 'ū́'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildecomb to umacron when shaping the text 'ū̃'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* ttq_Latn (Tawallammat Tamajaq)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030C to uni1E62 when shaping the text 'Ṣ̌'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030C to uni1E63 when shaping the text 'ṣ̌'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* kyq_Latn (Kenga)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to nacute when shaping the text 'ń̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to Nacute when shaping the text 'Ń̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to uni01F9 when shaping the text 'ǹ̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Shaper didn't attach tildebelowcomb to uni01F8 when shaping the text 'Ǹ̰'</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* ekp_Latn (Ekpeye)</td>
+</tr>
+<tr>
+<td>Shaper didn't attach uni030C to idotbelow.dotless when shaping the text 'ị̌'</td>
+<td>* igb_Latn (Ebira)</td>
+</tr></tbody></table>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="aa" id="v-pills-28" role="tabpanel" aria-labelledby="v-pills-28-tab" data-checkid="googlefonts/STAT/axisregistry">
+          <h4>
+    Validate STAT particle names and values match the fallback names in GFAxisRegistry.
+    </h4>
+          <p class="text-muted">googlefonts/STAT/axisregistry</p>
+          <div class="rationale">
+          <p>Check that particle names and values on STAT table match the fallback names in each axis entry at the Google Fonts Axis Registry, available at <a href="https://github.com/google/fonts/tree/main/axisregistry">https://github.com/google/fonts/tree/main/axisregistry</a></p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-FAIL font-weight-bold">
+        FAIL
+      </span>:
+      <div><p>On the font variation axis 'slnt', the name 'Oblique' is not among the expected ones (Default) according to the Google Fonts Axis Registry.</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab" data-checkid="googlefonts/metadata/unreachable_subsetting">
+          <h4>Check for codepoints not covered by METADATA subsets.</h4>
+          <p class="text-muted">googlefonts/metadata/unreachable_subsetting</p>
+          <div class="rationale">
+          <p>This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the <code>subsets</code> field and the subset definitions in the <code>glyphsets</code> repository.</p>
+<p>Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>A collection</b>
+            <ul data-filename="A collection">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Samaano[slnt,wdth,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.</p>
+<ul>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: glagolitic, math, elbasan, coptic, gothic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, malayalam, canadian-aboriginal, tifinagh, math, todhri, tai-le, coptic, syriac, duployan</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+... and 120 others</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: cyrillic-ext, devanagari, greek-ext, greek, latin-ext, latin, tamil, vietnamese</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab" data-checkid="opentype/GDEF_mark_chars">
+          <h4>Check mark characters are in GDEF mark glyph class.</h4>
+          <p class="text-muted">opentype/GDEF_mark_chars</p>
+          <div class="rationale">
+          <p>Mark characters should be in the GDEF mark glyph class.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>The following mark characters should be in the GDEF mark glyph class:</p>
+<ul>
+<li>U+0955 (uni0955)</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-9" role="tabpanel" aria-labelledby="v-pills-9-tab" data-checkid="opentype/monospace">
+          <h4>Checking correctness of monospaced metadata.</h4>
+          <p class="text-muted">opentype/monospace</p>
+          <div class="rationale">
+          <p>There are various metadata in the OpenType spec to specify if a font is monospaced or not. If the font is not truly monospaced, then no monospaced metadata should be set (as sometimes they mistakenly are...)</p>
+<p>Requirements for monospace fonts:</p>
+<ul>
+<li>
+<p>post.isFixedPitch - "Set to 0 if the font is proportionally spaced,   non-zero if the font is not proportionally spaced (monospaced)"   (<a href="https://www.microsoft.com/typography/otspec/post.htm">https://www.microsoft.com/typography/otspec/post.htm</a>)</p>
+</li>
+<li>
+<p>hhea.advanceWidthMax must be correct, meaning no glyph's width value   is greater. (<a href="https://www.microsoft.com/typography/otspec/hhea.htm">https://www.microsoft.com/typography/otspec/hhea.htm</a>)</p>
+</li>
+<li>
+<p>OS/2.panose.bProportion must be set to 9 (monospace) on latin text fonts.</p>
+</li>
+<li>
+<p>OS/2.panose.bSpacing must be set to 3 (monospace) on latin hand written   or latin symbol fonts.</p>
+</li>
+<li>
+<p>Spec says: "The PANOSE definition contains ten digits each of which currently   describes up to sixteen variations. Windows uses bFamilyType, bSerifStyle   and bProportion in the font mapper to determine family type. It also uses   bProportion to determine if the font is monospaced."   (<a href="https://www.microsoft.com/typography/otspec/os2.htm#pan">https://www.microsoft.com/typography/otspec/os2.htm#pan</a>    <a href="https://monotypecom-test.monotype.de/services/pan2">https://monotypecom-test.monotype.de/services/pan2</a>)</p>
+</li>
+<li>
+<p>OS/2.xAvgCharWidth must be set accurately.   "OS/2.xAvgCharWidth is used when rendering monospaced fonts,   at least by Windows GDI"   (<a href="http://typedrawers.com/discussion/comment/15397/#Comment_15397">http://typedrawers.com/discussion/comment/15397/#Comment_15397</a>)</p>
+</li>
+</ul>
+<p>Also we should report an error for glyphs not of average width.</p>
+<p>Please also note:</p>
+<p>Thomas Phinney told us that a few years ago (as of December 2019), if you gave a font a monospace flag in Panose, Microsoft Word would ignore the actual advance widths and treat it as monospaced.</p>
+<p>Source: <a href="https://typedrawers.com/discussion/comment/45140/#Comment_45140">https://typedrawers.com/discussion/comment/45140/#Comment_45140</a></p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1713 instead.
+Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-10" role="tabpanel" aria-labelledby="v-pills-10-tab" data-checkid="alt_caron">
+          <h4>Check accent of Lcaron, dcaron, lcaron, tcaron</h4>
+          <p class="text-muted">alt_caron</p>
+          <div class="rationale">
+          <p>Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or quotesingle or comma or caron(comb). It should be composed with a distinctive glyph which doesn't look like an apostrophe.</p>
+<p>Source: <a href="https://ilovetypography.com/2009/01/24/on-diacritics/">https://ilovetypography.com/2009/01/24/on-diacritics/</a> <a href="http://diacritics.typo.cz/index.php?id=5">http://diacritics.typo.cz/index.php?id=5</a> <a href="https://www.typotheque.com/articles/lcaron">https://www.typotheque.com/articles/lcaron</a></p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Lcaron is decomposed and therefore could not be checked. Please check manually.</p>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>dcaron is decomposed and therefore could not be checked. Please check manually.</p>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>lcaron is decomposed and therefore could not be checked. Please check manually.</p>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>tcaron is decomposed and therefore could not be checked. Please check manually.</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-11" role="tabpanel" aria-labelledby="v-pills-11-tab" data-checkid="contour_count">
+          <h4>Check if each glyph has the recommended amount of contours.</h4>
+          <p class="text-muted">contour_count</p>
+          <div class="rationale">
+          <p>Visually QAing thousands of glyphs by hand is tiring. Most glyphs can only be constructured in a handful of ways. This means a glyph's contour count will only differ slightly amongst different fonts, e.g a 'g' could either be 2 or 3 contours, depending on whether its double story or single story.</p>
+<p>However, a quotedbl should have 2 contours, unless the font belongs to a display family.</p>
+<p>This check currently does not cover variable fonts because there's plenty of alternative ways of constructing glyphs with multiple outlines for each feature in a VarFont. The expected contour count data for this check is currently optimized for the typical construction of glyphs in static fonts.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are
+inferred from the typical amounts of contours observed in a
+large collection of reference font families. The divergences
+listed below may simply indicate a significantly different
+design on some of your glyphs. On the other hand, some of these
+may flag actual bugs in the font such as glyphs mapped to an
+incorrect codepoint. Please consider reviewing the design and
+codepoint assignment of these to make sure they are correct.</p>
+<pre><code>The following glyphs do not have the recommended number of contours:
+</code></pre>
+<ul>
+<li>A.circled (U+24B6): found 8, expected one of: {6, 2, 4}</li>
+<li>Adotaccent (U+0226): found 5, expected one of: {3}</li>
+<li>Alpha (U+0391): found 4, expected one of: {2, 3}</li>
+<li>Alpha_latin (U+2C6D): found 4, expected one of: {3, 2, 1}</li>
+<li>Alphatonos (U+0386): found 5, expected one of: {3, 4}</li>
+<li>Aringbelow (U+1E00): found 6, expected one of: {5, 4}</li>
+<li>Aturned (U+2C6F): found 4, expected one of: {2, 3}</li>
+<li>Bdotbelow (U+1E04): found 10, expected one of: {4, 3, 6}</li>
+<li>Beta (U+0392): found 9, expected one of: {4, 3, 2}
+... and 846 others</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-13" role="tabpanel" aria-labelledby="v-pills-13-tab" data-checkid="interpolation_issues">
+          <h4>Detect any interpolation issues in the font.</h4>
+          <p class="text-muted">interpolation_issues</p>
+          <div class="rationale">
+          <p>When creating a variable font, the designer must make sure that corresponding paths have the same start points across masters, as well as that corresponding component shapes are placed in the same order within a glyph across masters. If this is not done, the glyph will not interpolate correctly.</p>
+<p>Here we check for the presence of potential interpolation errors using the interpolatable crate.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph Eth has interpolation issues:</p>
+<ul>
+<li>Contour 2 becomes underweight in slnt=-20,wdth=200,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph Uhorn has interpolation issues:</p>
+<ul>
+<li>Contour 0 becomes underweight in wdth=200 compared to default</li>
+<li>Contour 1 becomes underweight in wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph fiveeighths has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph ghook has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [0, 6, 2, 3, 4, 1, 5] in wght=100</li>
+<li>Wrong start point: contour 1 should start at 1 in wght=100</li>
+<li>Contour 1 becomes underweight in wght=100 compared to default</li>
+<li>Contour 5 becomes underweight in wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph idotaccent has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3] in default vs [2, 1, 3, 0] in wdth=200</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph thook has interpolation issues:</p>
+<ul>
+<li>Contour 3 becomes underweight in slnt=-20 compared to default</li>
+<li>Contour 4 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph thook has interpolation issues:</p>
+<ul>
+<li>Contour 3 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+<li>Contour 4 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uhorn has interpolation issues:</p>
+<ul>
+<li>Contour 0 becomes underweight in slnt=-20 compared to default</li>
+<li>Contour 1 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uhorn has interpolation issues:</p>
+<ul>
+<li>Contour 0 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+<li>Contour 1 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni01D9 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [3, 0, 2, 1, 4, 5, 6] in slnt=-20</li>
+<li>Contour 0 becomes underweight in slnt=-20 compared to default</li>
+<li>Wrong start point: contour 1 should start at 3 in slnt=-20</li>
+<li>Contour 1 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni01DA has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [3, 0, 2, 1, 4, 5, 6] in slnt=-20</li>
+<li>Contour 0 becomes underweight in slnt=-20 compared to default</li>
+<li>Wrong start point: contour 1 should start at 3 in slnt=-20</li>
+<li>Contour 1 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0924_uni0930_uni094D.vatu has interpolation issues:</p>
+<ul>
+<li>Contour 3 becomes underweight in wdth=200,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0924_uni0930_uni094D.vatu has interpolation issues:</p>
+<ul>
+<li>Contour 3 becomes underweight in slnt=-20,wdth=200,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0B94 has interpolation issues:</p>
+<ul>
+<li>Contour 5 becomes underweight in slnt=-20,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0B9E_uni0BC1 has interpolation issues:</p>
+<ul>
+<li>Contour 0 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0B9E_uni0BC2 has interpolation issues:</p>
+<ul>
+<li>Contour 0 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0BB4_uni0BC1 has interpolation issues:</p>
+<ul>
+<li>Wrong start point: contour 7 should start at 5 in slnt=-20,wght=100 (and contour should be reversed)</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0BB4_uni0BC1 has interpolation issues:</p>
+<ul>
+<li>Wrong start point: contour 7 should start at 5 in slnt=-20,wdth=200,wght=100 (and contour should be reversed)</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0BB4_uni0BC2 has interpolation issues:</p>
+<ul>
+<li>Wrong start point: contour 7 should start at 5 in slnt=-20,wght=100 (and contour should be reversed)</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni0BB4_uni0BC2 has interpolation issues:</p>
+<ul>
+<li>Wrong start point: contour 7 should start at 5 in slnt=-20,wdth=200,wght=100 (and contour should be reversed)</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1E4E has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8] in default vs [1, 2, 3, 0, 4, 5, 6, 7, 8] in slnt=-20,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EAE has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7] in default vs [1, 0, 2, 3, 4, 5, 6, 7] in slnt=-20,wght=100</li>
+<li>Contour 1 becomes underweight in slnt=-20,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EAE has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7] in default vs [1, 0, 2, 3, 4, 5, 6, 7] in wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EAE has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7] in default vs [1, 0, 2, 3, 4, 5, 6, 7] in slnt=-20,wdth=200,wght=100</li>
+<li>Contour 1 becomes underweight in slnt=-20,wdth=200,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EAF has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8] in default vs [1, 0, 2, 3, 4, 5, 6, 7, 8] in slnt=-20,wght=100</li>
+<li>Contour 1 becomes underweight in slnt=-20,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EAF has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8] in default vs [1, 0, 2, 3, 4, 5, 6, 7, 8] in slnt=-20,wdth=200,wght=100</li>
+<li>Contour 1 becomes underweight in slnt=-20,wdth=200,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB0 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7] in default vs [1, 0, 2, 3, 4, 5, 6, 7] in slnt=-20,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB1 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8] in default vs [1, 0, 2, 3, 4, 5, 6, 7, 8] in slnt=-20,wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB2 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] in default vs [0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10] in slnt=-20,wdth=200</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB2 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] in default vs [0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10] in slnt=-20,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB2 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] in default vs [0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10] in slnt=-20,wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] in default vs [0, 1, 3, 4, 2, 5, 6, 7, 8, 9, 10, 11] in slnt=-20</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] in default vs [0, 1, 4, 3, 2, 5, 6, 7, 8, 9, 10, 11] in wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] in default vs [0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 11] in slnt=-20,wdth=200</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] in default vs [0, 1, 4, 3, 2, 5, 6, 7, 8, 9, 10, 11] in slnt=-20,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] in default vs [0, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 11] in wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EB3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] in default vs [0, 1, 4, 3, 2, 5, 6, 7, 8, 9, 10, 11] in slnt=-20,wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EC0 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [2, 1, 0, 3, 4, 5, 6] in wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EC0 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [2, 1, 0, 3, 4, 5, 6] in wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1ED2 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [2, 1, 0, 3, 4, 5, 6] in wdth=200</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1ED2 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [2, 1, 0, 3, 4, 5, 6] in wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1ED3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [2, 1, 0, 3, 4, 5, 6] in wdth=200</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1ED3 has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [2, 1, 0, 3, 4, 5, 6] in wdth=200,wght=100</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EE8 has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in wdth=200 compared to default</li>
+<li>Contour 2 becomes underweight in wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EE9 has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in slnt=-20 compared to default</li>
+<li>Contour 2 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EE9 has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+<li>Contour 2 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EEA has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in wdth=200 compared to default</li>
+<li>Contour 2 becomes underweight in wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EEB has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in slnt=-20 compared to default</li>
+<li>Contour 2 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EEB has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+<li>Contour 2 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EEC has interpolation issues:</p>
+<ul>
+<li>Contour 4 becomes underweight in wdth=200 compared to default</li>
+<li>Contour 5 becomes underweight in wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EED has interpolation issues:</p>
+<ul>
+<li>Contour 4 becomes underweight in slnt=-20 compared to default</li>
+<li>Contour 5 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EED has interpolation issues:</p>
+<ul>
+<li>Contour 4 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+<li>Contour 5 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EEE has interpolation issues:</p>
+<ul>
+<li>Contour 3 becomes underweight in wdth=200 compared to default</li>
+<li>Contour 4 becomes underweight in wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EEF has interpolation issues:</p>
+<ul>
+<li>Contour 3 becomes underweight in slnt=-20 compared to default</li>
+<li>Contour 4 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EEF has interpolation issues:</p>
+<ul>
+<li>Contour 3 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+<li>Contour 4 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EF0 has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in wdth=200 compared to default</li>
+<li>Contour 2 becomes underweight in wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EF1 has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in slnt=-20 compared to default</li>
+<li>Contour 2 becomes underweight in slnt=-20 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni1EF1 has interpolation issues:</p>
+<ul>
+<li>Contour 1 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+<li>Contour 2 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni20BF has interpolation issues:</p>
+<ul>
+<li>Contour 5 becomes underweight in slnt=-20,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li><li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>Glyph uni20BF has interpolation issues:</p>
+<ul>
+<li>Contour 5 becomes underweight in slnt=-20,wdth=200,wght=100 compared to default</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-14" role="tabpanel" aria-labelledby="v-pills-14-tab" data-checkid="ligature_carets">
+          <h4>Are there caret positions declared for every ligature?</h4>
+          <p class="text-muted">ligature_carets</p>
+          <div class="rationale">
+          <p>All ligatures in a font must have corresponding caret (text cursor) positions defined in the GDEF table, otherwhise, users may experience issues with caret rendering.</p>
+<p>If using GlyphsApp or UFOs, ligature carets can be defined as anchors with names starting with <code>caret_</code>. These can be compiled with fontmake as of version v2.4.0.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>This font lacks caret position values for ligature glyphs on its GDEF table.</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-16" role="tabpanel" aria-labelledby="v-pills-16-tab" data-checkid="soft_hyphen">
+          <h4>Does the font contain a soft hyphen?</h4>
+          <p class="text-muted">soft_hyphen</p>
+          <div class="rationale">
+          <p>The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation.</p>
+<p>It is sometimes designed empty with no width (such as a control character), sometimes the same as the traditional hyphen, sometimes double encoded with the hyphen.</p>
+<p>That being said, it is recommended to not include it in the font at all, because discretionary hyphenation should be handled at the level of the shaping engine, not the font. Also, even if present, the software would not display that character.</p>
+<p>More discussion at: <a href="https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-horizontalbar">https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-horizontalbar</a></p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>This font has a 'Soft Hyphen' character.</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-17" role="tabpanel" aria-labelledby="v-pills-17-tab" data-checkid="unreachable_glyphs">
+          <h4>Check font contains no unreachable glyphs</h4>
+          <p class="text-muted">unreachable_glyphs</p>
+          <div class="rationale">
+          <p>Glyphs are either accessible directly through Unicode codepoints or through substitution rules.</p>
+<p>In Color Fonts, glyphs are also referenced by the COLR table. And mathematical fonts also reference glyphs via the MATH table.</p>
+<p>Any glyphs not accessible by these means are redundant and serve only to increase the font's file size.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<ul>
+<li>Zlinebelow</li>
+<li>brevecomb_acutecomb</li>
+<li>brevecomb_gravecomb</li>
+<li>brevecomb_hookabovecomb</li>
+<li>brevecomb_tildecomb</li>
+<li>circumflexcomb_acutecomb</li>
+<li>circumflexcomb_gravecomb</li>
+<li>circumflexcomb_hookabovecomb</li>
+<li>circumflexcomb_tildecomb
+... and 34 others</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-20" role="tabpanel" aria-labelledby="v-pills-20-tab" data-checkid="googlefonts/separator_glyphs">
+          <h4>Font has correct separator glyphs?</h4>
+          <p class="text-muted">googlefonts/separator_glyphs</p>
+          <div class="rationale">
+          <p>U+2028 and U+2029 should be present; otherwise tofu is displayed. (whitespace_ink will check that they are empty)</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>The following separator glyphs are missing:</p>
+<ul>
+<li>U+2029</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-21" role="tabpanel" aria-labelledby="v-pills-21-tab" data-checkid="soft_dotted">
+          <h4>Ensure soft_dotted characters lose their dot when combined with marks that
+replace the dot.</h4>
+          <p class="text-muted">soft_dotted</p>
+          <div class="rationale">
+          <p>An accent placed on characters with a "soft dot", like i or j, causes the dot to disappear. An explicit dot above can be added where required. See "Diacritics on i and j" in Section 7.1, "Latin" in The Unicode Standard.</p>
+<p>Characters with the Soft_Dotted property are listed in <a href="https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt">https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt</a></p>
+<p>See also: <a href="https://googlefonts.github.io/gf-guide/diacritics.html#soft-dotted-glyphs">https://googlefonts.github.io/gf-guide/diacritics.html#soft-dotted-glyphs</a></p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: * i̓</p>
+<ul>
+<li>i᷇</li>
+<li>i᷆The dot of soft dotted characters <em>should</em> disappear in other cases, for example: * ɨ̨̓</li>
+<li>ɨ̨᷇</li>
+<li>ɨ̨͂</li>
+<li>ɨ̨᷆</li>
+<li>ɨ̨᷅</li>
+<li>ɨ̨᷄</li>
+<li>ɨ̨̔</li>
+<li>ɨ̵̓</li>
+<li>ɨ̵᷇
+... and 1888 others</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-22" role="tabpanel" aria-labelledby="v-pills-22-tab" data-checkid="outline_direction">
+          <h4>Check the direction of the outermost contour in each glyph</h4>
+          <p class="text-muted">outline_direction</p>
+          <div class="rationale">
+          <p>In TrueType fonts, the outermost contour of a glyph should be oriented clockwise, while the inner contours should be oriented counter-clockwise. Getting the path direction wrong can lead to rendering issues in some software.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>The following glyphs have a counter-clockwise outer contour:</p>
+<ul>
+<li>uni0BB8 (U+0BB8) has a counter-clockwise outer contour</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-23" role="tabpanel" aria-labelledby="v-pills-23-tab" data-checkid="overlapping_path_segments">
+          <h4>Check there are no overlapping path segments</h4>
+          <p class="text-muted">overlapping_path_segments</p>
+          <div class="rationale">
+          <p>Some rasterizers encounter difficulties when rendering glyphs with overlapping path segments.</p>
+<p>A path segment is a section of a path defined by two on-curve points. When two segments share the same coordinates, they are considered overlapping.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>The following glyphs have overlapping path segments:</p>
+<ul>
+<li>Abreve (U+0102): Line(Line { p0: (710.0, 1769.0), p1: (710.0, 1656.0) }) has the same coordinates as a previous segment.</li>
+<li>Abreve (U+0102): Line(Line { p0: (386.0, 1769.0), p1: (386.0, 1656.0) }) has the same coordinates as a previous segment.</li>
+<li>Atilde (U+00C3): Line(Line { p0: (337.0, 1857.0), p1: (337.0, 1758.0) }) has the same coordinates as a previous segment.</li>
+<li>Atilde (U+00C3): Line(Line { p0: (687.0, 1697.0), p1: (687.0, 1796.0) }) has the same coordinates as a previous segment.</li>
+<li>B (U+0042): Line(Line { p0: (433.0, 1023.0), p1: (433.0, 820.0) }) has the same coordinates as a previous segment.</li>
+<li>B (U+0042): Line(Line { p0: (442.0, 766.0), p1: (442.0, 567.0) }) has the same coordinates as a previous segment.</li>
+<li>B (U+0042): Line(Line { p0: (433.0, 1537.0), p1: (433.0, 1331.0) }) has the same coordinates as a previous segment.</li>
+<li>Bdotbelow (U+1E04): Line(Line { p0: (433.0, 1023.0), p1: (433.0, 820.0) }) has the same coordinates as a previous segment.</li>
+<li>Bdotbelow (U+1E04): Line(Line { p0: (442.0, 766.0), p1: (442.0, 567.0) }) has the same coordinates as a previous segment.
+... and 443 others</li>
+</ul>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="bb" id="v-pills-24" role="tabpanel" aria-labelledby="v-pills-24-tab" data-checkid="googlefonts/fvar_instances">
+          <h4>Check variable font instances</h4>
+          <p class="text-muted">googlefonts/fvar_instances</p>
+          <div class="rationale">
+          <p>Check a font's fvar instance coordinates comply with our guidelines: <a href="https://googlefonts.github.io/gf-guide/variable.html#fvar-instances">https://googlefonts.github.io/gf-guide/variable.html#fvar-instances</a></p>
+<p>This check is skipped for fonts that have a Morph (MORF) axis since we allow users to define their own custom instances.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-WARN font-weight-bold">
+        WARN
+      </span>:
+      <div><p>fvar instance coordinates for non-wght axes are not the same as the fvar defaults. This may be intentional so please check with the font author:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>current</th>
+<th>expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thin</td>
+<td>slnt=0, wdth=100, wght=100</td>
+<td>slnt=0, wdth=100, wght=100</td>
+</tr>
+<tr>
+<td>Thin Italic</td>
+<td>slnt=-20, wdth=100, wght=100</td>
+<td>slnt=0, wdth=100, wght=100</td>
+</tr>
+<tr>
+<td>ExtraLight</td>
+<td>slnt=0, wdth=100, wght=200</td>
+<td>slnt=0, wdth=100, wght=200</td>
+</tr>
+<tr>
+<td>ExtraLight Italic</td>
+<td>slnt=-20, wdth=100, wght=200</td>
+<td>slnt=0, wdth=100, wght=200</td>
+</tr>
+<tr>
+<td>Light</td>
+<td>slnt=0, wdth=100, wght=300</td>
+<td>slnt=0, wdth=100, wght=300</td>
+</tr>
+<tr>
+<td>Light Italic</td>
+<td>slnt=-20, wdth=100, wght=300</td>
+<td>slnt=0, wdth=100, wght=300</td>
+</tr>
+<tr>
+<td>Regular</td>
+<td>slnt=0, wdth=100, wght=400</td>
+<td>slnt=0, wdth=100, wght=400</td>
+</tr>
+<tr>
+<td>Italic</td>
+<td>slnt=-20, wdth=100, wght=400</td>
+<td>slnt=0, wdth=100, wght=400</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>slnt=0, wdth=100, wght=500</td>
+<td>slnt=0, wdth=100, wght=500</td>
+</tr>
+<tr>
+<td>Medium Italic</td>
+<td>slnt=-20, wdth=100, wght=500</td>
+<td>slnt=0, wdth=100, wght=500</td>
+</tr>
+<tr>
+<td>SemiBold</td>
+<td>slnt=0, wdth=100, wght=600</td>
+<td>slnt=0, wdth=100, wght=600</td>
+</tr>
+<tr>
+<td>SemiBold Italic</td>
+<td>slnt=-20, wdth=100, wght=600</td>
+<td>slnt=0, wdth=100, wght=600</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>slnt=0, wdth=100, wght=700</td>
+<td>slnt=0, wdth=100, wght=700</td>
+</tr>
+<tr>
+<td>Bold Italic</td>
+<td>slnt=-20, wdth=100, wght=700</td>
+<td>slnt=0, wdth=100, wght=700</td>
+</tr></tbody></table>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="cc" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab" data-checkid="googlefonts/description/has_article">
+          <h4>Check for presence of an ARTICLE.en_us.html file</h4>
+          <p class="text-muted">googlefonts/description/has_article</p>
+          <div class="rationale">
+          <p>Fonts may have a longer article about them, or a description, but not both - except for Noto fonts which should have both!</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>A collection</b>
+            <ul data-filename="A collection">
+            <li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>This font doesn't have an ARTICLE.en_us.html file.</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="cc" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab" data-checkid="googlefonts/STAT/axis_order">
+          <h4>Check axis ordering on the STAT table.</h4>
+          <p class="text-muted">googlefonts/STAT/axis_order</p>
+          <div class="rationale">
+          <p>This is (for now) a merely informative check to detect what's the axis ordering declared on the STAT table of fonts in the Google Fonts collection.</p>
+<p>We may later update this to enforce some unified axis ordering scheme, yet to be determined.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>A collection</b>
+            <ul data-filename="A collection">
+            <li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>None of the fonts lack a STAT table.</p>
+<pre><code>And these are the most common STAT axis orderings:
+wdth-wght-slnt: 1
+</code></pre>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="cc" id="v-pills-12" role="tabpanel" aria-labelledby="v-pills-12-tab" data-checkid="hinting_impact">
+          <h4>Show hinting filesize impact.</h4>
+          <p class="text-muted">hinting_impact</p>
+          <div class="rationale">
+          <p>This check is merely informative, displaying an useful comparison of filesizes of hinted versus unhinted font files.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>Hinting filesize impact:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left"></th>
+<th style="text-align: right">Samaano[slnt,wdth,wght].ttf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">Dehinted Size</td>
+<td style="text-align: right">515948</td>
+</tr>
+<tr>
+<td style="text-align: left">Hinted Size</td>
+<td style="text-align: right">515972</td>
+</tr>
+<tr>
+<td style="text-align: left">Increase</td>
+<td style="text-align: right">24</td>
+</tr>
+<tr>
+<td style="text-align: left">Change</td>
+<td style="text-align: right">0.0 %</td>
+</tr></tbody></table>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="cc" id="v-pills-15" role="tabpanel" aria-labelledby="v-pills-15-tab" data-checkid="required_tables">
+          <h4>Font contains all required tables?</h4>
+          <p class="text-muted">required_tables</p>
+          <div class="rationale">
+          <p>According to the OpenType spec <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/otff#required-tables">https://docs.microsoft.com/en-us/typography/opentype/spec/otff#required-tables</a></p>
+<p>Whether TrueType or CFF outlines are used in an OpenType font, the following tables are required for the font to function correctly:</p>
+<ul>
+<li>cmap (Character to glyph mapping)⏎ - head (Font header)⏎ - hhea (Horizontal header)⏎ - hmtx (Horizontal metrics)⏎ - maxp (Maximum profile)⏎ - name (Naming table)⏎ - OS/2 (OS/2 and Windows specific metrics)⏎ - post (PostScript information)</li>
+</ul>
+<p>The spec also documents that variable fonts require the following table:</p>
+<ul>
+<li>STAT (Style attributes)</li>
+</ul>
+<p>Depending on the typeface and coverage of a font, certain tables are recommended for optimum quality.</p>
+<p>For example:⏎ - the performance of a non-linear font is improved if the VDMX, LTSH,   and hdmx tables are present.⏎ - Non-monospaced Latin fonts should have a kern table.⏎ - A gasp table is necessary if a designer wants to influence the sizes   at which grayscaling is used under Windows. Etc.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>This font contains the following optional tables:</p>
+<pre><code>loca
+prep
+GPOS
+GSUB
+gasp
+</code></pre>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="cc" id="v-pills-25" role="tabpanel" aria-labelledby="v-pills-25-tab" data-checkid="googlefonts/gasp">
+          <h4>Is the Grid-fitting and Scan-conversion Procedure ('gasp') table
+set to optimize rendering?</h4>
+          <p class="text-muted">googlefonts/gasp</p>
+          <div class="rationale">
+          <p>Traditionally version 0 'gasp' tables were set so that font sizes below 8 ppem had no grid fitting but did have antialiasing. From 9-16 ppem, just grid fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled on. The use of accelerated graphics cards and higher resolution screens make this approach obsolete. Microsoft's DirectWrite pushed this even further with much improved rendering built into the OS and apps.</p>
+<p>In this scenario it makes sense to simply toggle all 4 flags ON for all font sizes.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>These are the ppm ranges declared on the gasp table:</p>
+<p>| PPM &lt;= 65535 | - Use grid-fitting                                    |
+|              | 	- Use grayscale rendering                            |
+|              | 	- Use gridfitting with ClearType symmetric smoothing |
+|              | 	- Use smoothing along multiple axes with ClearType®  |
+|--------------|-------------------------------------------------------|</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="cc" id="v-pills-26" role="tabpanel" aria-labelledby="v-pills-26-tab" data-checkid="googlefonts/meta/script_lang_tags">
+          <h4>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h4>
+          <p class="text-muted">googlefonts/meta/script_lang_tags</p>
+          <div class="rationale">
+          <p>The OpenType 'meta' table originated at Apple. Microsoft added it to OT with just two DataMap records:</p>
+<ul>
+<li>
+<p>dlng: comma-separated ScriptLangTags that indicate which scripts,   or languages and scripts, with possible variants, the font is designed for.</p>
+</li>
+<li>
+<p>slng: comma-separated ScriptLangTags that indicate which scripts,   or languages and scripts, with possible variants, the font supports.</p>
+</li>
+</ul>
+<p>The slng structure is intended to describe which languages and scripts the font overall supports. For example, a Traditional Chinese font that also contains Latin characters, can indicate Hant,Latn, showing that it supports Hant, the Traditional Chinese variant of the Hani script, and it also supports the Latn script.</p>
+<p>The dlng structure is far more interesting. A font may contain various glyphs, but only a particular subset of the glyphs may be truly "leading" in the design, while other glyphs may have been included for technical reasons. Such a Traditional Chinese font could only list Hant there, showing that it’s designed for Traditional Chinese, but the font would omit Latn, because the developers don’t think the font is really recommended for purely Latin-script use.</p>
+<p>The tags used in the structures can comprise just script, or also language and script. For example, if a font has Bulgarian Cyrillic alternates in the locl feature for the cyrl BGR OT languagesystem, it could also indicate in dlng explicitly that it supports bul-Cyrl. (Note that the scripts and languages in meta use the ISO language and script codes, not the OpenType ones).</p>
+<p>This check ensures that the font has the meta table containing the slng and dlng structures.</p>
+<p>All families in the Google Fonts collection should contain the 'meta' table. Windows 10 already uses it when deciding on which fonts to fall back to. The Google Fonts API and also other environments could use the data for smarter filtering. Most importantly, those entries should be added to the Noto fonts.</p>
+<p>In the font making process, some environments store this data in external files already. But the meta table provides a convenient way to store this inside the font file, so some tools may add the data, and unrelated tools may read this data. This makes the solution much more portable and universal.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>"Latn"</p>
+</div>
+      
+    </li><li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>"Latn, Deva, Grek, Taml"</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div><div class="tab-pane fade" data-sortorder="cc" id="v-pills-27" role="tabpanel" aria-labelledby="v-pills-27-tab" data-checkid="googlefonts/old_ttfautohint">
+          <h4>Font has old ttfautohint applied?</h4>
+          <p class="text-muted">googlefonts/old_ttfautohint</p>
+          <div class="rationale">
+          <p>Check if font has been hinted with an outdated version of ttfautohint.</p>
+
+          </div>
+          <ul class="results">
+          <li>
+            <b>Samaano[slnt,wdth,wght].ttf</b>
+            <ul data-filename="Samaano[slnt,wdth,wght].ttf">
+            <li>
+      <span class="bg-INFO font-weight-bold">
+        INFO
+      </span>:
+      <div><p>Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: Version 2.400</p>
+</div>
+      
+    </li></ul>
+          </li></ul>
+        </div></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="https://github.com/fonttools/fontspector/issues/new/choose">Report an issue</a>
+      <span class="ml-4 mr-4">|</span>
+      <a href="https://github.com/fonttools/fontspector">View source on GitHub</a>
+    </footer>
+  
+  <script src="bootstrap.js"></script>
+
+<input type="file" multiple="multiple" class="dz-hidden-input" tabindex="-1" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"></body></html>
