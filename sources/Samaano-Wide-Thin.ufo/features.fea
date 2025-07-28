@@ -25,8 +25,8 @@ lookup loclLocalizedFormsinLatinlookup10 {
 
 lookup loclLocalizedFormsinLatinlookup11 {
   lookupflag 0;
-    sub \l' \periodcentered' \l   by \l_periodcentered.loclCAT ;
-    sub  \L' \periodcentered' \L   by L_periodcentered.loclCAT ;
+    sub  \l' \periodcentered' \l   by \l_periodcentered.loclCAT ;
+    sub  \L' \periodcentered' \L   by \L_periodcentered.loclCAT ;
 } loclLocalizedFormsinLatinlookup11;
 
 lookup ccmp_soft_dotted {
@@ -169,8 +169,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0931 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -267,10 +267,10 @@ lookup akhnAkhandinTamil2lookup30 {
 
 lookup blwsBelowBaseSubstitutionsinTamil2lookup31 {
   lookupflag 0;
-    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B95 \uni0BC1  by \uni0B95_uni0BC1;
-    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC1  by \uni0B95_uni0BC1;
     sub \uni0B95 \uni0BC2  by \uni0B95_uni0BC2;
+    sub \uni0B99 \uni0BC2  by \uni0B95_uni0BC2;
     sub \uni0B9F \uni0BC1  by \uni0B9F_uni0BC1;
     sub \uni0B9F \uni0BC2  by \uni0B9F_uni0BC2;
     sub \uni0BA3 \uni0BC1  by \uni0BA3_uni0BC1;
@@ -489,7 +489,7 @@ lookup markMarkPositioninglookup0 {
   markClass [\circumflexbelowcomb ] <anchor 1 432> @base;
   markClass [\dotbelowcomb ] <anchor 3 -283> @base;
   markClass [\doublemacronbelowcomb \uni0331 \uni0335 ] <anchor 4 -163> @base;
-  markClass [\ringbelowcomb ] <anchor 13 1018> @base;
+  markClass [\ringbelowcomb ] <anchor 19 -35> @base;
   markClass [\tildebelowcomb ] <anchor 0 268> @base;
   markClass [\uni0324 ] <anchor -3 -234> @base;
   markClass [\uni0326 ] <anchor 26 14> @base;
@@ -552,7 +552,7 @@ lookup markMarkPositioninglookup0 {
   pos base [\Aogonek ] <anchor 1093 1640> mark @top;
   pos base [\Aring ] <anchor 1008 1890> mark @top
 	<anchor 1032 4> mark @base;
-  pos base [\Aringbelow \uni1EA0 ] <anchor 1013 1645> mark @top;
+  pos base [\Aringbelow \Vturned \uni1EA0 ] <anchor 1013 1645> mark @top;
   pos base [\Atilde ] <anchor 1024 1912> mark @top
 	<anchor 1030 -68> mark @base;
   pos base [\B \Beta_latin \Btopbar ] <anchor 554 1637> mark @top
@@ -571,8 +571,11 @@ lookup markMarkPositioninglookup0 {
 	<anchor 997 -214> mark @base;
   pos base [\E ] <anchor 990 1637> mark @top
 	<anchor 1074 -88> mark @base;
-  pos base [\Eacute \Ecircumflex \Edieresis \Iacute \Icircumflex \Idieresis \Igrave \Ntilde \Oacute \Obreve \Ocircumflex \Odieresis \Ograve \Ohungarumlaut \Racute \Sacute \Scaron \Scircumflex \Tbar \Tcaron \Uacute \Ubreve \Ucircumflex \Udieresis \Ugrave \Uhungarumlaut \Umacron \Uring \Yacute \obreve \ohungarumlaut \racute \rcaron \sacute \scaron \scircumflex \tbar \tcaron \ubreve \uhungarumlaut \umacron \uring ] <anchor 1024 -78> mark @base;
+  pos base [\Eacute \Ecircumflex \Iacute \Icircumflex \Igrave \Ntilde \Oacute \Obreve \Ocircumflex \Ograve \Ohungarumlaut \Racute \Sacute \Scaron \Scircumflex \Tbar \Tcaron \Uacute \Ubreve \Ucircumflex \Ugrave \Uhungarumlaut \Umacron \Uring \Yacute \obreve \ohungarumlaut \racute \rcaron \sacute \scaron \scircumflex \tbar \tcaron \ubreve \uhungarumlaut \umacron \uring ] <anchor 1024 -78> mark @base;
   pos base [\Ecaron \Gbreve \Gcircumflex \Gdotaccent \Ibreve \Imacron \ecaron \ibreve \imacron ] <anchor 996 -82> mark @base;
+  pos base [\Ecedilla \Ereversed \Etildebelow ] <anchor 990 1637> mark @top;
+  pos base [\Edieresis ] <anchor 1024 -78> mark @base
+	<anchor 1005 1862> mark @top;
   pos base [\Egrave ] <anchor 996 -94> mark @base;
   pos base [\Emacron ] <anchor 996 -60> mark @base;
   pos base [\Eng ] <anchor 1017 1603> mark @top
@@ -580,7 +583,6 @@ lookup markMarkPositioninglookup0 {
   pos base [\Eogonek ] <anchor 1255 1665> mark @top;
   pos base [\Eopen ] <anchor 1008 -125> mark @base
 	<anchor 1040 1641> mark @top;
-  pos base [\Ereversed \Etildebelow ] <anchor 990 1637> mark @top;
   pos base [\Eth ] <anchor 1016 1652> mark @top
 	<anchor 1040 -142> mark @base;
   pos base [\F ] <anchor 1026 1618> mark @top
@@ -591,17 +593,19 @@ lookup markMarkPositioninglookup0 {
 	<anchor 1028 2> mark @base;
   pos base [\Hturned ] <anchor 184 1642> mark @top
 	<anchor 1268 -106> mark @base;
-  pos base [\I \icapitalsmall ] <anchor 1094 1645> mark @top
+  pos base [\I \Istroke \icapitalsmall ] <anchor 1094 1645> mark @top
 	<anchor 1104 -78> mark @base;
   pos base [\Icapitalsmall ] <anchor 1026 1651> mark @top
 	<anchor 1007 -71> mark @base;
+  pos base [\Idieresis ] <anchor 1024 -78> mark @base
+	<anchor 1116 1883> mark @top;
   pos base [\Idotaccent ] <anchor 984 -70> mark @base;
   pos base [\Iogonek ] <anchor 1087 1657> mark @top;
   pos base [\Iota_latin ] <anchor 854 1627> mark @top
 	<anchor 1104 -78> mark @base;
-  pos base [\Istroke \Itildebelow ] <anchor 1094 1645> mark @top;
   pos base [\Itilde ] <anchor 996 -82> mark @base
 	<anchor 1104 1882> mark @top;
+  pos base [\Itildebelow ] <anchor 1094 1645> mark @top;
   pos base [\J ] <anchor 1023 -89> mark @base
 	<anchor 1898 1627> mark @top;
   pos base [\K ] <anchor 762 -60> mark @base
@@ -619,11 +623,17 @@ lookup markMarkPositioninglookup0 {
   pos base [\OE ] <anchor 1022 1608> mark @top
 	<anchor 1010 -120> mark @base;
   pos base [\Obarred ] <anchor 1131 1686> mark @top;
+  pos base [\Odieresis ] <anchor 1024 -78> mark @base
+	<anchor 1072 1873> mark @top;
   pos base [\Ohorn ] <anchor 1018 1623> mark @top
 	<anchor 1042 -81> mark @base;
   pos base [\Omacron ] <anchor 1008 -101> mark @base;
+  pos base [\Omega_latin ] <anchor 1025 -95> mark @base
+	<anchor 959 1631> mark @top;
   pos base [\Oslash ] <anchor 1023 1645> mark @top
 	<anchor 1011 -143> mark @base;
+  pos base [\Otilde ] <anchor 1024 -78> mark @base
+	<anchor 1042 1892> mark @top;
   pos base [\P ] <anchor 1018 -72> mark @base
 	<anchor 956 1642> mark @top;
   pos base [\Phook ] <anchor 1436 -76> mark @base
@@ -644,6 +654,8 @@ lookup markMarkPositioninglookup0 {
   pos base [\U ] <anchor 968 1630> mark @top
 	<anchor 1020 -82> mark @base;
   pos base [\Ubar \Upsilon_latin \Utildebelow ] <anchor 968 1630> mark @top;
+  pos base [\Udieresis ] <anchor 1024 -78> mark @base
+	<anchor 972 1898> mark @top;
   pos base [\Uhorn ] <anchor 1058 -117> mark @base
 	<anchor 1004 1645> mark @top;
   pos base [\Uogonek ] <anchor 1000 1680> mark @top;
@@ -662,9 +674,11 @@ lookup markMarkPositioninglookup0 {
   pos base [\Ycircumflex \Ydieresis \Zacute \Zcaron \Zdotaccent \zacute \zcaron \zdotaccent ] <anchor 1000 -70> mark @base;
   pos base [\Z ] <anchor 1020 1630> mark @top
 	<anchor 1004 -38> mark @base;
-  pos base [\a ] <anchor 1020 1142> mark @top
+  pos base [\a \uni0259 ] <anchor 1020 1142> mark @top
 	<anchor 1064 -74> mark @base;
-  pos base [\aacute \acircumflex \agrave \aring \eacute \ecircumflex \edieresis \egrave \iacute \icircumflex \idieresis \igrave \ntilde \oacute \ocircumflex \odieresis \ograve \uacute \ucircumflex \udieresis \ugrave ] <anchor 1023 -93> mark @base;
+  pos base [\aacute \acircumflex \agrave \aring \eacute \ecircumflex \egrave \iacute \icircumflex \igrave \ntilde \oacute \ocircumflex \ograve \uacute \ucircumflex \ugrave ] <anchor 1023 -93> mark @base;
+  pos base [\adieresis ] <anchor 1030 1412> mark @top
+	<anchor 1064 -74> mark @base;
   pos base [\ae ] <anchor 1027 -103> mark @base
 	<anchor 1044 1130> mark @top;
   pos base [\aringbelow ] <anchor 1097 1163> mark @top;
@@ -681,10 +695,13 @@ lookup markMarkPositioninglookup0 {
 	<anchor 1840 1690> mark @top;
   pos base [\dcroat ] <anchor 1816 1637> mark @top
 	<anchor 1026 -123> mark @base;
-  pos base [\dotlessi ] <anchor 492 1191> mark @top
-	<anchor 1182 -9> mark @base;
+  pos base [\dotlessi ] <anchor 1007 1191> mark @top
+	<anchor 1072 -71> mark @base;
   pos base [\e ] <anchor 1032 1158> mark @top
 	<anchor 1028 -56> mark @base;
+  pos base [\ecedilla \etildebelow ] <anchor 1032 1158> mark @top;
+  pos base [\edieresis ] <anchor 1023 -93> mark @base
+	<anchor 1032 1436> mark @top;
   pos base [\eng ] <anchor 1040 1211> mark @top
 	<anchor 1082 -439> mark @base;
   pos base [\eogonek ] <anchor 1024 1104> mark @top;
@@ -692,8 +709,7 @@ lookup markMarkPositioninglookup0 {
 	<anchor 1028 -56> mark @base;
   pos base [\eth ] <anchor 726 1659> mark @top
 	<anchor 1084 -112> mark @base;
-  pos base [\etildebelow ] <anchor 1032 1158> mark @top;
-  pos base [\eturned \uni0259 \uni1EA1 ] <anchor 1020 1142> mark @top;
+  pos base [\eturned \uni1EA1 ] <anchor 1020 1142> mark @top;
   pos base [\f ] <anchor 1403 1637> mark @top
 	<anchor 981 -88> mark @base;
   pos base [\g ] <anchor 1032 1155> mark @top
@@ -707,7 +723,10 @@ lookup markMarkPositioninglookup0 {
 	<anchor 1157 -609> mark @base;
   pos base [\i ] <anchor 909 1450> mark @top
 	<anchor 1019 -68> mark @base;
-  pos base [\iota_latin \istrokedotless \itildebelowdotless ] <anchor 492 1191> mark @top;
+  pos base [\idieresis ] <anchor 1023 -93> mark @base
+	<anchor 1004 1444> mark @top;
+  pos base [\idotbelow.dotless \iota_latin \istrokedotless \itildebelowdotless ] <anchor 492 1191> mark @top;
+  pos base [\istroke ] <anchor 1019 -68> mark @base;
   pos base [\itilde ] <anchor 996 -82> mark @base
 	<anchor 923 1502> mark @top;
   pos base [\j \jcrossedtail ] <anchor 1786 1296> mark @top
@@ -718,18 +737,24 @@ lookup markMarkPositioninglookup0 {
 	<anchor 140 1110> mark @top;
   pos base [\l ] <anchor 1058 -72> mark @base
 	<anchor 1048 1642> mark @top;
+  pos base [\mturned ] <anchor 966 -86> mark @base
+	<anchor 992 1046> mark @top;
   pos base [\n ] <anchor 1190 -64> mark @base
 	<anchor 1212 1126> mark @top;
   pos base [\o \oslash ] <anchor 974 1070> mark @top
 	<anchor 954 -122> mark @base;
   pos base [\obarred ] <anchor 1070 1118> mark @top
 	<anchor 1008 -74> mark @base;
+  pos base [\odieresis ] <anchor 1023 -93> mark @base
+	<anchor 1030 1384> mark @top;
   pos base [\oe ] <anchor 1069 1147> mark @top
 	<anchor 1093 -65> mark @base;
   pos base [\ohorn ] <anchor 1029 1148> mark @top
 	<anchor 1033 -112> mark @base;
   pos base [\omacron ] <anchor 1000 -117> mark @base;
-  pos base [\otilde] <anchor 1022 1370> mark @top
+  pos base [\omega_latin \w ] <anchor 1042 -88> mark @base
+	<anchor 992 1046> mark @top;
+  pos base [\otilde ] <anchor 1022 1370> mark @top
 	<anchor 954 -122> mark @base;
   pos base [\p ] <anchor 234 -528> mark @base
 	<anchor 224 1314> mark @top;
@@ -748,10 +773,17 @@ lookup markMarkPositioninglookup0 {
   pos base [\u ] <anchor 872 1150> mark @top
 	<anchor 896 -62> mark @base;
   pos base [\ubar \utildebelow ] <anchor 872 1150> mark @top;
+  pos base [\udieresis ] <anchor 1023 -93> mark @base
+	<anchor 889 1440> mark @top;
   pos base [\uhorn ] <anchor 1030 -86> mark @base
 	<anchor 981 1179> mark @top;
   pos base [\uni018F ] <anchor 980 1614> mark @top
 	<anchor 1026 -101> mark @base;
+  pos base [\uni01CE ] <anchor 1064 -74> mark @base;
+  pos base [\uni01D1 ] <anchor 1040 -114> mark @base;
+  pos base [\uni01D2 ] <anchor 954 -122> mark @base;
+  pos base [\uni01D3 ] <anchor 1020 -82> mark @base;
+  pos base [\uni01D4 ] <anchor 998 -92> mark @base;
   pos base [\uni0237 ] <anchor 1827 1140> mark @top;
   pos base [\uni1EB8 ] <anchor 876 1718> mark @top;
   pos base [\uni1EB9 ] <anchor 996 1170> mark @top;
@@ -776,8 +808,7 @@ lookup markMarkPositioninglookup0 {
 	<anchor 858 1432> mark @top;
   pos base [\v ] <anchor 1002 -48> mark @base
 	<anchor 992 1094> mark @top;
-  pos base [\w ] <anchor 1042 -88> mark @base
-	<anchor 992 1046> mark @top;
+  pos base [\vturned ] <anchor 1027 1092> mark @top;
   pos base [\x ] <anchor 1042 1141> mark @top
 	<anchor 1022 -27> mark @base;
   pos base [\y ] <anchor 984 1106> mark @top
@@ -870,7 +901,8 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   pos base [\uni093E ] <anchor 1999 1595> mark @abvm_deva;
   pos base [\uni0940 ] <anchor 1512 1651> mark @abvm_deva;
   pos base [\uni094A ] <anchor 1608 1562> mark @abvm_deva;
-  pos base [\uni094B \uni094C \uni094F \uni0955 ] <anchor 1654 1608> mark @abvm_deva;
+  pos base [\uni094B \uni094C \uni094F ] <anchor 1654 1608> mark @abvm_deva;
+  pos base [\uni0955 ] <anchor 510 1511> mark @abvm_deva;
   pos base [\uni0958 ] <anchor 1475 1533> mark @abvm_deva;
   pos base [\uni0958_uni0930_uni094D.vatu ] <anchor 1154 1593> mark @abvm_deva;
   pos base [\uni0958_uni094D.half ] <anchor 1144 1583> mark @abvm_deva;
@@ -1055,7 +1087,6 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \A.circled \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis 
 	\Adotaccent \Agrave \Alpha \Alpha_latin \Alphatonos \Amacron \Aogonek \Aring 
@@ -1110,8 +1141,8 @@ feature blwm {
 	\gstroke \guillemotleft \guillemotright \guilsinglleft \guilsinglright \h 
 	\hbar \hcaron \hcedilla \hcircumflex \hhook \hlinebelow \horizontalbar \hryvnia 
 	\hturned \hungarumlaut \hyphen \hyphentwo \i \iacute \ibreve \icapitalsmall 
-	\icircumflex \idieresis \idotaccent \idotbelow.dotless \igrave \ij \imacron 
-	\increment \infinity \integral \iogonek \iogonek_dotless \iota \iota_latin 
+	\icircumflex \idieresis \idotbelow.dotless \igrave \ij \imacron \increment 
+	\infinity \integral \iogonek \iogonek_dotless \iota \iota_latin 
 	\iotadialytikaoxia \iotadieresis \iotadieresistonos \iotatonos \istroke 
 	\istrokedotless \istrokemod \itilde \itildebelow \itildebelowdotless \j 
 	\jcaron \jcircumflex \jcrossedtail \jstroke \jstrokedotless \k \kaiSymbol 
@@ -1230,21 +1261,20 @@ feature blwm {
 	\uni1FD1 \uni1FD2 \uni1FD6 \uni1FD7 \uni1FD8 \uni1FD9 \uni1FDA \uni1FDB \uni1FDD 
 	\uni1FDE \uni1FDF \uni1FE0 \uni1FE1 \uni1FE2 \uni1FE4 \uni1FE5 \uni1FE6 \uni1FE7 
 	\uni1FE8 \uni1FE9 \uni1FEA \uni1FEB \uni1FEC \uni1FED \uni1FEE \uni1FF2 \uni1FF3 
-	\uni1FF4 \uni1FF6 \uni1FF7 \uni1FF8 \uni1FF9 \uni1FFA \uni1FFB \uni1FFC \uni200C 
-	\uni200D \uni2028 \uni2042 \uni2044 \uni2052 \uni2070 \uni2071 \uni2074 \uni2075 
-	\uni2076 \uni2077 \uni2078 \uni2079 \uni207A \uni207B \uni207C \uni207D \uni207E 
-	\uni207F \uni2080 \uni2081 \uni2082 \uni2083 \uni2084 \uni2085 \uni2086 \uni2087 
-	\uni2088 \uni2089 \uni208A \uni208B \uni208C \uni208D \uni208E \uni20A6 \uni20A9 
-	\uni20AD \uni20B1 \uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF 
-	\uni20C1 \uni2116 \uni25CC \uni27E8 \uni27E9 \uogonek \upArrow 
-	\upBlackSmallTriangle \upBlackTriangle \upDownArrow \upWhiteSmallTriangle 
-	\upWhiteTriangle \upsilon \upsilon_latin \upsilondialytikaoxia 
-	\upsilondieresis \upsilondieresistonos \upsilontonos \uring \utilde 
-	\utildebelow \v \varia \verticallinelowmod \verticallinemod \vhook \vturned \w 
-	\wacute \wcircumflex \wdieresis \wgrave \whiteBullet \whiteCircle 
-	\whiteDiamond \whiteSmallSquare \whiteSquare \whook \wmod \x \xi \y \yacute 
-	\ycircumflex \ydieresis \yen \ygrave \yhook \ypogegrammeni \z \zacute \zcaron 
-	\zdotaccent \zero \zeta \zlinebelow ];
+	\uni1FF4 \uni1FF6 \uni1FF7 \uni1FF8 \uni1FF9 \uni1FFA \uni1FFB \uni1FFC \uni200D 
+	\uni2028 \uni2042 \uni2044 \uni2052 \uni2070 \uni2071 \uni2074 \uni2075 \uni2076 
+	\uni2077 \uni2078 \uni2079 \uni207A \uni207B \uni207C \uni207D \uni207E \uni207F 
+	\uni2080 \uni2081 \uni2082 \uni2083 \uni2084 \uni2085 \uni2086 \uni2087 \uni2088 
+	\uni2089 \uni208A \uni208B \uni208C \uni208D \uni208E \uni20A6 \uni20A9 \uni20AD 
+	\uni20B1 \uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF \uni20C1 
+	\uni2116 \uni25CC \uni27E8 \uni27E9 \uogonek \upArrow \upBlackSmallTriangle 
+	\upBlackTriangle \upDownArrow \upWhiteSmallTriangle \upWhiteTriangle 
+	\upsilon \upsilon_latin \upsilondialytikaoxia \upsilondieresis 
+	\upsilondieresistonos \upsilontonos \uring \utilde \utildebelow \v \varia 
+	\verticallinelowmod \verticallinemod \vhook \vturned \w \wacute \wcircumflex 
+	\wdieresis \wgrave \whiteBullet \whiteCircle \whiteDiamond \whiteSmallSquare 
+	\whiteSquare \whook \wmod \x \xi \y \yacute \ycircumflex \ydieresis \yen \ygrave 
+	\yhook \ypogegrammeni \z \zacute \zcaron \zdotaccent \zero \zeta \zlinebelow ];
 @GDEF_Ligature = [\i_uni030A \i_uni030B \j_gravecomb \j_uni0303 \j_uni0304 
 	\j_uni0308 \j_uni0311 \jacute \uni012F_uni0300 \uni012F_uni0301 
 	\uni012F_uni0302 \uni012F_uni0303 \uni012F_uni0304 \uni012F_uni030C 
@@ -1321,7 +1351,6 @@ feature blwm {
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
-
 
 } GDEF;
 
