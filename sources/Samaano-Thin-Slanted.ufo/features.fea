@@ -634,8 +634,7 @@ lookup markMarkPositioninglookup0 {
 	<anchor 1091 1583> mark @top;
   pos base [\Oslash ] <anchor 1085 1662> mark @top
 	<anchor 501 -64> mark @base;
-  pos base [\Otilde ] <anchor 527 -126> mark @base
-	<anchor 542 -56> mark @base
+  pos base [\Otilde ] <anchor 542 -56> mark @base
 	<anchor 1016 1916> mark @top;
   pos base [\P ] <anchor 149 -80> mark @base
 	<anchor 1017 1634> mark @top;
@@ -1046,6 +1045,7 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \A.circled \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis 
 	\Adotaccent \Agrave \Alpha \Alpha_latin \Alphatonos \Amacron \Aogonek \Aring 
@@ -1157,7 +1157,7 @@ feature blwm {
 	\uni0936_uni094D.haln \uni0937 \uni0938 \uni0938_uni0930_uni094D.vatu 
 	\uni0938_uni094D.haln \uni0939 \uni0939_uni0930_uni094D.vatu \uni093B 
 	\uni093D \uni093E \uni093F \uni0940 \uni0949 \uni094A \uni094B \uni094C \uni094E 
-	\uni094F \uni0950 \uni0955 \uni0958 \uni0959 \uni095A \uni095A_uni094D.haln 
+	\uni094F \uni0950 \uni0958 \uni0959 \uni095A \uni095A_uni094D.haln 
 	\uni095B \uni095C \uni095D \uni095E \uni095E_uni0930_uni094D.vatu \uni095F 
 	\uni095F_uni0930_uni094D.vatu \uni0960 \uni0961 \uni0964 \uni0965 \uni0966 
 	\uni0967 \uni0968 \uni0969 \uni096A \uni096B \uni096C \uni096D \uni096E \uni096F 

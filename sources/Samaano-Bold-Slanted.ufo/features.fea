@@ -1051,6 +1051,7 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \A.circled \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis 
 	\Adotaccent \Agrave \Alpha \Alpha_latin \Alphatonos \Amacron \Aogonek \Aring 
@@ -1162,7 +1163,7 @@ feature blwm {
 	\uni0936_uni094D.haln \uni0937 \uni0938 \uni0938_uni0930_uni094D.vatu 
 	\uni0938_uni094D.haln \uni0939 \uni0939_uni0930_uni094D.vatu \uni093B 
 	\uni093D \uni093E \uni093F \uni0940 \uni0949 \uni094A \uni094B \uni094C \uni094E 
-	\uni094F \uni0950 \uni0955 \uni0958 \uni0959 \uni095A \uni095A_uni094D.haln 
+	\uni094F \uni0950 \uni0958 \uni0959 \uni095A \uni095A_uni094D.haln 
 	\uni095B \uni095C \uni095D \uni095E \uni095E_uni0930_uni094D.vatu \uni095F 
 	\uni095F_uni0930_uni094D.vatu \uni0960 \uni0961 \uni0964 \uni0965 \uni0966 
 	\uni0967 \uni0968 \uni0969 \uni096A \uni096B \uni096C \uni096D \uni096E \uni096F 
@@ -1225,13 +1226,13 @@ feature blwm {
 	\uni1FD1 \uni1FD2 \uni1FD6 \uni1FD7 \uni1FD8 \uni1FD9 \uni1FDA \uni1FDB \uni1FDD 
 	\uni1FDE \uni1FDF \uni1FE0 \uni1FE1 \uni1FE2 \uni1FE4 \uni1FE5 \uni1FE6 \uni1FE7 
 	\uni1FE8 \uni1FE9 \uni1FEA \uni1FEB \uni1FEC \uni1FED \uni1FEE \uni1FF2 \uni1FF3 
-	\uni1FF4 \uni1FF6 \uni1FF7 \uni1FF8 \uni1FF9 \uni1FFA \uni1FFB \uni1FFC \uni200D 
-	\uni2028 \uni2042 \uni2044 \uni2052 \uni2070 \uni2071 \uni2074 \uni2075 \uni2076 
-	\uni2077 \uni2078 \uni2079 \uni207A \uni207B \uni207C \uni207D \uni207E \uni207F 
-	\uni2080 \uni2081 \uni2082 \uni2083 \uni2084 \uni2085 \uni2086 \uni2087 \uni2088 
-	\uni2089 \uni208A \uni208B \uni208C \uni208D \uni208E \uni20A6 \uni20A9 \uni20AD 
-	\uni20B1 \uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF \uni20C1 
-	\uni2116 \uni25CC \uni27E8 \uni27E9 \uogonek \upArrow \upBlackSmallTriangle 
+	\uni1FF4 \uni1FF6 \uni1FF7 \uni1FF8 \uni1FF9 \uni1FFA \uni1FFB \uni1FFC \uni2028 
+	\uni2042 \uni2044 \uni2052 \uni2070 \uni2071 \uni2074 \uni2075 \uni2076 \uni2077 
+	\uni2078 \uni2079 \uni207A \uni207B \uni207C \uni207D \uni207E \uni207F \uni2080 
+	\uni2081 \uni2082 \uni2083 \uni2084 \uni2085 \uni2086 \uni2087 \uni2088 \uni2089 
+	\uni208A \uni208B \uni208C \uni208D \uni208E \uni20A6 \uni20A9 \uni20AD \uni20B1 
+	\uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF \uni20C1 \uni2116 
+	\uni25CC \uni27E8 \uni27E9 \uogonek \upArrow \upBlackSmallTriangle 
 	\upBlackTriangle \upDownArrow \upWhiteSmallTriangle \upWhiteTriangle 
 	\upsilon \upsilon_latin \upsilondialytikaoxia \upsilondieresis 
 	\upsilondieresistonos \upsilontonos \uring \utilde \utildebelow \v \varia 
@@ -1310,7 +1311,7 @@ feature blwm {
 	\uni0335 \uni0345 \uni0900 \uni0901 \uni0902 \uni0930_uni094D.blwf 
 	\uni0930_uni094D.rphf \uni0930_uni094D_uni0902.abvs \uni093A \uni093C 
 	\uni0941 \uni0942 \uni0943 \uni0944 \uni0945 \uni0946 \uni0947 \uni0948 \uni094D 
-	\uni0951 \uni0952 \uni0953 \uni0954 \uni0956 \uni0957 \uni0962 \uni0963 \uni0B82 
+	\uni0951 \uni0952 \uni0953 \uni0954 \uni0955  \uni0956 \uni0957 \uni0962 \uni0963 \uni0B82 
 	\uni0BC0 \uni0BCD \verticallineabovecomb ];
 
 table GDEF {
