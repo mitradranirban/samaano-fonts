@@ -54,11 +54,12 @@ Following are some numbers associated with the of the typeface
 *   3 - Three Variable axes of Weight, Width and Slant
 *   ~3~ 4 - ~Three~ Four supported Scripts- Latin Extended, Devanagari, Greek and Tamil
 *   9 - Font files, 8 Masters and 1 Variable
-*   ~13~ 15 - supported glyphsets - ~4~ 6 by Adobe (Greek 1, Greek 2, Latin 1,Latin 2, Latin 3, Latin 4), 7 by Google fonts (Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African), and 2 by Koeberlin (Latin S and M)
 *   14 - named instances in stat table, 2 along slant axis, 5 along width, and 7 along weight.
+*   ~13~ 16 - supported glyphsets - 6 by Adobe (Greek 1, Greek 2, Latin 1,Latin 2, Latin 3, Latin 4), 8 by Google fonts (Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African, Phonetic SinoExtension), and 2 by Koeberlin (Latin S and M)
+19 - opentype layout features (abvs, akhn, blwf, blws, ccmp, dlig, half, haln, locl, nukt, ordn, pres, psts, rkrf, rphf, sups, abvm, blwm and mark)
 *   70 - possible combinations of named instances
 *   100 - Hundred percent created using Open Source Software - mainly [Fontra](https://fontra.xyz) and [Fontforge](https://github.com/fontforge/fontforge).
-*   ~554~ 792 - Languages supported as per Shaperglot, 773 Latin based, 16 Devanagari Based, 2 Greek based and Tamil
+*   ~554~ 814 - Languages supported as per Shaperglot, 795 Latin based, 16 Devanagari Based, 2 Greek based and Tamil
 *   ~1044~ 1517 - unicode codepoints covered
 *   ~9982~ 13960 - glyphs drawn - considering all masters
 *   1.2 million possible instances if only integer values in each axis is considered.

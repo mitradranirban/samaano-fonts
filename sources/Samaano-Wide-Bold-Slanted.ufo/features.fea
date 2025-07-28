@@ -33,11 +33,11 @@ lookup ccmp_soft_dotted {
   lookupflag UseMarkFilteringSet @CombiningTopAccents;
     sub [\i \j \uni1ECB \iogonek \itildebelow \istroke \jstroke ]' [\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0305 \uni0306 \uni0307 
 	\uni0308 \hookabovecomb \uni030A \uni030B \uni030C 
-	\verticallineabovecomb \uni030F \uni0310 \uni0311 \uni0312 
-	\uni031B \brevecomb_acutecomb \brevecomb_gravecomb 
-	\brevecomb_hookabovecomb \brevecomb_tildecomb 
-	\circumflexcomb_acutecomb \circumflexcomb_gravecomb 
-	\circumflexcomb_hookabovecomb \circumflexcomb_tildecomb ]  by [\dotlessi \uni0237 \idotbelow.dotless 
+	\verticallineabovecomb \uni030F \uni0310 \uni0311 \uni0312 \uni031B 
+	\brevecomb_acutecomb \brevecomb_gravecomb \brevecomb_hookabovecomb 
+	\brevecomb_tildecomb \circumflexcomb_acutecomb 
+	\circumflexcomb_gravecomb \circumflexcomb_hookabovecomb 
+	\circumflexcomb_tildecomb ]  by [\dotlessi \uni0237 \idotbelow.dotless 
 	\iogonek_dotless \itildebelowdotless \istrokedotless \jstrokedotless ];
 } ccmp_soft_dotted;
 
@@ -173,8 +173,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0931 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0930 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -702,7 +702,7 @@ lookup markMarkPositioninglookup0 {
   pos base [\bdotbelow ] <anchor 830 1625> mark @top;
   pos base [\c \oopen ] <anchor 1014 -91> mark @base
 	<anchor 1398 1123> mark @top;
-  pos base [\d ] <anchor 1015 -59> mark @base
+  pos base [\d \dcurl ] <anchor 1015 -59> mark @base
 	<anchor 2372 1632> mark @top;
   pos base [\dcroat ] <anchor 2374 1659> mark @top
 	<anchor 1032 -128> mark @base;
@@ -729,7 +729,7 @@ lookup markMarkPositioninglookup0 {
   pos base [\gdotaccent ] <anchor 1036 -476> mark @base;
   pos base [\h ] <anchor 876 1633> mark @top
 	<anchor 1025 -63> mark @base;
-  pos base [\hturned ] <anchor 1492 1096> mark @top
+  pos base [\hturned \hturnedfishhook \hturnedfishhookandtail ] <anchor 1492 1096> mark @top
 	<anchor 1184 -637> mark @base;
   pos base [\i ] <anchor 1259 1440> mark @top
 	<anchor 939 -95> mark @base;
@@ -748,11 +748,11 @@ lookup markMarkPositioninglookup0 {
 	<anchor 767 1638> mark @top;
   pos base [\kgreenlandic ] <anchor 1006 -109> mark @base
 	<anchor 538 1151> mark @top;
-  pos base [\l ] <anchor 1027 -75> mark @base
+  pos base [\l \lcurl ] <anchor 1027 -75> mark @base
 	<anchor 1636 1637> mark @top;
   pos base [\mturned ] <anchor 943 -84> mark @base
 	<anchor 1448 1138> mark @top;
-  pos base [\n ] <anchor 1032 -71> mark @base
+  pos base [\n \ncurl ] <anchor 1032 -71> mark @base
 	<anchor 1514 1127> mark @top;
   pos base [\o \oslash ] <anchor 1362 1076> mark @top
 	<anchor 971 -120> mark @base;
@@ -773,12 +773,12 @@ lookup markMarkPositioninglookup0 {
 	<anchor 753 1339> mark @top;
   pos base [\q ] <anchor 1968 1279> mark @top
 	<anchor 1385 -489> mark @base;
-  pos base [\r ] <anchor 1391 1122> mark @top
+  pos base [\r \rfishhookreversed ] <anchor 1391 1122> mark @top
 	<anchor 989 -94> mark @base;
   pos base [\ramshorn ] <anchor 1454 1107> mark @top;
   pos base [\s ] <anchor 1422 1117> mark @top
 	<anchor 1021 -76> mark @base;
-  pos base [\t \thook ] <anchor 1612 1652> mark @top
+  pos base [\t \tcurl \thook ] <anchor 1612 1652> mark @top
 	<anchor 1020 -92> mark @base;
   pos base [\thorn ] <anchor 776 -491> mark @base;
   pos base [\tretroflexhook ] <anchor 1612 1652> mark @top
@@ -844,6 +844,9 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   markClass [\uni0947 ] <anchor 81 1540> @abvm_deva;
   markClass [\uni0948 ] <anchor -2 1568> @abvm_deva;
   markClass [\uni0951 ] <anchor 244 988> @abvm_deva;
+  markClass [\uni0953 ] <anchor 12 1018> @abvm_deva;
+  markClass [\uni0954 ] <anchor -1 1019> @abvm_deva;
+  markClass [\uni0955 ] <anchor -5 1540> @abvm_deva;
   pos base [\uni0904 ] <anchor 1625 1952> mark @abvm_deva;
   pos base [\uni0905 ] <anchor 2198 1589> mark @abvm_deva;
   pos base [\uni0906 ] <anchor 2158 1602> mark @abvm_deva;
@@ -954,7 +957,6 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   pos base [\uni094B ] <anchor 2180 1576> mark @abvm_deva;
   pos base [\uni094C ] <anchor 2115 1579> mark @abvm_deva;
   pos base [\uni094F ] <anchor 1952 1550> mark @abvm_deva;
-  pos base [\uni0955 ] <anchor -23 1491> mark @abvm_deva;
   pos base [\uni0958 ] <anchor 1711 1632> mark @abvm_deva;
   pos base [\uni0958_uni094D.half ] <anchor 1851 1592> mark @abvm_deva;
   pos base [\uni0958_uni094D.haln ] <anchor 1967 1585> mark @abvm_deva;
@@ -1160,93 +1162,94 @@ feature blwm {
      language dflt ;
       lookup blwmBelowBaseMarkinDevanagari2lookup2;
 } blwm;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \A.circled \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis 
 	\Adotaccent \Agrave \Alpha \Alpha_latin \Alphatonos \Amacron \Aogonek \Aring 
-	\Aringacute \Aringbelow \Atilde \Aturned \B \Bdotbelow \Beta \Beta_latin \Bhook 
-	\Blinebelow \Bstroke \Btopbar \C \Cacute \Ccaron \Ccedilla \Ccircumflex 
+	\Aringacute \Aringbelow \Asmall \Atilde \Aturned \B \Bdotbelow \Beta \Beta_latin 
+	\Bhook \Blinebelow \Bstroke \Btopbar \C \Cacute \Ccaron \Ccedilla \Ccircumflex 
 	\Cdotaccent \Chi \Chook \D \D.circled \Dcaron \Dcircumflexbelow \Dcroat \Dhook 
 	\Dlinebelow \Dshortstrokeoverlay \Dtail \E \Eacute \Ebreve \Ecaron \Ecedilla 
 	\Ecedillabreve \Ecircumflex \Edieresis \Edotaccent \Egrave \Emacron \Eng 
-	\Eogonek \Eopen \Epsilon \Epsilontonos \Ereversed \Esh \Eta \Etatonos \Eth 
-	\Etildebelow \Euro \Ezh \Ezhcaron \Ezhreversed \F \Fhook \G \Gamma \Gamma_latin 
-	\Gbreve \Gcaron \Gcircumflex \Gdotaccent \Ghook \Glottalstopsmall \Gstroke \H 
-	\Hbar \Hcaron \Hcedilla \Hcircumflex \Hhook \Hturned \I \IJ \Iacute \Ibreve 
-	\Icapitalsmall \Icircumflex \Idieresis \Idotaccent \Igrave \Imacron \Iogonek 
-	\Iota \Iota_latin \Iotadieresis \Iotatonos \Istroke \Itilde \Itildebelow \J 
-	\Jcircumflex \Jcrossedtail \Jstroke \K \KaiSymbol \Kappa \Khook \Klinebelow \L 
-	\L_periodcentered.loclCAT \Lacute \Lambda \Lcaron \Lcircumflexbelow \Ldot 
-	\Llinebelow \Lslash \M \Mturned \Mu \N \Nacute \Ncaron \Ncircumflexbelow 
-	\Nhookleft \Nlinebelow \Ntilde \Nu \O \OE \Oacute \Obarred \Obreve \Ocircumflex 
-	\Odieresis \Ograve \Ohm \Ohorn \Ohungarumlaut \Omacron \Omega_latin \Omegasmall 
-	\Omegatonos \Omicron \Omicrontonos \Oopen \Oslash \Oslashacute \Otilde \P 
-	\Pdotaccent \Phi \Phook \Pi \Psi \Pstroke \Q \R \Racute \Ramshorn \Rcaron \Rho 
-	\Rlinebelow \Rstroke \Rtail \S \Sacute \Saltillo \Scaron \Scedilla \Scircumflex 
-	\Sigma \T \Tau \Tbar \Tcaron \Tcircumflexbelow \Theta \Thook \Thorn \Tlinebelow 
-	\Tretroflexhook \U \Uacute \Ubar \Ubreve \Ucircumflex \Udieresis \Ugrave \Uhorn 
-	\Uhungarumlaut \Umacron \Uogonek \Upsilon \Upsilon_latin \Upsilondieresis 
-	\Upsilontonos \Uring \Utilde \Utildebelow \V \Vhook \Vturned \W \Wacute 
-	\Wcircumflex \Wdieresis \Wgrave \Whook \X \Xi \Y \Yacute \Ycircumflex \Ydieresis 
-	\Ygrave \Yhook \Z \Zacute \Zcaron \Zdotaccent \Zeta \Zlinebelow \a \a.circled 
-	\aacute \abreve \acircumflex \acute \adieresis \adotaccent \ae \aeacute \agrave 
-	\alpha \alpha_latin \alphadasia \alphapsili \alphapsilivaria \alphatonos 
-	\amacron \amod \ampersand \anoteleia \aogonek \approxequal \aring \aringacute 
-	\aringbelow \asciicircum \asciitilde \asterisk \at \atilde \aturned \b 
-	\backslash \baht \bar \bdotbelow \beta \beta_latin \bhook \bilabialclick 
+	\Eogonek \Eopen \Epsilon \Epsilontonos \Ereversed \Esh \Esmall \Eta \Etatonos 
+	\Eth \Etildebelow \Euro \Ezh \Ezhcaron \Ezhreversed \F \Fhook \G \Gamma 
+	\Gamma_latin \Gbreve \Gcaron \Gcircumflex \Gdotaccent \Ghook \Glottalstopsmall 
+	\Gstroke \H \Hbar \Hcaron \Hcedilla \Hcircumflex \Hhook \Hturned \I \IJ \Iacute 
+	\Ibreve \Icapitalsmall \Icircumflex \Idieresis \Idotaccent \Igrave \Imacron 
+	\Iogonek \Iota \Iota_latin \Iotadieresis \Iotatonos \Istroke \Itilde 
+	\Itildebelow \J \Jcircumflex \Jcrossedtail \Jstroke \K \KaiSymbol \Kappa \Khook 
+	\Klinebelow \L \L_periodcentered.loclCAT \Lacute \Lambda \Lcaron 
+	\Lcircumflexbelow \Ldot \Llinebelow \Lslash \M \Mturned \Mu \N \Nacute \Ncaron 
+	\Ncircumflexbelow \Nhookleft \Nlinebelow \Ntilde \Nu \O \OE \Oacute \Obarred 
+	\Obreve \Ocircumflex \Odieresis \Ograve \Ohm \Ohorn \Ohungarumlaut \Omacron 
+	\Omega_latin \Omegasmall \Omegatonos \Omicron \Omicrontonos \Oopen \Oslash 
+	\Oslashacute \Otilde \P \Pdotaccent \Phi \Phook \Pi \Psi \Pstroke \Q \R \Racute 
+	\Ramshorn \Rcaron \Rho \Rlinebelow \Rstroke \Rtail \S \Sacute \Saltillo \Scaron 
+	\Scedilla \Scircumflex \Sigma \T \Tau \Tbar \Tcaron \Tcircumflexbelow \Theta 
+	\Thook \Thorn \Tlinebelow \Tretroflexhook \U \Uacute \Ubar \Ubreve \Ucircumflex 
+	\Udieresis \Ugrave \Uhorn \Uhungarumlaut \Umacron \Uogonek \Upsilon 
+	\Upsilon_latin \Upsilondieresis \Upsilontonos \Uring \Utilde \Utildebelow \V 
+	\Vhook \Vturned \W \Wacute \Wcircumflex \Wdieresis \Wgrave \Whook \X \Xi \Y \Yacute 
+	\Ycircumflex \Ydieresis \Ygrave \Yhook \Z \Zacute \Zcaron \Zdotaccent \Zeta \a 
+	\a.circled \aacute \abreve \acircumflex \acute \adieresis \adotaccent \ae 
+	\aeacute \agrave \alpha \alpha_latin \alphadasia \alphapsili \alphapsilivaria 
+	\alphatonos \amacron \amod \ampersand \anoteleia \aogonek \approxequal \aring 
+	\aringacute \aringbelow \asciicircum \asciitilde \asterisk \at \atilde \aturned 
+	\b \backslash \baht \bar \bdotbelow \beta \beta_latin \bhook \bilabialclick 
 	\blackCircle \blackDiamond \blackSmallSquare \blackSquare \blinebelow 
 	\braceleft \braceright \bracketleft \bracketright \breve \brokenbar \bstroke 
 	\btopbar \bullet \bulletoperator \c \cacute \careof \caron \ccaron \ccedilla 
 	\ccircumflex \cdotaccent \cedilla \cent \chi \chook \circumflex \clickalveolar 
 	\clickdental \clicklateral \clickretroflex \colon \colonmod \colonmonetary 
 	\comma \commaturnedmod \copyright \currency \d \dagger \daggerdbl \dasia 
-	\dblverticalbar \dcaron \dcircumflexbelow \dcroat \degree \delta \dhook 
+	\dblverticalbar \dcaron \dcircumflexbelow \dcroat \dcurl \degree \delta \dhook 
 	\dieresis \dieresistonos \divide \divisionslash \dlinebelow \dollar \dong 
 	\dotaccent \dotlessi \doubleapostrophemod \downArrow \downBlackSmallTriangle 
 	\downBlackTriangle \downWhiteSmallTriangle \downWhiteTriangle 
 	\dshortstrokeoverlay \dtail \e \eOpenmod \eacute \ebreve \ecaron \ecedilla 
 	\ecedillabreve \ecircumflex \edieresis \edotaccent \egrave \eight \ellipsis 
 	\emacron \emdash \emod \emptyset \endash \eng \eogonek \eopen \epsilon 
-	\epsilontonos \equal \esh \estimated \eta \etatonos \eth \etildebelow \eturned 
-	\exclam \exclamdown \ezh \ezhcaron \ezhreversed \f \figuredash \figurespace 
-	\five \fiveeighths \four \franc \g \gamma \gamma_latin \gbreve \gcaron 
-	\gcircumflex \gdotaccent \germandbls \ghook \glottalstop \glottalstopmod 
-	\glottalstopreversed \glottalstopsmall \grave \greater \greaterequal \gsingle 
-	\gstroke \guillemotleft \guillemotright \guilsinglleft \guilsinglright \h 
-	\hbar \hcaron \hcedilla \hcircumflex \hhook \hlinebelow \horizontalbar \hryvnia 
-	\hturned \hungarumlaut \hyphen \hyphentwo \i \iacute \ibreve \icapitalsmall 
-	\icircumflex \idieresis \idotbelow.dotless \igrave \ij \imacron \increment 
-	\infinity \integral \iogonek \iogonek_dotless \iota \iota_latin 
-	\iotadialytikaoxia \iotadieresis \iotadieresistonos \iotatonos \istroke 
-	\istrokedotless \istrokemod \itilde \itildebelow \itildebelowdotless \j 
-	\jcaron \jcircumflex \jcrossedtail \jstroke \jstrokedotless \k \kaiSymbol 
-	\kappa \kgreenlandic \khook \klinebelow \koronis \l \l_periodcentered.loclCAT 
-	\lacute \lambda \lari \lcaron \lcircumflexbelow \ldot \leftArrow 
-	\leftBlackSmallTriangle \leftBlackTriangle \leftRightArrow 
-	\leftWhiteSmallTriangle \leftWhiteTriangle \less \lessequal \lira \literSign 
-	\llinebelow \logicalnot \longs \lowernumeral_greek \lozenge \lslash \m \macron 
+	\epsilontonos \equal \esh \eshsquatreversed \estimated \eta \etatonos \eth 
+	\etildebelow \eturned \exclam \exclamdown \ezh \ezhcaron \ezhreversed \f 
+	\figuredash \figurespace \five \fiveeighths \four \franc \g \gamma \gamma_latin 
+	\gbreve \gcaron \gcircumflex \gdotaccent \germandbls \ghook \glottalstop 
+	\glottalstopmod \glottalstopreversed \glottalstopsmall \grave \greater 
+	\greaterequal \gsingle \gstroke \guillemotleft \guillemotright \guilsinglleft 
+	\guilsinglright \h \hbar \hcaron \hcedilla \hcircumflex \hhook \horizontalbar 
+	\hryvnia \hturned \hturnedfishhook \hturnedfishhookandtail \hungarumlaut 
+	\hyphen \hyphentwo \i \iacute \ibreve \icapitalsmall \icircumflex \idieresis 
+	\idotbelow.dotless \igrave \ij \imacron \increment \infinity \integral \iogonek 
+	\iogonek_dotless \iota \iota_latin \iotadialytikaoxia \iotadieresis 
+	\iotadieresistonos \iotatonos \istroke \istrokedotless \istrokemod \itilde 
+	\itildebelow \itildebelowdotless \j \jcaron \jcircumflex \jcrossedtail 
+	\jdotlessstroke \jstroke \jstrokedotless \k \kaiSymbol \kappa \kgreenlandic 
+	\khook \klinebelow \koronis \l \l_periodcentered.loclCAT \lacute \lambda \lari 
+	\lcaron \lcircumflexbelow \lcurl \ldot \leftArrow \leftBlackSmallTriangle 
+	\leftBlackTriangle \leftRightArrow \leftWhiteSmallTriangle 
+	\leftWhiteTriangle \less \lessequal \lira \literSign \llinebelow \logicalnot 
+	\longs \lowernumeral_greek \lozenge \lslash \m \macron 
 	\midlinehorizontalellipsis \minus \minusmod \minute \mturned \mu \multiply \n 
-	\nacute \napostrophe \ncaron \ncircumflexbelow \nhookleft \nine \nlinebelow 
-	\nonbreakinghyphen \northEastArrow \northWestArrow \notequal \ntilde \nu 
-	\numbersign \numeral_greek \o \oOpenmod \oacute \obarred \obreve \ocircumflex 
-	\odieresis \oe \ogonek \ograve \ohorn \ohungarumlaut \omacron \omega 
-	\omega_latin \omegatonos \omicron \omicrontonos \omod \one \oneeighth \onehalf 
-	\onequarter \onethird \oopen \ordfeminine \ordmasculine \oslash \oslashacute 
-	\otilde \oxia \p \paragraph \parenleft \parenright \partialdiff \pdotaccent 
-	\percent \period \periodcentered \perthousand \peseta \phi \phiSymbol \phook \pi 
-	\plus \plusminus \prescription \product \psi \psili \pstroke \published \q 
-	\question \questiondown \questiongreek \quotedbl \quotedblbase \quotedblleft 
-	\quotedblright \quoteleft \quoteright \quotesinglbase \quotesingle \r \racute 
-	\radical \ramshorn \rcaron \registered \rho \rightArrow 
-	\rightBlackSmallTriangle \rightBlackTriangle \rightWhiteSmallTriangle 
-	\rightWhiteTriangle \ring \ringhalfleft \ringhalfright \rlinebelow \rstroke 
-	\rtail \rupee \s \sacute \saltillo \scaron \scedilla \scircumflex \second 
-	\section \semicolon \servicemark \seven \seveneighths \sheqel \shortequalmod 
-	\sigma \sigmafinal \six \slash \softhyphen \southEastArrow \southWestArrow 
-	\space \sterling \summation \t \tau \tbar \tcaron \tcircumflexbelow \tenge \theta 
-	\thook \thorn \three \threeeighths \threequarters \tilde \tlinebelow \tonos 
-	\trademark \tretroflexhook \tugrik \two \twothirds \u \uacute \ubar \ubarmod 
-	\ubreve \ucircumflex \udieresis \ugrave \uhorn \uhungarumlaut \umacron \umod 
+	\nacute \napostrophe \ncaron \ncircumflexbelow \ncurl \nhookleft \nine 
+	\nlinebelow \nonbreakinghyphen \northEastArrow \northWestArrow \notequal 
+	\ntilde \nu \numbersign \numeral_greek \o \oOpenmod \oacute \obarred \obreve 
+	\ocircumflex \odieresis \oe \ogonek \ograve \ohorn \ohungarumlaut \omacron 
+	\omega \omega_latin \omegatonos \omicron \omicrontonos \omod \one \oneeighth 
+	\onehalf \onequarter \onethird \oopen \ordfeminine \ordmasculine \oslash 
+	\oslashacute \otilde \oxia \p \paragraph \parenleft \parenright \partialdiff 
+	\pdotaccent \percent \period \periodcentered \perthousand \peseta \phi 
+	\phiSymbol \phook \pi \plus \plusminus \prescription \product \psi \psili 
+	\pstroke \published \q \question \questiondown \questiongreek \quotedbl 
+	\quotedblbase \quotedblleft \quotedblright \quoteleft \quoteright 
+	\quotesinglbase \quotesingle \r \racute \radical \ramshorn \rcaron \registered 
+	\rfishhookreversed \rho \rightArrow \rightBlackSmallTriangle 
+	\rightBlackTriangle \rightWhiteSmallTriangle \rightWhiteTriangle \ring 
+	\ringhalfleft \ringhalfright \rlinebelow \rstroke \rtail \rupee \s \sacute 
+	\saltillo \scaron \scedilla \scircumflex \second \section \semicolon 
+	\servicemark \seven \seveneighths \sheqel \shortequalmod \sigma \sigmafinal 
+	\six \slash \softhyphen \southEastArrow \southWestArrow \space \sterling 
+	\summation \t \tau \tbar \tcaron \tcircumflexbelow \tcurl \tenge \theta \thook 
+	\thorn \three \threeeighths \threequarters \tilde \tlinebelow \tonos \trademark 
+	\tretroflexhook \tugrik \two \twothirds \u \uacute \ubar \ubarmod \ubreve 
+	\ucircumflex \udieresis \ugrave \uhorn \uhungarumlaut \umacron \umod 
 	\underscore \undertie \uni00A0 \uni00B2 \uni00B3 \uni00B9 \uni0122 \uni0123 
 	\uni0136 \uni0137 \uni013B \uni013C \uni0145 \uni0146 \uni0156 \uni0157 \uni0162 
 	\uni0163 \uni018F \uni0192 \uni01C4 \uni01C5 \uni01C6 \uni01C7 \uni01C8 \uni01C9 
@@ -1306,54 +1309,50 @@ feature blwm {
 	\uni1EB1 \uni1EB2 \uni1EB3 \uni1EB4 \uni1EB5 \uni1EB6 \uni1EB7 \uni1EB8 \uni1EB9 
 	\uni1EBA \uni1EBB \uni1EBC \uni1EBD \uni1EBE \uni1EBF \uni1EC0 \uni1EC1 \uni1EC2 
 	\uni1EC3 \uni1EC4 \uni1EC5 \uni1EC6 \uni1EC7 \uni1EC8 \uni1EC9 \uni1ECA \uni1ECB 
-	\uni1ECB_uni0301 \uni1ECC \uni1ECD \uni1ECE \uni1ECF \uni1ED0 \uni1ED1 \uni1ED2 
-	\uni1ED3 \uni1ED4 \uni1ED5 \uni1ED6 \uni1ED7 \uni1ED8 \uni1ED9 \uni1EDA \uni1EDB 
-	\uni1EDC \uni1EDD \uni1EDE \uni1EDF \uni1EE0 \uni1EE1 \uni1EE2 \uni1EE3 \uni1EE4 
-	\uni1EE5 \uni1EE6 \uni1EE7 \uni1EE8 \uni1EE9 \uni1EEA \uni1EEB \uni1EEC \uni1EED 
-	\uni1EEE \uni1EEF \uni1EF0 \uni1EF1 \uni1EF4 \uni1EF5 \uni1EF6 \uni1EF7 \uni1EF8 
-	\uni1EF9 \uni1F03 \uni1F04 \uni1F05 \uni1F06 \uni1F07 \uni1F08 \uni1F09 \uni1F0A 
-	\uni1F0B \uni1F0C \uni1F0D \uni1F0E \uni1F0F \uni1F10 \uni1F11 \uni1F12 \uni1F13 
-	\uni1F14 \uni1F15 \uni1F18 \uni1F19 \uni1F1A \uni1F1B \uni1F1C \uni1F1D \uni1F20 
-	\uni1F21 \uni1F22 \uni1F23 \uni1F24 \uni1F25 \uni1F26 \uni1F27 \uni1F28 \uni1F29 
-	\uni1F2A \uni1F2B \uni1F2C \uni1F2D \uni1F2E \uni1F2F \uni1F30 \uni1F31 \uni1F32 
-	\uni1F33 \uni1F34 \uni1F35 \uni1F36 \uni1F37 \uni1F38 \uni1F39 \uni1F3A \uni1F3B 
-	\uni1F3C \uni1F3D \uni1F3E \uni1F3F \uni1F40 \uni1F41 \uni1F42 \uni1F43 \uni1F44 
-	\uni1F45 \uni1F48 \uni1F49 \uni1F4A \uni1F4B \uni1F4C \uni1F4D \uni1F50 \uni1F51 
-	\uni1F52 \uni1F53 \uni1F54 \uni1F55 \uni1F56 \uni1F57 \uni1F59 \uni1F5B \uni1F5D 
-	\uni1F5F \uni1F60 \uni1F61 \uni1F62 \uni1F63 \uni1F64 \uni1F65 \uni1F66 \uni1F67 
-	\uni1F68 \uni1F69 \uni1F6A \uni1F6B \uni1F6C \uni1F6D \uni1F6E \uni1F6F \uni1F70 
-	\uni1F71 \uni1F72 \uni1F73 \uni1F74 \uni1F75 \uni1F76 \uni1F77 \uni1F78 \uni1F79 
-	\uni1F7A \uni1F7B \uni1F7C \uni1F7D \uni1F80 \uni1F81 \uni1F82 \uni1F83 \uni1F84 
-	\uni1F85 \uni1F86 \uni1F87 \uni1F88 \uni1F89 \uni1F8A \uni1F8B \uni1F8C \uni1F8D 
-	\uni1F8E \uni1F8F \uni1F90 \uni1F91 \uni1F92 \uni1F93 \uni1F94 \uni1F95 \uni1F96 
-	\uni1F97 \uni1F98 \uni1F99 \uni1F9A \uni1F9B \uni1F9C \uni1F9D \uni1F9E \uni1F9F 
-	\uni1FA0 \uni1FA1 \uni1FA2 \uni1FA3 \uni1FA4 \uni1FA5 \uni1FA6 \uni1FA7 \uni1FA8 
-	\uni1FA9 \uni1FAA \uni1FAB \uni1FAC \uni1FAD \uni1FAE \uni1FAF \uni1FB0 \uni1FB1 
-	\uni1FB2 \uni1FB3 \uni1FB4 \uni1FB6 \uni1FB7 \uni1FB8 \uni1FB9 \uni1FBA \uni1FBB 
-	\uni1FBC \uni1FBE \uni1FC0 \uni1FC1 \uni1FC2 \uni1FC3 \uni1FC4 \uni1FC6 \uni1FC7 
-	\uni1FC8 \uni1FC9 \uni1FCA \uni1FCB \uni1FCC \uni1FCD \uni1FCE \uni1FCF \uni1FD0 
-	\uni1FD1 \uni1FD2 \uni1FD6 \uni1FD7 \uni1FD8 \uni1FD9 \uni1FDA \uni1FDB \uni1FDD 
-	\uni1FDE \uni1FDF \uni1FE0 \uni1FE1 \uni1FE2 \uni1FE4 \uni1FE5 \uni1FE6 \uni1FE7 
-	\uni1FE8 \uni1FE9 \uni1FEA \uni1FEB \uni1FEC \uni1FED \uni1FEE \uni1FF2 \uni1FF3 
-	\uni1FF4 \uni1FF6 \uni1FF7 \uni1FF8 \uni1FF9 \uni1FFA \uni1FFB \uni1FFC \uni200C 
-	\uni200D \uni2028 \uni2042 \uni2044 \uni2052 \uni2070 \uni2071 \uni2074 \uni2075 
-	\uni2076 \uni2077 \uni2078 \uni2079 \uni207A \uni207B \uni207C \uni207D \uni207E 
-	\uni207F \uni2080 \uni2081 \uni2082 \uni2083 \uni2084 \uni2085 \uni2086 \uni2087 
-	\uni2088 \uni2089 \uni208A \uni208B \uni208C \uni208D \uni208E \uni20A6 \uni20A9 
-	\uni20AD \uni20B1 \uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF 
-	\uni20C1 \uni2116 \uni25CC \uni27E8 \uni27E9 \uogonek \upArrow 
-	\upBlackSmallTriangle \upBlackTriangle \upDownArrow \upWhiteSmallTriangle 
-	\upWhiteTriangle \upsilon \upsilon_latin \upsilondialytikaoxia 
-	\upsilondieresis \upsilondieresistonos \upsilontonos \uring \utilde 
-	\utildebelow \v \varia \verticallinelowmod \verticallinemod \vhook \vturned \w 
-	\wacute \wcircumflex \wdieresis \wgrave \whiteBullet \whiteCircle 
-	\whiteDiamond \whiteSmallSquare \whiteSquare \whook \wmod \x \xi \y \yacute 
-	\ycircumflex \ydieresis \yen \ygrave \yhook \ypogegrammeni \z \zacute \zcaron 
-	\zdotaccent \zero \zeta \zlinebelow ];
-@GDEF_Ligature = [\i_uni030A \i_uni030B \j_gravecomb \j_uni0303 \j_uni0304 
-	\j_uni0308 \j_uni0311 \jacute \uni012F_uni0300 \uni012F_uni0301 
-	\uni012F_uni0302 \uni012F_uni0303 \uni012F_uni0304 \uni012F_uni030C 
-	\uni0915_uni0930_uni094D.vatu \uni0915_uni094D.haln 
+	\uni1ECC \uni1ECD \uni1ECE \uni1ECF \uni1ED0 \uni1ED1 \uni1ED2 \uni1ED3 \uni1ED4 
+	\uni1ED5 \uni1ED6 \uni1ED7 \uni1ED8 \uni1ED9 \uni1EDA \uni1EDB \uni1EDC \uni1EDD 
+	\uni1EDE \uni1EDF \uni1EE0 \uni1EE1 \uni1EE2 \uni1EE3 \uni1EE4 \uni1EE5 \uni1EE6 
+	\uni1EE7 \uni1EE8 \uni1EE9 \uni1EEA \uni1EEB \uni1EEC \uni1EED \uni1EEE \uni1EEF 
+	\uni1EF0 \uni1EF1 \uni1EF4 \uni1EF5 \uni1EF6 \uni1EF7 \uni1EF8 \uni1EF9 \uni1F03 
+	\uni1F04 \uni1F05 \uni1F06 \uni1F07 \uni1F08 \uni1F09 \uni1F0A \uni1F0B \uni1F0C 
+	\uni1F0D \uni1F0E \uni1F0F \uni1F10 \uni1F11 \uni1F12 \uni1F13 \uni1F14 \uni1F15 
+	\uni1F18 \uni1F19 \uni1F1A \uni1F1B \uni1F1C \uni1F1D \uni1F20 \uni1F21 \uni1F22 
+	\uni1F23 \uni1F24 \uni1F25 \uni1F26 \uni1F27 \uni1F28 \uni1F29 \uni1F2A \uni1F2B 
+	\uni1F2C \uni1F2D \uni1F2E \uni1F2F \uni1F30 \uni1F31 \uni1F32 \uni1F33 \uni1F34 
+	\uni1F35 \uni1F36 \uni1F37 \uni1F38 \uni1F39 \uni1F3A \uni1F3B \uni1F3C \uni1F3D 
+	\uni1F3E \uni1F3F \uni1F40 \uni1F41 \uni1F42 \uni1F43 \uni1F44 \uni1F45 \uni1F48 
+	\uni1F49 \uni1F4A \uni1F4B \uni1F4C \uni1F4D \uni1F50 \uni1F51 \uni1F52 \uni1F53 
+	\uni1F54 \uni1F55 \uni1F56 \uni1F57 \uni1F59 \uni1F5B \uni1F5D \uni1F5F \uni1F60 
+	\uni1F61 \uni1F62 \uni1F63 \uni1F64 \uni1F65 \uni1F66 \uni1F67 \uni1F68 \uni1F69 
+	\uni1F6A \uni1F6B \uni1F6C \uni1F6D \uni1F6E \uni1F6F \uni1F70 \uni1F71 \uni1F72 
+	\uni1F73 \uni1F74 \uni1F75 \uni1F76 \uni1F77 \uni1F78 \uni1F79 \uni1F7A \uni1F7B 
+	\uni1F7C \uni1F7D \uni1F80 \uni1F81 \uni1F82 \uni1F83 \uni1F84 \uni1F85 \uni1F86 
+	\uni1F87 \uni1F88 \uni1F89 \uni1F8A \uni1F8B \uni1F8C \uni1F8D \uni1F8E \uni1F8F 
+	\uni1F90 \uni1F91 \uni1F92 \uni1F93 \uni1F94 \uni1F95 \uni1F96 \uni1F97 \uni1F98 
+	\uni1F99 \uni1F9A \uni1F9B \uni1F9C \uni1F9D \uni1F9E \uni1F9F \uni1FA0 \uni1FA1 
+	\uni1FA2 \uni1FA3 \uni1FA4 \uni1FA5 \uni1FA6 \uni1FA7 \uni1FA8 \uni1FA9 \uni1FAA 
+	\uni1FAB \uni1FAC \uni1FAD \uni1FAE \uni1FAF \uni1FB0 \uni1FB1 \uni1FB2 \uni1FB3 
+	\uni1FB4 \uni1FB6 \uni1FB7 \uni1FB8 \uni1FB9 \uni1FBA \uni1FBB \uni1FBC \uni1FBE 
+	\uni1FC0 \uni1FC1 \uni1FC2 \uni1FC3 \uni1FC4 \uni1FC6 \uni1FC7 \uni1FC8 \uni1FC9 
+	\uni1FCA \uni1FCB \uni1FCC \uni1FCD \uni1FCE \uni1FCF \uni1FD0 \uni1FD1 \uni1FD2 
+	\uni1FD6 \uni1FD7 \uni1FD8 \uni1FD9 \uni1FDA \uni1FDB \uni1FDD \uni1FDE \uni1FDF 
+	\uni1FE0 \uni1FE1 \uni1FE2 \uni1FE4 \uni1FE5 \uni1FE6 \uni1FE7 \uni1FE8 \uni1FE9 
+	\uni1FEA \uni1FEB \uni1FEC \uni1FED \uni1FEE \uni1FF2 \uni1FF3 \uni1FF4 \uni1FF6 
+	\uni1FF7 \uni1FF8 \uni1FF9 \uni1FFA \uni1FFB \uni1FFC \uni200C \uni200D \uni2028 
+	\uni2042 \uni2044 \uni2052 \uni2070 \uni2071 \uni2074 \uni2075 \uni2076 \uni2077 
+	\uni2078 \uni2079 \uni207A \uni207B \uni207C \uni207D \uni207E \uni207F \uni2080 
+	\uni2081 \uni2082 \uni2083 \uni2084 \uni2085 \uni2086 \uni2087 \uni2088 \uni2089 
+	\uni208A \uni208B \uni208C \uni208D \uni208E \uni20A6 \uni20A9 \uni20AD \uni20B1 
+	\uni20B2 \uni20B5 \uni20B9 \uni20BA \uni20BC \uni20BD \uni20BF \uni20C1 \uni2116 
+	\uni25CC \uni27E8 \uni27E9 \uogonek \upArrow \upBlackSmallTriangle 
+	\upBlackTriangle \upDownArrow \upWhiteSmallTriangle \upWhiteTriangle 
+	\upsilon \upsilon_latin \upsilondialytikaoxia \upsilondieresis 
+	\upsilondieresistonos \upsilontonos \uring \utilde \utildebelow \v \varia 
+	\verticallinelowmod \verticallinemod \vhook \vturned \w \wacute \wcircumflex 
+	\wdieresis \wgrave \whiteBullet \whiteCircle \whiteDiamond \whiteSmallSquare 
+	\whiteSquare \whook \wmod \x \xi \y \yacute \ycircumflex \ydieresis \yen \ygrave 
+	\yhook \ypogegrammeni \z \zacute \zcaron \zdotaccent \zero \zeta ];
+@GDEF_Ligature = [\uni0915_uni0930_uni094D.vatu \uni0915_uni094D.haln 
 	\uni0915_uni094D_uni0937.akhn \uni0915_uni094D_uni0937.half 
 	\uni0916_uni0930_uni094D.vatu \uni0916_uni094D.haln 
 	\uni0917_uni0930_uni094D.vatu \uni0917_uni094D.half \uni0917_uni094D.haln 
@@ -1405,8 +1404,7 @@ feature blwm {
 	\uni0BAA_uni0BC2 \uni0BAE_uni0BC1 \uni0BAE_uni0BC2 \uni0BAF_uni0BC1 
 	\uni0BAF_uni0BC2 \uni0BB0_uni0BC1 \uni0BB0_uni0BC2 \uni0BB1_uni0BC1 
 	\uni0BB1_uni0BC2 \uni0BB2_uni0BC1 \uni0BB2_uni0BC2 \uni0BB3_uni0BC1 
-	\uni0BB3_uni0BC2 \uni0BB4_uni0BC1 \uni0BB4_uni0BC2 \uni1ECB_uni0300 
-	\uni1ECB_uni0302 \uni1ECB_uni0303 \uni1ECB_uni0304 \uniFB01 \uniFB02 ];
+	\uni0BB3_uni0BC2 \uni0BB4_uni0BC1 \uni0BB4_uni0BC2 \uniFB01 \uniFB02 ];
 @GDEF_Mark = [\acutecomb \acutemacroncomb \brevecomb_acutecomb 
 	\brevecomb_gravecomb \brevecomb_hookabovecomb \brevecomb_tildecomb 
 	\breveinvertedbelowcomb \circumflexbelowcomb \circumflexcomb_acutecomb 
