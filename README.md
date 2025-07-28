@@ -36,10 +36,11 @@ Following are the specialities of the font
  
 * Extensive coverage of many Latin Based Languages including African Languages and Vietnamese, Greek, Devanagari and Tamil.
 
-Now, as per Shaperglot, Samaano supports ~~537~~  Latin based,16 Devanagari Based languages.  Monotonic and Polytonic Greek
+Now, as per Shaperglot, Samaano supports 773  Latin based,
+16 Devanagari Based languages.  Monotonic and Polytonic Greek and Tamil
 
-[![][shaperglot]](documentation/samaano-shaperglot.png)
-[shaperglot]: documentation/samaano-shaperglot.csv
+![shaperglot](documentation/samaano-shaperglot.png)
+[shaperglot](documentation/samaano-shaperglot.csv)
 
 
 
@@ -60,30 +61,31 @@ Following are some numbers associated with the of the typeface
 *   ~554~ 792 - Languages supported as per Shaperglot, 773 Latin based, 16 Devanagari Based, 2 Greek based and Tamil
 *   ~1044~ 1517 - unicode codepoints covered
 *   ~9982~ 13960 - glyphs drawn - considering all masters
+*   1.2 million possible instances if only integer values in each axis is considered.
  
 ## Changelog
  
-####10 October 2024 - Version 1.000
+#### 10 October 2024 - Version 1.000
  * First Release
 
-####13 November 2024 - Version 2.000
+#### 13 November 2024 - Version 2.000
   * Added additional axis of Slant
 
   * Added support for East European Latin based Languages, Indic Translitteration and Vietnamese
 
   * Update Devanagari Open  Type Tables to version 2 with addition of GPOS features
 
-####20 March 2025 - Version 2.301
+#### 20 March 2025 - Version 2.301
   * Added Monotonic Greek
   * Extended Latin to include panNigerian, Pinyin and DIN91379.
   * Addition of Arrows, Geometric shapes and Mathametical Operators
   *
-#### ???? 2025 - Version 2.400
+#### July 2025 - Version 2.400
   * Extension of Latin to include most African languages.
   * Extension of Greek to include Polytonic variant.
   * Addition of Tamil.
 
-####Road Map for Version 3
+#### Road Map for Version 3
 
 * Addition of Cyrillic
 * Further extension of Latin to support most Latin Based languages.
