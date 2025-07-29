@@ -273,20 +273,20 @@ you're checking.</p>
     <tr>
         <td>1</td>
         <td>0</td>
-        <td>3</td>
-        <td>11</td>
-        <td>87</td>
+        <td>1</td>
+        <td>10</td>
+        <td>88</td>
         <td>9</td>
-        <td>125</td>
+        <td>127</td>
     </tr>
     <tr>
         <td>0%</td>
         <td>0%</td>
-        <td>1%</td>
-        <td>5%</td>
+        <td>0%</td>
+        <td>4%</td>
         <td>37%</td>
         <td>4%</td>
-        <td>53%</td>
+        <td>54%</td>
     </tr>
 </table>
         
@@ -311,12 +311,12 @@ immediately.
 <p>(but other kinds of bug reports and/or feature requests
     are also always welcome, of course!)</p>
 
-<p>FontBakery version: 1.0.0</p>
+<p>FontBakery version: 1.0.1</p>
         
             
                 <h2>OpenType Specification Checks</h2>
 <span class='section__emoji'>
-    ⚠️⚠️⏩⏩⏩⏩⏩⏩⏩
+    ⚠️⏩⏩⏩⏩⏩⏩⏩
 </span>
 
     
@@ -353,52 +353,6 @@ immediately.
 
     
 
-    
-
-    
-    <h3>
-    
-    Check mark characters are in GDEF mark glyph class.
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:opentype/gdef_mark_chars&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                ⚠️
-                Samaano[slnt,wdth,wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
-
-                            <span class='details_text'>
-                            <p>The following mark characters could be in the GDEF mark glyph class:
-uni0955 (U+0955), uni0BC0 (U+0BC0) and uni0BCD (U+0BCD)</p>
-
-                            
-                             [code: mark-chars]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
     
 
     
@@ -459,7 +413,7 @@ uni0955 (U+0955), uni0BC0 (U+0BC0) and uni0BCD (U+0BCD)</p>
                             </span>
 
                             <span class='details_text'>
-                            <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1417 instead.
+                            <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1702 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
 
                             
@@ -524,7 +478,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
             
                 <h2>Universal Profile Checks</h2>
 <span class='section__emoji'>
-    🔥⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️
+    ⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️
 </span>
 
     
@@ -633,56 +587,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     
 
     
-    <h3>
-    
-    <div style='color:#88c'>EXPERIMENTAL CHECK - Since 2024/12/28</div>
-    
-    Check base characters have non-zero advance width.
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:base_has_width&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                🔥
-                Samaano[slnt,wdth,wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
-
-                            <span class='details_text'>
-                            <p>The following glyphs had zero advance width:
-- anoteleia (U+0387)</p>
-<pre><code>- uni1FBE (U+1FBE)
-</code></pre>
-
-                            
-                             [code: zero-width-bases]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
-    
-
-    
 
     
 
@@ -757,27 +661,17 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
                             <span class='details_text'>
                             <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 5 in glyph 'Ghook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+<pre><code>- Contour 0 in glyph 'uhorn': becomes underweight between slnt=0,wdth=100,wght=700 and slnt=-20,wdth=100,wght=700.
 
-- Contour 4 in glyph 'Nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 1 in glyph 'uhorn': becomes underweight between slnt=0,wdth=100,wght=700 and slnt=-20,wdth=100,wght=700.
 
-- Contour order differs in glyph 'gamma_latin': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
+- Contour 0 in glyph 'uhorn': becomes underweight between slnt=-20,wdth=100,wght=700 and slnt=0,wdth=200,wght=700.
 
-- Contour 4 in glyph 'Fhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 1 in glyph 'uhorn': becomes underweight between slnt=-20,wdth=100,wght=700 and slnt=0,wdth=200,wght=700.
 
-- Contour 4 in glyph 'nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 5 in glyph 'whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour order differs in glyph 'Ramshorn': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
-
-- Contour order differs in glyph 'blinebelow': [0, 1, 2, 3, 4] in slnt=0,wdth=200,wght=100, [4, 1, 2, 3, 0] in slnt=-20,wdth=200,wght=100.
-
-- Contour 5 in glyph 'bhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 4 in glyph 'khook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'Yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'dhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 7 in glyph 'uni20BF': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
 
 - Contour 0 in glyph 'Uhorn': becomes underweight between slnt=-20,wdth=100,wght=700 and slnt=0,wdth=200,wght=700.
 
@@ -790,24 +684,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - Contour 0 in glyph 'Uhorn': becomes underweight between slnt=0,wdth=200,wght=100 and slnt=-20,wdth=200,wght=100.
 
 - Contour 1 in glyph 'Uhorn': becomes underweight between slnt=0,wdth=200,wght=100 and slnt=-20,wdth=200,wght=100.
-
-- Contour 1 in glyph 'uni0312': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 3 in glyph 'Dcroat': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
-
-- Contour 0 in glyph 'uhorn': becomes underweight between slnt=0,wdth=100,wght=700 and slnt=-20,wdth=100,wght=700.
-
-- Contour 1 in glyph 'uhorn': becomes underweight between slnt=0,wdth=100,wght=700 and slnt=-20,wdth=100,wght=700.
-
-- Contour 0 in glyph 'uhorn': becomes underweight between slnt=-20,wdth=100,wght=700 and slnt=0,wdth=200,wght=700.
-
-- Contour 1 in glyph 'uhorn': becomes underweight between slnt=-20,wdth=100,wght=700 and slnt=0,wdth=200,wght=700.
-
-- Contour 4 in glyph 'Chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
-
-- Contour 5 in glyph 'Whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 3 in glyph 'thook': becomes underweight between slnt=0,wdth=100,wght=700 and slnt=-20,wdth=100,wght=700.
 
@@ -825,29 +701,77 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 - Contour 4 in glyph 'thook': becomes underweight between slnt=0,wdth=200,wght=100 and slnt=-20,wdth=200,wght=100.
 
-- Contour 4 in glyph 'hhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 7 start point differs in glyph 'uni0BB4_uni0BC2' between location slnt=-20,wdth=200,wght=700 and location slnt=-20,wdth=100,wght=100
 
-- Contour 4 in glyph 'chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 7 in glyph 'uni0BB4_uni0BC2': becomes underweight between slnt=-20,wdth=200,wght=700 and slnt=-20,wdth=100,wght=100.
 
-- Contour 6 in glyph 'ghook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 7 start point differs in glyph 'uni0BB4_uni0BC2' between location slnt=-20,wdth=100,wght=100 and location slnt=0,wdth=200,wght=100
 
-- Contour 7 in glyph 'uni20BF': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+- Contour 7 in glyph 'uni0BB4_uni0BC2': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 7 start point differs in glyph 'uni0BB4_uni0BC2' between location slnt=0,wdth=200,wght=100 and location slnt=-20,wdth=200,wght=100
+
+- Contour 7 in glyph 'uni0BB4_uni0BC2': becomes underweight between slnt=0,wdth=200,wght=100 and slnt=-20,wdth=200,wght=100.
+
+- Contour 4 in glyph 'Chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
 - Contour 5 in glyph 'yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour 5 in glyph 'phook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+- Contour 5 in glyph 'Whook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
 
-- Contour 3 in glyph 'Eth': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+- Contour 4 in glyph 'Fhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour order differs in glyph 'Ramshorn': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
 
 - Contour order differs in glyph 'ramshorn': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
 
 - Contour 1 start point differs in glyph 'ramshorn' between location slnt=-20,wdth=100,wght=100 and location slnt=0,wdth=200,wght=100
 
+- Contour 4 in glyph 'dcurl': becomes underweight between slnt=0,wdth=200,wght=100 and slnt=-20,wdth=200,wght=100.
+
+- Contour 5 start point differs in glyph 'dcurl' between location slnt=0,wdth=200,wght=100 and location slnt=-20,wdth=200,wght=100
+
+- Contour order differs in glyph 'gamma_latin': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
+
+- Contour 5 in glyph 'dhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 5 in glyph 'bhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 6 in glyph 'ghook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'khook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 7 start point differs in glyph 'uni0BB4_uni0BC1' between location slnt=-20,wdth=200,wght=700 and location slnt=-20,wdth=100,wght=100
+
+- Contour 7 start point differs in glyph 'uni0BB4_uni0BC1' between location slnt=-20,wdth=100,wght=100 and location slnt=0,wdth=200,wght=100
+
+- Contour 7 in glyph 'uni0BB4_uni0BC1': becomes underweight between slnt=0,wdth=200,wght=100 and slnt=-20,wdth=200,wght=100.
+
+- Contour 5 in glyph 'phook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 3 in glyph 'Eth': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+
+- Contour 5 in glyph 'Ghook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'Nhookleft': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
 - Contour order differs in glyph 'Gamma_latin': [0, 1, 2] in slnt=-20,wdth=100,wght=100, [1, 0, 2] in slnt=0,wdth=200,wght=100.
 
-- Contour 4 start point differs in glyph 'uni0BAF' between location slnt=-20,wdth=200,wght=700 and location slnt=-20,wdth=100,wght=100
+- Contour 3 in glyph 'Dcroat': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
 
-- Contour 4 start point differs in glyph 'uni0BAF' between location slnt=-20,wdth=100,wght=100 and location slnt=0,wdth=200,wght=100
+- Contour 1 in glyph 'fiveeighths': becomes underweight between slnt=0,wdth=100,wght=100 and slnt=-20,wdth=200,wght=700.
+
+- Contour 5 in glyph 'Yhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'hhook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 1 in glyph 'uni0312': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour 4 in glyph 'chook': becomes underweight between slnt=-20,wdth=100,wght=100 and slnt=0,wdth=200,wght=100.
+
+- Contour order differs in glyph 'blinebelow': [0, 1, 2, 3, 4] in slnt=0,wdth=200,wght=100, [4, 1, 2, 3, 0] in slnt=-20,wdth=200,wght=100.
 </code></pre>
 
                             
@@ -863,56 +787,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
     
 
-    
-
-    
-    <h3>
-    
-    Are there caret positions declared for every ligature?
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:ligature_carets&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                ⚠️
-                Samaano[slnt,wdth,wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
-
-                            <span class='details_text'>
-                            <p>This font lacks caret positioning values for these ligature glyphs:
-- j_uni0308</p>
-<pre><code>- j_uni0311
-
-- uni1ECB_uni0301
-</code></pre>
-
-                            
-                             [code: incomplete-caret-pos-data]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
     
 
     
@@ -1019,6 +893,12 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 * Blinebelow (U+1E06): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Blinebelow (U+1E06): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bstroke (U+0243): L&lt;&lt;433.0,1023.0&gt;--&lt;433.0,820.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bstroke (U+0243): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
+
+* Bstroke (U+0243): L&lt;&lt;433.0,1537.0&gt;--&lt;433.0,1331.0&gt;&gt; has the same coordinates as a previous segment.
 
 * Btopbar (U+0182): L&lt;&lt;442.0,766.0&gt;--&lt;442.0,567.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1176,6 +1056,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * ecedillabreve (U+1E1D): L&lt;&lt;373.0,1294.0&gt;--&lt;373.0,1181.0&gt;&gt; has the same coordinates as a previous segment.
 
+* etildebelow (U+1E1B): L&lt;&lt;363.0,-89.0&gt;--&lt;363.0,-188.0&gt;&gt; has the same coordinates as a previous segment.
+
+* etildebelow (U+1E1B): L&lt;&lt;713.0,-249.0&gt;--&lt;713.0,-150.0&gt;&gt; has the same coordinates as a previous segment.
+
 * gbreve (U+011F): L&lt;&lt;763.0,1304.0&gt;--&lt;763.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
 
 * gbreve (U+011F): L&lt;&lt;439.0,1304.0&gt;--&lt;439.0,1191.0&gt;&gt; has the same coordinates as a previous segment.
@@ -1212,13 +1096,9 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * itildebelow (U+1E2D): L&lt;&lt;739.0,-302.0&gt;--&lt;739.0,-203.0&gt;&gt; has the same coordinates as a previous segment.
 
-* j_uni0303: L&lt;&lt;538.0,1181.0&gt;--&lt;538.0,1082.0&gt;&gt; has the same coordinates as a previous segment.
+* itildebelowdotless: L&lt;&lt;355.0,-114.0&gt;--&lt;355.0,-213.0&gt;&gt; has the same coordinates as a previous segment.
 
-* j_uni0303: L&lt;&lt;888.0,1021.0&gt;--&lt;888.0,1120.0&gt;&gt; has the same coordinates as a previous segment.
-
-* j_uni0311: L&lt;&lt;541.0,1099.0&gt;--&lt;541.0,1167.0&gt;&gt; has the same coordinates as a previous segment.
-
-* j_uni0311: L&lt;&lt;865.0,1099.0&gt;--&lt;865.0,1167.0&gt;&gt; has the same coordinates as a previous segment.
+* itildebelowdotless: L&lt;&lt;705.0,-274.0&gt;--&lt;705.0,-175.0&gt;&gt; has the same coordinates as a previous segment.
 
 * less (U+003C): L&lt;&lt;103.0,569.0&gt;--&lt;103.0,777.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1241,6 +1121,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 * parenright (U+0029): L&lt;&lt;678.0,1023.0&gt;--&lt;488.0,1023.0&gt;&gt; has the same coordinates as a previous segment.
 
 * parenright (U+0029): L&lt;&lt;488.0,179.0&gt;--&lt;678.0,179.0&gt;&gt; has the same coordinates as a previous segment.
+
+* perispomenicomb (U+0342): L&lt;&lt;-179.0,1479.0&gt;--&lt;-179.0,1327.0&gt;&gt; has the same coordinates as a previous segment.
+
+* perispomenicomb (U+0342): L&lt;&lt;171.0,1266.0&gt;--&lt;171.0,1418.0&gt;&gt; has the same coordinates as a previous segment.
 
 * peseta (U+20A7): L&lt;&lt;932.0,173.0&gt;--&lt;881.0,173.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1274,6 +1158,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * section (U+00A7): L&lt;&lt;918.0,442.0&gt;--&lt;717.0,442.0&gt;&gt; has the same coordinates as a previous segment.
 
+* servicemark (U+2120): L&lt;&lt;92.0,1272.0&gt;--&lt;193.0,1272.0&gt;&gt; has the same coordinates as a previous segment.
+
+* servicemark (U+2120): L&lt;&lt;478.0,936.0&gt;--&lt;378.0,936.0&gt;&gt; has the same coordinates as a previous segment.
+
 * sheqel (U+20AA): L&lt;&lt;620.0,1278.0&gt;--&lt;768.0,1277.0&gt;&gt; has the same coordinates as a previous segment.
 
 * sheqel (U+20AA): L&lt;&lt;465.0,264.0&gt;--&lt;317.0,265.0&gt;&gt; has the same coordinates as a previous segment.
@@ -1297,10 +1185,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 * undertie (U+203F): L&lt;&lt;750.0,-252.0&gt;--&lt;750.0,-391.0&gt;&gt; has the same coordinates as a previous segment.
 
 * undertie (U+203F): L&lt;&lt;304.0,-252.0&gt;--&lt;304.0,-391.0&gt;&gt; has the same coordinates as a previous segment.
-
-* uni012F_uni0303: L&lt;&lt;313.0,1258.0&gt;--&lt;313.0,1159.0&gt;&gt; has the same coordinates as a previous segment.
-
-* uni012F_uni0303: L&lt;&lt;663.0,1098.0&gt;--&lt;663.0,1197.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni0202 (U+0202): L&lt;&lt;330.0,1695.0&gt;--&lt;330.0,1763.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1518,13 +1402,13 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * uni1E7D (U+1E7D): L&lt;&lt;694.0,1178.0&gt;--&lt;694.0,1277.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAA (U+1EAA): L&lt;&lt;399.0,2109.0&gt;--&lt;399.0,2010.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAA (U+1EAA): L&lt;&lt;368.0,2217.0&gt;--&lt;368.0,2118.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAA (U+1EAA): L&lt;&lt;749.0,1949.0&gt;--&lt;749.0,2048.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAA (U+1EAA): L&lt;&lt;718.0,2057.0&gt;--&lt;718.0,2156.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAB (U+1EAB): L&lt;&lt;373.0,1577.0&gt;--&lt;373.0,1478.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAB (U+1EAB): L&lt;&lt;333.0,1694.0&gt;--&lt;333.0,1595.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EAB (U+1EAB): L&lt;&lt;723.0,1417.0&gt;--&lt;723.0,1516.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EAB (U+1EAB): L&lt;&lt;683.0,1534.0&gt;--&lt;683.0,1633.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EAE (U+1EAE): L&lt;&lt;710.0,1769.0&gt;--&lt;710.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1582,25 +1466,21 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * uni1EBD (U+1EBD): L&lt;&lt;674.0,1222.0&gt;--&lt;674.0,1321.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EC4 (U+1EC4): L&lt;&lt;338.0,2089.0&gt;--&lt;338.0,1990.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EC4 (U+1EC4): L&lt;&lt;355.0,2199.0&gt;--&lt;355.0,2100.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EC4 (U+1EC4): L&lt;&lt;688.0,1929.0&gt;--&lt;688.0,2028.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EC4 (U+1EC4): L&lt;&lt;705.0,2039.0&gt;--&lt;705.0,2138.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EC5 (U+1EC5): L&lt;&lt;360.0,1660.0&gt;--&lt;360.0,1561.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EC5 (U+1EC5): L&lt;&lt;364.0,1727.0&gt;--&lt;364.0,1628.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1EC5 (U+1EC5): L&lt;&lt;710.0,1500.0&gt;--&lt;710.0,1599.0&gt;&gt; has the same coordinates as a previous segment.
-
-* uni1ECB_uni0303: L&lt;&lt;337.0,1282.0&gt;--&lt;337.0,1183.0&gt;&gt; has the same coordinates as a previous segment.
-
-* uni1ECB_uni0303: L&lt;&lt;687.0,1122.0&gt;--&lt;687.0,1221.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1EC5 (U+1EC5): L&lt;&lt;714.0,1567.0&gt;--&lt;714.0,1666.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1ED6 (U+1ED6): L&lt;&lt;304.0,2204.0&gt;--&lt;304.0,2105.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1ED6 (U+1ED6): L&lt;&lt;654.0,2044.0&gt;--&lt;654.0,2143.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1ED7 (U+1ED7): L&lt;&lt;355.0,1578.0&gt;--&lt;355.0,1479.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1ED7 (U+1ED7): L&lt;&lt;386.0,1708.0&gt;--&lt;386.0,1609.0&gt;&gt; has the same coordinates as a previous segment.
 
-* uni1ED7 (U+1ED7): L&lt;&lt;705.0,1418.0&gt;--&lt;705.0,1517.0&gt;&gt; has the same coordinates as a previous segment.
+* uni1ED7 (U+1ED7): L&lt;&lt;736.0,1548.0&gt;--&lt;736.0,1647.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EE0 (U+1EE0): L&lt;&lt;297.0,1996.0&gt;--&lt;297.0,1897.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1625,6 +1505,210 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 * uni1EF9 (U+1EF9): L&lt;&lt;340.0,1358.0&gt;--&lt;340.0,1259.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni1EF9 (U+1EF9): L&lt;&lt;690.0,1198.0&gt;--&lt;690.0,1297.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F06 (U+1F06): L&lt;&lt;427.0,1782.0&gt;--&lt;427.0,1630.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F06 (U+1F06): L&lt;&lt;777.0,1569.0&gt;--&lt;777.0,1721.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F07 (U+1F07): L&lt;&lt;406.0,1734.0&gt;--&lt;406.0,1582.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F07 (U+1F07): L&lt;&lt;756.0,1521.0&gt;--&lt;756.0,1673.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F0E (U+1F0E): L&lt;&lt;189.0,1790.0&gt;--&lt;189.0,1638.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F0E (U+1F0E): L&lt;&lt;492.0,1577.0&gt;--&lt;492.0,1729.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F0F (U+1F0F): L&lt;&lt;195.0,1825.0&gt;--&lt;195.0,1673.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F0F (U+1F0F): L&lt;&lt;472.0,1612.0&gt;--&lt;472.0,1764.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F26 (U+1F26): L&lt;&lt;277.0,1778.0&gt;--&lt;277.0,1626.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F26 (U+1F26): L&lt;&lt;627.0,1565.0&gt;--&lt;627.0,1717.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F27 (U+1F27): L&lt;&lt;272.0,1816.0&gt;--&lt;272.0,1664.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F27 (U+1F27): L&lt;&lt;622.0,1603.0&gt;--&lt;622.0,1755.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F2E (U+1F2E): L&lt;&lt;155.0,1805.0&gt;--&lt;155.0,1653.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F2E (U+1F2E): L&lt;&lt;415.0,1592.0&gt;--&lt;415.0,1744.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F2F (U+1F2F): L&lt;&lt;153.0,1774.0&gt;--&lt;153.0,1622.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F2F (U+1F2F): L&lt;&lt;399.0,1561.0&gt;--&lt;399.0,1713.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F36 (U+1F36): L&lt;&lt;492.0,1884.0&gt;--&lt;492.0,1732.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F36 (U+1F36): L&lt;&lt;842.0,1671.0&gt;--&lt;842.0,1823.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F37 (U+1F37): L&lt;&lt;421.0,1835.0&gt;--&lt;421.0,1683.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F37 (U+1F37): L&lt;&lt;771.0,1622.0&gt;--&lt;771.0,1774.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F3E (U+1F3E): L&lt;&lt;145.0,1851.0&gt;--&lt;145.0,1699.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F3E (U+1F3E): L&lt;&lt;350.0,1638.0&gt;--&lt;350.0,1790.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F3F (U+1F3F): L&lt;&lt;217.0,1818.0&gt;--&lt;217.0,1666.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F3F (U+1F3F): L&lt;&lt;472.0,1605.0&gt;--&lt;472.0,1757.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F56 (U+1F56): L&lt;&lt;434.0,1805.0&gt;--&lt;434.0,1653.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F56 (U+1F56): L&lt;&lt;784.0,1592.0&gt;--&lt;784.0,1744.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F57 (U+1F57): L&lt;&lt;349.0,1731.0&gt;--&lt;349.0,1579.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F57 (U+1F57): L&lt;&lt;699.0,1518.0&gt;--&lt;699.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F5F (U+1F5F): L&lt;&lt;159.0,1818.0&gt;--&lt;159.0,1666.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F5F (U+1F5F): L&lt;&lt;393.0,1605.0&gt;--&lt;393.0,1757.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F66 (U+1F66): L&lt;&lt;396.0,1729.0&gt;--&lt;396.0,1577.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F66 (U+1F66): L&lt;&lt;746.0,1516.0&gt;--&lt;746.0,1668.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F67 (U+1F67): L&lt;&lt;365.0,1717.0&gt;--&lt;365.0,1565.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F67 (U+1F67): L&lt;&lt;715.0,1504.0&gt;--&lt;715.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F6E (U+1F6E): L&lt;&lt;176.0,1874.0&gt;--&lt;176.0,1722.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F6E (U+1F6E): L&lt;&lt;406.0,1661.0&gt;--&lt;406.0,1813.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F6F (U+1F6F): L&lt;&lt;179.0,1818.0&gt;--&lt;179.0,1666.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F6F (U+1F6F): L&lt;&lt;401.0,1605.0&gt;--&lt;401.0,1757.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F86 (U+1F86): L&lt;&lt;427.0,1782.0&gt;--&lt;427.0,1630.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F86 (U+1F86): L&lt;&lt;777.0,1569.0&gt;--&lt;777.0,1721.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F87 (U+1F87): L&lt;&lt;406.0,1734.0&gt;--&lt;406.0,1582.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F87 (U+1F87): L&lt;&lt;756.0,1521.0&gt;--&lt;756.0,1673.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F8E (U+1F8E): L&lt;&lt;132.0,1790.0&gt;--&lt;132.0,1638.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F8E (U+1F8E): L&lt;&lt;349.0,1577.0&gt;--&lt;349.0,1729.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F8F (U+1F8F): L&lt;&lt;141.0,1825.0&gt;--&lt;141.0,1673.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F8F (U+1F8F): L&lt;&lt;339.0,1612.0&gt;--&lt;339.0,1764.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F96 (U+1F96): L&lt;&lt;277.0,1778.0&gt;--&lt;277.0,1626.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F96 (U+1F96): L&lt;&lt;627.0,1565.0&gt;--&lt;627.0,1717.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F97 (U+1F97): L&lt;&lt;272.0,1816.0&gt;--&lt;272.0,1664.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F97 (U+1F97): L&lt;&lt;622.0,1603.0&gt;--&lt;622.0,1755.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F9E (U+1F9E): L&lt;&lt;90.0,1805.0&gt;--&lt;90.0,1653.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F9E (U+1F9E): L&lt;&lt;283.0,1592.0&gt;--&lt;283.0,1744.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F9F (U+1F9F): L&lt;&lt;51.0,1774.0&gt;--&lt;51.0,1622.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1F9F (U+1F9F): L&lt;&lt;239.0,1561.0&gt;--&lt;239.0,1713.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FA6 (U+1FA6): L&lt;&lt;396.0,1729.0&gt;--&lt;396.0,1577.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FA6 (U+1FA6): L&lt;&lt;746.0,1516.0&gt;--&lt;746.0,1668.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FA7 (U+1FA7): L&lt;&lt;365.0,1717.0&gt;--&lt;365.0,1565.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FA7 (U+1FA7): L&lt;&lt;715.0,1504.0&gt;--&lt;715.0,1656.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FAE (U+1FAE): L&lt;&lt;126.0,1874.0&gt;--&lt;126.0,1722.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FAE (U+1FAE): L&lt;&lt;289.0,1661.0&gt;--&lt;289.0,1813.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FAF (U+1FAF): L&lt;&lt;114.0,1818.0&gt;--&lt;114.0,1666.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FAF (U+1FAF): L&lt;&lt;275.0,1605.0&gt;--&lt;275.0,1757.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB0 (U+1FB0): L&lt;&lt;707.0,1361.0&gt;--&lt;707.0,1248.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB0 (U+1FB0): L&lt;&lt;383.0,1361.0&gt;--&lt;383.0,1248.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB6 (U+1FB6): L&lt;&lt;408.0,1377.0&gt;--&lt;408.0,1225.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB6 (U+1FB6): L&lt;&lt;758.0,1164.0&gt;--&lt;758.0,1316.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB7 (U+1FB7): L&lt;&lt;408.0,1377.0&gt;--&lt;408.0,1225.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB7 (U+1FB7): L&lt;&lt;758.0,1164.0&gt;--&lt;758.0,1316.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB8 (U+1FB8): L&lt;&lt;689.0,1783.0&gt;--&lt;689.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FB8 (U+1FB8): L&lt;&lt;365.0,1783.0&gt;--&lt;365.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC0 (U+1FC0): L&lt;&lt;363.0,1463.0&gt;--&lt;363.0,1311.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC0 (U+1FC0): L&lt;&lt;713.0,1250.0&gt;--&lt;713.0,1402.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC1 (U+1FC1): L&lt;&lt;396.0,1797.0&gt;--&lt;396.0,1645.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC1 (U+1FC1): L&lt;&lt;746.0,1584.0&gt;--&lt;746.0,1736.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC6 (U+1FC6): L&lt;&lt;458.0,1478.0&gt;--&lt;458.0,1326.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC6 (U+1FC6): L&lt;&lt;808.0,1265.0&gt;--&lt;808.0,1417.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC7 (U+1FC7): L&lt;&lt;458.0,1478.0&gt;--&lt;458.0,1326.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FC7 (U+1FC7): L&lt;&lt;808.0,1265.0&gt;--&lt;808.0,1417.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FCF (U+1FCF): L&lt;&lt;386.0,1737.0&gt;--&lt;386.0,1585.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FCF (U+1FCF): L&lt;&lt;736.0,1524.0&gt;--&lt;736.0,1676.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD0 (U+1FD0): L&lt;&lt;713.0,1258.0&gt;--&lt;713.0,1145.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD0 (U+1FD0): L&lt;&lt;389.0,1258.0&gt;--&lt;389.0,1145.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD6 (U+1FD6): L&lt;&lt;430.0,1441.0&gt;--&lt;430.0,1289.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD6 (U+1FD6): L&lt;&lt;780.0,1228.0&gt;--&lt;780.0,1380.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD7 (U+1FD7): L&lt;&lt;417.0,1787.0&gt;--&lt;417.0,1635.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD7 (U+1FD7): L&lt;&lt;767.0,1574.0&gt;--&lt;767.0,1726.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD8 (U+1FD8): L&lt;&lt;660.0,1772.0&gt;--&lt;660.0,1659.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FD8 (U+1FD8): L&lt;&lt;336.0,1772.0&gt;--&lt;336.0,1659.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FDF (U+1FDF): L&lt;&lt;433.0,1774.0&gt;--&lt;433.0,1622.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FDF (U+1FDF): L&lt;&lt;783.0,1561.0&gt;--&lt;783.0,1713.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE0 (U+1FE0): L&lt;&lt;633.0,1336.0&gt;--&lt;633.0,1223.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE0 (U+1FE0): L&lt;&lt;309.0,1336.0&gt;--&lt;309.0,1223.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE6 (U+1FE6): L&lt;&lt;437.0,1448.0&gt;--&lt;437.0,1296.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE6 (U+1FE6): L&lt;&lt;787.0,1235.0&gt;--&lt;787.0,1387.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE7 (U+1FE7): L&lt;&lt;389.0,1778.0&gt;--&lt;389.0,1626.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE7 (U+1FE7): L&lt;&lt;739.0,1565.0&gt;--&lt;739.0,1717.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE8 (U+1FE8): L&lt;&lt;677.0,1783.0&gt;--&lt;677.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FE8 (U+1FE8): L&lt;&lt;353.0,1783.0&gt;--&lt;353.0,1670.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FF6 (U+1FF6): L&lt;&lt;350.0,1386.0&gt;--&lt;350.0,1234.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FF6 (U+1FF6): L&lt;&lt;700.0,1173.0&gt;--&lt;700.0,1325.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FF7 (U+1FF7): L&lt;&lt;350.0,1386.0&gt;--&lt;350.0,1234.0&gt;&gt; has the same coordinates as a previous segment.
+
+* uni1FF7 (U+1FF7): L&lt;&lt;700.0,1173.0&gt;--&lt;700.0,1325.0&gt;&gt; has the same coordinates as a previous segment.
 
 * uni207D (U+207D): L&lt;&lt;406.0,771.0&gt;--&lt;513.0,771.0&gt;&gt; has the same coordinates as a previous segment.
 
@@ -1676,6 +1760,51 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
     
 
+    
+
+    
+    <h3>
+    
+    Does the font contain a soft hyphen?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:soft_hyphen&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                Samaano[slnt,wdth,wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                            <p>This font has a 'Soft Hyphen' character.</p>
+
+                            
+                             [code: softhyphen]
+                            
+                            </span>
+                        </li>
+                
+                </ul>
+            </div>
+        </details>
     
 
     
@@ -1745,23 +1874,17 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 - circumflexcomb_tildecomb
 
-- idotaccent
+- uni0BB0.alt
 
-- uni0B99_uni0BC1
+- uni0BC1.alt1
 
-- uni0B99_uni0BC2
-
-- uni0B9A_uni0BC1
-
-- uni0B9A_uni0BC2
-
-- uni0B9E_uni0BC1
-
-- uni0B9E_uni0BC2
-
-- uni0BC1.alt
+- uni0BC1.alt2
 
 - uni0BC2.alt
+
+- uni0BC2.alt1
+
+- uni0BC2.alt2
 </code></pre>
 
                             
@@ -1975,21 +2098,23 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, math, coptic, glagolitic, elbasan</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: gothic, glagolitic, elbasan, math, coptic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: todhri, duployan, math, coptic, syriac, canadian-aboriginal, hebrew, tai-le, tifinagh, malayalam, old-permic</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tifinagh, hebrew, todhri, duployan, tai-le, math, coptic, old-permic, syriac</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+030D COMBINING VERTICAL LINE ABOVE: try adding sunuwar</li>
 <li>U+030F COMBINING DOUBLE GRAVE ACCENT: not included in any glyphset definition</li>
-<li>U+0310 COMBINING CANDRABINDU: try adding one of: math, sunuwar</li>
+<li>U+0310 COMBINING CANDRABINDU: try adding one of: sunuwar, math</li>
 <li>U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
+<li>U+0313 COMBINING COMMA ABOVE: try adding one of: old-permic, todhri</li>
+<li>U+0314 COMBINING REVERSED COMMA ABOVE: not included in any glyphset definition</li>
 <li>U+0315 COMBINING COMMA ABOVE RIGHT: try adding math</li>
 <li>U+031B COMBINING HORN: not included in any glyphset definition</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, duployan, cherokee</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: cherokee, syriac, duployan</li>
 <li>U+0325 COMBINING RING BELOW: try adding syriac</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
@@ -1997,17 +2122,28 @@ definitions.</p>
 <li>U+032D COMBINING CIRCUMFLEX ACCENT BELOW: try adding one of: syriac, sunuwar</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
 <li>U+032F COMBINING INVERTED BREVE BELOW: try adding math</li>
-<li>U+0330 COMBINING TILDE BELOW: try adding one of: syriac, cherokee, math</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: gothic, sunuwar, cherokee, syriac, caucasian-albanian, tifinagh, thai</li>
+<li>U+0330 COMBINING TILDE BELOW: try adding one of: cherokee, syriac, math</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: sunuwar, gothic, tifinagh, caucasian-albanian, cherokee, syriac, thai</li>
+<li>U+0332 COMBINING LOW LINE: try adding math</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
+<li>U+0342 COMBINING GREEK PERISPOMENI: not included in any glyphset definition</li>
+<li>U+0343 COMBINING GREEK KORONIS: not included in any glyphset definition</li>
+<li>U+0344 COMBINING GREEK DIALYTIKA TONOS: not included in any glyphset definition</li>
+<li>U+0345 COMBINING GREEK YPOGEGRAMMENI: not included in any glyphset definition</li>
 <li>U+035F COMBINING DOUBLE MACRON BELOW: not included in any glyphset definition</li>
 <li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
 <li>U+1DC4 COMBINING MACRON-ACUTE: not included in any glyphset definition</li>
 <li>U+1DC5 COMBINING GRAVE-MACRON: not included in any glyphset definition</li>
 <li>U+1DC6 COMBINING MACRON-GRAVE: not included in any glyphset definition</li>
 <li>U+1DC7 COMBINING ACUTE-MACRON: not included in any glyphset definition</li>
+<li>U+2007 FIGURE SPACE: try adding symbols2</li>
+<li>U+2010 HYPHEN: try adding one of: sundanese, arabic, kayah-li, cham, lisu, hebrew, armenian, kaithi, yi, sora-sompeng, coptic, kharoshthi, syloti-nagri</li>
+<li>U+2011 NON-BREAKING HYPHEN: try adding one of: arabic, yi, syloti-nagri</li>
+<li>U+2012 FIGURE DASH: not included in any glyphset definition</li>
+<li>U+2015 HORIZONTAL BAR: try adding adlam</li>
 <li>U+2016 DOUBLE VERTICAL LINE: try adding math</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
+<li>U+2028 LINE SEPARATOR: not included in any glyphset definition</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+203F UNDERTIE: not included in any glyphset definition</li>
 <li>U+2042 ASTERISM: not included in any glyphset definition</li>
@@ -2042,24 +2178,32 @@ definitions.</p>
 <li>U+208D SUBSCRIPT LEFT PARENTHESIS: try adding math</li>
 <li>U+208E SUBSCRIPT RIGHT PARENTHESIS: try adding math</li>
 <li>U+20C1 : not included in any glyphset definition</li>
+<li>U+2105 CARE OF: try adding math</li>
+<li>U+2117 SOUND RECORDING COPYRIGHT: try adding math</li>
+<li>U+211E PRESCRIPTION TAKE: try adding math</li>
+<li>U+2120 SERVICE MARK: try adding math</li>
 <li>U+2126 OHM SIGN: try adding math</li>
 <li>U+212E ESTIMATED SYMBOL: try adding math</li>
 <li>U+2153 VULGAR FRACTION ONE THIRD: try adding symbols</li>
 <li>U+2154 VULGAR FRACTION TWO THIRDS: try adding symbols</li>
-<li>U+2190 LEFTWARDS ARROW: try adding one of: symbols, math</li>
-<li>U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math</li>
-<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
-<li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
-<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
-<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
-<li>U+2198 SOUTH EAST ARROW: try adding one of: symbols, math</li>
-<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+215B VULGAR FRACTION ONE EIGHTH: try adding symbols</li>
+<li>U+215C VULGAR FRACTION THREE EIGHTHS: try adding symbols</li>
+<li>U+215D VULGAR FRACTION FIVE EIGHTHS: try adding symbols</li>
+<li>U+215E VULGAR FRACTION SEVEN EIGHTHS: try adding symbols</li>
+<li>U+2190 LEFTWARDS ARROW: try adding one of: math, symbols</li>
+<li>U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: math, symbols</li>
+<li>U+2195 UP DOWN ARROW: try adding one of: math, symbols</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: math, symbols</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: math, symbols</li>
+<li>U+2198 SOUTH EAST ARROW: try adding one of: math, symbols</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: math, symbols</li>
 <li>U+2202 PARTIAL DIFFERENTIAL: try adding math</li>
 <li>U+2205 EMPTY SET: try adding math</li>
 <li>U+2206 INCREMENT: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: yi, symbols, math, tai-tham</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: tai-tham, math, yi, symbols</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+222B INTEGRAL: try adding math</li>
@@ -2076,30 +2220,30 @@ definitions.</p>
 <li>U+25AA BLACK SMALL SQUARE: try adding symbols</li>
 <li>U+25AB WHITE SMALL SQUARE: try adding symbols</li>
 <li>U+25B2 BLACK UP-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25B4 BLACK UP-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25B5 WHITE UP-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25B6 BLACK RIGHT-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25B8 BLACK RIGHT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25B9 WHITE RIGHT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25BC BLACK DOWN-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25BE BLACK DOWN-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25BF WHITE DOWN-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C0 BLACK LEFT-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25C2 BLACK LEFT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C3 WHITE LEFT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C6 BLACK DIAMOND: try adding symbols</li>
 <li>U+25C7 WHITE DIAMOND: try adding symbols</li>
-<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
+<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
 <li>U+25CF BLACK CIRCLE: try adding symbols</li>
 <li>U+25E6 WHITE BULLET: try adding symbols</li>
 <li>U+27E8 MATHEMATICAL LEFT ANGLE BRACKET: try adding math</li>
 <li>U+27E9 MATHEMATICAL RIGHT ANGLE BRACKET: try adding math</li>
-<li>U+E0FC : not included in any glyphset definition</li>
+<li>U+AB65 GREEK LETTER SMALL CAPITAL OMEGA: not included in any glyphset definition</li>
 <li>U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition</li>
 <li>U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition</li>
 </ul>
@@ -2171,10 +2315,12 @@ definitions.</p>
 
                             <span class='details_text'>
                             <p>Failed with TypeError: argument 'lang': 'NoneType' object cannot be converted to 'Language'</p>
-<pre><code>  File &quot;/media/artim/home/@home/artim/devel/samaano-fonts/venv-test/lib/python3.10/site-packages/fontbakery/checkrunner.py&quot;, line 223, in _run_check
+<pre><code>  File &quot;/media/artim/home/@home/artim/devel/samaano-fonts/venv/lib/python3.12/site-packages/fontbakery/checkrunner.py&quot;, line 223, in _run_check
     subresults = list(subresults)
-  File &quot;/media/artim/home/@home/artim/devel/samaano-fonts/venv-test/lib/python3.10/site-packages/fontbakery/checks/vendorspecific/googlefonts/glyphsets/shape_languages.py&quot;, line 49, in check_glyphsets_shape_languages
+                 ^^^^^^^^^^^^^^^^
+  File &quot;/media/artim/home/@home/artim/devel/samaano-fonts/venv/lib/python3.12/site-packages/fontbakery/checks/vendorspecific/googlefonts/glyphsets/shape_languages.py&quot;, line 49, in check_glyphsets_shape_languages
     reporter = shaperglot_checker.check(shaperglot_languages[language_code])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 </code></pre>
 
@@ -2249,8 +2395,8 @@ definitions.</p>
                             </span>
 
                             <span class='details_text'>
-                            <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̍ i̐ i᷆ i᷇ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̏ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈ ḭ̀ ḭ́ ḭ̄</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̅ i̇ i̒ i᷄ i᷅ i̛̅ i̛̇ i̛̊ i̛̋ i̛̍ i̛̐ i̛̒ i̛᷄ i̛᷅ i̛᷆ i̛᷇ i̤̅ i̤̇ i̤̊ i̤̋</p>
+                            <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: i̓ i᷆ i᷇</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: i̔ i͂ i᷄ i᷅ i̤̓ i̤̔ i̤͂ i̤᷄ i̤᷅ i̤᷆ i̤᷇ i̥̓ i̥̔ i̥͂ i̥᷄ i̥᷅ i̥᷆ i̥᷇ i̦̓ i̦̔</p>
 
                             
                              [code: soft-dotted]
@@ -2310,19 +2456,7 @@ definitions.</p>
 
                             <span class='details_text'>
                             <p>The following glyphs have a counter-clockwise outer contour:</p>
-<pre><code>* glottalstopreversed (U+0295) has a counter-clockwise outer contour
-
-* glottalstopreversed (U+0295) has a counter-clockwise outer contour
-
-* glottalstopreversed (U+0295) has a counter-clockwise outer contour
-
-* glottalstopreversed (U+0295) has a counter-clockwise outer contour
-
-* lambda (U+03BB) has a counter-clockwise outer contour
-
-* lambda (U+03BB) has a counter-clockwise outer contour
-
-* uni0BB8 (U+0BB8) has a counter-clockwise outer contour
+<pre><code>* uni0BB8 (U+0BB8) has a counter-clockwise outer contour
 </code></pre>
 
                             
@@ -2349,7 +2483,7 @@ definitions.</p>
             
                 <h2>Font File Checks</h2>
 <span class='section__emoji'>
-    🔥🔥⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️
+    🔥⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️
 </span>
 
     
@@ -2362,92 +2496,6 @@ definitions.</p>
 
     
 
-    
-
-    
-    <h3>
-    
-    Check font names are correct
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:googlefonts/font_names&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                🔥
-                Samaano[slnt,wdth,wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
-
-                            <span class='details_text'>
-                            <p>Font names are incorrect:</p>
-<table>
-<thead>
-<tr>
-<th align="left">nameID</th>
-<th align="left">current</th>
-<th align="left">expected</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Family Name</td>
-<td align="left"><strong>Samaano Bold</strong></td>
-<td align="left"><strong>Samaano</strong></td>
-</tr>
-<tr>
-<td align="left">Subfamily Name</td>
-<td align="left">Bold</td>
-<td align="left">Bold</td>
-</tr>
-<tr>
-<td align="left">Full Name</td>
-<td align="left">Samaano Bold</td>
-<td align="left">Samaano Bold</td>
-</tr>
-<tr>
-<td align="left">Postscript Name</td>
-<td align="left">Samaano-Bold</td>
-<td align="left">Samaano-Bold</td>
-</tr>
-<tr>
-<td align="left">Typographic Family Name</td>
-<td align="left"><strong>Samaano</strong></td>
-<td align="left"><strong>N/A</strong></td>
-</tr>
-<tr>
-<td align="left">Typographic Subfamily Name</td>
-<td align="left"><strong>Bold</strong></td>
-<td align="left"><strong>N/A</strong></td>
-</tr>
-</tbody>
-</table>
-
-                            
-                             [code: bad-names]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
     
 
     

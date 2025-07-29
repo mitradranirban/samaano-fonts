@@ -28,7 +28,7 @@ Following are the specialities of the font
 
 * Three Variable axes of Weight, Width, and Slant
 
-![animation](documentation/samaano.gif)
+![animation](documentation/Samaano3.gif)
 
 
 * Simple Glyph construction using Rectangular or quadrilateral components only
