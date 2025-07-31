@@ -96,19 +96,224 @@
       </location>
     </source>
   </sources>
-  <lib>
-    <dict>
-      <key>fontra.projectGlyphSets</key>
-      <array>
-        <dict>
-          <key>dataFormat</key>
-          <string>glyph-names</string>
-          <key>name</key>
-          <string>Koeberlin Latin L</string>
-          <key>url</key>
-          <string>https://cdn.jsdelivr.net/gh/koeberlin/Latin-Character-Sets/CharacterSets/Glyphs/LatinL_glyphs.txt</string>
-        </dict>
-      </array>
-    </dict>
-  </lib>
+  <instances>
+    <!-- Thin -->
+    <instance familyname="Samaano" stylename="Thin Normal">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin Normal Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin SemiExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin SemiExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin Expanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin Expanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin ExtraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin ExtraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin UltraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Thin UltraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="100"/></location>
+    </instance>
+    <!-- ExtraLight -->
+    <instance familyname="Samaano" stylename="ExtraLight Normal">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight Normal Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight SemiExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight SemiExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight Expanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight Expanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight ExtraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight ExtraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight UltraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="ExtraLight UltraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="200"/></location>
+    </instance>
+    <!-- Light -->
+    <instance familyname="Samaano" stylename="Light Normal">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light Normal Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light SemiExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light SemiExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light Expanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light Expanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light ExtraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light ExtraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light UltraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Light UltraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="300"/></location>
+    </instance>
+    <!-- Regular -->
+    <instance familyname="Samaano" stylename="Regular Normal">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular Normal Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular SemiExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular SemiExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular Expanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular Expanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular ExtraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular ExtraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular UltraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Regular UltraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="400"/></location>
+    </instance>
+    <!-- Medium -->
+    <instance familyname="Samaano" stylename="Medium Normal">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium Normal Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium SemiExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium SemiExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium Expanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium Expanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium ExtraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium ExtraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium UltraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Medium UltraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="500"/></location>
+    </instance>
+    <!-- SemiBold -->
+    <instance familyname="Samaano" stylename="SemiBold Normal">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold Normal Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold SemiExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold SemiExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold Expanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold Expanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold ExtraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold ExtraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold UltraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="SemiBold UltraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="600"/></location>
+    </instance>
+    <!-- Bold -->
+    <instance familyname="Samaano" stylename="Bold Normal">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold Normal Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="100"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold SemiExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold SemiExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="112.5"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold Expanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold Expanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="125"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold ExtraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold ExtraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="150"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold UltraExpanded">
+      <location><dimension name="slant" xvalue="0"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+    <instance familyname="Samaano" stylename="Bold UltraExpanded Oblique">
+      <location><dimension name="slant" xvalue="-20"/><dimension name="width" xvalue="200"/><dimension name="weight" xvalue="700"/></location>
+    </instance>
+  </instances>
+
 </designspace>
