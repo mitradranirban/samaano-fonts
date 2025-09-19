@@ -16,6 +16,8 @@ jobs:
       uses: fonttools/setup-fontspector@main
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        version: 1.3.0
     - name: Install sys tools/deps
       run: |
         sudo apt-get update
