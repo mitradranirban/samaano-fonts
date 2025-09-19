@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: Samaano-Wide-Bold
 FullName: Samaano Wide Bold
 FamilyName: Samaano
@@ -6,7 +6,6 @@ Weight: Wide-Bold
 Copyright: Copyright 2025 The Samaano Project Authors (https://github.com/mitradranirban/samaano-fonts)
 UComments: "2024-8-27: Created with FontForge (http://fontforge.org)"
 Version: 2.500
-StyleMapFamilyName: Samaano
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 102
@@ -79,8 +78,8 @@ MarkAttachSets: 1
 DEI: 91125
 ChainSub2: coverage "ccmp_soft_dotted subtable" 0 0 0 1
  1 0 1
-  Coverage: 47 i j uni1ECB iogonek itildebelow istroke jstroke
-  FCoverage: 365 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C verticallineabovecomb uni030F uni0310 uni0311 uni0312 uni031B brevecomb_acutecomb brevecomb_gravecomb brevecomb_hookabovecomb brevecomb_tildecomb circumflexcomb_acutecomb circumflexcomb_gravecomb circumflexcomb_hookabovecomb circumflexcomb_tildecomb
+  Coverage: 43 i j uni1ECB iogonek uni1E2D uni0268 uni0249
+  FCoverage: 351 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030F uni0310 uni0311 uni0312 uni031B brevecomb_acutecomb brevecomb_gravecomb brevecomb_hookabovecomb brevecomb_tildecomb circumflexcomb_acutecomb circumflexcomb_gravecomb circumflexcomb_hookabovecomb circumflexcomb_tildecomb
  1
   SeqLookup: 0 "Single Substitution lookup 5"
 EndFPST
@@ -144,7 +143,6 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 10 4
 Grid
 -2048 1548 m 0
  2048 1548 l 1024
@@ -154,7 +152,7 @@ EndSplineSet
 AnchorClass2: "abvm_taml" "abvmAboveBaseMarkinTamil2lookup33 subtable" "abvm_ta"""  "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
 BeginChars: 1837 1837
 
-StartChar: .notdef
+StartChar: uni0000
 Encoding: 0 0 0
 GlifName: _notdef
 Width: 2048
@@ -222,7 +220,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: A.circled
+StartChar: uni24B6
 Encoding: 2 9398 2
 GlifName: A_.circled
 Width: 2048
@@ -379,7 +377,7 @@ I151
 sass."
 EndChar
 
-StartChar: Adotaccent
+StartChar: uni0226
 Encoding: 9 550 9
 GlifName: A_dotaccent
 Width: 2048
@@ -419,7 +417,7 @@ Fore
 Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Alpha_latin
+StartChar: uni2C6D
 Encoding: 12 11373 12
 GlifName: A_lpha_latin
 Width: 2048
@@ -623,7 +621,7 @@ I360
 sass."
 EndChar
 
-StartChar: Aringbelow
+StartChar: uni1E00
 Encoding: 18 7680 18
 GlifName: A_ringbelow
 Width: 2048
@@ -637,7 +635,7 @@ Refer: 1 65 N 1 0 0 1 0 0 2
 Refer: 675 805 N 1 0 0 1 970 -8 2
 EndChar
 
-StartChar: Asmall
+StartChar: uni1D00
 Encoding: 19 7424 19
 GlifName: A_small
 Width: 2048
@@ -664,7 +662,7 @@ Refer: 725 771 N 1 0 0 1 1014 871 2
 Refer: 1 65 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Aturned
+StartChar: uni2C6F
 Encoding: 21 11375 21
 GlifName: A_turned
 Width: 2048
@@ -736,7 +734,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Bdotbelow
+StartChar: uni1E04
 Encoding: 23 7684 23
 GlifName: B_dotbelow
 Width: 2048
@@ -750,7 +748,7 @@ Refer: 22 66 N 1 0 0 1 0 0 2
 Refer: 386 803 N 1 0 0 1 1022 132 2
 EndChar
 
-StartChar: Be-cy
+StartChar: uni0411
 Encoding: 24 1041 24
 GlifName: B_e-cy
 Width: 2048
@@ -801,7 +799,7 @@ Fore
 Refer: 22 66 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Beta_latin
+StartChar: uniA7B4
 Encoding: 26 42932 26
 GlifName: B_eta_latin
 Width: 2048
@@ -861,7 +859,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Bhook
+StartChar: uni0181
 Encoding: 27 385 27
 GlifName: B_hook
 Width: 2048
@@ -874,7 +872,7 @@ Refer: 22 66 N 1 0 0 1 0 0 2
 Refer: 868 795 N 0 1 -1 0 1006 1381 2
 EndChar
 
-StartChar: Blinebelow
+StartChar: uni1E06
 Encoding: 28 7686 28
 GlifName: B_linebelow
 Width: 2048
@@ -887,7 +885,7 @@ Refer: 22 66 N 1 0 0 1 0 0 2
 Refer: 875 817 N 1 0 0 1 995 121 2
 EndChar
 
-StartChar: Bstroke
+StartChar: uni0243
 Encoding: 29 579 29
 GlifName: B_stroke
 Width: 2048
@@ -900,7 +898,7 @@ Refer: 22 66 N 1 0 0 1 0 0 2
 Refer: 420 8211 N 0.434088 0 0 1 -250 -294 2
 EndChar
 
-StartChar: Btopbar
+StartChar: uni0182
 Encoding: 30 386 30
 GlifName: B_topbar
 Width: 2048
@@ -1071,7 +1069,7 @@ I224
 sass."
 EndChar
 
-StartChar: Che-cy
+StartChar: uni0427
 Encoding: 37 1063 37
 GlifName: C_he-cy
 Width: 2048
@@ -1110,7 +1108,7 @@ Fore
 Refer: 247 88 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Chook
+StartChar: uni0187
 Encoding: 39 391 39
 GlifName: C_hook
 Width: 2048
@@ -1163,7 +1161,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: D.circled
+StartChar: uni24B9
 Encoding: 41 9401 41
 GlifName: D_.circled
 Width: 2048
@@ -1190,7 +1188,7 @@ Refer: 863 780 N 1 0 0 1 1014 849 2
 Refer: 40 68 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Dcircumflexbelow
+StartChar: uni1E12
 Encoding: 43 7698 43
 GlifName: D_circumflexbelow
 Width: 2048
@@ -1248,7 +1246,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: De-cy
+StartChar: uni0414
 Encoding: 45 1044 45
 GlifName: D_e-cy
 Width: 2048
@@ -1290,7 +1288,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Dhook
+StartChar: uni018A
 Encoding: 46 394 46
 GlifName: D_hook
 Width: 2048
@@ -1303,7 +1301,7 @@ Refer: 40 68 N 1 0 0 1 0 0 2
 Refer: 868 795 N 0 1 -1 0 1071 1396 2
 EndChar
 
-StartChar: Dje-cy
+StartChar: uni0402
 Encoding: 47 1026 47
 GlifName: D_je-cy
 Width: 2048
@@ -1340,7 +1338,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Dlinebelow
+StartChar: uni1E0E
 Encoding: 48 7694 48
 GlifName: D_linebelow
 Width: 2048
@@ -1353,7 +1351,7 @@ Refer: 875 817 N 1.70538 0 0 1 1029.87 89 2
 Refer: 40 68 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Dshortstrokeoverlay
+StartChar: uniA7C7
 Encoding: 49 42951 49
 GlifName: D_shortstrokeoverlay
 Width: 2048
@@ -1366,7 +1364,7 @@ Refer: 40 68 N 1 0 0 1 0 0 2
 Refer: 416 8212 N 0.945429 0 0 1 73.5064 198 2
 EndChar
 
-StartChar: Dtail
+StartChar: uni0189
 Encoding: 50 393 50
 GlifName: D_tail
 Width: 2048
@@ -1378,7 +1376,7 @@ Fore
 Refer: 76 208 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Dzhe-cy
+StartChar: uni040F
 Encoding: 51 1039 51
 GlifName: D_zhe-cy
 Width: 2048
@@ -1445,7 +1443,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: E-cy
+StartChar: uni0404
 Encoding: 53 1028 53
 GlifName: E_-cy
 Width: 2048
@@ -1540,7 +1538,7 @@ Refer: 863 780 N 1 0 0 1 960 886 2
 Refer: 52 69 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Ecedilla
+StartChar: uni0228
 Encoding: 57 552 57
 GlifName: E_cedilla
 Width: 2048
@@ -1554,7 +1552,7 @@ Refer: 52 69 N 1 0 0 1 0 0 2
 Refer: 871 807 N 1 0 0 1 1166 -103 2
 EndChar
 
-StartChar: Ecedillabreve
+StartChar: uni1E1C
 Encoding: 58 7708 58
 GlifName: E_cedillabreve
 Width: 2048
@@ -1665,7 +1663,7 @@ Refer: 466 768 N 1 0 0 1 893 987 2
 Refer: 52 69 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: El-cy
+StartChar: uni041B
 Encoding: 63 1051 63
 GlifName: E_l-cy
 Width: 2048
@@ -1810,7 +1808,7 @@ I542
 sass."
 EndChar
 
-StartChar: Eopen
+StartChar: uni0190
 Encoding: 67 400 67
 GlifName: E_open
 Width: 2048
@@ -1875,7 +1873,7 @@ Refer: 727 900 N 1 0 0 1 -968 592 2
 Refer: 68 917 N 1 0 0 1 112.75 0 2
 EndChar
 
-StartChar: Ereversed
+StartChar: uni018E
 Encoding: 70 398 70
 GlifName: E_reversed
 Width: 2048
@@ -1888,7 +1886,7 @@ Fore
 Refer: 52 69 N -1 0 0 -1 2040 1533 2
 EndChar
 
-StartChar: Ereversed-cy
+StartChar: uni042D
 Encoding: 71 1069 71
 GlifName: E_reversed-cy
 Width: 2048
@@ -1925,7 +1923,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Esh
+StartChar: uni01A9
 Encoding: 72 425 72
 GlifName: E_sh
 Width: 2048
@@ -1958,7 +1956,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Esmall
+StartChar: uni1D07
 Encoding: 73 7431 73
 GlifName: E_small
 Width: 2048
@@ -2040,7 +2038,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Etildebelow
+StartChar: uni1E1A
 Encoding: 77 7706 77
 GlifName: E_tildebelow
 Width: 2048
@@ -2092,7 +2090,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Ezh
+StartChar: uni01B7
 Encoding: 79 439 79
 GlifName: E_zh
 Width: 2048
@@ -2130,7 +2128,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Ezhcaron
+StartChar: uni01EE
 Encoding: 80 494 80
 GlifName: E_zhcaron
 Width: 2048
@@ -2143,7 +2141,7 @@ Refer: 79 439 N 1 0 0 1 0 0 2
 Refer: 863 780 N 1 0 0 1 1027 822 2
 EndChar
 
-StartChar: Ezhreversed
+StartChar: uni01B8
 Encoding: 81 440 81
 GlifName: E_zhreversed
 Width: 2048
@@ -2211,7 +2209,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Fhook
+StartChar: uni0191
 Encoding: 83 401 83
 GlifName: F_hook
 Width: 2048
@@ -2224,7 +2222,7 @@ Refer: 82 70 N 1 0 0 1 0 0 2
 Refer: 867 786 N 0.867472 -0.497487 0.497487 0.867472 -629 -1715 2
 EndChar
 
-StartChar: Fita-cy
+StartChar: uni0472
 Encoding: 84 1138 84
 GlifName: F_ita-cy
 Width: 2048
@@ -2293,7 +2291,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Gamma_latin
+StartChar: uni0194
 Encoding: 87 404 87
 GlifName: G_amma_latin
 Width: 2048
@@ -2417,7 +2415,7 @@ I224
 sass."
 EndChar
 
-StartChar: Geupturn-cy
+StartChar: uni0490
 Encoding: 92 1168 92
 GlifName: G_eupturn-cy
 Width: 2048
@@ -2444,7 +2442,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Ghook
+StartChar: uni0193
 Encoding: 93 403 93
 GlifName: G_hook
 Width: 2048
@@ -2457,7 +2455,7 @@ Refer: 85 71 N 1 0 0 1 0 0 2
 Refer: 867 786 N -0.875954 0.482395 -0.482395 -0.875954 2636 3257 2
 EndChar
 
-StartChar: Glottalstopsmall
+StartChar: uni0241
 Encoding: 94 577 94
 GlifName: G_lottalstopsmall
 Width: 2048
@@ -2469,7 +2467,7 @@ Fore
 Refer: 462 704 N 1 0 0 1 4 -236 2
 EndChar
 
-StartChar: Gstroke
+StartChar: uni01E4
 Encoding: 95 484 95
 GlifName: G_stroke
 Width: 2048
@@ -2512,7 +2510,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Hardsign-cy
+StartChar: uni042A
 Encoding: 97 1066 97
 GlifName: H_ardsign-cy
 Width: 2048
@@ -2584,7 +2582,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Hcaron
+StartChar: uni021E
 Encoding: 99 542 99
 GlifName: H_caron
 Width: 2048
@@ -2597,7 +2595,7 @@ Refer: 96 72 N 1 0 0 1 0 0 2
 Refer: 863 780 N 1 0 0 1 1029 764 2
 EndChar
 
-StartChar: Hcedilla
+StartChar: uni1E28
 Encoding: 100 7720 100
 GlifName: H_cedilla
 Width: 2048
@@ -2623,7 +2621,7 @@ Refer: 855 770 N 1 0 0 1 1022 866 2
 Refer: 96 72 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Hhook
+StartChar: uniA7AA
 Encoding: 102 42922 102
 GlifName: H_hook
 Width: 2048
@@ -2636,7 +2634,7 @@ Refer: 96 72 N 1 0 0 1 100 0 2
 Refer: 358 789 N -0.851701 0.524028 -0.524028 -0.851701 682 2168 2
 EndChar
 
-StartChar: Hturned
+StartChar: uniA78D
 Encoding: 103 42893 103
 GlifName: H_turned
 Width: 2048
@@ -2753,7 +2751,7 @@ I660
 sass."
 EndChar
 
-StartChar: Icapitalsmall
+StartChar: uniA7AE
 Encoding: 108 42926 108
 GlifName: I_capitalsmall
 Width: 2048
@@ -2887,7 +2885,7 @@ I224
 sass."
 EndChar
 
-StartChar: Iegrave-cy
+StartChar: uni0400
 Encoding: 112 1024 112
 GlifName: I_egrave-cy
 Width: 2048
@@ -2913,7 +2911,7 @@ Refer: 466 768 N 1 0 0 1 961 968 2
 Refer: 104 73 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Ii-cy
+StartChar: uni0418
 Encoding: 114 1048 114
 GlifName: I_i-cy
 Width: 2048
@@ -2940,7 +2938,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Iigrave-cy
+StartChar: uni040D
 Encoding: 115 1037 115
 GlifName: I_igrave-cy
 Width: 2048
@@ -2952,7 +2950,7 @@ Refer: 114 1048 N 1 0 0 1 0 0 2
 Refer: 466 768 N 1 0 0 1 1052 362 2
 EndChar
 
-StartChar: Iishort-cy
+StartChar: uni0419
 Encoding: 116 1049 116
 GlifName: I_ishort-cy
 Width: 2048
@@ -3054,7 +3052,7 @@ Fore
 Refer: 104 73 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Iota_latin
+StartChar: uni0196
 Encoding: 120 406 120
 GlifName: I_ota_latin
 Width: 2048
@@ -3105,7 +3103,7 @@ Refer: 727 900 N 1 0 0 1 -961 575 2
 Refer: 119 921 N 1 0 0 1 100.5 0 2
 EndChar
 
-StartChar: Istroke
+StartChar: uni0197
 Encoding: 123 407 123
 GlifName: I_stroke
 Width: 2048
@@ -3135,7 +3133,7 @@ Refer: 725 771 N 1 0 0 1 1027 852 2
 Refer: 104 73 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Itildebelow
+StartChar: uni1E2C
 Encoding: 125 7724 125
 GlifName: I_tildebelow
 Width: 2048
@@ -3149,7 +3147,7 @@ Refer: 104 73 N 1 0 0 1 0 0 2
 Refer: 724 816 N 1 0 0 1 1026 -207 2
 EndChar
 
-StartChar: Izhitsa-cy
+StartChar: uni0474
 Encoding: 126 1140 126
 GlifName: I_zhitsa-cy
 Width: 2048
@@ -3221,7 +3219,7 @@ Refer: 855 770 N 1 0 0 1 1797 888 2
 Refer: 127 74 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Jcrossedtail
+StartChar: uniA7B2
 Encoding: 129 42930 129
 GlifName: J_crossedtail
 Width: 2048
@@ -3234,7 +3232,7 @@ Refer: 127 74 N 1 0 0 1 0 0 2
 Refer: 490 45 N 1.19899 -0.637031 0.468339 0.88355 -780.905 179.959 2
 EndChar
 
-StartChar: Jstroke
+StartChar: uni0248
 Encoding: 130 584 130
 GlifName: J_stroke
 Width: 2048
@@ -3277,7 +3275,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: KaiSymbol
+StartChar: uni03CF
 Encoding: 132 975 132
 GlifName: K_aiS_ymbol
 Width: 2048
@@ -3308,7 +3306,7 @@ Fore
 Refer: 131 75 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Khook
+StartChar: uni0198
 Encoding: 134 408 134
 GlifName: K_hook
 Width: 2048
@@ -3346,7 +3344,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Klinebelow
+StartChar: uni1E34
 Encoding: 135 7732 135
 GlifName: K_linebelow
 Width: 2048
@@ -3461,7 +3459,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Lcircumflexbelow
+StartChar: uni1E3C
 Encoding: 141 7740 141
 GlifName: L_circumflexbelow
 Width: 2048
@@ -3487,7 +3485,7 @@ Refer: 633 183 N 1 0 0 1 -2 -252 2
 Refer: 136 76 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Lje-cy
+StartChar: uni0409
 Encoding: 143 1033 143
 GlifName: L_je-cy
 Width: 2048
@@ -3534,7 +3532,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Llinebelow
+StartChar: uni1E3A
 Encoding: 144 7738 144
 GlifName: L_linebelow
 Width: 2048
@@ -3610,7 +3608,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Mturned
+StartChar: uni019C
 Encoding: 147 412 147
 GlifName: M_turned
 Width: 2048
@@ -3713,7 +3711,7 @@ Refer: 863 780 N 1 0 0 1 1019 866 2
 Refer: 149 78 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Ncircumflexbelow
+StartChar: uni1E4A
 Encoding: 152 7754 152
 GlifName: N_circumflexbelow
 Width: 2048
@@ -3726,7 +3724,7 @@ Refer: 149 78 N 1 0 0 1 0 0 2
 Refer: 344 813 N 1 0 0 1 996 -444 2
 EndChar
 
-StartChar: Nhookleft
+StartChar: uni019D
 Encoding: 153 413 153
 GlifName: N_hookleft
 Width: 2048
@@ -3739,7 +3737,7 @@ Refer: 149 78 N 1 0 0 1 0 0 2
 Refer: 867 786 N 0.866025 -0.5 0.5 0.866025 -653 -1709 2
 EndChar
 
-StartChar: Nje-cy
+StartChar: uni040A
 Encoding: 154 1034 154
 GlifName: N_je-cy
 Width: 2048
@@ -3776,7 +3774,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Nlinebelow
+StartChar: uni1E48
 Encoding: 155 7752 155
 GlifName: N_linebelow
 Width: 2048
@@ -3904,7 +3902,7 @@ Refer: 272 769 N 1 0 0 1 1032 867 2
 Refer: 158 79 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Obarred
+StartChar: uni019F
 Encoding: 161 415 161
 GlifName: O_barred
 Width: 2048
@@ -3944,7 +3942,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Obarred-cy
+StartChar: uni04E8
 Encoding: 162 1256 162
 GlifName: O_barred-cy
 Width: 2048
@@ -4044,7 +4042,7 @@ Refer: 466 768 N 1 0 0 1 963 1011 2
 Refer: 158 79 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Ohm
+StartChar: Omega
 Encoding: 167 8486 167
 GlifName: O_hm
 Width: 2048
@@ -4124,7 +4122,7 @@ I560
 sass."
 EndChar
 
-StartChar: Omega_latin
+StartChar: uniA7B6
 Encoding: 171 42934 171
 GlifName: O_mega_latin
 Width: 2048
@@ -4174,7 +4172,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Omegasmall
+StartChar: uniAB65
 Encoding: 172 43877 172
 GlifName: O_megasmall
 Width: 2048
@@ -4224,7 +4222,7 @@ Refer: 727 900 N 1 0 0 1 -969 564 2
 Refer: 174 927 N 1 0 0 1 113.25 0 2
 EndChar
 
-StartChar: Oopen
+StartChar: uni0186
 Encoding: 176 390 176
 GlifName: O_open
 Width: 2048
@@ -4341,7 +4339,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Pdotaccent
+StartChar: uni1E56
 Encoding: 181 7766 181
 GlifName: P_dotaccent
 Width: 2048
@@ -4392,7 +4390,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Phook
+StartChar: uni01A4
 Encoding: 183 420 183
 GlifName: P_hook
 Width: 2048
@@ -4498,7 +4496,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Pstroke
+StartChar: uni2C63
 Encoding: 186 11363 186
 GlifName: P_stroke
 Width: 2048
@@ -4605,7 +4603,7 @@ Refer: 272 769 N 1 0 0 1 1010 807 2
 Refer: 188 82 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Ramshorn
+StartChar: uniA7CB
 Encoding: 190 42955 190
 GlifName: R_amshorn
 Width: 2048
@@ -4643,7 +4641,7 @@ Fore
 Refer: 180 80 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Rlinebelow
+StartChar: uni1E5E
 Encoding: 193 7774 193
 GlifName: R_linebelow
 Width: 2048
@@ -4656,7 +4654,7 @@ Refer: 875 817 N 1 0 0 1 499 94 2
 Refer: 188 82 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Rstroke
+StartChar: uni024C
 Encoding: 194 588 194
 GlifName: R_stroke
 Width: 2048
@@ -4669,7 +4667,7 @@ Refer: 188 82 N 1 0 0 1 147 0 2
 Refer: 420 8211 N 0.314965 0 0 1 -172 270 2
 EndChar
 
-StartChar: Rtail
+StartChar: uni2C64
 Encoding: 195 11364 195
 GlifName: R_tail
 Width: 2048
@@ -4736,7 +4734,7 @@ Refer: 272 769 N 1 0 0 1 1019 850 2
 Refer: 196 83 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Saltillo
+StartChar: uniA78B
 Encoding: 198 42891 198
 GlifName: S_altillo
 Width: 2048
@@ -4796,7 +4794,7 @@ Refer: 855 770 N 1 0 0 1 1012 883 2
 Refer: 196 83 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Sha-cy
+StartChar: uni0428
 Encoding: 202 1064 202
 GlifName: S_ha-cy
 Width: 2048
@@ -4828,7 +4826,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Shcha-cy
+StartChar: uni0429
 Encoding: 203 1065 203
 GlifName: S_hcha-cy
 Width: 2048
@@ -4898,7 +4896,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Softsign-cy
+StartChar: uni042C
 Encoding: 205 1068 205
 GlifName: S_oftsign-cy
 Width: 2048
@@ -4997,7 +4995,7 @@ Refer: 863 780 N 1 0 0 1 1028 862 2
 Refer: 206 84 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Tcircumflexbelow
+StartChar: uni1E70
 Encoding: 210 7792 210
 GlifName: T_circumflexbelow
 Width: 2048
@@ -5048,7 +5046,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Thook
+StartChar: uni01AC
 Encoding: 212 428 212
 GlifName: T_hook
 Width: 2048
@@ -5118,7 +5116,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Tlinebelow
+StartChar: uni1E6E
 Encoding: 214 7790 214
 GlifName: T_linebelow
 Width: 2048
@@ -5131,7 +5129,7 @@ Refer: 875 817 N 1 0 0 1 488 109 2
 Refer: 206 84 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Tretroflexhook
+StartChar: uni01AE
 Encoding: 215 430 215
 GlifName: T_retroflexhook
 Width: 2048
@@ -5166,7 +5164,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Tse-cy
+StartChar: uni0426
 Encoding: 216 1062 216
 GlifName: T_se-cy
 Width: 2048
@@ -5198,7 +5196,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Tshe-cy
+StartChar: uni040B
 Encoding: 217 1035 217
 GlifName: T_she-cy
 Width: 2048
@@ -5260,7 +5258,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: U-cy
+StartChar: uni0423
 Encoding: 219 1059 219
 GlifName: U_-cy
 Width: 2048
@@ -5308,7 +5306,7 @@ Refer: 272 769 N 1 0 0 1 1016 832 2
 Refer: 218 85 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Ubar
+StartChar: uni0244
 Encoding: 221 580 221
 GlifName: U_bar
 Width: 2048
@@ -5531,7 +5529,7 @@ Fore
 Refer: 249 89 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Upsilon_latin
+StartChar: uni01B1
 Encoding: 231 433 231
 GlifName: U_psilon_latin
 Width: 2048
@@ -5635,7 +5633,7 @@ I360
 sass."
 EndChar
 
-StartChar: Ushort-cy
+StartChar: uni040E
 Encoding: 235 1038 235
 GlifName: U_short-cy
 Width: 2048
@@ -5662,7 +5660,7 @@ Refer: 725 771 N 1 0 0 1 1013 860 2
 Refer: 218 85 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Utildebelow
+StartChar: uni1E74
 Encoding: 237 7796 237
 GlifName: U_tildebelow
 Width: 2048
@@ -5701,7 +5699,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Vhook
+StartChar: uni01B2
 Encoding: 239 434 239
 GlifName: V_hook
 Width: 2048
@@ -5736,7 +5734,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Vturned
+StartChar: uni0245
 Encoding: 240 581 240
 GlifName: V_turned
 Width: 2048
@@ -5852,7 +5850,7 @@ Refer: 466 768 N 1 0 0 1 937 968 2
 Refer: 241 87 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Whook
+StartChar: uni2C72
 Encoding: 246 11378 246
 GlifName: W_hook
 Width: 2048
@@ -5953,7 +5951,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Ya-cy
+StartChar: uni042F
 Encoding: 250 1071 250
 GlifName: Y_a-cy
 Width: 2048
@@ -6006,7 +6004,7 @@ Refer: 272 769 N 1 0 0 1 991 848 2
 Refer: 249 89 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Yat-cy
+StartChar: uni0462
 Encoding: 252 1122 252
 GlifName: Y_at-cy
 Width: 2048
@@ -6089,7 +6087,7 @@ I151
 sass."
 EndChar
 
-StartChar: Yeru-cy
+StartChar: uni042B
 Encoding: 255 1067 255
 GlifName: Y_eru-cy
 Width: 2048
@@ -6141,7 +6139,7 @@ Refer: 466 768 N 1 0 0 1 922 992 2
 Refer: 249 89 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Yhook
+StartChar: uni01B3
 Encoding: 257 435 257
 GlifName: Y_hook
 Width: 2048
@@ -6154,7 +6152,7 @@ Refer: 249 89 N 1 0 0 1 0 0 2
 Refer: 867 786 N -0.866025 0.5 -0.5 -0.866025 2724 3240 2
 EndChar
 
-StartChar: Yu-cy
+StartChar: uni042E
 Encoding: 258 1070 258
 GlifName: Y_u-cy
 Width: 2048
@@ -6295,7 +6293,7 @@ I224
 sass."
 EndChar
 
-StartChar: Ze-cy
+StartChar: uni0417
 Encoding: 263 1047 263
 GlifName: Z_e-cy
 Width: 2048
@@ -6354,7 +6352,7 @@ Fore
 Refer: 259 90 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Zhe-cy
+StartChar: uni0416
 Encoding: 265 1046 265
 GlifName: Z_he-cy
 Width: 2048
@@ -6433,7 +6431,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: a.circled
+StartChar: uni24D0
 Encoding: 267 9424 267
 GlifName: a.circled
 Width: 2048
@@ -6541,7 +6539,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: acutemacroncomb
+StartChar: uni1DC7
 Encoding: 273 7623 273
 GlifName: acutemacroncomb
 Width: 0
@@ -6586,7 +6584,7 @@ I151
 sass."
 EndChar
 
-StartChar: adotaccent
+StartChar: uni0227
 Encoding: 275 551 275
 GlifName: adotaccent
 Width: 2048
@@ -6709,7 +6707,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: alpha_latin
+StartChar: uni0251
 Encoding: 280 593 280
 GlifName: alpha_latin
 Width: 2048
@@ -6744,7 +6742,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: alphadasia
+StartChar: uni1F01
 Encoding: 281 7937 281
 GlifName: alphadasia
 Width: 2048
@@ -6757,7 +6755,7 @@ Refer: 279 945 N 1 0 0 1 0 0 2
 Refer: 359 788 N 1 0 0 1 962 70 2
 EndChar
 
-StartChar: alphapsili
+StartChar: uni1F00
 Encoding: 282 7936 282
 GlifName: alphapsili
 Width: 2048
@@ -6770,7 +6768,7 @@ Refer: 279 945 N 1 0 0 1 0 0 2
 Refer: 357 787 N 1 0 0 1 1070 75 2
 EndChar
 
-StartChar: alphapsilivaria
+StartChar: uni1F02
 Encoding: 283 7938 283
 GlifName: alphapsilivaria
 Width: 2048
@@ -6836,7 +6834,7 @@ I560
 sass."
 EndChar
 
-StartChar: amod
+StartChar: uni1D43
 Encoding: 286 7491 286
 GlifName: amod
 Width: 2048
@@ -7061,7 +7059,7 @@ I360
 sass."
 EndChar
 
-StartChar: aringbelow
+StartChar: uni1E01
 Encoding: 293 7681 293
 GlifName: aringbelow
 Width: 2048
@@ -7227,7 +7225,7 @@ Refer: 725 771 N 1 0 0 1 1028 337 2
 Refer: 266 97 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: aturned
+StartChar: uni0250
 Encoding: 299 592 299
 GlifName: aturned
 Width: 2048
@@ -7320,7 +7318,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: baht
+StartChar: uni0E3F
 Encoding: 302 3647 302
 GlifName: baht
 Width: 2048
@@ -7351,7 +7349,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bdotbelow
+StartChar: uni1E05
 Encoding: 304 7685 304
 GlifName: bdotbelow
 Width: 2048
@@ -7365,7 +7363,7 @@ Refer: 300 98 N 1 0 0 1 0 0 2
 Refer: 386 803 N 1 0 0 1 1045 40 2
 EndChar
 
-StartChar: be-cy
+StartChar: uni0431
 Encoding: 305 1073 305
 GlifName: be-cy
 Width: 2048
@@ -7442,7 +7440,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: beta_latin
+StartChar: uniA7B5
 Encoding: 307 42933 307
 GlifName: beta_latin
 Width: 2048
@@ -7480,7 +7478,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bhook
+StartChar: uni0253
 Encoding: 308 595 308
 GlifName: bhook
 Width: 2048
@@ -7493,7 +7491,7 @@ Refer: 300 98 N 1 0 0 1 0 0 2
 Refer: 867 786 N 0 1 -1 0 2179 1553 2
 EndChar
 
-StartChar: bilabialclick
+StartChar: uni0298
 Encoding: 309 664 309
 GlifName: bilabialclick
 Width: 2048
@@ -7506,7 +7504,7 @@ Refer: 593 111 N 1 0 0 1 13 435 2
 Refer: 632 46 N 1 0 0 1 8 807 2
 EndChar
 
-StartChar: blackCircle
+StartChar: H18533
 Encoding: 310 9679 310
 GlifName: blackC_ircle
 Width: 2048
@@ -7533,7 +7531,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: blackDiamond
+StartChar: uni25C6
 Encoding: 311 9670 311
 GlifName: blackD_iamond
 Width: 2048
@@ -7551,7 +7549,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: blackSmallSquare
+StartChar: H18543
 Encoding: 312 9642 312
 GlifName: blackS_mallS_quare
 Width: 2048
@@ -7569,7 +7567,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: blackSquare
+StartChar: filledbox
 Encoding: 313 9632 313
 GlifName: blackS_quare
 Width: 2048
@@ -7587,7 +7585,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: blinebelow
+StartChar: uni1E07
 Encoding: 314 7687 314
 GlifName: blinebelow
 Width: 2048
@@ -7842,7 +7840,7 @@ Refer: 858 774 N 1 0 0 1 0 0 2
 Refer: 725 771 N 1 0 0 1 40 247 2
 EndChar
 
-StartChar: breveinvertedbelowcomb
+StartChar: uni032F
 Encoding: 324 815 324
 GlifName: breveinvertedbelowcomb
 Width: 0
@@ -7878,7 +7876,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bstroke
+StartChar: uni0180
 Encoding: 326 384 326
 GlifName: bstroke
 Width: 2048
@@ -7891,7 +7889,7 @@ Refer: 300 98 N 1 0 0 1 0 0 2
 Refer: 490 45 N 1 0 0 1 -628 595 2
 EndChar
 
-StartChar: btopbar
+StartChar: uni0183
 Encoding: 327 387 327
 GlifName: btopbar
 Width: 2048
@@ -7922,7 +7920,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: bulletoperator
+StartChar: uni2219
 Encoding: 329 8729 329
 GlifName: bulletoperator
 Width: 2048
@@ -7984,7 +7982,7 @@ Refer: 272 769 N 1 0 0 1 1013 329 2
 Refer: 330 99 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: careof
+StartChar: uni2105
 Encoding: 332 8453 332
 GlifName: careof
 Width: 2048
@@ -8167,7 +8165,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: che-cy
+StartChar: uni0447
 Encoding: 340 1095 340
 GlifName: che-cy
 Width: 2048
@@ -8227,7 +8225,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: chook
+StartChar: uni0188
 Encoding: 342 392 342
 GlifName: chook
 Width: 2048
@@ -8263,7 +8261,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: circumflexbelowcomb
+StartChar: uni032D
 Encoding: 344 813 344
 GlifName: circumflexbelowcomb
 Width: 0
@@ -8332,7 +8330,7 @@ Refer: 855 770 N 1 0 0 1 8 467 2
 Refer: 725 771 N 1 0 0 1 36 215 2
 EndChar
 
-StartChar: clickalveolar
+StartChar: uni01C2
 Encoding: 349 450 349
 GlifName: clickalveolar
 Width: 2048
@@ -8346,7 +8344,7 @@ Refer: 490 45 N 1 0 0 1 0 296 2
 Refer: 490 45 N 1 0 0 1 8 -114 2
 EndChar
 
-StartChar: clickdental
+StartChar: uni01C0
 Encoding: 350 448 350
 GlifName: clickdental
 Width: 2048
@@ -8358,7 +8356,7 @@ Fore
 Refer: 303 124 N 1 0 0 1 -17 92 2
 EndChar
 
-StartChar: clicklateral
+StartChar: uni01C1
 Encoding: 351 449 351
 GlifName: clicklateral
 Width: 2048
@@ -8371,7 +8369,7 @@ Refer: 303 124 N 1 0 0 1 -414 118 2
 Refer: 303 124 N 1 0 0 1 182 118 2
 EndChar
 
-StartChar: clickretroflex
+StartChar: uni01C3
 Encoding: 352 451 352
 GlifName: clickretroflex
 Width: 2048
@@ -8406,7 +8404,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: colonmod
+StartChar: uniA789
 Encoding: 354 42889 354
 GlifName: colonmod
 Width: 2048
@@ -8479,7 +8477,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: commaabovecomb
+StartChar: uni0313
 Encoding: 357 787 357
 GlifName: commaabovecomb
 Width: 0
@@ -8492,7 +8490,7 @@ Fore
 Refer: 358 789 N 1 0 0 1 -43 243 2
 EndChar
 
-StartChar: commaaboverightcomb
+StartChar: uni0315
 Encoding: 358 789 358
 GlifName: commaaboverightcomb
 Width: 0
@@ -8516,7 +8514,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: commareversedabovecomb
+StartChar: uni0314
 Encoding: 359 788 359
 GlifName: commareversedabovecomb
 Width: 0
@@ -8540,7 +8538,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: commaturnedmod
+StartChar: uni02BB
 Encoding: 360 699 360
 GlifName: commaturnedmod
 Width: 2048
@@ -8739,7 +8737,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dasia
+StartChar: uni1FFE
 Encoding: 366 8190 366
 GlifName: dasia
 Width: 2048
@@ -8751,7 +8749,7 @@ Fore
 Refer: 359 788 N 1 0 0 1 977 75 2
 EndChar
 
-StartChar: dblverticalbar
+StartChar: uni2016
 Encoding: 367 8214 367
 GlifName: dblverticalbar
 Width: 2048
@@ -8803,7 +8801,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dcircumflexbelow
+StartChar: uni1E13
 Encoding: 369 7699 369
 GlifName: dcircumflexbelow
 Width: 2048
@@ -8856,7 +8854,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dcurl
+StartChar: uni0221
 Encoding: 371 545 371
 GlifName: dcurl
 Width: 2048
@@ -8901,7 +8899,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: de-cy
+StartChar: uni0434
 Encoding: 372 1076 372
 GlifName: de-cy
 Width: 2048
@@ -9004,7 +9002,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dhook
+StartChar: uni0257
 Encoding: 375 599 375
 GlifName: dhook
 Width: 2048
@@ -9017,7 +9015,7 @@ Refer: 363 100 N 1 0 0 1 -76 -14 2
 Refer: 867 786 N 0 1 -1 0 3709 1524 2
 EndChar
 
-StartChar: dialytikatonoscomb
+StartChar: uni0344
 Encoding: 376 836 376
 GlifName: dialytikatonoscomb
 Width: 0
@@ -9099,7 +9097,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: divisionslash
+StartChar: uni2215
 Encoding: 380 8725 380
 GlifName: divisionslash
 Width: 2048
@@ -9117,7 +9115,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dje-cy
+StartChar: uni0452
 Encoding: 381 1106 381
 GlifName: dje-cy
 Width: 2048
@@ -9154,7 +9152,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dlinebelow
+StartChar: uni1E0F
 Encoding: 382 7695 382
 GlifName: dlinebelow
 Width: 2048
@@ -9370,7 +9368,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: doubleapostrophemod
+StartChar: uni02EE
 Encoding: 388 750 388
 GlifName: doubleapostrophemod
 Width: 2048
@@ -9382,7 +9380,7 @@ Fore
 Refer: 653 34 N 1 0 0 1 27 -214 2
 EndChar
 
-StartChar: doublemacronbelowcomb
+StartChar: uni035F
 Encoding: 389 863 389
 GlifName: doublemacronbelowcomb
 Width: 0
@@ -9401,7 +9399,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: downArrow
+StartChar: arrowdown
 Encoding: 390 8595 390
 GlifName: downA_rrow
 Width: 2048
@@ -9429,7 +9427,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: downBlackSmallTriangle
+StartChar: uni25BE
 Encoding: 391 9662 391
 GlifName: downB_lackS_mallT_riangle
 Width: 2048
@@ -9446,7 +9444,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: downBlackTriangle
+StartChar: triagdn
 Encoding: 392 9660 392
 GlifName: downB_lackT_riangle
 Width: 2048
@@ -9463,7 +9461,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: downWhiteSmallTriangle
+StartChar: uni25BF
 Encoding: 393 9663 393
 GlifName: downW_hiteS_mallT_riangle
 Width: 2048
@@ -9484,7 +9482,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: downWhiteTriangle
+StartChar: uni25BD
 Encoding: 394 9661 394
 GlifName: downW_hiteT_riangle
 Width: 2048
@@ -9505,7 +9503,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dshortstrokeoverlay
+StartChar: uniA7C8
 Encoding: 395 42952 395
 GlifName: dshortstrokeoverlay
 Width: 2048
@@ -9518,7 +9516,7 @@ Refer: 363 100 N 1 0 0 1 0 0 2
 Refer: 416 8212 N 0.895754 0 0 1 114.886 -164 2
 EndChar
 
-StartChar: dtail
+StartChar: uni0256
 Encoding: 396 598 396
 GlifName: dtail
 Width: 2048
@@ -9531,7 +9529,7 @@ Refer: 363 100 N 1 0 0 1 0 0 2
 Refer: 358 789 N -0.911232 -0.411892 0.411892 -0.911232 1452 851 2
 EndChar
 
-StartChar: dzhe-cy
+StartChar: uni045F
 Encoding: 397 1119 397
 GlifName: dzhe-cy
 Width: 2048
@@ -9603,7 +9601,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: e-cy
+StartChar: uni0454
 Encoding: 399 1108 399
 GlifName: e-cy
 Width: 2048
@@ -9640,7 +9638,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: eOpenmod
+StartChar: uni1D4B
 Encoding: 400 7499 400
 GlifName: eO_penmod
 Width: 2048
@@ -9710,7 +9708,7 @@ Refer: 863 780 N 1 0 0 1 984 341 2
 Refer: 398 101 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: ecedilla
+StartChar: uni0229
 Encoding: 404 553 404
 GlifName: ecedilla
 Width: 2048
@@ -9724,7 +9722,7 @@ Refer: 398 101 N 1 0 0 1 0 0 2
 Refer: 871 807 N 1 0 0 1 1144 -80 2
 EndChar
 
-StartChar: ecedillabreve
+StartChar: uni1E1D
 Encoding: 405 7709 405
 GlifName: ecedillabreve
 Width: 2048
@@ -9821,7 +9819,7 @@ I224
 sass."
 EndChar
 
-StartChar: ef-cy
+StartChar: uni0444
 Encoding: 409 1092 409
 GlifName: ef-cy
 Width: 2048
@@ -9901,7 +9899,7 @@ EndSplineSet
 Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2078
 EndChar
 
-StartChar: el-cy
+StartChar: uni043B
 Encoding: 412 1083 412
 GlifName: el-cy
 Width: 2048
@@ -9961,7 +9959,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: em-cy
+StartChar: uni043C
 Encoding: 414 1084 414
 GlifName: em-cy
 Width: 2048
@@ -10052,7 +10050,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: emod
+StartChar: uni1D49
 Encoding: 417 7497 417
 GlifName: emod
 Width: 2048
@@ -10076,7 +10074,7 @@ Fore
 Refer: 177 216 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: en-cy
+StartChar: uni043D
 Encoding: 419 1085 419
 GlifName: en-cy
 Width: 2048
@@ -10197,7 +10195,7 @@ I542
 sass."
 EndChar
 
-StartChar: eopen
+StartChar: uni025B
 Encoding: 423 603 423
 GlifName: eopen
 Width: 2048
@@ -10311,7 +10309,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ereversed-cy
+StartChar: uni044D
 Encoding: 427 1101 427
 GlifName: ereversed-cy
 Width: 2048
@@ -10348,7 +10346,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: esh
+StartChar: uni0283
 Encoding: 428 643 428
 GlifName: esh
 Width: 2048
@@ -10376,7 +10374,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: eshsquatreversed
+StartChar: uni0285
 Encoding: 429 645 429
 GlifName: eshsquatreversed
 Width: 2048
@@ -10538,7 +10536,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: etildebelow
+StartChar: uni1E1B
 Encoding: 434 7707 434
 GlifName: etildebelow
 Width: 2048
@@ -10552,7 +10550,7 @@ Refer: 398 101 N 1 0 0 1 0 0 2
 Refer: 724 816 N 1 0 0 1 1078 -162 2
 EndChar
 
-StartChar: eturned
+StartChar: uni01DD
 Encoding: 435 477 435
 GlifName: eturned
 Width: 2048
@@ -10611,7 +10609,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ezh
+StartChar: uni0292
 Encoding: 438 658 438
 GlifName: ezh
 Width: 2048
@@ -10649,7 +10647,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ezhcaron
+StartChar: uni01EF
 Encoding: 439 495 439
 GlifName: ezhcaron
 Width: 2048
@@ -10662,7 +10660,7 @@ Refer: 438 658 N 1 0 0 1 0 0 2
 Refer: 863 780 N 1 0 0 1 1024 568 2
 EndChar
 
-StartChar: ezhreversed
+StartChar: uni01B9
 Encoding: 440 441 440
 GlifName: ezhreversed
 Width: 2048
@@ -10742,7 +10740,7 @@ Fore
 Refer: 416 8212 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: figurespace
+StartChar: uni2007
 Encoding: 443 8199 443
 GlifName: figurespace
 Width: 2048
@@ -10752,7 +10750,7 @@ Flags: W
 LayerCount: 2
 EndChar
 
-StartChar: fita-cy
+StartChar: uni0473
 Encoding: 444 1139 444
 GlifName: fita-cy
 Width: 2048
@@ -10930,7 +10928,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: gamma_latin
+StartChar: uni0263
 Encoding: 451 611 451
 GlifName: gamma_latin
 Width: 2048
@@ -11054,7 +11052,7 @@ I224
 sass."
 EndChar
 
-StartChar: ge-cy
+StartChar: uni0433
 Encoding: 456 1075 456
 GlifName: ge-cy
 Width: 2048
@@ -11134,7 +11132,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: geupturn-cy
+StartChar: uni0491
 Encoding: 458 1169 458
 GlifName: geupturn-cy
 Width: 2048
@@ -11161,7 +11159,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ghook
+StartChar: uni0260
 Encoding: 459 608 459
 GlifName: ghook
 Width: 2048
@@ -11174,7 +11172,7 @@ Refer: 449 103 N 1 0 0 1 0 0 2
 Refer: 867 786 N -0.844095 0.495128 -0.48586 -0.868632 2582 2739 2
 EndChar
 
-StartChar: gje-cy
+StartChar: uni0453
 Encoding: 460 1107 460
 GlifName: gje-cy
 Width: 2048
@@ -11186,7 +11184,7 @@ Refer: 456 1075 N 1 0 0 1 0 0 2
 Refer: 272 769 N 1 0 0 1 967 332 2
 EndChar
 
-StartChar: glottalstop
+StartChar: uni0294
 Encoding: 461 660 461
 GlifName: glottalstop
 Width: 2048
@@ -11219,7 +11217,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: glottalstopmod
+StartChar: uni02C0
 Encoding: 462 704 462
 GlifName: glottalstopmod
 Width: 2048
@@ -11252,7 +11250,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: glottalstopreversed
+StartChar: uni0295
 Encoding: 463 661 463
 GlifName: glottalstopreversed
 Width: 2048
@@ -11285,7 +11283,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: glottalstopsmall
+StartChar: uni0242
 Encoding: 464 578 464
 GlifName: glottalstopsmall
 Width: 2048
@@ -11334,7 +11332,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: gravemacroncomb
+StartChar: uni1DC5
 Encoding: 467 7621 467
 GlifName: gravemacroncomb
 Width: 0
@@ -11415,7 +11413,7 @@ I206
 sass."
 EndChar
 
-StartChar: gsingle
+StartChar: uni0261
 Encoding: 470 609 470
 GlifName: gsingle
 Width: 2048
@@ -11427,7 +11425,7 @@ Fore
 Refer: 449 103 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: gstroke
+StartChar: uni01E5
 Encoding: 471 485 471
 GlifName: gstroke
 Width: 2048
@@ -11582,7 +11580,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: hardsign-cy
+StartChar: uni044A
 Encoding: 477 1098 477
 GlifName: hardsign-cy
 Width: 2048
@@ -11654,7 +11652,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: hcaron
+StartChar: uni021F
 Encoding: 479 543 479
 GlifName: hcaron
 Width: 2048
@@ -11667,7 +11665,7 @@ Refer: 476 104 N 1 0 0 1 0 0 2
 Refer: 863 780 N 1 0 0 1 287 803 2
 EndChar
 
-StartChar: hcedilla
+StartChar: uni1E29
 Encoding: 480 7721 480
 GlifName: hcedilla
 Width: 2048
@@ -11693,7 +11691,7 @@ Refer: 855 770 N 1 0 0 1 244 885 2
 Refer: 476 104 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: hhook
+StartChar: uni0266
 Encoding: 482 614 482
 GlifName: hhook
 Width: 2048
@@ -11765,7 +11763,7 @@ I460
 sass."
 EndChar
 
-StartChar: horizontalbar
+StartChar: uni2015
 Encoding: 484 8213 484
 GlifName: horizontalbar
 Width: 2048
@@ -11777,7 +11775,7 @@ Fore
 Refer: 416 8212 N 1.10033 0 0 1 -97.517 0 2
 EndChar
 
-StartChar: hryvnia
+StartChar: uni20B4
 Encoding: 485 8372 485
 GlifName: hryvnia
 Width: 2048
@@ -11825,7 +11823,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: hturned
+StartChar: uni0265
 Encoding: 486 613 486
 GlifName: hturned
 Width: 2048
@@ -11839,7 +11837,7 @@ Fore
 Refer: 476 104 N -1 0 0 -1 2040 1026 2
 EndChar
 
-StartChar: hturnedfishhook
+StartChar: uni02AE
 Encoding: 487 686 487
 GlifName: hturnedfishhook
 Width: 2048
@@ -11854,7 +11852,7 @@ Refer: 476 104 N -1 0 0 -1 2180 1026 2
 Refer: 357 787 N -0.326585 0.945168 -0.945168 -0.326585 1428 1338 2
 EndChar
 
-StartChar: hturnedfishhookandtail
+StartChar: uni02AF
 Encoding: 488 687 488
 GlifName: hturnedfishhookandtail
 Width: 2048
@@ -11927,7 +11925,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: hyphentwo
+StartChar: uni2010
 Encoding: 491 8208 491
 GlifName: hyphentwo
 Width: 2048
@@ -12019,7 +12017,7 @@ I660
 sass."
 EndChar
 
-StartChar: icapitalsmall
+StartChar: uni026A
 Encoding: 495 618 495
 GlifName: icapitalsmall
 Width: 2048
@@ -12122,7 +12120,7 @@ Refer: 466 768 N 1 0 0 1 426 541 2
 Refer: 387 305 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: ii-cy
+StartChar: uni0438
 Encoding: 500 1080 500
 GlifName: ii-cy
 Width: 2048
@@ -12149,7 +12147,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: iigrave-cy
+StartChar: uni045D
 Encoding: 501 1117 501
 GlifName: iigrave-cy
 Width: 2048
@@ -12161,7 +12159,7 @@ Refer: 500 1080 N 1 0 0 1 0 0 2
 Refer: 466 768 N 1 0 0 1 1069 -149 2
 EndChar
 
-StartChar: iishort-cy
+StartChar: uni0439
 Encoding: 502 1081 502
 GlifName: iishort-cy
 Width: 2048
@@ -12225,7 +12223,7 @@ I560
 sass."
 EndChar
 
-StartChar: increment
+StartChar: Delta
 Encoding: 505 8710 505
 GlifName: increment
 Width: 2048
@@ -12410,7 +12408,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: iota_latin
+StartChar: uni0269
 Encoding: 511 617 511
 GlifName: iota_latin
 Width: 2048
@@ -12434,7 +12432,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: iotadialytikaoxia
+StartChar: uni1FD3
 Encoding: 512 8147 512
 GlifName: iotadialytikaoxia
 Width: 2048
@@ -12487,7 +12485,7 @@ Refer: 510 953 N 1 0 0 1 0 0 2
 Refer: 727 900 N 1 0 0 1 -153 347 2
 EndChar
 
-StartChar: istroke
+StartChar: uni0268
 Encoding: 516 616 516
 GlifName: istroke
 Width: 2048
@@ -12517,7 +12515,7 @@ Refer: 387 305 N 1 0 0 1 0 0 2
 Refer: 420 8211 N 1 0 0 1 -10 -145 2
 EndChar
 
-StartChar: istrokemod
+StartChar: uni1DA4
 Encoding: 518 7588 518
 GlifName: istrokemod
 Width: 2048
@@ -12544,7 +12542,7 @@ Refer: 725 771 N 1 0 0 1 492 425 2
 Refer: 387 305 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: itildebelow
+StartChar: uni1E2D
 Encoding: 520 7725 520
 GlifName: itildebelow
 Width: 2048
@@ -12572,7 +12570,7 @@ Refer: 387 305 N 1 0 0 1 0 0 2
 Refer: 724 816 N 1 0 0 1 986 -177 2
 EndChar
 
-StartChar: izhitsa-cy
+StartChar: uni0475
 Encoding: 522 1141 522
 GlifName: izhitsa-cy
 Width: 2048
@@ -12637,7 +12635,7 @@ EndSplineSet
 Substitution2: "Single Substitution lookup 5 subtable" uni0237
 EndChar
 
-StartChar: jcaron
+StartChar: uni01F0
 Encoding: 524 496 524
 GlifName: jcaron
 Width: 2048
@@ -12663,7 +12661,7 @@ Refer: 855 770 N 1 0 0 1 1718 358 2
 Refer: 847 567 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: jcrossedtail
+StartChar: uni029D
 Encoding: 526 669 526
 GlifName: jcrossedtail
 Width: 2048
@@ -12703,7 +12701,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: jdotlessstroke
+StartChar: uni025F
 Encoding: 527 607 527
 GlifName: jdotlessstroke
 Width: 2048
@@ -12715,7 +12713,7 @@ Fore
 Refer: 529 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: jstroke
+StartChar: uni0249
 Encoding: 528 585 528
 GlifName: jstroke
 Width: 2048
@@ -12772,7 +12770,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: kaiSymbol
+StartChar: uni03D7
 Encoding: 531 983 531
 GlifName: kaiS_ymbol
 Width: 2048
@@ -12862,7 +12860,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: khook
+StartChar: uni0199
 Encoding: 534 409 534
 GlifName: khook
 Width: 2048
@@ -12875,7 +12873,7 @@ Refer: 530 107 N 1 0 0 1 0 0 2
 Refer: 867 786 N -0.866025 0.5 -0.5 -0.866025 1094 3235 2
 EndChar
 
-StartChar: klinebelow
+StartChar: uni1E35
 Encoding: 535 7733 535
 GlifName: klinebelow
 Width: 2048
@@ -12888,7 +12886,7 @@ Refer: 875 817 N 1 0 0 1 1013 80 2
 Refer: 530 107 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: koronis
+StartChar: uni1FBD
 Encoding: 536 8125 536
 GlifName: koronis
 Width: 2048
@@ -12900,7 +12898,7 @@ Fore
 Refer: 357 787 N 1 0 0 1 1016 33 2
 EndChar
 
-StartChar: koroniscomb
+StartChar: uni0343
 Encoding: 537 835 537
 GlifName: koroniscomb
 Width: 0
@@ -12991,7 +12989,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: lari
+StartChar: uni20BE
 Encoding: 542 8382 542
 GlifName: lari
 Width: 2048
@@ -13072,7 +13070,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: lcircumflexbelow
+StartChar: uni1E3D
 Encoding: 544 7741 544
 GlifName: lcircumflexbelow
 Width: 2048
@@ -13085,7 +13083,7 @@ Refer: 538 108 N 1 0 0 1 0 0 2
 Refer: 344 813 N 1 0 0 1 1000 -452 2
 EndChar
 
-StartChar: lcurl
+StartChar: uni0234
 Encoding: 545 564 545
 GlifName: lcurl
 Width: 2048
@@ -13133,7 +13131,7 @@ Refer: 633 183 N 1 0 0 1 555 -119 2
 Refer: 538 108 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: leftArrow
+StartChar: arrowleft
 Encoding: 547 8592 547
 GlifName: leftA_rrow
 Width: 2048
@@ -13161,7 +13159,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: leftBlackSmallTriangle
+StartChar: uni25C2
 Encoding: 548 9666 548
 GlifName: leftB_lackS_mallT_riangle
 Width: 2048
@@ -13178,7 +13176,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: leftBlackTriangle
+StartChar: uni25C0
 Encoding: 549 9664 549
 GlifName: leftB_lackT_riangle
 Width: 2048
@@ -13195,7 +13193,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: leftRightArrow
+StartChar: arrowboth
 Encoding: 550 8596 550
 GlifName: leftR_ightA_rrow
 Width: 2048
@@ -13233,7 +13231,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: leftWhiteSmallTriangle
+StartChar: uni25C3
 Encoding: 551 9667 551
 GlifName: leftW_hiteS_mallT_riangle
 Width: 2048
@@ -13254,7 +13252,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: leftWhiteTriangle
+StartChar: uni25C1
 Encoding: 552 9665 552
 GlifName: leftW_hiteT_riangle
 Width: 2048
@@ -13380,7 +13378,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: literSign
+StartChar: uni2113
 Encoding: 556 8467 556
 GlifName: literS_ign
 Width: 2048
@@ -13413,7 +13411,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: lje-cy
+StartChar: uni0459
 Encoding: 557 1113 557
 GlifName: lje-cy
 Width: 2048
@@ -13460,7 +13458,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: llinebelow
+StartChar: uni1E3B
 Encoding: 558 7739 558
 GlifName: llinebelow
 Width: 2048
@@ -13524,7 +13522,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: lowernumeral_greek
+StartChar: uni0375
 Encoding: 561 885 561
 GlifName: lowernumeral_greek
 Width: 2048
@@ -13665,7 +13663,7 @@ I560
 sass."
 EndChar
 
-StartChar: macronacutecomb
+StartChar: uni1DC4
 Encoding: 566 7620 566
 GlifName: macronacutecomb
 Width: 0
@@ -13679,7 +13677,7 @@ Refer: 565 175 N 1 0 0 1 -1062 227 2
 Refer: 271 180 N 1 0 0 1 -760 349 2
 EndChar
 
-StartChar: macrongravecomb
+StartChar: uni1DC6
 Encoding: 567 7622 567
 GlifName: macrongravecomb
 Width: 0
@@ -13693,7 +13691,7 @@ Refer: 565 175 N 1 0 0 1 -1005 255 2
 Refer: 465 96 N 1 0 0 1 -730 -59 2
 EndChar
 
-StartChar: midlinehorizontalellipsis
+StartChar: uni22EF
 Encoding: 568 8943 568
 GlifName: midlinehorizontalellipsis
 Width: 2048
@@ -13717,7 +13715,7 @@ Fore
 Refer: 490 45 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: minusmod
+StartChar: uni02D7
 Encoding: 570 727 570
 GlifName: minusmod
 Width: 2048
@@ -13741,7 +13739,7 @@ Fore
 Refer: 660 39 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: mturned
+StartChar: uni026F
 Encoding: 572 623 572
 GlifName: mturned
 Width: 2048
@@ -13875,7 +13873,7 @@ Refer: 863 780 N 1 0 0 1 1009 397 2
 Refer: 575 110 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: ncircumflexbelow
+StartChar: uni1E4B
 Encoding: 579 7755 579
 GlifName: ncircumflexbelow
 Width: 2048
@@ -13888,7 +13886,7 @@ Refer: 575 110 N 1 0 0 1 0 0 2
 Refer: 344 813 N 1 0 0 1 1004 -426 2
 EndChar
 
-StartChar: ncurl
+StartChar: uni0235
 Encoding: 580 565 580
 GlifName: ncurl
 Width: 2048
@@ -13933,7 +13931,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: nhookleft
+StartChar: uni0272
 Encoding: 581 626 581
 GlifName: nhookleft
 Width: 2048
@@ -13975,7 +13973,7 @@ EndSplineSet
 Substitution2: "supsSuperscriptinLatinlookup16 subtable" uni2079
 EndChar
 
-StartChar: nje-cy
+StartChar: uni045A
 Encoding: 583 1114 583
 GlifName: nje-cy
 Width: 2048
@@ -14012,7 +14010,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: nlinebelow
+StartChar: uni1E49
 Encoding: 584 7753 584
 GlifName: nlinebelow
 Width: 2048
@@ -14025,7 +14023,7 @@ Refer: 875 817 N 1 0 0 1 1042 89 2
 Refer: 575 110 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: nonbreakinghyphen
+StartChar: uni2011
 Encoding: 585 8209 585
 GlifName: nonbreakinghyphen
 Width: 2048
@@ -14037,7 +14035,7 @@ Fore
 Refer: 490 45 N 0.660553 0 0 1 393 28 2
 EndChar
 
-StartChar: northEastArrow
+StartChar: uni2197
 Encoding: 586 8599 586
 GlifName: northE_astA_rrow
 Width: 2048
@@ -14065,7 +14063,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: northWestArrow
+StartChar: uni2196
 Encoding: 587 8598 587
 GlifName: northW_estA_rrow
 Width: 2048
@@ -14180,7 +14178,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: numeral_greek
+StartChar: uni0374
 Encoding: 592 884 592
 GlifName: numeral_greek
 Width: 2048
@@ -14227,7 +14225,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: oOpenmod
+StartChar: uni1D53
 Encoding: 594 7507 594
 GlifName: oO_penmod
 Width: 2048
@@ -14253,7 +14251,7 @@ Refer: 272 769 N 1 0 0 1 1016 343 2
 Refer: 593 111 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: obarred
+StartChar: uni0275
 Encoding: 596 629 596
 GlifName: obarred
 Width: 2048
@@ -14293,7 +14291,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: obarred-cy
+StartChar: uni04E9
 Encoding: 597 1257 597
 GlifName: obarred-cy
 Width: 2048
@@ -14625,7 +14623,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: omega_latin
+StartChar: uniA7B7
 Encoding: 608 42935 608
 GlifName: omega_latin
 Width: 2048
@@ -14713,7 +14711,7 @@ Refer: 610 959 N 1 0 0 1 0 0 2
 Refer: 727 900 N 1 0 0 1 -73 328 2
 EndChar
 
-StartChar: omod
+StartChar: uni1D52
 Encoding: 612 7506 612
 GlifName: omod
 Width: 2048
@@ -14813,7 +14811,7 @@ Refer: 701 47 N 1.28684 -0.206675 0.250941 1.09766 -695.506 253.923 2
 Refer: 1749 8323 N 1 0 0 1 343 -4 2
 EndChar
 
-StartChar: oopen
+StartChar: uni0254
 Encoding: 618 596 618
 GlifName: oopen
 Width: 2048
@@ -14992,7 +14990,7 @@ Refer: 725 771 N 1 0 0 1 1013 371 2
 Refer: 593 111 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: oxia
+StartChar: uni1FFD
 Encoding: 624 8189 624
 GlifName: oxia
 Width: 2048
@@ -15171,7 +15169,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: pdotaccent
+StartChar: uni1E57
 Encoding: 630 7767 630
 GlifName: pdotaccent
 Width: 2048
@@ -15278,7 +15276,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: perispomenicomb
+StartChar: uni0342
 Encoding: 634 834 634
 GlifName: perispomenicomb
 Width: 0
@@ -15479,7 +15477,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: phiSymbol
+StartChar: phi1
 Encoding: 638 981 638
 GlifName: phiS_ymbol
 Width: 2048
@@ -15517,7 +15515,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: phook
+StartChar: uni01A5
 Encoding: 639 421 639
 GlifName: phook
 Width: 2048
@@ -15683,7 +15681,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: psili
+StartChar: uni1FBF
 Encoding: 646 8127 646
 GlifName: psili
 Width: 2048
@@ -15696,7 +15694,7 @@ Fore
 Refer: 357 787 N 1 0 0 1 1019 61 2
 EndChar
 
-StartChar: pstroke
+StartChar: uni1D7D
 Encoding: 647 7549 647
 GlifName: pstroke
 Width: 2048
@@ -15709,7 +15707,7 @@ Refer: 625 112 N 1 0 0 1 0 0 2
 Refer: 416 8212 N 1 0 0 1 0 -139 2
 EndChar
 
-StartChar: published
+StartChar: uni2117
 Encoding: 648 8471 648
 GlifName: published
 Width: 2048
@@ -15838,7 +15836,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: questiongreek
+StartChar: uni037E
 Encoding: 652 894 652
 GlifName: questiongreek
 Width: 2048
@@ -16131,7 +16129,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ramshorn
+StartChar: uni0264
 Encoding: 664 612 664
 GlifName: ramshorn
 Width: 2048
@@ -16248,7 +16246,7 @@ I8
 sass."
 EndChar
 
-StartChar: rfishhookreversed
+StartChar: uni027F
 Encoding: 667 639 667
 GlifName: rfishhookreversed
 Width: 2048
@@ -16306,7 +16304,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: rightArrow
+StartChar: arrowright
 Encoding: 669 8594 669
 GlifName: rightA_rrow
 Width: 2048
@@ -16334,7 +16332,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: rightBlackSmallTriangle
+StartChar: uni25B8
 Encoding: 670 9656 670
 GlifName: rightB_lackS_mallT_riangle
 Width: 2048
@@ -16351,7 +16349,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: rightBlackTriangle
+StartChar: uni25B6
 Encoding: 671 9654 671
 GlifName: rightB_lackT_riangle
 Width: 2048
@@ -16368,7 +16366,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: rightWhiteSmallTriangle
+StartChar: uni25B9
 Encoding: 672 9657 672
 GlifName: rightW_hiteS_mallT_riangle
 Width: 2048
@@ -16389,7 +16387,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: rightWhiteTriangle
+StartChar: uni25B7
 Encoding: 673 9655 673
 GlifName: rightW_hiteT_riangle
 Width: 2048
@@ -16458,7 +16456,7 @@ I360
 sass."
 EndChar
 
-StartChar: ringbelowcomb
+StartChar: uni0325
 Encoding: 675 805 675
 GlifName: ringbelowcomb
 Width: 0
@@ -16482,7 +16480,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ringhalfleft
+StartChar: uni02BF
 Encoding: 676 703 676
 GlifName: ringhalfleft
 Width: 2048
@@ -16494,7 +16492,7 @@ Fore
 Refer: 319 728 N 0 -1 1 0 -188 2331 2
 EndChar
 
-StartChar: ringhalfright
+StartChar: uni02BE
 Encoding: 677 702 677
 GlifName: ringhalfright
 Width: 2048
@@ -16506,7 +16504,7 @@ Fore
 Refer: 319 728 N 0 1 -1 0 2277 287 2
 EndChar
 
-StartChar: rlinebelow
+StartChar: uni1E5F
 Encoding: 678 7775 678
 GlifName: rlinebelow
 Width: 2048
@@ -16519,7 +16517,7 @@ Refer: 875 817 N 1 0 0 1 465 106 2
 Refer: 661 114 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: rstroke
+StartChar: uni024D
 Encoding: 679 589 679
 GlifName: rstroke
 Width: 2048
@@ -16532,7 +16530,7 @@ Refer: 661 114 N 1 0 0 1 0 0 2
 Refer: 490 45 N 1 0 0 1 0 -245 2
 EndChar
 
-StartChar: rtail
+StartChar: uni027D
 Encoding: 680 637 680
 GlifName: rtail
 Width: 2048
@@ -16545,7 +16543,7 @@ Refer: 661 114 N 1 0 0 1 0 0 2
 Refer: 358 789 N -0.821874 -0.569669 0.569669 -0.821874 490 677 2
 EndChar
 
-StartChar: rupee
+StartChar: uni20A8
 Encoding: 681 8360 681
 GlifName: rupee
 Width: 2048
@@ -16612,7 +16610,7 @@ Refer: 272 769 N 1 0 0 1 1016 354 2
 Refer: 682 115 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: saltillo
+StartChar: uniA78C
 Encoding: 684 42892 684
 GlifName: saltillo
 Width: 2048
@@ -16776,7 +16774,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: servicemark
+StartChar: uni2120
 Encoding: 691 8480 691
 GlifName: servicemark
 Width: 2048
@@ -16824,7 +16822,7 @@ Refer: 1730 8260 N 0.496766 -0.367241 0.59446 0.804125 38 490 2
 Refer: 411 56 N 0.56 0 0 0.56 913 -365 2
 EndChar
 
-StartChar: sha-cy
+StartChar: uni0448
 Encoding: 694 1096 694
 GlifName: sha-cy
 Width: 2048
@@ -16856,7 +16854,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: shcha-cy
+StartChar: uni0449
 Encoding: 695 1097 695
 GlifName: shcha-cy
 Width: 2048
@@ -16893,7 +16891,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: sheqel
+StartChar: uni20AA
 Encoding: 696 8362 696
 GlifName: sheqel
 Width: 2048
@@ -16946,7 +16944,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: shortequalmod
+StartChar: uniA78A
 Encoding: 697 42890 697
 GlifName: shortequalmod
 Width: 2048
@@ -16991,7 +16989,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: sigmafinal
+StartChar: sigma1
 Encoding: 699 962 699
 GlifName: sigmafinal
 Width: 2048
@@ -17076,7 +17074,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: softhyphen
+StartChar: uni00AD
 Encoding: 702 173 702
 GlifName: softhyphen
 Width: 2048
@@ -17088,7 +17086,7 @@ Fore
 Refer: 491 8208 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: softsign-cy
+StartChar: uni044C
 Encoding: 703 1100 703
 GlifName: softsign-cy
 Width: 2048
@@ -17122,7 +17120,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: southEastArrow
+StartChar: uni2198
 Encoding: 704 8600 704
 GlifName: southE_astA_rrow
 Width: 2048
@@ -17150,7 +17148,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: southWestArrow
+StartChar: uni2199
 Encoding: 705 8601 705
 GlifName: southW_estA_rrow
 Width: 2048
@@ -17345,7 +17343,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tcircumflexbelow
+StartChar: uni1E71
 Encoding: 713 7793 713
 GlifName: tcircumflexbelow
 Width: 2048
@@ -17358,7 +17356,7 @@ Refer: 709 116 N 1 0 0 1 0 0 2
 Refer: 344 813 N 1 0 0 1 997 -392 2
 EndChar
 
-StartChar: tcurl
+StartChar: uni0236
 Encoding: 714 566 714
 GlifName: tcurl
 Width: 2048
@@ -17398,7 +17396,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: te-cy
+StartChar: uni0442
 Encoding: 715 1090 715
 GlifName: te-cy
 Width: 2048
@@ -17422,7 +17420,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tenge
+StartChar: uni20B8
 Encoding: 716 8376 716
 GlifName: tenge
 Width: 2048
@@ -17467,7 +17465,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: thook
+StartChar: uni01AD
 Encoding: 718 429 718
 GlifName: thook
 Width: 2048
@@ -17624,7 +17622,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tildebelowcomb
+StartChar: uni0330
 Encoding: 724 816 724
 GlifName: tildebelowcomb
 Width: 0
@@ -17666,7 +17664,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tlinebelow
+StartChar: uni1E6F
 Encoding: 726 7791 726
 GlifName: tlinebelow
 Width: 2048
@@ -17711,7 +17709,7 @@ Refer: 206 84 N 0.5 0 0 0.5 -6 587 2
 Refer: 146 77 N 0.5 0 0 0.5 959 578 2
 EndChar
 
-StartChar: tretroflexhook
+StartChar: uni0288
 Encoding: 729 648 729
 GlifName: tretroflexhook
 Width: 2048
@@ -17741,7 +17739,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tse-cy
+StartChar: uni0446
 Encoding: 730 1094 730
 GlifName: tse-cy
 Width: 2048
@@ -17773,7 +17771,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tshe-cy
+StartChar: uni045B
 Encoding: 731 1115 731
 GlifName: tshe-cy
 Width: 2048
@@ -17805,7 +17803,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tugrik
+StartChar: uni20AE
 Encoding: 732 8366 732
 GlifName: tugrik
 Width: 2048
@@ -17904,7 +17902,7 @@ Refer: 272 769 N 1 0 0 1 1015 335 2
 Refer: 735 117 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: ubar
+StartChar: uni0289
 Encoding: 737 649 737
 GlifName: ubar
 Width: 2048
@@ -17919,7 +17917,7 @@ Refer: 735 117 N 1 0 0 1 0 0 2
 Refer: 416 8212 N 1 0 0 1 0 -118 2
 EndChar
 
-StartChar: ubarmod
+StartChar: uni1DB6
 Encoding: 738 7606 738
 GlifName: ubarmod
 Width: 2048
@@ -18088,7 +18086,7 @@ I560
 sass."
 EndChar
 
-StartChar: umod
+StartChar: uni1D58
 Encoding: 746 7512 746
 GlifName: umod
 Width: 2048
@@ -18118,7 +18116,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: undertie
+StartChar: uni203F
 Encoding: 748 8255 748
 GlifName: undertie
 Width: 2048
@@ -18374,7 +18372,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0192
+StartChar: florin
 Encoding: 766 402 766
 GlifName: uni0192
 Width: 2048
@@ -47602,7 +47600,7 @@ Refer: 296 42 N 0.33 0 0 0.33 469 429 2
 Refer: 296 42 N 0.33 0 0 0.33 871 417 2
 EndChar
 
-StartChar: uni2044
+StartChar: fraction
 Encoding: 1730 8260 1730
 GlifName: uni2044
 Width: 2048
@@ -48749,7 +48747,7 @@ I542
 sass."
 EndChar
 
-StartChar: upArrow
+StartChar: arrowup
 Encoding: 1780 8593 1780
 GlifName: upA_rrow
 Width: 2048
@@ -48777,7 +48775,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: upBlackSmallTriangle
+StartChar: uni25B4
 Encoding: 1781 9652 1781
 GlifName: upB_lackS_mallT_riangle
 Width: 2048
@@ -48794,7 +48792,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: upBlackTriangle
+StartChar: triagup
 Encoding: 1782 9650 1782
 GlifName: upB_lackT_riangle
 Width: 2048
@@ -48811,7 +48809,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: upDownArrow
+StartChar: arrowupdn
 Encoding: 1783 8597 1783
 GlifName: upD_ownA_rrow
 Width: 2048
@@ -48849,7 +48847,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: upWhiteSmallTriangle
+StartChar: uni25B5
 Encoding: 1784 9653 1784
 GlifName: upW_hiteS_mallT_riangle
 Width: 2048
@@ -48870,7 +48868,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: upWhiteTriangle
+StartChar: uni25B3
 Encoding: 1785 9651 1785
 GlifName: upW_hiteT_riangle
 Width: 2048
@@ -48924,7 +48922,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: upsilon_latin
+StartChar: uni028A
 Encoding: 1787 650 1787
 GlifName: upsilon_latin
 Width: 2048
@@ -48963,7 +48961,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: upsilondialytikaoxia
+StartChar: uni1FE3
 Encoding: 1788 8163 1788
 GlifName: upsilondialytikaoxia
 Width: 2048
@@ -49069,7 +49067,7 @@ Refer: 725 771 N 1 0 0 1 1012 363 2
 Refer: 735 117 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: utildebelow
+StartChar: uni1E75
 Encoding: 1794 7797 1794
 GlifName: utildebelow
 Width: 2048
@@ -49108,7 +49106,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: varia
+StartChar: uni1FEF
 Encoding: 1796 8175 1796
 GlifName: varia
 Width: 2048
@@ -49120,7 +49118,7 @@ Fore
 Refer: 466 768 N 1 0 0 1 1059 -181 2
 EndChar
 
-StartChar: ve-cy
+StartChar: uni0432
 Encoding: 1797 1074 1797
 GlifName: ve-cy
 Width: 2048
@@ -49179,7 +49177,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: verticallineabovecomb
+StartChar: uni030D
 Encoding: 1798 781 1798
 GlifName: verticallineabovecomb
 Width: 0
@@ -49198,7 +49196,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: verticallinelowmod
+StartChar: uni02CC
 Encoding: 1799 716 1799
 GlifName: verticallinelowmod
 Width: 2048
@@ -49216,7 +49214,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: verticallinemod
+StartChar: uni02C8
 Encoding: 1800 712 1800
 GlifName: verticallinemod
 Width: 2048
@@ -49234,7 +49232,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: vhook
+StartChar: uni028B
 Encoding: 1801 651 1801
 GlifName: vhook
 Width: 2048
@@ -49269,7 +49267,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: vturned
+StartChar: uni028C
 Encoding: 1802 652 1802
 GlifName: vturned
 Width: 2048
@@ -49385,7 +49383,7 @@ Refer: 466 768 N 1 0 0 1 952 501 2
 Refer: 1803 119 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: whiteBullet
+StartChar: openbullet
 Encoding: 1808 9702 1808
 GlifName: whiteB_ullet
 Width: 2048
@@ -49408,7 +49406,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: whiteCircle
+StartChar: circle
 Encoding: 1809 9675 1809
 GlifName: whiteC_ircle
 Width: 2048
@@ -49449,7 +49447,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: whiteDiamond
+StartChar: uni25C7
 Encoding: 1810 9671 1810
 GlifName: whiteD_iamond
 Width: 2048
@@ -49472,7 +49470,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: whiteSmallSquare
+StartChar: H18551
 Encoding: 1811 9643 1811
 GlifName: whiteS_mallS_quare
 Width: 2048
@@ -49495,7 +49493,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: whiteSquare
+StartChar: H22073
 Encoding: 1812 9633 1812
 GlifName: whiteS_quare
 Width: 2048
@@ -49518,7 +49516,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: whook
+StartChar: uni2C73
 Encoding: 1813 11379 1813
 GlifName: whook
 Width: 2048
@@ -49531,7 +49529,7 @@ Refer: 1803 119 N 1 0 0 1 0 0 2
 Refer: 867 786 N -0.862485 0.506083 -0.506083 -0.862485 2736 2722 2
 EndChar
 
-StartChar: wmod
+StartChar: uni02B7
 Encoding: 1814 695 1814
 GlifName: wmod
 Width: 2048
@@ -49646,7 +49644,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ya-cy
+StartChar: uni044F
 Encoding: 1818 1103 1818
 GlifName: ya-cy
 Width: 2048
@@ -49699,7 +49697,7 @@ Refer: 272 769 N 1 0 0 1 972 333 2
 Refer: 1817 121 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: yat-cy
+StartChar: uni0463
 Encoding: 1820 1123 1820
 GlifName: yat-cy
 Width: 2048
@@ -49825,7 +49823,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: yeru-cy
+StartChar: uni044B
 Encoding: 1824 1099 1824
 GlifName: yeru-cy
 Width: 2048
@@ -49877,7 +49875,7 @@ Refer: 466 768 N 1 0 0 1 903 477 2
 Refer: 1817 121 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: yhook
+StartChar: uni01B4
 Encoding: 1826 436 1826
 GlifName: yhook
 Width: 2048
@@ -49890,7 +49888,7 @@ Refer: 1817 121 N 1 0 0 1 0 0 2
 Refer: 867 786 N -0.866025 0.5 -0.5 -0.866025 2675 2681 2
 EndChar
 
-StartChar: ypogegrammeni
+StartChar: uni037A
 Encoding: 1827 890 1827
 GlifName: ypogegrammeni
 Width: 2048
@@ -49902,7 +49900,7 @@ Fore
 Refer: 878 837 N 1 0 0 1 1003 0 2
 EndChar
 
-StartChar: yu-cy
+StartChar: uni044E
 Encoding: 1828 1102 1828
 GlifName: yu-cy
 Width: 2048
@@ -50043,7 +50041,7 @@ I224
 sass."
 EndChar
 
-StartChar: ze-cy
+StartChar: uni0437
 Encoding: 1833 1079 1833
 GlifName: ze-cy
 Width: 2048
@@ -50157,7 +50155,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: zhe-cy
+StartChar: uni0436
 Encoding: 1836 1078 1836
 GlifName: zhe-cy
 Width: 2048
