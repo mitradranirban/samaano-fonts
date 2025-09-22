@@ -14,8 +14,7 @@
 
 Samaano is an attempt to create a variable font using only Libre/Free/Open Source Tools like Fontforge, Fontra and some shell script.
  
-The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the widths are equal in this font.
-Indic fonts are usually not made monospaced, but the designer will use his experience with developing MitraMono, the first monospaced Bengali font made way back in 2002.
+The Name Samaano comes fron the Hindi word Samaan , meaning equal indicating the widths are equal in this font. 
 
 
 ![Sample Image](documentation/image1.png)
@@ -39,8 +38,7 @@ Following are the specialities of the font
 Now, as per Shaperglot, Samaano supports 773  Latin based,
 16 Devanagari Based languages.  Monotonic and Polytonic Greek and Tamil
 
-![shaperglot](documentation/samaano-shaperglot.png)
-[shaperglot](documentation/samaano-shaperglot.csv)
+![shaperglot](documentation/samaano-shaperglot.png) 
 
 
 
@@ -52,20 +50,19 @@ Following are some numbers associated with the of the typeface
 *   0 - Zero Curves - Simple Glyph construction using Rectangular or quadrilateral components only
 *   1 - Monospaced Typeface
 *   3 - Three Variable axes of Weight, Width and Slant
-*   ~3~ 4 - ~Three~ Four supported Scripts- Latin Extended, Devanagari, Greek and Tamil
-*   9 - Font files, 8 Masters and 1 Variable
-*   14 - named instances in stat table, 2 along slant axis, 5 along width, and 7 along weight.
-*   ~13~ 16 - supported glyphsets - 6 by Adobe (Greek 1, Greek 2, Latin 1,Latin 2, Latin 3, Latin 4), 8 by Google fonts (Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African, Phonetic SinoExtension), and 2 by Koeberlin (Latin S and M)
+*   ~4~ 5 supported Scripts- Latin Extended, Devanagari, Greek, Tamil, and Cyrillic
+*   9 - Font files, 8 Masters and 1 Variable 
+*   ~16~ 18 - supported glyphsets - 7 by Adobe (Cyrrilic 1, Greek 1, Greek 2, Latin 1,Latin 2, Latin 3, Latin 4), 9 by Google fonts (Cyrillic Core, Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African, Phonetic SinoExtension), and 2 by Koeberlin (Latin S and M)
 19 - opentype layout features (abvs, akhn, blwf, blws, ccmp, dlig, half, haln, locl, nukt, ordn, pres, psts, rkrf, rphf, sups, abvm, blwm and mark)
-*   70 - possible combinations of named instances
+*   70 -named instances in stat table, 2 along slant axis x 5 along width x 7 along weight axis
 *   100 - Hundred percent created using Open Source Software - mainly [Fontra](https://fontra.xyz) and [Fontforge](https://github.com/fontforge/fontforge).
-*   ~554~ 814 - Languages supported as per Shaperglot, 795 Latin based, 16 Devanagari Based, 2 Greek based and Tamil
-*   ~1044~ 1517 - unicode codepoints covered
-*   ~9982~ 13960 - glyphs drawn - considering all masters
-*   1.2 million possible instances if only integer values in each axis is considered.
- 
+*   ~814~ 844 - Languages supported as per Shaperglot, 795 Latin based, 16 Devanagari Based, 2 Greek based and Tamil
+*   ~1527~ 1644 - unicode codepoints covered
+*   ~13960~ 14952 - glyphs drawn - considering all masters
+*   1.2 million - possible instances, if only integer values in each axis is considered (20 possible values along slant x 100 along width x 600 along weight axis ), and inumerable if decimals values are considered
+
 ## Changelog
- 
+
 #### 10 October 2024 - Version 1.000
  * First Release
 
@@ -85,12 +82,15 @@ Following are some numbers associated with the of the typeface
   * Extension of Latin to include most African languages.
   * Extension of Greek to include Polytonic variant.
   * Addition of Tamil.
+#### October 2025 - Version 2.500
+* Addition of Cyrillic
+* Bug fixing in Latin
+
 
 #### Road Map for Version 3
 
-* Addition of Cyrillic
-* Further extension of Latin to support most Latin Based languages.
-
+* Addition of Odia
+* Further extension of Latin.
 
 
 
