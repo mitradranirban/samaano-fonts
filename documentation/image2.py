@@ -21,11 +21,11 @@ FONT_LICENSE = "OFL v1.1"
 AUXILIARY_FONT = "Helvetica"
 AUXILIARY_FONT_SIZE = 48
 
-LINE_ONE = "Everyone has the right "
-LINE_TWO = "Όλοι οι άνθρωποι γεννιούνται"
-LINE_THREE = "सभी को पूर्णतः समान रूप से हक़ है"
+LINE_ONE = "Everyone has the right Wičháša na wíŋyaŋ "
+LINE_TWO = "Όλοι οι άνθρωποι Каждый человек имеет"
+LINE_THREE = "सभी को पूर्णतः समान बेनान म्हीकादे प्रतिष्ठा थेन"
 LINE_FOUR = "அவர்களது உரிமைகள், கடப்பாடுகள்"
-BIG_TEXT_FONT_SIZE = 120
+BIG_TEXT_FONT_SIZE = 96
 BIG_TEXT_SIDE_MARGIN = MARGIN * 1
 BIG_TEXT_BOTTOM_MARGIN = MARGIN * 5.45
 
