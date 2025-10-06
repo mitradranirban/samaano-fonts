@@ -2,6 +2,7 @@
 @CombiningTopAccents=[\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0305 \uni0306 \uni0307 
 	\uni0308 \hookabovecomb \uni030A \uni030B \uni030C \uni030F \uni0310 
 	\uni0311 \uni0312 \uni031B ];
+@Numbers=[\zero \one \two \three \four \five \six \seven \eight \nine];
 
 languagesystem DFLT dflt;
 languagesystem dev2 dflt;
@@ -60,10 +61,55 @@ lookup supsSuperscriptinLatinlookup16 {
     sub \zero by \uni2070 ;
 } supsSuperscriptinLatinlookup16;
 
+lookup sinfScientificInferiorsinLatinlookup3 {
+  lookupflag 0;
+    sub \zero by \uni2080 ;
+    sub \one by \uni2081 ;
+    sub \two by \uni2082 ;
+    sub \three by \uni2083 ;
+    sub \four by \uni2084 ;
+    sub \five by \uni2085 ;
+    sub \six by \uni2086 ;
+    sub \seven by \uni2087 ;
+    sub \eight by \uni2088 ;
+    sub \nine by \uni2089 ;
+} sinfScientificInferiorsinLatinlookup3;
+
+ 
+
+lookup ordnOrdinalsinLatinlookup5 {
+  lookupflag UseMarkFilteringSet @Numbers;
+
+    sub [\zero \one \two \three \four \five \six \nine \seven \eight ] [\a \A ]' by ordfeminine ;
+    sub [\zero \one \two \three \four \five \six \nine \seven \eight ] [\o \O ]' by ordmasculine ;
+} ordnOrdinalsinLatinlookup5;
+
 lookup ordnOrdinalsinLatinlookup20 {
   lookupflag 0;
     sub \N \o \period  by \uni2116;
 } ordnOrdinalsinLatinlookup20;
+
+lookup fracDiagonalFractionsinLatinlookup2 {
+  lookupflag 0;
+    sub \one \slash \two  by \onehalf;
+    sub \one \fraction \two  by \onehalf;
+    sub \one \slash \three  by \onethird;
+    sub \one \fraction \three  by \onethird;
+    sub \one \slash \four  by \onequarter;
+    sub \one \fraction \four  by \onequarter;
+    sub \one \slash \eight  by \oneeighth;
+    sub \one \fraction \eight  by \oneeighth;
+    sub \two \slash \three  by \twothirds;
+    sub \two \fraction \three  by \twothirds;
+    sub \three \slash \four  by \threequarters;
+    sub \three \fraction \four  by \threequarters;
+    sub \three \slash \eight  by \threeeighths;
+    sub \three \fraction \eight  by \threeeighths;
+    sub \five \slash \eight  by \fiveeighths;
+    sub \five \fraction \eight  by \fiveeighths;
+    sub \seven \slash \eight  by \seveneighths;
+    sub \seven \fraction \eight  by \seveneighths;
+} fracDiagonalFractionsinLatinlookup2;
 
 lookup nuktNuktaFormsinDevanagari2lookup0 {
   lookupflag 0;
@@ -172,8 +218,8 @@ lookup halfHalfFormsinDevanagari2lookup0 {
     sub \uni092D \uni094D  by \uni092D_uni094D.half;
     sub \uni092E \uni094D  by \uni092E_uni094D.half;
     sub \uni092F \uni094D  by \uni092F_uni094D.half;
-    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0930 \uni094D  by \uni0930_uni094D.half;
+    sub \uni0931 \uni094D  by \uni0930_uni094D.half;
     sub \uni0932 \uni094D  by \uni0932_uni094D.half;
     sub \uni0933 \uni094D  by \uni0933_uni094D.half;
     sub \uni0934 \uni094D  by \uni0934_uni094D.half;
@@ -355,24 +401,41 @@ feature sups {
      language dflt ;
       lookup supsSuperscriptinLatinlookup16;
 } sups;
+feature sinf {
+ script DFLT;
+     language dflt ;
+      lookup sinfScientificInferiorsinLatinlookup3;
+ script latn;
+     language dflt ;
+      lookup sinfScientificInferiorsinLatinlookup3;
+} sinf;
 
 feature ordn {
 
  script DFLT;
      language dflt ;
       lookup ordnOrdinalsinLatinlookup20;
-
+      lookup ordnOrdinalsinLatinlookup5;
  script latn;
      language dflt ;
       lookup ordnOrdinalsinLatinlookup20;
+      lookup ordnOrdinalsinLatinlookup5;
 } ordn;
+
+feature frac {
+ script DFLT;
+     language dflt ;
+      lookup fracDiagonalFractionsinLatinlookup2;
+ script latn;
+     language dflt ;
+      lookup fracDiagonalFractionsinLatinlookup2;
+} frac;
 
 feature nukt {
 
  script DFLT;
      language dflt ;
       lookup nuktNuktaFormsinDevanagari2lookup0;
-
  script dev2;
      language dflt ;
       lookup nuktNuktaFormsinDevanagari2lookup0;
@@ -1183,20 +1246,21 @@ feature blwm {
 	\uni037E \uni0394 \uni03A9 \uni03BC \uni03CF \uni03D7 \uni0400 \uni0401 \uni0402 
 	\uni0403 \uni0404 \uni0405 \uni0406 \uni0407 \uni0408 \uni0409 \uni040A \uni040B 
 	\uni040C \uni040D \uni040E \uni040F \uni0410 \uni0411 \uni0412 \uni0413 \uni0414 
-	\uni0416 \uni0417 \uni0418 \uni0419 \uni041A \uni041B \uni041C \uni041D \uni041E 
-	\uni041F \uni0420 \uni0421 \uni0422 \uni0423 \uni0424 \uni0425 \uni0426 \uni0427 
-	\uni0428 \uni0429 \uni042A \uni042B \uni042C \uni042D \uni042E \uni042F \uni0430 
-	\uni0431 \uni0432 \uni0433 \uni0434 \uni0435 \uni0436 \uni0437 \uni0438 \uni0439 
-	\uni043A \uni043B \uni043C \uni043D \uni043E \uni043F \uni0440 \uni0441 \uni0442 
-	\uni0443 \uni0444 \uni0445 \uni0446 \uni0447 \uni0448 \uni0449 \uni044A \uni044B 
-	\uni044C \uni044D \uni044E \uni044F \uni0450 \uni0451 \uni0452 \uni0453 \uni0454 
-	\uni0455 \uni0457 \uni0458 \uni0459 \uni045A \uni045B \uni045C \uni045D \uni045E 
-	\uni045F \uni0462 \uni0463 \uni0470 \uni0471 \uni0472 \uni0473 \uni0474 \uni0475 
-	\uni0490 \uni0491 \uni04E8 \uni04E9 \uni0903 \uni0904 \uni0905 \uni0906 \uni0907 
-	\uni0908 \uni0909 \uni090A \uni090B \uni090C \uni090D \uni090E \uni090F \uni0910 
-	\uni0911 \uni0912 \uni0913 \uni0914 \uni0915 \uni0915_uni094D.half 
-	\uni0915_uni094D_uni0937_uni094D \uni0916 \uni0916_uni094D.half \uni0917 
-	\uni0918 \uni0919 \uni091A \uni091A_uni0930_uni094D.vatu \uni091B \uni091C 
+	\uni0415 \uni0416 \uni0417 \uni0418 \uni0419 \uni041A \uni041B \uni041C \uni041D 
+	\uni041E \uni041F \uni0420 \uni0421 \uni0422 \uni0423 \uni0424 \uni0425 \uni0426 
+	\uni0427 \uni0428 \uni0429 \uni042A \uni042B \uni042C \uni042D \uni042E \uni042F 
+	\uni0430 \uni0431 \uni0432 \uni0433 \uni0434 \uni0435 \uni0436 \uni0437 \uni0438 
+	\uni0439 \uni043A \uni043B \uni043C \uni043D \uni043E \uni043F \uni0440 \uni0441 
+	\uni0442 \uni0443 \uni0444 \uni0445 \uni0446 \uni0447 \uni0448 \uni0449 \uni044A 
+	\uni044B \uni044C \uni044D \uni044E \uni044F \uni0450 \uni0451 \uni0452 \uni0453 
+	\uni0454 \uni0455 \uni0456 \uni0457 \uni0458 \uni0459 \uni045A \uni045B \uni045C 
+	\uni045D \uni045E \uni045F \uni0462 \uni0463 \uni0470 \uni0471 \uni0472 \uni0473 
+	\uni0474 \uni0475 \uni0490 \uni0491 \uni04E8 \uni04E9 \uni0903 \uni0904 \uni0905 
+	\uni0906 \uni0907 \uni0908 \uni0909 \uni090A \uni090B \uni090C \uni090D \uni090E 
+	\uni090F \uni0910 \uni0911 \uni0912 \uni0913 \uni0914 \uni0915 
+	\uni0915_uni094D.half \uni0915_uni094D_uni0937_uni094D \uni0916 
+	\uni0916_uni094D.half \uni0917 \uni0918 \uni0919 \uni091A 
+	\uni091A_uni0930_uni094D.vatu \uni091B \uni091C 
 	\uni091C_uni0930_uni094D.vatu \uni091C_uni094D_uni091E_uni094D \uni091D 
 	\uni091E \uni091F \uni0920 \uni0921 \uni0922 \uni0922_uni0930_uni094D.vatu 
 	\uni0923 \uni0923_uni0930_uni094D.vatu \uni0924 \uni0925 \uni0926 \uni0927 
