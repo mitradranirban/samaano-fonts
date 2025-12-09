@@ -24,7 +24,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1765292156
-ModificationTime: 1765292156
+ModificationTime: 1765295564
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -76,10 +76,17 @@ Lookup: 4 0 0 "akhnAkhandinTamil2lookup30" { "akhnAkhandinTamil2lookup30 subtabl
 Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinTamil2lookup31" { "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable"  } ['blws' ('tml2' <'dflt' > ) ]
 Lookup: 4 0 0 "pstsPostBaseSubstitutioninTamil2lookup32" { "pstsPostBaseSubstitutioninTamil2lookup32 subtable"  } ['psts' ('tml2' <'dflt' > ) ]
 Lookup: 4 0 0 "nuktNuktaFormsinOriya2lookup41" { "nuktNuktaFormsinOriya2lookup41 subtable"  } ['nukt' ('ory2' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'akhn' Akhand in Oriya2 lookup 42" { "'akhn' Akhand in Oriya2 lookup 42-1"  } ['akhn' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
+Lookup: 4 0 0 "'rphf' Reph Form in Oriya2 lookup 43" { "'rphf' Reph Form in Oriya2 lookup 43-1"  } ['rphf' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
+Lookup: 4 0 0 "'blwf' Below Base Forms in Oriya2 lookup 44" { "'blwf' Below Base Forms in Oriya2 lookup 44-1"  } ['blwf' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
+Lookup: 4 0 0 "'pstf' Post Base Forms in Oriya2 lookup 45" { "'pstf' Post Base Forms in Oriya2 lookup 45-1"  } ['pstf' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinTamil2lookup33" { "abvmAboveBaseMarkinTamil2lookup33 subtable"  } ['abvm' ('tml2' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 0 0 "'abvm' Above Base Mark in Oriya2 lookup 47" { "'abvm' Above Base Mark in Oriya2 lookup 47-1"  } ['abvm' ('ory2' <'dflt' > ) ]
+Lookup: 260 0 0 "'blwm' Below Base Mark in Oriya2 lookup 48" { "'blwm' Below Base Mark in Oriya2 lookup 48-1"  } ['blwm' ('ory2' <'dflt' > ) ]
+MarkAttachClasses: 1
 MarkAttachSets: 2
 "CombiningTopAccents" 155 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030F uni0310 uni0311 uni0312 uni031B
 "Numbers" 49 zero one two three four five six seven eight nine
@@ -129,6 +136,8 @@ DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
 WinInfo: 0 8 2
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 1548 m 0
  2048 1548 l 1024
@@ -137,7 +146,7 @@ Grid
 -2048 1024 m 0
  2048 1024 l 1024
 EndSplineSet
-AnchorClass2: "abvm_taml" "abvmAboveBaseMarkinTamil2lookup33 subtable" "abvm_ta"""  "abvm_or"""  "blwm2_or"""  "blwm1_or"""  "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
+AnchorClass2: "blwm1_or" "'blwm' Below Base Mark in Oriya2 lookup 48-1" "blwm2_or" "'blwm' Below Base Mark in Oriya2 lookup 48-1" "abvm_or" "'abvm' Above Base Mark in Oriya2 lookup 47-1" "abvm_taml" "abvmAboveBaseMarkinTamil2lookup33 subtable" "abvm_ta"""  "abvm_or"""  "blwm2_or"""  "blwm1_or"""  "blwm_deva" "blwmBelowBaseMarkinDevanagari2lookup2 subtable" "abvm_deva" "abvmAboveBaseMarkinDevanagari2lookup1 subtable" "base" "markMarkPositioninglookup0 subtable" "top" "markMarkPositioninglookup0 subtable"
 BeginChars: 2060 2060
 
 StartChar: A
@@ -34389,6 +34398,9 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm1_or" 613 -2 basechar 0
+AnchorPoint: "blwm2_or" 864 -2 basechar 0
+AnchorPoint: "abvm_or" 497 1591 basechar 0
 AnchorPoint: "blwm1_or" 686 -12 basechar 0
 AnchorPoint: "blwm2_or" 937 -17 basechar 0
 AnchorPoint: "abvm_or" 512 1676 basechar 0
@@ -34498,6 +34510,7 @@ SplineSet
  273 1381 l 257
  213 1381 l 257
 EndSplineSet
+Ligature2: "'akhn' Akhand in Oriya2 lookup 42-1" uni0B15 uni0B4D uni0B37
 EndChar
 
 StartChar: uni0B16
@@ -34986,6 +34999,7 @@ SplineSet
  509 657 l 257
  449 657 l 257
 EndSplineSet
+Ligature2: "'akhn' Akhand in Oriya2 lookup 42-1" uni0B1C uni0B4D uni0B1E
 EndChar
 
 StartChar: uni0B1D
@@ -35211,6 +35225,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm1_or" 509 -73 basechar 0
 AnchorPoint: "blwm1_or" 509 -44 basechar 0
 LayerCount: 2
 Fore
@@ -35270,6 +35285,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "blwm1_or" 509 -73 basechar 0
 AnchorPoint: "blwm1_or" 509 -44 basechar 0
 LayerCount: 2
 Fore
@@ -36021,6 +36037,7 @@ Encoding: 1263 -1 1263
 GlifName: uni0B_30_uni0B_4D_.rphf
 Width: 0
 VWidth: 0
+AnchorPoint: "abvm_or" -13 1011 mark 0
 AnchorPoint: "abvm_or" -8 968 mark 0
 LayerCount: 2
 Fore
@@ -36036,6 +36053,7 @@ SplineSet
  -365 1282 l 257
  -425 1283 l 257
 EndSplineSet
+Ligature2: "'rphf' Reph Form in Oriya2 lookup 43-1" uni0B30 uni0B4D
 EndChar
 
 StartChar: uni0B32
@@ -36386,6 +36404,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: W
+AnchorPoint: "blwm1_or" -8 262 mark 0
 AnchorPoint: "blwm1_or" 2 140 mark 0
 LayerCount: 2
 Fore
@@ -36507,6 +36526,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: W
+AnchorPoint: "blwm2_or" 7 -88 mark 0
 AnchorPoint: "blwm2_or" -1 -94 mark 0
 LayerCount: 2
 Fore
@@ -36546,6 +36566,7 @@ Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: W
+AnchorPoint: "blwm2_or" -3 128 mark 0
 AnchorPoint: "blwm2_or" -3 128 mark 0
 LayerCount: 2
 Fore
@@ -36764,6 +36785,7 @@ Encoding: 1285 -1 1285
 GlifName: uni0B_4D__uni0B_15.blwf
 Width: 0
 VWidth: 0
+AnchorPoint: "blwm1_or" -267 6 mark 0
 AnchorPoint: "blwm1_or" -342 -91 mark 0
 AnchorPoint: "blwm2_or" -131 -563 basechar 0
 LayerCount: 2
@@ -36795,6 +36817,7 @@ SplineSet
  -317 -411 l 257
  -606 -411 l 257
 EndSplineSet
+Ligature2: "'blwf' Below Base Forms in Oriya2 lookup 44-1" uni0B4D uni0B15
 EndChar
 
 StartChar: uni0B4D_uni0B16.blwf
@@ -36802,6 +36825,8 @@ Encoding: 1286 -1 1286
 GlifName: uni0B_4D__uni0B_16.blwf
 Width: 0
 VWidth: 0
+AnchorPoint: "blwm1_or" -355 -109 mark 0
+AnchorPoint: "blwm2_or" -49 -1103 basechar 0
 AnchorPoint: "blwm1_or" -291 -75 mark 0
 AnchorPoint: "blwm2_or" -12 -943 basechar 0
 LayerCount: 2
@@ -36853,6 +36878,7 @@ SplineSet
  -140 -1048 l 257
  -509 -1048 l 257
 EndSplineSet
+Ligature2: "'blwf' Below Base Forms in Oriya2 lookup 44-1" uni0B4D uni0B16
 EndChar
 
 StartChar: uni0B4D_uni0B2F.pstf
@@ -36864,6 +36890,8 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 1311 2931 N 1 0 0 1 0 0 2
+Ligature2: "'pstf' Post Base Forms in Oriya2 lookup 45-1" uni0B4D uni0B5F
+Ligature2: "'pstf' Post Base Forms in Oriya2 lookup 45-1" uni0B4D uni0B2F
 EndChar
 
 StartChar: uni0B55
@@ -52011,6 +52039,7 @@ Width: 1024
 VWidth: 0
 GlyphClass: 2
 Flags: W
+AnchorPoint: "abvm_or" 532 1133 basechar 0
 AnchorPoint: "blwm_deva" 742 67 basechar 0
 AnchorPoint: "top" 506 1246 basechar 0
 AnchorPoint: "base" 548 70 basechar 0

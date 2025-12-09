@@ -24,7 +24,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1765292155
-ModificationTime: 1765292155
+ModificationTime: 1765295095
 PfmFamily: 16
 TTFWeight: 700
 TTFWidth: 5
@@ -76,10 +76,15 @@ Lookup: 4 0 0 "akhnAkhandinTamil2lookup30" { "akhnAkhandinTamil2lookup30 subtabl
 Lookup: 4 0 0 "blwsBelowBaseSubstitutionsinTamil2lookup31" { "blwsBelowBaseSubstitutionsinTamil2lookup31 subtable"  } ['blws' ('tml2' <'dflt' > ) ]
 Lookup: 4 0 0 "pstsPostBaseSubstitutioninTamil2lookup32" { "pstsPostBaseSubstitutioninTamil2lookup32 subtable"  } ['psts' ('tml2' <'dflt' > ) ]
 Lookup: 4 0 0 "nuktNuktaFormsinOriya2lookup41" { "nuktNuktaFormsinOriya2lookup41 subtable"  } ['nukt' ('ory2' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'akhn' Akhand in Oriya2 lookup 42" { "'akhn' Akhand in Oriya2 lookup 42-1"  } ['akhn' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
+Lookup: 4 0 0 "'rphf' Reph Form in Oriya2 lookup 43" { "'rphf' Reph Form in Oriya2 lookup 43-1"  } ['rphf' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
+Lookup: 4 0 0 "'blwf' Below Base Forms in Oriya2 lookup 44" { "'blwf' Below Base Forms in Oriya2 lookup 44-1"  } ['blwf' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
+Lookup: 4 0 0 "'pstf' Post Base Forms in Oriya2 lookup 45" { "'pstf' Post Base Forms in Oriya2 lookup 45-1"  } ['pstf' ('DFLT' <'dflt' > 'ory2' <'dflt' > ) ]
 Lookup: 260 0 0 "markMarkPositioninglookup0" { "markMarkPositioninglookup0 subtable"  } ['mark' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinDevanagari2lookup1" { "abvmAboveBaseMarkinDevanagari2lookup1 subtable"  } ['abvm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "blwmBelowBaseMarkinDevanagari2lookup2" { "blwmBelowBaseMarkinDevanagari2lookup2 subtable"  } ['blwm' ('dev2' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "abvmAboveBaseMarkinTamil2lookup33" { "abvmAboveBaseMarkinTamil2lookup33 subtable"  } ['abvm' ('tml2' <'dflt' > 'DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 MarkAttachSets: 2
 "CombiningTopAccents" 155 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030F uni0310 uni0311 uni0312 uni031B
 "Numbers" 49 zero one two three four five six seven eight nine
@@ -128,7 +133,9 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 8 2
+WinInfo: 0 10 4
+BeginPrivate: 0
+EndPrivate
 Grid
 -2048 -612 m 0
  2048 -612 l 1024
@@ -34179,6 +34186,7 @@ SplineSet
  1045 1396 l 257
  845 1396 l 257
 EndSplineSet
+Ligature2: "'akhn' Akhand in Oriya2 lookup 42-1" uni0B15 uni0B4D uni0B37
 EndChar
 
 StartChar: uni0B16
@@ -34667,6 +34675,7 @@ SplineSet
  848 657 l 257
  648 657 l 257
 EndSplineSet
+Ligature2: "'akhn' Akhand in Oriya2 lookup 42-1" uni0B1C uni0B4D uni0B1E
 EndChar
 
 StartChar: uni0B1D
@@ -35717,6 +35726,7 @@ SplineSet
  -127 1282 l 257
  -328 1283 l 257
 EndSplineSet
+Ligature2: "'rphf' Reph Form in Oriya2 lookup 43-1" uni0B30 uni0B4D
 EndChar
 
 StartChar: uni0B32
@@ -36476,6 +36486,7 @@ SplineSet
  -433 -304 l 257
  -722 -304 l 257
 EndSplineSet
+Ligature2: "'blwf' Below Base Forms in Oriya2 lookup 44-1" uni0B4D uni0B15
 EndChar
 
 StartChar: uni0B4D_uni0B16.blwf
@@ -36534,6 +36545,7 @@ SplineSet
  -726 -921 l 257
  -1095 -921 l 257
 EndSplineSet
+Ligature2: "'blwf' Below Base Forms in Oriya2 lookup 44-1" uni0B4D uni0B16
 EndChar
 
 StartChar: uni0B4D_uni0B2F.pstf
@@ -36545,6 +36557,8 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 1309 2931 N 1 0 0 1 0 0 2
+Ligature2: "'pstf' Post Base Forms in Oriya2 lookup 45-1" uni0B4D uni0B5F
+Ligature2: "'pstf' Post Base Forms in Oriya2 lookup 45-1" uni0B4D uni0B2F
 EndChar
 
 StartChar: uni0B55
