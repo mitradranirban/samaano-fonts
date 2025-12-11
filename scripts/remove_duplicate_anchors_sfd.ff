@@ -1,0 +1,86 @@
+#!/usr/bin/env fontforge
+# FontForge Native Script for Removing Duplicate Anchors
+# Usage: fontforge -script remove_duplicate_anchors_sfd.ff MyFont.sfd
+
+import sys
+
+if len(sys.argv) != 2:
+    print("Usage: fontforge -script remove_duplicate_anchors_sfd.ff <path_to_sfd>")
+    print("")
+    print("Example:")
+    print("  fontforge -script remove_duplicate_anchors_sfd.ff MyFont.sfd")
+    sys.exit(1)
+
+sfd_path = sys.argv[1]
+
+print("Loading SFD font: " + sfd_path)
+Open(sfd_path)
+
+total_duplicates = 0
+glyphs_with_duplicates = []
+total_glyphs = 0
+
+# Iterate through all glyphs
+SelectNone()
+for glyph_name in list(fontforge.activeFont()):
+    total_glyphs += 1
+    glyph = fontforge.activeFont()[glyph_name]
+
+    # Get anchor points
+    anchors = glyph.anchorPoints
+
+    if len(anchors) == 0:
+        continue
+
+    # Track seen anchors (name, type) -> (x, y)
+    seen_anchors = {}
+    new_anchors = []
+    duplicates_in_glyph = []
+
+    for anchor in anchors:
+        anchor_name = anchor[0]
+        anchor_type = anchor[1]
+        anchor_x = anchor[2]
+        anchor_y = anchor[3]
+
+        anchor_key = (anchor_name, anchor_type)
+
+        if anchor_key in seen_anchors:
+            # Duplicate found
+            duplicates_in_glyph.append((anchor_name, anchor_type, anchor_x, anchor_y))
+            total_duplicates += 1
+        else:
+            # First occurrence
+            seen_anchors[anchor_key] = (anchor_x, anchor_y)
+            new_anchors.append(anchor)
+
+    # If duplicates found, update the glyph
+    if len(duplicates_in_glyph) > 0:
+        glyphs_with_duplicates.append(glyph_name)
+
+        # Clear all anchors
+        glyph.anchorPoints = ()
+
+        # Add back only unique anchors
+        for anchor in new_anchors:
+            glyph.addAnchorPoint(anchor[0], anchor[1], anchor[2], anchor[3])
+
+        # Report
+        for dup in duplicates_in_glyph:
+            print("  Removing duplicate anchor '" + dup[0] + "' (" + dup[1] + ") from glyph '" + glyph_name + "' at (" + str(dup[2]) + ", " + str(dup[3]) + ")")
+
+print("")
+print("Processed " + str(total_glyphs) + " glyphs")
+print("Found and removed " + str(total_duplicates) + " duplicate anchors in " + str(len(glyphs_with_duplicates)) + " glyphs")
+
+if len(glyphs_with_duplicates) > 0:
+    print("")
+    print("Glyphs with duplicates removed: " + ", ".join(glyphs_with_duplicates))
+    print("")
+    print("Saving changes to: " + sfd_path)
+    Save(sfd_path)
+    print("Done!")
+else:
+    print("No duplicates found. No changes made.")
+
+Close()
