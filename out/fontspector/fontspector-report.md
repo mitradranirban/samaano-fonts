@@ -4,17 +4,20 @@ fontspector version: 1.3.0
 
 
 
-## Checks with FATAL results
-
-These must be addressed first.
 
 
-<details><summary>[1] fonts/variable/Samaano[slnt,wdth,wght].ttf</summary>
+
+## Check results
+
+
+
+
+<details><summary>[22] fonts/variable/Samaano[slnt,wdth,wght].ttf</summary>
 <div>
 
 
 <details>
-    <summary>💥 <b>ERROR</b> Familyname must be unique according to namecheck.fontdata.com (fontdata_namecheck)</summary>
+    <summary>🔥 <b>FAIL</b> Checking font version fields (head and name table). (opentype/font_version)</summary>
     <div>
 
 
@@ -24,7 +27,7 @@ These must be addressed first.
 
 
 
-- 💥 **ERROR** Error: A network error occurred: Failed to access: http://namecheck.fontdata.com/. error sending request for url (http://namecheck.fontdata.com/api/?q=Samaano) 
+- 🔥 **FAIL** Font version mismatch: head table: 2.600006, name table: 2.5 [code: mismatch]
   
   
 
@@ -32,22 +35,35 @@ These must be addressed first.
 </details>
 
 
+
+
+
+<details>
+    <summary>🔥 <b>FAIL</b> Checking correctness of monospaced metadata. (opentype/monospace)</summary>
+    <div>
+
+
+
+
+
+
+
+
+- 🔥 **FAIL** On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+  
+  
+
+
+- ⚠️ **WARN** The OpenType spec recommends at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 1450 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+  
+  
+
 </div>
 </details>
 
 
 
-
-
-
-
-## All other checks
-
-
-
-
-<details><summary>[17] fonts/variable/Samaano[slnt,wdth,wght].ttf</summary>
-<div>
 
 
 <details>
@@ -74,7 +90,7 @@ These must be addressed first.
 
 
 <details>
-    <summary>🔥 <b>FAIL</b> Glyph names are all valid? (valid_glyphnames)</summary>
+    <summary>🔥 <b>FAIL</b> Ensure the font supports case swapping for all its glyphs. (case_mapping)</summary>
     <div>
 
 
@@ -84,15 +100,38 @@ These must be addressed first.
 
 
 
-- 🔥 **FAIL** The following glyph names do not comply with naming conventions: Zhedieresis-cy, Iebreve-cy, Zedieresis-cy, zhedieresis-cy, Zhebreve-cy, zedieresis-cy, zhebreve-cy, iebreve-cy
+- 🔥 **FAIL** The following glyphs are missing case-swapping counterparts:
+
+| Glyph present in the font                     | Missing case-swapping counterpart               |
+|-----------------------------------------------|-------------------------------------------------|
+| U+026C: LATIN SMALL LETTER L WITH BELT        | U+A7AD: LATIN CAPITAL LETTER L WITH BELT        |
+| U+019B: LATIN SMALL LETTER LAMBDA WITH STROKE | U+A7DC: LATIN CAPITAL LETTER LAMBDA WITH STROKE | [code: missing-case-counterparts]
+  
+  
+
+</div>
+</details>
 
 
-                A glyph name must be entirely comprised of characters
-                from the following set: A-Z a-z 0-9 .(period) _(underscore).
-                A glyph name must not start with a digit or period.
-                There are a few exceptions such as the special glyph '.notdef'.
-                The glyph names "twocents", "a1", and "_" are all valid,
-                while "2cents" and ".twocents" are not.' [code: found-invalid-names]
+
+
+
+<details>
+    <summary>🔥 <b>FAIL</b> Ensure dotted circle glyph is present and can attach marks. (dotted_circle)</summary>
+    <div>
+
+
+
+
+
+
+
+
+- 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
+
+* uni0B3C
+* uni0B41
+* uni0B42 [code: unattached-dotted-circle-marks]
   
   
 
@@ -128,6 +167,28 @@ These must be addressed first.
 
 
 <details>
+    <summary>🔥 <b>FAIL</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (googlefonts/use_typo_metrics)</summary>
+    <div>
+
+
+
+
+
+
+
+
+- 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) was NOT set. [code: missing-os2-fsselection-bit7]
+  
+  
+
+</div>
+</details>
+
+
+
+
+
+<details>
     <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. (opentype/GDEF_mark_chars)</summary>
     <div>
 
@@ -140,42 +201,14 @@ These must be addressed first.
 
 - ⚠️ **WARN** The following mark characters should be in the GDEF mark glyph class:
 * U+035C (uni035C)
-* U+0B01 (uni0B01)
-* U+0B3C (uni0B3C)
 * U+0B3F (uni0B3F)
-* U+0B41 (uni0B41)
-* U+0B42 (uni0B42)
 * U+0B43 (uni0B43)
 * U+0B44 (uni0B44)
 * U+0B4D (uni0B4D)
 * U+0B55 (uni0B55)
 * U+0B56 (uni0B56)
 * U+0B62 (uni0B62)
-* U+0B63 (uni0B63)
-* U+1DCA (uni1DCA) [code: mark-chars]
-  
-  
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Checking correctness of monospaced metadata. (opentype/monospace)</summary>
-    <div>
-
-
-
-
-
-
-
-
-- ⚠️ **WARN** The OpenType spec recommends at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 1866 instead.
-Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
+* U+0B63 (uni0B63) [code: mark-chars]
   
   
 
@@ -245,250 +278,338 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 
     The following glyphs do not have the recommended number of contours:
-* AE (U+00C6): found 5, expected one of: {1, 6, 2, 3, 4}
-* AEacute (U+01FC): found 6, expected one of: {3, 4, 7, 2, 5}
-* Abreve (U+0102): found 7, expected one of: {3, 4, 2, 5}
-* Acircumflex (U+00C2): found 6, expected one of: {2, 4, 5, 3}
+* AE (U+00C6): found 5, expected one of: {4, 1, 2, 6, 3}
+* AEacute (U+01FC): found 6, expected one of: {2, 5, 4, 3, 7}
+* Abreve (U+0102): found 7, expected one of: {3, 2, 5, 4}
+* Acircumflex (U+00C2): found 6, expected one of: {2, 4, 3, 5}
 * Alpha (U+0391): found 4, expected one of: {2}
 * Alphatonos (U+0386): found 5, expected one of: {3}
 * Aogonek (U+0104): found 7, expected one of: {3, 2, 4}
-* Aring (U+00C5): found 6, expected one of: {4, 3, 5}
-* Aringacute (U+01FA): found 7, expected one of: {4, 5}
-* Atilde (U+00C3): found 7, expected one of: {5, 3, 4, 2}
-* B (U+0042): found 9, expected one of: {1, 3, 4, 2}
-* Beta (U+0392): found 9, expected one of: {2, 3}
+* Aring (U+00C5): found 6, expected one of: {3, 5, 4}
+* Aringacute (U+01FA): found 7, expected one of: {5, 4}
+* Atilde (U+00C3): found 7, expected one of: {4, 3, 2, 5}
+* B (U+0042): found 9, expected one of: {1, 2, 4, 3}
+* Beta (U+0392): found 9, expected one of: {3, 2}
 * Ccaron (U+010C): found 5, expected one of: {2, 4, 3}
-* Ccedilla (U+00C7): found 7, expected one of: {4, 1, 3, 2}
+* Ccedilla (U+00C7): found 7, expected one of: {4, 2, 3, 1}
 * Ccircumflex (U+0108): found 5, expected one of: {2, 3}
 * Chi (U+03A7): found 2, expected one of: {1}
-* D (U+0044): found 5, expected one of: {4, 2, 1, 3}
-* Dcaron (U+010E): found 7, expected one of: {4, 2, 3}
-* Dcroat (U+0110): found 6, expected one of: {4, 2, 1, 3}
+* D (U+0044): found 5, expected one of: {1, 3, 2, 4}
+* Dcaron (U+010E): found 7, expected one of: {3, 2, 4}
+* Dcroat (U+0110): found 6, expected one of: {1, 3, 2, 4}
 * Delta (U+2206): found 3, expected one of: {2}
-* Ebreve (U+0114): found 7, expected one of: {4, 3, 2, 5}
-* Eogonek (U+0118): found 7, expected one of: {4, 5, 3, 1, 2}
+* Ebreve (U+0114): found 7, expected one of: {5, 2, 4, 3}
+* Eogonek (U+0118): found 7, expected one of: {5, 1, 2, 4, 3}
 * Epsilon (U+0395): found 4, expected one of: {1}
 * Epsilontonos (U+0388): found 5, expected one of: {2}
 * Eth (U+00D0): found 6, expected one of: {2, 3, 1, 4}
-* Euro (U+20AC): found 5, expected one of: {4, 2, 1, 3}
-* G (U+0047): found 4, expected one of: {2, 1, 3}
+* Euro (U+20AC): found 5, expected one of: {2, 1, 4, 3}
+* G (U+0047): found 4, expected one of: {3, 1, 2}
 * Gamma (U+0393): found 2, expected one of: {1}
-* Gbreve (U+011E): found 7, expected one of: {3, 2, 4}
+* Gbreve (U+011E): found 7, expected one of: {3, 4, 2}
 * Gcaron (U+01E6): found 6, expected one of: {2, 3}
-* Gcircumflex (U+011C): found 6, expected one of: {3, 2, 4}
-* Gdotaccent (U+0120): found 5, expected one of: {4, 2, 3}
-* IJ (U+0132): found 6, expected one of: {1, 3, 4, 2}
+* Gcircumflex (U+011C): found 6, expected one of: {4, 2, 3}
+* Gcommaaccent (U+0122): found 6, expected one of: {4, 3, 2}
+* Gdotaccent (U+0120): found 5, expected one of: {2, 3, 4}
+* IJ (U+0132): found 6, expected one of: {3, 2, 4, 1}
 * Ibreve (U+012C): found 6, expected one of: {3, 2, 4}
-* Icircumflex (U+00CE): found 5, expected one of: {4, 2, 3}
-* Iebreve-cy (U+04D6): found 7, expected one of: {4, 2, 3}
-* Iogonek (U+012E): found 6, expected one of: {4, 2, 1, 3}
+* Icircumflex (U+00CE): found 5, expected one of: {3, 2, 4}
+* Iogonek (U+012E): found 6, expected one of: {1, 2, 4, 3}
 * Iota (U+0399): found 3, expected one of: {1}
 * Iotadieresis (U+03AA): found 5, expected one of: {3}
 * Iotatonos (U+038A): found 4, expected one of: {2}
-* Itilde (U+0128): found 6, expected one of: {3, 4, 2}
-* Jcircumflex (U+0134): found 5, expected one of: {2, 3}
+* Itilde (U+0128): found 6, expected one of: {2, 3, 4}
+* Jcircumflex (U+0134): found 5, expected one of: {3, 2}
 * Kappa (U+039A): found 3, expected one of: {2, 1}
+* Kcommaaccent (U+0136): found 5, expected one of: {3, 2, 4}
 * Lambda (U+039B): found 2, expected one of: {1}
-* M (U+004D): found 4, expected one of: {3, 1, 2}
+* M (U+004D): found 4, expected one of: {1, 2, 3}
 * Mu (U+039C): found 4, expected one of: {1}
-* Ncaron (U+0147): found 5, expected one of: {3, 2, 4}
-* Ntilde (U+00D1): found 6, expected one of: {2, 4, 3}
+* Ncaron (U+0147): found 5, expected one of: {4, 3, 2}
+* Ncommaaccent (U+0145): found 5, expected one of: {3, 2, 4}
+* Ntilde (U+00D1): found 6, expected one of: {4, 2, 3}
 * Nu (U+039D): found 3, expected one of: {1}
-* Oacute (U+00D3): found 5, expected one of: {4, 3, 2}
-* Obreve (U+014E): found 7, expected one of: {3, 4, 2}
+* Oacute (U+00D3): found 5, expected one of: {2, 3, 4}
+* Obreve (U+014E): found 7, expected one of: {2, 4, 3}
 * Ocircumflex (U+00D4): found 6, expected one of: {4, 2, 3}
 * Odieresis (U+00D6): found 6, expected one of: {4, 5, 3}
-* Ograve (U+00D2): found 5, expected one of: {3, 4, 2}
-* Ohorn (U+01A0): found 6, expected one of: {2, 3}
-* Ohungarumlaut (U+0150): found 6, expected one of: {5, 4, 3}
+* Ograve (U+00D2): found 5, expected one of: {3, 2, 4}
+* Ohorn (U+01A0): found 6, expected one of: {3, 2}
+* Ohungarumlaut (U+0150): found 6, expected one of: {3, 4, 5}
 * Omacron (U+014C): found 5, expected one of: {4, 3, 2}
 * Omega (U+2126): found 9, expected one of: {1}
 * Omegatonos (U+038F): found 10, expected one of: {2}
 * Omicron (U+039F): found 4, expected one of: {2}
 * Omicrontonos (U+038C): found 5, expected one of: {3}
-* Otilde (U+00D5): found 7, expected one of: {2, 3, 4}
-* P (U+0050): found 4, expected one of: {2, 1, 3}
+* Otilde (U+00D5): found 7, expected one of: {4, 3, 2}
+* P (U+0050): found 4, expected one of: {1, 3, 2}
 * Phi (U+03A6): found 5, expected one of: {3}
 * Pi (U+03A0): found 3, expected one of: {1}
 * Psi (U+03A8): found 4, expected one of: {1, 2}
-* Q (U+0051): found 5, expected one of: {2, 1, 4, 3}
-* R (U+0052): found 5, expected one of: {1, 4, 3, 2}
-* Racute (U+0154): found 6, expected one of: {4, 2, 5, 3}
-* Rcaron (U+0158): found 7, expected one of: {3, 4, 5, 2}
+* Q (U+0051): found 5, expected one of: {2, 1, 3, 4}
+* R (U+0052): found 5, expected one of: {3, 1, 2, 4}
+* Racute (U+0154): found 6, expected one of: {5, 4, 2, 3}
+* Rcaron (U+0158): found 7, expected one of: {5, 2, 3, 4}
+* Rcommaaccent (U+0156): found 7, expected one of: {4, 2, 5, 3}
 * Rho (U+03A1): found 4, expected one of: {2, 1}
-* S (U+0053): found 5, expected one of: {1, 2, 3}
-* Sacute (U+015A): found 6, expected one of: {3, 4, 2}
-* Scaron (U+0160): found 7, expected one of: {4, 2, 3}
-* Scedilla (U+015E): found 9, expected one of: {3, 2, 1}
-* Scircumflex (U+015C): found 7, expected one of: {4, 3, 2}
+* S (U+0053): found 5, expected one of: {2, 1, 3}
+* Sacute (U+015A): found 6, expected one of: {4, 3, 2}
+* Scaron (U+0160): found 7, expected one of: {3, 4, 2}
+* Scedilla (U+015E): found 9, expected one of: {1, 2, 3}
+* Scircumflex (U+015C): found 7, expected one of: {2, 4, 3}
+* Scommaaccent (U+0218): found 7, expected one of: {3, 2, 4}
 * Sigma (U+03A3): found 4, expected one of: {1}
 * Tau (U+03A4): found 2, expected one of: {1}
+* Tcommaaccent (U+0162): found 6, expected one of: {2, 1, 3}
 * Theta (U+0398): found 5, expected one of: {3}
-* Ubreve (U+016C): found 6, expected one of: {4, 2, 3}
-* Ucircumflex (U+00DB): found 5, expected one of: {4, 2, 3}
-* Uhorn (U+01AF): found 5, expected one of: {1, 2}
-* Uogonek (U+0172): found 6, expected one of: {2, 3, 1, 4}
+* Ubreve (U+016C): found 6, expected one of: {3, 4, 2}
+* Ucircumflex (U+00DB): found 5, expected one of: {3, 4, 2}
+* Uhorn (U+01AF): found 5, expected one of: {2, 1}
+* Uogonek (U+0172): found 6, expected one of: {1, 3, 4, 2}
 * Upsilon (U+03A5): found 4, expected one of: {1}
 * Upsilondieresis (U+03AB): found 6, expected one of: {3}
 * Upsilontonos (U+038E): found 5, expected one of: {2}
-* Utilde (U+0168): found 6, expected one of: {3, 4, 2}
-* Wcircumflex (U+0174): found 6, expected one of: {5, 4, 3, 2}
-* Y (U+0059): found 4, expected one of: {3, 2, 1}
-* Yacute (U+00DD): found 5, expected one of: {3, 2, 4}
+* Utilde (U+0168): found 6, expected one of: {4, 3, 2}
+* Wcircumflex (U+0174): found 6, expected one of: {2, 4, 5, 3}
+* Y (U+0059): found 4, expected one of: {2, 1, 3}
+* Yacute (U+00DD): found 5, expected one of: {2, 3, 4}
 * Ycircumflex (U+0176): found 6, expected one of: {2, 3, 4}
-* Ydieresis (U+0178): found 6, expected one of: {4, 3, 5}
-* Ygrave (U+1EF2): found 5, expected one of: {4, 3, 2}
-* Zcaron (U+017D): found 5, expected one of: {2, 4, 3}
-* Zedieresis-cy (U+04DE): found 9, expected one of: {3}
+* Ydieresis (U+0178): found 6, expected one of: {3, 4, 5}
+* Ygrave (U+1EF2): found 5, expected one of: {2, 3, 4}
+* Zcaron (U+017D): found 5, expected one of: {4, 3, 2}
 * Zeta (U+0396): found 3, expected one of: {1}
-* Zhebreve-cy (U+04C1): found 8, expected one of: {6, 4, 3, 2}
-* a (U+0061): found 5, expected one of: {1, 2, 3}
-* aacute (U+00E1): found 6, expected one of: {3, 2, 4}
-* abreve (U+0103): found 8, expected one of: {3, 4, 2}
-* acircumflex (U+00E2): found 7, expected one of: {4, 2, 3}
-* adieresis (U+00E4): found 7, expected one of: {4, 5, 3}
-* ae (U+00E6): found 6, expected one of: {4, 1, 3, 2}
-* aeacute (U+01FD): found 7, expected one of: {5, 4, 2, 3}
-* agrave (U+00E0): found 6, expected one of: {3, 2, 4}
+* a (U+0061): found 5, expected one of: {2, 1, 3}
+* aacute (U+00E1): found 6, expected one of: {4, 3, 2}
+* abreve (U+0103): found 8, expected one of: {2, 3, 4}
+* acircumflex (U+00E2): found 7, expected one of: {2, 3, 4}
+* adieresis (U+00E4): found 7, expected one of: {3, 4, 5}
+* ae (U+00E6): found 6, expected one of: {2, 1, 3, 4}
+* aeacute (U+01FD): found 7, expected one of: {5, 2, 4, 3}
+* afii10017 (U+0410): found 4, expected one of: {2, 3}
+* afii10018 (U+0411): found 5, expected one of: {2, 3, 1}
+* afii10019 (U+0412): found 9, expected one of: {3, 1, 2}
+* afii10021 (U+0414): found 6, expected one of: {3, 2}
+* afii10022 (U+0415): found 4, expected one of: {2, 1}
+* afii10023 (U+0401): found 6, expected one of: {3, 4}
+* afii10025 (U+0417): found 7, expected one of: {2, 1}
+* afii10027 (U+0419): found 6, expected one of: {4, 2}
+* afii10029 (U+041B): found 4, expected one of: {3, 2, 1}
+* afii10030 (U+041C): found 4, expected one of: {3, 1, 2}
+* afii10032 (U+041E): found 4, expected one of: {2, 1}
+* afii10034 (U+0420): found 4, expected one of: {1, 2}
+* afii10035 (U+0421): found 3, expected one of: {1}
+* afii10037 (U+0423): found 4, expected one of: {2, 1}
+* afii10038 (U+0424): found 5, expected one of: {3}
+* afii10040 (U+0426): found 4, expected one of: {1, 2}
+* afii10041 (U+0427): found 3, expected one of: {2, 1}
+* afii10043 (U+0429): found 5, expected one of: {1, 2}
+* afii10044 (U+042A): found 5, expected one of: {1, 3, 2}
+* afii10045 (U+042B): found 5, expected one of: {3, 2}
+* afii10046 (U+042C): found 4, expected one of: {2, 1}
+* afii10047 (U+042D): found 5, expected one of: {2, 1}
+* afii10048 (U+042E): found 6, expected one of: {2, 3, 4, 1}
+* afii10049 (U+042F): found 5, expected one of: {2, 3, 1}
+* afii10050 (U+0490): found 3, expected one of: {2, 1}
+* afii10051 (U+0402): found 5, expected one of: {2, 3, 1}
+* afii10053 (U+0404): found 5, expected one of: {1, 2}
+* afii10054 (U+0405): found 5, expected one of: {1, 2}
+* afii10055 (U+0406): found 3, expected one of: {1}
+* afii10056 (U+0407): found 5, expected one of: {3}
+* afii10057 (U+0408): found 3, expected one of: {1, 2}
+* afii10058 (U+0409): found 7, expected one of: {3, 2, 1}
+* afii10059 (U+040A): found 5, expected one of: {2, 3, 1}
+* afii10060 (U+040B): found 4, expected one of: {2, 3, 1}
+* afii10062 (U+040E): found 7, expected one of: {3, 2}
+* afii10065 (U+0430): found 5, expected one of: {2, 1}
+* afii10066 (U+0431): found 5, expected one of: {1, 2}
+* afii10067 (U+0432): found 9, expected one of: {3, 1, 2}
+* afii10069 (U+0434): found 6, expected one of: {3, 4, 2}
+* afii10070 (U+0435): found 5, expected one of: {2, 1}
+* afii10071 (U+0451): found 7, expected one of: {3, 4}
+* afii10073 (U+0437): found 7, expected one of: {2, 1}
+* afii10075 (U+0439): found 6, expected one of: {4, 2}
+* afii10077 (U+043B): found 4, expected one of: {1, 3, 2}
+* afii10078 (U+043C): found 4, expected one of: {3, 1, 2}
+* afii10080 (U+043E): found 4, expected one of: {2}
+* afii10082 (U+0440): found 4, expected one of: {1, 3, 2}
+* afii10083 (U+0441): found 3, expected one of: {1}
+* afii10085 (U+0443): found 4, expected one of: {1, 2}
+* afii10086 (U+0444): found 5, expected one of: {3}
+* afii10088 (U+0446): found 4, expected one of: {2, 1, 3}
+* afii10089 (U+0447): found 3, expected one of: {1, 2}
+* afii10090 (U+0448): found 4, expected one of: {1}
+* afii10091 (U+0449): found 5, expected one of: {1, 3, 2}
+* afii10092 (U+044A): found 5, expected one of: {3, 1, 2}
+* afii10093 (U+044B): found 5, expected one of: {2, 1, 3}
+* afii10094 (U+044C): found 4, expected one of: {2, 1}
+* afii10095 (U+044D): found 5, expected one of: {1, 2}
+* afii10096 (U+044E): found 6, expected one of: {2, 4, 3}
+* afii10097 (U+044F): found 5, expected one of: {2, 3, 1}
+* afii10098 (U+0491): found 3, expected one of: {1, 2}
+* afii10099 (U+0452): found 5, expected one of: {3, 1, 2, 4}
+* afii10101 (U+0454): found 5, expected one of: {2, 1}
+* afii10102 (U+0455): found 5, expected one of: {2, 1}
+* afii10103 (U+0456): found 4, expected one of: {1, 2}
+* afii10104 (U+0457): found 5, expected one of: {3}
+* afii10105 (U+0458): found 4, expected one of: {1, 3, 2}
+* afii10106 (U+0459): found 7, expected one of: {1, 2, 3}
+* afii10107 (U+045A): found 5, expected one of: {3, 4, 1, 2}
+* afii10108 (U+045B): found 4, expected one of: {2, 1, 3}
+* afii10110 (U+045E): found 7, expected one of: {3, 2}
+* afii10145 (U+040F): found 4, expected one of: {1, 2}
+* afii10146 (U+0462): found 5, expected one of: {3, 2, 1}
+* afii10147 (U+0472): found 5, expected one of: {3}
+* afii10148 (U+0474): found 3, expected one of: {2, 1}
+* afii10193 (U+045F): found 4, expected one of: {2, 1, 3}
+* afii10194 (U+0463): found 5, expected one of: {2, 3, 4, 1}
+* afii10195 (U+0473): found 5, expected one of: {3}
+* afii10196 (U+0475): found 3, expected one of: {2, 1}
+* afii10846 (U+04D9): found 5, expected one of: {2, 1}
+* afii57636 (U+20AA): found 8, expected one of: {2, 3, 10}
+* afii61248 (U+2105): found 8, expected one of: {4}
+* afii61289 (U+2113): found 4, expected one of: {2, 1}
+* afii61352 (U+2116): found 8, expected one of: {6, 3, 4, 5}
+* agrave (U+00E0): found 6, expected one of: {2, 3, 4}
 * alpha (U+03B1): found 5, expected one of: {2}
 * alphatonos (U+03AC): found 6, expected one of: {3}
-* amacron (U+0101): found 6, expected one of: {4, 2, 3}
-* ampersand (U+0026): found 6, expected one of: {3, 1, 4, 2}
-* aogonek (U+0105): found 8, expected one of: {2, 4, 3, 1}
+* amacron (U+0101): found 6, expected one of: {3, 2, 4}
+* ampersand (U+0026): found 6, expected one of: {2, 3, 1, 4}
+* aogonek (U+0105): found 8, expected one of: {2, 1, 4, 3}
 * approxequal (U+2248): found 6, expected one of: {2}
-* aring (U+00E5): found 7, expected one of: {5, 4, 3}
-* aringacute (U+01FB): found 8, expected one of: {4, 5}
+* aring (U+00E5): found 7, expected one of: {4, 3, 5}
+* aringacute (U+01FB): found 8, expected one of: {5, 4}
 * arrowboth (U+2194): found 5, expected one of: {3, 1}
-* arrowdown (U+2193): found 3, expected one of: {2, 1}
-* arrowleft (U+2190): found 3, expected one of: {1, 2}
-* arrowright (U+2192): found 3, expected one of: {2, 1}
+* arrowdown (U+2193): found 3, expected one of: {1, 2}
+* arrowleft (U+2190): found 3, expected one of: {2, 1}
+* arrowright (U+2192): found 3, expected one of: {1, 2}
 * arrowup (U+2191): found 3, expected one of: {2, 1}
-* arrowupdn (U+2195): found 5, expected one of: {3, 1}
+* arrowupdn (U+2195): found 5, expected one of: {1, 3}
 * asciitilde (U+007E): found 3, expected one of: {1}
-* at (U+0040): found 9, expected one of: {2, 3, 4, 1}
-* atilde (U+00E3): found 8, expected one of: {2, 4, 3}
+* at (U+0040): found 9, expected one of: {2, 3, 1, 4}
+* atilde (U+00E3): found 8, expected one of: {4, 2, 3}
 * beta (U+03B2): found 5, expected one of: {2, 1}
-* braceleft (U+007B): found 6, expected one of: {2, 1}
-* braceright (U+007D): found 6, expected one of: {1, 2}
+* braceleft (U+007B): found 6, expected one of: {1, 2}
+* braceright (U+007D): found 6, expected one of: {2, 1}
 * breve (U+02D8): found 3, expected one of: {1}
 * cacute (U+0107): found 4, expected one of: {2}
 * caron (U+02C7): found 2, expected one of: {1}
-* ccaron (U+010D): found 5, expected one of: {3, 2}
-* ccedilla (U+00E7): found 7, expected one of: {2, 1, 3}
-* ccircumflex (U+0109): found 5, expected one of: {3, 2}
+* ccaron (U+010D): found 5, expected one of: {2, 3}
+* ccedilla (U+00E7): found 7, expected one of: {2, 3, 1}
+* ccircumflex (U+0109): found 5, expected one of: {2, 3}
 * cdotaccent (U+010B): found 4, expected one of: {2}
 * cedilla (U+00B8): found 4, expected one of: {1}
-* cent (U+00A2): found 4, expected one of: {3, 2, 1}
+* cent (U+00A2): found 4, expected one of: {3, 1, 2}
 * chi (U+03C7): found 4, expected one of: {1}
 * circumflex (U+02C6): found 2, expected one of: {1}
 * comma (U+002C): found 2, expected one of: {1}
 * copyright (U+00A9): found 7, expected one of: {2, 3}
-* currency (U+00A4): found 8, expected one of: {6, 2}
-* dcaron (U+010F): found 5, expected one of: {3, 4, 2}
-* dcroat (U+0111): found 5, expected one of: {2, 1, 4, 3}
-* delta (U+03B4): found 5, expected one of: {1, 2}
-* dollar (U+0024): found 6, expected one of: {1, 3, 2, 5}
-* dong (U+20AB): found 6, expected one of: {5, 3, 4}
+* currency (U+00A4): found 8, expected one of: {2, 6}
+* dcaron (U+010F): found 5, expected one of: {4, 2, 3}
+* dcroat (U+0111): found 5, expected one of: {4, 3, 2, 1}
+* delta (U+03B4): found 5, expected one of: {2, 1}
+* dollar (U+0024): found 6, expected one of: {1, 5, 3, 2}
+* dong (U+20AB): found 6, expected one of: {3, 5, 4}
 * dotlessi (U+0131): found 3, expected one of: {1, 2}
-* e (U+0065): found 5, expected one of: {1, 2}
+* e (U+0065): found 5, expected one of: {2, 1}
 * eacute (U+00E9): found 6, expected one of: {2, 3}
-* ebreve (U+0115): found 8, expected one of: {3, 2}
+* ebreve (U+0115): found 8, expected one of: {2, 3}
 * ecaron (U+011B): found 7, expected one of: {4, 3, 2}
-* ecircumflex (U+00EA): found 7, expected one of: {4, 3, 2}
+* ecircumflex (U+00EA): found 7, expected one of: {3, 4, 2}
 * edieresis (U+00EB): found 7, expected one of: {3, 4}
-* edotaccent (U+0117): found 6, expected one of: {2, 3}
-* egrave (U+00E8): found 6, expected one of: {2, 3}
+* edotaccent (U+0117): found 6, expected one of: {3, 2}
+* egrave (U+00E8): found 6, expected one of: {3, 2}
 * emacron (U+0113): found 6, expected one of: {3, 2}
 * emptyset (U+2205): found 5, expected one of: {3}
-* eng (U+014B): found 4, expected one of: {1, 2, 3}
-* eogonek (U+0119): found 8, expected one of: {2, 1, 3}
+* eng (U+014B): found 4, expected one of: {3, 1, 2}
+* eogonek (U+0119): found 8, expected one of: {3, 1, 2}
 * epsilon (U+03B5): found 5, expected one of: {1}
 * epsilontonos (U+03AD): found 6, expected one of: {2}
 * estimated (U+212E): found 8, expected one of: {2}
-* eta (U+03B7): found 3, expected one of: {1, 2}
-* etatonos (U+03AE): found 4, expected one of: {2, 3}
-* eth (U+00F0): found 5, expected one of: {2, 1, 3, 4}
+* eta (U+03B7): found 3, expected one of: {2, 1}
+* etatonos (U+03AE): found 4, expected one of: {3, 2}
+* eth (U+00F0): found 5, expected one of: {2, 3, 1, 4}
 * florin (U+0192): found 4, expected one of: {1, 2}
 * franc (U+20A3): found 4, expected one of: {2, 1}
-* g (U+0067): found 5, expected one of: {3, 1, 4, 2}
+* g (U+0067): found 5, expected one of: {1, 3, 2, 4}
 * gamma (U+03B3): found 3, expected one of: {2, 1}
-* gbreve (U+011F): found 8, expected one of: {3, 4, 5, 2}
+* gbreve (U+011F): found 8, expected one of: {2, 5, 4, 3}
 * gcaron (U+01E7): found 7, expected one of: {3, 2, 4, 5}
 * gcircumflex (U+011D): found 7, expected one of: {5, 3, 4, 2}
-* gdotaccent (U+0121): found 6, expected one of: {4, 2, 3, 5}
-* germandbls (U+00DF): found 9, expected one of: {2, 3, 1}
+* gcommaaccent (U+0123): found 7, expected one of: {3, 4, 5, 2}
+* gdotaccent (U+0121): found 6, expected one of: {4, 3, 2, 5}
+* germandbls (U+00DF): found 9, expected one of: {3, 1, 2}
 * greaterequal (U+2265): found 3, expected one of: {2}
 * guillemotleft (U+00AB): found 4, expected one of: {2}
 * guillemotright (U+00BB): found 4, expected one of: {2}
 * guilsinglleft (U+2039): found 2, expected one of: {1}
 * hcircumflex (U+0125): found 5, expected one of: {2, 3}
 * hookabovecomb (U+0309): found 4, expected one of: {1}
-* i (U+0069): found 4, expected one of: {2, 1, 3}
+* i (U+0069): found 4, expected one of: {3, 1, 2}
 * iacute (U+00ED): found 4, expected one of: {3, 2}
 * ibreve (U+012D): found 6, expected one of: {2}
-* icircumflex (U+00EE): found 5, expected one of: {2, 3}
+* icircumflex (U+00EE): found 5, expected one of: {3, 2}
 * idieresis (U+00EF): found 5, expected one of: {3}
-* iebreve-cy (U+04D7): found 8, expected one of: {2, 3}
 * igrave (U+00EC): found 4, expected one of: {3, 2}
-* ij (U+0133): found 8, expected one of: {2, 5, 3, 6, 4}
+* ij (U+0133): found 8, expected one of: {6, 4, 3, 5, 2}
 * imacron (U+012B): found 4, expected one of: {2, 3}
 * infinity (U+221E): found 8, expected one of: {3, 1, 2}
 * integral (U+222B): found 3, expected one of: {1}
-* iogonek (U+012F): found 7, expected one of: {4, 1, 2, 3}
+* iogonek (U+012F): found 7, expected one of: {2, 4, 3, 1}
 * iota (U+03B9): found 2, expected one of: {1}
 * iotadieresis (U+03CA): found 4, expected one of: {3}
 * iotadieresistonos (U+0390): found 5, expected one of: {4}
 * iotatonos (U+03AF): found 3, expected one of: {2}
 * itilde (U+0129): found 6, expected one of: {2}
-* j (U+006A): found 4, expected one of: {2, 1, 3}
+* j (U+006A): found 4, expected one of: {1, 2, 3}
 * jcircumflex (U+0135): found 5, expected one of: {2, 3}
 * kappa (U+03BA): found 3, expected one of: {1, 2}
 * l (U+006C): found 3, expected one of: {1, 2}
 * lacute (U+013A): found 4, expected one of: {2, 3}
 * lcaron (U+013E): found 4, expected one of: {2, 3}
+* lcommaaccent (U+013C): found 5, expected one of: {2, 3}
 * ldot (U+0140): found 4, expected one of: {3, 2}
 * lessequal (U+2264): found 3, expected one of: {2}
-* lira (U+20A4): found 5, expected one of: {4, 2, 3, 1}
-* longs (U+017F): found 3, expected one of: {2, 1}
-* longsdotaccent (U+1E9B): found 4, expected one of: {2}
+* lira (U+20A4): found 5, expected one of: {2, 1, 3, 4}
+* longs (U+017F): found 3, expected one of: {1, 2}
 * lozenge (U+25CA): found 1, expected one of: {2}
-* lslash (U+0142): found 4, expected one of: {3, 1, 2}
-* m (U+006D): found 4, expected one of: {3, 1, 2}
-* ncaron (U+0148): found 5, expected one of: {3, 4, 2}
-* ntilde (U+00F1): found 6, expected one of: {2, 4, 3}
+* lslash (U+0142): found 4, expected one of: {2, 3, 1}
+* m (U+006D): found 4, expected one of: {1, 2, 3}
+* ncaron (U+0148): found 5, expected one of: {4, 2, 3}
+* ncommaaccent (U+0146): found 5, expected one of: {4, 2, 3}
+* ntilde (U+00F1): found 6, expected one of: {2, 3, 4}
 * nu (U+03BD): found 2, expected one of: {1}
 * oacute (U+00F3): found 5, expected one of: {3, 4}
 * obreve (U+014F): found 7, expected one of: {4, 3}
-* ocircumflex (U+00F4): found 6, expected one of: {2, 3, 4}
-* odieresis (U+00F6): found 6, expected one of: {3, 4, 5}
+* ocircumflex (U+00F4): found 6, expected one of: {3, 4, 2}
+* odieresis (U+00F6): found 6, expected one of: {4, 3, 5}
 * oe (U+0153): found 6, expected one of: {2, 3, 4}
 * ogonek (U+02DB): found 3, expected one of: {1}
 * ograve (U+00F2): found 5, expected one of: {4, 3}
 * ohorn (U+01A1): found 6, expected one of: {3, 2}
-* ohungarumlaut (U+0151): found 6, expected one of: {4, 5}
+* ohungarumlaut (U+0151): found 6, expected one of: {5, 4}
 * omacron (U+014D): found 5, expected one of: {3, 4}
 * omega (U+03C9): found 5, expected one of: {1}
 * omegatonos (U+03CE): found 6, expected one of: {2}
 * omicron (U+03BF): found 4, expected one of: {2}
 * omicrontonos (U+03CC): found 5, expected one of: {3}
-* onequarter (U+00BC): found 6, expected one of: {4, 5, 3}
-* ordfeminine (U+00AA): found 6, expected one of: {3, 2, 1}
+* onequarter (U+00BC): found 6, expected one of: {3, 5, 4}
+* ordfeminine (U+00AA): found 6, expected one of: {1, 3, 2}
 * ordmasculine (U+00BA): found 5, expected one of: {3, 2}
 * otilde (U+00F5): found 7, expected one of: {3, 4}
-* paragraph (U+00B6): found 5, expected one of: {3, 1, 2}
+* paragraph (U+00B6): found 5, expected one of: {1, 2, 3}
 * parenleft (U+0028): found 3, expected one of: {1, 2}
-* parenright (U+0029): found 3, expected one of: {1, 2}
+* parenright (U+0029): found 3, expected one of: {2, 1}
 * partialdiff (U+2202): found 5, expected one of: {2, 1}
-* percent (U+0025): found 9, expected one of: {3, 5, 4}
+* percent (U+0025): found 9, expected one of: {5, 4, 3}
 * perthousand (U+2030): found 13, expected one of: {7, 6}
-* peseta (U+20A7): found 12, expected one of: {2, 3, 4}
-* phi (U+03C6): found 5, expected one of: {3, 2}
+* peseta (U+20A7): found 12, expected one of: {2, 4, 3}
+* phi (U+03C6): found 5, expected one of: {2, 3}
 * phi1 (U+03D5): found 5, expected one of: {3}
 * prescription (U+211E): found 6, expected one of: {3, 2}
-* psi (U+03C8): found 4, expected one of: {2, 1}
-* q (U+0071): found 5, expected one of: {2, 3, 1, 4}
+* psi (U+03C8): found 4, expected one of: {1, 2}
+* q (U+0071): found 5, expected one of: {2, 4, 3, 1}
 * question (U+003F): found 5, expected one of: {2, 3}
-* questiondown (U+00BF): found 5, expected one of: {3, 2}
+* questiondown (U+00BF): found 5, expected one of: {2, 3}
 * quotedblbase (U+201E): found 4, expected one of: {2}
 * quotedblleft (U+201C): found 4, expected one of: {2}
 * quotedblright (U+201D): found 4, expected one of: {2}
@@ -497,66 +618,60 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * quotesinglbase (U+201A): found 2, expected one of: {1}
 * r (U+0072): found 3, expected one of: {1, 2}
 * racute (U+0155): found 4, expected one of: {3, 2}
-* radical (U+221A): found 3, expected one of: {2, 1}
-* rcaron (U+0159): found 5, expected one of: {4, 2, 3}
-* registered (U+00AE): found 9, expected one of: {4, 5, 2, 3}
-* rho (U+03C1): found 4, expected one of: {1, 2}
+* radical (U+221A): found 3, expected one of: {1, 2}
+* rcaron (U+0159): found 5, expected one of: {4, 3, 2}
+* rcommaaccent (U+0157): found 5, expected one of: {3, 2}
+* registered (U+00AE): found 9, expected one of: {4, 5, 3, 2}
+* rho (U+03C1): found 4, expected one of: {2, 1}
 * s (U+0073): found 5, expected one of: {1, 3, 2}
-* sacute (U+015B): found 6, expected one of: {4, 2, 3}
+* sacute (U+015B): found 6, expected one of: {2, 3, 4}
 * scaron (U+0161): found 7, expected one of: {4, 2, 3}
-* scedilla (U+015F): found 9, expected one of: {3, 1, 4, 2}
+* scedilla (U+015F): found 9, expected one of: {3, 2, 1, 4}
 * scircumflex (U+015D): found 7, expected one of: {2, 4, 3}
-* section (U+00A7): found 10, expected one of: {2, 4}
+* scommaaccent (U+0219): found 7, expected one of: {2, 3, 4}
+* section (U+00A7): found 10, expected one of: {4, 2}
 * semicolon (U+003B): found 3, expected one of: {2}
 * sigma (U+03C3): found 4, expected one of: {2}
 * sigma1 (U+03C2): found 5, expected one of: {1}
-* sterling (U+00A3): found 4, expected one of: {2, 3, 1}
+* sterling (U+00A3): found 4, expected one of: {3, 2, 1}
 * summation (U+2211): found 4, expected one of: {1}
 * tau (U+03C4): found 3, expected one of: {1}
 * tbar (U+0167): found 4, expected one of: {3, 1, 2}
-* thorn (U+00FE): found 4, expected one of: {3, 2, 1}
+* tcommaaccent (U+0163): found 7, expected one of: {1, 3, 2}
+* thorn (U+00FE): found 4, expected one of: {2, 3, 1}
 * tilde (U+02DC): found 3, expected one of: {1}
 * tildecomb (U+0303): found 3, expected one of: {1}
-* trademark (U+2122): found 6, expected one of: {1, 5, 4, 2, 3}
+* trademark (U+2122): found 6, expected one of: {5, 4, 1, 2, 3}
 * u (U+0075): found 3, expected one of: {1, 2}
-* uacute (U+00FA): found 4, expected one of: {2, 3}
-* ubreve (U+016D): found 6, expected one of: {4, 3, 2}
-* ucircumflex (U+00FB): found 5, expected one of: {4, 3, 2}
-* ucircumflexbelow (U+1E77): found 5, expected one of: {2}
-* udieresis (U+00FC): found 5, expected one of: {3, 4}
-* uhorn (U+01B0): found 5, expected one of: {1, 3, 2}
+* uacute (U+00FA): found 4, expected one of: {3, 2}
+* ubreve (U+016D): found 6, expected one of: {3, 4, 2}
+* ucircumflex (U+00FB): found 5, expected one of: {3, 4, 2}
+* udieresis (U+00FC): found 5, expected one of: {4, 3}
+* uhorn (U+01B0): found 5, expected one of: {3, 2, 1}
 * uhungarumlaut (U+0171): found 5, expected one of: {4, 3}
-* umacron (U+016B): found 4, expected one of: {2, 3}
+* umacron (U+016B): found 4, expected one of: {3, 2}
 * uni0000 (U+0000): found 5, expected one of: {0}
-* uni0122 (U+0122): found 6, expected one of: {2, 3, 4}
-* uni0123 (U+0123): found 7, expected one of: {3, 5, 4, 2}
-* uni0136 (U+0136): found 5, expected one of: {2, 3, 4}
-* uni013C (U+013C): found 5, expected one of: {3, 2}
-* uni0145 (U+0145): found 5, expected one of: {3, 4, 2}
-* uni0146 (U+0146): found 5, expected one of: {4, 3, 2}
-* uni0156 (U+0156): found 7, expected one of: {3, 5, 4, 2}
-* uni0157 (U+0157): found 5, expected one of: {2, 3}
-* uni0162 (U+0162): found 6, expected one of: {3, 2, 1}
-* uni0163 (U+0163): found 7, expected one of: {2, 3, 1}
 * uni0180 (U+0180): found 5, expected one of: {3, 2}
 * uni0181 (U+0181): found 11, expected one of: {3}
 * uni0182 (U+0182): found 6, expected one of: {2}
-* uni0183 (U+0183): found 5, expected one of: {2, 3}
+* uni0183 (U+0183): found 5, expected one of: {3, 2}
 * uni0186 (U+0186): found 3, expected one of: {1}
 * uni0187 (U+0187): found 5, expected one of: {2, 1}
 * uni0188 (U+0188): found 5, expected one of: {1}
 * uni0189 (U+0189): found 6, expected one of: {2, 3}
 * uni018A (U+018A): found 7, expected one of: {2}
 * uni018E (U+018E): found 4, expected one of: {1}
-* uni018F (U+018F): found 5, expected one of: {1, 2}
+* uni018F (U+018F): found 5, expected one of: {2, 1}
 * uni0190 (U+0190): found 5, expected one of: {1}
 * uni0191 (U+0191): found 5, expected one of: {1}
 * uni0193 (U+0193): found 6, expected one of: {1}
 * uni0194 (U+0194): found 3, expected one of: {2}
 * uni0196 (U+0196): found 2, expected one of: {1}
-* uni0197 (U+0197): found 4, expected one of: {1, 2}
-* uni0198 (U+0198): found 5, expected one of: {1, 2}
-* uni0199 (U+0199): found 5, expected one of: {1, 2}
+* uni0197 (U+0197): found 4, expected one of: {2, 1}
+* uni0198 (U+0198): found 5, expected one of: {2, 1}
+* uni0199 (U+0199): found 5, expected one of: {2, 1}
+* uni019A (U+019A): found 4, expected one of: {2, 1}
+* uni019B (U+019B): found 3, expected one of: {1}
 * uni019C (U+019C): found 4, expected one of: {1}
 * uni019D (U+019D): found 5, expected one of: {1}
 * uni019F (U+019F): found 5, expected one of: {3}
@@ -574,13 +689,13 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni01B8 (U+01B8): found 5, expected one of: {1}
 * uni01B9 (U+01B9): found 5, expected one of: {1}
 * uni01C2 (U+01C2): found 3, expected one of: {1}
-* uni01C4 (U+01C4): found 10, expected one of: {6, 4}
+* uni01C4 (U+01C4): found 10, expected one of: {4, 6}
 * uni01C5 (U+01C5): found 10, expected one of: {6, 4}
-* uni01C6 (U+01C6): found 9, expected one of: {6, 5, 4}
-* uni01C9 (U+01C9): found 7, expected one of: {3, 5}
-* uni01CA (U+01CA): found 6, expected one of: {2, 4, 3, 5}
-* uni01CB (U+01CB): found 7, expected one of: {3, 4, 5}
-* uni01CC (U+01CC): found 7, expected one of: {3, 4}
+* uni01C6 (U+01C6): found 9, expected one of: {4, 5, 6}
+* uni01C9 (U+01C9): found 7, expected one of: {5, 3}
+* uni01CA (U+01CA): found 6, expected one of: {4, 5, 2, 3}
+* uni01CB (U+01CB): found 7, expected one of: {5, 3, 4}
+* uni01CC (U+01CC): found 7, expected one of: {4, 3}
 * uni01CD (U+01CD): found 6, expected one of: {3}
 * uni01CE (U+01CE): found 7, expected one of: {3, 2}
 * uni01CF (U+01CF): found 5, expected one of: {3, 2}
@@ -592,21 +707,21 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni01D5 (U+01D5): found 6, expected one of: {4}
 * uni01D6 (U+01D6): found 6, expected one of: {5, 4}
 * uni01D7 (U+01D7): found 6, expected one of: {4}
-* uni01D8 (U+01D8): found 6, expected one of: {4, 5}
+* uni01D8 (U+01D8): found 6, expected one of: {5, 4}
 * uni01D9 (U+01D9): found 7, expected one of: {4, 5}
-* uni01DA (U+01DA): found 7, expected one of: {5, 4}
+* uni01DA (U+01DA): found 7, expected one of: {4, 5}
 * uni01DB (U+01DB): found 6, expected one of: {4}
-* uni01DC (U+01DC): found 6, expected one of: {5, 4}
-* uni01DD (U+01DD): found 5, expected one of: {1, 2}
+* uni01DC (U+01DC): found 6, expected one of: {4, 5}
+* uni01DD (U+01DD): found 5, expected one of: {2, 1}
 * uni01DE (U+01DE): found 7, expected one of: {5}
 * uni01DF (U+01DF): found 8, expected one of: {5}
 * uni01E2 (U+01E2): found 6, expected one of: {3}
 * uni01E3 (U+01E3): found 7, expected one of: {4}
 * uni01E4 (U+01E4): found 5, expected one of: {1, 2}
-* uni01E5 (U+01E5): found 6, expected one of: {4, 3, 2}
+* uni01E5 (U+01E5): found 6, expected one of: {2, 3, 4}
 * uni01E8 (U+01E8): found 5, expected one of: {2, 4}
 * uni01E9 (U+01E9): found 5, expected one of: {2}
-* uni01EA (U+01EA): found 7, expected one of: {2, 3}
+* uni01EA (U+01EA): found 7, expected one of: {3, 2}
 * uni01EB (U+01EB): found 7, expected one of: {3, 2}
 * uni01EC (U+01EC): found 8, expected one of: {4, 3}
 * uni01ED (U+01ED): found 8, expected one of: {4, 3}
@@ -617,57 +732,62 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni01F2 (U+01F2): found 8, expected one of: {3}
 * uni01F3 (U+01F3): found 7, expected one of: {3}
 * uni01F4 (U+01F4): found 5, expected one of: {2}
-* uni01F5 (U+01F5): found 6, expected one of: {3, 4}
+* uni01F5 (U+01F5): found 6, expected one of: {4, 3}
 * uni01F8 (U+01F8): found 4, expected one of: {2}
 * uni01F9 (U+01F9): found 4, expected one of: {2}
 * uni0200 (U+0200): found 6, expected one of: {4, 5}
 * uni0201 (U+0201): found 7, expected one of: {3, 4}
 * uni0202 (U+0202): found 7, expected one of: {3}
 * uni0203 (U+0203): found 8, expected one of: {2, 3}
-* uni0204 (U+0204): found 6, expected one of: {3, 4}
+* uni0204 (U+0204): found 6, expected one of: {4, 3}
 * uni0205 (U+0205): found 7, expected one of: {4, 3}
 * uni0206 (U+0206): found 7, expected one of: {2, 3}
-* uni0207 (U+0207): found 8, expected one of: {2, 3}
+* uni0207 (U+0207): found 8, expected one of: {3, 2}
 * uni0208 (U+0208): found 5, expected one of: {4, 3}
 * uni0209 (U+0209): found 5, expected one of: {3}
-* uni020A (U+020A): found 6, expected one of: {3, 2}
+* uni020A (U+020A): found 6, expected one of: {2, 3}
 * uni020B (U+020B): found 6, expected one of: {2}
-* uni020C (U+020C): found 6, expected one of: {3, 5, 4}
+* uni020C (U+020C): found 6, expected one of: {5, 3, 4}
 * uni020D (U+020D): found 6, expected one of: {4}
 * uni020E (U+020E): found 7, expected one of: {2, 3}
 * uni020F (U+020F): found 7, expected one of: {3}
 * uni0210 (U+0210): found 7, expected one of: {4, 5, 3}
-* uni0211 (U+0211): found 5, expected one of: {3, 4}
+* uni0211 (U+0211): found 5, expected one of: {4, 3}
 * uni0212 (U+0212): found 8, expected one of: {2, 3, 4}
-* uni0213 (U+0213): found 6, expected one of: {2, 3}
-* uni0214 (U+0214): found 5, expected one of: {3, 4}
-* uni0215 (U+0215): found 5, expected one of: {4, 3}
+* uni0213 (U+0213): found 6, expected one of: {3, 2}
+* uni0214 (U+0214): found 5, expected one of: {4, 3}
+* uni0215 (U+0215): found 5, expected one of: {3, 4}
 * uni0216 (U+0216): found 6, expected one of: {2}
-* uni0217 (U+0217): found 6, expected one of: {2, 3}
-* uni0218 (U+0218): found 7, expected one of: {3, 2, 4}
-* uni0219 (U+0219): found 7, expected one of: {2, 3, 4}
-* uni021B (U+021B): found 5, expected one of: {2, 4, 3}
+* uni0217 (U+0217): found 6, expected one of: {3, 2}
+* uni021B (U+021B): found 5, expected one of: {3, 4, 2}
 * uni021E (U+021E): found 5, expected one of: {2}
 * uni021F (U+021F): found 5, expected one of: {2}
 * uni0221 (U+0221): found 6, expected one of: {3}
+* uni0222 (U+0222): found 10, expected one of: {2}
+* uni0223 (U+0223): found 8, expected one of: {2}
 * uni0226 (U+0226): found 5, expected one of: {3}
 * uni0227 (U+0227): found 6, expected one of: {3}
 * uni0228 (U+0228): found 8, expected one of: {1, 2}
-* uni0229 (U+0229): found 9, expected one of: {3, 2}
-* uni022A (U+022A): found 7, expected one of: {6, 5, 4}
+* uni0229 (U+0229): found 9, expected one of: {2, 3}
+* uni022A (U+022A): found 7, expected one of: {4, 5, 6}
 * uni022B (U+022B): found 7, expected one of: {5}
-* uni022C (U+022C): found 8, expected one of: {5, 3, 4}
-* uni022D (U+022D): found 8, expected one of: {4, 5}
+* uni022C (U+022C): found 8, expected one of: {4, 3, 5}
+* uni022D (U+022D): found 8, expected one of: {5, 4}
 * uni022E (U+022E): found 5, expected one of: {3}
 * uni022F (U+022F): found 5, expected one of: {3}
-* uni0230 (U+0230): found 6, expected one of: {3, 4, 5}
-* uni0231 (U+0231): found 6, expected one of: {4, 5}
-* uni0232 (U+0232): found 5, expected one of: {4, 2, 3}
-* uni0233 (U+0233): found 5, expected one of: {2, 3}
+* uni0230 (U+0230): found 6, expected one of: {5, 3, 4}
+* uni0231 (U+0231): found 6, expected one of: {5, 4}
+* uni0232 (U+0232): found 5, expected one of: {2, 3, 4}
+* uni0233 (U+0233): found 5, expected one of: {3, 2}
 * uni0234 (U+0234): found 4, expected one of: {2}
 * uni0235 (U+0235): found 6, expected one of: {2}
 * uni0236 (U+0236): found 5, expected one of: {2}
 * uni0237 (U+0237): found 3, expected one of: {2, 1}
+* uni023A (U+023A): found 5, expected one of: {3}
+* uni023B (U+023B): found 4, expected one of: {2}
+* uni023C (U+023C): found 4, expected one of: {2}
+* uni023D (U+023D): found 3, expected one of: {1, 2}
+* uni023E (U+023E): found 3, expected one of: {2}
 * uni0241 (U+0241): found 4, expected one of: {1}
 * uni0242 (U+0242): found 4, expected one of: {1}
 * uni0243 (U+0243): found 10, expected one of: {3, 4}
@@ -675,26 +795,28 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni0245 (U+0245): found 2, expected one of: {1}
 * uni0248 (U+0248): found 4, expected one of: {1, 2}
 * uni0249 (U+0249): found 5, expected one of: {3, 2}
-* uni024C (U+024C): found 6, expected one of: {2, 3}
-* uni024D (U+024D): found 4, expected one of: {1, 2}
+* uni024C (U+024C): found 6, expected one of: {3, 2}
+* uni024D (U+024D): found 4, expected one of: {2, 1}
 * uni0250 (U+0250): found 5, expected one of: {2}
 * uni0251 (U+0251): found 4, expected one of: {2}
 * uni0253 (U+0253): found 6, expected one of: {2}
 * uni0254 (U+0254): found 3, expected one of: {1}
 * uni0256 (U+0256): found 6, expected one of: {2}
 * uni0257 (U+0257): found 6, expected one of: {2}
-* uni0259 (U+0259): found 5, expected one of: {2, 1}
+* uni0259 (U+0259): found 5, expected one of: {1, 2}
 * uni025B (U+025B): found 5, expected one of: {1}
 * uni025F (U+025F): found 4, expected one of: {2, 1}
 * uni0260 (U+0260): found 7, expected one of: {2}
 * uni0261 (U+0261): found 5, expected one of: {2}
-* uni0263 (U+0263): found 3, expected one of: {1, 2}
+* uni0263 (U+0263): found 3, expected one of: {2, 1}
 * uni0264 (U+0264): found 3, expected one of: {2}
 * uni0265 (U+0265): found 3, expected one of: {1}
 * uni0266 (U+0266): found 5, expected one of: {1}
 * uni0268 (U+0268): found 5, expected one of: {2, 3}
 * uni0269 (U+0269): found 2, expected one of: {1}
 * uni026A (U+026A): found 3, expected one of: {1}
+* uni026B (U+026B): found 6, expected one of: {1, 2}
+* uni026C (U+026C): found 6, expected one of: {2}
 * uni026F (U+026F): found 4, expected one of: {1}
 * uni0272 (U+0272): found 5, expected one of: {1}
 * uni0275 (U+0275): found 5, expected one of: {3}
@@ -715,6 +837,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni02AE (U+02AE): found 5, expected one of: {1}
 * uni02AF (U+02AF): found 7, expected one of: {1}
 * uni02B7 (U+02B7): found 4, expected one of: {1}
+* uni02B8 (U+02B8): found 4, expected one of: {1}
 * uni02BB (U+02BB): found 2, expected one of: {1}
 * uni02BE (U+02BE): found 3, expected one of: {1}
 * uni02BF (U+02BF): found 3, expected one of: {1}
@@ -748,133 +871,78 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni03CF (U+03CF): found 4, expected one of: {2, 1, 3}
 * uni03D7 (U+03D7): found 7, expected one of: {1, 2}
 * uni0400 (U+0400): found 5, expected one of: {3, 4, 2}
-* uni0401 (U+0401): found 6, expected one of: {4, 3}
-* uni0402 (U+0402): found 5, expected one of: {1, 2, 3}
-* uni0404 (U+0404): found 5, expected one of: {1, 2}
-* uni0405 (U+0405): found 5, expected one of: {1, 2}
-* uni0406 (U+0406): found 3, expected one of: {1}
-* uni0407 (U+0407): found 5, expected one of: {3}
-* uni0408 (U+0408): found 3, expected one of: {1, 2}
-* uni0409 (U+0409): found 7, expected one of: {1, 2, 3}
-* uni040A (U+040A): found 5, expected one of: {2, 1, 3}
-* uni040B (U+040B): found 4, expected one of: {2, 1, 3}
-* uni040E (U+040E): found 7, expected one of: {3, 2}
-* uni040F (U+040F): found 4, expected one of: {1, 2}
-* uni0410 (U+0410): found 4, expected one of: {2, 3}
-* uni0411 (U+0411): found 5, expected one of: {1, 3, 2}
-* uni0412 (U+0412): found 9, expected one of: {3, 1, 2}
-* uni0414 (U+0414): found 6, expected one of: {2, 3}
-* uni0415 (U+0415): found 4, expected one of: {2, 1}
-* uni0417 (U+0417): found 7, expected one of: {2, 1}
-* uni0419 (U+0419): found 6, expected one of: {4, 2}
-* uni041B (U+041B): found 4, expected one of: {2, 3, 1}
-* uni041C (U+041C): found 4, expected one of: {3, 1, 2}
-* uni041E (U+041E): found 4, expected one of: {2, 1}
-* uni0420 (U+0420): found 4, expected one of: {1, 2}
-* uni0421 (U+0421): found 3, expected one of: {1}
-* uni0423 (U+0423): found 4, expected one of: {2, 1}
-* uni0424 (U+0424): found 5, expected one of: {3}
-* uni0426 (U+0426): found 4, expected one of: {2, 1}
-* uni0427 (U+0427): found 3, expected one of: {1, 2}
-* uni0429 (U+0429): found 5, expected one of: {1, 2}
-* uni042A (U+042A): found 5, expected one of: {1, 3, 2}
-* uni042B (U+042B): found 5, expected one of: {2, 3}
-* uni042C (U+042C): found 4, expected one of: {2, 1}
-* uni042D (U+042D): found 5, expected one of: {1, 2}
-* uni042E (U+042E): found 6, expected one of: {4, 2, 3, 1}
-* uni042F (U+042F): found 5, expected one of: {1, 2, 3}
-* uni0430 (U+0430): found 5, expected one of: {2, 1}
-* uni0431 (U+0431): found 5, expected one of: {1, 2}
-* uni0432 (U+0432): found 9, expected one of: {2, 3, 1}
-* uni0434 (U+0434): found 6, expected one of: {3, 2, 4}
-* uni0435 (U+0435): found 5, expected one of: {2, 1}
-* uni0437 (U+0437): found 7, expected one of: {1, 2}
-* uni0439 (U+0439): found 6, expected one of: {2, 4}
-* uni043B (U+043B): found 4, expected one of: {3, 1, 2}
-* uni043C (U+043C): found 4, expected one of: {3, 1, 2}
-* uni043E (U+043E): found 4, expected one of: {2}
-* uni0440 (U+0440): found 4, expected one of: {2, 1, 3}
-* uni0441 (U+0441): found 3, expected one of: {1}
-* uni0443 (U+0443): found 4, expected one of: {2, 1}
-* uni0444 (U+0444): found 5, expected one of: {3}
-* uni0446 (U+0446): found 4, expected one of: {1, 2, 3}
-* uni0447 (U+0447): found 3, expected one of: {1, 2}
-* uni0448 (U+0448): found 4, expected one of: {1}
-* uni0449 (U+0449): found 5, expected one of: {1, 2, 3}
-* uni044A (U+044A): found 5, expected one of: {2, 1, 3}
-* uni044B (U+044B): found 5, expected one of: {3, 1, 2}
-* uni044C (U+044C): found 4, expected one of: {1, 2}
-* uni044D (U+044D): found 5, expected one of: {1, 2}
-* uni044E (U+044E): found 6, expected one of: {2, 4, 3}
-* uni044F (U+044F): found 5, expected one of: {1, 3, 2}
 * uni0450 (U+0450): found 6, expected one of: {2, 3}
-* uni0451 (U+0451): found 7, expected one of: {3, 4}
-* uni0452 (U+0452): found 5, expected one of: {1, 2, 3, 4}
-* uni0454 (U+0454): found 5, expected one of: {1, 2}
-* uni0455 (U+0455): found 5, expected one of: {1, 2}
-* uni0456 (U+0456): found 4, expected one of: {2, 1}
-* uni0457 (U+0457): found 5, expected one of: {3}
-* uni0458 (U+0458): found 4, expected one of: {2, 1, 3}
-* uni0459 (U+0459): found 7, expected one of: {3, 2, 1}
-* uni045A (U+045A): found 5, expected one of: {3, 4, 1, 2}
-* uni045B (U+045B): found 4, expected one of: {1, 2, 3}
-* uni045E (U+045E): found 7, expected one of: {3, 2}
-* uni045F (U+045F): found 4, expected one of: {3, 1, 2}
-* uni0462 (U+0462): found 5, expected one of: {2, 3, 1}
-* uni0463 (U+0463): found 5, expected one of: {4, 1, 2, 3}
 * uni0470 (U+0470): found 4, expected one of: {1}
 * uni0471 (U+0471): found 4, expected one of: {1}
-* uni0472 (U+0472): found 5, expected one of: {3}
-* uni0473 (U+0473): found 5, expected one of: {3}
-* uni0474 (U+0474): found 3, expected one of: {2, 1}
-* uni0475 (U+0475): found 3, expected one of: {1, 2}
-* uni0490 (U+0490): found 3, expected one of: {1, 2}
-* uni0491 (U+0491): found 3, expected one of: {2, 1}
 * uni0494 (U+0494): found 5, expected one of: {1, 2, 3}
 * uni0495 (U+0495): found 5, expected one of: {1, 2, 3}
-* uni0496 (U+0496): found 6, expected one of: {5, 2, 1, 4, 3}
+* uni0496 (U+0496): found 6, expected one of: {3, 1, 4, 5, 2}
 * uni0498 (U+0498): found 10, expected one of: {2, 1}
 * uni0499 (U+0499): found 11, expected one of: {1, 2}
 * uni049F (U+049F): found 4, expected one of: {1}
-* uni04A6 (U+04A6): found 6, expected one of: {1, 2}
+* uni04A6 (U+04A6): found 6, expected one of: {2, 1}
 * uni04A7 (U+04A7): found 6, expected one of: {1}
 * uni04A8 (U+04A8): found 7, expected one of: {2, 1}
 * uni04A9 (U+04A9): found 7, expected one of: {2, 1}
-* uni04AA (U+04AA): found 7, expected one of: {1, 2}
+* uni04AA (U+04AA): found 7, expected one of: {2, 1}
 * uni04AB (U+04AB): found 7, expected one of: {2, 1}
 * uni04AC (U+04AC): found 3, expected one of: {1}
 * uni04AD (U+04AD): found 3, expected one of: {1}
-* uni04B3 (U+04B3): found 3, expected one of: {1, 2}
+* uni04B3 (U+04B3): found 3, expected one of: {2, 1}
 * uni04B4 (U+04B4): found 5, expected one of: {1, 3}
 * uni04B5 (U+04B5): found 5, expected one of: {3, 1}
-* uni04B6 (U+04B6): found 4, expected one of: {1, 2, 3}
-* uni04B8 (U+04B8): found 4, expected one of: {2, 1, 3}
+* uni04B6 (U+04B6): found 4, expected one of: {1, 3, 2}
+* uni04B8 (U+04B8): found 4, expected one of: {2, 3, 1}
 * uni04B9 (U+04B9): found 4, expected one of: {1, 2, 3}
-* uni04BA (U+04BA): found 3, expected one of: {2, 1}
+* uni04BA (U+04BA): found 3, expected one of: {1, 2}
 * uni04BB (U+04BB): found 3, expected one of: {2, 1}
 * uni04BC (U+04BC): found 6, expected one of: {2}
 * uni04BD (U+04BD): found 6, expected one of: {2}
 * uni04BE (U+04BE): found 7, expected one of: {2, 3}
 * uni04BF (U+04BF): found 7, expected one of: {3, 2}
 * uni04C0 (U+04C0): found 3, expected one of: {1}
+* uni04C1 (U+04C1): found 8, expected one of: {3, 6, 2, 4}
+* uni04C2 (U+04C2): found 8, expected one of: {2, 6, 4}
 * uni04CF (U+04CF): found 3, expected one of: {1}
 * uni04D0 (U+04D0): found 7, expected one of: {3, 4}
 * uni04D1 (U+04D1): found 8, expected one of: {3, 2}
+* uni04D2 (U+04D2): found 6, expected one of: {4, 5}
+* uni04D3 (U+04D3): found 7, expected one of: {4, 3}
 * uni04D4 (U+04D4): found 5, expected one of: {3, 4, 2}
-* uni04D5 (U+04D5): found 6, expected one of: {2, 3, 1, 4}
+* uni04D5 (U+04D5): found 6, expected one of: {1, 3, 4, 2}
+* uni04D6 (U+04D6): found 7, expected one of: {3, 4, 2}
+* uni04D7 (U+04D7): found 8, expected one of: {3, 2}
 * uni04D8 (U+04D8): found 5, expected one of: {1, 2}
-* uni04D9 (U+04D9): found 5, expected one of: {2, 1}
+* uni04DE (U+04DE): found 9, expected one of: {3}
+* uni04DF (U+04DF): found 9, expected one of: {4, 3}
+* uni04E0 (U+04E0): found 5, expected one of: {1}
+* uni04E1 (U+04E1): found 5, expected one of: {1}
+* uni04E6 (U+04E6): found 6, expected one of: {4}
+* uni04E7 (U+04E7): found 6, expected one of: {4}
 * uni04E8 (U+04E8): found 5, expected one of: {3}
 * uni04E9 (U+04E9): found 5, expected one of: {3}
 * uni04EE (U+04EE): found 5, expected one of: {2, 3}
-* uni04EF (U+04EF): found 5, expected one of: {3, 2}
+* uni04EF (U+04EF): found 5, expected one of: {2, 3}
+* uni04F0 (U+04F0): found 6, expected one of: {4, 3}
+* uni04F1 (U+04F1): found 6, expected one of: {3, 4}
+* uni04F2 (U+04F2): found 6, expected one of: {4, 3}
+* uni04F3 (U+04F3): found 6, expected one of: {3, 4}
+* uni04F4 (U+04F4): found 5, expected one of: {4, 3}
+* uni04F5 (U+04F5): found 5, expected one of: {4, 3}
+* uni04F8 (U+04F8): found 7, expected one of: {4, 5}
+* uni04F9 (U+04F9): found 7, expected one of: {4, 5, 3}
+* uni051A (U+051A): found 5, expected one of: {2, 4, 3}
+* uni051B (U+051B): found 5, expected one of: {3, 2}
+* uni051C (U+051C): found 4, expected one of: {2, 3, 1}
+* uni051D (U+051D): found 4, expected one of: {1, 2, 3}
+* uni0524 (U+0524): found 4, expected one of: {1, 2, 5}
 * uni0900 (U+0900): found 4, expected one of: {2}
 * uni0901 (U+0901): found 4, expected one of: {2}
 * uni0904 (U+0904): found 9, expected one of: {1}
 * uni0905 (U+0905): found 6, expected one of: {1}
 * uni0906 (U+0906): found 7, expected one of: {1}
 * uni0907 (U+0907): found 8, expected one of: {1}
-* uni0908 (U+0908): found 9, expected one of: {2, 1}
+* uni0908 (U+0908): found 9, expected one of: {1, 2}
 * uni0909 (U+0909): found 6, expected one of: {1}
 * uni090A (U+090A): found 7, expected one of: {1}
 * uni090B (U+090B): found 8, expected one of: {1}
@@ -882,12 +950,12 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni090D (U+090D): found 10, expected one of: {2}
 * uni090E (U+090E): found 10, expected one of: {2, 1}
 * uni090F (U+090F): found 7, expected one of: {1}
-* uni0910 (U+0910): found 8, expected one of: {2, 1}
+* uni0910 (U+0910): found 8, expected one of: {1, 2}
 * uni0911 (U+0911): found 10, expected one of: {2}
-* uni0912 (U+0912): found 10, expected one of: {2, 1}
+* uni0912 (U+0912): found 10, expected one of: {1, 2}
 * uni0913 (U+0913): found 8, expected one of: {1, 2}
 * uni0914 (U+0914): found 9, expected one of: {1}
-* uni0915 (U+0915): found 7, expected one of: {1, 2}
+* uni0915 (U+0915): found 7, expected one of: {2, 1}
 * uni0916 (U+0916): found 8, expected one of: {2, 3}
 * uni0917 (U+0917): found 5, expected one of: {1}
 * uni0918 (U+0918): found 6, expected one of: {2}
@@ -900,7 +968,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni091F (U+091F): found 5, expected one of: {1}
 * uni0920 (U+0920): found 6, expected one of: {2}
 * uni0921 (U+0921): found 8, expected one of: {1}
-* uni0922 (U+0922): found 7, expected one of: {2, 1}
+* uni0922 (U+0922): found 7, expected one of: {1, 2}
 * uni0923 (U+0923): found 5, expected one of: {2}
 * uni0924 (U+0924): found 4, expected one of: {1}
 * uni0925 (U+0925): found 7, expected one of: {1, 2}
@@ -910,17 +978,17 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni0929 (U+0929): found 5, expected one of: {2}
 * uni092A (U+092A): found 4, expected one of: {2}
 * uni092B (U+092B): found 5, expected one of: {2}
-* uni092C (U+092C): found 6, expected one of: {3, 2}
+* uni092C (U+092C): found 6, expected one of: {2, 3}
 * uni092D (U+092D): found 8, expected one of: {1, 2}
-* uni092E (U+092E): found 6, expected one of: {2, 3}
+* uni092E (U+092E): found 6, expected one of: {3, 2}
 * uni092F (U+092F): found 5, expected one of: {2}
 * uni0930 (U+0930): found 4, expected one of: {1}
 * uni0931 (U+0931): found 5, expected one of: {2}
 * uni0932 (U+0932): found 5, expected one of: {1}
 * uni0933 (U+0933): found 6, expected one of: {3}
 * uni0934 (U+0934): found 7, expected one of: {4}
-* uni0935 (U+0935): found 5, expected one of: {1, 2}
-* uni0936 (U+0936): found 7, expected one of: {3, 2}
+* uni0935 (U+0935): found 5, expected one of: {2, 1}
+* uni0936 (U+0936): found 7, expected one of: {2, 3}
 * uni0937 (U+0937): found 5, expected one of: {3}
 * uni0938 (U+0938): found 5, expected one of: {2}
 * uni0939 (U+0939): found 8, expected one of: {1}
@@ -939,11 +1007,11 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni0949 (U+0949): found 5, expected one of: {2}
 * uni094A (U+094A): found 5, expected one of: {1}
 * uni094B (U+094B): found 3, expected one of: {1}
-* uni094C (U+094C): found 4, expected one of: {2, 1}
+* uni094C (U+094C): found 4, expected one of: {1, 2}
 * uni094D (U+094D): found 2, expected one of: {1}
 * uni094E (U+094E): found 2, expected one of: {1}
 * uni094F (U+094F): found 8, expected one of: {1}
-* uni0950 (U+0950): found 9, expected one of: {4, 3}
+* uni0950 (U+0950): found 9, expected one of: {3, 4}
 * uni0955 (U+0955): found 4, expected one of: {2}
 * uni0956 (U+0956): found 3, expected one of: {1}
 * uni0957 (U+0957): found 6, expected one of: {2}
@@ -952,7 +1020,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni095A (U+095A): found 6, expected one of: {2}
 * uni095B (U+095B): found 7, expected one of: {2}
 * uni095C (U+095C): found 9, expected one of: {2}
-* uni095D (U+095D): found 8, expected one of: {3, 2}
+* uni095D (U+095D): found 8, expected one of: {2, 3}
 * uni095E (U+095E): found 6, expected one of: {3}
 * uni095F (U+095F): found 6, expected one of: {3}
 * uni0960 (U+0960): found 9, expected one of: {1}
@@ -966,13 +1034,13 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni096A (U+096A): found 7, expected one of: {2}
 * uni096B (U+096B): found 4, expected one of: {1}
 * uni096C (U+096C): found 5, expected one of: {1, 2}
-* uni096D (U+096D): found 5, expected one of: {1, 2}
+* uni096D (U+096D): found 5, expected one of: {2, 1}
 * uni096E (U+096E): found 3, expected one of: {1}
 * uni096F (U+096F): found 5, expected one of: {2}
 * uni0970 (U+0970): found 1, expected one of: {2}
 * uni0972 (U+0972): found 9, expected one of: {2}
 * uni0973 (U+0973): found 7, expected one of: {1, 2}
-* uni0974 (U+0974): found 7, expected one of: {2, 1}
+* uni0974 (U+0974): found 7, expected one of: {1, 2}
 * uni0975 (U+0975): found 12, expected one of: {1}
 * uni0976 (U+0976): found 9, expected one of: {2}
 * uni0977 (U+0977): found 12, expected one of: {3}
@@ -983,11 +1051,11 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni097C (U+097C): found 7, expected one of: {1, 2}
 * uni097D (U+097D): found 4, expected one of: {1}
 * uni097E (U+097E): found 7, expected one of: {2}
-* uni097F (U+097F): found 7, expected one of: {3, 2}
+* uni097F (U+097F): found 7, expected one of: {2, 3}
 * uni0B82 (U+0B82): found 4, expected one of: {2}
 * uni0B83 (U+0B83): found 12, expected one of: {6}
 * uni0B85 (U+0B85): found 8, expected one of: {3}
-* uni0B86 (U+0B86): found 13, expected one of: {2, 3}
+* uni0B86 (U+0B86): found 13, expected one of: {3, 2}
 * uni0B87 (U+0B87): found 12, expected one of: {5}
 * uni0B88 (U+0B88): found 5, expected one of: {3}
 * uni0B89 (U+0B89): found 7, expected one of: {2}
@@ -997,7 +1065,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni0B90 (U+0B90): found 11, expected one of: {2}
 * uni0B92 (U+0B92): found 13, expected one of: {2}
 * uni0B93 (U+0B93): found 15, expected one of: {3, 2}
-* uni0B94 (U+0B94): found 20, expected one of: {4, 5}
+* uni0B94 (U+0B94): found 20, expected one of: {5, 4}
 * uni0B95 (U+0B95): found 8, expected one of: {3}
 * uni0B99 (U+0B99): found 7, expected one of: {1}
 * uni0B9A (U+0B9A): found 6, expected one of: {3}
@@ -1018,7 +1086,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni0BB4 (U+0BB4): found 10, expected one of: {2}
 * uni0BB5 (U+0BB5): found 8, expected one of: {2}
 * uni0BB6 (U+0BB6): found 7, expected one of: {2}
-* uni0BB7 (U+0BB7): found 9, expected one of: {3, 4}
+* uni0BB7 (U+0BB7): found 9, expected one of: {4, 3}
 * uni0BB8 (U+0BB8): found 9, expected one of: {2}
 * uni0BB9 (U+0BB9): found 14, expected one of: {2}
 * uni0BBE (U+0BBE): found 3, expected one of: {1}
@@ -1029,18 +1097,18 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni0BC6 (U+0BC6): found 5, expected one of: {2}
 * uni0BC7 (U+0BC7): found 5, expected one of: {3}
 * uni0BC8 (U+0BC8): found 6, expected one of: {3}
-* uni0BCA (U+0BCA): found 16, expected one of: {15, 11, 4, 3}
-* uni0BCC (U+0BCC): found 20, expected one of: {4, 16, 12, 7}
+* uni0BCA (U+0BCA): found 16, expected one of: {4, 11, 15, 3}
+* uni0BCC (U+0BCC): found 20, expected one of: {12, 4, 16, 7}
 * uni0BD0 (U+0BD0): found 19, expected one of: {5, 4}
 * uni0BD7 (U+0BD7): found 7, expected one of: {2}
 * uni0BE7 (U+0BE7): found 8, expected one of: {3}
-* uni0BE8 (U+0BE8): found 8, expected one of: {1, 2}
+* uni0BE8 (U+0BE8): found 8, expected one of: {2, 1}
 * uni0BE9 (U+0BE9): found 6, expected one of: {1}
-* uni0BEA (U+0BEA): found 7, expected one of: {3, 2}
+* uni0BEA (U+0BEA): found 7, expected one of: {2, 3}
 * uni0BEB (U+0BEB): found 9, expected one of: {1}
 * uni0BEC (U+0BEC): found 11, expected one of: {3}
 * uni0BED (U+0BED): found 5, expected one of: {3, 2}
-* uni0BEE (U+0BEE): found 7, expected one of: {3, 2}
+* uni0BEE (U+0BEE): found 7, expected one of: {2, 3}
 * uni0BEF (U+0BEF): found 9, expected one of: {4}
 * uni0BF0 (U+0BF0): found 6, expected one of: {1}
 * uni0BF1 (U+0BF1): found 6, expected one of: {1}
@@ -1050,7 +1118,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni0BF5 (U+0BF5): found 18, expected one of: {2}
 * uni0BF6 (U+0BF6): found 7, expected one of: {2}
 * uni0BF7 (U+0BF7): found 14, expected one of: {3, 4}
-* uni0BF8 (U+0BF8): found 14, expected one of: {5, 4}
+* uni0BF8 (U+0BF8): found 14, expected one of: {4, 5}
 * uni0BF9 (U+0BF9): found 14, expected one of: {1, 2}
 * uni0BFA (U+0BFA): found 15, expected one of: {2, 1}
 * uni0E3F (U+0E3F): found 10, expected one of: {5, 3, 4}
@@ -1065,6 +1133,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1D7D (U+1D7D): found 5, expected one of: {3}
 * uni1DA4 (U+1DA4): found 5, expected one of: {2}
 * uni1DB6 (U+1DB6): found 4, expected one of: {2}
+* uni1DBB (U+1DBB): found 3, expected one of: {1}
 * uni1DC4 (U+1DC4): found 2, expected one of: {1}
 * uni1DC5 (U+1DC5): found 2, expected one of: {1}
 * uni1DC6 (U+1DC6): found 2, expected one of: {1}
@@ -1078,8 +1147,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E05 (U+1E05): found 5, expected one of: {3}
 * uni1E06 (U+1E06): found 10, expected one of: {4}
 * uni1E07 (U+1E07): found 5, expected one of: {3}
-* uni1E08 (U+1E08): found 8, expected one of: {2, 3}
-* uni1E09 (U+1E09): found 8, expected one of: {2, 3}
+* uni1E08 (U+1E08): found 8, expected one of: {3, 2}
+* uni1E09 (U+1E09): found 8, expected one of: {3, 2}
 * uni1E0A (U+1E0A): found 6, expected one of: {3}
 * uni1E0B (U+1E0B): found 5, expected one of: {3}
 * uni1E0C (U+1E0C): found 6, expected one of: {3}
@@ -1090,20 +1159,20 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E11 (U+1E11): found 8, expected one of: {3}
 * uni1E12 (U+1E12): found 7, expected one of: {3}
 * uni1E13 (U+1E13): found 6, expected one of: {3}
-* uni1E14 (U+1E14): found 6, expected one of: {3, 4}
-* uni1E15 (U+1E15): found 7, expected one of: {3, 4}
+* uni1E14 (U+1E14): found 6, expected one of: {4, 3}
+* uni1E15 (U+1E15): found 7, expected one of: {4, 3}
 * uni1E16 (U+1E16): found 6, expected one of: {3, 4}
 * uni1E17 (U+1E17): found 7, expected one of: {4, 3}
 * uni1E18 (U+1E18): found 6, expected one of: {2}
 * uni1E19 (U+1E19): found 7, expected one of: {3, 2}
 * uni1E1A (U+1E1A): found 7, expected one of: {2}
 * uni1E1B (U+1E1B): found 8, expected one of: {3, 2}
-* uni1E1C (U+1E1C): found 11, expected one of: {2, 3, 4}
+* uni1E1C (U+1E1C): found 11, expected one of: {2, 4, 3}
 * uni1E1D (U+1E1D): found 12, expected one of: {3, 4}
 * uni1E1E (U+1E1E): found 4, expected one of: {2}
 * uni1E1F (U+1E1F): found 4, expected one of: {2}
 * uni1E20 (U+1E20): found 5, expected one of: {2}
-* uni1E21 (U+1E21): found 6, expected one of: {5, 3, 4}
+* uni1E21 (U+1E21): found 6, expected one of: {3, 4, 5}
 * uni1E22 (U+1E22): found 4, expected one of: {2}
 * uni1E23 (U+1E23): found 4, expected one of: {2}
 * uni1E25 (U+1E25): found 4, expected one of: {2}
@@ -1111,8 +1180,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E27 (U+1E27): found 5, expected one of: {3}
 * uni1E28 (U+1E28): found 7, expected one of: {2}
 * uni1E29 (U+1E29): found 7, expected one of: {2}
-* uni1E2A (U+1E2A): found 6, expected one of: {4, 2}
-* uni1E2B (U+1E2B): found 6, expected one of: {2, 3}
+* uni1E2A (U+1E2A): found 6, expected one of: {2, 4}
+* uni1E2B (U+1E2B): found 6, expected one of: {3, 2}
 * uni1E2C (U+1E2C): found 6, expected one of: {2}
 * uni1E2D (U+1E2D): found 7, expected one of: {3}
 * uni1E2E (U+1E2E): found 6, expected one of: {5, 4}
@@ -1134,8 +1203,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E40 (U+1E40): found 5, expected one of: {2}
 * uni1E41 (U+1E41): found 5, expected one of: {2}
 * uni1E42 (U+1E42): found 5, expected one of: {2}
-* uni1E43 (U+1E43): found 5, expected one of: {2, 4}
-* uni1E45 (U+1E45): found 4, expected one of: {2, 3}
+* uni1E43 (U+1E43): found 5, expected one of: {4, 2}
+* uni1E45 (U+1E45): found 4, expected one of: {3, 2}
 * uni1E47 (U+1E47): found 4, expected one of: {2, 3}
 * uni1E49 (U+1E49): found 4, expected one of: {2, 3}
 * uni1E4A (U+1E4A): found 5, expected one of: {2}
@@ -1159,7 +1228,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E5C (U+1E5C): found 7, expected one of: {4}
 * uni1E5D (U+1E5D): found 5, expected one of: {3, 4}
 * uni1E5E (U+1E5E): found 6, expected one of: {3, 4}
-* uni1E5F (U+1E5F): found 4, expected one of: {3, 2}
+* uni1E5F (U+1E5F): found 4, expected one of: {2, 3}
 * uni1E60 (U+1E60): found 6, expected one of: {2}
 * uni1E61 (U+1E61): found 6, expected one of: {2}
 * uni1E62 (U+1E62): found 6, expected one of: {2}
@@ -1173,7 +1242,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E6A (U+1E6A): found 3, expected one of: {2}
 * uni1E6B (U+1E6B): found 4, expected one of: {2}
 * uni1E6C (U+1E6C): found 3, expected one of: {2}
-* uni1E6D (U+1E6D): found 4, expected one of: {2, 3}
+* uni1E6D (U+1E6D): found 4, expected one of: {3, 2}
 * uni1E6E (U+1E6E): found 3, expected one of: {2}
 * uni1E6F (U+1E6F): found 4, expected one of: {3, 2}
 * uni1E70 (U+1E70): found 4, expected one of: {2}
@@ -1183,10 +1252,11 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E74 (U+1E74): found 6, expected one of: {2}
 * uni1E75 (U+1E75): found 6, expected one of: {2}
 * uni1E76 (U+1E76): found 5, expected one of: {2}
+* uni1E77 (U+1E77): found 5, expected one of: {2}
 * uni1E78 (U+1E78): found 7, expected one of: {3}
-* uni1E79 (U+1E79): found 7, expected one of: {3, 4}
+* uni1E79 (U+1E79): found 7, expected one of: {4, 3}
 * uni1E7A (U+1E7A): found 6, expected one of: {4}
-* uni1E7B (U+1E7B): found 6, expected one of: {5, 4}
+* uni1E7B (U+1E7B): found 6, expected one of: {4, 5}
 * uni1E7C (U+1E7C): found 5, expected one of: {2}
 * uni1E7D (U+1E7D): found 5, expected one of: {2}
 * uni1E7E (U+1E7E): found 3, expected one of: {2}
@@ -1212,20 +1282,21 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1E98 (U+1E98): found 6, expected one of: {3}
 * uni1E99 (U+1E99): found 6, expected one of: {3}
 * uni1E9A (U+1E9A): found 8, expected one of: {3}
-* uni1E9E (U+1E9E): found 8, expected one of: {1, 3, 2}
+* uni1E9B (U+1E9B): found 4, expected one of: {2}
+* uni1E9E (U+1E9E): found 8, expected one of: {1, 2, 3}
 * uni1EA0 (U+1EA0): found 5, expected one of: {3}
-* uni1EA1 (U+1EA1): found 6, expected one of: {2, 3}
+* uni1EA1 (U+1EA1): found 6, expected one of: {3, 2}
 * uni1EA2 (U+1EA2): found 8, expected one of: {3}
 * uni1EA3 (U+1EA3): found 9, expected one of: {2, 3}
 * uni1EA4 (U+1EA4): found 7, expected one of: {5, 4}
-* uni1EA5 (U+1EA5): found 8, expected one of: {3, 4}
-* uni1EA6 (U+1EA6): found 7, expected one of: {5, 4}
-* uni1EA7 (U+1EA7): found 8, expected one of: {4, 3}
+* uni1EA5 (U+1EA5): found 8, expected one of: {4, 3}
+* uni1EA6 (U+1EA6): found 7, expected one of: {4, 5}
+* uni1EA7 (U+1EA7): found 8, expected one of: {3, 4}
 * uni1EA8 (U+1EA8): found 10, expected one of: {4, 5}
 * uni1EA9 (U+1EA9): found 11, expected one of: {4, 3}
 * uni1EAA (U+1EAA): found 9, expected one of: {4, 5}
-* uni1EAB (U+1EAB): found 10, expected one of: {4, 3}
-* uni1EAC (U+1EAC): found 7, expected one of: {4, 5}
+* uni1EAB (U+1EAB): found 10, expected one of: {3, 4}
+* uni1EAC (U+1EAC): found 7, expected one of: {5, 4}
 * uni1EAD (U+1EAD): found 8, expected one of: {4, 3}
 * uni1EAE (U+1EAE): found 8, expected one of: {4}
 * uni1EAF (U+1EAF): found 9, expected one of: {4, 3}
@@ -1234,24 +1305,24 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1EB2 (U+1EB2): found 11, expected one of: {4}
 * uni1EB3 (U+1EB3): found 12, expected one of: {4, 3}
 * uni1EB4 (U+1EB4): found 10, expected one of: {4}
-* uni1EB5 (U+1EB5): found 11, expected one of: {3, 4}
+* uni1EB5 (U+1EB5): found 11, expected one of: {4, 3}
 * uni1EB6 (U+1EB6): found 8, expected one of: {4}
-* uni1EB7 (U+1EB7): found 9, expected one of: {3, 4}
-* uni1EB8 (U+1EB8): found 5, expected one of: {3, 2}
+* uni1EB7 (U+1EB7): found 9, expected one of: {4, 3}
+* uni1EB8 (U+1EB8): found 5, expected one of: {2, 3}
 * uni1EB9 (U+1EB9): found 6, expected one of: {3, 2}
 * uni1EBA (U+1EBA): found 8, expected one of: {2, 3}
 * uni1EBB (U+1EBB): found 9, expected one of: {2, 3}
 * uni1EBC (U+1EBC): found 7, expected one of: {3, 2}
-* uni1EBD (U+1EBD): found 8, expected one of: {3, 2}
+* uni1EBD (U+1EBD): found 8, expected one of: {2, 3}
 * uni1EBE (U+1EBE): found 7, expected one of: {4, 3}
-* uni1EBF (U+1EBF): found 8, expected one of: {3, 4}
+* uni1EBF (U+1EBF): found 8, expected one of: {4, 3}
 * uni1EC0 (U+1EC0): found 7, expected one of: {4, 3}
 * uni1EC1 (U+1EC1): found 8, expected one of: {3, 4}
 * uni1EC2 (U+1EC2): found 10, expected one of: {3, 4}
-* uni1EC3 (U+1EC3): found 11, expected one of: {4, 3}
-* uni1EC4 (U+1EC4): found 9, expected one of: {4, 3}
-* uni1EC5 (U+1EC5): found 10, expected one of: {3, 4}
-* uni1EC6 (U+1EC6): found 7, expected one of: {4, 3}
+* uni1EC3 (U+1EC3): found 11, expected one of: {3, 4}
+* uni1EC4 (U+1EC4): found 9, expected one of: {3, 4}
+* uni1EC5 (U+1EC5): found 10, expected one of: {4, 3}
+* uni1EC6 (U+1EC6): found 7, expected one of: {3, 4}
 * uni1EC7 (U+1EC7): found 8, expected one of: {4, 3}
 * uni1EC8 (U+1EC8): found 7, expected one of: {2, 3}
 * uni1EC9 (U+1EC9): found 7, expected one of: {2}
@@ -1263,18 +1334,18 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1ECF (U+1ECF): found 8, expected one of: {3}
 * uni1ED0 (U+1ED0): found 7, expected one of: {4, 5, 3}
 * uni1ED1 (U+1ED1): found 7, expected one of: {4, 5}
-* uni1ED2 (U+1ED2): found 7, expected one of: {5, 4, 3}
+* uni1ED2 (U+1ED2): found 7, expected one of: {5, 3, 4}
 * uni1ED3 (U+1ED3): found 7, expected one of: {4, 5}
-* uni1ED4 (U+1ED4): found 10, expected one of: {4, 3, 5}
-* uni1ED5 (U+1ED5): found 10, expected one of: {5, 4}
-* uni1ED6 (U+1ED6): found 9, expected one of: {3, 4, 5}
-* uni1ED7 (U+1ED7): found 9, expected one of: {4, 5}
+* uni1ED4 (U+1ED4): found 10, expected one of: {3, 4, 5}
+* uni1ED5 (U+1ED5): found 10, expected one of: {4, 5}
+* uni1ED6 (U+1ED6): found 9, expected one of: {4, 3, 5}
+* uni1ED7 (U+1ED7): found 9, expected one of: {5, 4}
 * uni1ED8 (U+1ED8): found 7, expected one of: {4, 3, 5}
-* uni1ED9 (U+1ED9): found 7, expected one of: {5, 4}
+* uni1ED9 (U+1ED9): found 7, expected one of: {4, 5}
 * uni1EDA (U+1EDA): found 7, expected one of: {4, 3}
 * uni1EDB (U+1EDB): found 7, expected one of: {3, 4}
-* uni1EDC (U+1EDC): found 7, expected one of: {4, 3}
-* uni1EDD (U+1EDD): found 7, expected one of: {4, 3}
+* uni1EDC (U+1EDC): found 7, expected one of: {3, 4}
+* uni1EDD (U+1EDD): found 7, expected one of: {3, 4}
 * uni1EDE (U+1EDE): found 10, expected one of: {4, 3}
 * uni1EDF (U+1EDF): found 10, expected one of: {3, 4}
 * uni1EE0 (U+1EE0): found 9, expected one of: {3, 4}
@@ -1284,23 +1355,23 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1EE4 (U+1EE4): found 4, expected one of: {2}
 * uni1EE5 (U+1EE5): found 4, expected one of: {2, 3}
 * uni1EE6 (U+1EE6): found 7, expected one of: {2}
-* uni1EE7 (U+1EE7): found 7, expected one of: {3, 2}
-* uni1EE8 (U+1EE8): found 6, expected one of: {2, 3}
-* uni1EE9 (U+1EE9): found 6, expected one of: {3, 4, 2}
+* uni1EE7 (U+1EE7): found 7, expected one of: {2, 3}
+* uni1EE8 (U+1EE8): found 6, expected one of: {3, 2}
+* uni1EE9 (U+1EE9): found 6, expected one of: {3, 2, 4}
 * uni1EEA (U+1EEA): found 6, expected one of: {2, 3}
-* uni1EEB (U+1EEB): found 6, expected one of: {2, 4, 3}
-* uni1EEC (U+1EEC): found 9, expected one of: {2, 3}
-* uni1EED (U+1EED): found 9, expected one of: {2, 3, 4}
-* uni1EEE (U+1EEE): found 8, expected one of: {3, 2}
-* uni1EEF (U+1EEF): found 8, expected one of: {2, 4, 3}
-* uni1EF0 (U+1EF0): found 6, expected one of: {2, 3}
-* uni1EF1 (U+1EF1): found 6, expected one of: {2, 4, 3}
-* uni1EF4 (U+1EF4): found 5, expected one of: {3, 2}
-* uni1EF5 (U+1EF5): found 5, expected one of: {2, 3}
-* uni1EF6 (U+1EF6): found 8, expected one of: {2, 3}
+* uni1EEB (U+1EEB): found 6, expected one of: {4, 2, 3}
+* uni1EEC (U+1EEC): found 9, expected one of: {3, 2}
+* uni1EED (U+1EED): found 9, expected one of: {2, 4, 3}
+* uni1EEE (U+1EEE): found 8, expected one of: {2, 3}
+* uni1EEF (U+1EEF): found 8, expected one of: {3, 2, 4}
+* uni1EF0 (U+1EF0): found 6, expected one of: {3, 2}
+* uni1EF1 (U+1EF1): found 6, expected one of: {4, 3, 2}
+* uni1EF4 (U+1EF4): found 5, expected one of: {2, 3}
+* uni1EF5 (U+1EF5): found 5, expected one of: {3, 2}
+* uni1EF6 (U+1EF6): found 8, expected one of: {3, 2}
 * uni1EF7 (U+1EF7): found 8, expected one of: {3, 2}
 * uni1EF8 (U+1EF8): found 7, expected one of: {2, 3}
-* uni1EF9 (U+1EF9): found 7, expected one of: {2, 3}
+* uni1EF9 (U+1EF9): found 7, expected one of: {3, 2}
 * uni1F00 (U+1F00): found 7, expected one of: {3}
 * uni1F01 (U+1F01): found 7, expected one of: {3}
 * uni1F02 (U+1F02): found 8, expected one of: {4}
@@ -1510,8 +1581,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1FE1 (U+1FE1): found 5, expected one of: {2}
 * uni1FE2 (U+1FE2): found 7, expected one of: {4}
 * uni1FE3 (U+1FE3): found 7, expected one of: {4}
-* uni1FE4 (U+1FE4): found 6, expected one of: {2, 3}
-* uni1FE5 (U+1FE5): found 6, expected one of: {3, 2}
+* uni1FE4 (U+1FE4): found 6, expected one of: {3, 2}
+* uni1FE5 (U+1FE5): found 6, expected one of: {2, 3}
 * uni1FE6 (U+1FE6): found 7, expected one of: {2}
 * uni1FE7 (U+1FE7): found 9, expected one of: {4}
 * uni1FE8 (U+1FE8): found 7, expected one of: {2}
@@ -1531,7 +1602,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni1FFC (U+1FFC): found 11, expected one of: {2}
 * uni1FFE (U+1FFE): found 2, expected one of: {1}
 * uni203F (U+203F): found 3, expected one of: {1}
-* uni2042 (U+2042): found 9, expected one of: {15, 3}
+* uni2042 (U+2042): found 9, expected one of: {3, 15}
 * uni2070 (U+2070): found 3, expected one of: {2}
 * uni2071 (U+2071): found 4, expected one of: {2}
 * uni207A (U+207A): found 2, expected one of: {1}
@@ -1543,28 +1614,28 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uni208D (U+208D): found 3, expected one of: {1}
 * uni208E (U+208E): found 3, expected one of: {1}
 * uni20A8 (U+20A8): found 10, expected one of: {2, 3}
-* uni20AA (U+20AA): found 8, expected one of: {3, 2, 10}
-* uni20AD (U+20AD): found 4, expected one of: {2, 1, 3}
-* uni20B2 (U+20B2): found 5, expected one of: {1, 2, 3}
+* uni20AD (U+20AD): found 4, expected one of: {3, 2, 1}
+* uni20B2 (U+20B2): found 5, expected one of: {3, 2, 1}
 * uni20B4 (U+20B4): found 7, expected one of: {3, 2, 1, 4}
-* uni20B5 (U+20B5): found 4, expected one of: {2, 3, 1}
-* uni20B9 (U+20B9): found 5, expected one of: {1, 4, 3, 2}
+* uni20B5 (U+20B5): found 4, expected one of: {2, 1, 3}
+* uni20B9 (U+20B9): found 5, expected one of: {2, 1, 4, 3}
 * uni20BC (U+20BC): found 4, expected one of: {1, 2}
 * uni20BE (U+20BE): found 7, expected one of: {2, 1, 3}
 * uni20BF (U+20BF): found 13, expected one of: {3, 7}
-* uni2105 (U+2105): found 8, expected one of: {4}
-* uni2113 (U+2113): found 4, expected one of: {1, 2}
-* uni2116 (U+2116): found 8, expected one of: {6, 4, 3, 5}
 * uni2117 (U+2117): found 8, expected one of: {4, 3}
 * uni2120 (U+2120): found 9, expected one of: {2}
-* uni2196 (U+2196): found 3, expected one of: {2, 1}
-* uni2197 (U+2197): found 3, expected one of: {1, 2}
-* uni2198 (U+2198): found 3, expected one of: {1, 2}
-* uni2199 (U+2199): found 3, expected one of: {2, 1}
+* uni2144 (U+2144): found 4, expected one of: {1}
+* uni2196 (U+2196): found 3, expected one of: {1, 2}
+* uni2197 (U+2197): found 3, expected one of: {2, 1}
+* uni2198 (U+2198): found 3, expected one of: {2, 1}
+* uni2199 (U+2199): found 3, expected one of: {1, 2}
 * uni27E8 (U+27E8): found 2, expected one of: {1}
 * uni27E9 (U+27E9): found 2, expected one of: {1}
-* uni2C63 (U+2C63): found 5, expected one of: {3, 2}
+* uni2C62 (U+2C62): found 5, expected one of: {2}
+* uni2C63 (U+2C63): found 5, expected one of: {2, 3}
 * uni2C64 (U+2C64): found 7, expected one of: {2}
+* uni2C65 (U+2C65): found 6, expected one of: {4, 3}
+* uni2C66 (U+2C66): found 4, expected one of: {2}
 * uni2C6D (U+2C6D): found 4, expected one of: {2}
 * uni2C6F (U+2C6F): found 4, expected one of: {2}
 * uni2C72 (U+2C72): found 6, expected one of: {1}
@@ -1574,8 +1645,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * uniA7AE (U+A7AE): found 7, expected one of: {1}
 * uniA7B2 (U+A7B2): found 4, expected one of: {2}
 * uniA7B3 (U+A7B3): found 4, expected one of: {1}
-* uniA7B4 (U+A7B4): found 9, expected one of: {2, 3}
-* uniA7B5 (U+A7B5): found 5, expected one of: {2, 1}
+* uniA7B4 (U+A7B4): found 9, expected one of: {3, 2}
+* uniA7B5 (U+A7B5): found 5, expected one of: {1, 2}
 * uniA7B6 (U+A7B6): found 7, expected one of: {1}
 * uniA7B7 (U+A7B7): found 7, expected one of: {1}
 * uniAB53 (U+AB53): found 4, expected one of: {1}
@@ -1585,23 +1656,43 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 * upsilondieresistonos (U+03B0): found 7, expected one of: {4}
 * upsilontonos (U+03CD): found 5, expected one of: {2}
 * uring (U+016F): found 5, expected one of: {3, 4}
-* utilde (U+0169): found 6, expected one of: {2, 3}
+* utilde (U+0169): found 6, expected one of: {3, 2}
 * w (U+0077): found 4, expected one of: {2, 1, 3}
-* wacute (U+1E83): found 5, expected one of: {2, 3, 4}
-* wcircumflex (U+0175): found 6, expected one of: {3, 2, 4}
+* wacute (U+1E83): found 5, expected one of: {3, 4, 2}
+* wcircumflex (U+0175): found 6, expected one of: {3, 4, 2}
 * wdieresis (U+1E85): found 6, expected one of: {4, 3, 5}
-* wgrave (U+1E81): found 5, expected one of: {4, 2, 3}
+* wgrave (U+1E81): found 5, expected one of: {2, 4, 3}
 * xi (U+03BE): found 6, expected one of: {1}
-* y (U+0079): found 4, expected one of: {3, 1, 2}
-* yacute (U+00FD): found 5, expected one of: {2, 3, 4}
-* ycircumflex (U+0177): found 6, expected one of: {4, 2, 3}
+* y (U+0079): found 4, expected one of: {2, 3, 1}
+* yacute (U+00FD): found 5, expected one of: {3, 2, 4}
+* ycircumflex (U+0177): found 6, expected one of: {2, 3, 4}
 * ydieresis (U+00FF): found 6, expected one of: {4, 3}
-* yen (U+00A5): found 6, expected one of: {2, 3, 4, 5, 1}
+* yen (U+00A5): found 6, expected one of: {3, 2, 4, 1, 5}
 * ygrave (U+1EF3): found 5, expected one of: {2, 3}
-* zcaron (U+017E): found 5, expected one of: {3, 2, 4}
-* zedieresis-cy (U+04DF): found 9, expected one of: {3, 4}
-* zeta (U+03B6): found 5, expected one of: {1}
-* zhebreve-cy (U+04C2): found 8, expected one of: {4, 6, 2} [code: contour-count]
+* zcaron (U+017E): found 5, expected one of: {4, 3, 2}
+* zeta (U+03B6): found 5, expected one of: {1} [code: contour-count]
+  
+  
+
+</div>
+</details>
+
+
+
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Does GPOS table have kerning information? (gpos_kerning_info)</summary>
+    <div>
+
+
+
+
+
+
+
+
+- ⚠️ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
   
   
 
@@ -1670,24 +1761,6 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
   
 
 
-- ⚠️ **WARN** Glyph uni01D9 has interpolation issues:
-* Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [3, 0, 2, 1, 4, 5, 6] in slnt=-20
-* Contour 0 becomes underweight in slnt=-20 compared to default
-* Wrong start point: contour 1 should start at 3 in slnt=-20
-* Contour 1 becomes underweight in slnt=-20 compared to default [code: glyph]
-  
-  
-
-
-- ⚠️ **WARN** Glyph uni01DA has interpolation issues:
-* Contour order mismatch: [0, 1, 2, 3, 4, 5, 6] in default vs [3, 0, 2, 1, 4, 5, 6] in slnt=-20
-* Contour 0 becomes underweight in slnt=-20 compared to default
-* Wrong start point: contour 1 should start at 3 in slnt=-20
-* Contour 1 becomes underweight in slnt=-20 compared to default [code: glyph]
-  
-  
-
-
 - ⚠️ **WARN** Glyph uni0221 has interpolation issues:
 * Wrong start point: contour 5 should start at 6 in slnt=-20,wdth=200,wght=100 (and contour should be reversed) [code: glyph]
   
@@ -1726,6 +1799,12 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 - ⚠️ **WARN** Glyph uni0B06 has interpolation issues:
 * Contour 3 becomes underweight in slnt=-20,wdth=200,wght=100 compared to default [code: glyph]
+  
+  
+
+
+- ⚠️ **WARN** Glyph uni0B15_uni0B4D_uni0B37.akhn has interpolation issues:
+* Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8] in default vs [8, 1, 2, 3, 4, 5, 6, 7, 0] in slnt=-20,wdth=200 [code: glyph]
   
   
 
@@ -1791,6 +1870,12 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
   
 
 
+- ⚠️ **WARN** Glyph uni0B5F has interpolation issues:
+* Contour 4 becomes underweight in slnt=-20,wght=100 compared to default [code: glyph]
+  
+  
+
+
 - ⚠️ **WARN** Glyph uni0B94 has interpolation issues:
 * Contour 5 becomes underweight in slnt=-20,wght=100 compared to default [code: glyph]
   
@@ -1805,6 +1890,12 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 - ⚠️ **WARN** Glyph uni1E4E has interpolation issues:
 * Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8] in default vs [1, 2, 3, 0, 4, 5, 6, 7, 8] in slnt=-20,wght=100 [code: glyph]
+  
+  
+
+
+- ⚠️ **WARN** Glyph uni1E4F has interpolation issues:
+* Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8] in default vs [1, 2, 3, 0, 4, 5, 6, 7, 8] in slnt=-20 [code: glyph]
   
   
 
@@ -2165,7 +2256,7 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 | Message                                                           | Languages             |
 |-------------------------------------------------------------------|-----------------------|
 | Auxiliary orthography codepoints:                                 | * mn_Cyrl (Mongolian) |
-|   The following auxiliary characters are missing from the font: ӊ |                       | [code: warning-language-shaping]
+|   The following auxiliary characters are missing from the font: ӊ | * mn_Cyrl (Mongolian) | [code: warning-language-shaping]
   
   
 
@@ -2212,3074 +2303,2968 @@ replace the dot. (soft_dotted)</summary>
 
 
 - ⚠️ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: * і́
-* i᷇
-* i᷆
+* i̍
 * i̓
-* i̍The dot of soft dotted characters _should_ disappear in other cases, for example: * ј̩̊
-* ј̩̂
-* ј̩̐
-* ј̩᷄
-* ј̩́
-* ј̩̀
-* ј̩̒
-* ј̩᷇
-* ј̩᷆
-* ј̩̌
-* ј̩̅
-* ј̩̇
-* ј̩̓
-* ј̩̋
-* ј̩̉
-* ј̩̔
-* ј̩̑
-* ј̩̃
-* ј̩̄
-* ј̩̍
-* ј̩̏
-* ј̩᷅
-* ј̩͂
-* ј̩̆
-* ј̩̈
-* ј̨̊
-* ј̨̂
-* ј̨̐
-* ј̨᷄
-* ј̨́
-* ј̨̀
-* ј̨̒
-* ј̨᷇
-* ј̨᷆
-* ј̨̌
-* ј̨̅
-* ј̨̇
-* ј̨̓
-* ј̨̋
-* ј̨̉
-* ј̨̔
-* ј̨̑
-* ј̨̃
-* ј̨̄
-* ј̨̍
-* ј̨̏
-* ј̨᷅
-* ј̨͂
-* ј̨̆
-* ј̨̈
-* ј̧̊
-* ј̧̂
-* ј̧̐
-* ј̧᷄
-* ј̧́
-* ј̧̀
-* ј̧̒
-* ј̧᷇
-* ј̧᷆
-* ј̧̌
-* ј̧̅
-* ј̧̇
-* ј̧̓
-* ј̧̋
-* ј̧̉
-* ј̧̔
-* ј̧̑
-* ј̧̃
-* ј̧̄
-* ј̧̍
-* ј̧̏
-* ј̧᷅
-* ј̧͂
-* ј̧̆
-* ј̧̈
-* ј̮̊
-* ј̮̂
-* ј̮̐
-* ј̮᷄
-* ј̮́
-* ј̮̀
-* ј̮̒
-* ј̮᷇
-* ј̮᷆
-* ј̮̌
-* ј̮̅
-* ј̮̇
-* ј̮̓
-* ј̮̋
-* ј̮̉
-* ј̮̔
-* ј̮̑
-* ј̮̃
-* ј̮̄
-* ј̮̍
-* ј̮̏
-* ј̮᷅
-* ј̮͂
-* ј̮̆
-* ј̮̈
-* ј̤̊
-* ј̤̂
-* ј̤̐
-* ј̤᷄
-* ј̤́
-* ј̤̀
-* ј̤̒
-* ј̤᷇
-* ј̤᷆
-* ј̤̌
-* ј̤̅
-* ј̤̇
-* ј̤̓
-* ј̤̋
-* ј̤̉
-* ј̤̔
-* ј̤̑
-* ј̤̃
-* ј̤̄
-* ј̤̍
-* ј̤̏
-* ј̤᷅
-* ј̤͂
-* ј̤̆
-* ј̤̈
-* ј̰̊
-* ј̰̂
-* ј̰̐
-* ј̰᷄
-* ј̰́
-* ј̰̀
-* ј̰̒
-* ј̰᷇
-* ј̰᷆
-* ј̰̌
-* ј̰̅
-* ј̰̇
-* ј̰̓
-* ј̰̋
-* ј̰̉
-* ј̰̔
-* ј̰̑
-* ј̰̃
-* ј̰̄
-* ј̰̍
-* ј̰̏
-* ј̰᷅
-* ј̰͂
-* ј̰̆
-* ј̰̈
-* ј̭̊
-* ј̭̂
-* ј̭̐
-* ј̭᷄
-* ј̭́
-* ј̭̀
-* ј̭̒
-* ј̭᷇
-* ј̭᷆
-* ј̭̌
-* ј̭̅
-* ј̭̇
-* ј̭̓
-* ј̭̋
-* ј̭̉
-* ј̭̔
-* ј̭̑
-* ј̭̃
-* ј̭̄
-* ј̭̍
-* ј̭̏
-* ј̭᷅
-* ј̭͂
-* ј̭̆
-* ј̭̈
-* ј̥̊
-* ј̥̂
-* ј̥̐
-* ј̥᷄
-* ј̥́
-* ј̥̀
-* ј̥̒
-* ј̥᷇
-* ј̥᷆
-* ј̥̌
-* ј̥̅
-* ј̥̇
-* ј̥̓
-* ј̥̋
-* ј̥̉
-* ј̥̔
-* ј̥̑
-* ј̥̃
-* ј̥̄
-* ј̥̍
-* ј̥̏
-* ј̥᷅
-* ј̥͂
-* ј̥̆
-* ј̥̈
-* ј̣̊
-* ј̣̂
-* ј̣̐
-* ј̣᷄
-* ј̣́
-* ј̣̀
-* ј̣̒
-* ј̣᷇
-* ј̣᷆
-* ј̣̌
-* ј̣̅
-* ј̣̇
-* ј̣̓
-* ј̣̋
-* ј̣̉
-* ј̣̔
-* ј̣̑
-* ј̣̃
-* ј̣̄
-* ј̣̍
-* ј̣̏
-* ј̣᷅
-* ј̣͂
-* ј̣̆
-* ј̣̈
-* ј̯̊
-* ј̯̂
-* ј̯̐
-* ј̯᷄
-* ј̯́
-* ј̯̀
-* ј̯̒
-* ј̯᷇
-* ј̯᷆
-* ј̯̌
-* ј̯̅
-* ј̯̇
-* ј̯̓
-* ј̯̋
-* ј̯̉
-* ј̯̔
-* ј̯̑
-* ј̯̃
-* ј̯̄
-* ј̯̍
-* ј̯̏
-* ј̯᷅
-* ј̯͂
-* ј̯̆
-* ј̯̈
-* ј̵̊
-* ј̵̂
-* ј̵̐
-* ј̵᷄
-* ј̵́
-* ј̵̀
-* ј̵̒
-* ј̵᷇
-* ј̵᷆
-* ј̵̌
-* ј̵̅
-* ј̵̇
-* ј̵̓
-* ј̵̋
-* ј̵̉
-* ј̵̔
-* ј̵̑
-* ј̵̃
-* ј̵̄
-* ј̵̍
-* ј̵̏
-* ј̵᷅
-* ј̵͂
-* ј̵̆
-* ј̵̈
-* ј̱̊
-* ј̱̂
-* ј̱̐
-* ј̱᷄
-* ј̱́
-* ј̱̀
-* ј̱̒
-* ј̱᷇
-* ј̱᷆
-* ј̱̌
-* ј̱̅
-* ј̱̇
-* ј̱̓
-* ј̱̋
-* ј̱̉
-* ј̱̔
-* ј̱̑
-* ј̱̃
-* ј̱̄
-* ј̱̍
-* ј̱̏
-* ј̱᷅
-* ј̱͂
-* ј̱̆
-* ј̱̈
-* ј̲̊
-* ј̲̂
-* ј̲̐
-* ј̲᷄
-* ј̲́
-* ј̲̀
-* ј̲̒
-* ј̲᷇
-* ј̲᷆
-* ј̲̌
-* ј̲̅
-* ј̲̇
-* ј̲̓
-* ј̲̋
-* ј̲̉
-* ј̲̔
-* ј̲̑
-* ј̲̃
-* ј̲̄
-* ј̲̍
-* ј̲̏
-* ј̲᷅
-* ј̲͂
-* ј̲̆
-* ј̲̈
-* ј̦̊
-* ј̦̂
-* ј̦̐
-* ј̦᷄
-* ј̦́
-* ј̦̀
-* ј̦̒
-* ј̦᷇
-* ј̦᷆
-* ј̦̌
-* ј̦̅
-* ј̦̇
-* ј̦̓
-* ј̦̋
-* ј̦̉
-* ј̦̔
-* ј̦̑
-* ј̦̃
-* ј̦̄
-* ј̦̍
-* ј̦̏
-* ј̦᷅
-* ј̦͂
-* ј̦̆
-* ј̦̈
-* ј̛̊
-* ј̛̂
-* ј̛̐
-* ј̛᷄
-* ј̛́
-* ј̛̀
-* ј̛̒
-* ј̛᷇
-* ј̛᷆
-* ј̛̌
-* ј̛̅
-* ј̛̇
-* ј̛̓
-* ј̛̋
-* ј̛̉
-* ј̛̔
-* ј̛̑
-* ј̛̃
-* ј̛̄
-* ј̛̍
-* ј̛̏
-* ј̛᷅
-* ј̛͂
-* ј̛̆
-* ј̛̈
-* ј᷊̊
-* ј᷊̂
-* ј᷊̐
-* ј᷊᷄
-* ј᷊́
-* ј᷊̀
-* ј᷊̒
-* ј᷊᷇
-* ј᷊᷆
-* ј᷊̌
-* ј᷊̅
-* ј᷊̇
-* ј᷊̓
-* ј᷊̋
-* ј᷊̉
-* ј᷊̔
-* ј᷊̑
-* ј᷊̃
-* ј᷊̄
-* ј᷊̍
-* ј᷊̏
-* ј᷊᷅
-* ј᷊͂
-* ј᷊̆
-* ј᷊̈
-* ј̊
-* ј̂
-* ј̐
-* ј᷄
-* ј́
-* ј̀
-* ј̒
-* ј᷇
-* ј᷆
-* ј̌
-* ј̅
-* ј̇
-* ј̓
-* ј̋
-* ј̉
-* ј̔
-* ј̑
-* ј̃
-* ј̄
-* ј̍
-* ј̏
-* ј᷅
-* ј͂
-* ј̆
-* ј̈
-* ᶤ̩̊
-* ᶤ̩̂
-* ᶤ̩̐
-* ᶤ̩᷄
-* ᶤ̩́
-* ᶤ̩̀
-* ᶤ̩̒
-* ᶤ̩᷇
-* ᶤ̩᷆
-* ᶤ̩̌
-* ᶤ̩̅
-* ᶤ̩̇
-* ᶤ̩̓
-* ᶤ̩̋
-* ᶤ̩̉
-* ᶤ̩̔
-* ᶤ̩̑
-* ᶤ̩̃
-* ᶤ̩̄
-* ᶤ̩̍
-* ᶤ̩̏
-* ᶤ̩᷅
-* ᶤ̩͂
-* ᶤ̩̆
-* ᶤ̩̈
-* ᶤ̨̊
-* ᶤ̨̂
-* ᶤ̨̐
-* ᶤ̨᷄
-* ᶤ̨́
-* ᶤ̨̀
-* ᶤ̨̒
-* ᶤ̨᷇
-* ᶤ̨᷆
-* ᶤ̨̌
-* ᶤ̨̅
-* ᶤ̨̇
-* ᶤ̨̓
-* ᶤ̨̋
-* ᶤ̨̉
-* ᶤ̨̔
-* ᶤ̨̑
-* ᶤ̨̃
-* ᶤ̨̄
-* ᶤ̨̍
-* ᶤ̨̏
-* ᶤ̨᷅
-* ᶤ̨͂
-* ᶤ̨̆
-* ᶤ̨̈
-* ᶤ̧̊
-* ᶤ̧̂
-* ᶤ̧̐
-* ᶤ̧᷄
-* ᶤ̧́
-* ᶤ̧̀
-* ᶤ̧̒
-* ᶤ̧᷇
-* ᶤ̧᷆
-* ᶤ̧̌
-* ᶤ̧̅
-* ᶤ̧̇
-* ᶤ̧̓
-* ᶤ̧̋
-* ᶤ̧̉
-* ᶤ̧̔
-* ᶤ̧̑
-* ᶤ̧̃
-* ᶤ̧̄
-* ᶤ̧̍
-* ᶤ̧̏
-* ᶤ̧᷅
-* ᶤ̧͂
-* ᶤ̧̆
-* ᶤ̧̈
-* ᶤ̮̊
-* ᶤ̮̂
-* ᶤ̮̐
-* ᶤ̮᷄
-* ᶤ̮́
-* ᶤ̮̀
-* ᶤ̮̒
-* ᶤ̮᷇
-* ᶤ̮᷆
-* ᶤ̮̌
-* ᶤ̮̅
-* ᶤ̮̇
-* ᶤ̮̓
-* ᶤ̮̋
-* ᶤ̮̉
-* ᶤ̮̔
-* ᶤ̮̑
-* ᶤ̮̃
-* ᶤ̮̄
-* ᶤ̮̍
-* ᶤ̮̏
-* ᶤ̮᷅
-* ᶤ̮͂
-* ᶤ̮̆
-* ᶤ̮̈
-* ᶤ̤̊
-* ᶤ̤̂
-* ᶤ̤̐
-* ᶤ̤᷄
-* ᶤ̤́
-* ᶤ̤̀
-* ᶤ̤̒
-* ᶤ̤᷇
-* ᶤ̤᷆
-* ᶤ̤̌
-* ᶤ̤̅
-* ᶤ̤̇
-* ᶤ̤̓
-* ᶤ̤̋
-* ᶤ̤̉
-* ᶤ̤̔
-* ᶤ̤̑
-* ᶤ̤̃
-* ᶤ̤̄
-* ᶤ̤̍
-* ᶤ̤̏
-* ᶤ̤᷅
-* ᶤ̤͂
-* ᶤ̤̆
-* ᶤ̤̈
-* ᶤ̰̊
-* ᶤ̰̂
-* ᶤ̰̐
-* ᶤ̰᷄
-* ᶤ̰́
-* ᶤ̰̀
-* ᶤ̰̒
-* ᶤ̰᷇
-* ᶤ̰᷆
-* ᶤ̰̌
-* ᶤ̰̅
-* ᶤ̰̇
-* ᶤ̰̓
-* ᶤ̰̋
-* ᶤ̰̉
-* ᶤ̰̔
-* ᶤ̰̑
-* ᶤ̰̃
-* ᶤ̰̄
-* ᶤ̰̍
-* ᶤ̰̏
-* ᶤ̰᷅
-* ᶤ̰͂
-* ᶤ̰̆
-* ᶤ̰̈
-* ᶤ̭̊
-* ᶤ̭̂
-* ᶤ̭̐
-* ᶤ̭᷄
-* ᶤ̭́
-* ᶤ̭̀
-* ᶤ̭̒
-* ᶤ̭᷇
-* ᶤ̭᷆
-* ᶤ̭̌
-* ᶤ̭̅
-* ᶤ̭̇
-* ᶤ̭̓
-* ᶤ̭̋
-* ᶤ̭̉
-* ᶤ̭̔
-* ᶤ̭̑
-* ᶤ̭̃
-* ᶤ̭̄
-* ᶤ̭̍
-* ᶤ̭̏
-* ᶤ̭᷅
-* ᶤ̭͂
-* ᶤ̭̆
-* ᶤ̭̈
-* ᶤ̥̊
-* ᶤ̥̂
-* ᶤ̥̐
-* ᶤ̥᷄
-* ᶤ̥́
-* ᶤ̥̀
-* ᶤ̥̒
-* ᶤ̥᷇
-* ᶤ̥᷆
-* ᶤ̥̌
-* ᶤ̥̅
-* ᶤ̥̇
-* ᶤ̥̓
-* ᶤ̥̋
-* ᶤ̥̉
-* ᶤ̥̔
-* ᶤ̥̑
-* ᶤ̥̃
-* ᶤ̥̄
-* ᶤ̥̍
-* ᶤ̥̏
-* ᶤ̥᷅
-* ᶤ̥͂
-* ᶤ̥̆
-* ᶤ̥̈
-* ᶤ̣̊
-* ᶤ̣̂
-* ᶤ̣̐
-* ᶤ̣᷄
-* ᶤ̣́
-* ᶤ̣̀
-* ᶤ̣̒
-* ᶤ̣᷇
-* ᶤ̣᷆
-* ᶤ̣̌
-* ᶤ̣̅
-* ᶤ̣̇
-* ᶤ̣̓
-* ᶤ̣̋
-* ᶤ̣̉
-* ᶤ̣̔
-* ᶤ̣̑
-* ᶤ̣̃
-* ᶤ̣̄
-* ᶤ̣̍
-* ᶤ̣̏
-* ᶤ̣᷅
-* ᶤ̣͂
-* ᶤ̣̆
-* ᶤ̣̈
-* ᶤ̯̊
-* ᶤ̯̂
-* ᶤ̯̐
-* ᶤ̯᷄
-* ᶤ̯́
-* ᶤ̯̀
-* ᶤ̯̒
-* ᶤ̯᷇
-* ᶤ̯᷆
-* ᶤ̯̌
-* ᶤ̯̅
-* ᶤ̯̇
-* ᶤ̯̓
-* ᶤ̯̋
-* ᶤ̯̉
-* ᶤ̯̔
-* ᶤ̯̑
-* ᶤ̯̃
-* ᶤ̯̄
-* ᶤ̯̍
-* ᶤ̯̏
-* ᶤ̯᷅
-* ᶤ̯͂
-* ᶤ̯̆
-* ᶤ̯̈
-* ᶤ̵̊
-* ᶤ̵̂
-* ᶤ̵̐
-* ᶤ̵᷄
-* ᶤ̵́
-* ᶤ̵̀
-* ᶤ̵̒
-* ᶤ̵᷇
-* ᶤ̵᷆
-* ᶤ̵̌
-* ᶤ̵̅
-* ᶤ̵̇
-* ᶤ̵̓
-* ᶤ̵̋
-* ᶤ̵̉
-* ᶤ̵̔
-* ᶤ̵̑
-* ᶤ̵̃
-* ᶤ̵̄
-* ᶤ̵̍
-* ᶤ̵̏
-* ᶤ̵᷅
-* ᶤ̵͂
-* ᶤ̵̆
-* ᶤ̵̈
-* ᶤ̱̊
-* ᶤ̱̂
-* ᶤ̱̐
-* ᶤ̱᷄
-* ᶤ̱́
-* ᶤ̱̀
-* ᶤ̱̒
-* ᶤ̱᷇
-* ᶤ̱᷆
-* ᶤ̱̌
-* ᶤ̱̅
-* ᶤ̱̇
-* ᶤ̱̓
-* ᶤ̱̋
-* ᶤ̱̉
-* ᶤ̱̔
-* ᶤ̱̑
-* ᶤ̱̃
-* ᶤ̱̄
-* ᶤ̱̍
-* ᶤ̱̏
-* ᶤ̱᷅
-* ᶤ̱͂
-* ᶤ̱̆
-* ᶤ̱̈
-* ᶤ̲̊
-* ᶤ̲̂
-* ᶤ̲̐
-* ᶤ̲᷄
-* ᶤ̲́
-* ᶤ̲̀
-* ᶤ̲̒
-* ᶤ̲᷇
-* ᶤ̲᷆
-* ᶤ̲̌
-* ᶤ̲̅
-* ᶤ̲̇
-* ᶤ̲̓
-* ᶤ̲̋
-* ᶤ̲̉
-* ᶤ̲̔
-* ᶤ̲̑
-* ᶤ̲̃
-* ᶤ̲̄
-* ᶤ̲̍
-* ᶤ̲̏
-* ᶤ̲᷅
-* ᶤ̲͂
-* ᶤ̲̆
-* ᶤ̲̈
-* ᶤ̦̊
-* ᶤ̦̂
-* ᶤ̦̐
-* ᶤ̦᷄
-* ᶤ̦́
-* ᶤ̦̀
-* ᶤ̦̒
-* ᶤ̦᷇
-* ᶤ̦᷆
-* ᶤ̦̌
-* ᶤ̦̅
-* ᶤ̦̇
-* ᶤ̦̓
-* ᶤ̦̋
-* ᶤ̦̉
-* ᶤ̦̔
-* ᶤ̦̑
-* ᶤ̦̃
-* ᶤ̦̄
-* ᶤ̦̍
-* ᶤ̦̏
-* ᶤ̦᷅
-* ᶤ̦͂
-* ᶤ̦̆
-* ᶤ̦̈
-* ᶤ̛̊
-* ᶤ̛̂
-* ᶤ̛̐
-* ᶤ̛᷄
-* ᶤ̛́
-* ᶤ̛̀
-* ᶤ̛̒
-* ᶤ̛᷇
-* ᶤ̛᷆
-* ᶤ̛̌
-* ᶤ̛̅
-* ᶤ̛̇
-* ᶤ̛̓
-* ᶤ̛̋
-* ᶤ̛̉
-* ᶤ̛̔
-* ᶤ̛̑
-* ᶤ̛̃
-* ᶤ̛̄
-* ᶤ̛̍
-* ᶤ̛̏
-* ᶤ̛᷅
-* ᶤ̛͂
-* ᶤ̛̆
-* ᶤ̛̈
-* ᶤ᷊̊
-* ᶤ᷊̂
-* ᶤ᷊̐
-* ᶤ᷊᷄
-* ᶤ᷊́
-* ᶤ᷊̀
-* ᶤ᷊̒
-* ᶤ᷊᷇
-* ᶤ᷊᷆
-* ᶤ᷊̌
-* ᶤ᷊̅
-* ᶤ᷊̇
-* ᶤ᷊̓
-* ᶤ᷊̋
-* ᶤ᷊̉
-* ᶤ᷊̔
-* ᶤ᷊̑
-* ᶤ᷊̃
-* ᶤ᷊̄
-* ᶤ᷊̍
-* ᶤ᷊̏
-* ᶤ᷊᷅
-* ᶤ᷊͂
-* ᶤ᷊̆
-* ᶤ᷊̈
-* ᶤ̊
-* ᶤ̂
-* ᶤ̐
-* ᶤ᷄
-* ᶤ́
-* ᶤ̀
-* ᶤ̒
-* ᶤ᷇
-* ᶤ᷆
-* ᶤ̌
-* ᶤ̅
-* ᶤ̇
-* ᶤ̓
-* ᶤ̋
-* ᶤ̉
-* ᶤ̔
-* ᶤ̑
-* ᶤ̃
-* ᶤ̄
-* ᶤ̍
-* ᶤ̏
-* ᶤ᷅
-* ᶤ͂
-* ᶤ̆
-* ᶤ̈
-* į̩᷄
-* į̩᷇
-* į̩᷆
-* į̩̓
-* į̩̔
-* į̩̍
-* į̩᷅
-* į̩͂
-* į̨᷄
-* į̨᷇
-* į̨᷆
-* į̨̓
-* į̨̔
-* į̨̍
-* į̨᷅
-* į̨͂
-* į̧᷄
-* į̧᷇
-* į̧᷆
-* į̧̓
-* į̧̔
-* į̧̍
-* į̧᷅
-* į̧͂
-* į̮᷄
-* į̮᷇
-* į̮᷆
-* į̮̓
-* į̮̔
-* į̮̍
-* į̮᷅
-* į̮͂
-* į̤᷄
-* į̤᷇
-* į̤᷆
-* į̤̓
-* į̤̔
-* į̤̍
-* į̤᷅
-* į̤͂
-* į̰᷄
-* į̰᷇
-* į̰᷆
-* į̰̓
-* į̰̔
-* į̰̍
-* į̰᷅
-* į̰͂
-* į̭᷄
-* į̭᷇
-* į̭᷆
-* į̭̓
-* į̭̔
-* į̭̍
-* į̭᷅
-* į̭͂
-* į̥᷄
-* į̥᷇
-* į̥᷆
-* į̥̓
-* į̥̔
-* į̥̍
-* į̥᷅
-* į̥͂
-* į̣᷄
-* į̣᷇
-* į̣᷆
-* į̣̓
-* į̣̔
-* į̣̍
-* į̣᷅
-* į̣͂
-* į̯᷄
-* į̯᷇
-* į̯᷆
-* į̯̓
-* į̯̔
-* į̯̍
-* į̯᷅
-* į̯͂
-* į̵᷄
-* į̵᷇
-* į̵᷆
-* į̵̓
-* į̵̔
-* į̵̍
-* į̵᷅
-* į̵͂
-* į̱᷄
-* į̱᷇
-* į̱᷆
-* į̱̓
-* į̱̔
-* į̱̍
-* į̱᷅
-* į̱͂
-* į̲᷄
-* į̲᷇
-* į̲᷆
-* į̲̓
-* į̲̔
-* į̲̍
-* į̲᷅
-* į̲͂
-* į̦᷄
-* į̦᷇
-* į̦᷆
-* į̦̓
-* į̦̔
-* į̦̍
-* į̦᷅
-* į̦͂
-* į᷊̊
-* į᷊̂
-* į᷊̐
-* į᷊᷄
-* į᷊́
-* į᷊̀
-* į᷊̒
-* į᷊᷇
-* į᷊᷆
-* į᷊̌
-* į᷊̅
-* į᷊̇
-* į᷊̓
-* į᷊̋
-* į᷊̉
-* į᷊̔
-* į᷊̑
-* į᷊̃
-* į᷊̄
-* į᷊̍
-* į᷊̏
-* į᷊᷅
-* į᷊͂
-* į᷊̆
-* į᷊̈
-* į᷄
-* į᷇
-* į᷆
-* į̓
-* į̔
-* į̍
-* į᷅
-* į͂
-* ʝ̩̊
-* ʝ̩̂
-* ʝ̩̐
-* ʝ̩᷄
-* ʝ̩́
-* ʝ̩̀
-* ʝ̩̒
-* ʝ̩᷇
-* ʝ̩᷆
-* ʝ̩̌
-* ʝ̩̅
-* ʝ̩̇
-* ʝ̩̓
-* ʝ̩̋
-* ʝ̩̉
-* ʝ̩̔
-* ʝ̩̑
-* ʝ̩̃
-* ʝ̩̄
-* ʝ̩̍
-* ʝ̩̏
-* ʝ̩᷅
-* ʝ̩͂
-* ʝ̩̆
-* ʝ̩̈
-* ʝ̨̊
-* ʝ̨̂
-* ʝ̨̐
-* ʝ̨᷄
-* ʝ̨́
-* ʝ̨̀
-* ʝ̨̒
-* ʝ̨᷇
-* ʝ̨᷆
-* ʝ̨̌
-* ʝ̨̅
-* ʝ̨̇
-* ʝ̨̓
-* ʝ̨̋
-* ʝ̨̉
-* ʝ̨̔
-* ʝ̨̑
-* ʝ̨̃
-* ʝ̨̄
-* ʝ̨̍
-* ʝ̨̏
-* ʝ̨᷅
-* ʝ̨͂
-* ʝ̨̆
-* ʝ̨̈
-* ʝ̧̊
-* ʝ̧̂
-* ʝ̧̐
-* ʝ̧᷄
-* ʝ̧́
-* ʝ̧̀
-* ʝ̧̒
-* ʝ̧᷇
-* ʝ̧᷆
-* ʝ̧̌
-* ʝ̧̅
-* ʝ̧̇
-* ʝ̧̓
-* ʝ̧̋
-* ʝ̧̉
-* ʝ̧̔
-* ʝ̧̑
-* ʝ̧̃
-* ʝ̧̄
-* ʝ̧̍
-* ʝ̧̏
-* ʝ̧᷅
-* ʝ̧͂
-* ʝ̧̆
-* ʝ̧̈
-* ʝ̮̊
-* ʝ̮̂
-* ʝ̮̐
-* ʝ̮᷄
-* ʝ̮́
-* ʝ̮̀
-* ʝ̮̒
-* ʝ̮᷇
-* ʝ̮᷆
-* ʝ̮̌
-* ʝ̮̅
-* ʝ̮̇
-* ʝ̮̓
-* ʝ̮̋
-* ʝ̮̉
-* ʝ̮̔
-* ʝ̮̑
-* ʝ̮̃
-* ʝ̮̄
-* ʝ̮̍
-* ʝ̮̏
-* ʝ̮᷅
-* ʝ̮͂
-* ʝ̮̆
-* ʝ̮̈
-* ʝ̤̊
-* ʝ̤̂
-* ʝ̤̐
-* ʝ̤᷄
-* ʝ̤́
-* ʝ̤̀
-* ʝ̤̒
-* ʝ̤᷇
-* ʝ̤᷆
-* ʝ̤̌
-* ʝ̤̅
-* ʝ̤̇
-* ʝ̤̓
-* ʝ̤̋
-* ʝ̤̉
-* ʝ̤̔
-* ʝ̤̑
-* ʝ̤̃
-* ʝ̤̄
-* ʝ̤̍
-* ʝ̤̏
-* ʝ̤᷅
-* ʝ̤͂
-* ʝ̤̆
-* ʝ̤̈
-* ʝ̰̊
-* ʝ̰̂
-* ʝ̰̐
-* ʝ̰᷄
-* ʝ̰́
-* ʝ̰̀
-* ʝ̰̒
-* ʝ̰᷇
-* ʝ̰᷆
-* ʝ̰̌
-* ʝ̰̅
-* ʝ̰̇
-* ʝ̰̓
-* ʝ̰̋
-* ʝ̰̉
-* ʝ̰̔
-* ʝ̰̑
-* ʝ̰̃
-* ʝ̰̄
-* ʝ̰̍
-* ʝ̰̏
-* ʝ̰᷅
-* ʝ̰͂
-* ʝ̰̆
-* ʝ̰̈
-* ʝ̭̊
-* ʝ̭̂
-* ʝ̭̐
-* ʝ̭᷄
-* ʝ̭́
-* ʝ̭̀
-* ʝ̭̒
-* ʝ̭᷇
-* ʝ̭᷆
-* ʝ̭̌
-* ʝ̭̅
-* ʝ̭̇
-* ʝ̭̓
-* ʝ̭̋
-* ʝ̭̉
-* ʝ̭̔
-* ʝ̭̑
-* ʝ̭̃
-* ʝ̭̄
-* ʝ̭̍
-* ʝ̭̏
-* ʝ̭᷅
-* ʝ̭͂
-* ʝ̭̆
-* ʝ̭̈
-* ʝ̥̊
-* ʝ̥̂
-* ʝ̥̐
-* ʝ̥᷄
-* ʝ̥́
-* ʝ̥̀
-* ʝ̥̒
-* ʝ̥᷇
-* ʝ̥᷆
-* ʝ̥̌
-* ʝ̥̅
-* ʝ̥̇
-* ʝ̥̓
-* ʝ̥̋
-* ʝ̥̉
-* ʝ̥̔
-* ʝ̥̑
-* ʝ̥̃
-* ʝ̥̄
-* ʝ̥̍
-* ʝ̥̏
-* ʝ̥᷅
-* ʝ̥͂
-* ʝ̥̆
-* ʝ̥̈
-* ʝ̣̊
-* ʝ̣̂
-* ʝ̣̐
-* ʝ̣᷄
-* ʝ̣́
-* ʝ̣̀
-* ʝ̣̒
-* ʝ̣᷇
-* ʝ̣᷆
-* ʝ̣̌
-* ʝ̣̅
-* ʝ̣̇
-* ʝ̣̓
-* ʝ̣̋
-* ʝ̣̉
-* ʝ̣̔
-* ʝ̣̑
-* ʝ̣̃
-* ʝ̣̄
-* ʝ̣̍
-* ʝ̣̏
-* ʝ̣᷅
-* ʝ̣͂
-* ʝ̣̆
-* ʝ̣̈
-* ʝ̯̊
-* ʝ̯̂
-* ʝ̯̐
-* ʝ̯᷄
-* ʝ̯́
-* ʝ̯̀
-* ʝ̯̒
-* ʝ̯᷇
-* ʝ̯᷆
-* ʝ̯̌
-* ʝ̯̅
-* ʝ̯̇
-* ʝ̯̓
-* ʝ̯̋
-* ʝ̯̉
-* ʝ̯̔
-* ʝ̯̑
-* ʝ̯̃
-* ʝ̯̄
-* ʝ̯̍
-* ʝ̯̏
-* ʝ̯᷅
-* ʝ̯͂
-* ʝ̯̆
-* ʝ̯̈
-* ʝ̵̊
-* ʝ̵̂
-* ʝ̵̐
-* ʝ̵᷄
-* ʝ̵́
-* ʝ̵̀
-* ʝ̵̒
-* ʝ̵᷇
-* ʝ̵᷆
-* ʝ̵̌
-* ʝ̵̅
-* ʝ̵̇
-* ʝ̵̓
-* ʝ̵̋
-* ʝ̵̉
-* ʝ̵̔
-* ʝ̵̑
-* ʝ̵̃
-* ʝ̵̄
-* ʝ̵̍
-* ʝ̵̏
-* ʝ̵᷅
-* ʝ̵͂
-* ʝ̵̆
-* ʝ̵̈
-* ʝ̱̊
-* ʝ̱̂
-* ʝ̱̐
-* ʝ̱᷄
-* ʝ̱́
-* ʝ̱̀
-* ʝ̱̒
-* ʝ̱᷇
-* ʝ̱᷆
-* ʝ̱̌
-* ʝ̱̅
-* ʝ̱̇
-* ʝ̱̓
-* ʝ̱̋
-* ʝ̱̉
-* ʝ̱̔
-* ʝ̱̑
-* ʝ̱̃
-* ʝ̱̄
-* ʝ̱̍
-* ʝ̱̏
-* ʝ̱᷅
-* ʝ̱͂
-* ʝ̱̆
-* ʝ̱̈
-* ʝ̲̊
-* ʝ̲̂
-* ʝ̲̐
-* ʝ̲᷄
-* ʝ̲́
-* ʝ̲̀
-* ʝ̲̒
-* ʝ̲᷇
-* ʝ̲᷆
-* ʝ̲̌
-* ʝ̲̅
-* ʝ̲̇
-* ʝ̲̓
-* ʝ̲̋
-* ʝ̲̉
-* ʝ̲̔
-* ʝ̲̑
-* ʝ̲̃
-* ʝ̲̄
-* ʝ̲̍
-* ʝ̲̏
-* ʝ̲᷅
-* ʝ̲͂
-* ʝ̲̆
-* ʝ̲̈
-* ʝ̦̊
-* ʝ̦̂
-* ʝ̦̐
-* ʝ̦᷄
-* ʝ̦́
-* ʝ̦̀
-* ʝ̦̒
-* ʝ̦᷇
-* ʝ̦᷆
-* ʝ̦̌
-* ʝ̦̅
-* ʝ̦̇
-* ʝ̦̓
-* ʝ̦̋
-* ʝ̦̉
-* ʝ̦̔
-* ʝ̦̑
-* ʝ̦̃
-* ʝ̦̄
-* ʝ̦̍
-* ʝ̦̏
-* ʝ̦᷅
-* ʝ̦͂
-* ʝ̦̆
-* ʝ̦̈
-* ʝ̛̊
-* ʝ̛̂
-* ʝ̛̐
-* ʝ̛᷄
-* ʝ̛́
-* ʝ̛̀
-* ʝ̛̒
-* ʝ̛᷇
-* ʝ̛᷆
-* ʝ̛̌
-* ʝ̛̅
-* ʝ̛̇
-* ʝ̛̓
-* ʝ̛̋
-* ʝ̛̉
-* ʝ̛̔
-* ʝ̛̑
-* ʝ̛̃
-* ʝ̛̄
-* ʝ̛̍
-* ʝ̛̏
-* ʝ̛᷅
-* ʝ̛͂
-* ʝ̛̆
-* ʝ̛̈
-* ʝ᷊̊
-* ʝ᷊̂
-* ʝ᷊̐
-* ʝ᷊᷄
-* ʝ᷊́
-* ʝ᷊̀
-* ʝ᷊̒
-* ʝ᷊᷇
-* ʝ᷊᷆
-* ʝ᷊̌
-* ʝ᷊̅
-* ʝ᷊̇
-* ʝ᷊̓
-* ʝ᷊̋
-* ʝ᷊̉
-* ʝ᷊̔
-* ʝ᷊̑
-* ʝ᷊̃
-* ʝ᷊̄
-* ʝ᷊̍
-* ʝ᷊̏
-* ʝ᷊᷅
-* ʝ᷊͂
-* ʝ᷊̆
-* ʝ᷊̈
-* ʝ̊
-* ʝ̂
-* ʝ̐
-* ʝ᷄
-* ʝ́
-* ʝ̀
-* ʝ̒
-* ʝ᷇
-* ʝ᷆
-* ʝ̌
-* ʝ̅
-* ʝ̇
-* ʝ̓
-* ʝ̋
-* ʝ̉
-* ʝ̔
-* ʝ̑
-* ʝ̃
-* ʝ̄
-* ʝ̍
-* ʝ̏
-* ʝ᷅
-* ʝ͂
-* ʝ̆
-* ʝ̈
-* ⁱ̩̊
-* ⁱ̩̂
-* ⁱ̩̐
-* ⁱ̩᷄
-* ⁱ̩́
-* ⁱ̩̀
-* ⁱ̩̒
-* ⁱ̩᷇
-* ⁱ̩᷆
-* ⁱ̩̌
-* ⁱ̩̅
-* ⁱ̩̇
-* ⁱ̩̓
-* ⁱ̩̋
-* ⁱ̩̉
-* ⁱ̩̔
-* ⁱ̩̑
-* ⁱ̩̃
-* ⁱ̩̄
-* ⁱ̩̍
-* ⁱ̩̏
-* ⁱ̩᷅
-* ⁱ̩͂
-* ⁱ̩̆
-* ⁱ̩̈
-* ⁱ̨̊
-* ⁱ̨̂
-* ⁱ̨̐
-* ⁱ̨᷄
-* ⁱ̨́
-* ⁱ̨̀
-* ⁱ̨̒
-* ⁱ̨᷇
-* ⁱ̨᷆
-* ⁱ̨̌
-* ⁱ̨̅
-* ⁱ̨̇
-* ⁱ̨̓
-* ⁱ̨̋
-* ⁱ̨̉
-* ⁱ̨̔
-* ⁱ̨̑
-* ⁱ̨̃
-* ⁱ̨̄
-* ⁱ̨̍
-* ⁱ̨̏
-* ⁱ̨᷅
-* ⁱ̨͂
-* ⁱ̨̆
-* ⁱ̨̈
-* ⁱ̧̊
-* ⁱ̧̂
-* ⁱ̧̐
-* ⁱ̧᷄
-* ⁱ̧́
-* ⁱ̧̀
-* ⁱ̧̒
-* ⁱ̧᷇
-* ⁱ̧᷆
-* ⁱ̧̌
-* ⁱ̧̅
-* ⁱ̧̇
-* ⁱ̧̓
-* ⁱ̧̋
-* ⁱ̧̉
-* ⁱ̧̔
-* ⁱ̧̑
-* ⁱ̧̃
-* ⁱ̧̄
-* ⁱ̧̍
-* ⁱ̧̏
-* ⁱ̧᷅
-* ⁱ̧͂
-* ⁱ̧̆
-* ⁱ̧̈
-* ⁱ̮̊
-* ⁱ̮̂
-* ⁱ̮̐
-* ⁱ̮᷄
-* ⁱ̮́
-* ⁱ̮̀
-* ⁱ̮̒
-* ⁱ̮᷇
-* ⁱ̮᷆
-* ⁱ̮̌
-* ⁱ̮̅
-* ⁱ̮̇
-* ⁱ̮̓
-* ⁱ̮̋
-* ⁱ̮̉
-* ⁱ̮̔
-* ⁱ̮̑
-* ⁱ̮̃
-* ⁱ̮̄
-* ⁱ̮̍
-* ⁱ̮̏
-* ⁱ̮᷅
-* ⁱ̮͂
-* ⁱ̮̆
-* ⁱ̮̈
-* ⁱ̤̊
-* ⁱ̤̂
-* ⁱ̤̐
-* ⁱ̤᷄
-* ⁱ̤́
-* ⁱ̤̀
-* ⁱ̤̒
-* ⁱ̤᷇
-* ⁱ̤᷆
-* ⁱ̤̌
-* ⁱ̤̅
-* ⁱ̤̇
-* ⁱ̤̓
-* ⁱ̤̋
-* ⁱ̤̉
-* ⁱ̤̔
-* ⁱ̤̑
-* ⁱ̤̃
-* ⁱ̤̄
-* ⁱ̤̍
-* ⁱ̤̏
-* ⁱ̤᷅
-* ⁱ̤͂
-* ⁱ̤̆
-* ⁱ̤̈
-* ⁱ̰̊
-* ⁱ̰̂
-* ⁱ̰̐
-* ⁱ̰᷄
-* ⁱ̰́
-* ⁱ̰̀
-* ⁱ̰̒
-* ⁱ̰᷇
-* ⁱ̰᷆
-* ⁱ̰̌
-* ⁱ̰̅
-* ⁱ̰̇
-* ⁱ̰̓
-* ⁱ̰̋
-* ⁱ̰̉
-* ⁱ̰̔
-* ⁱ̰̑
-* ⁱ̰̃
-* ⁱ̰̄
-* ⁱ̰̍
-* ⁱ̰̏
-* ⁱ̰᷅
-* ⁱ̰͂
-* ⁱ̰̆
-* ⁱ̰̈
-* ⁱ̭̊
-* ⁱ̭̂
-* ⁱ̭̐
-* ⁱ̭᷄
-* ⁱ̭́
-* ⁱ̭̀
-* ⁱ̭̒
-* ⁱ̭᷇
-* ⁱ̭᷆
-* ⁱ̭̌
-* ⁱ̭̅
-* ⁱ̭̇
-* ⁱ̭̓
-* ⁱ̭̋
-* ⁱ̭̉
-* ⁱ̭̔
-* ⁱ̭̑
-* ⁱ̭̃
-* ⁱ̭̄
-* ⁱ̭̍
-* ⁱ̭̏
-* ⁱ̭᷅
-* ⁱ̭͂
-* ⁱ̭̆
-* ⁱ̭̈
-* ⁱ̥̊
-* ⁱ̥̂
-* ⁱ̥̐
-* ⁱ̥᷄
-* ⁱ̥́
-* ⁱ̥̀
-* ⁱ̥̒
-* ⁱ̥᷇
-* ⁱ̥᷆
-* ⁱ̥̌
-* ⁱ̥̅
-* ⁱ̥̇
-* ⁱ̥̓
-* ⁱ̥̋
-* ⁱ̥̉
-* ⁱ̥̔
-* ⁱ̥̑
-* ⁱ̥̃
-* ⁱ̥̄
-* ⁱ̥̍
-* ⁱ̥̏
-* ⁱ̥᷅
-* ⁱ̥͂
-* ⁱ̥̆
-* ⁱ̥̈
-* ⁱ̣̊
-* ⁱ̣̂
-* ⁱ̣̐
-* ⁱ̣᷄
-* ⁱ̣́
-* ⁱ̣̀
-* ⁱ̣̒
-* ⁱ̣᷇
-* ⁱ̣᷆
-* ⁱ̣̌
-* ⁱ̣̅
-* ⁱ̣̇
-* ⁱ̣̓
-* ⁱ̣̋
-* ⁱ̣̉
-* ⁱ̣̔
-* ⁱ̣̑
-* ⁱ̣̃
-* ⁱ̣̄
-* ⁱ̣̍
-* ⁱ̣̏
-* ⁱ̣᷅
-* ⁱ̣͂
-* ⁱ̣̆
-* ⁱ̣̈
-* ⁱ̯̊
-* ⁱ̯̂
-* ⁱ̯̐
-* ⁱ̯᷄
-* ⁱ̯́
-* ⁱ̯̀
-* ⁱ̯̒
-* ⁱ̯᷇
-* ⁱ̯᷆
-* ⁱ̯̌
-* ⁱ̯̅
-* ⁱ̯̇
-* ⁱ̯̓
-* ⁱ̯̋
-* ⁱ̯̉
-* ⁱ̯̔
-* ⁱ̯̑
-* ⁱ̯̃
-* ⁱ̯̄
-* ⁱ̯̍
-* ⁱ̯̏
-* ⁱ̯᷅
-* ⁱ̯͂
-* ⁱ̯̆
-* ⁱ̯̈
-* ⁱ̵̊
-* ⁱ̵̂
-* ⁱ̵̐
-* ⁱ̵᷄
-* ⁱ̵́
-* ⁱ̵̀
-* ⁱ̵̒
-* ⁱ̵᷇
-* ⁱ̵᷆
-* ⁱ̵̌
-* ⁱ̵̅
-* ⁱ̵̇
-* ⁱ̵̓
-* ⁱ̵̋
-* ⁱ̵̉
-* ⁱ̵̔
-* ⁱ̵̑
-* ⁱ̵̃
-* ⁱ̵̄
-* ⁱ̵̍
-* ⁱ̵̏
-* ⁱ̵᷅
-* ⁱ̵͂
-* ⁱ̵̆
-* ⁱ̵̈
-* ⁱ̱̊
-* ⁱ̱̂
-* ⁱ̱̐
-* ⁱ̱᷄
-* ⁱ̱́
-* ⁱ̱̀
-* ⁱ̱̒
-* ⁱ̱᷇
-* ⁱ̱᷆
-* ⁱ̱̌
-* ⁱ̱̅
-* ⁱ̱̇
-* ⁱ̱̓
-* ⁱ̱̋
-* ⁱ̱̉
-* ⁱ̱̔
-* ⁱ̱̑
-* ⁱ̱̃
-* ⁱ̱̄
-* ⁱ̱̍
-* ⁱ̱̏
-* ⁱ̱᷅
-* ⁱ̱͂
-* ⁱ̱̆
-* ⁱ̱̈
-* ⁱ̲̊
-* ⁱ̲̂
-* ⁱ̲̐
-* ⁱ̲᷄
-* ⁱ̲́
-* ⁱ̲̀
-* ⁱ̲̒
-* ⁱ̲᷇
-* ⁱ̲᷆
-* ⁱ̲̌
-* ⁱ̲̅
-* ⁱ̲̇
-* ⁱ̲̓
-* ⁱ̲̋
-* ⁱ̲̉
-* ⁱ̲̔
-* ⁱ̲̑
-* ⁱ̲̃
-* ⁱ̲̄
-* ⁱ̲̍
-* ⁱ̲̏
-* ⁱ̲᷅
-* ⁱ̲͂
-* ⁱ̲̆
-* ⁱ̲̈
-* ⁱ̦̊
-* ⁱ̦̂
-* ⁱ̦̐
-* ⁱ̦᷄
-* ⁱ̦́
-* ⁱ̦̀
-* ⁱ̦̒
-* ⁱ̦᷇
-* ⁱ̦᷆
-* ⁱ̦̌
-* ⁱ̦̅
-* ⁱ̦̇
-* ⁱ̦̓
-* ⁱ̦̋
-* ⁱ̦̉
-* ⁱ̦̔
-* ⁱ̦̑
-* ⁱ̦̃
-* ⁱ̦̄
-* ⁱ̦̍
-* ⁱ̦̏
-* ⁱ̦᷅
-* ⁱ̦͂
-* ⁱ̦̆
-* ⁱ̦̈
-* ⁱ̛̊
-* ⁱ̛̂
-* ⁱ̛̐
-* ⁱ̛᷄
-* ⁱ̛́
-* ⁱ̛̀
-* ⁱ̛̒
-* ⁱ̛᷇
-* ⁱ̛᷆
-* ⁱ̛̌
-* ⁱ̛̅
-* ⁱ̛̇
-* ⁱ̛̓
-* ⁱ̛̋
-* ⁱ̛̉
-* ⁱ̛̔
-* ⁱ̛̑
-* ⁱ̛̃
-* ⁱ̛̄
-* ⁱ̛̍
-* ⁱ̛̏
-* ⁱ̛᷅
-* ⁱ̛͂
-* ⁱ̛̆
-* ⁱ̛̈
-* ⁱ᷊̊
-* ⁱ᷊̂
-* ⁱ᷊̐
-* ⁱ᷊᷄
-* ⁱ᷊́
-* ⁱ᷊̀
-* ⁱ᷊̒
-* ⁱ᷊᷇
-* ⁱ᷊᷆
-* ⁱ᷊̌
-* ⁱ᷊̅
-* ⁱ᷊̇
-* ⁱ᷊̓
-* ⁱ᷊̋
-* ⁱ᷊̉
-* ⁱ᷊̔
-* ⁱ᷊̑
-* ⁱ᷊̃
-* ⁱ᷊̄
-* ⁱ᷊̍
-* ⁱ᷊̏
-* ⁱ᷊᷅
-* ⁱ᷊͂
-* ⁱ᷊̆
-* ⁱ᷊̈
-* ⁱ̊
-* ⁱ̂
-* ⁱ̐
-* ⁱ᷄
-* ⁱ́
-* ⁱ̀
-* ⁱ̒
-* ⁱ᷇
-* ⁱ᷆
-* ⁱ̌
-* ⁱ̅
-* ⁱ̇
-* ⁱ̓
-* ⁱ̋
-* ⁱ̉
-* ⁱ̔
-* ⁱ̑
-* ⁱ̃
-* ⁱ̄
-* ⁱ̍
-* ⁱ̏
-* ⁱ᷅
-* ⁱ͂
-* ⁱ̆
-* ⁱ̈
-* і̩̊
-* і̩̂
-* і̩̐
-* і̩᷄
-* і̩́
-* і̩̀
-* і̩̒
-* і̩᷇
-* і̩᷆
-* і̩̌
-* і̩̅
-* і̩̇
-* і̩̓
-* і̩̋
-* і̩̉
-* і̩̔
-* і̩̑
-* і̩̃
-* і̩̄
-* і̩̍
-* і̩̏
-* і̩᷅
-* і̩͂
-* і̩̆
-* і̨̊
-* і̨̂
-* і̨̐
-* і̨᷄
-* і̨́
-* і̨̀
-* і̨̒
-* і̨᷇
-* і̨᷆
-* і̨̌
-* і̨̅
-* і̨̇
-* і̨̓
-* і̨̋
-* і̨̉
-* і̨̔
-* і̨̑
-* і̨̃
-* і̨̄
-* і̨̍
-* і̨̏
-* і̨᷅
-* і̨͂
-* і̨̆
-* і̧̊
-* і̧̂
-* і̧̐
-* і̧᷄
-* і̧́
-* і̧̀
-* і̧̒
-* і̧᷇
-* і̧᷆
-* і̧̌
-* і̧̅
-* і̧̇
-* і̧̓
-* і̧̋
-* і̧̉
-* і̧̔
-* і̧̑
-* і̧̃
-* і̧̄
-* і̧̍
-* і̧̏
-* і̧᷅
-* і̧͂
-* і̧̆
-* і̮̊
-* і̮̂
-* і̮̐
-* і̮᷄
-* і̮́
-* і̮̀
-* і̮̒
-* і̮᷇
-* і̮᷆
-* і̮̌
-* і̮̅
-* і̮̇
-* і̮̓
-* і̮̋
-* і̮̉
-* і̮̔
-* і̮̑
-* і̮̃
-* і̮̄
-* і̮̍
-* і̮̏
-* і̮᷅
-* і̮͂
-* і̮̆
-* і̤̊
-* і̤̂
-* і̤̐
-* і̤᷄
-* і̤́
-* і̤̀
-* і̤̒
-* і̤᷇
-* і̤᷆
-* і̤̌
-* і̤̅
-* і̤̇
-* і̤̓
-* і̤̋
-* і̤̉
-* і̤̔
-* і̤̑
-* і̤̃
-* і̤̄
-* і̤̍
-* і̤̏
-* і̤᷅
-* і̤͂
-* і̤̆
-* і̰̊
-* і̰̂
-* і̰̐
-* і̰᷄
-* і̰́
-* і̰̀
-* і̰̒
-* і̰᷇
-* і̰᷆
-* і̰̌
-* і̰̅
-* і̰̇
-* і̰̓
-* і̰̋
-* і̰̉
-* і̰̔
-* і̰̑
-* і̰̃
-* і̰̄
-* і̰̍
-* і̰̏
-* і̰᷅
-* і̰͂
-* і̰̆
-* і̭̊
-* і̭̂
-* і̭̐
-* і̭᷄
-* і̭́
-* і̭̀
-* і̭̒
-* і̭᷇
-* і̭᷆
-* і̭̌
-* і̭̅
-* і̭̇
-* і̭̓
-* і̭̋
-* і̭̉
-* і̭̔
-* і̭̑
-* і̭̃
-* і̭̄
-* і̭̍
-* і̭̏
-* і̭᷅
-* і̭͂
-* і̭̆
-* і̥̊
-* і̥̂
-* і̥̐
-* і̥᷄
-* і̥́
-* і̥̀
-* і̥̒
-* і̥᷇
-* і̥᷆
-* і̥̌
-* і̥̅
-* і̥̇
-* і̥̓
-* і̥̋
-* і̥̉
-* і̥̔
-* і̥̑
-* і̥̃
-* і̥̄
-* і̥̍
-* і̥̏
-* і̥᷅
-* і̥͂
-* і̥̆
-* і̣̊
-* і̣̂
-* і̣̐
-* і̣᷄
-* і̣́
-* і̣̀
-* і̣̒
-* і̣᷇
-* і̣᷆
-* і̣̌
-* і̣̅
-* і̣̇
-* і̣̓
-* і̣̋
-* і̣̉
-* і̣̔
-* і̣̑
-* і̣̃
-* і̣̄
-* і̣̍
-* і̣̏
-* і̣᷅
-* і̣͂
-* і̣̆
-* і̯̊
-* і̯̂
-* і̯̐
-* і̯᷄
-* і̯́
-* і̯̀
-* і̯̒
-* і̯᷇
-* і̯᷆
-* і̯̌
-* і̯̅
-* і̯̇
-* і̯̓
-* і̯̋
-* і̯̉
-* і̯̔
-* і̯̑
-* і̯̃
-* і̯̄
-* і̯̍
-* і̯̏
-* і̯᷅
-* і̯͂
-* і̯̆
-* і̵̊
-* і̵̂
-* і̵̐
-* і̵᷄
-* і̵́
-* і̵̀
-* і̵̒
-* і̵᷇
-* і̵᷆
-* і̵̌
-* і̵̅
-* і̵̇
-* і̵̓
-* і̵̋
-* і̵̉
-* і̵̔
-* і̵̑
-* і̵̃
-* і̵̄
-* і̵̍
-* і̵̏
-* і̵᷅
-* і̵͂
-* і̵̆
-* і̱̊
-* і̱̂
-* і̱̐
-* і̱᷄
-* і̱́
-* і̱̀
-* і̱̒
-* і̱᷇
-* і̱᷆
-* і̱̌
-* і̱̅
-* і̱̇
-* і̱̓
-* і̱̋
-* і̱̉
-* і̱̔
-* і̱̑
-* і̱̃
-* і̱̄
-* і̱̍
-* і̱̏
-* і̱᷅
-* і̱͂
-* і̱̆
-* і̲̊
-* і̲̂
-* і̲̐
-* і̲᷄
-* і̲́
-* і̲̀
-* і̲̒
-* і̲᷇
-* і̲᷆
-* і̲̌
-* і̲̅
-* і̲̇
-* і̲̓
-* і̲̋
-* і̲̉
-* і̲̔
-* і̲̑
-* і̲̃
-* і̲̄
-* і̲̍
-* і̲̏
-* і̲᷅
-* і̲͂
-* і̲̆
-* і̦̊
-* і̦̂
-* і̦̐
-* і̦᷄
-* і̦́
-* і̦̀
-* і̦̒
-* і̦᷇
-* і̦᷆
-* і̦̌
-* і̦̅
-* і̦̇
-* і̦̓
-* і̦̋
-* і̦̉
-* і̦̔
-* і̦̑
-* і̦̃
-* і̦̄
-* і̦̍
-* і̦̏
-* і̦᷅
-* і̦͂
-* і̦̆
-* і̛̊
-* і̛̂
-* і̛̐
-* і̛᷄
-* і̛́
-* і̛̀
-* і̛̒
-* і̛᷇
-* і̛᷆
-* і̛̌
-* і̛̅
-* і̛̇
-* і̛̓
-* і̛̋
-* і̛̉
-* і̛̔
-* і̛̑
-* і̛̃
-* і̛̄
-* і̛̍
-* і̛̏
-* і̛᷅
-* і̛͂
-* і̛̆
-* і᷊̊
-* і᷊̂
-* і᷊̐
-* і᷊᷄
-* і᷊́
-* і᷊̀
-* і᷊̒
-* і᷊᷇
-* і᷊᷆
-* і᷊̌
-* і᷊̅
-* і᷊̇
-* і᷊̓
-* і᷊̋
-* і᷊̉
-* і᷊̔
-* і᷊̑
-* і᷊̃
-* і᷊̄
-* і᷊̍
-* і᷊̏
-* і᷊᷅
-* і᷊͂
-* і᷊̆
-* і̊
-* і̂
-* і̐
-* і᷄
-* і̀
-* і̒
-* і᷇
-* і᷆
-* і̌
-* і̅
-* і̇
-* і̓
-* і̋
-* і̉
-* і̔
-* і̑
-* і̃
-* і̄
-* і̍
-* і̏
-* і᷅
-* і͂
-* і̆
-* i̩᷄
-* i̩᷇
-* i̩᷆
-* i̩̓
-* i̩̔
-* i̩̍
-* i̩᷅
-* i̩͂
-* i̧᷄
-* i̧᷇
-* i̧᷆
-* i̧̓
-* i̧̔
-* i̧̍
-* i̧᷅
-* i̧͂
-* i̮᷄
-* i̮᷇
-* i̮᷆
-* i̮̓
-* i̮̔
-* i̮̍
-* i̮᷅
-* i̮͂
-* i̤᷄
-* i̤᷇
-* i̤᷆
-* i̤̓
-* i̤̔
-* i̤̍
-* i̤᷅
-* i̤͂
-* i̭᷄
-* i̭᷇
-* i̭᷆
-* i̭̓
-* i̭̔
-* i̭̍
-* i̭᷅
-* i̭͂
-* i̥᷄
-* i̥᷇
-* i̥᷆
-* i̥̓
-* i̥̔
-* i̥̍
-* i̥᷅
-* i̥͂
-* i̯᷄
-* i̯᷇
-* i̯᷆
-* i̯̓
-* i̯̔
-* i̯̍
-* i̯᷅
-* i̯͂
-* i̵᷄
-* i̵᷇
-* i̵᷆
-* i̵̓
-* i̵̔
-* i̵̍
-* i̵᷅
-* i̵͂
-* i̱᷄
-* i̱᷇
-* i̱᷆
-* i̱̓
-* i̱̔
-* i̱̍
-* i̱᷅
-* i̱͂
-* i̲᷄
-* i̲᷇
-* i̲᷆
-* i̲̓
-* i̲̔
-* i̲̍
-* i̲᷅
-* i̲͂
-* i̦᷄
-* i̦᷇
-* i̦᷆
-* i̦̓
-* i̦̔
-* i̦̍
-* i̦᷅
-* i̦͂
-* i᷊̊
-* i᷊̐
-* i᷊᷄
-* i᷊̒
-* i᷊᷇
-* i᷊᷆
-* i᷊̅
-* i᷊̇
-* i᷊̓
-* i᷊̋
-* i᷊̔
-* i᷊̍
-* i᷊᷅
-* i᷊͂
-* i᷄
-* i̔
-* i᷅
-* i͂
-* ɉ̩᷄
-* ɉ̩᷇
-* ɉ̩᷆
-* ɉ̩̓
-* ɉ̩̔
-* ɉ̩̍
-* ɉ̩᷅
-* ɉ̩͂
-* ɉ̨᷄
-* ɉ̨᷇
-* ɉ̨᷆
-* ɉ̨̓
-* ɉ̨̔
-* ɉ̨̍
-* ɉ̨᷅
-* ɉ̨͂
-* ɉ̧᷄
-* ɉ̧᷇
-* ɉ̧᷆
-* ɉ̧̓
-* ɉ̧̔
-* ɉ̧̍
-* ɉ̧᷅
-* ɉ̧͂
-* ɉ̮᷄
-* ɉ̮᷇
-* ɉ̮᷆
-* ɉ̮̓
-* ɉ̮̔
-* ɉ̮̍
-* ɉ̮᷅
-* ɉ̮͂
-* ɉ̤᷄
-* ɉ̤᷇
-* ɉ̤᷆
-* ɉ̤̓
-* ɉ̤̔
-* ɉ̤̍
-* ɉ̤᷅
-* ɉ̤͂
-* ɉ̰᷄
-* ɉ̰᷇
-* ɉ̰᷆
-* ɉ̰̓
-* ɉ̰̔
-* ɉ̰̍
-* ɉ̰᷅
-* ɉ̰͂
-* ɉ̭᷄
-* ɉ̭᷇
-* ɉ̭᷆
-* ɉ̭̓
-* ɉ̭̔
-* ɉ̭̍
-* ɉ̭᷅
-* ɉ̭͂
-* ɉ̥᷄
-* ɉ̥᷇
-* ɉ̥᷆
-* ɉ̥̓
-* ɉ̥̔
-* ɉ̥̍
-* ɉ̥᷅
-* ɉ̥͂
-* ɉ̣᷄
-* ɉ̣᷇
-* ɉ̣᷆
-* ɉ̣̓
-* ɉ̣̔
-* ɉ̣̍
-* ɉ̣᷅
-* ɉ̣͂
-* ɉ̯᷄
-* ɉ̯᷇
-* ɉ̯᷆
-* ɉ̯̓
-* ɉ̯̔
-* ɉ̯̍
-* ɉ̯᷅
-* ɉ̯͂
-* ɉ̵᷄
-* ɉ̵᷇
-* ɉ̵᷆
-* ɉ̵̓
-* ɉ̵̔
-* ɉ̵̍
-* ɉ̵᷅
-* ɉ̵͂
-* ɉ̱᷄
-* ɉ̱᷇
-* ɉ̱᷆
-* ɉ̱̓
-* ɉ̱̔
-* ɉ̱̍
-* ɉ̱᷅
-* ɉ̱͂
-* ɉ̲᷄
-* ɉ̲᷇
-* ɉ̲᷆
-* ɉ̲̓
-* ɉ̲̔
-* ɉ̲̍
-* ɉ̲᷅
-* ɉ̲͂
-* ɉ̦᷄
-* ɉ̦᷇
-* ɉ̦᷆
-* ɉ̦̓
-* ɉ̦̔
-* ɉ̦̍
-* ɉ̦᷅
-* ɉ̦͂
-* ɉ᷊̊
-* ɉ᷊̂
-* ɉ᷊̐
-* ɉ᷊᷄
-* ɉ᷊́
-* ɉ᷊̀
-* ɉ᷊̒
-* ɉ᷊᷇
-* ɉ᷊᷆
-* ɉ᷊̌
-* ɉ᷊̅
-* ɉ᷊̇
-* ɉ᷊̓
-* ɉ᷊̋
-* ɉ᷊̉
-* ɉ᷊̔
-* ɉ᷊̑
-* ɉ᷊̃
-* ɉ᷊̄
-* ɉ᷊̍
-* ɉ᷊̏
-* ɉ᷊᷅
-* ɉ᷊͂
-* ɉ᷊̆
-* ɉ᷊̈
-* ɉ᷄
-* ɉ᷇
-* ɉ᷆
-* ɉ̓
-* ɉ̔
-* ɉ̍
-* ɉ᷅
-* ɉ͂
-* j̩᷄
-* j̩᷇
-* j̩᷆
-* j̩̓
-* j̩̔
-* j̩̍
-* j̩᷅
-* j̩͂
-* j̨᷄
-* j̨᷇
-* j̨᷆
-* j̨̓
-* j̨̔
-* j̨̍
-* j̨᷅
-* j̨͂
-* j̧᷄
-* j̧᷇
-* j̧᷆
-* j̧̓
-* j̧̔
-* j̧̍
-* j̧᷅
-* j̧͂
-* j̮᷄
-* j̮᷇
-* j̮᷆
-* j̮̓
-* j̮̔
-* j̮̍
-* j̮᷅
-* j̮͂
-* j̤᷄
-* j̤᷇
-* j̤᷆
-* j̤̓
-* j̤̔
-* j̤̍
-* j̤᷅
-* j̤͂
-* j̰᷄
-* j̰᷇
-* j̰᷆
-* j̰̓
-* j̰̔
-* j̰̍
-* j̰᷅
-* j̰͂
-* j̭᷄
-* j̭᷇
-* j̭᷆
-* j̭̓
-* j̭̔
-* j̭̍
-* j̭᷅
-* j̭͂
-* j̥᷄
-* j̥᷇
-* j̥᷆
-* j̥̓
-* j̥̔
-* j̥̍
-* j̥᷅
-* j̥͂
-* j̣᷄
-* j̣᷇
-* j̣᷆
-* j̣̓
-* j̣̔
-* j̣̍
-* j̣᷅
-* j̣͂
-* j̯᷄
-* j̯᷇
-* j̯᷆
-* j̯̓
-* j̯̔
-* j̯̍
-* j̯᷅
-* j̯͂
-* j̵᷄
-* j̵᷇
-* j̵᷆
-* j̵̓
-* j̵̔
-* j̵̍
-* j̵᷅
-* j̵͂
-* j̱᷄
-* j̱᷇
-* j̱᷆
-* j̱̓
-* j̱̔
-* j̱̍
-* j̱᷅
-* j̱͂
-* j̲᷄
-* j̲᷇
-* j̲᷆
-* j̲̓
-* j̲̔
-* j̲̍
-* j̲᷅
-* j̲͂
-* j̦᷄
-* j̦᷇
-* j̦᷆
-* j̦̓
-* j̦̔
-* j̦̍
-* j̦᷅
-* j̦͂
-* j᷊̊
-* j᷊̐
-* j᷊᷄
-* j᷊́
-* j᷊̀
-* j᷊̒
-* j᷊᷇
-* j᷊᷆
-* j᷊̅
-* j᷊̇
-* j᷊̓
-* j᷊̋
-* j᷊̉
-* j᷊̔
-* j᷊̑
-* j᷊̃
-* j᷊̄
-* j᷊̍
-* j᷊̏
-* j᷊᷅
-* j᷊͂
-* j᷊̆
-* j᷊̈
-* j᷄
-* j᷇
-* j᷆
-* j̓
-* j̔
-* j̍
-* j᷅
-* j͂
-* ḭ̩᷄
-* ḭ̩᷇
-* ḭ̩᷆
-* ḭ̩̓
-* ḭ̩̔
-* ḭ̩̍
-* ḭ̩᷅
-* ḭ̩͂
-* ḭ̧᷄
-* ḭ̧᷇
-* ḭ̧᷆
-* ḭ̧̓
-* ḭ̧̔
-* ḭ̧̍
-* ḭ̧᷅
-* ḭ̧͂
-* ḭ̮᷄
-* ḭ̮᷇
-* ḭ̮᷆
-* ḭ̮̓
-* ḭ̮̔
-* ḭ̮̍
-* ḭ̮᷅
-* ḭ̮͂
-* ḭ̤᷄
-* ḭ̤᷇
-* ḭ̤᷆
-* ḭ̤̓
-* ḭ̤̔
-* ḭ̤̍
-* ḭ̤᷅
-* ḭ̤͂
-* ḭ̰᷄
-* ḭ̰᷇
-* ḭ̰᷆
-* ḭ̰̓
-* ḭ̰̔
-* ḭ̰̍
-* ḭ̰᷅
-* ḭ̰͂
-* ḭ̭᷄
-* ḭ̭᷇
-* ḭ̭᷆
-* ḭ̭̓
-* ḭ̭̔
-* ḭ̭̍
-* ḭ̭᷅
-* ḭ̭͂
-* ḭ̥᷄
-* ḭ̥᷇
-* ḭ̥᷆
-* ḭ̥̓
-* ḭ̥̔
-* ḭ̥̍
-* ḭ̥᷅
-* ḭ̥͂
-* ḭ̣᷄
-* ḭ̣᷇
-* ḭ̣᷆
-* ḭ̣̓
-* ḭ̣̔
-* ḭ̣̍
-* ḭ̣᷅
-* ḭ̣͂
-* ḭ̯᷄
-* ḭ̯᷇
-* ḭ̯᷆
-* ḭ̯̓
-* ḭ̯̔
-* ḭ̯̍
-* ḭ̯᷅
-* ḭ̯͂
-* ḭ̵᷄
-* ḭ̵᷇
-* ḭ̵᷆
-* ḭ̵̓
-* ḭ̵̔
-* ḭ̵̍
-* ḭ̵᷅
-* ḭ̵͂
-* ḭ̱᷄
-* ḭ̱᷇
-* ḭ̱᷆
-* ḭ̱̓
-* ḭ̱̔
-* ḭ̱̍
-* ḭ̱᷅
-* ḭ̱͂
-* ḭ̲᷄
-* ḭ̲᷇
-* ḭ̲᷆
-* ḭ̲̓
-* ḭ̲̔
-* ḭ̲̍
-* ḭ̲᷅
-* ḭ̲͂
-* ḭ̦᷄
-* ḭ̦᷇
-* ḭ̦᷆
-* ḭ̦̓
-* ḭ̦̔
-* ḭ̦̍
-* ḭ̦᷅
-* ḭ̦͂
-* ḭ᷊̊
-* ḭ᷊̂
-* ḭ᷊̐
-* ḭ᷊᷄
-* ḭ᷊́
-* ḭ᷊̀
-* ḭ᷊̒
-* ḭ᷊᷇
-* ḭ᷊᷆
-* ḭ᷊̌
-* ḭ᷊̅
-* ḭ᷊̇
-* ḭ᷊̓
-* ḭ᷊̋
-* ḭ᷊̉
-* ḭ᷊̔
-* ḭ᷊̑
-* ḭ᷊̃
-* ḭ᷊̄
-* ḭ᷊̍
-* ḭ᷊̏
-* ḭ᷊᷅
-* ḭ᷊͂
-* ḭ᷊̆
-* ḭ᷊̈
-* ḭ᷄
-* ḭ᷇
-* ḭ᷆
-* ḭ̓
-* ḭ̔
-* ḭ̍
-* ḭ᷅
-* ḭ͂
-* ị̩᷄
-* ị̩᷇
-* ị̩᷆
-* ị̩̓
-* ị̩̔
-* ị̩̍
-* ị̩᷅
-* ị̩͂
-* ị̧᷄
-* ị̧᷇
-* ị̧᷆
-* ị̧̓
-* ị̧̔
-* ị̧̍
-* ị̧᷅
-* ị̧͂
-* ị̮᷄
-* ị̮᷇
-* ị̮᷆
-* ị̮̓
-* ị̮̔
-* ị̮̍
-* ị̮᷅
-* ị̮͂
-* ị̤᷄
-* ị̤᷇
-* ị̤᷆
-* ị̤̓
-* ị̤̔
-* ị̤̍
-* ị̤᷅
-* ị̤͂
-* ị̰᷄
-* ị̰᷇
-* ị̰᷆
-* ị̰̓
-* ị̰̔
-* ị̰̍
-* ị̰᷅
-* ị̰͂
-* ị̭᷄
-* ị̭᷇
-* ị̭᷆
-* ị̭̓
-* ị̭̔
-* ị̭̍
-* ị̭᷅
-* ị̭͂
-* ị̥᷄
-* ị̥᷇
-* ị̥᷆
-* ị̥̓
-* ị̥̔
-* ị̥̍
-* ị̥᷅
-* ị̥͂
-* ị̣᷄
-* ị̣᷇
-* ị̣᷆
-* ị̣̓
-* ị̣̔
-* ị̣̍
-* ị̣᷅
-* ị̣͂
-* ị̯᷄
-* ị̯᷇
-* ị̯᷆
-* ị̯̓
-* ị̯̔
-* ị̯̍
-* ị̯᷅
-* ị̯͂
-* ị̵᷄
-* ị̵᷇
-* ị̵᷆
-* ị̵̓
-* ị̵̔
-* ị̵̍
-* ị̵᷅
-* ị̵͂
-* ị̱᷄
-* ị̱᷇
-* ị̱᷆
-* ị̱̓
-* ị̱̔
-* ị̱̍
-* ị̱᷅
-* ị̱͂
-* ị̲᷄
-* ị̲᷇
-* ị̲᷆
-* ị̲̓
-* ị̲̔
-* ị̲̍
-* ị̲᷅
-* ị̲͂
-* ị̦᷄
-* ị̦᷇
-* ị̦᷆
-* ị̦̓
-* ị̦̔
-* ị̦̍
-* ị̦᷅
-* ị̦͂
-* ị᷊̊
-* ị᷊̂
-* ị᷊̐
-* ị᷊᷄
-* ị᷊́
-* ị᷊̀
-* ị᷊̒
-* ị᷊᷇
-* ị᷊᷆
-* ị᷊̌
-* ị᷊̅
-* ị᷊̇
-* ị᷊̓
-* ị᷊̋
-* ị᷊̉
-* ị᷊̔
-* ị᷊̑
-* ị᷊̃
-* ị᷊̄
-* ị᷊̍
-* ị᷊̏
-* ị᷊᷅
-* ị᷊͂
-* ị᷊̆
-* ị᷊̈
-* ị᷄
-* ị᷇
-* ị᷆
-* ị̓
-* ị̔
-* ị̍
-* ị᷅
-* ị͂
-* ɨ̩᷄
-* ɨ̩᷇
-* ɨ̩᷆
-* ɨ̩̓
-* ɨ̩̔
-* ɨ̩̍
-* ɨ̩᷅
-* ɨ̩͂
-* ɨ̨᷄
-* ɨ̨᷇
-* ɨ̨᷆
-* ɨ̨̓
-* ɨ̨̔
-* ɨ̨̍
-* ɨ̨᷅
-* ɨ̨͂
-* ɨ̧᷄
-* ɨ̧᷇
-* ɨ̧᷆
-* ɨ̧̓
-* ɨ̧̔
-* ɨ̧̍
-* ɨ̧᷅
-* ɨ̧͂
-* ɨ̮᷄
-* ɨ̮᷇
-* ɨ̮᷆
-* ɨ̮̓
-* ɨ̮̔
-* ɨ̮̍
-* ɨ̮᷅
-* ɨ̮͂
-* ɨ̤᷄
-* ɨ̤᷇
-* ɨ̤᷆
-* ɨ̤̓
-* ɨ̤̔
-* ɨ̤̍
-* ɨ̤᷅
-* ɨ̤͂
-* ɨ̰᷄
-* ɨ̰᷇
-* ɨ̰᷆
-* ɨ̰̓
-* ɨ̰̔
-* ɨ̰̍
-* ɨ̰᷅
-* ɨ̰͂
-* ɨ̭᷄
-* ɨ̭᷇
-* ɨ̭᷆
-* ɨ̭̓
-* ɨ̭̔
-* ɨ̭̍
-* ɨ̭᷅
-* ɨ̭͂
-* ɨ̥᷄
-* ɨ̥᷇
-* ɨ̥᷆
-* ɨ̥̓
-* ɨ̥̔
-* ɨ̥̍
-* ɨ̥᷅
-* ɨ̥͂
-* ɨ̣᷄
-* ɨ̣᷇
-* ɨ̣᷆
-* ɨ̣̓
-* ɨ̣̔
-* ɨ̣̍
-* ɨ̣᷅
-* ɨ̣͂
-* ɨ̯᷄
-* ɨ̯᷇
-* ɨ̯᷆
-* ɨ̯̓
-* ɨ̯̔
-* ɨ̯̍
-* ɨ̯᷅
-* ɨ̯͂
-* ɨ̵᷄
-* ɨ̵᷇
-* ɨ̵᷆
-* ɨ̵̓
-* ɨ̵̔
-* ɨ̵̍
-* ɨ̵᷅
-* ɨ̵͂
-* ɨ̱᷄
-* ɨ̱᷇
-* ɨ̱᷆
-* ɨ̱̓
-* ɨ̱̔
-* ɨ̱̍
-* ɨ̱᷅
-* ɨ̱͂
-* ɨ̲᷄
-* ɨ̲᷇
-* ɨ̲᷆
-* ɨ̲̓
-* ɨ̲̔
-* ɨ̲̍
-* ɨ̲᷅
-* ɨ̲͂
+* i᷆
+* i᷇The dot of soft dotted characters _should_ disappear in other cases, for example: * ɨ̦̍
+* ɨ̦᷅
 * ɨ̦᷄
-* ɨ̦᷇
-* ɨ̦᷆
+* ɨ̦͂
 * ɨ̦̓
 * ɨ̦̔
-* ɨ̦̍
-* ɨ̦᷅
-* ɨ̦͂
-* ɨ᷊̊
-* ɨ᷊̂
-* ɨ᷊̐
-* ɨ᷊᷄
-* ɨ᷊́
-* ɨ᷊̀
-* ɨ᷊̒
-* ɨ᷊᷇
-* ɨ᷊᷆
-* ɨ᷊̌
-* ɨ᷊̅
-* ɨ᷊̇
-* ɨ᷊̓
-* ɨ᷊̋
-* ɨ᷊̉
-* ɨ᷊̔
-* ɨ᷊̑
-* ɨ᷊̃
-* ɨ᷊̄
+* ɨ̦᷆
+* ɨ̦᷇
+* ɨ̧̍
+* ɨ̧᷅
+* ɨ̧᷄
+* ɨ̧͂
+* ɨ̧̓
+* ɨ̧̔
+* ɨ̧᷆
+* ɨ̧᷇
+* ɨ̵̍
+* ɨ̵᷅
+* ɨ̵᷄
+* ɨ̵͂
+* ɨ̵̓
+* ɨ̵̔
+* ɨ̵᷆
+* ɨ̵᷇
+* ɨ̩̍
+* ɨ̩᷅
+* ɨ̩᷄
+* ɨ̩͂
+* ɨ̩̓
+* ɨ̩̔
+* ɨ̩᷆
+* ɨ̩᷇
+* ɨ̥̍
+* ɨ̥᷅
+* ɨ̥᷄
+* ɨ̥͂
+* ɨ̥̓
+* ɨ̥̔
+* ɨ̥᷆
+* ɨ̥᷇
+* ɨ̨̍
+* ɨ̨᷅
+* ɨ̨᷄
+* ɨ̨͂
+* ɨ̨̓
+* ɨ̨̔
+* ɨ̨᷆
+* ɨ̨᷇
+* ɨ̣̍
+* ɨ̣᷅
+* ɨ̣᷄
+* ɨ̣͂
+* ɨ̣̓
+* ɨ̣̔
+* ɨ̣᷆
+* ɨ̣᷇
 * ɨ᷊̍
-* ɨ᷊̏
 * ɨ᷊᷅
+* ɨ᷊᷄
 * ɨ᷊͂
-* ɨ᷊̆
-* ɨ᷊̈
-* ɨ᷄
-* ɨ᷇
-* ɨ᷆
-* ɨ̓
-* ɨ̔
+* ɨ᷊̓
+* ɨ᷊̔
+* ɨ᷊᷆
+* ɨ᷊᷇
+* ɨ̱̍
+* ɨ̱᷅
+* ɨ̱᷄
+* ɨ̱͂
+* ɨ̱̓
+* ɨ̱̔
+* ɨ̱᷆
+* ɨ̱᷇
+* ɨ̮̍
+* ɨ̮᷅
+* ɨ̮᷄
+* ɨ̮͂
+* ɨ̮̓
+* ɨ̮̔
+* ɨ̮᷆
+* ɨ̮᷇
+* ɨ̯̍
+* ɨ̯᷅
+* ɨ̯᷄
+* ɨ̯͂
+* ɨ̯̓
+* ɨ̯̔
+* ɨ̯᷆
+* ɨ̯᷇
+* ɨ̲̍
+* ɨ̲᷅
+* ɨ̲᷄
+* ɨ̲͂
+* ɨ̲̓
+* ɨ̲̔
+* ɨ̲᷆
+* ɨ̲᷇
+* ɨ̭̍
+* ɨ̭᷅
+* ɨ̭᷄
+* ɨ̭͂
+* ɨ̭̓
+* ɨ̭̔
+* ɨ̭᷆
+* ɨ̭᷇
+* ɨ̤̍
+* ɨ̤᷅
+* ɨ̤᷄
+* ɨ̤͂
+* ɨ̤̓
+* ɨ̤̔
+* ɨ̤᷆
+* ɨ̤᷇
+* ɨ̰̍
+* ɨ̰᷅
+* ɨ̰᷄
+* ɨ̰͂
+* ɨ̰̓
+* ɨ̰̔
+* ɨ̰᷆
+* ɨ̰᷇
 * ɨ̍
 * ɨ᷅
-* ɨ͂ [code: soft-dotted]
+* ɨ᷄
+* ɨ͂
+* ɨ̓
+* ɨ̔
+* ɨ᷆
+* ɨ᷇
+* ᶤ̛̒
+* ᶤ̛̌
+* ᶤ̛̑
+* ᶤ̛̀
+* ᶤ̛̅
+* ᶤ̛́
+* ᶤ̛̃
+* ᶤ̛̋
+* ᶤ̛̇
+* ᶤ̛̐
+* ᶤ̛̍
+* ᶤ̛̉
+* ᶤ̛᷅
+* ᶤ̛̏
+* ᶤ̛᷄
+* ᶤ̛͂
+* ᶤ̛̓
+* ᶤ̛̔
+* ᶤ̛̄
+* ᶤ̛̆
+* ᶤ̛̂
+* ᶤ̛᷆
+* ᶤ̛̈
+* ᶤ̛᷇
+* ᶤ̛̊
+* ᶤ̦̒
+* ᶤ̦̌
+* ᶤ̦̑
+* ᶤ̦̀
+* ᶤ̦̅
+* ᶤ̦́
+* ᶤ̦̃
+* ᶤ̦̋
+* ᶤ̦̇
+* ᶤ̦̐
+* ᶤ̦̍
+* ᶤ̦̉
+* ᶤ̦᷅
+* ᶤ̦̏
+* ᶤ̦᷄
+* ᶤ̦͂
+* ᶤ̦̓
+* ᶤ̦̔
+* ᶤ̦̄
+* ᶤ̦̆
+* ᶤ̦̂
+* ᶤ̦᷆
+* ᶤ̦̈
+* ᶤ̦᷇
+* ᶤ̦̊
+* ᶤ̧̒
+* ᶤ̧̌
+* ᶤ̧̑
+* ᶤ̧̀
+* ᶤ̧̅
+* ᶤ̧́
+* ᶤ̧̃
+* ᶤ̧̋
+* ᶤ̧̇
+* ᶤ̧̐
+* ᶤ̧̍
+* ᶤ̧̉
+* ᶤ̧᷅
+* ᶤ̧̏
+* ᶤ̧᷄
+* ᶤ̧͂
+* ᶤ̧̓
+* ᶤ̧̔
+* ᶤ̧̄
+* ᶤ̧̆
+* ᶤ̧̂
+* ᶤ̧᷆
+* ᶤ̧̈
+* ᶤ̧᷇
+* ᶤ̧̊
+* ᶤ̵̒
+* ᶤ̵̌
+* ᶤ̵̑
+* ᶤ̵̀
+* ᶤ̵̅
+* ᶤ̵́
+* ᶤ̵̃
+* ᶤ̵̋
+* ᶤ̵̇
+* ᶤ̵̐
+* ᶤ̵̍
+* ᶤ̵̉
+* ᶤ̵᷅
+* ᶤ̵̏
+* ᶤ̵᷄
+* ᶤ̵͂
+* ᶤ̵̓
+* ᶤ̵̔
+* ᶤ̵̄
+* ᶤ̵̆
+* ᶤ̵̂
+* ᶤ̵᷆
+* ᶤ̵̈
+* ᶤ̵᷇
+* ᶤ̵̊
+* ᶤ̩̒
+* ᶤ̩̌
+* ᶤ̩̑
+* ᶤ̩̀
+* ᶤ̩̅
+* ᶤ̩́
+* ᶤ̩̃
+* ᶤ̩̋
+* ᶤ̩̇
+* ᶤ̩̐
+* ᶤ̩̍
+* ᶤ̩̉
+* ᶤ̩᷅
+* ᶤ̩̏
+* ᶤ̩᷄
+* ᶤ̩͂
+* ᶤ̩̓
+* ᶤ̩̔
+* ᶤ̩̄
+* ᶤ̩̆
+* ᶤ̩̂
+* ᶤ̩᷆
+* ᶤ̩̈
+* ᶤ̩᷇
+* ᶤ̩̊
+* ᶤ̥̒
+* ᶤ̥̌
+* ᶤ̥̑
+* ᶤ̥̀
+* ᶤ̥̅
+* ᶤ̥́
+* ᶤ̥̃
+* ᶤ̥̋
+* ᶤ̥̇
+* ᶤ̥̐
+* ᶤ̥̍
+* ᶤ̥̉
+* ᶤ̥᷅
+* ᶤ̥̏
+* ᶤ̥᷄
+* ᶤ̥͂
+* ᶤ̥̓
+* ᶤ̥̔
+* ᶤ̥̄
+* ᶤ̥̆
+* ᶤ̥̂
+* ᶤ̥᷆
+* ᶤ̥̈
+* ᶤ̥᷇
+* ᶤ̥̊
+* ᶤ̨̒
+* ᶤ̨̌
+* ᶤ̨̑
+* ᶤ̨̀
+* ᶤ̨̅
+* ᶤ̨́
+* ᶤ̨̃
+* ᶤ̨̋
+* ᶤ̨̇
+* ᶤ̨̐
+* ᶤ̨̍
+* ᶤ̨̉
+* ᶤ̨᷅
+* ᶤ̨̏
+* ᶤ̨᷄
+* ᶤ̨͂
+* ᶤ̨̓
+* ᶤ̨̔
+* ᶤ̨̄
+* ᶤ̨̆
+* ᶤ̨̂
+* ᶤ̨᷆
+* ᶤ̨̈
+* ᶤ̨᷇
+* ᶤ̨̊
+* ᶤ̣̒
+* ᶤ̣̌
+* ᶤ̣̑
+* ᶤ̣̀
+* ᶤ̣̅
+* ᶤ̣́
+* ᶤ̣̃
+* ᶤ̣̋
+* ᶤ̣̇
+* ᶤ̣̐
+* ᶤ̣̍
+* ᶤ̣̉
+* ᶤ̣᷅
+* ᶤ̣̏
+* ᶤ̣᷄
+* ᶤ̣͂
+* ᶤ̣̓
+* ᶤ̣̔
+* ᶤ̣̄
+* ᶤ̣̆
+* ᶤ̣̂
+* ᶤ̣᷆
+* ᶤ̣̈
+* ᶤ̣᷇
+* ᶤ̣̊
+* ᶤ᷊̒
+* ᶤ᷊̌
+* ᶤ᷊̑
+* ᶤ᷊̀
+* ᶤ᷊̅
+* ᶤ᷊́
+* ᶤ᷊̃
+* ᶤ᷊̋
+* ᶤ᷊̇
+* ᶤ᷊̐
+* ᶤ᷊̍
+* ᶤ᷊̉
+* ᶤ᷊᷅
+* ᶤ᷊̏
+* ᶤ᷊᷄
+* ᶤ᷊͂
+* ᶤ᷊̓
+* ᶤ᷊̔
+* ᶤ᷊̄
+* ᶤ᷊̆
+* ᶤ᷊̂
+* ᶤ᷊᷆
+* ᶤ᷊̈
+* ᶤ᷊᷇
+* ᶤ᷊̊
+* ᶤ̱̒
+* ᶤ̱̌
+* ᶤ̱̑
+* ᶤ̱̀
+* ᶤ̱̅
+* ᶤ̱́
+* ᶤ̱̃
+* ᶤ̱̋
+* ᶤ̱̇
+* ᶤ̱̐
+* ᶤ̱̍
+* ᶤ̱̉
+* ᶤ̱᷅
+* ᶤ̱̏
+* ᶤ̱᷄
+* ᶤ̱͂
+* ᶤ̱̓
+* ᶤ̱̔
+* ᶤ̱̄
+* ᶤ̱̆
+* ᶤ̱̂
+* ᶤ̱᷆
+* ᶤ̱̈
+* ᶤ̱᷇
+* ᶤ̱̊
+* ᶤ̮̒
+* ᶤ̮̌
+* ᶤ̮̑
+* ᶤ̮̀
+* ᶤ̮̅
+* ᶤ̮́
+* ᶤ̮̃
+* ᶤ̮̋
+* ᶤ̮̇
+* ᶤ̮̐
+* ᶤ̮̍
+* ᶤ̮̉
+* ᶤ̮᷅
+* ᶤ̮̏
+* ᶤ̮᷄
+* ᶤ̮͂
+* ᶤ̮̓
+* ᶤ̮̔
+* ᶤ̮̄
+* ᶤ̮̆
+* ᶤ̮̂
+* ᶤ̮᷆
+* ᶤ̮̈
+* ᶤ̮᷇
+* ᶤ̮̊
+* ᶤ̯̒
+* ᶤ̯̌
+* ᶤ̯̑
+* ᶤ̯̀
+* ᶤ̯̅
+* ᶤ̯́
+* ᶤ̯̃
+* ᶤ̯̋
+* ᶤ̯̇
+* ᶤ̯̐
+* ᶤ̯̍
+* ᶤ̯̉
+* ᶤ̯᷅
+* ᶤ̯̏
+* ᶤ̯᷄
+* ᶤ̯͂
+* ᶤ̯̓
+* ᶤ̯̔
+* ᶤ̯̄
+* ᶤ̯̆
+* ᶤ̯̂
+* ᶤ̯᷆
+* ᶤ̯̈
+* ᶤ̯᷇
+* ᶤ̯̊
+* ᶤ̲̒
+* ᶤ̲̌
+* ᶤ̲̑
+* ᶤ̲̀
+* ᶤ̲̅
+* ᶤ̲́
+* ᶤ̲̃
+* ᶤ̲̋
+* ᶤ̲̇
+* ᶤ̲̐
+* ᶤ̲̍
+* ᶤ̲̉
+* ᶤ̲᷅
+* ᶤ̲̏
+* ᶤ̲᷄
+* ᶤ̲͂
+* ᶤ̲̓
+* ᶤ̲̔
+* ᶤ̲̄
+* ᶤ̲̆
+* ᶤ̲̂
+* ᶤ̲᷆
+* ᶤ̲̈
+* ᶤ̲᷇
+* ᶤ̲̊
+* ᶤ̭̒
+* ᶤ̭̌
+* ᶤ̭̑
+* ᶤ̭̀
+* ᶤ̭̅
+* ᶤ̭́
+* ᶤ̭̃
+* ᶤ̭̋
+* ᶤ̭̇
+* ᶤ̭̐
+* ᶤ̭̍
+* ᶤ̭̉
+* ᶤ̭᷅
+* ᶤ̭̏
+* ᶤ̭᷄
+* ᶤ̭͂
+* ᶤ̭̓
+* ᶤ̭̔
+* ᶤ̭̄
+* ᶤ̭̆
+* ᶤ̭̂
+* ᶤ̭᷆
+* ᶤ̭̈
+* ᶤ̭᷇
+* ᶤ̭̊
+* ᶤ̤̒
+* ᶤ̤̌
+* ᶤ̤̑
+* ᶤ̤̀
+* ᶤ̤̅
+* ᶤ̤́
+* ᶤ̤̃
+* ᶤ̤̋
+* ᶤ̤̇
+* ᶤ̤̐
+* ᶤ̤̍
+* ᶤ̤̉
+* ᶤ̤᷅
+* ᶤ̤̏
+* ᶤ̤᷄
+* ᶤ̤͂
+* ᶤ̤̓
+* ᶤ̤̔
+* ᶤ̤̄
+* ᶤ̤̆
+* ᶤ̤̂
+* ᶤ̤᷆
+* ᶤ̤̈
+* ᶤ̤᷇
+* ᶤ̤̊
+* ᶤ̰̒
+* ᶤ̰̌
+* ᶤ̰̑
+* ᶤ̰̀
+* ᶤ̰̅
+* ᶤ̰́
+* ᶤ̰̃
+* ᶤ̰̋
+* ᶤ̰̇
+* ᶤ̰̐
+* ᶤ̰̍
+* ᶤ̰̉
+* ᶤ̰᷅
+* ᶤ̰̏
+* ᶤ̰᷄
+* ᶤ̰͂
+* ᶤ̰̓
+* ᶤ̰̔
+* ᶤ̰̄
+* ᶤ̰̆
+* ᶤ̰̂
+* ᶤ̰᷆
+* ᶤ̰̈
+* ᶤ̰᷇
+* ᶤ̰̊
+* ᶤ̒
+* ᶤ̌
+* ᶤ̑
+* ᶤ̀
+* ᶤ̅
+* ᶤ́
+* ᶤ̃
+* ᶤ̋
+* ᶤ̇
+* ᶤ̐
+* ᶤ̍
+* ᶤ̉
+* ᶤ᷅
+* ᶤ̏
+* ᶤ᷄
+* ᶤ͂
+* ᶤ̓
+* ᶤ̔
+* ᶤ̄
+* ᶤ̆
+* ᶤ̂
+* ᶤ᷆
+* ᶤ̈
+* ᶤ᷇
+* ᶤ̊
+* ḭ̦̍
+* ḭ̦᷅
+* ḭ̦᷄
+* ḭ̦͂
+* ḭ̦̓
+* ḭ̦̔
+* ḭ̦᷆
+* ḭ̦᷇
+* ḭ̧̍
+* ḭ̧᷅
+* ḭ̧᷄
+* ḭ̧͂
+* ḭ̧̓
+* ḭ̧̔
+* ḭ̧᷆
+* ḭ̧᷇
+* ḭ̵̍
+* ḭ̵᷅
+* ḭ̵᷄
+* ḭ̵͂
+* ḭ̵̓
+* ḭ̵̔
+* ḭ̵᷆
+* ḭ̵᷇
+* ḭ̩̍
+* ḭ̩᷅
+* ḭ̩᷄
+* ḭ̩͂
+* ḭ̩̓
+* ḭ̩̔
+* ḭ̩᷆
+* ḭ̩᷇
+* ḭ̥̍
+* ḭ̥᷅
+* ḭ̥᷄
+* ḭ̥͂
+* ḭ̥̓
+* ḭ̥̔
+* ḭ̥᷆
+* ḭ̥᷇
+* ḭ̣̍
+* ḭ̣᷅
+* ḭ̣᷄
+* ḭ̣͂
+* ḭ̣̓
+* ḭ̣̔
+* ḭ̣᷆
+* ḭ̣᷇
+* ḭ᷊̍
+* ḭ᷊᷅
+* ḭ᷊᷄
+* ḭ᷊͂
+* ḭ᷊̓
+* ḭ᷊̔
+* ḭ᷊᷆
+* ḭ᷊᷇
+* ḭ̱̍
+* ḭ̱᷅
+* ḭ̱᷄
+* ḭ̱͂
+* ḭ̱̓
+* ḭ̱̔
+* ḭ̱᷆
+* ḭ̱᷇
+* ḭ̮̍
+* ḭ̮᷅
+* ḭ̮᷄
+* ḭ̮͂
+* ḭ̮̓
+* ḭ̮̔
+* ḭ̮᷆
+* ḭ̮᷇
+* ḭ̯̍
+* ḭ̯᷅
+* ḭ̯᷄
+* ḭ̯͂
+* ḭ̯̓
+* ḭ̯̔
+* ḭ̯᷆
+* ḭ̯᷇
+* ḭ̲̍
+* ḭ̲᷅
+* ḭ̲᷄
+* ḭ̲͂
+* ḭ̲̓
+* ḭ̲̔
+* ḭ̲᷆
+* ḭ̲᷇
+* ḭ̭̍
+* ḭ̭᷅
+* ḭ̭᷄
+* ḭ̭͂
+* ḭ̭̓
+* ḭ̭̔
+* ḭ̭᷆
+* ḭ̭᷇
+* ḭ̤̍
+* ḭ̤᷅
+* ḭ̤᷄
+* ḭ̤͂
+* ḭ̤̓
+* ḭ̤̔
+* ḭ̤᷆
+* ḭ̤᷇
+* ḭ̰̍
+* ḭ̰᷅
+* ḭ̰᷄
+* ḭ̰͂
+* ḭ̰̓
+* ḭ̰̔
+* ḭ̰᷆
+* ḭ̰᷇
+* ḭ̍
+* ḭ᷅
+* ḭ᷄
+* ḭ͂
+* ḭ̓
+* ḭ̔
+* ḭ᷆
+* ḭ᷇
+* ј̛̒
+* ј̛̌
+* ј̛̑
+* ј̛̀
+* ј̛̅
+* ј̛́
+* ј̛̃
+* ј̛̋
+* ј̛̇
+* ј̛̐
+* ј̛̍
+* ј̛̉
+* ј̛᷅
+* ј̛̏
+* ј̛᷄
+* ј̛͂
+* ј̛̓
+* ј̛̔
+* ј̛̄
+* ј̛̆
+* ј̛̂
+* ј̛᷆
+* ј̛̈
+* ј̛᷇
+* ј̛̊
+* ј̦̒
+* ј̦̌
+* ј̦̑
+* ј̦̀
+* ј̦̅
+* ј̦́
+* ј̦̃
+* ј̦̋
+* ј̦̇
+* ј̦̐
+* ј̦̍
+* ј̦̉
+* ј̦᷅
+* ј̦̏
+* ј̦᷄
+* ј̦͂
+* ј̦̓
+* ј̦̔
+* ј̦̄
+* ј̦̆
+* ј̦̂
+* ј̦᷆
+* ј̦̈
+* ј̦᷇
+* ј̦̊
+* ј̧̒
+* ј̧̌
+* ј̧̑
+* ј̧̀
+* ј̧̅
+* ј̧́
+* ј̧̃
+* ј̧̋
+* ј̧̇
+* ј̧̐
+* ј̧̍
+* ј̧̉
+* ј̧᷅
+* ј̧̏
+* ј̧᷄
+* ј̧͂
+* ј̧̓
+* ј̧̔
+* ј̧̄
+* ј̧̆
+* ј̧̂
+* ј̧᷆
+* ј̧̈
+* ј̧᷇
+* ј̧̊
+* ј̵̒
+* ј̵̌
+* ј̵̑
+* ј̵̀
+* ј̵̅
+* ј̵́
+* ј̵̃
+* ј̵̋
+* ј̵̇
+* ј̵̐
+* ј̵̍
+* ј̵̉
+* ј̵᷅
+* ј̵̏
+* ј̵᷄
+* ј̵͂
+* ј̵̓
+* ј̵̔
+* ј̵̄
+* ј̵̆
+* ј̵̂
+* ј̵᷆
+* ј̵̈
+* ј̵᷇
+* ј̵̊
+* ј̩̒
+* ј̩̌
+* ј̩̑
+* ј̩̀
+* ј̩̅
+* ј̩́
+* ј̩̃
+* ј̩̋
+* ј̩̇
+* ј̩̐
+* ј̩̍
+* ј̩̉
+* ј̩᷅
+* ј̩̏
+* ј̩᷄
+* ј̩͂
+* ј̩̓
+* ј̩̔
+* ј̩̄
+* ј̩̆
+* ј̩̂
+* ј̩᷆
+* ј̩̈
+* ј̩᷇
+* ј̩̊
+* ј̥̒
+* ј̥̌
+* ј̥̑
+* ј̥̀
+* ј̥̅
+* ј̥́
+* ј̥̃
+* ј̥̋
+* ј̥̇
+* ј̥̐
+* ј̥̍
+* ј̥̉
+* ј̥᷅
+* ј̥̏
+* ј̥᷄
+* ј̥͂
+* ј̥̓
+* ј̥̔
+* ј̥̄
+* ј̥̆
+* ј̥̂
+* ј̥᷆
+* ј̥̈
+* ј̥᷇
+* ј̥̊
+* ј̨̒
+* ј̨̌
+* ј̨̑
+* ј̨̀
+* ј̨̅
+* ј̨́
+* ј̨̃
+* ј̨̋
+* ј̨̇
+* ј̨̐
+* ј̨̍
+* ј̨̉
+* ј̨᷅
+* ј̨̏
+* ј̨᷄
+* ј̨͂
+* ј̨̓
+* ј̨̔
+* ј̨̄
+* ј̨̆
+* ј̨̂
+* ј̨᷆
+* ј̨̈
+* ј̨᷇
+* ј̨̊
+* ј̣̒
+* ј̣̌
+* ј̣̑
+* ј̣̀
+* ј̣̅
+* ј̣́
+* ј̣̃
+* ј̣̋
+* ј̣̇
+* ј̣̐
+* ј̣̍
+* ј̣̉
+* ј̣᷅
+* ј̣̏
+* ј̣᷄
+* ј̣͂
+* ј̣̓
+* ј̣̔
+* ј̣̄
+* ј̣̆
+* ј̣̂
+* ј̣᷆
+* ј̣̈
+* ј̣᷇
+* ј̣̊
+* ј᷊̒
+* ј᷊̌
+* ј᷊̑
+* ј᷊̀
+* ј᷊̅
+* ј᷊́
+* ј᷊̃
+* ј᷊̋
+* ј᷊̇
+* ј᷊̐
+* ј᷊̍
+* ј᷊̉
+* ј᷊᷅
+* ј᷊̏
+* ј᷊᷄
+* ј᷊͂
+* ј᷊̓
+* ј᷊̔
+* ј᷊̄
+* ј᷊̆
+* ј᷊̂
+* ј᷊᷆
+* ј᷊̈
+* ј᷊᷇
+* ј᷊̊
+* ј̱̒
+* ј̱̌
+* ј̱̑
+* ј̱̀
+* ј̱̅
+* ј̱́
+* ј̱̃
+* ј̱̋
+* ј̱̇
+* ј̱̐
+* ј̱̍
+* ј̱̉
+* ј̱᷅
+* ј̱̏
+* ј̱᷄
+* ј̱͂
+* ј̱̓
+* ј̱̔
+* ј̱̄
+* ј̱̆
+* ј̱̂
+* ј̱᷆
+* ј̱̈
+* ј̱᷇
+* ј̱̊
+* ј̮̒
+* ј̮̌
+* ј̮̑
+* ј̮̀
+* ј̮̅
+* ј̮́
+* ј̮̃
+* ј̮̋
+* ј̮̇
+* ј̮̐
+* ј̮̍
+* ј̮̉
+* ј̮᷅
+* ј̮̏
+* ј̮᷄
+* ј̮͂
+* ј̮̓
+* ј̮̔
+* ј̮̄
+* ј̮̆
+* ј̮̂
+* ј̮᷆
+* ј̮̈
+* ј̮᷇
+* ј̮̊
+* ј̯̒
+* ј̯̌
+* ј̯̑
+* ј̯̀
+* ј̯̅
+* ј̯́
+* ј̯̃
+* ј̯̋
+* ј̯̇
+* ј̯̐
+* ј̯̍
+* ј̯̉
+* ј̯᷅
+* ј̯̏
+* ј̯᷄
+* ј̯͂
+* ј̯̓
+* ј̯̔
+* ј̯̄
+* ј̯̆
+* ј̯̂
+* ј̯᷆
+* ј̯̈
+* ј̯᷇
+* ј̯̊
+* ј̲̒
+* ј̲̌
+* ј̲̑
+* ј̲̀
+* ј̲̅
+* ј̲́
+* ј̲̃
+* ј̲̋
+* ј̲̇
+* ј̲̐
+* ј̲̍
+* ј̲̉
+* ј̲᷅
+* ј̲̏
+* ј̲᷄
+* ј̲͂
+* ј̲̓
+* ј̲̔
+* ј̲̄
+* ј̲̆
+* ј̲̂
+* ј̲᷆
+* ј̲̈
+* ј̲᷇
+* ј̲̊
+* ј̭̒
+* ј̭̌
+* ј̭̑
+* ј̭̀
+* ј̭̅
+* ј̭́
+* ј̭̃
+* ј̭̋
+* ј̭̇
+* ј̭̐
+* ј̭̍
+* ј̭̉
+* ј̭᷅
+* ј̭̏
+* ј̭᷄
+* ј̭͂
+* ј̭̓
+* ј̭̔
+* ј̭̄
+* ј̭̆
+* ј̭̂
+* ј̭᷆
+* ј̭̈
+* ј̭᷇
+* ј̭̊
+* ј̤̒
+* ј̤̌
+* ј̤̑
+* ј̤̀
+* ј̤̅
+* ј̤́
+* ј̤̃
+* ј̤̋
+* ј̤̇
+* ј̤̐
+* ј̤̍
+* ј̤̉
+* ј̤᷅
+* ј̤̏
+* ј̤᷄
+* ј̤͂
+* ј̤̓
+* ј̤̔
+* ј̤̄
+* ј̤̆
+* ј̤̂
+* ј̤᷆
+* ј̤̈
+* ј̤᷇
+* ј̤̊
+* ј̰̒
+* ј̰̌
+* ј̰̑
+* ј̰̀
+* ј̰̅
+* ј̰́
+* ј̰̃
+* ј̰̋
+* ј̰̇
+* ј̰̐
+* ј̰̍
+* ј̰̉
+* ј̰᷅
+* ј̰̏
+* ј̰᷄
+* ј̰͂
+* ј̰̓
+* ј̰̔
+* ј̰̄
+* ј̰̆
+* ј̰̂
+* ј̰᷆
+* ј̰̈
+* ј̰᷇
+* ј̰̊
+* ј̒
+* ј̌
+* ј̑
+* ј̀
+* ј̅
+* ј́
+* ј̃
+* ј̋
+* ј̇
+* ј̐
+* ј̍
+* ј̉
+* ј᷅
+* ј̏
+* ј᷄
+* ј͂
+* ј̓
+* ј̔
+* ј̄
+* ј̆
+* ј̂
+* ј᷆
+* ј̈
+* ј᷇
+* ј̊
+* j̦̍
+* j̦᷅
+* j̦᷄
+* j̦͂
+* j̦̓
+* j̦̔
+* j̦᷆
+* j̦᷇
+* j̧̍
+* j̧᷅
+* j̧᷄
+* j̧͂
+* j̧̓
+* j̧̔
+* j̧᷆
+* j̧᷇
+* j̵̍
+* j̵᷅
+* j̵᷄
+* j̵͂
+* j̵̓
+* j̵̔
+* j̵᷆
+* j̵᷇
+* j̩̍
+* j̩᷅
+* j̩᷄
+* j̩͂
+* j̩̓
+* j̩̔
+* j̩᷆
+* j̩᷇
+* j̥̍
+* j̥᷅
+* j̥᷄
+* j̥͂
+* j̥̓
+* j̥̔
+* j̥᷆
+* j̥᷇
+* j̨̍
+* j̨᷅
+* j̨᷄
+* j̨͂
+* j̨̓
+* j̨̔
+* j̨᷆
+* j̨᷇
+* j̣̍
+* j̣᷅
+* j̣᷄
+* j̣͂
+* j̣̓
+* j̣̔
+* j̣᷆
+* j̣᷇
+* j᷊̍
+* j᷊᷅
+* j᷊᷄
+* j᷊͂
+* j᷊̓
+* j᷊̔
+* j᷊᷆
+* j᷊᷇
+* j̱̍
+* j̱᷅
+* j̱᷄
+* j̱͂
+* j̱̓
+* j̱̔
+* j̱᷆
+* j̱᷇
+* j̮̍
+* j̮᷅
+* j̮᷄
+* j̮͂
+* j̮̓
+* j̮̔
+* j̮᷆
+* j̮᷇
+* j̯̍
+* j̯᷅
+* j̯᷄
+* j̯͂
+* j̯̓
+* j̯̔
+* j̯᷆
+* j̯᷇
+* j̲̍
+* j̲᷅
+* j̲᷄
+* j̲͂
+* j̲̓
+* j̲̔
+* j̲᷆
+* j̲᷇
+* j̭̍
+* j̭᷅
+* j̭᷄
+* j̭͂
+* j̭̓
+* j̭̔
+* j̭᷆
+* j̭᷇
+* j̤̍
+* j̤᷅
+* j̤᷄
+* j̤͂
+* j̤̓
+* j̤̔
+* j̤᷆
+* j̤᷇
+* j̰̍
+* j̰᷅
+* j̰᷄
+* j̰͂
+* j̰̓
+* j̰̔
+* j̰᷆
+* j̰᷇
+* j̍
+* j᷅
+* j᷄
+* j͂
+* j̓
+* j̔
+* j᷆
+* j᷇
+* ⁱ̛̒
+* ⁱ̛̌
+* ⁱ̛̑
+* ⁱ̛̀
+* ⁱ̛̅
+* ⁱ̛́
+* ⁱ̛̃
+* ⁱ̛̋
+* ⁱ̛̇
+* ⁱ̛̐
+* ⁱ̛̍
+* ⁱ̛̉
+* ⁱ̛᷅
+* ⁱ̛̏
+* ⁱ̛᷄
+* ⁱ̛͂
+* ⁱ̛̓
+* ⁱ̛̔
+* ⁱ̛̄
+* ⁱ̛̆
+* ⁱ̛̂
+* ⁱ̛᷆
+* ⁱ̛̈
+* ⁱ̛᷇
+* ⁱ̛̊
+* ⁱ̦̒
+* ⁱ̦̌
+* ⁱ̦̑
+* ⁱ̦̀
+* ⁱ̦̅
+* ⁱ̦́
+* ⁱ̦̃
+* ⁱ̦̋
+* ⁱ̦̇
+* ⁱ̦̐
+* ⁱ̦̍
+* ⁱ̦̉
+* ⁱ̦᷅
+* ⁱ̦̏
+* ⁱ̦᷄
+* ⁱ̦͂
+* ⁱ̦̓
+* ⁱ̦̔
+* ⁱ̦̄
+* ⁱ̦̆
+* ⁱ̦̂
+* ⁱ̦᷆
+* ⁱ̦̈
+* ⁱ̦᷇
+* ⁱ̦̊
+* ⁱ̧̒
+* ⁱ̧̌
+* ⁱ̧̑
+* ⁱ̧̀
+* ⁱ̧̅
+* ⁱ̧́
+* ⁱ̧̃
+* ⁱ̧̋
+* ⁱ̧̇
+* ⁱ̧̐
+* ⁱ̧̍
+* ⁱ̧̉
+* ⁱ̧᷅
+* ⁱ̧̏
+* ⁱ̧᷄
+* ⁱ̧͂
+* ⁱ̧̓
+* ⁱ̧̔
+* ⁱ̧̄
+* ⁱ̧̆
+* ⁱ̧̂
+* ⁱ̧᷆
+* ⁱ̧̈
+* ⁱ̧᷇
+* ⁱ̧̊
+* ⁱ̵̒
+* ⁱ̵̌
+* ⁱ̵̑
+* ⁱ̵̀
+* ⁱ̵̅
+* ⁱ̵́
+* ⁱ̵̃
+* ⁱ̵̋
+* ⁱ̵̇
+* ⁱ̵̐
+* ⁱ̵̍
+* ⁱ̵̉
+* ⁱ̵᷅
+* ⁱ̵̏
+* ⁱ̵᷄
+* ⁱ̵͂
+* ⁱ̵̓
+* ⁱ̵̔
+* ⁱ̵̄
+* ⁱ̵̆
+* ⁱ̵̂
+* ⁱ̵᷆
+* ⁱ̵̈
+* ⁱ̵᷇
+* ⁱ̵̊
+* ⁱ̩̒
+* ⁱ̩̌
+* ⁱ̩̑
+* ⁱ̩̀
+* ⁱ̩̅
+* ⁱ̩́
+* ⁱ̩̃
+* ⁱ̩̋
+* ⁱ̩̇
+* ⁱ̩̐
+* ⁱ̩̍
+* ⁱ̩̉
+* ⁱ̩᷅
+* ⁱ̩̏
+* ⁱ̩᷄
+* ⁱ̩͂
+* ⁱ̩̓
+* ⁱ̩̔
+* ⁱ̩̄
+* ⁱ̩̆
+* ⁱ̩̂
+* ⁱ̩᷆
+* ⁱ̩̈
+* ⁱ̩᷇
+* ⁱ̩̊
+* ⁱ̥̒
+* ⁱ̥̌
+* ⁱ̥̑
+* ⁱ̥̀
+* ⁱ̥̅
+* ⁱ̥́
+* ⁱ̥̃
+* ⁱ̥̋
+* ⁱ̥̇
+* ⁱ̥̐
+* ⁱ̥̍
+* ⁱ̥̉
+* ⁱ̥᷅
+* ⁱ̥̏
+* ⁱ̥᷄
+* ⁱ̥͂
+* ⁱ̥̓
+* ⁱ̥̔
+* ⁱ̥̄
+* ⁱ̥̆
+* ⁱ̥̂
+* ⁱ̥᷆
+* ⁱ̥̈
+* ⁱ̥᷇
+* ⁱ̥̊
+* ⁱ̨̒
+* ⁱ̨̌
+* ⁱ̨̑
+* ⁱ̨̀
+* ⁱ̨̅
+* ⁱ̨́
+* ⁱ̨̃
+* ⁱ̨̋
+* ⁱ̨̇
+* ⁱ̨̐
+* ⁱ̨̍
+* ⁱ̨̉
+* ⁱ̨᷅
+* ⁱ̨̏
+* ⁱ̨᷄
+* ⁱ̨͂
+* ⁱ̨̓
+* ⁱ̨̔
+* ⁱ̨̄
+* ⁱ̨̆
+* ⁱ̨̂
+* ⁱ̨᷆
+* ⁱ̨̈
+* ⁱ̨᷇
+* ⁱ̨̊
+* ⁱ̣̒
+* ⁱ̣̌
+* ⁱ̣̑
+* ⁱ̣̀
+* ⁱ̣̅
+* ⁱ̣́
+* ⁱ̣̃
+* ⁱ̣̋
+* ⁱ̣̇
+* ⁱ̣̐
+* ⁱ̣̍
+* ⁱ̣̉
+* ⁱ̣᷅
+* ⁱ̣̏
+* ⁱ̣᷄
+* ⁱ̣͂
+* ⁱ̣̓
+* ⁱ̣̔
+* ⁱ̣̄
+* ⁱ̣̆
+* ⁱ̣̂
+* ⁱ̣᷆
+* ⁱ̣̈
+* ⁱ̣᷇
+* ⁱ̣̊
+* ⁱ᷊̒
+* ⁱ᷊̌
+* ⁱ᷊̑
+* ⁱ᷊̀
+* ⁱ᷊̅
+* ⁱ᷊́
+* ⁱ᷊̃
+* ⁱ᷊̋
+* ⁱ᷊̇
+* ⁱ᷊̐
+* ⁱ᷊̍
+* ⁱ᷊̉
+* ⁱ᷊᷅
+* ⁱ᷊̏
+* ⁱ᷊᷄
+* ⁱ᷊͂
+* ⁱ᷊̓
+* ⁱ᷊̔
+* ⁱ᷊̄
+* ⁱ᷊̆
+* ⁱ᷊̂
+* ⁱ᷊᷆
+* ⁱ᷊̈
+* ⁱ᷊᷇
+* ⁱ᷊̊
+* ⁱ̱̒
+* ⁱ̱̌
+* ⁱ̱̑
+* ⁱ̱̀
+* ⁱ̱̅
+* ⁱ̱́
+* ⁱ̱̃
+* ⁱ̱̋
+* ⁱ̱̇
+* ⁱ̱̐
+* ⁱ̱̍
+* ⁱ̱̉
+* ⁱ̱᷅
+* ⁱ̱̏
+* ⁱ̱᷄
+* ⁱ̱͂
+* ⁱ̱̓
+* ⁱ̱̔
+* ⁱ̱̄
+* ⁱ̱̆
+* ⁱ̱̂
+* ⁱ̱᷆
+* ⁱ̱̈
+* ⁱ̱᷇
+* ⁱ̱̊
+* ⁱ̮̒
+* ⁱ̮̌
+* ⁱ̮̑
+* ⁱ̮̀
+* ⁱ̮̅
+* ⁱ̮́
+* ⁱ̮̃
+* ⁱ̮̋
+* ⁱ̮̇
+* ⁱ̮̐
+* ⁱ̮̍
+* ⁱ̮̉
+* ⁱ̮᷅
+* ⁱ̮̏
+* ⁱ̮᷄
+* ⁱ̮͂
+* ⁱ̮̓
+* ⁱ̮̔
+* ⁱ̮̄
+* ⁱ̮̆
+* ⁱ̮̂
+* ⁱ̮᷆
+* ⁱ̮̈
+* ⁱ̮᷇
+* ⁱ̮̊
+* ⁱ̯̒
+* ⁱ̯̌
+* ⁱ̯̑
+* ⁱ̯̀
+* ⁱ̯̅
+* ⁱ̯́
+* ⁱ̯̃
+* ⁱ̯̋
+* ⁱ̯̇
+* ⁱ̯̐
+* ⁱ̯̍
+* ⁱ̯̉
+* ⁱ̯᷅
+* ⁱ̯̏
+* ⁱ̯᷄
+* ⁱ̯͂
+* ⁱ̯̓
+* ⁱ̯̔
+* ⁱ̯̄
+* ⁱ̯̆
+* ⁱ̯̂
+* ⁱ̯᷆
+* ⁱ̯̈
+* ⁱ̯᷇
+* ⁱ̯̊
+* ⁱ̲̒
+* ⁱ̲̌
+* ⁱ̲̑
+* ⁱ̲̀
+* ⁱ̲̅
+* ⁱ̲́
+* ⁱ̲̃
+* ⁱ̲̋
+* ⁱ̲̇
+* ⁱ̲̐
+* ⁱ̲̍
+* ⁱ̲̉
+* ⁱ̲᷅
+* ⁱ̲̏
+* ⁱ̲᷄
+* ⁱ̲͂
+* ⁱ̲̓
+* ⁱ̲̔
+* ⁱ̲̄
+* ⁱ̲̆
+* ⁱ̲̂
+* ⁱ̲᷆
+* ⁱ̲̈
+* ⁱ̲᷇
+* ⁱ̲̊
+* ⁱ̭̒
+* ⁱ̭̌
+* ⁱ̭̑
+* ⁱ̭̀
+* ⁱ̭̅
+* ⁱ̭́
+* ⁱ̭̃
+* ⁱ̭̋
+* ⁱ̭̇
+* ⁱ̭̐
+* ⁱ̭̍
+* ⁱ̭̉
+* ⁱ̭᷅
+* ⁱ̭̏
+* ⁱ̭᷄
+* ⁱ̭͂
+* ⁱ̭̓
+* ⁱ̭̔
+* ⁱ̭̄
+* ⁱ̭̆
+* ⁱ̭̂
+* ⁱ̭᷆
+* ⁱ̭̈
+* ⁱ̭᷇
+* ⁱ̭̊
+* ⁱ̤̒
+* ⁱ̤̌
+* ⁱ̤̑
+* ⁱ̤̀
+* ⁱ̤̅
+* ⁱ̤́
+* ⁱ̤̃
+* ⁱ̤̋
+* ⁱ̤̇
+* ⁱ̤̐
+* ⁱ̤̍
+* ⁱ̤̉
+* ⁱ̤᷅
+* ⁱ̤̏
+* ⁱ̤᷄
+* ⁱ̤͂
+* ⁱ̤̓
+* ⁱ̤̔
+* ⁱ̤̄
+* ⁱ̤̆
+* ⁱ̤̂
+* ⁱ̤᷆
+* ⁱ̤̈
+* ⁱ̤᷇
+* ⁱ̤̊
+* ⁱ̰̒
+* ⁱ̰̌
+* ⁱ̰̑
+* ⁱ̰̀
+* ⁱ̰̅
+* ⁱ̰́
+* ⁱ̰̃
+* ⁱ̰̋
+* ⁱ̰̇
+* ⁱ̰̐
+* ⁱ̰̍
+* ⁱ̰̉
+* ⁱ̰᷅
+* ⁱ̰̏
+* ⁱ̰᷄
+* ⁱ̰͂
+* ⁱ̰̓
+* ⁱ̰̔
+* ⁱ̰̄
+* ⁱ̰̆
+* ⁱ̰̂
+* ⁱ̰᷆
+* ⁱ̰̈
+* ⁱ̰᷇
+* ⁱ̰̊
+* ⁱ̒
+* ⁱ̌
+* ⁱ̑
+* ⁱ̀
+* ⁱ̅
+* ⁱ́
+* ⁱ̃
+* ⁱ̋
+* ⁱ̇
+* ⁱ̐
+* ⁱ̍
+* ⁱ̉
+* ⁱ᷅
+* ⁱ̏
+* ⁱ᷄
+* ⁱ͂
+* ⁱ̓
+* ⁱ̔
+* ⁱ̄
+* ⁱ̆
+* ⁱ̂
+* ⁱ᷆
+* ⁱ̈
+* ⁱ᷇
+* ⁱ̊
+* ị̦̍
+* ị̦᷅
+* ị̦᷄
+* ị̦͂
+* ị̦̓
+* ị̦̔
+* ị̦᷆
+* ị̦᷇
+* ị̧̍
+* ị̧᷅
+* ị̧᷄
+* ị̧͂
+* ị̧̓
+* ị̧̔
+* ị̧᷆
+* ị̧᷇
+* ị̵̍
+* ị̵᷅
+* ị̵᷄
+* ị̵͂
+* ị̵̓
+* ị̵̔
+* ị̵᷆
+* ị̵᷇
+* ị̩̍
+* ị̩᷅
+* ị̩᷄
+* ị̩͂
+* ị̩̓
+* ị̩̔
+* ị̩᷆
+* ị̩᷇
+* ị̥̍
+* ị̥᷅
+* ị̥᷄
+* ị̥͂
+* ị̥̓
+* ị̥̔
+* ị̥᷆
+* ị̥᷇
+* ị̣̍
+* ị̣᷅
+* ị̣᷄
+* ị̣͂
+* ị̣̓
+* ị̣̔
+* ị̣᷆
+* ị̣᷇
+* ị᷊̍
+* ị᷊᷅
+* ị᷊᷄
+* ị᷊͂
+* ị᷊̓
+* ị᷊̔
+* ị᷊᷆
+* ị᷊᷇
+* ị̱̍
+* ị̱᷅
+* ị̱᷄
+* ị̱͂
+* ị̱̓
+* ị̱̔
+* ị̱᷆
+* ị̱᷇
+* ị̮̍
+* ị̮᷅
+* ị̮᷄
+* ị̮͂
+* ị̮̓
+* ị̮̔
+* ị̮᷆
+* ị̮᷇
+* ị̯̍
+* ị̯᷅
+* ị̯᷄
+* ị̯͂
+* ị̯̓
+* ị̯̔
+* ị̯᷆
+* ị̯᷇
+* ị̲̍
+* ị̲᷅
+* ị̲᷄
+* ị̲͂
+* ị̲̓
+* ị̲̔
+* ị̲᷆
+* ị̲᷇
+* ị̭̍
+* ị̭᷅
+* ị̭᷄
+* ị̭͂
+* ị̭̓
+* ị̭̔
+* ị̭᷆
+* ị̭᷇
+* ị̤̍
+* ị̤᷅
+* ị̤᷄
+* ị̤͂
+* ị̤̓
+* ị̤̔
+* ị̤᷆
+* ị̤᷇
+* ị̰̍
+* ị̰᷅
+* ị̰᷄
+* ị̰͂
+* ị̰̓
+* ị̰̔
+* ị̰᷆
+* ị̰᷇
+* ị̍
+* ị᷅
+* ị᷄
+* ị͂
+* ị̓
+* ị̔
+* ị᷆
+* ị᷇
+* į̦̍
+* į̦᷅
+* į̦᷄
+* į̦͂
+* į̦̓
+* į̦̔
+* į̦᷆
+* į̦᷇
+* į̧̍
+* į̧᷅
+* į̧᷄
+* į̧͂
+* į̧̓
+* į̧̔
+* į̧᷆
+* į̧᷇
+* į̵̍
+* į̵᷅
+* į̵᷄
+* į̵͂
+* į̵̓
+* į̵̔
+* į̵᷆
+* į̵᷇
+* į̩̍
+* į̩᷅
+* į̩᷄
+* į̩͂
+* į̩̓
+* į̩̔
+* į̩᷆
+* į̩᷇
+* į̥̍
+* į̥᷅
+* į̥᷄
+* į̥͂
+* į̥̓
+* į̥̔
+* į̥᷆
+* į̥᷇
+* į̨̍
+* į̨᷅
+* į̨᷄
+* į̨͂
+* į̨̓
+* į̨̔
+* į̨᷆
+* į̨᷇
+* į̣̍
+* į̣᷅
+* į̣᷄
+* į̣͂
+* į̣̓
+* į̣̔
+* į̣᷆
+* į̣᷇
+* į᷊̍
+* į᷊᷅
+* į᷊᷄
+* į᷊͂
+* į᷊̓
+* į᷊̔
+* į᷊᷆
+* į᷊᷇
+* į̱̍
+* į̱᷅
+* į̱᷄
+* į̱͂
+* į̱̓
+* į̱̔
+* į̱᷆
+* į̱᷇
+* į̮̍
+* į̮᷅
+* į̮᷄
+* į̮͂
+* į̮̓
+* į̮̔
+* į̮᷆
+* į̮᷇
+* į̯̍
+* į̯᷅
+* į̯᷄
+* į̯͂
+* į̯̓
+* į̯̔
+* į̯᷆
+* į̯᷇
+* į̲̍
+* į̲᷅
+* į̲᷄
+* į̲͂
+* į̲̓
+* į̲̔
+* į̲᷆
+* į̲᷇
+* į̭̍
+* į̭᷅
+* į̭᷄
+* į̭͂
+* į̭̓
+* į̭̔
+* į̭᷆
+* į̭᷇
+* į̤̍
+* į̤᷅
+* į̤᷄
+* į̤͂
+* į̤̓
+* į̤̔
+* į̤᷆
+* į̤᷇
+* į̰̍
+* į̰᷅
+* į̰᷄
+* į̰͂
+* į̰̓
+* į̰̔
+* į̰᷆
+* į̰᷇
+* į̍
+* į᷅
+* į᷄
+* į͂
+* į̓
+* į̔
+* į᷆
+* į᷇
+* і̛̒
+* і̛̌
+* і̛̑
+* і̛̀
+* і̛̅
+* і̛́
+* і̛̃
+* і̛̋
+* і̛̇
+* і̛̐
+* і̛̍
+* і̛̉
+* і̛᷅
+* і̛̏
+* і̛᷄
+* і̛͂
+* і̛̓
+* і̛̔
+* і̛̄
+* і̛̆
+* і̛̂
+* і̛᷆
+* і̛᷇
+* і̛̊
+* і̦̒
+* і̦̌
+* і̦̑
+* і̦̀
+* і̦̅
+* і̦́
+* і̦̃
+* і̦̋
+* і̦̇
+* і̦̐
+* і̦̍
+* і̦̉
+* і̦᷅
+* і̦̏
+* і̦᷄
+* і̦͂
+* і̦̓
+* і̦̔
+* і̦̄
+* і̦̆
+* і̦̂
+* і̦᷆
+* і̦᷇
+* і̦̊
+* і̧̒
+* і̧̌
+* і̧̑
+* і̧̀
+* і̧̅
+* і̧́
+* і̧̃
+* і̧̋
+* і̧̇
+* і̧̐
+* і̧̍
+* і̧̉
+* і̧᷅
+* і̧̏
+* і̧᷄
+* і̧͂
+* і̧̓
+* і̧̔
+* і̧̄
+* і̧̆
+* і̧̂
+* і̧᷆
+* і̧᷇
+* і̧̊
+* і̵̒
+* і̵̌
+* і̵̑
+* і̵̀
+* і̵̅
+* і̵́
+* і̵̃
+* і̵̋
+* і̵̇
+* і̵̐
+* і̵̍
+* і̵̉
+* і̵᷅
+* і̵̏
+* і̵᷄
+* і̵͂
+* і̵̓
+* і̵̔
+* і̵̄
+* і̵̆
+* і̵̂
+* і̵᷆
+* і̵᷇
+* і̵̊
+* і̩̒
+* і̩̌
+* і̩̑
+* і̩̀
+* і̩̅
+* і̩́
+* і̩̃
+* і̩̋
+* і̩̇
+* і̩̐
+* і̩̍
+* і̩̉
+* і̩᷅
+* і̩̏
+* і̩᷄
+* і̩͂
+* і̩̓
+* і̩̔
+* і̩̄
+* і̩̆
+* і̩̂
+* і̩᷆
+* і̩᷇
+* і̩̊
+* і̥̒
+* і̥̌
+* і̥̑
+* і̥̀
+* і̥̅
+* і̥́
+* і̥̃
+* і̥̋
+* і̥̇
+* і̥̐
+* і̥̍
+* і̥̉
+* і̥᷅
+* і̥̏
+* і̥᷄
+* і̥͂
+* і̥̓
+* і̥̔
+* і̥̄
+* і̥̆
+* і̥̂
+* і̥᷆
+* і̥᷇
+* і̥̊
+* і̨̒
+* і̨̌
+* і̨̑
+* і̨̀
+* і̨̅
+* і̨́
+* і̨̃
+* і̨̋
+* і̨̇
+* і̨̐
+* і̨̍
+* і̨̉
+* і̨᷅
+* і̨̏
+* і̨᷄
+* і̨͂
+* і̨̓
+* і̨̔
+* і̨̄
+* і̨̆
+* і̨̂
+* і̨᷆
+* і̨᷇
+* і̨̊
+* і̣̒
+* і̣̌
+* і̣̑
+* і̣̀
+* і̣̅
+* і̣́
+* і̣̃
+* і̣̋
+* і̣̇
+* і̣̐
+* і̣̍
+* і̣̉
+* і̣᷅
+* і̣̏
+* і̣᷄
+* і̣͂
+* і̣̓
+* і̣̔
+* і̣̄
+* і̣̆
+* і̣̂
+* і̣᷆
+* і̣᷇
+* і̣̊
+* і᷊̒
+* і᷊̌
+* і᷊̑
+* і᷊̀
+* і᷊̅
+* і᷊́
+* і᷊̃
+* і᷊̋
+* і᷊̇
+* і᷊̐
+* і᷊̍
+* і᷊̉
+* і᷊᷅
+* і᷊̏
+* і᷊᷄
+* і᷊͂
+* і᷊̓
+* і᷊̔
+* і᷊̄
+* і᷊̆
+* і᷊̂
+* і᷊᷆
+* і᷊᷇
+* і᷊̊
+* і̱̒
+* і̱̌
+* і̱̑
+* і̱̀
+* і̱̅
+* і̱́
+* і̱̃
+* і̱̋
+* і̱̇
+* і̱̐
+* і̱̍
+* і̱̉
+* і̱᷅
+* і̱̏
+* і̱᷄
+* і̱͂
+* і̱̓
+* і̱̔
+* і̱̄
+* і̱̆
+* і̱̂
+* і̱᷆
+* і̱᷇
+* і̱̊
+* і̮̒
+* і̮̌
+* і̮̑
+* і̮̀
+* і̮̅
+* і̮́
+* і̮̃
+* і̮̋
+* і̮̇
+* і̮̐
+* і̮̍
+* і̮̉
+* і̮᷅
+* і̮̏
+* і̮᷄
+* і̮͂
+* і̮̓
+* і̮̔
+* і̮̄
+* і̮̆
+* і̮̂
+* і̮᷆
+* і̮᷇
+* і̮̊
+* і̯̒
+* і̯̌
+* і̯̑
+* і̯̀
+* і̯̅
+* і̯́
+* і̯̃
+* і̯̋
+* і̯̇
+* і̯̐
+* і̯̍
+* і̯̉
+* і̯᷅
+* і̯̏
+* і̯᷄
+* і̯͂
+* і̯̓
+* і̯̔
+* і̯̄
+* і̯̆
+* і̯̂
+* і̯᷆
+* і̯᷇
+* і̯̊
+* і̲̒
+* і̲̌
+* і̲̑
+* і̲̀
+* і̲̅
+* і̲́
+* і̲̃
+* і̲̋
+* і̲̇
+* і̲̐
+* і̲̍
+* і̲̉
+* і̲᷅
+* і̲̏
+* і̲᷄
+* і̲͂
+* і̲̓
+* і̲̔
+* і̲̄
+* і̲̆
+* і̲̂
+* і̲᷆
+* і̲᷇
+* і̲̊
+* і̭̒
+* і̭̌
+* і̭̑
+* і̭̀
+* і̭̅
+* і̭́
+* і̭̃
+* і̭̋
+* і̭̇
+* і̭̐
+* і̭̍
+* і̭̉
+* і̭᷅
+* і̭̏
+* і̭᷄
+* і̭͂
+* і̭̓
+* і̭̔
+* і̭̄
+* і̭̆
+* і̭̂
+* і̭᷆
+* і̭᷇
+* і̭̊
+* і̤̒
+* і̤̌
+* і̤̑
+* і̤̀
+* і̤̅
+* і̤́
+* і̤̃
+* і̤̋
+* і̤̇
+* і̤̐
+* і̤̍
+* і̤̉
+* і̤᷅
+* і̤̏
+* і̤᷄
+* і̤͂
+* і̤̓
+* і̤̔
+* і̤̄
+* і̤̆
+* і̤̂
+* і̤᷆
+* і̤᷇
+* і̤̊
+* і̰̒
+* і̰̌
+* і̰̑
+* і̰̀
+* і̰̅
+* і̰́
+* і̰̃
+* і̰̋
+* і̰̇
+* і̰̐
+* і̰̍
+* і̰̉
+* і̰᷅
+* і̰̏
+* і̰᷄
+* і̰͂
+* і̰̓
+* і̰̔
+* і̰̄
+* і̰̆
+* і̰̂
+* і̰᷆
+* і̰᷇
+* і̰̊
+* і̒
+* і̌
+* і̑
+* і̀
+* і̅
+* і̃
+* і̋
+* і̇
+* і̐
+* і̍
+* і̉
+* і᷅
+* і̏
+* і᷄
+* і͂
+* і̓
+* і̔
+* і̄
+* і̆
+* і̂
+* і᷆
+* і᷇
+* і̊
+* ɉ̦̍
+* ɉ̦᷅
+* ɉ̦᷄
+* ɉ̦͂
+* ɉ̦̓
+* ɉ̦̔
+* ɉ̦᷆
+* ɉ̦᷇
+* ɉ̧̍
+* ɉ̧᷅
+* ɉ̧᷄
+* ɉ̧͂
+* ɉ̧̓
+* ɉ̧̔
+* ɉ̧᷆
+* ɉ̧᷇
+* ɉ̵̍
+* ɉ̵᷅
+* ɉ̵᷄
+* ɉ̵͂
+* ɉ̵̓
+* ɉ̵̔
+* ɉ̵᷆
+* ɉ̵᷇
+* ɉ̩̍
+* ɉ̩᷅
+* ɉ̩᷄
+* ɉ̩͂
+* ɉ̩̓
+* ɉ̩̔
+* ɉ̩᷆
+* ɉ̩᷇
+* ɉ̥̍
+* ɉ̥᷅
+* ɉ̥᷄
+* ɉ̥͂
+* ɉ̥̓
+* ɉ̥̔
+* ɉ̥᷆
+* ɉ̥᷇
+* ɉ̨̍
+* ɉ̨᷅
+* ɉ̨᷄
+* ɉ̨͂
+* ɉ̨̓
+* ɉ̨̔
+* ɉ̨᷆
+* ɉ̨᷇
+* ɉ̣̍
+* ɉ̣᷅
+* ɉ̣᷄
+* ɉ̣͂
+* ɉ̣̓
+* ɉ̣̔
+* ɉ̣᷆
+* ɉ̣᷇
+* ɉ᷊̍
+* ɉ᷊᷅
+* ɉ᷊᷄
+* ɉ᷊͂
+* ɉ᷊̓
+* ɉ᷊̔
+* ɉ᷊᷆
+* ɉ᷊᷇
+* ɉ̱̍
+* ɉ̱᷅
+* ɉ̱᷄
+* ɉ̱͂
+* ɉ̱̓
+* ɉ̱̔
+* ɉ̱᷆
+* ɉ̱᷇
+* ɉ̮̍
+* ɉ̮᷅
+* ɉ̮᷄
+* ɉ̮͂
+* ɉ̮̓
+* ɉ̮̔
+* ɉ̮᷆
+* ɉ̮᷇
+* ɉ̯̍
+* ɉ̯᷅
+* ɉ̯᷄
+* ɉ̯͂
+* ɉ̯̓
+* ɉ̯̔
+* ɉ̯᷆
+* ɉ̯᷇
+* ɉ̲̍
+* ɉ̲᷅
+* ɉ̲᷄
+* ɉ̲͂
+* ɉ̲̓
+* ɉ̲̔
+* ɉ̲᷆
+* ɉ̲᷇
+* ɉ̭̍
+* ɉ̭᷅
+* ɉ̭᷄
+* ɉ̭͂
+* ɉ̭̓
+* ɉ̭̔
+* ɉ̭᷆
+* ɉ̭᷇
+* ɉ̤̍
+* ɉ̤᷅
+* ɉ̤᷄
+* ɉ̤͂
+* ɉ̤̓
+* ɉ̤̔
+* ɉ̤᷆
+* ɉ̤᷇
+* ɉ̰̍
+* ɉ̰᷅
+* ɉ̰᷄
+* ɉ̰͂
+* ɉ̰̓
+* ɉ̰̔
+* ɉ̰᷆
+* ɉ̰᷇
+* ɉ̍
+* ɉ᷅
+* ɉ᷄
+* ɉ͂
+* ɉ̓
+* ɉ̔
+* ɉ᷆
+* ɉ᷇
+* i̦̍
+* i̦᷅
+* i̦᷄
+* i̦͂
+* i̦̓
+* i̦̔
+* i̦᷆
+* i̦᷇
+* i̧̍
+* i̧᷅
+* i̧᷄
+* i̧͂
+* i̧̓
+* i̧̔
+* i̧᷆
+* i̧᷇
+* i̵̍
+* i̵᷅
+* i̵᷄
+* i̵͂
+* i̵̓
+* i̵̔
+* i̵᷆
+* i̵᷇
+* i̩̍
+* i̩᷅
+* i̩᷄
+* i̩͂
+* i̩̓
+* i̩̔
+* i̩᷆
+* i̩᷇
+* i̥̍
+* i̥᷅
+* i̥᷄
+* i̥͂
+* i̥̓
+* i̥̔
+* i̥᷆
+* i̥᷇
+* i᷊̍
+* i᷊᷅
+* i᷊᷄
+* i᷊͂
+* i᷊̓
+* i᷊̔
+* i᷊᷆
+* i᷊᷇
+* i̱̍
+* i̱᷅
+* i̱᷄
+* i̱͂
+* i̱̓
+* i̱̔
+* i̱᷆
+* i̱᷇
+* i̮̍
+* i̮᷅
+* i̮᷄
+* i̮͂
+* i̮̓
+* i̮̔
+* i̮᷆
+* i̮᷇
+* i̯̍
+* i̯᷅
+* i̯᷄
+* i̯͂
+* i̯̓
+* i̯̔
+* i̯᷆
+* i̯᷇
+* i̲̍
+* i̲᷅
+* i̲᷄
+* i̲͂
+* i̲̓
+* i̲̔
+* i̲᷆
+* i̲᷇
+* i̭̍
+* i̭᷅
+* i̭᷄
+* i̭͂
+* i̭̓
+* i̭̔
+* i̭᷆
+* i̭᷇
+* i̤̍
+* i̤᷅
+* i̤᷄
+* i̤͂
+* i̤̓
+* i̤̔
+* i̤᷆
+* i̤᷇
+* i᷅
+* i᷄
+* i͂
+* i̔
+* ʝ̛̒
+* ʝ̛̌
+* ʝ̛̑
+* ʝ̛̀
+* ʝ̛̅
+* ʝ̛́
+* ʝ̛̃
+* ʝ̛̋
+* ʝ̛̇
+* ʝ̛̐
+* ʝ̛̍
+* ʝ̛̉
+* ʝ̛᷅
+* ʝ̛̏
+* ʝ̛᷄
+* ʝ̛͂
+* ʝ̛̓
+* ʝ̛̔
+* ʝ̛̄
+* ʝ̛̆
+* ʝ̛̂
+* ʝ̛᷆
+* ʝ̛̈
+* ʝ̛᷇
+* ʝ̛̊
+* ʝ̦̒
+* ʝ̦̌
+* ʝ̦̑
+* ʝ̦̀
+* ʝ̦̅
+* ʝ̦́
+* ʝ̦̃
+* ʝ̦̋
+* ʝ̦̇
+* ʝ̦̐
+* ʝ̦̍
+* ʝ̦̉
+* ʝ̦᷅
+* ʝ̦̏
+* ʝ̦᷄
+* ʝ̦͂
+* ʝ̦̓
+* ʝ̦̔
+* ʝ̦̄
+* ʝ̦̆
+* ʝ̦̂
+* ʝ̦᷆
+* ʝ̦̈
+* ʝ̦᷇
+* ʝ̦̊
+* ʝ̧̒
+* ʝ̧̌
+* ʝ̧̑
+* ʝ̧̀
+* ʝ̧̅
+* ʝ̧́
+* ʝ̧̃
+* ʝ̧̋
+* ʝ̧̇
+* ʝ̧̐
+* ʝ̧̍
+* ʝ̧̉
+* ʝ̧᷅
+* ʝ̧̏
+* ʝ̧᷄
+* ʝ̧͂
+* ʝ̧̓
+* ʝ̧̔
+* ʝ̧̄
+* ʝ̧̆
+* ʝ̧̂
+* ʝ̧᷆
+* ʝ̧̈
+* ʝ̧᷇
+* ʝ̧̊
+* ʝ̵̒
+* ʝ̵̌
+* ʝ̵̑
+* ʝ̵̀
+* ʝ̵̅
+* ʝ̵́
+* ʝ̵̃
+* ʝ̵̋
+* ʝ̵̇
+* ʝ̵̐
+* ʝ̵̍
+* ʝ̵̉
+* ʝ̵᷅
+* ʝ̵̏
+* ʝ̵᷄
+* ʝ̵͂
+* ʝ̵̓
+* ʝ̵̔
+* ʝ̵̄
+* ʝ̵̆
+* ʝ̵̂
+* ʝ̵᷆
+* ʝ̵̈
+* ʝ̵᷇
+* ʝ̵̊
+* ʝ̩̒
+* ʝ̩̌
+* ʝ̩̑
+* ʝ̩̀
+* ʝ̩̅
+* ʝ̩́
+* ʝ̩̃
+* ʝ̩̋
+* ʝ̩̇
+* ʝ̩̐
+* ʝ̩̍
+* ʝ̩̉
+* ʝ̩᷅
+* ʝ̩̏
+* ʝ̩᷄
+* ʝ̩͂
+* ʝ̩̓
+* ʝ̩̔
+* ʝ̩̄
+* ʝ̩̆
+* ʝ̩̂
+* ʝ̩᷆
+* ʝ̩̈
+* ʝ̩᷇
+* ʝ̩̊
+* ʝ̥̒
+* ʝ̥̌
+* ʝ̥̑
+* ʝ̥̀
+* ʝ̥̅
+* ʝ̥́
+* ʝ̥̃
+* ʝ̥̋
+* ʝ̥̇
+* ʝ̥̐
+* ʝ̥̍
+* ʝ̥̉
+* ʝ̥᷅
+* ʝ̥̏
+* ʝ̥᷄
+* ʝ̥͂
+* ʝ̥̓
+* ʝ̥̔
+* ʝ̥̄
+* ʝ̥̆
+* ʝ̥̂
+* ʝ̥᷆
+* ʝ̥̈
+* ʝ̥᷇
+* ʝ̥̊
+* ʝ̨̒
+* ʝ̨̌
+* ʝ̨̑
+* ʝ̨̀
+* ʝ̨̅
+* ʝ̨́
+* ʝ̨̃
+* ʝ̨̋
+* ʝ̨̇
+* ʝ̨̐
+* ʝ̨̍
+* ʝ̨̉
+* ʝ̨᷅
+* ʝ̨̏
+* ʝ̨᷄
+* ʝ̨͂
+* ʝ̨̓
+* ʝ̨̔
+* ʝ̨̄
+* ʝ̨̆
+* ʝ̨̂
+* ʝ̨᷆
+* ʝ̨̈
+* ʝ̨᷇
+* ʝ̨̊
+* ʝ̣̒
+* ʝ̣̌
+* ʝ̣̑
+* ʝ̣̀
+* ʝ̣̅
+* ʝ̣́
+* ʝ̣̃
+* ʝ̣̋
+* ʝ̣̇
+* ʝ̣̐
+* ʝ̣̍
+* ʝ̣̉
+* ʝ̣᷅
+* ʝ̣̏
+* ʝ̣᷄
+* ʝ̣͂
+* ʝ̣̓
+* ʝ̣̔
+* ʝ̣̄
+* ʝ̣̆
+* ʝ̣̂
+* ʝ̣᷆
+* ʝ̣̈
+* ʝ̣᷇
+* ʝ̣̊
+* ʝ᷊̒
+* ʝ᷊̌
+* ʝ᷊̑
+* ʝ᷊̀
+* ʝ᷊̅
+* ʝ᷊́
+* ʝ᷊̃
+* ʝ᷊̋
+* ʝ᷊̇
+* ʝ᷊̐
+* ʝ᷊̍
+* ʝ᷊̉
+* ʝ᷊᷅
+* ʝ᷊̏
+* ʝ᷊᷄
+* ʝ᷊͂
+* ʝ᷊̓
+* ʝ᷊̔
+* ʝ᷊̄
+* ʝ᷊̆
+* ʝ᷊̂
+* ʝ᷊᷆
+* ʝ᷊̈
+* ʝ᷊᷇
+* ʝ᷊̊
+* ʝ̱̒
+* ʝ̱̌
+* ʝ̱̑
+* ʝ̱̀
+* ʝ̱̅
+* ʝ̱́
+* ʝ̱̃
+* ʝ̱̋
+* ʝ̱̇
+* ʝ̱̐
+* ʝ̱̍
+* ʝ̱̉
+* ʝ̱᷅
+* ʝ̱̏
+* ʝ̱᷄
+* ʝ̱͂
+* ʝ̱̓
+* ʝ̱̔
+* ʝ̱̄
+* ʝ̱̆
+* ʝ̱̂
+* ʝ̱᷆
+* ʝ̱̈
+* ʝ̱᷇
+* ʝ̱̊
+* ʝ̮̒
+* ʝ̮̌
+* ʝ̮̑
+* ʝ̮̀
+* ʝ̮̅
+* ʝ̮́
+* ʝ̮̃
+* ʝ̮̋
+* ʝ̮̇
+* ʝ̮̐
+* ʝ̮̍
+* ʝ̮̉
+* ʝ̮᷅
+* ʝ̮̏
+* ʝ̮᷄
+* ʝ̮͂
+* ʝ̮̓
+* ʝ̮̔
+* ʝ̮̄
+* ʝ̮̆
+* ʝ̮̂
+* ʝ̮᷆
+* ʝ̮̈
+* ʝ̮᷇
+* ʝ̮̊
+* ʝ̯̒
+* ʝ̯̌
+* ʝ̯̑
+* ʝ̯̀
+* ʝ̯̅
+* ʝ̯́
+* ʝ̯̃
+* ʝ̯̋
+* ʝ̯̇
+* ʝ̯̐
+* ʝ̯̍
+* ʝ̯̉
+* ʝ̯᷅
+* ʝ̯̏
+* ʝ̯᷄
+* ʝ̯͂
+* ʝ̯̓
+* ʝ̯̔
+* ʝ̯̄
+* ʝ̯̆
+* ʝ̯̂
+* ʝ̯᷆
+* ʝ̯̈
+* ʝ̯᷇
+* ʝ̯̊
+* ʝ̲̒
+* ʝ̲̌
+* ʝ̲̑
+* ʝ̲̀
+* ʝ̲̅
+* ʝ̲́
+* ʝ̲̃
+* ʝ̲̋
+* ʝ̲̇
+* ʝ̲̐
+* ʝ̲̍
+* ʝ̲̉
+* ʝ̲᷅
+* ʝ̲̏
+* ʝ̲᷄
+* ʝ̲͂
+* ʝ̲̓
+* ʝ̲̔
+* ʝ̲̄
+* ʝ̲̆
+* ʝ̲̂
+* ʝ̲᷆
+* ʝ̲̈
+* ʝ̲᷇
+* ʝ̲̊
+* ʝ̭̒
+* ʝ̭̌
+* ʝ̭̑
+* ʝ̭̀
+* ʝ̭̅
+* ʝ̭́
+* ʝ̭̃
+* ʝ̭̋
+* ʝ̭̇
+* ʝ̭̐
+* ʝ̭̍
+* ʝ̭̉
+* ʝ̭᷅
+* ʝ̭̏
+* ʝ̭᷄
+* ʝ̭͂
+* ʝ̭̓
+* ʝ̭̔
+* ʝ̭̄
+* ʝ̭̆
+* ʝ̭̂
+* ʝ̭᷆
+* ʝ̭̈
+* ʝ̭᷇
+* ʝ̭̊
+* ʝ̤̒
+* ʝ̤̌
+* ʝ̤̑
+* ʝ̤̀
+* ʝ̤̅
+* ʝ̤́
+* ʝ̤̃
+* ʝ̤̋
+* ʝ̤̇
+* ʝ̤̐
+* ʝ̤̍
+* ʝ̤̉
+* ʝ̤᷅
+* ʝ̤̏
+* ʝ̤᷄
+* ʝ̤͂
+* ʝ̤̓
+* ʝ̤̔
+* ʝ̤̄
+* ʝ̤̆
+* ʝ̤̂
+* ʝ̤᷆
+* ʝ̤̈
+* ʝ̤᷇
+* ʝ̤̊
+* ʝ̰̒
+* ʝ̰̌
+* ʝ̰̑
+* ʝ̰̀
+* ʝ̰̅
+* ʝ̰́
+* ʝ̰̃
+* ʝ̰̋
+* ʝ̰̇
+* ʝ̰̐
+* ʝ̰̍
+* ʝ̰̉
+* ʝ̰᷅
+* ʝ̰̏
+* ʝ̰᷄
+* ʝ̰͂
+* ʝ̰̓
+* ʝ̰̔
+* ʝ̰̄
+* ʝ̰̆
+* ʝ̰̂
+* ʝ̰᷆
+* ʝ̰̈
+* ʝ̰᷇
+* ʝ̰̊
+* ʝ̒
+* ʝ̌
+* ʝ̑
+* ʝ̀
+* ʝ̅
+* ʝ́
+* ʝ̃
+* ʝ̋
+* ʝ̇
+* ʝ̐
+* ʝ̍
+* ʝ̉
+* ʝ᷅
+* ʝ̏
+* ʝ᷄
+* ʝ͂
+* ʝ̓
+* ʝ̔
+* ʝ̄
+* ʝ̆
+* ʝ̂
+* ʝ᷆
+* ʝ̈
+* ʝ᷇
+* ʝ̊ [code: soft-dotted]
   
   
 
@@ -5303,18 +5288,18 @@ replace the dot. (soft_dotted)</summary>
 
 - ⚠️ **WARN** The following glyphs have a counter-clockwise outer contour:
 
+* afii10049 (U+042F) has a counter-clockwise outer contour
+* afii10049 (U+042F) has a counter-clockwise outer contour
+* afii10049 (U+042F) has a counter-clockwise outer contour
+* afii10049 (U+042F) has a counter-clockwise outer contour
+* afii10049 (U+042F) has a counter-clockwise outer contour
+* afii10097 (U+044F) has a counter-clockwise outer contour
+* afii10097 (U+044F) has a counter-clockwise outer contour
+* afii10097 (U+044F) has a counter-clockwise outer contour
+* afii10097 (U+044F) has a counter-clockwise outer contour
+* afii10097 (U+044F) has a counter-clockwise outer contour
 * onequarter (U+00BC) has a path with no bounds (probably a single point)
 * onequarter (U+00BC) has a path with no bounds (probably a single point)
-* uni042F (U+042F) has a counter-clockwise outer contour
-* uni042F (U+042F) has a counter-clockwise outer contour
-* uni042F (U+042F) has a counter-clockwise outer contour
-* uni042F (U+042F) has a counter-clockwise outer contour
-* uni042F (U+042F) has a counter-clockwise outer contour
-* uni044F (U+044F) has a counter-clockwise outer contour
-* uni044F (U+044F) has a counter-clockwise outer contour
-* uni044F (U+044F) has a counter-clockwise outer contour
-* uni044F (U+044F) has a counter-clockwise outer contour
-* uni044F (U+044F) has a counter-clockwise outer contour
 * uni0B67 (U+0B67) has a counter-clockwise outer contour
 * uni0B67 (U+0B67) has a counter-clockwise outer contour
 * uni0B67 (U+0B67) has a counter-clockwise outer contour
@@ -5360,8 +5345,6 @@ replace the dot. (soft_dotted)</summary>
 * Gbreve (U+011E): Line(Line { p0: (363.0, 1777.0), p1: (363.0, 1664.0) }) has the same coordinates as a previous segment.
 * Ibreve (U+012C): Line(Line { p0: (655.0, 1769.0), p1: (655.0, 1656.0) }) has the same coordinates as a previous segment.
 * Ibreve (U+012C): Line(Line { p0: (331.0, 1769.0), p1: (331.0, 1656.0) }) has the same coordinates as a previous segment.
-* Iebreve-cy (U+04D6): Line(Line { p0: (674.0, 1761.0), p1: (674.0, 1648.0) }) has the same coordinates as a previous segment.
-* Iebreve-cy (U+04D6): Line(Line { p0: (350.0, 1761.0), p1: (350.0, 1648.0) }) has the same coordinates as a previous segment.
 * Itilde (U+0128): Line(Line { p0: (282.0, 1857.0), p1: (282.0, 1758.0) }) has the same coordinates as a previous segment.
 * Itilde (U+0128): Line(Line { p0: (632.0, 1697.0), p1: (632.0, 1796.0) }) has the same coordinates as a previous segment.
 * Ntilde (U+00D1): Line(Line { p0: (300.0, 1858.0), p1: (300.0, 1759.0) }) has the same coordinates as a previous segment.
@@ -5380,14 +5363,37 @@ replace the dot. (soft_dotted)</summary>
 * Scedilla (U+015E): Line(Line { p0: (918.0, 355.0), p1: (717.0, 355.0) }) has the same coordinates as a previous segment.
 * Scircumflex (U+015C): Line(Line { p0: (146.0, 1028.0), p1: (348.0, 1028.0) }) has the same coordinates as a previous segment.
 * Scircumflex (U+015C): Line(Line { p0: (918.0, 355.0), p1: (717.0, 355.0) }) has the same coordinates as a previous segment.
+* Scommaaccent (U+0218): Line(Line { p0: (146.0, 1028.0), p1: (348.0, 1028.0) }) has the same coordinates as a previous segment.
+* Scommaaccent (U+0218): Line(Line { p0: (918.0, 355.0), p1: (717.0, 355.0) }) has the same coordinates as a previous segment.
 * Ubreve (U+016C): Line(Line { p0: (693.0, 1770.0), p1: (693.0, 1657.0) }) has the same coordinates as a previous segment.
 * Ubreve (U+016C): Line(Line { p0: (369.0, 1770.0), p1: (369.0, 1657.0) }) has the same coordinates as a previous segment.
 * Utilde (U+0168): Line(Line { p0: (320.0, 1858.0), p1: (320.0, 1759.0) }) has the same coordinates as a previous segment.
 * Utilde (U+0168): Line(Line { p0: (670.0, 1698.0), p1: (670.0, 1797.0) }) has the same coordinates as a previous segment.
-* Zhebreve-cy (U+04C1): Line(Line { p0: (740.0, 1756.0), p1: (740.0, 1643.0) }) has the same coordinates as a previous segment.
-* Zhebreve-cy (U+04C1): Line(Line { p0: (416.0, 1756.0), p1: (416.0, 1643.0) }) has the same coordinates as a previous segment.
 * abreve (U+0103): Line(Line { p0: (685.0, 1262.0), p1: (685.0, 1149.0) }) has the same coordinates as a previous segment.
 * abreve (U+0103): Line(Line { p0: (361.0, 1262.0), p1: (361.0, 1149.0) }) has the same coordinates as a previous segment.
+* afii10019 (U+0412): Line(Line { p0: (433.0, 1023.0), p1: (433.0, 820.0) }) has the same coordinates as a previous segment.
+* afii10019 (U+0412): Line(Line { p0: (442.0, 766.0), p1: (442.0, 567.0) }) has the same coordinates as a previous segment.
+* afii10019 (U+0412): Line(Line { p0: (433.0, 1537.0), p1: (433.0, 1331.0) }) has the same coordinates as a previous segment.
+* afii10026 (U+0418): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
+* afii10027 (U+0419): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
+* afii10027 (U+0419): Line(Line { p0: (655.0, 1734.0), p1: (655.0, 1621.0) }) has the same coordinates as a previous segment.
+* afii10027 (U+0419): Line(Line { p0: (331.0, 1734.0), p1: (331.0, 1621.0) }) has the same coordinates as a previous segment.
+* afii10054 (U+0405): Line(Line { p0: (146.0, 1028.0), p1: (348.0, 1028.0) }) has the same coordinates as a previous segment.
+* afii10054 (U+0405): Line(Line { p0: (918.0, 355.0), p1: (717.0, 355.0) }) has the same coordinates as a previous segment.
+* afii10062 (U+040E): Line(Line { p0: (704.0, 1674.0), p1: (704.0, 1561.0) }) has the same coordinates as a previous segment.
+* afii10062 (U+040E): Line(Line { p0: (380.0, 1674.0), p1: (380.0, 1561.0) }) has the same coordinates as a previous segment.
+* afii10067 (U+0432): Line(Line { p0: (433.0, 729.0), p1: (433.0, 526.0) }) has the same coordinates as a previous segment.
+* afii10067 (U+0432): Line(Line { p0: (442.0, 508.0), p1: (442.0, 309.0) }) has the same coordinates as a previous segment.
+* afii10067 (U+0432): Line(Line { p0: (433.0, 1055.0), p1: (433.0, 849.0) }) has the same coordinates as a previous segment.
+* afii10074 (U+0438): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
+* afii10075 (U+0439): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
+* afii10075 (U+0439): Line(Line { p0: (719.0, 1198.0), p1: (719.0, 1085.0) }) has the same coordinates as a previous segment.
+* afii10075 (U+0439): Line(Line { p0: (395.0, 1198.0), p1: (395.0, 1085.0) }) has the same coordinates as a previous segment.
+* afii10102 (U+0455): Line(Line { p0: (791.0, 293.0), p1: (591.0, 293.0) }) has the same coordinates as a previous segment.
+* afii10110 (U+045E): Line(Line { p0: (679.0, 1258.0), p1: (679.0, 1145.0) }) has the same coordinates as a previous segment.
+* afii10110 (U+045E): Line(Line { p0: (355.0, 1258.0), p1: (355.0, 1145.0) }) has the same coordinates as a previous segment.
+* afii57636 (U+20AA): Line(Line { p0: (620.0, 1278.0), p1: (768.0, 1277.0) }) has the same coordinates as a previous segment.
+* afii57636 (U+20AA): Line(Line { p0: (465.0, 264.0), p1: (317.0, 265.0) }) has the same coordinates as a previous segment.
 * approxequal (U+2248): Line(Line { p0: (330.0, 559.0), p1: (330.0, 395.0) }) has the same coordinates as a previous segment.
 * approxequal (U+2248): Line(Line { p0: (680.0, 334.0), p1: (680.0, 498.0) }) has the same coordinates as a previous segment.
 * approxequal (U+2248): Line(Line { p0: (330.0, 898.0), p1: (330.0, 716.0) }) has the same coordinates as a previous segment.
@@ -5430,8 +5436,6 @@ replace the dot. (soft_dotted)</summary>
 * guilsinglright (U+203A): Line(Line { p0: (922.0, 777.0), p1: (924.0, 568.0) }) has the same coordinates as a previous segment.
 * ibreve (U+012D): Line(Line { p0: (677.0, 1319.0), p1: (677.0, 1206.0) }) has the same coordinates as a previous segment.
 * ibreve (U+012D): Line(Line { p0: (353.0, 1319.0), p1: (353.0, 1206.0) }) has the same coordinates as a previous segment.
-* iebreve-cy (U+04D7): Line(Line { p0: (680.0, 1283.0), p1: (680.0, 1170.0) }) has the same coordinates as a previous segment.
-* iebreve-cy (U+04D7): Line(Line { p0: (356.0, 1283.0), p1: (356.0, 1170.0) }) has the same coordinates as a previous segment.
 * itilde (U+0129): Line(Line { p0: (304.0, 1407.0), p1: (304.0, 1308.0) }) has the same coordinates as a previous segment.
 * itilde (U+0129): Line(Line { p0: (654.0, 1247.0), p1: (654.0, 1346.0) }) has the same coordinates as a previous segment.
 * itildebelowdotless: Line(Line { p0: (355.0, -114.0), p1: (355.0, -213.0) }) has the same coordinates as a previous segment.
@@ -5456,6 +5460,7 @@ replace the dot. (soft_dotted)</summary>
 * scaron (U+0161): Line(Line { p0: (791.0, 293.0), p1: (591.0, 293.0) }) has the same coordinates as a previous segment.
 * scedilla (U+015F): Line(Line { p0: (791.0, 293.0), p1: (591.0, 293.0) }) has the same coordinates as a previous segment.
 * scircumflex (U+015D): Line(Line { p0: (791.0, 293.0), p1: (591.0, 293.0) }) has the same coordinates as a previous segment.
+* scommaaccent (U+0219): Line(Line { p0: (791.0, 293.0), p1: (591.0, 293.0) }) has the same coordinates as a previous segment.
 * section (U+00A7): Line(Line { p0: (146.0, 605.0), p1: (348.0, 605.0) }) has the same coordinates as a previous segment.
 * section (U+00A7): Line(Line { p0: (927.0, 95.0), p1: (726.0, 95.0) }) has the same coordinates as a previous segment.
 * section (U+00A7): Line(Line { p0: (146.0, 1237.0), p1: (348.0, 1237.0) }) has the same coordinates as a previous segment.
@@ -5494,9 +5499,8 @@ replace the dot. (soft_dotted)</summary>
 * uni0216 (U+0216): Line(Line { p0: (637.0, 1696.0), p1: (637.0, 1764.0) }) has the same coordinates as a previous segment.
 * uni0217 (U+0217): Line(Line { p0: (245.0, 1200.0), p1: (245.0, 1268.0) }) has the same coordinates as a previous segment.
 * uni0217 (U+0217): Line(Line { p0: (569.0, 1200.0), p1: (569.0, 1268.0) }) has the same coordinates as a previous segment.
-* uni0218 (U+0218): Line(Line { p0: (146.0, 1028.0), p1: (348.0, 1028.0) }) has the same coordinates as a previous segment.
-* uni0218 (U+0218): Line(Line { p0: (918.0, 355.0), p1: (717.0, 355.0) }) has the same coordinates as a previous segment.
-* uni0219 (U+0219): Line(Line { p0: (791.0, 293.0), p1: (591.0, 293.0) }) has the same coordinates as a previous segment.
+* uni0222 (U+0222): Line(Line { p0: (932.0, 783.0), p1: (934.0, 578.0) }) has the same coordinates as a previous segment.
+* uni0223 (U+0223): Line(Line { p0: (942.0, 783.0), p1: (944.0, 578.0) }) has the same coordinates as a previous segment.
 * uni022C (U+022C): Line(Line { p0: (366.0, 1846.0), p1: (366.0, 1747.0) }) has the same coordinates as a previous segment.
 * uni022C (U+022C): Line(Line { p0: (716.0, 1686.0), p1: (716.0, 1785.0) }) has the same coordinates as a previous segment.
 * uni022D (U+022D): Line(Line { p0: (316.0, 1374.0), p1: (316.0, 1275.0) }) has the same coordinates as a previous segment.
@@ -5504,6 +5508,8 @@ replace the dot. (soft_dotted)</summary>
 * uni0243 (U+0243): Line(Line { p0: (433.0, 1023.0), p1: (433.0, 820.0) }) has the same coordinates as a previous segment.
 * uni0243 (U+0243): Line(Line { p0: (442.0, 766.0), p1: (442.0, 567.0) }) has the same coordinates as a previous segment.
 * uni0243 (U+0243): Line(Line { p0: (433.0, 1537.0), p1: (433.0, 1331.0) }) has the same coordinates as a previous segment.
+* uni026B (U+026B): Line(Line { p0: (334.0, 917.0), p1: (334.0, 765.0) }) has the same coordinates as a previous segment.
+* uni026B (U+026B): Line(Line { p0: (684.0, 704.0), p1: (684.0, 856.0) }) has the same coordinates as a previous segment.
 * uni02BE (U+02BE): Line(Line { p0: (523.0, 1530.0), p1: (591.0, 1530.0) }) has the same coordinates as a previous segment.
 * uni02BE (U+02BE): Line(Line { p0: (523.0, 1206.0), p1: (591.0, 1206.0) }) has the same coordinates as a previous segment.
 * uni02BF (U+02BF): Line(Line { p0: (472.0, 1200.0), p1: (404.0, 1200.0) }) has the same coordinates as a previous segment.
@@ -5522,33 +5528,20 @@ replace the dot. (soft_dotted)</summary>
 * uni0342 (U+0342): Line(Line { p0: (171.0, 1266.0), p1: (171.0, 1418.0) }) has the same coordinates as a previous segment.
 * uni035C (U+035C): Line(Line { p0: (-1150.0, -414.0), p1: (-1150.0, -192.0) }) has the same coordinates as a previous segment.
 * uni035C (U+035C): Line(Line { p0: (1030.0, -382.0), p1: (1027.0, -160.0) }) has the same coordinates as a previous segment.
-* uni0405 (U+0405): Line(Line { p0: (146.0, 1028.0), p1: (348.0, 1028.0) }) has the same coordinates as a previous segment.
-* uni0405 (U+0405): Line(Line { p0: (918.0, 355.0), p1: (717.0, 355.0) }) has the same coordinates as a previous segment.
 * uni040D (U+040D): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
-* uni040E (U+040E): Line(Line { p0: (704.0, 1674.0), p1: (704.0, 1561.0) }) has the same coordinates as a previous segment.
-* uni040E (U+040E): Line(Line { p0: (380.0, 1674.0), p1: (380.0, 1561.0) }) has the same coordinates as a previous segment.
-* uni0412 (U+0412): Line(Line { p0: (433.0, 1023.0), p1: (433.0, 820.0) }) has the same coordinates as a previous segment.
-* uni0412 (U+0412): Line(Line { p0: (442.0, 766.0), p1: (442.0, 567.0) }) has the same coordinates as a previous segment.
-* uni0412 (U+0412): Line(Line { p0: (433.0, 1537.0), p1: (433.0, 1331.0) }) has the same coordinates as a previous segment.
-* uni0418 (U+0418): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
-* uni0419 (U+0419): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
-* uni0419 (U+0419): Line(Line { p0: (655.0, 1734.0), p1: (655.0, 1621.0) }) has the same coordinates as a previous segment.
-* uni0419 (U+0419): Line(Line { p0: (331.0, 1734.0), p1: (331.0, 1621.0) }) has the same coordinates as a previous segment.
-* uni0432 (U+0432): Line(Line { p0: (433.0, 729.0), p1: (433.0, 526.0) }) has the same coordinates as a previous segment.
-* uni0432 (U+0432): Line(Line { p0: (442.0, 508.0), p1: (442.0, 309.0) }) has the same coordinates as a previous segment.
-* uni0432 (U+0432): Line(Line { p0: (433.0, 1055.0), p1: (433.0, 849.0) }) has the same coordinates as a previous segment.
-* uni0438 (U+0438): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
-* uni0439 (U+0439): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
-* uni0439 (U+0439): Line(Line { p0: (719.0, 1198.0), p1: (719.0, 1085.0) }) has the same coordinates as a previous segment.
-* uni0439 (U+0439): Line(Line { p0: (395.0, 1198.0), p1: (395.0, 1085.0) }) has the same coordinates as a previous segment.
-* uni0455 (U+0455): Line(Line { p0: (791.0, 293.0), p1: (591.0, 293.0) }) has the same coordinates as a previous segment.
 * uni045D (U+045D): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
-* uni045E (U+045E): Line(Line { p0: (679.0, 1258.0), p1: (679.0, 1145.0) }) has the same coordinates as a previous segment.
-* uni045E (U+045E): Line(Line { p0: (355.0, 1258.0), p1: (355.0, 1145.0) }) has the same coordinates as a previous segment.
+* uni04C1 (U+04C1): Line(Line { p0: (740.0, 1756.0), p1: (740.0, 1643.0) }) has the same coordinates as a previous segment.
+* uni04C1 (U+04C1): Line(Line { p0: (416.0, 1756.0), p1: (416.0, 1643.0) }) has the same coordinates as a previous segment.
+* uni04C2 (U+04C2): Line(Line { p0: (693.0, 1292.0), p1: (693.0, 1179.0) }) has the same coordinates as a previous segment.
+* uni04C2 (U+04C2): Line(Line { p0: (369.0, 1292.0), p1: (369.0, 1179.0) }) has the same coordinates as a previous segment.
 * uni04D0 (U+04D0): Line(Line { p0: (664.0, 1739.0), p1: (664.0, 1626.0) }) has the same coordinates as a previous segment.
 * uni04D0 (U+04D0): Line(Line { p0: (340.0, 1739.0), p1: (340.0, 1626.0) }) has the same coordinates as a previous segment.
 * uni04D1 (U+04D1): Line(Line { p0: (689.0, 1300.0), p1: (689.0, 1187.0) }) has the same coordinates as a previous segment.
 * uni04D1 (U+04D1): Line(Line { p0: (365.0, 1300.0), p1: (365.0, 1187.0) }) has the same coordinates as a previous segment.
+* uni04D6 (U+04D6): Line(Line { p0: (674.0, 1761.0), p1: (674.0, 1648.0) }) has the same coordinates as a previous segment.
+* uni04D6 (U+04D6): Line(Line { p0: (350.0, 1761.0), p1: (350.0, 1648.0) }) has the same coordinates as a previous segment.
+* uni04D7 (U+04D7): Line(Line { p0: (680.0, 1283.0), p1: (680.0, 1170.0) }) has the same coordinates as a previous segment.
+* uni04D7 (U+04D7): Line(Line { p0: (356.0, 1283.0), p1: (356.0, 1170.0) }) has the same coordinates as a previous segment.
 * uni04E2 (U+04E2): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
 * uni04E3 (U+04E3): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
 * uni04E4 (U+04E4): Line(Line { p0: (234.0, 0.0), p1: (34.0, 0.0) }) has the same coordinates as a previous segment.
@@ -5586,6 +5579,8 @@ replace the dot. (soft_dotted)</summary>
 * uni0B0B (U+0B0B): Line(Line { p0: (567.0, 883.0), p1: (770.0, 885.0) }) has the same coordinates as a previous segment.
 * uni0B0B (U+0B0B): Line(Line { p0: (677.0, 649.0), p1: (880.0, 649.0) }) has the same coordinates as a previous segment.
 * uni0B15 (U+0B15): Line(Line { p0: (503.0, 1381.0), p1: (498.0, 1580.0) }) has the same coordinates as a previous segment.
+* uni0B15_uni0B4D_uni0B37.akhn: Line(Line { p0: (572.0, 198.0), p1: (572.0, -3.0) }) has the same coordinates as a previous segment.
+* uni0B15_uni0B4D_uni0B37.akhn: Line(Line { p0: (588.0, 1343.0), p1: (584.0, 1544.0) }) has the same coordinates as a previous segment.
 * uni0B18 (U+0B18): Line(Line { p0: (507.0, 1343.0), p1: (503.0, 1544.0) }) has the same coordinates as a previous segment.
 * uni0B19 (U+0B19): Line(Line { p0: (20.0, 492.0), p1: (220.0, 492.0) }) has the same coordinates as a previous segment.
 * uni0B1A (U+0B1A): Line(Line { p0: (400.0, 1370.0), p1: (400.0, 1570.0) }) has the same coordinates as a previous segment.
@@ -5616,6 +5611,7 @@ replace the dot. (soft_dotted)</summary>
 * uni0B2F (U+0B2F): Line(Line { p0: (588.0, 1343.0), p1: (584.0, 1544.0) }) has the same coordinates as a previous segment.
 * uni0B30 (U+0B30): Line(Line { p0: (400.0, 1370.0), p1: (400.0, 1570.0) }) has the same coordinates as a previous segment.
 * uni0B30 (U+0B30): Line(Line { p0: (880.0, 437.0), p1: (677.0, 427.0) }) has the same coordinates as a previous segment.
+* uni0B30_uni0B4D.rphf: Line(Line { p0: (-425.0, 1283.0), p1: (-223.0, 1282.0) }) has the same coordinates as a previous segment.
 * uni0B32 (U+0B32): Line(Line { p0: (417.0, 1381.0), p1: (412.0, 1580.0) }) has the same coordinates as a previous segment.
 * uni0B32 (U+0B32): Line(Line { p0: (743.0, 494.0), p1: (943.0, 494.0) }) has the same coordinates as a previous segment.
 * uni0B33 (U+0B33): Line(Line { p0: (417.0, 1381.0), p1: (412.0, 1580.0) }) has the same coordinates as a previous segment.
@@ -5628,8 +5624,8 @@ replace the dot. (soft_dotted)</summary>
 * uni0B3D (U+0B3D): Line(Line { p0: (170.0, 1015.0), p1: (370.0, 1017.0) }) has the same coordinates as a previous segment.
 * uni0B3D (U+0B3D): Line(Line { p0: (563.0, 715.0), p1: (763.0, 725.0) }) has the same coordinates as a previous segment.
 * uni0B3D (U+0B3D): Line(Line { p0: (170.0, 435.0), p1: (370.0, 443.0) }) has the same coordinates as a previous segment.
-* uni0B3F (U+0B3F): Line(Line { p0: (-1878.0, 1608.0), p1: (-1880.0, 1808.0) }) has the same coordinates as a previous segment.
-* uni0B3F (U+0B3F): Line(Line { p0: (-1250.0, 1608.0), p1: (-1256.0, 1808.0) }) has the same coordinates as a previous segment.
+* uni0B3F (U+0B3F): Line(Line { p0: (-854.0, 1608.0), p1: (-856.0, 1808.0) }) has the same coordinates as a previous segment.
+* uni0B3F (U+0B3F): Line(Line { p0: (-226.0, 1608.0), p1: (-232.0, 1808.0) }) has the same coordinates as a previous segment.
 * uni0B40 (U+0B40): Line(Line { p0: (507.0, 1547.0), p1: (707.0, 1547.0) }) has the same coordinates as a previous segment.
 * uni0B41 (U+0B41): Line(Line { p0: (-668.0, -309.0), p1: (-417.0, -308.0) }) has the same coordinates as a previous segment.
 * uni0B42 (U+0B42): Line(Line { p0: (279.0, -438.0), p1: (266.0, -238.0) }) has the same coordinates as a previous segment.
@@ -5908,8 +5904,6 @@ replace the dot. (soft_dotted)</summary>
 * uni208E (U+208E): Line(Line { p0: (605.0, 243.0), p1: (499.0, 243.0) }) has the same coordinates as a previous segment.
 * uni208E (U+208E): Line(Line { p0: (499.0, -231.0), p1: (605.0, -231.0) }) has the same coordinates as a previous segment.
 * uni20A8 (U+20A8): Line(Line { p0: (853.0, 293.0), p1: (753.0, 293.0) }) has the same coordinates as a previous segment.
-* uni20AA (U+20AA): Line(Line { p0: (620.0, 1278.0), p1: (768.0, 1277.0) }) has the same coordinates as a previous segment.
-* uni20AA (U+20AA): Line(Line { p0: (465.0, 264.0), p1: (317.0, 265.0) }) has the same coordinates as a previous segment.
 * uni20B4 (U+20B4): Line(Line { p0: (347.0, 355.0), p1: (146.0, 355.0) }) has the same coordinates as a previous segment.
 * uni20B4 (U+20B4): Line(Line { p0: (716.0, 1028.0), p1: (918.0, 1028.0) }) has the same coordinates as a previous segment.
 * uni20BF (U+20BF): Line(Line { p0: (747.0, 1023.0), p1: (747.0, 820.0) }) has the same coordinates as a previous segment.
@@ -5919,13 +5913,13 @@ replace the dot. (soft_dotted)</summary>
 * uni2120 (U+2120): Line(Line { p0: (478.0, 936.0), p1: (378.0, 936.0) }) has the same coordinates as a previous segment.
 * uni24B9 (U+24B9): Line(Line { p0: (480.0, 1084.0), p1: (480.0, 1004.0) }) has the same coordinates as a previous segment.
 * uni27E9 (U+27E9): Line(Line { p0: (902.0, 741.0), p1: (902.0, 569.0) }) has the same coordinates as a previous segment.
+* uni2C62 (U+2C62): Line(Line { p0: (148.0, 818.0), p1: (148.0, 666.0) }) has the same coordinates as a previous segment.
+* uni2C62 (U+2C62): Line(Line { p0: (423.0, 605.0), p1: (423.0, 757.0) }) has the same coordinates as a previous segment.
 * uniA7B4 (U+A7B4): Line(Line { p0: (433.0, 1023.0), p1: (433.0, 820.0) }) has the same coordinates as a previous segment.
 * uniA7B4 (U+A7B4): Line(Line { p0: (442.0, 766.0), p1: (442.0, 567.0) }) has the same coordinates as a previous segment.
 * uniA7B4 (U+A7B4): Line(Line { p0: (433.0, 1537.0), p1: (433.0, 1331.0) }) has the same coordinates as a previous segment.
 * utilde (U+0169): Line(Line { p0: (252.0, 1362.0), p1: (252.0, 1263.0) }) has the same coordinates as a previous segment.
-* utilde (U+0169): Line(Line { p0: (602.0, 1202.0), p1: (602.0, 1301.0) }) has the same coordinates as a previous segment.
-* zhebreve-cy (U+04C2): Line(Line { p0: (693.0, 1292.0), p1: (693.0, 1179.0) }) has the same coordinates as a previous segment.
-* zhebreve-cy (U+04C2): Line(Line { p0: (369.0, 1292.0), p1: (369.0, 1179.0) }) has the same coordinates as a previous segment. [code: overlapping-path-segments]
+* utilde (U+0169): Line(Line { p0: (602.0, 1202.0), p1: (602.0, 1301.0) }) has the same coordinates as a previous segment. [code: overlapping-path-segments]
   
   
 
@@ -5974,6 +5968,28 @@ replace the dot. (soft_dotted)</summary>
 </details>
 
 
+
+
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (googlefonts/meta/script_lang_tags)</summary>
+    <div>
+
+
+
+
+
+
+
+
+- ⚠️ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
+  
+  
+
+</div>
+</details>
+
+
 </div>
 </details>
 
@@ -5995,36 +6011,36 @@ replace the dot. (soft_dotted)</summary>
 
 - ⚠️ **WARN** fonts/variable/Samaano[slnt,wdth,wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
 
-* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
-* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+* U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
 * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math
-* U+0305 COMBINING OVERLINE: try adding one of: glagolitic, elbasan, gothic, math, coptic
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic
+* U+0305 COMBINING OVERLINE: try adding one of: coptic, elbasan, math, glagolitic, gothic
 * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, canadian-aboriginal, malayalam, tifinagh, coptic, math, todhri, syriac, hebrew, duployan, old-permic
-* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
+* U+0307 COMBINING DOT ABOVE: try adding one of: coptic, hebrew, tifinagh, malayalam, tai-le, todhri, syriac, old-permic, canadian-aboriginal, math, duployan
+* U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
 * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
-* U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+* U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 * U+030D COMBINING VERTICAL LINE ABOVE: try adding sunuwar
 * U+0310 COMBINING CANDRABINDU: try adding one of: sunuwar, math
-* U+0311 COMBINING INVERTED BREVE: try adding one of: coptic, todhri
+* U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic
 * U+0312 COMBINING TURNED COMMA ABOVE: try adding math
 * U+0313 COMBINING COMMA ABOVE: try adding one of: old-permic, todhri
 * U+0315 COMBINING COMMA ABOVE RIGHT: try adding math
-* U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, syriac, cherokee
+* U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan
 * U+0325 COMBINING RING BELOW: try adding syriac
 * U+0326 COMBINING COMMA BELOW: try adding math
 * U+0327 COMBINING CEDILLA: try adding math
 * U+032D COMBINING CIRCUMFLEX ACCENT BELOW: try adding one of: sunuwar, syriac
 * U+032E COMBINING BREVE BELOW: try adding syriac
 * U+032F COMBINING INVERTED BREVE BELOW: try adding math
-* U+0330 COMBINING TILDE BELOW: try adding one of: syriac, cherokee, math
-* U+0331 COMBINING MACRON BELOW: try adding one of: caucasian-albanian, thai, sunuwar, syriac, gothic, cherokee, tifinagh
+* U+0330 COMBINING TILDE BELOW: try adding one of: math, syriac, cherokee
+* U+0331 COMBINING MACRON BELOW: try adding one of: thai, tifinagh, cherokee, gothic, sunuwar, syriac, caucasian-albanian
 * U+0332 COMBINING LOW LINE: try adding math
 * U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai
 * U+2007 FIGURE SPACE: try adding symbols2
-* U+2010 HYPHEN: try adding one of: arabic, kayah-li, kharoshthi, hebrew, syloti-nagri, cham, coptic, sora-sompeng, armenian, yi, sundanese, kaithi, lisu
-* U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri, arabic
+* U+2010 HYPHEN: try adding one of: syloti-nagri, lisu, yi, sora-sompeng, kayah-li, sundanese, armenian, coptic, hebrew, arabic, cham, kaithi, kharoshthi
+* U+2011 NON-BREAKING HYPHEN: try adding one of: yi, arabic, syloti-nagri
 * U+2015 HORIZONTAL BAR: try adding adlam
 * U+2016 DOUBLE VERTICAL LINE: try adding math
 * U+2021 DOUBLE DAGGER: try adding adlam
@@ -6064,6 +6080,7 @@ replace the dot. (soft_dotted)</summary>
 * U+2120 SERVICE MARK: try adding math
 * U+2126 OHM SIGN: try adding math
 * U+212E ESTIMATED SYMBOL: try adding math
+* U+2144 TURNED SANS-SERIF CAPITAL Y: try adding math
 * U+2153 VULGAR FRACTION ONE THIRD: try adding symbols
 * U+2154 VULGAR FRACTION TWO THIRDS: try adding symbols
 * U+215B VULGAR FRACTION ONE EIGHTH: try adding symbols
@@ -6071,19 +6088,19 @@ replace the dot. (soft_dotted)</summary>
 * U+215D VULGAR FRACTION FIVE EIGHTHS: try adding symbols
 * U+215E VULGAR FRACTION SEVEN EIGHTHS: try adding symbols
 * U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
-* U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math
+* U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
 * U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math
-* U+2195 UP DOWN ARROW: try adding one of: math, symbols
-* U+2196 NORTH WEST ARROW: try adding one of: symbols, math
-* U+2197 NORTH EAST ARROW: try adding one of: symbols, math
+* U+2195 UP DOWN ARROW: try adding one of: symbols, math
+* U+2196 NORTH WEST ARROW: try adding one of: math, symbols
+* U+2197 NORTH EAST ARROW: try adding one of: math, symbols
 * U+2198 SOUTH EAST ARROW: try adding one of: math, symbols
-* U+2199 SOUTH WEST ARROW: try adding one of: math, symbols
+* U+2199 SOUTH WEST ARROW: try adding one of: symbols, math
 * U+2202 PARTIAL DIFFERENTIAL: try adding math
 * U+2205 EMPTY SET: try adding math
 * U+2206 INCREMENT: try adding math
 * U+220F N-ARY PRODUCT: try adding math
 * U+2211 N-ARY SUMMATION: try adding math
-* U+2219 BULLET OPERATOR: try adding one of: tai-tham, yi, math, symbols
+* U+2219 BULLET OPERATOR: try adding one of: yi, tai-tham, symbols, math
 * U+221A SQUARE ROOT: try adding math
 * U+221E INFINITY: try adding math
 * U+222B INTEGRAL: try adding math
@@ -6108,7 +6125,7 @@ replace the dot. (soft_dotted)</summary>
 * U+25B8 BLACK RIGHT-POINTING SMALL TRIANGLE: try adding symbols
 * U+25B9 WHITE RIGHT-POINTING SMALL TRIANGLE: try adding symbols
 * U+25BC BLACK DOWN-POINTING TRIANGLE: try adding symbols
-* U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: symbols, math
+* U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: math, symbols
 * U+25BE BLACK DOWN-POINTING SMALL TRIANGLE: try adding symbols
 * U+25BF WHITE DOWN-POINTING SMALL TRIANGLE: try adding symbols
 * U+25C0 BLACK LEFT-POINTING TRIANGLE: try adding symbols
@@ -6117,7 +6134,7 @@ replace the dot. (soft_dotted)</summary>
 * U+25C3 WHITE LEFT-POINTING SMALL TRIANGLE: try adding symbols
 * U+25C6 BLACK DIAMOND: try adding symbols
 * U+25C7 WHITE DIAMOND: try adding symbols
-* U+25CA LOZENGE: try adding one of: symbols, math
+* U+25CA LOZENGE: try adding one of: math, symbols
 * U+25CB WHITE CIRCLE: try adding symbols
 * U+25CF BLACK CIRCLE: try adding symbols
 * U+25E6 WHITE BULLET: try adding symbols
@@ -6142,10 +6159,10 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 
 ### Summary
 
-| 💥 ERROR | 🔥 FAIL | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
-| ---|---|---|---|---|---|
-| 1 | 3 | 85 | 8 | 104 | 49 | 
-| 1% | 2% | 47% | 4% | 58% | 27% | 
+| 🔥 FAIL | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
+| ---|---|---|---|---|
+| 7 | 88 | 7 | 101 | 48 | 
+| 4% | 49% | 4% | 56% | 27% | 
 
 
 

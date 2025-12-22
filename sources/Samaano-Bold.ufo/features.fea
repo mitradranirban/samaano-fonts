@@ -1219,10 +1219,14 @@ lookup blwmBelowBaseMarkinOriya2lookup48 {
   markClass [\uni0B3C ] <anchor -8 262> @blwm1_or;
   markClass [\uni0B4D_uni0B15.blwf ] <anchor -267 6> @blwm1_or;
   markClass [\uni0B4D_uni0B16.blwf ] <anchor -355 -109> @blwm1_or;
-  pos base [\uni0B15 ] <anchor 864 -2> mark @blwm2_or
-	<anchor 613 -2> mark @blwm1_or;
-  pos base [\uni0B21 \uni0B22 ] <anchor 509 -73> mark @blwm1_or;
-  pos base [\uni0B4D_uni0B16.blwf ] <anchor -49 -1103> mark @blwm2_or;
+  
+  pos base [\uni0B15 ] <anchor 1702 -6> mark @blwm2_or
+	<anchor 1188 -6> mark @blwm1_or;
+  pos base [\uni0B21] <anchor 878 -60> mark @blwm1_or;
+  pos base [\uni0B22] 	<anchor 878 -60> mark @blwm1_or;
+  pos base [\uni0B4D_uni0B15.blwf ] <anchor -300 -521> mark @blwm2_or;
+  pos base [\uni0B4D_uni0B16.blwf ] <anchor -49 -1103> mark @blwm2_or
+	<anchor -606 -1031> mark @blwm2_or;
 } blwmBelowBaseMarkinOriya2lookup48;
 
 feature mark {

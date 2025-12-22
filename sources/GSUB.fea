@@ -1,12 +1,28 @@
+# GDEF Mark Attachment Sets
+@CombiningTopAccents=[\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0305 \uni0306 \uni0307 
+	\uni0308 \hookabovecomb \uni030A \uni030B \uni030C \uni030F \uni0310 
+	\uni0311 \uni0312 \uni031B ];
+@Numbers=[\zero \one \two \three \four \five \six \seven \eight \nine ];
+
+languagesystem DFLT dflt;
+languagesystem dev2 dflt;
+languagesystem latn CAT ;
+languagesystem latn dflt;
+languagesystem latn MOL ;
+languagesystem latn ROM ;
+languagesystem ory2 dflt;
+languagesystem tml2 dflt;
+
+
 # GSUB 
 
 
 lookup loclLocalizedFormsinLatinlookup10 {
   lookupflag 0;
-    sub \Scedilla by \uni0218 ;
-    sub \scedilla by \uni0219 ;
-    sub \uni0162 by \uni021A ;
-    sub \uni0163 by \uni021B ;
+    sub \Scedilla by \Scommaaccent ;
+    sub \Tcommaaccent by \uni021A ;
+    sub \scedilla by \scommaaccent ;
+    sub \tcommaaccent by \uni021B ;
 } loclLocalizedFormsinLatinlookup10;
 
 lookup loclLocalizedFormsinLatinlookup11 {
@@ -48,52 +64,49 @@ lookup supsSuperscriptinLatinlookup16 {
 
 lookup sinfScientificInferiorsinLatinlookup3 {
   lookupflag 0;
-    sub \zero by \uni2080 ;
-    sub \one by \uni2081 ;
-    sub \two by \uni2082 ;
-    sub \three by \uni2083 ;
-    sub \four by \uni2084 ;
-    sub \five by \uni2085 ;
-    sub \six by \uni2086 ;
-    sub \seven by \uni2087 ;
     sub \eight by \uni2088 ;
+    sub \five by \uni2085 ;
+    sub \four by \uni2084 ;
     sub \nine by \uni2089 ;
+    sub \one by \uni2081 ;
+    sub \seven by \uni2087 ;
+    sub \six by \uni2086 ;
+    sub \three by \uni2083 ;
+    sub \two by \uni2082 ;
+    sub \zero by \uni2080 ;
 } sinfScientificInferiorsinLatinlookup3;
-
- 
 
 lookup ordnOrdinalsinLatinlookup5 {
   lookupflag UseMarkFilteringSet @Numbers;
-
-    sub [\zero \one \two \three \four \five \six \nine \seven \eight ] [\a \A ]' by ordfeminine ;
-    sub [\zero \one \two \three \four \five \six \nine \seven \eight ] [\o \O ]' by ordmasculine ;
+    sub [\zero \one \two \three \four \five \six \nine \seven \eight ] [\a \A ]'  by [\ordfeminine \ordfeminine ];
+    sub [\zero \one \two \three \four \five \six \nine \seven \eight ] [\o \O ]'  by [\ordmasculine \ordmasculine ];
 } ordnOrdinalsinLatinlookup5;
 
 lookup ordnOrdinalsinLatinlookup20 {
   lookupflag 0;
-    sub \N \o \period  by \uni2116;
+    sub \N \o \period  by \afii61352;
 } ordnOrdinalsinLatinlookup20;
 
 lookup fracDiagonalFractionsinLatinlookup2 {
   lookupflag 0;
-    sub \one \slash \two  by \onehalf;
-    sub \one \fraction \two  by \onehalf;
-    sub \one \slash \three  by \onethird;
-    sub \one \fraction \three  by \onethird;
-    sub \one \slash \four  by \onequarter;
-    sub \one \fraction \four  by \onequarter;
-    sub \one \slash \eight  by \oneeighth;
-    sub \one \fraction \eight  by \oneeighth;
-    sub \two \slash \three  by \twothirds;
-    sub \two \fraction \three  by \twothirds;
-    sub \three \slash \four  by \threequarters;
-    sub \three \fraction \four  by \threequarters;
-    sub \three \slash \eight  by \threeeighths;
-    sub \three \fraction \eight  by \threeeighths;
     sub \five \slash \eight  by \fiveeighths;
     sub \five \fraction \eight  by \fiveeighths;
+    sub \one \slash \eight  by \oneeighth;
+    sub \one \fraction \eight  by \oneeighth;
+    sub \one \slash \two  by \onehalf;
+    sub \one \fraction \two  by \onehalf;
+    sub \one \slash \four  by \onequarter;
+    sub \one \fraction \four  by \onequarter;
+    sub \one \slash \three  by \onethird;
+    sub \one \fraction \three  by \onethird;
     sub \seven \slash \eight  by \seveneighths;
     sub \seven \fraction \eight  by \seveneighths;
+    sub \three \slash \eight  by \threeeighths;
+    sub \three \fraction \eight  by \threeeighths;
+    sub \three \slash \four  by \threequarters;
+    sub \three \fraction \four  by \threequarters;
+    sub \two \slash \three  by \twothirds;
+    sub \two \fraction \three  by \twothirds;
 } fracDiagonalFractionsinLatinlookup2;
 
 lookup nuktNuktaFormsinDevanagari2lookup0 {
@@ -343,14 +356,34 @@ lookup pstsPostBaseSubstitutioninTamil2lookup32 {
     sub \uni0B9F \uni0BC0  by \uni0B9F_uni0BC0;
 } pstsPostBaseSubstitutioninTamil2lookup32;
 
-
-
-
-lookup nuktNuktaFormsinOriya2lookup25 {
+lookup nuktNuktaFormsinOriya2lookup41 {
   lookupflag 0;
     sub \uni0B21 \uni0B3C  by \uni0B5C;
     sub \uni0B22 \uni0B3C  by \uni0B5D;
-} nuktNuktaFormsinOriya2lookup25;
+} nuktNuktaFormsinOriya2lookup41;
+
+lookup akhnAkhandinOriya2lookup42 {
+  lookupflag 0;
+    sub \uni0B15 \uni0B4D \uni0B37  by \uni0B15_uni0B4D_uni0B37.akhn;
+    sub \uni0B1C \uni0B4D \uni0B1E  by \uni0B1C_uni0B4D_uni0B1E.akhn;
+} akhnAkhandinOriya2lookup42;
+
+lookup rphfRephForminOriya2lookup43 {
+  lookupflag 0;
+    sub \uni0B30 \uni0B4D  by \uni0B30_uni0B4D.rphf;
+} rphfRephForminOriya2lookup43;
+
+lookup blwfBelowBaseFormsinOriya2lookup44 {
+  lookupflag 0;
+    sub \uni0B4D \uni0B15  by \uni0B4D_uni0B15.blwf;
+    sub \uni0B4D \uni0B16  by \uni0B4D_uni0B16.blwf;
+} blwfBelowBaseFormsinOriya2lookup44;
+
+lookup pstfPostBaseFormsinOriya2lookup45 {
+  lookupflag 0;
+    sub \uni0B4D \uni0B5F  by \uni0B4D_uni0B2F.pstf;
+    sub \uni0B4D \uni0B2F  by \uni0B4D_uni0B2F.pstf;
+} pstfPostBaseFormsinOriya2lookup45;
 
 feature locl {
 
@@ -395,10 +428,13 @@ feature sups {
      language dflt ;
       lookup supsSuperscriptinLatinlookup16;
 } sups;
+
 feature sinf {
+
  script DFLT;
      language dflt ;
       lookup sinfScientificInferiorsinLatinlookup3;
+
  script latn;
      language dflt ;
       lookup sinfScientificInferiorsinLatinlookup3;
@@ -408,18 +444,21 @@ feature ordn {
 
  script DFLT;
      language dflt ;
-      lookup ordnOrdinalsinLatinlookup20;
       lookup ordnOrdinalsinLatinlookup5;
+      lookup ordnOrdinalsinLatinlookup20;
+
  script latn;
      language dflt ;
-      lookup ordnOrdinalsinLatinlookup20;
       lookup ordnOrdinalsinLatinlookup5;
+      lookup ordnOrdinalsinLatinlookup20;
 } ordn;
 
 feature frac {
+
  script DFLT;
      language dflt ;
       lookup fracDiagonalFractionsinLatinlookup2;
+
  script latn;
      language dflt ;
       lookup fracDiagonalFractionsinLatinlookup2;
@@ -430,12 +469,15 @@ feature nukt {
  script DFLT;
      language dflt ;
       lookup nuktNuktaFormsinDevanagari2lookup0;
+      lookup nuktNuktaFormsinOriya2lookup41;
+
  script dev2;
      language dflt ;
       lookup nuktNuktaFormsinDevanagari2lookup0;
+
  script ory2;
      language dflt ;
-      lookup nuktNuktaFormsinOriya2lookup25;
+      lookup nuktNuktaFormsinOriya2lookup41;
 } nukt;
 
 feature akhn {
@@ -443,10 +485,15 @@ feature akhn {
  script DFLT;
      language dflt ;
       lookup akhnAkhandinDevanagari2lookup0;
+      lookup akhnAkhandinOriya2lookup42;
 
  script dev2;
      language dflt ;
       lookup akhnAkhandinDevanagari2lookup0;
+
+ script ory2;
+     language dflt ;
+      lookup akhnAkhandinOriya2lookup42;
 
  script tml2;
      language dflt ;
@@ -458,10 +505,15 @@ feature rphf {
  script DFLT;
      language dflt ;
       lookup rphfRephForminDevanagari2lookup0;
+      lookup rphfRephForminOriya2lookup43;
 
  script dev2;
      language dflt ;
       lookup rphfRephForminDevanagari2lookup0;
+
+ script ory2;
+     language dflt ;
+      lookup rphfRephForminOriya2lookup43;
 } rphf;
 
 feature rkrf {
@@ -480,10 +532,15 @@ feature blwf {
  script DFLT;
      language dflt ;
       lookup blwfBelowBaseFormsinDevanagari2lookup0;
+      lookup blwfBelowBaseFormsinOriya2lookup44;
 
  script dev2;
      language dflt ;
       lookup blwfBelowBaseFormsinDevanagari2lookup0;
+
+ script ory2;
+     language dflt ;
+      lookup blwfBelowBaseFormsinOriya2lookup44;
 } blwf;
 
 feature half {
@@ -547,4 +604,15 @@ feature psts {
      language dflt ;
       lookup pstsPostBaseSubstitutioninTamil2lookup32;
 } psts;
+
+feature pstf {
+
+ script DFLT;
+     language dflt ;
+      lookup pstfPostBaseFormsinOriya2lookup45;
+
+ script ory2;
+     language dflt ;
+      lookup pstfPostBaseFormsinOriya2lookup45;
+} pstf;
 

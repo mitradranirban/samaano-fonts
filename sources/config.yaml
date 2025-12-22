@@ -1,28 +1,20 @@
 ---
 sources:
   - Samaano.designspace
-  - Samaano-Bold.ufo
-  - Samaano-Thin.ufo
-  - Samaano-Wide-Bold.ufo
-  - Samaano-Wide-Thin.ufo
-  - Samaano-Bold-Slanted.ufo
-  - Samaano-Thin-Slanted.ufo
-  - Samaano-Wide-Bold-Slanted.ufo
-  - Samaano-Wide-Thin-Slanted.ufo
- 
+
 familyName: Samaano
 outputDir: ../fonts
 vfDir: $outputDir/variable
-ttDir: $outputDir/ttf
-otDir: $outputDir/otf
+#ttDir: $outputDir/ttf
+#otDir: $outputDir/otf
 woffDir: $outputDir/webfonts
 buildVariable: true
-buildStatic: true
+buildStatic: false
 buildTTF: true
 buildOTF: true
 buildSmallCap: true
 autohintTTF: true
-includeSourceFixes: false
+includeSourceFixes: true
 flattenComponents: true
 decomposeTransformedComponents: true
 checkCompatibility: true
