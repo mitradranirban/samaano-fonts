@@ -279,10 +279,10 @@ you're checking.</p>
         <th>🔥 FAIL</th><th>⚠️ WARN</th><th>ℹ️ INFO</th><th>✅ PASS</th><th>⏩ SKIP</th>
     </tr>
     <tr>
-        <td>7 </td> <td>88 </td> <td>7 </td> <td>101 </td> <td>48 </td> 
+        <td>5 </td> <td>92 </td> <td>7 </td> <td>103 </td> <td>48 </td> 
     </tr>
     <tr>
-        <td>4%</td> <td>49%</td> <td>4%</td> <td>56%</td> <td>27%</td> 
+        <td>3%</td> <td>51%</td> <td>4%</td> <td>58%</td> <td>27%</td> 
     </tr>
 </table>
 
@@ -333,49 +333,6 @@ immediately.
     
 
     
-
-    
-        <h3>Checking font version fields (head and name table).</h3>
-<div class='check__idlabel'>Check ID: opentype&#x2F;font_version</div>
-
-<div class="rationale">
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                🔥
-                Samaano[slnt,wdth,wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
-
-                            <span class='details_text'>
-                                
-                                    <p>Font version mismatch: head table: 2.600006, name table: 2.5</p>
-                                
-                                
-                                     [code: mismatch]
-                                
-                            </span>
-                        </li>
-                
-                
-                </ul>
-            </div>
-        </details>
-    
-
 
     
 
@@ -491,7 +448,7 @@ immediately.
 
                             <span class='details_text'>
                                 
-                                    <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1450 instead.
+                                    <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 1472 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
                                 
                                 
@@ -721,67 +678,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     
 
     
-        <h3>Ensure the font supports case swapping for all its glyphs.</h3>
-<div class='check__idlabel'>Check ID: case_mapping</div>
-
-<div class="rationale">
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                🔥
-                Samaano[slnt,wdth,wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
-
-                            <span class='details_text'>
-                                
-                                    <p>The following glyphs are missing case-swapping counterparts:</p>
-<table>
-<thead>
-<tr>
-<th>Glyph present in the font</th>
-<th>Missing case-swapping counterpart</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>U+026C: LATIN SMALL LETTER L WITH BELT</td>
-<td>U+A7AD: LATIN CAPITAL LETTER L WITH BELT</td>
-</tr>
-<tr>
-<td>U+019B: LATIN SMALL LETTER LAMBDA WITH STROKE</td>
-<td>U+A7DC: LATIN CAPITAL LETTER LAMBDA WITH STROKE</td>
-</tr>
-</tbody>
-</table>
-                                
-                                
-                                     [code: missing-case-counterparts]
-                                
-                            </span>
-                        </li>
-                
-                
-                </ul>
-            </div>
-        </details>
-    
-
-
-    
 
     
 
@@ -828,337 +724,337 @@ codepoint assignment of these to make sure they are correct.</p>
 <pre><code>The following glyphs do not have the recommended number of contours:
 </code></pre>
 <ul>
-<li>AE (U+00C6): found 5, expected one of: {4, 1, 2, 6, 3}</li>
-<li>AEacute (U+01FC): found 6, expected one of: {2, 5, 4, 3, 7}</li>
-<li>Abreve (U+0102): found 7, expected one of: {3, 2, 5, 4}</li>
-<li>Acircumflex (U+00C2): found 6, expected one of: {2, 4, 3, 5}</li>
+<li>AE (U+00C6): found 5, expected one of: {3, 1, 2, 4, 6}</li>
+<li>AEacute (U+01FC): found 6, expected one of: {2, 7, 4, 3, 5}</li>
+<li>Abreve (U+0102): found 7, expected one of: {5, 2, 4, 3}</li>
+<li>Acircumflex (U+00C2): found 6, expected one of: {3, 5, 2, 4}</li>
 <li>Alpha (U+0391): found 4, expected one of: {2}</li>
 <li>Alphatonos (U+0386): found 5, expected one of: {3}</li>
-<li>Aogonek (U+0104): found 7, expected one of: {3, 2, 4}</li>
-<li>Aring (U+00C5): found 6, expected one of: {3, 5, 4}</li>
+<li>Aogonek (U+0104): found 7, expected one of: {4, 3, 2}</li>
+<li>Aring (U+00C5): found 6, expected one of: {4, 3, 5}</li>
 <li>Aringacute (U+01FA): found 7, expected one of: {5, 4}</li>
-<li>Atilde (U+00C3): found 7, expected one of: {4, 3, 2, 5}</li>
-<li>B (U+0042): found 9, expected one of: {1, 2, 4, 3}</li>
+<li>Atilde (U+00C3): found 7, expected one of: {5, 3, 4, 2}</li>
+<li>B (U+0042): found 9, expected one of: {3, 1, 2, 4}</li>
 <li>Beta (U+0392): found 9, expected one of: {3, 2}</li>
-<li>Ccaron (U+010C): found 5, expected one of: {2, 4, 3}</li>
-<li>Ccedilla (U+00C7): found 7, expected one of: {4, 2, 3, 1}</li>
+<li>Ccaron (U+010C): found 5, expected one of: {2, 3, 4}</li>
+<li>Ccedilla (U+00C7): found 7, expected one of: {4, 1, 2, 3}</li>
 <li>Ccircumflex (U+0108): found 5, expected one of: {2, 3}</li>
 <li>Chi (U+03A7): found 2, expected one of: {1}</li>
-<li>D (U+0044): found 5, expected one of: {1, 3, 2, 4}</li>
-<li>Dcaron (U+010E): found 7, expected one of: {3, 2, 4}</li>
-<li>Dcroat (U+0110): found 6, expected one of: {1, 3, 2, 4}</li>
+<li>D (U+0044): found 5, expected one of: {2, 1, 3, 4}</li>
+<li>Dcaron (U+010E): found 7, expected one of: {3, 4, 2}</li>
+<li>Dcroat (U+0110): found 6, expected one of: {1, 4, 3, 2}</li>
 <li>Delta (U+2206): found 3, expected one of: {2}</li>
-<li>Ebreve (U+0114): found 7, expected one of: {5, 2, 4, 3}</li>
-<li>Eogonek (U+0118): found 7, expected one of: {5, 1, 2, 4, 3}</li>
+<li>Ebreve (U+0114): found 7, expected one of: {3, 2, 4, 5}</li>
+<li>Eogonek (U+0118): found 7, expected one of: {1, 4, 3, 5, 2}</li>
 <li>Epsilon (U+0395): found 4, expected one of: {1}</li>
 <li>Epsilontonos (U+0388): found 5, expected one of: {2}</li>
-<li>Eth (U+00D0): found 6, expected one of: {2, 3, 1, 4}</li>
-<li>Euro (U+20AC): found 5, expected one of: {2, 1, 4, 3}</li>
-<li>G (U+0047): found 4, expected one of: {3, 1, 2}</li>
+<li>Eth (U+00D0): found 6, expected one of: {2, 3, 4, 1}</li>
+<li>Euro (U+20AC): found 5, expected one of: {2, 4, 3, 1}</li>
+<li>G (U+0047): found 4, expected one of: {2, 3, 1}</li>
 <li>Gamma (U+0393): found 2, expected one of: {1}</li>
 <li>Gbreve (U+011E): found 7, expected one of: {3, 4, 2}</li>
-<li>Gcaron (U+01E6): found 6, expected one of: {2, 3}</li>
-<li>Gcircumflex (U+011C): found 6, expected one of: {4, 2, 3}</li>
-<li>Gcommaaccent (U+0122): found 6, expected one of: {4, 3, 2}</li>
-<li>Gdotaccent (U+0120): found 5, expected one of: {2, 3, 4}</li>
-<li>IJ (U+0132): found 6, expected one of: {3, 2, 4, 1}</li>
-<li>Ibreve (U+012C): found 6, expected one of: {3, 2, 4}</li>
-<li>Icircumflex (U+00CE): found 5, expected one of: {3, 2, 4}</li>
-<li>Iogonek (U+012E): found 6, expected one of: {1, 2, 4, 3}</li>
+<li>Gcaron (U+01E6): found 6, expected one of: {3, 2}</li>
+<li>Gcircumflex (U+011C): found 6, expected one of: {2, 3, 4}</li>
+<li>Gcommaaccent (U+0122): found 6, expected one of: {3, 4, 2}</li>
+<li>Gdotaccent (U+0120): found 5, expected one of: {4, 2, 3}</li>
+<li>IJ (U+0132): found 6, expected one of: {2, 4, 3, 1}</li>
+<li>Ibreve (U+012C): found 6, expected one of: {4, 2, 3}</li>
+<li>Icircumflex (U+00CE): found 5, expected one of: {2, 4, 3}</li>
+<li>Iogonek (U+012E): found 6, expected one of: {1, 2, 3, 4}</li>
 <li>Iota (U+0399): found 3, expected one of: {1}</li>
 <li>Iotadieresis (U+03AA): found 5, expected one of: {3}</li>
 <li>Iotatonos (U+038A): found 4, expected one of: {2}</li>
-<li>Itilde (U+0128): found 6, expected one of: {2, 3, 4}</li>
+<li>Itilde (U+0128): found 6, expected one of: {4, 3, 2}</li>
 <li>Jcircumflex (U+0134): found 5, expected one of: {3, 2}</li>
 <li>Kappa (U+039A): found 3, expected one of: {2, 1}</li>
 <li>Kcommaaccent (U+0136): found 5, expected one of: {3, 2, 4}</li>
 <li>Lambda (U+039B): found 2, expected one of: {1}</li>
-<li>M (U+004D): found 4, expected one of: {1, 2, 3}</li>
+<li>M (U+004D): found 4, expected one of: {2, 1, 3}</li>
 <li>Mu (U+039C): found 4, expected one of: {1}</li>
-<li>Ncaron (U+0147): found 5, expected one of: {4, 3, 2}</li>
-<li>Ncommaaccent (U+0145): found 5, expected one of: {3, 2, 4}</li>
+<li>Ncaron (U+0147): found 5, expected one of: {3, 2, 4}</li>
+<li>Ncommaaccent (U+0145): found 5, expected one of: {4, 3, 2}</li>
 <li>Ntilde (U+00D1): found 6, expected one of: {4, 2, 3}</li>
 <li>Nu (U+039D): found 3, expected one of: {1}</li>
-<li>Oacute (U+00D3): found 5, expected one of: {2, 3, 4}</li>
-<li>Obreve (U+014E): found 7, expected one of: {2, 4, 3}</li>
-<li>Ocircumflex (U+00D4): found 6, expected one of: {4, 2, 3}</li>
-<li>Odieresis (U+00D6): found 6, expected one of: {4, 5, 3}</li>
-<li>Ograve (U+00D2): found 5, expected one of: {3, 2, 4}</li>
-<li>Ohorn (U+01A0): found 6, expected one of: {3, 2}</li>
-<li>Ohungarumlaut (U+0150): found 6, expected one of: {3, 4, 5}</li>
-<li>Omacron (U+014C): found 5, expected one of: {4, 3, 2}</li>
+<li>Oacute (U+00D3): found 5, expected one of: {3, 2, 4}</li>
+<li>Obreve (U+014E): found 7, expected one of: {3, 2, 4}</li>
+<li>Ocircumflex (U+00D4): found 6, expected one of: {2, 4, 3}</li>
+<li>Odieresis (U+00D6): found 6, expected one of: {5, 3, 4}</li>
+<li>Ograve (U+00D2): found 5, expected one of: {3, 4, 2}</li>
+<li>Ohorn (U+01A0): found 6, expected one of: {2, 3}</li>
+<li>Ohungarumlaut (U+0150): found 6, expected one of: {5, 4, 3}</li>
+<li>Omacron (U+014C): found 5, expected one of: {2, 4, 3}</li>
 <li>Omega (U+2126): found 9, expected one of: {1}</li>
 <li>Omegatonos (U+038F): found 10, expected one of: {2}</li>
 <li>Omicron (U+039F): found 4, expected one of: {2}</li>
 <li>Omicrontonos (U+038C): found 5, expected one of: {3}</li>
-<li>Otilde (U+00D5): found 7, expected one of: {4, 3, 2}</li>
-<li>P (U+0050): found 4, expected one of: {1, 3, 2}</li>
+<li>Otilde (U+00D5): found 7, expected one of: {2, 3, 4}</li>
+<li>P (U+0050): found 4, expected one of: {2, 3, 1}</li>
 <li>Phi (U+03A6): found 5, expected one of: {3}</li>
 <li>Pi (U+03A0): found 3, expected one of: {1}</li>
-<li>Psi (U+03A8): found 4, expected one of: {1, 2}</li>
-<li>Q (U+0051): found 5, expected one of: {2, 1, 3, 4}</li>
-<li>R (U+0052): found 5, expected one of: {3, 1, 2, 4}</li>
-<li>Racute (U+0154): found 6, expected one of: {5, 4, 2, 3}</li>
-<li>Rcaron (U+0158): found 7, expected one of: {5, 2, 3, 4}</li>
-<li>Rcommaaccent (U+0156): found 7, expected one of: {4, 2, 5, 3}</li>
+<li>Psi (U+03A8): found 4, expected one of: {2, 1}</li>
+<li>Q (U+0051): found 5, expected one of: {2, 4, 3, 1}</li>
+<li>R (U+0052): found 5, expected one of: {3, 2, 4, 1}</li>
+<li>Racute (U+0154): found 6, expected one of: {3, 5, 4, 2}</li>
+<li>Rcaron (U+0158): found 7, expected one of: {2, 3, 4, 5}</li>
+<li>Rcommaaccent (U+0156): found 7, expected one of: {2, 4, 5, 3}</li>
 <li>Rho (U+03A1): found 4, expected one of: {2, 1}</li>
-<li>S (U+0053): found 5, expected one of: {2, 1, 3}</li>
-<li>Sacute (U+015A): found 6, expected one of: {4, 3, 2}</li>
-<li>Scaron (U+0160): found 7, expected one of: {3, 4, 2}</li>
-<li>Scedilla (U+015E): found 9, expected one of: {1, 2, 3}</li>
+<li>S (U+0053): found 5, expected one of: {3, 1, 2}</li>
+<li>Sacute (U+015A): found 6, expected one of: {3, 2, 4}</li>
+<li>Scaron (U+0160): found 7, expected one of: {4, 2, 3}</li>
+<li>Scedilla (U+015E): found 9, expected one of: {3, 2, 1}</li>
 <li>Scircumflex (U+015C): found 7, expected one of: {2, 4, 3}</li>
 <li>Scommaaccent (U+0218): found 7, expected one of: {3, 2, 4}</li>
 <li>Sigma (U+03A3): found 4, expected one of: {1}</li>
 <li>Tau (U+03A4): found 2, expected one of: {1}</li>
-<li>Tcommaaccent (U+0162): found 6, expected one of: {2, 1, 3}</li>
+<li>Tcommaaccent (U+0162): found 6, expected one of: {1, 2, 3}</li>
 <li>Theta (U+0398): found 5, expected one of: {3}</li>
-<li>Ubreve (U+016C): found 6, expected one of: {3, 4, 2}</li>
-<li>Ucircumflex (U+00DB): found 5, expected one of: {3, 4, 2}</li>
+<li>Ubreve (U+016C): found 6, expected one of: {4, 2, 3}</li>
+<li>Ucircumflex (U+00DB): found 5, expected one of: {4, 3, 2}</li>
 <li>Uhorn (U+01AF): found 5, expected one of: {2, 1}</li>
-<li>Uogonek (U+0172): found 6, expected one of: {1, 3, 4, 2}</li>
+<li>Uogonek (U+0172): found 6, expected one of: {2, 4, 3, 1}</li>
 <li>Upsilon (U+03A5): found 4, expected one of: {1}</li>
 <li>Upsilondieresis (U+03AB): found 6, expected one of: {3}</li>
 <li>Upsilontonos (U+038E): found 5, expected one of: {2}</li>
 <li>Utilde (U+0168): found 6, expected one of: {4, 3, 2}</li>
-<li>Wcircumflex (U+0174): found 6, expected one of: {2, 4, 5, 3}</li>
+<li>Wcircumflex (U+0174): found 6, expected one of: {4, 2, 3, 5}</li>
 <li>Y (U+0059): found 4, expected one of: {2, 1, 3}</li>
 <li>Yacute (U+00DD): found 5, expected one of: {2, 3, 4}</li>
-<li>Ycircumflex (U+0176): found 6, expected one of: {2, 3, 4}</li>
+<li>Ycircumflex (U+0176): found 6, expected one of: {2, 4, 3}</li>
 <li>Ydieresis (U+0178): found 6, expected one of: {3, 4, 5}</li>
-<li>Ygrave (U+1EF2): found 5, expected one of: {2, 3, 4}</li>
-<li>Zcaron (U+017D): found 5, expected one of: {4, 3, 2}</li>
+<li>Ygrave (U+1EF2): found 5, expected one of: {4, 2, 3}</li>
+<li>Zcaron (U+017D): found 5, expected one of: {3, 4, 2}</li>
 <li>Zeta (U+0396): found 3, expected one of: {1}</li>
-<li>a (U+0061): found 5, expected one of: {2, 1, 3}</li>
-<li>aacute (U+00E1): found 6, expected one of: {4, 3, 2}</li>
-<li>abreve (U+0103): found 8, expected one of: {2, 3, 4}</li>
-<li>acircumflex (U+00E2): found 7, expected one of: {2, 3, 4}</li>
-<li>adieresis (U+00E4): found 7, expected one of: {3, 4, 5}</li>
-<li>ae (U+00E6): found 6, expected one of: {2, 1, 3, 4}</li>
-<li>aeacute (U+01FD): found 7, expected one of: {5, 2, 4, 3}</li>
+<li>a (U+0061): found 5, expected one of: {3, 1, 2}</li>
+<li>aacute (U+00E1): found 6, expected one of: {3, 2, 4}</li>
+<li>abreve (U+0103): found 8, expected one of: {3, 4, 2}</li>
+<li>acircumflex (U+00E2): found 7, expected one of: {4, 3, 2}</li>
+<li>adieresis (U+00E4): found 7, expected one of: {3, 5, 4}</li>
+<li>ae (U+00E6): found 6, expected one of: {2, 4, 1, 3}</li>
+<li>aeacute (U+01FD): found 7, expected one of: {2, 4, 3, 5}</li>
 <li>afii10017 (U+0410): found 4, expected one of: {2, 3}</li>
-<li>afii10018 (U+0411): found 5, expected one of: {2, 3, 1}</li>
-<li>afii10019 (U+0412): found 9, expected one of: {3, 1, 2}</li>
-<li>afii10021 (U+0414): found 6, expected one of: {3, 2}</li>
-<li>afii10022 (U+0415): found 4, expected one of: {2, 1}</li>
-<li>afii10023 (U+0401): found 6, expected one of: {3, 4}</li>
-<li>afii10025 (U+0417): found 7, expected one of: {2, 1}</li>
+<li>afii10018 (U+0411): found 5, expected one of: {1, 3, 2}</li>
+<li>afii10019 (U+0412): found 9, expected one of: {3, 2, 1}</li>
+<li>afii10021 (U+0414): found 6, expected one of: {2, 3}</li>
+<li>afii10022 (U+0415): found 4, expected one of: {1, 2}</li>
+<li>afii10023 (U+0401): found 6, expected one of: {4, 3}</li>
+<li>afii10025 (U+0417): found 7, expected one of: {1, 2}</li>
 <li>afii10027 (U+0419): found 6, expected one of: {4, 2}</li>
-<li>afii10029 (U+041B): found 4, expected one of: {3, 2, 1}</li>
-<li>afii10030 (U+041C): found 4, expected one of: {3, 1, 2}</li>
+<li>afii10029 (U+041B): found 4, expected one of: {1, 3, 2}</li>
+<li>afii10030 (U+041C): found 4, expected one of: {1, 2, 3}</li>
 <li>afii10032 (U+041E): found 4, expected one of: {2, 1}</li>
 <li>afii10034 (U+0420): found 4, expected one of: {1, 2}</li>
 <li>afii10035 (U+0421): found 3, expected one of: {1}</li>
-<li>afii10037 (U+0423): found 4, expected one of: {2, 1}</li>
+<li>afii10037 (U+0423): found 4, expected one of: {1, 2}</li>
 <li>afii10038 (U+0424): found 5, expected one of: {3}</li>
-<li>afii10040 (U+0426): found 4, expected one of: {1, 2}</li>
-<li>afii10041 (U+0427): found 3, expected one of: {2, 1}</li>
+<li>afii10040 (U+0426): found 4, expected one of: {2, 1}</li>
+<li>afii10041 (U+0427): found 3, expected one of: {1, 2}</li>
 <li>afii10043 (U+0429): found 5, expected one of: {1, 2}</li>
-<li>afii10044 (U+042A): found 5, expected one of: {1, 3, 2}</li>
+<li>afii10044 (U+042A): found 5, expected one of: {2, 3, 1}</li>
 <li>afii10045 (U+042B): found 5, expected one of: {3, 2}</li>
-<li>afii10046 (U+042C): found 4, expected one of: {2, 1}</li>
-<li>afii10047 (U+042D): found 5, expected one of: {2, 1}</li>
-<li>afii10048 (U+042E): found 6, expected one of: {2, 3, 4, 1}</li>
-<li>afii10049 (U+042F): found 5, expected one of: {2, 3, 1}</li>
-<li>afii10050 (U+0490): found 3, expected one of: {2, 1}</li>
-<li>afii10051 (U+0402): found 5, expected one of: {2, 3, 1}</li>
+<li>afii10046 (U+042C): found 4, expected one of: {1, 2}</li>
+<li>afii10047 (U+042D): found 5, expected one of: {1, 2}</li>
+<li>afii10048 (U+042E): found 6, expected one of: {4, 3, 1, 2}</li>
+<li>afii10049 (U+042F): found 5, expected one of: {3, 2, 1}</li>
+<li>afii10050 (U+0490): found 3, expected one of: {1, 2}</li>
+<li>afii10051 (U+0402): found 5, expected one of: {3, 1, 2}</li>
 <li>afii10053 (U+0404): found 5, expected one of: {1, 2}</li>
 <li>afii10054 (U+0405): found 5, expected one of: {1, 2}</li>
 <li>afii10055 (U+0406): found 3, expected one of: {1}</li>
 <li>afii10056 (U+0407): found 5, expected one of: {3}</li>
 <li>afii10057 (U+0408): found 3, expected one of: {1, 2}</li>
-<li>afii10058 (U+0409): found 7, expected one of: {3, 2, 1}</li>
-<li>afii10059 (U+040A): found 5, expected one of: {2, 3, 1}</li>
-<li>afii10060 (U+040B): found 4, expected one of: {2, 3, 1}</li>
-<li>afii10062 (U+040E): found 7, expected one of: {3, 2}</li>
-<li>afii10065 (U+0430): found 5, expected one of: {2, 1}</li>
-<li>afii10066 (U+0431): found 5, expected one of: {1, 2}</li>
-<li>afii10067 (U+0432): found 9, expected one of: {3, 1, 2}</li>
-<li>afii10069 (U+0434): found 6, expected one of: {3, 4, 2}</li>
+<li>afii10058 (U+0409): found 7, expected one of: {2, 3, 1}</li>
+<li>afii10059 (U+040A): found 5, expected one of: {3, 2, 1}</li>
+<li>afii10060 (U+040B): found 4, expected one of: {2, 1, 3}</li>
+<li>afii10062 (U+040E): found 7, expected one of: {2, 3}</li>
+<li>afii10065 (U+0430): found 5, expected one of: {1, 2}</li>
+<li>afii10066 (U+0431): found 5, expected one of: {2, 1}</li>
+<li>afii10067 (U+0432): found 9, expected one of: {2, 3, 1}</li>
+<li>afii10069 (U+0434): found 6, expected one of: {4, 3, 2}</li>
 <li>afii10070 (U+0435): found 5, expected one of: {2, 1}</li>
 <li>afii10071 (U+0451): found 7, expected one of: {3, 4}</li>
-<li>afii10073 (U+0437): found 7, expected one of: {2, 1}</li>
+<li>afii10073 (U+0437): found 7, expected one of: {1, 2}</li>
 <li>afii10075 (U+0439): found 6, expected one of: {4, 2}</li>
-<li>afii10077 (U+043B): found 4, expected one of: {1, 3, 2}</li>
-<li>afii10078 (U+043C): found 4, expected one of: {3, 1, 2}</li>
+<li>afii10077 (U+043B): found 4, expected one of: {3, 2, 1}</li>
+<li>afii10078 (U+043C): found 4, expected one of: {1, 3, 2}</li>
 <li>afii10080 (U+043E): found 4, expected one of: {2}</li>
-<li>afii10082 (U+0440): found 4, expected one of: {1, 3, 2}</li>
+<li>afii10082 (U+0440): found 4, expected one of: {2, 3, 1}</li>
 <li>afii10083 (U+0441): found 3, expected one of: {1}</li>
 <li>afii10085 (U+0443): found 4, expected one of: {1, 2}</li>
 <li>afii10086 (U+0444): found 5, expected one of: {3}</li>
-<li>afii10088 (U+0446): found 4, expected one of: {2, 1, 3}</li>
+<li>afii10088 (U+0446): found 4, expected one of: {3, 2, 1}</li>
 <li>afii10089 (U+0447): found 3, expected one of: {1, 2}</li>
 <li>afii10090 (U+0448): found 4, expected one of: {1}</li>
-<li>afii10091 (U+0449): found 5, expected one of: {1, 3, 2}</li>
-<li>afii10092 (U+044A): found 5, expected one of: {3, 1, 2}</li>
-<li>afii10093 (U+044B): found 5, expected one of: {2, 1, 3}</li>
-<li>afii10094 (U+044C): found 4, expected one of: {2, 1}</li>
-<li>afii10095 (U+044D): found 5, expected one of: {1, 2}</li>
-<li>afii10096 (U+044E): found 6, expected one of: {2, 4, 3}</li>
+<li>afii10091 (U+0449): found 5, expected one of: {3, 1, 2}</li>
+<li>afii10092 (U+044A): found 5, expected one of: {3, 2, 1}</li>
+<li>afii10093 (U+044B): found 5, expected one of: {3, 2, 1}</li>
+<li>afii10094 (U+044C): found 4, expected one of: {1, 2}</li>
+<li>afii10095 (U+044D): found 5, expected one of: {2, 1}</li>
+<li>afii10096 (U+044E): found 6, expected one of: {4, 3, 2}</li>
 <li>afii10097 (U+044F): found 5, expected one of: {2, 3, 1}</li>
-<li>afii10098 (U+0491): found 3, expected one of: {1, 2}</li>
-<li>afii10099 (U+0452): found 5, expected one of: {3, 1, 2, 4}</li>
-<li>afii10101 (U+0454): found 5, expected one of: {2, 1}</li>
-<li>afii10102 (U+0455): found 5, expected one of: {2, 1}</li>
+<li>afii10098 (U+0491): found 3, expected one of: {2, 1}</li>
+<li>afii10099 (U+0452): found 5, expected one of: {2, 1, 4, 3}</li>
+<li>afii10101 (U+0454): found 5, expected one of: {1, 2}</li>
+<li>afii10102 (U+0455): found 5, expected one of: {1, 2}</li>
 <li>afii10103 (U+0456): found 4, expected one of: {1, 2}</li>
 <li>afii10104 (U+0457): found 5, expected one of: {3}</li>
-<li>afii10105 (U+0458): found 4, expected one of: {1, 3, 2}</li>
+<li>afii10105 (U+0458): found 4, expected one of: {3, 2, 1}</li>
 <li>afii10106 (U+0459): found 7, expected one of: {1, 2, 3}</li>
-<li>afii10107 (U+045A): found 5, expected one of: {3, 4, 1, 2}</li>
+<li>afii10107 (U+045A): found 5, expected one of: {2, 3, 4, 1}</li>
 <li>afii10108 (U+045B): found 4, expected one of: {2, 1, 3}</li>
 <li>afii10110 (U+045E): found 7, expected one of: {3, 2}</li>
 <li>afii10145 (U+040F): found 4, expected one of: {1, 2}</li>
-<li>afii10146 (U+0462): found 5, expected one of: {3, 2, 1}</li>
+<li>afii10146 (U+0462): found 5, expected one of: {1, 3, 2}</li>
 <li>afii10147 (U+0472): found 5, expected one of: {3}</li>
 <li>afii10148 (U+0474): found 3, expected one of: {2, 1}</li>
-<li>afii10193 (U+045F): found 4, expected one of: {2, 1, 3}</li>
-<li>afii10194 (U+0463): found 5, expected one of: {2, 3, 4, 1}</li>
+<li>afii10193 (U+045F): found 4, expected one of: {2, 3, 1}</li>
+<li>afii10194 (U+0463): found 5, expected one of: {1, 4, 2, 3}</li>
 <li>afii10195 (U+0473): found 5, expected one of: {3}</li>
-<li>afii10196 (U+0475): found 3, expected one of: {2, 1}</li>
-<li>afii10846 (U+04D9): found 5, expected one of: {2, 1}</li>
-<li>afii57636 (U+20AA): found 8, expected one of: {2, 3, 10}</li>
+<li>afii10196 (U+0475): found 3, expected one of: {1, 2}</li>
+<li>afii10846 (U+04D9): found 5, expected one of: {1, 2}</li>
+<li>afii57636 (U+20AA): found 8, expected one of: {10, 3, 2}</li>
 <li>afii61248 (U+2105): found 8, expected one of: {4}</li>
 <li>afii61289 (U+2113): found 4, expected one of: {2, 1}</li>
-<li>afii61352 (U+2116): found 8, expected one of: {6, 3, 4, 5}</li>
-<li>agrave (U+00E0): found 6, expected one of: {2, 3, 4}</li>
+<li>afii61352 (U+2116): found 8, expected one of: {6, 5, 4, 3}</li>
+<li>agrave (U+00E0): found 6, expected one of: {4, 3, 2}</li>
 <li>alpha (U+03B1): found 5, expected one of: {2}</li>
 <li>alphatonos (U+03AC): found 6, expected one of: {3}</li>
-<li>amacron (U+0101): found 6, expected one of: {3, 2, 4}</li>
-<li>ampersand (U+0026): found 6, expected one of: {2, 3, 1, 4}</li>
-<li>aogonek (U+0105): found 8, expected one of: {2, 1, 4, 3}</li>
+<li>amacron (U+0101): found 6, expected one of: {4, 3, 2}</li>
+<li>ampersand (U+0026): found 6, expected one of: {4, 1, 3, 2}</li>
+<li>aogonek (U+0105): found 8, expected one of: {4, 2, 3, 1}</li>
 <li>approxequal (U+2248): found 6, expected one of: {2}</li>
 <li>aring (U+00E5): found 7, expected one of: {4, 3, 5}</li>
 <li>aringacute (U+01FB): found 8, expected one of: {5, 4}</li>
-<li>arrowboth (U+2194): found 5, expected one of: {3, 1}</li>
-<li>arrowdown (U+2193): found 3, expected one of: {1, 2}</li>
-<li>arrowleft (U+2190): found 3, expected one of: {2, 1}</li>
+<li>arrowboth (U+2194): found 5, expected one of: {1, 3}</li>
+<li>arrowdown (U+2193): found 3, expected one of: {2, 1}</li>
+<li>arrowleft (U+2190): found 3, expected one of: {1, 2}</li>
 <li>arrowright (U+2192): found 3, expected one of: {1, 2}</li>
 <li>arrowup (U+2191): found 3, expected one of: {2, 1}</li>
 <li>arrowupdn (U+2195): found 5, expected one of: {1, 3}</li>
 <li>asciitilde (U+007E): found 3, expected one of: {1}</li>
-<li>at (U+0040): found 9, expected one of: {2, 3, 1, 4}</li>
-<li>atilde (U+00E3): found 8, expected one of: {4, 2, 3}</li>
+<li>at (U+0040): found 9, expected one of: {3, 4, 1, 2}</li>
+<li>atilde (U+00E3): found 8, expected one of: {4, 3, 2}</li>
 <li>beta (U+03B2): found 5, expected one of: {2, 1}</li>
-<li>braceleft (U+007B): found 6, expected one of: {1, 2}</li>
+<li>braceleft (U+007B): found 6, expected one of: {2, 1}</li>
 <li>braceright (U+007D): found 6, expected one of: {2, 1}</li>
 <li>breve (U+02D8): found 3, expected one of: {1}</li>
 <li>cacute (U+0107): found 4, expected one of: {2}</li>
 <li>caron (U+02C7): found 2, expected one of: {1}</li>
 <li>ccaron (U+010D): found 5, expected one of: {2, 3}</li>
-<li>ccedilla (U+00E7): found 7, expected one of: {2, 3, 1}</li>
+<li>ccedilla (U+00E7): found 7, expected one of: {2, 1, 3}</li>
 <li>ccircumflex (U+0109): found 5, expected one of: {2, 3}</li>
 <li>cdotaccent (U+010B): found 4, expected one of: {2}</li>
 <li>cedilla (U+00B8): found 4, expected one of: {1}</li>
-<li>cent (U+00A2): found 4, expected one of: {3, 1, 2}</li>
+<li>cent (U+00A2): found 4, expected one of: {3, 2, 1}</li>
 <li>chi (U+03C7): found 4, expected one of: {1}</li>
 <li>circumflex (U+02C6): found 2, expected one of: {1}</li>
 <li>comma (U+002C): found 2, expected one of: {1}</li>
 <li>copyright (U+00A9): found 7, expected one of: {2, 3}</li>
-<li>currency (U+00A4): found 8, expected one of: {2, 6}</li>
-<li>dcaron (U+010F): found 5, expected one of: {4, 2, 3}</li>
-<li>dcroat (U+0111): found 5, expected one of: {4, 3, 2, 1}</li>
+<li>currency (U+00A4): found 8, expected one of: {6, 2}</li>
+<li>dcaron (U+010F): found 5, expected one of: {2, 3, 4}</li>
+<li>dcroat (U+0111): found 5, expected one of: {4, 3, 1, 2}</li>
 <li>delta (U+03B4): found 5, expected one of: {2, 1}</li>
-<li>dollar (U+0024): found 6, expected one of: {1, 5, 3, 2}</li>
-<li>dong (U+20AB): found 6, expected one of: {3, 5, 4}</li>
+<li>dollar (U+0024): found 6, expected one of: {3, 1, 2, 5}</li>
+<li>dong (U+20AB): found 6, expected one of: {3, 4, 5}</li>
 <li>dotlessi (U+0131): found 3, expected one of: {1, 2}</li>
 <li>e (U+0065): found 5, expected one of: {2, 1}</li>
-<li>eacute (U+00E9): found 6, expected one of: {2, 3}</li>
-<li>ebreve (U+0115): found 8, expected one of: {2, 3}</li>
-<li>ecaron (U+011B): found 7, expected one of: {4, 3, 2}</li>
+<li>eacute (U+00E9): found 6, expected one of: {3, 2}</li>
+<li>ebreve (U+0115): found 8, expected one of: {3, 2}</li>
+<li>ecaron (U+011B): found 7, expected one of: {4, 2, 3}</li>
 <li>ecircumflex (U+00EA): found 7, expected one of: {3, 4, 2}</li>
 <li>edieresis (U+00EB): found 7, expected one of: {3, 4}</li>
-<li>edotaccent (U+0117): found 6, expected one of: {3, 2}</li>
+<li>edotaccent (U+0117): found 6, expected one of: {2, 3}</li>
 <li>egrave (U+00E8): found 6, expected one of: {3, 2}</li>
-<li>emacron (U+0113): found 6, expected one of: {3, 2}</li>
+<li>emacron (U+0113): found 6, expected one of: {2, 3}</li>
 <li>emptyset (U+2205): found 5, expected one of: {3}</li>
-<li>eng (U+014B): found 4, expected one of: {3, 1, 2}</li>
-<li>eogonek (U+0119): found 8, expected one of: {3, 1, 2}</li>
+<li>eng (U+014B): found 4, expected one of: {2, 1, 3}</li>
+<li>eogonek (U+0119): found 8, expected one of: {2, 3, 1}</li>
 <li>epsilon (U+03B5): found 5, expected one of: {1}</li>
 <li>epsilontonos (U+03AD): found 6, expected one of: {2}</li>
 <li>estimated (U+212E): found 8, expected one of: {2}</li>
-<li>eta (U+03B7): found 3, expected one of: {2, 1}</li>
+<li>eta (U+03B7): found 3, expected one of: {1, 2}</li>
 <li>etatonos (U+03AE): found 4, expected one of: {3, 2}</li>
-<li>eth (U+00F0): found 5, expected one of: {2, 3, 1, 4}</li>
+<li>eth (U+00F0): found 5, expected one of: {3, 1, 4, 2}</li>
 <li>florin (U+0192): found 4, expected one of: {1, 2}</li>
 <li>franc (U+20A3): found 4, expected one of: {2, 1}</li>
-<li>g (U+0067): found 5, expected one of: {1, 3, 2, 4}</li>
+<li>g (U+0067): found 5, expected one of: {1, 4, 2, 3}</li>
 <li>gamma (U+03B3): found 3, expected one of: {2, 1}</li>
-<li>gbreve (U+011F): found 8, expected one of: {2, 5, 4, 3}</li>
-<li>gcaron (U+01E7): found 7, expected one of: {3, 2, 4, 5}</li>
-<li>gcircumflex (U+011D): found 7, expected one of: {5, 3, 4, 2}</li>
-<li>gcommaaccent (U+0123): found 7, expected one of: {3, 4, 5, 2}</li>
-<li>gdotaccent (U+0121): found 6, expected one of: {4, 3, 2, 5}</li>
-<li>germandbls (U+00DF): found 9, expected one of: {3, 1, 2}</li>
+<li>gbreve (U+011F): found 8, expected one of: {5, 2, 4, 3}</li>
+<li>gcaron (U+01E7): found 7, expected one of: {5, 3, 4, 2}</li>
+<li>gcircumflex (U+011D): found 7, expected one of: {4, 3, 2, 5}</li>
+<li>gcommaaccent (U+0123): found 7, expected one of: {3, 2, 5, 4}</li>
+<li>gdotaccent (U+0121): found 6, expected one of: {2, 5, 4, 3}</li>
+<li>germandbls (U+00DF): found 9, expected one of: {1, 3, 2}</li>
 <li>greaterequal (U+2265): found 3, expected one of: {2}</li>
 <li>guillemotleft (U+00AB): found 4, expected one of: {2}</li>
 <li>guillemotright (U+00BB): found 4, expected one of: {2}</li>
 <li>guilsinglleft (U+2039): found 2, expected one of: {1}</li>
 <li>hcircumflex (U+0125): found 5, expected one of: {2, 3}</li>
 <li>hookabovecomb (U+0309): found 4, expected one of: {1}</li>
-<li>i (U+0069): found 4, expected one of: {3, 1, 2}</li>
-<li>iacute (U+00ED): found 4, expected one of: {3, 2}</li>
+<li>i (U+0069): found 4, expected one of: {1, 3, 2}</li>
+<li>iacute (U+00ED): found 4, expected one of: {2, 3}</li>
 <li>ibreve (U+012D): found 6, expected one of: {2}</li>
 <li>icircumflex (U+00EE): found 5, expected one of: {3, 2}</li>
 <li>idieresis (U+00EF): found 5, expected one of: {3}</li>
 <li>igrave (U+00EC): found 4, expected one of: {3, 2}</li>
-<li>ij (U+0133): found 8, expected one of: {6, 4, 3, 5, 2}</li>
-<li>imacron (U+012B): found 4, expected one of: {2, 3}</li>
+<li>ij (U+0133): found 8, expected one of: {2, 3, 4, 5, 6}</li>
+<li>imacron (U+012B): found 4, expected one of: {3, 2}</li>
 <li>infinity (U+221E): found 8, expected one of: {3, 1, 2}</li>
 <li>integral (U+222B): found 3, expected one of: {1}</li>
-<li>iogonek (U+012F): found 7, expected one of: {2, 4, 3, 1}</li>
+<li>iogonek (U+012F): found 7, expected one of: {2, 3, 1, 4}</li>
 <li>iota (U+03B9): found 2, expected one of: {1}</li>
 <li>iotadieresis (U+03CA): found 4, expected one of: {3}</li>
 <li>iotadieresistonos (U+0390): found 5, expected one of: {4}</li>
 <li>iotatonos (U+03AF): found 3, expected one of: {2}</li>
 <li>itilde (U+0129): found 6, expected one of: {2}</li>
-<li>j (U+006A): found 4, expected one of: {1, 2, 3}</li>
+<li>j (U+006A): found 4, expected one of: {3, 1, 2}</li>
 <li>jcircumflex (U+0135): found 5, expected one of: {2, 3}</li>
-<li>kappa (U+03BA): found 3, expected one of: {1, 2}</li>
-<li>l (U+006C): found 3, expected one of: {1, 2}</li>
-<li>lacute (U+013A): found 4, expected one of: {2, 3}</li>
-<li>lcaron (U+013E): found 4, expected one of: {2, 3}</li>
-<li>lcommaaccent (U+013C): found 5, expected one of: {2, 3}</li>
-<li>ldot (U+0140): found 4, expected one of: {3, 2}</li>
+<li>kappa (U+03BA): found 3, expected one of: {2, 1}</li>
+<li>l (U+006C): found 3, expected one of: {2, 1}</li>
+<li>lacute (U+013A): found 4, expected one of: {3, 2}</li>
+<li>lcaron (U+013E): found 4, expected one of: {3, 2}</li>
+<li>lcommaaccent (U+013C): found 5, expected one of: {3, 2}</li>
+<li>ldot (U+0140): found 4, expected one of: {2, 3}</li>
 <li>lessequal (U+2264): found 3, expected one of: {2}</li>
-<li>lira (U+20A4): found 5, expected one of: {2, 1, 3, 4}</li>
+<li>lira (U+20A4): found 5, expected one of: {3, 1, 2, 4}</li>
 <li>longs (U+017F): found 3, expected one of: {1, 2}</li>
 <li>lozenge (U+25CA): found 1, expected one of: {2}</li>
-<li>lslash (U+0142): found 4, expected one of: {2, 3, 1}</li>
-<li>m (U+006D): found 4, expected one of: {1, 2, 3}</li>
-<li>ncaron (U+0148): found 5, expected one of: {4, 2, 3}</li>
+<li>lslash (U+0142): found 4, expected one of: {1, 2, 3}</li>
+<li>m (U+006D): found 4, expected one of: {3, 2, 1}</li>
+<li>ncaron (U+0148): found 5, expected one of: {4, 3, 2}</li>
 <li>ncommaaccent (U+0146): found 5, expected one of: {4, 2, 3}</li>
-<li>ntilde (U+00F1): found 6, expected one of: {2, 3, 4}</li>
+<li>ntilde (U+00F1): found 6, expected one of: {4, 3, 2}</li>
 <li>nu (U+03BD): found 2, expected one of: {1}</li>
-<li>oacute (U+00F3): found 5, expected one of: {3, 4}</li>
+<li>oacute (U+00F3): found 5, expected one of: {4, 3}</li>
 <li>obreve (U+014F): found 7, expected one of: {4, 3}</li>
-<li>ocircumflex (U+00F4): found 6, expected one of: {3, 4, 2}</li>
-<li>odieresis (U+00F6): found 6, expected one of: {4, 3, 5}</li>
-<li>oe (U+0153): found 6, expected one of: {2, 3, 4}</li>
+<li>ocircumflex (U+00F4): found 6, expected one of: {2, 3, 4}</li>
+<li>odieresis (U+00F6): found 6, expected one of: {5, 3, 4}</li>
+<li>oe (U+0153): found 6, expected one of: {3, 2, 4}</li>
 <li>ogonek (U+02DB): found 3, expected one of: {1}</li>
-<li>ograve (U+00F2): found 5, expected one of: {4, 3}</li>
+<li>ograve (U+00F2): found 5, expected one of: {3, 4}</li>
 <li>ohorn (U+01A1): found 6, expected one of: {3, 2}</li>
-<li>ohungarumlaut (U+0151): found 6, expected one of: {5, 4}</li>
+<li>ohungarumlaut (U+0151): found 6, expected one of: {4, 5}</li>
 <li>omacron (U+014D): found 5, expected one of: {3, 4}</li>
 <li>omega (U+03C9): found 5, expected one of: {1}</li>
 <li>omegatonos (U+03CE): found 6, expected one of: {2}</li>
 <li>omicron (U+03BF): found 4, expected one of: {2}</li>
 <li>omicrontonos (U+03CC): found 5, expected one of: {3}</li>
-<li>onequarter (U+00BC): found 6, expected one of: {3, 5, 4}</li>
-<li>ordfeminine (U+00AA): found 6, expected one of: {1, 3, 2}</li>
-<li>ordmasculine (U+00BA): found 5, expected one of: {3, 2}</li>
+<li>onequarter (U+00BC): found 6, expected one of: {5, 3, 4}</li>
+<li>ordfeminine (U+00AA): found 6, expected one of: {1, 2, 3}</li>
+<li>ordmasculine (U+00BA): found 5, expected one of: {2, 3}</li>
 <li>otilde (U+00F5): found 7, expected one of: {3, 4}</li>
 <li>paragraph (U+00B6): found 5, expected one of: {1, 2, 3}</li>
-<li>parenleft (U+0028): found 3, expected one of: {1, 2}</li>
-<li>parenright (U+0029): found 3, expected one of: {2, 1}</li>
-<li>partialdiff (U+2202): found 5, expected one of: {2, 1}</li>
-<li>percent (U+0025): found 9, expected one of: {5, 4, 3}</li>
-<li>perthousand (U+2030): found 13, expected one of: {7, 6}</li>
-<li>peseta (U+20A7): found 12, expected one of: {2, 4, 3}</li>
-<li>phi (U+03C6): found 5, expected one of: {2, 3}</li>
+<li>parenleft (U+0028): found 3, expected one of: {2, 1}</li>
+<li>parenright (U+0029): found 3, expected one of: {1, 2}</li>
+<li>partialdiff (U+2202): found 5, expected one of: {1, 2}</li>
+<li>percent (U+0025): found 9, expected one of: {4, 5, 3}</li>
+<li>perthousand (U+2030): found 13, expected one of: {6, 7}</li>
+<li>peseta (U+20A7): found 12, expected one of: {3, 4, 2}</li>
+<li>phi (U+03C6): found 5, expected one of: {3, 2}</li>
 <li>phi1 (U+03D5): found 5, expected one of: {3}</li>
 <li>prescription (U+211E): found 6, expected one of: {3, 2}</li>
 <li>psi (U+03C8): found 4, expected one of: {1, 2}</li>
-<li>q (U+0071): found 5, expected one of: {2, 4, 3, 1}</li>
-<li>question (U+003F): found 5, expected one of: {2, 3}</li>
+<li>q (U+0071): found 5, expected one of: {2, 1, 4, 3}</li>
+<li>question (U+003F): found 5, expected one of: {3, 2}</li>
 <li>questiondown (U+00BF): found 5, expected one of: {2, 3}</li>
 <li>quotedblbase (U+201E): found 4, expected one of: {2}</li>
 <li>quotedblleft (U+201C): found 4, expected one of: {2}</li>
@@ -1167,60 +1063,60 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>quoteright (U+2019): found 2, expected one of: {1}</li>
 <li>quotesinglbase (U+201A): found 2, expected one of: {1}</li>
 <li>r (U+0072): found 3, expected one of: {1, 2}</li>
-<li>racute (U+0155): found 4, expected one of: {3, 2}</li>
+<li>racute (U+0155): found 4, expected one of: {2, 3}</li>
 <li>radical (U+221A): found 3, expected one of: {1, 2}</li>
-<li>rcaron (U+0159): found 5, expected one of: {4, 3, 2}</li>
+<li>rcaron (U+0159): found 5, expected one of: {2, 3, 4}</li>
 <li>rcommaaccent (U+0157): found 5, expected one of: {3, 2}</li>
-<li>registered (U+00AE): found 9, expected one of: {4, 5, 3, 2}</li>
+<li>registered (U+00AE): found 9, expected one of: {3, 4, 2, 5}</li>
 <li>rho (U+03C1): found 4, expected one of: {2, 1}</li>
-<li>s (U+0073): found 5, expected one of: {1, 3, 2}</li>
+<li>s (U+0073): found 5, expected one of: {2, 1, 3}</li>
 <li>sacute (U+015B): found 6, expected one of: {2, 3, 4}</li>
-<li>scaron (U+0161): found 7, expected one of: {4, 2, 3}</li>
-<li>scedilla (U+015F): found 9, expected one of: {3, 2, 1, 4}</li>
-<li>scircumflex (U+015D): found 7, expected one of: {2, 4, 3}</li>
+<li>scaron (U+0161): found 7, expected one of: {2, 4, 3}</li>
+<li>scedilla (U+015F): found 9, expected one of: {3, 4, 2, 1}</li>
+<li>scircumflex (U+015D): found 7, expected one of: {2, 3, 4}</li>
 <li>scommaaccent (U+0219): found 7, expected one of: {2, 3, 4}</li>
-<li>section (U+00A7): found 10, expected one of: {4, 2}</li>
+<li>section (U+00A7): found 10, expected one of: {2, 4}</li>
 <li>semicolon (U+003B): found 3, expected one of: {2}</li>
 <li>sigma (U+03C3): found 4, expected one of: {2}</li>
 <li>sigma1 (U+03C2): found 5, expected one of: {1}</li>
 <li>sterling (U+00A3): found 4, expected one of: {3, 2, 1}</li>
 <li>summation (U+2211): found 4, expected one of: {1}</li>
 <li>tau (U+03C4): found 3, expected one of: {1}</li>
-<li>tbar (U+0167): found 4, expected one of: {3, 1, 2}</li>
-<li>tcommaaccent (U+0163): found 7, expected one of: {1, 3, 2}</li>
-<li>thorn (U+00FE): found 4, expected one of: {2, 3, 1}</li>
+<li>tbar (U+0167): found 4, expected one of: {3, 2, 1}</li>
+<li>tcommaaccent (U+0163): found 7, expected one of: {3, 2, 1}</li>
+<li>thorn (U+00FE): found 4, expected one of: {3, 1, 2}</li>
 <li>tilde (U+02DC): found 3, expected one of: {1}</li>
 <li>tildecomb (U+0303): found 3, expected one of: {1}</li>
-<li>trademark (U+2122): found 6, expected one of: {5, 4, 1, 2, 3}</li>
-<li>u (U+0075): found 3, expected one of: {1, 2}</li>
+<li>trademark (U+2122): found 6, expected one of: {2, 5, 1, 4, 3}</li>
+<li>u (U+0075): found 3, expected one of: {2, 1}</li>
 <li>uacute (U+00FA): found 4, expected one of: {3, 2}</li>
-<li>ubreve (U+016D): found 6, expected one of: {3, 4, 2}</li>
-<li>ucircumflex (U+00FB): found 5, expected one of: {3, 4, 2}</li>
+<li>ubreve (U+016D): found 6, expected one of: {3, 2, 4}</li>
+<li>ucircumflex (U+00FB): found 5, expected one of: {2, 4, 3}</li>
 <li>udieresis (U+00FC): found 5, expected one of: {4, 3}</li>
-<li>uhorn (U+01B0): found 5, expected one of: {3, 2, 1}</li>
-<li>uhungarumlaut (U+0171): found 5, expected one of: {4, 3}</li>
+<li>uhorn (U+01B0): found 5, expected one of: {3, 1, 2}</li>
+<li>uhungarumlaut (U+0171): found 5, expected one of: {3, 4}</li>
 <li>umacron (U+016B): found 4, expected one of: {3, 2}</li>
 <li>uni0000 (U+0000): found 5, expected one of: {0}</li>
-<li>uni0180 (U+0180): found 5, expected one of: {3, 2}</li>
+<li>uni0180 (U+0180): found 5, expected one of: {2, 3}</li>
 <li>uni0181 (U+0181): found 11, expected one of: {3}</li>
 <li>uni0182 (U+0182): found 6, expected one of: {2}</li>
 <li>uni0183 (U+0183): found 5, expected one of: {3, 2}</li>
 <li>uni0186 (U+0186): found 3, expected one of: {1}</li>
-<li>uni0187 (U+0187): found 5, expected one of: {2, 1}</li>
+<li>uni0187 (U+0187): found 5, expected one of: {1, 2}</li>
 <li>uni0188 (U+0188): found 5, expected one of: {1}</li>
 <li>uni0189 (U+0189): found 6, expected one of: {2, 3}</li>
 <li>uni018A (U+018A): found 7, expected one of: {2}</li>
 <li>uni018E (U+018E): found 4, expected one of: {1}</li>
-<li>uni018F (U+018F): found 5, expected one of: {2, 1}</li>
+<li>uni018F (U+018F): found 5, expected one of: {1, 2}</li>
 <li>uni0190 (U+0190): found 5, expected one of: {1}</li>
 <li>uni0191 (U+0191): found 5, expected one of: {1}</li>
 <li>uni0193 (U+0193): found 6, expected one of: {1}</li>
 <li>uni0194 (U+0194): found 3, expected one of: {2}</li>
 <li>uni0196 (U+0196): found 2, expected one of: {1}</li>
-<li>uni0197 (U+0197): found 4, expected one of: {2, 1}</li>
+<li>uni0197 (U+0197): found 4, expected one of: {1, 2}</li>
 <li>uni0198 (U+0198): found 5, expected one of: {2, 1}</li>
-<li>uni0199 (U+0199): found 5, expected one of: {2, 1}</li>
-<li>uni019A (U+019A): found 4, expected one of: {2, 1}</li>
+<li>uni0199 (U+0199): found 5, expected one of: {1, 2}</li>
+<li>uni019A (U+019A): found 4, expected one of: {1, 2}</li>
 <li>uni019B (U+019B): found 3, expected one of: {1}</li>
 <li>uni019C (U+019C): found 4, expected one of: {1}</li>
 <li>uni019D (U+019D): found 5, expected one of: {1}</li>
@@ -1234,20 +1130,20 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni01B1 (U+01B1): found 5, expected one of: {1}</li>
 <li>uni01B2 (U+01B2): found 4, expected one of: {1}</li>
 <li>uni01B3 (U+01B3): found 6, expected one of: {1}</li>
-<li>uni01B4 (U+01B4): found 6, expected one of: {1, 2}</li>
+<li>uni01B4 (U+01B4): found 6, expected one of: {2, 1}</li>
 <li>uni01B7 (U+01B7): found 5, expected one of: {1}</li>
 <li>uni01B8 (U+01B8): found 5, expected one of: {1}</li>
 <li>uni01B9 (U+01B9): found 5, expected one of: {1}</li>
 <li>uni01C2 (U+01C2): found 3, expected one of: {1}</li>
 <li>uni01C4 (U+01C4): found 10, expected one of: {4, 6}</li>
 <li>uni01C5 (U+01C5): found 10, expected one of: {6, 4}</li>
-<li>uni01C6 (U+01C6): found 9, expected one of: {4, 5, 6}</li>
+<li>uni01C6 (U+01C6): found 9, expected one of: {4, 6, 5}</li>
 <li>uni01C9 (U+01C9): found 7, expected one of: {5, 3}</li>
-<li>uni01CA (U+01CA): found 6, expected one of: {4, 5, 2, 3}</li>
-<li>uni01CB (U+01CB): found 7, expected one of: {5, 3, 4}</li>
+<li>uni01CA (U+01CA): found 6, expected one of: {2, 3, 5, 4}</li>
+<li>uni01CB (U+01CB): found 7, expected one of: {4, 3, 5}</li>
 <li>uni01CC (U+01CC): found 7, expected one of: {4, 3}</li>
 <li>uni01CD (U+01CD): found 6, expected one of: {3}</li>
-<li>uni01CE (U+01CE): found 7, expected one of: {3, 2}</li>
+<li>uni01CE (U+01CE): found 7, expected one of: {2, 3}</li>
 <li>uni01CF (U+01CF): found 5, expected one of: {3, 2}</li>
 <li>uni01D0 (U+01D0): found 5, expected one of: {2}</li>
 <li>uni01D1 (U+01D1): found 6, expected one of: {3}</li>
@@ -1259,22 +1155,22 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni01D7 (U+01D7): found 6, expected one of: {4}</li>
 <li>uni01D8 (U+01D8): found 6, expected one of: {5, 4}</li>
 <li>uni01D9 (U+01D9): found 7, expected one of: {4, 5}</li>
-<li>uni01DA (U+01DA): found 7, expected one of: {4, 5}</li>
+<li>uni01DA (U+01DA): found 7, expected one of: {5, 4}</li>
 <li>uni01DB (U+01DB): found 6, expected one of: {4}</li>
-<li>uni01DC (U+01DC): found 6, expected one of: {4, 5}</li>
+<li>uni01DC (U+01DC): found 6, expected one of: {5, 4}</li>
 <li>uni01DD (U+01DD): found 5, expected one of: {2, 1}</li>
 <li>uni01DE (U+01DE): found 7, expected one of: {5}</li>
 <li>uni01DF (U+01DF): found 8, expected one of: {5}</li>
 <li>uni01E2 (U+01E2): found 6, expected one of: {3}</li>
 <li>uni01E3 (U+01E3): found 7, expected one of: {4}</li>
 <li>uni01E4 (U+01E4): found 5, expected one of: {1, 2}</li>
-<li>uni01E5 (U+01E5): found 6, expected one of: {2, 3, 4}</li>
+<li>uni01E5 (U+01E5): found 6, expected one of: {2, 4, 3}</li>
 <li>uni01E8 (U+01E8): found 5, expected one of: {2, 4}</li>
 <li>uni01E9 (U+01E9): found 5, expected one of: {2}</li>
-<li>uni01EA (U+01EA): found 7, expected one of: {3, 2}</li>
+<li>uni01EA (U+01EA): found 7, expected one of: {2, 3}</li>
 <li>uni01EB (U+01EB): found 7, expected one of: {3, 2}</li>
-<li>uni01EC (U+01EC): found 8, expected one of: {4, 3}</li>
-<li>uni01ED (U+01ED): found 8, expected one of: {4, 3}</li>
+<li>uni01EC (U+01EC): found 8, expected one of: {3, 4}</li>
+<li>uni01ED (U+01ED): found 8, expected one of: {3, 4}</li>
 <li>uni01EE (U+01EE): found 7, expected one of: {2}</li>
 <li>uni01EF (U+01EF): found 7, expected one of: {2}</li>
 <li>uni01F0 (U+01F0): found 5, expected one of: {2}</li>
@@ -1282,34 +1178,34 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni01F2 (U+01F2): found 8, expected one of: {3}</li>
 <li>uni01F3 (U+01F3): found 7, expected one of: {3}</li>
 <li>uni01F4 (U+01F4): found 5, expected one of: {2}</li>
-<li>uni01F5 (U+01F5): found 6, expected one of: {4, 3}</li>
+<li>uni01F5 (U+01F5): found 6, expected one of: {3, 4}</li>
 <li>uni01F8 (U+01F8): found 4, expected one of: {2}</li>
 <li>uni01F9 (U+01F9): found 4, expected one of: {2}</li>
 <li>uni0200 (U+0200): found 6, expected one of: {4, 5}</li>
 <li>uni0201 (U+0201): found 7, expected one of: {3, 4}</li>
 <li>uni0202 (U+0202): found 7, expected one of: {3}</li>
-<li>uni0203 (U+0203): found 8, expected one of: {2, 3}</li>
-<li>uni0204 (U+0204): found 6, expected one of: {4, 3}</li>
-<li>uni0205 (U+0205): found 7, expected one of: {4, 3}</li>
+<li>uni0203 (U+0203): found 8, expected one of: {3, 2}</li>
+<li>uni0204 (U+0204): found 6, expected one of: {3, 4}</li>
+<li>uni0205 (U+0205): found 7, expected one of: {3, 4}</li>
 <li>uni0206 (U+0206): found 7, expected one of: {2, 3}</li>
-<li>uni0207 (U+0207): found 8, expected one of: {3, 2}</li>
+<li>uni0207 (U+0207): found 8, expected one of: {2, 3}</li>
 <li>uni0208 (U+0208): found 5, expected one of: {4, 3}</li>
 <li>uni0209 (U+0209): found 5, expected one of: {3}</li>
 <li>uni020A (U+020A): found 6, expected one of: {2, 3}</li>
 <li>uni020B (U+020B): found 6, expected one of: {2}</li>
-<li>uni020C (U+020C): found 6, expected one of: {5, 3, 4}</li>
+<li>uni020C (U+020C): found 6, expected one of: {3, 4, 5}</li>
 <li>uni020D (U+020D): found 6, expected one of: {4}</li>
-<li>uni020E (U+020E): found 7, expected one of: {2, 3}</li>
+<li>uni020E (U+020E): found 7, expected one of: {3, 2}</li>
 <li>uni020F (U+020F): found 7, expected one of: {3}</li>
-<li>uni0210 (U+0210): found 7, expected one of: {4, 5, 3}</li>
-<li>uni0211 (U+0211): found 5, expected one of: {4, 3}</li>
-<li>uni0212 (U+0212): found 8, expected one of: {2, 3, 4}</li>
+<li>uni0210 (U+0210): found 7, expected one of: {4, 3, 5}</li>
+<li>uni0211 (U+0211): found 5, expected one of: {3, 4}</li>
+<li>uni0212 (U+0212): found 8, expected one of: {4, 3, 2}</li>
 <li>uni0213 (U+0213): found 6, expected one of: {3, 2}</li>
-<li>uni0214 (U+0214): found 5, expected one of: {4, 3}</li>
-<li>uni0215 (U+0215): found 5, expected one of: {3, 4}</li>
+<li>uni0214 (U+0214): found 5, expected one of: {3, 4}</li>
+<li>uni0215 (U+0215): found 5, expected one of: {4, 3}</li>
 <li>uni0216 (U+0216): found 6, expected one of: {2}</li>
-<li>uni0217 (U+0217): found 6, expected one of: {3, 2}</li>
-<li>uni021B (U+021B): found 5, expected one of: {3, 4, 2}</li>
+<li>uni0217 (U+0217): found 6, expected one of: {2, 3}</li>
+<li>uni021B (U+021B): found 5, expected one of: {4, 3, 2}</li>
 <li>uni021E (U+021E): found 5, expected one of: {2}</li>
 <li>uni021F (U+021F): found 5, expected one of: {2}</li>
 <li>uni0221 (U+0221): found 6, expected one of: {3}</li>
@@ -1318,29 +1214,29 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0226 (U+0226): found 5, expected one of: {3}</li>
 <li>uni0227 (U+0227): found 6, expected one of: {3}</li>
 <li>uni0228 (U+0228): found 8, expected one of: {1, 2}</li>
-<li>uni0229 (U+0229): found 9, expected one of: {2, 3}</li>
+<li>uni0229 (U+0229): found 9, expected one of: {3, 2}</li>
 <li>uni022A (U+022A): found 7, expected one of: {4, 5, 6}</li>
 <li>uni022B (U+022B): found 7, expected one of: {5}</li>
-<li>uni022C (U+022C): found 8, expected one of: {4, 3, 5}</li>
+<li>uni022C (U+022C): found 8, expected one of: {5, 4, 3}</li>
 <li>uni022D (U+022D): found 8, expected one of: {5, 4}</li>
 <li>uni022E (U+022E): found 5, expected one of: {3}</li>
 <li>uni022F (U+022F): found 5, expected one of: {3}</li>
-<li>uni0230 (U+0230): found 6, expected one of: {5, 3, 4}</li>
-<li>uni0231 (U+0231): found 6, expected one of: {5, 4}</li>
+<li>uni0230 (U+0230): found 6, expected one of: {3, 4, 5}</li>
+<li>uni0231 (U+0231): found 6, expected one of: {4, 5}</li>
 <li>uni0232 (U+0232): found 5, expected one of: {2, 3, 4}</li>
-<li>uni0233 (U+0233): found 5, expected one of: {3, 2}</li>
+<li>uni0233 (U+0233): found 5, expected one of: {2, 3}</li>
 <li>uni0234 (U+0234): found 4, expected one of: {2}</li>
 <li>uni0235 (U+0235): found 6, expected one of: {2}</li>
 <li>uni0236 (U+0236): found 5, expected one of: {2}</li>
-<li>uni0237 (U+0237): found 3, expected one of: {2, 1}</li>
+<li>uni0237 (U+0237): found 3, expected one of: {1, 2}</li>
 <li>uni023A (U+023A): found 5, expected one of: {3}</li>
 <li>uni023B (U+023B): found 4, expected one of: {2}</li>
 <li>uni023C (U+023C): found 4, expected one of: {2}</li>
-<li>uni023D (U+023D): found 3, expected one of: {1, 2}</li>
+<li>uni023D (U+023D): found 3, expected one of: {2, 1}</li>
 <li>uni023E (U+023E): found 3, expected one of: {2}</li>
 <li>uni0241 (U+0241): found 4, expected one of: {1}</li>
 <li>uni0242 (U+0242): found 4, expected one of: {1}</li>
-<li>uni0243 (U+0243): found 10, expected one of: {3, 4}</li>
+<li>uni0243 (U+0243): found 10, expected one of: {4, 3}</li>
 <li>uni0244 (U+0244): found 4, expected one of: {2}</li>
 <li>uni0245 (U+0245): found 2, expected one of: {1}</li>
 <li>uni0248 (U+0248): found 4, expected one of: {1, 2}</li>
@@ -1353,16 +1249,16 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0254 (U+0254): found 3, expected one of: {1}</li>
 <li>uni0256 (U+0256): found 6, expected one of: {2}</li>
 <li>uni0257 (U+0257): found 6, expected one of: {2}</li>
-<li>uni0259 (U+0259): found 5, expected one of: {1, 2}</li>
+<li>uni0259 (U+0259): found 5, expected one of: {2, 1}</li>
 <li>uni025B (U+025B): found 5, expected one of: {1}</li>
-<li>uni025F (U+025F): found 4, expected one of: {2, 1}</li>
+<li>uni025F (U+025F): found 4, expected one of: {1, 2}</li>
 <li>uni0260 (U+0260): found 7, expected one of: {2}</li>
 <li>uni0261 (U+0261): found 5, expected one of: {2}</li>
-<li>uni0263 (U+0263): found 3, expected one of: {2, 1}</li>
+<li>uni0263 (U+0263): found 3, expected one of: {1, 2}</li>
 <li>uni0264 (U+0264): found 3, expected one of: {2}</li>
 <li>uni0265 (U+0265): found 3, expected one of: {1}</li>
 <li>uni0266 (U+0266): found 5, expected one of: {1}</li>
-<li>uni0268 (U+0268): found 5, expected one of: {2, 3}</li>
+<li>uni0268 (U+0268): found 5, expected one of: {3, 2}</li>
 <li>uni0269 (U+0269): found 2, expected one of: {1}</li>
 <li>uni026A (U+026A): found 3, expected one of: {1}</li>
 <li>uni026B (U+026B): found 6, expected one of: {1, 2}</li>
@@ -1418,73 +1314,73 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0394 (U+0394): found 3, expected one of: {2}</li>
 <li>uni03A9 (U+03A9): found 9, expected one of: {1}</li>
 <li>uni03BC (U+03BC): found 3, expected one of: {1}</li>
-<li>uni03CF (U+03CF): found 4, expected one of: {2, 1, 3}</li>
-<li>uni03D7 (U+03D7): found 7, expected one of: {1, 2}</li>
-<li>uni0400 (U+0400): found 5, expected one of: {3, 4, 2}</li>
-<li>uni0450 (U+0450): found 6, expected one of: {2, 3}</li>
+<li>uni03CF (U+03CF): found 4, expected one of: {2, 3, 1}</li>
+<li>uni03D7 (U+03D7): found 7, expected one of: {2, 1}</li>
+<li>uni0400 (U+0400): found 5, expected one of: {4, 2, 3}</li>
+<li>uni0450 (U+0450): found 6, expected one of: {3, 2}</li>
 <li>uni0470 (U+0470): found 4, expected one of: {1}</li>
 <li>uni0471 (U+0471): found 4, expected one of: {1}</li>
-<li>uni0494 (U+0494): found 5, expected one of: {1, 2, 3}</li>
+<li>uni0494 (U+0494): found 5, expected one of: {3, 1, 2}</li>
 <li>uni0495 (U+0495): found 5, expected one of: {1, 2, 3}</li>
-<li>uni0496 (U+0496): found 6, expected one of: {3, 1, 4, 5, 2}</li>
+<li>uni0496 (U+0496): found 6, expected one of: {1, 4, 3, 5, 2}</li>
 <li>uni0498 (U+0498): found 10, expected one of: {2, 1}</li>
-<li>uni0499 (U+0499): found 11, expected one of: {1, 2}</li>
+<li>uni0499 (U+0499): found 11, expected one of: {2, 1}</li>
 <li>uni049F (U+049F): found 4, expected one of: {1}</li>
-<li>uni04A6 (U+04A6): found 6, expected one of: {2, 1}</li>
+<li>uni04A6 (U+04A6): found 6, expected one of: {1, 2}</li>
 <li>uni04A7 (U+04A7): found 6, expected one of: {1}</li>
 <li>uni04A8 (U+04A8): found 7, expected one of: {2, 1}</li>
 <li>uni04A9 (U+04A9): found 7, expected one of: {2, 1}</li>
 <li>uni04AA (U+04AA): found 7, expected one of: {2, 1}</li>
-<li>uni04AB (U+04AB): found 7, expected one of: {2, 1}</li>
+<li>uni04AB (U+04AB): found 7, expected one of: {1, 2}</li>
 <li>uni04AC (U+04AC): found 3, expected one of: {1}</li>
 <li>uni04AD (U+04AD): found 3, expected one of: {1}</li>
 <li>uni04B3 (U+04B3): found 3, expected one of: {2, 1}</li>
-<li>uni04B4 (U+04B4): found 5, expected one of: {1, 3}</li>
-<li>uni04B5 (U+04B5): found 5, expected one of: {3, 1}</li>
-<li>uni04B6 (U+04B6): found 4, expected one of: {1, 3, 2}</li>
-<li>uni04B8 (U+04B8): found 4, expected one of: {2, 3, 1}</li>
-<li>uni04B9 (U+04B9): found 4, expected one of: {1, 2, 3}</li>
+<li>uni04B4 (U+04B4): found 5, expected one of: {3, 1}</li>
+<li>uni04B5 (U+04B5): found 5, expected one of: {1, 3}</li>
+<li>uni04B6 (U+04B6): found 4, expected one of: {2, 3, 1}</li>
+<li>uni04B8 (U+04B8): found 4, expected one of: {1, 3, 2}</li>
+<li>uni04B9 (U+04B9): found 4, expected one of: {3, 1, 2}</li>
 <li>uni04BA (U+04BA): found 3, expected one of: {1, 2}</li>
-<li>uni04BB (U+04BB): found 3, expected one of: {2, 1}</li>
+<li>uni04BB (U+04BB): found 3, expected one of: {1, 2}</li>
 <li>uni04BC (U+04BC): found 6, expected one of: {2}</li>
 <li>uni04BD (U+04BD): found 6, expected one of: {2}</li>
-<li>uni04BE (U+04BE): found 7, expected one of: {2, 3}</li>
-<li>uni04BF (U+04BF): found 7, expected one of: {3, 2}</li>
+<li>uni04BE (U+04BE): found 7, expected one of: {3, 2}</li>
+<li>uni04BF (U+04BF): found 7, expected one of: {2, 3}</li>
 <li>uni04C0 (U+04C0): found 3, expected one of: {1}</li>
-<li>uni04C1 (U+04C1): found 8, expected one of: {3, 6, 2, 4}</li>
-<li>uni04C2 (U+04C2): found 8, expected one of: {2, 6, 4}</li>
+<li>uni04C1 (U+04C1): found 8, expected one of: {4, 6, 3, 2}</li>
+<li>uni04C2 (U+04C2): found 8, expected one of: {4, 6, 2}</li>
 <li>uni04CF (U+04CF): found 3, expected one of: {1}</li>
 <li>uni04D0 (U+04D0): found 7, expected one of: {3, 4}</li>
-<li>uni04D1 (U+04D1): found 8, expected one of: {3, 2}</li>
+<li>uni04D1 (U+04D1): found 8, expected one of: {2, 3}</li>
 <li>uni04D2 (U+04D2): found 6, expected one of: {4, 5}</li>
 <li>uni04D3 (U+04D3): found 7, expected one of: {4, 3}</li>
-<li>uni04D4 (U+04D4): found 5, expected one of: {3, 4, 2}</li>
-<li>uni04D5 (U+04D5): found 6, expected one of: {1, 3, 4, 2}</li>
-<li>uni04D6 (U+04D6): found 7, expected one of: {3, 4, 2}</li>
-<li>uni04D7 (U+04D7): found 8, expected one of: {3, 2}</li>
-<li>uni04D8 (U+04D8): found 5, expected one of: {1, 2}</li>
+<li>uni04D4 (U+04D4): found 5, expected one of: {2, 3, 4}</li>
+<li>uni04D5 (U+04D5): found 6, expected one of: {3, 4, 1, 2}</li>
+<li>uni04D6 (U+04D6): found 7, expected one of: {4, 3, 2}</li>
+<li>uni04D7 (U+04D7): found 8, expected one of: {2, 3}</li>
+<li>uni04D8 (U+04D8): found 5, expected one of: {2, 1}</li>
 <li>uni04DE (U+04DE): found 9, expected one of: {3}</li>
-<li>uni04DF (U+04DF): found 9, expected one of: {4, 3}</li>
+<li>uni04DF (U+04DF): found 9, expected one of: {3, 4}</li>
 <li>uni04E0 (U+04E0): found 5, expected one of: {1}</li>
 <li>uni04E1 (U+04E1): found 5, expected one of: {1}</li>
 <li>uni04E6 (U+04E6): found 6, expected one of: {4}</li>
 <li>uni04E7 (U+04E7): found 6, expected one of: {4}</li>
 <li>uni04E8 (U+04E8): found 5, expected one of: {3}</li>
 <li>uni04E9 (U+04E9): found 5, expected one of: {3}</li>
-<li>uni04EE (U+04EE): found 5, expected one of: {2, 3}</li>
+<li>uni04EE (U+04EE): found 5, expected one of: {3, 2}</li>
 <li>uni04EF (U+04EF): found 5, expected one of: {2, 3}</li>
 <li>uni04F0 (U+04F0): found 6, expected one of: {4, 3}</li>
 <li>uni04F1 (U+04F1): found 6, expected one of: {3, 4}</li>
-<li>uni04F2 (U+04F2): found 6, expected one of: {4, 3}</li>
+<li>uni04F2 (U+04F2): found 6, expected one of: {3, 4}</li>
 <li>uni04F3 (U+04F3): found 6, expected one of: {3, 4}</li>
-<li>uni04F4 (U+04F4): found 5, expected one of: {4, 3}</li>
-<li>uni04F5 (U+04F5): found 5, expected one of: {4, 3}</li>
-<li>uni04F8 (U+04F8): found 7, expected one of: {4, 5}</li>
-<li>uni04F9 (U+04F9): found 7, expected one of: {4, 5, 3}</li>
+<li>uni04F4 (U+04F4): found 5, expected one of: {3, 4}</li>
+<li>uni04F5 (U+04F5): found 5, expected one of: {3, 4}</li>
+<li>uni04F8 (U+04F8): found 7, expected one of: {5, 4}</li>
+<li>uni04F9 (U+04F9): found 7, expected one of: {3, 5, 4}</li>
 <li>uni051A (U+051A): found 5, expected one of: {2, 4, 3}</li>
-<li>uni051B (U+051B): found 5, expected one of: {3, 2}</li>
-<li>uni051C (U+051C): found 4, expected one of: {2, 3, 1}</li>
-<li>uni051D (U+051D): found 4, expected one of: {1, 2, 3}</li>
+<li>uni051B (U+051B): found 5, expected one of: {2, 3}</li>
+<li>uni051C (U+051C): found 4, expected one of: {2, 1, 3}</li>
+<li>uni051D (U+051D): found 4, expected one of: {3, 1, 2}</li>
 <li>uni0524 (U+0524): found 4, expected one of: {1, 2, 5}</li>
 <li>uni0900 (U+0900): found 4, expected one of: {2}</li>
 <li>uni0901 (U+0901): found 4, expected one of: {2}</li>
@@ -1498,47 +1394,47 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni090B (U+090B): found 8, expected one of: {1}</li>
 <li>uni090C (U+090C): found 7, expected one of: {1}</li>
 <li>uni090D (U+090D): found 10, expected one of: {2}</li>
-<li>uni090E (U+090E): found 10, expected one of: {2, 1}</li>
+<li>uni090E (U+090E): found 10, expected one of: {1, 2}</li>
 <li>uni090F (U+090F): found 7, expected one of: {1}</li>
 <li>uni0910 (U+0910): found 8, expected one of: {1, 2}</li>
 <li>uni0911 (U+0911): found 10, expected one of: {2}</li>
-<li>uni0912 (U+0912): found 10, expected one of: {1, 2}</li>
-<li>uni0913 (U+0913): found 8, expected one of: {1, 2}</li>
+<li>uni0912 (U+0912): found 10, expected one of: {2, 1}</li>
+<li>uni0913 (U+0913): found 8, expected one of: {2, 1}</li>
 <li>uni0914 (U+0914): found 9, expected one of: {1}</li>
-<li>uni0915 (U+0915): found 7, expected one of: {2, 1}</li>
+<li>uni0915 (U+0915): found 7, expected one of: {1, 2}</li>
 <li>uni0916 (U+0916): found 8, expected one of: {2, 3}</li>
 <li>uni0917 (U+0917): found 5, expected one of: {1}</li>
 <li>uni0918 (U+0918): found 6, expected one of: {2}</li>
 <li>uni0919 (U+0919): found 9, expected one of: {2}</li>
 <li>uni091A (U+091A): found 5, expected one of: {1}</li>
-<li>uni091B (U+091B): found 9, expected one of: {2, 3}</li>
+<li>uni091B (U+091B): found 9, expected one of: {3, 2}</li>
 <li>uni091C (U+091C): found 6, expected one of: {1}</li>
 <li>uni091D (U+091D): found 9, expected one of: {2}</li>
 <li>uni091E (U+091E): found 6, expected one of: {1}</li>
 <li>uni091F (U+091F): found 5, expected one of: {1}</li>
 <li>uni0920 (U+0920): found 6, expected one of: {2}</li>
 <li>uni0921 (U+0921): found 8, expected one of: {1}</li>
-<li>uni0922 (U+0922): found 7, expected one of: {1, 2}</li>
+<li>uni0922 (U+0922): found 7, expected one of: {2, 1}</li>
 <li>uni0923 (U+0923): found 5, expected one of: {2}</li>
 <li>uni0924 (U+0924): found 4, expected one of: {1}</li>
-<li>uni0925 (U+0925): found 7, expected one of: {1, 2}</li>
+<li>uni0925 (U+0925): found 7, expected one of: {2, 1}</li>
 <li>uni0926 (U+0926): found 6, expected one of: {1}</li>
-<li>uni0927 (U+0927): found 7, expected one of: {2, 1}</li>
+<li>uni0927 (U+0927): found 7, expected one of: {1, 2}</li>
 <li>uni0928 (U+0928): found 4, expected one of: {2, 1}</li>
 <li>uni0929 (U+0929): found 5, expected one of: {2}</li>
 <li>uni092A (U+092A): found 4, expected one of: {2}</li>
 <li>uni092B (U+092B): found 5, expected one of: {2}</li>
-<li>uni092C (U+092C): found 6, expected one of: {2, 3}</li>
+<li>uni092C (U+092C): found 6, expected one of: {3, 2}</li>
 <li>uni092D (U+092D): found 8, expected one of: {1, 2}</li>
-<li>uni092E (U+092E): found 6, expected one of: {3, 2}</li>
+<li>uni092E (U+092E): found 6, expected one of: {2, 3}</li>
 <li>uni092F (U+092F): found 5, expected one of: {2}</li>
 <li>uni0930 (U+0930): found 4, expected one of: {1}</li>
 <li>uni0931 (U+0931): found 5, expected one of: {2}</li>
 <li>uni0932 (U+0932): found 5, expected one of: {1}</li>
 <li>uni0933 (U+0933): found 6, expected one of: {3}</li>
 <li>uni0934 (U+0934): found 7, expected one of: {4}</li>
-<li>uni0935 (U+0935): found 5, expected one of: {2, 1}</li>
-<li>uni0936 (U+0936): found 7, expected one of: {2, 3}</li>
+<li>uni0935 (U+0935): found 5, expected one of: {1, 2}</li>
+<li>uni0936 (U+0936): found 7, expected one of: {3, 2}</li>
 <li>uni0937 (U+0937): found 5, expected one of: {3}</li>
 <li>uni0938 (U+0938): found 5, expected one of: {2}</li>
 <li>uni0939 (U+0939): found 8, expected one of: {1}</li>
@@ -1557,7 +1453,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0949 (U+0949): found 5, expected one of: {2}</li>
 <li>uni094A (U+094A): found 5, expected one of: {1}</li>
 <li>uni094B (U+094B): found 3, expected one of: {1}</li>
-<li>uni094C (U+094C): found 4, expected one of: {1, 2}</li>
+<li>uni094C (U+094C): found 4, expected one of: {2, 1}</li>
 <li>uni094D (U+094D): found 2, expected one of: {1}</li>
 <li>uni094E (U+094E): found 2, expected one of: {1}</li>
 <li>uni094F (U+094F): found 8, expected one of: {1}</li>
@@ -1570,7 +1466,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni095A (U+095A): found 6, expected one of: {2}</li>
 <li>uni095B (U+095B): found 7, expected one of: {2}</li>
 <li>uni095C (U+095C): found 9, expected one of: {2}</li>
-<li>uni095D (U+095D): found 8, expected one of: {2, 3}</li>
+<li>uni095D (U+095D): found 8, expected one of: {3, 2}</li>
 <li>uni095E (U+095E): found 6, expected one of: {3}</li>
 <li>uni095F (U+095F): found 6, expected one of: {3}</li>
 <li>uni0960 (U+0960): found 9, expected one of: {1}</li>
@@ -1578,7 +1474,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0962 (U+0962): found 5, expected one of: {1}</li>
 <li>uni0963 (U+0963): found 6, expected one of: {1}</li>
 <li>uni0966 (U+0966): found 4, expected one of: {2}</li>
-<li>uni0967 (U+0967): found 4, expected one of: {2, 1}</li>
+<li>uni0967 (U+0967): found 4, expected one of: {1, 2}</li>
 <li>uni0968 (U+0968): found 5, expected one of: {1}</li>
 <li>uni0969 (U+0969): found 5, expected one of: {1}</li>
 <li>uni096A (U+096A): found 7, expected one of: {2}</li>
@@ -1589,7 +1485,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni096F (U+096F): found 5, expected one of: {2}</li>
 <li>uni0970 (U+0970): found 1, expected one of: {2}</li>
 <li>uni0972 (U+0972): found 9, expected one of: {2}</li>
-<li>uni0973 (U+0973): found 7, expected one of: {1, 2}</li>
+<li>uni0973 (U+0973): found 7, expected one of: {2, 1}</li>
 <li>uni0974 (U+0974): found 7, expected one of: {1, 2}</li>
 <li>uni0975 (U+0975): found 12, expected one of: {1}</li>
 <li>uni0976 (U+0976): found 9, expected one of: {2}</li>
@@ -1598,7 +1494,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0979 (U+0979): found 9, expected one of: {4}</li>
 <li>uni097A (U+097A): found 6, expected one of: {3}</li>
 <li>uni097B (U+097B): found 6, expected one of: {2, 1}</li>
-<li>uni097C (U+097C): found 7, expected one of: {1, 2}</li>
+<li>uni097C (U+097C): found 7, expected one of: {2, 1}</li>
 <li>uni097D (U+097D): found 4, expected one of: {1}</li>
 <li>uni097E (U+097E): found 7, expected one of: {2}</li>
 <li>uni097F (U+097F): found 7, expected one of: {2, 3}</li>
@@ -1615,11 +1511,11 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0B90 (U+0B90): found 11, expected one of: {2}</li>
 <li>uni0B92 (U+0B92): found 13, expected one of: {2}</li>
 <li>uni0B93 (U+0B93): found 15, expected one of: {3, 2}</li>
-<li>uni0B94 (U+0B94): found 20, expected one of: {5, 4}</li>
+<li>uni0B94 (U+0B94): found 20, expected one of: {4, 5}</li>
 <li>uni0B95 (U+0B95): found 8, expected one of: {3}</li>
 <li>uni0B99 (U+0B99): found 7, expected one of: {1}</li>
 <li>uni0B9A (U+0B9A): found 6, expected one of: {3}</li>
-<li>uni0B9C (U+0B9C): found 11, expected one of: {2, 1}</li>
+<li>uni0B9C (U+0B9C): found 11, expected one of: {1, 2}</li>
 <li>uni0B9E (U+0B9E): found 9, expected one of: {2}</li>
 <li>uni0B9F (U+0B9F): found 2, expected one of: {1}</li>
 <li>uni0BA3 (U+0BA3): found 7, expected one of: {4}</li>
@@ -1636,7 +1532,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0BB4 (U+0BB4): found 10, expected one of: {2}</li>
 <li>uni0BB5 (U+0BB5): found 8, expected one of: {2}</li>
 <li>uni0BB6 (U+0BB6): found 7, expected one of: {2}</li>
-<li>uni0BB7 (U+0BB7): found 9, expected one of: {4, 3}</li>
+<li>uni0BB7 (U+0BB7): found 9, expected one of: {3, 4}</li>
 <li>uni0BB8 (U+0BB8): found 9, expected one of: {2}</li>
 <li>uni0BB9 (U+0BB9): found 14, expected one of: {2}</li>
 <li>uni0BBE (U+0BBE): found 3, expected one of: {1}</li>
@@ -1647,18 +1543,18 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0BC6 (U+0BC6): found 5, expected one of: {2}</li>
 <li>uni0BC7 (U+0BC7): found 5, expected one of: {3}</li>
 <li>uni0BC8 (U+0BC8): found 6, expected one of: {3}</li>
-<li>uni0BCA (U+0BCA): found 16, expected one of: {4, 11, 15, 3}</li>
-<li>uni0BCC (U+0BCC): found 20, expected one of: {12, 4, 16, 7}</li>
+<li>uni0BCA (U+0BCA): found 16, expected one of: {11, 4, 15, 3}</li>
+<li>uni0BCC (U+0BCC): found 20, expected one of: {12, 7, 16, 4}</li>
 <li>uni0BD0 (U+0BD0): found 19, expected one of: {5, 4}</li>
 <li>uni0BD7 (U+0BD7): found 7, expected one of: {2}</li>
 <li>uni0BE7 (U+0BE7): found 8, expected one of: {3}</li>
 <li>uni0BE8 (U+0BE8): found 8, expected one of: {2, 1}</li>
 <li>uni0BE9 (U+0BE9): found 6, expected one of: {1}</li>
-<li>uni0BEA (U+0BEA): found 7, expected one of: {2, 3}</li>
+<li>uni0BEA (U+0BEA): found 7, expected one of: {3, 2}</li>
 <li>uni0BEB (U+0BEB): found 9, expected one of: {1}</li>
 <li>uni0BEC (U+0BEC): found 11, expected one of: {3}</li>
-<li>uni0BED (U+0BED): found 5, expected one of: {3, 2}</li>
-<li>uni0BEE (U+0BEE): found 7, expected one of: {2, 3}</li>
+<li>uni0BED (U+0BED): found 5, expected one of: {2, 3}</li>
+<li>uni0BEE (U+0BEE): found 7, expected one of: {3, 2}</li>
 <li>uni0BEF (U+0BEF): found 9, expected one of: {4}</li>
 <li>uni0BF0 (U+0BF0): found 6, expected one of: {1}</li>
 <li>uni0BF1 (U+0BF1): found 6, expected one of: {1}</li>
@@ -1667,15 +1563,15 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni0BF4 (U+0BF4): found 12, expected one of: {3}</li>
 <li>uni0BF5 (U+0BF5): found 18, expected one of: {2}</li>
 <li>uni0BF6 (U+0BF6): found 7, expected one of: {2}</li>
-<li>uni0BF7 (U+0BF7): found 14, expected one of: {3, 4}</li>
+<li>uni0BF7 (U+0BF7): found 14, expected one of: {4, 3}</li>
 <li>uni0BF8 (U+0BF8): found 14, expected one of: {4, 5}</li>
 <li>uni0BF9 (U+0BF9): found 14, expected one of: {1, 2}</li>
-<li>uni0BFA (U+0BFA): found 15, expected one of: {2, 1}</li>
+<li>uni0BFA (U+0BFA): found 15, expected one of: {1, 2}</li>
 <li>uni0E3F (U+0E3F): found 10, expected one of: {5, 3, 4}</li>
 <li>uni1D00 (U+1D00): found 4, expected one of: {2}</li>
 <li>uni1D07 (U+1D07): found 4, expected one of: {1}</li>
 <li>uni1D43 (U+1D43): found 5, expected one of: {2}</li>
-<li>uni1D49 (U+1D49): found 5, expected one of: {2, 1}</li>
+<li>uni1D49 (U+1D49): found 5, expected one of: {1, 2}</li>
 <li>uni1D4B (U+1D4B): found 5, expected one of: {1}</li>
 <li>uni1D52 (U+1D52): found 4, expected one of: {2}</li>
 <li>uni1D53 (U+1D53): found 3, expected one of: {1}</li>
@@ -1697,8 +1593,8 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E05 (U+1E05): found 5, expected one of: {3}</li>
 <li>uni1E06 (U+1E06): found 10, expected one of: {4}</li>
 <li>uni1E07 (U+1E07): found 5, expected one of: {3}</li>
-<li>uni1E08 (U+1E08): found 8, expected one of: {3, 2}</li>
-<li>uni1E09 (U+1E09): found 8, expected one of: {3, 2}</li>
+<li>uni1E08 (U+1E08): found 8, expected one of: {2, 3}</li>
+<li>uni1E09 (U+1E09): found 8, expected one of: {2, 3}</li>
 <li>uni1E0A (U+1E0A): found 6, expected one of: {3}</li>
 <li>uni1E0B (U+1E0B): found 5, expected one of: {3}</li>
 <li>uni1E0C (U+1E0C): found 6, expected one of: {3}</li>
@@ -1709,20 +1605,20 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E11 (U+1E11): found 8, expected one of: {3}</li>
 <li>uni1E12 (U+1E12): found 7, expected one of: {3}</li>
 <li>uni1E13 (U+1E13): found 6, expected one of: {3}</li>
-<li>uni1E14 (U+1E14): found 6, expected one of: {4, 3}</li>
-<li>uni1E15 (U+1E15): found 7, expected one of: {4, 3}</li>
+<li>uni1E14 (U+1E14): found 6, expected one of: {3, 4}</li>
+<li>uni1E15 (U+1E15): found 7, expected one of: {3, 4}</li>
 <li>uni1E16 (U+1E16): found 6, expected one of: {3, 4}</li>
 <li>uni1E17 (U+1E17): found 7, expected one of: {4, 3}</li>
 <li>uni1E18 (U+1E18): found 6, expected one of: {2}</li>
 <li>uni1E19 (U+1E19): found 7, expected one of: {3, 2}</li>
 <li>uni1E1A (U+1E1A): found 7, expected one of: {2}</li>
 <li>uni1E1B (U+1E1B): found 8, expected one of: {3, 2}</li>
-<li>uni1E1C (U+1E1C): found 11, expected one of: {2, 4, 3}</li>
-<li>uni1E1D (U+1E1D): found 12, expected one of: {3, 4}</li>
+<li>uni1E1C (U+1E1C): found 11, expected one of: {4, 2, 3}</li>
+<li>uni1E1D (U+1E1D): found 12, expected one of: {4, 3}</li>
 <li>uni1E1E (U+1E1E): found 4, expected one of: {2}</li>
 <li>uni1E1F (U+1E1F): found 4, expected one of: {2}</li>
 <li>uni1E20 (U+1E20): found 5, expected one of: {2}</li>
-<li>uni1E21 (U+1E21): found 6, expected one of: {3, 4, 5}</li>
+<li>uni1E21 (U+1E21): found 6, expected one of: {4, 5, 3}</li>
 <li>uni1E22 (U+1E22): found 4, expected one of: {2}</li>
 <li>uni1E23 (U+1E23): found 4, expected one of: {2}</li>
 <li>uni1E25 (U+1E25): found 4, expected one of: {2}</li>
@@ -1731,7 +1627,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E28 (U+1E28): found 7, expected one of: {2}</li>
 <li>uni1E29 (U+1E29): found 7, expected one of: {2}</li>
 <li>uni1E2A (U+1E2A): found 6, expected one of: {2, 4}</li>
-<li>uni1E2B (U+1E2B): found 6, expected one of: {3, 2}</li>
+<li>uni1E2B (U+1E2B): found 6, expected one of: {2, 3}</li>
 <li>uni1E2C (U+1E2C): found 6, expected one of: {2}</li>
 <li>uni1E2D (U+1E2D): found 7, expected one of: {3}</li>
 <li>uni1E2E (U+1E2E): found 6, expected one of: {5, 4}</li>
@@ -1773,10 +1669,10 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E57 (U+1E57): found 5, expected one of: {3}</li>
 <li>uni1E58 (U+1E58): found 6, expected one of: {3}</li>
 <li>uni1E59 (U+1E59): found 4, expected one of: {2}</li>
-<li>uni1E5A (U+1E5A): found 6, expected one of: {4, 3}</li>
+<li>uni1E5A (U+1E5A): found 6, expected one of: {3, 4}</li>
 <li>uni1E5B (U+1E5B): found 4, expected one of: {2, 3}</li>
 <li>uni1E5C (U+1E5C): found 7, expected one of: {4}</li>
-<li>uni1E5D (U+1E5D): found 5, expected one of: {3, 4}</li>
+<li>uni1E5D (U+1E5D): found 5, expected one of: {4, 3}</li>
 <li>uni1E5E (U+1E5E): found 6, expected one of: {3, 4}</li>
 <li>uni1E5F (U+1E5F): found 4, expected one of: {2, 3}</li>
 <li>uni1E60 (U+1E60): found 6, expected one of: {2}</li>
@@ -1792,7 +1688,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E6A (U+1E6A): found 3, expected one of: {2}</li>
 <li>uni1E6B (U+1E6B): found 4, expected one of: {2}</li>
 <li>uni1E6C (U+1E6C): found 3, expected one of: {2}</li>
-<li>uni1E6D (U+1E6D): found 4, expected one of: {3, 2}</li>
+<li>uni1E6D (U+1E6D): found 4, expected one of: {2, 3}</li>
 <li>uni1E6E (U+1E6E): found 3, expected one of: {2}</li>
 <li>uni1E6F (U+1E6F): found 4, expected one of: {3, 2}</li>
 <li>uni1E70 (U+1E70): found 4, expected one of: {2}</li>
@@ -1804,7 +1700,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E76 (U+1E76): found 5, expected one of: {2}</li>
 <li>uni1E77 (U+1E77): found 5, expected one of: {2}</li>
 <li>uni1E78 (U+1E78): found 7, expected one of: {3}</li>
-<li>uni1E79 (U+1E79): found 7, expected one of: {4, 3}</li>
+<li>uni1E79 (U+1E79): found 7, expected one of: {3, 4}</li>
 <li>uni1E7A (U+1E7A): found 6, expected one of: {4}</li>
 <li>uni1E7B (U+1E7B): found 6, expected one of: {4, 5}</li>
 <li>uni1E7C (U+1E7C): found 5, expected one of: {2}</li>
@@ -1820,7 +1716,7 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E8C (U+1E8C): found 4, expected one of: {3}</li>
 <li>uni1E8D (U+1E8D): found 4, expected one of: {3}</li>
 <li>uni1E8E (U+1E8E): found 5, expected one of: {2, 3}</li>
-<li>uni1E8F (U+1E8F): found 5, expected one of: {2, 3}</li>
+<li>uni1E8F (U+1E8F): found 5, expected one of: {3, 2}</li>
 <li>uni1E90 (U+1E90): found 5, expected one of: {2}</li>
 <li>uni1E91 (U+1E91): found 5, expected one of: {2}</li>
 <li>uni1E92 (U+1E92): found 4, expected one of: {2}</li>
@@ -1833,21 +1729,21 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1E99 (U+1E99): found 6, expected one of: {3}</li>
 <li>uni1E9A (U+1E9A): found 8, expected one of: {3}</li>
 <li>uni1E9B (U+1E9B): found 4, expected one of: {2}</li>
-<li>uni1E9E (U+1E9E): found 8, expected one of: {1, 2, 3}</li>
+<li>uni1E9E (U+1E9E): found 8, expected one of: {2, 3, 1}</li>
 <li>uni1EA0 (U+1EA0): found 5, expected one of: {3}</li>
 <li>uni1EA1 (U+1EA1): found 6, expected one of: {3, 2}</li>
 <li>uni1EA2 (U+1EA2): found 8, expected one of: {3}</li>
-<li>uni1EA3 (U+1EA3): found 9, expected one of: {2, 3}</li>
-<li>uni1EA4 (U+1EA4): found 7, expected one of: {5, 4}</li>
+<li>uni1EA3 (U+1EA3): found 9, expected one of: {3, 2}</li>
+<li>uni1EA4 (U+1EA4): found 7, expected one of: {4, 5}</li>
 <li>uni1EA5 (U+1EA5): found 8, expected one of: {4, 3}</li>
 <li>uni1EA6 (U+1EA6): found 7, expected one of: {4, 5}</li>
-<li>uni1EA7 (U+1EA7): found 8, expected one of: {3, 4}</li>
+<li>uni1EA7 (U+1EA7): found 8, expected one of: {4, 3}</li>
 <li>uni1EA8 (U+1EA8): found 10, expected one of: {4, 5}</li>
 <li>uni1EA9 (U+1EA9): found 11, expected one of: {4, 3}</li>
-<li>uni1EAA (U+1EAA): found 9, expected one of: {4, 5}</li>
-<li>uni1EAB (U+1EAB): found 10, expected one of: {3, 4}</li>
-<li>uni1EAC (U+1EAC): found 7, expected one of: {5, 4}</li>
-<li>uni1EAD (U+1EAD): found 8, expected one of: {4, 3}</li>
+<li>uni1EAA (U+1EAA): found 9, expected one of: {5, 4}</li>
+<li>uni1EAB (U+1EAB): found 10, expected one of: {4, 3}</li>
+<li>uni1EAC (U+1EAC): found 7, expected one of: {4, 5}</li>
+<li>uni1EAD (U+1EAD): found 8, expected one of: {3, 4}</li>
 <li>uni1EAE (U+1EAE): found 8, expected one of: {4}</li>
 <li>uni1EAF (U+1EAF): found 9, expected one of: {4, 3}</li>
 <li>uni1EB0 (U+1EB0): found 8, expected one of: {4}</li>
@@ -1855,26 +1751,26 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1EB2 (U+1EB2): found 11, expected one of: {4}</li>
 <li>uni1EB3 (U+1EB3): found 12, expected one of: {4, 3}</li>
 <li>uni1EB4 (U+1EB4): found 10, expected one of: {4}</li>
-<li>uni1EB5 (U+1EB5): found 11, expected one of: {4, 3}</li>
+<li>uni1EB5 (U+1EB5): found 11, expected one of: {3, 4}</li>
 <li>uni1EB6 (U+1EB6): found 8, expected one of: {4}</li>
-<li>uni1EB7 (U+1EB7): found 9, expected one of: {4, 3}</li>
+<li>uni1EB7 (U+1EB7): found 9, expected one of: {3, 4}</li>
 <li>uni1EB8 (U+1EB8): found 5, expected one of: {2, 3}</li>
 <li>uni1EB9 (U+1EB9): found 6, expected one of: {3, 2}</li>
 <li>uni1EBA (U+1EBA): found 8, expected one of: {2, 3}</li>
-<li>uni1EBB (U+1EBB): found 9, expected one of: {2, 3}</li>
-<li>uni1EBC (U+1EBC): found 7, expected one of: {3, 2}</li>
+<li>uni1EBB (U+1EBB): found 9, expected one of: {3, 2}</li>
+<li>uni1EBC (U+1EBC): found 7, expected one of: {2, 3}</li>
 <li>uni1EBD (U+1EBD): found 8, expected one of: {2, 3}</li>
-<li>uni1EBE (U+1EBE): found 7, expected one of: {4, 3}</li>
+<li>uni1EBE (U+1EBE): found 7, expected one of: {3, 4}</li>
 <li>uni1EBF (U+1EBF): found 8, expected one of: {4, 3}</li>
 <li>uni1EC0 (U+1EC0): found 7, expected one of: {4, 3}</li>
-<li>uni1EC1 (U+1EC1): found 8, expected one of: {3, 4}</li>
+<li>uni1EC1 (U+1EC1): found 8, expected one of: {4, 3}</li>
 <li>uni1EC2 (U+1EC2): found 10, expected one of: {3, 4}</li>
-<li>uni1EC3 (U+1EC3): found 11, expected one of: {3, 4}</li>
+<li>uni1EC3 (U+1EC3): found 11, expected one of: {4, 3}</li>
 <li>uni1EC4 (U+1EC4): found 9, expected one of: {3, 4}</li>
-<li>uni1EC5 (U+1EC5): found 10, expected one of: {4, 3}</li>
-<li>uni1EC6 (U+1EC6): found 7, expected one of: {3, 4}</li>
+<li>uni1EC5 (U+1EC5): found 10, expected one of: {3, 4}</li>
+<li>uni1EC6 (U+1EC6): found 7, expected one of: {4, 3}</li>
 <li>uni1EC7 (U+1EC7): found 8, expected one of: {4, 3}</li>
-<li>uni1EC8 (U+1EC8): found 7, expected one of: {2, 3}</li>
+<li>uni1EC8 (U+1EC8): found 7, expected one of: {3, 2}</li>
 <li>uni1EC9 (U+1EC9): found 7, expected one of: {2}</li>
 <li>uni1ECA (U+1ECA): found 4, expected one of: {2}</li>
 <li>uni1ECB (U+1ECB): found 5, expected one of: {3}</li>
@@ -1882,46 +1778,46 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1ECD (U+1ECD): found 5, expected one of: {3}</li>
 <li>uni1ECE (U+1ECE): found 8, expected one of: {3, 2}</li>
 <li>uni1ECF (U+1ECF): found 8, expected one of: {3}</li>
-<li>uni1ED0 (U+1ED0): found 7, expected one of: {4, 5, 3}</li>
+<li>uni1ED0 (U+1ED0): found 7, expected one of: {5, 3, 4}</li>
 <li>uni1ED1 (U+1ED1): found 7, expected one of: {4, 5}</li>
-<li>uni1ED2 (U+1ED2): found 7, expected one of: {5, 3, 4}</li>
+<li>uni1ED2 (U+1ED2): found 7, expected one of: {4, 5, 3}</li>
 <li>uni1ED3 (U+1ED3): found 7, expected one of: {4, 5}</li>
 <li>uni1ED4 (U+1ED4): found 10, expected one of: {3, 4, 5}</li>
-<li>uni1ED5 (U+1ED5): found 10, expected one of: {4, 5}</li>
-<li>uni1ED6 (U+1ED6): found 9, expected one of: {4, 3, 5}</li>
-<li>uni1ED7 (U+1ED7): found 9, expected one of: {5, 4}</li>
-<li>uni1ED8 (U+1ED8): found 7, expected one of: {4, 3, 5}</li>
+<li>uni1ED5 (U+1ED5): found 10, expected one of: {5, 4}</li>
+<li>uni1ED6 (U+1ED6): found 9, expected one of: {4, 5, 3}</li>
+<li>uni1ED7 (U+1ED7): found 9, expected one of: {4, 5}</li>
+<li>uni1ED8 (U+1ED8): found 7, expected one of: {3, 5, 4}</li>
 <li>uni1ED9 (U+1ED9): found 7, expected one of: {4, 5}</li>
 <li>uni1EDA (U+1EDA): found 7, expected one of: {4, 3}</li>
-<li>uni1EDB (U+1EDB): found 7, expected one of: {3, 4}</li>
+<li>uni1EDB (U+1EDB): found 7, expected one of: {4, 3}</li>
 <li>uni1EDC (U+1EDC): found 7, expected one of: {3, 4}</li>
-<li>uni1EDD (U+1EDD): found 7, expected one of: {3, 4}</li>
-<li>uni1EDE (U+1EDE): found 10, expected one of: {4, 3}</li>
-<li>uni1EDF (U+1EDF): found 10, expected one of: {3, 4}</li>
+<li>uni1EDD (U+1EDD): found 7, expected one of: {4, 3}</li>
+<li>uni1EDE (U+1EDE): found 10, expected one of: {3, 4}</li>
+<li>uni1EDF (U+1EDF): found 10, expected one of: {4, 3}</li>
 <li>uni1EE0 (U+1EE0): found 9, expected one of: {3, 4}</li>
-<li>uni1EE1 (U+1EE1): found 9, expected one of: {4, 3}</li>
-<li>uni1EE2 (U+1EE2): found 7, expected one of: {4, 3}</li>
+<li>uni1EE1 (U+1EE1): found 9, expected one of: {3, 4}</li>
+<li>uni1EE2 (U+1EE2): found 7, expected one of: {3, 4}</li>
 <li>uni1EE3 (U+1EE3): found 7, expected one of: {3, 4}</li>
 <li>uni1EE4 (U+1EE4): found 4, expected one of: {2}</li>
 <li>uni1EE5 (U+1EE5): found 4, expected one of: {2, 3}</li>
 <li>uni1EE6 (U+1EE6): found 7, expected one of: {2}</li>
-<li>uni1EE7 (U+1EE7): found 7, expected one of: {2, 3}</li>
+<li>uni1EE7 (U+1EE7): found 7, expected one of: {3, 2}</li>
 <li>uni1EE8 (U+1EE8): found 6, expected one of: {3, 2}</li>
-<li>uni1EE9 (U+1EE9): found 6, expected one of: {3, 2, 4}</li>
+<li>uni1EE9 (U+1EE9): found 6, expected one of: {2, 4, 3}</li>
 <li>uni1EEA (U+1EEA): found 6, expected one of: {2, 3}</li>
-<li>uni1EEB (U+1EEB): found 6, expected one of: {4, 2, 3}</li>
-<li>uni1EEC (U+1EEC): found 9, expected one of: {3, 2}</li>
-<li>uni1EED (U+1EED): found 9, expected one of: {2, 4, 3}</li>
-<li>uni1EEE (U+1EEE): found 8, expected one of: {2, 3}</li>
+<li>uni1EEB (U+1EEB): found 6, expected one of: {3, 4, 2}</li>
+<li>uni1EEC (U+1EEC): found 9, expected one of: {2, 3}</li>
+<li>uni1EED (U+1EED): found 9, expected one of: {4, 3, 2}</li>
+<li>uni1EEE (U+1EEE): found 8, expected one of: {3, 2}</li>
 <li>uni1EEF (U+1EEF): found 8, expected one of: {3, 2, 4}</li>
-<li>uni1EF0 (U+1EF0): found 6, expected one of: {3, 2}</li>
-<li>uni1EF1 (U+1EF1): found 6, expected one of: {4, 3, 2}</li>
-<li>uni1EF4 (U+1EF4): found 5, expected one of: {2, 3}</li>
+<li>uni1EF0 (U+1EF0): found 6, expected one of: {2, 3}</li>
+<li>uni1EF1 (U+1EF1): found 6, expected one of: {4, 2, 3}</li>
+<li>uni1EF4 (U+1EF4): found 5, expected one of: {3, 2}</li>
 <li>uni1EF5 (U+1EF5): found 5, expected one of: {3, 2}</li>
-<li>uni1EF6 (U+1EF6): found 8, expected one of: {3, 2}</li>
-<li>uni1EF7 (U+1EF7): found 8, expected one of: {3, 2}</li>
+<li>uni1EF6 (U+1EF6): found 8, expected one of: {2, 3}</li>
+<li>uni1EF7 (U+1EF7): found 8, expected one of: {2, 3}</li>
 <li>uni1EF8 (U+1EF8): found 7, expected one of: {2, 3}</li>
-<li>uni1EF9 (U+1EF9): found 7, expected one of: {3, 2}</li>
+<li>uni1EF9 (U+1EF9): found 7, expected one of: {2, 3}</li>
 <li>uni1F00 (U+1F00): found 7, expected one of: {3}</li>
 <li>uni1F01 (U+1F01): found 7, expected one of: {3}</li>
 <li>uni1F02 (U+1F02): found 8, expected one of: {4}</li>
@@ -2131,8 +2027,8 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni1FE1 (U+1FE1): found 5, expected one of: {2}</li>
 <li>uni1FE2 (U+1FE2): found 7, expected one of: {4}</li>
 <li>uni1FE3 (U+1FE3): found 7, expected one of: {4}</li>
-<li>uni1FE4 (U+1FE4): found 6, expected one of: {3, 2}</li>
-<li>uni1FE5 (U+1FE5): found 6, expected one of: {2, 3}</li>
+<li>uni1FE4 (U+1FE4): found 6, expected one of: {2, 3}</li>
+<li>uni1FE5 (U+1FE5): found 6, expected one of: {3, 2}</li>
 <li>uni1FE6 (U+1FE6): found 7, expected one of: {2}</li>
 <li>uni1FE7 (U+1FE7): found 9, expected one of: {4}</li>
 <li>uni1FE8 (U+1FE8): found 7, expected one of: {2}</li>
@@ -2163,22 +2059,22 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni208A (U+208A): found 2, expected one of: {1}</li>
 <li>uni208D (U+208D): found 3, expected one of: {1}</li>
 <li>uni208E (U+208E): found 3, expected one of: {1}</li>
-<li>uni20A8 (U+20A8): found 10, expected one of: {2, 3}</li>
-<li>uni20AD (U+20AD): found 4, expected one of: {3, 2, 1}</li>
-<li>uni20B2 (U+20B2): found 5, expected one of: {3, 2, 1}</li>
-<li>uni20B4 (U+20B4): found 7, expected one of: {3, 2, 1, 4}</li>
-<li>uni20B5 (U+20B5): found 4, expected one of: {2, 1, 3}</li>
-<li>uni20B9 (U+20B9): found 5, expected one of: {2, 1, 4, 3}</li>
-<li>uni20BC (U+20BC): found 4, expected one of: {1, 2}</li>
-<li>uni20BE (U+20BE): found 7, expected one of: {2, 1, 3}</li>
-<li>uni20BF (U+20BF): found 13, expected one of: {3, 7}</li>
-<li>uni2117 (U+2117): found 8, expected one of: {4, 3}</li>
+<li>uni20A8 (U+20A8): found 10, expected one of: {3, 2}</li>
+<li>uni20AD (U+20AD): found 4, expected one of: {2, 1, 3}</li>
+<li>uni20B2 (U+20B2): found 5, expected one of: {2, 1, 3}</li>
+<li>uni20B4 (U+20B4): found 7, expected one of: {1, 2, 4, 3}</li>
+<li>uni20B5 (U+20B5): found 4, expected one of: {3, 1, 2}</li>
+<li>uni20B9 (U+20B9): found 5, expected one of: {3, 2, 1, 4}</li>
+<li>uni20BC (U+20BC): found 4, expected one of: {2, 1}</li>
+<li>uni20BE (U+20BE): found 7, expected one of: {3, 1, 2}</li>
+<li>uni20BF (U+20BF): found 13, expected one of: {7, 3}</li>
+<li>uni2117 (U+2117): found 8, expected one of: {3, 4}</li>
 <li>uni2120 (U+2120): found 9, expected one of: {2}</li>
 <li>uni2144 (U+2144): found 4, expected one of: {1}</li>
-<li>uni2196 (U+2196): found 3, expected one of: {1, 2}</li>
-<li>uni2197 (U+2197): found 3, expected one of: {2, 1}</li>
+<li>uni2196 (U+2196): found 3, expected one of: {2, 1}</li>
+<li>uni2197 (U+2197): found 3, expected one of: {1, 2}</li>
 <li>uni2198 (U+2198): found 3, expected one of: {2, 1}</li>
-<li>uni2199 (U+2199): found 3, expected one of: {1, 2}</li>
+<li>uni2199 (U+2199): found 3, expected one of: {2, 1}</li>
 <li>uni27E8 (U+27E8): found 2, expected one of: {1}</li>
 <li>uni27E9 (U+27E9): found 2, expected one of: {1}</li>
 <li>uni2C62 (U+2C62): found 5, expected one of: {2}</li>
@@ -2192,34 +2088,35 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>uni2C73 (U+2C73): found 6, expected one of: {1}</li>
 <li>uniA78D (U+A78D): found 3, expected one of: {1}</li>
 <li>uniA7AA (U+A7AA): found 5, expected one of: {1, 2}</li>
+<li>uniA7AD (U+A7AD): found 5, expected one of: {2}</li>
 <li>uniA7AE (U+A7AE): found 7, expected one of: {1}</li>
 <li>uniA7B2 (U+A7B2): found 4, expected one of: {2}</li>
 <li>uniA7B3 (U+A7B3): found 4, expected one of: {1}</li>
-<li>uniA7B4 (U+A7B4): found 9, expected one of: {3, 2}</li>
-<li>uniA7B5 (U+A7B5): found 5, expected one of: {1, 2}</li>
+<li>uniA7B4 (U+A7B4): found 9, expected one of: {2, 3}</li>
+<li>uniA7B5 (U+A7B5): found 5, expected one of: {2, 1}</li>
 <li>uniA7B6 (U+A7B6): found 7, expected one of: {1}</li>
 <li>uniA7B7 (U+A7B7): found 7, expected one of: {1}</li>
 <li>uniAB53 (U+AB53): found 4, expected one of: {1}</li>
-<li>uogonek (U+0173): found 6, expected one of: {2, 3, 1}</li>
+<li>uogonek (U+0173): found 6, expected one of: {3, 1, 2}</li>
 <li>upsilon (U+03C5): found 4, expected one of: {1}</li>
 <li>upsilondieresis (U+03CB): found 6, expected one of: {3}</li>
 <li>upsilondieresistonos (U+03B0): found 7, expected one of: {4}</li>
 <li>upsilontonos (U+03CD): found 5, expected one of: {2}</li>
-<li>uring (U+016F): found 5, expected one of: {3, 4}</li>
-<li>utilde (U+0169): found 6, expected one of: {3, 2}</li>
+<li>uring (U+016F): found 5, expected one of: {4, 3}</li>
+<li>utilde (U+0169): found 6, expected one of: {2, 3}</li>
 <li>w (U+0077): found 4, expected one of: {2, 1, 3}</li>
 <li>wacute (U+1E83): found 5, expected one of: {3, 4, 2}</li>
 <li>wcircumflex (U+0175): found 6, expected one of: {3, 4, 2}</li>
-<li>wdieresis (U+1E85): found 6, expected one of: {4, 3, 5}</li>
-<li>wgrave (U+1E81): found 5, expected one of: {2, 4, 3}</li>
+<li>wdieresis (U+1E85): found 6, expected one of: {3, 4, 5}</li>
+<li>wgrave (U+1E81): found 5, expected one of: {2, 3, 4}</li>
 <li>xi (U+03BE): found 6, expected one of: {1}</li>
 <li>y (U+0079): found 4, expected one of: {2, 3, 1}</li>
-<li>yacute (U+00FD): found 5, expected one of: {3, 2, 4}</li>
-<li>ycircumflex (U+0177): found 6, expected one of: {2, 3, 4}</li>
-<li>ydieresis (U+00FF): found 6, expected one of: {4, 3}</li>
-<li>yen (U+00A5): found 6, expected one of: {3, 2, 4, 1, 5}</li>
+<li>yacute (U+00FD): found 5, expected one of: {2, 4, 3}</li>
+<li>ycircumflex (U+0177): found 6, expected one of: {3, 2, 4}</li>
+<li>ydieresis (U+00FF): found 6, expected one of: {3, 4}</li>
+<li>yen (U+00A5): found 6, expected one of: {1, 3, 2, 4, 5}</li>
 <li>ygrave (U+1EF3): found 5, expected one of: {2, 3}</li>
-<li>zcaron (U+017E): found 5, expected one of: {4, 3, 2}</li>
+<li>zcaron (U+017E): found 5, expected one of: {4, 2, 3}</li>
 <li>zeta (U+03B6): found 5, expected one of: {1}</li>
 </ul>
                                 
@@ -2715,26 +2612,6 @@ codepoint assignment of these to make sure they are correct.</p>
 
                             <span class='details_text'>
                                 
-                                    <p>Glyph uni0B2B has interpolation issues:</p>
-<ul>
-<li>Contour 7 becomes underweight in slnt=-20,wght=100 compared to default</li>
-</ul>
-                                
-                                
-                                     [code: glyph]
-                                
-                            </span>
-                        </li>
-                
-                
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
-
-                            <span class='details_text'>
-                                
                                     <p>Glyph uni0B30 has interpolation issues:</p>
 <ul>
 <li>Contour 4 becomes underweight in slnt=-20 compared to default</li>
@@ -2798,6 +2675,115 @@ codepoint assignment of these to make sure they are correct.</p>
                                     <p>Glyph uni0B33 has interpolation issues:</p>
 <ul>
 <li>Wrong start point: contour 2 should start at 6 in wght=100 (and contour should be reversed)</li>
+</ul>
+                                
+                                
+                                     [code: glyph]
+                                
+                            </span>
+                        </li>
+                
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>Glyph uni0B4D_uni0B19.blwf has interpolation issues:</p>
+<ul>
+<li>Contour order mismatch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] in default vs [6, 0, 1, 2, 4, 8, 5, 7, 3, 9] in slnt=-20,wght=100</li>
+<li>Contour 1 becomes underweight in slnt=-20,wght=100 compared to default</li>
+<li>Contour 2 becomes underweight in slnt=-20,wght=100 compared to default</li>
+<li>Wrong start point: contour 3 should start at 5 in slnt=-20,wght=100</li>
+<li>Contour 3 becomes underweight in slnt=-20,wght=100 compared to default</li>
+<li>Contour 4 becomes underweight in slnt=-20,wght=100 compared to default</li>
+<li>Wrong start point: contour 8 should start at 3 in slnt=-20,wght=100</li>
+<li>Contour 8 becomes underweight in slnt=-20,wght=100 compared to default</li>
+</ul>
+                                
+                                
+                                     [code: glyph]
+                                
+                            </span>
+                        </li>
+                
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>Glyph uni0B4D_uni0B1B.blwf has interpolation issues:</p>
+<ul>
+<li>Wrong start point: contour 4 should start at 3 in slnt=-20,wght=100</li>
+<li>Wrong start point: contour 10 should start at 3 in slnt=-20,wght=100</li>
+<li>Wrong start point: contour 11 should start at 3 in slnt=-20,wght=100</li>
+</ul>
+                                
+                                
+                                     [code: glyph]
+                                
+                            </span>
+                        </li>
+                
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>Glyph uni0B4D_uni0B1B.blwf has interpolation issues:</p>
+<ul>
+<li>Wrong start point: contour 10 should start at 3 in slnt=-20,wdth=200,wght=100</li>
+</ul>
+                                
+                                
+                                     [code: glyph]
+                                
+                            </span>
+                        </li>
+                
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>Glyph uni0B4D_uni0B22.blwf has interpolation issues:</p>
+<ul>
+<li>Contour 4 becomes underweight in slnt=-20,wdth=200 compared to default</li>
+</ul>
+                                
+                                
+                                     [code: glyph]
+                                
+                            </span>
+                        </li>
+                
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>Glyph uni0B4D_uni0B2A.blwf has interpolation issues:</p>
+<ul>
+<li>Wrong start point: contour 4 should start at 2 in slnt=-20,wght=100</li>
 </ul>
                                 
                                 
@@ -4012,33 +3998,33 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic</li>
-<li>U+0305 COMBINING OVERLINE: try adding one of: coptic, elbasan, math, glagolitic, gothic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, hebrew, tifinagh, malayalam, tai-le, todhri, syriac, old-permic, canadian-aboriginal, math, duployan</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
+<li>U+0305 COMBINING OVERLINE: try adding one of: glagolitic, coptic, gothic, elbasan, math</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, syriac, coptic, hebrew, tifinagh, duployan, math, todhri, malayalam, old-permic, canadian-aboriginal</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+030D COMBINING VERTICAL LINE ABOVE: try adding sunuwar</li>
-<li>U+0310 COMBINING CANDRABINDU: try adding one of: sunuwar, math</li>
+<li>U+0310 COMBINING CANDRABINDU: try adding one of: math, sunuwar</li>
 <li>U+0311 COMBINING INVERTED BREVE: try adding one of: todhri, coptic</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
-<li>U+0313 COMBINING COMMA ABOVE: try adding one of: old-permic, todhri</li>
+<li>U+0313 COMBINING COMMA ABOVE: try adding one of: todhri, old-permic</li>
 <li>U+0315 COMBINING COMMA ABOVE RIGHT: try adding math</li>
-<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: syriac, cherokee, duployan</li>
+<li>U+0324 COMBINING DIAERESIS BELOW: try adding one of: duployan, syriac, cherokee</li>
 <li>U+0325 COMBINING RING BELOW: try adding syriac</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
-<li>U+032D COMBINING CIRCUMFLEX ACCENT BELOW: try adding one of: sunuwar, syriac</li>
+<li>U+032D COMBINING CIRCUMFLEX ACCENT BELOW: try adding one of: syriac, sunuwar</li>
 <li>U+032E COMBINING BREVE BELOW: try adding syriac</li>
 <li>U+032F COMBINING INVERTED BREVE BELOW: try adding math</li>
-<li>U+0330 COMBINING TILDE BELOW: try adding one of: math, syriac, cherokee</li>
-<li>U+0331 COMBINING MACRON BELOW: try adding one of: thai, tifinagh, cherokee, gothic, sunuwar, syriac, caucasian-albanian</li>
+<li>U+0330 COMBINING TILDE BELOW: try adding one of: cherokee, math, syriac</li>
+<li>U+0331 COMBINING MACRON BELOW: try adding one of: tifinagh, caucasian-albanian, cherokee, gothic, sunuwar, syriac, thai</li>
 <li>U+0332 COMBINING LOW LINE: try adding math</li>
 <li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
 <li>U+2007 FIGURE SPACE: try adding symbols2</li>
-<li>U+2010 HYPHEN: try adding one of: syloti-nagri, lisu, yi, sora-sompeng, kayah-li, sundanese, armenian, coptic, hebrew, arabic, cham, kaithi, kharoshthi</li>
-<li>U+2011 NON-BREAKING HYPHEN: try adding one of: yi, arabic, syloti-nagri</li>
+<li>U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, cham, yi, arabic, hebrew, sora-sompeng, sundanese, armenian, coptic, kayah-li, lisu, kharoshthi</li>
+<li>U+2011 NON-BREAKING HYPHEN: try adding one of: syloti-nagri, yi, arabic</li>
 <li>U+2015 HORIZONTAL BAR: try adding adlam</li>
 <li>U+2016 DOUBLE VERTICAL LINE: try adding math</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
@@ -4087,18 +4073,18 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>U+215E VULGAR FRACTION SEVEN EIGHTHS: try adding symbols</li>
 <li>U+2190 LEFTWARDS ARROW: try adding one of: math, symbols</li>
 <li>U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols</li>
-<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: math, symbols</li>
 <li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
-<li>U+2196 NORTH WEST ARROW: try adding one of: math, symbols</li>
-<li>U+2197 NORTH EAST ARROW: try adding one of: math, symbols</li>
-<li>U+2198 SOUTH EAST ARROW: try adding one of: math, symbols</li>
-<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2198 SOUTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: math, symbols</li>
 <li>U+2202 PARTIAL DIFFERENTIAL: try adding math</li>
 <li>U+2205 EMPTY SET: try adding math</li>
 <li>U+2206 INCREMENT: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: yi, tai-tham, symbols, math</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: tai-tham, math, yi, symbols</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+222B INTEGRAL: try adding math</li>
@@ -4123,16 +4109,16 @@ codepoint assignment of these to make sure they are correct.</p>
 <li>U+25B8 BLACK RIGHT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25B9 WHITE RIGHT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25BC BLACK DOWN-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: math, symbols</li>
+<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: symbols, math</li>
 <li>U+25BE BLACK DOWN-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25BF WHITE DOWN-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C0 BLACK LEFT-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: math, symbols</li>
+<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: symbols, math</li>
 <li>U+25C2 BLACK LEFT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C3 WHITE LEFT-POINTING SMALL TRIANGLE: try adding symbols</li>
 <li>U+25C6 BLACK DIAMOND: try adding symbols</li>
 <li>U+25C7 WHITE DIAMOND: try adding symbols</li>
-<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
+<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
 <li>U+25CF BLACK CIRCLE: try adding symbols</li>
 <li>U+25E6 WHITE BULLET: try adding symbols</li>
@@ -4682,2968 +4668,2968 @@ replace the dot.</h3>
                                 
                                     <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: * і́</p>
 <ul>
-<li>i̍</li>
 <li>i̓</li>
 <li>i᷆</li>
-<li>i᷇The dot of soft dotted characters <em>should</em> disappear in other cases, for example: * ɨ̦̍</li>
-<li>ɨ̦᷅</li>
-<li>ɨ̦᷄</li>
-<li>ɨ̦͂</li>
-<li>ɨ̦̓</li>
-<li>ɨ̦̔</li>
-<li>ɨ̦᷆</li>
-<li>ɨ̦᷇</li>
-<li>ɨ̧̍</li>
-<li>ɨ̧᷅</li>
-<li>ɨ̧᷄</li>
-<li>ɨ̧͂</li>
-<li>ɨ̧̓</li>
-<li>ɨ̧̔</li>
-<li>ɨ̧᷆</li>
-<li>ɨ̧᷇</li>
-<li>ɨ̵̍</li>
-<li>ɨ̵᷅</li>
-<li>ɨ̵᷄</li>
-<li>ɨ̵͂</li>
-<li>ɨ̵̓</li>
-<li>ɨ̵̔</li>
-<li>ɨ̵᷆</li>
-<li>ɨ̵᷇</li>
-<li>ɨ̩̍</li>
-<li>ɨ̩᷅</li>
-<li>ɨ̩᷄</li>
-<li>ɨ̩͂</li>
-<li>ɨ̩̓</li>
-<li>ɨ̩̔</li>
-<li>ɨ̩᷆</li>
-<li>ɨ̩᷇</li>
-<li>ɨ̥̍</li>
-<li>ɨ̥᷅</li>
-<li>ɨ̥᷄</li>
-<li>ɨ̥͂</li>
-<li>ɨ̥̓</li>
-<li>ɨ̥̔</li>
-<li>ɨ̥᷆</li>
-<li>ɨ̥᷇</li>
-<li>ɨ̨̍</li>
-<li>ɨ̨᷅</li>
-<li>ɨ̨᷄</li>
-<li>ɨ̨͂</li>
-<li>ɨ̨̓</li>
-<li>ɨ̨̔</li>
-<li>ɨ̨᷆</li>
-<li>ɨ̨᷇</li>
-<li>ɨ̣̍</li>
-<li>ɨ̣᷅</li>
-<li>ɨ̣᷄</li>
-<li>ɨ̣͂</li>
-<li>ɨ̣̓</li>
-<li>ɨ̣̔</li>
-<li>ɨ̣᷆</li>
-<li>ɨ̣᷇</li>
-<li>ɨ᷊̍</li>
-<li>ɨ᷊᷅</li>
-<li>ɨ᷊᷄</li>
-<li>ɨ᷊͂</li>
-<li>ɨ᷊̓</li>
-<li>ɨ᷊̔</li>
-<li>ɨ᷊᷆</li>
-<li>ɨ᷊᷇</li>
-<li>ɨ̱̍</li>
-<li>ɨ̱᷅</li>
-<li>ɨ̱᷄</li>
-<li>ɨ̱͂</li>
-<li>ɨ̱̓</li>
-<li>ɨ̱̔</li>
-<li>ɨ̱᷆</li>
-<li>ɨ̱᷇</li>
-<li>ɨ̮̍</li>
-<li>ɨ̮᷅</li>
-<li>ɨ̮᷄</li>
-<li>ɨ̮͂</li>
-<li>ɨ̮̓</li>
-<li>ɨ̮̔</li>
-<li>ɨ̮᷆</li>
-<li>ɨ̮᷇</li>
-<li>ɨ̯̍</li>
-<li>ɨ̯᷅</li>
-<li>ɨ̯᷄</li>
-<li>ɨ̯͂</li>
-<li>ɨ̯̓</li>
-<li>ɨ̯̔</li>
-<li>ɨ̯᷆</li>
-<li>ɨ̯᷇</li>
-<li>ɨ̲̍</li>
-<li>ɨ̲᷅</li>
-<li>ɨ̲᷄</li>
-<li>ɨ̲͂</li>
-<li>ɨ̲̓</li>
-<li>ɨ̲̔</li>
-<li>ɨ̲᷆</li>
-<li>ɨ̲᷇</li>
-<li>ɨ̭̍</li>
-<li>ɨ̭᷅</li>
-<li>ɨ̭᷄</li>
-<li>ɨ̭͂</li>
-<li>ɨ̭̓</li>
-<li>ɨ̭̔</li>
-<li>ɨ̭᷆</li>
-<li>ɨ̭᷇</li>
-<li>ɨ̤̍</li>
-<li>ɨ̤᷅</li>
-<li>ɨ̤᷄</li>
-<li>ɨ̤͂</li>
-<li>ɨ̤̓</li>
-<li>ɨ̤̔</li>
-<li>ɨ̤᷆</li>
-<li>ɨ̤᷇</li>
-<li>ɨ̰̍</li>
-<li>ɨ̰᷅</li>
-<li>ɨ̰᷄</li>
-<li>ɨ̰͂</li>
-<li>ɨ̰̓</li>
-<li>ɨ̰̔</li>
-<li>ɨ̰᷆</li>
-<li>ɨ̰᷇</li>
-<li>ɨ̍</li>
-<li>ɨ᷅</li>
-<li>ɨ᷄</li>
-<li>ɨ͂</li>
-<li>ɨ̓</li>
-<li>ɨ̔</li>
-<li>ɨ᷆</li>
-<li>ɨ᷇</li>
-<li>ᶤ̛̒</li>
-<li>ᶤ̛̌</li>
-<li>ᶤ̛̑</li>
-<li>ᶤ̛̀</li>
-<li>ᶤ̛̅</li>
-<li>ᶤ̛́</li>
-<li>ᶤ̛̃</li>
-<li>ᶤ̛̋</li>
-<li>ᶤ̛̇</li>
-<li>ᶤ̛̐</li>
-<li>ᶤ̛̍</li>
-<li>ᶤ̛̉</li>
-<li>ᶤ̛᷅</li>
-<li>ᶤ̛̏</li>
-<li>ᶤ̛᷄</li>
-<li>ᶤ̛͂</li>
-<li>ᶤ̛̓</li>
-<li>ᶤ̛̔</li>
-<li>ᶤ̛̄</li>
-<li>ᶤ̛̆</li>
-<li>ᶤ̛̂</li>
-<li>ᶤ̛᷆</li>
-<li>ᶤ̛̈</li>
-<li>ᶤ̛᷇</li>
-<li>ᶤ̛̊</li>
-<li>ᶤ̦̒</li>
-<li>ᶤ̦̌</li>
-<li>ᶤ̦̑</li>
-<li>ᶤ̦̀</li>
-<li>ᶤ̦̅</li>
-<li>ᶤ̦́</li>
-<li>ᶤ̦̃</li>
-<li>ᶤ̦̋</li>
-<li>ᶤ̦̇</li>
-<li>ᶤ̦̐</li>
-<li>ᶤ̦̍</li>
-<li>ᶤ̦̉</li>
-<li>ᶤ̦᷅</li>
-<li>ᶤ̦̏</li>
-<li>ᶤ̦᷄</li>
-<li>ᶤ̦͂</li>
-<li>ᶤ̦̓</li>
-<li>ᶤ̦̔</li>
-<li>ᶤ̦̄</li>
-<li>ᶤ̦̆</li>
-<li>ᶤ̦̂</li>
-<li>ᶤ̦᷆</li>
-<li>ᶤ̦̈</li>
-<li>ᶤ̦᷇</li>
-<li>ᶤ̦̊</li>
-<li>ᶤ̧̒</li>
-<li>ᶤ̧̌</li>
-<li>ᶤ̧̑</li>
-<li>ᶤ̧̀</li>
-<li>ᶤ̧̅</li>
-<li>ᶤ̧́</li>
-<li>ᶤ̧̃</li>
-<li>ᶤ̧̋</li>
-<li>ᶤ̧̇</li>
-<li>ᶤ̧̐</li>
-<li>ᶤ̧̍</li>
-<li>ᶤ̧̉</li>
-<li>ᶤ̧᷅</li>
-<li>ᶤ̧̏</li>
-<li>ᶤ̧᷄</li>
-<li>ᶤ̧͂</li>
-<li>ᶤ̧̓</li>
-<li>ᶤ̧̔</li>
-<li>ᶤ̧̄</li>
-<li>ᶤ̧̆</li>
-<li>ᶤ̧̂</li>
-<li>ᶤ̧᷆</li>
-<li>ᶤ̧̈</li>
-<li>ᶤ̧᷇</li>
-<li>ᶤ̧̊</li>
-<li>ᶤ̵̒</li>
-<li>ᶤ̵̌</li>
-<li>ᶤ̵̑</li>
-<li>ᶤ̵̀</li>
-<li>ᶤ̵̅</li>
-<li>ᶤ̵́</li>
-<li>ᶤ̵̃</li>
-<li>ᶤ̵̋</li>
-<li>ᶤ̵̇</li>
-<li>ᶤ̵̐</li>
-<li>ᶤ̵̍</li>
-<li>ᶤ̵̉</li>
-<li>ᶤ̵᷅</li>
-<li>ᶤ̵̏</li>
-<li>ᶤ̵᷄</li>
-<li>ᶤ̵͂</li>
-<li>ᶤ̵̓</li>
-<li>ᶤ̵̔</li>
-<li>ᶤ̵̄</li>
-<li>ᶤ̵̆</li>
-<li>ᶤ̵̂</li>
-<li>ᶤ̵᷆</li>
-<li>ᶤ̵̈</li>
-<li>ᶤ̵᷇</li>
-<li>ᶤ̵̊</li>
-<li>ᶤ̩̒</li>
-<li>ᶤ̩̌</li>
-<li>ᶤ̩̑</li>
-<li>ᶤ̩̀</li>
-<li>ᶤ̩̅</li>
-<li>ᶤ̩́</li>
-<li>ᶤ̩̃</li>
-<li>ᶤ̩̋</li>
-<li>ᶤ̩̇</li>
-<li>ᶤ̩̐</li>
-<li>ᶤ̩̍</li>
-<li>ᶤ̩̉</li>
-<li>ᶤ̩᷅</li>
-<li>ᶤ̩̏</li>
-<li>ᶤ̩᷄</li>
-<li>ᶤ̩͂</li>
-<li>ᶤ̩̓</li>
-<li>ᶤ̩̔</li>
-<li>ᶤ̩̄</li>
-<li>ᶤ̩̆</li>
-<li>ᶤ̩̂</li>
-<li>ᶤ̩᷆</li>
-<li>ᶤ̩̈</li>
-<li>ᶤ̩᷇</li>
-<li>ᶤ̩̊</li>
-<li>ᶤ̥̒</li>
-<li>ᶤ̥̌</li>
-<li>ᶤ̥̑</li>
-<li>ᶤ̥̀</li>
-<li>ᶤ̥̅</li>
-<li>ᶤ̥́</li>
-<li>ᶤ̥̃</li>
-<li>ᶤ̥̋</li>
-<li>ᶤ̥̇</li>
-<li>ᶤ̥̐</li>
-<li>ᶤ̥̍</li>
-<li>ᶤ̥̉</li>
-<li>ᶤ̥᷅</li>
-<li>ᶤ̥̏</li>
-<li>ᶤ̥᷄</li>
-<li>ᶤ̥͂</li>
-<li>ᶤ̥̓</li>
-<li>ᶤ̥̔</li>
-<li>ᶤ̥̄</li>
-<li>ᶤ̥̆</li>
-<li>ᶤ̥̂</li>
-<li>ᶤ̥᷆</li>
-<li>ᶤ̥̈</li>
-<li>ᶤ̥᷇</li>
-<li>ᶤ̥̊</li>
-<li>ᶤ̨̒</li>
-<li>ᶤ̨̌</li>
-<li>ᶤ̨̑</li>
-<li>ᶤ̨̀</li>
-<li>ᶤ̨̅</li>
-<li>ᶤ̨́</li>
-<li>ᶤ̨̃</li>
-<li>ᶤ̨̋</li>
-<li>ᶤ̨̇</li>
-<li>ᶤ̨̐</li>
-<li>ᶤ̨̍</li>
-<li>ᶤ̨̉</li>
-<li>ᶤ̨᷅</li>
-<li>ᶤ̨̏</li>
-<li>ᶤ̨᷄</li>
-<li>ᶤ̨͂</li>
-<li>ᶤ̨̓</li>
-<li>ᶤ̨̔</li>
-<li>ᶤ̨̄</li>
-<li>ᶤ̨̆</li>
-<li>ᶤ̨̂</li>
-<li>ᶤ̨᷆</li>
-<li>ᶤ̨̈</li>
-<li>ᶤ̨᷇</li>
-<li>ᶤ̨̊</li>
-<li>ᶤ̣̒</li>
-<li>ᶤ̣̌</li>
-<li>ᶤ̣̑</li>
-<li>ᶤ̣̀</li>
-<li>ᶤ̣̅</li>
-<li>ᶤ̣́</li>
-<li>ᶤ̣̃</li>
-<li>ᶤ̣̋</li>
-<li>ᶤ̣̇</li>
-<li>ᶤ̣̐</li>
-<li>ᶤ̣̍</li>
-<li>ᶤ̣̉</li>
-<li>ᶤ̣᷅</li>
-<li>ᶤ̣̏</li>
-<li>ᶤ̣᷄</li>
-<li>ᶤ̣͂</li>
-<li>ᶤ̣̓</li>
-<li>ᶤ̣̔</li>
-<li>ᶤ̣̄</li>
-<li>ᶤ̣̆</li>
-<li>ᶤ̣̂</li>
-<li>ᶤ̣᷆</li>
-<li>ᶤ̣̈</li>
-<li>ᶤ̣᷇</li>
-<li>ᶤ̣̊</li>
-<li>ᶤ᷊̒</li>
-<li>ᶤ᷊̌</li>
-<li>ᶤ᷊̑</li>
-<li>ᶤ᷊̀</li>
-<li>ᶤ᷊̅</li>
-<li>ᶤ᷊́</li>
-<li>ᶤ᷊̃</li>
-<li>ᶤ᷊̋</li>
-<li>ᶤ᷊̇</li>
-<li>ᶤ᷊̐</li>
-<li>ᶤ᷊̍</li>
-<li>ᶤ᷊̉</li>
-<li>ᶤ᷊᷅</li>
-<li>ᶤ᷊̏</li>
-<li>ᶤ᷊᷄</li>
-<li>ᶤ᷊͂</li>
-<li>ᶤ᷊̓</li>
-<li>ᶤ᷊̔</li>
-<li>ᶤ᷊̄</li>
-<li>ᶤ᷊̆</li>
-<li>ᶤ᷊̂</li>
-<li>ᶤ᷊᷆</li>
-<li>ᶤ᷊̈</li>
-<li>ᶤ᷊᷇</li>
-<li>ᶤ᷊̊</li>
-<li>ᶤ̱̒</li>
-<li>ᶤ̱̌</li>
-<li>ᶤ̱̑</li>
-<li>ᶤ̱̀</li>
-<li>ᶤ̱̅</li>
-<li>ᶤ̱́</li>
-<li>ᶤ̱̃</li>
-<li>ᶤ̱̋</li>
-<li>ᶤ̱̇</li>
-<li>ᶤ̱̐</li>
-<li>ᶤ̱̍</li>
-<li>ᶤ̱̉</li>
-<li>ᶤ̱᷅</li>
-<li>ᶤ̱̏</li>
-<li>ᶤ̱᷄</li>
-<li>ᶤ̱͂</li>
-<li>ᶤ̱̓</li>
-<li>ᶤ̱̔</li>
-<li>ᶤ̱̄</li>
-<li>ᶤ̱̆</li>
-<li>ᶤ̱̂</li>
-<li>ᶤ̱᷆</li>
-<li>ᶤ̱̈</li>
-<li>ᶤ̱᷇</li>
-<li>ᶤ̱̊</li>
-<li>ᶤ̮̒</li>
-<li>ᶤ̮̌</li>
-<li>ᶤ̮̑</li>
-<li>ᶤ̮̀</li>
-<li>ᶤ̮̅</li>
-<li>ᶤ̮́</li>
-<li>ᶤ̮̃</li>
-<li>ᶤ̮̋</li>
-<li>ᶤ̮̇</li>
-<li>ᶤ̮̐</li>
-<li>ᶤ̮̍</li>
-<li>ᶤ̮̉</li>
-<li>ᶤ̮᷅</li>
-<li>ᶤ̮̏</li>
-<li>ᶤ̮᷄</li>
-<li>ᶤ̮͂</li>
-<li>ᶤ̮̓</li>
-<li>ᶤ̮̔</li>
-<li>ᶤ̮̄</li>
-<li>ᶤ̮̆</li>
-<li>ᶤ̮̂</li>
-<li>ᶤ̮᷆</li>
-<li>ᶤ̮̈</li>
-<li>ᶤ̮᷇</li>
-<li>ᶤ̮̊</li>
-<li>ᶤ̯̒</li>
-<li>ᶤ̯̌</li>
-<li>ᶤ̯̑</li>
-<li>ᶤ̯̀</li>
-<li>ᶤ̯̅</li>
-<li>ᶤ̯́</li>
-<li>ᶤ̯̃</li>
-<li>ᶤ̯̋</li>
-<li>ᶤ̯̇</li>
-<li>ᶤ̯̐</li>
-<li>ᶤ̯̍</li>
-<li>ᶤ̯̉</li>
-<li>ᶤ̯᷅</li>
-<li>ᶤ̯̏</li>
-<li>ᶤ̯᷄</li>
-<li>ᶤ̯͂</li>
-<li>ᶤ̯̓</li>
-<li>ᶤ̯̔</li>
-<li>ᶤ̯̄</li>
-<li>ᶤ̯̆</li>
-<li>ᶤ̯̂</li>
-<li>ᶤ̯᷆</li>
-<li>ᶤ̯̈</li>
-<li>ᶤ̯᷇</li>
-<li>ᶤ̯̊</li>
-<li>ᶤ̲̒</li>
-<li>ᶤ̲̌</li>
-<li>ᶤ̲̑</li>
-<li>ᶤ̲̀</li>
-<li>ᶤ̲̅</li>
-<li>ᶤ̲́</li>
-<li>ᶤ̲̃</li>
-<li>ᶤ̲̋</li>
-<li>ᶤ̲̇</li>
-<li>ᶤ̲̐</li>
-<li>ᶤ̲̍</li>
-<li>ᶤ̲̉</li>
-<li>ᶤ̲᷅</li>
-<li>ᶤ̲̏</li>
-<li>ᶤ̲᷄</li>
-<li>ᶤ̲͂</li>
-<li>ᶤ̲̓</li>
-<li>ᶤ̲̔</li>
-<li>ᶤ̲̄</li>
-<li>ᶤ̲̆</li>
-<li>ᶤ̲̂</li>
-<li>ᶤ̲᷆</li>
-<li>ᶤ̲̈</li>
-<li>ᶤ̲᷇</li>
-<li>ᶤ̲̊</li>
-<li>ᶤ̭̒</li>
-<li>ᶤ̭̌</li>
-<li>ᶤ̭̑</li>
-<li>ᶤ̭̀</li>
-<li>ᶤ̭̅</li>
-<li>ᶤ̭́</li>
-<li>ᶤ̭̃</li>
-<li>ᶤ̭̋</li>
-<li>ᶤ̭̇</li>
-<li>ᶤ̭̐</li>
-<li>ᶤ̭̍</li>
-<li>ᶤ̭̉</li>
-<li>ᶤ̭᷅</li>
-<li>ᶤ̭̏</li>
-<li>ᶤ̭᷄</li>
-<li>ᶤ̭͂</li>
-<li>ᶤ̭̓</li>
-<li>ᶤ̭̔</li>
-<li>ᶤ̭̄</li>
-<li>ᶤ̭̆</li>
-<li>ᶤ̭̂</li>
-<li>ᶤ̭᷆</li>
-<li>ᶤ̭̈</li>
-<li>ᶤ̭᷇</li>
-<li>ᶤ̭̊</li>
-<li>ᶤ̤̒</li>
-<li>ᶤ̤̌</li>
-<li>ᶤ̤̑</li>
-<li>ᶤ̤̀</li>
-<li>ᶤ̤̅</li>
-<li>ᶤ̤́</li>
-<li>ᶤ̤̃</li>
-<li>ᶤ̤̋</li>
-<li>ᶤ̤̇</li>
-<li>ᶤ̤̐</li>
-<li>ᶤ̤̍</li>
-<li>ᶤ̤̉</li>
-<li>ᶤ̤᷅</li>
-<li>ᶤ̤̏</li>
-<li>ᶤ̤᷄</li>
-<li>ᶤ̤͂</li>
-<li>ᶤ̤̓</li>
-<li>ᶤ̤̔</li>
-<li>ᶤ̤̄</li>
-<li>ᶤ̤̆</li>
-<li>ᶤ̤̂</li>
-<li>ᶤ̤᷆</li>
-<li>ᶤ̤̈</li>
-<li>ᶤ̤᷇</li>
-<li>ᶤ̤̊</li>
-<li>ᶤ̰̒</li>
-<li>ᶤ̰̌</li>
-<li>ᶤ̰̑</li>
-<li>ᶤ̰̀</li>
-<li>ᶤ̰̅</li>
-<li>ᶤ̰́</li>
-<li>ᶤ̰̃</li>
-<li>ᶤ̰̋</li>
-<li>ᶤ̰̇</li>
-<li>ᶤ̰̐</li>
-<li>ᶤ̰̍</li>
-<li>ᶤ̰̉</li>
-<li>ᶤ̰᷅</li>
-<li>ᶤ̰̏</li>
-<li>ᶤ̰᷄</li>
-<li>ᶤ̰͂</li>
-<li>ᶤ̰̓</li>
-<li>ᶤ̰̔</li>
-<li>ᶤ̰̄</li>
-<li>ᶤ̰̆</li>
-<li>ᶤ̰̂</li>
-<li>ᶤ̰᷆</li>
-<li>ᶤ̰̈</li>
-<li>ᶤ̰᷇</li>
-<li>ᶤ̰̊</li>
-<li>ᶤ̒</li>
-<li>ᶤ̌</li>
-<li>ᶤ̑</li>
-<li>ᶤ̀</li>
-<li>ᶤ̅</li>
-<li>ᶤ́</li>
-<li>ᶤ̃</li>
-<li>ᶤ̋</li>
-<li>ᶤ̇</li>
-<li>ᶤ̐</li>
-<li>ᶤ̍</li>
-<li>ᶤ̉</li>
-<li>ᶤ᷅</li>
-<li>ᶤ̏</li>
-<li>ᶤ᷄</li>
-<li>ᶤ͂</li>
-<li>ᶤ̓</li>
-<li>ᶤ̔</li>
-<li>ᶤ̄</li>
-<li>ᶤ̆</li>
-<li>ᶤ̂</li>
-<li>ᶤ᷆</li>
-<li>ᶤ̈</li>
-<li>ᶤ᷇</li>
-<li>ᶤ̊</li>
-<li>ḭ̦̍</li>
-<li>ḭ̦᷅</li>
-<li>ḭ̦᷄</li>
-<li>ḭ̦͂</li>
-<li>ḭ̦̓</li>
-<li>ḭ̦̔</li>
-<li>ḭ̦᷆</li>
-<li>ḭ̦᷇</li>
-<li>ḭ̧̍</li>
-<li>ḭ̧᷅</li>
-<li>ḭ̧᷄</li>
-<li>ḭ̧͂</li>
-<li>ḭ̧̓</li>
-<li>ḭ̧̔</li>
-<li>ḭ̧᷆</li>
-<li>ḭ̧᷇</li>
-<li>ḭ̵̍</li>
-<li>ḭ̵᷅</li>
-<li>ḭ̵᷄</li>
-<li>ḭ̵͂</li>
-<li>ḭ̵̓</li>
-<li>ḭ̵̔</li>
-<li>ḭ̵᷆</li>
-<li>ḭ̵᷇</li>
-<li>ḭ̩̍</li>
-<li>ḭ̩᷅</li>
-<li>ḭ̩᷄</li>
-<li>ḭ̩͂</li>
-<li>ḭ̩̓</li>
-<li>ḭ̩̔</li>
-<li>ḭ̩᷆</li>
-<li>ḭ̩᷇</li>
-<li>ḭ̥̍</li>
-<li>ḭ̥᷅</li>
-<li>ḭ̥᷄</li>
-<li>ḭ̥͂</li>
-<li>ḭ̥̓</li>
-<li>ḭ̥̔</li>
-<li>ḭ̥᷆</li>
-<li>ḭ̥᷇</li>
-<li>ḭ̣̍</li>
-<li>ḭ̣᷅</li>
-<li>ḭ̣᷄</li>
-<li>ḭ̣͂</li>
+<li>i̍</li>
+<li>i᷇The dot of soft dotted characters <em>should</em> disappear in other cases, for example: * ḭ̣᷄</li>
 <li>ḭ̣̓</li>
 <li>ḭ̣̔</li>
 <li>ḭ̣᷆</li>
+<li>ḭ̣͂</li>
+<li>ḭ̣̍</li>
+<li>ḭ̣᷅</li>
 <li>ḭ̣᷇</li>
-<li>ḭ᷊̍</li>
-<li>ḭ᷊᷅</li>
-<li>ḭ᷊᷄</li>
-<li>ḭ᷊͂</li>
-<li>ḭ᷊̓</li>
-<li>ḭ᷊̔</li>
-<li>ḭ᷊᷆</li>
-<li>ḭ᷊᷇</li>
-<li>ḭ̱̍</li>
-<li>ḭ̱᷅</li>
-<li>ḭ̱᷄</li>
-<li>ḭ̱͂</li>
-<li>ḭ̱̓</li>
-<li>ḭ̱̔</li>
-<li>ḭ̱᷆</li>
-<li>ḭ̱᷇</li>
-<li>ḭ̮̍</li>
-<li>ḭ̮᷅</li>
+<li>ḭ̵᷄</li>
+<li>ḭ̵̓</li>
+<li>ḭ̵̔</li>
+<li>ḭ̵᷆</li>
+<li>ḭ̵͂</li>
+<li>ḭ̵̍</li>
+<li>ḭ̵᷅</li>
+<li>ḭ̵᷇</li>
+<li>ḭ̩᷄</li>
+<li>ḭ̩̓</li>
+<li>ḭ̩̔</li>
+<li>ḭ̩᷆</li>
+<li>ḭ̩͂</li>
+<li>ḭ̩̍</li>
+<li>ḭ̩᷅</li>
+<li>ḭ̩᷇</li>
 <li>ḭ̮᷄</li>
-<li>ḭ̮͂</li>
 <li>ḭ̮̓</li>
 <li>ḭ̮̔</li>
 <li>ḭ̮᷆</li>
+<li>ḭ̮͂</li>
+<li>ḭ̮̍</li>
+<li>ḭ̮᷅</li>
 <li>ḭ̮᷇</li>
-<li>ḭ̯̍</li>
-<li>ḭ̯᷅</li>
-<li>ḭ̯᷄</li>
-<li>ḭ̯͂</li>
-<li>ḭ̯̓</li>
-<li>ḭ̯̔</li>
-<li>ḭ̯᷆</li>
-<li>ḭ̯᷇</li>
-<li>ḭ̲̍</li>
-<li>ḭ̲᷅</li>
-<li>ḭ̲᷄</li>
-<li>ḭ̲͂</li>
-<li>ḭ̲̓</li>
-<li>ḭ̲̔</li>
-<li>ḭ̲᷆</li>
-<li>ḭ̲᷇</li>
-<li>ḭ̭̍</li>
-<li>ḭ̭᷅</li>
-<li>ḭ̭᷄</li>
-<li>ḭ̭͂</li>
-<li>ḭ̭̓</li>
-<li>ḭ̭̔</li>
-<li>ḭ̭᷆</li>
-<li>ḭ̭᷇</li>
-<li>ḭ̤̍</li>
-<li>ḭ̤᷅</li>
 <li>ḭ̤᷄</li>
-<li>ḭ̤͂</li>
 <li>ḭ̤̓</li>
 <li>ḭ̤̔</li>
 <li>ḭ̤᷆</li>
+<li>ḭ̤͂</li>
+<li>ḭ̤̍</li>
+<li>ḭ̤᷅</li>
 <li>ḭ̤᷇</li>
-<li>ḭ̰̍</li>
-<li>ḭ̰᷅</li>
+<li>ḭ̯᷄</li>
+<li>ḭ̯̓</li>
+<li>ḭ̯̔</li>
+<li>ḭ̯᷆</li>
+<li>ḭ̯͂</li>
+<li>ḭ̯̍</li>
+<li>ḭ̯᷅</li>
+<li>ḭ̯᷇</li>
 <li>ḭ̰᷄</li>
-<li>ḭ̰͂</li>
 <li>ḭ̰̓</li>
 <li>ḭ̰̔</li>
 <li>ḭ̰᷆</li>
+<li>ḭ̰͂</li>
+<li>ḭ̰̍</li>
+<li>ḭ̰᷅</li>
 <li>ḭ̰᷇</li>
-<li>ḭ̍</li>
-<li>ḭ᷅</li>
+<li>ḭ᷊᷄</li>
+<li>ḭ᷊̓</li>
+<li>ḭ᷊̔</li>
+<li>ḭ᷊᷆</li>
+<li>ḭ᷊͂</li>
+<li>ḭ᷊̍</li>
+<li>ḭ᷊᷅</li>
+<li>ḭ᷊᷇</li>
+<li>ḭ̭᷄</li>
+<li>ḭ̭̓</li>
+<li>ḭ̭̔</li>
+<li>ḭ̭᷆</li>
+<li>ḭ̭͂</li>
+<li>ḭ̭̍</li>
+<li>ḭ̭᷅</li>
+<li>ḭ̭᷇</li>
+<li>ḭ̦᷄</li>
+<li>ḭ̦̓</li>
+<li>ḭ̦̔</li>
+<li>ḭ̦᷆</li>
+<li>ḭ̦͂</li>
+<li>ḭ̦̍</li>
+<li>ḭ̦᷅</li>
+<li>ḭ̦᷇</li>
+<li>ḭ̲᷄</li>
+<li>ḭ̲̓</li>
+<li>ḭ̲̔</li>
+<li>ḭ̲᷆</li>
+<li>ḭ̲͂</li>
+<li>ḭ̲̍</li>
+<li>ḭ̲᷅</li>
+<li>ḭ̲᷇</li>
+<li>ḭ̱᷄</li>
+<li>ḭ̱̓</li>
+<li>ḭ̱̔</li>
+<li>ḭ̱᷆</li>
+<li>ḭ̱͂</li>
+<li>ḭ̱̍</li>
+<li>ḭ̱᷅</li>
+<li>ḭ̱᷇</li>
+<li>ḭ̧᷄</li>
+<li>ḭ̧̓</li>
+<li>ḭ̧̔</li>
+<li>ḭ̧᷆</li>
+<li>ḭ̧͂</li>
+<li>ḭ̧̍</li>
+<li>ḭ̧᷅</li>
+<li>ḭ̧᷇</li>
+<li>ḭ̥᷄</li>
+<li>ḭ̥̓</li>
+<li>ḭ̥̔</li>
+<li>ḭ̥᷆</li>
+<li>ḭ̥͂</li>
+<li>ḭ̥̍</li>
+<li>ḭ̥᷅</li>
+<li>ḭ̥᷇</li>
 <li>ḭ᷄</li>
-<li>ḭ͂</li>
 <li>ḭ̓</li>
 <li>ḭ̔</li>
 <li>ḭ᷆</li>
+<li>ḭ͂</li>
+<li>ḭ̍</li>
+<li>ḭ᷅</li>
 <li>ḭ᷇</li>
-<li>ј̛̒</li>
-<li>ј̛̌</li>
-<li>ј̛̑</li>
-<li>ј̛̀</li>
-<li>ј̛̅</li>
-<li>ј̛́</li>
-<li>ј̛̃</li>
-<li>ј̛̋</li>
-<li>ј̛̇</li>
-<li>ј̛̐</li>
-<li>ј̛̍</li>
-<li>ј̛̉</li>
-<li>ј̛᷅</li>
-<li>ј̛̏</li>
-<li>ј̛᷄</li>
-<li>ј̛͂</li>
-<li>ј̛̓</li>
-<li>ј̛̔</li>
-<li>ј̛̄</li>
-<li>ј̛̆</li>
-<li>ј̛̂</li>
-<li>ј̛᷆</li>
-<li>ј̛̈</li>
-<li>ј̛᷇</li>
-<li>ј̛̊</li>
-<li>ј̦̒</li>
-<li>ј̦̌</li>
-<li>ј̦̑</li>
-<li>ј̦̀</li>
-<li>ј̦̅</li>
-<li>ј̦́</li>
-<li>ј̦̃</li>
-<li>ј̦̋</li>
-<li>ј̦̇</li>
-<li>ј̦̐</li>
-<li>ј̦̍</li>
-<li>ј̦̉</li>
-<li>ј̦᷅</li>
-<li>ј̦̏</li>
-<li>ј̦᷄</li>
-<li>ј̦͂</li>
-<li>ј̦̓</li>
-<li>ј̦̔</li>
-<li>ј̦̄</li>
-<li>ј̦̆</li>
-<li>ј̦̂</li>
-<li>ј̦᷆</li>
-<li>ј̦̈</li>
-<li>ј̦᷇</li>
-<li>ј̦̊</li>
-<li>ј̧̒</li>
-<li>ј̧̌</li>
-<li>ј̧̑</li>
-<li>ј̧̀</li>
-<li>ј̧̅</li>
-<li>ј̧́</li>
-<li>ј̧̃</li>
-<li>ј̧̋</li>
-<li>ј̧̇</li>
-<li>ј̧̐</li>
-<li>ј̧̍</li>
-<li>ј̧̉</li>
-<li>ј̧᷅</li>
-<li>ј̧̏</li>
-<li>ј̧᷄</li>
-<li>ј̧͂</li>
-<li>ј̧̓</li>
-<li>ј̧̔</li>
-<li>ј̧̄</li>
-<li>ј̧̆</li>
-<li>ј̧̂</li>
-<li>ј̧᷆</li>
-<li>ј̧̈</li>
-<li>ј̧᷇</li>
-<li>ј̧̊</li>
-<li>ј̵̒</li>
-<li>ј̵̌</li>
-<li>ј̵̑</li>
-<li>ј̵̀</li>
-<li>ј̵̅</li>
-<li>ј̵́</li>
-<li>ј̵̃</li>
-<li>ј̵̋</li>
-<li>ј̵̇</li>
-<li>ј̵̐</li>
-<li>ј̵̍</li>
-<li>ј̵̉</li>
-<li>ј̵᷅</li>
-<li>ј̵̏</li>
-<li>ј̵᷄</li>
-<li>ј̵͂</li>
-<li>ј̵̓</li>
-<li>ј̵̔</li>
-<li>ј̵̄</li>
-<li>ј̵̆</li>
-<li>ј̵̂</li>
-<li>ј̵᷆</li>
-<li>ј̵̈</li>
-<li>ј̵᷇</li>
-<li>ј̵̊</li>
-<li>ј̩̒</li>
-<li>ј̩̌</li>
-<li>ј̩̑</li>
-<li>ј̩̀</li>
-<li>ј̩̅</li>
-<li>ј̩́</li>
-<li>ј̩̃</li>
-<li>ј̩̋</li>
-<li>ј̩̇</li>
-<li>ј̩̐</li>
-<li>ј̩̍</li>
-<li>ј̩̉</li>
-<li>ј̩᷅</li>
-<li>ј̩̏</li>
-<li>ј̩᷄</li>
-<li>ј̩͂</li>
-<li>ј̩̓</li>
-<li>ј̩̔</li>
-<li>ј̩̄</li>
-<li>ј̩̆</li>
-<li>ј̩̂</li>
-<li>ј̩᷆</li>
-<li>ј̩̈</li>
-<li>ј̩᷇</li>
-<li>ј̩̊</li>
-<li>ј̥̒</li>
-<li>ј̥̌</li>
-<li>ј̥̑</li>
-<li>ј̥̀</li>
-<li>ј̥̅</li>
-<li>ј̥́</li>
-<li>ј̥̃</li>
-<li>ј̥̋</li>
-<li>ј̥̇</li>
-<li>ј̥̐</li>
-<li>ј̥̍</li>
-<li>ј̥̉</li>
-<li>ј̥᷅</li>
-<li>ј̥̏</li>
-<li>ј̥᷄</li>
-<li>ј̥͂</li>
-<li>ј̥̓</li>
-<li>ј̥̔</li>
-<li>ј̥̄</li>
-<li>ј̥̆</li>
-<li>ј̥̂</li>
-<li>ј̥᷆</li>
-<li>ј̥̈</li>
-<li>ј̥᷇</li>
-<li>ј̥̊</li>
-<li>ј̨̒</li>
-<li>ј̨̌</li>
-<li>ј̨̑</li>
-<li>ј̨̀</li>
-<li>ј̨̅</li>
-<li>ј̨́</li>
-<li>ј̨̃</li>
-<li>ј̨̋</li>
-<li>ј̨̇</li>
-<li>ј̨̐</li>
-<li>ј̨̍</li>
-<li>ј̨̉</li>
-<li>ј̨᷅</li>
-<li>ј̨̏</li>
-<li>ј̨᷄</li>
-<li>ј̨͂</li>
-<li>ј̨̓</li>
-<li>ј̨̔</li>
-<li>ј̨̄</li>
-<li>ј̨̆</li>
-<li>ј̨̂</li>
-<li>ј̨᷆</li>
-<li>ј̨̈</li>
-<li>ј̨᷇</li>
-<li>ј̨̊</li>
-<li>ј̣̒</li>
-<li>ј̣̌</li>
-<li>ј̣̑</li>
-<li>ј̣̀</li>
-<li>ј̣̅</li>
-<li>ј̣́</li>
-<li>ј̣̃</li>
-<li>ј̣̋</li>
-<li>ј̣̇</li>
-<li>ј̣̐</li>
-<li>ј̣̍</li>
-<li>ј̣̉</li>
-<li>ј̣᷅</li>
-<li>ј̣̏</li>
-<li>ј̣᷄</li>
-<li>ј̣͂</li>
-<li>ј̣̓</li>
-<li>ј̣̔</li>
-<li>ј̣̄</li>
-<li>ј̣̆</li>
-<li>ј̣̂</li>
-<li>ј̣᷆</li>
-<li>ј̣̈</li>
-<li>ј̣᷇</li>
-<li>ј̣̊</li>
-<li>ј᷊̒</li>
-<li>ј᷊̌</li>
-<li>ј᷊̑</li>
-<li>ј᷊̀</li>
-<li>ј᷊̅</li>
-<li>ј᷊́</li>
-<li>ј᷊̃</li>
-<li>ј᷊̋</li>
-<li>ј᷊̇</li>
-<li>ј᷊̐</li>
-<li>ј᷊̍</li>
-<li>ј᷊̉</li>
-<li>ј᷊᷅</li>
-<li>ј᷊̏</li>
-<li>ј᷊᷄</li>
-<li>ј᷊͂</li>
-<li>ј᷊̓</li>
-<li>ј᷊̔</li>
-<li>ј᷊̄</li>
-<li>ј᷊̆</li>
-<li>ј᷊̂</li>
-<li>ј᷊᷆</li>
-<li>ј᷊̈</li>
-<li>ј᷊᷇</li>
-<li>ј᷊̊</li>
-<li>ј̱̒</li>
-<li>ј̱̌</li>
-<li>ј̱̑</li>
-<li>ј̱̀</li>
-<li>ј̱̅</li>
-<li>ј̱́</li>
-<li>ј̱̃</li>
-<li>ј̱̋</li>
-<li>ј̱̇</li>
-<li>ј̱̐</li>
-<li>ј̱̍</li>
-<li>ј̱̉</li>
-<li>ј̱᷅</li>
-<li>ј̱̏</li>
-<li>ј̱᷄</li>
-<li>ј̱͂</li>
-<li>ј̱̓</li>
-<li>ј̱̔</li>
-<li>ј̱̄</li>
-<li>ј̱̆</li>
-<li>ј̱̂</li>
-<li>ј̱᷆</li>
-<li>ј̱̈</li>
-<li>ј̱᷇</li>
-<li>ј̱̊</li>
-<li>ј̮̒</li>
-<li>ј̮̌</li>
-<li>ј̮̑</li>
-<li>ј̮̀</li>
-<li>ј̮̅</li>
-<li>ј̮́</li>
-<li>ј̮̃</li>
-<li>ј̮̋</li>
-<li>ј̮̇</li>
-<li>ј̮̐</li>
-<li>ј̮̍</li>
-<li>ј̮̉</li>
-<li>ј̮᷅</li>
-<li>ј̮̏</li>
-<li>ј̮᷄</li>
-<li>ј̮͂</li>
-<li>ј̮̓</li>
-<li>ј̮̔</li>
-<li>ј̮̄</li>
-<li>ј̮̆</li>
-<li>ј̮̂</li>
-<li>ј̮᷆</li>
-<li>ј̮̈</li>
-<li>ј̮᷇</li>
-<li>ј̮̊</li>
-<li>ј̯̒</li>
-<li>ј̯̌</li>
-<li>ј̯̑</li>
-<li>ј̯̀</li>
-<li>ј̯̅</li>
-<li>ј̯́</li>
-<li>ј̯̃</li>
-<li>ј̯̋</li>
-<li>ј̯̇</li>
-<li>ј̯̐</li>
-<li>ј̯̍</li>
-<li>ј̯̉</li>
-<li>ј̯᷅</li>
-<li>ј̯̏</li>
-<li>ј̯᷄</li>
-<li>ј̯͂</li>
-<li>ј̯̓</li>
-<li>ј̯̔</li>
-<li>ј̯̄</li>
-<li>ј̯̆</li>
-<li>ј̯̂</li>
-<li>ј̯᷆</li>
-<li>ј̯̈</li>
-<li>ј̯᷇</li>
-<li>ј̯̊</li>
-<li>ј̲̒</li>
-<li>ј̲̌</li>
-<li>ј̲̑</li>
-<li>ј̲̀</li>
-<li>ј̲̅</li>
-<li>ј̲́</li>
-<li>ј̲̃</li>
-<li>ј̲̋</li>
-<li>ј̲̇</li>
-<li>ј̲̐</li>
-<li>ј̲̍</li>
-<li>ј̲̉</li>
-<li>ј̲᷅</li>
-<li>ј̲̏</li>
-<li>ј̲᷄</li>
-<li>ј̲͂</li>
-<li>ј̲̓</li>
-<li>ј̲̔</li>
-<li>ј̲̄</li>
-<li>ј̲̆</li>
-<li>ј̲̂</li>
-<li>ј̲᷆</li>
-<li>ј̲̈</li>
-<li>ј̲᷇</li>
-<li>ј̲̊</li>
-<li>ј̭̒</li>
-<li>ј̭̌</li>
-<li>ј̭̑</li>
-<li>ј̭̀</li>
-<li>ј̭̅</li>
-<li>ј̭́</li>
-<li>ј̭̃</li>
-<li>ј̭̋</li>
-<li>ј̭̇</li>
-<li>ј̭̐</li>
-<li>ј̭̍</li>
-<li>ј̭̉</li>
-<li>ј̭᷅</li>
-<li>ј̭̏</li>
-<li>ј̭᷄</li>
-<li>ј̭͂</li>
-<li>ј̭̓</li>
-<li>ј̭̔</li>
-<li>ј̭̄</li>
-<li>ј̭̆</li>
-<li>ј̭̂</li>
-<li>ј̭᷆</li>
-<li>ј̭̈</li>
-<li>ј̭᷇</li>
-<li>ј̭̊</li>
-<li>ј̤̒</li>
-<li>ј̤̌</li>
-<li>ј̤̑</li>
-<li>ј̤̀</li>
-<li>ј̤̅</li>
-<li>ј̤́</li>
-<li>ј̤̃</li>
-<li>ј̤̋</li>
-<li>ј̤̇</li>
-<li>ј̤̐</li>
-<li>ј̤̍</li>
-<li>ј̤̉</li>
-<li>ј̤᷅</li>
-<li>ј̤̏</li>
-<li>ј̤᷄</li>
-<li>ј̤͂</li>
-<li>ј̤̓</li>
-<li>ј̤̔</li>
-<li>ј̤̄</li>
-<li>ј̤̆</li>
-<li>ј̤̂</li>
-<li>ј̤᷆</li>
-<li>ј̤̈</li>
-<li>ј̤᷇</li>
-<li>ј̤̊</li>
-<li>ј̰̒</li>
-<li>ј̰̌</li>
-<li>ј̰̑</li>
-<li>ј̰̀</li>
-<li>ј̰̅</li>
-<li>ј̰́</li>
-<li>ј̰̃</li>
-<li>ј̰̋</li>
-<li>ј̰̇</li>
-<li>ј̰̐</li>
-<li>ј̰̍</li>
-<li>ј̰̉</li>
-<li>ј̰᷅</li>
-<li>ј̰̏</li>
-<li>ј̰᷄</li>
-<li>ј̰͂</li>
-<li>ј̰̓</li>
-<li>ј̰̔</li>
-<li>ј̰̄</li>
-<li>ј̰̆</li>
-<li>ј̰̂</li>
-<li>ј̰᷆</li>
-<li>ј̰̈</li>
-<li>ј̰᷇</li>
-<li>ј̰̊</li>
-<li>ј̒</li>
-<li>ј̌</li>
-<li>ј̑</li>
-<li>ј̀</li>
-<li>ј̅</li>
-<li>ј́</li>
-<li>ј̃</li>
-<li>ј̋</li>
-<li>ј̇</li>
-<li>ј̐</li>
-<li>ј̍</li>
-<li>ј̉</li>
-<li>ј᷅</li>
-<li>ј̏</li>
-<li>ј᷄</li>
-<li>ј͂</li>
-<li>ј̓</li>
-<li>ј̔</li>
-<li>ј̄</li>
-<li>ј̆</li>
-<li>ј̂</li>
-<li>ј᷆</li>
-<li>ј̈</li>
-<li>ј᷇</li>
-<li>ј̊</li>
-<li>j̦̍</li>
-<li>j̦᷅</li>
-<li>j̦᷄</li>
-<li>j̦͂</li>
-<li>j̦̓</li>
-<li>j̦̔</li>
-<li>j̦᷆</li>
-<li>j̦᷇</li>
-<li>j̧̍</li>
-<li>j̧᷅</li>
-<li>j̧᷄</li>
-<li>j̧͂</li>
-<li>j̧̓</li>
-<li>j̧̔</li>
-<li>j̧᷆</li>
-<li>j̧᷇</li>
-<li>j̵̍</li>
-<li>j̵᷅</li>
-<li>j̵᷄</li>
-<li>j̵͂</li>
-<li>j̵̓</li>
-<li>j̵̔</li>
-<li>j̵᷆</li>
-<li>j̵᷇</li>
-<li>j̩̍</li>
-<li>j̩᷅</li>
-<li>j̩᷄</li>
-<li>j̩͂</li>
-<li>j̩̓</li>
-<li>j̩̔</li>
-<li>j̩᷆</li>
-<li>j̩᷇</li>
-<li>j̥̍</li>
-<li>j̥᷅</li>
-<li>j̥᷄</li>
-<li>j̥͂</li>
-<li>j̥̓</li>
-<li>j̥̔</li>
-<li>j̥᷆</li>
-<li>j̥᷇</li>
-<li>j̨̍</li>
-<li>j̨᷅</li>
-<li>j̨᷄</li>
-<li>j̨͂</li>
-<li>j̨̓</li>
-<li>j̨̔</li>
-<li>j̨᷆</li>
-<li>j̨᷇</li>
-<li>j̣̍</li>
-<li>j̣᷅</li>
-<li>j̣᷄</li>
-<li>j̣͂</li>
-<li>j̣̓</li>
-<li>j̣̔</li>
-<li>j̣᷆</li>
-<li>j̣᷇</li>
-<li>j᷊̍</li>
-<li>j᷊᷅</li>
-<li>j᷊᷄</li>
-<li>j᷊͂</li>
-<li>j᷊̓</li>
-<li>j᷊̔</li>
-<li>j᷊᷆</li>
-<li>j᷊᷇</li>
-<li>j̱̍</li>
-<li>j̱᷅</li>
-<li>j̱᷄</li>
-<li>j̱͂</li>
-<li>j̱̓</li>
-<li>j̱̔</li>
-<li>j̱᷆</li>
-<li>j̱᷇</li>
-<li>j̮̍</li>
-<li>j̮᷅</li>
-<li>j̮᷄</li>
-<li>j̮͂</li>
-<li>j̮̓</li>
-<li>j̮̔</li>
-<li>j̮᷆</li>
-<li>j̮᷇</li>
-<li>j̯̍</li>
-<li>j̯᷅</li>
-<li>j̯᷄</li>
-<li>j̯͂</li>
-<li>j̯̓</li>
-<li>j̯̔</li>
-<li>j̯᷆</li>
-<li>j̯᷇</li>
-<li>j̲̍</li>
-<li>j̲᷅</li>
-<li>j̲᷄</li>
-<li>j̲͂</li>
-<li>j̲̓</li>
-<li>j̲̔</li>
-<li>j̲᷆</li>
-<li>j̲᷇</li>
-<li>j̭̍</li>
-<li>j̭᷅</li>
-<li>j̭᷄</li>
-<li>j̭͂</li>
-<li>j̭̓</li>
-<li>j̭̔</li>
-<li>j̭᷆</li>
-<li>j̭᷇</li>
-<li>j̤̍</li>
-<li>j̤᷅</li>
-<li>j̤᷄</li>
-<li>j̤͂</li>
-<li>j̤̓</li>
-<li>j̤̔</li>
-<li>j̤᷆</li>
-<li>j̤᷇</li>
-<li>j̰̍</li>
-<li>j̰᷅</li>
-<li>j̰᷄</li>
-<li>j̰͂</li>
-<li>j̰̓</li>
-<li>j̰̔</li>
-<li>j̰᷆</li>
-<li>j̰᷇</li>
-<li>j̍</li>
-<li>j᷅</li>
-<li>j᷄</li>
-<li>j͂</li>
-<li>j̓</li>
-<li>j̔</li>
-<li>j᷆</li>
-<li>j᷇</li>
-<li>ⁱ̛̒</li>
-<li>ⁱ̛̌</li>
-<li>ⁱ̛̑</li>
-<li>ⁱ̛̀</li>
-<li>ⁱ̛̅</li>
-<li>ⁱ̛́</li>
-<li>ⁱ̛̃</li>
-<li>ⁱ̛̋</li>
-<li>ⁱ̛̇</li>
-<li>ⁱ̛̐</li>
-<li>ⁱ̛̍</li>
-<li>ⁱ̛̉</li>
-<li>ⁱ̛᷅</li>
-<li>ⁱ̛̏</li>
-<li>ⁱ̛᷄</li>
-<li>ⁱ̛͂</li>
-<li>ⁱ̛̓</li>
-<li>ⁱ̛̔</li>
-<li>ⁱ̛̄</li>
-<li>ⁱ̛̆</li>
-<li>ⁱ̛̂</li>
-<li>ⁱ̛᷆</li>
-<li>ⁱ̛̈</li>
-<li>ⁱ̛᷇</li>
-<li>ⁱ̛̊</li>
-<li>ⁱ̦̒</li>
-<li>ⁱ̦̌</li>
-<li>ⁱ̦̑</li>
-<li>ⁱ̦̀</li>
-<li>ⁱ̦̅</li>
-<li>ⁱ̦́</li>
-<li>ⁱ̦̃</li>
-<li>ⁱ̦̋</li>
-<li>ⁱ̦̇</li>
-<li>ⁱ̦̐</li>
-<li>ⁱ̦̍</li>
-<li>ⁱ̦̉</li>
-<li>ⁱ̦᷅</li>
-<li>ⁱ̦̏</li>
-<li>ⁱ̦᷄</li>
-<li>ⁱ̦͂</li>
-<li>ⁱ̦̓</li>
-<li>ⁱ̦̔</li>
-<li>ⁱ̦̄</li>
-<li>ⁱ̦̆</li>
-<li>ⁱ̦̂</li>
-<li>ⁱ̦᷆</li>
-<li>ⁱ̦̈</li>
-<li>ⁱ̦᷇</li>
-<li>ⁱ̦̊</li>
-<li>ⁱ̧̒</li>
-<li>ⁱ̧̌</li>
-<li>ⁱ̧̑</li>
-<li>ⁱ̧̀</li>
-<li>ⁱ̧̅</li>
-<li>ⁱ̧́</li>
-<li>ⁱ̧̃</li>
-<li>ⁱ̧̋</li>
-<li>ⁱ̧̇</li>
-<li>ⁱ̧̐</li>
-<li>ⁱ̧̍</li>
-<li>ⁱ̧̉</li>
-<li>ⁱ̧᷅</li>
-<li>ⁱ̧̏</li>
-<li>ⁱ̧᷄</li>
-<li>ⁱ̧͂</li>
-<li>ⁱ̧̓</li>
-<li>ⁱ̧̔</li>
-<li>ⁱ̧̄</li>
-<li>ⁱ̧̆</li>
-<li>ⁱ̧̂</li>
-<li>ⁱ̧᷆</li>
-<li>ⁱ̧̈</li>
-<li>ⁱ̧᷇</li>
-<li>ⁱ̧̊</li>
-<li>ⁱ̵̒</li>
-<li>ⁱ̵̌</li>
-<li>ⁱ̵̑</li>
-<li>ⁱ̵̀</li>
-<li>ⁱ̵̅</li>
-<li>ⁱ̵́</li>
-<li>ⁱ̵̃</li>
-<li>ⁱ̵̋</li>
-<li>ⁱ̵̇</li>
-<li>ⁱ̵̐</li>
-<li>ⁱ̵̍</li>
-<li>ⁱ̵̉</li>
-<li>ⁱ̵᷅</li>
-<li>ⁱ̵̏</li>
-<li>ⁱ̵᷄</li>
-<li>ⁱ̵͂</li>
-<li>ⁱ̵̓</li>
-<li>ⁱ̵̔</li>
-<li>ⁱ̵̄</li>
-<li>ⁱ̵̆</li>
-<li>ⁱ̵̂</li>
-<li>ⁱ̵᷆</li>
-<li>ⁱ̵̈</li>
-<li>ⁱ̵᷇</li>
-<li>ⁱ̵̊</li>
-<li>ⁱ̩̒</li>
-<li>ⁱ̩̌</li>
-<li>ⁱ̩̑</li>
-<li>ⁱ̩̀</li>
-<li>ⁱ̩̅</li>
-<li>ⁱ̩́</li>
-<li>ⁱ̩̃</li>
-<li>ⁱ̩̋</li>
-<li>ⁱ̩̇</li>
-<li>ⁱ̩̐</li>
-<li>ⁱ̩̍</li>
-<li>ⁱ̩̉</li>
-<li>ⁱ̩᷅</li>
-<li>ⁱ̩̏</li>
-<li>ⁱ̩᷄</li>
-<li>ⁱ̩͂</li>
-<li>ⁱ̩̓</li>
-<li>ⁱ̩̔</li>
-<li>ⁱ̩̄</li>
-<li>ⁱ̩̆</li>
-<li>ⁱ̩̂</li>
-<li>ⁱ̩᷆</li>
-<li>ⁱ̩̈</li>
-<li>ⁱ̩᷇</li>
-<li>ⁱ̩̊</li>
-<li>ⁱ̥̒</li>
-<li>ⁱ̥̌</li>
-<li>ⁱ̥̑</li>
-<li>ⁱ̥̀</li>
-<li>ⁱ̥̅</li>
-<li>ⁱ̥́</li>
-<li>ⁱ̥̃</li>
-<li>ⁱ̥̋</li>
-<li>ⁱ̥̇</li>
-<li>ⁱ̥̐</li>
-<li>ⁱ̥̍</li>
-<li>ⁱ̥̉</li>
-<li>ⁱ̥᷅</li>
-<li>ⁱ̥̏</li>
-<li>ⁱ̥᷄</li>
-<li>ⁱ̥͂</li>
-<li>ⁱ̥̓</li>
-<li>ⁱ̥̔</li>
-<li>ⁱ̥̄</li>
-<li>ⁱ̥̆</li>
-<li>ⁱ̥̂</li>
-<li>ⁱ̥᷆</li>
-<li>ⁱ̥̈</li>
-<li>ⁱ̥᷇</li>
-<li>ⁱ̥̊</li>
-<li>ⁱ̨̒</li>
-<li>ⁱ̨̌</li>
-<li>ⁱ̨̑</li>
-<li>ⁱ̨̀</li>
-<li>ⁱ̨̅</li>
-<li>ⁱ̨́</li>
-<li>ⁱ̨̃</li>
-<li>ⁱ̨̋</li>
-<li>ⁱ̨̇</li>
-<li>ⁱ̨̐</li>
-<li>ⁱ̨̍</li>
-<li>ⁱ̨̉</li>
-<li>ⁱ̨᷅</li>
-<li>ⁱ̨̏</li>
-<li>ⁱ̨᷄</li>
-<li>ⁱ̨͂</li>
-<li>ⁱ̨̓</li>
-<li>ⁱ̨̔</li>
-<li>ⁱ̨̄</li>
-<li>ⁱ̨̆</li>
-<li>ⁱ̨̂</li>
-<li>ⁱ̨᷆</li>
-<li>ⁱ̨̈</li>
-<li>ⁱ̨᷇</li>
-<li>ⁱ̨̊</li>
-<li>ⁱ̣̒</li>
-<li>ⁱ̣̌</li>
-<li>ⁱ̣̑</li>
-<li>ⁱ̣̀</li>
-<li>ⁱ̣̅</li>
-<li>ⁱ̣́</li>
-<li>ⁱ̣̃</li>
-<li>ⁱ̣̋</li>
-<li>ⁱ̣̇</li>
-<li>ⁱ̣̐</li>
-<li>ⁱ̣̍</li>
-<li>ⁱ̣̉</li>
-<li>ⁱ̣᷅</li>
-<li>ⁱ̣̏</li>
-<li>ⁱ̣᷄</li>
-<li>ⁱ̣͂</li>
-<li>ⁱ̣̓</li>
-<li>ⁱ̣̔</li>
-<li>ⁱ̣̄</li>
-<li>ⁱ̣̆</li>
-<li>ⁱ̣̂</li>
-<li>ⁱ̣᷆</li>
-<li>ⁱ̣̈</li>
-<li>ⁱ̣᷇</li>
-<li>ⁱ̣̊</li>
-<li>ⁱ᷊̒</li>
-<li>ⁱ᷊̌</li>
-<li>ⁱ᷊̑</li>
-<li>ⁱ᷊̀</li>
-<li>ⁱ᷊̅</li>
-<li>ⁱ᷊́</li>
-<li>ⁱ᷊̃</li>
-<li>ⁱ᷊̋</li>
-<li>ⁱ᷊̇</li>
-<li>ⁱ᷊̐</li>
-<li>ⁱ᷊̍</li>
-<li>ⁱ᷊̉</li>
-<li>ⁱ᷊᷅</li>
-<li>ⁱ᷊̏</li>
-<li>ⁱ᷊᷄</li>
-<li>ⁱ᷊͂</li>
-<li>ⁱ᷊̓</li>
-<li>ⁱ᷊̔</li>
-<li>ⁱ᷊̄</li>
-<li>ⁱ᷊̆</li>
-<li>ⁱ᷊̂</li>
-<li>ⁱ᷊᷆</li>
-<li>ⁱ᷊̈</li>
-<li>ⁱ᷊᷇</li>
-<li>ⁱ᷊̊</li>
-<li>ⁱ̱̒</li>
-<li>ⁱ̱̌</li>
-<li>ⁱ̱̑</li>
-<li>ⁱ̱̀</li>
-<li>ⁱ̱̅</li>
-<li>ⁱ̱́</li>
-<li>ⁱ̱̃</li>
-<li>ⁱ̱̋</li>
-<li>ⁱ̱̇</li>
-<li>ⁱ̱̐</li>
-<li>ⁱ̱̍</li>
-<li>ⁱ̱̉</li>
-<li>ⁱ̱᷅</li>
-<li>ⁱ̱̏</li>
-<li>ⁱ̱᷄</li>
-<li>ⁱ̱͂</li>
-<li>ⁱ̱̓</li>
-<li>ⁱ̱̔</li>
-<li>ⁱ̱̄</li>
-<li>ⁱ̱̆</li>
-<li>ⁱ̱̂</li>
-<li>ⁱ̱᷆</li>
-<li>ⁱ̱̈</li>
-<li>ⁱ̱᷇</li>
-<li>ⁱ̱̊</li>
-<li>ⁱ̮̒</li>
-<li>ⁱ̮̌</li>
-<li>ⁱ̮̑</li>
-<li>ⁱ̮̀</li>
-<li>ⁱ̮̅</li>
-<li>ⁱ̮́</li>
-<li>ⁱ̮̃</li>
-<li>ⁱ̮̋</li>
-<li>ⁱ̮̇</li>
-<li>ⁱ̮̐</li>
-<li>ⁱ̮̍</li>
-<li>ⁱ̮̉</li>
-<li>ⁱ̮᷅</li>
-<li>ⁱ̮̏</li>
-<li>ⁱ̮᷄</li>
-<li>ⁱ̮͂</li>
-<li>ⁱ̮̓</li>
-<li>ⁱ̮̔</li>
-<li>ⁱ̮̄</li>
-<li>ⁱ̮̆</li>
-<li>ⁱ̮̂</li>
-<li>ⁱ̮᷆</li>
-<li>ⁱ̮̈</li>
-<li>ⁱ̮᷇</li>
-<li>ⁱ̮̊</li>
-<li>ⁱ̯̒</li>
-<li>ⁱ̯̌</li>
-<li>ⁱ̯̑</li>
-<li>ⁱ̯̀</li>
-<li>ⁱ̯̅</li>
-<li>ⁱ̯́</li>
-<li>ⁱ̯̃</li>
-<li>ⁱ̯̋</li>
-<li>ⁱ̯̇</li>
-<li>ⁱ̯̐</li>
-<li>ⁱ̯̍</li>
-<li>ⁱ̯̉</li>
-<li>ⁱ̯᷅</li>
-<li>ⁱ̯̏</li>
-<li>ⁱ̯᷄</li>
-<li>ⁱ̯͂</li>
-<li>ⁱ̯̓</li>
-<li>ⁱ̯̔</li>
-<li>ⁱ̯̄</li>
-<li>ⁱ̯̆</li>
-<li>ⁱ̯̂</li>
-<li>ⁱ̯᷆</li>
-<li>ⁱ̯̈</li>
-<li>ⁱ̯᷇</li>
-<li>ⁱ̯̊</li>
-<li>ⁱ̲̒</li>
-<li>ⁱ̲̌</li>
-<li>ⁱ̲̑</li>
-<li>ⁱ̲̀</li>
-<li>ⁱ̲̅</li>
-<li>ⁱ̲́</li>
-<li>ⁱ̲̃</li>
-<li>ⁱ̲̋</li>
-<li>ⁱ̲̇</li>
-<li>ⁱ̲̐</li>
-<li>ⁱ̲̍</li>
-<li>ⁱ̲̉</li>
-<li>ⁱ̲᷅</li>
-<li>ⁱ̲̏</li>
-<li>ⁱ̲᷄</li>
-<li>ⁱ̲͂</li>
-<li>ⁱ̲̓</li>
-<li>ⁱ̲̔</li>
-<li>ⁱ̲̄</li>
-<li>ⁱ̲̆</li>
-<li>ⁱ̲̂</li>
-<li>ⁱ̲᷆</li>
-<li>ⁱ̲̈</li>
-<li>ⁱ̲᷇</li>
-<li>ⁱ̲̊</li>
-<li>ⁱ̭̒</li>
-<li>ⁱ̭̌</li>
-<li>ⁱ̭̑</li>
-<li>ⁱ̭̀</li>
-<li>ⁱ̭̅</li>
-<li>ⁱ̭́</li>
-<li>ⁱ̭̃</li>
-<li>ⁱ̭̋</li>
-<li>ⁱ̭̇</li>
-<li>ⁱ̭̐</li>
-<li>ⁱ̭̍</li>
-<li>ⁱ̭̉</li>
-<li>ⁱ̭᷅</li>
-<li>ⁱ̭̏</li>
-<li>ⁱ̭᷄</li>
-<li>ⁱ̭͂</li>
-<li>ⁱ̭̓</li>
-<li>ⁱ̭̔</li>
-<li>ⁱ̭̄</li>
-<li>ⁱ̭̆</li>
-<li>ⁱ̭̂</li>
-<li>ⁱ̭᷆</li>
-<li>ⁱ̭̈</li>
-<li>ⁱ̭᷇</li>
-<li>ⁱ̭̊</li>
-<li>ⁱ̤̒</li>
-<li>ⁱ̤̌</li>
-<li>ⁱ̤̑</li>
-<li>ⁱ̤̀</li>
-<li>ⁱ̤̅</li>
-<li>ⁱ̤́</li>
-<li>ⁱ̤̃</li>
-<li>ⁱ̤̋</li>
-<li>ⁱ̤̇</li>
-<li>ⁱ̤̐</li>
-<li>ⁱ̤̍</li>
-<li>ⁱ̤̉</li>
-<li>ⁱ̤᷅</li>
-<li>ⁱ̤̏</li>
-<li>ⁱ̤᷄</li>
-<li>ⁱ̤͂</li>
-<li>ⁱ̤̓</li>
-<li>ⁱ̤̔</li>
-<li>ⁱ̤̄</li>
-<li>ⁱ̤̆</li>
-<li>ⁱ̤̂</li>
-<li>ⁱ̤᷆</li>
-<li>ⁱ̤̈</li>
-<li>ⁱ̤᷇</li>
-<li>ⁱ̤̊</li>
-<li>ⁱ̰̒</li>
-<li>ⁱ̰̌</li>
-<li>ⁱ̰̑</li>
-<li>ⁱ̰̀</li>
-<li>ⁱ̰̅</li>
-<li>ⁱ̰́</li>
-<li>ⁱ̰̃</li>
-<li>ⁱ̰̋</li>
-<li>ⁱ̰̇</li>
-<li>ⁱ̰̐</li>
-<li>ⁱ̰̍</li>
-<li>ⁱ̰̉</li>
-<li>ⁱ̰᷅</li>
-<li>ⁱ̰̏</li>
-<li>ⁱ̰᷄</li>
-<li>ⁱ̰͂</li>
-<li>ⁱ̰̓</li>
-<li>ⁱ̰̔</li>
-<li>ⁱ̰̄</li>
-<li>ⁱ̰̆</li>
-<li>ⁱ̰̂</li>
-<li>ⁱ̰᷆</li>
-<li>ⁱ̰̈</li>
-<li>ⁱ̰᷇</li>
-<li>ⁱ̰̊</li>
-<li>ⁱ̒</li>
-<li>ⁱ̌</li>
-<li>ⁱ̑</li>
-<li>ⁱ̀</li>
-<li>ⁱ̅</li>
-<li>ⁱ́</li>
-<li>ⁱ̃</li>
-<li>ⁱ̋</li>
-<li>ⁱ̇</li>
-<li>ⁱ̐</li>
-<li>ⁱ̍</li>
-<li>ⁱ̉</li>
-<li>ⁱ᷅</li>
-<li>ⁱ̏</li>
-<li>ⁱ᷄</li>
-<li>ⁱ͂</li>
-<li>ⁱ̓</li>
-<li>ⁱ̔</li>
-<li>ⁱ̄</li>
-<li>ⁱ̆</li>
-<li>ⁱ̂</li>
-<li>ⁱ᷆</li>
-<li>ⁱ̈</li>
-<li>ⁱ᷇</li>
-<li>ⁱ̊</li>
-<li>ị̦̍</li>
-<li>ị̦᷅</li>
-<li>ị̦᷄</li>
-<li>ị̦͂</li>
-<li>ị̦̓</li>
-<li>ị̦̔</li>
-<li>ị̦᷆</li>
-<li>ị̦᷇</li>
-<li>ị̧̍</li>
-<li>ị̧᷅</li>
-<li>ị̧᷄</li>
-<li>ị̧͂</li>
-<li>ị̧̓</li>
-<li>ị̧̔</li>
-<li>ị̧᷆</li>
-<li>ị̧᷇</li>
-<li>ị̵̍</li>
-<li>ị̵᷅</li>
-<li>ị̵᷄</li>
-<li>ị̵͂</li>
-<li>ị̵̓</li>
-<li>ị̵̔</li>
-<li>ị̵᷆</li>
-<li>ị̵᷇</li>
-<li>ị̩̍</li>
-<li>ị̩᷅</li>
-<li>ị̩᷄</li>
-<li>ị̩͂</li>
-<li>ị̩̓</li>
-<li>ị̩̔</li>
-<li>ị̩᷆</li>
-<li>ị̩᷇</li>
-<li>ị̥̍</li>
-<li>ị̥᷅</li>
-<li>ị̥᷄</li>
-<li>ị̥͂</li>
-<li>ị̥̓</li>
-<li>ị̥̔</li>
-<li>ị̥᷆</li>
-<li>ị̥᷇</li>
-<li>ị̣̍</li>
-<li>ị̣᷅</li>
-<li>ị̣᷄</li>
-<li>ị̣͂</li>
-<li>ị̣̓</li>
-<li>ị̣̔</li>
-<li>ị̣᷆</li>
-<li>ị̣᷇</li>
-<li>ị᷊̍</li>
-<li>ị᷊᷅</li>
-<li>ị᷊᷄</li>
-<li>ị᷊͂</li>
-<li>ị᷊̓</li>
-<li>ị᷊̔</li>
-<li>ị᷊᷆</li>
-<li>ị᷊᷇</li>
-<li>ị̱̍</li>
-<li>ị̱᷅</li>
-<li>ị̱᷄</li>
-<li>ị̱͂</li>
-<li>ị̱̓</li>
-<li>ị̱̔</li>
-<li>ị̱᷆</li>
-<li>ị̱᷇</li>
-<li>ị̮̍</li>
-<li>ị̮᷅</li>
-<li>ị̮᷄</li>
-<li>ị̮͂</li>
-<li>ị̮̓</li>
-<li>ị̮̔</li>
-<li>ị̮᷆</li>
-<li>ị̮᷇</li>
-<li>ị̯̍</li>
-<li>ị̯᷅</li>
-<li>ị̯᷄</li>
-<li>ị̯͂</li>
-<li>ị̯̓</li>
-<li>ị̯̔</li>
-<li>ị̯᷆</li>
-<li>ị̯᷇</li>
-<li>ị̲̍</li>
-<li>ị̲᷅</li>
-<li>ị̲᷄</li>
-<li>ị̲͂</li>
-<li>ị̲̓</li>
-<li>ị̲̔</li>
-<li>ị̲᷆</li>
-<li>ị̲᷇</li>
-<li>ị̭̍</li>
-<li>ị̭᷅</li>
-<li>ị̭᷄</li>
-<li>ị̭͂</li>
-<li>ị̭̓</li>
-<li>ị̭̔</li>
-<li>ị̭᷆</li>
-<li>ị̭᷇</li>
-<li>ị̤̍</li>
-<li>ị̤᷅</li>
-<li>ị̤᷄</li>
-<li>ị̤͂</li>
-<li>ị̤̓</li>
-<li>ị̤̔</li>
-<li>ị̤᷆</li>
-<li>ị̤᷇</li>
-<li>ị̰̍</li>
-<li>ị̰᷅</li>
-<li>ị̰᷄</li>
-<li>ị̰͂</li>
-<li>ị̰̓</li>
-<li>ị̰̔</li>
-<li>ị̰᷆</li>
-<li>ị̰᷇</li>
-<li>ị̍</li>
-<li>ị᷅</li>
-<li>ị᷄</li>
-<li>ị͂</li>
-<li>ị̓</li>
-<li>ị̔</li>
-<li>ị᷆</li>
-<li>ị᷇</li>
-<li>į̦̍</li>
-<li>į̦᷅</li>
-<li>į̦᷄</li>
-<li>į̦͂</li>
-<li>į̦̓</li>
-<li>į̦̔</li>
-<li>į̦᷆</li>
-<li>į̦᷇</li>
-<li>į̧̍</li>
-<li>į̧᷅</li>
-<li>į̧᷄</li>
-<li>į̧͂</li>
-<li>į̧̓</li>
-<li>į̧̔</li>
-<li>į̧᷆</li>
-<li>į̧᷇</li>
-<li>į̵̍</li>
-<li>į̵᷅</li>
-<li>į̵᷄</li>
-<li>į̵͂</li>
-<li>į̵̓</li>
-<li>į̵̔</li>
-<li>į̵᷆</li>
-<li>į̵᷇</li>
-<li>į̩̍</li>
-<li>į̩᷅</li>
-<li>į̩᷄</li>
-<li>į̩͂</li>
-<li>į̩̓</li>
-<li>į̩̔</li>
-<li>į̩᷆</li>
-<li>į̩᷇</li>
-<li>į̥̍</li>
-<li>į̥᷅</li>
-<li>į̥᷄</li>
-<li>į̥͂</li>
-<li>į̥̓</li>
-<li>į̥̔</li>
-<li>į̥᷆</li>
-<li>į̥᷇</li>
-<li>į̨̍</li>
-<li>į̨᷅</li>
-<li>į̨᷄</li>
-<li>į̨͂</li>
-<li>į̨̓</li>
-<li>į̨̔</li>
-<li>į̨᷆</li>
-<li>į̨᷇</li>
-<li>į̣̍</li>
-<li>į̣᷅</li>
 <li>į̣᷄</li>
-<li>į̣͂</li>
 <li>į̣̓</li>
 <li>į̣̔</li>
 <li>į̣᷆</li>
+<li>į̣͂</li>
+<li>į̣̍</li>
+<li>į̣᷅</li>
 <li>į̣᷇</li>
-<li>į᷊̍</li>
-<li>į᷊᷅</li>
-<li>į᷊᷄</li>
-<li>į᷊͂</li>
-<li>į᷊̓</li>
-<li>į᷊̔</li>
-<li>į᷊᷆</li>
-<li>į᷊᷇</li>
-<li>į̱̍</li>
-<li>į̱᷅</li>
-<li>į̱᷄</li>
-<li>į̱͂</li>
-<li>į̱̓</li>
-<li>į̱̔</li>
-<li>į̱᷆</li>
-<li>į̱᷇</li>
-<li>į̮̍</li>
-<li>į̮᷅</li>
+<li>į̵᷄</li>
+<li>į̵̓</li>
+<li>į̵̔</li>
+<li>į̵᷆</li>
+<li>į̵͂</li>
+<li>į̵̍</li>
+<li>į̵᷅</li>
+<li>į̵᷇</li>
+<li>į̩᷄</li>
+<li>į̩̓</li>
+<li>į̩̔</li>
+<li>į̩᷆</li>
+<li>į̩͂</li>
+<li>į̩̍</li>
+<li>į̩᷅</li>
+<li>į̩᷇</li>
 <li>į̮᷄</li>
-<li>į̮͂</li>
 <li>į̮̓</li>
 <li>į̮̔</li>
 <li>į̮᷆</li>
+<li>į̮͂</li>
+<li>į̮̍</li>
+<li>į̮᷅</li>
 <li>į̮᷇</li>
-<li>į̯̍</li>
-<li>į̯᷅</li>
-<li>į̯᷄</li>
-<li>į̯͂</li>
-<li>į̯̓</li>
-<li>į̯̔</li>
-<li>į̯᷆</li>
-<li>į̯᷇</li>
-<li>į̲̍</li>
-<li>į̲᷅</li>
-<li>į̲᷄</li>
-<li>į̲͂</li>
-<li>į̲̓</li>
-<li>į̲̔</li>
-<li>į̲᷆</li>
-<li>į̲᷇</li>
-<li>į̭̍</li>
-<li>į̭᷅</li>
-<li>į̭᷄</li>
-<li>į̭͂</li>
-<li>į̭̓</li>
-<li>į̭̔</li>
-<li>į̭᷆</li>
-<li>į̭᷇</li>
-<li>į̤̍</li>
-<li>į̤᷅</li>
 <li>į̤᷄</li>
-<li>į̤͂</li>
 <li>į̤̓</li>
 <li>į̤̔</li>
 <li>į̤᷆</li>
+<li>į̤͂</li>
+<li>į̤̍</li>
+<li>į̤᷅</li>
 <li>į̤᷇</li>
-<li>į̰̍</li>
-<li>į̰᷅</li>
+<li>į̯᷄</li>
+<li>į̯̓</li>
+<li>į̯̔</li>
+<li>į̯᷆</li>
+<li>į̯͂</li>
+<li>į̯̍</li>
+<li>į̯᷅</li>
+<li>į̯᷇</li>
 <li>į̰᷄</li>
-<li>į̰͂</li>
 <li>į̰̓</li>
 <li>į̰̔</li>
 <li>į̰᷆</li>
+<li>į̰͂</li>
+<li>į̰̍</li>
+<li>į̰᷅</li>
 <li>į̰᷇</li>
-<li>į̍</li>
-<li>į᷅</li>
+<li>į᷊᷄</li>
+<li>į᷊̓</li>
+<li>į᷊̔</li>
+<li>į᷊᷆</li>
+<li>į᷊͂</li>
+<li>į᷊̍</li>
+<li>į᷊᷅</li>
+<li>į᷊᷇</li>
+<li>į̭᷄</li>
+<li>į̭̓</li>
+<li>į̭̔</li>
+<li>į̭᷆</li>
+<li>į̭͂</li>
+<li>į̭̍</li>
+<li>į̭᷅</li>
+<li>į̭᷇</li>
+<li>į̦᷄</li>
+<li>į̦̓</li>
+<li>į̦̔</li>
+<li>į̦᷆</li>
+<li>į̦͂</li>
+<li>į̦̍</li>
+<li>į̦᷅</li>
+<li>į̦᷇</li>
+<li>į̲᷄</li>
+<li>į̲̓</li>
+<li>į̲̔</li>
+<li>į̲᷆</li>
+<li>į̲͂</li>
+<li>į̲̍</li>
+<li>į̲᷅</li>
+<li>į̲᷇</li>
+<li>į̱᷄</li>
+<li>į̱̓</li>
+<li>į̱̔</li>
+<li>į̱᷆</li>
+<li>į̱͂</li>
+<li>į̱̍</li>
+<li>į̱᷅</li>
+<li>į̱᷇</li>
+<li>į̧᷄</li>
+<li>į̧̓</li>
+<li>į̧̔</li>
+<li>į̧᷆</li>
+<li>į̧͂</li>
+<li>į̧̍</li>
+<li>į̧᷅</li>
+<li>į̧᷇</li>
+<li>į̨᷄</li>
+<li>į̨̓</li>
+<li>į̨̔</li>
+<li>į̨᷆</li>
+<li>į̨͂</li>
+<li>į̨̍</li>
+<li>į̨᷅</li>
+<li>į̨᷇</li>
+<li>į̥᷄</li>
+<li>į̥̓</li>
+<li>į̥̔</li>
+<li>į̥᷆</li>
+<li>į̥͂</li>
+<li>į̥̍</li>
+<li>į̥᷅</li>
+<li>į̥᷇</li>
 <li>į᷄</li>
-<li>į͂</li>
 <li>į̓</li>
 <li>į̔</li>
 <li>į᷆</li>
+<li>į͂</li>
+<li>į̍</li>
+<li>į᷅</li>
 <li>į᷇</li>
-<li>і̛̒</li>
-<li>і̛̌</li>
-<li>і̛̑</li>
-<li>і̛̀</li>
-<li>і̛̅</li>
-<li>і̛́</li>
-<li>і̛̃</li>
-<li>і̛̋</li>
-<li>і̛̇</li>
-<li>і̛̐</li>
-<li>і̛̍</li>
-<li>і̛̉</li>
-<li>і̛᷅</li>
-<li>і̛̏</li>
-<li>і̛᷄</li>
-<li>і̛͂</li>
-<li>і̛̓</li>
-<li>і̛̔</li>
-<li>і̛̄</li>
-<li>і̛̆</li>
-<li>і̛̂</li>
-<li>і̛᷆</li>
-<li>і̛᷇</li>
-<li>і̛̊</li>
-<li>і̦̒</li>
-<li>і̦̌</li>
-<li>і̦̑</li>
-<li>і̦̀</li>
-<li>і̦̅</li>
-<li>і̦́</li>
-<li>і̦̃</li>
-<li>і̦̋</li>
-<li>і̦̇</li>
-<li>і̦̐</li>
-<li>і̦̍</li>
-<li>і̦̉</li>
-<li>і̦᷅</li>
-<li>і̦̏</li>
-<li>і̦᷄</li>
-<li>і̦͂</li>
-<li>і̦̓</li>
-<li>і̦̔</li>
-<li>і̦̄</li>
-<li>і̦̆</li>
-<li>і̦̂</li>
-<li>і̦᷆</li>
-<li>і̦᷇</li>
-<li>і̦̊</li>
-<li>і̧̒</li>
-<li>і̧̌</li>
-<li>і̧̑</li>
-<li>і̧̀</li>
-<li>і̧̅</li>
-<li>і̧́</li>
-<li>і̧̃</li>
-<li>і̧̋</li>
-<li>і̧̇</li>
-<li>і̧̐</li>
-<li>і̧̍</li>
-<li>і̧̉</li>
-<li>і̧᷅</li>
-<li>і̧̏</li>
-<li>і̧᷄</li>
-<li>і̧͂</li>
-<li>і̧̓</li>
-<li>і̧̔</li>
-<li>і̧̄</li>
-<li>і̧̆</li>
-<li>і̧̂</li>
-<li>і̧᷆</li>
-<li>і̧᷇</li>
-<li>і̧̊</li>
-<li>і̵̒</li>
-<li>і̵̌</li>
-<li>і̵̑</li>
-<li>і̵̀</li>
-<li>і̵̅</li>
-<li>і̵́</li>
-<li>і̵̃</li>
-<li>і̵̋</li>
-<li>і̵̇</li>
-<li>і̵̐</li>
-<li>і̵̍</li>
-<li>і̵̉</li>
-<li>і̵᷅</li>
-<li>і̵̏</li>
-<li>і̵᷄</li>
-<li>і̵͂</li>
-<li>і̵̓</li>
-<li>і̵̔</li>
-<li>і̵̄</li>
-<li>і̵̆</li>
-<li>і̵̂</li>
-<li>і̵᷆</li>
-<li>і̵᷇</li>
-<li>і̵̊</li>
-<li>і̩̒</li>
-<li>і̩̌</li>
-<li>і̩̑</li>
-<li>і̩̀</li>
-<li>і̩̅</li>
-<li>і̩́</li>
-<li>і̩̃</li>
-<li>і̩̋</li>
-<li>і̩̇</li>
-<li>і̩̐</li>
-<li>і̩̍</li>
-<li>і̩̉</li>
-<li>і̩᷅</li>
-<li>і̩̏</li>
-<li>і̩᷄</li>
-<li>і̩͂</li>
-<li>і̩̓</li>
-<li>і̩̔</li>
-<li>і̩̄</li>
-<li>і̩̆</li>
-<li>і̩̂</li>
-<li>і̩᷆</li>
-<li>і̩᷇</li>
-<li>і̩̊</li>
-<li>і̥̒</li>
-<li>і̥̌</li>
-<li>і̥̑</li>
-<li>і̥̀</li>
-<li>і̥̅</li>
-<li>і̥́</li>
-<li>і̥̃</li>
-<li>і̥̋</li>
-<li>і̥̇</li>
-<li>і̥̐</li>
-<li>і̥̍</li>
-<li>і̥̉</li>
-<li>і̥᷅</li>
-<li>і̥̏</li>
-<li>і̥᷄</li>
-<li>і̥͂</li>
-<li>і̥̓</li>
-<li>і̥̔</li>
-<li>і̥̄</li>
-<li>і̥̆</li>
-<li>і̥̂</li>
-<li>і̥᷆</li>
-<li>і̥᷇</li>
-<li>і̥̊</li>
-<li>і̨̒</li>
-<li>і̨̌</li>
-<li>і̨̑</li>
-<li>і̨̀</li>
-<li>і̨̅</li>
-<li>і̨́</li>
-<li>і̨̃</li>
-<li>і̨̋</li>
-<li>і̨̇</li>
-<li>і̨̐</li>
-<li>і̨̍</li>
-<li>і̨̉</li>
-<li>і̨᷅</li>
-<li>і̨̏</li>
-<li>і̨᷄</li>
-<li>і̨͂</li>
-<li>і̨̓</li>
-<li>і̨̔</li>
-<li>і̨̄</li>
-<li>і̨̆</li>
-<li>і̨̂</li>
-<li>і̨᷆</li>
-<li>і̨᷇</li>
-<li>і̨̊</li>
-<li>і̣̒</li>
-<li>і̣̌</li>
-<li>і̣̑</li>
-<li>і̣̀</li>
-<li>і̣̅</li>
-<li>і̣́</li>
-<li>і̣̃</li>
-<li>і̣̋</li>
-<li>і̣̇</li>
-<li>і̣̐</li>
-<li>і̣̍</li>
-<li>і̣̉</li>
-<li>і̣᷅</li>
-<li>і̣̏</li>
 <li>і̣᷄</li>
-<li>і̣͂</li>
+<li>і̣̄</li>
 <li>і̣̓</li>
 <li>і̣̔</li>
-<li>і̣̄</li>
-<li>і̣̆</li>
-<li>і̣̂</li>
+<li>і̣̏</li>
 <li>і̣᷆</li>
+<li>і̣̌</li>
+<li>і̣̉</li>
+<li>і̣͂</li>
+<li>і̣̋</li>
+<li>і̣̃</li>
+<li>і̣̍</li>
+<li>і̣̀</li>
+<li>і̣̇</li>
+<li>і̣̑</li>
+<li>і̣̒</li>
+<li>і̣᷅</li>
 <li>і̣᷇</li>
+<li>і̣̆</li>
+<li>і̣̐</li>
+<li>і̣́</li>
 <li>і̣̊</li>
-<li>і᷊̒</li>
-<li>і᷊̌</li>
-<li>і᷊̑</li>
-<li>і᷊̀</li>
-<li>і᷊̅</li>
-<li>і᷊́</li>
-<li>і᷊̃</li>
-<li>і᷊̋</li>
-<li>і᷊̇</li>
-<li>і᷊̐</li>
-<li>і᷊̍</li>
-<li>і᷊̉</li>
-<li>і᷊᷅</li>
-<li>і᷊̏</li>
-<li>і᷊᷄</li>
-<li>і᷊͂</li>
-<li>і᷊̓</li>
-<li>і᷊̔</li>
-<li>і᷊̄</li>
-<li>і᷊̆</li>
-<li>і᷊̂</li>
-<li>і᷊᷆</li>
-<li>і᷊᷇</li>
-<li>і᷊̊</li>
-<li>і̱̒</li>
-<li>і̱̌</li>
-<li>і̱̑</li>
-<li>і̱̀</li>
-<li>і̱̅</li>
-<li>і̱́</li>
-<li>і̱̃</li>
-<li>і̱̋</li>
-<li>і̱̇</li>
-<li>і̱̐</li>
-<li>і̱̍</li>
-<li>і̱̉</li>
-<li>і̱᷅</li>
-<li>і̱̏</li>
-<li>і̱᷄</li>
-<li>і̱͂</li>
-<li>і̱̓</li>
-<li>і̱̔</li>
-<li>і̱̄</li>
-<li>і̱̆</li>
-<li>і̱̂</li>
-<li>і̱᷆</li>
-<li>і̱᷇</li>
-<li>і̱̊</li>
-<li>і̮̒</li>
-<li>і̮̌</li>
-<li>і̮̑</li>
-<li>і̮̀</li>
-<li>і̮̅</li>
-<li>і̮́</li>
-<li>і̮̃</li>
-<li>і̮̋</li>
-<li>і̮̇</li>
-<li>і̮̐</li>
-<li>і̮̍</li>
-<li>і̮̉</li>
-<li>і̮᷅</li>
-<li>і̮̏</li>
+<li>і̣̅</li>
+<li>і̣̂</li>
+<li>і̵᷄</li>
+<li>і̵̄</li>
+<li>і̵̓</li>
+<li>і̵̔</li>
+<li>і̵̏</li>
+<li>і̵᷆</li>
+<li>і̵̌</li>
+<li>і̵̉</li>
+<li>і̵͂</li>
+<li>і̵̋</li>
+<li>і̵̃</li>
+<li>і̵̍</li>
+<li>і̵̀</li>
+<li>і̵̇</li>
+<li>і̵̑</li>
+<li>і̵̒</li>
+<li>і̵᷅</li>
+<li>і̵᷇</li>
+<li>і̵̆</li>
+<li>і̵̐</li>
+<li>і̵́</li>
+<li>і̵̊</li>
+<li>і̵̅</li>
+<li>і̵̂</li>
+<li>і̩᷄</li>
+<li>і̩̄</li>
+<li>і̩̓</li>
+<li>і̩̔</li>
+<li>і̩̏</li>
+<li>і̩᷆</li>
+<li>і̩̌</li>
+<li>і̩̉</li>
+<li>і̩͂</li>
+<li>і̩̋</li>
+<li>і̩̃</li>
+<li>і̩̍</li>
+<li>і̩̀</li>
+<li>і̩̇</li>
+<li>і̩̑</li>
+<li>і̩̒</li>
+<li>і̩᷅</li>
+<li>і̩᷇</li>
+<li>і̩̆</li>
+<li>і̩̐</li>
+<li>і̩́</li>
+<li>і̩̊</li>
+<li>і̩̅</li>
+<li>і̩̂</li>
 <li>і̮᷄</li>
-<li>і̮͂</li>
+<li>і̮̄</li>
 <li>і̮̓</li>
 <li>і̮̔</li>
-<li>і̮̄</li>
-<li>і̮̆</li>
-<li>і̮̂</li>
+<li>і̮̏</li>
 <li>і̮᷆</li>
+<li>і̮̌</li>
+<li>і̮̉</li>
+<li>і̮͂</li>
+<li>і̮̋</li>
+<li>і̮̃</li>
+<li>і̮̍</li>
+<li>і̮̀</li>
+<li>і̮̇</li>
+<li>і̮̑</li>
+<li>і̮̒</li>
+<li>і̮᷅</li>
 <li>і̮᷇</li>
+<li>і̮̆</li>
+<li>і̮̐</li>
+<li>і̮́</li>
 <li>і̮̊</li>
-<li>і̯̒</li>
-<li>і̯̌</li>
-<li>і̯̑</li>
-<li>і̯̀</li>
-<li>і̯̅</li>
-<li>і̯́</li>
-<li>і̯̃</li>
-<li>і̯̋</li>
-<li>і̯̇</li>
-<li>і̯̐</li>
-<li>і̯̍</li>
-<li>і̯̉</li>
-<li>і̯᷅</li>
-<li>і̯̏</li>
-<li>і̯᷄</li>
-<li>і̯͂</li>
-<li>і̯̓</li>
-<li>і̯̔</li>
-<li>і̯̄</li>
-<li>і̯̆</li>
-<li>і̯̂</li>
-<li>і̯᷆</li>
-<li>і̯᷇</li>
-<li>і̯̊</li>
-<li>і̲̒</li>
-<li>і̲̌</li>
-<li>і̲̑</li>
-<li>і̲̀</li>
-<li>і̲̅</li>
-<li>і̲́</li>
-<li>і̲̃</li>
-<li>і̲̋</li>
-<li>і̲̇</li>
-<li>і̲̐</li>
-<li>і̲̍</li>
-<li>і̲̉</li>
-<li>і̲᷅</li>
-<li>і̲̏</li>
-<li>і̲᷄</li>
-<li>і̲͂</li>
-<li>і̲̓</li>
-<li>і̲̔</li>
-<li>і̲̄</li>
-<li>і̲̆</li>
-<li>і̲̂</li>
-<li>і̲᷆</li>
-<li>і̲᷇</li>
-<li>і̲̊</li>
-<li>і̭̒</li>
-<li>і̭̌</li>
-<li>і̭̑</li>
-<li>і̭̀</li>
-<li>і̭̅</li>
-<li>і̭́</li>
-<li>і̭̃</li>
-<li>і̭̋</li>
-<li>і̭̇</li>
-<li>і̭̐</li>
-<li>і̭̍</li>
-<li>і̭̉</li>
-<li>і̭᷅</li>
-<li>і̭̏</li>
-<li>і̭᷄</li>
-<li>і̭͂</li>
-<li>і̭̓</li>
-<li>і̭̔</li>
-<li>і̭̄</li>
-<li>і̭̆</li>
-<li>і̭̂</li>
-<li>і̭᷆</li>
-<li>і̭᷇</li>
-<li>і̭̊</li>
-<li>і̤̒</li>
-<li>і̤̌</li>
-<li>і̤̑</li>
-<li>і̤̀</li>
-<li>і̤̅</li>
-<li>і̤́</li>
-<li>і̤̃</li>
-<li>і̤̋</li>
-<li>і̤̇</li>
-<li>і̤̐</li>
-<li>і̤̍</li>
-<li>і̤̉</li>
-<li>і̤᷅</li>
-<li>і̤̏</li>
+<li>і̮̅</li>
+<li>і̮̂</li>
 <li>і̤᷄</li>
-<li>і̤͂</li>
+<li>і̤̄</li>
 <li>і̤̓</li>
 <li>і̤̔</li>
-<li>і̤̄</li>
-<li>і̤̆</li>
-<li>і̤̂</li>
+<li>і̤̏</li>
 <li>і̤᷆</li>
+<li>і̤̌</li>
+<li>і̤̉</li>
+<li>і̤͂</li>
+<li>і̤̋</li>
+<li>і̤̃</li>
+<li>і̤̍</li>
+<li>і̤̀</li>
+<li>і̤̇</li>
+<li>і̤̑</li>
+<li>і̤̒</li>
+<li>і̤᷅</li>
 <li>і̤᷇</li>
+<li>і̤̆</li>
+<li>і̤̐</li>
+<li>і̤́</li>
 <li>і̤̊</li>
-<li>і̰̒</li>
-<li>і̰̌</li>
-<li>і̰̑</li>
-<li>і̰̀</li>
-<li>і̰̅</li>
-<li>і̰́</li>
-<li>і̰̃</li>
-<li>і̰̋</li>
-<li>і̰̇</li>
-<li>і̰̐</li>
-<li>і̰̍</li>
-<li>і̰̉</li>
-<li>і̰᷅</li>
-<li>і̰̏</li>
+<li>і̤̅</li>
+<li>і̤̂</li>
+<li>і̯᷄</li>
+<li>і̯̄</li>
+<li>і̯̓</li>
+<li>і̯̔</li>
+<li>і̯̏</li>
+<li>і̯᷆</li>
+<li>і̯̌</li>
+<li>і̯̉</li>
+<li>і̯͂</li>
+<li>і̯̋</li>
+<li>і̯̃</li>
+<li>і̯̍</li>
+<li>і̯̀</li>
+<li>і̯̇</li>
+<li>і̯̑</li>
+<li>і̯̒</li>
+<li>і̯᷅</li>
+<li>і̯᷇</li>
+<li>і̯̆</li>
+<li>і̯̐</li>
+<li>і̯́</li>
+<li>і̯̊</li>
+<li>і̯̅</li>
+<li>і̯̂</li>
 <li>і̰᷄</li>
-<li>і̰͂</li>
+<li>і̰̄</li>
 <li>і̰̓</li>
 <li>і̰̔</li>
-<li>і̰̄</li>
-<li>і̰̆</li>
-<li>і̰̂</li>
+<li>і̰̏</li>
 <li>і̰᷆</li>
+<li>і̰̌</li>
+<li>і̰̉</li>
+<li>і̰͂</li>
+<li>і̰̋</li>
+<li>і̰̃</li>
+<li>і̰̍</li>
+<li>і̰̀</li>
+<li>і̰̇</li>
+<li>і̰̑</li>
+<li>і̰̒</li>
+<li>і̰᷅</li>
 <li>і̰᷇</li>
+<li>і̰̆</li>
+<li>і̰̐</li>
+<li>і̰́</li>
 <li>і̰̊</li>
-<li>і̒</li>
-<li>і̌</li>
-<li>і̑</li>
-<li>і̀</li>
-<li>і̅</li>
-<li>і̃</li>
-<li>і̋</li>
-<li>і̇</li>
-<li>і̐</li>
-<li>і̍</li>
-<li>і̉</li>
-<li>і᷅</li>
-<li>і̏</li>
+<li>і̰̅</li>
+<li>і̰̂</li>
+<li>і᷊᷄</li>
+<li>і᷊̄</li>
+<li>і᷊̓</li>
+<li>і᷊̔</li>
+<li>і᷊̏</li>
+<li>і᷊᷆</li>
+<li>і᷊̌</li>
+<li>і᷊̉</li>
+<li>і᷊͂</li>
+<li>і᷊̋</li>
+<li>і᷊̃</li>
+<li>і᷊̍</li>
+<li>і᷊̀</li>
+<li>і᷊̇</li>
+<li>і᷊̑</li>
+<li>і᷊̒</li>
+<li>і᷊᷅</li>
+<li>і᷊᷇</li>
+<li>і᷊̆</li>
+<li>і᷊̐</li>
+<li>і᷊́</li>
+<li>і᷊̊</li>
+<li>і᷊̅</li>
+<li>і᷊̂</li>
+<li>і̭᷄</li>
+<li>і̭̄</li>
+<li>і̭̓</li>
+<li>і̭̔</li>
+<li>і̭̏</li>
+<li>і̭᷆</li>
+<li>і̭̌</li>
+<li>і̭̉</li>
+<li>і̭͂</li>
+<li>і̭̋</li>
+<li>і̭̃</li>
+<li>і̭̍</li>
+<li>і̭̀</li>
+<li>і̭̇</li>
+<li>і̭̑</li>
+<li>і̭̒</li>
+<li>і̭᷅</li>
+<li>і̭᷇</li>
+<li>і̭̆</li>
+<li>і̭̐</li>
+<li>і̭́</li>
+<li>і̭̊</li>
+<li>і̭̅</li>
+<li>і̭̂</li>
+<li>і̦᷄</li>
+<li>і̦̄</li>
+<li>і̦̓</li>
+<li>і̦̔</li>
+<li>і̦̏</li>
+<li>і̦᷆</li>
+<li>і̦̌</li>
+<li>і̦̉</li>
+<li>і̦͂</li>
+<li>і̦̋</li>
+<li>і̦̃</li>
+<li>і̦̍</li>
+<li>і̦̀</li>
+<li>і̦̇</li>
+<li>і̦̑</li>
+<li>і̦̒</li>
+<li>і̦᷅</li>
+<li>і̦᷇</li>
+<li>і̦̆</li>
+<li>і̦̐</li>
+<li>і̦́</li>
+<li>і̦̊</li>
+<li>і̦̅</li>
+<li>і̦̂</li>
+<li>і̛᷄</li>
+<li>і̛̄</li>
+<li>і̛̓</li>
+<li>і̛̔</li>
+<li>і̛̏</li>
+<li>і̛᷆</li>
+<li>і̛̌</li>
+<li>і̛̉</li>
+<li>і̛͂</li>
+<li>і̛̋</li>
+<li>і̛̃</li>
+<li>і̛̍</li>
+<li>і̛̀</li>
+<li>і̛̇</li>
+<li>і̛̑</li>
+<li>і̛̒</li>
+<li>і̛᷅</li>
+<li>і̛᷇</li>
+<li>і̛̆</li>
+<li>і̛̐</li>
+<li>і̛́</li>
+<li>і̛̊</li>
+<li>і̛̅</li>
+<li>і̛̂</li>
+<li>і̲᷄</li>
+<li>і̲̄</li>
+<li>і̲̓</li>
+<li>і̲̔</li>
+<li>і̲̏</li>
+<li>і̲᷆</li>
+<li>і̲̌</li>
+<li>і̲̉</li>
+<li>і̲͂</li>
+<li>і̲̋</li>
+<li>і̲̃</li>
+<li>і̲̍</li>
+<li>і̲̀</li>
+<li>і̲̇</li>
+<li>і̲̑</li>
+<li>і̲̒</li>
+<li>і̲᷅</li>
+<li>і̲᷇</li>
+<li>і̲̆</li>
+<li>і̲̐</li>
+<li>і̲́</li>
+<li>і̲̊</li>
+<li>і̲̅</li>
+<li>і̲̂</li>
+<li>і̱᷄</li>
+<li>і̱̄</li>
+<li>і̱̓</li>
+<li>і̱̔</li>
+<li>і̱̏</li>
+<li>і̱᷆</li>
+<li>і̱̌</li>
+<li>і̱̉</li>
+<li>і̱͂</li>
+<li>і̱̋</li>
+<li>і̱̃</li>
+<li>і̱̍</li>
+<li>і̱̀</li>
+<li>і̱̇</li>
+<li>і̱̑</li>
+<li>і̱̒</li>
+<li>і̱᷅</li>
+<li>і̱᷇</li>
+<li>і̱̆</li>
+<li>і̱̐</li>
+<li>і̱́</li>
+<li>і̱̊</li>
+<li>і̱̅</li>
+<li>і̱̂</li>
+<li>і̧᷄</li>
+<li>і̧̄</li>
+<li>і̧̓</li>
+<li>і̧̔</li>
+<li>і̧̏</li>
+<li>і̧᷆</li>
+<li>і̧̌</li>
+<li>і̧̉</li>
+<li>і̧͂</li>
+<li>і̧̋</li>
+<li>і̧̃</li>
+<li>і̧̍</li>
+<li>і̧̀</li>
+<li>і̧̇</li>
+<li>і̧̑</li>
+<li>і̧̒</li>
+<li>і̧᷅</li>
+<li>і̧᷇</li>
+<li>і̧̆</li>
+<li>і̧̐</li>
+<li>і̧́</li>
+<li>і̧̊</li>
+<li>і̧̅</li>
+<li>і̧̂</li>
+<li>і̨᷄</li>
+<li>і̨̄</li>
+<li>і̨̓</li>
+<li>і̨̔</li>
+<li>і̨̏</li>
+<li>і̨᷆</li>
+<li>і̨̌</li>
+<li>і̨̉</li>
+<li>і̨͂</li>
+<li>і̨̋</li>
+<li>і̨̃</li>
+<li>і̨̍</li>
+<li>і̨̀</li>
+<li>і̨̇</li>
+<li>і̨̑</li>
+<li>і̨̒</li>
+<li>і̨᷅</li>
+<li>і̨᷇</li>
+<li>і̨̆</li>
+<li>і̨̐</li>
+<li>і̨́</li>
+<li>і̨̊</li>
+<li>і̨̅</li>
+<li>і̨̂</li>
+<li>і̥᷄</li>
+<li>і̥̄</li>
+<li>і̥̓</li>
+<li>і̥̔</li>
+<li>і̥̏</li>
+<li>і̥᷆</li>
+<li>і̥̌</li>
+<li>і̥̉</li>
+<li>і̥͂</li>
+<li>і̥̋</li>
+<li>і̥̃</li>
+<li>і̥̍</li>
+<li>і̥̀</li>
+<li>і̥̇</li>
+<li>і̥̑</li>
+<li>і̥̒</li>
+<li>і̥᷅</li>
+<li>і̥᷇</li>
+<li>і̥̆</li>
+<li>і̥̐</li>
+<li>і̥́</li>
+<li>і̥̊</li>
+<li>і̥̅</li>
+<li>і̥̂</li>
 <li>і᷄</li>
-<li>і͂</li>
+<li>і̄</li>
 <li>і̓</li>
 <li>і̔</li>
-<li>і̄</li>
-<li>і̆</li>
-<li>і̂</li>
+<li>і̏</li>
 <li>і᷆</li>
+<li>і̌</li>
+<li>і̉</li>
+<li>і͂</li>
+<li>і̋</li>
+<li>і̃</li>
+<li>і̍</li>
+<li>і̀</li>
+<li>і̇</li>
+<li>і̑</li>
+<li>і̒</li>
+<li>і᷅</li>
 <li>і᷇</li>
+<li>і̆</li>
+<li>і̐</li>
 <li>і̊</li>
-<li>ɉ̦̍</li>
-<li>ɉ̦᷅</li>
-<li>ɉ̦᷄</li>
-<li>ɉ̦͂</li>
-<li>ɉ̦̓</li>
-<li>ɉ̦̔</li>
-<li>ɉ̦᷆</li>
-<li>ɉ̦᷇</li>
-<li>ɉ̧̍</li>
-<li>ɉ̧᷅</li>
-<li>ɉ̧᷄</li>
-<li>ɉ̧͂</li>
-<li>ɉ̧̓</li>
-<li>ɉ̧̔</li>
-<li>ɉ̧᷆</li>
-<li>ɉ̧᷇</li>
-<li>ɉ̵̍</li>
-<li>ɉ̵᷅</li>
-<li>ɉ̵᷄</li>
-<li>ɉ̵͂</li>
-<li>ɉ̵̓</li>
-<li>ɉ̵̔</li>
-<li>ɉ̵᷆</li>
-<li>ɉ̵᷇</li>
-<li>ɉ̩̍</li>
-<li>ɉ̩᷅</li>
-<li>ɉ̩᷄</li>
-<li>ɉ̩͂</li>
-<li>ɉ̩̓</li>
-<li>ɉ̩̔</li>
-<li>ɉ̩᷆</li>
-<li>ɉ̩᷇</li>
-<li>ɉ̥̍</li>
-<li>ɉ̥᷅</li>
-<li>ɉ̥᷄</li>
-<li>ɉ̥͂</li>
-<li>ɉ̥̓</li>
-<li>ɉ̥̔</li>
-<li>ɉ̥᷆</li>
-<li>ɉ̥᷇</li>
-<li>ɉ̨̍</li>
-<li>ɉ̨᷅</li>
-<li>ɉ̨᷄</li>
-<li>ɉ̨͂</li>
-<li>ɉ̨̓</li>
-<li>ɉ̨̔</li>
-<li>ɉ̨᷆</li>
-<li>ɉ̨᷇</li>
-<li>ɉ̣̍</li>
-<li>ɉ̣᷅</li>
+<li>і̅</li>
+<li>і̂</li>
+<li>ᶤ̣᷄</li>
+<li>ᶤ̣̄</li>
+<li>ᶤ̣̓</li>
+<li>ᶤ̣̔</li>
+<li>ᶤ̣̈</li>
+<li>ᶤ̣̏</li>
+<li>ᶤ̣᷆</li>
+<li>ᶤ̣̌</li>
+<li>ᶤ̣̉</li>
+<li>ᶤ̣͂</li>
+<li>ᶤ̣̋</li>
+<li>ᶤ̣̃</li>
+<li>ᶤ̣̍</li>
+<li>ᶤ̣̀</li>
+<li>ᶤ̣̇</li>
+<li>ᶤ̣̑</li>
+<li>ᶤ̣̒</li>
+<li>ᶤ̣᷅</li>
+<li>ᶤ̣᷇</li>
+<li>ᶤ̣̆</li>
+<li>ᶤ̣̐</li>
+<li>ᶤ̣́</li>
+<li>ᶤ̣̊</li>
+<li>ᶤ̣̅</li>
+<li>ᶤ̣̂</li>
+<li>ᶤ̵᷄</li>
+<li>ᶤ̵̄</li>
+<li>ᶤ̵̓</li>
+<li>ᶤ̵̔</li>
+<li>ᶤ̵̈</li>
+<li>ᶤ̵̏</li>
+<li>ᶤ̵᷆</li>
+<li>ᶤ̵̌</li>
+<li>ᶤ̵̉</li>
+<li>ᶤ̵͂</li>
+<li>ᶤ̵̋</li>
+<li>ᶤ̵̃</li>
+<li>ᶤ̵̍</li>
+<li>ᶤ̵̀</li>
+<li>ᶤ̵̇</li>
+<li>ᶤ̵̑</li>
+<li>ᶤ̵̒</li>
+<li>ᶤ̵᷅</li>
+<li>ᶤ̵᷇</li>
+<li>ᶤ̵̆</li>
+<li>ᶤ̵̐</li>
+<li>ᶤ̵́</li>
+<li>ᶤ̵̊</li>
+<li>ᶤ̵̅</li>
+<li>ᶤ̵̂</li>
+<li>ᶤ̩᷄</li>
+<li>ᶤ̩̄</li>
+<li>ᶤ̩̓</li>
+<li>ᶤ̩̔</li>
+<li>ᶤ̩̈</li>
+<li>ᶤ̩̏</li>
+<li>ᶤ̩᷆</li>
+<li>ᶤ̩̌</li>
+<li>ᶤ̩̉</li>
+<li>ᶤ̩͂</li>
+<li>ᶤ̩̋</li>
+<li>ᶤ̩̃</li>
+<li>ᶤ̩̍</li>
+<li>ᶤ̩̀</li>
+<li>ᶤ̩̇</li>
+<li>ᶤ̩̑</li>
+<li>ᶤ̩̒</li>
+<li>ᶤ̩᷅</li>
+<li>ᶤ̩᷇</li>
+<li>ᶤ̩̆</li>
+<li>ᶤ̩̐</li>
+<li>ᶤ̩́</li>
+<li>ᶤ̩̊</li>
+<li>ᶤ̩̅</li>
+<li>ᶤ̩̂</li>
+<li>ᶤ̮᷄</li>
+<li>ᶤ̮̄</li>
+<li>ᶤ̮̓</li>
+<li>ᶤ̮̔</li>
+<li>ᶤ̮̈</li>
+<li>ᶤ̮̏</li>
+<li>ᶤ̮᷆</li>
+<li>ᶤ̮̌</li>
+<li>ᶤ̮̉</li>
+<li>ᶤ̮͂</li>
+<li>ᶤ̮̋</li>
+<li>ᶤ̮̃</li>
+<li>ᶤ̮̍</li>
+<li>ᶤ̮̀</li>
+<li>ᶤ̮̇</li>
+<li>ᶤ̮̑</li>
+<li>ᶤ̮̒</li>
+<li>ᶤ̮᷅</li>
+<li>ᶤ̮᷇</li>
+<li>ᶤ̮̆</li>
+<li>ᶤ̮̐</li>
+<li>ᶤ̮́</li>
+<li>ᶤ̮̊</li>
+<li>ᶤ̮̅</li>
+<li>ᶤ̮̂</li>
+<li>ᶤ̤᷄</li>
+<li>ᶤ̤̄</li>
+<li>ᶤ̤̓</li>
+<li>ᶤ̤̔</li>
+<li>ᶤ̤̈</li>
+<li>ᶤ̤̏</li>
+<li>ᶤ̤᷆</li>
+<li>ᶤ̤̌</li>
+<li>ᶤ̤̉</li>
+<li>ᶤ̤͂</li>
+<li>ᶤ̤̋</li>
+<li>ᶤ̤̃</li>
+<li>ᶤ̤̍</li>
+<li>ᶤ̤̀</li>
+<li>ᶤ̤̇</li>
+<li>ᶤ̤̑</li>
+<li>ᶤ̤̒</li>
+<li>ᶤ̤᷅</li>
+<li>ᶤ̤᷇</li>
+<li>ᶤ̤̆</li>
+<li>ᶤ̤̐</li>
+<li>ᶤ̤́</li>
+<li>ᶤ̤̊</li>
+<li>ᶤ̤̅</li>
+<li>ᶤ̤̂</li>
+<li>ᶤ̯᷄</li>
+<li>ᶤ̯̄</li>
+<li>ᶤ̯̓</li>
+<li>ᶤ̯̔</li>
+<li>ᶤ̯̈</li>
+<li>ᶤ̯̏</li>
+<li>ᶤ̯᷆</li>
+<li>ᶤ̯̌</li>
+<li>ᶤ̯̉</li>
+<li>ᶤ̯͂</li>
+<li>ᶤ̯̋</li>
+<li>ᶤ̯̃</li>
+<li>ᶤ̯̍</li>
+<li>ᶤ̯̀</li>
+<li>ᶤ̯̇</li>
+<li>ᶤ̯̑</li>
+<li>ᶤ̯̒</li>
+<li>ᶤ̯᷅</li>
+<li>ᶤ̯᷇</li>
+<li>ᶤ̯̆</li>
+<li>ᶤ̯̐</li>
+<li>ᶤ̯́</li>
+<li>ᶤ̯̊</li>
+<li>ᶤ̯̅</li>
+<li>ᶤ̯̂</li>
+<li>ᶤ̰᷄</li>
+<li>ᶤ̰̄</li>
+<li>ᶤ̰̓</li>
+<li>ᶤ̰̔</li>
+<li>ᶤ̰̈</li>
+<li>ᶤ̰̏</li>
+<li>ᶤ̰᷆</li>
+<li>ᶤ̰̌</li>
+<li>ᶤ̰̉</li>
+<li>ᶤ̰͂</li>
+<li>ᶤ̰̋</li>
+<li>ᶤ̰̃</li>
+<li>ᶤ̰̍</li>
+<li>ᶤ̰̀</li>
+<li>ᶤ̰̇</li>
+<li>ᶤ̰̑</li>
+<li>ᶤ̰̒</li>
+<li>ᶤ̰᷅</li>
+<li>ᶤ̰᷇</li>
+<li>ᶤ̰̆</li>
+<li>ᶤ̰̐</li>
+<li>ᶤ̰́</li>
+<li>ᶤ̰̊</li>
+<li>ᶤ̰̅</li>
+<li>ᶤ̰̂</li>
+<li>ᶤ᷊᷄</li>
+<li>ᶤ᷊̄</li>
+<li>ᶤ᷊̓</li>
+<li>ᶤ᷊̔</li>
+<li>ᶤ᷊̈</li>
+<li>ᶤ᷊̏</li>
+<li>ᶤ᷊᷆</li>
+<li>ᶤ᷊̌</li>
+<li>ᶤ᷊̉</li>
+<li>ᶤ᷊͂</li>
+<li>ᶤ᷊̋</li>
+<li>ᶤ᷊̃</li>
+<li>ᶤ᷊̍</li>
+<li>ᶤ᷊̀</li>
+<li>ᶤ᷊̇</li>
+<li>ᶤ᷊̑</li>
+<li>ᶤ᷊̒</li>
+<li>ᶤ᷊᷅</li>
+<li>ᶤ᷊᷇</li>
+<li>ᶤ᷊̆</li>
+<li>ᶤ᷊̐</li>
+<li>ᶤ᷊́</li>
+<li>ᶤ᷊̊</li>
+<li>ᶤ᷊̅</li>
+<li>ᶤ᷊̂</li>
+<li>ᶤ̭᷄</li>
+<li>ᶤ̭̄</li>
+<li>ᶤ̭̓</li>
+<li>ᶤ̭̔</li>
+<li>ᶤ̭̈</li>
+<li>ᶤ̭̏</li>
+<li>ᶤ̭᷆</li>
+<li>ᶤ̭̌</li>
+<li>ᶤ̭̉</li>
+<li>ᶤ̭͂</li>
+<li>ᶤ̭̋</li>
+<li>ᶤ̭̃</li>
+<li>ᶤ̭̍</li>
+<li>ᶤ̭̀</li>
+<li>ᶤ̭̇</li>
+<li>ᶤ̭̑</li>
+<li>ᶤ̭̒</li>
+<li>ᶤ̭᷅</li>
+<li>ᶤ̭᷇</li>
+<li>ᶤ̭̆</li>
+<li>ᶤ̭̐</li>
+<li>ᶤ̭́</li>
+<li>ᶤ̭̊</li>
+<li>ᶤ̭̅</li>
+<li>ᶤ̭̂</li>
+<li>ᶤ̦᷄</li>
+<li>ᶤ̦̄</li>
+<li>ᶤ̦̓</li>
+<li>ᶤ̦̔</li>
+<li>ᶤ̦̈</li>
+<li>ᶤ̦̏</li>
+<li>ᶤ̦᷆</li>
+<li>ᶤ̦̌</li>
+<li>ᶤ̦̉</li>
+<li>ᶤ̦͂</li>
+<li>ᶤ̦̋</li>
+<li>ᶤ̦̃</li>
+<li>ᶤ̦̍</li>
+<li>ᶤ̦̀</li>
+<li>ᶤ̦̇</li>
+<li>ᶤ̦̑</li>
+<li>ᶤ̦̒</li>
+<li>ᶤ̦᷅</li>
+<li>ᶤ̦᷇</li>
+<li>ᶤ̦̆</li>
+<li>ᶤ̦̐</li>
+<li>ᶤ̦́</li>
+<li>ᶤ̦̊</li>
+<li>ᶤ̦̅</li>
+<li>ᶤ̦̂</li>
+<li>ᶤ̛᷄</li>
+<li>ᶤ̛̄</li>
+<li>ᶤ̛̓</li>
+<li>ᶤ̛̔</li>
+<li>ᶤ̛̈</li>
+<li>ᶤ̛̏</li>
+<li>ᶤ̛᷆</li>
+<li>ᶤ̛̌</li>
+<li>ᶤ̛̉</li>
+<li>ᶤ̛͂</li>
+<li>ᶤ̛̋</li>
+<li>ᶤ̛̃</li>
+<li>ᶤ̛̍</li>
+<li>ᶤ̛̀</li>
+<li>ᶤ̛̇</li>
+<li>ᶤ̛̑</li>
+<li>ᶤ̛̒</li>
+<li>ᶤ̛᷅</li>
+<li>ᶤ̛᷇</li>
+<li>ᶤ̛̆</li>
+<li>ᶤ̛̐</li>
+<li>ᶤ̛́</li>
+<li>ᶤ̛̊</li>
+<li>ᶤ̛̅</li>
+<li>ᶤ̛̂</li>
+<li>ᶤ̲᷄</li>
+<li>ᶤ̲̄</li>
+<li>ᶤ̲̓</li>
+<li>ᶤ̲̔</li>
+<li>ᶤ̲̈</li>
+<li>ᶤ̲̏</li>
+<li>ᶤ̲᷆</li>
+<li>ᶤ̲̌</li>
+<li>ᶤ̲̉</li>
+<li>ᶤ̲͂</li>
+<li>ᶤ̲̋</li>
+<li>ᶤ̲̃</li>
+<li>ᶤ̲̍</li>
+<li>ᶤ̲̀</li>
+<li>ᶤ̲̇</li>
+<li>ᶤ̲̑</li>
+<li>ᶤ̲̒</li>
+<li>ᶤ̲᷅</li>
+<li>ᶤ̲᷇</li>
+<li>ᶤ̲̆</li>
+<li>ᶤ̲̐</li>
+<li>ᶤ̲́</li>
+<li>ᶤ̲̊</li>
+<li>ᶤ̲̅</li>
+<li>ᶤ̲̂</li>
+<li>ᶤ̱᷄</li>
+<li>ᶤ̱̄</li>
+<li>ᶤ̱̓</li>
+<li>ᶤ̱̔</li>
+<li>ᶤ̱̈</li>
+<li>ᶤ̱̏</li>
+<li>ᶤ̱᷆</li>
+<li>ᶤ̱̌</li>
+<li>ᶤ̱̉</li>
+<li>ᶤ̱͂</li>
+<li>ᶤ̱̋</li>
+<li>ᶤ̱̃</li>
+<li>ᶤ̱̍</li>
+<li>ᶤ̱̀</li>
+<li>ᶤ̱̇</li>
+<li>ᶤ̱̑</li>
+<li>ᶤ̱̒</li>
+<li>ᶤ̱᷅</li>
+<li>ᶤ̱᷇</li>
+<li>ᶤ̱̆</li>
+<li>ᶤ̱̐</li>
+<li>ᶤ̱́</li>
+<li>ᶤ̱̊</li>
+<li>ᶤ̱̅</li>
+<li>ᶤ̱̂</li>
+<li>ᶤ̧᷄</li>
+<li>ᶤ̧̄</li>
+<li>ᶤ̧̓</li>
+<li>ᶤ̧̔</li>
+<li>ᶤ̧̈</li>
+<li>ᶤ̧̏</li>
+<li>ᶤ̧᷆</li>
+<li>ᶤ̧̌</li>
+<li>ᶤ̧̉</li>
+<li>ᶤ̧͂</li>
+<li>ᶤ̧̋</li>
+<li>ᶤ̧̃</li>
+<li>ᶤ̧̍</li>
+<li>ᶤ̧̀</li>
+<li>ᶤ̧̇</li>
+<li>ᶤ̧̑</li>
+<li>ᶤ̧̒</li>
+<li>ᶤ̧᷅</li>
+<li>ᶤ̧᷇</li>
+<li>ᶤ̧̆</li>
+<li>ᶤ̧̐</li>
+<li>ᶤ̧́</li>
+<li>ᶤ̧̊</li>
+<li>ᶤ̧̅</li>
+<li>ᶤ̧̂</li>
+<li>ᶤ̨᷄</li>
+<li>ᶤ̨̄</li>
+<li>ᶤ̨̓</li>
+<li>ᶤ̨̔</li>
+<li>ᶤ̨̈</li>
+<li>ᶤ̨̏</li>
+<li>ᶤ̨᷆</li>
+<li>ᶤ̨̌</li>
+<li>ᶤ̨̉</li>
+<li>ᶤ̨͂</li>
+<li>ᶤ̨̋</li>
+<li>ᶤ̨̃</li>
+<li>ᶤ̨̍</li>
+<li>ᶤ̨̀</li>
+<li>ᶤ̨̇</li>
+<li>ᶤ̨̑</li>
+<li>ᶤ̨̒</li>
+<li>ᶤ̨᷅</li>
+<li>ᶤ̨᷇</li>
+<li>ᶤ̨̆</li>
+<li>ᶤ̨̐</li>
+<li>ᶤ̨́</li>
+<li>ᶤ̨̊</li>
+<li>ᶤ̨̅</li>
+<li>ᶤ̨̂</li>
+<li>ᶤ̥᷄</li>
+<li>ᶤ̥̄</li>
+<li>ᶤ̥̓</li>
+<li>ᶤ̥̔</li>
+<li>ᶤ̥̈</li>
+<li>ᶤ̥̏</li>
+<li>ᶤ̥᷆</li>
+<li>ᶤ̥̌</li>
+<li>ᶤ̥̉</li>
+<li>ᶤ̥͂</li>
+<li>ᶤ̥̋</li>
+<li>ᶤ̥̃</li>
+<li>ᶤ̥̍</li>
+<li>ᶤ̥̀</li>
+<li>ᶤ̥̇</li>
+<li>ᶤ̥̑</li>
+<li>ᶤ̥̒</li>
+<li>ᶤ̥᷅</li>
+<li>ᶤ̥᷇</li>
+<li>ᶤ̥̆</li>
+<li>ᶤ̥̐</li>
+<li>ᶤ̥́</li>
+<li>ᶤ̥̊</li>
+<li>ᶤ̥̅</li>
+<li>ᶤ̥̂</li>
+<li>ᶤ᷄</li>
+<li>ᶤ̄</li>
+<li>ᶤ̓</li>
+<li>ᶤ̔</li>
+<li>ᶤ̈</li>
+<li>ᶤ̏</li>
+<li>ᶤ᷆</li>
+<li>ᶤ̌</li>
+<li>ᶤ̉</li>
+<li>ᶤ͂</li>
+<li>ᶤ̋</li>
+<li>ᶤ̃</li>
+<li>ᶤ̍</li>
+<li>ᶤ̀</li>
+<li>ᶤ̇</li>
+<li>ᶤ̑</li>
+<li>ᶤ̒</li>
+<li>ᶤ᷅</li>
+<li>ᶤ᷇</li>
+<li>ᶤ̆</li>
+<li>ᶤ̐</li>
+<li>ᶤ́</li>
+<li>ᶤ̊</li>
+<li>ᶤ̅</li>
+<li>ᶤ̂</li>
+<li>ʝ̣᷄</li>
+<li>ʝ̣̄</li>
+<li>ʝ̣̓</li>
+<li>ʝ̣̔</li>
+<li>ʝ̣̈</li>
+<li>ʝ̣̏</li>
+<li>ʝ̣᷆</li>
+<li>ʝ̣̌</li>
+<li>ʝ̣̉</li>
+<li>ʝ̣͂</li>
+<li>ʝ̣̋</li>
+<li>ʝ̣̃</li>
+<li>ʝ̣̍</li>
+<li>ʝ̣̀</li>
+<li>ʝ̣̇</li>
+<li>ʝ̣̑</li>
+<li>ʝ̣̒</li>
+<li>ʝ̣᷅</li>
+<li>ʝ̣᷇</li>
+<li>ʝ̣̆</li>
+<li>ʝ̣̐</li>
+<li>ʝ̣́</li>
+<li>ʝ̣̊</li>
+<li>ʝ̣̅</li>
+<li>ʝ̣̂</li>
+<li>ʝ̵᷄</li>
+<li>ʝ̵̄</li>
+<li>ʝ̵̓</li>
+<li>ʝ̵̔</li>
+<li>ʝ̵̈</li>
+<li>ʝ̵̏</li>
+<li>ʝ̵᷆</li>
+<li>ʝ̵̌</li>
+<li>ʝ̵̉</li>
+<li>ʝ̵͂</li>
+<li>ʝ̵̋</li>
+<li>ʝ̵̃</li>
+<li>ʝ̵̍</li>
+<li>ʝ̵̀</li>
+<li>ʝ̵̇</li>
+<li>ʝ̵̑</li>
+<li>ʝ̵̒</li>
+<li>ʝ̵᷅</li>
+<li>ʝ̵᷇</li>
+<li>ʝ̵̆</li>
+<li>ʝ̵̐</li>
+<li>ʝ̵́</li>
+<li>ʝ̵̊</li>
+<li>ʝ̵̅</li>
+<li>ʝ̵̂</li>
+<li>ʝ̩᷄</li>
+<li>ʝ̩̄</li>
+<li>ʝ̩̓</li>
+<li>ʝ̩̔</li>
+<li>ʝ̩̈</li>
+<li>ʝ̩̏</li>
+<li>ʝ̩᷆</li>
+<li>ʝ̩̌</li>
+<li>ʝ̩̉</li>
+<li>ʝ̩͂</li>
+<li>ʝ̩̋</li>
+<li>ʝ̩̃</li>
+<li>ʝ̩̍</li>
+<li>ʝ̩̀</li>
+<li>ʝ̩̇</li>
+<li>ʝ̩̑</li>
+<li>ʝ̩̒</li>
+<li>ʝ̩᷅</li>
+<li>ʝ̩᷇</li>
+<li>ʝ̩̆</li>
+<li>ʝ̩̐</li>
+<li>ʝ̩́</li>
+<li>ʝ̩̊</li>
+<li>ʝ̩̅</li>
+<li>ʝ̩̂</li>
+<li>ʝ̮᷄</li>
+<li>ʝ̮̄</li>
+<li>ʝ̮̓</li>
+<li>ʝ̮̔</li>
+<li>ʝ̮̈</li>
+<li>ʝ̮̏</li>
+<li>ʝ̮᷆</li>
+<li>ʝ̮̌</li>
+<li>ʝ̮̉</li>
+<li>ʝ̮͂</li>
+<li>ʝ̮̋</li>
+<li>ʝ̮̃</li>
+<li>ʝ̮̍</li>
+<li>ʝ̮̀</li>
+<li>ʝ̮̇</li>
+<li>ʝ̮̑</li>
+<li>ʝ̮̒</li>
+<li>ʝ̮᷅</li>
+<li>ʝ̮᷇</li>
+<li>ʝ̮̆</li>
+<li>ʝ̮̐</li>
+<li>ʝ̮́</li>
+<li>ʝ̮̊</li>
+<li>ʝ̮̅</li>
+<li>ʝ̮̂</li>
+<li>ʝ̤᷄</li>
+<li>ʝ̤̄</li>
+<li>ʝ̤̓</li>
+<li>ʝ̤̔</li>
+<li>ʝ̤̈</li>
+<li>ʝ̤̏</li>
+<li>ʝ̤᷆</li>
+<li>ʝ̤̌</li>
+<li>ʝ̤̉</li>
+<li>ʝ̤͂</li>
+<li>ʝ̤̋</li>
+<li>ʝ̤̃</li>
+<li>ʝ̤̍</li>
+<li>ʝ̤̀</li>
+<li>ʝ̤̇</li>
+<li>ʝ̤̑</li>
+<li>ʝ̤̒</li>
+<li>ʝ̤᷅</li>
+<li>ʝ̤᷇</li>
+<li>ʝ̤̆</li>
+<li>ʝ̤̐</li>
+<li>ʝ̤́</li>
+<li>ʝ̤̊</li>
+<li>ʝ̤̅</li>
+<li>ʝ̤̂</li>
+<li>ʝ̯᷄</li>
+<li>ʝ̯̄</li>
+<li>ʝ̯̓</li>
+<li>ʝ̯̔</li>
+<li>ʝ̯̈</li>
+<li>ʝ̯̏</li>
+<li>ʝ̯᷆</li>
+<li>ʝ̯̌</li>
+<li>ʝ̯̉</li>
+<li>ʝ̯͂</li>
+<li>ʝ̯̋</li>
+<li>ʝ̯̃</li>
+<li>ʝ̯̍</li>
+<li>ʝ̯̀</li>
+<li>ʝ̯̇</li>
+<li>ʝ̯̑</li>
+<li>ʝ̯̒</li>
+<li>ʝ̯᷅</li>
+<li>ʝ̯᷇</li>
+<li>ʝ̯̆</li>
+<li>ʝ̯̐</li>
+<li>ʝ̯́</li>
+<li>ʝ̯̊</li>
+<li>ʝ̯̅</li>
+<li>ʝ̯̂</li>
+<li>ʝ̰᷄</li>
+<li>ʝ̰̄</li>
+<li>ʝ̰̓</li>
+<li>ʝ̰̔</li>
+<li>ʝ̰̈</li>
+<li>ʝ̰̏</li>
+<li>ʝ̰᷆</li>
+<li>ʝ̰̌</li>
+<li>ʝ̰̉</li>
+<li>ʝ̰͂</li>
+<li>ʝ̰̋</li>
+<li>ʝ̰̃</li>
+<li>ʝ̰̍</li>
+<li>ʝ̰̀</li>
+<li>ʝ̰̇</li>
+<li>ʝ̰̑</li>
+<li>ʝ̰̒</li>
+<li>ʝ̰᷅</li>
+<li>ʝ̰᷇</li>
+<li>ʝ̰̆</li>
+<li>ʝ̰̐</li>
+<li>ʝ̰́</li>
+<li>ʝ̰̊</li>
+<li>ʝ̰̅</li>
+<li>ʝ̰̂</li>
+<li>ʝ᷊᷄</li>
+<li>ʝ᷊̄</li>
+<li>ʝ᷊̓</li>
+<li>ʝ᷊̔</li>
+<li>ʝ᷊̈</li>
+<li>ʝ᷊̏</li>
+<li>ʝ᷊᷆</li>
+<li>ʝ᷊̌</li>
+<li>ʝ᷊̉</li>
+<li>ʝ᷊͂</li>
+<li>ʝ᷊̋</li>
+<li>ʝ᷊̃</li>
+<li>ʝ᷊̍</li>
+<li>ʝ᷊̀</li>
+<li>ʝ᷊̇</li>
+<li>ʝ᷊̑</li>
+<li>ʝ᷊̒</li>
+<li>ʝ᷊᷅</li>
+<li>ʝ᷊᷇</li>
+<li>ʝ᷊̆</li>
+<li>ʝ᷊̐</li>
+<li>ʝ᷊́</li>
+<li>ʝ᷊̊</li>
+<li>ʝ᷊̅</li>
+<li>ʝ᷊̂</li>
+<li>ʝ̭᷄</li>
+<li>ʝ̭̄</li>
+<li>ʝ̭̓</li>
+<li>ʝ̭̔</li>
+<li>ʝ̭̈</li>
+<li>ʝ̭̏</li>
+<li>ʝ̭᷆</li>
+<li>ʝ̭̌</li>
+<li>ʝ̭̉</li>
+<li>ʝ̭͂</li>
+<li>ʝ̭̋</li>
+<li>ʝ̭̃</li>
+<li>ʝ̭̍</li>
+<li>ʝ̭̀</li>
+<li>ʝ̭̇</li>
+<li>ʝ̭̑</li>
+<li>ʝ̭̒</li>
+<li>ʝ̭᷅</li>
+<li>ʝ̭᷇</li>
+<li>ʝ̭̆</li>
+<li>ʝ̭̐</li>
+<li>ʝ̭́</li>
+<li>ʝ̭̊</li>
+<li>ʝ̭̅</li>
+<li>ʝ̭̂</li>
+<li>ʝ̦᷄</li>
+<li>ʝ̦̄</li>
+<li>ʝ̦̓</li>
+<li>ʝ̦̔</li>
+<li>ʝ̦̈</li>
+<li>ʝ̦̏</li>
+<li>ʝ̦᷆</li>
+<li>ʝ̦̌</li>
+<li>ʝ̦̉</li>
+<li>ʝ̦͂</li>
+<li>ʝ̦̋</li>
+<li>ʝ̦̃</li>
+<li>ʝ̦̍</li>
+<li>ʝ̦̀</li>
+<li>ʝ̦̇</li>
+<li>ʝ̦̑</li>
+<li>ʝ̦̒</li>
+<li>ʝ̦᷅</li>
+<li>ʝ̦᷇</li>
+<li>ʝ̦̆</li>
+<li>ʝ̦̐</li>
+<li>ʝ̦́</li>
+<li>ʝ̦̊</li>
+<li>ʝ̦̅</li>
+<li>ʝ̦̂</li>
+<li>ʝ̛᷄</li>
+<li>ʝ̛̄</li>
+<li>ʝ̛̓</li>
+<li>ʝ̛̔</li>
+<li>ʝ̛̈</li>
+<li>ʝ̛̏</li>
+<li>ʝ̛᷆</li>
+<li>ʝ̛̌</li>
+<li>ʝ̛̉</li>
+<li>ʝ̛͂</li>
+<li>ʝ̛̋</li>
+<li>ʝ̛̃</li>
+<li>ʝ̛̍</li>
+<li>ʝ̛̀</li>
+<li>ʝ̛̇</li>
+<li>ʝ̛̑</li>
+<li>ʝ̛̒</li>
+<li>ʝ̛᷅</li>
+<li>ʝ̛᷇</li>
+<li>ʝ̛̆</li>
+<li>ʝ̛̐</li>
+<li>ʝ̛́</li>
+<li>ʝ̛̊</li>
+<li>ʝ̛̅</li>
+<li>ʝ̛̂</li>
+<li>ʝ̲᷄</li>
+<li>ʝ̲̄</li>
+<li>ʝ̲̓</li>
+<li>ʝ̲̔</li>
+<li>ʝ̲̈</li>
+<li>ʝ̲̏</li>
+<li>ʝ̲᷆</li>
+<li>ʝ̲̌</li>
+<li>ʝ̲̉</li>
+<li>ʝ̲͂</li>
+<li>ʝ̲̋</li>
+<li>ʝ̲̃</li>
+<li>ʝ̲̍</li>
+<li>ʝ̲̀</li>
+<li>ʝ̲̇</li>
+<li>ʝ̲̑</li>
+<li>ʝ̲̒</li>
+<li>ʝ̲᷅</li>
+<li>ʝ̲᷇</li>
+<li>ʝ̲̆</li>
+<li>ʝ̲̐</li>
+<li>ʝ̲́</li>
+<li>ʝ̲̊</li>
+<li>ʝ̲̅</li>
+<li>ʝ̲̂</li>
+<li>ʝ̱᷄</li>
+<li>ʝ̱̄</li>
+<li>ʝ̱̓</li>
+<li>ʝ̱̔</li>
+<li>ʝ̱̈</li>
+<li>ʝ̱̏</li>
+<li>ʝ̱᷆</li>
+<li>ʝ̱̌</li>
+<li>ʝ̱̉</li>
+<li>ʝ̱͂</li>
+<li>ʝ̱̋</li>
+<li>ʝ̱̃</li>
+<li>ʝ̱̍</li>
+<li>ʝ̱̀</li>
+<li>ʝ̱̇</li>
+<li>ʝ̱̑</li>
+<li>ʝ̱̒</li>
+<li>ʝ̱᷅</li>
+<li>ʝ̱᷇</li>
+<li>ʝ̱̆</li>
+<li>ʝ̱̐</li>
+<li>ʝ̱́</li>
+<li>ʝ̱̊</li>
+<li>ʝ̱̅</li>
+<li>ʝ̱̂</li>
+<li>ʝ̧᷄</li>
+<li>ʝ̧̄</li>
+<li>ʝ̧̓</li>
+<li>ʝ̧̔</li>
+<li>ʝ̧̈</li>
+<li>ʝ̧̏</li>
+<li>ʝ̧᷆</li>
+<li>ʝ̧̌</li>
+<li>ʝ̧̉</li>
+<li>ʝ̧͂</li>
+<li>ʝ̧̋</li>
+<li>ʝ̧̃</li>
+<li>ʝ̧̍</li>
+<li>ʝ̧̀</li>
+<li>ʝ̧̇</li>
+<li>ʝ̧̑</li>
+<li>ʝ̧̒</li>
+<li>ʝ̧᷅</li>
+<li>ʝ̧᷇</li>
+<li>ʝ̧̆</li>
+<li>ʝ̧̐</li>
+<li>ʝ̧́</li>
+<li>ʝ̧̊</li>
+<li>ʝ̧̅</li>
+<li>ʝ̧̂</li>
+<li>ʝ̨᷄</li>
+<li>ʝ̨̄</li>
+<li>ʝ̨̓</li>
+<li>ʝ̨̔</li>
+<li>ʝ̨̈</li>
+<li>ʝ̨̏</li>
+<li>ʝ̨᷆</li>
+<li>ʝ̨̌</li>
+<li>ʝ̨̉</li>
+<li>ʝ̨͂</li>
+<li>ʝ̨̋</li>
+<li>ʝ̨̃</li>
+<li>ʝ̨̍</li>
+<li>ʝ̨̀</li>
+<li>ʝ̨̇</li>
+<li>ʝ̨̑</li>
+<li>ʝ̨̒</li>
+<li>ʝ̨᷅</li>
+<li>ʝ̨᷇</li>
+<li>ʝ̨̆</li>
+<li>ʝ̨̐</li>
+<li>ʝ̨́</li>
+<li>ʝ̨̊</li>
+<li>ʝ̨̅</li>
+<li>ʝ̨̂</li>
+<li>ʝ̥᷄</li>
+<li>ʝ̥̄</li>
+<li>ʝ̥̓</li>
+<li>ʝ̥̔</li>
+<li>ʝ̥̈</li>
+<li>ʝ̥̏</li>
+<li>ʝ̥᷆</li>
+<li>ʝ̥̌</li>
+<li>ʝ̥̉</li>
+<li>ʝ̥͂</li>
+<li>ʝ̥̋</li>
+<li>ʝ̥̃</li>
+<li>ʝ̥̍</li>
+<li>ʝ̥̀</li>
+<li>ʝ̥̇</li>
+<li>ʝ̥̑</li>
+<li>ʝ̥̒</li>
+<li>ʝ̥᷅</li>
+<li>ʝ̥᷇</li>
+<li>ʝ̥̆</li>
+<li>ʝ̥̐</li>
+<li>ʝ̥́</li>
+<li>ʝ̥̊</li>
+<li>ʝ̥̅</li>
+<li>ʝ̥̂</li>
+<li>ʝ᷄</li>
+<li>ʝ̄</li>
+<li>ʝ̓</li>
+<li>ʝ̔</li>
+<li>ʝ̈</li>
+<li>ʝ̏</li>
+<li>ʝ᷆</li>
+<li>ʝ̌</li>
+<li>ʝ̉</li>
+<li>ʝ͂</li>
+<li>ʝ̋</li>
+<li>ʝ̃</li>
+<li>ʝ̍</li>
+<li>ʝ̀</li>
+<li>ʝ̇</li>
+<li>ʝ̑</li>
+<li>ʝ̒</li>
+<li>ʝ᷅</li>
+<li>ʝ᷇</li>
+<li>ʝ̆</li>
+<li>ʝ̐</li>
+<li>ʝ́</li>
+<li>ʝ̊</li>
+<li>ʝ̅</li>
+<li>ʝ̂</li>
+<li>j̣᷄</li>
+<li>j̣̓</li>
+<li>j̣̔</li>
+<li>j̣᷆</li>
+<li>j̣͂</li>
+<li>j̣̍</li>
+<li>j̣᷅</li>
+<li>j̣᷇</li>
+<li>j̵᷄</li>
+<li>j̵̓</li>
+<li>j̵̔</li>
+<li>j̵᷆</li>
+<li>j̵͂</li>
+<li>j̵̍</li>
+<li>j̵᷅</li>
+<li>j̵᷇</li>
+<li>j̩᷄</li>
+<li>j̩̓</li>
+<li>j̩̔</li>
+<li>j̩᷆</li>
+<li>j̩͂</li>
+<li>j̩̍</li>
+<li>j̩᷅</li>
+<li>j̩᷇</li>
+<li>j̮᷄</li>
+<li>j̮̓</li>
+<li>j̮̔</li>
+<li>j̮᷆</li>
+<li>j̮͂</li>
+<li>j̮̍</li>
+<li>j̮᷅</li>
+<li>j̮᷇</li>
+<li>j̤᷄</li>
+<li>j̤̓</li>
+<li>j̤̔</li>
+<li>j̤᷆</li>
+<li>j̤͂</li>
+<li>j̤̍</li>
+<li>j̤᷅</li>
+<li>j̤᷇</li>
+<li>j̯᷄</li>
+<li>j̯̓</li>
+<li>j̯̔</li>
+<li>j̯᷆</li>
+<li>j̯͂</li>
+<li>j̯̍</li>
+<li>j̯᷅</li>
+<li>j̯᷇</li>
+<li>j̰᷄</li>
+<li>j̰̓</li>
+<li>j̰̔</li>
+<li>j̰᷆</li>
+<li>j̰͂</li>
+<li>j̰̍</li>
+<li>j̰᷅</li>
+<li>j̰᷇</li>
+<li>j᷊᷄</li>
+<li>j᷊̓</li>
+<li>j᷊̔</li>
+<li>j᷊᷆</li>
+<li>j᷊͂</li>
+<li>j᷊̍</li>
+<li>j᷊᷅</li>
+<li>j᷊᷇</li>
+<li>j̭᷄</li>
+<li>j̭̓</li>
+<li>j̭̔</li>
+<li>j̭᷆</li>
+<li>j̭͂</li>
+<li>j̭̍</li>
+<li>j̭᷅</li>
+<li>j̭᷇</li>
+<li>j̦᷄</li>
+<li>j̦̓</li>
+<li>j̦̔</li>
+<li>j̦᷆</li>
+<li>j̦͂</li>
+<li>j̦̍</li>
+<li>j̦᷅</li>
+<li>j̦᷇</li>
+<li>j̲᷄</li>
+<li>j̲̓</li>
+<li>j̲̔</li>
+<li>j̲᷆</li>
+<li>j̲͂</li>
+<li>j̲̍</li>
+<li>j̲᷅</li>
+<li>j̲᷇</li>
+<li>j̱᷄</li>
+<li>j̱̓</li>
+<li>j̱̔</li>
+<li>j̱᷆</li>
+<li>j̱͂</li>
+<li>j̱̍</li>
+<li>j̱᷅</li>
+<li>j̱᷇</li>
+<li>j̧᷄</li>
+<li>j̧̓</li>
+<li>j̧̔</li>
+<li>j̧᷆</li>
+<li>j̧͂</li>
+<li>j̧̍</li>
+<li>j̧᷅</li>
+<li>j̧᷇</li>
+<li>j̨᷄</li>
+<li>j̨̓</li>
+<li>j̨̔</li>
+<li>j̨᷆</li>
+<li>j̨͂</li>
+<li>j̨̍</li>
+<li>j̨᷅</li>
+<li>j̨᷇</li>
+<li>j̥᷄</li>
+<li>j̥̓</li>
+<li>j̥̔</li>
+<li>j̥᷆</li>
+<li>j̥͂</li>
+<li>j̥̍</li>
+<li>j̥᷅</li>
+<li>j̥᷇</li>
+<li>j᷄</li>
+<li>j̓</li>
+<li>j̔</li>
+<li>j᷆</li>
+<li>j͂</li>
+<li>j̍</li>
+<li>j᷅</li>
+<li>j᷇</li>
+<li>ɨ̣᷄</li>
+<li>ɨ̣̓</li>
+<li>ɨ̣̔</li>
+<li>ɨ̣᷆</li>
+<li>ɨ̣͂</li>
+<li>ɨ̣̍</li>
+<li>ɨ̣᷅</li>
+<li>ɨ̣᷇</li>
+<li>ɨ̵᷄</li>
+<li>ɨ̵̓</li>
+<li>ɨ̵̔</li>
+<li>ɨ̵᷆</li>
+<li>ɨ̵͂</li>
+<li>ɨ̵̍</li>
+<li>ɨ̵᷅</li>
+<li>ɨ̵᷇</li>
+<li>ɨ̩᷄</li>
+<li>ɨ̩̓</li>
+<li>ɨ̩̔</li>
+<li>ɨ̩᷆</li>
+<li>ɨ̩͂</li>
+<li>ɨ̩̍</li>
+<li>ɨ̩᷅</li>
+<li>ɨ̩᷇</li>
+<li>ɨ̮᷄</li>
+<li>ɨ̮̓</li>
+<li>ɨ̮̔</li>
+<li>ɨ̮᷆</li>
+<li>ɨ̮͂</li>
+<li>ɨ̮̍</li>
+<li>ɨ̮᷅</li>
+<li>ɨ̮᷇</li>
+<li>ɨ̤᷄</li>
+<li>ɨ̤̓</li>
+<li>ɨ̤̔</li>
+<li>ɨ̤᷆</li>
+<li>ɨ̤͂</li>
+<li>ɨ̤̍</li>
+<li>ɨ̤᷅</li>
+<li>ɨ̤᷇</li>
+<li>ɨ̯᷄</li>
+<li>ɨ̯̓</li>
+<li>ɨ̯̔</li>
+<li>ɨ̯᷆</li>
+<li>ɨ̯͂</li>
+<li>ɨ̯̍</li>
+<li>ɨ̯᷅</li>
+<li>ɨ̯᷇</li>
+<li>ɨ̰᷄</li>
+<li>ɨ̰̓</li>
+<li>ɨ̰̔</li>
+<li>ɨ̰᷆</li>
+<li>ɨ̰͂</li>
+<li>ɨ̰̍</li>
+<li>ɨ̰᷅</li>
+<li>ɨ̰᷇</li>
+<li>ɨ᷊᷄</li>
+<li>ɨ᷊̓</li>
+<li>ɨ᷊̔</li>
+<li>ɨ᷊᷆</li>
+<li>ɨ᷊͂</li>
+<li>ɨ᷊̍</li>
+<li>ɨ᷊᷅</li>
+<li>ɨ᷊᷇</li>
+<li>ɨ̭᷄</li>
+<li>ɨ̭̓</li>
+<li>ɨ̭̔</li>
+<li>ɨ̭᷆</li>
+<li>ɨ̭͂</li>
+<li>ɨ̭̍</li>
+<li>ɨ̭᷅</li>
+<li>ɨ̭᷇</li>
+<li>ɨ̦᷄</li>
+<li>ɨ̦̓</li>
+<li>ɨ̦̔</li>
+<li>ɨ̦᷆</li>
+<li>ɨ̦͂</li>
+<li>ɨ̦̍</li>
+<li>ɨ̦᷅</li>
+<li>ɨ̦᷇</li>
+<li>ɨ̲᷄</li>
+<li>ɨ̲̓</li>
+<li>ɨ̲̔</li>
+<li>ɨ̲᷆</li>
+<li>ɨ̲͂</li>
+<li>ɨ̲̍</li>
+<li>ɨ̲᷅</li>
+<li>ɨ̲᷇</li>
+<li>ɨ̱᷄</li>
+<li>ɨ̱̓</li>
+<li>ɨ̱̔</li>
+<li>ɨ̱᷆</li>
+<li>ɨ̱͂</li>
+<li>ɨ̱̍</li>
+<li>ɨ̱᷅</li>
+<li>ɨ̱᷇</li>
+<li>ɨ̧᷄</li>
+<li>ɨ̧̓</li>
+<li>ɨ̧̔</li>
+<li>ɨ̧᷆</li>
+<li>ɨ̧͂</li>
+<li>ɨ̧̍</li>
+<li>ɨ̧᷅</li>
+<li>ɨ̧᷇</li>
+<li>ɨ̨᷄</li>
+<li>ɨ̨̓</li>
+<li>ɨ̨̔</li>
+<li>ɨ̨᷆</li>
+<li>ɨ̨͂</li>
+<li>ɨ̨̍</li>
+<li>ɨ̨᷅</li>
+<li>ɨ̨᷇</li>
+<li>ɨ̥᷄</li>
+<li>ɨ̥̓</li>
+<li>ɨ̥̔</li>
+<li>ɨ̥᷆</li>
+<li>ɨ̥͂</li>
+<li>ɨ̥̍</li>
+<li>ɨ̥᷅</li>
+<li>ɨ̥᷇</li>
+<li>ɨ᷄</li>
+<li>ɨ̓</li>
+<li>ɨ̔</li>
+<li>ɨ᷆</li>
+<li>ɨ͂</li>
+<li>ɨ̍</li>
+<li>ɨ᷅</li>
+<li>ɨ᷇</li>
 <li>ɉ̣᷄</li>
-<li>ɉ̣͂</li>
 <li>ɉ̣̓</li>
 <li>ɉ̣̔</li>
 <li>ɉ̣᷆</li>
+<li>ɉ̣͂</li>
+<li>ɉ̣̍</li>
+<li>ɉ̣᷅</li>
 <li>ɉ̣᷇</li>
-<li>ɉ᷊̍</li>
-<li>ɉ᷊᷅</li>
-<li>ɉ᷊᷄</li>
-<li>ɉ᷊͂</li>
-<li>ɉ᷊̓</li>
-<li>ɉ᷊̔</li>
-<li>ɉ᷊᷆</li>
-<li>ɉ᷊᷇</li>
-<li>ɉ̱̍</li>
-<li>ɉ̱᷅</li>
-<li>ɉ̱᷄</li>
-<li>ɉ̱͂</li>
-<li>ɉ̱̓</li>
-<li>ɉ̱̔</li>
-<li>ɉ̱᷆</li>
-<li>ɉ̱᷇</li>
-<li>ɉ̮̍</li>
-<li>ɉ̮᷅</li>
+<li>ɉ̵᷄</li>
+<li>ɉ̵̓</li>
+<li>ɉ̵̔</li>
+<li>ɉ̵᷆</li>
+<li>ɉ̵͂</li>
+<li>ɉ̵̍</li>
+<li>ɉ̵᷅</li>
+<li>ɉ̵᷇</li>
+<li>ɉ̩᷄</li>
+<li>ɉ̩̓</li>
+<li>ɉ̩̔</li>
+<li>ɉ̩᷆</li>
+<li>ɉ̩͂</li>
+<li>ɉ̩̍</li>
+<li>ɉ̩᷅</li>
+<li>ɉ̩᷇</li>
 <li>ɉ̮᷄</li>
-<li>ɉ̮͂</li>
 <li>ɉ̮̓</li>
 <li>ɉ̮̔</li>
 <li>ɉ̮᷆</li>
+<li>ɉ̮͂</li>
+<li>ɉ̮̍</li>
+<li>ɉ̮᷅</li>
 <li>ɉ̮᷇</li>
-<li>ɉ̯̍</li>
-<li>ɉ̯᷅</li>
-<li>ɉ̯᷄</li>
-<li>ɉ̯͂</li>
-<li>ɉ̯̓</li>
-<li>ɉ̯̔</li>
-<li>ɉ̯᷆</li>
-<li>ɉ̯᷇</li>
-<li>ɉ̲̍</li>
-<li>ɉ̲᷅</li>
-<li>ɉ̲᷄</li>
-<li>ɉ̲͂</li>
-<li>ɉ̲̓</li>
-<li>ɉ̲̔</li>
-<li>ɉ̲᷆</li>
-<li>ɉ̲᷇</li>
-<li>ɉ̭̍</li>
-<li>ɉ̭᷅</li>
-<li>ɉ̭᷄</li>
-<li>ɉ̭͂</li>
-<li>ɉ̭̓</li>
-<li>ɉ̭̔</li>
-<li>ɉ̭᷆</li>
-<li>ɉ̭᷇</li>
-<li>ɉ̤̍</li>
-<li>ɉ̤᷅</li>
 <li>ɉ̤᷄</li>
-<li>ɉ̤͂</li>
 <li>ɉ̤̓</li>
 <li>ɉ̤̔</li>
 <li>ɉ̤᷆</li>
+<li>ɉ̤͂</li>
+<li>ɉ̤̍</li>
+<li>ɉ̤᷅</li>
 <li>ɉ̤᷇</li>
-<li>ɉ̰̍</li>
-<li>ɉ̰᷅</li>
+<li>ɉ̯᷄</li>
+<li>ɉ̯̓</li>
+<li>ɉ̯̔</li>
+<li>ɉ̯᷆</li>
+<li>ɉ̯͂</li>
+<li>ɉ̯̍</li>
+<li>ɉ̯᷅</li>
+<li>ɉ̯᷇</li>
 <li>ɉ̰᷄</li>
-<li>ɉ̰͂</li>
 <li>ɉ̰̓</li>
 <li>ɉ̰̔</li>
 <li>ɉ̰᷆</li>
+<li>ɉ̰͂</li>
+<li>ɉ̰̍</li>
+<li>ɉ̰᷅</li>
 <li>ɉ̰᷇</li>
-<li>ɉ̍</li>
-<li>ɉ᷅</li>
+<li>ɉ᷊᷄</li>
+<li>ɉ᷊̓</li>
+<li>ɉ᷊̔</li>
+<li>ɉ᷊᷆</li>
+<li>ɉ᷊͂</li>
+<li>ɉ᷊̍</li>
+<li>ɉ᷊᷅</li>
+<li>ɉ᷊᷇</li>
+<li>ɉ̭᷄</li>
+<li>ɉ̭̓</li>
+<li>ɉ̭̔</li>
+<li>ɉ̭᷆</li>
+<li>ɉ̭͂</li>
+<li>ɉ̭̍</li>
+<li>ɉ̭᷅</li>
+<li>ɉ̭᷇</li>
+<li>ɉ̦᷄</li>
+<li>ɉ̦̓</li>
+<li>ɉ̦̔</li>
+<li>ɉ̦᷆</li>
+<li>ɉ̦͂</li>
+<li>ɉ̦̍</li>
+<li>ɉ̦᷅</li>
+<li>ɉ̦᷇</li>
+<li>ɉ̲᷄</li>
+<li>ɉ̲̓</li>
+<li>ɉ̲̔</li>
+<li>ɉ̲᷆</li>
+<li>ɉ̲͂</li>
+<li>ɉ̲̍</li>
+<li>ɉ̲᷅</li>
+<li>ɉ̲᷇</li>
+<li>ɉ̱᷄</li>
+<li>ɉ̱̓</li>
+<li>ɉ̱̔</li>
+<li>ɉ̱᷆</li>
+<li>ɉ̱͂</li>
+<li>ɉ̱̍</li>
+<li>ɉ̱᷅</li>
+<li>ɉ̱᷇</li>
+<li>ɉ̧᷄</li>
+<li>ɉ̧̓</li>
+<li>ɉ̧̔</li>
+<li>ɉ̧᷆</li>
+<li>ɉ̧͂</li>
+<li>ɉ̧̍</li>
+<li>ɉ̧᷅</li>
+<li>ɉ̧᷇</li>
+<li>ɉ̨᷄</li>
+<li>ɉ̨̓</li>
+<li>ɉ̨̔</li>
+<li>ɉ̨᷆</li>
+<li>ɉ̨͂</li>
+<li>ɉ̨̍</li>
+<li>ɉ̨᷅</li>
+<li>ɉ̨᷇</li>
+<li>ɉ̥᷄</li>
+<li>ɉ̥̓</li>
+<li>ɉ̥̔</li>
+<li>ɉ̥᷆</li>
+<li>ɉ̥͂</li>
+<li>ɉ̥̍</li>
+<li>ɉ̥᷅</li>
+<li>ɉ̥᷇</li>
 <li>ɉ᷄</li>
-<li>ɉ͂</li>
 <li>ɉ̓</li>
 <li>ɉ̔</li>
 <li>ɉ᷆</li>
+<li>ɉ͂</li>
+<li>ɉ̍</li>
+<li>ɉ᷅</li>
 <li>ɉ᷇</li>
-<li>i̦̍</li>
-<li>i̦᷅</li>
-<li>i̦᷄</li>
-<li>i̦͂</li>
-<li>i̦̓</li>
-<li>i̦̔</li>
-<li>i̦᷆</li>
-<li>i̦᷇</li>
-<li>i̧̍</li>
-<li>i̧᷅</li>
-<li>i̧᷄</li>
-<li>i̧͂</li>
-<li>i̧̓</li>
-<li>i̧̔</li>
-<li>i̧᷆</li>
-<li>i̧᷇</li>
-<li>i̵̍</li>
-<li>i̵᷅</li>
+<li>ⁱ̣᷄</li>
+<li>ⁱ̣̄</li>
+<li>ⁱ̣̓</li>
+<li>ⁱ̣̔</li>
+<li>ⁱ̣̈</li>
+<li>ⁱ̣̏</li>
+<li>ⁱ̣᷆</li>
+<li>ⁱ̣̌</li>
+<li>ⁱ̣̉</li>
+<li>ⁱ̣͂</li>
+<li>ⁱ̣̋</li>
+<li>ⁱ̣̃</li>
+<li>ⁱ̣̍</li>
+<li>ⁱ̣̀</li>
+<li>ⁱ̣̇</li>
+<li>ⁱ̣̑</li>
+<li>ⁱ̣̒</li>
+<li>ⁱ̣᷅</li>
+<li>ⁱ̣᷇</li>
+<li>ⁱ̣̆</li>
+<li>ⁱ̣̐</li>
+<li>ⁱ̣́</li>
+<li>ⁱ̣̊</li>
+<li>ⁱ̣̅</li>
+<li>ⁱ̣̂</li>
+<li>ⁱ̵᷄</li>
+<li>ⁱ̵̄</li>
+<li>ⁱ̵̓</li>
+<li>ⁱ̵̔</li>
+<li>ⁱ̵̈</li>
+<li>ⁱ̵̏</li>
+<li>ⁱ̵᷆</li>
+<li>ⁱ̵̌</li>
+<li>ⁱ̵̉</li>
+<li>ⁱ̵͂</li>
+<li>ⁱ̵̋</li>
+<li>ⁱ̵̃</li>
+<li>ⁱ̵̍</li>
+<li>ⁱ̵̀</li>
+<li>ⁱ̵̇</li>
+<li>ⁱ̵̑</li>
+<li>ⁱ̵̒</li>
+<li>ⁱ̵᷅</li>
+<li>ⁱ̵᷇</li>
+<li>ⁱ̵̆</li>
+<li>ⁱ̵̐</li>
+<li>ⁱ̵́</li>
+<li>ⁱ̵̊</li>
+<li>ⁱ̵̅</li>
+<li>ⁱ̵̂</li>
+<li>ⁱ̩᷄</li>
+<li>ⁱ̩̄</li>
+<li>ⁱ̩̓</li>
+<li>ⁱ̩̔</li>
+<li>ⁱ̩̈</li>
+<li>ⁱ̩̏</li>
+<li>ⁱ̩᷆</li>
+<li>ⁱ̩̌</li>
+<li>ⁱ̩̉</li>
+<li>ⁱ̩͂</li>
+<li>ⁱ̩̋</li>
+<li>ⁱ̩̃</li>
+<li>ⁱ̩̍</li>
+<li>ⁱ̩̀</li>
+<li>ⁱ̩̇</li>
+<li>ⁱ̩̑</li>
+<li>ⁱ̩̒</li>
+<li>ⁱ̩᷅</li>
+<li>ⁱ̩᷇</li>
+<li>ⁱ̩̆</li>
+<li>ⁱ̩̐</li>
+<li>ⁱ̩́</li>
+<li>ⁱ̩̊</li>
+<li>ⁱ̩̅</li>
+<li>ⁱ̩̂</li>
+<li>ⁱ̮᷄</li>
+<li>ⁱ̮̄</li>
+<li>ⁱ̮̓</li>
+<li>ⁱ̮̔</li>
+<li>ⁱ̮̈</li>
+<li>ⁱ̮̏</li>
+<li>ⁱ̮᷆</li>
+<li>ⁱ̮̌</li>
+<li>ⁱ̮̉</li>
+<li>ⁱ̮͂</li>
+<li>ⁱ̮̋</li>
+<li>ⁱ̮̃</li>
+<li>ⁱ̮̍</li>
+<li>ⁱ̮̀</li>
+<li>ⁱ̮̇</li>
+<li>ⁱ̮̑</li>
+<li>ⁱ̮̒</li>
+<li>ⁱ̮᷅</li>
+<li>ⁱ̮᷇</li>
+<li>ⁱ̮̆</li>
+<li>ⁱ̮̐</li>
+<li>ⁱ̮́</li>
+<li>ⁱ̮̊</li>
+<li>ⁱ̮̅</li>
+<li>ⁱ̮̂</li>
+<li>ⁱ̤᷄</li>
+<li>ⁱ̤̄</li>
+<li>ⁱ̤̓</li>
+<li>ⁱ̤̔</li>
+<li>ⁱ̤̈</li>
+<li>ⁱ̤̏</li>
+<li>ⁱ̤᷆</li>
+<li>ⁱ̤̌</li>
+<li>ⁱ̤̉</li>
+<li>ⁱ̤͂</li>
+<li>ⁱ̤̋</li>
+<li>ⁱ̤̃</li>
+<li>ⁱ̤̍</li>
+<li>ⁱ̤̀</li>
+<li>ⁱ̤̇</li>
+<li>ⁱ̤̑</li>
+<li>ⁱ̤̒</li>
+<li>ⁱ̤᷅</li>
+<li>ⁱ̤᷇</li>
+<li>ⁱ̤̆</li>
+<li>ⁱ̤̐</li>
+<li>ⁱ̤́</li>
+<li>ⁱ̤̊</li>
+<li>ⁱ̤̅</li>
+<li>ⁱ̤̂</li>
+<li>ⁱ̯᷄</li>
+<li>ⁱ̯̄</li>
+<li>ⁱ̯̓</li>
+<li>ⁱ̯̔</li>
+<li>ⁱ̯̈</li>
+<li>ⁱ̯̏</li>
+<li>ⁱ̯᷆</li>
+<li>ⁱ̯̌</li>
+<li>ⁱ̯̉</li>
+<li>ⁱ̯͂</li>
+<li>ⁱ̯̋</li>
+<li>ⁱ̯̃</li>
+<li>ⁱ̯̍</li>
+<li>ⁱ̯̀</li>
+<li>ⁱ̯̇</li>
+<li>ⁱ̯̑</li>
+<li>ⁱ̯̒</li>
+<li>ⁱ̯᷅</li>
+<li>ⁱ̯᷇</li>
+<li>ⁱ̯̆</li>
+<li>ⁱ̯̐</li>
+<li>ⁱ̯́</li>
+<li>ⁱ̯̊</li>
+<li>ⁱ̯̅</li>
+<li>ⁱ̯̂</li>
+<li>ⁱ̰᷄</li>
+<li>ⁱ̰̄</li>
+<li>ⁱ̰̓</li>
+<li>ⁱ̰̔</li>
+<li>ⁱ̰̈</li>
+<li>ⁱ̰̏</li>
+<li>ⁱ̰᷆</li>
+<li>ⁱ̰̌</li>
+<li>ⁱ̰̉</li>
+<li>ⁱ̰͂</li>
+<li>ⁱ̰̋</li>
+<li>ⁱ̰̃</li>
+<li>ⁱ̰̍</li>
+<li>ⁱ̰̀</li>
+<li>ⁱ̰̇</li>
+<li>ⁱ̰̑</li>
+<li>ⁱ̰̒</li>
+<li>ⁱ̰᷅</li>
+<li>ⁱ̰᷇</li>
+<li>ⁱ̰̆</li>
+<li>ⁱ̰̐</li>
+<li>ⁱ̰́</li>
+<li>ⁱ̰̊</li>
+<li>ⁱ̰̅</li>
+<li>ⁱ̰̂</li>
+<li>ⁱ᷊᷄</li>
+<li>ⁱ᷊̄</li>
+<li>ⁱ᷊̓</li>
+<li>ⁱ᷊̔</li>
+<li>ⁱ᷊̈</li>
+<li>ⁱ᷊̏</li>
+<li>ⁱ᷊᷆</li>
+<li>ⁱ᷊̌</li>
+<li>ⁱ᷊̉</li>
+<li>ⁱ᷊͂</li>
+<li>ⁱ᷊̋</li>
+<li>ⁱ᷊̃</li>
+<li>ⁱ᷊̍</li>
+<li>ⁱ᷊̀</li>
+<li>ⁱ᷊̇</li>
+<li>ⁱ᷊̑</li>
+<li>ⁱ᷊̒</li>
+<li>ⁱ᷊᷅</li>
+<li>ⁱ᷊᷇</li>
+<li>ⁱ᷊̆</li>
+<li>ⁱ᷊̐</li>
+<li>ⁱ᷊́</li>
+<li>ⁱ᷊̊</li>
+<li>ⁱ᷊̅</li>
+<li>ⁱ᷊̂</li>
+<li>ⁱ̭᷄</li>
+<li>ⁱ̭̄</li>
+<li>ⁱ̭̓</li>
+<li>ⁱ̭̔</li>
+<li>ⁱ̭̈</li>
+<li>ⁱ̭̏</li>
+<li>ⁱ̭᷆</li>
+<li>ⁱ̭̌</li>
+<li>ⁱ̭̉</li>
+<li>ⁱ̭͂</li>
+<li>ⁱ̭̋</li>
+<li>ⁱ̭̃</li>
+<li>ⁱ̭̍</li>
+<li>ⁱ̭̀</li>
+<li>ⁱ̭̇</li>
+<li>ⁱ̭̑</li>
+<li>ⁱ̭̒</li>
+<li>ⁱ̭᷅</li>
+<li>ⁱ̭᷇</li>
+<li>ⁱ̭̆</li>
+<li>ⁱ̭̐</li>
+<li>ⁱ̭́</li>
+<li>ⁱ̭̊</li>
+<li>ⁱ̭̅</li>
+<li>ⁱ̭̂</li>
+<li>ⁱ̦᷄</li>
+<li>ⁱ̦̄</li>
+<li>ⁱ̦̓</li>
+<li>ⁱ̦̔</li>
+<li>ⁱ̦̈</li>
+<li>ⁱ̦̏</li>
+<li>ⁱ̦᷆</li>
+<li>ⁱ̦̌</li>
+<li>ⁱ̦̉</li>
+<li>ⁱ̦͂</li>
+<li>ⁱ̦̋</li>
+<li>ⁱ̦̃</li>
+<li>ⁱ̦̍</li>
+<li>ⁱ̦̀</li>
+<li>ⁱ̦̇</li>
+<li>ⁱ̦̑</li>
+<li>ⁱ̦̒</li>
+<li>ⁱ̦᷅</li>
+<li>ⁱ̦᷇</li>
+<li>ⁱ̦̆</li>
+<li>ⁱ̦̐</li>
+<li>ⁱ̦́</li>
+<li>ⁱ̦̊</li>
+<li>ⁱ̦̅</li>
+<li>ⁱ̦̂</li>
+<li>ⁱ̛᷄</li>
+<li>ⁱ̛̄</li>
+<li>ⁱ̛̓</li>
+<li>ⁱ̛̔</li>
+<li>ⁱ̛̈</li>
+<li>ⁱ̛̏</li>
+<li>ⁱ̛᷆</li>
+<li>ⁱ̛̌</li>
+<li>ⁱ̛̉</li>
+<li>ⁱ̛͂</li>
+<li>ⁱ̛̋</li>
+<li>ⁱ̛̃</li>
+<li>ⁱ̛̍</li>
+<li>ⁱ̛̀</li>
+<li>ⁱ̛̇</li>
+<li>ⁱ̛̑</li>
+<li>ⁱ̛̒</li>
+<li>ⁱ̛᷅</li>
+<li>ⁱ̛᷇</li>
+<li>ⁱ̛̆</li>
+<li>ⁱ̛̐</li>
+<li>ⁱ̛́</li>
+<li>ⁱ̛̊</li>
+<li>ⁱ̛̅</li>
+<li>ⁱ̛̂</li>
+<li>ⁱ̲᷄</li>
+<li>ⁱ̲̄</li>
+<li>ⁱ̲̓</li>
+<li>ⁱ̲̔</li>
+<li>ⁱ̲̈</li>
+<li>ⁱ̲̏</li>
+<li>ⁱ̲᷆</li>
+<li>ⁱ̲̌</li>
+<li>ⁱ̲̉</li>
+<li>ⁱ̲͂</li>
+<li>ⁱ̲̋</li>
+<li>ⁱ̲̃</li>
+<li>ⁱ̲̍</li>
+<li>ⁱ̲̀</li>
+<li>ⁱ̲̇</li>
+<li>ⁱ̲̑</li>
+<li>ⁱ̲̒</li>
+<li>ⁱ̲᷅</li>
+<li>ⁱ̲᷇</li>
+<li>ⁱ̲̆</li>
+<li>ⁱ̲̐</li>
+<li>ⁱ̲́</li>
+<li>ⁱ̲̊</li>
+<li>ⁱ̲̅</li>
+<li>ⁱ̲̂</li>
+<li>ⁱ̱᷄</li>
+<li>ⁱ̱̄</li>
+<li>ⁱ̱̓</li>
+<li>ⁱ̱̔</li>
+<li>ⁱ̱̈</li>
+<li>ⁱ̱̏</li>
+<li>ⁱ̱᷆</li>
+<li>ⁱ̱̌</li>
+<li>ⁱ̱̉</li>
+<li>ⁱ̱͂</li>
+<li>ⁱ̱̋</li>
+<li>ⁱ̱̃</li>
+<li>ⁱ̱̍</li>
+<li>ⁱ̱̀</li>
+<li>ⁱ̱̇</li>
+<li>ⁱ̱̑</li>
+<li>ⁱ̱̒</li>
+<li>ⁱ̱᷅</li>
+<li>ⁱ̱᷇</li>
+<li>ⁱ̱̆</li>
+<li>ⁱ̱̐</li>
+<li>ⁱ̱́</li>
+<li>ⁱ̱̊</li>
+<li>ⁱ̱̅</li>
+<li>ⁱ̱̂</li>
+<li>ⁱ̧᷄</li>
+<li>ⁱ̧̄</li>
+<li>ⁱ̧̓</li>
+<li>ⁱ̧̔</li>
+<li>ⁱ̧̈</li>
+<li>ⁱ̧̏</li>
+<li>ⁱ̧᷆</li>
+<li>ⁱ̧̌</li>
+<li>ⁱ̧̉</li>
+<li>ⁱ̧͂</li>
+<li>ⁱ̧̋</li>
+<li>ⁱ̧̃</li>
+<li>ⁱ̧̍</li>
+<li>ⁱ̧̀</li>
+<li>ⁱ̧̇</li>
+<li>ⁱ̧̑</li>
+<li>ⁱ̧̒</li>
+<li>ⁱ̧᷅</li>
+<li>ⁱ̧᷇</li>
+<li>ⁱ̧̆</li>
+<li>ⁱ̧̐</li>
+<li>ⁱ̧́</li>
+<li>ⁱ̧̊</li>
+<li>ⁱ̧̅</li>
+<li>ⁱ̧̂</li>
+<li>ⁱ̨᷄</li>
+<li>ⁱ̨̄</li>
+<li>ⁱ̨̓</li>
+<li>ⁱ̨̔</li>
+<li>ⁱ̨̈</li>
+<li>ⁱ̨̏</li>
+<li>ⁱ̨᷆</li>
+<li>ⁱ̨̌</li>
+<li>ⁱ̨̉</li>
+<li>ⁱ̨͂</li>
+<li>ⁱ̨̋</li>
+<li>ⁱ̨̃</li>
+<li>ⁱ̨̍</li>
+<li>ⁱ̨̀</li>
+<li>ⁱ̨̇</li>
+<li>ⁱ̨̑</li>
+<li>ⁱ̨̒</li>
+<li>ⁱ̨᷅</li>
+<li>ⁱ̨᷇</li>
+<li>ⁱ̨̆</li>
+<li>ⁱ̨̐</li>
+<li>ⁱ̨́</li>
+<li>ⁱ̨̊</li>
+<li>ⁱ̨̅</li>
+<li>ⁱ̨̂</li>
+<li>ⁱ̥᷄</li>
+<li>ⁱ̥̄</li>
+<li>ⁱ̥̓</li>
+<li>ⁱ̥̔</li>
+<li>ⁱ̥̈</li>
+<li>ⁱ̥̏</li>
+<li>ⁱ̥᷆</li>
+<li>ⁱ̥̌</li>
+<li>ⁱ̥̉</li>
+<li>ⁱ̥͂</li>
+<li>ⁱ̥̋</li>
+<li>ⁱ̥̃</li>
+<li>ⁱ̥̍</li>
+<li>ⁱ̥̀</li>
+<li>ⁱ̥̇</li>
+<li>ⁱ̥̑</li>
+<li>ⁱ̥̒</li>
+<li>ⁱ̥᷅</li>
+<li>ⁱ̥᷇</li>
+<li>ⁱ̥̆</li>
+<li>ⁱ̥̐</li>
+<li>ⁱ̥́</li>
+<li>ⁱ̥̊</li>
+<li>ⁱ̥̅</li>
+<li>ⁱ̥̂</li>
+<li>ⁱ᷄</li>
+<li>ⁱ̄</li>
+<li>ⁱ̓</li>
+<li>ⁱ̔</li>
+<li>ⁱ̈</li>
+<li>ⁱ̏</li>
+<li>ⁱ᷆</li>
+<li>ⁱ̌</li>
+<li>ⁱ̉</li>
+<li>ⁱ͂</li>
+<li>ⁱ̋</li>
+<li>ⁱ̃</li>
+<li>ⁱ̍</li>
+<li>ⁱ̀</li>
+<li>ⁱ̇</li>
+<li>ⁱ̑</li>
+<li>ⁱ̒</li>
+<li>ⁱ᷅</li>
+<li>ⁱ᷇</li>
+<li>ⁱ̆</li>
+<li>ⁱ̐</li>
+<li>ⁱ́</li>
+<li>ⁱ̊</li>
+<li>ⁱ̅</li>
+<li>ⁱ̂</li>
+<li>ị̣᷄</li>
+<li>ị̣̓</li>
+<li>ị̣̔</li>
+<li>ị̣᷆</li>
+<li>ị̣͂</li>
+<li>ị̣̍</li>
+<li>ị̣᷅</li>
+<li>ị̣᷇</li>
+<li>ị̵᷄</li>
+<li>ị̵̓</li>
+<li>ị̵̔</li>
+<li>ị̵᷆</li>
+<li>ị̵͂</li>
+<li>ị̵̍</li>
+<li>ị̵᷅</li>
+<li>ị̵᷇</li>
+<li>ị̩᷄</li>
+<li>ị̩̓</li>
+<li>ị̩̔</li>
+<li>ị̩᷆</li>
+<li>ị̩͂</li>
+<li>ị̩̍</li>
+<li>ị̩᷅</li>
+<li>ị̩᷇</li>
+<li>ị̮᷄</li>
+<li>ị̮̓</li>
+<li>ị̮̔</li>
+<li>ị̮᷆</li>
+<li>ị̮͂</li>
+<li>ị̮̍</li>
+<li>ị̮᷅</li>
+<li>ị̮᷇</li>
+<li>ị̤᷄</li>
+<li>ị̤̓</li>
+<li>ị̤̔</li>
+<li>ị̤᷆</li>
+<li>ị̤͂</li>
+<li>ị̤̍</li>
+<li>ị̤᷅</li>
+<li>ị̤᷇</li>
+<li>ị̯᷄</li>
+<li>ị̯̓</li>
+<li>ị̯̔</li>
+<li>ị̯᷆</li>
+<li>ị̯͂</li>
+<li>ị̯̍</li>
+<li>ị̯᷅</li>
+<li>ị̯᷇</li>
+<li>ị̰᷄</li>
+<li>ị̰̓</li>
+<li>ị̰̔</li>
+<li>ị̰᷆</li>
+<li>ị̰͂</li>
+<li>ị̰̍</li>
+<li>ị̰᷅</li>
+<li>ị̰᷇</li>
+<li>ị᷊᷄</li>
+<li>ị᷊̓</li>
+<li>ị᷊̔</li>
+<li>ị᷊᷆</li>
+<li>ị᷊͂</li>
+<li>ị᷊̍</li>
+<li>ị᷊᷅</li>
+<li>ị᷊᷇</li>
+<li>ị̭᷄</li>
+<li>ị̭̓</li>
+<li>ị̭̔</li>
+<li>ị̭᷆</li>
+<li>ị̭͂</li>
+<li>ị̭̍</li>
+<li>ị̭᷅</li>
+<li>ị̭᷇</li>
+<li>ị̦᷄</li>
+<li>ị̦̓</li>
+<li>ị̦̔</li>
+<li>ị̦᷆</li>
+<li>ị̦͂</li>
+<li>ị̦̍</li>
+<li>ị̦᷅</li>
+<li>ị̦᷇</li>
+<li>ị̲᷄</li>
+<li>ị̲̓</li>
+<li>ị̲̔</li>
+<li>ị̲᷆</li>
+<li>ị̲͂</li>
+<li>ị̲̍</li>
+<li>ị̲᷅</li>
+<li>ị̲᷇</li>
+<li>ị̱᷄</li>
+<li>ị̱̓</li>
+<li>ị̱̔</li>
+<li>ị̱᷆</li>
+<li>ị̱͂</li>
+<li>ị̱̍</li>
+<li>ị̱᷅</li>
+<li>ị̱᷇</li>
+<li>ị̧᷄</li>
+<li>ị̧̓</li>
+<li>ị̧̔</li>
+<li>ị̧᷆</li>
+<li>ị̧͂</li>
+<li>ị̧̍</li>
+<li>ị̧᷅</li>
+<li>ị̧᷇</li>
+<li>ị̥᷄</li>
+<li>ị̥̓</li>
+<li>ị̥̔</li>
+<li>ị̥᷆</li>
+<li>ị̥͂</li>
+<li>ị̥̍</li>
+<li>ị̥᷅</li>
+<li>ị̥᷇</li>
+<li>ị᷄</li>
+<li>ị̓</li>
+<li>ị̔</li>
+<li>ị᷆</li>
+<li>ị͂</li>
+<li>ị̍</li>
+<li>ị᷅</li>
+<li>ị᷇</li>
 <li>i̵᷄</li>
-<li>i̵͂</li>
 <li>i̵̓</li>
 <li>i̵̔</li>
 <li>i̵᷆</li>
+<li>i̵͂</li>
+<li>i̵̍</li>
+<li>i̵᷅</li>
 <li>i̵᷇</li>
-<li>i̩̍</li>
-<li>i̩᷅</li>
 <li>i̩᷄</li>
-<li>i̩͂</li>
 <li>i̩̓</li>
 <li>i̩̔</li>
 <li>i̩᷆</li>
+<li>i̩͂</li>
+<li>i̩̍</li>
+<li>i̩᷅</li>
 <li>i̩᷇</li>
-<li>i̥̍</li>
-<li>i̥᷅</li>
-<li>i̥᷄</li>
-<li>i̥͂</li>
-<li>i̥̓</li>
-<li>i̥̔</li>
-<li>i̥᷆</li>
-<li>i̥᷇</li>
-<li>i᷊̍</li>
-<li>i᷊᷅</li>
-<li>i᷊᷄</li>
-<li>i᷊͂</li>
-<li>i᷊̓</li>
-<li>i᷊̔</li>
-<li>i᷊᷆</li>
-<li>i᷊᷇</li>
-<li>i̱̍</li>
-<li>i̱᷅</li>
-<li>i̱᷄</li>
-<li>i̱͂</li>
-<li>i̱̓</li>
-<li>i̱̔</li>
-<li>i̱᷆</li>
-<li>i̱᷇</li>
-<li>i̮̍</li>
-<li>i̮᷅</li>
 <li>i̮᷄</li>
-<li>i̮͂</li>
 <li>i̮̓</li>
 <li>i̮̔</li>
 <li>i̮᷆</li>
+<li>i̮͂</li>
+<li>i̮̍</li>
+<li>i̮᷅</li>
 <li>i̮᷇</li>
-<li>i̯̍</li>
-<li>i̯᷅</li>
-<li>i̯᷄</li>
-<li>i̯͂</li>
-<li>i̯̓</li>
-<li>i̯̔</li>
-<li>i̯᷆</li>
-<li>i̯᷇</li>
-<li>i̲̍</li>
-<li>i̲᷅</li>
-<li>i̲᷄</li>
-<li>i̲͂</li>
-<li>i̲̓</li>
-<li>i̲̔</li>
-<li>i̲᷆</li>
-<li>i̲᷇</li>
-<li>i̭̍</li>
-<li>i̭᷅</li>
-<li>i̭᷄</li>
-<li>i̭͂</li>
-<li>i̭̓</li>
-<li>i̭̔</li>
-<li>i̭᷆</li>
-<li>i̭᷇</li>
-<li>i̤̍</li>
-<li>i̤᷅</li>
 <li>i̤᷄</li>
-<li>i̤͂</li>
 <li>i̤̓</li>
 <li>i̤̔</li>
 <li>i̤᷆</li>
+<li>i̤͂</li>
+<li>i̤̍</li>
+<li>i̤᷅</li>
 <li>i̤᷇</li>
-<li>i᷅</li>
+<li>i̯᷄</li>
+<li>i̯̓</li>
+<li>i̯̔</li>
+<li>i̯᷆</li>
+<li>i̯͂</li>
+<li>i̯̍</li>
+<li>i̯᷅</li>
+<li>i̯᷇</li>
+<li>i᷊᷄</li>
+<li>i᷊̓</li>
+<li>i᷊̔</li>
+<li>i᷊᷆</li>
+<li>i᷊͂</li>
+<li>i᷊̍</li>
+<li>i᷊᷅</li>
+<li>i᷊᷇</li>
+<li>i̭᷄</li>
+<li>i̭̓</li>
+<li>i̭̔</li>
+<li>i̭᷆</li>
+<li>i̭͂</li>
+<li>i̭̍</li>
+<li>i̭᷅</li>
+<li>i̭᷇</li>
+<li>i̦᷄</li>
+<li>i̦̓</li>
+<li>i̦̔</li>
+<li>i̦᷆</li>
+<li>i̦͂</li>
+<li>i̦̍</li>
+<li>i̦᷅</li>
+<li>i̦᷇</li>
+<li>i̲᷄</li>
+<li>i̲̓</li>
+<li>i̲̔</li>
+<li>i̲᷆</li>
+<li>i̲͂</li>
+<li>i̲̍</li>
+<li>i̲᷅</li>
+<li>i̲᷇</li>
+<li>i̱᷄</li>
+<li>i̱̓</li>
+<li>i̱̔</li>
+<li>i̱᷆</li>
+<li>i̱͂</li>
+<li>i̱̍</li>
+<li>i̱᷅</li>
+<li>i̱᷇</li>
+<li>i̧᷄</li>
+<li>i̧̓</li>
+<li>i̧̔</li>
+<li>i̧᷆</li>
+<li>i̧͂</li>
+<li>i̧̍</li>
+<li>i̧᷅</li>
+<li>i̧᷇</li>
+<li>i̥᷄</li>
+<li>i̥̓</li>
+<li>i̥̔</li>
+<li>i̥᷆</li>
+<li>i̥͂</li>
+<li>i̥̍</li>
+<li>i̥᷅</li>
+<li>i̥᷇</li>
 <li>i᷄</li>
-<li>i͂</li>
 <li>i̔</li>
-<li>ʝ̛̒</li>
-<li>ʝ̛̌</li>
-<li>ʝ̛̑</li>
-<li>ʝ̛̀</li>
-<li>ʝ̛̅</li>
-<li>ʝ̛́</li>
-<li>ʝ̛̃</li>
-<li>ʝ̛̋</li>
-<li>ʝ̛̇</li>
-<li>ʝ̛̐</li>
-<li>ʝ̛̍</li>
-<li>ʝ̛̉</li>
-<li>ʝ̛᷅</li>
-<li>ʝ̛̏</li>
-<li>ʝ̛᷄</li>
-<li>ʝ̛͂</li>
-<li>ʝ̛̓</li>
-<li>ʝ̛̔</li>
-<li>ʝ̛̄</li>
-<li>ʝ̛̆</li>
-<li>ʝ̛̂</li>
-<li>ʝ̛᷆</li>
-<li>ʝ̛̈</li>
-<li>ʝ̛᷇</li>
-<li>ʝ̛̊</li>
-<li>ʝ̦̒</li>
-<li>ʝ̦̌</li>
-<li>ʝ̦̑</li>
-<li>ʝ̦̀</li>
-<li>ʝ̦̅</li>
-<li>ʝ̦́</li>
-<li>ʝ̦̃</li>
-<li>ʝ̦̋</li>
-<li>ʝ̦̇</li>
-<li>ʝ̦̐</li>
-<li>ʝ̦̍</li>
-<li>ʝ̦̉</li>
-<li>ʝ̦᷅</li>
-<li>ʝ̦̏</li>
-<li>ʝ̦᷄</li>
-<li>ʝ̦͂</li>
-<li>ʝ̦̓</li>
-<li>ʝ̦̔</li>
-<li>ʝ̦̄</li>
-<li>ʝ̦̆</li>
-<li>ʝ̦̂</li>
-<li>ʝ̦᷆</li>
-<li>ʝ̦̈</li>
-<li>ʝ̦᷇</li>
-<li>ʝ̦̊</li>
-<li>ʝ̧̒</li>
-<li>ʝ̧̌</li>
-<li>ʝ̧̑</li>
-<li>ʝ̧̀</li>
-<li>ʝ̧̅</li>
-<li>ʝ̧́</li>
-<li>ʝ̧̃</li>
-<li>ʝ̧̋</li>
-<li>ʝ̧̇</li>
-<li>ʝ̧̐</li>
-<li>ʝ̧̍</li>
-<li>ʝ̧̉</li>
-<li>ʝ̧᷅</li>
-<li>ʝ̧̏</li>
-<li>ʝ̧᷄</li>
-<li>ʝ̧͂</li>
-<li>ʝ̧̓</li>
-<li>ʝ̧̔</li>
-<li>ʝ̧̄</li>
-<li>ʝ̧̆</li>
-<li>ʝ̧̂</li>
-<li>ʝ̧᷆</li>
-<li>ʝ̧̈</li>
-<li>ʝ̧᷇</li>
-<li>ʝ̧̊</li>
-<li>ʝ̵̒</li>
-<li>ʝ̵̌</li>
-<li>ʝ̵̑</li>
-<li>ʝ̵̀</li>
-<li>ʝ̵̅</li>
-<li>ʝ̵́</li>
-<li>ʝ̵̃</li>
-<li>ʝ̵̋</li>
-<li>ʝ̵̇</li>
-<li>ʝ̵̐</li>
-<li>ʝ̵̍</li>
-<li>ʝ̵̉</li>
-<li>ʝ̵᷅</li>
-<li>ʝ̵̏</li>
-<li>ʝ̵᷄</li>
-<li>ʝ̵͂</li>
-<li>ʝ̵̓</li>
-<li>ʝ̵̔</li>
-<li>ʝ̵̄</li>
-<li>ʝ̵̆</li>
-<li>ʝ̵̂</li>
-<li>ʝ̵᷆</li>
-<li>ʝ̵̈</li>
-<li>ʝ̵᷇</li>
-<li>ʝ̵̊</li>
-<li>ʝ̩̒</li>
-<li>ʝ̩̌</li>
-<li>ʝ̩̑</li>
-<li>ʝ̩̀</li>
-<li>ʝ̩̅</li>
-<li>ʝ̩́</li>
-<li>ʝ̩̃</li>
-<li>ʝ̩̋</li>
-<li>ʝ̩̇</li>
-<li>ʝ̩̐</li>
-<li>ʝ̩̍</li>
-<li>ʝ̩̉</li>
-<li>ʝ̩᷅</li>
-<li>ʝ̩̏</li>
-<li>ʝ̩᷄</li>
-<li>ʝ̩͂</li>
-<li>ʝ̩̓</li>
-<li>ʝ̩̔</li>
-<li>ʝ̩̄</li>
-<li>ʝ̩̆</li>
-<li>ʝ̩̂</li>
-<li>ʝ̩᷆</li>
-<li>ʝ̩̈</li>
-<li>ʝ̩᷇</li>
-<li>ʝ̩̊</li>
-<li>ʝ̥̒</li>
-<li>ʝ̥̌</li>
-<li>ʝ̥̑</li>
-<li>ʝ̥̀</li>
-<li>ʝ̥̅</li>
-<li>ʝ̥́</li>
-<li>ʝ̥̃</li>
-<li>ʝ̥̋</li>
-<li>ʝ̥̇</li>
-<li>ʝ̥̐</li>
-<li>ʝ̥̍</li>
-<li>ʝ̥̉</li>
-<li>ʝ̥᷅</li>
-<li>ʝ̥̏</li>
-<li>ʝ̥᷄</li>
-<li>ʝ̥͂</li>
-<li>ʝ̥̓</li>
-<li>ʝ̥̔</li>
-<li>ʝ̥̄</li>
-<li>ʝ̥̆</li>
-<li>ʝ̥̂</li>
-<li>ʝ̥᷆</li>
-<li>ʝ̥̈</li>
-<li>ʝ̥᷇</li>
-<li>ʝ̥̊</li>
-<li>ʝ̨̒</li>
-<li>ʝ̨̌</li>
-<li>ʝ̨̑</li>
-<li>ʝ̨̀</li>
-<li>ʝ̨̅</li>
-<li>ʝ̨́</li>
-<li>ʝ̨̃</li>
-<li>ʝ̨̋</li>
-<li>ʝ̨̇</li>
-<li>ʝ̨̐</li>
-<li>ʝ̨̍</li>
-<li>ʝ̨̉</li>
-<li>ʝ̨᷅</li>
-<li>ʝ̨̏</li>
-<li>ʝ̨᷄</li>
-<li>ʝ̨͂</li>
-<li>ʝ̨̓</li>
-<li>ʝ̨̔</li>
-<li>ʝ̨̄</li>
-<li>ʝ̨̆</li>
-<li>ʝ̨̂</li>
-<li>ʝ̨᷆</li>
-<li>ʝ̨̈</li>
-<li>ʝ̨᷇</li>
-<li>ʝ̨̊</li>
-<li>ʝ̣̒</li>
-<li>ʝ̣̌</li>
-<li>ʝ̣̑</li>
-<li>ʝ̣̀</li>
-<li>ʝ̣̅</li>
-<li>ʝ̣́</li>
-<li>ʝ̣̃</li>
-<li>ʝ̣̋</li>
-<li>ʝ̣̇</li>
-<li>ʝ̣̐</li>
-<li>ʝ̣̍</li>
-<li>ʝ̣̉</li>
-<li>ʝ̣᷅</li>
-<li>ʝ̣̏</li>
-<li>ʝ̣᷄</li>
-<li>ʝ̣͂</li>
-<li>ʝ̣̓</li>
-<li>ʝ̣̔</li>
-<li>ʝ̣̄</li>
-<li>ʝ̣̆</li>
-<li>ʝ̣̂</li>
-<li>ʝ̣᷆</li>
-<li>ʝ̣̈</li>
-<li>ʝ̣᷇</li>
-<li>ʝ̣̊</li>
-<li>ʝ᷊̒</li>
-<li>ʝ᷊̌</li>
-<li>ʝ᷊̑</li>
-<li>ʝ᷊̀</li>
-<li>ʝ᷊̅</li>
-<li>ʝ᷊́</li>
-<li>ʝ᷊̃</li>
-<li>ʝ᷊̋</li>
-<li>ʝ᷊̇</li>
-<li>ʝ᷊̐</li>
-<li>ʝ᷊̍</li>
-<li>ʝ᷊̉</li>
-<li>ʝ᷊᷅</li>
-<li>ʝ᷊̏</li>
-<li>ʝ᷊᷄</li>
-<li>ʝ᷊͂</li>
-<li>ʝ᷊̓</li>
-<li>ʝ᷊̔</li>
-<li>ʝ᷊̄</li>
-<li>ʝ᷊̆</li>
-<li>ʝ᷊̂</li>
-<li>ʝ᷊᷆</li>
-<li>ʝ᷊̈</li>
-<li>ʝ᷊᷇</li>
-<li>ʝ᷊̊</li>
-<li>ʝ̱̒</li>
-<li>ʝ̱̌</li>
-<li>ʝ̱̑</li>
-<li>ʝ̱̀</li>
-<li>ʝ̱̅</li>
-<li>ʝ̱́</li>
-<li>ʝ̱̃</li>
-<li>ʝ̱̋</li>
-<li>ʝ̱̇</li>
-<li>ʝ̱̐</li>
-<li>ʝ̱̍</li>
-<li>ʝ̱̉</li>
-<li>ʝ̱᷅</li>
-<li>ʝ̱̏</li>
-<li>ʝ̱᷄</li>
-<li>ʝ̱͂</li>
-<li>ʝ̱̓</li>
-<li>ʝ̱̔</li>
-<li>ʝ̱̄</li>
-<li>ʝ̱̆</li>
-<li>ʝ̱̂</li>
-<li>ʝ̱᷆</li>
-<li>ʝ̱̈</li>
-<li>ʝ̱᷇</li>
-<li>ʝ̱̊</li>
-<li>ʝ̮̒</li>
-<li>ʝ̮̌</li>
-<li>ʝ̮̑</li>
-<li>ʝ̮̀</li>
-<li>ʝ̮̅</li>
-<li>ʝ̮́</li>
-<li>ʝ̮̃</li>
-<li>ʝ̮̋</li>
-<li>ʝ̮̇</li>
-<li>ʝ̮̐</li>
-<li>ʝ̮̍</li>
-<li>ʝ̮̉</li>
-<li>ʝ̮᷅</li>
-<li>ʝ̮̏</li>
-<li>ʝ̮᷄</li>
-<li>ʝ̮͂</li>
-<li>ʝ̮̓</li>
-<li>ʝ̮̔</li>
-<li>ʝ̮̄</li>
-<li>ʝ̮̆</li>
-<li>ʝ̮̂</li>
-<li>ʝ̮᷆</li>
-<li>ʝ̮̈</li>
-<li>ʝ̮᷇</li>
-<li>ʝ̮̊</li>
-<li>ʝ̯̒</li>
-<li>ʝ̯̌</li>
-<li>ʝ̯̑</li>
-<li>ʝ̯̀</li>
-<li>ʝ̯̅</li>
-<li>ʝ̯́</li>
-<li>ʝ̯̃</li>
-<li>ʝ̯̋</li>
-<li>ʝ̯̇</li>
-<li>ʝ̯̐</li>
-<li>ʝ̯̍</li>
-<li>ʝ̯̉</li>
-<li>ʝ̯᷅</li>
-<li>ʝ̯̏</li>
-<li>ʝ̯᷄</li>
-<li>ʝ̯͂</li>
-<li>ʝ̯̓</li>
-<li>ʝ̯̔</li>
-<li>ʝ̯̄</li>
-<li>ʝ̯̆</li>
-<li>ʝ̯̂</li>
-<li>ʝ̯᷆</li>
-<li>ʝ̯̈</li>
-<li>ʝ̯᷇</li>
-<li>ʝ̯̊</li>
-<li>ʝ̲̒</li>
-<li>ʝ̲̌</li>
-<li>ʝ̲̑</li>
-<li>ʝ̲̀</li>
-<li>ʝ̲̅</li>
-<li>ʝ̲́</li>
-<li>ʝ̲̃</li>
-<li>ʝ̲̋</li>
-<li>ʝ̲̇</li>
-<li>ʝ̲̐</li>
-<li>ʝ̲̍</li>
-<li>ʝ̲̉</li>
-<li>ʝ̲᷅</li>
-<li>ʝ̲̏</li>
-<li>ʝ̲᷄</li>
-<li>ʝ̲͂</li>
-<li>ʝ̲̓</li>
-<li>ʝ̲̔</li>
-<li>ʝ̲̄</li>
-<li>ʝ̲̆</li>
-<li>ʝ̲̂</li>
-<li>ʝ̲᷆</li>
-<li>ʝ̲̈</li>
-<li>ʝ̲᷇</li>
-<li>ʝ̲̊</li>
-<li>ʝ̭̒</li>
-<li>ʝ̭̌</li>
-<li>ʝ̭̑</li>
-<li>ʝ̭̀</li>
-<li>ʝ̭̅</li>
-<li>ʝ̭́</li>
-<li>ʝ̭̃</li>
-<li>ʝ̭̋</li>
-<li>ʝ̭̇</li>
-<li>ʝ̭̐</li>
-<li>ʝ̭̍</li>
-<li>ʝ̭̉</li>
-<li>ʝ̭᷅</li>
-<li>ʝ̭̏</li>
-<li>ʝ̭᷄</li>
-<li>ʝ̭͂</li>
-<li>ʝ̭̓</li>
-<li>ʝ̭̔</li>
-<li>ʝ̭̄</li>
-<li>ʝ̭̆</li>
-<li>ʝ̭̂</li>
-<li>ʝ̭᷆</li>
-<li>ʝ̭̈</li>
-<li>ʝ̭᷇</li>
-<li>ʝ̭̊</li>
-<li>ʝ̤̒</li>
-<li>ʝ̤̌</li>
-<li>ʝ̤̑</li>
-<li>ʝ̤̀</li>
-<li>ʝ̤̅</li>
-<li>ʝ̤́</li>
-<li>ʝ̤̃</li>
-<li>ʝ̤̋</li>
-<li>ʝ̤̇</li>
-<li>ʝ̤̐</li>
-<li>ʝ̤̍</li>
-<li>ʝ̤̉</li>
-<li>ʝ̤᷅</li>
-<li>ʝ̤̏</li>
-<li>ʝ̤᷄</li>
-<li>ʝ̤͂</li>
-<li>ʝ̤̓</li>
-<li>ʝ̤̔</li>
-<li>ʝ̤̄</li>
-<li>ʝ̤̆</li>
-<li>ʝ̤̂</li>
-<li>ʝ̤᷆</li>
-<li>ʝ̤̈</li>
-<li>ʝ̤᷇</li>
-<li>ʝ̤̊</li>
-<li>ʝ̰̒</li>
-<li>ʝ̰̌</li>
-<li>ʝ̰̑</li>
-<li>ʝ̰̀</li>
-<li>ʝ̰̅</li>
-<li>ʝ̰́</li>
-<li>ʝ̰̃</li>
-<li>ʝ̰̋</li>
-<li>ʝ̰̇</li>
-<li>ʝ̰̐</li>
-<li>ʝ̰̍</li>
-<li>ʝ̰̉</li>
-<li>ʝ̰᷅</li>
-<li>ʝ̰̏</li>
-<li>ʝ̰᷄</li>
-<li>ʝ̰͂</li>
-<li>ʝ̰̓</li>
-<li>ʝ̰̔</li>
-<li>ʝ̰̄</li>
-<li>ʝ̰̆</li>
-<li>ʝ̰̂</li>
-<li>ʝ̰᷆</li>
-<li>ʝ̰̈</li>
-<li>ʝ̰᷇</li>
-<li>ʝ̰̊</li>
-<li>ʝ̒</li>
-<li>ʝ̌</li>
-<li>ʝ̑</li>
-<li>ʝ̀</li>
-<li>ʝ̅</li>
-<li>ʝ́</li>
-<li>ʝ̃</li>
-<li>ʝ̋</li>
-<li>ʝ̇</li>
-<li>ʝ̐</li>
-<li>ʝ̍</li>
-<li>ʝ̉</li>
-<li>ʝ᷅</li>
-<li>ʝ̏</li>
-<li>ʝ᷄</li>
-<li>ʝ͂</li>
-<li>ʝ̓</li>
-<li>ʝ̔</li>
-<li>ʝ̄</li>
-<li>ʝ̆</li>
-<li>ʝ̂</li>
-<li>ʝ᷆</li>
-<li>ʝ̈</li>
-<li>ʝ᷇</li>
-<li>ʝ̊</li>
+<li>i͂</li>
+<li>i᷅</li>
+<li>ј̣᷄</li>
+<li>ј̣̄</li>
+<li>ј̣̓</li>
+<li>ј̣̔</li>
+<li>ј̣̈</li>
+<li>ј̣̏</li>
+<li>ј̣᷆</li>
+<li>ј̣̌</li>
+<li>ј̣̉</li>
+<li>ј̣͂</li>
+<li>ј̣̋</li>
+<li>ј̣̃</li>
+<li>ј̣̍</li>
+<li>ј̣̀</li>
+<li>ј̣̇</li>
+<li>ј̣̑</li>
+<li>ј̣̒</li>
+<li>ј̣᷅</li>
+<li>ј̣᷇</li>
+<li>ј̣̆</li>
+<li>ј̣̐</li>
+<li>ј̣́</li>
+<li>ј̣̊</li>
+<li>ј̣̅</li>
+<li>ј̣̂</li>
+<li>ј̵᷄</li>
+<li>ј̵̄</li>
+<li>ј̵̓</li>
+<li>ј̵̔</li>
+<li>ј̵̈</li>
+<li>ј̵̏</li>
+<li>ј̵᷆</li>
+<li>ј̵̌</li>
+<li>ј̵̉</li>
+<li>ј̵͂</li>
+<li>ј̵̋</li>
+<li>ј̵̃</li>
+<li>ј̵̍</li>
+<li>ј̵̀</li>
+<li>ј̵̇</li>
+<li>ј̵̑</li>
+<li>ј̵̒</li>
+<li>ј̵᷅</li>
+<li>ј̵᷇</li>
+<li>ј̵̆</li>
+<li>ј̵̐</li>
+<li>ј̵́</li>
+<li>ј̵̊</li>
+<li>ј̵̅</li>
+<li>ј̵̂</li>
+<li>ј̩᷄</li>
+<li>ј̩̄</li>
+<li>ј̩̓</li>
+<li>ј̩̔</li>
+<li>ј̩̈</li>
+<li>ј̩̏</li>
+<li>ј̩᷆</li>
+<li>ј̩̌</li>
+<li>ј̩̉</li>
+<li>ј̩͂</li>
+<li>ј̩̋</li>
+<li>ј̩̃</li>
+<li>ј̩̍</li>
+<li>ј̩̀</li>
+<li>ј̩̇</li>
+<li>ј̩̑</li>
+<li>ј̩̒</li>
+<li>ј̩᷅</li>
+<li>ј̩᷇</li>
+<li>ј̩̆</li>
+<li>ј̩̐</li>
+<li>ј̩́</li>
+<li>ј̩̊</li>
+<li>ј̩̅</li>
+<li>ј̩̂</li>
+<li>ј̮᷄</li>
+<li>ј̮̄</li>
+<li>ј̮̓</li>
+<li>ј̮̔</li>
+<li>ј̮̈</li>
+<li>ј̮̏</li>
+<li>ј̮᷆</li>
+<li>ј̮̌</li>
+<li>ј̮̉</li>
+<li>ј̮͂</li>
+<li>ј̮̋</li>
+<li>ј̮̃</li>
+<li>ј̮̍</li>
+<li>ј̮̀</li>
+<li>ј̮̇</li>
+<li>ј̮̑</li>
+<li>ј̮̒</li>
+<li>ј̮᷅</li>
+<li>ј̮᷇</li>
+<li>ј̮̆</li>
+<li>ј̮̐</li>
+<li>ј̮́</li>
+<li>ј̮̊</li>
+<li>ј̮̅</li>
+<li>ј̮̂</li>
+<li>ј̤᷄</li>
+<li>ј̤̄</li>
+<li>ј̤̓</li>
+<li>ј̤̔</li>
+<li>ј̤̈</li>
+<li>ј̤̏</li>
+<li>ј̤᷆</li>
+<li>ј̤̌</li>
+<li>ј̤̉</li>
+<li>ј̤͂</li>
+<li>ј̤̋</li>
+<li>ј̤̃</li>
+<li>ј̤̍</li>
+<li>ј̤̀</li>
+<li>ј̤̇</li>
+<li>ј̤̑</li>
+<li>ј̤̒</li>
+<li>ј̤᷅</li>
+<li>ј̤᷇</li>
+<li>ј̤̆</li>
+<li>ј̤̐</li>
+<li>ј̤́</li>
+<li>ј̤̊</li>
+<li>ј̤̅</li>
+<li>ј̤̂</li>
+<li>ј̯᷄</li>
+<li>ј̯̄</li>
+<li>ј̯̓</li>
+<li>ј̯̔</li>
+<li>ј̯̈</li>
+<li>ј̯̏</li>
+<li>ј̯᷆</li>
+<li>ј̯̌</li>
+<li>ј̯̉</li>
+<li>ј̯͂</li>
+<li>ј̯̋</li>
+<li>ј̯̃</li>
+<li>ј̯̍</li>
+<li>ј̯̀</li>
+<li>ј̯̇</li>
+<li>ј̯̑</li>
+<li>ј̯̒</li>
+<li>ј̯᷅</li>
+<li>ј̯᷇</li>
+<li>ј̯̆</li>
+<li>ј̯̐</li>
+<li>ј̯́</li>
+<li>ј̯̊</li>
+<li>ј̯̅</li>
+<li>ј̯̂</li>
+<li>ј̰᷄</li>
+<li>ј̰̄</li>
+<li>ј̰̓</li>
+<li>ј̰̔</li>
+<li>ј̰̈</li>
+<li>ј̰̏</li>
+<li>ј̰᷆</li>
+<li>ј̰̌</li>
+<li>ј̰̉</li>
+<li>ј̰͂</li>
+<li>ј̰̋</li>
+<li>ј̰̃</li>
+<li>ј̰̍</li>
+<li>ј̰̀</li>
+<li>ј̰̇</li>
+<li>ј̰̑</li>
+<li>ј̰̒</li>
+<li>ј̰᷅</li>
+<li>ј̰᷇</li>
+<li>ј̰̆</li>
+<li>ј̰̐</li>
+<li>ј̰́</li>
+<li>ј̰̊</li>
+<li>ј̰̅</li>
+<li>ј̰̂</li>
+<li>ј᷊᷄</li>
+<li>ј᷊̄</li>
+<li>ј᷊̓</li>
+<li>ј᷊̔</li>
+<li>ј᷊̈</li>
+<li>ј᷊̏</li>
+<li>ј᷊᷆</li>
+<li>ј᷊̌</li>
+<li>ј᷊̉</li>
+<li>ј᷊͂</li>
+<li>ј᷊̋</li>
+<li>ј᷊̃</li>
+<li>ј᷊̍</li>
+<li>ј᷊̀</li>
+<li>ј᷊̇</li>
+<li>ј᷊̑</li>
+<li>ј᷊̒</li>
+<li>ј᷊᷅</li>
+<li>ј᷊᷇</li>
+<li>ј᷊̆</li>
+<li>ј᷊̐</li>
+<li>ј᷊́</li>
+<li>ј᷊̊</li>
+<li>ј᷊̅</li>
+<li>ј᷊̂</li>
+<li>ј̭᷄</li>
+<li>ј̭̄</li>
+<li>ј̭̓</li>
+<li>ј̭̔</li>
+<li>ј̭̈</li>
+<li>ј̭̏</li>
+<li>ј̭᷆</li>
+<li>ј̭̌</li>
+<li>ј̭̉</li>
+<li>ј̭͂</li>
+<li>ј̭̋</li>
+<li>ј̭̃</li>
+<li>ј̭̍</li>
+<li>ј̭̀</li>
+<li>ј̭̇</li>
+<li>ј̭̑</li>
+<li>ј̭̒</li>
+<li>ј̭᷅</li>
+<li>ј̭᷇</li>
+<li>ј̭̆</li>
+<li>ј̭̐</li>
+<li>ј̭́</li>
+<li>ј̭̊</li>
+<li>ј̭̅</li>
+<li>ј̭̂</li>
+<li>ј̦᷄</li>
+<li>ј̦̄</li>
+<li>ј̦̓</li>
+<li>ј̦̔</li>
+<li>ј̦̈</li>
+<li>ј̦̏</li>
+<li>ј̦᷆</li>
+<li>ј̦̌</li>
+<li>ј̦̉</li>
+<li>ј̦͂</li>
+<li>ј̦̋</li>
+<li>ј̦̃</li>
+<li>ј̦̍</li>
+<li>ј̦̀</li>
+<li>ј̦̇</li>
+<li>ј̦̑</li>
+<li>ј̦̒</li>
+<li>ј̦᷅</li>
+<li>ј̦᷇</li>
+<li>ј̦̆</li>
+<li>ј̦̐</li>
+<li>ј̦́</li>
+<li>ј̦̊</li>
+<li>ј̦̅</li>
+<li>ј̦̂</li>
+<li>ј̛᷄</li>
+<li>ј̛̄</li>
+<li>ј̛̓</li>
+<li>ј̛̔</li>
+<li>ј̛̈</li>
+<li>ј̛̏</li>
+<li>ј̛᷆</li>
+<li>ј̛̌</li>
+<li>ј̛̉</li>
+<li>ј̛͂</li>
+<li>ј̛̋</li>
+<li>ј̛̃</li>
+<li>ј̛̍</li>
+<li>ј̛̀</li>
+<li>ј̛̇</li>
+<li>ј̛̑</li>
+<li>ј̛̒</li>
+<li>ј̛᷅</li>
+<li>ј̛᷇</li>
+<li>ј̛̆</li>
+<li>ј̛̐</li>
+<li>ј̛́</li>
+<li>ј̛̊</li>
+<li>ј̛̅</li>
+<li>ј̛̂</li>
+<li>ј̲᷄</li>
+<li>ј̲̄</li>
+<li>ј̲̓</li>
+<li>ј̲̔</li>
+<li>ј̲̈</li>
+<li>ј̲̏</li>
+<li>ј̲᷆</li>
+<li>ј̲̌</li>
+<li>ј̲̉</li>
+<li>ј̲͂</li>
+<li>ј̲̋</li>
+<li>ј̲̃</li>
+<li>ј̲̍</li>
+<li>ј̲̀</li>
+<li>ј̲̇</li>
+<li>ј̲̑</li>
+<li>ј̲̒</li>
+<li>ј̲᷅</li>
+<li>ј̲᷇</li>
+<li>ј̲̆</li>
+<li>ј̲̐</li>
+<li>ј̲́</li>
+<li>ј̲̊</li>
+<li>ј̲̅</li>
+<li>ј̲̂</li>
+<li>ј̱᷄</li>
+<li>ј̱̄</li>
+<li>ј̱̓</li>
+<li>ј̱̔</li>
+<li>ј̱̈</li>
+<li>ј̱̏</li>
+<li>ј̱᷆</li>
+<li>ј̱̌</li>
+<li>ј̱̉</li>
+<li>ј̱͂</li>
+<li>ј̱̋</li>
+<li>ј̱̃</li>
+<li>ј̱̍</li>
+<li>ј̱̀</li>
+<li>ј̱̇</li>
+<li>ј̱̑</li>
+<li>ј̱̒</li>
+<li>ј̱᷅</li>
+<li>ј̱᷇</li>
+<li>ј̱̆</li>
+<li>ј̱̐</li>
+<li>ј̱́</li>
+<li>ј̱̊</li>
+<li>ј̱̅</li>
+<li>ј̱̂</li>
+<li>ј̧᷄</li>
+<li>ј̧̄</li>
+<li>ј̧̓</li>
+<li>ј̧̔</li>
+<li>ј̧̈</li>
+<li>ј̧̏</li>
+<li>ј̧᷆</li>
+<li>ј̧̌</li>
+<li>ј̧̉</li>
+<li>ј̧͂</li>
+<li>ј̧̋</li>
+<li>ј̧̃</li>
+<li>ј̧̍</li>
+<li>ј̧̀</li>
+<li>ј̧̇</li>
+<li>ј̧̑</li>
+<li>ј̧̒</li>
+<li>ј̧᷅</li>
+<li>ј̧᷇</li>
+<li>ј̧̆</li>
+<li>ј̧̐</li>
+<li>ј̧́</li>
+<li>ј̧̊</li>
+<li>ј̧̅</li>
+<li>ј̧̂</li>
+<li>ј̨᷄</li>
+<li>ј̨̄</li>
+<li>ј̨̓</li>
+<li>ј̨̔</li>
+<li>ј̨̈</li>
+<li>ј̨̏</li>
+<li>ј̨᷆</li>
+<li>ј̨̌</li>
+<li>ј̨̉</li>
+<li>ј̨͂</li>
+<li>ј̨̋</li>
+<li>ј̨̃</li>
+<li>ј̨̍</li>
+<li>ј̨̀</li>
+<li>ј̨̇</li>
+<li>ј̨̑</li>
+<li>ј̨̒</li>
+<li>ј̨᷅</li>
+<li>ј̨᷇</li>
+<li>ј̨̆</li>
+<li>ј̨̐</li>
+<li>ј̨́</li>
+<li>ј̨̊</li>
+<li>ј̨̅</li>
+<li>ј̨̂</li>
+<li>ј̥᷄</li>
+<li>ј̥̄</li>
+<li>ј̥̓</li>
+<li>ј̥̔</li>
+<li>ј̥̈</li>
+<li>ј̥̏</li>
+<li>ј̥᷆</li>
+<li>ј̥̌</li>
+<li>ј̥̉</li>
+<li>ј̥͂</li>
+<li>ј̥̋</li>
+<li>ј̥̃</li>
+<li>ј̥̍</li>
+<li>ј̥̀</li>
+<li>ј̥̇</li>
+<li>ј̥̑</li>
+<li>ј̥̒</li>
+<li>ј̥᷅</li>
+<li>ј̥᷇</li>
+<li>ј̥̆</li>
+<li>ј̥̐</li>
+<li>ј̥́</li>
+<li>ј̥̊</li>
+<li>ј̥̅</li>
+<li>ј̥̂</li>
+<li>ј᷄</li>
+<li>ј̄</li>
+<li>ј̓</li>
+<li>ј̔</li>
+<li>ј̈</li>
+<li>ј̏</li>
+<li>ј᷆</li>
+<li>ј̌</li>
+<li>ј̉</li>
+<li>ј͂</li>
+<li>ј̋</li>
+<li>ј̃</li>
+<li>ј̍</li>
+<li>ј̀</li>
+<li>ј̇</li>
+<li>ј̑</li>
+<li>ј̒</li>
+<li>ј᷅</li>
+<li>ј᷇</li>
+<li>ј̆</li>
+<li>ј̐</li>
+<li>ј́</li>
+<li>ј̊</li>
+<li>ј̅</li>
+<li>ј̂</li>
 </ul>
                                 
                                 
@@ -8076,6 +8062,25 @@ replace the dot.</h3>
 <li>uni0B4C (U+0B4C): Line(Line { p0: (161.0, 1741.0), p1: (159.0, 1941.0) }) has the same coordinates as a previous segment.</li>
 <li>uni0B4C (U+0B4C): Line(Line { p0: (547.0, 1816.0), p1: (541.0, 2016.0) }) has the same coordinates as a previous segment.</li>
 <li>uni0B4C (U+0B4C): Line(Line { p0: (697.0, 1709.0), p1: (733.0, 1893.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B18.blwf: Line(Line { p0: (517.0, -138.0), p1: (513.0, -7.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B19.blwf: Line(Line { p0: (-981.0, -458.0), p1: (-781.0, -458.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B1A.blwf: Line(Line { p0: (-502.0, -90.0), p1: (-502.0, -16.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B1B.blwf: Line(Line { p0: (-526.0, -74.0), p1: (-526.0, -14.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B1C.blwf: Line(Line { p0: (-899.0, -252.0), p1: (-699.0, -252.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B1F.blwf: Line(Line { p0: (-562.0, -126.0), p1: (-562.0, -66.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B21.blwf: Line(Line { p0: (-530.0, -70.0), p1: (-530.0, -10.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B21.blwf: Line(Line { p0: (-910.0, -334.0), p1: (-710.0, -334.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B22.blwf: Line(Line { p0: (-606.0, -183.0), p1: (-606.0, -123.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B22.blwf: Line(Line { p0: (-986.0, -446.0), p1: (-786.0, -446.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B26.blwf: Line(Line { p0: (-523.0, -40.0), p1: (-523.0, 20.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B26.blwf: Line(Line { p0: (-856.0, -269.0), p1: (-656.0, -269.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B27.blwf: Line(Line { p0: (-913.0, -276.0), p1: (-713.0, -276.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B2A.blwf: Line(Line { p0: (-490.0, -109.0), p1: (-497.0, 3.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B2B.blwf: Line(Line { p0: (-572.0, -418.0), p1: (-572.0, -485.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B2B.blwf: Line(Line { p0: (-586.0, -41.0), p1: (-590.0, 26.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B2D.blwf: Line(Line { p0: (-523.0, -24.0), p1: (-523.0, 42.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B2D.blwf: Line(Line { p0: (-9.0, -347.0), p1: (-212.0, -348.0) }) has the same coordinates as a previous segment.</li>
+<li>uni0B4D_uni0B2D.blwf: Line(Line { p0: (-965.0, -276.0), p1: (-765.0, -276.0) }) has the same coordinates as a previous segment.</li>
 <li>uni0B56 (U+0B56): Line(Line { p0: (-702.0, 1644.0), p1: (-704.0, 1844.0) }) has the same coordinates as a previous segment.</li>
 <li>uni0B56 (U+0B56): Line(Line { p0: (-316.0, 1719.0), p1: (-322.0, 1919.0) }) has the same coordinates as a previous segment.</li>
 <li>uni0B56 (U+0B56): Line(Line { p0: (-166.0, 1612.0), p1: (-130.0, 1796.0) }) has the same coordinates as a previous segment.</li>
