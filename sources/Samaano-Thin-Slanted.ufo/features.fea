@@ -418,6 +418,13 @@ lookup pstfPostBaseFormsinOriya2lookup45 {
     
 } pstfPostBaseFormsinOriya2lookup45;
 
+lookup abvsAboveBaseSubstitutioninOrya4b {
+    sub uni0B3F uni0B01 by uni0B3F_uni0B01.abvs;
+    sub uni0B3F uni0B30_uni0B4D.rphf by uni0B3F_uni0B30_uni0B4D.abvs;
+} abvsAboveBaseSubstitutioninOrya4b;
+
+# GSUB FEATURES
+
 feature locl {
 
  script latn;
@@ -614,10 +621,13 @@ feature abvs {
  script DFLT;
      language dflt ;
       lookup abvsAboveBaseSubstitutionsinDevanagari2lookup0;
+      lookup abvsAboveBaseSubstitutioninOrya4b;
 
  script dev2;
      language dflt ;
       lookup abvsAboveBaseSubstitutionsinDevanagari2lookup0;
+ script ory2; language dflt;
+     lookup abvsAboveBaseSubstitutioninOrya4b;
 } abvs;
 
 feature blws {
