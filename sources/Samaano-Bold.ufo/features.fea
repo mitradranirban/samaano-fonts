@@ -415,15 +415,13 @@ lookup pstfPostBaseFormsinOriya2lookup45 {
   lookupflag 0;
     sub \uni0B4D \uni0B2F  by \uni0B4D_uni0B2F.pstf;
     sub \uni0B4D \uni0B5F  by \uni0B4D_uni0B2F.pstf;
-    
 } pstfPostBaseFormsinOriya2lookup45;
 
 lookup abvsAboveBaseSubstitutioninOrya4b {
-    sub uni0B3F uni0B01 by uni0B3F_uni0B01.abvs;
-    sub uni0B3F uni0B30_uni0B4D.rphf by uni0B3F_uni0B30_uni0B4D.abvs;
+  lookupflag 0;
+    sub \uni0B3F \uni0B01  by \uni0B3F_uni0B01.abvs;
+    sub \uni0B3F \uni0B30_uni0B4D.rphf  by \uni0B3F_uni0B30_uni0B4D.abvs;
 } abvsAboveBaseSubstitutioninOrya4b;
-
-# GSUB FEATURES
 
 feature locl {
 
@@ -626,8 +624,10 @@ feature abvs {
  script dev2;
      language dflt ;
       lookup abvsAboveBaseSubstitutionsinDevanagari2lookup0;
- script ory2; language dflt;
-     lookup abvsAboveBaseSubstitutioninOrya4b;
+
+ script ory2;
+     language dflt ;
+      lookup abvsAboveBaseSubstitutioninOrya4b;
 } abvs;
 
 feature blws {
@@ -1066,7 +1066,6 @@ lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   markClass [\uni0953 ] <anchor 3 1018> @abvm_deva;
   markClass [\uni0954 ] <anchor -1 1014> @abvm_deva;
   markClass [\uni0955 ] <anchor -5 1535> @abvm_deva;
-  markClass [\uni0B01 ] <anchor -364 1037> @abvm_deva;
   pos base [\uni0904 ] <anchor 636 1972> mark @abvm_deva;
   pos base [\uni0905 ] <anchor 869 1556> mark @abvm_deva;
   pos base [\uni0906 ] <anchor 780 1554> mark @abvm_deva;
@@ -1251,9 +1250,11 @@ lookup abvmAboveBaseMarkinTamil2lookup33 {
 
 lookup abvmAboveBaseMarkinOriya2lookup47 {
   lookupflag 0;
-  markClass [\uni0B30_uni0B4D.rphf ] <anchor -581 1645> @abvm_or;
-  markClass [\uni0B3F \uni0B56 ] <anchor -528 1520> @abvm_or;
-  pos base [\uni0B15 ] <anchor 497 1591> mark @abvm_or;
+  markClass [\uni0B01 ] <anchor -92 1476> @abvm_or;
+  markClass [\uni0B30_uni0B4D.rphf ] <anchor -581 1659> @abvm_or;
+  markClass [\uni0B3F ] <anchor -528 1468> @abvm_or;
+  markClass [\uni0B56 ] <anchor -528 1520> @abvm_or;
+  pos base [\uni0B15 \uni0B16 \uni0B17 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 \uni0B39 ] <anchor 498 1612> mark @abvm_or;
   pos base [\uni25CC ] <anchor 532 1133> mark @abvm_or;
 } abvmAboveBaseMarkinOriya2lookup47;
 
@@ -1262,31 +1263,64 @@ lookup blwmBelowBaseMarkinOriya2lookup48 {
   markClass [\uni0B41 ] <anchor 7 -88> @blwm2_or;
   markClass [\uni0B42 ] <anchor -3 128> @blwm2_or;
   markClass [\uni0B43 ] <anchor 3 177> @blwm2_or;
-  markClass [\uni0B44 ] <anchor 3 183> @blwm2_or;
-  pos base [\uni0B15 ] <anchor 864 -2> mark @blwm2_or;
+  markClass [\uni0B44 \uni0B62 \uni0B63 ] <anchor 3 183> @blwm2_or;
+  markClass [\uni0B4D ] <anchor -154 -54> @blwm2_or;
+  pos base [\uni0B15 \uni0B16 \uni0B17 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 ] <anchor 864 -2> mark @blwm2_or;
+  pos base [\uni0B39 ] <anchor 919 -99> mark @blwm2_or;
   pos base [\uni0B4D_uni0B15.blwf ] <anchor -300 -521> mark @blwm2_or;
   pos base [\uni0B4D_uni0B16.blwf ] <anchor -606 -1031> mark @blwm2_or;
+  pos base [\uni25CC ] <anchor 843 138> mark @blwm2_or;
 } blwmBelowBaseMarkinOriya2lookup48;
 
 lookup blwmBelowBaseMarkinOriya2lookup49 {
   lookupflag 0;
   markClass [\uni0B3C ] <anchor -8 262> @blwm1_or;
-  markClass [\uni0B4D_uni0B15.blwf ] <anchor -146 5> @blwm1_or;
-  markClass [\uni0B4D_uni0B16.blwf ] <anchor -81 38> @blwm1_or;
-  markClass [\uni0B4D_uni0B17.blwf ] <anchor -106 188> @blwm1_or;
-  markClass [\uni0B4D_uni0B30.blwf ] <anchor -103 -189> @blwm1_or;
-  pos base [\uni0B15 ] <anchor 613 -12> mark @blwm1_or;
-  pos base [\uni0B21 \uni0B22 ] <anchor 509 -73> mark @blwm1_or;
+  markClass [\uni0B4D_uni0B15.blwf \uni0B4D_uni0B1A.blwf \uni0B4D_uni0B1B.blwf \uni0B4D_uni0B1F.blwf \uni0B4D_uni0B20.blwf \uni0B4D_uni0B21.blwf \uni0B4D_uni0B22.blwf \uni0B4D_uni0B26.blwf \uni0B4D_uni0B27.blwf \uni0B4D_uni0B2A.blwf \uni0B4D_uni0B2D.blwf \uni0B4D_uni0B2E.blwf \uni0B4D_uni0B36.blwf \uni0B4D_uni0B37.blwf \uni0B4D_uni0B38.blwf ] <anchor -140 -5> @blwm1_or;
+  markClass [\uni0B4D_uni0B16.blwf ] <anchor -117 48> @blwm1_or;
+  markClass [\uni0B4D_uni0B17.blwf ] <anchor -112 24> @blwm1_or;
+  markClass [\uni0B4D_uni0B18.blwf ] <anchor -133 -8> @blwm1_or;
+  markClass [\uni0B4D_uni0B19.blwf ] <anchor -133 -175> @blwm1_or;
+  markClass [\uni0B4D_uni0B1C.blwf ] <anchor -391 -10> @blwm1_or;
+  markClass [\uni0B4D_uni0B1D.blwf ] <anchor -112 -70> @blwm1_or;
+  markClass [\uni0B4D_uni0B23.blwf ] <anchor -139 -5> @blwm1_or;
+  markClass [\uni0B4D_uni0B24.blwf ] <anchor -534 39> @blwm1_or;
+  markClass [\uni0B4D_uni0B25.blwf ] <anchor -328 123> @blwm1_or;
+  markClass [\uni0B4D_uni0B28.blwf ] <anchor -874 11> @blwm1_or;
+  markClass [\uni0B4D_uni0B2B.blwf ] <anchor -387 115> @blwm1_or;
+  markClass [\uni0B4D_uni0B2C.blwf ] <anchor -339 -5> @blwm1_or;
+  markClass [\uni0B4D_uni0B30.blwf ] <anchor -145 -402> @blwm1_or;
+  markClass [\uni0B4D_uni0B32.blwf ] <anchor -388 150> @blwm1_or;
+  markClass [\uni0B4D_uni0B33.blwf ] <anchor -301 162> @blwm1_or;
+  markClass [\uni0B4D_uni0B39.blwf ] <anchor -537 -42> @blwm1_or;
+  pos base [\uni0B15 \uni0B16 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 ] <anchor 613 -12> mark @blwm1_or;
+  pos base [\uni0B17 ] <anchor 958 -12> mark @blwm1_or;
+  pos base [\uni0B39 ] <anchor 617 -14> mark @blwm1_or;
+  pos base [\uni25CC ] <anchor 843 138> mark @blwm1_or;
 } blwmBelowBaseMarkinOriya2lookup49;
 
 lookup blwmBelowBaseMarkinOriya2lookup4a {
   lookupflag 0;
-  markClass [\uni0B41 ] <anchor -155 -69> @blwm3_or;
-  markClass [\uni0B4D_uni0B30.blwf ] <anchor -155 -89> @blwm3_or;
-  pos mark [\uni0B4D_uni0B15.blwf ] <anchor -139 -621> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B16.blwf ] <anchor -90 -427> mark @blwm3_or;
+  markClass [\uni0B41 ] <anchor 44 -86> @blwm3_or;
+  markClass [\uni0B42 ] <anchor 41 124> @blwm3_or;
+  markClass [\uni0B43 ] <anchor -48 177> @blwm3_or;
+  markClass [\uni0B44 \uni0B62 \uni0B63 ] <anchor -61 183> @blwm3_or;
+  markClass [\uni0B4D ] <anchor -218 -54> @blwm3_or;
+  markClass [\uni0B4D_uni0B30.blwf ] <anchor -169 -190> @blwm3_or;
+  pos mark [\uni0B4D_uni0B15.blwf \uni0B4D_uni0B18.blwf \uni0B4D_uni0B19.blwf \uni0B4D_uni0B1A.blwf \uni0B4D_uni0B1B.blwf \uni0B4D_uni0B1F.blwf \uni0B4D_uni0B20.blwf \uni0B4D_uni0B21.blwf \uni0B4D_uni0B22.blwf \uni0B4D_uni0B26.blwf \uni0B4D_uni0B27.blwf \uni0B4D_uni0B2A.blwf \uni0B4D_uni0B2D.blwf \uni0B4D_uni0B2E.blwf \uni0B4D_uni0B36.blwf \uni0B4D_uni0B37.blwf \uni0B4D_uni0B38.blwf ] <anchor -139 -621> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B16.blwf ] <anchor -90 -477> mark @blwm3_or;
   pos mark [\uni0B4D_uni0B17.blwf ] <anchor -123 -617> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B30.blwf ] <anchor -412 -626> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B1C.blwf ] <anchor -383 -529> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B1D.blwf ] <anchor -111 -686> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B23.blwf ] <anchor -138 -621> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B24.blwf ] <anchor -533 -577> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B25.blwf ] <anchor -327 -493> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B28.blwf ] <anchor -873 -605> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B2B.blwf ] <anchor -386 -501> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B2C.blwf ] <anchor -338 -621> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B30.blwf ] <anchor -557 -888> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B32.blwf ] <anchor -387 -435> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B33.blwf ] <anchor -300 -454> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B39.blwf ] <anchor -332 -649> mark @blwm3_or;
 } blwmBelowBaseMarkinOriya2lookup4a;
 
 feature mark {
@@ -1336,7 +1370,6 @@ feature blwm {
       lookup blwmBelowBaseMarkinOriya2lookup49;
       lookup blwmBelowBaseMarkinOriya2lookup4a;
 } blwm;
-#Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\A \AE \AEacute \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
 	\Alpha \Alphatonos \Amacron \Aogonek \Aring \Aringacute \Atilde \B \Beta \C 
@@ -1598,15 +1631,15 @@ feature blwm {
 	\uni095C_uni0930_uni094D.vatu \uni095C_uni094D.haln 
 	\uni095D_uni0930_uni094D.vatu \uni095D_uni094D.haln \uni095E_uni094D.half 
 	\uni095E_uni094D.haln \uni095F_uni094D.half \uni095F_uni094D.haln 
-	\uni0B15_uni0B4D_uni0B37.akhn \uni0B1C_uni0B4D_uni0B1E.akhn \uni0B5C 
-	\uni0B5D \uni0B95_uni0BB7.akhn \uni0B95_uni0BC1 \uni0B95_uni0BC2 
-	\uni0B9F_uni0BBF \uni0B9F_uni0BC0 \uni0B9F_uni0BC1 \uni0B9F_uni0BC2 
-	\uni0BA3_uni0BC1 \uni0BA3_uni0BC2 \uni0BA4_uni0BC1 \uni0BA9_uni0BC2 
-	\uni0BAA_uni0BC1 \uni0BAA_uni0BC2 \uni0BAE_uni0BC1 \uni0BAE_uni0BC2 
-	\uni0BAF_uni0BC1 \uni0BAF_uni0BC2 \uni0BB0_uni0BC1 \uni0BB0_uni0BC2 
-	\uni0BB1_uni0BC1 \uni0BB1_uni0BC2 \uni0BB2_uni0BC1 \uni0BB2_uni0BC2 
-	\uni0BB3_uni0BC1 \uni0BB3_uni0BC2 \uni0BB4_uni0BC1 \uni0BB4_uni0BC2 \uniFB01 
-	\uniFB02 ];
+	\uni0B15_uni0B4D_uni0B37.akhn \uni0B1C_uni0B4D_uni0B1E.akhn 
+	\uni0B3F_uni0B01.abvs \uni0B3F_uni0B30_uni0B4D.abvs \uni0B5C \uni0B5D 
+	\uni0B95_uni0BB7.akhn \uni0B95_uni0BC1 \uni0B95_uni0BC2 \uni0B9F_uni0BBF 
+	\uni0B9F_uni0BC0 \uni0B9F_uni0BC1 \uni0B9F_uni0BC2 \uni0BA3_uni0BC1 
+	\uni0BA3_uni0BC2 \uni0BA4_uni0BC1 \uni0BA9_uni0BC2 \uni0BAA_uni0BC1 
+	\uni0BAA_uni0BC2 \uni0BAE_uni0BC1 \uni0BAE_uni0BC2 \uni0BAF_uni0BC1 
+	\uni0BAF_uni0BC2 \uni0BB0_uni0BC1 \uni0BB0_uni0BC2 \uni0BB1_uni0BC1 
+	\uni0BB1_uni0BC2 \uni0BB2_uni0BC1 \uni0BB2_uni0BC2 \uni0BB3_uni0BC1 
+	\uni0BB3_uni0BC2 \uni0BB4_uni0BC1 \uni0BB4_uni0BC2 \uniFB01 \uniFB02 ];
 @GDEF_Mark = [\acutecomb \brevecomb_acutecomb \brevecomb_gravecomb 
 	\brevecomb_hookabovecomb \brevecomb_tildecomb \circumflexcomb_acutecomb 
 	\circumflexcomb_gravecomb \circumflexcomb_hookabovecomb 
@@ -1637,3 +1670,4 @@ table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
 
 } GDEF;
+

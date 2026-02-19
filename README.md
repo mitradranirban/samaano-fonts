@@ -33,13 +33,11 @@ Following are the specialities of the font
 * Simple Glyph construction using Rectangular or quadrilateral components only
 ![Sample Image2](documentation/image2.png)
  
-* Extensive coverage of many Latin Based Languages including African Languages and Vietnamese, Greek, Devanagari and Tamil.
+* Extensive coverage of many  Languages.
 
-Now, as per Shaperglot, Samaano supports 773  Latin based,
-16 Devanagari Based languages.  Monotonic and Polytonic Greek and Tamil
+Now, as per [Shaperglot](documentation/samaano-shaperglot.csv), Samaano supports 823  Latin based,61 Cyrillic based, 16 Devanagari Based, 2 Greek based languages, with Odia  and Tamil.
 
-![shaperglot](documentation/samaano-shaperglot.png) 
-
+ 
 
 
 ## About
@@ -51,14 +49,13 @@ Following are some numbers associated with the of the typeface
 *   1 - Monospaced Typeface
 *   3 - Three Variable axes of Weight, Width and Slant
 *   ~4~ 5 supported Scripts- Latin Extended, Devanagari, Greek, Tamil, and Cyrillic
-*   9 - Font files, 8 Masters and 1 Variable 
-*   ~16~ 18 - supported glyphsets - 7 by Adobe (Cyrrilic 1, Greek 1, Greek 2, Latin 1,Latin 2, Latin 3, Latin 4), 9 by Google fonts (Cyrillic Core, Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African, Phonetic SinoExtension), and 2 by Koeberlin (Latin S and M)
-19 - opentype layout features (abvs, akhn, blwf, blws, ccmp, dlig, half, haln, locl, nukt, ordn, pres, psts, rkrf, rphf, sups, abvm, blwm and mark)
+*   ~18~ 19 - supported glyphsets - 7 by Adobe (Cyrrilic 1, Cyrrillic 2, Greek 1, Greek 2, Latin 1, Latin 2, Latin 3, Latin 4), 9 by Google fonts (Cyrillic Core, Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African, Phonetic SinoExtension), and 2 by Koeberlin (Latin S and M)
+~19~ 22 - opentype layout features ( abvs, akhn, blwf, blws, ccmp, dlig, frac, half, haln, locl, nukt, ordn, pres, pstf, psts, rkrf, rphf, sinf, sups, abvm, blwm, mark)
 *   70 -named instances in stat table, 2 along slant axis x 5 along width x 7 along weight axis
 *   100 - Hundred percent created using Open Source Software - mainly [Fontra](https://fontra.xyz) and [Fontforge](https://github.com/fontforge/fontforge).
-*   ~814~ 844 - Languages supported as per Shaperglot, 795 Latin based, 16 Devanagari Based, 2 Greek based and Tamil
-*   ~1527~ 1644 - unicode codepoints covered
-*   ~13960~ 14952 - glyphs drawn - considering all masters
+*   ~814~ 898 - Languages supported as per Shaperglot, 823 Latin based,61 Cyrillic based, 16 Devanagari Based, 2 Greek based, Odiya and Tamil
+*   ~1644~ 1852 - unicode codepoints covered
+*   ~14952~ 16768 - glyphs drawn - considering all masters
 *   1.2 million - possible instances, if only integer values in each axis is considered (20 possible values along slant x 100 along width x 600 along weight axis ), and inumerable if decimals values are considered
 
 ## Changelog
@@ -85,12 +82,13 @@ Following are some numbers associated with the of the typeface
 #### October 2025 - Version 2.500
 * Addition of Cyrillic
 * Bug fixing in Latin
+#### March 2025 - Version 2.600
+* Addition of Odia
+* Further extension of Cyrillic.
 
 
 #### Road Map for Version 3
-
-* Addition of Odia
-* Further extension of Latin.
+* Addition of Arabic
 
 
 
