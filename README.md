@@ -48,7 +48,7 @@ Following are some numbers associated with the of the typeface
 *   0 - Zero Curves - Simple Glyph construction using Rectangular or quadrilateral components only
 *   1 - Monospaced Typeface
 *   3 - Three Variable axes of Weight, Width and Slant
-*   ~4~ 5 supported Scripts- Latin Extended, Devanagari, Greek, Tamil, and Cyrillic
+*   ~5~ 6 supported Scripts- Latin Extended, Devanagari, Greek, Tamil,Cyrillic,Orya
 *   ~18~ 19 - supported glyphsets - 7 by Adobe (Cyrrilic 1, Cyrrillic 2, Greek 1, Greek 2, Latin 1, Latin 2, Latin 3, Latin 4), 9 by Google fonts (Cyrillic Core, Greek core, Latin Kernel, Latin Core, Latin Plus, Latin Vietnamese, Latin PriAfrican, Latin African, Phonetic SinoExtension), and 2 by Koeberlin (Latin S and M)
 ~19~ 22 - opentype layout features ( abvs, akhn, blwf, blws, ccmp, dlig, frac, half, haln, locl, nukt, ordn, pres, pstf, psts, rkrf, rphf, sinf, sups, abvm, blwm, mark)
 *   70 -named instances in stat table, 2 along slant axis x 5 along width x 7 along weight axis
