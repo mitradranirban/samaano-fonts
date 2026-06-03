@@ -750,52 +750,13 @@ lookup markMarkPositioninglookup0 {
 } markMarkPositioninglookup0;
 
 feature mark {
-
- script DFLT;
-     language dflt ;
-      lookup markMarkPositioninglookup0;
-
- script latn;
-     language dflt ;
-      lookup markMarkPositioninglookup0;
+    script DFLT;
+    language dflt ;
+    lookup markMarkPositioninglookup0;
+    script latn;
+    language dflt ;
+    lookup markMarkPositioninglookup0;
 } mark;
-
-feature abvm {
-
- script DFLT;
-     language dflt ;
-      lookup abvmAboveBaseMarkinDevanagari2lookup1;
-      lookup abvmAboveBaseMarkinTamil2lookup33;
-
- script dev2;
-     language dflt ;
-      lookup abvmAboveBaseMarkinDevanagari2lookup1;
-
- script ory2;
-     language dflt ;
-      lookup abvmAboveBaseMarkinOriya2lookup47;
-
- script tml2;
-     language dflt ;
-      lookup abvmAboveBaseMarkinTamil2lookup33;
-} abvm;
-
-feature blwm {
-
- script DFLT;
-     language dflt ;
-      lookup blwmBelowBaseMarkinDevanagari2lookup2;
-
- script dev2;
-     language dflt ;
-      lookup blwmBelowBaseMarkinDevanagari2lookup2;
-
- script ory2;
-     language dflt ;
-      lookup blwmBelowBaseMarkinOriya2lookup48;
-      lookup blwmBelowBaseMarkinOriya2lookup49;
-      lookup blwmBelowBaseMarkinOriya2lookup4a;
-} blwm;
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
