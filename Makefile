@@ -50,11 +50,10 @@ update-project-template:
 	npx update-template https://github.com/googlefonts/googlefonts-project-template/
 
 update: venv
-	venv/bin/pip install --upgrade pip-tools
-	# See https://pip-tools.readthedocs.io/en/latest/#a-note-on-resolvers for
-	# the `--resolver` flag below.
-	venv/bin/pip-compile --upgrade --verbose --resolver=backtracking requirements.in
-	venv/bin/pip-sync requirements.txt
+	venv/bin/pip install --upgrade pip-tools uv
+	# Changed resolver to 'uv' to prevent infinite backtracking loops
+	venv/bin/uv pip compile --upgrade --verbose requirements.in -o requirements.txt
+	venv/bin/uv pip sync requirements.txt
 
 	git commit -m "Update requirements" requirements.txt
 	git push
