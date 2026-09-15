@@ -425,6 +425,169 @@ lookup abvsAboveBaseSubstitutioninOrya4b {
     sub \uni0B3F \uni0B30_uni0B4D.rphf  by \uni0B3F_uni0B30_uni0B4D.abvs;
 } abvsAboveBaseSubstitutioninOrya4b;
 
+lookup rligRequiredLigaturesArab51 {
+  sub lam-ar alef-ar by lam_alef-ar;
+  sub lam-ar alefHamzaabove-ar by lam_alefHamzaabove-ar;
+  sub lam-ar alefHamzabelow-ar by lam_alefHamzabelow-ar;
+  sub lam-ar alefMadda-ar by lam_alefMadda-ar;
+  sub lam-ar alefWasla-ar by lam_alefWasla-ar;
+  
+} rligRequiredLigaturesArab51;
+
+lookup ccmpDompositionDecompositionArab50 {
+   sub hamzaabove-ar damma-ar by hamzaaboveDamma-ar;
+   sub hamzaabove-ar dammatan-ar by hamzaaboveDammatan-ar;
+   sub hamzaabove-ar fatha-ar by hamzaaboveFatha-ar;
+   sub hamzaabove-ar fathatan-ar by hamzaaboveFathatan-ar;
+   sub hamzaabove-ar sukun-ar by hamzaaboveSukun-ar;
+   sub shadda-ar fatha-ar by shaddaFatha-ar; 
+   sub shadda-ar fathatan-ar by shaddaFathatan-ar;
+   sub shadda-ar kasra-ar by shaddaKasra-ar;
+   sub shadda-ar kasratan-ar by shaddaKasratan-ar;
+   sub shadda-ar damma-ar by shaddaDamma-ar;
+   sub shadda-ar dammatan-ar by shaddaDammatan-ar;
+   sub shadda-ar alefabove-ar by shaddaAlefabove-ar;
+   
+} ccmpDompositionDecompositionArab50;
+
+ lookup initInitialFormsArab52 {
+  sub behDotless-ar by behDotless-ar.init;
+  sub fehDotless-ar by fehDotless-ar.init;
+  sub qafDotless-ar by qafDotless-ar.init;
+  sub yehHamzaabove-ar by yehHamzaabove-ar.init;
+  sub beh-ar by beh-ar.init;
+  sub teh-ar by teh-ar.init;
+  sub theh-ar by theh-ar.init;
+  sub jeem-ar by jeem-ar.init;
+  sub hah-ar by hah-ar.init;
+  sub khah-ar by khah-ar.init;
+  sub seen-ar by seen-ar.init;
+  sub sheen-ar by sheen-ar.init;
+  sub sad-ar by sad-ar.init;
+  sub dad-ar by dad-ar.init;
+  sub tah-ar by tah-ar.init;
+  sub zah-ar by zah-ar.init;
+  sub ain-ar by ain-ar.init;
+  sub ghain-ar by ghain-ar.init;
+  sub feh-ar by feh-ar.init;
+  sub qaf-ar by qaf-ar.init;
+  sub kaf-ar by kaf-ar.init;
+  sub lam-ar by lam-ar.init;
+  sub meem-ar by meem-ar.init;
+  sub noon-ar by noon-ar.init;
+  sub heh-ar by heh-ar.init;
+  sub alefMaksura-ar by alefMaksura-ar.init;
+  sub yeh-ar by yeh-ar.init;
+  sub tteh-ar by tteh-ar.init;
+  sub peh-ar by peh-ar.init;
+  sub tcheh-ar by tcheh-ar.init;
+  sub keheh-ar by keheh-ar.init;
+  sub gaf-ar by gaf-ar.init;
+  sub hehDoachashmee-ar by hehDoachashmee-ar.init;
+  sub hehgoal-ar by hehgoal-ar.init;
+  sub yehFarsi-ar by yehFarsi-ar.init;
+  sub kehehThreedotsabove-ar by kehehThreedotsabove-ar.init;
+  
+} initInitialFormsArab52;
+
+ lookup mediMedialFormsArab53 {
+   sub behDotless-ar by behDotless-ar.medi;
+  sub fehDotless-ar by fehDotless-ar.medi;
+  sub qafDotless-ar by qafDotless-ar.medi;
+  sub yehHamzaabove-ar by yehHamzaabove-ar.medi;
+  sub beh-ar by beh-ar.medi;
+  sub teh-ar by teh-ar.medi;
+  sub theh-ar by theh-ar.medi;
+  sub jeem-ar by jeem-ar.medi;
+  sub hah-ar by hah-ar.medi;
+  sub khah-ar by khah-ar.medi;
+  sub seen-ar by seen-ar.medi;
+  sub sheen-ar by sheen-ar.medi;
+  sub sad-ar by sad-ar.medi;
+  sub dad-ar by dad-ar.medi;
+  sub tah-ar by tah-ar.medi;
+  sub zah-ar by zah-ar.medi;
+  sub ain-ar by ain-ar.medi;
+  sub ghain-ar by ghain-ar.medi;
+  sub feh-ar by feh-ar.medi;
+  sub qaf-ar by qaf-ar.medi;
+  sub kaf-ar by kaf-ar.medi;
+  sub lam-ar by lam-ar.medi;
+  sub meem-ar by meem-ar.medi;
+  sub noon-ar by noon-ar.medi;
+  sub heh-ar by heh-ar.medi;
+  sub alefMaksura-ar by alefMaksura-ar.medi;
+  sub yeh-ar by yeh-ar.medi;
+  sub tteh-ar by tteh-ar.medi;
+  sub peh-ar by peh-ar.medi;
+  sub tcheh-ar by tcheh-ar.medi;
+  sub keheh-ar by keheh-ar.medi;
+  sub gaf-ar by gaf-ar.medi;
+  sub hehDoachashmee-ar by hehDoachashmee-ar.medi;
+  sub hehgoal-ar by hehgoal-ar.medi;
+  sub yehFarsi-ar by yehFarsi-ar.medi;
+  sub kehehThreedotsabove-ar by kehehThreedotsabove-ar.medi;
+  
+} mediMedialFormsArab53;
+
+lookup finaFinalFormsArab54 {
+  
+  sub alef-ar by alef-ar.fina;
+  sub alefWasla-ar by alefWasla-ar.fina;
+  sub alefMadda-ar by alefMadda-ar.fina;
+  sub alefHamzaabove-ar by alefHamzaabove-ar.fina;
+  sub alefHamzabelow-ar by alefHamzabelow-ar.fina;
+  sub behDotless-ar by behDotless-ar.fina;
+  sub fehDotless-ar by fehDotless-ar.fina;
+  sub qafDotless-ar by qafDotless-ar.fina;
+  sub yehHamzaabove-ar by yehHamzaabove-ar.fina;
+  sub beh-ar by beh-ar.fina;
+  sub tehMarbuta-ar by tehMarbuta-ar.fina;
+  sub teh-ar by teh-ar.fina;
+  sub theh-ar by theh-ar.fina;
+  sub jeem-ar by jeem-ar.fina;
+  sub hah-ar by hah-ar.fina;
+  sub khah-ar by khah-ar.fina;
+  sub dal-ar by dal-ar.fina;
+  sub thal-ar by thal-ar.fina;
+  sub reh-ar by reh-ar.fina;
+  sub zain-ar by zain-ar.fina;
+  sub seen-ar by seen-ar.fina;
+  sub sheen-ar by sheen-ar.fina;
+  sub sad-ar by sad-ar.fina;
+  sub dad-ar by dad-ar.fina;
+  sub tah-ar by tah-ar.fina;
+  sub zah-ar by zah-ar.fina;
+  sub ain-ar by ain-ar.fina;
+  sub ghain-ar by ghain-ar.fina;
+  sub feh-ar by feh-ar.fina;
+  sub qaf-ar by qaf-ar.fina;
+  sub kaf-ar by kaf-ar.fina;
+  sub lam-ar by lam-ar.fina;
+  sub meem-ar by meem-ar.fina;
+  sub noon-ar by noon-ar.fina;
+  sub heh-ar by heh-ar.fina;
+  sub waw-ar by waw-ar.fina;
+  sub wawHamzaabove-ar by wawHamzaabove-ar.fina;
+  sub alefMaksura-ar by alefMaksura-ar.fina;
+  sub yeh-ar by yeh-ar.fina;
+  sub tteh-ar by tteh-ar.fina;
+  sub peh-ar by peh-ar.fina;
+  sub tcheh-ar by tcheh-ar.fina;
+  sub ddal-ar by ddal-ar.fina;
+  sub rreh-ar by rreh-ar.fina;
+  sub jeh-ar by jeh-ar.fina;
+  sub keheh-ar by keheh-ar.fina;
+  sub gaf-ar by gaf-ar.fina;
+  sub hehDoachashmee-ar by hehDoachashmee-ar.fina;
+  sub hehgoal-ar by hehgoal-ar.fina;
+  sub yehFarsi-ar by yehFarsi-ar.fina;
+  sub yehbarree-ar by yehbarree-ar.fina;
+  sub kehehThreedotsabove-ar by kehehThreedotsabove-ar.fina;
+} finaFinalFormsArab54;
+
+# GSUB Features 
+
 feature locl {
 
  script latn;
@@ -661,602 +824,681 @@ feature pstf {
       lookup pstfPostBaseFormsinOriya2lookup45;
 } pstf;
 
+feature ccmp {
+script DFLT;
+    language dflt;
+      lookup  ccmpDompositionDecompositionArab50;
+  script ARAB;
+    language dflt;
+      lookup  ccmpDompositionDecompositionArab50;
+} ccmp;
+
+feature rlig {
+  script DFLT;
+    language dflt;
+      lookup  rligRequiredLigaturesArab51;
+  script ARAB;
+    language dflt;
+      lookup  rligRequiredLigaturesArab51; 
+} rlig;
+
+feature init {
+  script DFLT;
+    language dflt;
+      lookup  initInitialFormsArab52;
+  script ARAB;
+    language dflt;
+      lookup  initInitialFormsArab52; 
+} init;
+
+feature medi {
+  script DFLT;
+    language dflt;
+      lookup  mediMedialFormsArab53;
+  script ARAB;
+    language dflt;
+      lookup  mediMedialFormsArab53;  
+} medi;
+
+feature fina {
+  script DFLT;
+    language dflt;
+      lookup  finaFinalFormsArab54;
+  script ARAB;
+    language dflt;
+      lookup  finaFinalFormsArab54;  
+} fina;
+
 # GPOS 
 
 
 lookup markMarkPositioninglookup0 {
   lookupflag 0;
-  markClass [\dotbelowcomb ] <anchor -14 -187> @base;
-  markClass [\uni0324 ] <anchor -8 -147> @base;
-  markClass [\uni0325 ] <anchor 1 -22> @base;
-  markClass [\uni0326 ] <anchor 22 -5> @base;
-  markClass [\uni0327 ] <anchor -146 70> @base;
-  markClass [\uni0328 ] <anchor -270 -122> @base;
+  markClass [\dotbelowcomb ] <anchor 3 -283> @base;
+  markClass [\uni0324 ] <anchor -3 -234> @base;
+  markClass [\uni0325 ] <anchor 19 -35> @base;
+  markClass [\uni0326 ] <anchor 26 14> @base;
+  markClass [\uni0327 ] <anchor -738 238> @base;
+  markClass [\uni0328 ] <anchor -167 0> @base;
   markClass [\uni0329 ] <anchor 4 -39> @base;
   markClass [\uni032D ] <anchor 1 432> @base;
   markClass [\uni032E ] <anchor -8 -4> @base;
   markClass [\uni032F ] <anchor -21 382> @base;
   markClass [\uni0330 ] <anchor 0 268> @base;
-  markClass [\uni0331 \uni0335 ] <anchor 4 -163> @base;
+  markClass [\uni0331 \uni0335 \uni035F ] <anchor 4 -163> @base;
   markClass [\uni0332 ] <anchor 7 -600> @base;
-  markClass [\uni035F ] <anchor 6 -108> @base;
   markClass [\uni1DCA ] <anchor -26 24> @base;
-  markClass [\acutecomb ] <anchor -9 771> @top;
+  markClass [\acutecomb ] <anchor 8 786> @top;
   markClass [\brevecomb_acutecomb \brevecomb_gravecomb ] <anchor 0 1004> @top;
   markClass [\brevecomb_hookabovecomb ] <anchor -13 955> @top;
   markClass [\brevecomb_tildecomb ] <anchor 9 637> @top;
   markClass [\circumflexcomb_acutecomb ] <anchor 5 924> @top;
   markClass [\circumflexcomb_gravecomb ] <anchor -4 906> @top;
   markClass [\circumflexcomb_hookabovecomb ] <anchor -4 946> @top;
-  markClass [\circumflexcomb_tildecomb ] <anchor 4 1000> @top;
-  markClass [\gravecomb ] <anchor 25 842> @top;
-  markClass [\hookabovecomb ] <anchor -6 774> @top;
-  markClass [\tildecomb ] <anchor -6 778> @top;
+  markClass [\circumflexcomb_tildecomb ] <anchor 8 955> @top;
+  markClass [\gravecomb ] <anchor -6 776> @top;
+  markClass [\hookabovecomb ] <anchor -5 774> @top;
+  markClass [\tildecomb ] <anchor 0 772> @top;
   markClass [\tonos ] <anchor -1 785> @top;
-  markClass [\uni0302 ] <anchor 6 778> @top;
+  markClass [\uni0302 ] <anchor 2 787> @top;
   markClass [\uni0304 ] <anchor -1 773> @top;
   markClass [\uni0305 ] <anchor 18 1480> @top;
-  markClass [\uni0306 ] <anchor -3 776> @top;
-  markClass [\uni0307 ] <anchor -4 774> @top;
+  markClass [\uni0306 ] <anchor -3 782> @top;
+  markClass [\uni0307 ] <anchor 2 780> @top;
   markClass [\uni0308 ] <anchor 4 1592> @top;
-  markClass [\uni030A ] <anchor 8 762> @top;
-  markClass [\uni030B ] <anchor -5 778> @top;
-  markClass [\uni030C ] <anchor 1 760> @top;
+  markClass [\uni030A ] <anchor -1 1536> @top;
+  markClass [\uni030B ] <anchor -6 766> @top;
+  markClass [\uni030C ] <anchor -24 735> @top;
   markClass [\uni030D ] <anchor 0 964> @top;
-  markClass [\uni030F ] <anchor -5 773> @top;
+  markClass [\uni030F ] <anchor 4 785> @top;
   markClass [\uni0310 ] <anchor -34 1620> @top;
-  markClass [\uni0311 ] <anchor 2 780> @top;
-  markClass [\uni0312 ] <anchor 30 1559> @top;
+  markClass [\uni0311 ] <anchor -23 770> @top;
+  markClass [\uni0312 ] <anchor 4 1530> @top;
   markClass [\uni0313 ] <anchor -53 949> @top;
   markClass [\uni0314 ] <anchor 85 949> @top;
   markClass [\uni0315 ] <anchor -283 1018> @top;
-  markClass [\uni031B ] <anchor 3 781> @top;
+  markClass [\uni031B ] <anchor -12 784> @top;
   markClass [\uni1DC4 ] <anchor 2 1138> @top;
-  markClass [\uni1DC5 ] <anchor 2 1018> @top;
+  markClass [\uni1DC5 ] <anchor -8 873> @top;
   markClass [\uni1DC6 ] <anchor -2 1126> @top;
   markClass [\uni1DC7 ] <anchor 0 1172> @top;
-  markClass [\uni1FBF ] <anchor 509 998> @top;
-  pos base [\A ] <anchor 525 1641> mark @top
-	<anchor 546 0> mark @base;
-  pos base [\AE ] <anchor 533 1805> mark @top
-	<anchor 528 -10> mark @base;
-  pos base [\Aacute \Agrave ] <anchor 692 1697> mark @top
-	<anchor 546 0> mark @base;
-  pos base [\Abreve \abreve \amacron ] <anchor 504 -61> mark @base;
-  pos base [\Acircumflex ] <anchor 519 1970> mark @top
-	<anchor 507 0> mark @base;
-  pos base [\Adieresis \Aring ] <anchor 522 1886> mark @top
-	<anchor 546 0> mark @base;
-  pos base [\Amacron ] <anchor 500 -64> mark @base;
-  pos base [\Aogonek ] <anchor 557 1640> mark @top;
-  pos base [\Atilde ] <anchor 492 1912> mark @top
-	<anchor 498 -68> mark @base;
-  pos base [\B \afii10067 \uni0182 \uniA7B4 ] <anchor 262 1657> mark @top
-	<anchor 250 -67> mark @base;
-  pos base [\C ] <anchor 517 1637> mark @top
-	<anchor 525 -71> mark @base;
-  pos base [\Cacute ] <anchor 502 -91> mark @base;
-  pos base [\Ccaron \Dcaron \Ebreve \cacute \ccaron \cdotaccent \dcaron \ebreve \emacron ] <anchor 508 -97> mark @base;
-  pos base [\Ccedilla ] <anchor 522 1721> mark @top
-	<anchor 546 0> mark @base;
-  pos base [\Ccircumflex \Cdotaccent \ccircumflex ] <anchor 509 -97> mark @base;
-  pos base [\D ] <anchor 290 -63> mark @base
-	<anchor 308 1641> mark @top;
-  pos base [\Dcroat ] <anchor 319 1641> mark @top
-	<anchor 300 -152> mark @base;
-  pos base [\E ] <anchor 470 1641> mark @top
-	<anchor 546 -96> mark @base;
-  pos base [\Eacute \Ecircumflex \Iacute \Icircumflex \Igrave \Ntilde \Oacute \Ocircumflex \Ograve \Uacute \Ucircumflex \Ugrave \Yacute ] <anchor 542 -56> mark @base;
-  pos base [\Ecaron \Gbreve \Gcircumflex \Gdotaccent \Ibreve \Imacron \ecaron \ibreve \imacron ] <anchor 508 -82> mark @base;
-  pos base [\Edieresis ] <anchor 542 -56> mark @base
-	<anchor 485 1866> mark @top;
-  pos base [\Edotaccent ] <anchor 508 -97> mark @base
-	<anchor 463 1958> mark @top;
-  pos base [\Egrave ] <anchor 514 -72> mark @base;
-  pos base [\Emacron ] <anchor 498 -60> mark @base;
-  pos base [\Eng ] <anchor 528 1660> mark @top
-	<anchor 450 -482> mark @base;
-  pos base [\Eogonek ] <anchor 627 1665> mark @top;
-  pos base [\Eth ] <anchor 268 1662> mark @top
-	<anchor 292 -132> mark @base;
-  pos base [\F ] <anchor 521 1630> mark @top
-	<anchor 266 -71> mark @base;
-  pos base [\G ] <anchor 526 1646> mark @top
-	<anchor 540 -42> mark @base;
-  pos base [\H \afii10079 ] <anchor 506 1625> mark @top
-	<anchor 496 -34> mark @base;
-  pos base [\I \uni0196 \uni0197 \uni026A \uniA7AE ] <anchor 470 1641> mark @top
-	<anchor 504 -66> mark @base;
-  pos base [\Idieresis ] <anchor 542 -56> mark @base
-	<anchor 492 1879> mark @top;
-  pos base [\Idotaccent ] <anchor 492 -70> mark @base
-	<anchor 448 1965> mark @top;
-  pos base [\Iogonek ] <anchor 508 1657> mark @top;
-  pos base [\Itilde ] <anchor 508 -82> mark @base
-	<anchor 480 1878> mark @top;
-  pos base [\J ] <anchor 534 -67> mark @base
-	<anchor 798 1649> mark @top;
-  pos base [\K \afii10024 \afii10072 ] <anchor 494 -39> mark @base
-	<anchor 214 1642> mark @top;
-  pos base [\L ] <anchor 498 -43> mark @base
+  markClass [\uni1FBF ] <anchor 1006 1133> @top;
+  pos base [\A ] <anchor 1013 1645> mark @top
+	<anchor 1026 -9> mark @base;
+  pos base [\AE ] <anchor 1041 1817> mark @top
+	<anchor 1038 -32> mark @base;
+  pos base [\Aacute ] <anchor 1226 1677> mark @top
+	<anchor 1080 -20> mark @base;
+  pos base [\Abreve \abreve \amacron ] <anchor 1007 -61> mark @base;
+  pos base [\Acircumflex ] <anchor 1024 2049> mark @top
+	<anchor 1032 -51> mark @base;
+  pos base [\Adieresis ] <anchor 1041 1852> mark @top
+	<anchor 1065 -34> mark @base;
+  pos base [\Agrave ] <anchor 1028 1669> mark @top
+	<anchor 1049 28> mark @base;
+  pos base [\Amacron ] <anchor 1000 -64> mark @base;
+  pos base [\Aogonek ] <anchor 1093 1640> mark @top;
+  pos base [\Aring ] <anchor 1008 1890> mark @top
+	<anchor 1032 4> mark @base;
+  pos base [\Atilde ] <anchor 1024 1912> mark @top
+	<anchor 1030 -68> mark @base;
+  pos base [\B \afii10067 \uni0182 \uniA7B4 ] <anchor 554 1637> mark @top
+	<anchor 574 -27> mark @base;
+  pos base [\C ] <anchor 994 1641> mark @top
+	<anchor 1002 -75> mark @base;
+  pos base [\Cacute ] <anchor 1003 -91> mark @base;
+  pos base [\Ccaron \Dcaron \Ebreve \cacute \ccaron \cdotaccent \dcaron \ebreve \emacron ] <anchor 1016 -97> mark @base;
+  pos base [\Ccedilla ] <anchor 1004 1699> mark @top
+	<anchor 1028 -22> mark @base;
+  pos base [\Ccircumflex \Cdotaccent \ccircumflex ] <anchor 1017 -97> mark @base;
+  pos base [\D ] <anchor 710 -51> mark @base
+	<anchor 674 1641> mark @top;
+  pos base [\Dcroat ] <anchor 1033 1652> mark @top
+	<anchor 997 -214> mark @base;
+  pos base [\E ] <anchor 990 1637> mark @top
+	<anchor 1074 -88> mark @base;
+  pos base [\Eacute \Ecircumflex \Iacute \Icircumflex \Igrave \Ntilde \Oacute \Obreve \Ocircumflex \Ograve \Ohungarumlaut \Racute \Sacute \Scaron \Scircumflex \Tbar \Tcaron \Uacute \Ubreve \Ucircumflex \Ugrave \Uhungarumlaut \Uring \Yacute \obreve \ohungarumlaut \racute \rcaron \sacute \scaron \scircumflex \tbar \tcaron \ubreve \uhungarumlaut \uring ] <anchor 1024 -78> mark @base;
+  pos base [\Ecaron \Gbreve \Gcircumflex \Gdotaccent \Ibreve \Imacron \ecaron \ibreve \imacron ] <anchor 996 -82> mark @base;
+  pos base [\Edieresis ] <anchor 1024 -78> mark @base
+	<anchor 1005 1862> mark @top;
+  pos base [\Edotaccent ] <anchor 1016 -97> mark @base
+	<anchor 1001 1808> mark @top;
+  pos base [\Egrave ] <anchor 996 -94> mark @base;
+  pos base [\Emacron ] <anchor 996 -60> mark @base;
+  pos base [\Eng ] <anchor 1017 1603> mark @top
+	<anchor 884 -400> mark @base;
+  pos base [\Eogonek ] <anchor 1255 1665> mark @top;
+  pos base [\Eth ] <anchor 1016 1652> mark @top
+	<anchor 1040 -142> mark @base;
+  pos base [\F ] <anchor 1026 1618> mark @top
+	<anchor 774 -90> mark @base;
+  pos base [\G ] <anchor 990 1649> mark @top
+	<anchor 1024 -42> mark @base;
+  pos base [\H \afii10079 ] <anchor 1000 1634> mark @top
+	<anchor 1028 2> mark @base;
+  pos base [\I \uni0197 \uni026A ] <anchor 1094 1645> mark @top
+	<anchor 1104 -78> mark @base;
+  pos base [\Idieresis ] <anchor 1024 -78> mark @base
+	<anchor 1116 1883> mark @top;
+  pos base [\Idotaccent ] <anchor 984 -70> mark @base
+	<anchor 1104 1819> mark @top;
+  pos base [\Iogonek ] <anchor 1087 1657> mark @top;
+  pos base [\Itilde ] <anchor 996 -82> mark @base
+	<anchor 1104 1882> mark @top;
+  pos base [\J ] <anchor 1023 -89> mark @base
+	<anchor 1898 1627> mark @top;
+  pos base [\K ] <anchor 762 -60> mark @base
+	<anchor 216 1622> mark @top;
+  pos base [\L ] <anchor 1002 -112> mark @base
 	<anchor 140 1650> mark @top;
-  pos base [\M \afii10078 ] <anchor 514 -39> mark @base
-	<anchor 532 1642> mark @top;
-  pos base [\N ] <anchor 488 1642> mark @top
-	<anchor 522 -36> mark @base;
-  pos base [\Nacute ] <anchor 532 -35> mark @base;
-  pos base [\O \afii10048 \uni0186 ] <anchor 456 1646> mark @top
-	<anchor 564 -114> mark @base;
-  pos base [\OE ] <anchor 606 1636> mark @top
-	<anchor 594 -92> mark @base;
-  pos base [\Obreve \Ohungarumlaut \Racute \Sacute \Scaron \Scircumflex \Tbar \Tcaron \Ubreve \Uhungarumlaut \Uring \obreve \ohungarumlaut \racute \rcaron \sacute \scaron \scircumflex \tbar \tcaron \ubreve \uhungarumlaut \uring ] <anchor 512 -78> mark @base;
-  pos base [\Odieresis ] <anchor 542 -56> mark @base
-	<anchor 519 1882> mark @top;
-  pos base [\Ohorn ] <anchor 450 1630> mark @top
-	<anchor 474 -74> mark @base;
-  pos base [\Omacron ] <anchor 504 -101> mark @base;
-  pos base [\Oslash ] <anchor 510 1666> mark @top
-	<anchor 498 -122> mark @base;
-  pos base [\Otilde ] <anchor 542 -56> mark @base
-	<anchor 450 1904> mark @top;
-  pos base [\P ] <anchor 226 -35> mark @base
-	<anchor 448 1642> mark @top;
-  pos base [\Q ] <anchor 514 -60> mark @base
-	<anchor 448 1642> mark @top;
-  pos base [\R \afii10049 ] <anchor 510 -28> mark @base
-	<anchor 480 1642> mark @top;
-  pos base [\S ] <anchor 508 1650> mark @top
-	<anchor 528 -58> mark @base;
-  pos base [\T \afii10084 \uni01AE ] <anchor 516 1638> mark @top
-	<anchor 492 -54> mark @base;
-  pos base [\Thorn ] <anchor 221 -42> mark @base
-	<anchor 189 1684> mark @top;
-  pos base [\U \uni0244 ] <anchor 508 1642> mark @top
-	<anchor 536 -94> mark @base;
-  pos base [\Udieresis ] <anchor 542 -56> mark @base
-	<anchor 512 1910> mark @top;
-  pos base [\Uhorn ] <anchor 406 -80> mark @base
-	<anchor 380 1666> mark @top;
-  pos base [\Umacron ] <anchor 512 -78> mark @base
-	<anchor 497 1957> mark @top;
-  pos base [\Uogonek ] <anchor 500 1680> mark @top;
-  pos base [\Utilde ] <anchor 512 -78> mark @base
-	<anchor 487 1900> mark @top;
-  pos base [\V \afii10148 \afii10196 ] <anchor 496 1642> mark @top
-	<anchor 564 -54> mark @base;
-  pos base [\W \uniA7B6 ] <anchor 526 -64> mark @base
-	<anchor 508 1646> mark @top;
-  pos base [\X ] <anchor 498 1636> mark @top
-	<anchor 486 -32> mark @base;
-  pos base [\Y ] <anchor 524 1638> mark @top
-	<anchor 508 -70> mark @base;
-  pos base [\Ycircumflex \Ydieresis \Zacute \Zcaron \Zdotaccent \zacute \zcaron \zdotaccent ] <anchor 500 -70> mark @base;
-  pos base [\Z ] <anchor 496 1646> mark @top
-	<anchor 560 -46> mark @base;
-  pos base [\a \uni0259 ] <anchor 500 1134> mark @top
-	<anchor 524 -74> mark @base;
-  pos base [\aacute \acircumflex \agrave \aring \eacute \ecircumflex \egrave \iacute \icircumflex \igrave \ntilde \oacute \ocircumflex \ograve \uacute \ucircumflex \ugrave ] <anchor 512 -93> mark @base;
-  pos base [\adieresis ] <anchor 479 1404> mark @top
-	<anchor 524 -74> mark @base;
-  pos base [\ae ] <anchor 519 -103> mark @base
-	<anchor 534 1156> mark @top;
-  pos base [\afii10018 \afii10044 \afii10045 \afii10046 \afii10066 \afii10093 \afii10094 \afii10146 \afii10194 \b ] <anchor 498 -36> mark @base
+  pos base [\M \afii10078 ] <anchor 1050 -80> mark @base
+	<anchor 980 1646> mark @top;
+  pos base [\N ] <anchor 1004 1634> mark @top
+	<anchor 1022 -24> mark @base;
+  pos base [\Nacute ] <anchor 1037 -64> mark @base;
+  pos base [\O \afii10048 \afii10096 \uni0186 ] <anchor 1048 1634> mark @top
+	<anchor 1040 -114> mark @base;
+  pos base [\OE ] <anchor 1022 1608> mark @top
+	<anchor 1010 -120> mark @base;
+  pos base [\Odieresis ] <anchor 1024 -78> mark @base
+	<anchor 1072 1873> mark @top;
+  pos base [\Ohorn ] <anchor 1018 1623> mark @top
+	<anchor 1042 -81> mark @base;
+  pos base [\Omacron ] <anchor 1008 -101> mark @base;
+  pos base [\Oslash ] <anchor 1023 1645> mark @top
+	<anchor 1011 -143> mark @base;
+  pos base [\Otilde ] <anchor 1024 -78> mark @base
+	<anchor 1042 1892> mark @top;
+  pos base [\P ] <anchor 1018 -72> mark @base
+	<anchor 956 1642> mark @top;
+  pos base [\Q ] <anchor 1022 -104> mark @base
+	<anchor 1021 1648> mark @top;
+  pos base [\R \afii10049 \afii10097 ] <anchor 942 4> mark @base
+	<anchor 960 1634> mark @top;
+  pos base [\S ] <anchor 936 1642> mark @top
+	<anchor 968 -58> mark @base;
+  pos base [\T \afii10084 \uni01AE ] <anchor 1100 1654> mark @top
+	<anchor 1084 -62> mark @base;
+  pos base [\Thorn ] <anchor 442 -42> mark @base
+	<anchor 379 1684> mark @top;
+  pos base [\U \uni0244 ] <anchor 968 1630> mark @top
+	<anchor 1020 -82> mark @base;
+  pos base [\Udieresis ] <anchor 1024 -78> mark @base
+	<anchor 972 1898> mark @top;
+  pos base [\Uhorn ] <anchor 1058 -117> mark @base
+	<anchor 1004 1645> mark @top;
+  pos base [\Umacron ] <anchor 1024 -78> mark @base
+	<anchor 1010 1851> mark @top;
+  pos base [\Uogonek ] <anchor 1000 1680> mark @top;
+  pos base [\Utilde ] <anchor 1024 -78> mark @base
+	<anchor 947 1888> mark @top;
+  pos base [\V \afii10148 \afii10196 ] <anchor 996 1622> mark @top
+	<anchor 1128 -74> mark @base;
+  pos base [\W ] <anchor 1094 -100> mark @base
+	<anchor 1028 1626> mark @top;
+  pos base [\X ] <anchor 1028 1649> mark @top
+	<anchor 1016 -19> mark @base;
+  pos base [\Y ] <anchor 1056 1626> mark @top
+	<anchor 1092 -74> mark @base;
+  pos base [\Ycircumflex \Ydieresis \Zacute \Zcaron \Zdotaccent \zacute \zcaron \zdotaccent ] <anchor 1000 -70> mark @base;
+  pos base [\Z ] <anchor 1020 1630> mark @top
+	<anchor 1004 -38> mark @base;
+  pos base [\a \uni0259 ] <anchor 1020 1142> mark @top
+	<anchor 1064 -74> mark @base;
+  pos base [\aacute \acircumflex \agrave \aring \eacute \ecircumflex \egrave \iacute \icircumflex \igrave \ntilde \oacute \ocircumflex \ograve \uacute \ucircumflex \ugrave ] <anchor 1023 -93> mark @base;
+  pos base [\adieresis ] <anchor 1030 1412> mark @top
+	<anchor 1064 -74> mark @base;
+  pos base [\ae ] <anchor 1027 -103> mark @base
+	<anchor 1044 1130> mark @top;
+  pos base [\afii10018 \afii10044 \afii10045 \afii10046 \afii10066 \afii10092 \afii10093 \afii10094 \afii10146 \afii10194 \b ] <anchor 950 -60> mark @base
 	<anchor 220 1646> mark @top;
-  pos base [\afii10037 \y ] <anchor 528 1142> mark @top
-	<anchor 556 -464> mark @base;
-  pos base [\afii10065 ] <anchor 511 1185> mark @top;
-  pos base [\afii10070 ] <anchor 549 1164> mark @top;
-  pos base [\afii10071 ] <anchor 509 1406> mark @top;
-  pos base [\afii10074 ] <anchor 490 1197> mark @top;
-  pos base [\afii10080 ] <anchor 508 1194> mark @top;
-  pos base [\afii10085 ] <anchor 488 1224> mark @top;
-  pos base [\afii10092 ] <anchor 498 -36> mark @base
-	<anchor 418 1130> mark @top;
-  pos base [\afii10095 ] <anchor 290 1180> mark @top;
-  pos base [\afii10096 ] <anchor 513 1139> mark @top
-	<anchor 564 -114> mark @base;
-  pos base [\afii10097 ] <anchor 510 -28> mark @base
-	<anchor 580 1171> mark @top;
-  pos base [\afii10101 ] <anchor 634 1173> mark @top;
+  pos base [\afii10024 \afii10072 ] <anchor 1030 -39> mark @base
+	<anchor 211 1620> mark @top;
+  pos base [\afii10037 \y ] <anchor 984 1106> mark @top
+	<anchor 1012 -484> mark @base;
+  pos base [\afii10065 ] <anchor 1034 1166> mark @top;
+  pos base [\afii10070 ] <anchor 1024 1142> mark @top;
+  pos base [\afii10071 ] <anchor 1027 1406> mark @top;
+  pos base [\afii10074 ] <anchor 1007 1152> mark @top;
+  pos base [\afii10080 ] <anchor 1022 1150> mark @top;
+  pos base [\afii10085 ] <anchor 1056 1141> mark @top;
+  pos base [\afii10095 ] <anchor 514 1208> mark @top;
+  pos base [\afii10101 ] <anchor 1459 1144> mark @top;
   pos base [\afii10103 ] <anchor 452 1497> mark @top;
-  pos base [\afii10104 ] <anchor 490 1503> mark @top;
-  pos base [\aogonek ] <anchor 471 1125> mark @top;
-  pos base [\atilde ] <anchor 512 -93> mark @base
-	<anchor 507 1399> mark @top;
-  pos base [\c \uni0254 ] <anchor 522 -40> mark @base
-	<anchor 492 1162> mark @top;
-  pos base [\d \uni0221 ] <anchor 506 -56> mark @base
-	<anchor 824 1642> mark @top;
-  pos base [\dcroat ] <anchor 792 1648> mark @top
-	<anchor 522 -86> mark @base;
-  pos base [\dotlessi ] <anchor 492 1191> mark @top
-	<anchor 546 -101> mark @base;
-  pos base [\e ] <anchor 512 1166> mark @top
-	<anchor 492 -96> mark @base;
-  pos base [\edieresis ] <anchor 512 -93> mark @base
-	<anchor 512 1444> mark @top;
-  pos base [\edotaccent ] <anchor 508 -97> mark @base
-	<anchor 509 1491> mark @top;
-  pos base [\eng ] <anchor 474 1150> mark @top
-	<anchor 516 -500> mark @base;
-  pos base [\eogonek ] <anchor 523 1104> mark @top;
-  pos base [\eth ] <anchor 323 1629> mark @top
-	<anchor 533 -178> mark @base;
-  pos base [\f ] <anchor 593 1633> mark @top
-	<anchor 448 -116> mark @base;
-  pos base [\g ] <anchor 578 1176> mark @top
-	<anchor 570 -460> mark @base;
-  pos base [\gbreve ] <anchor 528 -476> mark @base;
-  pos base [\gcircumflex ] <anchor 568 -484> mark @base;
-  pos base [\gdotaccent ] <anchor 548 -476> mark @base;
-  pos base [\h ] <anchor 248 1646> mark @top
-	<anchor 512 -46> mark @base;
-  pos base [\i ] <anchor 436 1457> mark @top
-	<anchor 511 -61> mark @base;
-  pos base [\idieresis ] <anchor 512 -93> mark @base
-	<anchor 489 1444> mark @top;
+  pos base [\afii10104 ] <anchor 1039 1434> mark @top;
+  pos base [\aogonek ] <anchor 1023 1128> mark @top;
+  pos base [\atilde ] <anchor 1023 -93> mark @base
+	<anchor 1027 1407> mark @top;
+  pos base [\c \uni0254 ] <anchor 998 -84> mark @base
+	<anchor 972 1134> mark @top;
+  pos base [\d \uni0221 ] <anchor 974 -88> mark @base
+	<anchor 1840 1690> mark @top;
+  pos base [\dcroat ] <anchor 1816 1637> mark @top
+	<anchor 1026 -123> mark @base;
+  pos base [\dotlessi ] <anchor 1007 1191> mark @top
+	<anchor 1072 -71> mark @base;
+  pos base [\e ] <anchor 1032 1158> mark @top
+	<anchor 1028 -56> mark @base;
+  pos base [\edieresis ] <anchor 1023 -93> mark @base
+	<anchor 1032 1436> mark @top;
+  pos base [\edotaccent ] <anchor 1016 -97> mark @base
+	<anchor 1021 1356> mark @top;
+  pos base [\eng ] <anchor 1040 1211> mark @top
+	<anchor 1082 -439> mark @base;
+  pos base [\eogonek ] <anchor 1024 1104> mark @top;
+  pos base [\eth ] <anchor 726 1659> mark @top
+	<anchor 1084 -112> mark @base;
+  pos base [\f ] <anchor 1403 1637> mark @top
+	<anchor 981 -88> mark @base;
+  pos base [\g ] <anchor 1032 1155> mark @top
+	<anchor 1024 -481> mark @base;
+  pos base [\gbreve ] <anchor 1016 -476> mark @base;
+  pos base [\gcircumflex ] <anchor 1056 -484> mark @base;
+  pos base [\gdotaccent ] <anchor 1036 -476> mark @base;
+  pos base [\h ] <anchor 184 1642> mark @top
+	<anchor 956 -98> mark @base;
+  pos base [\i ] <anchor 909 1450> mark @top
+	<anchor 932 -68> mark @base;
+  pos base [\idieresis ] <anchor 1023 -93> mark @base
+	<anchor 1004 1444> mark @top;
   pos base [\idotbelow.dotless \itildebelowdotless \uni0269 ] <anchor 492 1191> mark @top;
-  pos base [\iogonek_dotless ] <anchor 440 1242> mark @top;
-  pos base [\istrokedotless ] <anchor 505 1163> mark @top
-	<anchor 513 -81> mark @base;
-  pos base [\itilde ] <anchor 508 -82> mark @base
-	<anchor 450 1509> mark @top;
-  pos base [\j \uni029D ] <anchor 697 1521> mark @top
-	<anchor 522 -455> mark @base;
-  pos base [\k ] <anchor 494 -48> mark @base
-	<anchor 220 1638> mark @top;
-  pos base [\kgreenlandic ] <anchor 486 -119> mark @base
+  pos base [\iogonek_dotless ] <anchor 1032 1224> mark @top;
+  pos base [\istrokedotless ] <anchor 492 1191> mark @top
+	<anchor 936 -71> mark @base;
+  pos base [\itilde ] <anchor 996 -82> mark @base
+	<anchor 923 1502> mark @top;
+  pos base [\j \uni029D ] <anchor 1786 1296> mark @top
+	<anchor 1006 -520> mark @base;
+  pos base [\k ] <anchor 918 -56> mark @base
+	<anchor 136 1650> mark @top;
+  pos base [\kgreenlandic ] <anchor 180 -104> mark @base
 	<anchor 140 1110> mark @top;
-  pos base [\l \uni0234 \uni026C ] <anchor 538 -68> mark @base
-	<anchor 520 1654> mark @top;
-  pos base [\m ] <anchor 498 -112> mark @base
-	<anchor 508 1110> mark @top;
-  pos base [\n \uni0235 ] <anchor 530 -64> mark @base
-	<anchor 492 1158> mark @top;
-  pos base [\nacute \uni01F8 \uni01F9 ] <anchor 505 -76> mark @base;
-  pos base [\o ] <anchor 512 1110> mark @top
-	<anchor 507 -89> mark @base;
-  pos base [\odieresis ] <anchor 512 -93> mark @base
-	<anchor 496 1428> mark @top;
-  pos base [\oe ] <anchor 534 1132> mark @top
-	<anchor 558 -80> mark @base;
-  pos base [\ohorn ] <anchor 488 1168> mark @top
-	<anchor 492 -92> mark @base;
-  pos base [\omacron ] <anchor 500 -117> mark @base;
-  pos base [\oslash ] <anchor 450 1110> mark @top
-	<anchor 482 -86> mark @base;
-  pos base [\otilde ] <anchor 498 1410> mark @top
-	<anchor 482 -86> mark @base;
-  pos base [\p ] <anchor 270 -468> mark @base
-	<anchor 268 1322> mark @top;
-  pos base [\q ] <anchor 738 1300> mark @top
-	<anchor 758 -496> mark @base;
-  pos base [\r \uni027F ] <anchor 504 1174> mark @top
-	<anchor 500 -70> mark @base;
-  pos base [\s ] <anchor 472 1134> mark @top
-	<anchor 512 -66> mark @base;
-  pos base [\t \uni01AD \uni0236 ] <anchor 500 1642> mark @top
-	<anchor 500 -82> mark @base;
-  pos base [\thorn ] <anchor 265 -491> mark @base;
-  pos base [\u \uni0289 ] <anchor 440 1146> mark @top
-	<anchor 472 -62> mark @base;
-  pos base [\udieresis ] <anchor 512 -93> mark @base
-	<anchor 457 1436> mark @top;
-  pos base [\uhorn ] <anchor 474 -86> mark @base
-	<anchor 425 1179> mark @top;
-  pos base [\umacron ] <anchor 436 1470> mark @top
-	<anchor 518 -99> mark @base;
-  pos base [\uni018E ] <anchor 470 1641> mark @top
-	<anchor 516 -81> mark @base;
-  pos base [\uni018F ] <anchor 568 1630> mark @top
-	<anchor 690 -117> mark @base;
-  pos base [\uni0190 ] <anchor 504 -125> mark @base
-	<anchor 520 1641> mark @top;
-  pos base [\uni019C ] <anchor 498 -112> mark @base
-	<anchor 437 1679> mark @top;
-  pos base [\uni019D ] <anchor 515 1658> mark @top;
-  pos base [\uni019F ] <anchor 539 1698> mark @top
-	<anchor 564 -114> mark @base;
-  pos base [\uni01A4 ] <anchor 367 -35> mark @base
-	<anchor 589 1642> mark @top;
-  pos base [\uni01AC ] <anchor 624 1638> mark @top
-	<anchor 600 -54> mark @base;
-  pos base [\uni01B1 ] <anchor 568 1642> mark @top;
-  pos base [\uni01B2 ] <anchor 525 1613> mark @top
-	<anchor 536 -38> mark @base;
-  pos base [\uni01CD ] <anchor 546 0> mark @base;
-  pos base [\uni01CE ] <anchor 524 -74> mark @base;
-  pos base [\uni01D1 ] <anchor 564 -114> mark @base;
-  pos base [\uni01D2 ] <anchor 507 -89> mark @base;
-  pos base [\uni01D3 ] <anchor 536 -94> mark @base;
-  pos base [\uni01D4 ] <anchor 514 -104> mark @base;
-  pos base [\uni01DD ] <anchor 500 1134> mark @top
-	<anchor 516 -81> mark @base;
-  pos base [\uni0228 \uni1E1A \uni1E2C ] <anchor 470 1641> mark @top;
-  pos base [\uni0229 \uni1E1B ] <anchor 512 1166> mark @top;
-  pos base [\uni0237 ] <anchor 720 1182> mark @top;
-  pos base [\uni0245 \uni1E00 \uni1EA0 ] <anchor 525 1641> mark @top;
-  pos base [\uni0250 ] <anchor 524 -111> mark @top
-	<anchor 500 1097> mark @base;
-  pos base [\uni0251 \uni028B ] <anchor 504 1158> mark @top
-	<anchor 536 -38> mark @base;
-  pos base [\uni025B ] <anchor 537 1207> mark @top
-	<anchor 492 -96> mark @base;
-  pos base [\uni0264 ] <anchor 498 1120> mark @top;
-  pos base [\uni0265 \uni02AE \uni02AF ] <anchor 528 1142> mark @top
-	<anchor 701 -589> mark @base;
-  pos base [\uni0268 ] <anchor 596 -78> mark @base;
-  pos base [\uni026F ] <anchor 458 -98> mark @base
-	<anchor 516 1134> mark @top;
-  pos base [\uni0272 ] <anchor 511 1216> mark @top;
-  pos base [\uni0275 \uni04E9 ] <anchor 546 1158> mark @top
-	<anchor 536 -38> mark @base;
-  pos base [\uni0288 ] <anchor 500 1642> mark @top
-	<anchor 521 -487> mark @base;
-  pos base [\uni028A ] <anchor 554 1146> mark @top;
-  pos base [\uni028C ] <anchor 507 1095> mark @top;
+  pos base [\l \uni0234 \uni026C ] <anchor 1058 -72> mark @base
+	<anchor 1048 1642> mark @top;
+  pos base [\m \uni019C ] <anchor 1062 -96> mark @base
+	<anchor 1076 1078> mark @top;
+  pos base [\n \uni0235 ] <anchor 1190 -64> mark @base
+	<anchor 1212 1126> mark @top;
+  pos base [\nacute ] <anchor 1135 -64> mark @base;
+  pos base [\o \oslash ] <anchor 974 1070> mark @top
+	<anchor 954 -122> mark @base;
+  pos base [\odieresis ] <anchor 1023 -93> mark @base
+	<anchor 1030 1384> mark @top;
+  pos base [\oe ] <anchor 1069 1147> mark @top
+	<anchor 1093 -65> mark @base;
+  pos base [\ohorn ] <anchor 1029 1148> mark @top
+	<anchor 1033 -112> mark @base;
+  pos base [\omacron ] <anchor 1000 -117> mark @base;
+  pos base [\otilde ] <anchor 1022 1370> mark @top
+	<anchor 954 -122> mark @base;
+  pos base [\p ] <anchor 234 -528> mark @base
+	<anchor 224 1314> mark @top;
+  pos base [\q ] <anchor 1587 1269> mark @top
+	<anchor 1607 -527> mark @base;
+  pos base [\r \uni027F ] <anchor 940 1190> mark @top
+	<anchor 900 -86> mark @base;
+  pos base [\s ] <anchor 1052 1134> mark @top
+	<anchor 1064 -70> mark @base;
+  pos base [\t \uni01AD \uni0236 ] <anchor 1012 1642> mark @top
+	<anchor 1020 -130> mark @base;
+  pos base [\thorn ] <anchor 776 -491> mark @base;
+  pos base [\u \uni0289 ] <anchor 872 1150> mark @top
+	<anchor 896 -62> mark @base;
+  pos base [\udieresis ] <anchor 1023 -93> mark @base
+	<anchor 889 1440> mark @top;
+  pos base [\uhorn ] <anchor 1030 -86> mark @base
+	<anchor 981 1179> mark @top;
+  pos base [\umacron ] <anchor 883 1389> mark @top
+	<anchor 1017 -116> mark @base;
+  pos base [\uni018E ] <anchor 990 1637> mark @top
+	<anchor 1021 -91> mark @base;
+  pos base [\uni018F ] <anchor 980 1614> mark @top
+	<anchor 1026 -101> mark @base;
+  pos base [\uni0190 ] <anchor 1008 -125> mark @base
+	<anchor 1040 1641> mark @top;
+  pos base [\uni0196 ] <anchor 854 1627> mark @top
+	<anchor 1104 -78> mark @base;
+  pos base [\uni019D ] <anchor 1022 1654> mark @top;
+  pos base [\uni019F ] <anchor 1131 1686> mark @top
+	<anchor 1040 -114> mark @base;
+  pos base [\uni01A4 ] <anchor 1436 -76> mark @base
+	<anchor 1187 1651> mark @top;
+  pos base [\uni01AC ] <anchor 1208 1654> mark @top
+	<anchor 1192 -62> mark @base;
+  pos base [\uni01B1 \uni1E74 ] <anchor 968 1630> mark @top;
+  pos base [\uni01B2 \uni0251 \uni028B ] <anchor 1028 1118> mark @top
+	<anchor 1008 -74> mark @base;
+  pos base [\uni01CD ] <anchor 1026 -9> mark @base;
+  pos base [\uni01CE ] <anchor 1064 -74> mark @base;
+  pos base [\uni01D1 ] <anchor 1040 -114> mark @base;
+  pos base [\uni01D2 ] <anchor 954 -122> mark @base;
+  pos base [\uni01D3 ] <anchor 1020 -82> mark @base;
+  pos base [\uni01D4 ] <anchor 998 -92> mark @base;
+  pos base [\uni01DD ] <anchor 1020 1142> mark @top
+	<anchor 1012 -87> mark @base;
+  pos base [\uni01F8 ] <anchor 1025 -55> mark @base;
+  pos base [\uni01F9 ] <anchor 1019 -79> mark @base;
+  pos base [\uni0228 \uni1E1A ] <anchor 990 1637> mark @top;
+  pos base [\uni0229 \uni1E1B ] <anchor 1032 1158> mark @top;
+  pos base [\uni0237 ] <anchor 1827 1140> mark @top;
+  pos base [\uni0245 \uni1E00 \uni1EA0 ] <anchor 1013 1645> mark @top;
+  pos base [\uni0250 ] <anchor 1032 -116> mark @top
+	<anchor 988 1100> mark @base;
+  pos base [\uni025B ] <anchor 989 1225> mark @top
+	<anchor 1028 -56> mark @base;
+  pos base [\uni0264 ] <anchor 1042 1141> mark @top;
+  pos base [\uni0265 \uni02AE \uni02AF ] <anchor 984 1106> mark @top
+	<anchor 1157 -609> mark @base;
+  pos base [\uni0268 ] <anchor 1019 -68> mark @base;
+  pos base [\uni026F ] <anchor 966 -86> mark @base
+	<anchor 992 1046> mark @top;
+  pos base [\uni0272 ] <anchor 1017 1191> mark @top;
+  pos base [\uni0275 \uni04E9 ] <anchor 1070 1118> mark @top
+	<anchor 1008 -74> mark @base;
+  pos base [\uni0288 ] <anchor 1012 1642> mark @top
+	<anchor 1041 -535> mark @base;
+  pos base [\uni028A ] <anchor 1028 1132> mark @top;
+  pos base [\uni028C ] <anchor 1027 1092> mark @top;
   pos base [\uni035C ] <anchor 0 9> mark @base;
-  pos base [\uni04BC ] <anchor 530 1691> mark @top
-	<anchor 569 -74> mark @base;
-  pos base [\uni04BD ] <anchor 552 1096> mark @top
-	<anchor 569 -84> mark @base;
-  pos base [\uni1E01 ] <anchor 609 1159> mark @top;
-  pos base [\uni1E04 ] <anchor 328 1624> mark @top;
+  pos base [\uni04BC ] <anchor 1029 1727> mark @top
+	<anchor 1026 -164> mark @base;
+  pos base [\uni04BD ] <anchor 1028 1083> mark @top
+	<anchor 1025 -89> mark @base;
+  pos base [\uni1E01 ] <anchor 1097 1163> mark @top;
+  pos base [\uni1E04 ] <anchor 816 1628> mark @top;
   pos base [\uni1E05 ] <anchor 220 1646> mark @top;
-  pos base [\uni1E62 ] <anchor 514 1636> mark @top;
-  pos base [\uni1E63 ] <anchor 509 1148> mark @top;
-  pos base [\uni1E74 ] <anchor 508 1642> mark @top;
-  pos base [\uni1E75 ] <anchor 440 1146> mark @top;
-  pos base [\uni1EA1 ] <anchor 500 1134> mark @top;
-  pos base [\uni1EB8 ] <anchor 484 1714> mark @top;
-  pos base [\uni1EB9 ] <anchor 516 1150> mark @top;
-  pos base [\uni1EBC ] <anchor 494 1899> mark @top;
-  pos base [\uni1EBD ] <anchor 500 1460> mark @top;
-  pos base [\uni1ECA ] <anchor 484 1687> mark @top;
-  pos base [\uni1ECC ] <anchor 500 1640> mark @top;
-  pos base [\uni1ECD ] <anchor 490 1171> mark @top;
-  pos base [\uni1EE3 ] <anchor 684 1157> mark @top
-	<anchor 688 -103> mark @base;
-  pos base [\uni1EE4 ] <anchor 508 1636> mark @top;
-  pos base [\uni1EE5 ] <anchor 500 1133> mark @top;
-  pos base [\uni1EEF ] <anchor 501 216> mark @base
-	<anchor 452 1481> mark @top;
-  pos base [\uni1EF4 ] <anchor 490 1650> mark @top;
-  pos base [\uni1EF5 ] <anchor 524 1157> mark @top;
+  pos base [\uni1E2C ] <anchor 1094 1645> mark @top;
+  pos base [\uni1E62 ] <anchor 1021 1648> mark @top;
+  pos base [\uni1E63 ] <anchor 1024 1128> mark @top;
+  pos base [\uni1E75 ] <anchor 872 1150> mark @top;
+  pos base [\uni1EA1 ] <anchor 1020 1142> mark @top;
+  pos base [\uni1EB8 ] <anchor 876 1718> mark @top;
+  pos base [\uni1EB9 ] <anchor 996 1170> mark @top;
+  pos base [\uni1EBC ] <anchor 1014 1895> mark @top;
+  pos base [\uni1EBD ] <anchor 1020 1452> mark @top;
+  pos base [\uni1ECA ] <anchor 1000 1758> mark @top;
+  pos base [\uni1ECC ] <anchor 984 1650> mark @top;
+  pos base [\uni1ECD ] <anchor 1068 1138> mark @top;
+  pos base [\uni1EE3 ] <anchor 1225 1137> mark @top
+	<anchor 1229 -123> mark @base;
+  pos base [\uni1EE4 ] <anchor 1005 1636> mark @top;
+  pos base [\uni1EE5 ] <anchor 999 1133> mark @top;
+  pos base [\uni1EEF ] <anchor 1057 216> mark @base
+	<anchor 1008 1481> mark @top;
+  pos base [\uni1EF4 ] <anchor 1044 1638> mark @top;
+  pos base [\uni1EF5 ] <anchor 972 1034> mark @top;
   pos base [\uni25CC ] <anchor 506 1246> mark @top
 	<anchor 548 70> mark @base;
-  pos base [\uni2C6D ] <anchor 512 1555> mark @top
-	<anchor 536 -38> mark @base;
-  pos base [\uni2C6F ] <anchor 511 1650> mark @top;
-  pos base [\uniA78D ] <anchor 248 1646> mark @top
-	<anchor 824 -54> mark @base;
-  pos base [\uniA7AD ] <anchor 538 -68> mark @base
-	<anchor 333 1647> mark @top;
-  pos base [\uniA7B3 ] <anchor 498 1636> mark @top
-	<anchor 458 -503> mark @base;
-  pos base [\uniA7B7 ] <anchor 534 -100> mark @base
-	<anchor 511 1072> mark @top;
-  pos base [\uniA7CB ] <anchor 498 1636> mark @top;
-  pos base [\uogonek ] <anchor 480 1151> mark @top;
-  pos base [\utilde ] <anchor 512 -78> mark @base
-	<anchor 426 1428> mark @top;
-  pos base [\v ] <anchor 506 -68> mark @base
-	<anchor 532 1122> mark @top;
-  pos base [\w ] <anchor 534 -100> mark @base
-	<anchor 516 1134> mark @top;
-  pos base [\x ] <anchor 498 1120> mark @top
-	<anchor 478 -48> mark @base;
-  pos base [\yacute ] <anchor 552 -475> mark @base;
-  pos base [\ycircumflex ] <anchor 516 -492> mark @base;
-  pos base [\ydieresis ] <anchor 532 -475> mark @base;
-  pos base [\z ] <anchor 504 1124> mark @top
-	<anchor 460 -60> mark @base;
+  pos base [\uni2C6D ] <anchor 1036 1515> mark @top
+	<anchor 1008 -74> mark @base;
+  pos base [\uni2C6F ] <anchor 1020 1621> mark @top;
+  pos base [\uniA78D ] <anchor 184 1642> mark @top
+	<anchor 1268 -106> mark @base;
+  pos base [\uniA7AD ] <anchor 1058 -72> mark @base
+	<anchor 488 1656> mark @top;
+  pos base [\uniA7AE ] <anchor 1026 1651> mark @top
+	<anchor 1007 -71> mark @base;
+  pos base [\uniA7B3 ] <anchor 1028 1649> mark @top
+	<anchor 988 -490> mark @base;
+  pos base [\uniA7B6 ] <anchor 1025 -95> mark @base
+	<anchor 959 1631> mark @top;
+  pos base [\uniA7B7 \w ] <anchor 1042 -88> mark @base
+	<anchor 992 1046> mark @top;
+  pos base [\uniA7CB ] <anchor 1028 1649> mark @top;
+  pos base [\uogonek ] <anchor 960 1151> mark @top;
+  pos base [\utilde ] <anchor 1024 -78> mark @base
+	<anchor 858 1432> mark @top;
+  pos base [\v ] <anchor 1002 -48> mark @base
+	<anchor 992 1094> mark @top;
+  pos base [\x ] <anchor 1042 1141> mark @top
+	<anchor 1022 -27> mark @base;
+  pos base [\yacute ] <anchor 1063 -475> mark @base;
+  pos base [\ycircumflex ] <anchor 1016 -492> mark @base;
+  pos base [\ydieresis ] <anchor 1043 -475> mark @base;
+  pos base [\z ] <anchor 1056 1088> mark @top
+	<anchor 1020 -56> mark @base;
 } markMarkPositioninglookup0;
 
 lookup abvmAboveBaseMarkinDevanagari2lookup1 {
   lookupflag 0;
-  markClass [\uni0900 ] <anchor -297 1632> @abvm_deva;
-  markClass [\uni0901 ] <anchor -334 1633> @abvm_deva;
-  markClass [\uni0902 ] <anchor 1 1541> @abvm_deva;
-  markClass [\uni0930_uni094D.rphf ] <anchor 2 1561> @abvm_deva;
-  markClass [\uni0930_uni094D_uni0902.abvs ] <anchor -2 1567> @abvm_deva;
-  markClass [\uni0945 ] <anchor -68 1597> @abvm_deva;
-  markClass [\uni0946 ] <anchor 118 1552> @abvm_deva;
-  markClass [\uni0947 ] <anchor 128 1545> @abvm_deva;
-  markClass [\uni0948 ] <anchor -5 1590> @abvm_deva;
-  markClass [\uni0951 ] <anchor -5 1299> @abvm_deva;
-  markClass [\uni0953 ] <anchor 3 1018> @abvm_deva;
-  markClass [\uni0954 ] <anchor -1 1014> @abvm_deva;
-  markClass [\uni0955 ] <anchor -5 1535> @abvm_deva;
-  pos base [\uni0904 ] <anchor 636 1972> mark @abvm_deva;
-  pos base [\uni0905 ] <anchor 869 1556> mark @abvm_deva;
-  pos base [\uni0906 ] <anchor 780 1554> mark @abvm_deva;
-  pos base [\uni0907 ] <anchor 650 1555> mark @abvm_deva;
-  pos base [\uni0908 ] <anchor 832 1554> mark @abvm_deva;
-  pos base [\uni0909 ] <anchor 590 1551> mark @abvm_deva;
-  pos base [\uni090A ] <anchor 379 1553> mark @abvm_deva;
-  pos base [\uni090B ] <anchor 610 1551> mark @abvm_deva;
-  pos base [\uni090C ] <anchor 662 1553> mark @abvm_deva;
-  pos base [\uni090D ] <anchor 981 1554> mark @abvm_deva;
-  pos base [\uni090E ] <anchor 1015 1555> mark @abvm_deva;
-  pos base [\uni090F ] <anchor 972 1549> mark @abvm_deva;
-  pos base [\uni0910 ] <anchor 998 1548> mark @abvm_deva;
-  pos base [\uni0911 ] <anchor 1102 1555> mark @abvm_deva;
-  pos base [\uni0912 ] <anchor 1028 1544> mark @abvm_deva;
-  pos base [\uni0913 ] <anchor 1035 1560> mark @abvm_deva;
-  pos base [\uni0914 ] <anchor 1050 1564> mark @abvm_deva;
-  pos base [\uni0915 ] <anchor 612 1552> mark @abvm_deva;
-  pos base [\uni0915_uni0930_uni094D.vatu ] <anchor 669 1543> mark @abvm_deva;
-  pos base [\uni0915_uni094D.half \uni0915_uni094D.haln \uni0915_uni094D_uni0937.half ] <anchor 670 1600> mark @abvm_deva;
-  pos base [\uni0915_uni094D_uni0937.akhn ] <anchor 850 1594> mark @abvm_deva;
-  pos base [\uni0915_uni094D_uni0937_uni094D ] <anchor 766 1600> mark @abvm_deva;
-  pos base [\uni0916 ] <anchor 802 1555> mark @abvm_deva;
-  pos base [\uni0916_uni0930_uni094D.vatu ] <anchor 828 1606> mark @abvm_deva;
-  pos base [\uni0916_uni094D.half ] <anchor 913 1592> mark @abvm_deva;
-  pos base [\uni0916_uni094D.haln ] <anchor 771 1611> mark @abvm_deva;
-  pos base [\uni0917 ] <anchor 845 1553> mark @abvm_deva;
-  pos base [\uni0917_uni0930_uni094D.vatu ] <anchor 788 1589> mark @abvm_deva;
-  pos base [\uni0917_uni094D.half ] <anchor 805 1594> mark @abvm_deva;
-  pos base [\uni0917_uni094D.haln ] <anchor 845 1611> mark @abvm_deva;
-  pos base [\uni0918 ] <anchor 808 1556> mark @abvm_deva;
-  pos base [\uni0918_uni0930_uni094D.vatu \uni0918_uni094D.half \uni0918_uni094D.haln \uni0919_uni0930_uni094D.vatu \uni0919_uni094D.half \uni0919_uni094D.haln \uni091A_uni0930_uni094D.vatu \uni091A_uni094D.half \uni091A_uni094D.haln \uni091B_uni0930_uni094D.vatu \uni091B_uni094D.half \uni091B_uni094D.haln \uni091C_uni0930_uni094D.vatu \uni091C_uni094D.half \uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091C_uni094D_uni091E.half \uni091C_uni094D_uni091E_uni094D \uni091D_uni0930_uni094D.vatu \uni091D_uni094D.half \uni091D_uni094D.haln \uni091E_uni094D.half \uni091E_uni094D.haln \uni091F_uni0930_uni094D.vatu \uni091F_uni094D.haln \uni0920_uni0930_uni094D.vatu \uni0920_uni094D.haln \uni0921_uni0930_uni094D.vatu \uni0921_uni094D.haln \uni0922_uni0930_uni094D.vatu \uni0922_uni094D.haln \uni0923_uni0930_uni094D.vatu \uni0923_uni094D.half \uni0923_uni094D.haln \uni092C_uni0930_uni094D.vatu \uni092C_uni094D.half \uni092C_uni094D.haln \uni092D_uni0930_uni094D.vatu \uni092D_uni094D.half \uni092D_uni094D.haln \uni092E_uni0930_uni094D.vatu \uni092E_uni094D.half \uni092E_uni094D.haln \uni092F_uni0930_uni094D.vatu \uni092F_uni094D.half \uni092F_uni094D.haln \uni0930_uni0930_uni094D.vatu \uni0930_uni0941.blws \uni0930_uni0942.blws \uni0930_uni094D.half \uni0930_uni094D.haln \uni0931_uni0930_uni094D.vatu \uni0931_uni094D.haln \uni0932_uni0930_uni094D.vatu \uni0932_uni094D.half \uni0932_uni094D.haln \uni0933_uni0930_uni094D.vatu \uni0933_uni094D.half \uni0933_uni094D.haln \uni0934_uni0930_uni094D.vatu \uni0934_uni094D.half \uni0934_uni094D.haln \uni0935_uni0930_uni094D.vatu \uni0935_uni094D.half \uni0935_uni094D.haln \uni0936_uni0930_uni094D.vatu \uni0936_uni094D.half \uni0936_uni094D.haln \uni0937_uni0930_uni094D.vatu \uni0937_uni094D.half \uni0937_uni094D.haln \uni0938_uni0930_uni094D.vatu \uni0938_uni094D.half \uni0938_uni094D.haln \uni0939_uni0930_uni094D.vatu \uni0939_uni0943.blws \uni0939_uni094D.half \uni0939_uni094D.haln \uni0939_uni094D_uni092E.pres \uni0958_uni0930_uni094D.vatu \uni0958_uni094D.half \uni0958_uni094D.haln \uni0959_uni0930_uni094D.vatu \uni0959_uni094D.half \uni0959_uni094D.haln \uni095A_uni0930_uni094D.vatu \uni095A_uni094D.half \uni095A_uni094D.haln \uni095B_uni0930_uni094D.vatu \uni095B_uni094D.half \uni095B_uni094D.haln \uni095C_uni0930_uni094D.vatu \uni095C_uni094D.haln \uni095D_uni094D.haln \uni095F_uni0930_uni094D.vatu \uni095F_uni094D.half \uni095F_uni094D.haln ] <anchor 839 1617> mark @abvm_deva;
-  pos base [\uni0919 ] <anchor 611 1547> mark @abvm_deva;
-  pos base [\uni091A ] <anchor 736 1554> mark @abvm_deva;
-  pos base [\uni091B ] <anchor 607 1551> mark @abvm_deva;
-  pos base [\uni091C ] <anchor 782 1548> mark @abvm_deva;
-  pos base [\uni091D ] <anchor 789 1551> mark @abvm_deva;
-  pos base [\uni091E ] <anchor 839 1550> mark @abvm_deva;
-  pos base [\uni091E_uni0930_uni094D.vatu ] <anchor 831 1549> mark @abvm_deva;
-  pos base [\uni091F ] <anchor 664 1550> mark @abvm_deva;
-  pos base [\uni0920 ] <anchor 515 1549> mark @abvm_deva;
-  pos base [\uni0921 ] <anchor 862 1551> mark @abvm_deva;
-  pos base [\uni0922 ] <anchor 669 1551> mark @abvm_deva;
-  pos base [\uni0923 ] <anchor 848 1552> mark @abvm_deva;
-  pos base [\uni0924 ] <anchor 737 1550> mark @abvm_deva;
-  pos base [\uni0924_uni0930_uni094D.vatu ] <anchor 756 1658> mark @abvm_deva;
-  pos base [\uni0924_uni094D.half \uni0924_uni094D.haln \uni0924_uni094D_uni0924.pres \uni0925_uni0930_uni094D.vatu \uni0925_uni094D.half \uni0925_uni094D.haln \uni0926_uni0930_uni094D.vatu \uni0926_uni094D.half \uni0926_uni094D.haln \uni0926_uni094D_uni0926.pres \uni0926_uni094D_uni0927.pres \uni0926_uni094D_uni092F.pres \uni0926_uni094D_uni0935.pres \uni0927_uni0930_uni094D.vatu \uni0927_uni094D.half \uni0927_uni094D.haln \uni0928_uni0930_uni094D.vatu \uni0928_uni094D.half \uni0928_uni094D.haln \uni0929_uni0930_uni094D.vatu \uni0929_uni094D.half \uni0929_uni094D.haln \uni092A_uni0930_uni094D.vatu ] <anchor 864 1628> mark @abvm_deva;
-  pos base [\uni0925 ] <anchor 884 1551> mark @abvm_deva;
-  pos base [\uni0926 ] <anchor 585 1550> mark @abvm_deva;
-  pos base [\uni0927 ] <anchor 882 1551> mark @abvm_deva;
-  pos base [\uni0928 ] <anchor 805 1552> mark @abvm_deva;
-  pos base [\uni0929 \uni0934 ] <anchor 801 1550> mark @abvm_deva;
-  pos base [\uni092A ] <anchor 787 1550> mark @abvm_deva;
-  pos base [\uni092A_uni094D.half \uni092B_uni0930_uni094D.vatu \uni092B_uni094D.half \uni092B_uni094D.haln ] <anchor 676 1613> mark @abvm_deva;
-  pos base [\uni092A_uni094D.haln ] <anchor 857 1591> mark @abvm_deva;
-  pos base [\uni092B ] <anchor 604 1551> mark @abvm_deva;
-  pos base [\uni092C ] <anchor 768 1551> mark @abvm_deva;
-  pos base [\uni092D ] <anchor 851 1553> mark @abvm_deva;
-  pos base [\uni092E ] <anchor 856 1551> mark @abvm_deva;
-  pos base [\uni092F ] <anchor 791 1548> mark @abvm_deva;
-  pos base [\uni0930 ] <anchor 688 1550> mark @abvm_deva;
-  pos base [\uni0931 ] <anchor 680 1552> mark @abvm_deva;
-  pos base [\uni0932 ] <anchor 807 1552> mark @abvm_deva;
-  pos base [\uni0933 ] <anchor 805 1551> mark @abvm_deva;
-  pos base [\uni0935 ] <anchor 769 1551> mark @abvm_deva;
-  pos base [\uni0936 ] <anchor 869 1551> mark @abvm_deva;
-  pos base [\uni0937 ] <anchor 798 1550> mark @abvm_deva;
-  pos base [\uni0938 ] <anchor 819 1551> mark @abvm_deva;
-  pos base [\uni0939 ] <anchor 557 1551> mark @abvm_deva;
-  pos base [\uni093E ] <anchor 855 1549> mark @abvm_deva;
-  pos base [\uni0940 ] <anchor 876 1547> mark @abvm_deva;
-  pos base [\uni094A \uni094B ] <anchor 807 1557> mark @abvm_deva;
-  pos base [\uni094C ] <anchor 812 1566> mark @abvm_deva;
-  pos base [\uni094F ] <anchor 990 1582> mark @abvm_deva;
-  pos base [\uni0958 ] <anchor 653 1559> mark @abvm_deva;
-  pos base [\uni0959 ] <anchor 822 1575> mark @abvm_deva;
-  pos base [\uni095A ] <anchor 867 1561> mark @abvm_deva;
-  pos base [\uni095B ] <anchor 807 1550> mark @abvm_deva;
-  pos base [\uni095C ] <anchor 884 1547> mark @abvm_deva;
-  pos base [\uni095D ] <anchor 695 1550> mark @abvm_deva;
-  pos base [\uni095D_uni0930_uni094D.vatu ] <anchor 835 1547> mark @abvm_deva;
-  pos base [\uni095E ] <anchor 631 1566> mark @abvm_deva;
-  pos base [\uni095E_uni0930_uni094D.vatu ] <anchor 676 1639> mark @abvm_deva;
-  pos base [\uni095E_uni094D.half ] <anchor 643 1669> mark @abvm_deva;
-  pos base [\uni095E_uni094D.haln ] <anchor 625 1610> mark @abvm_deva;
-  pos base [\uni095F ] <anchor 794 1555> mark @abvm_deva;
-  pos base [\uni0978 \uni097B ] <anchor 788 1583> mark @abvm_deva;
-  pos base [\uni0979 ] <anchor 793 1550> mark @abvm_deva;
-  pos base [\uni097A \uni097F ] <anchor 779 1555> mark @abvm_deva;
-  pos base [\uni097C ] <anchor 793 1560> mark @abvm_deva;
-  pos base [\uni097E ] <anchor 496 1552> mark @abvm_deva;
+  markClass [\uni0900 ] <anchor 42 1648> @abvm_deva;
+  markClass [\uni0901 ] <anchor 0 1618> @abvm_deva;
+  markClass [\uni0902 ] <anchor 1 1500> @abvm_deva;
+  markClass [\uni0930_uni094D.rphf ] <anchor -3 1558> @abvm_deva;
+  markClass [\uni0930_uni094D_uni0902.abvs ] <anchor 10 1542> @abvm_deva;
+  markClass [\uni0945 ] <anchor 0 1584> @abvm_deva;
+  markClass [\uni0946 ] <anchor 150 1477> @abvm_deva;
+  markClass [\uni0947 ] <anchor 60 1540> @abvm_deva;
+  markClass [\uni0948 ] <anchor 91 1540> @abvm_deva;
+  markClass [\uni0951 ] <anchor 18 1073> @abvm_deva;
+  markClass [\uni0953 ] <anchor -4 1020> @abvm_deva;
+  markClass [\uni0954 ] <anchor -4 1025> @abvm_deva;
+  markClass [\uni0955 ] <anchor -8 1546> @abvm_deva;
+  pos base [\uni0904 ] <anchor 1280 1885> mark @abvm_deva;
+  pos base [\uni0905 ] <anchor 1739 1559> mark @abvm_deva;
+  pos base [\uni0906 ] <anchor 1930 1558> mark @abvm_deva;
+  pos base [\uni0907 ] <anchor 1664 1557> mark @abvm_deva;
+  pos base [\uni0908 ] <anchor 1689 1557> mark @abvm_deva;
+  pos base [\uni0909 ] <anchor 1625 1559> mark @abvm_deva;
+  pos base [\uni090A ] <anchor 1602 1559> mark @abvm_deva;
+  pos base [\uni090B ] <anchor 1650 1557> mark @abvm_deva;
+  pos base [\uni090C ] <anchor 1689 1555> mark @abvm_deva;
+  pos base [\uni090D ] <anchor 2007 1570> mark @abvm_deva;
+  pos base [\uni090E ] <anchor 2032 1560> mark @abvm_deva;
+  pos base [\uni090F ] <anchor 1917 1561> mark @abvm_deva;
+  pos base [\uni0910 ] <anchor 2000 1565> mark @abvm_deva;
+  pos base [\uni0911 ] <anchor 2128 1570> mark @abvm_deva;
+  pos base [\uni0912 ] <anchor 2051 1556> mark @abvm_deva;
+  pos base [\uni0913 ] <anchor 2051 1571> mark @abvm_deva;
+  pos base [\uni0914 ] <anchor 1937 1557> mark @abvm_deva;
+  pos base [\uni0915 ] <anchor 1138 1556> mark @abvm_deva;
+  pos base [\uni0915_uni0930_uni094D.vatu ] <anchor 1136 1555> mark @abvm_deva;
+  pos base [\uni0915_uni094D.half ] <anchor 1139 1561> mark @abvm_deva;
+  pos base [\uni0915_uni094D.haln ] <anchor 1148 1553> mark @abvm_deva;
+  pos base [\uni0915_uni094D_uni0937.akhn ] <anchor 1927 1559> mark @abvm_deva;
+  pos base [\uni0915_uni094D_uni0937.half ] <anchor 1879 1553> mark @abvm_deva;
+  pos base [\uni0915_uni094D_uni0937_uni094D ] <anchor 1915 1549> mark @abvm_deva;
+  pos base [\uni0916 ] <anchor 1890 1556> mark @abvm_deva;
+  pos base [\uni0916_uni0930_uni094D.vatu ] <anchor 1884 1560> mark @abvm_deva;
+  pos base [\uni0916_uni094D.half ] <anchor 1934 1559> mark @abvm_deva;
+  pos base [\uni0916_uni094D.haln ] <anchor 1897 1541> mark @abvm_deva;
+  pos base [\uni0917 ] <anchor 1875 1557> mark @abvm_deva;
+  pos base [\uni0917_uni0930_uni094D.vatu ] <anchor 1879 1558> mark @abvm_deva;
+  pos base [\uni0917_uni094D.half ] <anchor 1873 1558> mark @abvm_deva;
+  pos base [\uni0917_uni094D.haln ] <anchor 1882 1558> mark @abvm_deva;
+  pos base [\uni0918 ] <anchor 1902 1560> mark @abvm_deva;
+  pos base [\uni0918_uni0930_uni094D.vatu ] <anchor 1898 1556> mark @abvm_deva;
+  pos base [\uni0918_uni094D.half ] <anchor 1887 1561> mark @abvm_deva;
+  pos base [\uni0918_uni094D.haln \uni091A_uni0930_uni094D.vatu \uni091A_uni094D.half \uni091A_uni094D.haln \uni091C_uni0930_uni094D.vatu \uni091C_uni094D.half \uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091C_uni094D_uni091E.half \uni091C_uni094D_uni091E_uni094D \uni091D_uni0930_uni094D.vatu \uni091D_uni094D.half \uni091D_uni094D.haln \uni091E_uni0930_uni094D.vatu \uni091E_uni094D.half \uni091E_uni094D.haln \uni091F_uni0930_uni094D.vatu \uni091F_uni094D.haln \uni0921_uni0930_uni094D.vatu \uni0921_uni094D.haln \uni0922_uni0930_uni094D.vatu \uni0922_uni094D.haln \uni0923_uni0930_uni094D.vatu \uni0923_uni094D.half ] <anchor 1867 1598> mark @abvm_deva;
+  pos base [\uni0919 ] <anchor 1629 1557> mark @abvm_deva;
+  pos base [\uni0919_uni0930_uni094D.vatu \uni0919_uni094D.half \uni0919_uni094D.haln \uni0920_uni094D.haln ] <anchor 1367 1598> mark @abvm_deva;
+  pos base [\uni091A \uni091B \uni091C \uni091D \uni091E \uni091F \uni0920 \uni0921 \uni0922 \uni0923 \uni0924 \uni0925 \uni0926 \uni0927 \uni0928 \uni0929 \uni092A \uni092B \uni092C \uni092D \uni092E \uni092F \uni0930 \uni0931 \uni0932 \uni0933 \uni0934 \uni0935 \uni0936 \uni0937 \uni0938 \uni0939 ] <anchor 1620 1584> mark @abvm_deva;
+  pos base [\uni091B_uni0930_uni094D.vatu \uni091B_uni094D.half \uni091B_uni094D.haln ] <anchor 1617 1598> mark @abvm_deva;
+  pos base [\uni0920_uni0930_uni094D.vatu ] <anchor 1117 1598> mark @abvm_deva;
+  pos base [\uni0923_uni094D.haln ] <anchor 1920 1650> mark @abvm_deva;
+  pos base [\uni0924_uni0930_uni094D.vatu ] <anchor 1887 1683> mark @abvm_deva;
+  pos base [\uni0924_uni094D.half \uni0924_uni094D.haln \uni0924_uni094D_uni0924.pres \uni0925_uni0930_uni094D.vatu \uni0925_uni094D.half \uni0925_uni094D.haln \uni0926_uni094D_uni092F.pres \uni0927_uni0930_uni094D.vatu \uni0927_uni094D.half \uni0927_uni094D.haln \uni0928_uni0930_uni094D.vatu \uni0928_uni094D.half \uni0928_uni094D.haln \uni0929_uni0930_uni094D.vatu \uni0929_uni094D.half \uni0929_uni094D.haln \uni092A_uni0930_uni094D.vatu \uni092A_uni094D.haln \uni092C_uni0930_uni094D.vatu \uni092C_uni094D.half \uni092C_uni094D.haln \uni092D_uni0930_uni094D.vatu \uni092D_uni094D.half \uni092D_uni094D.haln \uni092E_uni0930_uni094D.vatu \uni092E_uni094D.half \uni092E_uni094D.haln \uni092F_uni0930_uni094D.vatu \uni092F_uni094D.half \uni092F_uni094D.haln \uni0932_uni0930_uni094D.vatu \uni0932_uni094D.half \uni0932_uni094D.haln \uni0933_uni0930_uni094D.vatu \uni0933_uni094D.half \uni0933_uni094D.haln \uni0934_uni0930_uni094D.vatu \uni0934_uni094D.half \uni0934_uni094D.haln \uni0935_uni0930_uni094D.vatu \uni0935_uni094D.half \uni0935_uni094D.haln \uni0936_uni0930_uni094D.vatu \uni0936_uni094D.haln \uni0937_uni0930_uni094D.vatu \uni0937_uni094D.half \uni0937_uni094D.haln \uni0938_uni0930_uni094D.vatu \uni0938_uni094D.half \uni0938_uni094D.haln \uni0939_uni094D_uni092E.pres \uni0959_uni0930_uni094D.vatu \uni0959_uni094D.half \uni0959_uni094D.haln \uni095A_uni0930_uni094D.vatu \uni095A_uni094D.half \uni095A_uni094D.haln \uni095B_uni0930_uni094D.vatu \uni095B_uni094D.half \uni095B_uni094D.haln ] <anchor 1905 1578> mark @abvm_deva;
+  pos base [\uni0926_uni0930_uni094D.vatu ] <anchor 1277 1527> mark @abvm_deva;
+  pos base [\uni0926_uni094D.half ] <anchor 1204 1622> mark @abvm_deva;
+  pos base [\uni0926_uni094D.haln ] <anchor 1292 1571> mark @abvm_deva;
+  pos base [\uni0926_uni094D_uni0926.pres ] <anchor 1540 1571> mark @abvm_deva;
+  pos base [\uni0926_uni094D_uni0927.pres ] <anchor 1613 1571> mark @abvm_deva;
+  pos base [\uni0926_uni094D_uni0935.pres ] <anchor 1372 1578> mark @abvm_deva;
+  pos base [\uni092A_uni094D.half ] <anchor 1737 1571> mark @abvm_deva;
+  pos base [\uni092B_uni0930_uni094D.vatu ] <anchor 1467 1556> mark @abvm_deva;
+  pos base [\uni092B_uni094D.half ] <anchor 1496 1629> mark @abvm_deva;
+  pos base [\uni092B_uni094D.haln ] <anchor 1496 1593> mark @abvm_deva;
+  pos base [\uni0930_uni0930_uni094D.vatu ] <anchor 1248 1600> mark @abvm_deva;
+  pos base [\uni0930_uni0941.blws ] <anchor 956 1593> mark @abvm_deva;
+  pos base [\uni0930_uni0942.blws ] <anchor 1044 1585> mark @abvm_deva;
+  pos base [\uni0930_uni094D.half ] <anchor 1591 1593> mark @abvm_deva;
+  pos base [\uni0930_uni094D.haln ] <anchor 1299 1527> mark @abvm_deva;
+  pos base [\uni0931_uni0930_uni094D.vatu ] <anchor 1270 1578> mark @abvm_deva;
+  pos base [\uni0931_uni094D.haln ] <anchor 1307 1578> mark @abvm_deva;
+  pos base [\uni0936_uni094D.half ] <anchor 1307 1607> mark @abvm_deva;
+  pos base [\uni0939_uni0930_uni094D.vatu ] <anchor 1328 1578> mark @abvm_deva;
+  pos base [\uni0939_uni0943.blws ] <anchor 1161 1593> mark @abvm_deva;
+  pos base [\uni0939_uni094D.half ] <anchor 1365 1556> mark @abvm_deva;
+  pos base [\uni0939_uni094D.haln ] <anchor 1343 1549> mark @abvm_deva;
+  pos base [\uni093E ] <anchor 1999 1595> mark @abvm_deva;
+  pos base [\uni0940 ] <anchor 1512 1651> mark @abvm_deva;
+  pos base [\uni094A ] <anchor 1608 1562> mark @abvm_deva;
+  pos base [\uni094B \uni094C \uni094F ] <anchor 1654 1608> mark @abvm_deva;
+  pos base [\uni0958 ] <anchor 1475 1533> mark @abvm_deva;
+  pos base [\uni0958_uni0930_uni094D.vatu ] <anchor 1154 1593> mark @abvm_deva;
+  pos base [\uni0958_uni094D.half ] <anchor 1144 1583> mark @abvm_deva;
+  pos base [\uni0958_uni094D.haln ] <anchor 1324 1583> mark @abvm_deva;
+  pos base [\uni0959 ] <anchor 1923 1604> mark @abvm_deva;
+  pos base [\uni095A ] <anchor 1900 1600> mark @abvm_deva;
+  pos base [\uni095B ] <anchor 1949 1595> mark @abvm_deva;
+  pos base [\uni095C ] <anchor 1723 1608> mark @abvm_deva;
+  pos base [\uni095C_uni0930_uni094D.vatu \uni095C_uni094D.haln \uni095D_uni0930_uni094D.vatu ] <anchor 1354 1578> mark @abvm_deva;
+  pos base [\uni095D ] <anchor 1724 1613> mark @abvm_deva;
+  pos base [\uni095D_uni094D.haln ] <anchor 1414 1588> mark @abvm_deva;
+  pos base [\uni095E ] <anchor 1400 1650> mark @abvm_deva;
+  pos base [\uni095E_uni0930_uni094D.vatu ] <anchor 1470 1608> mark @abvm_deva;
+  pos base [\uni095E_uni094D.half ] <anchor 1490 1578> mark @abvm_deva;
+  pos base [\uni095E_uni094D.haln ] <anchor 1530 1558> mark @abvm_deva;
+  pos base [\uni095F ] <anchor 1937 1560> mark @abvm_deva;
+  pos base [\uni095F_uni0930_uni094D.vatu \uni095F_uni094D.half \uni095F_uni094D.haln ] <anchor 1940 1633> mark @abvm_deva;
+  pos base [\uni0978 ] <anchor 1355 1555> mark @abvm_deva;
+  pos base [\uni0979 ] <anchor 1922 1578> mark @abvm_deva;
+  pos base [\uni097A ] <anchor 1824 1560> mark @abvm_deva;
+  pos base [\uni097B ] <anchor 1838 1593> mark @abvm_deva;
+  pos base [\uni097C ] <anchor 1908 1578> mark @abvm_deva;
+  pos base [\uni097E ] <anchor 1360 1643> mark @abvm_deva;
+  pos base [\uni097F ] <anchor 1857 1549> mark @abvm_deva;
   pos base [\uni25CC ] <anchor 697 1317> mark @abvm_deva;
 } abvmAboveBaseMarkinDevanagari2lookup1;
 
 lookup blwmBelowBaseMarkinDevanagari2lookup2 {
   lookupflag 0;
-  markClass [\uni0930_uni094D.blwf ] <anchor 26 -47> @blwm_deva;
-  markClass [\uni093C ] <anchor 1440 555> @blwm_deva;
-  markClass [\uni0941 ] <anchor -299 -23> @blwm_deva;
-  markClass [\uni0942 ] <anchor -224 -2> @blwm_deva;
-  markClass [\uni0943 ] <anchor -42 46> @blwm_deva;
-  markClass [\uni0944 ] <anchor -144 28> @blwm_deva;
-  markClass [\uni094D ] <anchor -432 22> @blwm_deva;
-  markClass [\uni0952 ] <anchor -107 63> @blwm_deva;
-  markClass [\uni0956 \uni0957 ] <anchor -233 59> @blwm_deva;
-  markClass [\uni0962 ] <anchor -30 132> @blwm_deva;
-  markClass [\uni0963 ] <anchor -2 98> @blwm_deva;
-  pos base [\uni0915 ] <anchor 616 -25> mark @blwm_deva;
-  pos base [\uni0915_uni0930_uni094D.vatu \uni0915_uni094D.half \uni0915_uni094D.haln \uni0915_uni094D_uni0937.half ] <anchor 638 -59> mark @blwm_deva;
-  pos base [\uni0915_uni094D_uni0937.akhn ] <anchor 818 -65> mark @blwm_deva;
-  pos base [\uni0915_uni094D_uni0937_uni094D ] <anchor 734 -59> mark @blwm_deva;
-  pos base [\uni0916 ] <anchor 803 -39> mark @blwm_deva;
-  pos base [\uni0916_uni0930_uni094D.vatu ] <anchor 796 -53> mark @blwm_deva;
-  pos base [\uni0916_uni094D.half ] <anchor 881 -67> mark @blwm_deva;
-  pos base [\uni0916_uni094D.haln ] <anchor 739 -48> mark @blwm_deva;
-  pos base [\uni0917 ] <anchor 853 -50> mark @blwm_deva;
-  pos base [\uni0917_uni0930_uni094D.vatu ] <anchor 756 -70> mark @blwm_deva;
-  pos base [\uni0917_uni094D.half ] <anchor 773 -65> mark @blwm_deva;
-  pos base [\uni0917_uni094D.haln ] <anchor 813 -48> mark @blwm_deva;
-  pos base [\uni0918 ] <anchor 835 -77> mark @blwm_deva;
-  pos base [\uni0918_uni0930_uni094D.vatu \uni0918_uni094D.half \uni0918_uni094D.haln \uni0919_uni0930_uni094D.vatu \uni0919_uni094D.half \uni0919_uni094D.haln \uni091A_uni0930_uni094D.vatu \uni091A_uni094D.half \uni091A_uni094D.haln \uni091B_uni0930_uni094D.vatu \uni091B_uni094D.half \uni091B_uni094D.haln \uni091C_uni0930_uni094D.vatu \uni091C_uni094D.half \uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091C_uni094D_uni091E.half \uni091C_uni094D_uni091E_uni094D \uni091D_uni0930_uni094D.vatu \uni091D_uni094D.half \uni091D_uni094D.haln \uni091E_uni0930_uni094D.vatu \uni091E_uni094D.half \uni091E_uni094D.haln \uni091F_uni094D.haln ] <anchor 807 -42> mark @blwm_deva;
-  pos base [\uni0919 ] <anchor 688 -89> mark @blwm_deva;
-  pos base [\uni091A ] <anchor 738 -33> mark @blwm_deva;
-  pos base [\uni091B ] <anchor 647 -32> mark @blwm_deva;
-  pos base [\uni091C ] <anchor 767 -134> mark @blwm_deva;
-  pos base [\uni091D ] <anchor 806 -45> mark @blwm_deva;
-  pos base [\uni091E ] <anchor 846 -45> mark @blwm_deva;
-  pos base [\uni091F ] <anchor 520 -45> mark @blwm_deva;
-  pos base [\uni091F_uni0930_uni094D.vatu ] <anchor 706 -222> mark @blwm_deva;
-  pos base [\uni0920 ] <anchor 520 -65> mark @blwm_deva;
-  pos base [\uni0920_uni0930_uni094D.vatu \uni0920_uni094D.haln \uni0921_uni0930_uni094D.vatu \uni0921_uni094D.haln \uni0922_uni0930_uni094D.vatu \uni0922_uni094D.haln \uni0923_uni094D.half ] <anchor 576 -211> mark @blwm_deva;
-  pos base [\uni0921 ] <anchor 500 -98> mark @blwm_deva;
-  pos base [\uni0922 ] <anchor 505 -65> mark @blwm_deva;
-  pos base [\uni0923 ] <anchor 829 -47> mark @blwm_deva;
-  pos base [\uni0923_uni0930_uni094D.vatu ] <anchor 825 -142> mark @blwm_deva;
-  pos base [\uni0923_uni094D.haln \uni092C_uni0930_uni094D.vatu \uni092C_uni094D.half \uni092C_uni094D.haln \uni092D_uni0930_uni094D.vatu \uni092D_uni094D.half \uni092D_uni094D.haln \uni092E_uni0930_uni094D.vatu \uni092E_uni094D.half \uni092E_uni094D.haln \uni092F_uni0930_uni094D.vatu \uni092F_uni094D.half \uni092F_uni094D.haln \uni0930_uni0930_uni094D.vatu \uni0930_uni0941.blws \uni0930_uni0942.blws \uni0930_uni094D.half \uni0930_uni094D.haln \uni0931_uni0930_uni094D.vatu \uni0931_uni094D.haln \uni0932_uni0930_uni094D.vatu \uni0932_uni094D.half \uni0932_uni094D.haln \uni0933_uni0930_uni094D.vatu \uni0933_uni094D.half \uni0933_uni094D.haln \uni0934_uni094D.half \uni0934_uni094D.haln \uni0935_uni0930_uni094D.vatu \uni0935_uni094D.half \uni0935_uni094D.haln \uni0936_uni0930_uni094D.vatu \uni0936_uni094D.half \uni0936_uni094D.haln \uni0937_uni0930_uni094D.vatu \uni0937_uni094D.half \uni0937_uni094D.haln \uni0938_uni0930_uni094D.vatu \uni0938_uni094D.half \uni0938_uni094D.haln \uni0939_uni0930_uni094D.vatu \uni0939_uni0943.blws \uni0939_uni094D.half \uni0939_uni094D.haln \uni0939_uni094D_uni092E.pres \uni0958_uni0930_uni094D.vatu \uni0958_uni094D.half \uni0958_uni094D.haln \uni0959_uni0930_uni094D.vatu \uni0959_uni094D.half \uni0959_uni094D.haln \uni095A_uni0930_uni094D.vatu \uni095A_uni094D.half \uni095A_uni094D.haln \uni095B_uni0930_uni094D.vatu \uni095B_uni094D.half \uni095B_uni094D.haln \uni095C_uni0930_uni094D.vatu \uni095C_uni094D.haln \uni095D_uni094D.haln \uni095F_uni0930_uni094D.vatu \uni095F_uni094D.half \uni095F_uni094D.haln ] <anchor 779 -130> mark @blwm_deva;
-  pos base [\uni0924 ] <anchor 775 -59> mark @blwm_deva;
-  pos base [\uni0924_uni0930_uni094D.vatu ] <anchor 701 -149> mark @blwm_deva;
-  pos base [\uni0924_uni094D.half \uni0924_uni094D.haln \uni0924_uni094D_uni0924.pres \uni0925_uni0930_uni094D.vatu \uni0925_uni094D.half \uni0925_uni094D.haln \uni0926_uni0930_uni094D.vatu \uni0926_uni094D.half \uni0926_uni094D.haln \uni0926_uni094D_uni0926.pres \uni0926_uni094D_uni0927.pres \uni0926_uni094D_uni092F.pres \uni0926_uni094D_uni0935.pres \uni0927_uni0930_uni094D.vatu \uni0927_uni094D.half \uni0927_uni094D.haln \uni0928_uni0930_uni094D.vatu \uni0928_uni094D.half \uni0928_uni094D.haln \uni0929_uni0930_uni094D.vatu \uni0929_uni094D.half \uni0929_uni094D.haln \uni092A_uni0930_uni094D.vatu ] <anchor 804 -119> mark @blwm_deva;
-  pos base [\uni0925 \uni0926 \uni0927 \uni0928 \uni0929 \uni092A \uni092B \uni092C \uni092D \uni092E \uni092F \uni0930 \uni0931 \uni0932 \uni0933 \uni0934 \uni0935 \uni0936 \uni0937 \uni0938 ] <anchor 883 -63> mark @blwm_deva;
-  pos base [\uni092A_uni094D.half \uni092B_uni0930_uni094D.vatu \uni092B_uni094D.half \uni092B_uni094D.haln ] <anchor 616 -134> mark @blwm_deva;
-  pos base [\uni092A_uni094D.haln ] <anchor 797 -156> mark @blwm_deva;
-  pos base [\uni0934_uni0930_uni094D.vatu ] <anchor 824 -278> mark @blwm_deva;
-  pos base [\uni0939 ] <anchor 514 -56> mark @blwm_deva;
-  pos base [\uni0958 ] <anchor 593 -67> mark @blwm_deva;
-  pos base [\uni0959 ] <anchor 813 -42> mark @blwm_deva;
-  pos base [\uni095A ] <anchor 835 -65> mark @blwm_deva;
-  pos base [\uni095B \uni0978 \uni0979 \uni097A \uni097B \uni097C ] <anchor 756 -76> mark @blwm_deva;
-  pos base [\uni095C ] <anchor 824 -42> mark @blwm_deva;
-  pos base [\uni095D ] <anchor 905 -81> mark @blwm_deva;
-  pos base [\uni095D_uni0930_uni094D.vatu ] <anchor 775 -200> mark @blwm_deva;
-  pos base [\uni095E ] <anchor 628 -23> mark @blwm_deva;
-  pos base [\uni095E_uni0930_uni094D.vatu ] <anchor 616 -108> mark @blwm_deva;
-  pos base [\uni095E_uni094D.half ] <anchor 583 -78> mark @blwm_deva;
-  pos base [\uni095E_uni094D.haln ] <anchor 650 -134> mark @blwm_deva;
-  pos base [\uni095F ] <anchor 785 -71> mark @blwm_deva;
-  pos base [\uni097E ] <anchor 778 -380> mark @blwm_deva;
-  pos base [\uni097F ] <anchor 756 -104> mark @blwm_deva;
+  markClass [\uni0930_uni094D.blwf ] <anchor 29 -105> @blwm_deva;
+  markClass [\uni093C ] <anchor 7 -126> @blwm_deva;
+  markClass [\uni0941 ] <anchor 138 45> @blwm_deva;
+  markClass [\uni0942 \uni0943 \uni0944 ] <anchor -144 28> @blwm_deva;
+  markClass [\uni094D ] <anchor -279 54> @blwm_deva;
+  markClass [\uni0952 ] <anchor 741 413> @blwm_deva;
+  markClass [\uni0956 ] <anchor -38 98> @blwm_deva;
+  markClass [\uni0957 ] <anchor 8 90> @blwm_deva;
+  markClass [\uni0962 \uni0963 ] <anchor -30 132> @blwm_deva;
+  pos base [\uni0915 ] <anchor 1196 -64> mark @blwm_deva;
+  pos base [\uni0915_uni0930_uni094D.vatu ] <anchor 1116 -40> mark @blwm_deva;
+  pos base [\uni0915_uni094D.half ] <anchor 1149 -26> mark @blwm_deva;
+  pos base [\uni0915_uni094D.haln ] <anchor 1116 -106> mark @blwm_deva;
+  pos base [\uni0915_uni094D_uni0937.akhn ] <anchor 1891 -112> mark @blwm_deva;
+  pos base [\uni0915_uni094D_uni0937.half ] <anchor 1849 -74> mark @blwm_deva;
+  pos base [\uni0915_uni094D_uni0937_uni094D ] <anchor 1901 -60> mark @blwm_deva;
+  pos base [\uni0916 ] <anchor 1876 -85> mark @blwm_deva;
+  pos base [\uni0916_uni0930_uni094D.vatu ] <anchor 1820 -53> mark @blwm_deva;
+  pos base [\uni0916_uni094D.half ] <anchor 1877 -46> mark @blwm_deva;
+  pos base [\uni0916_uni094D.haln ] <anchor 1916 -108> mark @blwm_deva;
+  pos base [\uni0917 ] <anchor 1876 -53> mark @blwm_deva;
+  pos base [\uni0917_uni0930_uni094D.vatu \uni0917_uni094D.half \uni0917_uni094D.haln \uni0918_uni0930_uni094D.vatu \uni0918_uni094D.half \uni0918_uni094D.haln \uni091A_uni0930_uni094D.vatu \uni091A_uni094D.half \uni091A_uni094D.haln \uni091C_uni0930_uni094D.vatu \uni091C_uni094D.half \uni091C_uni094D.haln \uni091C_uni094D_uni091E.akhn \uni091C_uni094D_uni091E.half \uni091C_uni094D_uni091E_uni094D \uni091D_uni0930_uni094D.vatu \uni091D_uni094D.half \uni091D_uni094D.haln \uni091E_uni0930_uni094D.vatu \uni091E_uni094D.half \uni091E_uni094D.haln \uni091F_uni0930_uni094D.vatu \uni091F_uni094D.haln \uni0921_uni0930_uni094D.vatu \uni0921_uni094D.haln \uni0922_uni0930_uni094D.vatu \uni0922_uni094D.haln \uni0923_uni0930_uni094D.vatu \uni0923_uni094D.half ] <anchor 1835 -61> mark @blwm_deva;
+  pos base [\uni0918 \uni091A \uni091C ] <anchor 1819 -32> mark @blwm_deva;
+  pos base [\uni0919 ] <anchor 1005 -66> mark @blwm_deva;
+  pos base [\uni0919_uni0930_uni094D.vatu \uni0919_uni094D.half \uni0919_uni094D.haln \uni0920_uni094D.haln ] <anchor 1335 -61> mark @blwm_deva;
+  pos base [\uni091B ] <anchor 1533 -65> mark @blwm_deva;
+  pos base [\uni091B_uni0930_uni094D.vatu \uni091B_uni094D.half \uni091B_uni094D.haln ] <anchor 1585 -61> mark @blwm_deva;
+  pos base [\uni091D ] <anchor 1904 -96> mark @blwm_deva;
+  pos base [\uni091E ] <anchor 1911 -65> mark @blwm_deva;
+  pos base [\uni091F \uni0920 \uni0921 ] <anchor 1019 -58> mark @blwm_deva;
+  pos base [\uni0920_uni0930_uni094D.vatu ] <anchor 1085 -61> mark @blwm_deva;
+  pos base [\uni0922 ] <anchor 1003 -56> mark @blwm_deva;
+  pos base [\uni0923 ] <anchor 1905 -52> mark @blwm_deva;
+  pos base [\uni0923_uni094D.haln ] <anchor 1865 -157> mark @blwm_deva;
+  pos base [\uni0924 \uni0925 \uni0926 \uni0927 \uni0928 \uni0929 \uni092A \uni092B \uni092C \uni092E \uni092F \uni0930 \uni0931 \uni0932 \uni0933 \uni0934 \uni0935 \uni0936 \uni0937 \uni0938 ] <anchor 1834 -73> mark @blwm_deva;
+  pos base [\uni0924_uni0930_uni094D.vatu ] <anchor 1832 -124> mark @blwm_deva;
+  pos base [\uni0924_uni094D.half \uni0924_uni094D.haln \uni0924_uni094D_uni0924.pres \uni0925_uni0930_uni094D.vatu \uni0925_uni094D.half \uni0925_uni094D.haln \uni0926_uni094D_uni092F.pres \uni0927_uni0930_uni094D.vatu \uni0927_uni094D.half \uni0927_uni094D.haln \uni0928_uni0930_uni094D.vatu \uni0928_uni094D.half \uni0928_uni094D.haln \uni0929_uni0930_uni094D.vatu \uni0929_uni094D.half \uni0929_uni094D.haln \uni092A_uni0930_uni094D.vatu \uni092A_uni094D.haln \uni092C_uni0930_uni094D.vatu \uni092C_uni094D.half \uni092C_uni094D.haln \uni092D_uni0930_uni094D.vatu \uni092D_uni094D.half \uni092D_uni094D.haln \uni092E_uni0930_uni094D.vatu \uni092E_uni094D.half \uni092E_uni094D.haln \uni092F_uni0930_uni094D.vatu \uni092F_uni094D.half \uni092F_uni094D.haln \uni0932_uni0930_uni094D.vatu \uni0932_uni094D.half \uni0932_uni094D.haln \uni0933_uni0930_uni094D.vatu \uni0933_uni094D.half \uni0933_uni094D.haln \uni0934_uni0930_uni094D.vatu \uni0934_uni094D.half \uni0934_uni094D.haln \uni0935_uni0930_uni094D.vatu \uni0935_uni094D.half \uni0935_uni094D.haln \uni0936_uni0930_uni094D.vatu \uni0936_uni094D.haln \uni0937_uni0930_uni094D.vatu \uni0937_uni094D.half \uni0937_uni094D.haln \uni0938_uni0930_uni094D.vatu \uni0938_uni094D.half \uni0938_uni094D.haln \uni0939_uni094D_uni092E.pres \uni0959_uni0930_uni094D.vatu \uni0959_uni094D.half \uni0959_uni094D.haln \uni095A_uni0930_uni094D.vatu \uni095A_uni094D.half \uni095A_uni094D.haln \uni095B_uni0930_uni094D.vatu \uni095B_uni094D.half \uni095B_uni094D.haln ] <anchor 1898 -62> mark @blwm_deva;
+  pos base [\uni0926_uni0930_uni094D.vatu ] <anchor 1270 -113> mark @blwm_deva;
+  pos base [\uni0926_uni094D.half ] <anchor 1197 -18> mark @blwm_deva;
+  pos base [\uni0926_uni094D.haln ] <anchor 1285 -69> mark @blwm_deva;
+  pos base [\uni0926_uni094D_uni0926.pres ] <anchor 1533 -69> mark @blwm_deva;
+  pos base [\uni0926_uni094D_uni0927.pres ] <anchor 1606 -69> mark @blwm_deva;
+  pos base [\uni0926_uni094D_uni0935.pres ] <anchor 1365 -62> mark @blwm_deva;
+  pos base [\uni092A_uni094D.half ] <anchor 1730 -69> mark @blwm_deva;
+  pos base [\uni092B_uni0930_uni094D.vatu ] <anchor 1460 -84> mark @blwm_deva;
+  pos base [\uni092B_uni094D.half ] <anchor 1489 -11> mark @blwm_deva;
+  pos base [\uni092B_uni094D.haln ] <anchor 1489 -47> mark @blwm_deva;
+  pos base [\uni092D ] <anchor 1935 -84> mark @blwm_deva;
+  pos base [\uni0930_uni0930_uni094D.vatu ] <anchor 1241 -40> mark @blwm_deva;
+  pos base [\uni0930_uni0941.blws ] <anchor 949 -47> mark @blwm_deva;
+  pos base [\uni0930_uni0942.blws ] <anchor 1037 -55> mark @blwm_deva;
+  pos base [\uni0930_uni094D.half ] <anchor 1584 -47> mark @blwm_deva;
+  pos base [\uni0930_uni094D.haln ] <anchor 1292 -113> mark @blwm_deva;
+  pos base [\uni0931_uni0930_uni094D.vatu ] <anchor 1263 -62> mark @blwm_deva;
+  pos base [\uni0931_uni094D.haln ] <anchor 1300 -62> mark @blwm_deva;
+  pos base [\uni0936_uni094D.half ] <anchor 1300 -33> mark @blwm_deva;
+  pos base [\uni0939 ] <anchor 767 -69> mark @blwm_deva;
+  pos base [\uni0939_uni0930_uni094D.vatu ] <anchor 1321 -62> mark @blwm_deva;
+  pos base [\uni0939_uni0943.blws ] <anchor 1154 -47> mark @blwm_deva;
+  pos base [\uni0939_uni094D.half ] <anchor 1358 -84> mark @blwm_deva;
+  pos base [\uni0939_uni094D.haln ] <anchor 1336 -91> mark @blwm_deva;
+  pos base [\uni0958 ] <anchor 1318 -44> mark @blwm_deva;
+  pos base [\uni0958_uni0930_uni094D.vatu ] <anchor 1147 -47> mark @blwm_deva;
+  pos base [\uni0958_uni094D.half ] <anchor 1137 -57> mark @blwm_deva;
+  pos base [\uni0958_uni094D.haln ] <anchor 1317 -57> mark @blwm_deva;
+  pos base [\uni0959 ] <anchor 1891 -55> mark @blwm_deva;
+  pos base [\uni095A ] <anchor 1868 -59> mark @blwm_deva;
+  pos base [\uni095B ] <anchor 1917 -64> mark @blwm_deva;
+  pos base [\uni095C ] <anchor 1691 -51> mark @blwm_deva;
+  pos base [\uni095C_uni0930_uni094D.vatu \uni095C_uni094D.haln \uni095D_uni0930_uni094D.vatu ] <anchor 1347 -62> mark @blwm_deva;
+  pos base [\uni095D ] <anchor 1818 -103> mark @blwm_deva;
+  pos base [\uni095D_uni094D.haln ] <anchor 1407 -52> mark @blwm_deva;
+  pos base [\uni095E ] <anchor 1485 -56> mark @blwm_deva;
+  pos base [\uni095E_uni0930_uni094D.vatu ] <anchor 1463 -32> mark @blwm_deva;
+  pos base [\uni095E_uni094D.half ] <anchor 1483 -62> mark @blwm_deva;
+  pos base [\uni095E_uni094D.haln ] <anchor 1523 -82> mark @blwm_deva;
+  pos base [\uni095F ] <anchor 1905 -99> mark @blwm_deva;
+  pos base [\uni095F_uni0930_uni094D.vatu \uni095F_uni094D.half \uni095F_uni094D.haln ] <anchor 1933 -7> mark @blwm_deva;
+  pos base [\uni0978 ] <anchor 1323 -104> mark @blwm_deva;
+  pos base [\uni0979 ] <anchor 1890 -81> mark @blwm_deva;
+  pos base [\uni097A ] <anchor 1792 -99> mark @blwm_deva;
+  pos base [\uni097B ] <anchor 1876 -71> mark @blwm_deva;
+  pos base [\uni097C ] <anchor 1876 -81> mark @blwm_deva;
+  pos base [\uni097E ] <anchor 1056 -213> mark @blwm_deva;
+  pos base [\uni097F ] <anchor 1825 -138> mark @blwm_deva;
   pos base [\uni25CC ] <anchor 742 67> mark @blwm_deva;
 } blwmBelowBaseMarkinDevanagari2lookup2;
 
 lookup abvmAboveBaseMarkinTamil2lookup33 {
   lookupflag 0;
-  markClass [\uni0BC0 ] <anchor -1 1017> @abvm_taml;
-  markClass [\uni0BCD ] <anchor 1 1015> @abvm_taml;
-  pos base [\uni0B95 \uni0BA4 \uni0BA9 ] <anchor 613 1248> mark @abvm_taml;
-  pos base [\uni0B99 ] <anchor 882 1200> mark @abvm_taml;
-  pos base [\uni0B9A ] <anchor 613 1196> mark @abvm_taml;
-  pos base [\uni0B9C ] <anchor 719 1230> mark @abvm_taml;
-  pos base [\uni0B9E ] <anchor 760 1230> mark @abvm_taml;
-  pos base [\uni0B9F ] <anchor 607 1183> mark @abvm_taml;
-  pos base [\uni0BA3 ] <anchor 871 1231> mark @abvm_taml;
-  pos base [\uni0BA8 ] <anchor 577 1231> mark @abvm_taml;
-  pos base [\uni0BAA ] <anchor 820 1212> mark @abvm_taml;
-  pos base [\uni0BAE ] <anchor 817 1245> mark @abvm_taml;
-  pos base [\uni0BAF ] <anchor 919 1215> mark @abvm_taml;
-  pos base [\uni0BB0 ] <anchor 733 1248> mark @abvm_taml;
-  pos base [\uni0BB1 \uni0BB2 \uni0BB3 \uni0BB5 \uni0BB6 \uni0BB7 \uni0BB8 \uni0BB9 ] <anchor 871 1227> mark @abvm_taml;
-  pos base [\uni0BB4 ] <anchor 724 1226> mark @abvm_taml;
+  markClass [\uni0BC0 ] <anchor -9 1011> @abvm_taml;
+  markClass [\uni0BCD ] <anchor 0 1021> @abvm_taml;
+  pos base [\uni0B95 ] <anchor 1182 1256> mark @abvm_taml;
+  pos base [\uni0B99 ] <anchor 2007 1204> mark @abvm_taml;
+  pos base [\uni0B9A ] <anchor 1185 1228> mark @abvm_taml;
+  pos base [\uni0B9C ] <anchor 1791 1222> mark @abvm_taml;
+  pos base [\uni0B9E ] <anchor 1779 1232> mark @abvm_taml;
+  pos base [\uni0B9F ] <anchor 994 1177> mark @abvm_taml;
+  pos base [\uni0BA3 ] <anchor 1734 1225> mark @abvm_taml;
+  pos base [\uni0BA4 ] <anchor 1182 1220> mark @abvm_taml;
+  pos base [\uni0BA8 ] <anchor 1107 1228> mark @abvm_taml;
+  pos base [\uni0BA9 ] <anchor 1379 1232> mark @abvm_taml;
+  pos base [\uni0BAA ] <anchor 1707 1161> mark @abvm_taml;
+  pos base [\uni0BAE ] <anchor 1708 1250> mark @abvm_taml;
+  pos base [\uni0BAF ] <anchor 2018 1215> mark @abvm_taml;
+  pos base [\uni0BB0 ] <anchor 1542 1219> mark @abvm_taml;
+  pos base [\uni0BB1 ] <anchor 1693 1133> mark @abvm_taml;
+  pos base [\uni0BB2 ] <anchor 1955 1236> mark @abvm_taml;
+  pos base [\uni0BB3 ] <anchor 1961 1257> mark @abvm_taml;
+  pos base [\uni0BB4 ] <anchor 1892 1236> mark @abvm_taml;
+  pos base [\uni0BB5 ] <anchor 1830 1188> mark @abvm_taml;
+  pos base [\uni0BB6 ] <anchor 1997 1241> mark @abvm_taml;
+  pos base [\uni0BB7 ] <anchor 1682 1230> mark @abvm_taml;
+  pos base [\uni0BB8 ] <anchor 1802 1147> mark @abvm_taml;
+  pos base [\uni0BB9 ] <anchor 1987 1220> mark @abvm_taml;
   pos base [\uni25CC ] <anchor 1064 1227> mark @abvm_taml;
 } abvmAboveBaseMarkinTamil2lookup33;
 
 lookup abvmAboveBaseMarkinOriya2lookup47 {
   lookupflag 0;
-  markClass [\uni0B01 ] <anchor -92 1476> @abvm_or;
-  markClass [\uni0B30_uni0B4D.rphf ] <anchor -581 1659> @abvm_or;
-  markClass [\uni0B3F ] <anchor -528 1468> @abvm_or;
-  markClass [\uni0B56 ] <anchor -528 1520> @abvm_or;
-  pos base [\uni0B15 \uni0B16 \uni0B17 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 \uni0B39 ] <anchor 498 1612> mark @abvm_or;
+  markClass [\uni0B01 ] <anchor -83 1493> @abvm_or;
+  markClass [\uni0B30_uni0B4D.rphf ] <anchor -979 1682> @abvm_or;
+  markClass [\uni0B3F \uni0B56 ] <anchor -528 1520> @abvm_or;
+  pos base [\uni0B15 \uni0B16 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 ] <anchor 497 1591> mark @abvm_or;
+  pos base [\uni0B17 ] <anchor 1001 1646> mark @abvm_or;
+  pos base [\uni0B39 ] <anchor 501 1589> mark @abvm_or;
   pos base [\uni25CC ] <anchor 532 1133> mark @abvm_or;
 } abvmAboveBaseMarkinOriya2lookup47;
 
@@ -1267,62 +1509,93 @@ lookup blwmBelowBaseMarkinOriya2lookup48 {
   markClass [\uni0B43 ] <anchor 3 177> @blwm2_or;
   markClass [\uni0B44 \uni0B62 \uni0B63 ] <anchor 3 183> @blwm2_or;
   markClass [\uni0B4D ] <anchor -154 -54> @blwm2_or;
-  pos base [\uni0B15 \uni0B16 \uni0B17 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 ] <anchor 864 -2> mark @blwm2_or;
-  pos base [\uni0B39 ] <anchor 919 -99> mark @blwm2_or;
+  pos base [\uni0B15 \uni0B16 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 ] <anchor 865 19> mark @blwm2_or;
+  pos base [\uni0B17 ] <anchor 1955 -11> mark @blwm2_or;
+  pos base [\uni0B39 ] <anchor 1712 -82> mark @blwm2_or;
   pos base [\uni0B4D_uni0B15.blwf ] <anchor -300 -521> mark @blwm2_or;
   pos base [\uni0B4D_uni0B16.blwf ] <anchor -606 -1031> mark @blwm2_or;
-  pos base [\uni25CC ] <anchor 843 138> mark @blwm2_or;
+  pos base [\uni25CC ] <anchor 1685 138> mark @blwm2_or;
 } blwmBelowBaseMarkinOriya2lookup48;
 
 lookup blwmBelowBaseMarkinOriya2lookup49 {
   lookupflag 0;
-  markClass [\uni0B3C ] <anchor -8 262> @blwm1_or;
-  markClass [\uni0B4D_uni0B15.blwf \uni0B4D_uni0B1A.blwf \uni0B4D_uni0B1B.blwf \uni0B4D_uni0B1F.blwf \uni0B4D_uni0B20.blwf \uni0B4D_uni0B21.blwf \uni0B4D_uni0B22.blwf \uni0B4D_uni0B26.blwf \uni0B4D_uni0B27.blwf \uni0B4D_uni0B2A.blwf \uni0B4D_uni0B2D.blwf \uni0B4D_uni0B2E.blwf \uni0B4D_uni0B36.blwf \uni0B4D_uni0B37.blwf \uni0B4D_uni0B38.blwf ] <anchor -140 -5> @blwm1_or;
-  markClass [\uni0B4D_uni0B16.blwf ] <anchor -117 48> @blwm1_or;
-  markClass [\uni0B4D_uni0B17.blwf ] <anchor -112 24> @blwm1_or;
-  markClass [\uni0B4D_uni0B18.blwf ] <anchor -133 -8> @blwm1_or;
-  markClass [\uni0B4D_uni0B19.blwf ] <anchor -133 -175> @blwm1_or;
-  markClass [\uni0B4D_uni0B1C.blwf ] <anchor -391 -10> @blwm1_or;
-  markClass [\uni0B4D_uni0B1D.blwf ] <anchor -112 -70> @blwm1_or;
-  markClass [\uni0B4D_uni0B23.blwf ] <anchor -139 -5> @blwm1_or;
-  markClass [\uni0B4D_uni0B24.blwf ] <anchor -534 39> @blwm1_or;
-  markClass [\uni0B4D_uni0B25.blwf ] <anchor -328 123> @blwm1_or;
-  markClass [\uni0B4D_uni0B28.blwf ] <anchor -874 11> @blwm1_or;
-  markClass [\uni0B4D_uni0B2B.blwf ] <anchor -387 115> @blwm1_or;
-  markClass [\uni0B4D_uni0B2C.blwf ] <anchor -339 -5> @blwm1_or;
-  markClass [\uni0B4D_uni0B30.blwf ] <anchor -145 -402> @blwm1_or;
-  markClass [\uni0B4D_uni0B32.blwf ] <anchor -388 150> @blwm1_or;
-  markClass [\uni0B4D_uni0B33.blwf ] <anchor -301 162> @blwm1_or;
-  markClass [\uni0B4D_uni0B39.blwf ] <anchor -537 -42> @blwm1_or;
-  pos base [\uni0B15 \uni0B16 \uni0B18 \uni0B19 \uni0B1A \uni0B1B \uni0B1C \uni0B1D \uni0B1E \uni0B1F \uni0B20 \uni0B21 \uni0B22 \uni0B23 \uni0B24 \uni0B25 \uni0B26 \uni0B27 \uni0B28 \uni0B2A \uni0B2B \uni0B2C \uni0B2D \uni0B2E \uni0B2F \uni0B30 \uni0B32 \uni0B33 \uni0B35 \uni0B36 \uni0B37 \uni0B38 ] <anchor 613 -12> mark @blwm1_or;
-  pos base [\uni0B17 ] <anchor 958 -12> mark @blwm1_or;
-  pos base [\uni0B39 ] <anchor 617 -14> mark @blwm1_or;
-  pos base [\uni25CC ] <anchor 843 138> mark @blwm1_or;
+  markClass [\uni0B3C ] <anchor 384 262> @blwm1_or;
+  markClass [\uni0B4D_uni0B15.blwf ] <anchor -27 -123> @blwm1_or;
+  markClass [\uni0B4D_uni0B16.blwf ] <anchor -97 20> @blwm1_or;
+  markClass [\uni0B4D_uni0B17.blwf ] <anchor -96 14> @blwm1_or;
+  markClass [\uni0B4D_uni0B18.blwf ] <anchor -32 -66> @blwm1_or;
+  markClass [\uni0B4D_uni0B19.blwf ] <anchor -84 -151> @blwm1_or;
+  markClass [\uni0B4D_uni0B1A.blwf \uni0B4D_uni0B1B.blwf \uni0B4D_uni0B1F.blwf \uni0B4D_uni0B20.blwf \uni0B4D_uni0B22.blwf \uni0B4D_uni0B25.blwf \uni0B4D_uni0B26.blwf \uni0B4D_uni0B27.blwf \uni0B4D_uni0B2A.blwf \uni0B4D_uni0B2D.blwf \uni0B4D_uni0B36.blwf \uni0B4D_uni0B37.blwf \uni0B4D_uni0B38.blwf ] <anchor -38 -126> @blwm1_or;
+  markClass [\uni0B4D_uni0B1C.blwf ] <anchor -289 -131> @blwm1_or;
+  markClass [\uni0B4D_uni0B1D.blwf ] <anchor -10 -191> @blwm1_or;
+  markClass [\uni0B4D_uni0B21.blwf ] <anchor 0 -126> @blwm1_or;
+  markClass [\uni0B4D_uni0B23.blwf ] <anchor -37 -126> @blwm1_or;
+  markClass [\uni0B4D_uni0B24.blwf ] <anchor -432 -82> @blwm1_or;
+  markClass [\uni0B4D_uni0B28.blwf ] <anchor -819 -27> @blwm1_or;
+  markClass [\uni0B4D_uni0B2B.blwf ] <anchor -285 -6> @blwm1_or;
+  markClass [\uni0B4D_uni0B2C.blwf ] <anchor -237 -126> @blwm1_or;
+  markClass [\uni0B4D_uni0B2E.blwf ] <anchor -91 0> @blwm1_or;
+  markClass [\uni0B4D_uni0B30.blwf ] <anchor -41 -372> @blwm1_or;
+  markClass [\uni0B4D_uni0B32.blwf ] <anchor -286 29> @blwm1_or;
+  markClass [\uni0B4D_uni0B33.blwf ] <anchor -199 41> @blwm1_or;
+  markClass [\uni0B4D_uni0B39.blwf ] <anchor -375 -84> @blwm1_or;
+  pos base [\uni0B15 ] <anchor 1679 -14> mark @blwm1_or;
+  pos base [\uni0B16 ] <anchor 1966 -14> mark @blwm1_or;
+  pos base [\uni0B17 ] <anchor 1925 14> mark @blwm1_or;
+  pos base [\uni0B18 ] <anchor 1980 0> mark @blwm1_or;
+  pos base [\uni0B19 ] <anchor 1980 -41> mark @blwm1_or;
+  pos base [\uni0B1A \uni0B24 ] <anchor 1761 14> mark @blwm1_or;
+  pos base [\uni0B1B ] <anchor 1898 -27> mark @blwm1_or;
+  pos base [\uni0B1C ] <anchor 1761 -27> mark @blwm1_or;
+  pos base [\uni0B1D ] <anchor 1611 -55> mark @blwm1_or;
+  pos base [\uni0B1E \uni0B2D ] <anchor 1884 -27> mark @blwm1_or;
+  pos base [\uni0B1F ] <anchor 1898 -96> mark @blwm1_or;
+  pos base [\uni0B20 ] <anchor 1925 -82> mark @blwm1_or;
+  pos base [\uni0B21 ] <anchor 1884 -55> mark @blwm1_or;
+  pos base [\uni0B22 ] <anchor 1857 -68> mark @blwm1_or;
+  pos base [\uni0B23 ] <anchor 1993 -68> mark @blwm1_or;
+  pos base [\uni0B25 ] <anchor 1966 -82> mark @blwm1_or;
+  pos base [\uni0B26 ] <anchor 1720 -68> mark @blwm1_or;
+  pos base [\uni0B27 ] <anchor 1720 -27> mark @blwm1_or;
+  pos base [\uni0B28 ] <anchor 1925 -14> mark @blwm1_or;
+  pos base [\uni0B2A ] <anchor 2007 -68> mark @blwm1_or;
+  pos base [\uni0B2B ] <anchor 1966 0> mark @blwm1_or;
+  pos base [\uni0B2C ] <anchor 2021 0> mark @blwm1_or;
+  pos base [\uni0B2E ] <anchor 1939 -41> mark @blwm1_or;
+  pos base [\uni0B2F \uni0B38 ] <anchor 1993 -27> mark @blwm1_or;
+  pos base [\uni0B30 ] <anchor 1966 -55> mark @blwm1_or;
+  pos base [\uni0B32 ] <anchor 1952 -14> mark @blwm1_or;
+  pos base [\uni0B33 ] <anchor 1843 -27> mark @blwm1_or;
+  pos base [\uni0B35 ] <anchor 1980 41> mark @blwm1_or;
+  pos base [\uni0B36 ] <anchor 1993 -14> mark @blwm1_or;
+  pos base [\uni0B37 ] <anchor 1980 -14> mark @blwm1_or;
+  pos base [\uni0B39 ] <anchor 1802 -82> mark @blwm1_or;
+   pos base [\uni25CC ] <anchor 843 138> mark @blwm1_or;
 } blwmBelowBaseMarkinOriya2lookup49;
 
 lookup blwmBelowBaseMarkinOriya2lookup4a {
   lookupflag 0;
   markClass [\uni0B41 ] <anchor 44 -86> @blwm3_or;
-  markClass [\uni0B42 ] <anchor 41 124> @blwm3_or;
+  markClass [\uni0B42 ] <anchor 21 124> @blwm3_or;
   markClass [\uni0B43 ] <anchor -48 177> @blwm3_or;
   markClass [\uni0B44 \uni0B62 \uni0B63 ] <anchor -61 183> @blwm3_or;
   markClass [\uni0B4D ] <anchor -218 -54> @blwm3_or;
-  markClass [\uni0B4D_uni0B30.blwf ] <anchor -169 -190> @blwm3_or;
-  pos mark [\uni0B4D_uni0B15.blwf \uni0B4D_uni0B18.blwf \uni0B4D_uni0B19.blwf \uni0B4D_uni0B1A.blwf \uni0B4D_uni0B1B.blwf \uni0B4D_uni0B1F.blwf \uni0B4D_uni0B20.blwf \uni0B4D_uni0B21.blwf \uni0B4D_uni0B22.blwf \uni0B4D_uni0B26.blwf \uni0B4D_uni0B27.blwf \uni0B4D_uni0B2A.blwf \uni0B4D_uni0B2D.blwf \uni0B4D_uni0B2E.blwf \uni0B4D_uni0B36.blwf \uni0B4D_uni0B37.blwf \uni0B4D_uni0B38.blwf ] <anchor -139 -621> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B16.blwf ] <anchor -90 -477> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B17.blwf ] <anchor -123 -617> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B1C.blwf ] <anchor -383 -529> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B1D.blwf ] <anchor -111 -686> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B23.blwf ] <anchor -138 -621> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B24.blwf ] <anchor -533 -577> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B25.blwf ] <anchor -327 -493> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B28.blwf ] <anchor -873 -605> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B2B.blwf ] <anchor -386 -501> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B2C.blwf ] <anchor -338 -621> mark @blwm3_or;
+  markClass [\uni0B4D_uni0B30.blwf ] <anchor -27 -369> @blwm3_or;
+  pos mark [\uni0B4D_uni0B15.blwf \uni0B4D_uni0B18.blwf \uni0B4D_uni0B1A.blwf \uni0B4D_uni0B1B.blwf \uni0B4D_uni0B1F.blwf \uni0B4D_uni0B20.blwf \uni0B4D_uni0B21.blwf \uni0B4D_uni0B22.blwf \uni0B4D_uni0B25.blwf \uni0B4D_uni0B26.blwf \uni0B4D_uni0B27.blwf \uni0B4D_uni0B2A.blwf \uni0B4D_uni0B2D.blwf \uni0B4D_uni0B2E.blwf \uni0B4D_uni0B36.blwf \uni0B4D_uni0B37.blwf \uni0B4D_uni0B38.blwf ] <anchor -37 -609> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B16.blwf ] <anchor -95 -438> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B17.blwf ] <anchor -65 -669> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B19.blwf ] <anchor -425 -635> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B1C.blwf ] <anchor -281 -517> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B1D.blwf ] <anchor -9 -674> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B23.blwf ] <anchor -36 -609> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B24.blwf ] <anchor -431 -565> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B28.blwf ] <anchor -771 -593> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B2B.blwf ] <anchor -284 -489> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B2C.blwf ] <anchor -236 -609> mark @blwm3_or;
   pos mark [\uni0B4D_uni0B30.blwf ] <anchor -557 -888> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B32.blwf ] <anchor -387 -435> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B33.blwf ] <anchor -300 -454> mark @blwm3_or;
-  pos mark [\uni0B4D_uni0B39.blwf ] <anchor -332 -649> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B32.blwf ] <anchor -285 -423> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B33.blwf ] <anchor -198 -442> mark @blwm3_or;
+  pos mark [\uni0B4D_uni0B39.blwf ] <anchor -434 -646> mark @blwm3_or;
 } blwmBelowBaseMarkinOriya2lookup4a;
 
 feature mark {

@@ -425,6 +425,169 @@ lookup abvsAboveBaseSubstitutioninOrya4b {
     sub \uni0B3F \uni0B30_uni0B4D.rphf  by \uni0B3F_uni0B30_uni0B4D.abvs;
 } abvsAboveBaseSubstitutioninOrya4b;
 
+lookup rligRequiredLigaturesArab51 {
+  sub lam-ar alef-ar by lam_alef-ar;
+  sub lam-ar alefHamzaabove-ar by lam_alefHamzaabove-ar;
+  sub lam-ar alefHamzabelow-ar by lam_alefHamzabelow-ar;
+  sub lam-ar alefMadda-ar by lam_alefMadda-ar;
+  sub lam-ar alefWasla-ar by lam_alefWasla-ar;
+  
+} rligRequiredLigaturesArab51;
+
+lookup ccmpDompositionDecompositionArab50 {
+   sub hamzaabove-ar damma-ar by hamzaaboveDamma-ar;
+   sub hamzaabove-ar dammatan-ar by hamzaaboveDammatan-ar;
+   sub hamzaabove-ar fatha-ar by hamzaaboveFatha-ar;
+   sub hamzaabove-ar fathatan-ar by hamzaaboveFathatan-ar;
+   sub hamzaabove-ar sukun-ar by hamzaaboveSukun-ar;
+   sub shadda-ar fatha-ar by shaddaFatha-ar; 
+   sub shadda-ar fathatan-ar by shaddaFathatan-ar;
+   sub shadda-ar kasra-ar by shaddaKasra-ar;
+   sub shadda-ar kasratan-ar by shaddaKasratan-ar;
+   sub shadda-ar damma-ar by shaddaDamma-ar;
+   sub shadda-ar dammatan-ar by shaddaDammatan-ar;
+   sub shadda-ar alefabove-ar by shaddaAlefabove-ar;
+   
+} ccmpDompositionDecompositionArab50;
+
+ lookup initInitialFormsArab52 {
+  sub behDotless-ar by behDotless-ar.init;
+  sub fehDotless-ar by fehDotless-ar.init;
+  sub qafDotless-ar by qafDotless-ar.init;
+  sub yehHamzaabove-ar by yehHamzaabove-ar.init;
+  sub beh-ar by beh-ar.init;
+  sub teh-ar by teh-ar.init;
+  sub theh-ar by theh-ar.init;
+  sub jeem-ar by jeem-ar.init;
+  sub hah-ar by hah-ar.init;
+  sub khah-ar by khah-ar.init;
+  sub seen-ar by seen-ar.init;
+  sub sheen-ar by sheen-ar.init;
+  sub sad-ar by sad-ar.init;
+  sub dad-ar by dad-ar.init;
+  sub tah-ar by tah-ar.init;
+  sub zah-ar by zah-ar.init;
+  sub ain-ar by ain-ar.init;
+  sub ghain-ar by ghain-ar.init;
+  sub feh-ar by feh-ar.init;
+  sub qaf-ar by qaf-ar.init;
+  sub kaf-ar by kaf-ar.init;
+  sub lam-ar by lam-ar.init;
+  sub meem-ar by meem-ar.init;
+  sub noon-ar by noon-ar.init;
+  sub heh-ar by heh-ar.init;
+  sub alefMaksura-ar by alefMaksura-ar.init;
+  sub yeh-ar by yeh-ar.init;
+  sub tteh-ar by tteh-ar.init;
+  sub peh-ar by peh-ar.init;
+  sub tcheh-ar by tcheh-ar.init;
+  sub keheh-ar by keheh-ar.init;
+  sub gaf-ar by gaf-ar.init;
+  sub hehDoachashmee-ar by hehDoachashmee-ar.init;
+  sub hehgoal-ar by hehgoal-ar.init;
+  sub yehFarsi-ar by yehFarsi-ar.init;
+  sub kehehThreedotsabove-ar by kehehThreedotsabove-ar.init;
+  
+} initInitialFormsArab52;
+
+ lookup mediMedialFormsArab53 {
+   sub behDotless-ar by behDotless-ar.medi;
+  sub fehDotless-ar by fehDotless-ar.medi;
+  sub qafDotless-ar by qafDotless-ar.medi;
+  sub yehHamzaabove-ar by yehHamzaabove-ar.medi;
+  sub beh-ar by beh-ar.medi;
+  sub teh-ar by teh-ar.medi;
+  sub theh-ar by theh-ar.medi;
+  sub jeem-ar by jeem-ar.medi;
+  sub hah-ar by hah-ar.medi;
+  sub khah-ar by khah-ar.medi;
+  sub seen-ar by seen-ar.medi;
+  sub sheen-ar by sheen-ar.medi;
+  sub sad-ar by sad-ar.medi;
+  sub dad-ar by dad-ar.medi;
+  sub tah-ar by tah-ar.medi;
+  sub zah-ar by zah-ar.medi;
+  sub ain-ar by ain-ar.medi;
+  sub ghain-ar by ghain-ar.medi;
+  sub feh-ar by feh-ar.medi;
+  sub qaf-ar by qaf-ar.medi;
+  sub kaf-ar by kaf-ar.medi;
+  sub lam-ar by lam-ar.medi;
+  sub meem-ar by meem-ar.medi;
+  sub noon-ar by noon-ar.medi;
+  sub heh-ar by heh-ar.medi;
+  sub alefMaksura-ar by alefMaksura-ar.medi;
+  sub yeh-ar by yeh-ar.medi;
+  sub tteh-ar by tteh-ar.medi;
+  sub peh-ar by peh-ar.medi;
+  sub tcheh-ar by tcheh-ar.medi;
+  sub keheh-ar by keheh-ar.medi;
+  sub gaf-ar by gaf-ar.medi;
+  sub hehDoachashmee-ar by hehDoachashmee-ar.medi;
+  sub hehgoal-ar by hehgoal-ar.medi;
+  sub yehFarsi-ar by yehFarsi-ar.medi;
+  sub kehehThreedotsabove-ar by kehehThreedotsabove-ar.medi;
+  
+} mediMedialFormsArab53;
+
+lookup finaFinalFormsArab54 {
+  
+  sub alef-ar by alef-ar.fina;
+  sub alefWasla-ar by alefWasla-ar.fina;
+  sub alefMadda-ar by alefMadda-ar.fina;
+  sub alefHamzaabove-ar by alefHamzaabove-ar.fina;
+  sub alefHamzabelow-ar by alefHamzabelow-ar.fina;
+  sub behDotless-ar by behDotless-ar.fina;
+  sub fehDotless-ar by fehDotless-ar.fina;
+  sub qafDotless-ar by qafDotless-ar.fina;
+  sub yehHamzaabove-ar by yehHamzaabove-ar.fina;
+  sub beh-ar by beh-ar.fina;
+  sub tehMarbuta-ar by tehMarbuta-ar.fina;
+  sub teh-ar by teh-ar.fina;
+  sub theh-ar by theh-ar.fina;
+  sub jeem-ar by jeem-ar.fina;
+  sub hah-ar by hah-ar.fina;
+  sub khah-ar by khah-ar.fina;
+  sub dal-ar by dal-ar.fina;
+  sub thal-ar by thal-ar.fina;
+  sub reh-ar by reh-ar.fina;
+  sub zain-ar by zain-ar.fina;
+  sub seen-ar by seen-ar.fina;
+  sub sheen-ar by sheen-ar.fina;
+  sub sad-ar by sad-ar.fina;
+  sub dad-ar by dad-ar.fina;
+  sub tah-ar by tah-ar.fina;
+  sub zah-ar by zah-ar.fina;
+  sub ain-ar by ain-ar.fina;
+  sub ghain-ar by ghain-ar.fina;
+  sub feh-ar by feh-ar.fina;
+  sub qaf-ar by qaf-ar.fina;
+  sub kaf-ar by kaf-ar.fina;
+  sub lam-ar by lam-ar.fina;
+  sub meem-ar by meem-ar.fina;
+  sub noon-ar by noon-ar.fina;
+  sub heh-ar by heh-ar.fina;
+  sub waw-ar by waw-ar.fina;
+  sub wawHamzaabove-ar by wawHamzaabove-ar.fina;
+  sub alefMaksura-ar by alefMaksura-ar.fina;
+  sub yeh-ar by yeh-ar.fina;
+  sub tteh-ar by tteh-ar.fina;
+  sub peh-ar by peh-ar.fina;
+  sub tcheh-ar by tcheh-ar.fina;
+  sub ddal-ar by ddal-ar.fina;
+  sub rreh-ar by rreh-ar.fina;
+  sub jeh-ar by jeh-ar.fina;
+  sub keheh-ar by keheh-ar.fina;
+  sub gaf-ar by gaf-ar.fina;
+  sub hehDoachashmee-ar by hehDoachashmee-ar.fina;
+  sub hehgoal-ar by hehgoal-ar.fina;
+  sub yehFarsi-ar by yehFarsi-ar.fina;
+  sub yehbarree-ar by yehbarree-ar.fina;
+  sub kehehThreedotsabove-ar by kehehThreedotsabove-ar.fina;
+} finaFinalFormsArab54;
+
+# GSUB Features 
+
 feature locl {
 
  script latn;
@@ -660,6 +823,51 @@ feature pstf {
      language dflt ;
       lookup pstfPostBaseFormsinOriya2lookup45;
 } pstf;
+
+feature ccmp {
+script DFLT;
+    language dflt;
+      lookup  ccmpDompositionDecompositionArab50;
+  script ARAB;
+    language dflt;
+      lookup  ccmpDompositionDecompositionArab50;
+} ccmp;
+
+feature rlig {
+  script DFLT;
+    language dflt;
+      lookup  rligRequiredLigaturesArab51;
+  script ARAB;
+    language dflt;
+      lookup  rligRequiredLigaturesArab51; 
+} rlig;
+
+feature init {
+  script DFLT;
+    language dflt;
+      lookup  initInitialFormsArab52;
+  script ARAB;
+    language dflt;
+      lookup  initInitialFormsArab52; 
+} init;
+
+feature medi {
+  script DFLT;
+    language dflt;
+      lookup  mediMedialFormsArab53;
+  script ARAB;
+    language dflt;
+      lookup  mediMedialFormsArab53;  
+} medi;
+
+feature fina {
+  script DFLT;
+    language dflt;
+      lookup  finaFinalFormsArab54;
+  script ARAB;
+    language dflt;
+      lookup  finaFinalFormsArab54;  
+} fina;
 
 # GPOS 
 
